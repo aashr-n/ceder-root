@@ -1,0 +1,7 @@
+{
+  "formatVersion": 1,
+  "id": "calculus",
+  "name": "Calculus",
+  "domain": "formal",
+  "summary": "Rates of change, accumulation, and the limits behind both."
+}
