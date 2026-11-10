@@ -7,7 +7,7 @@
   "scripts": {
     "validate": "node tools/validate.mjs",
     "build": "node tools/build.mjs",
-    "test": "node --test tools/"
+    "test": "node --test \"tools/*.test.mjs\""
   },
   "devDependencies": {
     "@resvg/resvg-js": "2.6.2",
