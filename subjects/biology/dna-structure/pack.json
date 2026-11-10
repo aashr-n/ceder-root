@@ -1,0 +1,1479 @@
+{
+  "formatVersion": 1,
+  "id": "biology.dna-structure",
+  "subject": "biology",
+  "title": "DNA structure",
+  "summary": "What DNA is built from: nucleotides, the sugar-phosphate backbone, base pairing and the double helix.",
+  "license": "CC-BY-4.0",
+  "concepts": [
+    {
+      "id": "nucleotide",
+      "name": "Nucleotide",
+      "aliases": [
+        "Nucleotides",
+        "Deoxyribonucleotide",
+        "Deoxyribonucleotides",
+        "DNA nucleotide",
+        "DNA nucleotides"
+      ],
+      "summary": "The building block of DNA: a phosphate group, the sugar deoxyribose and one nitrogenous base joined together.",
+      "requires": [],
+      "elements": [
+        {
+          "id": "phosphate-group",
+          "name": "Phosphate group",
+          "aliases": [
+            "Phosphate groups",
+            "Phosphate"
+          ]
+        },
+        {
+          "id": "deoxyribose",
+          "name": "Deoxyribose",
+          "aliases": [
+            "Deoxyribose sugar"
+          ]
+        },
+        {
+          "id": "carbon-numbering",
+          "name": "Numbering of the sugar's carbons",
+          "aliases": [
+            "1′ carbon",
+            "3′ carbon",
+            "5′ carbon"
+          ]
+        },
+        {
+          "id": "nucleoside",
+          "name": "Nucleoside",
+          "aliases": [
+            "Nucleosides"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "A nucleotide is the unit DNA is built from, the way a bead is the unit of a necklace. Each one has three parts: a phosphate group, a five-carbon sugar called deoxyribose, and a nitrogenous base. The sugar's carbons are numbered 1′ to 5′. The base hangs off the 1′ carbon, the phosphate sits on the 5′ carbon, and the 3′ carbon carries a hydroxyl group where the next nucleotide can join. DNA uses four nucleotides that differ only in their base, and a strand is millions of them linked in a row.",
+        "artifact": "nucleotide"
+      }
+    },
+    {
+      "id": "nitrogenous-base",
+      "name": "Nitrogenous base",
+      "aliases": [
+        "Nitrogenous bases",
+        "Nucleobase",
+        "Nucleobases",
+        "DNA base",
+        "DNA bases"
+      ],
+      "summary": "The part of a nucleotide that varies: adenine and guanine are two-ring purines, cytosine and thymine are one-ring pyrimidines.",
+      "requires": [
+        "nucleotide"
+      ],
+      "elements": [
+        {
+          "id": "four-bases",
+          "name": "The four DNA bases",
+          "aliases": [
+            "Adenine",
+            "Guanine",
+            "Cytosine",
+            "Thymine"
+          ]
+        },
+        {
+          "id": "purine",
+          "name": "Purines",
+          "aliases": [
+            "Purine"
+          ]
+        },
+        {
+          "id": "pyrimidine",
+          "name": "Pyrimidines",
+          "aliases": [
+            "Pyrimidine"
+          ]
+        },
+        {
+          "id": "uracil",
+          "name": "Uracil in RNA",
+          "aliases": [
+            "Uracil"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "The nitrogenous base is the part of a nucleotide that changes from one to the next, so it is what spells out genetic information. DNA has four bases: adenine (A), guanine (G), cytosine (C) and thymine (T). They come in two shapes. Adenine and guanine are purines, with two fused rings. Cytosine and thymine are pyrimidines, with a single ring. RNA uses the same bases except that uracil (U) takes the place of thymine. A gene is simply a long run of these four letters in a particular order.",
+        "artifact": "nucleotide"
+      }
+    },
+    {
+      "id": "sugar-phosphate-backbone",
+      "name": "Sugar-phosphate backbone",
+      "aliases": [
+        "Sugar-phosphate backbones",
+        "DNA backbone",
+        "Phosphate backbone"
+      ],
+      "summary": "The chain of alternating sugars and phosphates, joined by phosphodiester bonds, that forms each strand of DNA and gives it a 5′ and a 3′ end.",
+      "requires": [
+        "nucleotide"
+      ],
+      "elements": [
+        {
+          "id": "phosphodiester-bond",
+          "name": "Phosphodiester bond",
+          "aliases": [
+            "Phosphodiester bonds",
+            "Phosphodiester linkage"
+          ]
+        },
+        {
+          "id": "strand-ends",
+          "name": "5′ and 3′ ends",
+          "aliases": [
+            "5′ end",
+            "3′ end",
+            "Five prime end",
+            "Three prime end"
+          ]
+        },
+        {
+          "id": "base-sequence",
+          "name": "Base sequence",
+          "aliases": [
+            "DNA sequence",
+            "Nucleotide sequence"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "Nucleotides in a strand are joined sugar to phosphate to sugar, making a long chain called the sugar-phosphate backbone. Each link is a phosphodiester bond: a phosphate joins the 3′ carbon of one sugar to the 5′ carbon of the next. These are strong covalent bonds, so the strand holds together while the bases stick out to one side. Because every link points the same way, a strand has two different ends: the 5′ end, finishing in a phosphate, and the 3′ end, finishing in a hydroxyl group. The order of the bases along the backbone is the DNA sequence.",
+        "artifact": "nucleotide"
+      }
+    },
+    {
+      "id": "complementary-base-pairing",
+      "name": "Complementary base pairing",
+      "aliases": [
+        "Base pairing",
+        "Watson-Crick base pairing",
+        "Base pair",
+        "Base pairs",
+        "Complementary bases"
+      ],
+      "summary": "In double-stranded DNA, adenine pairs with thymine by two hydrogen bonds and guanine pairs with cytosine by three.",
+      "requires": [
+        "nitrogenous-base"
+      ],
+      "elements": [
+        {
+          "id": "at-pair",
+          "name": "Adenine-thymine pair",
+          "aliases": [
+            "A-T pair",
+            "A-T base pair"
+          ]
+        },
+        {
+          "id": "gc-pair",
+          "name": "Guanine-cytosine pair",
+          "aliases": [
+            "G-C pair",
+            "G-C base pair"
+          ]
+        },
+        {
+          "id": "hydrogen-bonds",
+          "name": "Hydrogen bonds between bases",
+          "aliases": [
+            "Hydrogen bonding between base pairs"
+          ]
+        },
+        {
+          "id": "complementary-strand",
+          "name": "Writing a complementary strand",
+          "aliases": [
+            "Complementary strand",
+            "Complementary sequence"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "The two strands of DNA are held together by their bases, which pair across the middle like the rungs of a ladder. The pairing follows a strict rule: adenine pairs with thymine, and guanine pairs with cytosine. An A-T pair is held by two hydrogen bonds and a G-C pair by three. Each pair is one purine and one pyrimidine, so every rung is the same length. The rule means one strand fixes the other: if one strand reads ATGC, its partner must read TACG. That is what lets a cell copy DNA and repair it.",
+        "artifact": "base-pairs"
+      }
+    },
+    {
+      "id": "chargaffs-rules",
+      "name": "Chargaff's rules",
+      "aliases": [
+        "Chargaff's rule",
+        "Chargaff rules",
+        "Chargaff's base ratios"
+      ],
+      "summary": "In double-stranded DNA the amount of adenine equals thymine and guanine equals cytosine, though the A-T to G-C ratio differs between species.",
+      "requires": [
+        "complementary-base-pairing"
+      ],
+      "elements": [
+        {
+          "id": "base-ratios",
+          "name": "Equal amounts of paired bases",
+          "aliases": [
+            "A equals T",
+            "G equals C"
+          ]
+        },
+        {
+          "id": "base-percentages",
+          "name": "Working out base percentages",
+          "aliases": [
+            "Base composition"
+          ]
+        },
+        {
+          "id": "single-stranded-exception",
+          "name": "Single-stranded DNA as the exception",
+          "aliases": [
+            "Single-stranded DNA"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "Around 1950 Erwin Chargaff measured the bases in DNA from many species and found a pattern: the amount of adenine always matched thymine, and guanine always matched cytosine. The overall mix varied between species, so the rule was not that all four were equal. Base pairing explains it, because every A in one strand faces a T in the other. The rules let you work out a whole composition from one number. If DNA is 30% adenine, it is also 30% thymine, which leaves 40% to share equally between guanine and cytosine, 20% each.",
+        "artifact": "base-pairs"
+      }
+    },
+    {
+      "id": "antiparallel-strands",
+      "name": "Antiparallel strands",
+      "aliases": [
+        "Antiparallel DNA strands",
+        "Antiparallel orientation",
+        "Strand polarity"
+      ],
+      "summary": "The two strands of a DNA double helix run in opposite directions, so the 5′ end of one lies beside the 3′ end of the other.",
+      "requires": [
+        "sugar-phosphate-backbone",
+        "complementary-base-pairing"
+      ],
+      "elements": [
+        {
+          "id": "strand-direction",
+          "name": "Opposite strand directions",
+          "aliases": [
+            "Strand direction"
+          ]
+        },
+        {
+          "id": "reading-sequences",
+          "name": "Writing sequences 5′ to 3′",
+          "aliases": [
+            "5′ to 3′ convention"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "Each DNA strand has a direction, from its 5′ end to its 3′ end, and the two strands of a double helix point opposite ways. Picture two lanes of a road: at either end of the helix, one strand starts and the other finishes. This is what antiparallel means. It matters whenever you write a partner strand. By convention sequences are written 5′ to 3′, so the partner of 5′-ATGC-3′ is written 5′-GCAT-3′, not TACG. It also matters in replication, because the enzyme that builds DNA can only work in one direction.",
+        "artifact": "base-pairs"
+      }
+    },
+    {
+      "id": "dna-double-helix",
+      "name": "DNA double helix",
+      "aliases": [
+        "Double helix",
+        "B-DNA",
+        "Watson-Crick model",
+        "Structure of DNA"
+      ],
+      "summary": "DNA's shape: two antiparallel strands wound into a right-handed helix about 2 nm wide, with the backbones outside and base pairs stacked inside.",
+      "requires": [
+        "complementary-base-pairing",
+        "antiparallel-strands"
+      ],
+      "elements": [
+        {
+          "id": "helix-dimensions",
+          "name": "Dimensions of the helix",
+          "aliases": [
+            "Helix width",
+            "Base pairs per turn"
+          ]
+        },
+        {
+          "id": "right-handed",
+          "name": "Right-handed twist",
+          "aliases": [
+            "Right-handed helix"
+          ]
+        },
+        {
+          "id": "grooves",
+          "name": "Major and minor grooves",
+          "aliases": [
+            "Major groove",
+            "Minor groove"
+          ]
+        },
+        {
+          "id": "helix-stability",
+          "name": "What holds the helix together",
+          "aliases": [
+            "Base stacking"
+          ]
+        },
+        {
+          "id": "discovery",
+          "name": "Discovery of the double helix",
+          "aliases": [
+            "Photo 51"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "Picture a ladder twisted into a spiral staircase. The two sugar-phosphate backbones are the rails, wound around each other on the outside, and the base pairs are the steps, stacked flat in the middle. The twist is right-handed, the helix is about 2 nm wide, and it makes one full turn about every 10 base pairs. Turn the model and you can see a wide groove and a narrow one, where proteins reach in to read the bases. Watson and Crick proposed this shape in 1953, using X-ray images from Rosalind Franklin and Raymond Gosling.",
+        "artifact": "dna-double-helix"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "biology.dna-structure.nucleotide-parts",
+      "concept": "nucleotide",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which three parts make up one DNA nucleotide?",
+      "choices": [
+        "A phosphate group, ribose and a nitrogenous base",
+        "A phosphate group, deoxyribose and a nitrogenous base",
+        "An amino acid, deoxyribose and a nitrogenous base",
+        "Deoxyribose, a nitrogenous base and a hydrogen bond to the other strand"
+      ],
+      "answer": 1,
+      "explanation": "A DNA nucleotide is a phosphate, the sugar deoxyribose and one base. Ribose is the sugar in RNA nucleotides, not DNA. Hydrogen bonds join bases in different strands; they are not part of a nucleotide.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.tap-phosphate",
+      "concept": "nucleotide",
+      "element": "phosphate-group",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the phosphate group.",
+      "artifact": "nucleotide",
+      "target": "phosphate",
+      "explanation": "The phosphate group is the ball with oxygen knobs, joined to the sugar's 5′ carbon. In a strand it links one sugar to the next.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.tap-sugar",
+      "concept": "nucleotide",
+      "element": "deoxyribose",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the five-carbon sugar, deoxyribose.",
+      "artifact": "nucleotide",
+      "target": "deoxyribose",
+      "explanation": "Deoxyribose is the five-sided ring in the middle. The phosphate attaches on one side and the base on the other.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.sugar-name",
+      "concept": "nucleotide",
+      "element": "deoxyribose",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is the sugar in a DNA nucleotide called?",
+      "answer": "Deoxyribose.",
+      "explanation": "DNA is short for deoxyribonucleic acid, named after its sugar, deoxyribose. RNA uses ribose.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.dna-structure.deoxy-meaning",
+      "concept": "nucleotide",
+      "element": "deoxyribose",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Deoxyribose differs from ribose by lacking which group?",
+      "choices": [
+        "A hydroxyl group on the 3′ carbon",
+        "A phosphate group on the 5′ carbon",
+        "A hydroxyl group on the 2′ carbon",
+        "A nitrogen atom in its ring"
+      ],
+      "answer": 2,
+      "explanation": "\"Deoxy\" means one oxygen missing: the 2′ carbon carries a hydrogen where ribose has a hydroxyl. The 3′ hydroxyl is still there, and it is needed, because the next nucleotide joins at it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.base-carbon",
+      "concept": "nucleotide",
+      "element": "carbon-numbering",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "To which carbon of deoxyribose is the nitrogenous base attached?",
+      "choices": [
+        "The 1′ carbon",
+        "The 5′ carbon",
+        "The 3′ carbon",
+        "The 2′ carbon"
+      ],
+      "answer": 0,
+      "explanation": "The base is bonded to the 1′ carbon. The 5′ carbon carries the phosphate and the 3′ carbon carries the hydroxyl group used to join the next nucleotide.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.nucleoside",
+      "concept": "nucleotide",
+      "element": "nucleoside",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "What is a sugar joined to a base, without any phosphate group, called?",
+      "answer": "A nucleoside.",
+      "explanation": "A nucleoside is a sugar plus a base. Add one or more phosphate groups and it becomes a nucleotide.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.dna-structure.four-bases",
+      "concept": "nitrogenous-base",
+      "element": "four-bases",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "Name the four nitrogenous bases found in DNA.",
+      "answer": "Adenine, guanine, cytosine and thymine.",
+      "explanation": "DNA's four bases are adenine (A), guanine (G), cytosine (C) and thymine (T). RNA swaps thymine for uracil.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both list the same four bases in a different order."
+      }
+    },
+    {
+      "id": "biology.dna-structure.which-purines",
+      "concept": "nitrogenous-base",
+      "element": "purine",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which two DNA bases are purines?",
+      "choices": [
+        "Cytosine and thymine",
+        "Adenine and thymine",
+        "Adenine and guanine",
+        "Guanine and cytosine"
+      ],
+      "answer": 2,
+      "explanation": "Adenine and guanine are purines, with two fused rings. Cytosine and thymine are the pyrimidines. Adenine and thymine are a base pair, not a class of base.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.purine-vs-pyrimidine",
+      "concept": "nitrogenous-base",
+      "element": "pyrimidine",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What structural feature sets a purine apart from a pyrimidine?",
+      "choices": [
+        "A purine has one ring and a pyrimidine has two fused rings",
+        "A purine has two fused rings and a pyrimidine has one",
+        "A purine contains phosphorus and a pyrimidine does not",
+        "A purine joins the 5′ carbon and a pyrimidine joins the 1′ carbon"
+      ],
+      "answer": 1,
+      "explanation": "Purines (A and G) are larger, with a six-membered ring fused to a five-membered ring. Pyrimidines (C and T) have a single six-membered ring. A mnemonic: the shorter word, purine, is the bigger molecule.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.tap-base",
+      "concept": "nitrogenous-base",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the nitrogenous base.",
+      "artifact": "nucleotide",
+      "target": "base",
+      "explanation": "The base is the ring structure joined to the sugar's 1′ carbon. It is the only part that differs between DNA's four nucleotides.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.rna-only-base",
+      "concept": "nitrogenous-base",
+      "element": "uracil",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which base is found in RNA but not in DNA?",
+      "choices": [
+        "Thymine",
+        "Cytosine",
+        "Adenine",
+        "Uracil"
+      ],
+      "answer": 3,
+      "explanation": "RNA uses uracil where DNA uses thymine. Thymine is the reverse case: in DNA, not RNA. Cytosine and adenine are in both.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.drawn-base-class",
+      "concept": "nitrogenous-base",
+      "element": "purine",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "In this diagram the base is drawn with two fused rings. Which class of base is it?",
+      "answer": "A purine.",
+      "explanation": "Two fused rings mark a purine, so this nucleotide carries adenine or guanine. A pyrimidine would have a single ring.",
+      "artifact": "nucleotide",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.dna-structure.purine-swap",
+      "concept": "nitrogenous-base",
+      "element": "purine",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which change replaces one purine with another purine?",
+      "choices": [
+        "Cytosine to guanine",
+        "Thymine to adenine",
+        "Adenine to guanine",
+        "Adenine to thymine"
+      ],
+      "answer": 2,
+      "explanation": "Adenine and guanine are both purines, so swapping one for the other keeps the two-ring shape. Every other change listed swaps a pyrimidine for a purine or the reverse.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.backbone-bond",
+      "concept": "sugar-phosphate-backbone",
+      "element": "phosphodiester-bond",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What kind of bond joins neighbouring nucleotides along one DNA strand?",
+      "choices": [
+        "Hydrogen bond between bases",
+        "Phosphodiester bond",
+        "Peptide bond",
+        "Ionic bond"
+      ],
+      "answer": 1,
+      "explanation": "Nucleotides in one strand are joined by covalent phosphodiester bonds. Hydrogen bonds hold the two strands to each other, across the base pairs. Peptide bonds join amino acids in proteins.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.phosphodiester-carbons",
+      "concept": "sugar-phosphate-backbone",
+      "element": "phosphodiester-bond",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "A phosphodiester bond links a phosphate to which two carbons of neighbouring sugars?",
+      "answer": "The 3′ carbon of one sugar and the 5′ carbon of the next.",
+      "explanation": "The phosphate bridges the 3′ carbon of one deoxyribose and the 5′ carbon of the next, which is why a strand runs from a 5′ end to a 3′ end.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.dna-structure.tap-three-prime",
+      "concept": "sugar-phosphate-backbone",
+      "element": "strand-ends",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the hydroxyl group on the 3′ carbon, where the next nucleotide joins.",
+      "artifact": "nucleotide",
+      "target": "three-prime-hydroxyl",
+      "explanation": "The 3′ hydroxyl is the group on the 3′ carbon of the sugar. A new nucleotide's phosphate bonds to it, extending the strand.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.tap-five-prime",
+      "concept": "sugar-phosphate-backbone",
+      "element": "strand-ends",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the 5′ carbon of the sugar.",
+      "artifact": "nucleotide",
+      "target": "five-prime-carbon",
+      "explanation": "The 5′ carbon sits outside the sugar ring and carries the phosphate group. At the 5′ end of a strand this phosphate is free.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.three-prime-end",
+      "concept": "sugar-phosphate-backbone",
+      "element": "strand-ends",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is found at the 3′ end of a DNA strand?",
+      "choices": [
+        "A free hydroxyl group on the 3′ carbon",
+        "A free phosphate group on the 3′ carbon",
+        "A free base on the 3′ carbon",
+        "A free hydroxyl group on the 2′ carbon"
+      ],
+      "answer": 0,
+      "explanation": "The 3′ end finishes in a hydroxyl on the 3′ carbon of the last sugar; the 5′ end finishes in a phosphate. Deoxyribose has no hydroxyl on its 2′ carbon at all.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.backbone-outside",
+      "concept": "sugar-phosphate-backbone",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why is the sugar-phosphate backbone on the outside of the double helix and the bases on the inside?",
+      "choices": [
+        "The bases are charged and need to face the water",
+        "Hydrogen bonds can only form between sugars, so the sugars meet in the middle",
+        "Charged phosphates face the water; the less polar bases stack inside",
+        "The phosphate groups of the two strands pair with each other in the middle"
+      ],
+      "answer": 2,
+      "explanation": "Phosphate groups carry a negative charge and interact with the surrounding water. The bases are flatter and less polar, so they stack in the middle, where they also pair. The bases, not the sugars, form the hydrogen bonds between strands.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.backbone-walk",
+      "concept": "sugar-phosphate-backbone",
+      "element": "phosphodiester-bond",
+      "kind": "order",
+      "difficulty": 3,
+      "prompt": "Follow one strand in the 5′ to 3′ direction across one link between nucleotides. Put the parts in the order you meet them.",
+      "steps": [
+        "The 5′ carbon of the first sugar",
+        "The 3′ carbon of the first sugar",
+        "The phosphate group between the sugars",
+        "The 5′ carbon of the next sugar"
+      ],
+      "explanation": "Within one sugar you pass from its 5′ carbon round to its 3′ carbon, then through the phosphate of the phosphodiester bond, and into the 5′ carbon of the next sugar.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.information-part",
+      "concept": "sugar-phosphate-backbone",
+      "element": "base-sequence",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "Which part of a DNA strand carries the genetic information: the backbone or the bases?",
+      "answer": "The bases, in their order along the strand.",
+      "explanation": "The backbone is the same repeating sugar-phosphate pattern everywhere. Only the sequence of bases differs, so it carries the information.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.dna-structure.a-pairs-with",
+      "concept": "complementary-base-pairing",
+      "element": "at-pair",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In DNA, adenine pairs with which base?",
+      "choices": [
+        "Guanine",
+        "Cytosine",
+        "Uracil",
+        "Thymine"
+      ],
+      "answer": 3,
+      "explanation": "Adenine pairs with thymine and guanine with cytosine. Adenine pairs with uracil only in RNA.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.gc-bonds",
+      "concept": "complementary-base-pairing",
+      "element": "gc-pair",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "How many hydrogen bonds hold a guanine-cytosine pair together?",
+      "answer": "Three.",
+      "explanation": "A G-C pair has three hydrogen bonds and an A-T pair has two.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.dna-structure.complement-strand",
+      "concept": "complementary-base-pairing",
+      "element": "complementary-strand",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "One strand reads 5′-ATGCCA-3′. What is the complementary strand, written 5′ to 3′?",
+      "choices": [
+        "5′-TACGGT-3′",
+        "5′-TGGCAT-3′",
+        "5′-ATGCCA-3′",
+        "5′-UACGGU-3′"
+      ],
+      "answer": 1,
+      "explanation": "Pairing gives 3′-TACGGT-5′. Read from its 5′ end it is 5′-TGGCAT-3′. Writing 5′-TACGGT-3′ pairs the bases but points the strand the wrong way.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.purine-pyrimidine-why",
+      "concept": "complementary-base-pairing",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why does each base pair contain one purine and one pyrimidine?",
+      "choices": [
+        "Purines and pyrimidines carry opposite electric charges",
+        "Two purines would form too many hydrogen bonds",
+        "It keeps the helix the same width all along",
+        "Two pyrimidines cannot form hydrogen bonds with each other"
+      ],
+      "answer": 2,
+      "explanation": "A two-ring purine plus a one-ring pyrimidine always spans the same width. Two purines would bulge the helix and two pyrimidines would pinch it. Charge has nothing to do with it; the bases pair by hydrogen bonds.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.count-bonds",
+      "concept": "complementary-base-pairing",
+      "element": "hydrogen-bonds",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "A stretch of double-stranded DNA has 4 A-T pairs and 6 G-C pairs. How many hydrogen bonds hold its strands together?",
+      "answer": "26.",
+      "explanation": "Each A-T pair has 2 hydrogen bonds and each G-C pair has 3: 4 × 2 + 6 × 3 = 8 + 18 = 26.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.dna-structure.bond-strength",
+      "concept": "complementary-base-pairing",
+      "element": "hydrogen-bonds",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Order these from weakest to strongest.",
+      "steps": [
+        "One hydrogen bond between two bases",
+        "An A-T base pair",
+        "A G-C base pair",
+        "A phosphodiester bond in the backbone"
+      ],
+      "explanation": "A single hydrogen bond is weak. An A-T pair has two of them and a G-C pair three. A phosphodiester bond is covalent and much stronger than any of these.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "b's note: Compares single bonds with whole base pairs; the order is clear only if a base pair is taken as the sum of its hydrogen bonds."
+      }
+    },
+    {
+      "id": "biology.dna-structure.melting",
+      "concept": "complementary-base-pairing",
+      "element": "hydrogen-bonds",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which stretch of DNA separates into single strands most easily when heated?",
+      "choices": [
+        "One rich in A-T pairs",
+        "One rich in G-C pairs",
+        "One with equal numbers of A-T and G-C pairs"
+      ],
+      "answer": 0,
+      "explanation": "A-T pairs are held by two hydrogen bonds, G-C pairs by three, so A-T-rich DNA needs less heat to separate.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.state-rules",
+      "concept": "chargaffs-rules",
+      "element": "base-ratios",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "State Chargaff's rules for double-stranded DNA.",
+      "answer": "The amount of adenine equals thymine, and the amount of guanine equals cytosine.",
+      "explanation": "Every A faces a T and every G faces a C, so in double-stranded DNA A = T and G = C. It follows that purines equal pyrimidines.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both state A = T and G = C as the key does; the added purines = pyrimidines follows from it and is correct."
+      }
+    },
+    {
+      "id": "biology.dna-structure.percent-guanine",
+      "concept": "chargaffs-rules",
+      "element": "base-percentages",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Double-stranded DNA is 30% adenine. What percentage is guanine?",
+      "choices": [
+        "30%",
+        "70%",
+        "20%",
+        "40%"
+      ],
+      "answer": 2,
+      "explanation": "Thymine equals adenine, so A + T = 60%. That leaves 40% for G + C, shared equally: 20% guanine. 40% is G and C together.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.percent-adenine",
+      "concept": "chargaffs-rules",
+      "element": "base-percentages",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Double-stranded DNA from a bacterium is 18% cytosine. What percentage is adenine?",
+      "choices": [
+        "18%",
+        "64%",
+        "36%",
+        "32%"
+      ],
+      "answer": 3,
+      "explanation": "Guanine equals cytosine, so G + C = 36%. That leaves 64% for A + T, shared equally: 32% adenine. 64% is A and T together.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.percent-cytosine",
+      "concept": "chargaffs-rules",
+      "element": "base-percentages",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "Double-stranded DNA is 35% thymine. What percentage is cytosine?",
+      "answer": "15%.",
+      "explanation": "A = T = 35%, so A + T = 70%. That leaves 30% for G + C, so cytosine is 15%.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.dna-structure.virus-ratios",
+      "concept": "chargaffs-rules",
+      "element": "single-stranded-exception",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A virus's DNA is 25% A, 33% T, 22% G and 20% C. What does this suggest?",
+      "choices": [
+        "Its DNA is single-stranded",
+        "Its DNA is double-stranded and rich in A-T pairs",
+        "The measurement must be wrong, because A always equals T",
+        "It uses uracil instead of thymine"
+      ],
+      "answer": 0,
+      "explanation": "A does not equal T and G does not equal C, so the bases are not all paired: the DNA is single-stranded. Chargaff's rules only hold where every base has a partner.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.ratio-one",
+      "concept": "chargaffs-rules",
+      "element": "base-ratios",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In any double-stranded DNA, which ratio equals 1?",
+      "choices": [
+        "(A + T) / (G + C)",
+        "(A + G) / (T + C)",
+        "A / G",
+        "T / C"
+      ],
+      "answer": 1,
+      "explanation": "A = T and G = C, so A + G = T + C: purines equal pyrimidines. (A + T) / (G + C) varies from species to species.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.chargaff-helped",
+      "concept": "chargaffs-rules",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "How did Chargaff's results help Watson and Crick build their model of DNA?",
+      "choices": [
+        "They showed DNA is a helix",
+        "They suggested A pairs with T and G pairs with C",
+        "They gave the width of the helix",
+        "They showed the strands run in opposite directions"
+      ],
+      "answer": 1,
+      "explanation": "Equal amounts of A and T, and of G and C, hinted that these bases pair. The helix and its width came from Franklin and Gosling's X-ray images, not from base counts.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.antiparallel-meaning",
+      "concept": "antiparallel-strands",
+      "element": "strand-direction",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What does it mean that the two strands of DNA are antiparallel?",
+      "answer": "They run in opposite directions: where one runs 5′ to 3′, the other runs 3′ to 5′.",
+      "explanation": "Each strand has a 5′ end and a 3′ end. In a double helix they point opposite ways, so the 5′ end of one strand lies beside the 3′ end of the other.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.dna-structure.end-beside",
+      "concept": "antiparallel-strands",
+      "element": "strand-direction",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "At one end of a double helix, one strand finishes in its 5′ end. Which end of the partner strand lies beside it?",
+      "answer": "Its 3′ end.",
+      "explanation": "The strands are antiparallel, so each end of the helix has one 5′ end and one 3′ end.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.dna-structure.write-partner",
+      "concept": "antiparallel-strands",
+      "element": "reading-sequences",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A strand reads 5′-GATTC-3′. Which correctly writes its partner?",
+      "choices": [
+        "5′-CTAAG-3′",
+        "3′-GAATC-5′",
+        "3′-CTAAG-5′",
+        "5′-GATTC-3′"
+      ],
+      "answer": 2,
+      "explanation": "Pairing G-C, A-T, T-A, T-A, C-G gives CTAAG, lined up opposite, so its 3′ end faces the first strand's 5′ end: 3′-CTAAG-5′. Writing 5′-CTAAG-3′ keeps the right bases but makes the strands parallel.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.why-direction",
+      "concept": "antiparallel-strands",
+      "element": "strand-direction",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does a single DNA strand have a direction at all?",
+      "choices": [
+        "Each link runs from one sugar's 3′ carbon to the next one's 5′ carbon",
+        "Its bases are always arranged with purines first",
+        "Hydrogen bonds form on only one side of each base, which sets the direction",
+        "The phosphate groups alternate in charge along the strand"
+      ],
+      "answer": 0,
+      "explanation": "Every phosphodiester bond runs from a 3′ carbon to the next 5′ carbon, so the whole chain has a 5′ end and a 3′ end. Base order varies and has nothing to do with direction.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.helix-ends",
+      "concept": "antiparallel-strands",
+      "element": "strand-direction",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which describes the ends of a short DNA double helix?",
+      "choices": [
+        "Each end has one 5′ end and one 3′ end",
+        "One end has both 5′ ends and the other has both 3′ ends",
+        "Neither end has a 5′ or 3′ end; only single strands have them"
+      ],
+      "answer": 0,
+      "explanation": "Because the strands are antiparallel, each end of the helix has the 5′ end of one strand beside the 3′ end of the other.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.partner-order",
+      "concept": "antiparallel-strands",
+      "element": "reading-sequences",
+      "kind": "order",
+      "difficulty": 3,
+      "prompt": "One strand reads 5′-CAT-3′. Put the bases of its partner strand in order, starting from the partner's 5′ end.",
+      "steps": [
+        "Adenine",
+        "Thymine",
+        "Guanine"
+      ],
+      "explanation": "The partner pairs as 3′-GTA-5′. Read from its 5′ end it is A, then T, then G: 5′-ATG-3′.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.write-complement",
+      "concept": "antiparallel-strands",
+      "element": "reading-sequences",
+      "kind": "recall",
+      "difficulty": 3,
+      "prompt": "Written 5′ to 3′, what is the complementary strand of 5′-AAGCT-3′?",
+      "answer": "5′-AGCTT-3′.",
+      "explanation": "Pairing gives 3′-TTCGA-5′. Reversed to start at its 5′ end, it is 5′-AGCTT-3′.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.dna-structure.photo-51",
+      "concept": "dna-double-helix",
+      "element": "discovery",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Who recorded Photo 51, the X-ray image showing that DNA is a helix?",
+      "choices": [
+        "James Watson and Francis Crick",
+        "Rosalind Franklin and Raymond Gosling",
+        "Erwin Chargaff",
+        "Oswald Avery, Colin MacLeod and Maclyn McCarty"
+      ],
+      "answer": 1,
+      "explanation": "Franklin and Gosling made Photo 51 by X-ray diffraction in 1952. Watson and Crick used it, with Chargaff's base ratios, to build their 1953 model; they did not take the image.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.handedness",
+      "concept": "dna-double-helix",
+      "element": "right-handed",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "Does the common form of the DNA double helix twist to the right or to the left?",
+      "answer": "To the right: it is a right-handed helix.",
+      "explanation": "The common form, B-DNA, is a right-handed helix, like a standard screw thread.",
+      "artifact": "dna-double-helix",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.dna-structure.helix-width",
+      "concept": "dna-double-helix",
+      "element": "helix-dimensions",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "About how wide is the DNA double helix?",
+      "choices": [
+        "20 nm",
+        "0.2 nm",
+        "2 nm",
+        "2 µm"
+      ],
+      "answer": 2,
+      "explanation": "The double helix is about 2 nm across. 0.2 nm is about the size of a single atom, and 2 µm is the size of a whole bacterium.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.bp-per-turn",
+      "concept": "dna-double-helix",
+      "element": "helix-dimensions",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "About how many base pairs make one full turn of the DNA double helix?",
+      "choices": [
+        "4",
+        "10",
+        "34",
+        "100"
+      ],
+      "answer": 1,
+      "explanation": "The helix turns once about every 10 base pairs (10.5 measured in solution). One turn is about 3.4 nm long, so 34 comes from mixing up the length of a turn with its number of base pairs.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "b's note: The usual figure for B-DNA is about 10.5 base pairs per turn; 10 is the best of the choices."
+      }
+    },
+    {
+      "id": "biology.dna-structure.helix-held",
+      "concept": "dna-double-helix",
+      "element": "helix-stability",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What holds the two strands of the double helix together?",
+      "choices": [
+        "Phosphodiester bonds that link one backbone to the other",
+        "Ionic bonds between the phosphate groups",
+        "Covalent bonds between paired bases",
+        "Hydrogen bonds between paired bases, plus base stacking"
+      ],
+      "answer": 3,
+      "explanation": "The strands are joined by hydrogen bonds across each base pair, and stacking between neighbouring pairs adds stability. Phosphodiester bonds hold each strand together, not the two strands to each other.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.discovery-order",
+      "concept": "dna-double-helix",
+      "element": "discovery",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps toward the double helix in the order they happened.",
+      "steps": [
+        "Avery, MacLeod and McCarty show DNA carries hereditary information",
+        "Chargaff reports that A equals T and G equals C",
+        "Franklin and Gosling record Photo 51",
+        "Watson and Crick publish the double helix model"
+      ],
+      "explanation": "Avery's team showed DNA was the hereditary material in 1944. Chargaff's base ratios came around 1950, Photo 51 in 1952, and the Watson-Crick model in 1953.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.dna-structure.outside-in",
+      "concept": "dna-double-helix",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Order these parts from the outside of the double helix to its centre.",
+      "steps": [
+        "Phosphate groups",
+        "Deoxyribose sugars",
+        "Nitrogenous bases",
+        "Hydrogen bonds between paired bases"
+      ],
+      "explanation": "The phosphates are outermost, then the sugars, then the bases pointing inward. The hydrogen bonds between paired bases lie along the middle.",
+      "artifact": "dna-double-helix",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "b's note: Phosphates and sugars both form the backbone; placing phosphates outermost follows the usual textbook picture, but a student could argue the two are at the same level."
+      }
+    },
+    {
+      "id": "biology.dna-structure.major-groove",
+      "concept": "dna-double-helix",
+      "element": "grooves",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "The double helix has a wide major groove and a narrow minor groove. Why does the major groove matter?",
+      "choices": [
+        "Proteins can read the bases there without opening the helix",
+        "New nucleotides are added to the growing strand only at that groove",
+        "It holds the hydrogen bonds between the strands",
+        "It is the only place the strands can separate"
+      ],
+      "answer": 0,
+      "explanation": "The edges of the base pairs are exposed in the grooves, and most of all in the wide major groove, so proteins that switch genes on and off can read the sequence there without opening the helix.",
+      "artifact": "dna-double-helix",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "dna-double-helix",
+      "kind": "model3d",
+      "title": "The DNA double helix",
+      "alt": "A right-handed double helix. Two sugar-phosphate backbones, one dark green and one ochre, wind around each other on the outside. Between them, base pairs form flat two-coloured rungs, each made of two halves that meet in the middle.",
+      "files": {
+        "usdz": "assets/dna-double-helix.usdz",
+        "glb": "assets/dna-double-helix.glb"
+      },
+      "poster": "assets/dna-double-helix.png"
+    },
+    {
+      "id": "nucleotide",
+      "kind": "diagram",
+      "title": "Parts of a nucleotide",
+      "alt": "One DNA nucleotide. A phosphate group, drawn as an ochre ball with four small knobs, is joined to a sand-coloured 5′ carbon, which joins a green pentagon, the deoxyribose sugar. From the right corner of the sugar a red two-ring base sticks out, a pentagon fused to a hexagon. From the lower left corner hangs a blue-grey ball, the hydroxyl group on the 3′ carbon.",
+      "file": "assets/nucleotide.svg",
+      "hotspots": [
+        {
+          "id": "phosphate",
+          "label": "Phosphate group",
+          "x": 0.18,
+          "y": 0.322,
+          "r": 0.07
+        },
+        {
+          "id": "five-prime-carbon",
+          "label": "5′ carbon",
+          "x": 0.329,
+          "y": 0.372,
+          "r": 0.05
+        },
+        {
+          "id": "deoxyribose",
+          "label": "Deoxyribose",
+          "x": 0.467,
+          "y": 0.567,
+          "r": 0.07
+        },
+        {
+          "id": "three-prime-hydroxyl",
+          "label": "3′ hydroxyl group",
+          "x": 0.379,
+          "y": 0.844,
+          "r": 0.05
+        },
+        {
+          "id": "base",
+          "label": "Nitrogenous base",
+          "x": 0.732,
+          "y": 0.494,
+          "r": 0.1
+        }
+      ]
+    },
+    {
+      "id": "base-pairs",
+      "kind": "diagram",
+      "title": "Base pairs between antiparallel strands",
+      "alt": "A short stretch of DNA drawn flat as a ladder. The left strand runs 5′ at the top to 3′ at the bottom and the right strand runs the other way. Four rungs read A-T, G-C, C-G and T-A from top to bottom. A-T rungs have two dashed hydrogen bonds and G-C rungs have three. Each rung pairs a long purine with a short pyrimidine, so all rungs are the same length.",
+      "file": "assets/base-pairs.svg"
+    }
+  ]
+}

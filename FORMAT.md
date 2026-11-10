@@ -136,7 +136,7 @@ Every artifact has `id` (unique in the pack), `kind`, `title`, `alt` (what it sh
 }
 ```
 
-- `file` is an SVG in the pack's `assets/`, drawn on a 1200 by 900 canvas (`viewBox="0 0 1200 900"`). The build renders it to PNG. Use only shapes, paths, gradients and text; no scripts, images, links, filters, style sheets or fonts beyond `sans-serif` and `serif`. Start with a full-size light plate, `<rect width="1200" height="900" rx="44" fill="#FBF8F1"/>`, so it reads the same on a cream page and a near-black one. The house palette and drawing rules are in `pipeline/prompts/author.md`.
+- `file` is an SVG in the pack's `assets/`, drawn on a 1200 by 900 canvas (`viewBox="0 0 1200 900"`). The build renders it to PNG. Use only shapes, paths, gradients and text; no scripts, images, links, filters or style sheets. Ask for `font-family="sans-serif"`: the build sets all text in the DejaVu Sans in `tools/fonts/`, so a picture comes out the same on every machine. Start with a full-size light plate, `<rect width="1200" height="900" rx="44" fill="#FBF8F1"/>`, so it reads the same on a cream page and a near-black one. The house palette and drawing rules are in `pipeline/prompts/author.md`.
 - A diagram used by a `label` item must not print its hotspots' labels. Draw a second diagram with the labels for explanations if you want one.
 - `hotspots`: `x` and `y` are the spot's centre as fractions of the picture's width and height, `r` its radius as a fraction of the width, at least 0.04 so a finger can hit it. Hotspots on one diagram must not overlap.
 

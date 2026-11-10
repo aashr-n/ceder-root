@@ -92,7 +92,7 @@ const GRADED = {
 
 const grader = (pack, round) => SHARED + `Grade blind solvers' answers. Follow ${bank}/pipeline/prompts/grader.md exactly; it is your instructions.
 
-The pack is ${folder(pack)}. Its answers this round are the files ${bank}/.work/answers/${name(pack)}-r${round}-*.json; pass them all to --answers, with --date ${date}. Change only verification fields, and only through the grade tool.`
+The pack is ${folder(pack)}. Its answers this round are the files ${bank}/.work/answers/${name(pack)}-r${round}-*.json; pass them all to --answers, with --date ${date} and --min-solvers ${solvers}. Change only verification fields, and only through the grade tool.`
 
 const repair = (pack, unverified) => SHARED + `Repair one pack's unverified items. Follow ${bank}/pipeline/prompts/repair.md exactly; it is your instructions.
 

@@ -1,0 +1,1752 @@
+{
+  "formatVersion": 1,
+  "id": "statistics.distributions",
+  "subject": "statistics",
+  "title": "Random variables and distributions",
+  "summary": "Random variables, expected value and spread, the binomial and normal distributions, z-scores, and how sample means behave.",
+  "license": "CC-BY-4.0",
+  "concepts": [
+    {
+      "id": "random-variable",
+      "name": "Random variable",
+      "aliases": [
+        "random variables",
+        "discrete random variable",
+        "continuous random variable",
+        "probability distribution"
+      ],
+      "summary": "A random variable is a number whose value is set by the outcome of a random process; its probability distribution gives each value's probability.",
+      "requires": [
+        "sample-space"
+      ],
+      "elements": [
+        {
+          "id": "discrete-vs-continuous",
+          "name": "Discrete and continuous random variables"
+        },
+        {
+          "id": "distribution-table",
+          "name": "Probability distribution table",
+          "aliases": [
+            "probability distribution tables"
+          ]
+        },
+        {
+          "id": "valid-distribution",
+          "name": "Valid probability distribution"
+        },
+        {
+          "id": "notation",
+          "name": "Notation P(X = x)"
+        }
+      ],
+      "explain": {
+        "text": "A random variable is a number that comes out of a random process. Toss two coins and let X be the number of heads: X can be 0, 1 or 2. Its probability distribution lists each value with its probability, here 1/4, 1/2 and 1/4. Every probability is between 0 and 1, and together they add to 1. A discrete random variable takes separate values you can list, such as counts. A continuous one, such as a waiting time or a height, can take any value in a range, so its probabilities are areas under a curve."
+      }
+    },
+    {
+      "id": "expected-value",
+      "name": "Expected value",
+      "aliases": [
+        "expected values",
+        "mean of a random variable",
+        "E(X)",
+        "expectation of a random variable"
+      ],
+      "summary": "The expected value of a random variable is its long-run average: each value times its probability, all added up.",
+      "requires": [
+        "random-variable"
+      ],
+      "elements": [
+        {
+          "id": "expected-value-formula",
+          "name": "E(X) = Σ x · P(X = x)"
+        },
+        {
+          "id": "weighted-average",
+          "name": "Weighted average"
+        },
+        {
+          "id": "long-run-average",
+          "name": "Long-run average"
+        },
+        {
+          "id": "fair-game",
+          "name": "Expected gain of a game",
+          "aliases": [
+            "fair game"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "The expected value of a random variable, written E(X) or μ, is the average you would get over a very long run of repeats. To find it, multiply each value by its probability and add: E(X) = Σ x · P(X = x). It is a weighted average, so likely values pull harder than rare ones. For one roll of a fair die it is (1 + 2 + 3 + 4 + 5 + 6) / 6 = 3.5. No single roll shows 3.5, but the average of thousands of rolls settles close to it. Casinos and insurers set their prices by expected values."
+      }
+    },
+    {
+      "id": "random-variable-spread",
+      "name": "Standard deviation of a random variable",
+      "aliases": [
+        "variance of a random variable",
+        "spread of a random variable",
+        "SD of a random variable"
+      ],
+      "summary": "The standard deviation of a random variable measures how far its values typically fall from the expected value; it is the square root of the variance.",
+      "requires": [
+        "expected-value"
+      ],
+      "elements": [
+        {
+          "id": "variance",
+          "name": "Variance",
+          "aliases": [
+            "Var(X)"
+          ]
+        },
+        {
+          "id": "squared-deviations",
+          "name": "Squared deviations from the mean"
+        },
+        {
+          "id": "sd-as-typical-distance",
+          "name": "Standard deviation as typical distance"
+        },
+        {
+          "id": "units",
+          "name": "Units of variance and standard deviation"
+        }
+      ],
+      "explain": {
+        "text": "Two random variables can have the same expected value and still behave very differently. One might always land close to its mean while the other swings far either way. The standard deviation, σ, measures that spread: roughly, how far a value typically falls from the mean. To find it, take each value's distance from the mean, square it, weight it by its probability and add; that total is the variance. The standard deviation is the square root of the variance, which puts it back in the same units as the values themselves."
+      }
+    },
+    {
+      "id": "binomial-distribution",
+      "name": "Binomial distribution",
+      "aliases": [
+        "binomial distributions",
+        "binomial random variable",
+        "binomial model",
+        "binomial probability"
+      ],
+      "summary": "A binomial random variable counts the successes in n independent trials that each succeed with the same probability p; its mean is np.",
+      "requires": [
+        "random-variable-spread",
+        "independent-events"
+      ],
+      "elements": [
+        {
+          "id": "binomial-conditions",
+          "name": "Binomial conditions",
+          "aliases": [
+            "binomial setting"
+          ]
+        },
+        {
+          "id": "binomial-formula",
+          "name": "Binomial probability formula"
+        },
+        {
+          "id": "binomial-mean",
+          "name": "Mean np"
+        },
+        {
+          "id": "binomial-sd",
+          "name": "Standard deviation √(np(1 − p))"
+        }
+      ],
+      "explain": {
+        "text": "The binomial distribution counts successes. It fits when there is a fixed number of trials n, each trial ends in success or failure, the trials are independent, and every trial succeeds with the same probability p. Toss a fair coin 4 times and count heads: n = 4 and p = 1/2. The chance of exactly k successes is C(n, k) pᵏ (1 − p)ⁿ⁻ᵏ, where C(n, k) counts the orders the successes can come in. So P(2 heads) = 6 × 1/16 = 6/16. On average a binomial gives np successes, here 2, with standard deviation √(np(1 − p)).",
+        "artifact": "binomial-four-tosses"
+      }
+    },
+    {
+      "id": "normal-distribution",
+      "name": "Normal distribution",
+      "aliases": [
+        "normal distributions",
+        "normal curve",
+        "bell curve",
+        "Gaussian distribution",
+        "68-95-99.7 rule",
+        "empirical rule"
+      ],
+      "summary": "The normal distribution is the symmetric bell-shaped curve set by its mean μ and standard deviation σ; about 68%, 95% and 99.7% of values lie within 1, 2 and 3 σ of μ.",
+      "requires": [
+        "random-variable-spread"
+      ],
+      "elements": [
+        {
+          "id": "bell-shape",
+          "name": "Symmetric bell shape"
+        },
+        {
+          "id": "mean-and-sd",
+          "name": "Mean and standard deviation as parameters"
+        },
+        {
+          "id": "area-as-probability",
+          "name": "Area under the curve as probability"
+        },
+        {
+          "id": "empirical-rule",
+          "name": "68-95-99.7 rule",
+          "aliases": [
+            "empirical rule",
+            "three-sigma rule"
+          ]
+        },
+        {
+          "id": "standard-normal",
+          "name": "Standard normal distribution",
+          "aliases": [
+            "standard normal"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "The normal distribution is the bell-shaped curve that describes heights, measurement errors and many other quantities. It is symmetric about its mean μ, and its standard deviation σ sets how wide the bell is. The area under the curve between two values is the probability of landing between them, and the whole area is 1. Every normal curve follows the 68-95-99.7 rule: about 68% of values lie within one σ of the mean, 95% within two, and 99.7% within three. If heights have mean 170 cm and σ 10 cm, about 95% are between 150 and 190 cm.",
+        "artifact": "normal-rule-steps"
+      }
+    },
+    {
+      "id": "z-score",
+      "name": "z-score",
+      "aliases": [
+        "z-scores",
+        "z score",
+        "standard score",
+        "standardized score",
+        "standardised score"
+      ],
+      "summary": "A z-score says how many standard deviations a value lies above or below the mean: z = (x − μ) / σ.",
+      "requires": [
+        "normal-distribution"
+      ],
+      "elements": [
+        {
+          "id": "z-formula",
+          "name": "z = (x − μ) / σ"
+        },
+        {
+          "id": "z-sign",
+          "name": "Sign of a z-score"
+        },
+        {
+          "id": "comparing-scales",
+          "name": "Comparing values on different scales"
+        },
+        {
+          "id": "normal-table",
+          "name": "Standard normal table",
+          "aliases": [
+            "z-table",
+            "z table"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "A z-score measures a value in standard deviations from the mean: z = (x − μ) / σ. A z-score of 2 means two standard deviations above the mean; −1 means one below; 0 means exactly at the mean. This puts different scales on one ruler. A test score of 80 where the mean is 70 and σ is 5 has z = 2, which is more impressive than 90 on a test with mean 80 and σ 10, where z = 1. For a normal distribution, the z-score also gives a percentile: from a standard normal table, or roughly from the 68-95-99.7 rule.",
+        "artifact": "normal-curve-percents"
+      }
+    },
+    {
+      "id": "sampling-distribution",
+      "name": "Sampling distribution",
+      "aliases": [
+        "sampling distributions",
+        "sampling distribution of the mean",
+        "sampling distribution of the sample mean"
+      ],
+      "summary": "A sampling distribution is the distribution of a statistic, such as the sample mean x̄, over all random samples of one size; for x̄ its mean is μ and its standard deviation is σ/√n.",
+      "requires": [
+        "random-variable-spread"
+      ],
+      "elements": [
+        {
+          "id": "statistic-vs-parameter",
+          "name": "Statistic and parameter"
+        },
+        {
+          "id": "sampling-variability",
+          "name": "Sampling variability"
+        },
+        {
+          "id": "mean-of-sample-mean",
+          "name": "Mean of x̄ equals μ"
+        },
+        {
+          "id": "standard-error",
+          "name": "Standard error σ/√n",
+          "aliases": [
+            "standard error of the mean"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "Take a random sample of 25 people and work out their mean height, x̄. Take another sample and x̄ comes out a little different. The sampling distribution is the pattern of all those x̄ values over every possible sample of that size. It is centred on the population mean μ, so x̄ is right on average. Its standard deviation, called the standard error, is σ/√n: bigger samples give means that cluster more tightly. Going from 25 to 100 people halves the standard error, because √100 is twice √25. This is why larger samples give more precise estimates.",
+        "artifact": "clt-skewed-population"
+      }
+    },
+    {
+      "id": "central-limit-theorem",
+      "name": "Central limit theorem",
+      "aliases": [
+        "CLT",
+        "central limit theorems"
+      ],
+      "summary": "The central limit theorem says that for large enough random samples the sampling distribution of x̄ is close to normal, whatever the shape of the population.",
+      "requires": [
+        "sampling-distribution",
+        "normal-distribution"
+      ],
+      "elements": [
+        {
+          "id": "approximately-normal",
+          "name": "Sample means are approximately normal"
+        },
+        {
+          "id": "any-population-shape",
+          "name": "Holds for any population shape"
+        },
+        {
+          "id": "sample-size-rule",
+          "name": "Rule of thumb n ≥ 30"
+        },
+        {
+          "id": "means-not-individuals",
+          "name": "Applies to means, not single values"
+        }
+      ],
+      "explain": {
+        "text": "The central limit theorem says that the means of large random samples follow a nearly normal distribution, even when the population itself is skewed or lumpy. Waiting times at a counter are skewed right, with a few very long waits. But the mean wait of 30 randomly chosen customers varies from sample to sample in a bell shape, centred on μ with standard deviation σ/√n. A common rule of thumb is that n of 30 or more is enough, though very skewed populations need more. It lets us use the normal curve to judge sample means.",
+        "artifact": "clt-skewed-population"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "statistics.distributions.define-random-variable",
+      "concept": "random-variable",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is a random variable?",
+      "answer": "A variable whose value is a number set by the outcome of a random process.",
+      "explanation": "A random variable turns each outcome into a number, such as the number of heads in two tosses.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "statistics.distributions.which-continuous",
+      "concept": "random-variable",
+      "element": "discrete-vs-continuous",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is a continuous random variable?",
+      "choices": [
+        "The number of heads in 10 tosses of a coin",
+        "The number of cars parked in a car park today",
+        "The time a student takes to finish a test",
+        "The number shown on a die after one roll"
+      ],
+      "answer": 2,
+      "explanation": "Time can take any value in a range, such as 41.37 minutes, so it is continuous. The others are counts or labels you can list one by one, so they are discrete.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.missing-probability",
+      "concept": "random-variable",
+      "element": "valid-distribution",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "X takes the values 0, 1 and 2, with P(X = 0) = 0.2 and P(X = 1) = 0.5. What is P(X = 2)?",
+      "choices": [
+        "0.5",
+        "0.7",
+        "0.2",
+        "0.3"
+      ],
+      "answer": 3,
+      "explanation": "The probabilities of all the values add to 1, so P(X = 2) = 1 − 0.2 − 0.5 = 0.3. 0.7 is P(X = 0) + P(X = 1), the chance X is not 2.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.valid-table",
+      "concept": "random-variable",
+      "element": "valid-distribution",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which of these is a valid probability distribution for X?",
+      "choices": [
+        "P(0) = 0.5, P(1) = 0.4, P(2) = 0.3",
+        "P(0) = 0.6, P(1) = 0.3, P(2) = 0.1",
+        "P(0) = 0.7, P(1) = 0.4, P(2) = −0.1",
+        "P(0) = 0.2, P(1) = 0.2, P(2) = 0.2"
+      ],
+      "answer": 1,
+      "explanation": "A valid distribution has every probability between 0 and 1 and a total of 1. 0.6 + 0.3 + 0.1 = 1. The third adds to 1 but has a negative probability; the first adds to 1.2 and the last to 0.6.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.values-of-heads",
+      "concept": "random-variable",
+      "element": "notation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Three coins are tossed and X is the number of heads. Which values can X take?",
+      "choices": [
+        "1, 2 and 3 only",
+        "0, 1, 2 and 3",
+        "0, 1 and 2 only",
+        "0 and 3 only"
+      ],
+      "answer": 1,
+      "explanation": "Three coins can show no heads, one, two or all three, so X can be 0, 1, 2 or 3. Leaving out 0 forgets the outcome TTT.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.at-least-three",
+      "concept": "random-variable",
+      "element": "notation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "X has P(X = 1) = 0.1, P(X = 2) = 0.3, P(X = 3) = 0.4 and P(X = 4) = 0.2. What is P(X ≥ 3)?",
+      "choices": [
+        "0.6",
+        "0.4",
+        "0.7",
+        "0.9"
+      ],
+      "answer": 0,
+      "explanation": "X ≥ 3 means X is 3 or 4, so add 0.4 + 0.2 = 0.6. 0.4 counts only X = 3 and leaves out the 4.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.expected-value-formula",
+      "concept": "expected-value",
+      "element": "expected-value-formula",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "Write the formula for the expected value of a discrete random variable X.",
+      "answer": "E(X) = Σ x · P(X = x): multiply each value by its probability and add.",
+      "explanation": "Weighting each value by its probability gives the long-run average, so likely values count for more.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "statistics.distributions.weighted-not-plain-average",
+      "concept": "expected-value",
+      "element": "weighted-average",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "X is 0 with probability 0.5, 2 with probability 0.3 and 10 with probability 0.2. What is E(X)?",
+      "choices": [
+        "2.6",
+        "4",
+        "2",
+        "3.2"
+      ],
+      "answer": 0,
+      "explanation": "E(X) = 0 × 0.5 + 2 × 0.3 + 10 × 0.2 = 0 + 0.6 + 2 = 2.6. 4 is the plain average of 0, 2 and 10, which ignores that 0 is the most likely value.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.die-expected-value",
+      "concept": "expected-value",
+      "element": "expected-value-formula",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A fair six-sided die is rolled. What is the expected value of the number shown?",
+      "choices": [
+        "3",
+        "4",
+        "3.5",
+        "6"
+      ],
+      "answer": 2,
+      "explanation": "Each face has probability 1/6, so E(X) = (1 + 2 + 3 + 4 + 5 + 6) / 6 = 21/6 = 3.5. The expected value does not have to be a value the die can show.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.game-expected-gain",
+      "concept": "expected-value",
+      "element": "fair-game",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A game costs $2 to play. You win $10 with probability 0.1 and nothing otherwise. What is your expected gain per game, after paying to play?",
+      "choices": [
+        "$1",
+        "−$1",
+        "$8",
+        "−$2"
+      ],
+      "answer": 1,
+      "explanation": "Expected winnings are 10 × 0.1 = $1. Taking off the $2 cost leaves an expected gain of −$1 a game. $1 forgets the cost; $8 is the gain on a winning game only.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "b's note: Assumes the $10 is the gross prize, not a net gain after the $2 fee; read as a net win the gain would be −$0.80, which is not a choice, so the gross reading (−$1) is clearly intended."
+      }
+    },
+    {
+      "id": "statistics.distributions.meaning-of-expected-value",
+      "concept": "expected-value",
+      "element": "long-run-average",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "The expected value of a die roll is 3.5. What does that mean?",
+      "choices": [
+        "Over many rolls, the average will be close to 3.5",
+        "The die will often land on 3.5",
+        "Exactly half of any set of rolls will be above 3.5",
+        "3 and 4 are the most likely results"
+      ],
+      "answer": 0,
+      "explanation": "Expected value is a long-run average. A die never shows 3.5, a short run need not split evenly, and all six faces are equally likely.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.expected-value-steps",
+      "concept": "expected-value",
+      "element": "expected-value-formula",
+      "kind": "order",
+      "difficulty": 1,
+      "prompt": "Put the steps in order to find the expected value of a discrete random variable.",
+      "steps": [
+        "List each value the variable can take with its probability",
+        "Multiply each value by its probability",
+        "Add up all the products"
+      ],
+      "explanation": "E(X) = Σ x · P(X = x): you need the values and probabilities first, then the products, then their sum.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.raffle-ticket",
+      "concept": "expected-value",
+      "element": "fair-game",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A raffle sells 100 tickets at $1 each and gives one $50 prize. What is the expected value of one ticket to its buyer, after its price?",
+      "choices": [
+        "$0.50",
+        "−$1",
+        "−$0.50",
+        "$49"
+      ],
+      "answer": 2,
+      "explanation": "A ticket wins $50 with probability 1/100, worth 50 × 0.01 = $0.50 on average. Taking off the $1 price gives −$0.50. $0.50 forgets the price; $49 is the gain only if the ticket wins.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.what-sd-measures",
+      "concept": "random-variable-spread",
+      "element": "sd-as-typical-distance",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What does the standard deviation of a random variable measure?",
+      "answer": "How far its values typically fall from its expected value: its spread.",
+      "explanation": "A small standard deviation means values stay close to the mean; a large one means they often land far from it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "statistics.distributions.variance-and-sd",
+      "concept": "random-variable-spread",
+      "element": "variance",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How are the variance and the standard deviation of a random variable related?",
+      "choices": [
+        "The variance is half the standard deviation",
+        "The standard deviation is the square root of the variance",
+        "They are the same number in different units",
+        "The standard deviation is the variance multiplied by itself"
+      ],
+      "answer": 1,
+      "explanation": "The variance averages squared distances from the mean, and taking its square root gives the standard deviation, back in the units of the values.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.zero-or-two-sd",
+      "concept": "random-variable-spread",
+      "element": "squared-deviations",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "X is 0 or 2, each with probability 1/2. What is the standard deviation of X?",
+      "choices": [
+        "0",
+        "2",
+        "√2",
+        "1"
+      ],
+      "answer": 3,
+      "explanation": "The mean is 1. Both values are 1 away from it, so the variance is 1² × 1/2 + 1² × 1/2 = 1 and the standard deviation is √1 = 1. 2 is the range, not the spread around the mean.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.sd-steps",
+      "concept": "random-variable-spread",
+      "element": "squared-deviations",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps in order to find the standard deviation of a discrete random variable.",
+      "steps": [
+        "Find the expected value μ",
+        "Subtract μ from each value",
+        "Square each of those differences",
+        "Multiply each square by its probability and add them to get the variance",
+        "Take the square root of the variance"
+      ],
+      "explanation": "Distances from the mean need the mean first. Squaring stops positive and negative distances cancelling, weighting by probability averages them, and the square root returns to the original units.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.compare-spreads",
+      "concept": "random-variable-spread",
+      "element": "sd-as-typical-distance",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "X and Y both have expected value 50. X has standard deviation 2 and Y has standard deviation 15. Which is true?",
+      "choices": [
+        "Y's values usually land closer to 50 than X's",
+        "Y has the larger expected value",
+        "X is more likely than Y to exceed 60",
+        "X's values usually land closer to 50 than Y's"
+      ],
+      "answer": 3,
+      "explanation": "A smaller standard deviation means values cluster more tightly around the mean, so X stays nearer 50. Both have the same expected value, and Y, being more spread out, is the one more likely to pass 60.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.variance-one-two-three",
+      "concept": "random-variable-spread",
+      "element": "variance",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "X takes the values 1, 2 and 3, each with probability 1/3. What is the variance of X?",
+      "choices": [
+        "1",
+        "2",
+        "2/3",
+        "√(2/3)"
+      ],
+      "answer": 2,
+      "explanation": "The mean is 2. The squared distances are 1, 0 and 1, each weighted by 1/3, giving 2/3. √(2/3) is the standard deviation, not the variance.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.variance-units",
+      "concept": "random-variable-spread",
+      "element": "units",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "X is a length measured in metres. In what units is the variance of X?",
+      "choices": [
+        "Square metres",
+        "Metres",
+        "It has no units",
+        "Square roots of metres"
+      ],
+      "answer": 0,
+      "explanation": "The variance averages squared distances, so its units are squared: square metres. Taking the square root gives the standard deviation, back in metres.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.binomial-conditions",
+      "concept": "binomial-distribution",
+      "element": "binomial-conditions",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "Name the four conditions for a binomial setting.",
+      "answer": "A fixed number of trials n; each trial is a success or a failure; the trials are independent; the probability of success p is the same on every trial.",
+      "explanation": "If any condition fails, such as drawing without replacement from a small group, the count of successes is not binomial.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "statistics.distributions.which-is-binomial",
+      "concept": "binomial-distribution",
+      "element": "binomial-conditions",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is a binomial setting?",
+      "choices": [
+        "Rolling a die until a 6 appears and counting the rolls",
+        "Counting the heads in 10 tosses of a fair coin",
+        "Measuring the heights of 10 students",
+        "Drawing 3 cards from a 6-card hand without replacement and counting aces"
+      ],
+      "answer": 1,
+      "explanation": "Ten tosses is a fixed n, each toss is heads or not, tosses are independent, and p = 1/2 every time. Rolling until a 6 has no fixed n, heights are not successes and failures, and drawing without replacement changes p.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.two-heads-in-three",
+      "concept": "binomial-distribution",
+      "element": "binomial-formula",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A fair coin is tossed 3 times. What is the probability of exactly 2 heads?",
+      "choices": [
+        "3/8",
+        "1/4",
+        "1/2",
+        "2/3"
+      ],
+      "answer": 0,
+      "explanation": "There are C(3, 2) = 3 orders (HHT, HTH, THH), each with probability 1/8, so the answer is 3/8. 1/4 is 1/2 × 1/2, which ignores the third toss and the three orders the heads can come in.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.binomial-mean",
+      "concept": "binomial-distribution",
+      "element": "binomial-mean",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "X is binomial with n = 20 and p = 0.3. What is its mean?",
+      "choices": [
+        "0.3",
+        "14",
+        "4.2",
+        "6"
+      ],
+      "answer": 3,
+      "explanation": "The mean of a binomial is np = 20 × 0.3 = 6. 4.2 is the variance, np(1 − p), and 14 is the expected number of failures.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.binomial-sd",
+      "concept": "binomial-distribution",
+      "element": "binomial-sd",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "X is binomial with n = 100 and p = 0.5. What is its standard deviation?",
+      "choices": [
+        "25",
+        "50",
+        "5",
+        "10"
+      ],
+      "answer": 2,
+      "explanation": "The standard deviation is √(np(1 − p)) = √(100 × 0.5 × 0.5) = √25 = 5. 25 is the variance, before taking the square root, and 50 is the mean.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.binomial-formula",
+      "concept": "binomial-distribution",
+      "element": "binomial-formula",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "Write the binomial formula for P(X = k), the probability of exactly k successes in n trials.",
+      "answer": "P(X = k) = C(n, k) · pᵏ · (1 − p)ⁿ⁻ᵏ.",
+      "explanation": "pᵏ(1 − p)ⁿ⁻ᵏ is the chance of one particular order of k successes and n − k failures, and C(n, k) counts how many such orders there are.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "statistics.distributions.guess-all-four",
+      "concept": "binomial-distribution",
+      "element": "binomial-formula",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A quiz has 4 true-or-false questions, and a student guesses every answer. What is the probability of getting all 4 right?",
+      "choices": [
+        "1/2",
+        "1/4",
+        "1/8",
+        "1/16"
+      ],
+      "answer": 3,
+      "explanation": "Each guess is right with probability 1/2, independently, so all four is (1/2)⁴ = 1/16. 1/8 stops at three questions.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.normal-parameters",
+      "concept": "normal-distribution",
+      "element": "mean-and-sd",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "Which two numbers completely describe a normal distribution?",
+      "answer": "Its mean μ and its standard deviation σ.",
+      "explanation": "The mean sets where the bell is centred and the standard deviation sets how wide it is.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "statistics.distributions.normal-mean-median",
+      "concept": "normal-distribution",
+      "element": "bell-shape",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In a normal distribution, how do the mean and the median compare?",
+      "choices": [
+        "The mean is larger",
+        "The median is larger",
+        "It depends on σ",
+        "They are equal"
+      ],
+      "answer": 3,
+      "explanation": "A normal curve is symmetric about its centre, so half the area lies on each side of the mean, which makes the mean the median too.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.heights-68",
+      "concept": "normal-distribution",
+      "element": "empirical-rule",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Heights are normal with mean 170 cm and standard deviation 10 cm. About what percent of heights are between 160 and 180 cm?",
+      "choices": [
+        "68%",
+        "50%",
+        "95%",
+        "99.7%"
+      ],
+      "answer": 0,
+      "explanation": "160 and 180 are one standard deviation either side of the mean, and about 68% of a normal distribution lies within one standard deviation.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.scores-95",
+      "concept": "normal-distribution",
+      "element": "empirical-rule",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Test scores are normal with mean 60 and standard deviation 5. About what percent of scores are between 50 and 70?",
+      "choices": [
+        "68%",
+        "34%",
+        "95%",
+        "99.7%"
+      ],
+      "answer": 2,
+      "explanation": "50 and 70 are each 10 = 2 × 5 from the mean, so they are two standard deviations away, and about 95% lies within two.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.iq-above-130",
+      "concept": "normal-distribution",
+      "element": "empirical-rule",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "IQ scores are normal with mean 100 and standard deviation 15. About what percent of people score above 130?",
+      "choices": [
+        "5%",
+        "0.15%",
+        "16%",
+        "2.5%"
+      ],
+      "answer": 3,
+      "explanation": "130 is two standard deviations above 100. About 95% lie within two, leaving 5% outside, split equally between the two tails: 2.5% above 130. 5% counts both tails.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "b's note: By the 68-95-99.7 rule the answer is 2.5%; the exact normal value is about 2.3%."
+      }
+    },
+    {
+      "id": "statistics.distributions.tap-mean-to-plus-one",
+      "concept": "normal-distribution",
+      "element": "empirical-rule",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "On this normal curve, the marks along the bottom are one standard deviation apart and the dashed line is at the mean. Tap the region from the mean up to one standard deviation above it.",
+      "target": "r0-1",
+      "explanation": "Above the mean is to the right of the dashed line. The first band to its right runs to the first mark, one standard deviation up, and holds about 34% of values.",
+      "artifact": "normal-curve-bands",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.tap-thirteen-point-five",
+      "concept": "normal-distribution",
+      "element": "empirical-rule",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "On this normal curve, the marks along the bottom are one standard deviation apart and the dashed line is at the mean. Tap the region above the mean that holds about 13.5% of values.",
+      "target": "r1-2",
+      "explanation": "Within two standard deviations is 95% and within one is 68%, so the two bands between them hold 27%, or 13.5% each. The one above the mean runs from one to two standard deviations up.",
+      "artifact": "normal-curve-bands",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.tap-two-to-three-below",
+      "concept": "normal-distribution",
+      "element": "empirical-rule",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "On this normal curve, the marks along the bottom are one standard deviation apart and the dashed line is at the mean. Tap the region between two and three standard deviations below the mean.",
+      "target": "l2-3",
+      "explanation": "Below the mean is to the left. Count two marks to the left of the dashed line; the thin band from there to the third mark holds about 2.35% of values.",
+      "artifact": "normal-curve-bands",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.state-empirical-rule",
+      "concept": "normal-distribution",
+      "element": "empirical-rule",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "State the 68-95-99.7 rule for a normal distribution.",
+      "answer": "About 68% of values lie within one standard deviation of the mean, 95% within two, and 99.7% within three.",
+      "explanation": "The rule holds for every normal distribution, whatever its mean and standard deviation, which makes it a quick way to judge how unusual a value is.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "statistics.distributions.area-meaning",
+      "concept": "normal-distribution",
+      "element": "area-as-probability",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "For a normal distribution, what does the area under the curve between two values give?",
+      "choices": [
+        "The average of all the values that lie between the two",
+        "The number of standard deviations between them",
+        "The height of the curve between them",
+        "The probability that a value falls between them"
+      ],
+      "answer": 3,
+      "explanation": "For a continuous distribution, probability is area under the curve, and the total area is 1. The curve's height is not itself a probability.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.z-formula",
+      "concept": "z-score",
+      "element": "z-formula",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "Write the formula for the z-score of a value x from a distribution with mean μ and standard deviation σ.",
+      "answer": "z = (x − μ) / σ.",
+      "explanation": "Subtracting the mean measures how far x is from the centre, and dividing by σ turns that distance into standard deviations.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "statistics.distributions.meaning-of-minus-two",
+      "concept": "z-score",
+      "element": "z-sign",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A value has a z-score of −2. What does that mean?",
+      "choices": [
+        "It is 2 units below the mean, whatever the scale",
+        "It is 2 standard deviations below the mean",
+        "It is in the lowest 2% of values",
+        "It is half the size of the mean"
+      ],
+      "answer": 1,
+      "explanation": "A z-score counts standard deviations from the mean, and the minus sign means below. It is not 2 units, unless σ happens to be 1.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.exam-z",
+      "concept": "z-score",
+      "element": "z-formula",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Exam scores have mean 70 and standard deviation 8. What is the z-score of a score of 82?",
+      "choices": [
+        "12",
+        "−1.5",
+        "1.5",
+        "0.67"
+      ],
+      "answer": 2,
+      "explanation": "z = (82 − 70) / 8 = 12 / 8 = 1.5. 12 is the distance in points, before dividing by the standard deviation.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.compare-two-tests",
+      "concept": "z-score",
+      "element": "comparing-scales",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Ana scores 80 on a test with mean 70 and standard deviation 5. Ben scores 90 on a test with mean 80 and standard deviation 10. Who did better compared with their own class?",
+      "choices": [
+        "Ana, because her z-score is 2 and Ben's is 1",
+        "Ben, because his score of 90 is higher",
+        "Neither: both scored 10 points above their mean",
+        "Ben, because his test had a larger spread"
+      ],
+      "answer": 0,
+      "explanation": "Ana: (80 − 70) / 5 = 2. Ben: (90 − 80) / 10 = 1. Both are 10 points above the mean, but 10 points is two standard deviations for Ana and only one for Ben.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.tap-z-minus-one-point-five",
+      "concept": "z-score",
+      "element": "z-sign",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "On this normal curve, the marks along the bottom are one standard deviation apart and the dashed line is at the mean. Tap the region where a value with a z-score of −1.5 falls.",
+      "target": "l1-2",
+      "explanation": "−1.5 means one and a half standard deviations below the mean. That is left of the dashed line, between the first and second marks.",
+      "artifact": "normal-curve-bands",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.z-of-zero",
+      "concept": "z-score",
+      "element": "z-formula",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A value has a z-score of 0. What does that tell you?",
+      "choices": [
+        "It equals the standard deviation",
+        "It could not have happened",
+        "It equals the mean",
+        "It is the smallest value"
+      ],
+      "answer": 2,
+      "explanation": "z = (x − μ) / σ is 0 only when x = μ, so the value sits exactly at the mean.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.percent-above-steps",
+      "concept": "z-score",
+      "element": "normal-table",
+      "kind": "order",
+      "difficulty": 3,
+      "prompt": "Put the steps in order to find the percent of a normal population above a value x.",
+      "steps": [
+        "Subtract the mean from x",
+        "Divide by the standard deviation to get z",
+        "Look up the area to the left of z in a standard normal table",
+        "Subtract that area from 1"
+      ],
+      "explanation": "A standard normal table usually gives the area to the left of z, so the area above x is 1 minus that. The table needs z, and z needs the distance from the mean first.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.value-from-z",
+      "concept": "z-score",
+      "element": "z-formula",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Race times are normal with mean 50 seconds and standard deviation 4 seconds. Which time has a z-score of −0.5?",
+      "choices": [
+        "46 seconds",
+        "49.5 seconds",
+        "52 seconds",
+        "48 seconds"
+      ],
+      "answer": 3,
+      "explanation": "x = μ + zσ = 50 + (−0.5)(4) = 48 seconds. 49.5 subtracts 0.5 seconds instead of half a standard deviation.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.define-sampling-distribution",
+      "concept": "sampling-distribution",
+      "element": "sampling-variability",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is a sampling distribution?",
+      "answer": "The distribution of a statistic, such as the sample mean, over all possible random samples of the same size from a population.",
+      "explanation": "Each sample gives a slightly different statistic, and the sampling distribution describes how those values vary.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "statistics.distributions.which-is-statistic",
+      "concept": "sampling-distribution",
+      "element": "statistic-vs-parameter",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is a statistic rather than a parameter?",
+      "choices": [
+        "The mean height of 50 students picked at random",
+        "The mean height of all students in a country",
+        "The proportion of all voters who back a candidate",
+        "The standard deviation of a whole population"
+      ],
+      "answer": 0,
+      "explanation": "A statistic is computed from a sample; a parameter describes the whole population. Only the 50 students are a sample.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.standard-error-numbers",
+      "concept": "sampling-distribution",
+      "element": "standard-error",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A population has mean 40 and standard deviation 12. For random samples of size 16, what is the standard deviation of the sample mean x̄?",
+      "choices": [
+        "12",
+        "0.75",
+        "3",
+        "40"
+      ],
+      "answer": 2,
+      "explanation": "The standard error is σ/√n = 12/√16 = 12/4 = 3. 0.75 divides by n instead of √n.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.quadruple-n",
+      "concept": "sampling-distribution",
+      "element": "standard-error",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "The sample size grows from 25 to 100. What happens to the standard deviation of the sampling distribution of x̄?",
+      "choices": [
+        "It doubles",
+        "It stays the same",
+        "It is divided by 4",
+        "It halves"
+      ],
+      "answer": 3,
+      "explanation": "The standard error is σ/√n. √25 = 5 and √100 = 10, so it goes from σ/5 to σ/10, half as large. Dividing by 4 would need n to grow sixteenfold.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.mean-of-xbar",
+      "concept": "sampling-distribution",
+      "element": "mean-of-sample-mean",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A population has mean 40. What is the mean of the sampling distribution of x̄ for random samples of size 25?",
+      "choices": [
+        "40",
+        "8",
+        "1.6",
+        "It depends on the population's shape"
+      ],
+      "answer": 0,
+      "explanation": "The sample mean is unbiased: its sampling distribution is centred on μ, here 40, for any sample size and any population shape. 8 is 40 divided by √25, which mixes it up with the standard error.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.name-standard-error",
+      "concept": "sampling-distribution",
+      "element": "standard-error",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "What is the standard deviation of the sampling distribution of a statistic, such as σ/√n for x̄, called?",
+      "answer": "The standard error.",
+      "explanation": "The standard error measures how much the statistic varies from sample to sample, which tells you how precise an estimate is.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "statistics.distributions.simulate-sampling-distribution",
+      "concept": "sampling-distribution",
+      "element": "sampling-variability",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps in order to build a sampling distribution of the mean by simulation.",
+      "steps": [
+        "Take a random sample of size n from the population",
+        "Work out that sample's mean x̄",
+        "Repeat with many new random samples of the same size",
+        "Draw a histogram of all the sample means"
+      ],
+      "explanation": "Each repeat gives one x̄. Only after many repeats is there a set of means whose histogram shows the sampling distribution.",
+      "artifact": "clt-skewed-population",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.state-clt",
+      "concept": "central-limit-theorem",
+      "element": "approximately-normal",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "State the central limit theorem in one sentence.",
+      "answer": "For large enough random samples, the sampling distribution of the sample mean is approximately normal, whatever the shape of the population.",
+      "explanation": "It is about means of samples, and it holds even when the population is skewed, which is why the normal curve is used so widely for x̄.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both give the key statement; a adds the finite standard deviation condition, which is correct and narrows nothing in the key."
+      }
+    },
+    {
+      "id": "statistics.distributions.skewed-population-means",
+      "concept": "central-limit-theorem",
+      "element": "any-population-shape",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A population is strongly skewed to the right. What shape is the sampling distribution of x̄ for random samples of size 100?",
+      "choices": [
+        "Approximately normal",
+        "Strongly skewed to the right",
+        "Flat, like a uniform distribution",
+        "Skewed to the left"
+      ],
+      "answer": 0,
+      "explanation": "With n = 100 the central limit theorem applies, so the sample means are close to normal even though single values are skewed. The population's skew shows in individual values, not in means of large samples.",
+      "artifact": "clt-skewed-population",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.what-becomes-normal",
+      "concept": "central-limit-theorem",
+      "element": "means-not-individuals",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "According to the central limit theorem, what becomes approximately normal as the sample size grows?",
+      "choices": [
+        "The values within each sample",
+        "The shape of the population itself",
+        "The distribution of sample means",
+        "The sample size itself"
+      ],
+      "answer": 2,
+      "explanation": "The theorem is about the sampling distribution of x̄. The values in one sample still follow the population's shape, however large the sample.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.rule-of-thumb",
+      "concept": "central-limit-theorem",
+      "element": "sample-size-rule",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A common rule of thumb says the central limit theorem can be used once samples are at least what size?",
+      "choices": [
+        "5",
+        "10",
+        "30",
+        "1000"
+      ],
+      "answer": 2,
+      "explanation": "About 30 is the usual guideline. Strongly skewed populations may need more, and normal populations need no minimum.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.rice-bags",
+      "concept": "central-limit-theorem",
+      "element": "approximately-normal",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Bags of rice have mean weight 500 g and standard deviation 20 g. A random sample of 100 bags is weighed. About what is the probability that their mean weight is above 504 g?",
+      "choices": [
+        "16%",
+        "42%",
+        "2.5%",
+        "34%"
+      ],
+      "answer": 2,
+      "explanation": "The standard error is 20/√100 = 2 g, so 504 g is two standard errors above 500. The sample mean is close to normal, and about 2.5% lies more than two standard deviations above the mean. 42% treats 504 g as a single bag, only 0.2 σ above.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "b's note: By the 68-95-99.7 rule z = 2 gives 2.5%; the exact value is about 2.3%."
+      }
+    },
+    {
+      "id": "statistics.distributions.normal-population-any-n",
+      "concept": "central-limit-theorem",
+      "element": "sample-size-rule",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "The population itself is normal. For which sample sizes is the sampling distribution of x̄ normal?",
+      "choices": [
+        "Only when n is 30 or more",
+        "For any sample size",
+        "Only when n is 100 or more",
+        "For no sample size, only roughly"
+      ],
+      "answer": 1,
+      "explanation": "Means of samples from a normal population are exactly normal for every n. The n ≥ 30 rule is for populations that are not normal.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "statistics.distributions.middle-95-of-means",
+      "concept": "central-limit-theorem",
+      "element": "approximately-normal",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A population has mean 70 and standard deviation 10, shape unknown. For random samples of size 25, about 95% of sample means fall between which values?",
+      "choices": [
+        "50 and 90",
+        "60 and 80",
+        "66 and 74",
+        "68 and 72"
+      ],
+      "answer": 2,
+      "explanation": "With n = 25 the sample means are close to normal with standard error 10/√25 = 2. 95% lie within two standard errors: 70 ± 4, so 66 to 74. 50 to 90 uses σ = 10 for single values; 68 to 72 is only one standard error.",
+      "verification": {
+        "status": "draft",
+        "note": "Set back to draft by the coordinator on 2026-11-10. Both solvers agreed with the key and both noted that it leans on the central limit theorem at n = 25 with the shape unknown, under the n ≥ 30 rule of thumb the pack itself teaches."
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "normal-curve-bands",
+      "kind": "diagram",
+      "title": "A normal curve in standard deviation bands",
+      "alt": "A symmetric bell curve over a horizontal axis with seven evenly spaced tick marks and a dashed line up the middle at the peak. The area under it is shaded in bands one standard deviation wide: sage green within one of the centre, sand between one and two, and terracotta between two and three, matching on each side.",
+      "file": "assets/normal-curve-bands.svg",
+      "hotspots": [
+        {
+          "id": "l2-3",
+          "label": "2 to 3 σ below the mean",
+          "x": 0.1875,
+          "y": 0.828,
+          "r": 0.05
+        },
+        {
+          "id": "l1-2",
+          "label": "1 to 2 σ below the mean",
+          "x": 0.3125,
+          "y": 0.743,
+          "r": 0.055
+        },
+        {
+          "id": "l0-1",
+          "label": "0 to 1 σ below the mean",
+          "x": 0.4375,
+          "y": 0.57,
+          "r": 0.055
+        },
+        {
+          "id": "r0-1",
+          "label": "0 to 1 σ above the mean",
+          "x": 0.5625,
+          "y": 0.57,
+          "r": 0.055
+        },
+        {
+          "id": "r1-2",
+          "label": "1 to 2 σ above the mean",
+          "x": 0.6875,
+          "y": 0.743,
+          "r": 0.055
+        },
+        {
+          "id": "r2-3",
+          "label": "2 to 3 σ above the mean",
+          "x": 0.8125,
+          "y": 0.828,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "normal-curve-percents",
+      "kind": "diagram",
+      "title": "The 68-95-99.7 rule",
+      "alt": "A symmetric bell curve over a horizontal axis with seven evenly spaced tick marks and a dashed line up the middle at the peak. The ticks are labelled μ − 3σ to μ + 3σ. The two bands within one σ of the mean are labelled 34% each, the bands from one to two σ 13.5% each, and the thin bands from two to three σ 2.35% each.",
+      "file": "assets/normal-curve-percents.svg",
+      "hotspots": [
+        {
+          "id": "mean",
+          "label": "The mean",
+          "x": 0.5,
+          "y": 0.256,
+          "r": 0.05
+        },
+        {
+          "id": "within-one",
+          "label": "Mean to 1 σ above",
+          "x": 0.5625,
+          "y": 0.57,
+          "r": 0.055
+        },
+        {
+          "id": "one-to-two",
+          "label": "1 to 2 σ above",
+          "x": 0.6875,
+          "y": 0.743,
+          "r": 0.055
+        },
+        {
+          "id": "two-to-three",
+          "label": "2 to 3 σ above",
+          "x": 0.8125,
+          "y": 0.828,
+          "r": 0.05
+        },
+        {
+          "id": "beyond-three",
+          "label": "Beyond 3 σ above",
+          "x": 0.9125,
+          "y": 0.836,
+          "r": 0.04
+        }
+      ]
+    },
+    {
+      "id": "normal-rule-steps",
+      "kind": "sequence",
+      "title": "The 68-95-99.7 rule, band by band",
+      "alt": "Five steps over the labelled normal curve: the peak at the mean, 68% within one standard deviation, 95% within two, 99.7% within three, and the 0.3% beyond.",
+      "over": "normal-curve-percents",
+      "steps": [
+        {
+          "title": "The centre",
+          "text": "The curve peaks at the mean μ and is symmetric, so half of all values lie on each side.",
+          "focus": "mean"
+        },
+        {
+          "title": "Within one σ",
+          "text": "About 68% of values lie between μ − σ and μ + σ: 34% on each side of the mean.",
+          "focus": "within-one"
+        },
+        {
+          "title": "Within two σ",
+          "text": "The next band on each side holds about 13.5%, so about 95% lie between μ − 2σ and μ + 2σ.",
+          "focus": "one-to-two"
+        },
+        {
+          "title": "Within three σ",
+          "text": "The thin outer bands hold about 2.35% each, bringing the total within 3σ to about 99.7%.",
+          "focus": "two-to-three"
+        },
+        {
+          "title": "Beyond three σ",
+          "text": "Only about 0.3% of values lie more than 3σ from the mean, 0.15% in each tail.",
+          "focus": "beyond-three"
+        }
+      ]
+    },
+    {
+      "id": "binomial-four-tosses",
+      "kind": "diagram",
+      "title": "Heads in four coin tosses",
+      "alt": "A bar chart of the binomial distribution with n = 4 and p = 1/2. The bars for 0, 1, 2, 3 and 4 heads have heights 1/16, 4/16, 6/16, 4/16 and 1/16, symmetric about 2.",
+      "file": "assets/binomial-four-tosses.svg"
+    },
+    {
+      "id": "clt-skewed-population",
+      "kind": "diagram",
+      "title": "A skewed population and its sample means",
+      "alt": "Top: a population curve skewed to the right, with a long tail. Bottom: the distribution of means of samples of size 30 from it, a narrow, symmetric bell. A dashed line shows both share the same mean μ.",
+      "file": "assets/clt-skewed-population.svg"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+<rect width="1200" height="900" rx="44" fill="#FBF8F1"/>
+<line x1="200" y1="110" x2="200" y2="800" stroke="#2C4A3B" stroke-width="16" stroke-linecap="round"/>
+<line x1="1000" y1="110" x2="1000" y2="800" stroke="#BA9957" stroke-width="16" stroke-linecap="round"/>
+<rect x="250" y="170" width="300" height="90" rx="22" fill="#C96E52" stroke="#8E4A35" stroke-width="5"/>
+<rect x="750" y="170" width="200" height="90" rx="22" fill="#F2C091" stroke="#B9874F" stroke-width="5"/>
+<line x1="564" y1="199" x2="736" y2="199" stroke="#1D2A24" stroke-width="6" stroke-dasharray="12 10" stroke-linecap="round"/>
+<line x1="564" y1="231" x2="736" y2="231" stroke="#1D2A24" stroke-width="6" stroke-dasharray="12 10" stroke-linecap="round"/>
+<text x="400" y="231" font-family="sans-serif" font-size="48" font-weight="bold" fill="#1D2A24" text-anchor="middle">A</text>
+<text x="850" y="231" font-family="sans-serif" font-size="48" font-weight="bold" fill="#1D2A24" text-anchor="middle">T</text>
+<polygon points="200.0,181.0 232.3,204.5 220.0,242.5 180.0,242.5 167.7,204.5" fill="#B8C99E" stroke="#6F8A5A" stroke-width="5"/>
+<polygon points="1000.0,181.0 1032.3,204.5 1020.0,242.5 980.0,242.5 967.7,204.5" fill="#B8C99E" stroke="#6F8A5A" stroke-width="5"/>
+<rect x="250" y="330" width="300" height="90" rx="22" fill="#7A99B3" stroke="#4F6E87" stroke-width="5"/>
+<rect x="750" y="330" width="200" height="90" rx="22" fill="#B8C99E" stroke="#6F8A5A" stroke-width="5"/>
+<line x1="564" y1="349" x2="736" y2="349" stroke="#1D2A24" stroke-width="6" stroke-dasharray="12 10" stroke-linecap="round"/>
+<line x1="564" y1="375" x2="736" y2="375" stroke="#1D2A24" stroke-width="6" stroke-dasharray="12 10" stroke-linecap="round"/>
+<line x1="564" y1="401" x2="736" y2="401" stroke="#1D2A24" stroke-width="6" stroke-dasharray="12 10" stroke-linecap="round"/>
+<text x="400" y="391" font-family="sans-serif" font-size="48" font-weight="bold" fill="#1D2A24" text-anchor="middle">G</text>
+<text x="850" y="391" font-family="sans-serif" font-size="48" font-weight="bold" fill="#1D2A24" text-anchor="middle">C</text>
+<polygon points="200.0,341.0 232.3,364.5 220.0,402.5 180.0,402.5 167.7,364.5" fill="#B8C99E" stroke="#6F8A5A" stroke-width="5"/>
+<polygon points="1000.0,341.0 1032.3,364.5 1020.0,402.5 980.0,402.5 967.7,364.5" fill="#B8C99E" stroke="#6F8A5A" stroke-width="5"/>
+<rect x="250" y="490" width="200" height="90" rx="22" fill="#B8C99E" stroke="#6F8A5A" stroke-width="5"/>
+<rect x="650" y="490" width="300" height="90" rx="22" fill="#7A99B3" stroke="#4F6E87" stroke-width="5"/>
+<line x1="464" y1="509" x2="636" y2="509" stroke="#1D2A24" stroke-width="6" stroke-dasharray="12 10" stroke-linecap="round"/>
+<line x1="464" y1="535" x2="636" y2="535" stroke="#1D2A24" stroke-width="6" stroke-dasharray="12 10" stroke-linecap="round"/>
+<line x1="464" y1="561" x2="636" y2="561" stroke="#1D2A24" stroke-width="6" stroke-dasharray="12 10" stroke-linecap="round"/>
+<text x="350" y="551" font-family="sans-serif" font-size="48" font-weight="bold" fill="#1D2A24" text-anchor="middle">C</text>
+<text x="800" y="551" font-family="sans-serif" font-size="48" font-weight="bold" fill="#1D2A24" text-anchor="middle">G</text>
+<polygon points="200.0,501.0 232.3,524.5 220.0,562.5 180.0,562.5 167.7,524.5" fill="#B8C99E" stroke="#6F8A5A" stroke-width="5"/>
+<polygon points="1000.0,501.0 1032.3,524.5 1020.0,562.5 980.0,562.5 967.7,524.5" fill="#B8C99E" stroke="#6F8A5A" stroke-width="5"/>
+<rect x="250" y="650" width="200" height="90" rx="22" fill="#F2C091" stroke="#B9874F" stroke-width="5"/>
+<rect x="650" y="650" width="300" height="90" rx="22" fill="#C96E52" stroke="#8E4A35" stroke-width="5"/>
+<line x1="464" y1="679" x2="636" y2="679" stroke="#1D2A24" stroke-width="6" stroke-dasharray="12 10" stroke-linecap="round"/>
+<line x1="464" y1="711" x2="636" y2="711" stroke="#1D2A24" stroke-width="6" stroke-dasharray="12 10" stroke-linecap="round"/>
+<text x="350" y="711" font-family="sans-serif" font-size="48" font-weight="bold" fill="#1D2A24" text-anchor="middle">T</text>
+<text x="800" y="711" font-family="sans-serif" font-size="48" font-weight="bold" fill="#1D2A24" text-anchor="middle">A</text>
+<polygon points="200.0,661.0 232.3,684.5 220.0,722.5 180.0,722.5 167.7,684.5" fill="#B8C99E" stroke="#6F8A5A" stroke-width="5"/>
+<polygon points="1000.0,661.0 1032.3,684.5 1020.0,722.5 980.0,722.5 967.7,684.5" fill="#B8C99E" stroke="#6F8A5A" stroke-width="5"/>
+<circle cx="200" cy="135" r="22" fill="#BA9957" stroke="#86692F" stroke-width="5"/>
+<circle cx="1000" cy="135" r="22" fill="#BA9957" stroke="#86692F" stroke-width="5"/>
+<circle cx="200" cy="295" r="22" fill="#BA9957" stroke="#86692F" stroke-width="5"/>
+<circle cx="1000" cy="295" r="22" fill="#BA9957" stroke="#86692F" stroke-width="5"/>
+<circle cx="200" cy="455" r="22" fill="#BA9957" stroke="#86692F" stroke-width="5"/>
+<circle cx="1000" cy="455" r="22" fill="#BA9957" stroke="#86692F" stroke-width="5"/>
+<circle cx="200" cy="615" r="22" fill="#BA9957" stroke="#86692F" stroke-width="5"/>
+<circle cx="1000" cy="615" r="22" fill="#BA9957" stroke="#86692F" stroke-width="5"/>
+<circle cx="200" cy="775" r="22" fill="#BA9957" stroke="#86692F" stroke-width="5"/>
+<circle cx="1000" cy="775" r="22" fill="#BA9957" stroke="#86692F" stroke-width="5"/>
+<text x="110" y="100" font-family="sans-serif" font-size="44" font-weight="bold" fill="#1D2A24" text-anchor="middle">5′</text>
+<text x="110" y="830" font-family="sans-serif" font-size="44" font-weight="bold" fill="#1D2A24" text-anchor="middle">3′</text>
+<text x="1090" y="100" font-family="sans-serif" font-size="44" font-weight="bold" fill="#1D2A24" text-anchor="middle">3′</text>
+<text x="1090" y="830" font-family="sans-serif" font-size="44" font-weight="bold" fill="#1D2A24" text-anchor="middle">5′</text>
+<path d="M110 160 L110 760" stroke="#1D2A24" stroke-width="6" fill="none"/><path d="M92 740 L110 775 L128 740 Z" fill="#1D2A24"/>
+<path d="M1090 760 L1090 160" stroke="#1D2A24" stroke-width="6" fill="none"/><path d="M1072 180 L1090 145 L1108 180 Z" fill="#1D2A24"/>
+</svg>

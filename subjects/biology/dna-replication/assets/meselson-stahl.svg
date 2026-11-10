@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+<rect width="1200" height="900" rx="44" fill="#FBF8F1"/>
+<text x="330" y="374" font-family="sans-serif" font-size="40" font-weight="bold" fill="#1D2A24" text-anchor="end">light</text>
+<text x="330" y="504" font-family="sans-serif" font-size="40" font-weight="bold" fill="#1D2A24" text-anchor="end">hybrid</text>
+<text x="330" y="634" font-family="sans-serif" font-size="40" font-weight="bold" fill="#1D2A24" text-anchor="end">heavy</text>
+<path d="M430,170 L430,700 Q430,780 500,780 Q570,780 570,700 L570,170 Z" fill="#F4EBDA" stroke="#4F6E87" stroke-width="6"/>
+<text x="500" y="845" font-family="sans-serif" font-size="44" font-weight="bold" fill="#1D2A24" text-anchor="middle">0</text>
+<path d="M660,170 L660,700 Q660,780 730,780 Q800,780 800,700 L800,170 Z" fill="#F4EBDA" stroke="#4F6E87" stroke-width="6"/>
+<text x="730" y="845" font-family="sans-serif" font-size="44" font-weight="bold" fill="#1D2A24" text-anchor="middle">1</text>
+<path d="M890,170 L890,700 Q890,780 960,780 Q1030,780 1030,700 L1030,170 Z" fill="#F4EBDA" stroke="#4F6E87" stroke-width="6"/>
+<text x="960" y="845" font-family="sans-serif" font-size="44" font-weight="bold" fill="#1D2A24" text-anchor="middle">2</text>
+<rect x="442" y="606" width="116" height="28" rx="12" fill="#2C4A3B"/>
+<rect x="672" y="476" width="116" height="28" rx="12" fill="#2C4A3B"/>
+<rect x="902" y="476" width="116" height="28" rx="12" fill="#2C4A3B"/>
+<rect x="902" y="346" width="116" height="28" rx="12" fill="#2C4A3B"/>
+<text x="730" y="120" font-family="sans-serif" font-size="40" font-weight="bold" fill="#1D2A24" text-anchor="middle">generations in 14N</text>
+</svg>
