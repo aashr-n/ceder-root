@@ -1,0 +1,13 @@
+{
+  "id": "mit-opencourseware",
+  "name": "MIT OpenCourseWare",
+  "url": "https://ocw.mit.edu",
+  "goodFor": "Free lecture notes, problem sets and video lectures from MIT courses.",
+  "license": "CC-BY-NC-SA-4.0",
+  "use": "link-only",
+  "checked": {
+    "date": "2026-11-11",
+    "basis": "MIT OCW terms, via search"
+  },
+  "notes": "NonCommercial, and Ceder has paid tiers, so link only."
+}

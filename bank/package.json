@@ -1,0 +1,16 @@
+{
+  "name": "ceder-bank",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Ceder's bank of concepts, verified questions, diagrams and 3D models. See FORMAT.md.",
+  "scripts": {
+    "validate": "node tools/validate.mjs",
+    "build": "node tools/build.mjs",
+    "test": "node --test \"tools/*.test.mjs\""
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "2.6.2",
+    "ajv": "8.17.1"
+  }
+}

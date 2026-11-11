@@ -1,0 +1,9 @@
+{
+  "id": "own-course-files",
+  "name": "A student's own course files",
+  "goodFor": "The student's own slides, notes and readings, used for them alone.",
+  "license": "unknown",
+  "use": "private",
+  "checked": null,
+  "notes": "Used on the student's own device for that student only. Never stored in this repository. There is no public source, so there is no url."
+}

@@ -1,0 +1,14 @@
+{
+  "id": "phet",
+  "name": "PhET Interactive Simulations",
+  "url": "https://phet.colorado.edu",
+  "goodFor": "HTML simulations for physics, chemistry, biology and maths.",
+  "license": "CC-BY-4.0",
+  "use": "copy",
+  "attribution": "PhET Interactive Simulations, University of Colorado Boulder, https://phet.colorado.edu",
+  "checked": {
+    "date": "2026-11-11",
+    "basis": "PhET's licensing page, via search"
+  },
+  "notes": "The PhET name and logo are trademarks and are not covered by the licence."
+}

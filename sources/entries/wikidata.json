@@ -1,0 +1,10 @@
+{
+  "id": "wikidata",
+  "name": "Wikidata",
+  "url": "https://www.wikidata.org",
+  "goodFor": "Structured facts about things, with identifiers.",
+  "license": "CC0-1.0",
+  "use": "copy",
+  "checked": null,
+  "notes": "Licence stated as CC0 1.0 but unverified: no licence check has been done."
+}

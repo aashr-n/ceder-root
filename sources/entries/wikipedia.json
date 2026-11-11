@@ -1,0 +1,15 @@
+{
+  "id": "wikipedia",
+  "name": "Wikipedia",
+  "url": "https://en.wikipedia.org",
+  "goodFor": "Encyclopedia articles, for a lead paragraph and a thumbnail on almost any topic.",
+  "license": "CC-BY-SA-4.0",
+  "use": "copy-share-alike",
+  "attribution": "The article's title, a link to the article, and the licence name (CC BY-SA 4.0).",
+  "access": "https://en.wikipedia.org/api/rest_v1/page/summary/{title} (lead paragraph and thumbnail)",
+  "checked": {
+    "date": "2026-11-11",
+    "basis": "secondary sources and Creative Commons' compatible-licences page; Wikimedia's own terms not opened"
+  },
+  "notes": "Text is CC BY-SA 4.0, so copied text may only go in share-alike/, never bank/. Images carry their own per-file licences. Articles often read above introductory level."
+}

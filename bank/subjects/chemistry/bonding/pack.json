@@ -1,0 +1,1931 @@
+{
+  "formatVersion": 1,
+  "id": "chemistry.bonding",
+  "subject": "chemistry",
+  "title": "Chemical bonding",
+  "summary": "How atoms hold together: ionic, covalent and metallic bonds, polarity, Lewis structures, molecular shape and hydrogen bonds.",
+  "license": "CC-BY-4.0",
+  "concepts": [
+    {
+      "id": "valence-electrons",
+      "name": "Valence electrons",
+      "aliases": [
+        "valence electron",
+        "outer shell electrons",
+        "outer-shell electrons",
+        "valency electrons"
+      ],
+      "summary": "Valence electrons are the electrons in an atom's outer shell. They take part in bonding and decide how many bonds an atom forms.",
+      "elements": [
+        {
+          "id": "outer-shell",
+          "name": "Electrons in the outer shell",
+          "aliases": [
+            "outer shell",
+            "valence shell"
+          ]
+        },
+        {
+          "id": "group-number",
+          "name": "Valence electrons from the group number"
+        },
+        {
+          "id": "octet-rule",
+          "name": "Octet rule",
+          "aliases": [
+            "rule of eight"
+          ]
+        },
+        {
+          "id": "noble-gas-configuration",
+          "name": "Noble gas configuration",
+          "aliases": [
+            "full outer shell",
+            "stable octet"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "Valence electrons are the electrons in an atom's outermost shell. Bonds are made from them, so they decide how an atom reacts. For main-group elements the periodic table gives the count: an atom in group 1 has one, in group 2 two, and in groups 13 to 18 the last digit of the group number, so oxygen in group 16 has six. Many atoms gain, lose or share electrons until they have eight in the outer shell, the arrangement of a noble gas. This is the octet rule. Chlorine has seven, so it needs one more electron, which is why it usually forms one bond."
+      }
+    },
+    {
+      "id": "ionic-bond",
+      "name": "Ionic bonding",
+      "aliases": [
+        "ionic bond",
+        "ionic bonds",
+        "electrovalent bond",
+        "electrovalent bonding"
+      ],
+      "summary": "An ionic bond is the attraction between oppositely charged ions, formed when a metal atom transfers electrons to a non-metal atom.",
+      "requires": [
+        "valence-electrons"
+      ],
+      "elements": [
+        {
+          "id": "electron-transfer",
+          "name": "Electron transfer"
+        },
+        {
+          "id": "cations-anions",
+          "name": "Cations and anions",
+          "aliases": [
+            "cation",
+            "anion",
+            "cations",
+            "anions"
+          ]
+        },
+        {
+          "id": "ionic-lattice",
+          "name": "Ionic lattice",
+          "aliases": [
+            "ionic lattices",
+            "crystal lattice"
+          ]
+        },
+        {
+          "id": "ionic-formulas",
+          "name": "Formulas of ionic compounds"
+        },
+        {
+          "id": "ionic-properties",
+          "name": "Properties of ionic compounds"
+        }
+      ],
+      "explain": {
+        "text": "An ionic bond forms when one atom gives electrons to another. A metal such as sodium has one loosely held outer electron, and a non-metal such as chlorine needs one more to fill its outer shell. Sodium hands its electron to chlorine, leaving a sodium ion, Na⁺, and a chloride ion, Cl⁻. Opposite charges attract, and that attraction is the bond. In a grain of table salt the ions sit in a regular lattice, each Na⁺ surrounded by six Cl⁻ and each Cl⁻ by six Na⁺. The strong pull in every direction is why salt only melts at 801 °C.",
+        "artifact": "ionic-bond-steps"
+      }
+    },
+    {
+      "id": "covalent-bond",
+      "name": "Covalent bonding",
+      "aliases": [
+        "covalent bond",
+        "covalent bonds",
+        "electron-pair bond",
+        "shared-pair bond"
+      ],
+      "summary": "A covalent bond is a pair of electrons shared between two atoms, usually two non-metals, which holds them together in a molecule.",
+      "requires": [
+        "valence-electrons"
+      ],
+      "elements": [
+        {
+          "id": "shared-pair",
+          "name": "Shared electron pair",
+          "aliases": [
+            "bonding pair",
+            "bonding pairs"
+          ]
+        },
+        {
+          "id": "multiple-bonds",
+          "name": "Single, double and triple bonds",
+          "aliases": [
+            "double bond",
+            "triple bond",
+            "multiple bonds"
+          ]
+        },
+        {
+          "id": "bond-length-strength",
+          "name": "Bond length and bond strength",
+          "aliases": [
+            "bond energy",
+            "bond length"
+          ]
+        },
+        {
+          "id": "giant-covalent",
+          "name": "Simple molecules and giant covalent structures",
+          "aliases": [
+            "network covalent solid",
+            "covalent network"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "A covalent bond forms when two atoms share a pair of electrons instead of transferring them. It usually joins two non-metals, neither of which can pull an electron fully away from the other. Each shared electron counts toward the outer shell of both atoms. In a hydrogen molecule, H₂, each atom brings one electron, and the shared pair gives both of them two, the full shell of helium. Atoms can also share two pairs, a double bond as in O₂, or three, a triple bond as in N₂. More shared pairs make the bond shorter and stronger.",
+        "artifact": "bond-types"
+      }
+    },
+    {
+      "id": "metallic-bond",
+      "name": "Metallic bonding",
+      "aliases": [
+        "metallic bond",
+        "metallic bonds",
+        "electron sea model",
+        "sea of electrons model"
+      ],
+      "summary": "In a metal, positive ions sit in a regular lattice held together by a sea of outer electrons that are free to move through the whole piece.",
+      "requires": [
+        "valence-electrons"
+      ],
+      "elements": [
+        {
+          "id": "delocalised-electrons",
+          "name": "Delocalised electrons",
+          "aliases": [
+            "delocalized electrons",
+            "free electrons",
+            "sea of electrons"
+          ]
+        },
+        {
+          "id": "metal-cations",
+          "name": "Lattice of positive metal ions"
+        },
+        {
+          "id": "conductivity",
+          "name": "Electrical and thermal conductivity of metals"
+        },
+        {
+          "id": "malleability",
+          "name": "Malleability and ductility",
+          "aliases": [
+            "malleable",
+            "ductile"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "In a metal, each atom lets go of its outer electrons, and those electrons spread through the whole piece instead of belonging to one atom. What is left is a regular lattice of positive metal ions in a sea of moving electrons. The bond is the attraction between the ions and that shared sea. It explains what metals do. The free electrons carry current and heat, which is why copper wire conducts. Layers of ions can slide past each other without the bond breaking, because the sea moves with them, so gold can be hammered into thin sheets instead of shattering.",
+        "artifact": "bond-types"
+      }
+    },
+    {
+      "id": "polarity",
+      "name": "Chemical polarity",
+      "aliases": [
+        "bond polarity",
+        "molecular polarity",
+        "polar bond",
+        "polar bonds",
+        "polar covalent bond",
+        "polar covalent bonds",
+        "polar molecule",
+        "polar molecules"
+      ],
+      "summary": "When bonded atoms differ in electronegativity, the shared electrons sit closer to one of them, giving partial charges. A molecule is polar when these do not cancel.",
+      "requires": [
+        "covalent-bond"
+      ],
+      "elements": [
+        {
+          "id": "electronegativity",
+          "name": "Electronegativity",
+          "aliases": [
+            "Pauling scale"
+          ]
+        },
+        {
+          "id": "electronegativity-trend",
+          "name": "Electronegativity across the periodic table"
+        },
+        {
+          "id": "partial-charges",
+          "name": "Partial charges",
+          "aliases": [
+            "partial charge",
+            "δ+ and δ−"
+          ]
+        },
+        {
+          "id": "bond-type-from-difference",
+          "name": "Bond type from electronegativity difference"
+        },
+        {
+          "id": "polar-molecules",
+          "name": "Polar and nonpolar molecules",
+          "aliases": [
+            "dipole moment",
+            "molecular dipole",
+            "nonpolar molecule"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "Electronegativity is how strongly an atom pulls on the electrons in a bond. It rises across a period and up a group, so fluorine pulls hardest of all. When two different atoms share electrons, the more electronegative one holds them closer and gains a small negative charge, written δ−, while its partner is left δ+. In water, oxygen pulls on the electrons of both O–H bonds. Because the molecule is bent, the two pulls do not cancel: the oxygen side is negative and the hydrogen side positive, so water is polar. In straight CO₂ the two pulls cancel, and the molecule is nonpolar.",
+        "artifact": "water-molecule"
+      }
+    },
+    {
+      "id": "lewis-structure",
+      "name": "Lewis structures",
+      "aliases": [
+        "Lewis structure",
+        "Lewis dot structure",
+        "Lewis dot structures",
+        "electron dot structure",
+        "electron dot structures",
+        "dot and cross diagram",
+        "dot and cross diagrams"
+      ],
+      "summary": "A Lewis structure draws a molecule's valence electrons as lines for shared pairs and dots for lone pairs, showing how each atom reaches a full shell.",
+      "requires": [
+        "covalent-bond"
+      ],
+      "elements": [
+        {
+          "id": "counting-electrons",
+          "name": "Counting the total valence electrons"
+        },
+        {
+          "id": "central-atom",
+          "name": "Choosing the central atom"
+        },
+        {
+          "id": "lone-pairs",
+          "name": "Lone pairs",
+          "aliases": [
+            "lone pair",
+            "non-bonding pair",
+            "unshared pair"
+          ]
+        },
+        {
+          "id": "drawing-multiple-bonds",
+          "name": "Drawing double and triple bonds"
+        }
+      ],
+      "explain": {
+        "text": "A Lewis structure is a quick sketch of where a molecule's valence electrons are. Each line between two atoms is a shared pair, a bond, and each pair of dots is a lone pair that belongs to one atom only. To draw one, add up the valence electrons of all the atoms, put the least electronegative atom other than hydrogen in the middle, join the others to it, then hand out the rest as lone pairs until each atom has a full shell. Water has 8 valence electrons: its two O–H bonds use 4, and the other 4 sit on oxygen as two lone pairs.",
+        "artifact": "water-hydrogen-bond"
+      }
+    },
+    {
+      "id": "molecular-geometry",
+      "name": "Molecular geometry",
+      "aliases": [
+        "molecular shape",
+        "molecular shapes",
+        "shapes of molecules",
+        "VSEPR theory",
+        "valence shell electron pair repulsion theory"
+      ],
+      "summary": "Electron pairs around a central atom push each other as far apart as they can, and that sets the shape of the molecule and the angles between its bonds.",
+      "requires": [
+        "lewis-structure"
+      ],
+      "elements": [
+        {
+          "id": "electron-domains",
+          "name": "Counting electron pairs around the central atom",
+          "aliases": [
+            "electron domains",
+            "electron groups"
+          ]
+        },
+        {
+          "id": "linear",
+          "name": "Linear shape"
+        },
+        {
+          "id": "trigonal-planar",
+          "name": "Trigonal planar shape"
+        },
+        {
+          "id": "tetrahedral",
+          "name": "Tetrahedral shape"
+        },
+        {
+          "id": "pyramidal-and-bent",
+          "name": "Trigonal pyramidal and bent shapes",
+          "aliases": [
+            "trigonal pyramidal",
+            "bent shape",
+            "V-shaped"
+          ]
+        },
+        {
+          "id": "bond-angles",
+          "name": "Bond angles",
+          "aliases": [
+            "bond angle"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "The shape of a molecule follows from one rule: the electron pairs around the central atom repel each other and spread out as far as they can. This is VSEPR theory. Two pairs sit on opposite sides, in a straight line at 180°. Three spread into a flat triangle at 120°. Four point to the corners of a tetrahedron at 109.5°, as in methane, CH₄, where four hydrogens surround the carbon. Lone pairs push too, but they do not show in the shape: ammonia's four pairs give a pyramid, and water's give a bent molecule with an angle of about 104.5°.",
+        "artifact": "methane-molecule"
+      }
+    },
+    {
+      "id": "hydrogen-bond",
+      "name": "Hydrogen bonding",
+      "aliases": [
+        "hydrogen bond",
+        "hydrogen bonds",
+        "H-bond",
+        "H-bonds"
+      ],
+      "summary": "A hydrogen bond is an attraction between a hydrogen atom bonded to nitrogen, oxygen or fluorine and a lone pair on another of those atoms nearby.",
+      "requires": [
+        "polarity"
+      ],
+      "elements": [
+        {
+          "id": "donor-acceptor",
+          "name": "Hydrogen bond donors and acceptors",
+          "aliases": [
+            "hydrogen bond donor",
+            "hydrogen bond acceptor"
+          ]
+        },
+        {
+          "id": "nitrogen-oxygen-fluorine",
+          "name": "Hydrogen bonded to N, O or F"
+        },
+        {
+          "id": "relative-strength",
+          "name": "Strength compared with covalent bonds"
+        },
+        {
+          "id": "water-properties",
+          "name": "Effects on the properties of water",
+          "aliases": [
+            "boiling point of water",
+            "density of ice"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "A hydrogen bond is a pull between molecules, not a bond inside one. It forms when hydrogen is attached to nitrogen, oxygen or fluorine. Those atoms pull the shared electrons so hard that the hydrogen is left strongly δ+, and it is drawn to a lone pair on a nearby N, O or F atom. In water, each molecule can hydrogen bond to as many as four neighbours. Hydrogen bonds are much weaker than covalent bonds but stronger than other forces between molecules. They are why water boils at 100 °C while H₂S, a heavier molecule, boils at about −60 °C.",
+        "artifact": "water-hydrogen-bond"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "chemistry.bonding.nitrogen-valence",
+      "concept": "valence-electrons",
+      "element": "group-number",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How many valence electrons does a nitrogen atom have?",
+      "choices": [
+        "7",
+        "3",
+        "5",
+        "2"
+      ],
+      "answer": 2,
+      "explanation": "Nitrogen is in group 15, so it has 5 valence electrons (2, 5). 7 is its total number of electrons, and 3 is the number of bonds it usually forms, because it needs three more to complete an octet.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.octet-rule-name",
+      "concept": "valence-electrons",
+      "element": "octet-rule",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What name is given to the tendency of atoms to bond until they have eight electrons in their outer shell?",
+      "answer": "The octet rule",
+      "explanation": "Atoms tend to gain, lose or share electrons until they have eight outer electrons, the arrangement of a noble gas. This is called the octet rule. Hydrogen is the main exception: it is full with two.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "chemistry.bonding.same-valence-pair",
+      "concept": "valence-electrons",
+      "element": "group-number",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which pair of elements have the same number of valence electrons?",
+      "choices": [
+        "Oxygen and fluorine",
+        "Sodium and magnesium",
+        "Oxygen and sulfur",
+        "Carbon and nitrogen"
+      ],
+      "answer": 2,
+      "explanation": "Oxygen and sulfur are both in group 16, so each has six valence electrons. Oxygen and fluorine sit next to each other in the same period: they have the same number of shells, not the same number of valence electrons.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.full-outer-shell",
+      "concept": "valence-electrons",
+      "element": "noble-gas-configuration",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these atoms already has a full outer shell before it bonds with anything?",
+      "choices": [
+        "Argon",
+        "Chlorine",
+        "Sodium",
+        "Oxygen"
+      ],
+      "answer": 0,
+      "explanation": "Argon is a noble gas with eight outer electrons (2, 8, 8), so it rarely bonds. Chlorine is one electron short of that arrangement, which is why it reacts so readily.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.arrangement-286",
+      "concept": "valence-electrons",
+      "element": "outer-shell",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "A neutral atom has the electron arrangement 2, 8, 6. How many valence electrons does it have?",
+      "answer": "6",
+      "explanation": "The valence electrons are those in the outermost shell, the last number in the arrangement: 6. This atom is sulfur, in group 16.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "chemistry.bonding.magnesium-octet",
+      "concept": "valence-electrons",
+      "element": "noble-gas-configuration",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Magnesium has the arrangement 2, 8, 2. What does it most easily do to reach a noble gas arrangement?",
+      "choices": [
+        "Gain six electrons",
+        "Lose two electrons",
+        "Share two electrons with another magnesium atom",
+        "Gain two electrons"
+      ],
+      "answer": 1,
+      "explanation": "Losing its two outer electrons leaves magnesium with 2, 8, the arrangement of neon, and makes the ion Mg²⁺. Gaining six electrons would also give a full shell, but taking on that much negative charge costs far more energy.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.order-valence-count",
+      "concept": "valence-electrons",
+      "element": "group-number",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these atoms in order from fewest to most valence electrons.",
+      "steps": [
+        "Sodium (Na)",
+        "Aluminium (Al)",
+        "Phosphorus (P)",
+        "Chlorine (Cl)"
+      ],
+      "explanation": "Their groups give the counts: sodium in group 1 has 1, aluminium in group 13 has 3, phosphorus in group 15 has 5, and chlorine in group 17 has 7.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.sodium-electron-goes",
+      "concept": "ionic-bond",
+      "element": "electron-transfer",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "When sodium and chlorine form an ionic bond, what happens to sodium's outer electron?",
+      "choices": [
+        "It is shared equally with chlorine",
+        "It moves over to chlorine",
+        "It is shared among many sodium atoms",
+        "It drops into sodium's inner shell"
+      ],
+      "answer": 1,
+      "explanation": "In an ionic bond the electron is transferred: sodium gives its outer electron to chlorine, making Na⁺ and Cl⁻. Sharing an electron pair equally would be a covalent bond, not an ionic one.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.magnesium-chloride-formula",
+      "concept": "ionic-bond",
+      "element": "ionic-formulas",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the formula of the compound formed from magnesium ions, Mg²⁺, and chloride ions, Cl⁻?",
+      "choices": [
+        "MgCl",
+        "Mg₂Cl",
+        "MgCl₂",
+        "Mg₂Cl₂"
+      ],
+      "answer": 2,
+      "explanation": "The charges must balance: one Mg²⁺ (+2) needs two Cl⁻ (−1 each), giving MgCl₂. MgCl would leave a charge of +1, and Mg₂Cl₂ is not written because ionic formulas use the simplest ratio.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.cation-name",
+      "concept": "ionic-bond",
+      "element": "cations-anions",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is a positively charged ion called?",
+      "answer": "A cation",
+      "explanation": "A cation is a positive ion, formed when an atom loses electrons, as sodium does to become Na⁺. A negative ion, such as Cl⁻, is an anion.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "chemistry.bonding.molten-salt-conducts",
+      "concept": "ionic-bond",
+      "element": "ionic-properties",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does solid sodium chloride not conduct electricity, while molten sodium chloride does?",
+      "choices": [
+        "The solid contains no ions at all; melting is what creates them",
+        "Molten salt has free electrons that come from the sodium atoms",
+        "In the solid, all of the electrons are held tightly in covalent bonds",
+        "In the solid the ions are fixed in place; when molten they can move"
+      ],
+      "answer": 3,
+      "explanation": "A current needs charged particles that can move. Solid salt is already made of ions, but they are locked in the lattice. Once it melts, the ions are free to move and carry charge. Salt has no free electrons.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.order-salt-forming",
+      "concept": "ionic-bond",
+      "element": "electron-transfer",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps of forming sodium chloride from sodium and chlorine atoms in order.",
+      "steps": [
+        "Sodium has one outer electron and chlorine has seven",
+        "Sodium transfers its outer electron to chlorine",
+        "Na⁺ and Cl⁻ ions form, each with a full outer shell",
+        "The oppositely charged ions attract each other",
+        "Many ions pack together into a lattice"
+      ],
+      "explanation": "The bond starts with an electron transfer. Only once the ions exist can their opposite charges attract, and repeating that attraction in every direction builds the salt crystal.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.ionic-pair",
+      "concept": "ionic-bond",
+      "element": "electron-transfer",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which pair of elements is most likely to form an ionic compound?",
+      "choices": [
+        "Carbon and oxygen",
+        "Nitrogen and hydrogen",
+        "Magnesium and aluminium",
+        "Potassium and fluorine"
+      ],
+      "answer": 3,
+      "explanation": "Ionic bonds form between a metal that loses electrons easily and a non-metal that gains them easily. Potassium (group 1) and fluorine (group 17) are an extreme pair. Carbon and oxygen are both non-metals and bond covalently; copper and zinc are both metals.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.tap-ionic",
+      "concept": "ionic-bond",
+      "element": "ionic-lattice",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the picture of ionic bonding.",
+      "artifact": "bond-types",
+      "target": "ionic",
+      "explanation": "The ionic picture shows a lattice of large negative ions and small positive ions in alternating rows. The metal picture also has positive ions, but they sit in a sea of loose electrons with no negative ions.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.covalent-holds",
+      "concept": "covalent-bond",
+      "element": "shared-pair",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What holds two atoms together in a covalent bond?",
+      "choices": [
+        "The attraction between a positive ion and a negative ion",
+        "A sea of electrons around metal ions",
+        "A pair of electrons shared between the two atoms",
+        "The attraction between neighbouring molecules"
+      ],
+      "answer": 2,
+      "explanation": "Both nuclei are attracted to the same shared pair of electrons, and that holds them together. An attraction between positive and negative ions is an ionic bond.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.double-bond-electrons",
+      "concept": "covalent-bond",
+      "element": "multiple-bonds",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "How many electrons are shared in a double bond?",
+      "answer": "Four (two shared pairs)",
+      "explanation": "A single bond is one shared pair, two electrons. A double bond is two shared pairs, so four electrons, as between the two oxygen atoms in O₂.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "chemistry.bonding.carbon-bonds",
+      "concept": "covalent-bond",
+      "element": "shared-pair",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "How many covalent bonds does a carbon atom usually form?",
+      "choices": [
+        "4",
+        "2",
+        "3",
+        "6"
+      ],
+      "answer": 0,
+      "explanation": "Carbon has four valence electrons and needs four more to complete an octet, so it forms four bonds, as in methane, CH₄. Six is its atomic number, not its number of bonds.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.shortest-carbon-bond",
+      "concept": "covalent-bond",
+      "element": "bond-length-strength",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Of these bonds between two carbon atoms, which is the shortest?",
+      "choices": [
+        "C–C single bond",
+        "C≡C triple bond",
+        "C=C double bond"
+      ],
+      "answer": 1,
+      "explanation": "The more electron pairs two atoms share, the more strongly they are pulled together, so the triple bond is the shortest and strongest. Students often think a triple bond takes up more room, but the extra pairs draw the atoms closer.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.diamond-melting",
+      "concept": "covalent-bond",
+      "element": "giant-covalent",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Diamond and methane both contain only covalent bonds. Why does diamond need a far higher temperature to melt?",
+      "choices": [
+        "Its bonds are partly ionic, so they are stronger than methane's bonds",
+        "Its atoms form one giant network, so melting breaks covalent bonds",
+        "Its molecules are held to each other by many hydrogen bonds",
+        "Its carbon atoms share a sea of electrons, like a metal"
+      ],
+      "answer": 1,
+      "explanation": "Diamond is a giant covalent structure: there are no separate molecules, so it can only melt by breaking strong covalent bonds. Methane melts when the weak forces between its small molecules are overcome; its C–H bonds stay intact.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.covalent-pair",
+      "concept": "covalent-bond",
+      "element": "shared-pair",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which pair of elements is most likely to join by a covalent bond?",
+      "choices": [
+        "Sodium and chlorine",
+        "Calcium and oxygen",
+        "Magnesium and fluorine",
+        "Hydrogen and chlorine"
+      ],
+      "answer": 3,
+      "explanation": "Hydrogen and chlorine are both non-metals, so they share a pair of electrons to make HCl. Sodium with chlorine and calcium with oxygen are metal and non-metal pairs, which form ionic compounds.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.order-bond-length",
+      "concept": "covalent-bond",
+      "element": "bond-length-strength",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these carbon to carbon bonds in order from longest to shortest.",
+      "steps": [
+        "C–C single bond",
+        "C=C double bond",
+        "C≡C triple bond"
+      ],
+      "explanation": "Each extra shared pair pulls the two carbon atoms closer together. The single bond is the longest, about 154 pm, the double about 134 pm and the triple about 120 pm.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.tap-covalent",
+      "concept": "covalent-bond",
+      "element": "shared-pair",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the picture of a nonpolar covalent bond.",
+      "artifact": "bond-types",
+      "target": "covalent",
+      "explanation": "Two identical atoms overlap, and the shared pair sits exactly in the middle because both atoms pull on it equally. In the polar bond the pair is drawn toward the larger atom.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.copper-current",
+      "concept": "metallic-bond",
+      "element": "conductivity",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What carries an electric current through a copper wire?",
+      "choices": [
+        "Delocalised electrons",
+        "Copper ions moving through the lattice",
+        "Protons in the copper nuclei",
+        "Shared pairs in covalent bonds"
+      ],
+      "answer": 0,
+      "explanation": "The outer electrons in a metal are not tied to any one atom, so they can drift through the wire and carry charge. The copper ions stay in their places in the lattice.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.lattice-charge",
+      "concept": "metallic-bond",
+      "element": "metal-cations",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "In the electron sea model of a metal, what charge do the particles held in the lattice carry?",
+      "answer": "Positive (they are metal ions that have given up their outer electrons)",
+      "explanation": "Each metal atom gives its outer electrons to the shared sea, so what remains in the lattice are positive ions. The negative charge belongs to the moving electrons.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "chemistry.bonding.hammer-metal",
+      "concept": "metallic-bond",
+      "element": "malleability",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why can a metal be hammered into a thin sheet without shattering?",
+      "choices": [
+        "Its layers of ions can slide while the electron sea keeps holding them together",
+        "Its covalent bonds bend under each blow of the hammer instead of breaking apart",
+        "Hammering melts the metal for a moment",
+        "Its ions repel each other strongly"
+      ],
+      "answer": 0,
+      "explanation": "The bond is between the ions and the electron sea as a whole, not between fixed pairs of atoms. When layers slide, the sea moves with them and the bond holds. Metals have no covalent bonds between their atoms.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.magnesium-melting",
+      "concept": "metallic-bond",
+      "element": "metal-cations",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Magnesium melts at 650 °C and sodium at 98 °C. Which explanation fits the metallic bonding model?",
+      "choices": [
+        "Magnesium atoms are larger than sodium atoms, so their bonds reach further",
+        "Magnesium forms covalent bonds between its atoms",
+        "Mg²⁺ ions and twice as many sea electrons per atom give a stronger pull",
+        "Magnesium has fewer electrons per atom"
+      ],
+      "answer": 2,
+      "explanation": "Sodium gives one electron per atom and forms Na⁺; magnesium gives two and forms Mg²⁺. More charge on the ions and more electrons in the sea mean a stronger attraction. Magnesium atoms are in fact smaller than sodium atoms.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.tap-metallic",
+      "concept": "metallic-bond",
+      "element": "delocalised-electrons",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the picture of metallic bonding.",
+      "artifact": "bond-types",
+      "target": "metallic",
+      "explanation": "Metallic bonding is a lattice of positive ions in a sea of loose electrons, with no negative ions. The ionic lattice also has positive ions, but they alternate with larger negative ions.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.metal-vs-salt",
+      "concept": "metallic-bond",
+      "element": "conductivity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Solid copper conducts electricity but solid sodium chloride does not. What does copper have that solid salt lacks?",
+      "choices": [
+        "Charged particles free to move",
+        "Positive ions held in a lattice",
+        "Stronger bonds between its particles",
+        "A more regular, tightly packed arrangement"
+      ],
+      "answer": 0,
+      "explanation": "Both solids have positive ions, strong bonds and a regular lattice. Only copper has charged particles free to move, its delocalised electrons. The ions in solid salt are locked in place.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.most-electronegative",
+      "concept": "polarity",
+      "element": "electronegativity-trend",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which element is the most electronegative?",
+      "choices": [
+        "Oxygen",
+        "Chlorine",
+        "Fluorine",
+        "Nitrogen"
+      ],
+      "answer": 2,
+      "explanation": "Electronegativity rises across a period and up a group, so fluorine, at the top right of the table (leaving out the noble gases), pulls hardest, at about 4.0 on the Pauling scale. Oxygen comes second at about 3.4.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.hcl-partial-negative",
+      "concept": "polarity",
+      "element": "partial-charges",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In a molecule of hydrogen chloride, HCl, which atom carries the partial negative charge, δ−?",
+      "choices": [
+        "Hydrogen",
+        "Chlorine",
+        "Neither, because the bond is nonpolar"
+      ],
+      "answer": 1,
+      "explanation": "Chlorine (about 3.2) is far more electronegative than hydrogen (about 2.2), so it pulls the shared pair closer and becomes δ−. A bond between two different atoms like these is polar.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.co2-nonpolar",
+      "concept": "polarity",
+      "element": "polar-molecules",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Carbon dioxide, CO₂, has two polar C=O bonds. Why is the molecule nonpolar?",
+      "choices": [
+        "Carbon and oxygen have the same electronegativity, so its bonds are not really polar",
+        "Its double bonds are nonpolar",
+        "It has no lone pairs",
+        "It is linear, so its two bond dipoles point in opposite directions and cancel"
+      ],
+      "answer": 3,
+      "explanation": "Each C=O bond is polar, but CO₂ is straight, O=C=O, so the two pulls are equal and opposite and cancel. Water also has two polar bonds, but it is bent, so its pulls do not cancel and it is polar.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.most-polar-bond",
+      "concept": "polarity",
+      "element": "bond-type-from-difference",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which bond is the most polar?",
+      "choices": [
+        "N–H",
+        "C–H",
+        "H–H",
+        "H–F"
+      ],
+      "answer": 3,
+      "explanation": "Polarity grows with the difference in electronegativity. H–F has the biggest gap (about 1.8), N–H about 0.8, C–H about 0.4, and H–H none at all.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.electronegativity-name",
+      "concept": "polarity",
+      "element": "electronegativity",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is the name for an atom's ability to attract the shared electrons in a covalent bond?",
+      "answer": "Electronegativity",
+      "explanation": "Electronegativity measures how strongly an atom pulls on a bonding pair. Differences in it between two bonded atoms make a bond polar.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "chemistry.bonding.group-17-trend",
+      "concept": "polarity",
+      "element": "electronegativity-trend",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "How does electronegativity change going down group 17, from fluorine to iodine?",
+      "choices": [
+        "It increases",
+        "It decreases",
+        "It stays the same"
+      ],
+      "answer": 1,
+      "explanation": "Going down a group, the outer electrons are further from the nucleus and more shielded by inner shells, so the pull on a bonding pair weakens. Fluorine is about 4.0 and iodine about 2.7.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.order-electronegativity",
+      "concept": "polarity",
+      "element": "electronegativity-trend",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these elements in order from least to most electronegative.",
+      "steps": [
+        "Sodium",
+        "Carbon",
+        "Nitrogen",
+        "Oxygen",
+        "Fluorine"
+      ],
+      "explanation": "On the Pauling scale sodium is about 0.9, carbon 2.6, nitrogen 3.0, oxygen 3.4 and fluorine 4.0. Across period 2 the values rise from left to right.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.tap-polar",
+      "concept": "polarity",
+      "element": "partial-charges",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the picture of a polar covalent bond.",
+      "artifact": "bond-types",
+      "target": "polar-covalent",
+      "explanation": "In the polar bond the shared pair sits closer to the larger, more electronegative atom, so that atom is δ− and the other δ+. In the nonpolar picture the two atoms are identical and the pair sits in the middle.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.methane-electron-count",
+      "concept": "lewis-structure",
+      "element": "counting-electrons",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "How many valence electrons in total does the Lewis structure of methane, CH₄, show?",
+      "answer": "8",
+      "explanation": "Carbon brings 4 valence electrons and each of the four hydrogens brings 1, so 4 + 4 × 1 = 8. They make four shared pairs, the four C–H bonds.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "chemistry.bonding.ammonia-lone-pairs",
+      "concept": "lewis-structure",
+      "element": "lone-pairs",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "How many lone pairs are on the nitrogen atom in ammonia, NH₃?",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "explanation": "Nitrogen has 5 valence electrons. Three are used in the three N–H bonds, and the remaining two form one lone pair. Answering 3 counts the bonds instead of the lone pairs.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.co2-lewis",
+      "concept": "lewis-structure",
+      "element": "drawing-multiple-bonds",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In the Lewis structure of carbon dioxide, how are the atoms joined?",
+      "choices": [
+        "O–C–O with two single bonds",
+        "C=O=O with oxygen in the middle",
+        "O=C=O with two double bonds",
+        "O=C–O with one double and one single bond"
+      ],
+      "answer": 2,
+      "explanation": "CO₂ has 16 valence electrons. With two double bonds, carbon has 8 electrons and each oxygen has 8 including two lone pairs. With single bonds, carbon would have only 4 electrons around it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.order-lewis-steps",
+      "concept": "lewis-structure",
+      "element": "central-atom",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps for drawing a Lewis structure in order.",
+      "steps": [
+        "Add up the valence electrons of all the atoms",
+        "Place the central atom and join each outer atom to it with a single bond",
+        "Put lone pairs on the outer atoms to complete their shells",
+        "Put any electrons left over on the central atom",
+        "If the central atom still lacks an octet, turn a lone pair into a double bond"
+      ],
+      "explanation": "The total count comes first, because every later step spends from it. The skeleton is built with single bonds, the outer atoms are filled before the central one, and multiple bonds are added last, only if needed.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.hcn-lewis",
+      "concept": "lewis-structure",
+      "element": "drawing-multiple-bonds",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Hydrogen cyanide, HCN, has 10 valence electrons and carbon in the middle. Which Lewis structure is right?",
+      "choices": [
+        "H–C=N with two lone pairs on nitrogen",
+        "H–C–N with three lone pairs on nitrogen",
+        "H–C≡N with one lone pair on nitrogen"
+      ],
+      "answer": 2,
+      "explanation": "H–C≡N uses 8 electrons in bonds and 2 in a lone pair on nitrogen, 10 in all, and gives carbon and nitrogen an octet each. H–C=N also uses 10 electrons, but leaves carbon with only 6 around it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.dots-meaning",
+      "concept": "lewis-structure",
+      "element": "lone-pairs",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In a Lewis structure, what does a pair of dots on one atom stand for?",
+      "choices": [
+        "A lone pair of unshared electrons",
+        "A double bond",
+        "A pair of protons",
+        "A pair of electrons shared between two atoms"
+      ],
+      "answer": 0,
+      "explanation": "A pair of dots belonging to one atom is a lone pair, two valence electrons not used in bonding. A shared pair is usually drawn as a line between the two atoms.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.methane-angle",
+      "concept": "molecular-geometry",
+      "element": "bond-angles",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the H–C–H bond angle in methane, CH₄?",
+      "choices": [
+        "90°",
+        "109.5°",
+        "120°",
+        "180°"
+      ],
+      "answer": 1,
+      "explanation": "Four bonding pairs spread to the corners of a tetrahedron, 109.5° apart. A flat drawing of methane suggests 90°, but the real molecule is three-dimensional.",
+      "artifact": "methane-molecule",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.ammonia-shape",
+      "concept": "molecular-geometry",
+      "element": "pyramidal-and-bent",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What shape is an ammonia molecule, NH₃?",
+      "choices": [
+        "Trigonal planar",
+        "Tetrahedral",
+        "Trigonal pyramidal",
+        "Bent"
+      ],
+      "answer": 2,
+      "explanation": "Nitrogen has four electron pairs, three bonding and one lone. The pairs point to the corners of a tetrahedron, but the shape is named from the atoms only: a pyramid with nitrogen at the top. Trigonal planar would need no lone pair.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.co2-shape",
+      "concept": "molecular-geometry",
+      "element": "linear",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What shape is a carbon dioxide molecule, CO₂?",
+      "choices": [
+        "Linear",
+        "Bent",
+        "Trigonal planar"
+      ],
+      "answer": 0,
+      "explanation": "Carbon has two double bonds and no lone pairs, so the two groups sit on opposite sides, 180° apart. Water is bent because its oxygen has lone pairs; carbon in CO₂ has none.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.vsepr-name",
+      "concept": "molecular-geometry",
+      "element": "electron-domains",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What theory predicts the shape of a molecule from the repulsion between electron pairs around its central atom?",
+      "answer": "VSEPR theory (valence shell electron pair repulsion)",
+      "explanation": "VSEPR theory says electron pairs around a central atom, bonding and lone, push each other as far apart as possible. Their arrangement sets the molecule's shape.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "chemistry.bonding.water-smaller-angle",
+      "concept": "molecular-geometry",
+      "element": "bond-angles",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Water and methane both have four electron pairs around the central atom. Why is water's bond angle, about 104.5°, smaller than methane's 109.5°?",
+      "choices": [
+        "Oxygen is smaller than carbon",
+        "Hydrogen bonds between the molecules pull the two hydrogens together",
+        "Water has a double bond",
+        "Its two lone pairs repel more strongly than bonding pairs"
+      ],
+      "answer": 3,
+      "explanation": "Lone pairs are held by only one nucleus, so they spread out more and repel more strongly than bonding pairs. Hydrogen bonds act between molecules and do not set the angle inside one.",
+      "artifact": "water-molecule",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.bf3-shape",
+      "concept": "molecular-geometry",
+      "element": "trigonal-planar",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Boron trifluoride, BF₃, has three bonding pairs and no lone pairs on boron. What is its shape?",
+      "choices": [
+        "Trigonal planar",
+        "Trigonal pyramidal",
+        "T-shaped",
+        "Tetrahedral"
+      ],
+      "answer": 0,
+      "explanation": "Three electron pairs spread into a flat triangle, 120° apart. Trigonal pyramidal needs a fourth pair, a lone pair, as in ammonia.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.order-bond-angles",
+      "concept": "molecular-geometry",
+      "element": "bond-angles",
+      "kind": "order",
+      "difficulty": 3,
+      "prompt": "Put these molecules in order from smallest to largest bond angle.",
+      "steps": [
+        "H₂O",
+        "NH₃",
+        "CH₄",
+        "BF₃",
+        "CO₂"
+      ],
+      "explanation": "Water is about 104.5° (two lone pairs), ammonia about 107° (one lone pair), methane 109.5°, BF₃ 120° (three pairs, flat) and CO₂ 180° (linear).",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.hbond-partner",
+      "concept": "hydrogen-bond",
+      "element": "donor-acceptor",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A hydrogen bond forms between a hydrogen atom bonded to N, O or F and what?",
+      "choices": [
+        "Another hydrogen atom",
+        "A carbon atom in a neighbouring molecule",
+        "A metal ion",
+        "A lone pair on a nearby N, O or F atom"
+      ],
+      "answer": 3,
+      "explanation": "The δ+ hydrogen is drawn to a lone pair on a strongly electronegative atom nearby. Two hydrogens are both δ+, so they repel instead of bonding.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.which-hbonds",
+      "concept": "hydrogen-bond",
+      "element": "nitrogen-oxygen-fluorine",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which of these substances has hydrogen bonds between its molecules?",
+      "choices": [
+        "Methane, CH₄",
+        "Hydrogen sulfide, H₂S",
+        "Ammonia, NH₃",
+        "Hydrogen gas, H₂"
+      ],
+      "answer": 2,
+      "explanation": "In ammonia, hydrogen is bonded to nitrogen, which has a lone pair, so the molecules hydrogen bond. In H₂S the hydrogen is bonded to sulfur, which is not electronegative enough, even though it sits below oxygen in the table.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.water-boiling",
+      "concept": "hydrogen-bond",
+      "element": "water-properties",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does water boil at 100 °C while hydrogen sulfide, H₂S, boils at about −60 °C?",
+      "choices": [
+        "Water molecules hydrogen bond to each other",
+        "Water molecules are heavier",
+        "Boiling breaks water's strong O–H covalent bonds",
+        "Water is an ionic compound"
+      ],
+      "answer": 0,
+      "explanation": "Boiling only separates molecules; the O–H bonds inside each water molecule stay whole. Water's molecules are held together by hydrogen bonds, which take more energy to overcome. H₂S is in fact the heavier molecule.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.nof-elements",
+      "concept": "hydrogen-bond",
+      "element": "nitrogen-oxygen-fluorine",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "Which three elements must a hydrogen atom be bonded to for it to take part in a hydrogen bond?",
+      "answer": "Nitrogen, oxygen and fluorine",
+      "explanation": "Only N, O and F are electronegative enough, and small enough, to leave the hydrogen strongly δ+ and to offer a lone pair close by.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both name N, O and F; a wrote \"or\" because any one of the three suffices, which is the same fact."
+      }
+    },
+    {
+      "id": "chemistry.bonding.ice-floats",
+      "concept": "hydrogen-bond",
+      "element": "water-properties",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Ice floats on liquid water. How does hydrogen bonding cause this?",
+      "choices": [
+        "It makes the molecules in ice lighter",
+        "It traps air bubbles inside ice",
+        "It breaks when water freezes, so the molecules in ice spread further apart",
+        "It holds ice in an open lattice that is less dense than the liquid"
+      ],
+      "answer": 3,
+      "explanation": "In ice every molecule is hydrogen bonded to four others in an open, regular lattice with gaps. In liquid water these bonds keep breaking and the molecules pack closer, so the liquid is denser.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.tap-hydrogen-bond",
+      "concept": "hydrogen-bond",
+      "element": "donor-acceptor",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the hydrogen bond.",
+      "artifact": "water-hydrogen-bond",
+      "target": "hydrogen-bond",
+      "explanation": "The hydrogen bond is the dashed line between the two molecules, from a hydrogen on one to a lone pair on the oxygen of the other. The solid sticks inside each molecule are covalent bonds.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.tap-hbond-hydrogen",
+      "concept": "hydrogen-bond",
+      "element": "donor-acceptor",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the hydrogen atom that takes part in the hydrogen bond.",
+      "artifact": "water-hydrogen-bond",
+      "target": "bonded-hydrogen",
+      "explanation": "The hydrogen in the hydrogen bond is the one at the start of the dashed line. It is covalently bonded to one oxygen and attracted to a lone pair on the other.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.tap-acceptor",
+      "concept": "hydrogen-bond",
+      "element": "donor-acceptor",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the oxygen atom that is the hydrogen bond acceptor.",
+      "artifact": "water-hydrogen-bond",
+      "target": "acceptor-oxygen",
+      "explanation": "The acceptor is the atom whose lone pair receives the hydrogen: the oxygen at the end of the dashed line. The donor is the oxygen covalently bonded to that hydrogen.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.tap-donor",
+      "concept": "hydrogen-bond",
+      "element": "donor-acceptor",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "Tap the oxygen atom that is the hydrogen bond donor.",
+      "artifact": "water-hydrogen-bond",
+      "target": "donor-oxygen",
+      "explanation": "The donor is the oxygen covalently bonded to the hydrogen in the hydrogen bond. It makes that hydrogen δ+. The acceptor is the other oxygen, whose lone pair the hydrogen points at.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "chemistry.bonding.delocalised-name",
+      "concept": "metallic-bond",
+      "element": "delocalised-electrons",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What name is given to the electrons in a metal that are not tied to any one atom?",
+      "answer": "Delocalised electrons (the sea of electrons)",
+      "explanation": "In a metal the outer electrons are shared by the whole lattice instead of staying with one atom. They are called delocalised, and they are what lets metals conduct.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "chemistry.bonding.water-lone-pairs",
+      "concept": "lewis-structure",
+      "element": "lone-pairs",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "How many lone pairs are on the oxygen atom in a water molecule?",
+      "answer": "Two",
+      "explanation": "Oxygen has 6 valence electrons. Two of them go into the two O–H bonds, one in each shared pair, and the other four form two lone pairs.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "chemistry.bonding.triple-bond-name",
+      "concept": "covalent-bond",
+      "element": "multiple-bonds",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is a covalent bond made of three shared pairs of electrons called?",
+      "answer": "A triple bond",
+      "explanation": "One shared pair is a single bond, two a double bond and three a triple bond, as between the two nitrogen atoms in N₂.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "chemistry.bonding.aluminium-ion",
+      "concept": "ionic-bond",
+      "element": "cations-anions",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "An aluminium atom loses its three valence electrons. What ion does it form?",
+      "answer": "Al³⁺, an ion with a charge of 3+",
+      "explanation": "Losing three electrons leaves aluminium with 13 protons and 10 electrons, so its charge is +3. It now has the arrangement 2, 8, like neon.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "chemistry.bonding.linear-angle",
+      "concept": "molecular-geometry",
+      "element": "linear",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is the bond angle in a linear molecule such as CO₂?",
+      "answer": "180°",
+      "explanation": "In a linear molecule the two bonds point in exactly opposite directions from the central atom, so the angle between them is 180°.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "chemistry.bonding.partial-negative-symbol",
+      "concept": "polarity",
+      "element": "partial-charges",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What symbol is written next to an atom to show it carries a partial negative charge?",
+      "answer": "δ− (delta minus)",
+      "explanation": "The Greek letter delta, δ, means a partial charge, smaller than the full charge of an ion. δ− marks the more electronegative atom in a polar bond, and δ+ its partner.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "bond-types",
+      "kind": "diagram",
+      "title": "Four kinds of bond",
+      "alt": "Four unlabelled panels. Top left: a lattice of large green negative ions alternating with small red positive ions. Top right: two identical blue atoms overlapping, with a pair of electrons in the middle of the overlap. Bottom left: rows of gold positive ions with small dark electrons scattered between them on a pale blue background. Bottom right: a small sand-coloured atom overlapping a large red atom, with the shared pair of electrons pulled toward the large atom.",
+      "file": "assets/bond-types.svg",
+      "hotspots": [
+        {
+          "id": "ionic",
+          "label": "Ionic bonding",
+          "x": 0.258,
+          "y": 0.272,
+          "r": 0.15
+        },
+        {
+          "id": "covalent",
+          "label": "Covalent bonding",
+          "x": 0.742,
+          "y": 0.272,
+          "r": 0.15
+        },
+        {
+          "id": "metallic",
+          "label": "Metallic bonding",
+          "x": 0.258,
+          "y": 0.728,
+          "r": 0.15
+        },
+        {
+          "id": "polar-covalent",
+          "label": "Polar covalent bonding",
+          "x": 0.742,
+          "y": 0.728,
+          "r": 0.15
+        }
+      ]
+    },
+    {
+      "id": "water-hydrogen-bond",
+      "kind": "diagram",
+      "title": "A hydrogen bond between two water molecules",
+      "alt": "Two unlabelled water molecules, each a red oxygen atom with two white hydrogen atoms in a bent shape and two lone pairs drawn as pairs of dots. A dashed line runs from one hydrogen of the upper left molecule to a lone pair on the oxygen of the lower right molecule.",
+      "file": "assets/water-hydrogen-bond.svg",
+      "hotspots": [
+        {
+          "id": "donor-oxygen",
+          "label": "Oxygen of the donor molecule",
+          "x": 0.275,
+          "y": 0.278,
+          "r": 0.06
+        },
+        {
+          "id": "bonded-hydrogen",
+          "label": "Hydrogen in the hydrogen bond",
+          "x": 0.407,
+          "y": 0.414,
+          "r": 0.045
+        },
+        {
+          "id": "hydrogen-bond",
+          "label": "Hydrogen bond",
+          "x": 0.489,
+          "y": 0.499,
+          "r": 0.04
+        },
+        {
+          "id": "acceptor-oxygen",
+          "label": "Oxygen of the acceptor molecule",
+          "x": 0.631,
+          "y": 0.645,
+          "r": 0.06
+        }
+      ]
+    },
+    {
+      "id": "ionic-bond-formation",
+      "kind": "diagram",
+      "title": "How sodium chloride forms",
+      "alt": "Top row: a sodium atom with shells of 2, 8 and 1 electrons, and an arrow carrying its single outer electron to a chlorine atom with shells of 2, 8 and 7. Bottom row: a sodium ion, Na, with shells of 2 and 8 in brackets marked plus, and a chloride ion, Cl, with shells of 2, 8 and 8 in brackets marked minus, the gained electron in red. A double arrow between the ions shows their attraction.",
+      "file": "assets/ionic-bond-formation.svg",
+      "hotspots": [
+        {
+          "id": "sodium-electron",
+          "label": "Sodium's outer electron",
+          "x": 0.353,
+          "y": 0.261,
+          "r": 0.045
+        },
+        {
+          "id": "chlorine-shell",
+          "label": "Chlorine's outer shell",
+          "x": 0.63,
+          "y": 0.261,
+          "r": 0.045
+        },
+        {
+          "id": "sodium-ion",
+          "label": "Sodium ion, Na⁺",
+          "x": 0.25,
+          "y": 0.733,
+          "r": 0.08
+        },
+        {
+          "id": "chloride-ion",
+          "label": "Chloride ion, Cl⁻",
+          "x": 0.733,
+          "y": 0.733,
+          "r": 0.1
+        },
+        {
+          "id": "attraction",
+          "label": "Attraction between the ions",
+          "x": 0.484,
+          "y": 0.733,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "ionic-bond-steps",
+      "kind": "sequence",
+      "title": "Forming an ionic bond, step by step",
+      "alt": "Four steps over the sodium chloride diagram: sodium's single outer electron, its move to chlorine's outer shell, the two ions that result, and the attraction between them.",
+      "over": "ionic-bond-formation",
+      "steps": [
+        {
+          "title": "One electron to spare",
+          "text": "Sodium has a single electron in its outer shell, held loosely far from the nucleus.",
+          "focus": "sodium-electron"
+        },
+        {
+          "title": "One space to fill",
+          "text": "Chlorine has seven outer electrons. One more would give it a full shell of eight.",
+          "focus": "chlorine-shell"
+        },
+        {
+          "title": "Sodium becomes Na⁺",
+          "text": "Having lost an electron, sodium has 11 protons and 10 electrons: a charge of +1 and a full outer shell.",
+          "focus": "sodium-ion"
+        },
+        {
+          "title": "Chlorine becomes Cl⁻",
+          "text": "Having gained an electron, chlorine has 17 protons and 18 electrons: a charge of −1 and a full outer shell.",
+          "focus": "chloride-ion"
+        },
+        {
+          "title": "Opposites attract",
+          "text": "The positive and negative ions pull on each other. That electrostatic attraction is the ionic bond.",
+          "focus": "attraction"
+        }
+      ]
+    },
+    {
+      "id": "water-molecule",
+      "kind": "model3d",
+      "title": "A water molecule, H₂O",
+      "alt": "A ball-and-stick model of water: a large red oxygen atom joined by two grey sticks to two smaller white hydrogen atoms, which hang below it at an angle, making a bent shape.",
+      "files": {
+        "usdz": "assets/water-molecule.usdz",
+        "glb": "assets/water-molecule.glb"
+      },
+      "poster": "assets/water-molecule.png"
+    },
+    {
+      "id": "methane-molecule",
+      "kind": "model3d",
+      "title": "A methane molecule, CH₄",
+      "alt": "A ball-and-stick model of methane: a dark grey carbon atom in the centre joined by four grey sticks to four white hydrogen atoms that point to the corners of a tetrahedron.",
+      "files": {
+        "usdz": "assets/methane-molecule.usdz",
+        "glb": "assets/methane-molecule.glb"
+      },
+      "poster": "assets/methane-molecule.png"
+    }
+  ]
+}

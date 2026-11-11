@@ -1,0 +1,4 @@
+node_modules/
+dist/
+# Blind-solve working files: questions without answers, and solvers' answers
+.work/

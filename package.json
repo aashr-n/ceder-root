@@ -1,0 +1,13 @@
+{
+  "name": "ceder-root",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Ceder's question bank and curated catalogue of free learning sources.",
+  "scripts": {
+    "validate:sources": "node sources/validate.mjs"
+  },
+  "devDependencies": {
+    "ajv": "8.17.1"
+  }
+}

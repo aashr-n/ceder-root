@@ -1,0 +1,10 @@
+{
+  "id": "wikibooks",
+  "name": "Wikibooks",
+  "url": "https://en.wikibooks.org",
+  "goodFor": "Open textbooks written by volunteers.",
+  "license": "CC-BY-SA-4.0",
+  "use": "copy-share-alike",
+  "checked": null,
+  "notes": "Same family as Wikipedia. The licence is stated as CC BY-SA 4.0 but is unverified: no licence check has been done. Until checked, treat as link-only in practice."
+}

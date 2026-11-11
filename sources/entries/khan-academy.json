@@ -1,0 +1,13 @@
+{
+  "id": "khan-academy",
+  "name": "Khan Academy",
+  "url": "https://www.khanacademy.org",
+  "goodFor": "Videos, articles and exercises for school and early university subjects.",
+  "license": "unknown",
+  "use": "link-only",
+  "checked": {
+    "date": "2026-11-11",
+    "basis": "Khan Academy support article 'Can I use Khan Academy's videos/name/materials/links in my project?', via search"
+  },
+  "notes": "Content is CC BY-NC-SA; the version is not confirmed, so the licence field is unknown. Khan's own support page says a paid offering is commercial use, and Ceder has paid tiers, so link only."
+}

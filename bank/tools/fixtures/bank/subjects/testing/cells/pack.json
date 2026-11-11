@@ -1,0 +1,167 @@
+{
+  "formatVersion": 1,
+  "id": "testing.cells",
+  "subject": "testing",
+  "title": "Cells",
+  "summary": "A fixture pack with one item of every kind, verified and not.",
+  "license": "CC-BY-4.0",
+  "concepts": [
+    {
+      "id": "cell",
+      "name": "Cell",
+      "aliases": ["cells"],
+      "summary": "The smallest unit of life that can live on its own.",
+      "elements": [
+        { "id": "membrane", "name": "Cell membrane" },
+        { "id": "nucleus", "name": "Nucleus", "aliases": ["nuclei"] }
+      ],
+      "explain": {
+        "text": "A cell is the smallest living thing that can survive on its own. Every plant, animal and fungus is made of them, and many living things are a single cell. A thin membrane wraps each one and decides what comes in and goes out. Inside, many cells keep their DNA in a nucleus, which acts as the cell's library of instructions for making proteins.",
+        "artifact": "cell-tour"
+      }
+    },
+    {
+      "id": "organelle",
+      "name": "Organelle",
+      "summary": "A part inside a cell that does one job, the way an organ does in a body.",
+      "requires": ["cell"]
+    }
+  ],
+  "items": [
+    {
+      "id": "testing.cells.membrane-role",
+      "concept": "cell",
+      "element": "membrane",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does the cell membrane do?",
+      "choices": ["Stores the cell's DNA", "Controls what enters and leaves the cell", "Makes most of the cell's ATP"],
+      "answer": 1,
+      "explanation": "The membrane is a barrier that lets some things through and keeps others out.",
+      "sources": [{ "title": "Cell membrane", "url": "https://example.org/membrane" }],
+      "verification": { "status": "verified", "method": "blind-solve", "solvers": 2, "agreed": 2, "at": "2026-11-01" }
+    },
+    {
+      "id": "testing.cells.nucleus-holds",
+      "concept": "cell",
+      "element": "nucleus",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What does the nucleus of a eukaryotic cell hold?",
+      "answer": "The cell's DNA",
+      "explanation": "The nucleus holds the chromosomes, which are made of DNA.",
+      "verification": { "status": "verified", "method": "blind-solve", "solvers": 2, "agreed": 2, "at": "2026-11-01", "note": "Both said DNA." }
+    },
+    {
+      "id": "testing.cells.protein-path",
+      "concept": "organelle",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps of making a protein for export in order.",
+      "steps": ["DNA is transcribed in the nucleus", "mRNA leaves the nucleus", "A ribosome translates the mRNA", "The Golgi apparatus packages the protein"],
+      "explanation": "Transcription, then export of the message, then translation, then packaging.",
+      "verification": { "status": "verified", "method": "blind-solve", "solvers": 2, "agreed": 2, "at": "2026-11-01" }
+    },
+    {
+      "id": "testing.cells.find-nucleus",
+      "concept": "cell",
+      "element": "nucleus",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the part that holds the cell's DNA.",
+      "artifact": "cell-diagram",
+      "target": "nucleus",
+      "explanation": "The large round body in the middle is the nucleus.",
+      "verification": { "status": "verified", "method": "blind-solve", "solvers": 2, "agreed": 2, "at": "2026-11-01" }
+    },
+    {
+      "id": "testing.cells.draft-choice",
+      "concept": "organelle",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which organelle makes most of an animal cell's ATP?",
+      "choices": ["Nucleus", "Golgi apparatus", "Mitochondrion"],
+      "answer": 2,
+      "explanation": "Mitochondria carry out aerobic respiration, which makes most of the ATP.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "testing.cells.draft-recall",
+      "concept": "organelle",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "Which organelle packages proteins for export from the cell?",
+      "answer": "The Golgi apparatus",
+      "explanation": "The Golgi apparatus modifies proteins and sends them on in vesicles.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "testing.cells.draft-order",
+      "concept": "organelle",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these in order from smallest to largest.",
+      "steps": ["Atom", "Molecule", "Organelle", "Cell", "Tissue"],
+      "explanation": "Atoms make molecules, molecules make organelles, organelles sit in cells, and cells make tissues.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "testing.cells.draft-label",
+      "concept": "organelle",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the organelle that makes most of the cell's ATP.",
+      "artifact": "cell-diagram",
+      "target": "mitochondrion",
+      "explanation": "The red bean-shaped body is a mitochondrion.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "testing.cells.old-question",
+      "concept": "cell",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is a cell?",
+      "choices": ["A virus", "A bacterium"],
+      "answer": 1,
+      "explanation": "A bacterium is a cell; a virus is not.",
+      "verification": { "status": "rejected", "note": "Too easy to guess from the wording." }
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "cell-diagram",
+      "kind": "diagram",
+      "title": "An animal cell",
+      "alt": "An oval cell with a round blue nucleus in the middle, a red mitochondrion at the upper left and an ochre Golgi body at the lower right.",
+      "file": "assets/cell.svg",
+      "hotspots": [
+        { "id": "nucleus", "label": "Nucleus", "x": 0.5, "y": 0.5, "r": 0.08 },
+        { "id": "mitochondrion", "label": "Mitochondrion", "x": 0.267, "y": 0.333, "r": 0.06 },
+        { "id": "golgi", "label": "Golgi apparatus", "x": 0.745, "y": 0.667, "r": 0.06 },
+        { "id": "membrane", "label": "Cell membrane", "x": 0.5, "y": 0.1, "r": 0.05 }
+      ]
+    },
+    {
+      "id": "cell-model",
+      "kind": "model3d",
+      "title": "A cell in 3D",
+      "alt": "A cell cut open to show its nucleus and organelles.",
+      "credit": "Fixture",
+      "files": { "usdz": "assets/cell.usdz", "glb": "assets/cell.glb" },
+      "poster": "assets/cell-poster.png"
+    },
+    {
+      "id": "cell-tour",
+      "kind": "sequence",
+      "title": "Around the cell",
+      "alt": "Three steps: the membrane, the nucleus, and a mitochondrion.",
+      "over": "cell-diagram",
+      "steps": [
+        { "title": "The whole cell", "text": "A membrane wraps everything." },
+        { "title": "Nucleus", "text": "The DNA is kept here.", "focus": "nucleus" },
+        { "title": "Mitochondrion", "text": "Most of the ATP is made here.", "focus": "mitochondrion" }
+      ]
+    }
+  ]
+}

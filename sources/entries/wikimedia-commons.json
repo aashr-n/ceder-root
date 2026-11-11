@@ -1,0 +1,10 @@
+{
+  "id": "wikimedia-commons",
+  "name": "Wikimedia Commons",
+  "url": "https://commons.wikimedia.org",
+  "goodFor": "Freely licensed images, diagrams and media.",
+  "license": "per-item",
+  "use": "copy",
+  "checked": null,
+  "notes": "Each file states its own licence. Use copy only per file, after checking that file's licence. Unverified: no licence check has been done."
+}

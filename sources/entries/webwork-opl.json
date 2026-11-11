@@ -1,0 +1,10 @@
+{
+  "id": "webwork-opl",
+  "name": "WeBWorK Open Problem Library",
+  "url": "https://webwork.maa.org",
+  "goodFor": "About 35,000 maths and science homework problems.",
+  "license": "unknown",
+  "use": "link-only",
+  "checked": null,
+  "notes": "The size comes from the WeBWorK wiki, via search on 2026-11-11. The licence was not found. Unverified: no licence check has been done."
+}

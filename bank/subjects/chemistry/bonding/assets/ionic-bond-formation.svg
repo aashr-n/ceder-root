@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+<rect width="1200" height="900" rx="44" fill="#FBF8F1"/>
+<circle cx="300" cy="235" r="48" fill="none" stroke="#9AA59E" stroke-width="4"/>
+<circle cx="252" cy="235" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="348" cy="235" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="300" cy="235" r="86" fill="none" stroke="#9AA59E" stroke-width="4"/>
+<circle cx="214" cy="235" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="239.2" cy="174.2" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="300" cy="149" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="360.8" cy="174.2" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="386" cy="235" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="360.8" cy="295.8" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="300" cy="321" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="239.2" cy="295.8" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="300" cy="235" r="124" fill="none" stroke="#9AA59E" stroke-width="4"/>
+<circle cx="424" cy="235" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="300" cy="235" r="37" fill="#F2C091" stroke="#1D2A24" stroke-width="4"/>
+<text x="300" y="248" font-family="sans-serif" font-size="34" font-weight="bold" text-anchor="middle" fill="#1D2A24">Na</text>
+<circle cx="880" cy="235" r="48" fill="none" stroke="#9AA59E" stroke-width="4"/>
+<circle cx="832" cy="235" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="928" cy="235" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="880" cy="235" r="86" fill="none" stroke="#9AA59E" stroke-width="4"/>
+<circle cx="794" cy="235" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="819.2" cy="174.2" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="880" cy="149" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="940.8" cy="174.2" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="966" cy="235" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="940.8" cy="295.8" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="880" cy="321" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="819.2" cy="295.8" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="880" cy="235" r="124" fill="none" stroke="#9AA59E" stroke-width="4"/>
+<circle cx="1004" cy="235" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="967.7" cy="322.7" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="880" cy="359" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="792.3" cy="322.7" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="792.3" cy="147.3" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="880" cy="111" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="967.7" cy="147.3" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="880" cy="235" r="37" fill="#B8C99E" stroke="#1D2A24" stroke-width="4"/>
+<text x="880" y="248" font-family="sans-serif" font-size="34" font-weight="bold" text-anchor="middle" fill="#1D2A24">Cl</text>
+<circle cx="424" cy="235" r="13" fill="#C96E52" stroke="#8E4632" stroke-width="2"/>
+<path d="M 440 205 C 540 110 650 120 744 205" fill="none" stroke="#C96E52" stroke-width="7" stroke-linecap="round"/>
+<path d="M 744 205 L 716 196 M 744 205 L 734 178" fill="none" stroke="#C96E52" stroke-width="7" stroke-linecap="round"/>
+<path d="M 600 395 V 465 M 576 442 L 600 467 L 624 442" fill="none" stroke="#1D2A24" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="300" cy="660" r="48" fill="none" stroke="#9AA59E" stroke-width="4"/>
+<circle cx="252" cy="660" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="348" cy="660" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="300" cy="660" r="86" fill="none" stroke="#9AA59E" stroke-width="4"/>
+<circle cx="214" cy="660" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="239.2" cy="599.2" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="300" cy="574" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="360.8" cy="599.2" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="386" cy="660" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="360.8" cy="720.8" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="300" cy="746" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="239.2" cy="720.8" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="300" cy="660" r="37" fill="#F2C091" stroke="#1D2A24" stroke-width="4"/>
+<text x="300" y="673" font-family="sans-serif" font-size="34" font-weight="bold" text-anchor="middle" fill="#1D2A24">Na</text>
+<circle cx="880" cy="660" r="48" fill="none" stroke="#9AA59E" stroke-width="4"/>
+<circle cx="832" cy="660" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="928" cy="660" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="880" cy="660" r="86" fill="none" stroke="#9AA59E" stroke-width="4"/>
+<circle cx="794" cy="660" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="819.2" cy="599.2" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="880" cy="574" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="940.8" cy="599.2" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="966" cy="660" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="940.8" cy="720.8" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="880" cy="746" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="819.2" cy="720.8" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="880" cy="660" r="124" fill="none" stroke="#9AA59E" stroke-width="4"/>
+<circle cx="1004" cy="660" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="967.7" cy="747.7" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="880" cy="784" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="792.3" cy="747.7" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="756" cy="660" r="13" fill="#C96E52" stroke="#8E4632" stroke-width="2"/>
+<circle cx="792.3" cy="572.3" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="880" cy="536" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="967.7" cy="572.3" r="11" fill="#1D2A24" stroke="#1D2A24" stroke-width="2"/>
+<circle cx="880" cy="660" r="37" fill="#B8C99E" stroke="#1D2A24" stroke-width="4"/>
+<text x="880" y="673" font-family="sans-serif" font-size="34" font-weight="bold" text-anchor="middle" fill="#1D2A24">Cl</text>
+<path d="M 206 548 H 188 V 772 H 206 M 394 548 H 412 V 772 H 394" fill="none" stroke="#1D2A24" stroke-width="5"/>
+<path d="M 748 510 H 730 V 810 H 748 M 1012 510 H 1030 V 810 H 1012" fill="none" stroke="#1D2A24" stroke-width="5"/>
+<text x="428" y="560" font-family="sans-serif" font-size="48" font-weight="bold" fill="#1D2A24">+</text>
+<text x="1044" y="522" font-family="sans-serif" font-size="48" font-weight="bold" fill="#1D2A24">−</text>
+<path d="M 450 660 H 712 M 474 640 L 450 660 L 474 680 M 688 640 L 712 660 L 688 680" fill="none" stroke="#2C4A3B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
