@@ -1,0 +1,525 @@
+{
+  "formatVersion": 1,
+  "subject": "anatomy-and-physiology",
+  "covers": "Human anatomy and physiology I and II, as a typical two-course college sequence teaches it: cells, tissues, and every organ system, from the skeleton and nervous system to reproduction. Leaves out embryology beyond gametes and pathology beyond brief examples.",
+  "packs": [
+    {
+      "pack": "body-organization",
+      "title": "Organization of the body",
+      "brief": "The levels of organization from cell to organism, anatomical position and directional terms, body planes, and the body cavities. Stops before homeostasis.",
+      "concepts": [
+        { "id": "levels-of-organization", "name": "Levels of organization" },
+        { "id": "anatomical-position", "name": "Anatomical position" },
+        { "id": "directional-terms", "name": "Directional terms" },
+        { "id": "body-planes", "name": "Body planes" },
+        { "id": "body-cavities", "name": "Body cavities" }
+      ],
+      "buildsOn": []
+    },
+    {
+      "pack": "homeostasis",
+      "title": "Homeostasis and feedback",
+      "brief": "Homeostasis, set points, and how negative and positive feedback loops keep or change a variable. Stops before any specific organ system.",
+      "concepts": [
+        { "id": "homeostasis", "name": "Homeostasis" },
+        { "id": "set-point", "name": "Set point" },
+        { "id": "feedback-control-components", "name": "Feedback control components" },
+        { "id": "negative-feedback", "name": "Negative feedback" },
+        { "id": "positive-feedback", "name": "Positive feedback" }
+      ],
+      "buildsOn": ["levels-of-organization"]
+    },
+    {
+      "pack": "chemistry-of-life",
+      "title": "Chemistry of the body",
+      "brief": "The chemical bonds, water, pH and buffers, and the four organic macromolecule classes the body uses. Stops before enzymes and metabolism.",
+      "concepts": [
+        { "id": "chemical-bonds", "name": "Chemical bonds" },
+        { "id": "water-as-solvent", "name": "Water as a solvent" },
+        { "id": "ph-and-buffers", "name": "pH and buffers" },
+        { "id": "carbohydrates", "name": "Carbohydrates" },
+        { "id": "lipids", "name": "Lipids" },
+        { "id": "proteins", "name": "Proteins" },
+        { "id": "nucleic-acids", "name": "Nucleic acids" }
+      ],
+      "buildsOn": []
+    },
+    {
+      "pack": "cell-structure",
+      "title": "Cell structure",
+      "brief": "The plasma membrane and its proteins, the nucleus, the endomembrane system, mitochondria, the cytoskeleton, and cell junctions. Stops before transport across the membrane.",
+      "concepts": [
+        { "id": "plasma-membrane-structure", "name": "Plasma membrane structure" },
+        { "id": "membrane-proteins", "name": "Membrane proteins" },
+        { "id": "nucleus", "name": "Nucleus" },
+        { "id": "endomembrane-system", "name": "Endomembrane system" },
+        { "id": "mitochondria", "name": "Mitochondria" },
+        { "id": "cytoskeleton", "name": "Cytoskeleton" },
+        { "id": "cell-junctions", "name": "Cell junctions" }
+      ],
+      "buildsOn": ["lipids", "proteins"]
+    },
+    {
+      "pack": "membrane-transport",
+      "title": "Membrane transport",
+      "brief": "How solutes and water cross the plasma membrane: diffusion, osmosis and tonicity, carrier-mediated transport, and bulk transport. Stops before membrane potentials.",
+      "concepts": [
+        { "id": "simple-diffusion", "name": "Simple diffusion" },
+        { "id": "osmosis-and-tonicity", "name": "Osmosis and tonicity" },
+        { "id": "facilitated-diffusion", "name": "Facilitated diffusion" },
+        { "id": "primary-active-transport", "name": "Primary active transport" },
+        { "id": "secondary-active-transport", "name": "Secondary active transport" },
+        { "id": "bulk-transport", "name": "Bulk transport" }
+      ],
+      "buildsOn": ["plasma-membrane-structure", "membrane-proteins"]
+    },
+    {
+      "pack": "cellular-metabolism",
+      "title": "Cellular metabolism",
+      "brief": "Enzymes and their regulation, ATP, and the stages of aerobic respiration from glycolysis through the electron transport chain. Stops before whole-body energy balance.",
+      "concepts": [
+        { "id": "enzymes", "name": "Enzymes" },
+        { "id": "enzyme-regulation", "name": "Enzyme regulation" },
+        { "id": "atp", "name": "ATP" },
+        { "id": "glycolysis", "name": "Glycolysis" },
+        { "id": "krebs-cycle", "name": "Krebs cycle" },
+        { "id": "electron-transport-chain", "name": "Electron transport chain" }
+      ],
+      "buildsOn": ["proteins", "mitochondria"]
+    },
+    {
+      "pack": "cell-division",
+      "title": "Cell division",
+      "brief": "The phases of the cell cycle, mitosis and cytokinesis, meiosis, and the checkpoints that control division. Stops before DNA chemistry.",
+      "concepts": [
+        { "id": "cell-cycle-phases", "name": "Cell cycle phases" },
+        { "id": "mitosis", "name": "Mitosis" },
+        { "id": "cytokinesis", "name": "Cytokinesis" },
+        { "id": "meiosis", "name": "Meiosis" },
+        { "id": "cell-cycle-checkpoints", "name": "Cell cycle checkpoints" }
+      ],
+      "buildsOn": ["nucleus"]
+    },
+    {
+      "pack": "protein-synthesis",
+      "title": "Protein synthesis",
+      "brief": "DNA replication, transcription, the genetic code, translation, and how mutations occur and are repaired. Stops before gene regulation in development.",
+      "concepts": [
+        { "id": "dna-replication", "name": "DNA replication" },
+        { "id": "transcription", "name": "Transcription" },
+        { "id": "genetic-code", "name": "Genetic code" },
+        { "id": "translation", "name": "Translation" },
+        { "id": "mutations-and-dna-repair", "name": "Mutations and DNA repair" }
+      ],
+      "buildsOn": ["nucleic-acids", "nucleus"]
+    },
+    {
+      "pack": "tissues",
+      "title": "Tissues",
+      "brief": "The four primary tissue types and the epithelial membranes built from them. Stops before the skin and repair.",
+      "concepts": [
+        { "id": "epithelial-tissue", "name": "Epithelial tissue" },
+        { "id": "connective-tissue", "name": "Connective tissue" },
+        { "id": "muscle-tissue-types", "name": "Muscle tissue types" },
+        { "id": "nervous-tissue", "name": "Nervous tissue" },
+        { "id": "tissue-membranes", "name": "Tissue membranes" }
+      ],
+      "buildsOn": ["cell-junctions"]
+    },
+    {
+      "pack": "integumentary",
+      "title": "Integumentary system",
+      "brief": "The layers of the skin, its glands and hair and nails, how skin regulates temperature, and inflammation and tissue repair. Stops before burns and skin disease.",
+      "concepts": [
+        { "id": "epidermis", "name": "Epidermis" },
+        { "id": "dermis", "name": "Dermis" },
+        { "id": "skin-appendages", "name": "Skin appendages" },
+        { "id": "thermoregulation-by-skin", "name": "Thermoregulation by skin" },
+        { "id": "inflammatory-response", "name": "Inflammatory response" },
+        { "id": "tissue-repair", "name": "Tissue repair" }
+      ],
+      "buildsOn": ["epithelial-tissue", "connective-tissue"]
+    },
+    {
+      "pack": "bone-tissue",
+      "title": "Bone tissue",
+      "brief": "The cells and matrix of bone, compact and spongy bone, ossification, remodeling, and bone as a calcium store. Stops before individual bones.",
+      "concepts": [
+        { "id": "bone-cell-types", "name": "Bone cell types" },
+        { "id": "bone-matrix", "name": "Bone matrix" },
+        { "id": "compact-and-spongy-bone", "name": "Compact and spongy bone" },
+        { "id": "ossification", "name": "Ossification" },
+        { "id": "bone-remodeling", "name": "Bone remodeling" },
+        { "id": "calcium-storage-in-bone", "name": "Calcium storage in bone" }
+      ],
+      "buildsOn": ["connective-tissue"]
+    },
+    {
+      "pack": "skeleton",
+      "title": "Bones of the skeleton",
+      "brief": "The bones of the skull, vertebral column, thoracic cage, and the upper and lower limb girdles and limbs, with their surface markings. Stops before joints.",
+      "concepts": [
+        { "id": "skull-bones", "name": "Skull bones" },
+        { "id": "vertebral-column", "name": "Vertebral column" },
+        { "id": "thoracic-cage", "name": "Thoracic cage" },
+        { "id": "pectoral-girdle-and-upper-limb", "name": "Pectoral girdle and upper limb" },
+        { "id": "pelvic-girdle-and-lower-limb", "name": "Pelvic girdle and lower limb" },
+        { "id": "bone-surface-markings", "name": "Bone surface markings" }
+      ],
+      "buildsOn": ["compact-and-spongy-bone"]
+    },
+    {
+      "pack": "joints",
+      "title": "Joints",
+      "brief": "How joints are classified by structure, and the parts, movements, and types of synovial joints. Stops before muscles that move them.",
+      "concepts": [
+        { "id": "joint-classification", "name": "Joint classification" },
+        { "id": "fibrous-joints", "name": "Fibrous joints" },
+        { "id": "cartilaginous-joints", "name": "Cartilaginous joints" },
+        { "id": "synovial-joint-structure", "name": "Synovial joint structure" },
+        { "id": "synovial-joint-movements", "name": "Synovial joint movements" },
+        { "id": "synovial-joint-types", "name": "Synovial joint types" }
+      ],
+      "buildsOn": ["bone-surface-markings"]
+    },
+    {
+      "pack": "neurons",
+      "title": "Neurons and nerve signals",
+      "brief": "Neuron and glial cell structure, resting membrane potential, action potentials, and synaptic transmission. Stops before the central nervous system.",
+      "concepts": [
+        { "id": "neuron-structure", "name": "Neuron structure" },
+        { "id": "glial-cells", "name": "Glial cells" },
+        { "id": "resting-membrane-potential", "name": "Resting membrane potential" },
+        { "id": "action-potential", "name": "Action potential" },
+        { "id": "synaptic-transmission", "name": "Synaptic transmission" },
+        { "id": "neurotransmitters", "name": "Neurotransmitters" }
+      ],
+      "buildsOn": ["nervous-tissue", "primary-active-transport", "facilitated-diffusion"]
+    },
+    {
+      "pack": "skeletal-muscle-physiology",
+      "title": "Skeletal muscle physiology",
+      "brief": "Skeletal muscle fiber structure, the sarcomere, the neuromuscular junction, excitation-contraction coupling, sliding filaments, and motor units. Stops before named muscles.",
+      "concepts": [
+        { "id": "skeletal-muscle-fiber-structure", "name": "Skeletal muscle fiber structure" },
+        { "id": "sarcomere", "name": "Sarcomere" },
+        { "id": "neuromuscular-junction", "name": "Neuromuscular junction" },
+        { "id": "excitation-contraction-coupling", "name": "Excitation-contraction coupling" },
+        { "id": "sliding-filament-theory", "name": "Sliding filament theory" },
+        { "id": "motor-units", "name": "Motor units" },
+        { "id": "muscle-twitch-and-tetanus", "name": "Muscle twitch and tetanus" }
+      ],
+      "buildsOn": ["action-potential", "neurotransmitters", "atp", "muscle-tissue-types"]
+    },
+    {
+      "pack": "skeletal-muscle-anatomy",
+      "title": "Skeletal muscle anatomy",
+      "brief": "How muscles are named and what they do, their origins and insertions, and the major muscles of the head, neck, trunk, and limbs. Stops before the nerves that supply them.",
+      "concepts": [
+        { "id": "muscle-naming-and-actions", "name": "Muscle naming and actions" },
+        { "id": "origin-and-insertion", "name": "Origin and insertion" },
+        { "id": "head-and-neck-muscles", "name": "Head and neck muscles" },
+        { "id": "trunk-muscles", "name": "Trunk muscles" },
+        { "id": "upper-limb-muscles", "name": "Upper limb muscles" },
+        { "id": "lower-limb-muscles", "name": "Lower limb muscles" }
+      ],
+      "buildsOn": ["bone-surface-markings", "sarcomere"]
+    },
+    {
+      "pack": "central-nervous-system",
+      "title": "Central nervous system",
+      "brief": "The spinal cord, the brainstem, cerebrum, cerebellum and diencephalon, the meninges, and the cerebrospinal fluid and ventricles. Stops before the peripheral nerves.",
+      "concepts": [
+        { "id": "spinal-cord", "name": "Spinal cord" },
+        { "id": "brainstem", "name": "Brainstem" },
+        { "id": "cerebrum-and-cerebellum", "name": "Cerebrum and cerebellum" },
+        { "id": "diencephalon", "name": "Diencephalon" },
+        { "id": "meninges", "name": "Meninges" },
+        { "id": "cerebrospinal-fluid-and-ventricles", "name": "Cerebrospinal fluid and ventricles" }
+      ],
+      "buildsOn": ["neurotransmitters", "synaptic-transmission"]
+    },
+    {
+      "pack": "peripheral-nervous-system",
+      "title": "Peripheral nervous system",
+      "brief": "Spinal and cranial nerves, reflex arcs, and the autonomic nervous system with its sympathetic and parasympathetic divisions. Stops before the senses.",
+      "concepts": [
+        { "id": "spinal-nerves", "name": "Spinal nerves" },
+        { "id": "cranial-nerves", "name": "Cranial nerves" },
+        { "id": "reflex-arcs", "name": "Reflex arcs" },
+        { "id": "autonomic-nervous-system", "name": "Autonomic nervous system" },
+        { "id": "autonomic-divisions", "name": "Sympathetic and parasympathetic divisions" }
+      ],
+      "buildsOn": ["synaptic-transmission"]
+    },
+    {
+      "pack": "somatic-and-chemical-senses",
+      "title": "Somatic and chemical senses",
+      "brief": "Sensory receptor types, touch, temperature, and pain pathways, and taste and smell. Stops before vision and hearing.",
+      "concepts": [
+        { "id": "sensory-receptor-types", "name": "Sensory receptor types" },
+        { "id": "somatic-sensation-pathways", "name": "Somatic sensation pathways" },
+        { "id": "mechanoreceptors-and-thermoreceptors", "name": "Mechanoreceptors and thermoreceptors" },
+        { "id": "nociception-and-pain", "name": "Nociception and pain" },
+        { "id": "taste", "name": "Taste" },
+        { "id": "smell", "name": "Smell" }
+      ],
+      "buildsOn": ["action-potential", "reflex-arcs"]
+    },
+    {
+      "pack": "vision",
+      "title": "Vision",
+      "brief": "The structure of the eye, the retina and photoreceptors, phototransduction, the visual pathway, and focusing. Stops before color theory beyond the basics.",
+      "concepts": [
+        { "id": "eye-anatomy", "name": "Eye anatomy" },
+        { "id": "retina-and-photoreceptors", "name": "Retina and photoreceptors" },
+        { "id": "phototransduction", "name": "Phototransduction" },
+        { "id": "visual-pathways", "name": "Visual pathways" },
+        { "id": "refraction-and-accommodation", "name": "Refraction and accommodation" }
+      ],
+      "buildsOn": ["sensory-receptor-types"]
+    },
+    {
+      "pack": "hearing-and-equilibrium",
+      "title": "Hearing and equilibrium",
+      "brief": "The outer, middle, and inner ear, how the cochlea converts sound, the vestibular system, and the auditory pathway. Stops before the vestibular reflexes in detail.",
+      "concepts": [
+        { "id": "external-and-middle-ear", "name": "External and middle ear" },
+        { "id": "cochlea-and-hearing", "name": "Cochlea and hearing" },
+        { "id": "vestibular-system", "name": "Vestibular system" },
+        { "id": "balance-reflexes", "name": "Balance reflexes" },
+        { "id": "auditory-pathways", "name": "Auditory pathways" }
+      ],
+      "buildsOn": ["sensory-receptor-types"]
+    },
+    {
+      "pack": "endocrine-system",
+      "title": "Endocrine system",
+      "brief": "Hormone classes and receptor signaling, the hypothalamus and pituitary, and the thyroid, adrenal, pancreatic, and calcium-regulating hormones. Stops before the reproductive hormones.",
+      "concepts": [
+        { "id": "hormone-classes", "name": "Hormone classes" },
+        { "id": "hormone-receptors-and-signaling", "name": "Hormone receptors and signaling" },
+        { "id": "hypothalamus-and-pituitary", "name": "Hypothalamus and pituitary" },
+        { "id": "thyroid-hormones", "name": "Thyroid hormones" },
+        { "id": "adrenal-hormones", "name": "Adrenal hormones" },
+        { "id": "pancreatic-hormones-and-glucose", "name": "Pancreatic hormones and glucose" },
+        { "id": "calcium-hormones", "name": "Calcium hormones" }
+      ],
+      "buildsOn": ["negative-feedback"]
+    },
+    {
+      "pack": "blood",
+      "title": "Blood",
+      "brief": "Plasma and the formed elements, red blood cells, white blood cells, hemostasis, and blood typing. Stops before the heart.",
+      "concepts": [
+        { "id": "blood-components", "name": "Blood components" },
+        { "id": "erythrocytes", "name": "Erythrocytes" },
+        { "id": "leukocytes", "name": "Leukocytes" },
+        { "id": "hemostasis", "name": "Hemostasis" },
+        { "id": "blood-typing", "name": "Blood typing" }
+      ],
+      "buildsOn": ["proteins"]
+    },
+    {
+      "pack": "heart-anatomy",
+      "title": "Heart anatomy",
+      "brief": "The heart's chambers, valves, wall layers, pericardium, and coronary circulation. Stops before the conduction system and the cardiac cycle.",
+      "concepts": [
+        { "id": "heart-chambers", "name": "Heart chambers" },
+        { "id": "heart-valves", "name": "Heart valves" },
+        { "id": "heart-wall-layers", "name": "Heart wall layers" },
+        { "id": "pericardium", "name": "Pericardium" },
+        { "id": "coronary-circulation", "name": "Coronary circulation" }
+      ],
+      "buildsOn": ["muscle-tissue-types"]
+    },
+    {
+      "pack": "cardiac-physiology",
+      "title": "Cardiac physiology",
+      "brief": "The cardiac conduction system, cardiac action potentials, the cardiac cycle, the electrocardiogram, and cardiac output. Stops before blood vessels.",
+      "concepts": [
+        { "id": "cardiac-conduction-system", "name": "Cardiac conduction system" },
+        { "id": "cardiac-action-potentials", "name": "Cardiac action potentials" },
+        { "id": "cardiac-cycle", "name": "Cardiac cycle" },
+        { "id": "electrocardiogram", "name": "Electrocardiogram" },
+        { "id": "cardiac-output", "name": "Cardiac output" }
+      ],
+      "buildsOn": ["heart-chambers", "action-potential"]
+    },
+    {
+      "pack": "blood-vessels",
+      "title": "Blood vessels",
+      "brief": "Vessel wall structure, arteries and arterioles, capillary exchange, veins and venous return, blood flow and resistance, and the circulatory pathways. Stops before blood pressure control.",
+      "concepts": [
+        { "id": "vessel-wall-structure", "name": "Vessel wall structure" },
+        { "id": "arteries-and-arterioles", "name": "Arteries and arterioles" },
+        { "id": "capillary-exchange", "name": "Capillary exchange" },
+        { "id": "veins-and-venous-return", "name": "Veins and venous return" },
+        { "id": "blood-flow-and-resistance", "name": "Blood flow and resistance" },
+        { "id": "circulatory-pathways", "name": "Circulatory pathways" }
+      ],
+      "buildsOn": ["cardiac-output", "heart-chambers"]
+    },
+    {
+      "pack": "blood-pressure-regulation",
+      "title": "Blood pressure regulation",
+      "brief": "The baroreceptor reflex, the renin-angiotensin-aldosterone system, local autoregulation, and blood volume control. Stops before the kidney's filtration work.",
+      "concepts": [
+        { "id": "baroreceptor-reflex", "name": "Baroreceptor reflex" },
+        { "id": "renin-angiotensin-aldosterone-system", "name": "Renin-angiotensin-aldosterone system" },
+        { "id": "local-autoregulation", "name": "Local autoregulation" },
+        { "id": "blood-volume-control", "name": "Blood volume control" },
+        { "id": "shock-and-hemorrhage", "name": "Shock and hemorrhage" }
+      ],
+      "buildsOn": ["blood-flow-and-resistance", "reflex-arcs", "adrenal-hormones"]
+    },
+    {
+      "pack": "lymphatic-and-immune",
+      "title": "Lymphatic and immune systems",
+      "brief": "Lymphatic vessels and organs, innate immunity, adaptive immunity with B cells, antibodies, and T cells, and immune disorders. Stops before transplant immunology.",
+      "concepts": [
+        { "id": "lymphatic-vessels-and-organs", "name": "Lymphatic vessels and organs" },
+        { "id": "innate-immunity", "name": "Innate immunity" },
+        { "id": "adaptive-immunity-overview", "name": "Adaptive immunity overview" },
+        { "id": "b-cells-and-antibodies", "name": "B cells and antibodies" },
+        { "id": "t-cells-and-mhc", "name": "T cells and MHC" },
+        { "id": "immune-disorders", "name": "Immune disorders" }
+      ],
+      "buildsOn": ["leukocytes", "inflammatory-response", "veins-and-venous-return"]
+    },
+    {
+      "pack": "respiratory-anatomy",
+      "title": "Respiratory anatomy and ventilation",
+      "brief": "The respiratory tract, the lungs and pleurae, pulmonary ventilation, lung volumes and capacities, and surfactant and compliance. Stops before gas exchange.",
+      "concepts": [
+        { "id": "respiratory-tract-anatomy", "name": "Respiratory tract anatomy" },
+        { "id": "lungs-and-pleura", "name": "Lungs and pleura" },
+        { "id": "pulmonary-ventilation", "name": "Pulmonary ventilation" },
+        { "id": "lung-volumes-and-capacities", "name": "Lung volumes and capacities" },
+        { "id": "surfactant-and-compliance", "name": "Surfactant and compliance" }
+      ],
+      "buildsOn": ["epithelial-tissue", "muscle-tissue-types"]
+    },
+    {
+      "pack": "gas-exchange-and-control",
+      "title": "Gas exchange and respiratory control",
+      "brief": "Gas laws, alveolar gas exchange, gas transport in blood, the oxygen-hemoglobin curve, carbon dioxide transport, and how breathing is controlled. Stops before acid-base disorders.",
+      "concepts": [
+        { "id": "gas-laws", "name": "Gas laws" },
+        { "id": "alveolar-gas-exchange", "name": "Alveolar gas exchange" },
+        { "id": "oxygen-hemoglobin-dissociation", "name": "Oxygen-hemoglobin dissociation" },
+        { "id": "carbon-dioxide-transport", "name": "Carbon dioxide transport" },
+        { "id": "respiratory-centers", "name": "Respiratory centers" },
+        { "id": "chemoreceptor-control", "name": "Chemoreceptor control" }
+      ],
+      "buildsOn": ["pulmonary-ventilation", "erythrocytes", "ph-and-buffers"]
+    },
+    {
+      "pack": "digestive-tract-anatomy",
+      "title": "Digestive tract anatomy",
+      "brief": "The wall layers of the digestive tract, the mouth through the rectum, and the accessory organs. Stops before digestion itself.",
+      "concepts": [
+        { "id": "digestive-tract-wall-layers", "name": "Digestive tract wall layers" },
+        { "id": "mouth-and-esophagus", "name": "Mouth and esophagus" },
+        { "id": "stomach-structure", "name": "Stomach structure" },
+        { "id": "small-intestine-anatomy", "name": "Small intestine anatomy" },
+        { "id": "large-intestine-and-rectum", "name": "Large intestine and rectum" },
+        { "id": "digestive-accessory-organs", "name": "Digestive accessory organs" }
+      ],
+      "buildsOn": ["epithelial-tissue"]
+    },
+    {
+      "pack": "digestion-and-absorption",
+      "title": "Digestion and absorption",
+      "brief": "Digestive secretions, gastric acid and pepsin, digestion of each macronutrient, bile, absorption, and digestive hormones. Stops before whole-body metabolism.",
+      "concepts": [
+        { "id": "digestive-secretions", "name": "Digestive secretions" },
+        { "id": "gastric-acid-and-pepsin", "name": "Gastric acid and pepsin" },
+        { "id": "carbohydrate-digestion", "name": "Carbohydrate digestion" },
+        { "id": "protein-digestion", "name": "Protein digestion" },
+        { "id": "lipid-digestion-and-bile", "name": "Lipid digestion and bile" },
+        { "id": "nutrient-absorption", "name": "Nutrient absorption" },
+        { "id": "digestive-hormones", "name": "Digestive hormones" }
+      ],
+      "buildsOn": ["enzymes", "digestive-accessory-organs"]
+    },
+    {
+      "pack": "nutrition-and-metabolism",
+      "title": "Nutrition and whole-body metabolism",
+      "brief": "Fed and fasting states, basal metabolic rate, nutrient storage in the liver, vitamins and minerals, and body temperature regulation. Stops before the kidneys.",
+      "concepts": [
+        { "id": "fed-and-fasting-states", "name": "Fed and fasting states" },
+        { "id": "basal-metabolic-rate", "name": "Basal metabolic rate" },
+        { "id": "nutrient-storage-in-liver", "name": "Nutrient storage in the liver" },
+        { "id": "vitamins-and-minerals", "name": "Vitamins and minerals" },
+        { "id": "body-temperature-regulation", "name": "Body temperature regulation" }
+      ],
+      "buildsOn": ["krebs-cycle", "hypothalamus-and-pituitary"]
+    },
+    {
+      "pack": "urinary-anatomy",
+      "title": "Urinary system anatomy",
+      "brief": "Kidney gross anatomy, the nephron, the renal blood supply, the ureter, bladder, and urethra, and micturition. Stops before renal physiology.",
+      "concepts": [
+        { "id": "kidney-gross-anatomy", "name": "Kidney gross anatomy" },
+        { "id": "nephron-structure", "name": "Nephron structure" },
+        { "id": "renal-blood-supply", "name": "Renal blood supply" },
+        { "id": "ureter-bladder-and-urethra", "name": "Ureter, bladder, and urethra" },
+        { "id": "micturition", "name": "Micturition" }
+      ],
+      "buildsOn": ["epithelial-tissue"]
+    },
+    {
+      "pack": "renal-physiology",
+      "title": "Renal physiology",
+      "brief": "Glomerular filtration, tubular reabsorption and secretion, the countercurrent mechanism, and how urine concentration is set by hormones. Stops before fluid and acid-base balance.",
+      "concepts": [
+        { "id": "glomerular-filtration", "name": "Glomerular filtration" },
+        { "id": "tubular-reabsorption", "name": "Tubular reabsorption" },
+        { "id": "tubular-secretion", "name": "Tubular secretion" },
+        { "id": "countercurrent-mechanism", "name": "Countercurrent mechanism" },
+        { "id": "urine-concentration-and-hormones", "name": "Urine concentration and hormones" }
+      ],
+      "buildsOn": ["nephron-structure", "renin-angiotensin-aldosterone-system", "simple-diffusion"]
+    },
+    {
+      "pack": "fluid-electrolyte-acid-base",
+      "title": "Fluid, electrolyte, and acid-base balance",
+      "brief": "Body fluid compartments, sodium and water balance, potassium balance, acid-base balance, and acidosis and alkalosis. Stops before reproduction.",
+      "concepts": [
+        { "id": "fluid-compartments", "name": "Fluid compartments" },
+        { "id": "sodium-and-water-balance", "name": "Sodium and water balance" },
+        { "id": "potassium-balance", "name": "Potassium balance" },
+        { "id": "acid-base-balance", "name": "Acid-base balance" },
+        { "id": "acidosis-and-alkalosis", "name": "Acidosis and alkalosis" }
+      ],
+      "buildsOn": ["tubular-reabsorption", "ph-and-buffers", "osmosis-and-tonicity"]
+    },
+    {
+      "pack": "male-reproductive-system",
+      "title": "Male reproductive system",
+      "brief": "Male reproductive anatomy, spermatogenesis, male reproductive hormones, erection and ejaculation, and common disorders. Stops before the female cycle.",
+      "concepts": [
+        { "id": "male-reproductive-anatomy", "name": "Male reproductive anatomy" },
+        { "id": "spermatogenesis", "name": "Spermatogenesis" },
+        { "id": "male-reproductive-hormones", "name": "Male reproductive hormones" },
+        { "id": "erection-and-ejaculation", "name": "Erection and ejaculation" },
+        { "id": "male-reproductive-disorders", "name": "Male reproductive disorders" }
+      ],
+      "buildsOn": ["hypothalamus-and-pituitary", "meiosis"]
+    },
+    {
+      "pack": "female-reproductive-system",
+      "title": "Female reproductive system",
+      "brief": "Female reproductive anatomy, oogenesis, the ovarian and menstrual cycles, female reproductive hormones, and pregnancy and lactation. Stops before embryonic development.",
+      "concepts": [
+        { "id": "female-reproductive-anatomy", "name": "Female reproductive anatomy" },
+        { "id": "oogenesis", "name": "Oogenesis" },
+        { "id": "ovarian-and-menstrual-cycle", "name": "Ovarian and menstrual cycle" },
+        { "id": "female-reproductive-hormones", "name": "Female reproductive hormones" },
+        { "id": "pregnancy-and-lactation", "name": "Pregnancy and lactation" }
+      ],
+      "buildsOn": ["hypothalamus-and-pituitary", "meiosis"]
+    }
+  ]
+}

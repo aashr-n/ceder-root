@@ -1,0 +1,223 @@
+{
+  "formatVersion": 1,
+  "subject": "discrete-mathematics",
+  "covers": "A first course in discrete mathematics for computing students: logic, proof, sets, functions, relations, induction, counting, probability, graphs, trees and Boolean algebra. Stops before abstract algebra, number theory beyond congruences, and continuous topics.",
+  "packs": [
+    {
+      "pack": "propositional-logic",
+      "title": "Propositional logic",
+      "brief": "Propositions, the logical connectives, truth tables, tautologies and logical equivalence. Stops before quantifiers.",
+      "concepts": [
+        { "id": "proposition", "name": "Proposition" },
+        { "id": "logical-connective", "name": "Logical connective" },
+        { "id": "truth-table", "name": "Truth table" },
+        { "id": "conditional-statement", "name": "Conditional statement" },
+        { "id": "tautology-and-contradiction", "name": "Tautology and contradiction" },
+        { "id": "logical-equivalence", "name": "Logical equivalence" }
+      ],
+      "buildsOn": []
+    },
+    {
+      "pack": "predicate-logic",
+      "title": "Predicate logic",
+      "brief": "Predicates, the universal and existential quantifiers, nested quantifiers and negating quantified statements. Stops before proof methods.",
+      "concepts": [
+        { "id": "predicate", "name": "Predicate" },
+        { "id": "universal-quantifier", "name": "Universal quantifier" },
+        { "id": "existential-quantifier", "name": "Existential quantifier" },
+        { "id": "nested-quantifiers", "name": "Nested quantifiers" },
+        { "id": "negating-quantified-statements", "name": "Negating quantified statements" }
+      ],
+      "buildsOn": ["proposition", "logical-connective", "logical-equivalence"]
+    },
+    {
+      "pack": "proof-techniques",
+      "title": "Proof techniques",
+      "brief": "What a mathematical proof is, and the direct, contrapositive, contradiction and case-based methods, with counterexamples. Stops before induction.",
+      "concepts": [
+        { "id": "mathematical-proof", "name": "Mathematical proof" },
+        { "id": "direct-proof", "name": "Direct proof" },
+        { "id": "proof-by-contrapositive", "name": "Proof by contrapositive" },
+        { "id": "proof-by-contradiction", "name": "Proof by contradiction" },
+        { "id": "proof-by-cases", "name": "Proof by cases" },
+        { "id": "counterexample", "name": "Counterexample" }
+      ],
+      "buildsOn": ["conditional-statement", "universal-quantifier", "existential-quantifier", "negating-quantified-statements"]
+    },
+    {
+      "pack": "sets",
+      "title": "Sets",
+      "brief": "Sets and subsets, the set operations, Venn diagrams, power sets and Cartesian products. Stops before functions.",
+      "concepts": [
+        { "id": "set", "name": "Set" },
+        { "id": "subset", "name": "Subset" },
+        { "id": "set-operation", "name": "Set operation" },
+        { "id": "venn-diagram", "name": "Venn diagram" },
+        { "id": "power-set", "name": "Power set" },
+        { "id": "cartesian-product", "name": "Cartesian product" }
+      ],
+      "buildsOn": ["predicate", "proof-by-contrapositive", "logical-equivalence"]
+    },
+    {
+      "pack": "functions",
+      "title": "Functions",
+      "brief": "Functions between sets, their domain and codomain, injective, surjective and bijective functions, composition and inverses. Stops before growth rates.",
+      "concepts": [
+        { "id": "function", "name": "Function" },
+        { "id": "injective-function", "name": "Injective function" },
+        { "id": "surjective-function", "name": "Surjective function" },
+        { "id": "bijective-function", "name": "Bijective function" },
+        { "id": "function-composition", "name": "Function composition" },
+        { "id": "inverse-function", "name": "Inverse function" }
+      ],
+      "buildsOn": ["set", "cartesian-product", "subset", "universal-quantifier", "existential-quantifier"]
+    },
+    {
+      "pack": "asymptotic-growth",
+      "title": "Asymptotic growth",
+      "brief": "Big-O, big-Omega and big-Theta notation, logarithms, and the common growth rates that algorithms are compared by. Stops before recurrences.",
+      "concepts": [
+        { "id": "logarithm", "name": "Logarithm" },
+        { "id": "big-o-notation", "name": "Big-O notation" },
+        { "id": "big-omega-notation", "name": "Big-Omega notation" },
+        { "id": "big-theta-notation", "name": "Big-Theta notation" },
+        { "id": "common-growth-rates", "name": "Common growth rates" }
+      ],
+      "buildsOn": ["function", "universal-quantifier", "existential-quantifier"]
+    },
+    {
+      "pack": "recursion-and-induction",
+      "title": "Recursion and induction",
+      "brief": "Mathematical induction, strong induction, the well-ordering principle, recursive definitions and recurrence relations. Stops before solving recurrences in closed form.",
+      "concepts": [
+        { "id": "mathematical-induction", "name": "Mathematical induction" },
+        { "id": "strong-induction", "name": "Strong induction" },
+        { "id": "well-ordering-principle", "name": "Well-ordering principle" },
+        { "id": "recursive-definition", "name": "Recursive definition" },
+        { "id": "recurrence-relation", "name": "Recurrence relation" }
+      ],
+      "buildsOn": ["mathematical-proof", "direct-proof", "function", "predicate", "universal-quantifier"]
+    },
+    {
+      "pack": "relations",
+      "title": "Relations",
+      "brief": "Binary relations and their reflexive, symmetric and transitive properties, equivalence relations and partitions, and partial orders. Stops before graphs.",
+      "concepts": [
+        { "id": "binary-relation", "name": "Binary relation" },
+        { "id": "reflexive-relation", "name": "Reflexive relation" },
+        { "id": "symmetric-relation", "name": "Symmetric relation" },
+        { "id": "transitive-relation", "name": "Transitive relation" },
+        { "id": "equivalence-relation", "name": "Equivalence relation" },
+        { "id": "equivalence-class-and-partition", "name": "Equivalence class and partition" },
+        { "id": "partial-order", "name": "Partial order" }
+      ],
+      "buildsOn": ["set", "cartesian-product", "subset", "function", "universal-quantifier"]
+    },
+    {
+      "pack": "integers",
+      "title": "Integers",
+      "brief": "Divisibility, primes, greatest common divisors, the Euclidean algorithm and unique prime factorization. Stops before congruences.",
+      "concepts": [
+        { "id": "divisibility", "name": "Divisibility" },
+        { "id": "prime-number", "name": "Prime number" },
+        { "id": "greatest-common-divisor", "name": "Greatest common divisor" },
+        { "id": "euclidean-algorithm", "name": "Euclidean algorithm" },
+        { "id": "fundamental-theorem-of-arithmetic", "name": "Fundamental theorem of arithmetic" }
+      ],
+      "buildsOn": ["mathematical-proof", "proof-by-contradiction", "well-ordering-principle", "strong-induction"]
+    },
+    {
+      "pack": "modular-arithmetic",
+      "title": "Modular arithmetic",
+      "brief": "Congruences, arithmetic modulo n, modular inverses and fast modular exponentiation. Stops before the Chinese remainder theorem.",
+      "concepts": [
+        { "id": "congruence", "name": "Congruence" },
+        { "id": "modular-arithmetic-operations", "name": "Modular arithmetic operations" },
+        { "id": "modular-inverse", "name": "Modular inverse" },
+        { "id": "modular-exponentiation", "name": "Modular exponentiation" }
+      ],
+      "buildsOn": ["equivalence-relation", "divisibility", "greatest-common-divisor", "euclidean-algorithm"]
+    },
+    {
+      "pack": "basic-counting",
+      "title": "Basic counting",
+      "brief": "The sum and product rules, permutations, combinations, binomial coefficients and the binomial theorem. Stops before the pigeonhole principle.",
+      "concepts": [
+        { "id": "sum-rule", "name": "Sum rule" },
+        { "id": "product-rule", "name": "Product rule" },
+        { "id": "permutation", "name": "Permutation" },
+        { "id": "combination", "name": "Combination" },
+        { "id": "binomial-coefficient", "name": "Binomial coefficient" },
+        { "id": "binomial-theorem", "name": "Binomial theorem" }
+      ],
+      "buildsOn": ["set", "cartesian-product", "injective-function", "bijective-function", "mathematical-induction"]
+    },
+    {
+      "pack": "pigeonhole-and-inclusion-exclusion",
+      "title": "Pigeonhole and inclusion-exclusion",
+      "brief": "The pigeonhole principle, the inclusion-exclusion principle and counting multisets with stars and bars. Stops before probability.",
+      "concepts": [
+        { "id": "pigeonhole-principle", "name": "Pigeonhole principle" },
+        { "id": "generalized-pigeonhole-principle", "name": "Generalized pigeonhole principle" },
+        { "id": "inclusion-exclusion-principle", "name": "Inclusion-exclusion principle" },
+        { "id": "stars-and-bars", "name": "Stars and bars" }
+      ],
+      "buildsOn": ["sum-rule", "combination", "injective-function", "surjective-function", "set-operation"]
+    },
+    {
+      "pack": "discrete-probability",
+      "title": "Discrete probability",
+      "brief": "Sample spaces and events, probability functions on finite spaces, conditional and independent events, Bayes' theorem and expected value. Stops before continuous distributions.",
+      "concepts": [
+        { "id": "sample-space", "name": "Sample space" },
+        { "id": "event", "name": "Event" },
+        { "id": "probability-function", "name": "Probability function" },
+        { "id": "conditional-probability", "name": "Conditional probability" },
+        { "id": "independent-events", "name": "Independent events" },
+        { "id": "bayes-theorem", "name": "Bayes' theorem" },
+        { "id": "expected-value", "name": "Expected value" }
+      ],
+      "buildsOn": ["set-operation", "product-rule", "combination", "function"]
+    },
+    {
+      "pack": "graphs",
+      "title": "Graphs",
+      "brief": "Graphs, vertex degree, paths, connectivity, isomorphism and bipartite graphs. Stops before trees.",
+      "concepts": [
+        { "id": "graph", "name": "Graph" },
+        { "id": "vertex-degree", "name": "Vertex degree" },
+        { "id": "graph-path", "name": "Path in a graph" },
+        { "id": "connected-graph", "name": "Connected graph" },
+        { "id": "graph-isomorphism", "name": "Graph isomorphism" },
+        { "id": "bipartite-graph", "name": "Bipartite graph" }
+      ],
+      "buildsOn": ["set", "cartesian-product", "binary-relation", "mathematical-proof"]
+    },
+    {
+      "pack": "trees",
+      "title": "Trees",
+      "brief": "Trees and their basic properties, rooted trees, binary trees, spanning trees and tree traversal. Stops before search trees.",
+      "concepts": [
+        { "id": "tree", "name": "Tree" },
+        { "id": "rooted-tree", "name": "Rooted tree" },
+        { "id": "binary-tree", "name": "Binary tree" },
+        { "id": "spanning-tree", "name": "Spanning tree" },
+        { "id": "tree-traversal", "name": "Tree traversal" }
+      ],
+      "buildsOn": ["graph", "connected-graph", "graph-path", "mathematical-induction", "recursive-definition"]
+    },
+    {
+      "pack": "boolean-algebra",
+      "title": "Boolean algebra",
+      "brief": "Boolean algebra and Boolean functions, disjunctive normal form, logic gates and Karnaugh maps. Stops before sequential circuits.",
+      "concepts": [
+        { "id": "boolean-algebra", "name": "Boolean algebra" },
+        { "id": "boolean-function", "name": "Boolean function" },
+        { "id": "disjunctive-normal-form", "name": "Disjunctive normal form" },
+        { "id": "logic-gate", "name": "Logic gate" },
+        { "id": "karnaugh-map", "name": "Karnaugh map" }
+      ],
+      "buildsOn": ["logical-connective", "logical-equivalence", "truth-table", "tautology-and-contradiction"]
+    }
+  ]
+}

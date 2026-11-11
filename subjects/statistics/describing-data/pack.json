@@ -1,0 +1,1681 @@
+{
+  "formatVersion": 1,
+  "id": "statistics.describing-data",
+  "subject": "statistics",
+  "title": "Describing data",
+  "summary": "Summarizing one sample with frequency tables, histograms, the mean, median, mode, quartiles, variance, standard deviation and outliers. Stops before probability.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "frequency-distribution",
+      "name": "Frequency distribution",
+      "aliases": [
+        "Frequency table",
+        "Frequency distributions"
+      ],
+      "summary": "A table that counts how often each value or class interval occurs, with relative and cumulative frequencies.",
+      "requires": [],
+      "elements": [
+        {
+          "id": "class-intervals",
+          "name": "Class intervals"
+        },
+        {
+          "id": "relative-frequency",
+          "name": "Relative frequency"
+        },
+        {
+          "id": "cumulative-frequency",
+          "name": "Cumulative frequency"
+        }
+      ],
+      "explain": {
+        "text": "A frequency distribution is a table that shows how often each value, or each group of values, appears in a sample. You list the categories or class intervals in one column and the count in each class beside them. Adding the counts gives the total, and dividing each count by the total gives its relative frequency. Summing counts from the first class onward gives cumulative frequencies. For example, if twenty students each report how many books they read, a table might show that six of them read between five and nine books."
+      }
+    },
+    {
+      "id": "histogram",
+      "name": "Histogram",
+      "aliases": [
+        "Histograms",
+        "Frequency histogram"
+      ],
+      "summary": "A bar picture of a frequency distribution for a numerical variable, showing its shape and spread.",
+      "requires": [
+        "frequency-distribution"
+      ],
+      "elements": [
+        {
+          "id": "touching-bars",
+          "name": "Touching bars for continuous data"
+        },
+        {
+          "id": "bar-height-and-area",
+          "name": "Bar height and area"
+        },
+        {
+          "id": "shape",
+          "name": "Shape of a distribution"
+        }
+      ],
+      "explain": {
+        "text": "A histogram is a picture of a frequency distribution for a numerical variable. The horizontal axis is cut into class intervals, and over each interval a bar rises to the frequency, the number of observations in that class. For continuous data the bars touch, because there are no gaps on the scale. Histograms show the overall shape at a glance: whether the data are symmetric, skewed toward one end, or have several peaks. If the class widths differ, the bar areas, not the heights, should show the counts."
+      }
+    },
+    {
+      "id": "mean",
+      "name": "Mean",
+      "aliases": [
+        "Arithmetic mean",
+        "Sample mean"
+      ],
+      "summary": "The arithmetic average: the sum of the values divided by how many there are, the balance point of the data.",
+      "requires": [],
+      "elements": [
+        {
+          "id": "formula",
+          "name": "Formula for the mean"
+        },
+        {
+          "id": "sensitivity",
+          "name": "Sensitivity to extreme values"
+        },
+        {
+          "id": "balance-point",
+          "name": "Balance point"
+        }
+      ],
+      "explain": {
+        "text": "The mean is the arithmetic average of a sample. You add all the values and divide by the number of values, n. For a sample it is written x̄. The mean is the balance point of the data: if each value were a weight placed on a number line, the mean is where the line would balance. Because it uses every value, one extreme value can pull it a long way. For example, the sample 2, 4, 6, 8 and 10 has mean 30 divided by 5, which is 6."
+      }
+    },
+    {
+      "id": "median",
+      "name": "Median",
+      "aliases": [
+        "Medians",
+        "Sample median"
+      ],
+      "summary": "The middle value of the sorted data, with half the values at or below it and half at or above it.",
+      "requires": [],
+      "elements": [
+        {
+          "id": "odd-and-even-counts",
+          "name": "Median of odd and even counts"
+        },
+        {
+          "id": "resistance",
+          "name": "Resistance to extreme values"
+        }
+      ],
+      "explain": {
+        "text": "The median is the middle value of a sample when the values are sorted from smallest to largest. Half the values lie at or below it and half at or above it. If the number of values is odd, the median is the single middle value; if even, it is the average of the two middle values. Unlike the mean, the median depends only on the middle of the ordering, so an extreme value barely moves it. Medians are the usual summary for incomes and house prices, which are skewed by a few very large values."
+      }
+    },
+    {
+      "id": "mode",
+      "name": "Mode",
+      "aliases": [
+        "Modes",
+        "Modal value"
+      ],
+      "summary": "The most frequent value or class, the only central summary that works for categories as well as numbers.",
+      "requires": [
+        "frequency-distribution"
+      ],
+      "elements": [
+        {
+          "id": "categorical-data",
+          "name": "Mode for categorical data"
+        },
+        {
+          "id": "bimodal",
+          "name": "Bimodal and multimodal data"
+        },
+        {
+          "id": "modal-class",
+          "name": "Modal class"
+        }
+      ],
+      "explain": {
+        "text": "The mode is the value that occurs most often in a sample. It works for categories, such as favourite colour, as well as for numbers. A sample can have one mode, two modes (bimodal), or more; if every value occurs only once, there is no mode. In a grouped frequency table, the modal class is the class with the highest frequency. The mode shows where the data bunch up most, though it can change a lot when a few values are added or removed."
+      }
+    },
+    {
+      "id": "quantile",
+      "name": "Quartiles and percentiles",
+      "aliases": [
+        "Quartile",
+        "Quartiles",
+        "Percentile",
+        "Quantile"
+      ],
+      "summary": "Quartiles split sorted data into four parts; percentiles give the value below which a chosen share of the data lies.",
+      "requires": [
+        "median"
+      ],
+      "elements": [
+        {
+          "id": "quartiles",
+          "name": "Quartiles Q1, Q2 and Q3"
+        },
+        {
+          "id": "percentile",
+          "name": "Percentile"
+        },
+        {
+          "id": "interquartile-range",
+          "name": "Interquartile range"
+        }
+      ],
+      "explain": {
+        "text": "Quartiles divide sorted data into four equal parts. The first quartile Q1 has about a quarter of the values below it, the second quartile is the median, and the third quartile Q3 has about three quarters below it. A percentile generalizes this: the 90th percentile is a value with about 90 percent of the data at or below it. Quartiles describe the middle half of the data, from Q1 to Q3, without being pulled by extreme values. Textbooks compute them slightly differently, so check which method a course uses."
+      }
+    },
+    {
+      "id": "sample-variance",
+      "name": "Sample variance",
+      "aliases": [
+        "Variance of a sample",
+        "Sample variances"
+      ],
+      "summary": "The average squared deviation from the sample mean, computed by dividing the sum of squares by n minus 1.",
+      "requires": [
+        "mean"
+      ],
+      "elements": [
+        {
+          "id": "deviations",
+          "name": "Deviations from the mean"
+        },
+        {
+          "id": "n-minus-one",
+          "name": "Dividing by n minus 1"
+        },
+        {
+          "id": "squared-units",
+          "name": "Squared units"
+        }
+      ],
+      "explain": {
+        "text": "The sample variance measures how spread out the values are around their mean. For each value, find its deviation from the mean, square it so that positive and negative deviations do not cancel, add the squares, and divide by n minus 1. Dividing by n minus 1 instead of n corrects for having estimated the mean from the same data. Variance is never negative, and it is zero only when all the values are equal. Its units are squared, so the variance of heights in centimetres is measured in square centimetres."
+      }
+    },
+    {
+      "id": "sample-standard-deviation",
+      "name": "Sample standard deviation",
+      "aliases": [
+        "Standard deviation of a sample",
+        "Sample standard deviations"
+      ],
+      "summary": "The square root of the sample variance, a typical distance from the mean in the data's own units.",
+      "requires": [
+        "sample-variance"
+      ],
+      "elements": [
+        {
+          "id": "square-root",
+          "name": "Square root of the variance"
+        },
+        {
+          "id": "same-units",
+          "name": "Same units as the data"
+        },
+        {
+          "id": "comparing-spread",
+          "name": "Comparing spread"
+        }
+      ],
+      "explain": {
+        "text": "The sample standard deviation is the square root of the sample variance. It measures the typical distance of a value from the mean, and it is in the same units as the data, which makes it easier to read than the variance. A larger standard deviation means the values are more spread out, and a standard deviation of zero means all the values are equal. Two samples with the same mean can have very different standard deviations, so reporting a mean alone hides how much the values vary."
+      }
+    },
+    {
+      "id": "outlier",
+      "name": "Outlier",
+      "aliases": [
+        "Outliers"
+      ],
+      "summary": "A value far from the rest of the data, flagged with quartiles and checked before it is removed.",
+      "requires": [
+        "quantile"
+      ],
+      "elements": [
+        {
+          "id": "fence-rule",
+          "name": "The 1.5 times IQR rule"
+        },
+        {
+          "id": "effect-on-summaries",
+          "name": "Effect on the mean and standard deviation"
+        },
+        {
+          "id": "checking-before-removing",
+          "name": "Checking before removing"
+        }
+      ],
+      "explain": {
+        "text": "An outlier is a value that lies far from the rest of the sample. A common rule uses the quartiles: compute the interquartile range, Q3 minus Q1, then mark any value more than 1.5 times that range below Q1 or above Q3 as a possible outlier. An outlier may be a real but extreme observation, or a recording or entry error, so it should be checked before it is removed. Outliers pull the mean toward them and inflate the standard deviation, but barely move the median."
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "statistics.describing-data.freq-what-recorded",
+      "concept": "frequency-distribution",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does a frequency distribution record for a data set?",
+      "choices": [
+        "The average value of the observations in each category",
+        "The order in which the observations were collected",
+        "The number of observations falling in each category or interval",
+        "The gap between the largest and smallest observation"
+      ],
+      "answer": 2,
+      "explanation": "A frequency distribution counts how many observations fall in each category or class interval. Averages are a different summary, the collection order is not kept, and the gap between the largest and smallest value is one number, not a count for each category.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.freq-relative-share",
+      "concept": "frequency-distribution",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A frequency table has 25 observations in total, and one class has frequency 5. What is that class's relative frequency?",
+      "choices": [
+        "5",
+        "0.05",
+        "0.2",
+        "0.25"
+      ],
+      "answer": 2,
+      "explanation": "Relative frequency is the frequency divided by the total: 5 ÷ 25 = 0.2. The 5 is the raw frequency, 0.05 divides by 100 instead of 25, and 0.25 divides by 20 instead of 25.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.freq-cumulative-count",
+      "concept": "frequency-distribution",
+      "element": "cumulative-frequency",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A frequency table has counts 4, 9, 12 and 5 for four classes, in that order. What is the cumulative frequency at the third class?",
+      "choices": [
+        "12",
+        "25",
+        "21",
+        "30"
+      ],
+      "answer": 1,
+      "explanation": "Cumulative frequency adds all counts up to and including the class: 4 + 9 + 12 = 25. 12 is the third count alone, 21 is 9 + 12 and leaves out the first class, and 30 is the total of all four classes.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.freq-interval-rule",
+      "concept": "frequency-distribution",
+      "element": "class-intervals",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which property must a set of class intervals for a frequency table have?",
+      "choices": [
+        "They overlap, so every value has at least one class",
+        "They do not overlap and together cover every observation",
+        "They must all be exactly one unit wide",
+        "They must each contain the same number of observations"
+      ],
+      "answer": 1,
+      "explanation": "Each observation must go into exactly one class, so intervals must not overlap and must cover the whole range. Overlapping intervals count a value twice, and gaps lose observations. Intervals need not have equal width, and they should not be chosen to equalize the counts.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.freq-total-check",
+      "concept": "frequency-distribution",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "All the class frequencies of a frequency table are added up. What must the sum equal?",
+      "choices": [
+        "Each class frequency on its own",
+        "The number of classes in the table",
+        "The mean of the observations",
+        "The sample size n"
+      ],
+      "answer": 3,
+      "explanation": "Every observation is in exactly one class, so the frequencies add up to the sample size n. A single class frequency, the number of classes, and the mean are not totals of the counts.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.freq-build-order",
+      "concept": "frequency-distribution",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in order to build a frequency table from raw data.",
+      "steps": [
+        "Choose class intervals that do not overlap and cover the range",
+        "Count how many observations fall in each interval",
+        "Divide each count by the total to get relative frequencies"
+      ],
+      "explanation": "The intervals must exist before anything can be counted, and the counts must exist before relative frequencies can be divided out.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.freq-cumulative-relative",
+      "concept": "frequency-distribution",
+      "element": "relative-frequency",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A table has 8 classes. The relative frequencies of the first three are 0.10, 0.25 and 0.30. What is the cumulative relative frequency after the third class?",
+      "choices": [
+        "0.75",
+        "0.55",
+        "0.35",
+        "0.65"
+      ],
+      "answer": 3,
+      "explanation": "Add the first three relative frequencies: 0.10 + 0.25 + 0.30 = 0.65. 0.35 is the share left after the third class, 0.55 leaves out the first class, and 0.75 is not a sum of these values.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.hist-touching-bars",
+      "concept": "histogram",
+      "element": "touching-bars",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In a histogram of a continuous variable, why do the bars usually touch?",
+      "choices": [
+        "Touching bars save space on the page",
+        "Each bar is forced to be the same height",
+        "The variable is continuous, so the classes have no gaps",
+        "Counts are zero between neighbouring bars"
+      ],
+      "answer": 2,
+      "explanation": "A continuous variable can take any value in a range, so neighbouring classes meet with no gap between them. Touching bars do not save space, the heights come from the counts rather than being forced equal, and zero counts between bars would not make them touch.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.hist-bar-height",
+      "concept": "histogram",
+      "element": "bar-height-and-area",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A histogram has a bar over the class 20 to 30 that is 7 units tall, with all class widths equal. What does that height show?",
+      "choices": [
+        "The class midpoint, 25",
+        "The width of the class, 10",
+        "The mean value in the class",
+        "The count in the class, 7"
+      ],
+      "answer": 3,
+      "explanation": "With equal class widths, a bar's height is the number of observations in its class. The midpoint and the width describe the interval itself, not the height, and the mean of the values is not read from a bar.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.hist-class-width-change",
+      "concept": "histogram",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "The same data are drawn twice: once with classes of width 5 and once with classes of width 10. What changes in the second histogram?",
+      "choices": [
+        "Fewer bars appear, each counting more observations, so the shape can change",
+        "Each bar's frequency doubles in every class",
+        "The total number of observations changes",
+        "The median moves to the centre of the picture"
+      ],
+      "answer": 0,
+      "explanation": "Wider classes combine neighbouring counts into fewer bars, so the picture can look quite different even though the data have not changed. Frequencies do not double, the total stays the same, and drawing with wider classes does not move the median.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.hist-density-height",
+      "concept": "histogram",
+      "element": "bar-height-and-area",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A histogram has classes of unequal width. Which height should each bar have so that bar areas are proportional to the counts?",
+      "choices": [
+        "The raw count",
+        "The class midpoint",
+        "The count multiplied by the class width",
+        "The count divided by the class width"
+      ],
+      "answer": 3,
+      "explanation": "Area is width times height, so height must be the count divided by the width, a density, for the area to equal the count. Using the raw count lets wide classes look too big, and multiplying by the width makes the bar area wrong too.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.hist-right-skew",
+      "concept": "histogram",
+      "element": "shape",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A histogram has most of its bars on the left and a long tail stretching to the right. What is the shape called?",
+      "choices": [
+        "Left-skewed",
+        "Symmetric",
+        "Right-skewed",
+        "Bimodal"
+      ],
+      "answer": 2,
+      "explanation": "The long tail is on the right, so the distribution is right-skewed, or positively skewed. Left-skewed has its tail on the left, a symmetric shape has matching tails, and bimodal has two peaks.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.hist-build-order",
+      "concept": "histogram",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in order to draw a histogram of continuous data.",
+      "steps": [
+        "Choose class intervals that cover the whole range",
+        "Count the observations that fall in each interval",
+        "Draw a bar over each interval with height equal to its count"
+      ],
+      "explanation": "The intervals must exist before anything can be counted, and the counts must exist before the bars can be drawn.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.hist-tallest-bars",
+      "concept": "histogram",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A histogram of 60 observations has four bars with counts 6, 18, 27 and 9. What fraction of the observations lies in the two tallest bars?",
+      "choices": [
+        "0.60",
+        "0.30",
+        "0.45",
+        "0.75"
+      ],
+      "answer": 3,
+      "explanation": "The two tallest bars hold 27 and 18 observations, which is 45. Then 45 ÷ 60 = 0.75. 0.45 is the count, not the fraction, 0.30 is only the bar with 18, and 0.60 is the bars with 27 and 9 together.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.mean-of-five",
+      "concept": "mean",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the mean of the sample 2, 4, 6, 8 and 10?",
+      "choices": [
+        "5",
+        "6",
+        "8",
+        "30"
+      ],
+      "answer": 1,
+      "explanation": "The sum is 2 + 4 + 6 + 8 + 10 = 30, and 30 ÷ 5 = 6. 5 is the count of values, 8 is the fourth value, and 30 is the sum before dividing.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.mean-symbol",
+      "concept": "mean",
+      "element": "formula",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which symbol stands for the mean of a sample?",
+      "choices": [
+        "x̄ (x-bar)",
+        "μ (mu)",
+        "s",
+        "σ (sigma)"
+      ],
+      "answer": 0,
+      "explanation": "x̄ is the sample mean. μ is the mean of a whole population, σ is a population standard deviation, and s is the sample standard deviation.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.mean-replace-value",
+      "concept": "mean",
+      "element": "formula",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A sample of 5 values has mean 10. One value of 20 is changed to 30. What is the new mean?",
+      "choices": [
+        "15",
+        "11",
+        "12",
+        "13"
+      ],
+      "answer": 2,
+      "explanation": "The sum rises from 50 to 60, so the mean rises by 10 ÷ 5 = 2, to 12. 15 adds the whole change of 10 to the mean instead of sharing it over five values.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.mean-outlier-effect",
+      "concept": "mean",
+      "element": "sensitivity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about a single very large outlier is true?",
+      "choices": [
+        "It leaves the mean unchanged but moves the median",
+        "It pulls the mean up while leaving the median almost unchanged",
+        "It has no effect on either the mean or the median",
+        "It moves the mode and the mean but never the median"
+      ],
+      "answer": 1,
+      "explanation": "The mean uses every value, so a very large value raises the sum a lot and pulls the mean toward it. The median depends only on the middle of the ordering. The other statements reverse these effects or deny them.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.mean-recover-sum",
+      "concept": "mean",
+      "element": "formula",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Five values have a mean of 8. What is their sum?",
+      "choices": [
+        "8",
+        "1.6",
+        "13",
+        "40"
+      ],
+      "answer": 3,
+      "explanation": "Sum = mean × n = 8 × 5 = 40. The 8 is the mean itself, 1.6 divides by 5 instead of multiplying, and 13 adds 5 to 8.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.mean-balance-point",
+      "concept": "mean",
+      "element": "balance-point",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "On a histogram, where does the mean sit?",
+      "choices": [
+        "At the point where the bars would balance on a fulcrum",
+        "At the midpoint of the horizontal axis",
+        "At the midpoint of the tallest bar",
+        "At the point where half the observations lie below it"
+      ],
+      "answer": 0,
+      "explanation": "The mean is the balance point, so it is where the bars would balance on a fulcrum. The middle of the axis is not the mean in general, the tallest bar marks the mode, and the point with half the observations below it is the median.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.mean-after-adding-value",
+      "concept": "mean",
+      "element": "formula",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A sample of 4 values has mean 7. A fifth value, 12, is added. What is the new mean?",
+      "choices": [
+        "7",
+        "8",
+        "9.5",
+        "19"
+      ],
+      "answer": 1,
+      "explanation": "The old sum is 4 × 7 = 28, and adding 12 gives 40. Then 40 ÷ 5 = 8. 7 is the old mean, 9.5 averages the two numbers while ignoring the count, and 19 adds them together.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.median-odd-count",
+      "concept": "median",
+      "element": "odd-and-even-counts",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the median of 3, 9, 4, 15 and 7?",
+      "choices": [
+        "7.6",
+        "4",
+        "9",
+        "7"
+      ],
+      "answer": 3,
+      "explanation": "Sorted, the values are 3, 4, 7, 9, 15, and the middle one is 7. 7.6 is the mean, 4 is the second value after sorting, and 9 is the fourth.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.median-even-rule",
+      "concept": "median",
+      "element": "odd-and-even-counts",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "When a sample has an even number of values, how is the median found?",
+      "choices": [
+        "Average the two middle values",
+        "Take the lower of the two middle values",
+        "Take the mean of all the values",
+        "Take the larger of the two middle values"
+      ],
+      "answer": 0,
+      "explanation": "With an even count there are two middle values, and the median is their average, so half the values lie on each side. Taking one of them picks a side, the mean uses every value, and the larger middle value is not the median.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.median-even-compute",
+      "concept": "median",
+      "element": "odd-and-even-counts",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A sorted sample is 12, 15, 18, 22, 40 and 41. What is its median?",
+      "choices": [
+        "18",
+        "20",
+        "22",
+        "40"
+      ],
+      "answer": 1,
+      "explanation": "There are six values, so the median is the average of the third and fourth, (18 + 22) ÷ 2 = 20. Neither 18 nor 22 alone is the median, and 40 is the fifth value.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.median-largest-changed",
+      "concept": "median",
+      "element": "resistance",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "The largest value in a sample is changed from 50 to 500. Which summary changes?",
+      "choices": [
+        "The median changes, the mean does not",
+        "The mean changes, the median does not",
+        "Both change by the same amount",
+        "Neither changes"
+      ],
+      "answer": 1,
+      "explanation": "The mean is pulled up by the larger value because it uses every value. The median depends only on the middle position, which this change does not move, so the median is unchanged.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.median-meaning",
+      "concept": "median",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A sample has median 30. Which statement must be true?",
+      "choices": [
+        "At least half the values are 30 or less, and at least half are 30 or more",
+        "Exactly half the values equal 30",
+        "The mean is also 30",
+        "The mode is 30"
+      ],
+      "answer": 0,
+      "explanation": "The median splits the sorted values into two halves, so at least half are at or below it and at least half are at or above it. No value has to equal it, and the mean and mode can be anything.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.median-find-order",
+      "concept": "median",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in order to find the median of an unsorted sample.",
+      "steps": [
+        "Sort the values from smallest to largest",
+        "Find the middle position, which is (n + 1) ÷ 2 for odd n",
+        "Read off the value there, or average the two middle values if n is even"
+      ],
+      "explanation": "The values must be sorted before the middle can be located. The middle position is then read off, with two values averaged when the count is even.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.median-unknown-value",
+      "concept": "median",
+      "element": "odd-and-even-counts",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A sample of 7 values is 2, 5, 8, 8, 9, 12 and an unknown value x. Its mean is 10 and its median is 8. What is x?",
+      "choices": [
+        "18",
+        "22",
+        "26",
+        "30"
+      ],
+      "answer": 2,
+      "explanation": "The sum must be 7 × 10 = 70, and the six known values sum to 44, so x = 26. The median stays 8 because x is the largest value, and 30 would make the sum 74.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.mode-find",
+      "concept": "mode",
+      "element": "categorical-data",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In the list 3, 5, 5, 7, 8, 8, 8, 9, which value is the mode?",
+      "choices": [
+        "5",
+        "6.625",
+        "8",
+        "9"
+      ],
+      "answer": 2,
+      "explanation": "8 occurs three times, more than any other value. 5 occurs twice, 6.625 is the mean, and 9 occurs once.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.mode-why-not-mean",
+      "concept": "mode",
+      "element": "categorical-data",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Why can a mean not be used to summarize favourite colour?",
+      "choices": [
+        "Colours cannot be added to give a meaningful mean",
+        "Colours are always stored as numbers",
+        "A mean needs at least ten categories",
+        "Colour data always have two modes"
+      ],
+      "answer": 0,
+      "explanation": "A mean needs values that can be added and divided, and colours cannot. The mode counts how often each colour occurs and reports the most common one. Colours need not be numbers, and the number of categories does not decide whether a mean exists.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.mode-two-modes",
+      "concept": "mode",
+      "element": "bimodal",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Two values each appear 4 times, and no other value appears 4 or more times. How many modes does the sample have?",
+      "choices": [
+        "Two (bimodal)",
+        "None",
+        "One",
+        "Four"
+      ],
+      "answer": 0,
+      "explanation": "Two values tie for the highest frequency, so the sample is bimodal with two modes. None is wrong because there is a highest frequency, one ignores the tie, and four is the count of occurrences, not the number of modes.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.mode-modal-class",
+      "concept": "mode",
+      "element": "modal-class",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A frequency table has classes 10 to 19 with frequency 3, 20 to 29 with frequency 11, 30 to 39 with frequency 9, and 40 to 49 with frequency 2. Which class is the modal class?",
+      "choices": [
+        "10 to 19",
+        "20 to 29",
+        "30 to 39",
+        "40 to 49"
+      ],
+      "answer": 1,
+      "explanation": "The modal class has the highest frequency, here 20 to 29 with 11. Having the largest or the lowest values does not make a class modal, and 30 to 39 is only second with 9.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.mode-no-mode",
+      "concept": "mode",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which statement about the mode is true?",
+      "choices": [
+        "The mode is always the middle value",
+        "The mode must be the mean, rounded",
+        "A sample can have no mode if every value occurs once",
+        "The mode is always larger than the median"
+      ],
+      "answer": 2,
+      "explanation": "If every value occurs exactly once, no value is more common than the rest, so there is no mode. The mode is not necessarily the middle value, the mean, or larger than the median.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.mode-shoe-size",
+      "concept": "mode",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A shoe shop wants to know which size customers buy most often. Which summary should it use?",
+      "choices": [
+        "Median",
+        "Range",
+        "Mode",
+        "Mean"
+      ],
+      "answer": 2,
+      "explanation": "The mode is the most frequent value, which is the most commonly bought size. The median and mean describe the middle and the average of sizes, and the range is the gap between the smallest and largest size.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.mode-after-adding-value",
+      "concept": "mode",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A sample has mode 14, which appears 4 times, and every other value appears at most 3 times. A value of 40 is then added. Which statement must be true?",
+      "choices": [
+        "The mode becomes 40",
+        "The mode is still 14",
+        "The sample now has no mode",
+        "The mode becomes the mean"
+      ],
+      "answer": 1,
+      "explanation": "14 still appears 4 times, and the new 40 appears only once, so 14 remains the unique mode. The mean does not decide the mode, and adding one value cannot remove the mode.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: 40 could already appear 3 times, giving a tie at 4 and a second mode; 14 is still a mode but not necessarily the only one."
+      }
+    },
+    {
+      "id": "statistics.describing-data.quantile-q1-meaning",
+      "concept": "quantile",
+      "element": "quartiles",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does the first quartile Q1 mark in a sample?",
+      "choices": [
+        "The value below which about a quarter of the data fall",
+        "The value below which three quarters of the data fall",
+        "The median",
+        "The most frequent value"
+      ],
+      "answer": 0,
+      "explanation": "Q1 is the 25th percentile: about a quarter of the values lie at or below it. Three quarters below it is Q3, the median is Q2, and the most frequent value is the mode.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.quantile-75th-percentile",
+      "concept": "quantile",
+      "element": "percentile",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does it mean that a value is at the 75th percentile?",
+      "choices": [
+        "Exactly 75 values are above it",
+        "About 75 percent of the values are at or below it",
+        "75 percent of the values equal it",
+        "It sits 75 units above the mean"
+      ],
+      "answer": 1,
+      "explanation": "A value at the pth percentile has about p percent of the data at or below it. Counting exact values above it, equality with it, or distance from the mean are not what the percentile means.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.quantile-q1-half-method",
+      "concept": "quantile",
+      "element": "quartiles",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "The sorted data are 1, 3, 5, 7, 9, 11, 13 and 15. Taking the median of the lower half as Q1, what is Q1?",
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "9"
+      ],
+      "answer": 1,
+      "explanation": "The lower half is 1, 3, 5, 7, and its median is (3 + 5) ÷ 2 = 4. The value 3 is only the lower of the two middle values of that half, 5 is the upper one, and 9 is the first value of the upper half.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.quantile-iqr-simple",
+      "concept": "quantile",
+      "element": "interquartile-range",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A sample has Q1 = 20 and Q3 = 35. What is its interquartile range?",
+      "choices": [
+        "10",
+        "15",
+        "27.5",
+        "55"
+      ],
+      "answer": 1,
+      "explanation": "The interquartile range is Q3 − Q1 = 35 − 20 = 15. 27.5 is the midpoint of Q1 and Q3, 55 is their sum, and 10 is not the difference of these two values.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.quantile-90th-test",
+      "concept": "quantile",
+      "element": "percentile",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student scores at the 90th percentile on a test taken by 100 students. What does that mean?",
+      "choices": [
+        "They got 90 percent of the questions right",
+        "Exactly 90 students scored higher than them",
+        "About 90 percent of the group scored at or below them",
+        "Their score is 90 points above the mean"
+      ],
+      "answer": 2,
+      "explanation": "The 90th percentile is a relative position: about 90 percent of the group scored at or below the student. The score is not a percentage of questions right, the number scoring higher is about 10 rather than exactly 90, and points above the mean are a different measure.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.quantile-find-order",
+      "concept": "quantile",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in order to find Q1 and Q3 of a sample.",
+      "steps": [
+        "Sort the values from smallest to largest",
+        "Split the sorted values at the median into a lower half and an upper half",
+        "Take the median of the lower half as Q1 and of the upper half as Q3"
+      ],
+      "explanation": "Quartiles come from the sorted values, and the two halves are only defined once the median has split the data.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.quantile-iqr-eight-values",
+      "concept": "quantile",
+      "element": "interquartile-range",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A sorted sample is 2, 4, 5, 7, 8, 10, 12 and 20. Quartiles are found by taking the median of each half. What is the interquartile range?",
+      "choices": [
+        "4.5",
+        "6.5",
+        "8",
+        "16"
+      ],
+      "answer": 1,
+      "explanation": "The lower half 2, 4, 5, 7 has median 4.5, and the upper half 8, 10, 12, 20 has median 11, so the IQR is 11 − 4.5 = 6.5. 4.5 is Q1 alone, 8 is not a quartile here, and 16 is not the full range, which is 18.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.variance-why-square",
+      "concept": "sample-variance",
+      "element": "deviations",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Why are the deviations from the mean squared when computing sample variance?",
+      "choices": [
+        "To make the numbers smaller",
+        "So that positive and negative deviations do not cancel",
+        "To convert the units to percentages",
+        "So that the median can be found"
+      ],
+      "answer": 1,
+      "explanation": "Deviations from the mean always sum to zero, so without squaring, positive and negative deviations would cancel and hide the spread. The other options describe effects that squaring does not have.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.variance-divisor",
+      "concept": "sample-variance",
+      "element": "n-minus-one",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Sample variance divides the sum of squared deviations by which number?",
+      "choices": [
+        "n",
+        "n − 1",
+        "n + 1",
+        "The sample mean"
+      ],
+      "answer": 1,
+      "explanation": "Dividing by n − 1 corrects for estimating the mean from the same data, which uses up one degree of freedom. Dividing by n gives a slightly smaller number, n + 1 is not used, and the mean is not a divisor.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.variance-compute",
+      "concept": "sample-variance",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A sample is 2, 4, 6 and 8, with mean 5. What is its sample variance?",
+      "choices": [
+        "5",
+        "20/3, about 6.67",
+        "20/4, which is 5",
+        "10/3, about 3.33"
+      ],
+      "answer": 1,
+      "explanation": "The deviations are −3, −1, 1 and 3, whose squares are 9, 1, 1 and 9, summing to 20. Dividing by n − 1 = 3 gives 20/3. 5 is the mean, 20/4 divides by n, and 10/3 halves the sum of squares before dividing.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.variance-zero",
+      "concept": "sample-variance",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A sample has sample variance 0. What does this tell you?",
+      "choices": [
+        "All the values are equal",
+        "All the values are zero",
+        "The mean is zero",
+        "The median is zero"
+      ],
+      "answer": 0,
+      "explanation": "A variance of zero means every deviation from the mean is zero, so every value equals the mean. The values need not be zero, and the mean or median need not be zero either.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.variance-compare-spread",
+      "concept": "sample-variance",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Two samples have the same mean. Sample A has variance 4 and sample B has variance 36. Which statement is true?",
+      "choices": [
+        "A is more spread out than B",
+        "They have the same spread",
+        "B is more spread out than A",
+        "B has the smaller standard deviation"
+      ],
+      "answer": 2,
+      "explanation": "A larger variance means the values lie farther from the mean, so B is more spread out. A has the smaller variance, so the first option is false, and B's standard deviation, 6 against 2, is larger, not smaller.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.variance-find-order",
+      "concept": "sample-variance",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in order to compute the sample variance.",
+      "steps": [
+        "Find the mean of the sample",
+        "Subtract the mean from each value and square the result",
+        "Add the squared deviations together",
+        "Divide the sum by n − 1"
+      ],
+      "explanation": "Each step needs the result of the one before it: the deviations need the mean, and the division needs the sum.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.variance-shift",
+      "concept": "sample-variance",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A sample of 5 values has variance 9. Each value is then increased by 4. What is the new variance?",
+      "choices": [
+        "13",
+        "36",
+        "9",
+        "81"
+      ],
+      "answer": 2,
+      "explanation": "Adding the same amount to every value moves the mean by that amount but leaves every deviation unchanged, so the variance stays 9. 13 adds 4 to the variance, 36 is what doubling each value would produce, and 81 is 9 squared.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.sd-square-root",
+      "concept": "sample-standard-deviation",
+      "element": "square-root",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "The sample standard deviation is the square root of what?",
+      "choices": [
+        "The mean",
+        "The median",
+        "The range",
+        "The sample variance"
+      ],
+      "answer": 3,
+      "explanation": "Standard deviation is the square root of the variance, which brings it back to the units of the data. The mean, median and range are different summaries.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.sd-same-units",
+      "concept": "sample-standard-deviation",
+      "element": "same-units",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Why is the standard deviation often reported instead of the variance?",
+      "choices": [
+        "It is in the same units as the data",
+        "It is always a whole number",
+        "It is always larger than the variance",
+        "It is always equal to the mean"
+      ],
+      "answer": 0,
+      "explanation": "Taking the square root undoes the squaring, so the standard deviation is in the units of the data, such as centimetres, while the variance is in squared units. The other statements are not true in general.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.sd-compute",
+      "concept": "sample-standard-deviation",
+      "element": "square-root",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A sample has variance 16. What is its sample standard deviation?",
+      "choices": [
+        "8",
+        "4",
+        "16",
+        "256"
+      ],
+      "answer": 1,
+      "explanation": "The square root of 16 is 4. 8 is half of 16, 16 is the variance itself, and 256 is 16 squared, the reverse of what is needed.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.sd-compare-samples",
+      "concept": "sample-standard-deviation",
+      "element": "comparing-spread",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Sample A has standard deviation 2 cm and sample B has standard deviation 5 cm, in the same units. Which is true?",
+      "choices": [
+        "They are equally spread",
+        "A's values are more spread out than B's",
+        "B's values are more spread out than A's",
+        "B's values are all larger than A's"
+      ],
+      "answer": 2,
+      "explanation": "A larger standard deviation means the values are typically farther from the mean, so B is more spread out. The standard deviation says nothing about whether the values are larger, and A is not the more spread out sample.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.sd-all-equal",
+      "concept": "sample-standard-deviation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Four values are all 7. What are their sample standard deviation and their mean?",
+      "choices": [
+        "Standard deviation 0, mean 7",
+        "Standard deviation 7, mean 0",
+        "Standard deviation 0, mean 28",
+        "Standard deviation 1.75, mean 7"
+      ],
+      "answer": 0,
+      "explanation": "All values equal 7, so every deviation is zero, the standard deviation is 0, and the mean is 7. The 28 is the sum rather than the mean, and 1.75 is 7 ÷ 4, which is not a measure of spread.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.sd-find-order",
+      "concept": "sample-standard-deviation",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in order to find the sample standard deviation.",
+      "steps": [
+        "Find the sample mean",
+        "Square each deviation from the mean and add the squares",
+        "Divide the sum by n − 1 to get the variance",
+        "Take the square root of the variance"
+      ],
+      "explanation": "The standard deviation is the square root of the variance, which needs the sum of squared deviations, which in turn needs the mean.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.sd-multiply-values",
+      "concept": "sample-standard-deviation",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A sample has standard deviation 6. Each value is multiplied by 3. What is the new standard deviation?",
+      "choices": [
+        "6",
+        "9",
+        "18",
+        "36"
+      ],
+      "answer": 2,
+      "explanation": "Multiplying every value by 3 multiplies every deviation by 3, so the standard deviation becomes 6 × 3 = 18. Leaving it at 6 would mean nothing changed, 9 adds 3 instead of multiplying, and 36 is the old variance.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.outlier-meaning",
+      "concept": "outlier",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is an outlier in a sample?",
+      "choices": [
+        "A value far away from the rest of the data",
+        "The most frequent value",
+        "The middle value after sorting",
+        "Any value larger than the mean"
+      ],
+      "answer": 0,
+      "explanation": "An outlier is a value that lies far from the bulk of the data. The most frequent value is the mode, the middle value is the median, and a value above the mean is not necessarily unusual.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.outlier-fence-rule",
+      "concept": "outlier",
+      "element": "fence-rule",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which rule flags outliers using the quartiles?",
+      "choices": [
+        "Values more than 1.5 standard deviations from the median",
+        "Values more than the mean plus the median",
+        "Any value below Q1",
+        "Values more than 1.5 times the IQR below Q1 or above Q3"
+      ],
+      "answer": 3,
+      "explanation": "The common quartile rule marks values more than 1.5 times the interquartile range beyond the quartiles as possible outliers. The other options use the wrong summaries, or flag values that a quarter of any sample lies below.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.outlier-upper-fence",
+      "concept": "outlier",
+      "element": "fence-rule",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A sample has Q1 = 10 and Q3 = 18. Using the 1.5 × IQR rule, what is the upper fence?",
+      "choices": [
+        "26",
+        "28",
+        "30",
+        "36"
+      ],
+      "answer": 2,
+      "explanation": "The IQR is 18 − 10 = 8, and 1.5 × 8 = 12. Adding 12 to Q3 gives 18 + 12 = 30. 26 adds the IQR instead of 1.5 times it, 28 adds Q1, and 36 doubles Q3.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.outlier-most-affected",
+      "concept": "outlier",
+      "element": "effect-on-summaries",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which summary is most affected by one extreme outlier?",
+      "choices": [
+        "The median",
+        "The mean",
+        "The mode",
+        "The number of values"
+      ],
+      "answer": 1,
+      "explanation": "The mean uses every value, so an extreme value shifts it. The median depends only on the middle of the ordering and the mode on repeats, so neither moves much. The count of values does not change at all.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.outlier-always-delete",
+      "concept": "outlier",
+      "element": "checking-before-removing",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Should an outlier always be deleted from a sample?",
+      "choices": [
+        "No, check whether it is an error first, then decide",
+        "Yes, always, because it makes the mean wrong",
+        "No, an outlier can never be an error",
+        "Yes, if it is larger than the median"
+      ],
+      "answer": 0,
+      "explanation": "An outlier may be a real but extreme value or a recording or entry error. Check it, delete it only if it is an error, and otherwise keep it and report the summaries with and without it. Deleting every outlier is not a rule, and an outlier can lie below the median too.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.outlier-flag-order",
+      "concept": "outlier",
+      "element": "fence-rule",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in order to flag outliers using quartiles.",
+      "steps": [
+        "Find Q1 and Q3 of the sorted sample",
+        "Compute the IQR as Q3 − Q1",
+        "Multiply the IQR by 1.5 to get the fence width",
+        "Flag values beyond Q1 minus the width, or Q3 plus the width"
+      ],
+      "explanation": "Each step uses the result before it: the IQR needs the quartiles, and the fence width needs the IQR.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "statistics.describing-data.outlier-on-fence",
+      "concept": "outlier",
+      "element": "fence-rule",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A sample has Q1 = 40 and Q3 = 60, so the IQR is 20 and the lower fence is 10. Its smallest value is exactly 10. Is that value an outlier by the 1.5 × IQR rule?",
+      "choices": [
+        "Yes, it is below the lower fence",
+        "No, it sits exactly on the fence rather than beyond it",
+        "Yes, because it is below the mean",
+        "No, outliers are always above Q3"
+      ],
+      "answer": 1,
+      "explanation": "The rule flags values more than 1.5 times the IQR beyond the quartiles, so a value exactly on the fence is not flagged. Being below the mean does not decide it, and outliers can lie below Q1.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    }
+  ],
+  "artifacts": []
+}

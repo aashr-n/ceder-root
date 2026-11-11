@@ -1,0 +1,287 @@
+{
+  "formatVersion": 1,
+  "subject": "computer-science",
+  "covers": "Introductory programming and data structures as a two-course first sequence (CS1 and CS2) teaches them, without tying them to one programming language. Stops before graduate topics and before any particular language's libraries.",
+  "packs": [
+    {
+      "pack": "program-basics",
+      "title": "Program basics",
+      "brief": "Values, variables, assignment, expressions, primitive types, type conversion, and simple console input and output. Stops before any control flow.",
+      "concepts": [
+        { "id": "variable", "name": "Variable" },
+        { "id": "assignment", "name": "Assignment statement" },
+        { "id": "primitive-type", "name": "Primitive data type" },
+        { "id": "expression", "name": "Expression" },
+        { "id": "operator-precedence", "name": "Operator precedence and associativity" },
+        { "id": "type-conversion", "name": "Type conversion" },
+        { "id": "console-io", "name": "Console input and output" }
+      ],
+      "buildsOn": []
+    },
+    {
+      "pack": "control-flow",
+      "title": "Control flow",
+      "brief": "Boolean expressions, conditionals, while and for loops, and nested control structures, including off-by-one errors. Stops before functions.",
+      "concepts": [
+        { "id": "boolean-expression", "name": "Boolean expression" },
+        { "id": "conditional-statement", "name": "Conditional statement" },
+        { "id": "while-loop", "name": "While loop" },
+        { "id": "for-loop", "name": "For loop" },
+        { "id": "off-by-one-error", "name": "Off-by-one error" },
+        { "id": "nested-control", "name": "Nested control structures" }
+      ],
+      "buildsOn": ["variable", "expression", "primitive-type"]
+    },
+    {
+      "pack": "functions",
+      "title": "Functions",
+      "brief": "Defining and calling functions, parameters and arguments, return values, local scope, the call stack, and splitting a program into functions. Stops before recursion.",
+      "concepts": [
+        { "id": "function-definition", "name": "Function definition and call" },
+        { "id": "parameter-argument", "name": "Parameter and argument" },
+        { "id": "return-value", "name": "Return value" },
+        { "id": "local-scope", "name": "Local scope" },
+        { "id": "call-stack", "name": "Call stack" },
+        { "id": "decomposition", "name": "Decomposition into functions" }
+      ],
+      "buildsOn": ["variable", "expression", "conditional-statement"]
+    },
+    {
+      "pack": "testing-and-debugging",
+      "title": "Testing and debugging",
+      "brief": "Writing test cases for functions, choosing edge cases, unit testing, assertions, and finding a fault with a debugger or by tracing by hand. Stops before test frameworks and test design at scale.",
+      "concepts": [
+        { "id": "test-case", "name": "Test case" },
+        { "id": "edge-case", "name": "Edge case" },
+        { "id": "unit-testing", "name": "Unit testing" },
+        { "id": "assertion", "name": "Assertion" },
+        { "id": "debugger", "name": "Debugger and breakpoint" },
+        { "id": "trace-by-hand", "name": "Tracing a program by hand" }
+      ],
+      "buildsOn": ["function-definition", "return-value", "conditional-statement", "boolean-expression"]
+    },
+    {
+      "pack": "arrays-and-strings",
+      "title": "Arrays and strings",
+      "brief": "Fixed-size arrays, indexing, traversal, bounds errors, two-dimensional arrays, and strings as sequences of characters. Stops before dynamically resized arrays.",
+      "concepts": [
+        { "id": "array", "name": "Array" },
+        { "id": "index", "name": "Index" },
+        { "id": "array-traversal", "name": "Array traversal" },
+        { "id": "array-bounds-error", "name": "Index out of bounds error" },
+        { "id": "two-dimensional-array", "name": "Two-dimensional array" },
+        { "id": "string", "name": "String" }
+      ],
+      "buildsOn": ["variable", "for-loop", "while-loop", "primitive-type"]
+    },
+    {
+      "pack": "algorithm-analysis",
+      "title": "Algorithm analysis",
+      "brief": "What an algorithm is, and how to compare running time and memory with Big O notation, including worst-case and average-case analysis. Stops before any particular algorithm.",
+      "concepts": [
+        { "id": "algorithm", "name": "Algorithm" },
+        { "id": "big-o-notation", "name": "Big O notation" },
+        { "id": "time-complexity", "name": "Time complexity" },
+        { "id": "space-complexity", "name": "Space complexity" },
+        { "id": "worst-case-analysis", "name": "Worst-case and average-case analysis" },
+        { "id": "common-growth-rates", "name": "Common growth rates" }
+      ],
+      "buildsOn": ["array-traversal", "for-loop", "nested-control"]
+    },
+    {
+      "pack": "recursion",
+      "title": "Recursion",
+      "brief": "A function that calls itself on a smaller input, with a base case that stops it, the recursion depth, memoization, and when to use recursion instead of a loop. Stops before recursive data structures.",
+      "concepts": [
+        { "id": "recursion", "name": "Recursion" },
+        { "id": "base-case", "name": "Base case" },
+        { "id": "recursive-case", "name": "Recursive case" },
+        { "id": "recursion-depth", "name": "Recursion depth and stack overflow" },
+        { "id": "memoization", "name": "Memoization" },
+        { "id": "recursion-vs-iteration", "name": "Recursion versus iteration" }
+      ],
+      "buildsOn": ["function-definition", "call-stack", "return-value", "conditional-statement"]
+    },
+    {
+      "pack": "searching",
+      "title": "Searching",
+      "brief": "Linear search and binary search over arrays, with the sorted-array precondition and the running time of each. Stops before sorting algorithms.",
+      "concepts": [
+        { "id": "linear-search", "name": "Linear search" },
+        { "id": "binary-search", "name": "Binary search" },
+        { "id": "precondition", "name": "Precondition" },
+        { "id": "not-found-result", "name": "Not-found result" }
+      ],
+      "buildsOn": ["array", "array-traversal", "big-o-notation", "while-loop", "algorithm"]
+    },
+    {
+      "pack": "sorting",
+      "title": "Sorting algorithms",
+      "brief": "Comparison sorts on arrays: insertion, selection, merge, and quicksort, with stability and their running times. Stops before non-comparison sorts.",
+      "concepts": [
+        { "id": "comparison-sort", "name": "Comparison sort" },
+        { "id": "stable-sort", "name": "Stable sort" },
+        { "id": "insertion-sort", "name": "Insertion sort" },
+        { "id": "selection-sort", "name": "Selection sort" },
+        { "id": "merge-sort", "name": "Merge sort" },
+        { "id": "quicksort", "name": "Quicksort" }
+      ],
+      "buildsOn": ["array", "index", "nested-control", "recursion", "big-o-notation", "worst-case-analysis"]
+    },
+    {
+      "pack": "references-and-memory",
+      "title": "References and memory",
+      "brief": "How variables refer to objects, object identity, mutable and immutable values, aliasing, and stack and heap memory. Stops before classes.",
+      "concepts": [
+        { "id": "reference", "name": "Reference" },
+        { "id": "object-identity", "name": "Object identity and equality" },
+        { "id": "mutability", "name": "Mutable and immutable value" },
+        { "id": "aliasing", "name": "Aliasing" },
+        { "id": "stack-and-heap-memory", "name": "Stack and heap memory" }
+      ],
+      "buildsOn": ["variable", "assignment", "function-definition", "parameter-argument", "call-stack", "array"]
+    },
+    {
+      "pack": "classes-and-objects",
+      "title": "Classes and objects",
+      "brief": "Defining classes with fields, methods, and constructors, creating object instances, and encapsulation. Stops before inheritance.",
+      "concepts": [
+        { "id": "class", "name": "Class" },
+        { "id": "object-instance", "name": "Object instance" },
+        { "id": "field", "name": "Field" },
+        { "id": "method", "name": "Method" },
+        { "id": "constructor", "name": "Constructor" },
+        { "id": "encapsulation", "name": "Encapsulation" }
+      ],
+      "buildsOn": ["reference", "function-definition", "parameter-argument", "primitive-type", "local-scope"]
+    },
+    {
+      "pack": "abstract-data-types",
+      "title": "Abstract data types",
+      "brief": "An abstract data type as an interface with a contract, separate from its implementation, with inheritance, polymorphism, dynamic arrays, and amortized time. Stops before specific data structures.",
+      "concepts": [
+        { "id": "abstract-data-type", "name": "Abstract data type" },
+        { "id": "interface", "name": "Interface" },
+        { "id": "inheritance", "name": "Inheritance" },
+        { "id": "polymorphism", "name": "Polymorphism" },
+        { "id": "dynamic-array", "name": "Dynamic array" },
+        { "id": "amortized-time-complexity", "name": "Amortized time complexity" }
+      ],
+      "buildsOn": ["class", "method", "object-instance", "encapsulation", "array", "time-complexity"]
+    },
+    {
+      "pack": "stacks-and-queues",
+      "title": "Stacks and queues",
+      "brief": "The stack and queue abstract data types, their LIFO and FIFO order, the deque, and bracket matching with a stack. Stops at linked-list implementations.",
+      "concepts": [
+        { "id": "stack", "name": "Stack" },
+        { "id": "lifo-order", "name": "LIFO order" },
+        { "id": "queue", "name": "Queue" },
+        { "id": "fifo-order", "name": "FIFO order" },
+        { "id": "deque", "name": "Deque" },
+        { "id": "bracket-matching", "name": "Balanced bracket matching" }
+      ],
+      "buildsOn": ["abstract-data-type", "interface", "dynamic-array", "array", "while-loop"]
+    },
+    {
+      "pack": "linked-lists",
+      "title": "Linked lists",
+      "brief": "Nodes that refer to each other, singly and doubly linked lists, traversal, insertion and deletion, and the null reference. Stops before trees.",
+      "concepts": [
+        { "id": "node", "name": "Node" },
+        { "id": "singly-linked-list", "name": "Singly linked list" },
+        { "id": "doubly-linked-list", "name": "Doubly linked list" },
+        { "id": "linked-list-traversal", "name": "Linked list traversal" },
+        { "id": "linked-list-insertion-deletion", "name": "Linked list insertion and deletion" },
+        { "id": "null-reference", "name": "Null reference" }
+      ],
+      "buildsOn": ["reference", "class", "object-instance", "field", "time-complexity"]
+    },
+    {
+      "pack": "binary-trees",
+      "title": "Binary trees",
+      "brief": "Binary trees and their terminology, height, the depth-first and level-order traversals, and recursive algorithms over trees. Stops before search trees.",
+      "concepts": [
+        { "id": "tree", "name": "Tree" },
+        { "id": "binary-tree", "name": "Binary tree" },
+        { "id": "tree-terminology", "name": "Root, leaf, parent, and child" },
+        { "id": "tree-height", "name": "Height and depth" },
+        { "id": "tree-traversal", "name": "Depth-first tree traversal" },
+        { "id": "level-order-traversal", "name": "Level-order traversal" }
+      ],
+      "buildsOn": ["node", "recursion", "base-case", "fifo-order", "lifo-order", "linked-list-traversal"]
+    },
+    {
+      "pack": "binary-search-trees",
+      "title": "Binary search trees",
+      "brief": "Binary search trees: search, insertion, and deletion, sorted-order traversal, and how balance sets the running time. Stops before heaps.",
+      "concepts": [
+        { "id": "binary-search-tree", "name": "Binary search tree" },
+        { "id": "bst-search", "name": "Binary search tree search" },
+        { "id": "bst-insertion", "name": "Binary search tree insertion" },
+        { "id": "bst-deletion", "name": "Binary search tree deletion" },
+        { "id": "sorted-order-of-bst", "name": "Sorted order of a search tree" },
+        { "id": "tree-balance", "name": "Tree balance" },
+        { "id": "self-balancing-tree", "name": "Self-balancing tree" }
+      ],
+      "buildsOn": ["binary-tree", "tree-height", "tree-traversal", "binary-search", "reference", "null-reference", "recursion"]
+    },
+    {
+      "pack": "heaps-and-priority-queues",
+      "title": "Heaps and priority queues",
+      "brief": "The priority queue abstract data type, binary heaps stored in arrays, the heap property, and heapsort. Stops before graph algorithms.",
+      "concepts": [
+        { "id": "priority-queue", "name": "Priority queue" },
+        { "id": "binary-heap", "name": "Binary heap" },
+        { "id": "heap-property", "name": "Heap property" },
+        { "id": "heap-insertion-extraction", "name": "Heap insertion and extraction" },
+        { "id": "heapsort", "name": "Heapsort" }
+      ],
+      "buildsOn": ["binary-tree", "array", "abstract-data-type", "comparison-sort", "time-complexity", "index"]
+    },
+    {
+      "pack": "hash-tables",
+      "title": "Hash tables",
+      "brief": "Hash functions, the dictionary abstract data type, hash collisions, separate chaining, open addressing, and the load factor. Stops before graphs.",
+      "concepts": [
+        { "id": "hash-function", "name": "Hash function" },
+        { "id": "hash-table", "name": "Hash table" },
+        { "id": "hash-collision", "name": "Hash collision" },
+        { "id": "separate-chaining", "name": "Separate chaining" },
+        { "id": "open-addressing", "name": "Open addressing" },
+        { "id": "load-factor", "name": "Load factor" },
+        { "id": "dictionary", "name": "Dictionary" }
+      ],
+      "buildsOn": ["abstract-data-type", "array", "linked-list-traversal", "dynamic-array", "amortized-time-complexity", "time-complexity", "index"]
+    },
+    {
+      "pack": "graphs",
+      "title": "Graphs",
+      "brief": "Vertices and edges, directed, undirected and weighted graphs, and the adjacency list and adjacency matrix representations. Stops before traversal algorithms.",
+      "concepts": [
+        { "id": "graph", "name": "Graph" },
+        { "id": "vertex", "name": "Vertex" },
+        { "id": "edge", "name": "Edge" },
+        { "id": "directed-and-undirected-graph", "name": "Directed and undirected graph" },
+        { "id": "weighted-graph", "name": "Weighted graph" },
+        { "id": "adjacency-list", "name": "Adjacency list" },
+        { "id": "adjacency-matrix", "name": "Adjacency matrix" }
+      ],
+      "buildsOn": ["abstract-data-type", "array", "two-dimensional-array", "singly-linked-list", "dictionary"]
+    },
+    {
+      "pack": "graph-algorithms",
+      "title": "Graph algorithms",
+      "brief": "Breadth-first and depth-first search, connected components, cycle detection, topological sort, and shortest paths in unweighted graphs. Stops before weighted shortest-path algorithms.",
+      "concepts": [
+        { "id": "breadth-first-search", "name": "Breadth-first search" },
+        { "id": "depth-first-search", "name": "Depth-first search" },
+        { "id": "connected-components", "name": "Connected components" },
+        { "id": "cycle-detection", "name": "Cycle detection" },
+        { "id": "topological-sort", "name": "Topological sort" },
+        { "id": "shortest-path-unweighted", "name": "Shortest path in an unweighted graph" }
+      ],
+      "buildsOn": ["graph", "adjacency-list", "adjacency-matrix", "stack", "queue", "recursion"]
+    }
+  ]
+}

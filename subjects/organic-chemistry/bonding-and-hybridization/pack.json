@@ -1,0 +1,1279 @@
+{
+  "formatVersion": 1,
+  "id": "organic-chemistry.bonding-and-hybridization",
+  "subject": "organic-chemistry",
+  "title": "Bonding and hybridization",
+  "summary": "How carbon forms bonds, the shapes that result, and how to draw Lewis structures with formal charges and resonance.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "hybridization",
+      "name": "Orbital hybridization",
+      "aliases": [
+        "Hybrid orbitals",
+        "Hybridisation"
+      ],
+      "summary": "Carbon's s and p orbitals mix into hybrid orbitals whose number and shape match the atom's electron domains.",
+      "requires": [
+        "chemistry/lewis-structure",
+        "chemistry/molecular-geometry"
+      ],
+      "elements": [
+        {
+          "id": "sp3-hybridization",
+          "name": "sp³ hybridization",
+          "aliases": [
+            "sp3 hybridization"
+          ]
+        },
+        {
+          "id": "sp2-hybridization",
+          "name": "sp² hybridization",
+          "aliases": [
+            "sp2 hybridization"
+          ]
+        },
+        {
+          "id": "sp-hybridization",
+          "name": "sp hybridization",
+          "aliases": [
+            "sp hybridization"
+          ]
+        },
+        {
+          "id": "electron-domains",
+          "name": "Counting electron domains",
+          "aliases": [
+            "Electron domains",
+            "Regions of electron density"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "Carbon's 2s and 2p orbitals can mix into new orbitals called hybrid orbitals, which point in the directions the bonds actually take. The number of hybrid orbitals always equals the number of atomic orbitals that were mixed. One s and three p orbitals make four sp³ orbitals, pointing to the corners of a tetrahedron, as in methane, CH₄. One s and two p orbitals make three sp² orbitals in a flat triangle, with one p orbital left over, as in ethene. One s and one p orbital make two sp orbitals in a straight line, as in ethyne. Hybridization explains bond angles that unmixed orbitals cannot."
+      }
+    },
+    {
+      "id": "sigma-and-pi-bonds",
+      "name": "Sigma and pi bonds",
+      "aliases": [
+        "Sigma bonds",
+        "Pi bonds"
+      ],
+      "summary": "A sigma bond overlaps head-on along the bond axis, a pi bond overlaps side by side, and a multiple bond has one sigma bond plus pi bonds.",
+      "requires": [
+        "hybridization",
+        "chemistry/covalent-bond"
+      ],
+      "elements": [
+        {
+          "id": "sigma-bond",
+          "name": "Sigma bonds",
+          "aliases": [
+            "Sigma bond"
+          ]
+        },
+        {
+          "id": "pi-bond",
+          "name": "Pi bonds",
+          "aliases": [
+            "Pi bond"
+          ]
+        },
+        {
+          "id": "bond-types",
+          "name": "Single, double and triple bonds",
+          "aliases": [
+            "Multiple bonds"
+          ]
+        },
+        {
+          "id": "counting-bonds",
+          "name": "Counting sigma and pi bonds",
+          "aliases": []
+        },
+        {
+          "id": "pi-restricted-rotation",
+          "name": "Restricted rotation about pi bonds",
+          "aliases": [
+            "Rotation around a double bond"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "A covalent bond is made by overlapping orbitals. A sigma bond forms when orbitals overlap head-on along the line joining two nuclei. Every single bond is a sigma bond. A pi bond forms when parallel p orbitals overlap side by side, above and below that line. A double bond has one sigma and one pi bond; a triple bond has one sigma and two pi bonds. Pi bonds are weaker and do not let the atoms turn freely, which is why alkenes stay flat around their double bond. Counting sigma and pi bonds is a quick check on any structure."
+      }
+    },
+    {
+      "id": "formal-charge",
+      "name": "Formal charge",
+      "aliases": [
+        "Formal charges"
+      ],
+      "summary": "The charge an atom would have if its bonding electrons were shared equally, used to check and compare Lewis structures.",
+      "requires": [
+        "chemistry/lewis-structure"
+      ],
+      "elements": [
+        {
+          "id": "formal-charge-formula",
+          "name": "Formal charge formula",
+          "aliases": []
+        },
+        {
+          "id": "common-atom-charges",
+          "name": "Formal charges on oxygen and nitrogen",
+          "aliases": []
+        },
+        {
+          "id": "counting-electrons",
+          "name": "Counting nonbonding electrons and bonds",
+          "aliases": []
+        },
+        {
+          "id": "choosing-structures",
+          "name": "Choosing Lewis structures by formal charge",
+          "aliases": []
+        }
+      ],
+      "explain": {
+        "text": "Formal charge is the charge an atom would have if every bonding electron were shared equally between the atoms it is bonded to. It is found with valence electrons minus nonbonding electrons minus the number of bonds. Each bond gives one of its electrons to each atom it joins. For example, in the ammonium ion, NH₄⁺, nitrogen has five valence electrons, no nonbonding electrons and four bonds, so its formal charge is 5 − 0 − 4 = +1. Formal charges help choose the best Lewis structure: smaller charges are better, and a negative charge belongs on the more electronegative atom."
+      }
+    },
+    {
+      "id": "resonance-structures",
+      "name": "Resonance structures",
+      "aliases": [
+        "Resonance forms",
+        "Resonance contributors",
+        "Resonance hybrids"
+      ],
+      "summary": "Two or more Lewis structures that differ only in electron placement, which together describe one delocalized molecule.",
+      "requires": [
+        "sigma-and-pi-bonds",
+        "formal-charge"
+      ],
+      "elements": [
+        {
+          "id": "curved-arrows",
+          "name": "Curved arrows for moving electrons",
+          "aliases": []
+        },
+        {
+          "id": "resonance-hybrid",
+          "name": "Resonance hybrid",
+          "aliases": [
+            "Resonance hybrids"
+          ]
+        },
+        {
+          "id": "delocalized-electrons",
+          "name": "Delocalized electrons",
+          "aliases": [
+            "Delocalization"
+          ]
+        },
+        {
+          "id": "major-contributors",
+          "name": "Major and minor contributors",
+          "aliases": []
+        },
+        {
+          "id": "equal-forms",
+          "name": "Equivalent resonance forms",
+          "aliases": [
+            "Equivalent resonance structures"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "Some molecules cannot be drawn with one Lewis structure. Resonance structures are two or more Lewis structures that differ only in where the pi bonds and lone pairs sit, not in how the atoms are joined. The real molecule is a resonance hybrid, an average of them. Electrons move with curved arrows, from a lone pair or pi bond toward an atom or bond, and atoms never move. Ozone, O₃, is the classic example: two equivalent forms put the double bond on different oxygens, which makes both oxygen–oxygen bonds the same length. Forms with full octets and small formal charges contribute most."
+      }
+    },
+    {
+      "id": "bond-dipole",
+      "name": "Bond dipoles",
+      "aliases": [
+        "Bond dipole moments",
+        "Dipole moments",
+        "Polar bonds"
+      ],
+      "summary": "Unequal sharing in a bond gives it a dipole, and a molecule's net dipole is the vector sum of its bond dipoles.",
+      "requires": [
+        "chemistry/polarity",
+        "chemistry/molecular-geometry"
+      ],
+      "elements": [
+        {
+          "id": "dipole-direction",
+          "name": "Direction of a bond dipole",
+          "aliases": []
+        },
+        {
+          "id": "dipole-size",
+          "name": "Size of a bond dipole",
+          "aliases": []
+        },
+        {
+          "id": "vector-sum",
+          "name": "Adding bond dipoles as vectors",
+          "aliases": []
+        },
+        {
+          "id": "net-dipole",
+          "name": "Net molecular dipole",
+          "aliases": [
+            "Molecular dipole"
+          ]
+        },
+        {
+          "id": "symmetry-cancellation",
+          "name": "Cancellation by symmetry",
+          "aliases": []
+        }
+      ],
+      "explain": {
+        "text": "A bond dipole is the separation of charge in a bond between atoms of different electronegativity. The bonding electrons are pulled toward the more electronegative atom, which becomes partly negative, while the other atom becomes partly positive. Chemists draw a dipole as an arrow pointing toward the negative end, with a plus sign at its tail. Bond dipoles are vectors, so a molecule's overall dipole depends on their directions as well as their sizes. In carbon dioxide the two C=O dipoles point in opposite directions and cancel. In water the two O–H dipoles add to a net dipole."
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.hybridization-methane",
+      "concept": "hybridization",
+      "element": "sp3-hybridization",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What hybridization does the carbon atom in methane, CH₄, have?",
+      "choices": [
+        "sp",
+        "sp²",
+        "sp³",
+        "sp³d"
+      ],
+      "answer": 2,
+      "explanation": "Carbon in CH₄ has four bonding regions and no lone pairs, so it makes four hybrid orbitals, all sp³. sp³d would need five regions, and sp and sp² give only two and three.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.hybrid-orbital-count",
+      "concept": "hybridization",
+      "element": "sp2-hybridization",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How many hybrid orbitals form when one s orbital and two p orbitals are mixed?",
+      "choices": [
+        "Two",
+        "Three",
+        "Four",
+        "Six"
+      ],
+      "answer": 1,
+      "explanation": "The number of hybrid orbitals equals the number of atomic orbitals mixed: one s plus two p gives three, which is sp². Four would be sp³, which mixes three p orbitals.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.sp3-tetrahedron",
+      "concept": "hybridization",
+      "element": "sp3-hybridization",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which shape do the four sp³ hybrid orbitals of carbon point toward?",
+      "choices": [
+        "A tetrahedron",
+        "A straight line",
+        "A flat triangle",
+        "A square plane"
+      ],
+      "answer": 0,
+      "explanation": "Four orbitals spread as far apart as possible point to the corners of a tetrahedron, about 109.5° apart. A straight line is sp, a flat triangle is sp², and a square plane is not an sp³ shape.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.ethyne-hybridization",
+      "concept": "hybridization",
+      "element": "sp-hybridization",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which hybridization does each carbon in ethyne, HC≡CH, have?",
+      "choices": [
+        "sp²",
+        "sp³",
+        "sp",
+        "sp³d²"
+      ],
+      "answer": 2,
+      "explanation": "Each carbon bonds to two atoms and has no lone pair, so it has two electron domains and is sp. A triple bond still counts as one region for hybridization, which is why sp² is a tempting but wrong answer.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.ethene-hybridization",
+      "concept": "hybridization",
+      "element": "sp2-hybridization",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the hybridization of each carbon in ethene, H₂C=CH₂?",
+      "choices": [
+        "sp³",
+        "sp",
+        "sp³d",
+        "sp²"
+      ],
+      "answer": 3,
+      "explanation": "Each carbon has three electron domains: two C–H bonds and the C=C double bond, which counts as one region. That gives sp². sp³ is the mistake of counting the double bond as two regions.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.water-oxygen-domains",
+      "concept": "hybridization",
+      "element": "electron-domains",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "The oxygen in H₂O has two bonding pairs and two lone pairs. How many electron domains does it have, and what hybridization follows?",
+      "choices": [
+        "Three, so sp²",
+        "Four, so sp³",
+        "Two, so sp",
+        "Five, so sp³d"
+      ],
+      "answer": 1,
+      "explanation": "Two bonds plus two lone pairs give four domains, so the oxygen is sp³. A lone pair takes a hybrid orbital just as a bond does. Counting only the bonds gives two, the mistake behind sp.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.bf3-boron",
+      "concept": "hybridization",
+      "element": "electron-domains",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "The boron in BF₃ has three bonding regions and no lone pairs. Which hybridization does it have?",
+      "choices": [
+        "sp",
+        "sp³",
+        "sp²",
+        "sp³d"
+      ],
+      "answer": 2,
+      "explanation": "Three regions give three hybrid orbitals, sp², in a flat triangle. sp³ would need four regions, which BF₃ does not have.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.methyl-anion-carbon",
+      "concept": "hybridization",
+      "element": "electron-domains",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "The carbon in the methyl anion, CH₃⁻, has three bonds and one lone pair. What is its hybridization?",
+      "choices": [
+        "sp²",
+        "sp",
+        "sp³",
+        "p only"
+      ],
+      "answer": 2,
+      "explanation": "Four electron domains, counting the lone pair, give four hybrid orbitals: sp³. The common mistake is to count only the three bonds and answer sp².",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.hybridization-steps",
+      "concept": "hybridization",
+      "element": "electron-domains",
+      "kind": "order",
+      "difficulty": 1,
+      "prompt": "Put these steps for finding the hybridization of a central atom in order.",
+      "steps": [
+        "Draw the Lewis structure of the molecule",
+        "Count the electron domains around the central atom",
+        "Match the count to the hybridization: two is sp, three is sp², four is sp³"
+      ],
+      "explanation": "The count comes from the Lewis structure, and the match needs the count, so the steps must run in this order.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.sigma-in-double-bond",
+      "concept": "sigma-and-pi-bonds",
+      "element": "bond-types",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How many sigma bonds does a carbon–carbon double bond contain?",
+      "choices": [
+        "Zero",
+        "One",
+        "Two",
+        "Three"
+      ],
+      "answer": 1,
+      "explanation": "A double bond is one sigma bond plus one pi bond. Two is tempting only if you count the double bond as two bonds of the same kind.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.pi-overlap",
+      "concept": "sigma-and-pi-bonds",
+      "element": "pi-bond",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which overlap forms a pi bond?",
+      "choices": [
+        "Head-on overlap of two sp³ hybrid orbitals",
+        "Head-on overlap of two 1s orbitals",
+        "Side-by-side overlap of two parallel p orbitals"
+      ],
+      "answer": 2,
+      "explanation": "A pi bond forms when parallel p orbitals overlap side by side, above and below the bond axis. Head-on overlaps, of hybrids or s orbitals, form sigma bonds.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.n2-pi-bonds",
+      "concept": "sigma-and-pi-bonds",
+      "element": "bond-types",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How many pi bonds does a molecule of nitrogen, N≡N, contain?",
+      "choices": [
+        "None",
+        "One",
+        "Two",
+        "Three"
+      ],
+      "answer": 2,
+      "explanation": "A triple bond is one sigma bond plus two pi bonds. Three is the total number of bonds, not the number of pi bonds.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.ethyne-bond-count",
+      "concept": "sigma-and-pi-bonds",
+      "element": "counting-bonds",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Ethyne, H–C≡C–H, contains how many sigma bonds and how many pi bonds?",
+      "choices": [
+        "2 sigma, 2 pi",
+        "5 sigma, 0 pi",
+        "3 sigma, 2 pi",
+        "2 sigma, 3 pi"
+      ],
+      "answer": 2,
+      "explanation": "Ethyne has three sigma bonds (two C–H and one C–C) and two pi bonds from its triple bond. Five is the number of shared electron pairs, not the number of sigma bonds.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.ethene-pi-count",
+      "concept": "sigma-and-pi-bonds",
+      "element": "counting-bonds",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "How many pi bonds does ethene, H₂C=CH₂, have?",
+      "choices": [
+        "Zero",
+        "One",
+        "Two",
+        "Four"
+      ],
+      "answer": 1,
+      "explanation": "The C=C double bond contributes one pi bond, and every C–H bond is sigma. Two would be right only if the double bond were a triple bond.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.restricted-rotation",
+      "concept": "sigma-and-pi-bonds",
+      "element": "pi-restricted-rotation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why is rotation about a C=C double bond restricted?",
+      "choices": [
+        "The pi bond's side-by-side overlap would break if the carbons turned",
+        "The sigma bond must break before the carbons can turn",
+        "The double bond has no electron density, so it cannot turn"
+      ],
+      "answer": 0,
+      "explanation": "Turning the carbons would misalign the p orbitals and break the pi bond, which costs a lot of energy. The sigma bond is symmetrical around its axis and can turn; the double bond does have electron density.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.ethyne-sigma-orbitals",
+      "concept": "sigma-and-pi-bonds",
+      "element": "bond-types",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which hybrid orbitals does each carbon in ethyne use for its sigma bonds?",
+      "choices": [
+        "sp²",
+        "sp",
+        "p",
+        "sp³"
+      ],
+      "answer": 1,
+      "explanation": "Each carbon is sp, so two hybrid orbitals make its sigma bonds. The two unhybridized p orbitals on each carbon make the two pi bonds. Ethyne is linear, so sp³ is wrong.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.formaldehyde-bonds",
+      "concept": "sigma-and-pi-bonds",
+      "element": "counting-bonds",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "In formaldehyde, H₂C=O, how many sigma and pi bonds does the carbon form in total?",
+      "choices": [
+        "2 sigma, 2 pi",
+        "4 sigma, 0 pi",
+        "3 sigma, 2 pi",
+        "3 sigma, 1 pi"
+      ],
+      "answer": 3,
+      "explanation": "The carbon has two C–H single bonds and a C=O double bond, which adds one sigma and one pi. That totals three sigma and one pi. Counting the double bond's pi as two gives 3 sigma, 2 pi.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.double-bond-steps",
+      "concept": "sigma-and-pi-bonds",
+      "element": "bond-types",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps for building a C=C double bond in order.",
+      "steps": [
+        "Two sp² orbitals overlap head-on to make a sigma bond between the carbons",
+        "Once the sigma bond holds the carbons in place, the unhybridized p orbital on each carbon is parallel to the other",
+        "The parallel p orbitals overlap side by side, above and below the bond axis, to make a pi bond"
+      ],
+      "explanation": "The sigma bond forms first and fixes the positions of the carbons. Only then are the p orbitals parallel to each other, and their side-by-side overlap makes the pi bond.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.formal-charge-formula",
+      "concept": "formal-charge",
+      "element": "formal-charge-formula",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which expression gives the formal charge of an atom in a Lewis structure?",
+      "choices": [
+        "Valence electrons + nonbonding electrons − bonds",
+        "Valence electrons − nonbonding electrons + bonds",
+        "Valence electrons − nonbonding electrons − bonds"
+      ],
+      "answer": 2,
+      "explanation": "Formal charge is valence electrons minus nonbonding electrons minus the number of bonds. Adding nonbonding electrons, or adding the bonds, gives the wrong result.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.water-oxygen-charge",
+      "concept": "formal-charge",
+      "element": "formal-charge-formula",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the formal charge on the oxygen in water, H₂O?",
+      "choices": [
+        "−2",
+        "0",
+        "+1",
+        "+2"
+      ],
+      "answer": 1,
+      "explanation": "Oxygen has six valence electrons, four nonbonding (two lone pairs) and two bonds: 6 − 4 − 2 = 0.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.hydronium-oxygen-charge",
+      "concept": "formal-charge",
+      "element": "formal-charge-formula",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the formal charge on the oxygen in hydronium, H₃O⁺?",
+      "choices": [
+        "−1",
+        "0",
+        "+1",
+        "+3"
+      ],
+      "answer": 2,
+      "explanation": "Oxygen has six valence electrons, two nonbonding (one lone pair) and three bonds: 6 − 2 − 3 = +1. The ion's overall +1 charge sits on oxygen.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.hydroxide-oxygen-charge",
+      "concept": "formal-charge",
+      "element": "common-atom-charges",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the formal charge on the oxygen in hydroxide, OH⁻?",
+      "choices": [
+        "−1",
+        "−2",
+        "0",
+        "+1"
+      ],
+      "answer": 0,
+      "explanation": "Oxygen has six valence electrons, six nonbonding (three lone pairs) and one bond: 6 − 6 − 1 = −1. A charge of −2 would need the oxygen to have two bonds.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.nitrate-nitrogen-charge",
+      "concept": "formal-charge",
+      "element": "common-atom-charges",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In the nitrate ion, NO₃⁻, drawn with one N=O double bond and two N–O single bonds, what is the formal charge on the nitrogen?",
+      "choices": [
+        "−1",
+        "0",
+        "+1",
+        "+2"
+      ],
+      "answer": 2,
+      "explanation": "Nitrogen has five valence electrons, no nonbonding electrons and four bonds, since the double bond counts twice: 5 − 0 − 4 = +1.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.nitrate-oxygen-charge",
+      "concept": "formal-charge",
+      "element": "counting-electrons",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In the same nitrate ion, what is the formal charge on an oxygen that is single-bonded to the nitrogen and has three lone pairs?",
+      "choices": [
+        "0",
+        "−1",
+        "+1",
+        "−2"
+      ],
+      "answer": 1,
+      "explanation": "Oxygen has six valence electrons, six nonbonding and one bond: 6 − 6 − 1 = −1. This single-bonded oxygen carries the ion's negative charge.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.choosing-structures-rule",
+      "concept": "formal-charge",
+      "element": "choosing-structures",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which rule is used to choose between Lewis structures by their formal charges?",
+      "choices": [
+        "Larger formal charges are better, and negative charge goes on the less electronegative atom",
+        "Only atoms bonded to hydrogen can carry formal charges",
+        "Smaller formal charges are better, and negative charge goes on the more electronegative atom"
+      ],
+      "answer": 2,
+      "explanation": "Structures whose formal charges are closer to zero are preferred, and a negative charge belongs on the more electronegative atom. The first choice reverses both rules.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.methyl-anion-charge",
+      "concept": "formal-charge",
+      "element": "counting-electrons",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "The carbon in the methyl anion, CH₃⁻, has three bonds and one lone pair. What is its formal charge?",
+      "choices": [
+        "+1",
+        "0",
+        "−1",
+        "−2"
+      ],
+      "answer": 2,
+      "explanation": "Carbon has four valence electrons, two nonbonding (one lone pair) and three bonds: 4 − 2 − 3 = −1. Counting the lone pair as zero electrons would give +1, which is wrong.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.formal-charge-steps",
+      "concept": "formal-charge",
+      "element": "formal-charge-formula",
+      "kind": "order",
+      "difficulty": 1,
+      "prompt": "Put these steps for finding formal charges on a Lewis structure in order.",
+      "steps": [
+        "Draw the Lewis structure with all valence electrons placed",
+        "For each atom, count its nonbonding electrons and its bonds",
+        "Subtract those counts from the atom's valence electrons"
+      ],
+      "explanation": "The nonbonding electrons can only be counted once the Lewis structure exists, and the subtraction needs both counts.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.resonance-change",
+      "concept": "resonance-structures",
+      "element": "curved-arrows",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What changes when one resonance structure is turned into another?",
+      "choices": [
+        "Atoms move to new positions",
+        "Pi or lone-pair electrons move, while the atoms stay put",
+        "The number of valence electrons changes",
+        "A sigma bond breaks and reforms"
+      ],
+      "answer": 1,
+      "explanation": "Resonance structures differ only in where electrons are; the nuclei stay where they are. Breaking a sigma bond would change the molecule itself.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.resonance-hybrid-meaning",
+      "concept": "resonance-structures",
+      "element": "resonance-hybrid",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is a resonance hybrid?",
+      "choices": [
+        "One of the resonance structures drawn in a textbook",
+        "A molecule that rapidly flips between two shapes",
+        "The real molecule, an average of its resonance structures",
+        "A mixture of two different compounds"
+      ],
+      "answer": 2,
+      "explanation": "No single drawing is the real molecule. The resonance hybrid is the actual electron distribution, an average of the forms. A molecule that flips between two shapes describes a different idea.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.ozone-forms",
+      "concept": "resonance-structures",
+      "element": "equal-forms",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How many equivalent resonance structures does ozone, O₃, have?",
+      "choices": [
+        "Two",
+        "One",
+        "Three",
+        "Four"
+      ],
+      "answer": 0,
+      "explanation": "The double bond can sit on either terminal oxygen, giving two equivalent forms. One drawing alone cannot show that both oxygen–oxygen bonds are the same length.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.resonance-true-statement",
+      "concept": "resonance-structures",
+      "element": "curved-arrows",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about resonance structures is true?",
+      "choices": [
+        "They have different atom connections",
+        "They are different compounds that can be separated",
+        "They have the same atom connections but different electron placements"
+      ],
+      "answer": 2,
+      "explanation": "Resonance structures keep every atom bonded the same way and move only electrons. Structures with different atom connections are isomers, which are different compounds.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.nitrate-forms",
+      "concept": "resonance-structures",
+      "element": "equal-forms",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "How many equivalent resonance structures are usually drawn for the nitrate ion, NO₃⁻?",
+      "choices": [
+        "One",
+        "Two",
+        "Three",
+        "Six"
+      ],
+      "answer": 2,
+      "explanation": "The double bond can sit on any of the three oxygens, giving three equivalent forms. Two would be right only if one of the oxygens were different from the others.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.major-contributor",
+      "concept": "resonance-structures",
+      "element": "major-contributors",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which trait makes a resonance structure a major contributor to the hybrid?",
+      "choices": [
+        "It has more formal charges",
+        "It has full octets and fewer formal charges",
+        "It puts a negative charge on the least electronegative atom"
+      ],
+      "answer": 1,
+      "explanation": "Structures with full octets and small formal charges contribute most. Putting a negative charge on the least electronegative atom is unfavorable, and more formal charges mean less stability.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.delocalized-meaning",
+      "concept": "resonance-structures",
+      "element": "delocalized-electrons",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Electrons in a resonance hybrid are called delocalized. What does that mean?",
+      "choices": [
+        "They are fixed to one atom and cannot move",
+        "They are spread over several atoms instead of sitting on one",
+        "They have been removed from the molecule"
+      ],
+      "answer": 1,
+      "explanation": "Delocalized electrons are shared over more than two atoms, which stabilizes the molecule. Electrons fixed to one atom would be localized.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.allyl-cation-forms",
+      "concept": "resonance-structures",
+      "element": "equal-forms",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "How many resonance forms are usually drawn for the allyl cation, CH₂=CH–CH₂⁺?",
+      "choices": [
+        "Four",
+        "One",
+        "Three",
+        "Two"
+      ],
+      "answer": 3,
+      "explanation": "The double bond and the positive charge can swap places across the three carbons, giving two forms, with the charge on each end carbon. The middle carbon never carries the charge.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.benzene-bond-length",
+      "concept": "resonance-structures",
+      "element": "delocalized-electrons",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why are all six C–C bonds in benzene the same length?",
+      "choices": [
+        "Each bond is an average of a single and a double bond, so they match",
+        "Each bond is a triple bond shortened by the ring",
+        "The bonds rotate so each one is briefly double"
+      ],
+      "answer": 0,
+      "explanation": "Benzene's resonance hybrid spreads its six pi electrons evenly over the ring, so every bond is between a single and a double bond in character. The bonds are not triple, and they do not rotate.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: Strictly, resonance hybrid delocalization, not literal averaging of two forms, but best choice."
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.resonance-steps",
+      "concept": "resonance-structures",
+      "element": "curved-arrows",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps for drawing resonance forms in order.",
+      "steps": [
+        "Draw one valid Lewis structure for the molecule",
+        "Move a pi bond or lone pair next to an atom with curved arrows to make a new form",
+        "Check that each new form has the same atoms and the right total valence electrons",
+        "Compare the forms and weight those with fewer formal charges more"
+      ],
+      "explanation": "The first form comes first, each new form is made by moving electrons and then checked, and only checked forms can be compared.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.bond-dipole-negative-end",
+      "concept": "bond-dipole",
+      "element": "dipole-direction",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In a bond between two different atoms, which end is partly negative?",
+      "choices": [
+        "The less electronegative atom",
+        "The more electronegative atom",
+        "Both ends equally",
+        "Neither end, because the bond is covalent"
+      ],
+      "answer": 1,
+      "explanation": "The bonding electrons are pulled toward the more electronegative atom, which becomes partly negative. A bond between identical atoms has no dipole.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.dipole-arrow",
+      "concept": "bond-dipole",
+      "element": "dipole-direction",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How is a bond dipole drawn as an arrow?",
+      "choices": [
+        "Pointing toward the less electronegative atom, with a minus at its tail",
+        "Drawn as a double-headed arrow between the atoms",
+        "Pointing toward the more electronegative atom, with a plus at its tail"
+      ],
+      "answer": 2,
+      "explanation": "The arrow points toward the negative end, and a plus sign at its tail marks the positive end. Drawing the arrow the other way is a common error.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.most-polar-bond",
+      "concept": "bond-dipole",
+      "element": "dipole-size",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these bonds is the most polar?",
+      "choices": [
+        "C–H",
+        "O–H",
+        "C–C",
+        "N–N"
+      ],
+      "answer": 1,
+      "explanation": "O–H has the largest electronegativity difference of these bonds, so its electrons are pulled most strongly toward oxygen. C–C and N–N bonds join identical atoms and are nonpolar.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.co2-dipoles",
+      "concept": "bond-dipole",
+      "element": "symmetry-cancellation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "The two C=O bond dipoles in carbon dioxide, O=C=O, point in which directions?",
+      "choices": [
+        "Same direction, so they add",
+        "At right angles, so they add to a larger dipole",
+        "Opposite directions, so they cancel"
+      ],
+      "answer": 2,
+      "explanation": "The molecule is linear, and the two bond dipoles lie along one line in opposite directions, so the net dipole is zero. Carbon dioxide is nonpolar.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.water-net-dipole",
+      "concept": "bond-dipole",
+      "element": "net-dipole",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does water have a net dipole, rather than its two O–H dipoles cancelling?",
+      "choices": [
+        "Because hydrogen has no electronegativity",
+        "Because the molecule is linear",
+        "Because lone pairs cancel bond dipoles",
+        "Because the molecule is bent, so the two bond dipoles point partly the same way"
+      ],
+      "answer": 3,
+      "explanation": "Water's bent shape means the two O–H dipoles share a component in the same direction, so they add. A linear geometry would have cancelled them.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.ccl4-zero-dipole",
+      "concept": "bond-dipole",
+      "element": "symmetry-cancellation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which molecule has polar bonds but a net dipole of zero?",
+      "choices": [
+        "CCl₄",
+        "H₂O",
+        "NH₃",
+        "HCl"
+      ],
+      "answer": 0,
+      "explanation": "The four C–Cl dipoles point to the corners of a tetrahedron and cancel. H₂O and NH₃ are bent or pyramidal, and HCl has a single bond dipole, so each has a net dipole.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.combining-dipoles",
+      "concept": "bond-dipole",
+      "element": "vector-sum",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "How are bond dipoles combined to find a molecule's net dipole?",
+      "choices": [
+        "Add their sizes only, ignoring direction",
+        "Multiply their sizes",
+        "Add them as vectors, so direction matters",
+        "Keep only the largest one and ignore the rest"
+      ],
+      "answer": 2,
+      "explanation": "Bond dipoles have direction, so they must be added as vectors. Adding sizes alone gives the wrong answer for bent or symmetric molecules.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.bent-ab2-dipole",
+      "concept": "bond-dipole",
+      "element": "net-dipole",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Two equal polar bonds, each with its dipole pointing from a central atom A toward a B atom, form a bent AB₂ molecule. Which statement is true?",
+      "choices": [
+        "The net dipole is zero, since two equal dipoles always cancel",
+        "The net dipole points along the A–B bond line, away from both B atoms",
+        "The net dipole is nonzero and points along the bisector of the B–A–B angle, toward the two B atoms"
+      ],
+      "answer": 2,
+      "explanation": "Two equal dipoles cancel only when they point in opposite directions, as in a linear molecule. In a bent molecule their sum points along the bisector of the angle, toward the B atoms.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "organic-chemistry.bonding-and-hybridization.net-dipole-steps",
+      "concept": "bond-dipole",
+      "element": "net-dipole",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps for finding whether a molecule has a net dipole in order.",
+      "steps": [
+        "Draw the molecule's shape from its Lewis structure",
+        "Mark each bond dipole, pointing toward the more electronegative atom",
+        "Add the bond dipoles as vectors",
+        "If the sum is zero, the molecule is nonpolar; otherwise it has a net dipole"
+      ],
+      "explanation": "The shape is needed to see the directions, the dipoles must be marked before they are added, and the sum decides the answer last.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    }
+  ],
+  "artifacts": []
+}

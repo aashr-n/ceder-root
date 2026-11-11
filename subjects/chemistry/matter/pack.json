@@ -1,0 +1,1520 @@
+{
+  "formatVersion": 1,
+  "id": "chemistry.matter",
+  "subject": "chemistry",
+  "title": "Properties and classification of matter",
+  "summary": "Physical and chemical properties and changes, and how matter is classed as mixtures, pure substances, elements and compounds.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "physical-property",
+      "name": "Physical properties",
+      "aliases": [
+        "physical property"
+      ],
+      "summary": "A physical property is a characteristic you can observe or measure without changing what the substance is.",
+      "requires": [],
+      "elements": [
+        {
+          "id": "observed-without-change",
+          "name": "Observed without changing the substance",
+          "aliases": []
+        },
+        {
+          "id": "intensive-property",
+          "name": "Intensive properties such as density",
+          "aliases": []
+        },
+        {
+          "id": "examples",
+          "name": "Examples such as color, hardness and boiling point",
+          "aliases": []
+        }
+      ],
+      "explain": {
+        "text": "A physical property is a characteristic of a substance that you can observe or measure without changing what the substance is. Color, odor, hardness, melting point, boiling point and density are all physical properties. Density is a good example: a small piece of iron and a large piece of iron have the same density, so density does not depend on how much of the substance you have. Physical properties help you identify a material and tell it apart from others."
+      }
+    },
+    {
+      "id": "chemical-property",
+      "name": "Chemical properties",
+      "aliases": [
+        "chemical property"
+      ],
+      "summary": "A chemical property describes how a substance reacts, meaning how it changes into a different substance.",
+      "requires": [
+        "physical-property"
+      ],
+      "elements": [
+        {
+          "id": "reacts-to-form-new",
+          "name": "Reacts to form new substances",
+          "aliases": []
+        },
+        {
+          "id": "flammability",
+          "name": "Flammability",
+          "aliases": []
+        },
+        {
+          "id": "tested-by-reaction",
+          "name": "Observed by carrying out a reaction",
+          "aliases": []
+        }
+      ],
+      "explain": {
+        "text": "A chemical property describes how a substance can change into a different substance. To observe one, you must carry out a reaction, such as burning wood, rusting iron, or putting a metal into acid. Flammability and reactivity with oxygen or acid are chemical properties. The new substance formed has different properties from the original, which is how you know a chemical property was shown."
+      }
+    },
+    {
+      "id": "physical-change",
+      "name": "Physical changes",
+      "aliases": [
+        "physical change"
+      ],
+      "summary": "A physical change alters the form or state of a substance but leaves its composition and identity the same.",
+      "requires": [
+        "physical-property"
+      ],
+      "elements": [
+        {
+          "id": "state-change",
+          "name": "Changes of state",
+          "aliases": []
+        },
+        {
+          "id": "composition-unchanged",
+          "name": "Composition stays the same",
+          "aliases": []
+        },
+        {
+          "id": "reversibility",
+          "name": "Usually reversible",
+          "aliases": []
+        }
+      ],
+      "explain": {
+        "text": "A physical change alters a substance's form, shape, or state without changing what it is made of. Melting ice, boiling water, crushing a rock, and dissolving sugar in water are physical changes. The molecules in steam are the same water molecules as in ice; only their arrangement and energy have changed. Many physical changes can be reversed by changing the temperature or pressure back."
+      }
+    },
+    {
+      "id": "chemical-change",
+      "name": "Chemical changes",
+      "aliases": [
+        "chemical change",
+        "chemical reaction"
+      ],
+      "summary": "A chemical change produces one or more new substances with a different composition and properties from the starting materials.",
+      "requires": [
+        "chemical-property"
+      ],
+      "elements": [
+        {
+          "id": "evidence",
+          "name": "Evidence of a chemical change",
+          "aliases": []
+        },
+        {
+          "id": "conservation-of-mass",
+          "name": "Conservation of mass",
+          "aliases": []
+        },
+        {
+          "id": "new-substances",
+          "name": "New substances with different properties",
+          "aliases": []
+        }
+      ],
+      "explain": {
+        "text": "A chemical change, or chemical reaction, turns starting substances into new substances with different compositions and properties. Evidence includes a color change, a gas bubbling out, a solid forming from two clear liquids, a temperature change, or light given off. Burning propane, baking soda reacting with vinegar, and iron rusting are chemical changes. Atoms are rearranged into new combinations, but none are created or destroyed, so the total mass stays the same."
+      }
+    },
+    {
+      "id": "pure-substance",
+      "name": "Pure substances",
+      "aliases": [
+        "pure substance",
+        "chemically pure substance"
+      ],
+      "summary": "A pure substance has a fixed composition and the same properties throughout, and it is either an element or a compound.",
+      "requires": [
+        "physical-property"
+      ],
+      "elements": [
+        {
+          "id": "fixed-composition",
+          "name": "Fixed composition",
+          "aliases": []
+        },
+        {
+          "id": "element-or-compound",
+          "name": "Element or compound",
+          "aliases": []
+        },
+        {
+          "id": "sharp-melting-point",
+          "name": "Sharp melting point",
+          "aliases": []
+        }
+      ],
+      "explain": {
+        "text": "A pure substance is matter with a fixed, uniform composition, so every sample of it has the same properties. Pure water, pure oxygen, and table sugar are pure substances. A pure substance is either an element, made of one kind of atom, or a compound, made of two or more elements chemically combined in a fixed ratio. Air, seawater, and milk are not pure substances, because their composition varies from sample to sample."
+      }
+    },
+    {
+      "id": "mixture",
+      "name": "Mixtures",
+      "aliases": [
+        "mixture",
+        "homogeneous mixture",
+        "heterogeneous mixture"
+      ],
+      "summary": "A mixture contains two or more substances physically combined in amounts that can vary, and each keeps its own properties.",
+      "requires": [
+        "pure-substance"
+      ],
+      "elements": [
+        {
+          "id": "variable-ratio",
+          "name": "Variable composition",
+          "aliases": []
+        },
+        {
+          "id": "homogeneous",
+          "name": "Homogeneous mixture",
+          "aliases": []
+        },
+        {
+          "id": "heterogeneous",
+          "name": "Heterogeneous mixture",
+          "aliases": []
+        },
+        {
+          "id": "physical-separation",
+          "name": "Separation by physical means",
+          "aliases": []
+        }
+      ],
+      "explain": {
+        "text": "A mixture is two or more substances physically combined, with no fixed ratio. Each part keeps its own properties and can be separated by physical means such as filtering, evaporating, or using a magnet. Salt water, air, and a mixture of sand and iron filings are all mixtures. A homogeneous mixture looks uniform throughout, like salt water. A heterogeneous mixture has visibly different parts, like sand in water."
+      }
+    },
+    {
+      "id": "element",
+      "name": "Elements",
+      "aliases": [
+        "element",
+        "chemical element"
+      ],
+      "summary": "An element is a pure substance made of one kind of atom, and a chemical reaction cannot break it into simpler substances.",
+      "requires": [
+        "pure-substance"
+      ],
+      "elements": [
+        {
+          "id": "one-kind-of-atom",
+          "name": "One kind of atom",
+          "aliases": []
+        },
+        {
+          "id": "element-symbol",
+          "name": "Chemical symbols",
+          "aliases": []
+        },
+        {
+          "id": "not-decomposed",
+          "name": "Cannot be broken down chemically",
+          "aliases": []
+        }
+      ],
+      "explain": {
+        "text": "An element is a pure substance made of only one kind of atom, and every atom of it has the same number of protons. Oxygen, carbon, iron, and gold are elements. Each element has a one- or two-letter chemical symbol, such as O for oxygen or Fe for iron. A chemical reaction cannot break an element into a simpler pure substance. The known elements are arranged in the periodic table."
+      }
+    },
+    {
+      "id": "compound",
+      "name": "Compounds",
+      "aliases": [
+        "compound",
+        "chemical compound"
+      ],
+      "summary": "A compound is a pure substance made of two or more elements chemically combined in a fixed ratio, with properties unlike its elements.",
+      "requires": [
+        "element"
+      ],
+      "elements": [
+        {
+          "id": "fixed-ratio",
+          "name": "Fixed ratio of elements",
+          "aliases": []
+        },
+        {
+          "id": "new-properties",
+          "name": "Properties unlike its elements",
+          "aliases": []
+        },
+        {
+          "id": "chemical-formula",
+          "name": "Chemical formulas",
+          "aliases": []
+        }
+      ],
+      "explain": {
+        "text": "A compound is a pure substance made of two or more different elements chemically bonded in a fixed ratio. Water, H₂O, is made of hydrogen and oxygen in a 2 to 1 ratio of atoms, and table salt, NaCl, has sodium and chlorine in a 1 to 1 ratio. A compound has properties that differ from its elements: hydrogen and oxygen are both gases at room temperature, while water is a liquid. Compounds can be broken into their elements only by chemical reactions."
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "chemistry.matter.physical-property-water-boiling-point",
+      "concept": "physical-property",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is a physical property of water?",
+      "explanation": "Boiling point is measured without changing water into another substance. The other three describe chemical reactions that produce new substances.",
+      "choices": [
+        "It boils at 100 °C at sea level pressure",
+        "It reacts with sodium metal to give hydrogen gas",
+        "It splits into hydrogen and oxygen under an electric current",
+        "It combines with calcium oxide to form calcium hydroxide"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.physical-property-intensive-density",
+      "concept": "physical-property",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these does NOT depend on the amount of a sample?",
+      "explanation": "Mass, volume and length grow as the sample grows. Density is mass divided by volume, and it stays the same for any amount of the same pure substance.",
+      "choices": [
+        "Mass",
+        "Density",
+        "Volume",
+        "Length"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.physical-property-copper-halves",
+      "concept": "physical-property",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A 10 g sample and a 50 g sample of pure copper are tested. Which property is the same for both?",
+      "explanation": "Density is an intensive property. Both samples have the same density, while mass, volume and atom count scale with the amount of copper.",
+      "choices": [
+        "Mass",
+        "Volume",
+        "Density",
+        "Number of atoms"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.physical-property-iron-magnet",
+      "concept": "physical-property",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which observation describes a physical property rather than a chemical property?",
+      "explanation": "Attraction to a magnet is observed without changing iron into a new substance. Rusting, charring and burning all produce new substances.",
+      "choices": [
+        "Iron turns orange-brown in moist air",
+        "Paper turns black when heated strongly",
+        "Magnesium ribbon burns with a bright white flame",
+        "Iron is attracted to a magnet"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.physical-property-melting-point-statement",
+      "concept": "physical-property",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about melting point is correct?",
+      "explanation": "Melting changes a solid to a liquid of the same substance, so melting point is a physical property. It is intensive, so it does not depend on sample size, and many nonmetals also have melting points.",
+      "choices": [
+        "It is a physical property, because melting changes the form of a solid but not what it is",
+        "It is a chemical property, because heat breaks bonds during melting",
+        "It changes with how much sample is heated",
+        "It is a property only of metals"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.physical-property-half-sample-density",
+      "concept": "physical-property",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A pure sample has a density of 2.70 g/cm³ at 20 °C. It is cut in half. What density should be measured for each half?",
+      "explanation": "Each half has half the mass and half the volume, so the ratio stays 2.70 g/cm³. Dividing the density by 2 confuses density with mass.",
+      "choices": [
+        "1.35 g/cm³ each",
+        "2.70 g/cm³ each",
+        "5.40 g/cm³ each",
+        "It depends on the shape of each half"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.physical-property-unknown-liquid-identify",
+      "concept": "physical-property",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which measurement would best help identify an unknown colorless liquid?",
+      "explanation": "A boiling point is a characteristic value for a pure liquid. Mass, bottle size and beaker shape depend on the sample or container, not on the substance.",
+      "choices": [
+        "Its mass in a closed container",
+        "The size of the bottle it is stored in",
+        "Its boiling point",
+        "The shape of the beaker it is poured into"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.chemical-property-which-is-chemical",
+      "concept": "chemical-property",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is a chemical property?",
+      "explanation": "Flammability is shown only when a substance reacts with oxygen and burns to form new substances. The others can be observed without a reaction.",
+      "choices": [
+        "Melting point",
+        "Hardness",
+        "Color",
+        "Flammability"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.chemical-property-hydrogen-burns",
+      "concept": "chemical-property",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which observation shows a chemical property of hydrogen?",
+      "explanation": "Burning hydrogen forms water, a new substance, so it reveals a chemical property. The other statements describe physical properties.",
+      "choices": [
+        "Hydrogen burns in air to form water",
+        "Hydrogen is a colorless gas",
+        "Hydrogen is less dense than air",
+        "Hydrogen boils at about -253 °C"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.chemical-property-metal-acid-reaction",
+      "concept": "chemical-property",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why is a metal's reaction with acid called a chemical property?",
+      "explanation": "The reaction produces new substances with different composition, so the reactivity is a chemical property. Measuring it on a scale or the room temperature do not make it chemical.",
+      "choices": [
+        "It can be measured on a scale",
+        "It forms new substances, such as a salt and hydrogen gas",
+        "It is the same for all metals",
+        "It depends on the room temperature"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.chemical-property-magnesium-burns-oxide",
+      "concept": "chemical-property",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Magnesium ribbon burns brightly in air. How should this property of magnesium be classified?",
+      "explanation": "Burning forms magnesium oxide, a new substance, so the property is chemical. Brightness and being a solid are physical properties.",
+      "choices": [
+        "Physical property, because the flame is bright",
+        "Physical property, because magnesium is a solid",
+        "Chemical property, because magnesium forms magnesium oxide",
+        "Neither, because burning is not a property"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.chemical-property-sugar-heated",
+      "concept": "chemical-property",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A sample of sugar turns black and gives off steam when strongly heated. What is being observed, and why?",
+      "explanation": "Heating sugar breaks it down into carbon and water vapor, which are different substances. Changing color alone does not decide the class; the new substances do.",
+      "choices": [
+        "Physical, because the sugar still tastes sweet",
+        "Physical, because the sugar changed color",
+        "Chemical, because the sugar melted first",
+        "Chemical, because the sugar has been turned into different substances"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.chemical-property-rust-new-substance",
+      "concept": "chemical-property",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Iron rusts in moist air to form iron oxide. Which statement about the rust is correct?",
+      "explanation": "Rust is a new substance with its own composition and properties. Changing its shape or melting it does not turn it back into iron.",
+      "choices": [
+        "It has different properties from iron, because it is a new substance",
+        "It is the same substance as iron, just in a different shape",
+        "It has the same density as iron",
+        "It can be turned back into iron just by melting it"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.chemical-property-food-can-metal",
+      "concept": "chemical-property",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A metal is needed for a sealed food can that must not corrode with acidic food. Which chemical property matters most?",
+      "explanation": "The question depends on whether the metal reacts with acids to form new substances. Density, melting point and color matter less for corrosion.",
+      "choices": [
+        "Density",
+        "Reactivity with acidic food",
+        "Melting point",
+        "Color"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.physical-change-which-is-physical",
+      "concept": "physical-change",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is a physical change?",
+      "explanation": "Melting ice changes the state of water but not its composition. The other three produce new substances.",
+      "choices": [
+        "Wood burning in a fireplace",
+        "Iron rusting in the rain",
+        "Ice melting into liquid water",
+        "Baking soda reacting with vinegar"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.physical-change-composition-stays",
+      "concept": "physical-change",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which statement is true of a physical change?",
+      "explanation": "In a physical change the substance keeps its composition, even though its form or state changes. Energy is often involved, and such changes happen to liquids and gases too.",
+      "choices": [
+        "A new substance is always formed",
+        "Energy is never involved",
+        "It can only happen to solids",
+        "The composition of the substance stays the same"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.physical-change-water-to-steam",
+      "concept": "physical-change",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Water boils and turns into steam. What happens to the water molecules?",
+      "explanation": "Boiling changes the spacing and energy of water molecules, not their identity. Breaking into atoms or forming ions would be chemical changes.",
+      "choices": [
+        "They keep the formula H₂O but move farther apart",
+        "They break into hydrogen and oxygen atoms",
+        "They become different molecules",
+        "They become ions"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.physical-change-sugar-dissolves",
+      "concept": "physical-change",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Sugar dissolves in water. Which description is best?",
+      "explanation": "The sugar is still sugar and can be recovered by evaporating the water, so this is physical. Disappearing from view is not evidence of a chemical change, and dissolving is not a reaction.",
+      "choices": [
+        "A chemical change, because the sugar disappears",
+        "A physical change, because evaporating the water recovers the sugar",
+        "A chemical change, because the solution tastes sweet",
+        "A physical change, because sugar and water react"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.physical-change-cut-log",
+      "concept": "physical-change",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which change is physical rather than chemical?",
+      "explanation": "Cutting changes only the shape of the wood. Cooking, tarnishing and igniting each form new substances.",
+      "choices": [
+        "Cooking an egg until it hardens",
+        "Silver tarnishing in air",
+        "Cutting a log into boards",
+        "A match head igniting"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.physical-change-chalk-crushed-heated",
+      "concept": "physical-change",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student crushes chalk into powder, then heats the powder until a gas is released and a new solid is left. Which statement is correct?",
+      "explanation": "Crushing only changes the particle size. Heating chalk breaks it down into new substances, so that step is chemical.",
+      "choices": [
+        "Both steps are physical changes",
+        "Crushing is chemical; heating is physical",
+        "Both steps are chemical changes",
+        "Crushing is physical; heating is chemical, since new substances form"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.physical-change-ice-warming-order",
+      "concept": "physical-change",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in order as a block of ice at -10 °C is heated until it becomes steam.",
+      "explanation": "The ice first warms as a solid, then melts at 0 °C, warms as a liquid, and finally boils at 100 °C. Every step is a physical change.",
+      "steps": [
+        "Solid ice warms up to 0 °C",
+        "Ice melts into liquid water at 0 °C",
+        "Liquid water warms up to 100 °C",
+        "Water boils into steam at 100 °C"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.chemical-change-which-is-chemical",
+      "concept": "chemical-change",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is a chemical change?",
+      "explanation": "Burning propane produces carbon dioxide and water, which are new substances. The other three are physical changes.",
+      "choices": [
+        "Burning propane in a stove",
+        "Dissolving salt in water",
+        "Melting butter",
+        "Breaking a glass bottle"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.chemical-change-gas-evidence",
+      "concept": "chemical-change",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which observation is evidence that a chemical change has happened?",
+      "explanation": "A gas forming in a solution signals that a new substance has been made. Changing shape, size or container does not.",
+      "choices": [
+        "The object has a different shape",
+        "A gas bubbles out of a solution with no heating",
+        "The substance is cut into smaller pieces",
+        "The sample is moved to a new container"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: Gas bubbling without heating is good evidence but could be dissolved gas escaping; other choices are clearly physical."
+      }
+    },
+    {
+      "id": "chemistry.matter.chemical-change-methane-conserved",
+      "concept": "chemical-change",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In the reaction CH₄ + 2 O₂ → CO₂ + 2 H₂O, what is conserved?",
+      "explanation": "Atoms are rearranged but not created or destroyed, so each element has the same number of atoms on both sides: 1 C, 4 H and 4 O. The identities of the substances change.",
+      "choices": [
+        "The identity of the substances",
+        "The color of the flame",
+        "The number of atoms of each element",
+        "The state of the reactants"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.chemical-change-white-solid-forms",
+      "concept": "chemical-change",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Two clear solutions are mixed, and a white solid forms. What is the best conclusion?",
+      "explanation": "A new solid that was not present before is a sign of a chemical change. Clear starting liquids do not rule out a reaction.",
+      "choices": [
+        "A physical change occurred, because the two liquids just mixed",
+        "No change occurred, because both starting liquids were clear",
+        "A physical change occurred, because the solid came from the liquid",
+        "A chemical change most likely occurred, because a new solid substance formed"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.chemical-change-chemical-change-statement",
+      "concept": "chemical-change",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement describes a chemical change correctly?",
+      "explanation": "In a chemical change bonds are broken and formed, creating substances with different composition. Some reactions absorb heat and mass is conserved, so the other statements are false.",
+      "choices": [
+        "Bonds break and form, producing substances with a different composition",
+        "It always gives off heat",
+        "The mass of the products is always smaller than the mass of the reactants",
+        "It can only happen with gases"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.chemical-change-hydrogen-water",
+      "concept": "chemical-change",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Hydrogen gas and oxygen gas react to form water. Which is correct about the water compared with the gases?",
+      "explanation": "Water is a compound with its own properties, a liquid at room temperature. It is not a mixture, and it contains hydrogen and oxygen atoms.",
+      "choices": [
+        "It has the same properties as the gases",
+        "It is a liquid at room temperature with different properties",
+        "It is a mixture of hydrogen and oxygen",
+        "It contains only hydrogen atoms"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.chemical-change-carbon-dioxide-mass",
+      "concept": "chemical-change",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "4.0 g of carbon reacts completely with 32.0 g of oxygen to form only carbon dioxide. What mass of carbon dioxide forms?",
+      "explanation": "Mass is conserved, so 4.0 g plus 32.0 g gives 36.0 g of carbon dioxide. Halving the total gives 18.0 g, which is incorrect.",
+      "choices": [
+        "18.0 g",
+        "32.0 g",
+        "36.0 g",
+        "4.0 g"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.chemical-change-steps-to-check-reaction",
+      "concept": "chemical-change",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in order when you test whether a change in a mixture is chemical.",
+      "explanation": "You record the starting properties, carry out the change, look for evidence of new substances, and then decide. Deciding comes last because it depends on the evidence.",
+      "steps": [
+        "Record the starting substances and their properties",
+        "Carry out the change and watch for new evidence",
+        "Look for a new substance with different properties",
+        "Decide whether the change is physical or chemical"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.pure-substance-which-is-pure",
+      "concept": "pure-substance",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is a pure substance?",
+      "explanation": "Distilled water has a fixed composition, H₂O. Sea water, air and brass are mixtures with variable composition.",
+      "choices": [
+        "Sea water",
+        "Air",
+        "Brass",
+        "Distilled water"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.pure-substance-defining-feature",
+      "concept": "pure-substance",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What defines a pure substance?",
+      "explanation": "A pure substance has the same composition in every part and every sample. Its state and boiling point vary, and filtration applies to mixtures.",
+      "choices": [
+        "It has a fixed composition throughout",
+        "It is always a solid",
+        "It has a high boiling point",
+        "It can be separated by filtration"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.pure-substance-pair-pure",
+      "concept": "pure-substance",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which pair contains only pure substances?",
+      "explanation": "Oxygen gas and table sugar each have a fixed composition. Salt water, air and milk are mixtures.",
+      "choices": [
+        "Salt water and oxygen",
+        "Oxygen and table sugar",
+        "Air and carbon dioxide",
+        "Milk and table sugar"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.pure-substance-sharp-melting",
+      "concept": "pure-substance",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A sample melts sharply at one temperature in every trial. What does this suggest?",
+      "explanation": "A sharp melting point at one temperature is typical of a pure substance. Mixtures melt over a range of temperatures.",
+      "choices": [
+        "It is a mixture of many substances",
+        "It is a solution",
+        "It is likely a pure substance",
+        "It is a gas"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.pure-substance-one-kind-of-atom",
+      "concept": "pure-substance",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A sample is made of only one kind of atom. How is it best classified?",
+      "explanation": "A substance made of one kind of atom is an element, and elements are pure substances. A compound has two or more kinds of atoms.",
+      "choices": [
+        "A compound",
+        "A mixture",
+        "A solution",
+        "An element, which is a pure substance"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.pure-substance-same-properties-samples",
+      "concept": "pure-substance",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Two samples from different sources have the same boiling point, density and color. Which is the strongest conclusion?",
+      "explanation": "Matching properties make it likely the samples are the same pure substance, but they do not prove it. Several substances can share some properties.",
+      "choices": [
+        "They are likely the same pure substance, but other tests are still needed to be sure",
+        "They must be the same mixture",
+        "They must be different elements",
+        "They must each contain air"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.pure-substance-melting-point-order",
+      "concept": "pure-substance",
+      "kind": "order",
+      "difficulty": 3,
+      "prompt": "Put these steps in order for checking whether a solid sample is pure by melting point.",
+      "explanation": "The sample is prepared and heated, the melting range is recorded, and then it is compared with the known value. Comparing before measuring would give no result.",
+      "steps": [
+        "Place a small amount of the sample in a melting point apparatus",
+        "Heat it slowly near the expected melting point",
+        "Record the temperature range over which it melts",
+        "Compare the range with the known value for the substance"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.mixture-which-is-mixture",
+      "concept": "mixture",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is a mixture?",
+      "explanation": "Salt water is salt dissolved in water, in an amount that can vary. Oxygen gas, sugar and mercury are pure substances.",
+      "choices": [
+        "Pure oxygen gas",
+        "Salt water",
+        "Table sugar",
+        "Liquid mercury"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.mixture-variable-composition",
+      "concept": "mixture",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What most clearly distinguishes a mixture from a pure substance?",
+      "explanation": "Mixtures can contain different amounts of their parts, while pure substances have a fixed composition. The state, density and color of a mixture vary.",
+      "choices": [
+        "A mixture is always a liquid",
+        "A mixture cannot have a density",
+        "A mixture has a variable composition",
+        "A mixture is always colorless"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.mixture-iron-sand-magnet",
+      "concept": "mixture",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Sand and iron filings are mixed. Which method separates them most directly?",
+      "explanation": "Iron is magnetic, so a magnet removes it from the sand without any chemical change. Filtering and boiling would not separate them.",
+      "choices": [
+        "Filtering through paper",
+        "Boiling the mixture",
+        "Adding vinegar",
+        "Using a magnet to pull out the iron"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.mixture-salt-dissolved",
+      "concept": "mixture",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Salt is dissolved in water to form a solution. Which statement is correct?",
+      "explanation": "The salt is still salt, so evaporating the water recovers it. A solution is a mixture with a variable ratio and is not a compound.",
+      "choices": [
+        "Its salt can be recovered by evaporating the water",
+        "It can only be separated by a chemical reaction",
+        "Its composition is fixed at a 1 to 1 ratio",
+        "It is a compound"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.mixture-heterogeneous-example",
+      "concept": "mixture",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which of these is a heterogeneous mixture?",
+      "explanation": "Oil and water form visibly separate layers, so the mixture is heterogeneous. Air, sugar solution and brass look uniform throughout.",
+      "choices": [
+        "Air in a sealed jar",
+        "Oil floating on water",
+        "Sugar dissolved in tea",
+        "Brass alloy"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.mixture-sand-on-filter",
+      "concept": "mixture",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Salt and sand are stirred into water, then filtered. Which material stays on the filter paper, and why?",
+      "explanation": "Sand does not dissolve, so it is caught by the filter. Salt dissolves and passes through with the water.",
+      "choices": [
+        "Salt, because it is heavier than sand",
+        "Both salt and sand, because both are solids",
+        "Sand, because it does not dissolve in water",
+        "Neither, because filter paper holds only liquids"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.mixture-salt-recovery-order",
+      "concept": "mixture",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in order to recover salt from a mixture of salt and sand.",
+      "explanation": "The salt must dissolve before filtering can remove the sand, and the water is evaporated last to leave the salt.",
+      "steps": [
+        "Add water to dissolve the salt",
+        "Filter off the sand",
+        "Evaporate the water from the salt solution"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.element-which-is-element",
+      "concept": "element",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is an element?",
+      "explanation": "Iron is made of a single kind of atom, so it is an element. Water, carbon dioxide and sodium chloride are compounds.",
+      "choices": [
+        "Water",
+        "Carbon dioxide",
+        "Sodium chloride",
+        "Iron"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.element-defining-element",
+      "concept": "element",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What defines an element?",
+      "explanation": "An element has only one kind of atom. Elements can be gases, liquids or solids, and metals are only one group of them.",
+      "choices": [
+        "It is made of only one kind of atom",
+        "It contains two or more kinds of atoms",
+        "It is always a gas at room temperature",
+        "It is always a metal"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.element-iron-symbol",
+      "concept": "element",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the chemical symbol for iron?",
+      "explanation": "The symbol Fe comes from the Latin name ferrum. Ir is iridium, I is iodine, and In is indium.",
+      "choices": [
+        "Ir",
+        "Fe",
+        "I",
+        "In"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.element-symbol-pairs",
+      "concept": "element",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which symbol is correctly paired with its element?",
+      "explanation": "K is the symbol for potassium. Na is sodium, N is nitrogen, Sn is tin, and Au is gold, not silver.",
+      "choices": [
+        "Na for nitrogen",
+        "Sn for sodium",
+        "K for potassium",
+        "Au for silver"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.element-o2-not-compound",
+      "concept": "element",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Oxygen gas, O₂, is an element. Why is it not counted as a compound?",
+      "explanation": "A compound needs two or more different kinds of atoms. Both atoms in O₂ are oxygen, so it is an element.",
+      "choices": [
+        "It is a gas",
+        "It has an unusual number of protons",
+        "It is made of two different elements",
+        "Its two atoms are the same kind of atom"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.element-cannot-decompose",
+      "concept": "element",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why can't an element be broken into a simpler pure substance by an ordinary chemical reaction?",
+      "explanation": "A reaction can rearrange atoms of different kinds, but an element has only one kind, so no simpler pure substance can form from it.",
+      "choices": [
+        "It contains only one kind of atom, so there is no simpler pure substance to form",
+        "Elements are always solids",
+        "Elements contain no electrons",
+        "Chemical reactions cannot touch elements"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.element-atomic-number-eight",
+      "concept": "element",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A sample contains only atoms with 8 protons each. What can be concluded?",
+      "explanation": "The number of protons identifies the element, and 8 protons is oxygen. Only one kind of atom is present, so the sample is an element.",
+      "choices": [
+        "It is a compound of oxygen",
+        "It is an element, oxygen, because every atom with 8 protons is oxygen",
+        "It must be a mixture of eight elements",
+        "It must contain carbon"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.compound-which-is-compound",
+      "concept": "compound",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is a compound?",
+      "explanation": "Carbon dioxide contains carbon and oxygen chemically combined in a fixed ratio. O₂, Au and He each contain only one kind of atom.",
+      "choices": [
+        "Oxygen gas, O₂",
+        "Gold, Au",
+        "Carbon dioxide, CO₂",
+        "Helium, He"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.compound-elements-in-water",
+      "concept": "compound",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How many different elements are in a compound such as water, H₂O?",
+      "explanation": "Water contains hydrogen and oxygen only, so it has two elements, even though it has three atoms per molecule.",
+      "choices": [
+        "One",
+        "Three",
+        "Four",
+        "Two"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.compound-fixed-ratio",
+      "concept": "compound",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is true of the ratio of elements in a compound?",
+      "explanation": "A compound always has the same ratio of elements, such as 2 to 1 in water. The ratio is not always 1 to 1.",
+      "choices": [
+        "It is fixed",
+        "It changes from sample to sample",
+        "It depends on the container",
+        "It is always 1 to 1"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.compound-salt-properties",
+      "concept": "compound",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Table salt, NaCl, is a compound. How do its properties compare with its elements?",
+      "explanation": "Salt is a crystalline solid, unlike sodium, a reactive metal, and chlorine, a gas. Compounds have their own properties.",
+      "choices": [
+        "It is more reactive than either element",
+        "It is a crystalline solid with properties different from either element",
+        "It is a gas at room temperature",
+        "It is a mixture of sodium and chlorine atoms"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.compound-air-not-compound",
+      "concept": "compound",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which of these is a mixture rather than a compound?",
+      "explanation": "Air is a mixture of gases in variable amounts, so it is not a compound. Water, carbon dioxide and sodium chloride have fixed ratios.",
+      "choices": [
+        "Water",
+        "Carbon dioxide",
+        "Air",
+        "Sodium chloride"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.compound-iron-sulfide",
+      "concept": "compound",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Iron and sulfur react to form iron sulfide, which has a fixed composition. How is iron sulfide best classified?",
+      "explanation": "Iron sulfide has two elements chemically combined in a fixed ratio, which makes it a compound. A magnet cannot separate its parts.",
+      "choices": [
+        "A mixture, because it contains two elements",
+        "An element, because it contains iron",
+        "A solution, because a magnet separates it",
+        "A compound, because two elements are chemically combined in a fixed ratio"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "chemistry.matter.compound-glucose-atoms",
+      "concept": "compound",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A compound has the formula C₆H₁₂O₆. How many atoms of each element are in one molecule, and what is the total number of atoms?",
+      "explanation": "The subscripts give 6 carbon, 12 hydrogen and 6 oxygen atoms, which add to 24. Swapping hydrogen and oxygen gives the wrong count of each element.",
+      "choices": [
+        "6 C, 12 H and 6 O; total 24 atoms",
+        "6 C, 6 H and 12 O; total 24 atoms",
+        "6 C, 12 H and 6 O; total 6 atoms",
+        "6 C, 12 H and 6 O; total 12 atoms"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    }
+  ],
+  "artifacts": []
+}
