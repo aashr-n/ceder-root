@@ -1382,7 +1382,11 @@
       "target": "granum",
       "explanation": "A granum is a stack of thylakoids. Their membranes hold the pigments and photosystems that turn light into ATP and NADPH, and stacking packs a lot of membrane into a small space.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1395,7 +1399,12 @@
       "target": "stroma",
       "explanation": "The Calvin cycle runs in the stroma, the fluid around the thylakoids. Its enzymes, RuBisCO among them, are dissolved there, next to where the thylakoids release ATP and NADPH.",
       "verification": {
-        "status": "draft"
+        "status": "draft",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 1,
+        "at": "2026-11-11",
+        "note": "Key: hotspot “stroma”. a: D, hotspot “stroma” (agrees). b: no answer. a's note: Two stroma spots exist (A and B). A sits on a stroma lamella line, so I chose the free-stroma spot D (the B target). If the key intends A, the picture does not separate them clearly. b's note: Spots C and D are both in the stroma (D in an empty stroma area, C on a stromal lamella); both fit."
       }
     },
     {
@@ -1408,7 +1417,11 @@
       "target": "inner-membrane",
       "explanation": "The inner envelope membrane is the chloroplast's real barrier. Its transporters move molecules such as sugar phosphates in and out, while the outer membrane lets most small molecules through.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1421,7 +1434,11 @@
       "target": "outer-membrane",
       "explanation": "The outer envelope membrane has wide channels, so small molecules cross it easily. The inner membrane, not the outer one, decides what reaches the stroma.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1434,7 +1451,11 @@
       "target": "stroma-lamella",
       "explanation": "Stroma lamellae are single thylakoid membranes running between grana. Their faces touch the stroma, which suits photosystem I and ATP synthase, whose working parts sit on the stroma side.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1447,7 +1468,11 @@
       "target": "photosystem-ii",
       "explanation": "Photosystem II's reaction centre loses an electron when it absorbs light. It refills it from water, which is split into oxygen, protons and electrons. This is where the oxygen of photosynthesis comes from.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1460,7 +1485,11 @@
       "target": "cytochrome-b6f",
       "explanation": "The cytochrome b6f complex links the two photosystems. As electrons pass through it, protons are moved from the stroma into the thylakoid space, building the gradient that drives ATP synthase.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1473,7 +1502,11 @@
       "target": "photosystem-i",
       "explanation": "Photosystem I receives electrons that have lost energy along the chain. Absorbing light raises them to a high enough energy to pass, through ferredoxin, to NADP⁺.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1486,7 +1519,12 @@
       "target": "nadp-reductase",
       "explanation": "NADP⁺ reductase sits on the stroma side of the membrane. It takes electrons from ferredoxin and adds them with a proton to NADP⁺, so NADPH is released right where the Calvin cycle needs it.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: Assumes the orange trapezoid is ferredoxin-NADP reductase, not ferredoxin."
       }
     },
     {
@@ -1499,7 +1537,11 @@
       "target": "atp-synthase",
       "explanation": "Protons are crowded in the thylakoid space. Their flow back through ATP synthase turns part of it, and the head in the stroma joins ADP and phosphate into ATP.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     }
   ],

@@ -1985,17 +1985,12 @@
       "element": "cadherin-links",
       "kind": "label",
       "difficulty": 2,
-      "prompt": "Tap the anchoring junction where cadherins hold the two cells together without sealing the space between them.",
+      "prompt": "Tap the anchoring junction that ties into intermediate filaments, holding the cells together against pulling without sealing the space between them.",
       "artifact": "animal-cell-junctions",
       "target": "desmosome",
       "explanation": "The desmosome is the pair of dense plaques joined across the gap by cadherins. It resists pulling but does not seal, unlike the tight junction, and it passes nothing between the cells, unlike the gap junction.",
       "verification": {
-        "status": "draft",
-        "method": "blind-solve",
-        "solvers": 2,
-        "agreed": 1,
-        "at": "2026-11-11",
-        "note": "Key: hotspot “desmosome”. solver-a: 4, not a spot. b: E, hotspot “desmosome” (agrees). solver-a's note: E is the orange plaque with short cadherin rungs (desmosome-type). The picture has no separately drawn adherens junction, so this is the only cadherin-based anchoring junction shown. Desmosomes are also cadherin-based anchors, so the wording is slightly loose. b's note: Only one anchoring junction (desmosome) is drawn; no adherens junction shown"
+        "status": "draft"
       }
     },
     {
@@ -2066,12 +2061,7 @@
       "target": "cell-wall",
       "explanation": "The cell wall is built mainly of cellulose fibres set in a gel of other sugars. It sits outside the plasma membrane and is stiff enough to keep the cell from bursting when water builds up pressure inside.",
       "verification": {
-        "status": "draft",
-        "method": "blind-solve",
-        "solvers": 2,
-        "agreed": 0,
-        "at": "2026-11-11",
-        "note": "Key: hotspot “cell-wall”. solver-a: 0, not a spot. b: D, hotspot “endoplasmic-reticulum”. solver-a's note: A is inside the hatched cell wall of the upper cell. B sits on the membrane edge of the lower cell's wall, so A is the clean choice. The lower wall is also hatched, so either wall could be meant."
+        "status": "draft"
       }
     },
     {
@@ -2085,12 +2075,7 @@
       "target": "plasmodesma",
       "explanation": "The plasmodesma crosses the cell wall, and the plasma membrane lines it, so the cytoplasm of the two cells is continuous. It plays a role in plants like that of gap junctions in animals, though it is built quite differently.",
       "verification": {
-        "status": "draft",
-        "method": "blind-solve",
-        "solvers": 2,
-        "agreed": 1,
-        "at": "2026-11-11",
-        "note": "Key: hotspot “plasmodesma”. solver-a: 2, not a spot. b: C, hotspot “plasmodesma” (agrees). solver-a's note: C is the centre of the pore, which is the plasmodesma channel. The centre is also where the ER strand runs (see q-b9ab2e6a33f4), so the two items overlap somewhat. b's note: channel spot sits on the wall centre; moderately unsure which spot marks the cytoplasmic sleeve"
+        "status": "draft"
       }
     },
     {
@@ -2104,12 +2089,7 @@
       "target": "callose",
       "explanation": "Callose is a sugar polymer that builds up in the wall around the channel's openings. As more is deposited, the channel narrows, which lets the plant control which signals move between its cells.",
       "verification": {
-        "status": "draft",
-        "method": "blind-solve",
-        "solvers": 2,
-        "agreed": 1,
-        "at": "2026-11-11",
-        "note": "Key: hotspot “callose”. solver-a: 4, not a spot. b: E, hotspot “callose” (agrees). solver-a's note: E is a red collar-shaped deposit beside the pore neck, the callose collar. All four collars look alike, so any of them would fit."
+        "status": "draft"
       }
     },
     {
@@ -2118,17 +2098,12 @@
       "element": "structure",
       "kind": "label",
       "difficulty": 3,
-      "prompt": "Tap the membrane system whose strand runs through the centre of the channel and joins the same system in the next cell.",
+      "prompt": "Tap the membrane network that spreads through the cytoplasm and passes as a narrow tube through the channel into the next cell.",
       "artifact": "plasmodesma",
       "target": "endoplasmic-reticulum",
       "explanation": "A narrow strand of endoplasmic reticulum runs through the middle of each plasmodesma and is continuous with the endoplasmic reticulum of both cells. The plasma membrane forms the channel's outer lining instead.",
       "verification": {
-        "status": "draft",
-        "method": "blind-solve",
-        "solvers": 2,
-        "agreed": 0,
-        "at": "2026-11-11",
-        "note": "Key: hotspot “endoplasmic-reticulum”. solver-a: 4, not a spot. b: A, hotspot “cell-wall”. solver-a's note: E is the dark strand at the centre of the pore, the ER desmotubule. b's note: desmotubule spot circle also overlaps cytoplasm/membrane; fairly clear"
+        "status": "draft"
       }
     },
     {
@@ -2137,17 +2112,12 @@
       "element": "structure",
       "kind": "label",
       "difficulty": 2,
-      "prompt": "Tap the membrane that lines the channel, so the two cells are bounded by one continuous surface.",
+      "prompt": "Tap the membrane that bounds each cell and continues through the channel, so the two cells share one continuous surface.",
       "artifact": "plasmodesma",
       "target": "plasma-membrane",
       "explanation": "The plasma membrane of each cell runs along the inner face of the wall and on through the channel to the next cell. This lining is why the cytoplasm of linked plant cells is continuous. The strand in the centre of the channel is endoplasmic reticulum.",
       "verification": {
-        "status": "draft",
-        "method": "blind-solve",
-        "solvers": 2,
-        "agreed": 1,
-        "at": "2026-11-11",
-        "note": "Key: hotspot “plasma-membrane”. solver-a: 0, not a spot. b: D, hotspot “plasma-membrane” (agrees). solver-a's note: A is the green membrane flaring from the pore into the outer surface, so the membrane is continuous. C at the centre also lies on the green band, and it overlaps with the ER answer, so A is the better choice."
+        "status": "draft"
       }
     }
   ],
@@ -2200,7 +2170,7 @@
       "id": "plasmodesma",
       "kind": "diagram",
       "title": "A plasmodesma through a plant cell wall",
-      "alt": "A close-up cut through the wall between two plant cells. The wall is a tall sand-coloured band with diagonal ochre cellulose fibres and a dark middle line. A channel crosses the wall from one cell to the other, lined by a blue-grey membrane that continues along both faces of the wall. A dark green tube of endoplasmic reticulum runs through the middle of the channel and branches into the cytoplasm on each side. Terracotta lumps of callose sit in the wall at both openings of the channel.",
+      "alt": "A close-up cut through the wall between two plant cells. The wall is a tall sand-coloured band with diagonal ochre cellulose fibres and a dark middle line. A wide channel crosses the wall, lined by a blue-grey membrane that continues along both faces of the wall. A dark green tube of endoplasmic reticulum runs through the middle of the channel and branches into the cytoplasm on each side. Terracotta lumps of callose sit in the wall at both openings of the channel.",
       "file": "assets/plasmodesma.svg",
       "hotspots": [
         {
@@ -2214,14 +2184,14 @@
           "id": "plasmodesma",
           "label": "Plasmodesma",
           "x": 0.5,
-          "y": 0.5,
+          "y": 0.438,
           "r": 0.05
         },
         {
           "id": "callose",
           "label": "Callose collar",
           "x": 0.56,
-          "y": 0.624,
+          "y": 0.647,
           "r": 0.05
         },
         {

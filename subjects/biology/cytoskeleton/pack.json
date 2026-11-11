@@ -231,7 +231,8 @@
         }
       ],
       "explain": {
-        "text": "A motor protein is a protein that walks along a filament and carries cargo with it. Each step uses energy released when ATP is split, so the motor does not drift; a diffusing molecule does not need this. Kinesin walks toward the plus end of a microtubule, which usually points to the cell's edge. Dynein walks the other way, toward the minus end and the nucleus. Myosin walks along actin. Each family grips one filament type, and the filament stays put while the motor moves. A vesicle carried by a motor is pulled along the track."
+        "text": "A motor protein is a protein that walks along a filament and carries cargo with it. Each step uses energy released when ATP is split, so the motor does not drift; a diffusing molecule does not need this. Kinesin walks toward the plus end of a microtubule, which usually points to the cell's edge. Dynein walks the other way, toward the minus end and the nucleus. Myosin walks along actin. Each family grips one filament type, and the filament stays put while the motor moves. A vesicle carried by a motor is pulled along the track.",
+        "artifact": "kinesin-step-steps"
       },
       "misconceptions": [
         {
@@ -288,7 +289,8 @@
         }
       ],
       "explain": {
-        "text": "Cilia are short, numerous hair-like structures, and flagella are longer and fewer, but eukaryotic cilia and flagella share one inner design. A ring of nine microtubule doublets surrounds a central pair of microtubules, the 9+2 arrangement. Dynein arms on each doublet grab the neighbouring doublet and slide it along. The sliding is held in check by linkers and the base, so it turns into a bend. A motile cilium beats with a power stroke that pushes fluid past it, then a recovery stroke. Bacterial flagella are different: they turn like a propeller and have no microtubules."
+        "text": "Cilia are short, numerous hair-like structures, and flagella are longer and fewer, but eukaryotic cilia and flagella share one inner design. A ring of nine microtubule doublets surrounds a central pair of microtubules, the 9+2 arrangement. Dynein arms on each doublet grab the neighbouring doublet and slide it along. The sliding is held in check by linkers and the base, so it turns into a bend. A motile cilium beats with a power stroke that pushes fluid past it, then a recovery stroke. Bacterial flagella are different: they turn like a propeller and have no microtubules.",
+        "artifact": "axoneme"
       },
       "misconceptions": [
         {
@@ -2019,7 +2021,251 @@
         "agreed": 2,
         "at": "2026-11-11"
       }
+    },
+    {
+      "id": "biology.cytoskeleton.tap-central-pair",
+      "concept": "cilia-and-flagella",
+      "element": "nine-plus-two",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the \"2\" of the 9+2 arrangement.",
+      "artifact": "axoneme",
+      "target": "central-pair",
+      "explanation": "These are the two single microtubules of the central pair. The nine doublets around them make the \"9\".",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Central pair (two singlet microtubules) sits at the centre of the 9+2 cross-section."
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.tap-doublet",
+      "concept": "cilia-and-flagella",
+      "element": "nine-plus-two",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap one of the nine units that dynein slides against each other to bend the cilium.",
+      "artifact": "axoneme",
+      "target": "doublet",
+      "explanation": "This is an outer doublet: a complete microtubule fused to a partial one. Nine of them make the \"9\" of 9+2.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Top spot is one of the nine outer doublets. b's note: Spot C sits on a doublet; spot B overlaps the doublet edge and dynein arms, slightly close."
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.tap-dynein-arms",
+      "concept": "cilia-and-flagella",
+      "element": "dynein-sliding",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the motor proteins that split ATP to pull on the neighbouring doublet.",
+      "artifact": "axoneme",
+      "target": "dynein-arms",
+      "explanation": "These are dynein arms. Each grips the next doublet and walks along it, so the doublets slide past each other.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: The dashed circle at E encloses the red outer dynein arm arcs of the 3 o'clock doublet. The circle at C also catches a red arc but mostly covers a nexin link, so E is the clearer choice."
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.tap-nexin-link",
+      "concept": "cilia-and-flagella",
+      "element": "dynein-sliding",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "Tap the elastic linker that keeps neighbouring doublets from sliding apart, so sliding turns into a bend.",
+      "artifact": "axoneme",
+      "target": "nexin-link",
+      "explanation": "This is a nexin link. Because it ties neighbouring doublets together, dynein's sliding bends the cilium instead of pushing doublets out.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Nexin link (dashed tan line) between two neighbouring doublets, at C."
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.tap-radial-spoke",
+      "concept": "cilia-and-flagella",
+      "element": "nine-plus-two",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "Tap the structure that connects a doublet to the central pair and helps control when dynein arms fire.",
+      "artifact": "axoneme",
+      "target": "radial-spoke",
+      "explanation": "This is a radial spoke. It links each doublet to the central pair, and signals passed through it help coordinate the beat.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Radial spoke (dark green, from the 8 o'clock doublet toward the centre), at D."
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.tap-membrane",
+      "concept": "cilia-and-flagella",
+      "element": "nine-plus-two",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the lipid bilayer, continuous with the cell's plasma membrane, that covers the cilium.",
+      "artifact": "axoneme",
+      "target": "membrane",
+      "explanation": "This is the membrane of the cilium. A cilium is an extension of the cell, so its covering is part of the plasma membrane.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Ciliary membrane, the outer green band, at B."
+      }
     }
   ],
-  "artifacts": []
+  "artifacts": [
+    {
+      "id": "axoneme",
+      "kind": "diagram",
+      "title": "Inside a cilium: the 9+2 axoneme",
+      "alt": "An unlabelled cross-section of a motile cilium. A double-lined ring of membrane surrounds the shaft. Inside, nine pairs of joined tubules sit evenly around a circle. Each pair carries two curved arms reaching toward the next pair, and dashed links join neighbouring pairs. From each pair a rod with a flattened head points inward toward two single round tubules joined at the centre.",
+      "file": "assets/axoneme.svg",
+      "hotspots": [
+        {
+          "id": "central-pair",
+          "label": "Central pair of microtubules",
+          "x": 0.5,
+          "y": 0.5,
+          "r": 0.06
+        },
+        {
+          "id": "doublet",
+          "label": "Outer microtubule doublet",
+          "x": 0.5,
+          "y": 0.178,
+          "r": 0.05
+        },
+        {
+          "id": "dynein-arms",
+          "label": "Dynein arms",
+          "x": 0.75,
+          "y": 0.532,
+          "r": 0.05
+        },
+        {
+          "id": "radial-spoke",
+          "label": "Radial spoke",
+          "x": 0.338,
+          "y": 0.604,
+          "r": 0.05
+        },
+        {
+          "id": "nexin-link",
+          "label": "Nexin link",
+          "x": 0.312,
+          "y": 0.356,
+          "r": 0.05
+        },
+        {
+          "id": "membrane",
+          "label": "Membrane of the cilium",
+          "x": 0.664,
+          "y": 0.878,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "kinesin-step",
+      "kind": "diagram",
+      "title": "Kinesin carrying a vesicle",
+      "alt": "A microtubule lies across the bottom, its minus end on the left and plus end on the right, built of alternating tubulin subunits. A kinesin motor stands on it: its front head grips the track, and its rear head is lifted, with a dashed arrow showing it swinging forward toward the plus end. A stalk rises from the two heads to a forked tail holding a round vesicle at the top.",
+      "file": "assets/kinesin-step.svg",
+      "hotspots": [
+        {
+          "id": "vesicle",
+          "label": "Vesicle (cargo)",
+          "x": 0.508,
+          "y": 0.167,
+          "r": 0.06
+        },
+        {
+          "id": "tail",
+          "label": "Kinesin tail",
+          "x": 0.508,
+          "y": 0.333,
+          "r": 0.05
+        },
+        {
+          "id": "rear-head",
+          "label": "Rear head, swinging forward",
+          "x": 0.408,
+          "y": 0.609,
+          "r": 0.05
+        },
+        {
+          "id": "front-head",
+          "label": "Front head, gripping the track",
+          "x": 0.633,
+          "y": 0.673,
+          "r": 0.05
+        },
+        {
+          "id": "microtubule",
+          "label": "Microtubule track",
+          "x": 0.25,
+          "y": 0.8,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "kinesin-step-steps",
+      "kind": "sequence",
+      "title": "How kinesin walks, step by step",
+      "alt": "Five steps: the tail holds a vesicle, one head grips the microtubule, ATP drives the rear head forward, the new front head grips farther along while the old one lets go, and repeated steps carry the vesicle toward the plus end.",
+      "over": "kinesin-step",
+      "steps": [
+        {
+          "title": "The tail holds the cargo",
+          "text": "Kinesin's tail binds a vesicle. The heads at the other end do the walking.",
+          "focus": "tail"
+        },
+        {
+          "title": "A head grips the track",
+          "text": "One head binds tightly to a tubulin subunit of the microtubule.",
+          "focus": "front-head"
+        },
+        {
+          "title": "ATP drives the swing",
+          "text": "ATP binding to the gripping head swings the rear head forward, past it, toward the plus end.",
+          "focus": "rear-head"
+        },
+        {
+          "title": "A new grip farther along",
+          "text": "The swinging head grips the track about 8 nm ahead. The other head splits its ATP and lets go.",
+          "focus": "microtubule"
+        },
+        {
+          "title": "The cargo moves",
+          "text": "Step after step, the vesicle is pulled toward the plus end, usually the cell's edge. The track stays put.",
+          "focus": "vesicle"
+        }
+      ]
+    }
+  ]
 }
