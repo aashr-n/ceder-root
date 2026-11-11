@@ -230,9 +230,9 @@
       "difficulty": 1,
       "prompt": "Which level is a group of similar cells that work together for one job?",
       "choices": [
-        "Organ system",
+        "Organ",
         "Organism",
-        "Chemical level",
+        "Molecule",
         "Tissue"
       ],
       "answer": 3,
@@ -253,10 +253,10 @@
       "difficulty": 2,
       "prompt": "The heart pumps blood. At which level of organization is the heart best described?",
       "choices": [
-        "Cellular level",
+        "Cell level",
         "Organ level",
         "Tissue level",
-        "Organismal level"
+        "Organism level"
       ],
       "answer": 1,
       "explanation": "The heart is an organ: a structure made of several tissue types that work together for one function. Its muscle is tissue, but the heart as a whole sits one level higher.",
@@ -380,12 +380,12 @@
       "prompt": "In anatomical position, which way do the palms face?",
       "choices": [
         "Backward",
-        "Toward the thighs",
-        "Toward the ground",
+        "Inward",
+        "Downward",
         "Forward"
       ],
       "answer": 3,
-      "explanation": "In anatomical position the palms face forward with the thumbs turned outward. Palms facing backward or down is a different posture, so terms like anterior would no longer match the reference.",
+      "explanation": "In anatomical position the palms face forward with the thumbs turned outward. Palms facing backward, inward, or down is a different posture, so terms like anterior would no longer match the reference.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
@@ -450,7 +450,7 @@
         "Your left",
         "Your right",
         "Behind you",
-        "In front of you"
+        "Above you"
       ],
       "answer": 0,
       "explanation": "Left and right always refer to the subject's own body. Facing you, the person's right side is on your left, so their right hand appears on your left.",
@@ -641,13 +641,13 @@
       "difficulty": 2,
       "prompt": "Which pair of terms gives the same direction, toward the back of the body?",
       "choices": [
-        "Ventral and posterior",
+        "Ventral and anterior",
         "Dorsal and posterior",
         "Superior and posterior",
         "Medial and superficial"
       ],
       "answer": 1,
-      "explanation": "Dorsal and posterior both mean toward the back. Ventral means toward the front, superior means above, and medial means toward the midline, so those pairs are wrong.",
+      "explanation": "Dorsal and posterior both mean toward the back. Ventral and anterior both mean toward the front, superior means above, and medial means toward the midline, so those pairs are wrong.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
@@ -700,10 +700,10 @@
       "difficulty": 3,
       "prompt": "A student writes that the ulna is lateral to the radius in anatomical position. Which correction is right?",
       "choices": [
-        "The ulna is lateral to the radius, as the student wrote",
+        "The ulna is lateral to the radius",
         "The ulna is superior to the radius",
         "The ulna is medial to the radius",
-        "The ulna is posterior to the radius"
+        "The ulna is behind the radius"
       ],
       "answer": 2,
       "explanation": "With the palms forward, the radius is on the thumb side, which is lateral, so the ulna on the little-finger side is medial. The two bones lie side by side at the same height.",
@@ -712,7 +712,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "note": "a's note: Choice 0 repeats the student's wrong claim. In anatomical position the radius is lateral (thumb side) and the ulna is medial."
       }
     },
     {
@@ -725,7 +726,7 @@
       "choices": [
         "Sagittal plane",
         "Midsagittal plane",
-        "Transverse plane",
+        "Axial plane",
         "Frontal plane"
       ],
       "answer": 3,
@@ -735,7 +736,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "note": "b's note: Frontal = coronal; axial is not a standard term here (transverse is)."
       }
     },
     {
@@ -1055,105 +1057,7 @@
         "agreed": 2,
         "at": "2026-11-11"
       }
-    },
-    {
-      "id": "anatomy-and-physiology.body-organization.cavities-label-brain",
-      "concept": "body-cavities",
-      "element": "cranial-cavity",
-      "kind": "label",
-      "difficulty": 1,
-      "prompt": "Tap the body cavity that holds the brain.",
-      "artifact": "body-cavities-diagram",
-      "target": "cranial-cavity",
-      "explanation": "The brain sits in the cranial cavity, the space filling most of the skull.",
-      "verification": {
-        "status": "draft",
-        "note": "Both blind solvers agreed with this key on 2026-11-11. Set back to draft on review: the picture mixes a front view with a side view and puts the spinal cavity beside the body. Redraw it, then solve again."
-      }
-    },
-    {
-      "id": "anatomy-and-physiology.body-organization.cavities-label-lungs",
-      "concept": "body-cavities",
-      "element": "thoracic-cavity",
-      "kind": "label",
-      "difficulty": 1,
-      "prompt": "Tap the body cavity that holds the lungs and heart.",
-      "artifact": "body-cavities-diagram",
-      "target": "thoracic-cavity",
-      "explanation": "The thoracic cavity sits in the chest, above the diaphragm, and holds the lungs and heart.",
-      "verification": {
-        "status": "draft",
-        "note": "Both blind solvers agreed with this key on 2026-11-11. Set back to draft on review: the picture mixes a front view with a side view and puts the spinal cavity beside the body. Redraw it, then solve again."
-      }
-    },
-    {
-      "id": "anatomy-and-physiology.body-organization.cavities-label-spinal-cord",
-      "concept": "body-cavities",
-      "element": "spinal-cavity",
-      "kind": "label",
-      "difficulty": 2,
-      "prompt": "Tap the cavity that runs down the back and holds the spinal cord.",
-      "artifact": "body-cavities-diagram",
-      "target": "spinal-cavity",
-      "explanation": "The spinal cavity is the narrow dorsal cavity that runs down the spine and encloses the spinal cord.",
-      "verification": {
-        "status": "draft",
-        "note": "Both blind solvers agreed with this key on 2026-11-11. Set back to draft on review: the picture mixes a front view with a side view and puts the spinal cavity beside the body. Redraw it, then solve again."
-      }
-    },
-    {
-      "id": "anatomy-and-physiology.body-organization.cavities-label-stomach",
-      "concept": "body-cavities",
-      "element": "abdominopelvic-cavity",
-      "kind": "label",
-      "difficulty": 2,
-      "prompt": "Tap the cavity that holds the stomach and intestines.",
-      "artifact": "body-cavities-diagram",
-      "target": "abdominopelvic-cavity",
-      "explanation": "The abdominopelvic cavity lies below the diaphragm and holds the stomach and intestines, among other organs.",
-      "verification": {
-        "status": "draft",
-        "note": "Both blind solvers agreed with this key on 2026-11-11. Set back to draft on review: the picture mixes a front view with a side view and puts the spinal cavity beside the body. Redraw it, then solve again."
-      }
     }
   ],
-  "artifacts": [
-    {
-      "id": "body-cavities-diagram",
-      "kind": "diagram",
-      "title": "Body cavities",
-      "alt": "A simple side view of a standing figure with its internal body cavities shown as coloured regions.",
-      "file": "assets/body-cavities.svg",
-      "hotspots": [
-        {
-          "id": "cranial-cavity",
-          "label": "Cranial cavity",
-          "x": 0.4667,
-          "y": 0.1889,
-          "r": 0.06
-        },
-        {
-          "id": "spinal-cavity",
-          "label": "Spinal cavity",
-          "x": 0.3408,
-          "y": 0.4667,
-          "r": 0.06
-        },
-        {
-          "id": "thoracic-cavity",
-          "label": "Thoracic cavity",
-          "x": 0.4792,
-          "y": 0.4556,
-          "r": 0.06
-        },
-        {
-          "id": "abdominopelvic-cavity",
-          "label": "Abdominopelvic cavity",
-          "x": 0.4792,
-          "y": 0.6667,
-          "r": 0.06
-        }
-      ]
-    }
-  ]
+  "artifacts": []
 }
