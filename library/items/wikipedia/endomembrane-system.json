@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/endomembrane-system",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Endomembrane system",
+  "url": "https://en.wikipedia.org/wiki/Endomembrane_system",
+  "revision": 1337557973,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Endomembrane_system&oldid=1337557973",
+  "retrieved": "2026-11-11",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Endomembrane system” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "The endomembrane system is composed of the different membranes (endomembranes) that are suspended in the cytoplasm within a eukaryotic cell. These membranes divide the cell into functional and structural compartments, or organelles. In eukaryotes the organelles of the endomembrane system include: the nuclear membrane, the endoplasmic reticulum, the Golgi apparatus, lysosomes, vesicles, endosomes, and cell membrane among others. The system is defined more accurately as the set of membranes that forms a single functional and developmental unit, either being connected directly, or exchanging material through vesicle transport. Importantly, the endomembrane system does not include the membranes of plastids or mitochondria, but might have evolved partially from the actions of the latter (see below).",
+  "concepts": [
+    "biology/endomembrane-system"
+  ]
+}

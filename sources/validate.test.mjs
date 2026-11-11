@@ -104,11 +104,22 @@ test("a quote's white space doesn't matter", () => {
 
 test("only a page's scripts from its own host are read", () => {
   const html = `<script src="/_m/app.js?x=1&amp;y=2"></script><script src="https://cdn.example.net/lib.js"></script><script>inline()</script>`;
-  assert.deepEqual(ownScripts(html, "https://phet.example.org/en/licensing"), ["https://phet.example.org/_m/app.js?x=1&y=2"]);
+  assert.deepEqual(ownScripts(html, "https://source.example.org/en/licensing"), ["https://source.example.org/_m/app.js?x=1&y=2"]);
 });
 
 test("evidence is gathered from an entry and its parts", () => {
   const entry = { checked, parts: [{ checked }, { checked: null }] };
   assert.equal(evidenceOf(entry).length, 2);
   assert.equal(evidenceOf({ checked: null }).length, 0);
+});
+
+test("linking conditions are true flags on a source an app may link to, with an address", () => {
+  const linked = { ...base, url: "https://example.org", linking: { external: true, freeOnly: true } };
+  assert.equal(validate(linked).code, 0);
+  assert.equal(validate({ ...linked, linking: {} }).code, 1);
+  assert.equal(validate({ ...linked, linking: { external: false } }).code, 1);
+  assert.equal(validate({ ...linked, linking: { framed: true } }).code, 1);
+  assert.match(validate({ ...linked, apps: "none" }).out, /nothing links to it/);
+  const { url, ...noUrl } = linked;
+  assert.match(validate(noUrl).out, /needs the url a link opens/);
 });

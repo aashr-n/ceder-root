@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/chemical-polarity",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Chemical polarity",
+  "url": "https://en.wikipedia.org/wiki/Chemical_polarity",
+  "revision": 1383053578,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Chemical_polarity&oldid=1383053578",
+  "retrieved": "2026-11-11",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Chemical polarity” by Wikipedia contributors. Plain text of the lead section. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section",
+  "text": "In chemistry, polarity is a separation of electric charge leading to a molecule or its chemical groups having an electric dipole moment, with a negatively charged end and a positively charged end.\n\nPolar molecules must contain one or more polar bonds due to a difference in electronegativity between the bonded atoms. Molecules containing polar bonds have no molecular polarity if the bond dipoles cancel each other out by symmetry.\n\nPolar molecules interact through dipole-dipole intermolecular forces and hydrogen bonds. Polarity underlies a number of physical properties including surface tension, solubility, and melting and boiling points.",
+  "concepts": [
+    "chemistry/polarity"
+  ]
+}

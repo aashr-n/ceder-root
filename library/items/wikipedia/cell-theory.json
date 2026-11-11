@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/cell-theory",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Cell theory",
+  "url": "https://en.wikipedia.org/wiki/Cell_theory",
+  "revision": 1384580439,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Cell_theory&oldid=1384580439",
+  "retrieved": "2026-11-11",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Cell theory” by Wikipedia contributors. Plain text of the lead section. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section",
+  "text": "In biology, cell theory is a scientific theory first formulated in the mid-nineteenth century, that living organisms are made up of cells, that they are the basic structural/organizational unit of all organisms, and that all cells come from pre-existing cells. Cells are the basic unit of structure in all living organisms and also the basic unit of reproduction.\n\nCell theory has traditionally been accepted as the governing theory of all life, but some biologists consider non-cellular entities such as viruses living organisms and thus disagree with the universal application of cell theory to all forms of life.",
+  "concepts": [
+    "biology/cell-theory"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/cell-nucleus",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Cell nucleus",
+  "url": "https://en.wikipedia.org/wiki/Cell_nucleus",
+  "revision": 1382848564,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Cell_nucleus&oldid=1382848564",
+  "retrieved": "2026-11-11",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Cell nucleus” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "The cell nucleus (from Latin nucleus or nuculeus 'kernel, seed'; pl.: nuclei) is a membrane-bound organelle found in eukaryotic cells. Eukaryotic cells usually have a single nucleus, but a few cell types, such as mammalian red blood cells, have no nuclei, and a few others including osteoclasts have many. The main structures making up the nucleus are the nuclear envelope, a double membrane that encloses the entire organelle and isolates its contents from the cellular cytoplasm; and the nuclear matrix, a network within the nucleus that adds mechanical support.\n\nThe cell nucleus contains nearly all of the cell's genome. Nuclear DNA is often organized into multiple chromosomes – long strands of DNA dotted with various proteins, such as histones, that protect and organize the DNA. The genes within these chromosomes are structured in such a way to promote cell function. The nucleus maintains the integrity of genes and controls the activities of the cell by regulating gene expression.",
+  "concepts": [
+    "biology/nucleus"
+  ]
+}

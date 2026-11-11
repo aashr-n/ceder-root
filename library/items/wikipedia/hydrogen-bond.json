@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/hydrogen-bond",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Hydrogen bond",
+  "url": "https://en.wikipedia.org/wiki/Hydrogen_bond",
+  "revision": 1381762571,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Hydrogen_bond&oldid=1381762571",
+  "retrieved": "2026-11-11",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Hydrogen bond” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "In chemistry, a hydrogen bond (H-bond) is a specific type of molecular interaction that exhibits partial covalent character and cannot be described as a purely electrostatic force. It occurs when a hydrogen (H) atom, covalently bonded to a more electronegative donor atom or group (Dn), interacts with another electronegative atom bearing a lone pair of electrons—the hydrogen bond acceptor (Ac). Unlike simple dipole–dipole interactions, hydrogen bonding arises from charge transfer (nB → σ*AH), orbital interactions, and quantum mechanical delocalization, making it a resonance-assisted interaction rather than a mere electrostatic attraction.",
+  "concepts": [
+    "chemistry/hydrogen-bond"
+  ]
+}

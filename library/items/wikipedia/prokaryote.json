@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/prokaryote",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Prokaryote",
+  "url": "https://en.wikipedia.org/wiki/Prokaryote",
+  "revision": 1380008316,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Prokaryote&oldid=1380008316",
+  "retrieved": "2026-11-11",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Prokaryote” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "A prokaryote (from Ancient Greek πρό pró, meaning 'before'; and κάρυον káruon, meaning 'nut' or 'kernel'), less commonly spelled procaryote, is a cellular organism that lacks a distinct cell nucleus or other membrane-bound organelles. In the earlier two-empire system, prokaryotes formed the empire Prokaryota; in the current three-domain system, based upon molecular phylogenetics, prokaryotes are divided into two domains Bacteria and Archaea. A third domain, Eukaryota, which consists of single- and multi-cellular organisms with nuclei, organelles and complex cellular architecture, is sometimes considered a clade under Archaea in the two-domain system.",
+  "concepts": [
+    "biology/prokaryotic-and-eukaryotic-cells"
+  ]
+}

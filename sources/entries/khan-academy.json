@@ -40,5 +40,9 @@
       }
     ]
   },
+  "linking": {
+    "external": true,
+    "freeOnly": true
+  },
   "notes": "Checked against Khan Academy's two help articles on using its materials and its trademark policy, read through the help centre's own JSON API because the article pages and www.khanacademy.org/about/tos answer automated requests with a bot challenge. The Terms of Service themselves were not read. The content is CC BY-NC-SA, but the version isn't settled: the articles link both CC BY-NC-SA 4.0 and CC BY-NC-SA 3.0 US, so the licence field says unknown. Either way it's NonCommercial, and Khan's own terms call use inside a paid offering commercial, so an app only links to it. Even a link has conditions: open khanacademy.org itself (not framed or wrapped in Ceder's own content), don't put the link behind a paid plan, don't use Khan's name or logo to promote Ceder, and Khan may withdraw the right to link. The bank's agents don't read it and nothing from it goes into the bank."
 }

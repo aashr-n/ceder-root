@@ -55,6 +55,9 @@ for (const file of files) {
   if (entry.bank === "copy" && entry.license !== "CC0-1.0") fail(`bank is "copy", but only a CC0-1.0 source can be copied into the bank`);
   if (entry.bank === "copy" && entry.checked === null) fail(`bank is "copy", but the licence isn't checked`);
   if (entry.bank !== "none" && !(entry.id in SITES)) fail(`bank is "${entry.bank}", but tools/ref.mjs doesn't reach this source, so agents can't read it`);
+  // Conditions on a link only mean something where an app may link to the source.
+  if (entry.linking && !["link", "show"].includes(entry.apps)) fail(`it has linking conditions, but apps is "${entry.apps}", so nothing links to it`);
+  if (entry.linking && !entry.url) fail(`it has linking conditions, so it needs the url a link opens`);
   const partIds = new Set();
   for (const part of entry.parts ?? []) {
     if (partIds.has(part.id)) fail(`two parts have the id "${part.id}"`);

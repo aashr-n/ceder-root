@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/metallic-bonding",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Metallic bonding",
+  "url": "https://en.wikipedia.org/wiki/Metallic_bonding",
+  "revision": 1380383070,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Metallic_bonding&oldid=1380383070",
+  "retrieved": "2026-11-11",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Metallic bonding” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "Metallic bonding is a type of chemical bonding that arises from the electrostatic attractive force between conduction electrons (in the form of an electron cloud of delocalized electrons) and positively charged metal ions. Metal atoms lose their valence electrons to a large, delocalized orbital, which leaves the nucleus, and other electrons that are closer to the nucleus, as positively charged cations. The ions form a crystal lattice as they are held together by the negative charge of the delocalized orbital. It may be described as the sharing of free electrons among a structure of positively charged ions, and as a more delocalized version of covalent bonding. Metallic bonding accounts for many physical properties of metals, such as strength, ductility, thermal and electrical resistivity and conductivity, opacity, and lustre.",
+  "concepts": [
+    "chemistry/metallic-bond"
+  ]
+}

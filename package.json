@@ -4,11 +4,11 @@
   "version": "0.1.0",
   "type": "module",
   "description": "Ceder's bank of concepts, verified questions, diagrams and 3D models. See FORMAT.md.",
-  "license": "CC0-1.0",
+  "license": "SEE LICENSE IN README.md",
   "scripts": {
     "validate": "node tools/validate.mjs",
     "build": "node tools/build.mjs",
-    "test": "node --test \"tools/*.test.mjs\""
+    "test": "node --test \"tools/*.test.mjs\" \"sources/*.test.mjs\""
   },
   "devDependencies": {
     "@resvg/resvg-js": "2.6.2",

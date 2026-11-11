@@ -16,6 +16,16 @@
     "attribution": { "type": "string", "minLength": 1 },
     "access": { "type": "string", "minLength": 1 },
     "checked": { "$ref": "#/definitions/checked" },
+    "linking": {
+      "description": "Conditions the source's own terms put on a link to it, for an app to obey.",
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "external": { "description": "A link opens the source's own site, outside the app: never framed, embedded or surrounded by other content.", "const": true },
+        "freeOnly": { "description": "A link is never behind a paid feature.", "const": true }
+      }
+    },
     "parts": {
       "description": "For a source whose licence differs by part: each part that matters, checked on its own.",
       "type": "array",

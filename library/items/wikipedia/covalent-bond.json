@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/covalent-bond",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Covalent bond",
+  "url": "https://en.wikipedia.org/wiki/Covalent_bond",
+  "revision": 1383001697,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Covalent_bond&oldid=1383001697",
+  "retrieved": "2026-11-11",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Covalent bond” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "A covalent bond is a chemical bond that involves the sharing of electrons to form electron pairs between atoms. These electron pairs are known as shared pairs or bonding pairs. The stable balance of attractive and repulsive forces between atoms, when they share electrons, is known as covalent bonding. For many molecules, the sharing of electrons allows each atom to attain the equivalent of a full valence shell, corresponding to a stable electronic configuration. In organic chemistry, covalent bonding is much more common than ionic bonding, where atoms are separate and merely associated by electrostatic attraction.",
+  "concepts": [
+    "chemistry/covalent-bond"
+  ]
+}

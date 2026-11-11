@@ -39,7 +39,8 @@ One file per source, `entries/<id>.json`:
 | `attribution` | The credit to show. Needed for `show`, unless the source is CC0. |
 | `access` | How it's fetched: an address for an app, a command for an agent. |
 | `checked` | `null` when the licence wasn't checked against the source's own pages, and then `notes` says exactly what's missing. Otherwise `{ "date", "evidence" }`: the day it was checked, and a list of `{ "url", "quote" }`, each a sentence copied word for word from a page the source itself publishes. A quote the page builds with a script carries `"fromScript": true`. |
-| `parts` | For a source whose licence differs by part (OpenStax book by book, Wikipedia's text and its pictures): one object per part, each with `id`, `name`, `url`, `license`, `apps`, `attribution`, `checked` and `notes` as above. A part's `apps` governs that part: an entry may be `show` while a part of it, such as Wikipedia's pictures, is only `link`. |
+| `linking` | Optional, for a source whose own terms put conditions on a link: `"external": true`, a link opens the source's own site outside the app, never framed or surrounded by other content; `"freeOnly": true`, a link is never behind a paid feature. The library's build copies these onto each link to the source, so an app can obey them without reading `notes`. |
+| `parts` | For a source whose licence differs by part (Wikipedia's text and its pictures): one object per part, each with `id`, `name`, `url`, `license`, `apps`, `attribution`, `checked` and `notes` as above. A part's `apps` governs that part: an entry may be `show` while a part of it, such as Wikipedia's pictures, is only `link`. |
 | `notes` | What the evidence supports, and every caveat: trademarks, terms on linking, framing or AI use, and anything the owner has to decide. |
 
 ## Adding or changing one
@@ -50,5 +51,9 @@ One file per source, `entries/<id>.json`:
 4. Run `node sources/recheck.mjs [id ...]`. It fetches every evidence page again and lists each quote that's no longer there word for word (after tags are removed and white space is evened out). It needs the network, so CI doesn't run it; run it by hand before relying on an entry, and when it reports a quote missing, read the page again and correct the entry. Behind an HTTPS proxy, prefix it with `NODE_USE_ENV_PROXY=1`.
 
 The tests are in `sources/validate.test.mjs`: `node --test "sources/*.test.mjs"`.
+
+## Left out
+
+OpenStax and PhET were checked against their own pages on 2026-11-11 and left out, because their terms don't allow use in an app with paid plans. PhET's terms also forbid linking from commercial activity without an agreement.
 
 None of this is legal advice.

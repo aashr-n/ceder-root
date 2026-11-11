@@ -6,5 +6,5 @@
   "apps": "private",
   "bank": "none",
   "checked": null,
-  "notes": "Not a published source, so there's no licence page to check. Used on the student's device, for that student alone. Never stored in this repository, and never shared between students. A file can carry terms of its own: OpenStax books, for one, now say they may not be ingested into generative AI offerings without OpenStax's permission (see openstax)."
+  "notes": "Not a published source, so there's no licence page to check. Used on the student's device, for that student alone. Never stored in this repository, and never shared between students. A file can carry terms of its own, such as a ban on feeding it into generative AI without its publisher's permission."
 }

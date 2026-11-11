@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/valence-electron",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Valence electron",
+  "url": "https://en.wikipedia.org/wiki/Valence_electron",
+  "revision": 1377696157,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Valence_electron&oldid=1377696157",
+  "retrieved": "2026-11-11",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Valence electron” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "In chemistry and physics, valence electrons are electrons in the outermost shell of an atom, and they can participate in the formation of a chemical bond if the outermost shell is not closed. In a single covalent bond, a shared pair forms with both atoms in the bond each contributing one valence electron.\n\nThe presence of valence electrons can determine the element's chemical properties, such as its valence—whether it may bond with other elements and, if so, how readily and with how many. In this way, a given element's reactivity is highly dependent upon its electronic configuration. For a main-group element, a valence electron can exist only in the outermost electron shell; for a transition metal, a valence electron can also be in an inner shell.",
+  "concepts": [
+    "chemistry/valence-electrons"
+  ]
+}

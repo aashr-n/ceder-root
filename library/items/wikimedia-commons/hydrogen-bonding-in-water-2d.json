@@ -1,0 +1,35 @@
+{
+  "id": "wikimedia-commons/hydrogen-bonding-in-water-2d",
+  "source": "wikimedia-commons",
+  "kind": "image",
+  "title": "Hydrogen-bonding-in-water-2D",
+  "url": "https://commons.wikimedia.org/wiki/File:Hydrogen-bonding-in-water-2D.png",
+  "revision": 1132056188,
+  "permalink": "https://commons.wikimedia.org/w/index.php?title=File%3AHydrogen-bonding-in-water-2D.png&oldid=1132056188",
+  "retrieved": "2026-11-11",
+  "license": "LicenseRef-public-domain",
+  "licenseUrl": "https://commons.wikimedia.org/wiki/File:Hydrogen-bonding-in-water-2D.png",
+  "credit": {
+    "authors": "Benjah-bmm27",
+    "line": "“Hydrogen-bonding-in-water-2D” by Benjah-bmm27, via Wikimedia Commons. Scaled down to 800 pixels wide. Public domain."
+  },
+  "changes": "Scaled down to 800 pixels wide",
+  "file": "files/wikimedia-commons/hydrogen-bonding-in-water-2d.png",
+  "sha256": "212f37c58ac72a0432eaed602a5b54dc7652119d6269040d9daef16bd608789c",
+  "width": 800,
+  "height": 488,
+  "alt": "Two water molecules with partial charges marked, joined by a dashed hydrogen bond from a hydrogen of one to the oxygen of the other.",
+  "evidence": {
+    "url": "https://commons.wikimedia.org/wiki/File:Hydrogen-bonding-in-water-2D.png",
+    "metadata": {
+      "LicenseShortName": "Public domain",
+      "License": "pd",
+      "Copyrighted": "False",
+      "Artist": "<a href=\"//commons.wikimedia.org/wiki/User:Benjah-bmm27\" title=\"User:Benjah-bmm27\">Benjah-bmm27</a>",
+      "Restrictions": ""
+    }
+  },
+  "concepts": [
+    "chemistry/hydrogen-bond"
+  ]
+}

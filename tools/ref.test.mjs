@@ -1,6 +1,9 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { RUN_LENGTH, SITES, packTexts, plainText, sharedRuns, slug } from "./ref.mjs";
+import { mkdirSync, mkdtempSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+import { RUN_LENGTH, SITES, packTexts, plainText, savedPages, sharedRuns, slug } from "./ref.mjs";
 
 test("the tool only knows Wikipedia, Wikibooks and Wikidata", () => {
   assert.deepEqual(SITES, { wikipedia: "en.wikipedia.org", wikibooks: "en.wikibooks.org", wikidata: "www.wikidata.org" });
@@ -58,5 +61,18 @@ test("packTexts lists a pack's prose with where it is", () => {
     "t.p.b prompt", "t.p.b explanation", "t.p.b answer",
     "t.p.c prompt", "t.p.c explanation", "t.p.c step 0", "t.p.c step 1", "t.p.c step 2",
     "artifact d alt", "artifact d step 0",
+  ]);
+});
+
+test("check compares a pack with the library's text pieces as well as the pages read", () => {
+  const root = mkdtempSync(join(tmpdir(), "ref-test-"));
+  mkdirSync(join(root, ".work", "refs", "wikipedia"), { recursive: true });
+  writeFileSync(join(root, ".work", "refs", "wikipedia", "cell.txt"), "A page.");
+  mkdirSync(join(root, "library", "items", "wikipedia"), { recursive: true });
+  writeFileSync(join(root, "library", "items", "wikipedia", "cell.json"), JSON.stringify({ text: "A pinned lead." }));
+  writeFileSync(join(root, "library", "items", "wikipedia", "link.json"), JSON.stringify({ kind: "link" }));
+  assert.deepEqual(savedPages(join(root, ".work", "refs"), root), [
+    { name: "library/items/wikipedia/cell.json", text: "A pinned lead." },
+    { name: "wikipedia/cell.txt", text: "A page." },
   ]);
 });

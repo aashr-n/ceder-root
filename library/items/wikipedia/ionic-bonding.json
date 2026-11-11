@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/ionic-bonding",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Ionic bonding",
+  "url": "https://en.wikipedia.org/wiki/Ionic_bonding",
+  "revision": 1383447094,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Ionic_bonding&oldid=1383447094",
+  "retrieved": "2026-11-11",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Ionic bonding” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "Ionic bonding is a type of chemical bonding that involves the electrostatic attraction between oppositely charged ions, or between two atoms with sharply different electronegativities, and is the primary interaction occurring in ionic compounds. It is one of the main types of bonding, along with covalent bonding and metallic bonding. Ions are atoms (or groups of atoms) with an electrostatic charge. Atoms that gain electrons make negatively charged ions (called anions). Atoms that lose electrons make positively charged ions (called cations). This transfer of electrons is known as electrovalence in contrast to covalence. In the simplest case, the cation is a metal atom and the anion is a nonmetal atom, but these ions can be more complex, e.g. polyatomic ions like NH+4 or SO2−4. In simpler words, an ionic bond results from the transfer of electrons from a metal to a non-metal to obtain a full valence shell for both atoms.",
+  "concepts": [
+    "chemistry/ionic-bond"
+  ]
+}
