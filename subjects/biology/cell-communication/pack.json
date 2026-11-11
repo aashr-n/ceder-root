@@ -1590,7 +1590,11 @@
       "target": "signal",
       "explanation": "This is the signal molecule, or ligand. It fits the outer binding site of its receptor and stays outside the cell; only the message passes inward.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1604,7 +1608,11 @@
       "target": "receptor",
       "explanation": "This receptor threads through the membrane seven times. When the signal binds its outer site, its shape changes, and the change reaches its inner side.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1618,7 +1626,11 @@
       "target": "g-protein",
       "explanation": "The G protein sits on the inner face of the membrane. An activated receptor makes it swap GDP for GTP, and the active G protein passes the signal on to an enzyme.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1632,7 +1644,11 @@
       "target": "adenylyl-cyclase",
       "explanation": "Adenylyl cyclase is a membrane enzyme switched on by the active G protein. Each one makes many cyclic AMP molecules from ATP, which amplifies the signal.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1646,7 +1662,11 @@
       "target": "camp",
       "explanation": "These are cyclic AMP molecules. They are small and spread quickly through the cytoplasm, carrying the message the first messenger left outside.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1660,7 +1680,11 @@
       "target": "kinase",
       "explanation": "This is protein kinase A. Cyclic AMP switches it on, and it phosphorylates target proteins, switching them on or off to produce the cell's response.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     }
   ],

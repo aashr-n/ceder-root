@@ -103,7 +103,8 @@
         }
       ],
       "explain": {
-        "text": "Transfer RNA, or tRNA, is a small RNA that carries one amino acid to the ribosome. Each tRNA has an anticodon, three bases that pair with a matching codon on the mRNA, and an attachment site at its other end for one amino acid. An enzyme, aminoacyl-tRNA synthetase, loads each tRNA with the right amino acid before it is used. The loaded form is called an aminoacyl-tRNA. The ribosome reads the pairing and joins the carried amino acid to the growing chain."
+        "text": "Transfer RNA, or tRNA, is a small RNA that carries one amino acid to the ribosome. Each tRNA has an anticodon, three bases that pair with a matching codon on the mRNA, and an attachment site at its other end for one amino acid. An enzyme, aminoacyl-tRNA synthetase, loads each tRNA with the right amino acid before it is used. The loaded form is called an aminoacyl-tRNA. The ribosome reads the pairing and joins the carried amino acid to the growing chain.",
+        "artifact": "trna-codon"
       },
       "misconceptions": [
         {
@@ -161,7 +162,8 @@
         }
       ],
       "explain": {
-        "text": "Translation builds a protein from an mRNA sequence. A ribosome in the cytoplasm reads the mRNA codon by codon and moves along it. Each aminoacyl-tRNA whose anticodon pairs with the codon enters the A site, a peptide bond forms, and the ribosome shifts one codon. Translation starts at an AUG start codon and ends when a stop codon is read and a release factor frees the finished chain. Several ribosomes can read one mRNA at once, so many copies of a protein can be made quickly."
+        "text": "Translation builds a protein from an mRNA sequence. A ribosome in the cytoplasm reads the mRNA codon by codon and moves along it. Each aminoacyl-tRNA whose anticodon pairs with the codon enters the A site, a peptide bond forms, and the ribosome shifts one codon. Translation starts at an AUG start codon and ends when a stop codon is read and a release factor frees the finished chain. Several ribosomes can read one mRNA at once, so many copies of a protein can be made quickly.",
+        "artifact": "elongation-steps"
       },
       "misconceptions": [
         {
@@ -259,7 +261,12 @@
       ],
       "explanation": "A codon is three nucleotides. Three bases give 64 combinations, enough for the 20 amino acids. One base gives 4 signals, and two bases give only 16, which is still too few for 20 amino acids.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -277,14 +284,19 @@
       ],
       "answer": 2,
       "mistakes": [
-        "gc-one-codon-per-aa",
+        null,
         null,
         null,
         null
       ],
       "explanation": "Four bases in each of three positions give 4 × 4 × 4 = 64 codons. Of these, 61 name amino acids and three are stop signals. The number 20 is the count of amino acids, not of codons.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -309,7 +321,12 @@
       ],
       "explanation": "The premise is false: most amino acids have two to six codons, so some single-base changes swap one codon for a synonym and leave the amino acid unchanged. Ribosomes do not repair codons.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -334,7 +351,12 @@
       ],
       "explanation": "AUG is the usual start codon, and it codes for methionine, so new proteins begin with methionine, which may be removed later. Glycine, tryptophan and lysine each have their own codons, none of them AUG.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -359,7 +381,12 @@
       ],
       "explanation": "Release factors, not tRNAs, recognise the three stop codons, and the finished chain is released with no amino acid added. Stop codons mark the end; AUG is the usual start.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -384,7 +411,12 @@
       ],
       "explanation": "The genetic code is nearly universal. The rare exceptions, such as some mitochondrial codons, do not change the general rule. A student who thinks each species has its own table would pick the claim that the codons differ between species.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -409,7 +441,12 @@
       ],
       "explanation": "The protein is correct because the codons name the same amino acids in both organisms. A student who holds that each species has its own code would call the match a coincidence.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -434,7 +471,12 @@
       ],
       "explanation": "Glutamate has two codons, GAA and GAG, so this change is silent: the same amino acid goes into the chain. A student who thinks each amino acid has one codon would expect a different amino acid here.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -459,7 +501,12 @@
       ],
       "explanation": "With four bases, one base gives 4 signals and two bases give 16, both too few for 20 amino acids. Three bases give 64, which leaves room for every amino acid with some codons to spare.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -484,7 +531,12 @@
       ],
       "explanation": "A stop codon ends the chain, so every codon after the mutation is lost and the protein is shorter. Stop codons are read by release factors, not skipped, and the mRNA is not destroyed by this change.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -509,7 +561,12 @@
       ],
       "explanation": "The strands pair antiparallel, with A pairing with U and G with C. GAA reads as UUC in the mRNA. Writing the same letters, GAA, is the mistake of thinking the anticodon and codon are identical.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -534,7 +591,12 @@
       ],
       "explanation": "The anticodon is three bases that pair with a codon. The attachment site holds the amino acid, and the 5′ cap and poly-A tail belong to mRNA, not to tRNA.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -559,7 +621,12 @@
       ],
       "explanation": "Each aminoacyl-tRNA synthetase matches one amino acid to its tRNA and makes the bond. The ribosome uses charged tRNAs but does not load them, and RNA polymerase and DNA ligase do other jobs.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -584,7 +651,12 @@
       ],
       "explanation": "An aminoacyl-tRNA is a tRNA that has been charged with its own amino acid, ready to be delivered to the ribosome. Codons and ribosome subunits are not tRNAs, and a tRNA without its anticodon could not pair with a codon.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -609,7 +681,12 @@
       ],
       "explanation": "An amino acid can have several codons, and each codon pairs with a tRNA that has a matching anticodon. A tRNA carries one amino acid, and tRNAs are reused rather than used up.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -634,7 +711,12 @@
       ],
       "explanation": "Many amino acids have several codons, and each codon can need a tRNA with a different anticodon. One tRNA carries one amino acid, but a single tRNA cannot pair with every codon for it.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -651,7 +733,11 @@
       ],
       "explanation": "The synthetase first binds and activates the amino acid, then passes it to the tRNA. The charged tRNA is released only after the bond is made, so the order cannot be swapped.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -676,7 +762,12 @@
       ],
       "explanation": "The synthetase sets the amino acid when it loads the tRNA, so the anticodon does not choose it. Pairing with a phenylalanine codon puts lysine there. The ribosome checks the anticodon pairing, not the amino acid carried, so the error reaches the protein.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -701,7 +792,12 @@
       ],
       "explanation": "Without the synthetase, tRNAs stay uncharged, so no amino acid reaches the A site and the chain stops growing. The ribosome reads the codon and joins amino acids, but it does not load the tRNAs.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -726,7 +822,12 @@
       ],
       "explanation": "A pairs with U and G with C, and the two strands run in opposite directions. Identical sequences would not pair with each other, so the match is complementary, not identical.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -751,7 +852,12 @@
       ],
       "explanation": "Translation happens on ribosomes in the cytoplasm, outside the nucleus. Transcription, which makes the mRNA, happens in the nucleus, so placing translation there mixes up the two steps.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -776,7 +882,12 @@
       ],
       "explanation": "Each new amino acid joins the carboxyl end, so the chain grows from its amino end toward its carboxyl end. The amino end is where the chain starts, not where new amino acids are added.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -801,7 +912,12 @@
       ],
       "explanation": "Ribosomes follow one another along the same mRNA, so one message makes many protein copies at once. A student who holds that one ribosome at a time is the rule would call the extra ribosomes wasteful.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -826,7 +942,12 @@
       ],
       "explanation": "AUG is the usual start codon, and it codes for methionine. UAA, UAG and UGA are the three stop codons, which end translation.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -851,7 +972,12 @@
       ],
       "explanation": "After the peptide bond, translocation moves the ribosome one codon along the mRNA, shifting the tRNAs into the P and E sites and opening the A site for the next aminoacyl-tRNA. Release and splitting happen only at the end.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -876,7 +1002,12 @@
       ],
       "explanation": "tRNAs do not recognise stop codons. A release factor binds the stop codon, and the ribosome releases the finished chain. A stop codon codes for no amino acid, so no tRNA carries one for it.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -901,7 +1032,12 @@
       ],
       "explanation": "Without a nuclear membrane, a bacterium's mRNA is still being made when ribosomes attach to its free end, so the two processes overlap. In eukaryotes the mRNA is made in the nucleus and exported first.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -926,7 +1062,12 @@
       ],
       "explanation": "Without release at the stop codon, the ribosome keeps adding amino acids until it meets another stop codon, so the protein is longer. Stopping early would need a stop codon to be read sooner.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -951,7 +1092,12 @@
       ],
       "explanation": "Ribosomes start at the 5′ end and move toward the 3′ end, so the one furthest along started earliest and has the longest chain. Ribosomes at different points along the mRNA have chains of different lengths.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -976,7 +1122,12 @@
       ],
       "explanation": "The P (peptidyl) site holds the tRNA whose amino acid is part of the growing chain. The A site receives the next aminoacyl-tRNA, and the E site is where empty tRNAs leave.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -994,7 +1145,11 @@
       ],
       "explanation": "Translation starts with initiation, adds amino acids during elongation, ends at a stop codon, and then the ribosome is recycled. Recycling comes last because the subunits are only free once the chain is released.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1012,7 +1167,11 @@
       ],
       "explanation": "The incoming tRNA must arrive first, the bond forms next, the ribosome then shifts, and the empty tRNA leaves last. Each step depends on the one before it.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1037,7 +1196,12 @@
       ],
       "explanation": "Each amino acid is joined to the carboxyl end of the chain, so the chain lengthens there. Growth at both ends, or a single burst after a stop codon, does not happen.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1062,7 +1226,12 @@
       ],
       "explanation": "Kinases transfer a phosphate group, usually from ATP, onto specific amino acids of a protein. Sugar chains and lipid tails are added by other enzymes, and an extra amino acid would need a new codon in the gene.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1087,7 +1256,12 @@
       ],
       "explanation": "Proteases cut peptide bonds, which removes or activates part of a chain. Glycosylation adds sugars, phosphorylation adds a phosphate, and ubiquitination attaches a small protein tag.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1112,7 +1286,12 @@
       ],
       "explanation": "Kinases transfer phosphate groups onto proteins. Ligases join pieces together, polymerases copy nucleic acids, and ribozymes are RNA molecules that catalyse reactions.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1137,7 +1316,12 @@
       ],
       "explanation": "A phosphate group carries negative charge and changes the protein's shape, so the protein's activity can be switched. The sequence does not fix activity by itself, and the gene is not changed by a phosphate.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1162,7 +1346,12 @@
       ],
       "explanation": "The phosphate is added to the finished protein by an enzyme. The DNA sequence and its codons are not changed, so the next copy of the gene makes the same protein before any modification.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1187,7 +1376,12 @@
       ],
       "explanation": "Sugar chains added in the endoplasmic reticulum and Golgi help proteins fold and act as address labels for sorting. They do not replace amino acids, and they do not act on the gene.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1212,7 +1406,12 @@
       ],
       "explanation": "Phosphorylation changed the enzyme's activity while leaving its gene and amino acid sequence intact. Phosphate can be removed again, so the enzyme is not destroyed.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1237,7 +1436,12 @@
       ],
       "explanation": "Modifications added after translation can switch a protein's activity, so the sequence alone does not decide function. The ribosome reads codons but does not set final activity, and the DNA is not what changes the protein.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1262,7 +1466,12 @@
       ],
       "explanation": "Here the cut is what switches the protein on, so modification after translation can be required for activity. The gene is not changed by a cut, and cutting happens in many organisms, not only bacteria.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1280,9 +1489,289 @@
       ],
       "explanation": "The chain is made first, then guided into the endoplasmic reticulum, where sugars are added, and only then packed into vesicles for the Golgi. Sugar addition needs the chain to be inside the endoplasmic reticulum.",
       "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: Signal-sequence targeting is co-translational, so steps 2 and 3 overlap somewhat; order chosen by chain start then ER entry."
+      }
+    },
+    {
+      "id": "biology.translation.tap-a-site-trna",
+      "concept": "translation",
+      "element": "ribosome-sites",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the tRNA that has just brought in the next amino acid to be added to the chain.",
+      "artifact": "ribosome-elongation",
+      "target": "trna-a-site",
+      "explanation": "The A site takes in each new aminoacyl-tRNA. Its anticodon pairs with the codon there, and it carries one amino acid that will join the chain.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.tap-p-site-trna",
+      "concept": "translation",
+      "element": "ribosome-sites",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the tRNA that is holding the growing polypeptide.",
+      "artifact": "ribosome-elongation",
+      "target": "trna-p-site",
+      "explanation": "The tRNA in the P site holds the chain made so far. When a peptide bond forms, the chain passes to the amino acid on the A-site tRNA.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.tap-e-site-trna",
+      "concept": "translation",
+      "element": "ribosome-sites",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the tRNA that has handed over its chain and is about to leave the ribosome.",
+      "artifact": "ribosome-elongation",
+      "target": "trna-e-site",
+      "explanation": "After the ribosome moves on, the tRNA that gave up its chain sits in the E site, carrying nothing, and then leaves to be loaded again.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.tap-mrna",
+      "concept": "genetic-code",
+      "element": "codon",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the molecule whose codons decide which amino acid comes next.",
+      "artifact": "ribosome-elongation",
+      "target": "mrna",
+      "explanation": "The mRNA runs between the two subunits. Its codons are read three bases at a time, and each one is matched by a tRNA anticodon.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.tap-large-subunit",
+      "concept": "translation",
+      "element": "elongation",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the part of the ribosome that joins amino acids with peptide bonds.",
+      "artifact": "ribosome-elongation",
+      "target": "large-subunit",
+      "explanation": "The large subunit catalyses the peptide bond between the chain on the P-site tRNA and the amino acid on the A-site tRNA.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.tap-small-subunit",
+      "concept": "translation",
+      "element": "initiation",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the ribosome subunit that binds the mRNA first when translation begins.",
+      "artifact": "ribosome-elongation",
+      "target": "small-subunit",
+      "explanation": "The small subunit binds the mRNA and finds the start codon with the initiator tRNA. The large subunit joins afterwards.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.tap-anticodon",
+      "concept": "transfer-rna",
+      "element": "anticodon",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the three tRNA bases that pair with a codon.",
+      "artifact": "trna-codon",
+      "target": "anticodon",
+      "explanation": "The anticodon is three bases in the bottom loop of the tRNA. They pair with a complementary codon in the mRNA.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.tap-codon",
+      "concept": "genetic-code",
+      "element": "codon",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the three mRNA bases that name the amino acid this tRNA brings.",
+      "artifact": "trna-codon",
+      "target": "codon",
+      "explanation": "A codon is three mRNA bases read together. The tRNA whose anticodon pairs with them brings the matching amino acid.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.tap-acceptor-stem",
+      "concept": "transfer-rna",
+      "element": "aminoacyl-trna-synthetase",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the arm of the tRNA where aminoacyl-tRNA synthetase attaches the amino acid.",
+      "artifact": "trna-codon",
+      "target": "acceptor-stem",
+      "explanation": "The amino acid is joined to the end of the acceptor stem, at the opposite end of the tRNA from the anticodon.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.tap-amino-acid",
+      "concept": "transfer-rna",
+      "element": "charged-trna",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap what this charged tRNA delivers to the ribosome.",
+      "artifact": "trna-codon",
+      "target": "amino-acid",
+      "explanation": "A charged tRNA carries one amino acid on its acceptor end. At the ribosome that amino acid is added to the growing chain.",
+      "verification": {
         "status": "draft"
       }
     }
   ],
-  "artifacts": []
+  "artifacts": [
+    {
+      "id": "ribosome-elongation",
+      "kind": "diagram",
+      "title": "A ribosome during elongation",
+      "alt": "A side view of a ribosome on an mRNA strand. A small sand-coloured subunit lies under the mRNA and a large pale blue-grey subunit sits above it. Three tRNAs stand side by side in the large subunit: a tilted sage one on the left, lifting away from the mRNA with nothing attached; a dark green one in the middle, paired to its codon and holding a chain of beads that leaves through the top of the ribosome; and an ochre one on the right, paired to the next codon and carrying a single bead.",
+      "file": "assets/ribosome-elongation.svg",
+      "hotspots": [
+        {
+          "id": "mrna",
+          "label": "mRNA",
+          "x": 0.092,
+          "y": 0.722,
+          "r": 0.05
+        },
+        {
+          "id": "small-subunit",
+          "label": "Small ribosomal subunit",
+          "x": 0.5,
+          "y": 0.833,
+          "r": 0.05
+        },
+        {
+          "id": "large-subunit",
+          "label": "Large ribosomal subunit",
+          "x": 0.767,
+          "y": 0.422,
+          "r": 0.05
+        },
+        {
+          "id": "trna-e-site",
+          "label": "tRNA in the E site",
+          "x": 0.283,
+          "y": 0.489,
+          "r": 0.05
+        },
+        {
+          "id": "trna-p-site",
+          "label": "tRNA in the P site",
+          "x": 0.5,
+          "y": 0.522,
+          "r": 0.05
+        },
+        {
+          "id": "trna-a-site",
+          "label": "tRNA in the A site",
+          "x": 0.667,
+          "y": 0.522,
+          "r": 0.05
+        },
+        {
+          "id": "polypeptide",
+          "label": "Growing polypeptide",
+          "x": 0.392,
+          "y": 0.142,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "trna-codon",
+      "kind": "diagram",
+      "title": "A charged tRNA reading a codon",
+      "alt": "A tRNA drawn flat as a cloverleaf: a paired stem at the top, a looped arm to each side, and a looped arm at the bottom. One strand runs past the top stem and curves to a sand-coloured ball. Three red bases on the bottom loop face three ochre bases in a long blue-grey mRNA strand below, joined by dotted lines.",
+      "file": "assets/trna-codon.svg",
+      "hotspots": [
+        {
+          "id": "amino-acid",
+          "label": "Amino acid",
+          "x": 0.654,
+          "y": 0.102,
+          "r": 0.05
+        },
+        {
+          "id": "acceptor-stem",
+          "label": "Acceptor stem",
+          "x": 0.5,
+          "y": 0.25,
+          "r": 0.05
+        },
+        {
+          "id": "anticodon",
+          "label": "Anticodon",
+          "x": 0.5,
+          "y": 0.733,
+          "r": 0.05
+        },
+        {
+          "id": "codon",
+          "label": "Codon",
+          "x": 0.5,
+          "y": 0.878,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "elongation-steps",
+      "kind": "sequence",
+      "title": "One round of elongation",
+      "over": "ribosome-elongation",
+      "alt": "Six steps: the ribosome reads a codon of the mRNA, a matching charged tRNA enters the A site, the large subunit joins the chain to the new amino acid, the ribosome moves one codon so that tRNA sits in the P site, the empty tRNA leaves from the E site, and the chain grows by one amino acid.",
+      "steps": [
+        {
+          "title": "Read the next codon",
+          "text": "The ribosome holds the mRNA and exposes one codon at a time in its A site.",
+          "focus": "mrna"
+        },
+        {
+          "title": "A charged tRNA arrives",
+          "text": "A tRNA whose anticodon pairs with that codon enters the A site, carrying one amino acid.",
+          "focus": "trna-a-site"
+        },
+        {
+          "title": "A peptide bond forms",
+          "text": "The large subunit moves the chain from the P-site tRNA onto the amino acid of the A-site tRNA, joining them with a peptide bond.",
+          "focus": "large-subunit"
+        },
+        {
+          "title": "The ribosome moves on",
+          "text": "The ribosome shifts one codon along the mRNA, so the tRNA holding the chain now sits in the P site.",
+          "focus": "trna-p-site"
+        },
+        {
+          "title": "The empty tRNA leaves",
+          "text": "The tRNA that gave up its chain moves to the E site and leaves the ribosome, ready to be loaded again.",
+          "focus": "trna-e-site"
+        },
+        {
+          "title": "The chain grows",
+          "text": "The polypeptide is one amino acid longer and threads out of the large subunit. The cycle repeats until a stop codon.",
+          "focus": "polypeptide"
+        }
+      ]
+    }
+  ]
 }

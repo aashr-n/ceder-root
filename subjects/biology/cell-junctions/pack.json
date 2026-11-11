@@ -41,7 +41,8 @@
         }
       ],
       "explain": {
-        "text": "Outside the plasma membrane of an animal cell lies the extracellular matrix, a mesh of fibres and sugar-rich gels. Its main parts are collagen, which gives strength, and proteoglycans, which hold water. Cells that live in a tissue make these parts inside themselves and then release them outward, where they join the mesh. The matrix does more than fill space. It anchors cells, guides them as they move, and stores growth factors that signal them. Cells sense how stiff it is and react. A tendon is a good picture: its fibres are laid down by the fibroblasts that live among them."
+        "text": "Outside the plasma membrane of an animal cell lies the extracellular matrix, a mesh of fibres and sugar-rich gels. Its main parts are collagen, which gives strength, and proteoglycans, which hold water. Cells that live in a tissue make these parts inside themselves and then release them outward, where they join the mesh. The matrix does more than fill space. It anchors cells, guides them as they move, and stores growth factors that signal them. Cells sense how stiff it is and react. A tendon is a good picture: its fibres are laid down by the fibroblasts that live among them.",
+        "artifact": "animal-cell-junctions"
       },
       "misconceptions": [
         {
@@ -95,7 +96,8 @@
         }
       ],
       "explain": {
-        "text": "A plant cell has a wall outside its plasma membrane, made mainly of cellulose fibres set in a gel of other sugars. The wall is stiff enough to resist the pressure that water builds up inside the cell, which keeps a healthy plant firm rather than bursting. It is not a fixed shell, though. Young walls are loosened and stretched as the cell grows, and some cells then add a thicker secondary wall. Fungi and bacteria also have walls, built from other materials such as chitin and peptidoglycan. Animal cells have no cell wall at all."
+        "text": "A plant cell has a wall outside its plasma membrane, made mainly of cellulose fibres set in a gel of other sugars. The wall is stiff enough to resist the pressure that water builds up inside the cell, which keeps a healthy plant firm rather than bursting. It is not a fixed shell, though. Young walls are loosened and stretched as the cell grows, and some cells then add a thicker secondary wall. Fungi and bacteria also have walls, built from other materials such as chitin and peptidoglycan. Animal cells have no cell wall at all.",
+        "artifact": "plasmodesma"
       },
       "misconceptions": [
         {
@@ -146,7 +148,8 @@
         }
       ],
       "explain": {
-        "text": "A tight junction is a seal between neighbouring epithelial cells, the sheet-like cells that line the gut and other surfaces. Strands of claudin and occludin proteins join the two membranes in a continuous belt around each cell, so the gap between the cells is blocked. Substances must then cross through the cells, where the membrane can control them. The strands also act as a fence, keeping the membrane proteins on the top of the cell apart from those on its sides. Tight junctions are found in animals, and they make the gut and the blood-brain barrier selective."
+        "text": "A tight junction is a seal between neighbouring epithelial cells, the sheet-like cells that line the gut and other surfaces. Strands of claudin and occludin proteins join the two membranes in a continuous belt around each cell, so the gap between the cells is blocked. Substances must then cross through the cells, where the membrane can control them. The strands also act as a fence, keeping the membrane proteins on the top of the cell apart from those on its sides. Tight junctions are found in animals, and they make the gut and the blood-brain barrier selective.",
+        "artifact": "animal-cell-junctions"
       },
       "misconceptions": [
         {
@@ -196,7 +199,8 @@
         }
       ],
       "explain": {
-        "text": "A desmosome is a spot-like anchoring junction between two cells. Cadherin proteins from each cell stick across the narrow gap between them, and a dense plaque inside each cell holds keratin intermediate filaments. Because the filaments run through the cytoplasm and join neighbouring cells, a pull on one cell is spread across a sheet of tissue. Desmosomes do not seal the gap, and they pass nothing from cell to cell. Skin and heart muscle, which are stretched and squeezed, contain many of them."
+        "text": "A desmosome is a spot-like anchoring junction between two cells. Cadherin proteins from each cell stick across the narrow gap between them, and a dense plaque inside each cell holds keratin intermediate filaments. Because the filaments run through the cytoplasm and join neighbouring cells, a pull on one cell is spread across a sheet of tissue. Desmosomes do not seal the gap, and they pass nothing from cell to cell. Skin and heart muscle, which are stretched and squeezed, contain many of them.",
+        "artifact": "animal-cell-junctions"
       },
       "misconceptions": [
         {
@@ -250,7 +254,8 @@
         }
       ],
       "explain": {
-        "text": "A gap junction is a set of channels that join two neighbouring cells directly. Each channel is built from connexin proteins, and two halves, one in each membrane, line up to form a pore. Ions and small molecules pass through, so the cytoplasm of the two cells becomes one continuous space for them. Gap junctions let electrical signals spread from cell to cell, and heart muscle depends on them to beat as one unit. Large molecules cannot pass, and the channels close when calcium rises or the cell becomes acidic."
+        "text": "A gap junction is a set of channels that join two neighbouring cells directly. Each channel is built from connexin proteins, and two halves, one in each membrane, line up to form a pore. Ions and small molecules pass through, so the cytoplasm of the two cells becomes one continuous space for them. Gap junctions let electrical signals spread from cell to cell, and heart muscle depends on them to beat as one unit. Large molecules cannot pass, and the channels close when calcium rises or the cell becomes acidic.",
+        "artifact": "animal-cell-junctions"
       },
       "misconceptions": [
         {
@@ -304,7 +309,8 @@
         }
       ],
       "explain": {
-        "text": "A plasmodesma is a channel that crosses the cell wall between two neighbouring plant cells. The plasma membrane of each cell lines the channel, so the two cells share a continuous cytoplasm. A strand of endoplasmic reticulum runs through the centre. Sugars, small ions and some small signalling molecules move through it. Plasmodesmata are not simply open holes: callose can narrow them, which lets a plant control which signals pass between its cells."
+        "text": "A plasmodesma is a channel that crosses the cell wall between two neighbouring plant cells. The plasma membrane of each cell lines the channel, so the two cells share a continuous cytoplasm. A strand of endoplasmic reticulum runs through the centre. Sugars, small ions and some small signalling molecules move through it. Plasmodesmata are not simply open holes: callose can narrow them, which lets a plant control which signals pass between its cells.",
+        "artifact": "plasmodesma"
       },
       "misconceptions": [
         {
@@ -1953,7 +1959,286 @@
         "agreed": 2,
         "at": "2026-11-11"
       }
+    },
+    {
+      "id": "biology.cell-junctions.tap-tight-junction",
+      "concept": "tight-junction",
+      "element": "barrier",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the junction that seals the space between the two cells, so substances must pass through the cells rather than between them.",
+      "artifact": "animal-cell-junctions",
+      "target": "tight-junction",
+      "explanation": "The tight junction is where the two membranes are pressed together by strands of claudin and occludin. The desmosome holds the cells together but leaves the gap open, and the gap junction passes small molecules from cell to cell.",
+      "verification": {
+        "status": "draft",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 1,
+        "at": "2026-11-11",
+        "note": "Key: hotspot “tight-junction”. solver-a: 4, not a spot. b: E, hotspot “tight-junction” (agrees). solver-a's note: E is the beaded tight-junction strands at the apical end of the lateral membrane."
+      }
+    },
+    {
+      "id": "biology.cell-junctions.tap-desmosome",
+      "concept": "desmosome",
+      "element": "cadherin-links",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the anchoring junction where cadherins hold the two cells together without sealing the space between them.",
+      "artifact": "animal-cell-junctions",
+      "target": "desmosome",
+      "explanation": "The desmosome is the pair of dense plaques joined across the gap by cadherins. It resists pulling but does not seal, unlike the tight junction, and it passes nothing between the cells, unlike the gap junction.",
+      "verification": {
+        "status": "draft",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 1,
+        "at": "2026-11-11",
+        "note": "Key: hotspot “desmosome”. solver-a: 4, not a spot. b: E, hotspot “desmosome” (agrees). solver-a's note: E is the orange plaque with short cadherin rungs (desmosome-type). The picture has no separately drawn adherens junction, so this is the only cadherin-based anchoring junction shown. Desmosomes are also cadherin-based anchors, so the wording is slightly loose. b's note: Only one anchoring junction (desmosome) is drawn; no adherens junction shown"
+      }
+    },
+    {
+      "id": "biology.cell-junctions.tap-keratin-filaments",
+      "concept": "desmosome",
+      "element": "filament-anchor",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the intermediate filaments that carry a pull from the anchoring junction into the rest of the cell.",
+      "artifact": "animal-cell-junctions",
+      "target": "keratin-filaments",
+      "explanation": "Keratin intermediate filaments are held by the plaque of each desmosome and run into the cytoplasm. Because they link through the desmosomes to the next cell, a pull on one cell is spread across the whole sheet.",
+      "verification": {
+        "status": "draft",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 1,
+        "at": "2026-11-11",
+        "note": "Key: hotspot “keratin-filaments”. solver-a: 1, not a spot. b: B, hotspot “keratin-filaments” (agrees). solver-a's note: B is the blue coiled filaments attached to the desmosome plaque. Read as intermediate filaments, as the prompt says."
+      }
+    },
+    {
+      "id": "biology.cell-junctions.tap-gap-junction",
+      "concept": "gap-junction",
+      "element": "channels",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the junction whose connexin channels let ions pass directly from the cytoplasm of one cell into the other.",
+      "artifact": "animal-cell-junctions",
+      "target": "gap-junction",
+      "explanation": "Each gap junction channel is two halves of connexin, one in each membrane, lined up to make a pore. The tight junction blocks the space between cells instead, and the desmosome only anchors them.",
+      "verification": {
+        "status": "draft",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 1,
+        "at": "2026-11-11",
+        "note": "Key: hotspot “gap-junction”. solver-a: 3, not a spot. b: D, hotspot “gap-junction” (agrees). solver-a's note: D is the stacked channel-like structure on the lateral membrane, which is the gap junction."
+      }
+    },
+    {
+      "id": "biology.cell-junctions.tap-collagen",
+      "concept": "extracellular-matrix",
+      "element": "components",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the protein fibres outside the cells that give the tissue its strength.",
+      "artifact": "animal-cell-junctions",
+      "target": "collagen",
+      "explanation": "Collagen fibres lie in the extracellular matrix beneath the cells. They are made inside cells and released outward, where they give the matrix its strength, while proteoglycans in the gel around them hold water.",
+      "verification": {
+        "status": "draft",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 1,
+        "at": "2026-11-11",
+        "note": "Key: hotspot “collagen”. solver-a: 2, not a spot. b: C, hotspot “collagen” (agrees). solver-a's note: C is the wavy extracellular fibre layer below the basal lamina, the collagen matrix."
+      }
+    },
+    {
+      "id": "biology.cell-junctions.tap-cell-wall",
+      "concept": "cell-wall",
+      "element": "composition",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the layer of cellulose fibres that resists the water pressure pushing outward from each cell.",
+      "artifact": "plasmodesma",
+      "target": "cell-wall",
+      "explanation": "The cell wall is built mainly of cellulose fibres set in a gel of other sugars. It sits outside the plasma membrane and is stiff enough to keep the cell from bursting when water builds up pressure inside.",
+      "verification": {
+        "status": "draft",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 0,
+        "at": "2026-11-11",
+        "note": "Key: hotspot “cell-wall”. solver-a: 0, not a spot. b: D, hotspot “endoplasmic-reticulum”. solver-a's note: A is inside the hatched cell wall of the upper cell. B sits on the membrane edge of the lower cell's wall, so A is the clean choice. The lower wall is also hatched, so either wall could be meant."
+      }
+    },
+    {
+      "id": "biology.cell-junctions.tap-plasmodesma",
+      "concept": "plasmodesma",
+      "element": "channel-through-wall",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the channel that lets sugars and small signals move from the cytoplasm of one plant cell into the next.",
+      "artifact": "plasmodesma",
+      "target": "plasmodesma",
+      "explanation": "The plasmodesma crosses the cell wall, and the plasma membrane lines it, so the cytoplasm of the two cells is continuous. It plays a role in plants like that of gap junctions in animals, though it is built quite differently.",
+      "verification": {
+        "status": "draft",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 1,
+        "at": "2026-11-11",
+        "note": "Key: hotspot “plasmodesma”. solver-a: 2, not a spot. b: C, hotspot “plasmodesma” (agrees). solver-a's note: C is the centre of the pore, which is the plasmodesma channel. The centre is also where the ER strand runs (see q-b9ab2e6a33f4), so the two items overlap somewhat. b's note: channel spot sits on the wall centre; moderately unsure which spot marks the cytoplasmic sleeve"
+      }
+    },
+    {
+      "id": "biology.cell-junctions.tap-callose",
+      "concept": "plasmodesma",
+      "element": "control",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the material a plant can lay down to narrow the channel and limit what passes between the cells.",
+      "artifact": "plasmodesma",
+      "target": "callose",
+      "explanation": "Callose is a sugar polymer that builds up in the wall around the channel's openings. As more is deposited, the channel narrows, which lets the plant control which signals move between its cells.",
+      "verification": {
+        "status": "draft",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 1,
+        "at": "2026-11-11",
+        "note": "Key: hotspot “callose”. solver-a: 4, not a spot. b: E, hotspot “callose” (agrees). solver-a's note: E is a red collar-shaped deposit beside the pore neck, the callose collar. All four collars look alike, so any of them would fit."
+      }
+    },
+    {
+      "id": "biology.cell-junctions.tap-endoplasmic-reticulum",
+      "concept": "plasmodesma",
+      "element": "structure",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "Tap the membrane system whose strand runs through the centre of the channel and joins the same system in the next cell.",
+      "artifact": "plasmodesma",
+      "target": "endoplasmic-reticulum",
+      "explanation": "A narrow strand of endoplasmic reticulum runs through the middle of each plasmodesma and is continuous with the endoplasmic reticulum of both cells. The plasma membrane forms the channel's outer lining instead.",
+      "verification": {
+        "status": "draft",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 0,
+        "at": "2026-11-11",
+        "note": "Key: hotspot “endoplasmic-reticulum”. solver-a: 4, not a spot. b: A, hotspot “cell-wall”. solver-a's note: E is the dark strand at the centre of the pore, the ER desmotubule. b's note: desmotubule spot circle also overlaps cytoplasm/membrane; fairly clear"
+      }
+    },
+    {
+      "id": "biology.cell-junctions.tap-plasma-membrane",
+      "concept": "plasmodesma",
+      "element": "structure",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the membrane that lines the channel, so the two cells are bounded by one continuous surface.",
+      "artifact": "plasmodesma",
+      "target": "plasma-membrane",
+      "explanation": "The plasma membrane of each cell runs along the inner face of the wall and on through the channel to the next cell. This lining is why the cytoplasm of linked plant cells is continuous. The strand in the centre of the channel is endoplasmic reticulum.",
+      "verification": {
+        "status": "draft",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 1,
+        "at": "2026-11-11",
+        "note": "Key: hotspot “plasma-membrane”. solver-a: 0, not a spot. b: D, hotspot “plasma-membrane” (agrees). solver-a's note: A is the green membrane flaring from the pore into the outer surface, so the membrane is continuous. C at the centre also lies on the green band, and it overlaps with the ER answer, so A is the better choice."
+      }
     }
   ],
-  "artifacts": []
+  "artifacts": [
+    {
+      "id": "animal-cell-junctions",
+      "kind": "diagram",
+      "title": "Junctions between two epithelial cells",
+      "alt": "Two tall epithelial cells side by side, on a thin basal lamina above a gel crossed by wavy collagen fibres. Along the gap between the cells, from top to bottom: the two membranes pinched together by rows of small beads; a pair of terracotta plaques bridged across the gap, with blue-grey filament loops running into each cell; and a stack of dark green channels spanning the gap from one cell into the other.",
+      "file": "assets/animal-cell-junctions.svg",
+      "hotspots": [
+        {
+          "id": "tight-junction",
+          "label": "Tight junction",
+          "x": 0.5,
+          "y": 0.207,
+          "r": 0.05
+        },
+        {
+          "id": "desmosome",
+          "label": "Desmosome",
+          "x": 0.5,
+          "y": 0.422,
+          "r": 0.05
+        },
+        {
+          "id": "keratin-filaments",
+          "label": "Keratin intermediate filaments",
+          "x": 0.354,
+          "y": 0.413,
+          "r": 0.05
+        },
+        {
+          "id": "gap-junction",
+          "label": "Gap junction",
+          "x": 0.5,
+          "y": 0.632,
+          "r": 0.05
+        },
+        {
+          "id": "collagen",
+          "label": "Collagen fibres",
+          "x": 0.25,
+          "y": 0.902,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "plasmodesma",
+      "kind": "diagram",
+      "title": "A plasmodesma through a plant cell wall",
+      "alt": "A close-up cut through the wall between two plant cells. The wall is a tall sand-coloured band with diagonal ochre cellulose fibres and a dark middle line. A channel crosses the wall from one cell to the other, lined by a blue-grey membrane that continues along both faces of the wall. A dark green tube of endoplasmic reticulum runs through the middle of the channel and branches into the cytoplasm on each side. Terracotta lumps of callose sit in the wall at both openings of the channel.",
+      "file": "assets/plasmodesma.svg",
+      "hotspots": [
+        {
+          "id": "cell-wall",
+          "label": "Cell wall",
+          "x": 0.458,
+          "y": 0.2,
+          "r": 0.05
+        },
+        {
+          "id": "plasmodesma",
+          "label": "Plasmodesma",
+          "x": 0.5,
+          "y": 0.5,
+          "r": 0.05
+        },
+        {
+          "id": "callose",
+          "label": "Callose collar",
+          "x": 0.56,
+          "y": 0.624,
+          "r": 0.05
+        },
+        {
+          "id": "endoplasmic-reticulum",
+          "label": "Endoplasmic reticulum",
+          "x": 0.275,
+          "y": 0.367,
+          "r": 0.05
+        },
+        {
+          "id": "plasma-membrane",
+          "label": "Plasma membrane",
+          "x": 0.413,
+          "y": 0.8,
+          "r": 0.05
+        }
+      ]
+    }
+  ]
 }

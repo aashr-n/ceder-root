@@ -39,7 +39,8 @@
         }
       ],
       "explain": {
-        "text": "A cell membrane is built from phospholipids, molecules with a water-loving head and two water-avoiding tails. Dropped into water, they line up on their own into a double sheet. The heads face the water on each side, and the tails tuck together in the middle. That middle zone holds almost no water, so it keeps out most dissolved molecules and ions. The sheet is only about two molecules thick, yet it separates the inside of a cell from the outside. Picture two rows of lollipops whose sticks meet in the middle and whose candy faces the water."
+        "text": "A cell membrane is built from phospholipids, molecules with a water-loving head and two water-avoiding tails. Dropped into water, they line up on their own into a double sheet. The heads face the water on each side, and the tails tuck together in the middle. That middle zone holds almost no water, so it keeps out most dissolved molecules and ions. The sheet is only about two molecules thick, yet it separates the inside of a cell from the outside. Picture two rows of lollipops whose sticks meet in the middle and whose candy faces the water.",
+        "artifact": "membrane-parts"
       },
       "misconceptions": [
         {
@@ -85,7 +86,8 @@
         }
       ],
       "explain": {
-        "text": "Proteins make up a large share of most membranes and do much of their work. Integral membrane proteins pass through the lipid bilayer, with some parts on each face and the rest held by the lipids around them. Peripheral proteins sit on one face and attach more loosely. Membrane proteins act as receptors that catch signals, enzymes that speed up reactions, anchors that link the membrane to structures inside the cell, and sites where cells stick to one another. Each protein's shape and location fit the job it does, so one membrane can hold many different proteins at once."
+        "text": "Proteins make up a large share of most membranes and do much of their work. Integral membrane proteins pass through the lipid bilayer, with some parts on each face and the rest held by the lipids around them. Peripheral proteins sit on one face and attach more loosely. Membrane proteins act as receptors that catch signals, enzymes that speed up reactions, anchors that link the membrane to structures inside the cell, and sites where cells stick to one another. Each protein's shape and location fit the job it does, so one membrane can hold many different proteins at once.",
+        "artifact": "membrane-parts"
       },
       "misconceptions": [
         {
@@ -132,7 +134,8 @@
         }
       ],
       "explain": {
-        "text": "In 1972, Singer and Nicolson proposed that a membrane is a fluid lipid bilayer with proteins floating in it. The lipids and many of the proteins drift sideways, so the surface is always moving. The proteins are scattered through the bilayer at random, which gives the membrane its mosaic look, like tiles of different colors on a floor. The model explains how membranes can bend, fuse and reform, and why they are not rigid walls. Experiments that fused human and mouse cells, then watched their membrane proteins mix over time, supported the idea."
+        "text": "In 1972, Singer and Nicolson proposed that a membrane is a fluid lipid bilayer with proteins floating in it. The lipids and many of the proteins drift sideways, so the surface is always moving. The proteins are scattered through the bilayer at random, which gives the membrane its mosaic look, like tiles of different colors on a floor. The model explains how membranes can bend, fuse and reform, and why they are not rigid walls. Experiments that fused human and mouse cells, then watched their membrane proteins mix over time, supported the idea.",
+        "artifact": "membrane-parts"
       },
       "misconceptions": [
         {
@@ -1536,7 +1539,168 @@
         "at": "2026-11-11",
         "diagnosed": 1
       }
+    },
+    {
+      "id": "biology.membrane-structure.tap-phospholipid-head",
+      "concept": "phospholipid-bilayer",
+      "element": "amphipathic-lipids",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the charged, water-loving part of a membrane phospholipid.",
+      "artifact": "membrane-parts",
+      "target": "phospholipid-head",
+      "explanation": "This is a phospholipid head. It carries a phosphate group, so it mixes with water, and the heads of both layers face the watery fluid inside and outside the cell.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.membrane-structure.tap-hydrophobic-core",
+      "concept": "phospholipid-bilayer",
+      "element": "hydrophobic-core",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the water-avoiding zone of the membrane that keeps most ions and large polar molecules from crossing.",
+      "artifact": "membrane-parts",
+      "target": "hydrophobic-core",
+      "explanation": "This is the hydrophobic core, made of the fatty acid tails of both layers. It holds almost no water, so charged and large polar molecules cross it only very slowly.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.membrane-structure.tap-integral-protein",
+      "concept": "membrane-protein",
+      "element": "integral-proteins",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the protein held in the membrane by its own water-avoiding stretches, which could pass a message from one side of the membrane to the other.",
+      "artifact": "membrane-parts",
+      "target": "integral-protein",
+      "explanation": "This integral protein crosses the whole bilayer. Its water-avoiding middle sits among the lipid tails, and its water-loving ends reach the fluid on each side, so it can link the outside to the inside.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.membrane-structure.tap-peripheral-protein",
+      "concept": "membrane-protein",
+      "element": "peripheral-proteins",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the protein held to the membrane only by weak bonds, which could be washed off without breaking up the bilayer.",
+      "artifact": "membrane-parts",
+      "target": "peripheral-protein",
+      "explanation": "This peripheral protein sits on the inner face and never enters the water-avoiding core. Weak bonds to lipid heads or other proteins hold it, so it comes away more easily than an integral protein.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.membrane-structure.tap-cholesterol",
+      "concept": "membrane-fluidity",
+      "element": "cholesterol-effect",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the molecule that stops the membrane from getting too fluid when warm and from packing into a rigid solid when cold.",
+      "artifact": "membrane-parts",
+      "target": "cholesterol",
+      "explanation": "This is cholesterol, a stiff ring-shaped lipid tucked between the phospholipids. It holds back their motion when warm and keeps their tails from packing tightly when cold.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.membrane-structure.tap-carbohydrate-chain",
+      "concept": "membrane-protein",
+      "element": "membrane-functions",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the sugar chain that helps other cells recognise this cell.",
+      "artifact": "membrane-parts",
+      "target": "carbohydrate-chain",
+      "explanation": "This branched chain of sugars is attached to a membrane protein on the outer face, making it a glycoprotein. Sugar chains like this act as markers that other cells and molecules recognise.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "solver-a's note: The sugar chain is drawn on a transmembrane glycoprotein; no glycolipid is shown, so E is the only sugar chain."
+      }
     }
   ],
-  "artifacts": []
+  "artifacts": [
+    {
+      "id": "membrane-parts",
+      "kind": "diagram",
+      "title": "Parts of a cell membrane",
+      "alt": "An unlabelled cut-away of a cell membrane, with the outside of the cell above and the cytoplasm below. Two rows of round lipid heads face the water on each side, and their wavy tails meet in the middle, some with kinks. A large protein crosses the whole bilayer, with a branched chain of small sugar units rising from its outer end. A smaller rounded protein sits against the inner face without entering the bilayer. A small rigid ring-shaped molecule sits among the tails of the outer layer.",
+      "file": "assets/membrane-parts.svg",
+      "hotspots": [
+        {
+          "id": "carbohydrate-chain",
+          "label": "Carbohydrate chain",
+          "x": 0.25,
+          "y": 0.256,
+          "r": 0.05
+        },
+        {
+          "id": "integral-protein",
+          "label": "Integral (transmembrane) protein",
+          "x": 0.25,
+          "y": 0.556,
+          "r": 0.05
+        },
+        {
+          "id": "phospholipid-head",
+          "label": "Phospholipid head",
+          "x": 0.492,
+          "y": 0.439,
+          "r": 0.05
+        },
+        {
+          "id": "hydrophobic-core",
+          "label": "Hydrophobic core (fatty acid tails)",
+          "x": 0.65,
+          "y": 0.556,
+          "r": 0.05
+        },
+        {
+          "id": "peripheral-protein",
+          "label": "Peripheral protein",
+          "x": 0.472,
+          "y": 0.756,
+          "r": 0.05
+        },
+        {
+          "id": "cholesterol",
+          "label": "Cholesterol",
+          "x": 0.792,
+          "y": 0.5,
+          "r": 0.05
+        }
+      ]
+    }
+  ]
 }

@@ -1713,7 +1713,12 @@
       "target": "cytoplasm",
       "explanation": "Glycolysis runs in the cytoplasm. Its enzymes are dissolved there, so a cell with no mitochondria, such as a red blood cell, can still make ATP this way.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Spot A is outside the mitochondrion (cytosol), where glycolysis splits glucose into two pyruvate."
       }
     },
     {
@@ -1726,7 +1731,12 @@
       "target": "matrix",
       "explanation": "The citric acid cycle's enzymes are dissolved in the matrix, the innermost compartment. Pyruvate oxidation happens there too, so acetyl-CoA is made right where the cycle uses it.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Spot E is clearly in the matrix, where the citric acid cycle runs. Spot A sits on a cristae tip, so it is ambiguous and I did not choose it."
       }
     },
     {
@@ -1740,7 +1750,12 @@
       "target": "inner-membrane",
       "explanation": "The chain and ATP synthase sit in the inner membrane. Its many folds, the cristae, give it a large area, so more chains and synthases fit in one mitochondrion.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Spot B sits on the inner membrane fold tip. Spot A is on the outer membrane edge at top right, not the inner membrane. b's note: inner membrane (cristae)"
       }
     },
     {
@@ -1754,7 +1769,12 @@
       "target": "intermembrane-space",
       "explanation": "The chain pumps protons out of the matrix into the intermembrane space, between the two membranes. Their return through ATP synthase into the matrix drives ATP production.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: C sits in the intermembrane space (peach band between outer and inner membrane), where protons accumulate. D is on the outer membrane line at the top, so it is ambiguous, but C is clearly in the space. b's note: C is the intermembrane space between outer and inner membranes, with proton dots. Spot A circle overlaps the tip of a crista fold, which is also intermembrane space but sits mostly in the matrix area, so it could mislead."
       }
     },
     {
@@ -1768,7 +1788,12 @@
       "target": "complex-i",
       "explanation": "Complex I accepts two electrons from NADH, turning it back into NAD⁺, and uses their energy to pump protons. FADH₂ enters later, at complex II, so it powers less pumping.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Spot C is on complex I, the NADH dehydrogenase that starts the chain."
       }
     },
     {
@@ -1782,7 +1807,12 @@
       "target": "ubiquinone",
       "explanation": "Ubiquinone, also called coenzyme Q, is a small lipid-soluble molecule. It moves within the membrane, collecting electrons from complexes I and II and passing them to complex III.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Spot E is on the small lipid-soluble ubiquinone (CoQ) in the membrane. It takes electrons from complexes I and II and passes them to complex III."
       }
     },
     {
@@ -1796,7 +1826,12 @@
       "target": "cytochrome-c",
       "explanation": "Cytochrome c is a small protein loosely held on the outer face of the inner membrane. It shuttles single electrons from complex III to complex IV.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Spot F is on the small peripheral protein cytochrome c, which shuttles one electron at a time from complex III to complex IV."
       }
     },
     {
@@ -1810,7 +1845,12 @@
       "target": "complex-iv",
       "explanation": "Complex IV passes electrons to oxygen, which combines with protons to make water. Without oxygen to take them, electrons back up and the whole chain stops.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Spot F is on complex IV (cytochrome c oxidase), which passes electrons to O2 to form water."
       }
     },
     {
@@ -1824,7 +1864,12 @@
       "target": "atp-synthase",
       "explanation": "ATP synthase is the main way protons can cross the inner membrane. Their flow turns part of it like a rotor, and the head in the matrix joins ADP and phosphate into ATP.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Spot C is on the orange F1 head of ATP synthase, where ADP and phosphate form ATP. The blue F0 proton channel has no spot, so the tap is on the catalytic head."
       }
     }
   ],
@@ -1846,29 +1891,29 @@
         {
           "id": "outer-membrane",
           "label": "Outer membrane",
-          "x": 0.833,
-          "y": 0.26,
-          "r": 0.05
+          "x": 0.608,
+          "y": 0.178,
+          "r": 0.04
         },
         {
           "id": "intermembrane-space",
           "label": "Intermembrane space",
-          "x": 0.608,
-          "y": 0.817,
-          "r": 0.05
+          "x": 0.323,
+          "y": 0.511,
+          "r": 0.04
         },
         {
           "id": "inner-membrane",
           "label": "Inner membrane (crista)",
-          "x": 0.667,
-          "y": 0.522,
+          "x": 0.655,
+          "y": 0.52,
           "r": 0.05
         },
         {
           "id": "matrix",
           "label": "Matrix",
-          "x": 0.842,
-          "y": 0.522,
+          "x": 0.785,
+          "y": 0.52,
           "r": 0.05
         }
       ]

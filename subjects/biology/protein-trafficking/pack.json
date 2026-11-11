@@ -46,7 +46,8 @@
         }
       ],
       "explain": {
-        "text": "A signal peptide is a short run of amino acids, usually at the start of a new protein chain, that works like a postal code. While a ribosome is still building the chain, the signal emerges and a signal recognition particle grabs it. That pauses the ribosome and guides it to the rough ER, where the chain is threaded through a channel into the ER's inner space. There an enzyme called signal peptidase usually cuts the signal off, so the finished protein lacks it. Proteins without a signal usually stay in the cytosol."
+        "text": "A signal peptide is a short run of amino acids, usually at the start of a new protein chain, that works like a postal code. While a ribosome is still building the chain, the signal emerges and a signal recognition particle grabs it. That pauses the ribosome and guides it to the rough ER, where the chain is threaded through a channel into the ER's inner space. There an enzyme called signal peptidase usually cuts the signal off, so the finished protein lacks it. Proteins without a signal usually stay in the cytosol.",
+        "artifact": "signal-at-er"
       },
       "misconceptions": [
         {
@@ -103,7 +104,8 @@
         }
       ],
       "explain": {
-        "text": "The secretory pathway is the route a protein takes when it is made for export or for the cell's outer membrane. It starts on the rough ER, where the new chain is threaded into the ER's inner space and begins to fold. Vesicles then carry it to the Golgi apparatus, where it is modified and sorted. Vesicles leave the Golgi and fuse with the plasma membrane, releasing the protein outside the cell or building it into the membrane. Hormones and antibodies made for export travel this way."
+        "text": "The secretory pathway is the route a protein takes when it is made for export or for the cell's outer membrane. It starts on the rough ER, where the new chain is threaded into the ER's inner space and begins to fold. Vesicles then carry it to the Golgi apparatus, where it is modified and sorted. Vesicles leave the Golgi and fuse with the plasma membrane, releasing the protein outside the cell or building it into the membrane. Hormones and antibodies made for export travel this way.",
+        "artifact": "secretory-route-steps"
       },
       "misconceptions": [
         {
@@ -226,7 +228,8 @@
         }
       ],
       "explain": {
-        "text": "The Golgi apparatus is a stack of flattened membrane sacs called cisternae. Vesicles from the rough ER fuse with its cis face, the side nearest the ER. As proteins move toward the trans face, enzymes trim and add sugars and tag some proteins for particular destinations. At the trans face the cargo is sorted into new vesicles that go to the plasma membrane, to lysosomes, or to other compartments. A stack has a direction, so it works like an assembly line with an entrance and an exit."
+        "text": "The Golgi apparatus is a stack of flattened membrane sacs called cisternae. Vesicles from the rough ER fuse with its cis face, the side nearest the ER. As proteins move toward the trans face, enzymes trim and add sugars and tag some proteins for particular destinations. At the trans face the cargo is sorted into new vesicles that go to the plasma membrane, to lysosomes, or to other compartments. A stack has a direction, so it works like an assembly line with an entrance and an exit.",
+        "artifact": "secretory-route"
       },
       "misconceptions": [
         {
@@ -546,6 +549,82 @@
       }
     },
     {
+      "id": "biology.protein-trafficking.tap-srp",
+      "concept": "signal-peptide",
+      "element": "signal-recognition-particle",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap what grabbed the signal as it emerged and guided the ribosome to the ER.",
+      "artifact": "signal-at-er",
+      "target": "srp",
+      "explanation": "The signal recognition particle binds the signal peptide in the cytosol, pauses the ribosome, and brings it to the ER. Once the ribosome is docked on the channel, the particle is let go, so it floats free here.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: The green rod with a ball at each end, touching the emerging signal, is the signal recognition particle (SRP)."
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.tap-signal-peptide",
+      "concept": "signal-peptide",
+      "element": "position",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the stretch of the new protein chain that told the cell to send this protein to the ER.",
+      "artifact": "signal-at-er",
+      "target": "signal-peptide",
+      "explanation": "The signal peptide is the short segment at the chain's start, lying in the membrane beside the channel. The rest of the chain follows it through the channel into the ER's inner space.",
+      "verification": {
+        "status": "draft",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 1,
+        "at": "2026-11-11",
+        "note": "Key: hotspot “signal-peptide”. a: D, hotspot “srp”. b: C, hotspot “signal-peptide” (agrees). a's note: Answer is the one distinctly coloured green stretch at the free end of the chain (the signal sequence, emerging first from the ribosome). Less certain: the diagram does not label it, and A is the only other free chain end; A looks like plain polypeptide. b's note: C is the highlighted segment of the nascent chain in the membrane next to signal peptidase F; A is mRNA, B ribosome, D SRP, E trans…"
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.tap-signal-peptidase",
+      "concept": "signal-peptide",
+      "element": "cleavage",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "Tap the enzyme that cuts the signal off the chain.",
+      "artifact": "signal-at-er",
+      "target": "signal-peptidase",
+      "explanation": "Signal peptidase sits at the inner face of the ER membrane and cuts where the signal meets the rest of the chain. That is why the finished protein usually lacks its signal.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: The tan notched enzyme sitting on the membrane is signal peptidase."
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.tap-translocon",
+      "concept": "signal-peptide",
+      "element": "co-translational-targeting",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap what lets the growing chain cross the ER membrane while it is still being made.",
+      "artifact": "signal-at-er",
+      "target": "translocon",
+      "explanation": "The chain passes from the ribosome through a protein channel in the ER membrane. The ribosome sits right on it, so the chain enters the ER as it is built.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: The green channel the chain passes through is the Sec61 translocon."
+      }
+    },
+    {
       "id": "biology.protein-trafficking.secretory-organelle-after-er",
       "concept": "secretory-pathway",
       "element": "transport-to-golgi",
@@ -776,6 +855,44 @@
         "solvers": 2,
         "agreed": 2,
         "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.tap-rough-er",
+      "concept": "secretory-pathway",
+      "element": "er-entry",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the organelle where proteins for export are made and threaded into an inner space.",
+      "artifact": "secretory-route",
+      "target": "rough-er",
+      "explanation": "The rough ER is the set of flattened sacs studded with ribosomes, wrapped around the nucleus. Ribosomes on it feed new chains into its inner space, where folding begins.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Rough ER: the ribosome-studded stacks on the left, where proteins enter the lumen."
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.tap-secretory-vesicle",
+      "concept": "secretory-pathway",
+      "element": "exit-to-membrane",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the vesicle that is releasing its cargo out of the cell.",
+      "artifact": "secretory-route",
+      "target": "secretory-vesicle",
+      "explanation": "This vesicle has fused with the plasma membrane, so its inside is now open to the outside and its contents are released. Its membrane becomes part of the plasma membrane.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Secretory vesicle at the plasma membrane releasing cargo outside the cell."
       }
     },
     {
@@ -1013,6 +1130,25 @@
       }
     },
     {
+      "id": "biology.protein-trafficking.tap-transport-vesicle",
+      "concept": "vesicle-transport",
+      "element": "budding",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap what carries new proteins from the ER to the Golgi apparatus.",
+      "artifact": "secretory-route",
+      "target": "transport-vesicle",
+      "explanation": "Small vesicles bud off the ER and carry cargo across the gap to the Golgi stack. The vesicles near the cell's surface carry finished cargo out instead.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Transport vesicle carrying cargo from ER to Golgi."
+      }
+    },
+    {
       "id": "biology.protein-trafficking.golgi-where-vesicles-go",
       "concept": "golgi-apparatus",
       "element": "sorting",
@@ -1243,6 +1379,44 @@
         "solvers": 2,
         "agreed": 2,
         "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.tap-cis-face",
+      "concept": "golgi-apparatus",
+      "element": "cis-face",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the side of the Golgi apparatus where vesicles from the ER arrive.",
+      "artifact": "secretory-route",
+      "target": "cis-face",
+      "explanation": "The cis face is the receiving side of the stack, the one nearest the ER. Vesicles from the ER fuse with it, and cargo then moves across toward the trans face.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Cis face, the Golgi side nearest the ER, is the left-most cisterna."
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.tap-trans-face",
+      "concept": "golgi-apparatus",
+      "element": "trans-face",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the side of the Golgi apparatus where finished cargo is sorted into vesicles that leave.",
+      "artifact": "secretory-route",
+      "target": "trans-face",
+      "explanation": "The trans face is the shipping side, farthest from the ER. Here modified proteins are sorted into vesicles bound for the plasma membrane, lysosomes, or other compartments.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Trans face, the right-hand side where cargo is sorted into outgoing vesicles."
       }
     },
     {
@@ -1477,7 +1651,163 @@
         "agreed": 2,
         "at": "2026-11-11"
       }
+    },
+    {
+      "id": "biology.protein-trafficking.tap-lysosome",
+      "concept": "lysosome",
+      "element": "hydrolytic-enzymes",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the acidic organelle full of digestive enzymes.",
+      "artifact": "secretory-route",
+      "target": "lysosome",
+      "explanation": "The lysosome is the large sphere packed with enzymes. Its enzymes came through the Golgi, which tagged them to be sent there rather than out of the cell.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Lysosome, the dark organelle full of digestive enzyme dots."
+      }
     }
   ],
-  "artifacts": []
+  "artifacts": [
+    {
+      "id": "secretory-route",
+      "kind": "diagram",
+      "title": "The route from the rough ER to the cell surface",
+      "alt": "Part of a cell. At left, the edge of a blue nucleus wrapped by three curved green sacs dotted with black ribosomes. Small green vesicles sit between them and a stack of five curved sacs shading from pale sand on the side facing the green sacs to terracotta on the far side. Sand vesicles carry red dots to the outer membrane on the right, where one has opened and releases them outside. Below sits a large dark green sphere full of pale dots.",
+      "file": "assets/secretory-route.svg",
+      "hotspots": [
+        {
+          "id": "rough-er",
+          "label": "Rough ER",
+          "x": 0.235,
+          "y": 0.5,
+          "r": 0.05
+        },
+        {
+          "id": "transport-vesicle",
+          "label": "Vesicle from the ER to the Golgi",
+          "x": 0.358,
+          "y": 0.5,
+          "r": 0.05
+        },
+        {
+          "id": "cis-face",
+          "label": "Cis face of the Golgi",
+          "x": 0.477,
+          "y": 0.5,
+          "r": 0.05
+        },
+        {
+          "id": "trans-face",
+          "label": "Trans face of the Golgi",
+          "x": 0.627,
+          "y": 0.5,
+          "r": 0.05
+        },
+        {
+          "id": "secretory-vesicle",
+          "label": "Secretory vesicle releasing cargo",
+          "x": 0.838,
+          "y": 0.278,
+          "r": 0.05
+        },
+        {
+          "id": "lysosome",
+          "label": "Lysosome",
+          "x": 0.75,
+          "y": 0.767,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "secretory-route-steps",
+      "kind": "sequence",
+      "title": "A protein for export, step by step",
+      "alt": "Five steps over the cell: the chain enters the rough ER, a vesicle carries it to the Golgi, it enters at the cis face, leaves from the trans face, and a vesicle fuses with the plasma membrane to release it.",
+      "over": "secretory-route",
+      "steps": [
+        {
+          "title": "Made on the rough ER",
+          "text": "Ribosomes on the rough ER thread the new chain into the ER's inner space, where it starts to fold.",
+          "focus": "rough-er"
+        },
+        {
+          "title": "Carried in a vesicle",
+          "text": "A vesicle buds off the ER with the protein inside and travels to the Golgi apparatus.",
+          "focus": "transport-vesicle"
+        },
+        {
+          "title": "Into the Golgi",
+          "text": "The vesicle fuses with the cis face, the side of the stack nearest the ER.",
+          "focus": "cis-face"
+        },
+        {
+          "title": "Modified and sorted",
+          "text": "Moving across the stack, the protein has sugars trimmed and added. At the trans face it is sorted into new vesicles.",
+          "focus": "trans-face"
+        },
+        {
+          "title": "Released outside",
+          "text": "A vesicle fuses with the plasma membrane and its contents spill out of the cell.",
+          "focus": "secretory-vesicle"
+        }
+      ]
+    },
+    {
+      "id": "signal-at-er",
+      "kind": "diagram",
+      "title": "A signal peptide at the ER membrane",
+      "alt": "A cross-section of the ER membrane, cytosol above and the ER's inner space below. A blue two-part ribosome, with mRNA running between its parts, sits on a dark green channel in the membrane. The new chain runs down through the channel, loops below, and rises to a short red segment lying in the membrane beside the channel. A notched sand-coloured enzyme sits at the membrane's lower face beside the red segment. A pale green rod-shaped particle floats free at upper right.",
+      "file": "assets/signal-at-er.svg",
+      "hotspots": [
+        {
+          "id": "mrna",
+          "label": "mRNA",
+          "x": 0.275,
+          "y": 0.351,
+          "r": 0.05
+        },
+        {
+          "id": "ribosome",
+          "label": "Ribosome",
+          "x": 0.468,
+          "y": 0.456,
+          "r": 0.05
+        },
+        {
+          "id": "translocon",
+          "label": "Channel in the ER membrane",
+          "x": 0.468,
+          "y": 0.622,
+          "r": 0.05
+        },
+        {
+          "id": "signal-peptide",
+          "label": "Signal peptide",
+          "x": 0.59,
+          "y": 0.622,
+          "r": 0.05
+        },
+        {
+          "id": "signal-peptidase",
+          "label": "Signal peptidase",
+          "x": 0.688,
+          "y": 0.694,
+          "r": 0.05
+        },
+        {
+          "id": "srp",
+          "label": "Signal recognition particle",
+          "x": 0.792,
+          "y": 0.283,
+          "r": 0.05
+        }
+      ]
+    }
+  ]
 }

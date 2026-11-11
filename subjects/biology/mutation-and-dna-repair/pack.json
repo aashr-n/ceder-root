@@ -1,0 +1,1508 @@
+{
+  "formatVersion": 1,
+  "id": "biology.mutation-and-dna-repair",
+  "subject": "biology",
+  "title": "Mutation and DNA repair",
+  "summary": "The kinds of change that can alter a DNA sequence, and the systems that correct errors.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "mutation",
+      "name": "Mutation",
+      "aliases": [
+        "Mutations",
+        "Genetic mutation"
+      ],
+      "summary": "A permanent change in the DNA sequence, which is inherited if it arises in an egg or sperm cell.",
+      "requires": [
+        "nucleotide"
+      ],
+      "elements": [
+        {
+          "id": "replication-errors",
+          "name": "Replication errors"
+        },
+        {
+          "id": "damage-escaping-repair",
+          "name": "Damage that escapes repair"
+        },
+        {
+          "id": "germline-mutations",
+          "name": "Germline and somatic mutations"
+        },
+        {
+          "id": "effect-on-fitness",
+          "name": "Effect on fitness"
+        }
+      ],
+      "explain": {
+        "text": "A mutation is a permanent change in the sequence of DNA. Most come from copying errors, or from damage that repair did not fix before the DNA was copied. Most mutations have no measurable effect, a few harm the organism, and a few help it. Only changes in egg and sperm cells are passed to children, so a change in a skin cell stays in that patch of skin. Mutations arise at random with respect to what the organism needs. Natural selection, not need, decides which ones spread."
+      },
+      "misconceptions": [
+        {
+          "id": "mut-mostly-harmful",
+          "claim": "Most mutations are harmful.",
+          "correction": "Most mutations have no measurable effect on fitness. A few are harmful and a few are beneficial."
+        },
+        {
+          "id": "mut-made-when-needed",
+          "claim": "Mutations happen when an organism needs them.",
+          "correction": "Mutations arise at random with respect to need. Natural selection decides which ones spread, after they have appeared."
+        },
+        {
+          "id": "mut-damage-is-mutation",
+          "claim": "Any damage to DNA is already a mutation.",
+          "correction": "Damage is a chemical change that repair can often undo. It becomes a mutation only if it is copied into new DNA before it is repaired."
+        }
+      ]
+    },
+    {
+      "id": "point-mutation",
+      "name": "Point mutation",
+      "aliases": [
+        "Point mutations",
+        "Single-nucleotide mutation",
+        "Single-base substitution"
+      ],
+      "summary": "A change to one nucleotide, which may leave the protein unchanged, change one amino acid, or stop it early.",
+      "requires": [
+        "mutation"
+      ],
+      "elements": [
+        {
+          "id": "base-substitution",
+          "name": "Base substitution"
+        },
+        {
+          "id": "synonymous-mutation",
+          "name": "Synonymous mutation"
+        },
+        {
+          "id": "missense-mutation",
+          "name": "Missense mutation"
+        },
+        {
+          "id": "nonsense-mutation",
+          "name": "Nonsense mutation"
+        }
+      ],
+      "explain": {
+        "text": "A point mutation changes a single nucleotide in a gene. Its effect depends on the codon it hits. It may change nothing, because several codons specify the same amino acid. It may change one amino acid, or it may create a stop codon that ends translation early. Sickle-cell disease comes from one base change that swaps one amino acid in hemoglobin, which shows that a single base can matter a great deal."
+      },
+      "misconceptions": [
+        {
+          "id": "pm-every-change-alters",
+          "claim": "Every point mutation changes the protein's amino acid.",
+          "correction": "Many point mutations are synonymous. The new codon codes for the same amino acid, so the protein is unchanged."
+        },
+        {
+          "id": "pm-nonsense-swaps",
+          "claim": "A nonsense mutation swaps one amino acid for another.",
+          "correction": "A nonsense mutation creates a stop codon, which ends translation early. Swapping one amino acid for another is a missense mutation."
+        },
+        {
+          "id": "pm-one-base-too-small",
+          "claim": "One changed base is too small to affect a protein.",
+          "correction": "One base can change one amino acid, and that can change how the protein works, as in sickle-cell disease."
+        }
+      ]
+    },
+    {
+      "id": "frameshift-mutation",
+      "name": "Frameshift mutation",
+      "aliases": [
+        "Frameshift",
+        "Frameshift mutations",
+        "Reading-frame shift"
+      ],
+      "summary": "An insertion or deletion of bases in a number not divisible by three, which shifts the grouping of every later codon.",
+      "requires": [
+        "mutation"
+      ],
+      "elements": [
+        {
+          "id": "insertion",
+          "name": "Insertion"
+        },
+        {
+          "id": "deletion",
+          "name": "Deletion"
+        },
+        {
+          "id": "reading-frame",
+          "name": "Reading frame"
+        },
+        {
+          "id": "codon-groups",
+          "name": "Codon groups of three"
+        }
+      ],
+      "explain": {
+        "text": "A frameshift mutation adds or removes bases in a number that is not a multiple of three. The ribosome reads mRNA in codons of three bases, so every codon after the change falls into a new group. The protein changes from that point on and often ends early at a stop codon. Adding or removing three bases keeps the groups intact and only removes or adds one whole codon."
+      },
+      "misconceptions": [
+        {
+          "id": "fs-any-deletion",
+          "claim": "Deleting any bases shifts the reading frame.",
+          "correction": "Only an insertion or deletion whose count is not a multiple of three shifts the frame. Three deleted bases remove one whole codon."
+        },
+        {
+          "id": "fs-substitution-shifts",
+          "claim": "Replacing one base shifts the reading frame, as an insertion does.",
+          "correction": "A substitution keeps the length of the sequence, so the frame stays the same. Only the codon with the new base changes."
+        },
+        {
+          "id": "fs-one-amino-acid",
+          "claim": "A frameshift changes only the amino acid at its spot.",
+          "correction": "A frameshift changes the grouping of every codon after it, so the rest of the protein is altered."
+        }
+      ]
+    },
+    {
+      "id": "mismatch-repair",
+      "name": "Mismatch repair",
+      "aliases": [
+        "Mismatch repair system",
+        "Mismatch repair pathway",
+        "MMR"
+      ],
+      "summary": "A repair system that finds base pairs wrongly matched during replication, cuts out the error on the new strand, and resynthesizes it.",
+      "requires": [
+        "dna-polymerase"
+      ],
+      "elements": [
+        {
+          "id": "mismatch-recognition",
+          "name": "Mismatch recognition"
+        },
+        {
+          "id": "strand-discrimination",
+          "name": "Strand discrimination"
+        },
+        {
+          "id": "excision-and-resynthesis",
+          "name": "Excision and resynthesis"
+        },
+        {
+          "id": "inherited-defects",
+          "name": "Inherited repair defects"
+        }
+      ],
+      "explain": {
+        "text": "Mismatch repair corrects base pairs that were wrongly matched when DNA was copied. Repair proteins recognize the mismatch, tell the new strand from the parent, and cut out a stretch of the new strand that includes the error. DNA polymerase fills the gap using the parent strand as a template, and DNA ligase seals the nick. In E. coli, the parent strand is already methylated and the new one is not, which marks the strand to cut. Faults in mismatch repair genes, such as MLH1, raise the mutation rate."
+      },
+      "misconceptions": [
+        {
+          "id": "mr-random-strand",
+          "claim": "Repair cuts either strand at random.",
+          "correction": "In E. coli the parent strand is already methylated and the new strand is not, so repair cuts the new strand, where the error is."
+        },
+        {
+          "id": "mr-repairs-uv-damage",
+          "claim": "Mismatch repair fixes UV and chemical damage.",
+          "correction": "Mismatch repair fixes base pairs wrongly matched during replication. Bulky damage such as UV dimers needs other repair systems."
+        },
+        {
+          "id": "mr-repair-perfect",
+          "claim": "Once repair has run, no errors are left.",
+          "correction": "Repair is not perfect. Errors that escape it become mutations when the DNA is copied again."
+        }
+      ]
+    },
+    {
+      "id": "mutagen",
+      "name": "Mutagen",
+      "aliases": [
+        "Mutagens",
+        "Mutagenic agent"
+      ],
+      "summary": "A physical or chemical agent that raises the rate of mutation above the natural background.",
+      "requires": [
+        "mutation"
+      ],
+      "elements": [
+        {
+          "id": "physical-mutagens",
+          "name": "Physical mutagens"
+        },
+        {
+          "id": "chemical-mutagens",
+          "name": "Chemical mutagens"
+        },
+        {
+          "id": "mutagen-vs-carcinogen",
+          "name": "Mutagen versus carcinogen"
+        },
+        {
+          "id": "replicating-and-resting-dna",
+          "name": "Damage in replicating and resting DNA"
+        }
+      ],
+      "explain": {
+        "text": "A mutagen is a physical or chemical agent that raises the mutation rate above its natural background. Ultraviolet light and ionizing radiation are physical mutagens. Alkylating agents and base analogues are chemical ones. A mutagen is not always a carcinogen, and some mutagens damage DNA that is not being copied. Damage only becomes a mutation once it is copied without being repaired."
+      },
+      "misconceptions": [
+        {
+          "id": "mg-every-carcinogen",
+          "claim": "Every mutagen causes cancer.",
+          "correction": "Mutagens and carcinogens overlap but differ. Some mutagens, such as sodium azide, damage DNA but are not known to cause cancer."
+        },
+        {
+          "id": "mg-only-man-made",
+          "claim": "Mutagens are only made by people.",
+          "correction": "Sunlight and some natural toxins are mutagens too. Mutagens come from nature as well as from factories."
+        },
+        {
+          "id": "mg-only-replicating",
+          "claim": "Mutagens only harm DNA while a cell is dividing.",
+          "correction": "Alkylating agents and UV light damage DNA in cells that are not dividing. A base analogue needs copying, because it enters DNA only then."
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "biology.mutation-and-dna-repair.mutation-what-is",
+      "concept": "mutation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is a mutation?",
+      "choices": [
+        "A permanent change in the sequence of a cell's DNA molecule",
+        "A temporary change in which particular genes a cell switches on",
+        "A copy of a whole chromosome made before the cell divides",
+        "A change in a protein's three-dimensional shape that the cell can undo"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A mutation is a lasting change in the DNA sequence. Switching genes on and off without changing the sequence is regulation. A copy made before division is replication, and a protein's shape is not DNA.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mutation-most-effect",
+      "concept": "mutation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Across a whole genome, which statement about most mutations is correct?",
+      "choices": [
+        "They have no measurable effect on the organism's fitness",
+        "They are harmful and lower the fitness of the organism",
+        "They are beneficial and raise the fitness of the organism",
+        "They change the number of chromosomes in each cell"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mut-mostly-harmful",
+        null,
+        null
+      ],
+      "explanation": "Across a genome, most mutations fall where they have no measurable effect on fitness. A few are harmful and a few beneficial. Changing the number of chromosomes is a separate, larger kind of change.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mutation-what-causes",
+      "concept": "mutation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these can cause a mutation?",
+      "choices": [
+        "An error made when DNA is copied before division",
+        "A ribosome reading the codons of an mRNA",
+        "A protein folding into its final three-dimensional shape",
+        "A gene being switched on by a transcription factor"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A copying error changes the DNA sequence and can persist. Reading mRNA, folding a protein and switching a gene on all act on proteins or gene activity without changing the DNA sequence.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mutation-antibiotic",
+      "concept": "mutation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A bacterial population is exposed to an antibiotic, and a few cells survive. What best explains this?",
+      "choices": [
+        "Some cells already carried a random mutation that resisted the drug",
+        "The drug caused resistance mutations in the cells that needed them",
+        "Survivors changed their DNA during their lifetime to resist the drug",
+        "The drug made every cell in the dish mutate at the same time"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mut-made-when-needed",
+        "mut-made-when-needed",
+        null
+      ],
+      "explanation": "Mutations arise at random before the drug is added, and the drug selects the cells that happen to resist it. The drug does not cause the helpful change, and a cell cannot rewrite its DNA to meet a need.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mutation-uv-repaired",
+      "concept": "mutation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A cell's DNA is hit by UV light, and the cell repairs the damage before it copies the DNA. Has a mutation occurred?",
+      "choices": [
+        "No, the damage was repaired before the DNA was copied",
+        "Yes, any damage to a DNA strand is already a mutation",
+        "Yes, because UV light changes the DNA of every cell",
+        "No, because one damaged base cannot change a gene"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mut-damage-is-mutation",
+        null,
+        null
+      ],
+      "explanation": "Damage is a change that repair can often undo. It becomes a mutation only if it is copied into new DNA before it is fixed. Here the repair came first, so no mutation occurred.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mutation-damage-becomes",
+      "concept": "mutation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What makes a DNA damage become a mutation?",
+      "choices": [
+        "It is copied into a new strand before the cell repairs it",
+        "Any damage to DNA is at once a change in the gene's sequence",
+        "It stops the cell from making any protein at all",
+        "It appears on both strands of the helix at once"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mut-damage-is-mutation",
+        null,
+        null
+      ],
+      "explanation": "A damaged base is not yet a mutation. It becomes one when replication copies it into a new strand while the damage is still unrepaired. Damage is a chemical change; the mutation is the lasting change in sequence.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mutation-likely-effect",
+      "concept": "mutation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A new mutation appears in a gene. What is the most likely effect on the organism?",
+      "choices": [
+        "No measurable effect, since most mutations are neutral",
+        "A harmful change in the protein, since most mutations harm",
+        "A beneficial change that spreads through the population at once",
+        "The whole gene is copied twice in every cell of the body"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mut-mostly-harmful",
+        null,
+        null
+      ],
+      "explanation": "Most mutations are neutral or nearly so. The rest are harmful or beneficial, and a beneficial one spreads slowly, through selection and drift. Copying a gene twice is a duplication, a different kind of change.",
+      "verification": {
+        "status": "rejected",
+        "note": "Duplicate of mutation-most-effect: same fact (most mutations have no measurable effect). The gene framing also makes a harmful answer defensible for a single new mutation, so it can't be made sound without repeating the other item. Removed in favour of mutation-most-effect."
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mutation-inheritance",
+      "concept": "mutation",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A mother has a mutation in a liver cell but not in her egg cells. Can her children inherit it?",
+      "choices": [
+        "No, only changes in egg and sperm cells are passed on",
+        "Yes, because every cell in the body passes its changes on",
+        "Yes, because the liver is part of the same mother",
+        "Only if the liver cell divides before the egg forms"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Children inherit mutations present in the cells that form eggs and sperm. A liver mutation stays in the liver cell and the cells made from it, so it does not reach the children.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mutation-random-selection",
+      "concept": "mutation",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why do mutations that help an organism spread only through natural selection, not because the organism needs them?",
+      "choices": [
+        "Mutations arise at random, and selection favors the ones that help",
+        "Mutations appear first in the very cells that need them most of all",
+        "Helpful mutations are made much more often than harmful ones",
+        "Mutations are sorted by the organism before they appear"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mut-made-when-needed",
+        "mut-made-when-needed",
+        null
+      ],
+      "explanation": "Mutations are random with respect to what the organism needs. Selection then keeps those that improve survival or reproduction. A need does not make a mutation appear.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mutation-steps",
+      "concept": "mutation",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Order the steps by which an error made during DNA copying becomes a mutation.",
+      "steps": [
+        "A wrong base is added to the new strand during DNA copying",
+        "Proofreading and repair do not correct the wrong base",
+        "The altered base is copied into every later generation of that DNA"
+      ],
+      "explanation": "The error must first be made, then escape proofreading and repair, and then be copied on. The lasting result is the mutation, so it comes last.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.point-what-is",
+      "concept": "point-mutation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is a point mutation?",
+      "choices": [
+        "A change in a single nucleotide in a gene's DNA",
+        "A change that moves a whole block of genes elsewhere",
+        "A change in the number of copies of every chromosome",
+        "A change in which codon a ribosome starts reading from"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A point mutation changes a single nucleotide. Moving a block of genes or changing chromosome numbers are large-scale changes, not point mutations.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.point-glu-codon",
+      "concept": "point-mutation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A point mutation changes the codon GAA to GAG. Both codons code for glutamate. What happens to the protein?",
+      "choices": [
+        "Nothing changes, because the same amino acid is still added",
+        "The amino acid at that spot changes to a completely different one",
+        "The protein is cut short, stopping at that codon",
+        "The protein gets one extra amino acid at that spot"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "pm-every-change-alters",
+        null,
+        null
+      ],
+      "explanation": "GAA and GAG both specify glutamate, so the protein is unchanged. This is a synonymous substitution, possible because many amino acids have more than one codon.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.point-gln-stop",
+      "concept": "point-mutation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In mRNA, a point mutation changes CAG, which codes for glutamine, to UAG. What is the effect?",
+      "choices": [
+        "Translation stops early, giving a shorter protein",
+        "Glutamine is swapped for a different amino acid there",
+        "The protein is unchanged, since a single base is too small",
+        "One extra amino acid is inserted at that point of the chain"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "pm-nonsense-swaps",
+        "pm-one-base-too-small",
+        null
+      ],
+      "explanation": "UAG is a stop codon, so translation ends early and the protein is shortened. Glutamine is not swapped, because UAG adds no amino acid. One base can change a protein a great deal.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.point-sickle",
+      "concept": "point-mutation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Sickle-cell disease comes from one base change that swaps one amino acid in hemoglobin. What does this show?",
+      "choices": [
+        "One base change can swap an amino acid and change protein function",
+        "A single base change cannot alter any amino acid at all in a protein",
+        "Changes at the protein's last amino acid are the ones that matter",
+        "A base change makes the gene produce twice as much protein"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "pm-one-base-too-small",
+        null,
+        null
+      ],
+      "explanation": "One base change swaps one amino acid, and the altered hemoglobin forms fibers that distort red blood cells. A small change can have a large effect, so a single base is not too small to matter.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.point-nonsense-name",
+      "concept": "point-mutation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A point mutation turns a codon that specifies an amino acid into a stop codon. What is this called?",
+      "choices": [
+        "A nonsense mutation",
+        "A missense mutation",
+        "A silent mutation",
+        "A frameshift mutation"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "pm-nonsense-swaps",
+        null,
+        null
+      ],
+      "explanation": "A stop codon ends translation early, which is what defines a nonsense mutation. A missense mutation swaps one amino acid for another, a silent one changes nothing in the protein, and a frameshift is an insertion or deletion.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.point-synonymous-kind",
+      "concept": "point-mutation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which kind of point substitution leaves the amino acid sequence unchanged?",
+      "choices": [
+        "Synonymous, where the codon changes to one for the same amino acid",
+        "Missense, where the codon changes to one for a different amino acid",
+        "Nonsense, where the codon changes into a stop codon signal",
+        "Frameshift, where one extra base is inserted into the gene"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A synonymous substitution keeps the same amino acid, because the genetic code has more than one codon for many amino acids. Missense and nonsense substitutions change the protein, and a frameshift is an insertion.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.point-intron",
+      "concept": "point-mutation",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A point mutation lies in an intron. What is the most likely effect on the protein?",
+      "choices": [
+        "Usually none, since introns are cut out of the mRNA",
+        "It alters one amino acid in the finished protein",
+        "It stops translation at that point in the gene's message",
+        "It doubles how much protein the whole gene makes"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Introns are removed from the RNA before it is read, so most intron changes leave the protein alone. A change can still matter if it disrupts splicing, which is why the right choice says usually.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Usually none is the best answer, though intron changes that disrupt splicing can alter the protein."
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.point-third-base",
+      "concept": "point-mutation",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why can a change in the third base of a codon often leave the protein unchanged?",
+      "choices": [
+        "The genetic code is degenerate: several codons give one amino acid",
+        "Any change to one base in a codon changes which amino acid is added",
+        "The third base of each codon is not translated into protein",
+        "The ribosome repairs the third base after it reads the codon"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "pm-every-change-alters",
+        null,
+        null
+      ],
+      "explanation": "Many amino acids have several codons, so a change in the third base often picks a synonym. The idea that any base change alters the amino acid is false, and the third base is read like the others.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.point-steps",
+      "concept": "point-mutation",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Order the steps by which a point substitution in a gene changes a protein.",
+      "steps": [
+        "A base is substituted in the gene's DNA",
+        "Transcription copies the substitution into the mRNA",
+        "The ribosome reads a different codon at that position",
+        "The protein gains a different amino acid or stops early"
+      ],
+      "explanation": "The change must be in the DNA before it is copied into mRNA, and the ribosome can only read the new codon once the mRNA carries it. The protein changes last.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.frameshift-cause",
+      "concept": "frameshift-mutation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What causes a frameshift mutation?",
+      "choices": [
+        "Insertion or deletion of bases that is not a multiple of three",
+        "Swapping one base for another base in the coding sequence",
+        "Adding an extra copy of a whole chromosome to the nucleus",
+        "Changing one whole codon into a stop codon in the coding sequence"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "fs-substitution-shifts",
+        null,
+        null
+      ],
+      "explanation": "A frameshift comes from adding or removing bases in a number that does not divide by three, which moves the codon grouping. A one-base swap keeps the length, so the frame stays. Adding a chromosome is a change in chromosome number.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.frameshift-single-deletion",
+      "concept": "frameshift-mutation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which change shifts the reading frame of a gene?",
+      "choices": [
+        "Deleting a single base from the gene's coding sequence",
+        "Deleting three bases in a row from the gene's coding sequence",
+        "Replacing one base with another in the gene's coding sequence",
+        "Replacing three bases with three others in the gene's sequence"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "fs-any-deletion",
+        "fs-substitution-shifts",
+        null
+      ],
+      "explanation": "Deleting one base moves every later codon by one place. Deleting three bases removes a whole codon and keeps the frame. Replacing bases never changes the number of bases, so the frame stays the same.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.frameshift-three-deleted",
+      "concept": "frameshift-mutation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Three bases are deleted from the middle of a coding sequence. What happens?",
+      "choices": [
+        "One codon is lost and the rest is read in the same frame",
+        "The reading frame shifts for every codon after the deletion",
+        "The protein gains one extra amino acid at the deletion",
+        "The whole gene stops being copied into mRNA from then on"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "fs-any-deletion",
+        null,
+        null
+      ],
+      "explanation": "Three bases make one codon, so removing them removes one amino acid and keeps the later codons in the same frame. Only a count that is not a multiple of three shifts the frame.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.frameshift-insertion-effect",
+      "concept": "frameshift-mutation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A single base is inserted near the start of a gene's coding sequence. What is the most likely result?",
+      "choices": [
+        "Nearly every codon after the insertion is read differently",
+        "The one codon right at the insertion is changed, and no others",
+        "The codons before the insertion are read in a new way",
+        "The gene is copied one extra time in every cell"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "fs-one-amino-acid",
+        null,
+        null
+      ],
+      "explanation": "A one-base insertion shifts the frame for every codon downstream, so the protein after that point is changed, often ending at a stop codon. The codons before the insertion are read as before.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.frameshift-short-protein",
+      "concept": "frameshift-mutation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why can a frameshift produce a shorter protein than the normal one?",
+      "choices": [
+        "The shifted reading frame soon reaches a stop codon",
+        "The ribosome stops at the first codon that has changed",
+        "The shifted frame skips the gene's start codon",
+        "The shifted frame reads the gene from its end backwards"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "In the new frame, some codons read as UAA, UAG or UGA, which are stop codons. The first of these ends translation early, so the protein is shorter. A ribosome does not stop at a changed codon just because it changed.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.frameshift-early-late",
+      "concept": "frameshift-mutation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A frameshift happens early in a gene, and another happens near its end. Which changes more of the protein?",
+      "choices": [
+        "The early frameshift changes more of the protein",
+        "The late frameshift changes more of the whole protein",
+        "Both change the same amount, since each affects one codon",
+        "Neither changes the protein, since the ribosome corrects frames"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "fs-one-amino-acid",
+        null
+      ],
+      "explanation": "A frameshift changes every codon after the point where it happens, so the earlier it occurs, the more of the protein is altered. A frameshift is not a single amino acid change, and ribosomes do not correct the frame.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.frameshift-student-error",
+      "concept": "frameshift-mutation",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says a frameshift changes only the amino acid at the spot where the base was added. What is wrong with that?",
+      "choices": [
+        "Every codon after the change is read in a new frame, so the change runs on",
+        "Nothing is wrong: the codons after the change still read as they did before",
+        "The base was added to the wrong chromosome, so it cannot change the gene",
+        "A base cannot be added to DNA, so the student is mistaken about that"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "fs-one-amino-acid",
+        null,
+        null
+      ],
+      "explanation": "A frameshift changes the grouping of all codons downstream, not just one. Bases can be added to or removed from DNA, and a change on another chromosome would not alter this gene.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.frameshift-six-bases",
+      "concept": "frameshift-mutation",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A six-base deletion lies inside a coding sequence. Does the reading frame shift?",
+      "choices": [
+        "No, since 6 is a multiple of three and whole codons are removed",
+        "Yes, because any deletion at all moves the reading frame along the gene",
+        "Yes, though just for the codon right after the deletion",
+        "No, because the deletion leaves the gene's sequence unchanged"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "fs-any-deletion",
+        null,
+        null
+      ],
+      "explanation": "Six bases make two codons, so the grouping of the rest of the gene is kept. Only a count that is not a multiple of three shifts the frame. The two deleted amino acids are lost, but the codons after them are read as before.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.frameshift-steps",
+      "concept": "frameshift-mutation",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Order the steps by which a one-base deletion in a gene's coding sequence changes the protein.",
+      "steps": [
+        "One base is deleted from the gene's coding sequence",
+        "Transcription copies the deletion into the mRNA",
+        "The ribosome reads every later codon in a new frame",
+        "The protein gets different amino acids, often ending at a stop codon"
+      ],
+      "explanation": "The deletion must exist in the DNA before it is copied into mRNA. The ribosome then reads the shifted codons, and the protein's sequence changes last.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mismatch-what-corrects",
+      "concept": "mismatch-repair",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does mismatch repair mainly correct?",
+      "choices": [
+        "Base pairs that were wrongly matched during DNA replication",
+        "Damage from ultraviolet light that joins two neighboring bases",
+        "Both ends of a double-strand break in a chromosome",
+        "Errors in the protein that a gene's message codes for"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mr-repairs-uv-damage",
+        null,
+        null
+      ],
+      "explanation": "Mismatch repair finds a base pair that does not match and fixes the new strand. It does not fix UV damage, which needs other systems, nor breaks in the DNA, nor errors in proteins.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mismatch-strand-ecoli",
+      "concept": "mismatch-repair",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In E. coli, how does mismatch repair know which strand to cut?",
+      "choices": [
+        "The new strand lacks methyl groups, so it is cut and the parent is kept",
+        "Repair cuts either strand at random, then fixes whichever strand it cut first",
+        "The new strand is cut because it is the shorter of the two strands",
+        "The strand that carries more of the cell's genes is the one cut"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mr-random-strand",
+        null,
+        null
+      ],
+      "explanation": "Right after replication the new strand is not yet methylated, while the parent is. E. coli repair uses this to cut the new strand, which carries the error. Cutting at random would leave the error in place about half the time.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mismatch-uv-student",
+      "concept": "mismatch-repair",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says mismatch repair also fixes UV damage. What is wrong?",
+      "choices": [
+        "Mismatch repair fixes replication mismatches, and UV damage needs other systems",
+        "Nothing is wrong, since mismatch repair fixes every kind of damage",
+        "Nothing is wrong, since UV light cannot damage DNA in a living cell",
+        "Nothing is wrong, since UV light is too weak to harm DNA at all"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mr-repairs-uv-damage",
+        null,
+        null
+      ],
+      "explanation": "Mismatch repair handles base pairs wrongly matched during copying. UV light makes bulky lesions such as dimers, which are repaired by other pathways, such as nucleotide excision repair.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mismatch-missed",
+      "concept": "mismatch-repair",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A repair system removes most mismatches. What happens to the ones it misses?",
+      "choices": [
+        "They can be copied into new DNA and become mutations",
+        "They are removed without fail by the next round of repair",
+        "They are turned into proteins that the cell can use",
+        "They disappear from the DNA when the cell divides in two"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mr-repair-perfect",
+        null,
+        null
+      ],
+      "explanation": "Repair is not perfect. A mismatch it misses stays in the DNA, and the next round of copying keeps it, so it becomes a mutation. Cell division does not remove DNA errors.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mismatch-lost-rate",
+      "concept": "mismatch-repair",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A bacterium loses its mismatch repair genes through a mutation. What happens to its mutation rate?",
+      "choices": [
+        "It rises, because replication errors are no longer corrected",
+        "It falls, because replication makes fewer errors in the first place",
+        "It stays the same, because repair has already removed every error",
+        "It falls, because the cell now has fewer genes to copy"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "mr-repair-perfect",
+        null
+      ],
+      "explanation": "Mismatch repair corrects some replication errors that proofreading misses. Without it, more of those errors stay in the DNA and become mutations, so the rate rises.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mismatch-lynch",
+      "concept": "mismatch-repair",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "People with an inherited fault in a mismatch repair gene, such as MLH1, have more mutations. Why?",
+      "choices": [
+        "Replication errors escape repair, so mutations build up faster",
+        "Ultraviolet light damages their DNA far more than it does in others",
+        "Their cells make fewer proteins from each of their genes",
+        "Their cells contain more chromosomes than normal cells"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mr-repairs-uv-damage",
+        null,
+        null
+      ],
+      "explanation": "MLH1 is part of mismatch repair. With it faulty, replication errors are not fixed, so mutations accumulate, which can contribute to cancer. The other choices involve damage or protein production that mismatch repair does not control.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mismatch-why-strand",
+      "concept": "mismatch-repair",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why must mismatch repair know which strand is new before it cuts?",
+      "choices": [
+        "A mismatch does not say which base is wrong, so the cut must go on the new strand",
+        "Repair cuts either strand at random, so the choice of strand makes no real difference",
+        "The repair enzyme reads the sequence of the new strand alone",
+        "New strands are shorter, which makes repair faster on them"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mr-random-strand",
+        null,
+        null
+      ],
+      "explanation": "A mismatch shows that two bases disagree, but not which one is wrong. Repair therefore needs a signal, such as methylation, that marks the parent strand. Cutting at random would leave the error in place about half the time.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mismatch-steps-ecoli",
+      "concept": "mismatch-repair",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Order the steps of E. coli mismatch repair after a mismatch is made in a new strand.",
+      "steps": [
+        "MutS binds the mismatched base pair",
+        "MutL joins MutS and activates MutH",
+        "MutH nicks the unmethylated new strand near a GATC site",
+        "An exonuclease removes the strand from the nick past the mismatch",
+        "DNA polymerase III fills the gap using the parent strand",
+        "DNA ligase seals the nick"
+      ],
+      "explanation": "MutS finds the mismatch, MutL activates the strand-cutting MutH, and the nick lets an exonuclease remove the error. Polymerase then copies the gap and ligase seals it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mismatch-steps-general",
+      "concept": "mismatch-repair",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Order the steps by which a replication error is removed by mismatch repair.",
+      "steps": [
+        "DNA polymerase adds a wrong base to the new strand",
+        "A repair protein recognizes the mismatch in the DNA",
+        "The new strand is cut and the stretch with the error is removed",
+        "DNA polymerase copies the missing stretch and ligase seals it"
+      ],
+      "explanation": "The error must be made before it can be recognized, and recognition must come before the cut. Resynthesis and sealing come last, once the error has been removed.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mutagen-definition",
+      "concept": "mutagen",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is a mutagen?",
+      "choices": [
+        "A physical or chemical agent that raises the rate of mutation",
+        "A substance that causes cancer whenever it changes the DNA",
+        "A protein that copies all of a cell's DNA during each cell division",
+        "A gene that repairs DNA errors after each round of copying"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mg-every-carcinogen",
+        null,
+        null
+      ],
+      "explanation": "A mutagen raises the mutation rate by physical or chemical means. Not every mutagen causes cancer. The proteins and genes in the other choices belong to copying or repair, not to mutagens.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mutagen-physical",
+      "concept": "mutagen",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is a physical mutagen?",
+      "choices": [
+        "Ultraviolet light, which joins neighboring bases together",
+        "Nitrous acid, which changes how the bases pair up in DNA",
+        "Bromodeoxyuridine, which is put into the DNA by copying",
+        "Ethidium bromide, which slips in between the stacked DNA bases"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Ultraviolet light is a physical agent. Nitrous acid, bromodeoxyuridine and ethidium bromide are chemicals that change, copy into, or slip between the bases.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: UV is the only physical agent; others chemical (ethidium bromide intercalator arguably chemical)"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mutagen-carcinogen",
+      "concept": "mutagen",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Does every mutagen cause cancer?",
+      "choices": [
+        "Not necessarily; a mutagen can damage DNA without causing cancer",
+        "Yes, because any DNA change that persists eventually leads to a tumor",
+        "Yes, since every mutagen is also a carcinogen, by definition",
+        "No, because cancer needs no change in the DNA at all"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mg-every-carcinogen",
+        "mg-every-carcinogen",
+        null
+      ],
+      "explanation": "Mutagens and carcinogens overlap but are not the same. Sodium azide, for example, damages DNA but is not known to cause cancer. Cancer also depends on other factors, such as how the cell responds to the damage.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mutagen-natural-source",
+      "concept": "mutagen",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which is a natural source of mutagens that people are exposed to every day?",
+      "choices": [
+        "Sunlight, which carries ultraviolet light to the skin",
+        "Factory chemicals, since nature makes no mutagens at all",
+        "Synthetic chemicals, since natural processes make no mutagens",
+        "Hospital scanners, which are machines people have built"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mg-only-man-made",
+        "mg-only-man-made",
+        null
+      ],
+      "explanation": "Sunlight is a natural source of ultraviolet light, a physical mutagen. Nature also makes mutagens, such as some mold toxins, so the idea that mutagens are made only by people is wrong.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mutagen-alkylating-resting",
+      "concept": "mutagen",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "An alkylating agent is added to cells that are not dividing. Can it damage their DNA?",
+      "choices": [
+        "Yes, it can mutate DNA even when it is not being copied",
+        "No, because the agent needs a copy of the DNA in order to act",
+        "No, because resting cells have no DNA that could be damaged",
+        "Yes, but just in the mitochondria, which have their own DNA"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mg-only-replicating",
+        null,
+        null
+      ],
+      "explanation": "Alkylating agents add chemical groups to DNA bases, which can cause mutations whether or not the DNA is being copied. A base analogue, by contrast, acts only when it is copied into new DNA.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mutagen-bromodeoxyuridine",
+      "concept": "mutagen",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does bromodeoxyuridine need DNA copying to cause a mutation?",
+      "choices": [
+        "It enters the DNA in place of a base only when the strand is copied",
+        "It damages DNA only at the moment the cell is about to divide",
+        "It has to be read by ribosomes in the cell's cytoplasm before it can act on DNA",
+        "It is cut out of the DNA each time that the strand is copied"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mg-only-replicating",
+        null,
+        null
+      ],
+      "explanation": "Bromodeoxyuridine resembles thymine, so it is incorporated into new DNA during copying and then pairs incorrectly. Outside copying it does not change the DNA.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mutagen-uv-lesion",
+      "concept": "mutagen",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Ultraviolet light joins two neighboring pyrimidines in one strand. Why can this lead to a mutation?",
+      "choices": [
+        "The lesion can make the copying enzyme add a wrong base opposite it",
+        "The lesion stops the cell from making any RNA at all, so it is lost",
+        "The lesion joins the two strands of the helix into one chain",
+        "The lesion turns the two bases into a protein's amino acids"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The bulky lesion blocks normal copying, and the enzyme that copies past it can add a wrong base opposite it. That error is a mutation once the strand is copied without repair. The other choices describe effects UV light does not have.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mutagen-damage-not-mutation",
+      "concept": "mutagen",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A chemical changes one base in a cell's DNA. Is this already a mutation?",
+      "choices": [
+        "Not yet, since it becomes a mutation only once copied without repair",
+        "Yes, because the DNA's sequence has already been changed by the chemical",
+        "Yes, because any change to a cell's DNA at all counts as a mutation",
+        "No, because a chemical must be made by people in order to alter DNA"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mut-damage-is-mutation",
+        "mut-damage-is-mutation",
+        "mg-only-man-made"
+      ],
+      "explanation": "A changed base is damage until it is copied without being repaired. Then it is a mutation in the new DNA. Chemicals can come from nature as well as from people, so the source does not decide it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mutation-and-dna-repair.mutagen-uv-steps",
+      "concept": "mutagen",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Order the steps by which ultraviolet light can cause a mutation.",
+      "steps": [
+        "UV light joins two neighboring pyrimidines in one strand",
+        "The lesion blocks normal copying of that strand",
+        "The copying enzyme adds a wrong base opposite the lesion",
+        "The daughter DNA keeps the changed base, so it is a mutation"
+      ],
+      "explanation": "The lesion must form first and block copying. The enzyme that copies past it can then insert a wrong base, which becomes a mutation when the daughter DNA keeps it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    }
+  ],
+  "artifacts": []
+}

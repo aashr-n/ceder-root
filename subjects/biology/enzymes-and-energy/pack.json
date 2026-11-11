@@ -1655,7 +1655,12 @@
       "target": "active-site",
       "explanation": "The active site is a pocket in the enzyme lined with the parts that fit one substrate. It is empty before the substrate arrives and empty again after the products leave.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: Empty active site chosen; C (bound substrate in site) is also near the site."
       }
     },
     {
@@ -1669,7 +1674,12 @@
       "target": "substrate",
       "explanation": "The substrate is the reactant an enzyme binds. Its shape matches the active site, and the enzyme turns it into products.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: B is free substrate; E is the same substrate bound, so wording 'before changed' relies on it being unbound."
       }
     },
     {
@@ -1683,7 +1693,12 @@
       "target": "enzyme-substrate-complex",
       "explanation": "Bound in the active site, the substrate forms an enzyme-substrate complex. Holding it this way lowers the activation energy, so the bond breaks faster.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Middle panel: enzyme with substrate held in the strained, bond-weakening state."
       }
     },
     {
@@ -1697,7 +1712,11 @@
       "target": "products",
       "explanation": "The substrate is split into two products, which no longer fit the active site and drift away. The enzyme itself is not used up.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1711,7 +1730,12 @@
       "target": "transition-state",
       "explanation": "The transition state is the highest-energy point the reacting molecules reach. Only molecules with enough energy get there, and from it they go on to form products.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Peak of the uncatalyzed (red) curve, the transition state."
       }
     },
     {
@@ -1725,7 +1749,12 @@
       "target": "activation-energy",
       "explanation": "Activation energy is the rise from the reactants' level to the transition state. It is absorbed, which is why the arrow points up.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Up arrow spanning the uncatalyzed barrier, i.e. the activation energy."
       }
     },
     {
@@ -1739,7 +1768,12 @@
       "target": "catalyzed-path",
       "explanation": "An enzyme lowers the barrier, so its curve has a smaller peak between the same reactants and products. More molecules get over it in a given time.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Dashed blue lower-barrier path, the enzyme-catalysed route."
       }
     },
     {
@@ -1753,7 +1787,12 @@
       "target": "energy-released",
       "explanation": "The overall energy change is the drop from the reactants' level to the products' level. Both curves start and end at the same levels, so an enzyme leaves it the same.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Down arrow from reactant level to product level, the overall free-energy change."
       }
     },
     {
@@ -1767,7 +1806,12 @@
       "target": "reactants",
       "explanation": "An energy diagram reads from left to right, so the reactants come first. Their level is higher than the products' level because this reaction releases energy.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Level of the substrate (reactant) bar on the left."
       }
     }
   ],

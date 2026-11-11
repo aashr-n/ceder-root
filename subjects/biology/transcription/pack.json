@@ -52,7 +52,8 @@
         }
       ],
       "explain": {
-        "text": "Transcription is the first step in using a gene. RNA polymerase reads one strand of the gene's DNA, the template strand, and builds a single-stranded RNA molecule whose bases pair with it. RNA uses uracil where DNA uses thymine, so an A in the template gives a U in the RNA. The RNA is built 5′ to 3′ and is released when the polymerase reaches the end of the gene. The DNA itself is left unchanged, so the gene can be transcribed again."
+        "text": "Transcription is the first step in using a gene. RNA polymerase reads one strand of the gene's DNA, the template strand, and builds a single-stranded RNA molecule whose bases pair with it. RNA uses uracil where DNA uses thymine, so an A in the template gives a U in the RNA. The RNA is built 5′ to 3′ and is released when the polymerase reaches the end of the gene. The DNA itself is left unchanged, so the gene can be transcribed again.",
+        "artifact": "transcription-steps"
       },
       "misconceptions": [
         {
@@ -122,7 +123,8 @@
         }
       ],
       "explain": {
-        "text": "RNA polymerase is the enzyme that makes RNA from a DNA template. It binds a promoter, unwinds a short stretch of the double helix, and adds ribonucleotides one at a time to a growing chain. Each one pairs with a template base and joins the RNA's 3′ end, so the chain grows from 5′ to 3′. Unlike DNA polymerase, it needs no primer. Eukaryotic nuclei have three main polymerases: polymerase II makes messenger RNA, while I and III make other RNAs."
+        "text": "RNA polymerase is the enzyme that makes RNA from a DNA template. It binds a promoter, unwinds a short stretch of the double helix, and adds ribonucleotides one at a time to a growing chain. Each one pairs with a template base and joins the RNA's 3′ end, so the chain grows from 5′ to 3′. Unlike DNA polymerase, it needs no primer. Eukaryotic nuclei have three main polymerases: polymerase II makes messenger RNA, while I and III make other RNAs.",
+        "artifact": "transcription-bubble"
       },
       "misconceptions": [
         {
@@ -186,7 +188,8 @@
         }
       ],
       "explain": {
-        "text": "A promoter is a DNA sequence just upstream of a gene, where transcription starts. RNA polymerase, helped by other proteins, binds the promoter and then begins making RNA at the transcription start site, which lies downstream of the promoter. The promoter itself is not copied into the RNA. Promoters differ between genes, so each gene can be switched on or off on its own. In some eukaryotic genes a short TATA box in the promoter helps place the polymerase."
+        "text": "A promoter is a DNA sequence just upstream of a gene, where transcription starts. RNA polymerase, helped by other proteins, binds the promoter and then begins making RNA at the transcription start site, which lies downstream of the promoter. The promoter itself is not copied into the RNA. Promoters differ between genes, so each gene can be switched on or off on its own. In some eukaryotic genes a short TATA box in the promoter helps place the polymerase.",
+        "artifact": "transcription-bubble"
       },
       "misconceptions": [
         {
@@ -324,7 +327,8 @@
         }
       ],
       "explain": {
-        "text": "In eukaryotes, the RNA made by transcription is changed before it becomes mRNA. A 5′ cap is added to the front end and a poly-A tail to the back end, which protect the RNA and help it reach the ribosome. Splicing then removes the introns, which are non-coding segments, and joins the exons, which hold the coding sequence. Specific signal sequences at the ends of each intron guide where the cuts are made. Bacterial mRNA usually needs none of this."
+        "text": "In eukaryotes, the RNA made by transcription is changed before it becomes mRNA. A 5′ cap is added to the front end and a poly-A tail to the back end, which protect the RNA and help it reach the ribosome. Splicing then removes the introns, which are non-coding segments, and joins the exons, which hold the coding sequence. Specific signal sequences at the ends of each intron guide where the cuts are made. Bacterial mRNA usually needs none of this.",
+        "artifact": "pre-mrna"
       },
       "misconceptions": [
         {
@@ -1559,7 +1563,298 @@
         "at": "2026-11-11",
         "diagnosed": 1
       }
+    },
+    {
+      "id": "biology.transcription.tap-promoter",
+      "concept": "promoter",
+      "element": "upstream-position",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the DNA sequence that RNA polymerase binds to start transcribing this gene.",
+      "artifact": "transcription-bubble",
+      "target": "promoter",
+      "explanation": "The promoter is the ochre block on the DNA, upstream of where the polymerase now sits. The polymerase bound there to start, then moved downstream along the gene; the promoter itself is never copied into the RNA.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Tan box upstream of the transcription bubble is the promoter (TATA-type element), where RNA polymerase binds. Picture is unlabelled, so the answer rests on the standard depiction."
+      }
+    },
+    {
+      "id": "biology.transcription.tap-rna-polymerase",
+      "concept": "rna-polymerase",
+      "element": "chain-growth",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the enzyme that unwinds the DNA and joins new nucleotides onto the growing RNA.",
+      "artifact": "transcription-bubble",
+      "target": "rna-polymerase",
+      "explanation": "RNA polymerase is the large green body around the open bubble. It holds the two DNA strands apart and adds each new ribonucleotide to the RNA's 3′ end.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Green oval is RNA polymerase; it unwinds the DNA and adds nucleotides to the RNA."
+      }
+    },
+    {
+      "id": "biology.transcription.tap-template-strand",
+      "concept": "transcription",
+      "element": "template-strand",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the DNA strand that is read to build the RNA.",
+      "artifact": "transcription-bubble",
+      "target": "template-strand",
+      "explanation": "The template strand is the blue-grey one: inside the bubble the new RNA is base-paired to it. The RNA's bases are the partners of its bases, not copies of them.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Lower blue strand is the template: the RNA hybrid ticks pair with it. The upper dark green strand is the coding (non-template) strand."
+      }
+    },
+    {
+      "id": "biology.transcription.tap-coding-strand",
+      "concept": "transcription",
+      "element": "coding-strand",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the DNA strand whose sequence the RNA matches, with U in place of T.",
+      "artifact": "transcription-bubble",
+      "target": "coding-strand",
+      "explanation": "The coding strand is the dark green one. It is not read, and inside the bubble it is pushed aside, but because the RNA pairs with the other strand, the RNA ends up with the coding strand's sequence.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Coding (non-template) strand, upper dark green, has the same sequence as the RNA except T becomes U."
+      }
+    },
+    {
+      "id": "biology.transcription.tap-rna-transcript",
+      "concept": "transcription",
+      "element": "stages",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the molecule that transcription makes.",
+      "artifact": "transcription-bubble",
+      "target": "rna-transcript",
+      "explanation": "The RNA is the red strand. Its newest end is still paired with the template inside the polymerase, and its oldest end, the 5′ end, trails out behind.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Transcription makes the RNA (the red strand)."
+      }
+    },
+    {
+      "id": "biology.transcription.tap-five-prime-cap",
+      "concept": "rna-processing",
+      "element": "five-prime-cap",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the cap that protects the RNA's 5′ end and helps the ribosome attach.",
+      "artifact": "pre-mrna",
+      "target": "five-prime-cap",
+      "explanation": "The 5′ cap is the ochre hexagon: a modified guanine nucleotide added to the 5′ end of the RNA early in transcription.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Hexagon at the 5' end is the 7-methylguanosine cap."
+      }
+    },
+    {
+      "id": "biology.transcription.tap-poly-a-tail",
+      "concept": "rna-processing",
+      "element": "poly-a-tail",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the run of adenine nucleotides added after the RNA is cut free at its 3′ end.",
+      "artifact": "pre-mrna",
+      "target": "poly-a-tail",
+      "explanation": "The poly-A tail is the chain of red beads, a long run of A nucleotides added to the 3′ end. It protects the RNA and helps it leave the nucleus and be translated.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Beads at the 3' end are the poly-A tail."
+      }
+    },
+    {
+      "id": "biology.transcription.tap-intron",
+      "concept": "rna-processing",
+      "element": "introns-and-exons",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap a segment that splicing removes before the RNA leaves the nucleus.",
+      "artifact": "pre-mrna",
+      "target": "intron",
+      "explanation": "Introns are the blue-grey arches. They are non-coding, and the spliceosome cuts each one out and joins the exons on either side.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Arc between the first two exon blocks is an intron, removed by splicing. The second arc is not one of the spots."
+      }
+    },
+    {
+      "id": "biology.transcription.tap-exon",
+      "concept": "rna-processing",
+      "element": "introns-and-exons",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap a segment that splicing joins end to end with its neighbours to form the mature mRNA.",
+      "artifact": "pre-mrna",
+      "target": "exon",
+      "explanation": "Exons are the dark green blocks. Splicing joins them end to end, so the mature mRNA holds only exon sequence, between the cap and the tail.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Spot A sits on a dark green exon block, the one between the two intron arcs. Splicing removes the blue intron loops and joins the exons. Spot B is an intron, C is the 5' cap and D is the poly-A tail, so none of those fit. b's note: A is an exon (dark box between two introns). Only exon is retained/joined; C is the 5-prime cap and D the poly-A tail. Note the exon at far left and right are also exons, but only A is offered as a spot."
+      }
     }
   ],
-  "artifacts": []
+  "artifacts": [
+    {
+      "id": "transcription-bubble",
+      "kind": "diagram",
+      "title": "RNA polymerase at work on a gene",
+      "alt": "Unlabelled double-stranded DNA drawn as a ladder, with a dark green upper strand and a blue-grey lower strand. An ochre block sits on the DNA near the left end. In the middle a large pale green oval encloses a bubble where the strands are apart. There a red strand pairs with the blue-grey strand, then rises across the green strand and trails out to the upper left. An arrow at the top right points right.",
+      "file": "assets/transcription-bubble.svg",
+      "hotspots": [
+        {
+          "id": "promoter",
+          "label": "Promoter",
+          "x": 0.158,
+          "y": 0.578,
+          "r": 0.06
+        },
+        {
+          "id": "coding-strand",
+          "label": "Coding strand",
+          "x": 0.317,
+          "y": 0.511,
+          "r": 0.045
+        },
+        {
+          "id": "rna-transcript",
+          "label": "RNA transcript",
+          "x": 0.3,
+          "y": 0.272,
+          "r": 0.05
+        },
+        {
+          "id": "rna-polymerase",
+          "label": "RNA polymerase",
+          "x": 0.542,
+          "y": 0.544,
+          "r": 0.045
+        },
+        {
+          "id": "template-strand",
+          "label": "Template strand",
+          "x": 0.833,
+          "y": 0.644,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "transcription-steps",
+      "kind": "sequence",
+      "title": "Transcribing a gene, step by step",
+      "alt": "Six steps: the polymerase binds the promoter, opens the helix, reads the template strand, grows the RNA from 5′ to 3′, leaves an RNA that matches the coding strand, and lets go at the end of the gene.",
+      "over": "transcription-bubble",
+      "steps": [
+        {
+          "title": "Bind the promoter",
+          "text": "RNA polymerase, helped by other proteins, binds the promoter just upstream of the gene. The promoter itself is not copied.",
+          "focus": "promoter"
+        },
+        {
+          "title": "Open the helix",
+          "text": "The polymerase unwinds a short stretch of DNA, opening a bubble where the two strands are apart.",
+          "focus": "rna-polymerase"
+        },
+        {
+          "title": "Read the template",
+          "text": "Only the template strand is read, 3′ to 5′. Each new RNA base pairs with a base on it, with U opposite A.",
+          "focus": "template-strand"
+        },
+        {
+          "title": "Grow the RNA",
+          "text": "Each new base joins the RNA's 3′ end, so the chain grows 5′ to 3′ and trails out of the polymerase behind it.",
+          "focus": "rna-transcript"
+        },
+        {
+          "title": "Match the coding strand",
+          "text": "The RNA has the coding strand's sequence, with U for T. Behind the polymerase the two DNA strands pair up again.",
+          "focus": "coding-strand"
+        },
+        {
+          "title": "Let go",
+          "text": "At the end of the gene the polymerase releases the RNA and the DNA. The gene is unchanged and can be read again."
+        }
+      ]
+    },
+    {
+      "id": "pre-mrna",
+      "kind": "diagram",
+      "title": "A eukaryotic pre-mRNA before splicing",
+      "alt": "An unlabelled RNA molecule running left to right. At the left end is an ochre hexagon joined by a short link. Then come three dark green blocks of different lengths, joined by two blue-grey strands that arch upward between them. At the right end is a chain of small red beads.",
+      "file": "assets/pre-mrna.svg",
+      "hotspots": [
+        {
+          "id": "five-prime-cap",
+          "label": "5′ cap",
+          "x": 0.083,
+          "y": 0.522,
+          "r": 0.05
+        },
+        {
+          "id": "intron",
+          "label": "Intron",
+          "x": 0.358,
+          "y": 0.361,
+          "r": 0.05
+        },
+        {
+          "id": "exon",
+          "label": "Exon",
+          "x": 0.508,
+          "y": 0.522,
+          "r": 0.06
+        },
+        {
+          "id": "poly-a-tail",
+          "label": "Poly-A tail",
+          "x": 0.904,
+          "y": 0.522,
+          "r": 0.05
+        }
+      ]
+    }
+  ]
 }

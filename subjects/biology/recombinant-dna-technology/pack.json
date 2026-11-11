@@ -1,0 +1,1584 @@
+{
+  "formatVersion": 1,
+  "id": "biology.recombinant-dna-technology",
+  "subject": "biology",
+  "title": "Recombinant DNA technology",
+  "summary": "The standard lab methods for cutting, separating, copying, reading and editing DNA: restriction enzymes, gels, PCR, sequencing and CRISPR-Cas9.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "restriction-enzyme",
+      "name": "Restriction enzyme",
+      "aliases": [
+        "Restriction endonuclease",
+        "Restriction endonucleases",
+        "Restriction enzymes"
+      ],
+      "summary": "A bacterial enzyme that cuts double-stranded DNA at one short, specific sequence, and the basic cutting tool of genetic engineering.",
+      "requires": [
+        "dna-double-helix"
+      ],
+      "elements": [
+        {
+          "id": "recognition-site",
+          "name": "Recognition site",
+          "aliases": [
+            "Recognition sequence"
+          ]
+        },
+        {
+          "id": "palindrome",
+          "name": "Palindromic site",
+          "aliases": [
+            "Palindromic sequence"
+          ]
+        },
+        {
+          "id": "sticky-ends",
+          "name": "Sticky and blunt ends",
+          "aliases": [
+            "Sticky ends",
+            "Blunt ends"
+          ]
+        },
+        {
+          "id": "restriction-modification",
+          "name": "Restriction-modification system"
+        }
+      ],
+      "explain": {
+        "text": "A restriction enzyme is a protein that cuts DNA at one short, specific sequence. Bacteria make many kinds as a defence against viruses, which inject their DNA. The bacterium protects its own copies of each site with chemical marks, so only invading DNA is cut. Most enzymes recognise four to eight base pairs and cut in a staggered way, leaving short single-stranded overhangs called sticky ends. Labs use these enzymes like molecular scissors that cut the same place every time, so a known cut lets a scientist predict every fragment."
+      },
+      "misconceptions": [
+        {
+          "id": "re-random-cuts",
+          "claim": "A restriction enzyme cuts DNA at random places.",
+          "correction": "It recognises a short, specific sequence, usually four to eight bases, and cuts only where that sequence sits."
+        },
+        {
+          "id": "re-cuts-own-dna",
+          "claim": "A bacterium's restriction enzymes would destroy its own DNA.",
+          "correction": "The bacterium marks its own copies of the recognition site with chemical tags, which blocks the enzyme. Foreign DNA lacks these marks and is cut."
+        },
+        {
+          "id": "re-one-enzyme-all-sites",
+          "claim": "Every restriction enzyme cuts at the same sequence.",
+          "correction": "Each enzyme recognises its own sequence. EcoRI and BamHI recognise different sequences and cut in different places."
+        }
+      ]
+    },
+    {
+      "id": "gel-electrophoresis",
+      "name": "Gel electrophoresis",
+      "aliases": [
+        "Agarose gel electrophoresis",
+        "DNA gel electrophoresis"
+      ],
+      "summary": "A method that sorts DNA fragments by length, pulling them through a gel with an electric field so that each length forms a band.",
+      "requires": [
+        "sugar-phosphate-backbone"
+      ],
+      "elements": [
+        {
+          "id": "charge-of-dna",
+          "name": "Negative charge of DNA"
+        },
+        {
+          "id": "sieving-by-size",
+          "name": "Sieving by size in the gel"
+        },
+        {
+          "id": "reading-bands",
+          "name": "Reading bands"
+        }
+      ],
+      "explain": {
+        "text": "Gel electrophoresis sorts DNA fragments by length. Samples are loaded into wells at one end of a gel, and an electric field pulls the negatively charged DNA toward the positive electrode. The gel is a mesh of pores, and shorter fragments pass through it more easily, so after a run they sit farther along. Each length forms a band that can be stained and seen. A DNA ladder of fragments with known lengths runs alongside, so an unknown band can be sized by comparison."
+      },
+      "misconceptions": [
+        {
+          "id": "ge-toward-negative",
+          "claim": "DNA runs toward the negative electrode, since it is drawn to the same charge.",
+          "correction": "DNA's phosphate backbone is negative, so it moves toward the positive electrode, the anode."
+        },
+        {
+          "id": "ge-big-runs-fast",
+          "claim": "Bigger DNA fragments run faster through a gel.",
+          "correction": "Smaller fragments thread through the gel's pores more easily, so they travel farther in the same time."
+        },
+        {
+          "id": "ge-current-sorts",
+          "claim": "The electric current sorts DNA by size, and the gel only holds the sample.",
+          "correction": "The gel's mesh is what separates fragments by length. Without it, fragments of any length move at about the same speed."
+        }
+      ]
+    },
+    {
+      "id": "pcr",
+      "name": "Polymerase chain reaction",
+      "aliases": [
+        "PCR",
+        "Polymerase chain reactions"
+      ],
+      "summary": "A method that copies a chosen stretch of DNA exponentially, through repeated heat, cool and warm cycles with primers and a heat-stable polymerase.",
+      "requires": [
+        "dna-polymerase"
+      ],
+      "elements": [
+        {
+          "id": "three-steps",
+          "name": "Denaturation, annealing and extension",
+          "aliases": [
+            "Three steps of a cycle"
+          ]
+        },
+        {
+          "id": "primers",
+          "name": "Primers"
+        },
+        {
+          "id": "exponential-growth",
+          "name": "Exponential amplification"
+        }
+      ],
+      "explain": {
+        "text": "The polymerase chain reaction copies a chosen stretch of DNA. Each cycle heats the mixture to separate the strands, cools it so that two short primers bind, and warms it so a heat-stable polymerase builds new strands. Every new copy can serve as a template in the next cycle, so the amount roughly doubles each time. After 30 cycles, one molecule can become about a billion. Only the region between the two primers is copied, which makes PCR a precise way to amplify a gene from a tiny sample."
+      },
+      "misconceptions": [
+        {
+          "id": "pcr-linear",
+          "claim": "Each PCR cycle adds the same number of copies, so the product grows in a straight line.",
+          "correction": "Each cycle doubles the copies, so the amount grows exponentially. Twenty cycles from one molecule give about a million."
+        },
+        {
+          "id": "pcr-heat-breaks-backbone",
+          "claim": "The heating step breaks the sugar-phosphate backbone to separate the strands.",
+          "correction": "Heat breaks the hydrogen bonds between bases. The covalent backbone stays intact, so each strand is still a whole molecule."
+        },
+        {
+          "id": "pcr-copies-genome",
+          "claim": "PCR copies the whole genome, and the primers just mark where copying starts.",
+          "correction": "Only the stretch between the two primers is copied, and that stretch is what grows exponentially."
+        }
+      ]
+    },
+    {
+      "id": "dna-sequencing",
+      "name": "DNA sequencing",
+      "aliases": [
+        "Sanger sequencing",
+        "DNA sequence determination"
+      ],
+      "summary": "Methods that read the order of bases in DNA. Sanger sequencing stops copies at each base and sorts the fragments by size.",
+      "requires": [
+        "dna-polymerase"
+      ],
+      "elements": [
+        {
+          "id": "chain-termination",
+          "name": "Chain termination"
+        },
+        {
+          "id": "reading-order",
+          "name": "Reading order of fragments"
+        },
+        {
+          "id": "next-generation",
+          "name": "Next-generation sequencing"
+        }
+      ],
+      "explain": {
+        "text": "DNA sequencing reads the order of bases in a DNA strand. In Sanger sequencing, a primer starts a new strand, and a small amount of labelled dideoxynucleotides stops it at random bases. Each stop yields a fragment of a different length, and the fragments are sorted by size. Each fragment ends with a coloured label on its final base, and reading the colours from shortest to longest gives the new strand's sequence. Newer methods read millions of short pieces at once."
+      },
+      "misconceptions": [
+        {
+          "id": "ds-longest-first",
+          "claim": "Read the fragments from longest to shortest to get the sequence in order.",
+          "correction": "Read from shortest to longest. The shortest fragment ends at the base nearest the primer."
+        },
+        {
+          "id": "ds-ddntp-normal",
+          "claim": "A dideoxynucleotide is a normal base that the polymerase just adds faster.",
+          "correction": "It has no 3′ hydroxyl, so once it is added no next base can join, and the chain stops."
+        },
+        {
+          "id": "ds-tag-on-template",
+          "claim": "The fluorescent tag is on the DNA being sequenced.",
+          "correction": "The label is carried by the terminating base at the end of each new fragment. The template carries no label."
+        }
+      ]
+    },
+    {
+      "id": "crispr-cas9",
+      "name": "CRISPR-Cas9",
+      "aliases": [
+        "CRISPR",
+        "CRISPR/Cas9",
+        "Cas9"
+      ],
+      "summary": "A bacterial defence turned into a tool: a guide RNA directs the Cas9 enzyme to a matching DNA sequence beside a PAM, where it cuts.",
+      "requires": [
+        "restriction-enzyme"
+      ],
+      "elements": [
+        {
+          "id": "guide-rna",
+          "name": "Guide RNA"
+        },
+        {
+          "id": "pam-sequence",
+          "name": "PAM sequence"
+        },
+        {
+          "id": "cut-and-repair",
+          "name": "Cut and repair"
+        },
+        {
+          "id": "bacterial-origin",
+          "name": "Bacterial origin"
+        }
+      ],
+      "explain": {
+        "text": "CRISPR-Cas9 is a tool for cutting DNA at a chosen site. It has two parts: a guide RNA whose sequence pairs with the target, and the Cas9 protein, which makes the cut. Cas9 also needs a short PAM sequence beside the target before it will cut. After a cut, the cell repairs the break, often adding or removing a few bases, which can switch a gene off. The system began as a bacterial defence against viruses, and changing only the guide makes the tool aim at a new gene."
+      },
+      "misconceptions": [
+        {
+          "id": "cas9-finds-alone",
+          "claim": "Cas9 finds its target DNA by itself, so the guide RNA is not needed for targeting.",
+          "correction": "The guide RNA base-pairs with the target and steers Cas9 to it."
+        },
+        {
+          "id": "cas9-pam-optional",
+          "claim": "Cas9 cuts any DNA that matches the guide, wherever the match lies.",
+          "correction": "Cas9 needs a PAM, such as NGG, beside the matching sequence. Without it, the DNA is not cut."
+        },
+        {
+          "id": "cas9-repair-restores",
+          "claim": "A cut that the cell repairs leaves the DNA unchanged.",
+          "correction": "End joining is error-prone and often adds or removes bases. A precise change needs a repair template."
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "biology.recombinant-dna-technology.restriction-recognition",
+      "concept": "restriction-enzyme",
+      "element": "recognition-site",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does a restriction enzyme recognise on DNA before it cuts?",
+      "choices": [
+        "A short base sequence that often reads the same on both strands",
+        "A random point along the DNA, picked afresh on each visit",
+        "The same base sequence that every restriction enzyme in the cell uses",
+        "A long stretch of RNA with no particular order of bases"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "re-random-cuts",
+        "re-one-enzyme-all-sites",
+        null
+      ],
+      "explanation": "Each restriction enzyme binds one short sequence, usually 4 to 8 base pairs, and cuts there. Its target often reads the same 5′ to 3′ on both strands. A random cutter would give no control over where the DNA breaks, and different enzymes recognise different sequences.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.restriction-plasmid-cut",
+      "concept": "restriction-enzyme",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A circular plasmid has one site for a restriction enzyme. After the enzyme is added, what does the plasmid look like?",
+      "choices": [
+        "One linear piece, cut once at that site, with two free ends",
+        "Many pieces scattered at random places along its length",
+        "Still circular, because a circular plasmid has no ends to cut",
+        "A circle with a nick on one strand and no break in either helix"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "re-random-cuts",
+        null,
+        null
+      ],
+      "explanation": "Cutting a circle at one site opens it into one linear molecule with two ends. The enzyme cuts both strands at its recognition site, so there is no nick left behind. Scattered cuts would need a random cutter, which restriction enzymes are not.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.restriction-palindrome",
+      "concept": "restriction-enzyme",
+      "element": "palindrome",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does it mean for a restriction site to be palindromic?",
+      "choices": [
+        "Its sequence reads the same 5′ to 3′ on both of its strands",
+        "Its bases read the same forwards and backwards on one strand",
+        "It is found once in an entire genome and nowhere else",
+        "It is a place where two enzymes bind and cut together"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A palindromic site reads the same 5′ to 3′ on each strand, so the two strands match at the site. That is why one enzyme can cut both strands at the same place. The other choices describe a word game, a count, or two enzymes.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.restriction-own-dna",
+      "concept": "restriction-enzyme",
+      "element": "restriction-modification",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A bacterium makes a restriction enzyme that cuts GAATTC. Why does the enzyme not destroy the bacterium's own DNA?",
+      "choices": [
+        "The enzyme is made too late to reach the cell's own DNA before the cell divides",
+        "The enzyme needs a partner protein that is made by invading viruses",
+        "The cell marks its own copies of the site, which blocks the enzyme",
+        "The enzyme cuts its own DNA too, and the cell repairs each cut afterwards"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "re-cuts-own-dna"
+      ],
+      "explanation": "Bacteria methylate their own recognition sites, so the enzyme cannot cut their DNA. Invading DNA lacks these marks and is cut. Repairing cuts after they happen is not how the cell is protected, and the enzyme needs no virus protein to act.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.restriction-student-error",
+      "concept": "restriction-enzyme",
+      "element": "restriction-modification",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: 'Restriction enzymes would chop up the bacterium's own DNA, since they cut DNA wherever they land.' What is wrong with that?",
+      "choices": [
+        "The cell marks its own sites, so the enzyme leaves its own DNA alone",
+        "The enzyme cuts at random, so it can break any stretch of DNA",
+        "Nothing is wrong: the enzyme cuts the cell's own DNA, and repair fixes it",
+        "The enzyme is a viral protein, so the bacterium does not make it"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "re-random-cuts",
+        "re-cuts-own-dna",
+        null
+      ],
+      "explanation": "Restriction enzymes cut at specific sequences, and the cell's own sites carry marks that stop them. The student's claim gets both points wrong. Bacteria make these enzymes themselves, and they are not viral proteins.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.restriction-known-cut",
+      "concept": "restriction-enzyme",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A lab wants to cut a gene out at one known place in a long genome. Which property of a restriction enzyme makes it useful for this?",
+      "choices": [
+        "It cuts at the same known sequence every time it meets that sequence",
+        "It cuts at random, which means every gene is cut out in the same way",
+        "It destroys the neighbouring genes, which makes the target easier to find",
+        "It joins DNA ends together at a fixed site in the genome"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "re-random-cuts",
+        null,
+        null
+      ],
+      "explanation": "A reliable cut at a known site lets a lab predict every fragment. Random cutting would give fragments of unknown size and order. Destroying neighbouring genes or joining DNA ends is not how restriction enzymes are used to isolate a gene.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.restriction-two-enzymes",
+      "concept": "restriction-enzyme",
+      "element": "recognition-site",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "EcoRI and BamHI are two restriction enzymes. Which statement about them is true?",
+      "choices": [
+        "Each recognises its own sequence, so they cut in different places",
+        "Both recognise the same sequence, so they cut DNA in the same place",
+        "Both cut at random places, so they give the same set of fragments",
+        "Both are made by human cells to repair damaged DNA in the nucleus"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "re-one-enzyme-all-sites",
+        "re-random-cuts",
+        null
+      ],
+      "explanation": "EcoRI cuts at GAATTC and BamHI cuts at GGATCC, so they cut in different places. Enzymes are named after the species they come from, and restriction enzymes come from bacteria, not human cells.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.restriction-sticky-ends",
+      "concept": "restriction-enzyme",
+      "element": "sticky-ends",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A restriction enzyme cuts a DNA molecule in a staggered way. What do the cut ends look like?",
+      "choices": [
+        "Short single-stranded overhangs that pair with matching overhangs",
+        "Flat ends where both strands stop at the same base pair, with no overhang",
+        "Ends coated with a sticky protein that binds any other DNA end",
+        "Ends held by a covalent bond formed during the cut itself"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A staggered cut leaves one strand longer at each end. Short overhangs pair with any fragment cut by the same enzyme, which is what lets a lab join pieces. Flat ends come from straight cuts, and the other two choices describe no real feature of a cut.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.restriction-which-enzyme",
+      "concept": "restriction-enzyme",
+      "element": "recognition-site",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A DNA sample contains the sequence GAATTC and no GGATCC. EcoRI recognises GAATTC and BamHI recognises GGATCC. Which enzyme cuts the sample?",
+      "choices": [
+        "EcoRI, because the sample contains its recognition sequence",
+        "BamHI, because it cuts any sequence at a random site in the sample",
+        "Both, because the two sites overlap in the same stretch",
+        "Neither, because restriction enzymes need a whole genome to work"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "re-random-cuts",
+        null,
+        null
+      ],
+      "explanation": "A restriction enzyme cuts only where its own sequence appears, so the sample is cut by EcoRI and not by BamHI, which needs GGATCC. Neither a random cutter nor a whole genome is needed for the cut.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.gel-direction",
+      "concept": "gel-electrophoresis",
+      "element": "charge-of-dna",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In gel electrophoresis, which way do DNA fragments move when the current is switched on?",
+      "choices": [
+        "Toward the positive electrode, because its phosphate backbone is negative",
+        "Toward the negative electrode, because DNA is pulled toward the same charge",
+        "Up toward the wells, against the current, because the gel pushes them back",
+        "Sideways across the gel, because the bands spread out by diffusion"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ge-toward-negative",
+        null,
+        null
+      ],
+      "explanation": "DNA's phosphate backbone carries a negative charge, so an electric field pulls it toward the positive electrode. Opposite charges attract, so a pull toward the same charge would be wrong. Fragments do not run back up the gel or spread sideways.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.gel-bigger-fragment",
+      "concept": "gel-electrophoresis",
+      "element": "sieving-by-size",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A 500-base and a 5000-base DNA fragment run side by side in a gel. Which one reaches the bottom first?",
+      "choices": [
+        "The 500-base fragment, since smaller pieces slip through the pores more easily",
+        "The 5000-base fragment, because bigger pieces carry more charge and move faster",
+        "They reach the bottom together, because they feel the same electric current",
+        "Neither moves, because the gel holds fragments longer than 1000 bases"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ge-big-runs-fast",
+        null,
+        null
+      ],
+      "explanation": "The gel is a mesh, and a shorter fragment threads through it faster, so it moves farther in the same time. Bigger pieces carry about the same charge per base, so they do not move faster. Both fragments do move, so the claim that neither does is wrong.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.gel-why-size",
+      "concept": "gel-electrophoresis",
+      "element": "sieving-by-size",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does agarose gel electrophoresis separate DNA fragments by length?",
+      "choices": [
+        "The gel's mesh slows longer fragments more, so they travel less far",
+        "The current pulls each fragment at a speed set by its length",
+        "Each length of DNA carries a different charge, which sets its speed",
+        "Longer fragments are heavier and sink to the bottom of the gel"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ge-current-sorts",
+        null,
+        null
+      ],
+      "explanation": "The gel acts as a sieve, so a long molecule is more likely to snag than a short one. The charge per base is about the same for every length, so charge does not set speed. Weight is not the sorting factor either.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.gel-no-gel",
+      "concept": "gel-electrophoresis",
+      "element": "sieving-by-size",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "The same DNA fragments are run at the same voltage in a tank of buffer with no gel. What happens to the fragments?",
+      "choices": [
+        "They move together, since without a gel nothing separates them by length",
+        "They separate by length just as they do when run inside an agarose gel",
+        "They stop moving, because DNA cannot travel through a liquid buffer at all",
+        "They all rise to the top, because the buffer is denser than the DNA itself"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ge-current-sorts",
+        null,
+        null
+      ],
+      "explanation": "Fragments in solution move at about the same speed per unit of charge, so length-based separation needs the gel's mesh. DNA does move through a liquid, and it does not float to the top.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: Free-solution DNA mobility is roughly length-independent.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.gel-electrode-wells",
+      "concept": "gel-electrophoresis",
+      "element": "charge-of-dna",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "The wells are at the end of the gel nearest the negative electrode. What happens to the DNA loaded into the wells?",
+      "choices": [
+        "It stays in the wells, because it is already near the negative electrode",
+        "It breaks into single bases at the wells, because of the current",
+        "It moves away from the wells, through the gel toward the positive end",
+        "It moves back toward the wells, pulled by the negative electrode"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "ge-toward-negative"
+      ],
+      "explanation": "DNA is negative, so it runs from the negative end toward the positive end, which is away from the wells. A current does not split DNA into bases. The wells are where the samples sit before the run starts.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.gel-band-meaning",
+      "concept": "gel-electrophoresis",
+      "element": "reading-bands",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does a single band in one lane of an agarose gel contain?",
+      "choices": [
+        "Many copies of DNA fragments that are all the same length",
+        "One molecule of DNA of every length in the sample",
+        "The fastest-moving fragments, which are the largest in the sample",
+        "Enzymes that cut the DNA into pieces of that same length"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "ge-big-runs-fast",
+        null
+      ],
+      "explanation": "A band is a set of molecules that migrated the same distance, which means they share a length. Fast-moving fragments are the smallest, not the largest. A band holds many molecules, not one molecule of each length.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.gel-ladder",
+      "concept": "gel-electrophoresis",
+      "element": "reading-bands",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why is a DNA ladder run beside the unknown samples?",
+      "choices": [
+        "Its fragments have known lengths, so unknown bands can be sized by it",
+        "It adds charge to the unknown DNA so every sample moves at the same speed",
+        "It shows how fast the current is moving, so the run can be timed",
+        "Its bands move the fastest, so unknown samples can be lined up with them"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A ladder is a mix of fragments whose lengths are known. Comparing an unknown band with the ladder's bands gives its approximate length. The ladder does not change the charge of the samples or measure the current.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.gel-student-error",
+      "concept": "gel-electrophoresis",
+      "element": "sieving-by-size",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: 'The gel is just a holder, and the current sorts the DNA by length as it pulls.' What is wrong with that?",
+      "choices": [
+        "The gel's pores sort by length, while the current moves the DNA along",
+        "The current sorts DNA by length, and the gel just stains the bands",
+        "The gel sorts DNA by charge, and the current then sorts it by length",
+        "The gel sorts DNA by length, and the longest fragments reach the bottom first"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ge-current-sorts",
+        null,
+        "ge-big-runs-fast"
+      ],
+      "explanation": "The mesh of the gel slows longer fragments, so shorter ones travel farther. The current supplies the force that moves every fragment, and the stain only makes the bands visible. The longest fragments do not reach the bottom first.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.gel-run-order",
+      "concept": "gel-electrophoresis",
+      "element": "reading-bands",
+      "kind": "order",
+      "difficulty": 1,
+      "prompt": "Put the steps of a standard agarose gel run in order.",
+      "steps": [
+        "Pour molten agarose into a tray and let it set around a comb",
+        "Place the set gel in buffer and load the samples and ladder into the wells",
+        "Apply a voltage so the DNA moves toward the positive electrode",
+        "After the run, stain the DNA so the bands can be seen"
+      ],
+      "explanation": "The gel must set before it can hold samples, and the samples go in before the voltage is switched on. The bands can only be seen after the run, once the DNA has been stained.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.pcr-denature-step",
+      "concept": "pcr",
+      "element": "three-steps",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What happens in the denaturation step of each PCR cycle?",
+      "choices": [
+        "The DNA is heated so the two strands separate as hydrogen bonds break",
+        "The DNA is cooled so the primers can bind to each strand",
+        "The DNA is heated until its sugar-phosphate backbone breaks into bases",
+        "The new strands are built by adding bases to the ends of the primers"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "pcr-heat-breaks-backbone",
+        null
+      ],
+      "explanation": "Heating to about 95 °C breaks the hydrogen bonds between complementary bases, giving two single strands. Cooling is the annealing step, and building new strands is the extension step. The backbone's covalent bonds stay intact.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.pcr-copy-count",
+      "concept": "pcr",
+      "element": "exponential-growth",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "An ideal PCR runs 20 cycles starting from one double-stranded DNA molecule, with every template copied in each cycle. About how many copies are there at the end?",
+      "choices": [
+        "About one million, since the amount doubles in each of 20 cycles",
+        "About 40, since each of 20 cycles adds two new copies",
+        "About 20 million, since each cycle multiplies the amount by 20",
+        "About 1,000, since each of the 20 cycles multiplies the amount by 10"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "pcr-linear",
+        null,
+        null
+      ],
+      "explanation": "Each cycle doubles the number of copies, so 20 cycles give 2 to the 20th power, which is 1,048,576. Adding a fixed number each cycle would give a straight line instead. The other two choices use the wrong multiplier.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: 2^20 is about 1.05 million, so 'about one million' is right.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.pcr-bonds-broken",
+      "concept": "pcr",
+      "element": "three-steps",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which bonds does the heat of the denaturation step break?",
+      "choices": [
+        "The hydrogen bonds that hold complementary bases together",
+        "The covalent bonds that form the sugar-phosphate backbone of each strand",
+        "The bonds that hold the primers to the polymerase enzyme",
+        "The peptide bonds that make up the polymerase enzyme"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "pcr-heat-breaks-backbone",
+        null,
+        null
+      ],
+      "explanation": "Heat weakens the hydrogen bonds between bases, so the two strands come apart while each backbone stays whole. Primers and the polymerase act later in the cycle.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.pcr-what-copied",
+      "concept": "pcr",
+      "element": "primers",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A PCR uses two primers that flank a 500-base region of a 3-billion-base genome. What is copied?",
+      "choices": [
+        "The 500-base region between the two primers, which grows each cycle",
+        "The whole 3-billion-base genome, with the primers marking where to start",
+        "The two primers alone, which double in number each cycle",
+        "The 500-base region, a single copy, since each cycle copies it once"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "pcr-copies-genome",
+        null,
+        null
+      ],
+      "explanation": "Primers mark the two ends of the target, and the stretch between them is what is copied across the cycles. The primers are not the product. A single copy per cycle would give a straight line, not growth.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.pcr-why-exponential",
+      "concept": "pcr",
+      "element": "exponential-growth",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does the amount of PCR product grow so quickly?",
+      "choices": [
+        "Each new copy serves as a template in the next cycle, so the amount doubles",
+        "Each cycle adds a fixed number of copies, so the amount grows in a straight line",
+        "Higher temperatures make the polymerase faster, so more is made each cycle",
+        "The primers are reused from the start, so the amount of primer keeps growing"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "pcr-linear",
+        null,
+        null
+      ],
+      "explanation": "Every strand made in a cycle becomes a template in the next, so the count doubles each time. A fixed number added per cycle would be linear. Higher temperatures do not make the polymerase faster, and primers are used up rather than reused.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.pcr-why-primers",
+      "concept": "pcr",
+      "element": "primers",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Why does PCR need a primer for each strand?",
+      "choices": [
+        "DNA polymerase cannot start a strand alone, so a primer supplies a 3′ end",
+        "The primer unwinds the DNA strands so that the polymerase can reach the template",
+        "The primer is the set of bases from which the new strand is then built up",
+        "The primer cuts the target region so that its two ends can then be copied"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Polymerase can only extend a strand that already has a double-stranded start, so a short primer, bound to the template, gives it a free 3′ end. Unwinding, cutting and supplying building blocks are other jobs.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.pcr-heat-error",
+      "concept": "pcr",
+      "element": "three-steps",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: 'The heat in PCR breaks the DNA backbone, so each strand comes apart into short pieces.' What is wrong with that?",
+      "choices": [
+        "Heat breaks hydrogen bonds between bases, and the backbone stays intact",
+        "Nothing is wrong: the backbone breaks because the temperature is high enough",
+        "The heat destroys the primers, so the strands cannot be copied",
+        "The heat destroys the polymerase, so no short pieces can be made"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "pcr-heat-breaks-backbone",
+        null,
+        null
+      ],
+      "explanation": "Each strand separates whole, because the bonds broken by heat are the hydrogen bonds between bases. The backbone holds together and is copied in later steps. Heat does not break primers, and the polymerase is chosen to survive the heat.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.pcr-target-region",
+      "concept": "pcr",
+      "element": "primers",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does PCR copy only the stretch between two primers, and not the whole chromosome?",
+      "choices": [
+        "Each primer marks one end, so copying runs between the two marked ends",
+        "The polymerase copies the whole chromosome, and primers just mark its start",
+        "The heat cuts the chromosome into pieces of the target's length, which are copied",
+        "The polymerase copies every gene, and the target is sorted out by size"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "pcr-copies-genome",
+        null,
+        null
+      ],
+      "explanation": "A primer binds the strand at one end of the target and the polymerase builds from there, so the copied stretch is set by the two primers. The polymerase does not read the whole chromosome, and heat does not cut it into fragments first.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.pcr-cycle-order",
+      "concept": "pcr",
+      "element": "three-steps",
+      "kind": "order",
+      "difficulty": 1,
+      "prompt": "Put the three steps of one PCR cycle in order.",
+      "steps": [
+        "Heat to about 95 °C so the two strands separate",
+        "Cool to a lower temperature so the primers bind to each strand",
+        "Warm to about 72 °C so the polymerase builds new strands"
+      ],
+      "explanation": "Strands must separate before primers can bind them, and primers must bind before the polymerase can extend them. The temperatures shown are typical values, and they depend on the primers and enzyme used.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.seq-ddntp-role",
+      "concept": "dna-sequencing",
+      "element": "chain-termination",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What do the labelled dideoxynucleotides do in Sanger sequencing?",
+      "choices": [
+        "They stop a new strand at a known base, so each fragment has its own end",
+        "They are ordinary bases that the polymerase adds faster than normal ones",
+        "They join the primer to the template so that copying can begin",
+        "They cut the new strand at each base, so the pieces can be sized"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ds-ddntp-normal",
+        null,
+        null
+      ],
+      "explanation": "A dideoxynucleotide lacks the 3′ hydroxyl that the next base needs, so it ends the chain. Mixing it with normal bases makes fragments of every length, one ending at each position. It is not faster, and it does not join the primer.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.seq-chain-stop",
+      "concept": "dna-sequencing",
+      "element": "chain-termination",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does a growing strand stop when it adds a dideoxynucleotide?",
+      "choices": [
+        "It has no 3′ hydroxyl, so no next nucleotide can bond to it",
+        "It is an ordinary base, but the polymerase releases the chain after it",
+        "It is too large for the polymerase to bind the next base",
+        "Its fluorescent tag blocks the next base from pairing with the template"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ds-ddntp-normal",
+        null,
+        null
+      ],
+      "explanation": "Each new base bonds to the 3′ hydroxyl of the one before it. A dideoxynucleotide has no such hydroxyl, so the chain cannot be extended past it. The tag is only a label and does not block pairing.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.seq-label-location",
+      "concept": "dna-sequencing",
+      "element": "chain-termination",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In an automated Sanger run, each of the four terminating bases has its own fluorescent colour. Where is the colour located?",
+      "choices": [
+        "On the terminating base at the end of each newly made fragment",
+        "On the template DNA, so each colour marks a base in the template",
+        "On the primer, which is made in four versions, one per base",
+        "On the polymerase, which changes colour as it passes each base"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ds-tag-on-template",
+        null,
+        null
+      ],
+      "explanation": "The label is carried by the dideoxynucleotide that stops each fragment, so the colour at a fragment's end names the base there. The template carries no label, and the primer and polymerase are unlabelled.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.seq-read-direction",
+      "concept": "dna-sequencing",
+      "element": "reading-order",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "After the fragments are sorted by size, in which direction is the sequence read?",
+      "choices": [
+        "From the shortest fragment up towards the longest one",
+        "From the longest fragment down to the shortest one",
+        "In the order the fragments were made, which is random",
+        "By colour, starting from whichever label looks brightest"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ds-longest-first",
+        null,
+        null
+      ],
+      "explanation": "The shortest fragment ends nearest the primer, so reading from shortest to longest gives the new strand in order from its 5′ end. Reading the other way would reverse the sequence. Fragments are not made in a random order, and brightness does not set the order.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.seq-shortest-base",
+      "concept": "dna-sequencing",
+      "element": "reading-order",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A new-strand fragment is 9 bases longer than its primer. Which base of the new strand does its last base mark?",
+      "choices": [
+        "The 9th base that the polymerase added after the primer's 3′ end",
+        "The last base of the whole strand, since longer ones are read first",
+        "The first base of the template, which sits at the primer's start",
+        "The base the polymerase skipped at that position on the template"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ds-longest-first",
+        null,
+        null
+      ],
+      "explanation": "Each base added after the primer makes the fragment one longer, so a fragment 9 bases longer than its primer ends at the 9th added base. Reading order comes from the sizes, not from the far end of the whole strand, and the template's start does not set the end.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.seq-low-ddntp",
+      "concept": "dna-sequencing",
+      "element": "chain-termination",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A Sanger reaction is set up with far too little dideoxynucleotide, so chains rarely stop. What does the read look like?",
+      "choices": [
+        "Mostly long fragments, so the bases near the primer read poorly",
+        "Mostly short fragments, so the bases far from the primer read clearly",
+        "The same spread of lengths as a normal reaction, with no change",
+        "A reversed read, because the chains stop from the far end inward"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "With few chain stops, the short fragments that give the bases nearest the primer are rare, so those bases come out weak, while long fragments dominate the far end of the read. A normal spread of lengths would show no change, and a reversed read would need a reversed strand.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.seq-next-gen",
+      "concept": "dna-sequencing",
+      "element": "next-generation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How does next-generation sequencing usually differ from Sanger sequencing?",
+      "choices": [
+        "It reads millions of short pieces of DNA at once, in parallel",
+        "It reads one long fragment at a time, base by base, in a single tube",
+        "It reads copies of one gene, one after another, in the lab",
+        "It needs no DNA, reading the sequence straight from the living cell"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Next-generation methods run enormous numbers of short reads in parallel, far more than one fragment at a time. Each read is short and must be assembled, and every method still needs a DNA sample.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.seq-primer-role",
+      "concept": "dna-sequencing",
+      "element": "chain-termination",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does each Sanger reaction need a primer?",
+      "choices": [
+        "DNA polymerase needs a primer's 3′ end before it can add any bases",
+        "The label is on the template, so the primer just starts the copy",
+        "The primer cuts the template so the fragments are the right size",
+        "The primer is the fluorescent base that gets added to each fragment"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ds-tag-on-template",
+        null,
+        null
+      ],
+      "explanation": "Polymerase cannot start a new strand from nothing, so the primer gives it a 3′ end to extend. The fluorescent label is carried by the terminating base, not the template. A primer does not cut DNA, and it is not a labelled base.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.seq-sanger-order",
+      "concept": "dna-sequencing",
+      "element": "reading-order",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the main steps of a Sanger sequencing run in order.",
+      "steps": [
+        "Anneal a primer to a single-stranded DNA template",
+        "Extend the primer, stopping at random with labelled dideoxynucleotides",
+        "Separate the new fragments by size in a capillary or gel",
+        "Read the colour at each fragment's end, from shortest to longest"
+      ],
+      "explanation": "The primer must bind before the polymerase can extend it, and the chains must stop before they can be sorted by size. The colours are read last, from the shortest fragment to the longest, so each step adds one base to the sequence.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.crispr-guide-role",
+      "concept": "crispr-cas9",
+      "element": "guide-rna",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does the guide RNA do in CRISPR-Cas9?",
+      "choices": [
+        "It base-pairs with matching DNA, which directs Cas9 to that spot",
+        "It is not needed for targeting, because Cas9 locates the target alone",
+        "It is the enzyme that seals the cut ends after Cas9 has cut the DNA",
+        "It is a copy of the target that Cas9 cuts out of the genome"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "cas9-finds-alone",
+        null,
+        null
+      ],
+      "explanation": "The guide is a short RNA whose sequence pairs with the target, so it steers Cas9 to one place in the genome. Cas9 alone does not know where to cut. Sealing the ends is a repair job, and the guide is not a copy of the target.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.crispr-pam-needed",
+      "concept": "crispr-cas9",
+      "element": "pam-sequence",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "For the common Cas9 from Streptococcus pyogenes, what must sit next to the matching DNA for the cut to happen?",
+      "choices": [
+        "A PAM, a short sequence such as NGG, just past the target",
+        "The guide's full 20-base sequence repeated twice in a row",
+        "Any GC-rich stretch of about 200 bases somewhere in the gene",
+        "Nothing extra, since the guide match alone sets where the cut is made"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "cas9-pam-optional"
+      ],
+      "explanation": "SpCas9 needs a short PAM, written NGG, beside the target, and it will not cut a perfect guide match that lacks one. The guide sets which sequence is matched, but not the cut on its own. The other two choices describe no requirement.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.crispr-pam-missing",
+      "concept": "crispr-cas9",
+      "element": "pam-sequence",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A guide RNA matches a 20-base stretch of DNA, but the DNA beside that stretch has no PAM. What does Cas9 do?",
+      "choices": [
+        "It does not cut there, because the PAM next to it is missing",
+        "It cuts there anyway, since the guide matches the DNA exactly",
+        "It cuts, and the cell repairs the break so the sequence comes back exactly",
+        "It binds, then destroys the guide RNA so the match is lost"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "cas9-pam-optional",
+        null,
+        null
+      ],
+      "explanation": "Cas9 needs the PAM before it can unwind the DNA and cut. A guide match alone is not enough, and a cut that did happen would not come back exactly.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.crispr-repair-result",
+      "concept": "crispr-cas9",
+      "element": "cut-and-repair",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "After Cas9 makes a double-strand break in a gene, what does the cell's usual end-joining repair often do?",
+      "choices": [
+        "Adds or removes a few bases, which can stop the gene from working",
+        "Restores the exact original sequence, leaving the gene unchanged",
+        "Copies a new gene in from a template somewhere in the cell",
+        "Cuts the broken ends back to the PAM site, leaving the gene intact"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "cas9-repair-restores",
+        null,
+        null
+      ],
+      "explanation": "End joining glues the two ends back together without a template, and it often makes small errors. A gene that loses or gains a few bases can stop working, which is how knockouts are made. Copying in a new gene needs a template, so it is a different repair route.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.crispr-cut-site",
+      "concept": "crispr-cas9",
+      "element": "cut-and-repair",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Where does Cas9 cut the DNA, measured against the PAM?",
+      "choices": [
+        "About three bases before the PAM, cutting both strands",
+        "Right at the PAM, cutting one strand and leaving the other",
+        "Thirty bases after the PAM, at the far end of the target",
+        "At a random point within the guide RNA sequence itself"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The Cas9 cut is blunt and falls about three bases upstream of the PAM, through both strands. A cut inside the PAM or far away would miss the target, and the guide RNA itself is not cut.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.crispr-retarget",
+      "concept": "crispr-cas9",
+      "element": "guide-rna",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Researchers want Cas9 to cut a new gene. What do they change, and what stays the same?",
+      "choices": [
+        "They change the guide RNA sequence and keep the same Cas9 protein",
+        "They change the Cas9 protein's shape for each gene, and keep the guide",
+        "They keep everything and add a new Cas9 that reads the gene's code unaided",
+        "They change the PAM in the cell, which makes Cas9 bind any gene"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "cas9-finds-alone",
+        null
+      ],
+      "explanation": "The guide RNA's base pairs select the target, so a new guide sends the same Cas9 to a new gene. Cas9 does not recognise each gene's shape or read its code unaided. The PAM is part of the target DNA, so changing it in the cell is not how targets are set.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.crispr-error-find",
+      "concept": "crispr-cas9",
+      "element": "cut-and-repair",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: 'Once Cas9 cuts, the cell repairs the cut perfectly, so the gene is unchanged.' What is wrong with that?",
+      "choices": [
+        "End joining is error-prone and often adds or deletes a few bases",
+        "Nothing is wrong: a repaired cut restores the sequence it had before",
+        "The cell cannot repair Cas9 cuts, so the gene is lost for good",
+        "Cas9 repairs the cut itself, using its guide RNA as the template"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "cas9-repair-restores",
+        null,
+        null
+      ],
+      "explanation": "End joining rejoins broken ends without a template, so errors creep in and the sequence often changes. A precise change needs a repair template, supplied in the lab. Cas9 does not repair the break, and the guide RNA is not a template for it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.crispr-bacterial-role",
+      "concept": "crispr-cas9",
+      "element": "bacterial-origin",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "CRISPR systems were first found as a defence in bacteria. What did they do for the bacterium?",
+      "choices": [
+        "Recognised and cut invaders' DNA, using a record of past infections",
+        "Cut the bacterium's own chromosome to help it divide faster in the cell",
+        "Made a guide RNA that viruses use to copy themselves inside the cell",
+        "Repaired ultraviolet damage to the bacterium's own DNA in the cell"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A bacterium keeps short pieces of past invaders' DNA as a record, and uses matching RNA to find and cut a returning virus. The other choices describe jobs that CRISPR does not do for the bacterium.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.recombinant-dna-technology.crispr-cut-order",
+      "concept": "crispr-cas9",
+      "element": "cut-and-repair",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps of a Cas9 cut in the order they happen.",
+      "steps": [
+        "Cas9 binds the DNA next to a PAM sequence",
+        "The guide RNA base-pairs with the matching strand at the target",
+        "Cas9 cuts both strands about three bases before the PAM",
+        "The cell repairs the break, often adding or removing bases"
+      ],
+      "explanation": "Cas9 must first find the PAM, the guide then pairs with the target, and only then is the cut made. The repair comes last, and it is the step that changes the gene.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: PAM binding and guide pairing could be seen as swappable; I put PAM recognition first."
+      }
+    }
+  ],
+  "artifacts": []
+}

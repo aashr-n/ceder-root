@@ -291,7 +291,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -320,7 +321,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -349,7 +351,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -378,7 +381,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -407,7 +411,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -436,7 +441,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -455,7 +461,7 @@
       ],
       "answer": 1,
       "mistakes": [
-        "one-switch-per-gene",
+        null,
         null,
         "one-switch-per-gene",
         null
@@ -466,7 +472,8 @@
         "solvers": 2,
         "agreed": 2,
         "at": "2026-11-11",
-        "note": "a's note: Correct, but the rationale 'since nothing blocks the promoter' is loose: the repressor blocks RNA polymerase at the operator, and the operator is a site distinct from the promoter. Suggest rewording the rationale."
+        "note": "a's note: Correct, but the rationale 'since nothing blocks the promoter' is loose: the repressor blocks RNA polymerase at the operator, and the operator is a site distinct from the promoter. Suggest rewording the rationale.",
+        "diagnosed": 1
       }
     },
     {
@@ -518,7 +525,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -546,7 +554,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -574,7 +583,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -603,7 +613,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -632,7 +643,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -652,7 +664,7 @@
       "answer": 0,
       "mistakes": [
         null,
-        "tf-is-polymerase",
+        null,
         null,
         null
       ],
@@ -661,7 +673,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -690,7 +703,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -719,7 +733,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -747,7 +762,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -776,7 +792,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -805,7 +822,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -834,7 +852,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -863,7 +882,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -891,7 +911,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -920,7 +941,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -949,7 +971,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -969,7 +992,7 @@
       "answer": 0,
       "mistakes": [
         null,
-        "marks-rewrite-dna",
+        null,
         null,
         null
       ],
@@ -978,7 +1001,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1007,7 +1031,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1036,7 +1061,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1056,7 +1082,7 @@
       "mistakes": [
         null,
         "marks-are-permanent",
-        "marks-rewrite-dna",
+        null,
         null
       ],
       "verification": {
@@ -1064,7 +1090,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1093,7 +1120,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1122,7 +1150,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1151,7 +1180,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1180,7 +1210,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1209,7 +1240,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1227,7 +1259,11 @@
         "The mature mRNA leaves the nucleus"
       ],
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1248,7 +1284,7 @@
       "mistakes": [
         null,
         null,
-        "one-gene-one-protein",
+        null,
         null
       ],
       "verification": {
@@ -1256,7 +1292,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1285,7 +1322,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1314,7 +1352,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1334,7 +1373,7 @@
       "answer": 0,
       "mistakes": [
         null,
-        "splicing-changes-dna",
+        null,
         "one-gene-one-protein",
         null
       ],
@@ -1343,7 +1382,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1372,7 +1412,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1401,7 +1442,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     }
   ],

@@ -303,7 +303,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -332,7 +333,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -353,7 +355,7 @@
         null,
         null,
         null,
-        "ck-arrest-means-death"
+        null
       ],
       "explanation": "At the G2 checkpoint the cell is held until replication is complete and any damage is repaired, so it does not enter mitosis with broken chromosomes. Dying at once treats a pause as death. An arrested cell can usually finish the job and carry on.",
       "verification": {
@@ -361,7 +363,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -382,7 +385,7 @@
         "ck-timer",
         null,
         null,
-        "ck-arrest-means-death"
+        null
       ],
       "explanation": "A checkpoint checks conditions. The G1 checkpoint keeps the cell in G1 until growth signals and nutrients are adequate, rather than running on a fixed timer. A cell that copies DNA without the signal has skipped the check, and a missing signal does not mean the cell is dying.",
       "verification": {
@@ -390,7 +393,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -419,7 +423,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -438,7 +443,7 @@
       "mistakes": [
         null,
         "ck-only-damage",
-        "ck-arrest-means-death",
+        null,
         "ck-timer"
       ],
       "explanation": "Checkpoints respond to conditions: the cell moves on when its DNA is copied and undamaged, when spindle fibres are attached, and so on. A set time would let a cell go on without the check. Agreeing that the timing is set in advance is the most tempting error, because it is what the student already said.",
@@ -447,7 +452,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -486,7 +492,7 @@
       ],
       "answer": 1,
       "mistakes": [
-        "ck-arrest-means-death",
+        null,
         null,
         null,
         "ck-timer"
@@ -497,7 +503,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -515,7 +522,7 @@
       ],
       "answer": 2,
       "mistakes": [
-        "kinase-removes-phosphate",
+        null,
         null,
         null,
         null
@@ -526,7 +533,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -555,7 +563,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -584,7 +593,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -604,7 +614,7 @@
       "mistakes": [
         null,
         "cdk-levels-cycle",
-        "kinase-removes-phosphate",
+        null,
         null
       ],
       "explanation": "CDK levels stay fairly steady. Cyclin levels rise and fall, and a CDK turns on when a cyclin binds it and an activating phosphate is added. Removing phosphate from a CDK is not what switches it on.",
@@ -613,7 +623,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -642,7 +653,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -671,7 +683,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -700,7 +713,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -753,7 +767,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -782,7 +797,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -803,7 +819,7 @@
         null,
         "oncogene-needs-both-copies",
         null,
-        "oncogene-needs-both-copies"
+        null
       ],
       "explanation": "The gain of function is dominant: the altered protein is overactive while the normal copy is still present, so one changed copy can drive growth. Believing that the normal copy covers for it is the two-hit idea, which applies to tumor suppressors instead.",
       "verification": {
@@ -811,7 +827,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -830,7 +847,7 @@
       "answer": 0,
       "mistakes": [
         null,
-        "oncogene-harmful-from-birth",
+        null,
         null,
         null
       ],
@@ -840,7 +857,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -869,7 +887,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -898,7 +917,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -927,7 +947,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -978,7 +999,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -999,7 +1021,7 @@
         "suppressor-overactive",
         null,
         null,
-        "one-hit-enough"
+        null
       ],
       "explanation": "Tumor suppressors usually need both copies inactivated, because one normal copy makes enough protein to keep working. A single lost copy is not enough. Making the gene more active is the oncogene problem, not a tumor suppressor problem.",
       "verification": {
@@ -1007,7 +1029,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1037,7 +1060,8 @@
         "solvers": 2,
         "agreed": 2,
         "at": "2026-11-11",
-        "note": "b's note: 'usually' - haplosufficiency; fine"
+        "note": "b's note: 'usually' - haplosufficiency; fine",
+        "diagnosed": 1
       }
     },
     {
@@ -1067,7 +1091,8 @@
         "solvers": 2,
         "agreed": 2,
         "at": "2026-11-11",
-        "note": "b's note: stem says deletion removes 'the protein' from gene; loosely worded; one cell with one deletion would still have another copy"
+        "note": "b's note: stem says deletion removes 'the protein' from gene; loosely worded; one cell with one deletion would still have another copy",
+        "diagnosed": 1
       }
     },
     {
@@ -1096,7 +1121,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1125,7 +1151,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1154,7 +1181,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1205,7 +1233,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1233,7 +1262,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1262,7 +1292,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1283,7 +1314,7 @@
         null,
         "benign-lumps-spread",
         null,
-        "benign-lumps-spread"
+        null
       ],
       "explanation": "Spread takes cells that invade surrounding tissue and survive in blood or lymph. A benign tumor usually lacks those cells, so growth alone does not spread it. Believing that size or growth causes spread is the tempting mistake.",
       "verification": {
@@ -1291,7 +1322,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1319,7 +1351,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1348,7 +1381,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "diagnosed": 1
       }
     },
     {
@@ -1377,7 +1411,8 @@
         "solvers": 2,
         "agreed": 2,
         "at": "2026-11-11",
-        "note": "a's note: 'May be' is the only option the evidence supports; a new primary cancer is also possible."
+        "note": "a's note: 'May be' is the only option the evidence supports; a new primary cancer is also possible.",
+        "diagnosed": 1
       }
     },
     {
