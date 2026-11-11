@@ -1,0 +1,33 @@
+{
+  "id": "hefferon-linear-algebra",
+  "name": "Linear Algebra (Jim Hefferon)",
+  "url": "https://hefferon.net/linearalgebra/",
+  "goodFor": "An undergraduate linear algebra textbook with worked answers to its exercises.",
+  "license": "CC-BY-SA-3.0-US",
+  "licenseUrl": "https://hefferon.net/source.html",
+  "apps": "show",
+  "bank": "none",
+  "attribution": "\"Jim Hefferon, Linear Algebra\", linked to https://hefferon.net/linearalgebra/, with the section named; \"CC BY-SA 3.0 US\", linked to https://creativecommons.org/licenses/by-sa/3.0/us/; and, when the text shown was shortened or changed, a note that it was.",
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://hefferon.net/source.html",
+        "quote": "In particular, this applies to the textbooks Linear Algebra"
+      },
+      {
+        "url": "https://hefferon.net/source.html",
+        "quote": "Use it under either the GNU Free Documentation License or the Creative Commons Attribution-ShareAlike 3.0 United States License"
+      },
+      {
+        "url": "https://hefferon.net/source.html",
+        "quote": "I give instructors permission to make copies of this material, either electronic or paper, and give or sell those to students."
+      },
+      {
+        "url": "https://hefferon.net/source.html",
+        "quote": "I have tried to use only materials whose license allows me to share them."
+      }
+    ]
+  },
+  "notes": "Checked against the author's License and source page. The book may be used under the GFDL or CC BY-SA 3.0 United States, at the user's choice (not CC BY-SA 2.5 as claimed); Ceder takes CC BY-SA 3.0 US, which allows commercial use, so a paid app may show a passage with the credit in attribution, and what Ceder changes stays under that licence. The author says he tried to use only shareable material but may have slipped, so a figure or quotation from elsewhere in the book needs its own check. The book is a PDF; its LaTeX source is on gitlab.com, which wasn't read. The bank's agents don't read it and nothing from it goes into the bank."
+}

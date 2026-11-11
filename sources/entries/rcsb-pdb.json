@@ -1,0 +1,113 @@
+{
+  "id": "rcsb-pdb",
+  "name": "RCSB Protein Data Bank",
+  "url": "https://www.rcsb.org",
+  "goodFor": "3D structures of proteins and nucleic acids, and Molecule of the Month illustrations.",
+  "license": "per-item",
+  "licenseUrl": "https://www.rcsb.org/pages/policies",
+  "apps": "link",
+  "bank": "none",
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://www.rcsb.org/pages/policies",
+        "quote": "The wwPDB policy states that data files contained in the PDB archive are available under the CC0 1.0 Universal (CC0 1.0) Public Domain Dedication"
+      },
+      {
+        "url": "https://www.rcsb.org/pages/policies",
+        "quote": "Molecule of the Month illustrations are available under a CC-BY-4.0 license"
+      },
+      {
+        "url": "https://www.rcsb.org/pages/policies",
+        "quote": "user guide documentation, statistics graphs, other screenshots) is available under a CC-BY-4.0 license"
+      },
+      {
+        "url": "https://www.rcsb.org/pages/usage-policy",
+        "quote": "All other articles and text on the RCSB PDB site are copyrighted."
+      }
+    ]
+  },
+  "parts": [
+    {
+      "id": "archive",
+      "name": "PDB archive data and Structure Summary images",
+      "url": "https://www.rcsb.org/pages/usage-policy",
+      "license": "CC0-1.0",
+      "apps": "show",
+      "attribution": "Not required by CC0. RCSB asks for \"Image from the RCSB PDB (RCSB.org) of PDB ID <id>\" and the structure's publication for an image, and the PDB ID for data.",
+      "checked": {
+        "date": "2026-11-11",
+        "evidence": [
+          {
+            "url": "https://www.rcsb.org/pages/usage-policy",
+            "quote": "The wwPDB policy states that data files contained in the PDB archive are available under the CC0 1.0 Universal (CC0 1.0) Public Domain Dedication"
+          },
+          {
+            "url": "https://www.rcsb.org/pages/usage-policy",
+            "quote": "Molecular images from RCSB PDB Structure Summary pages are available under the same conditions."
+          },
+          {
+            "url": "https://www.rcsb.org/pages/policies",
+            "quote": "Data provided by RCSB PDB programmatic APIs are available under the same license unless they originate from an integrated external resource"
+          }
+        ]
+      },
+      "notes": "CC0, so commercial use needs no permission or credit, though RCSB encourages crediting the structure's authors and gives a credit format for images. Data the APIs pass on from an integrated outside resource keeps that resource's licence."
+    },
+    {
+      "id": "molecule-of-the-month-illustrations",
+      "name": "Molecule of the Month illustrations",
+      "license": "CC-BY-4.0",
+      "apps": "show",
+      "attribution": "\"Image from the RCSB PDB (RCSB.org) <month year> Molecule of the Month feature <title> by <author> (doi: 10.2210/rcsb_pdb/mom_<YYYY>_<M>)\"; \"CC BY 4.0\", linked to https://creativecommons.org/licenses/by/4.0/; and a note when the image was changed.",
+      "checked": {
+        "date": "2026-11-11",
+        "evidence": [
+          {
+            "url": "https://www.rcsb.org/pages/policies",
+            "quote": "Molecule of the Month illustrations are available under a CC-BY-4.0 license"
+          },
+          {
+            "url": "https://www.rcsb.org/pages/policies",
+            "quote": "Attribution should be given to the article author (listed at the bottom of the article), RCSB PDB, and the DOI of the article in which it appeared."
+          },
+          {
+            "url": "https://www.rcsb.org/pages/usage-policy",
+            "quote": "Attribution should be given to David S. Goodsell and the RCSB PDB."
+          }
+        ]
+      },
+      "notes": "CC BY 4.0. The two policy pages name different people to credit (the article's author; David S. Goodsell): credit the author named at the bottom of the article, which covers both. The illustrations sit on pdb101.rcsb.org, which wasn't read here, so the author of a given illustration has to be read from its article when it's pinned."
+    },
+    {
+      "id": "text",
+      "name": "Molecule of the Month articles and other site text",
+      "license": "unknown",
+      "apps": "link",
+      "checked": {
+        "date": "2026-11-11",
+        "evidence": [
+          {
+            "url": "https://www.rcsb.org/pages/policies",
+            "quote": "Molecule of the Month articles are copyrighted by RCSB PDB and the article authors."
+          },
+          {
+            "url": "https://www.rcsb.org/pages/policies",
+            "quote": "Text can be reprinted with permission, with attribution, and without the right to manipulate or change content."
+          },
+          {
+            "url": "https://www.rcsb.org/pages/policies",
+            "quote": "user guide documentation, statistics graphs, other screenshots) is available under a CC-BY-4.0 license"
+          },
+          {
+            "url": "https://www.rcsb.org/pages/usage-policy",
+            "quote": "All other articles and text on the RCSB PDB site are copyrighted."
+          }
+        ]
+      },
+      "notes": "Molecule of the Month and Global Health article text needs RCSB's written permission and may not be changed. For other site text the two policy pages disagree: one says CC BY 4.0, the full usage policy says copyrighted, permission needed. So an app only links to it."
+    }
+  ],
+  "notes": "Checked against RCSB's Policies page and its full Usage Policies page, which disagree on part of the site. The archive data, and the molecular images on Structure Summary pages, are CC0. Molecule of the Month illustrations are CC BY 4.0. Molecule of the Month article text is copyrighted and needs permission, and other site text is CC BY 4.0 on one page and copyrighted on the other, so it is treated as unknown. The claim that all other site content is CC BY 4.0 holds on only one of the two pages. PDB-101 content is said to be CC BY 4.0, but pdb101.rcsb.org itself wasn't read. RCSB's software is MIT or Apache 2.0 (not checked per repository). The library's pin command doesn't fetch from RCSB, so a library item is written by hand. The bank's agents don't read it and nothing from it goes into the bank."
+}

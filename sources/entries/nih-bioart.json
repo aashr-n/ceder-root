@@ -1,0 +1,40 @@
+{
+  "id": "nih-bioart",
+  "name": "NIH BioArt Source",
+  "url": "https://bioart.niaid.nih.gov",
+  "goodFor": "Scientific and medical illustrations and icons: cells, viruses, bacteria, anatomy and lab equipment.",
+  "license": "per-item",
+  "licenseUrl": "https://bioart.niaid.nih.gov/terms",
+  "apps": "link",
+  "bank": "none",
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://bioart.niaid.nih.gov/terms",
+        "quote": "The illustrations and content provided on the NIH BioArt Source are free for any use, including educational, research, informational, and commercial purposes."
+      },
+      {
+        "url": "https://bioart.niaid.nih.gov/terms",
+        "quote": "Please review the license associated with the specific entry for any attribution requirements."
+      },
+      {
+        "url": "https://bioart.niaid.nih.gov/terms",
+        "quote": "While the content is free for any use, NIH BioArt Source expects users to respect the integrity and intended use of the illustrations."
+      },
+      {
+        "url": "https://bioart.niaid.nih.gov/terms",
+        "quote": "Credit directly below image on web, presentation, or print: \"Illustration from NIAID NIH BioArt Source (bioart.niaid.nih.gov/bioart/###)\""
+      },
+      {
+        "url": "https://bioart.niaid.nih.gov/faqs",
+        "quote": "If the entry is licensed as \"Public Domain\" citation is appreciated but not required"
+      },
+      {
+        "url": "https://bioart.niaid.nih.gov/bioart/100",
+        "quote": "Licensing: Public Domain"
+      }
+    ]
+  },
+  "notes": "Checked against BioArt's Terms and Conditions, its FAQs and a sample of entry pages. The terms allow any use, commercial included, but say each entry carries its own licence, so the licence is per item. Each entry page shows it as \"Licensing: ...\" with a creator and a credit line (\"Courtesy of NIAID\" on those read). Every entry sampled that answered (13 between ids 50 and 950) said Public Domain; entries from about id 1000 up, the terms' own example 2182 included, answered HTTP 500 on 2026-11-11, so the later part of the collection, and whether any entry carries a CC BY or narrower licence, wasn't seen. The site asks for the credit \"Illustration from NIAID NIH BioArt Source (bioart.niaid.nih.gov/bioart/<id>)\" below an image even where it isn't required, and asks users to respect the illustrations' \"integrity and intended use\", which isn't defined. NIH and NIAID names and logos weren't checked here (see us-government). An app links to an entry until that entry's own page is read and the library can record it; today the library stores pictures from Wikimedia Commons only. The bank's agents don't read it and nothing from it goes into the bank."
+}

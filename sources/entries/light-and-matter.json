@@ -1,0 +1,23 @@
+{
+  "id": "light-and-matter",
+  "name": "Light and Matter (Benjamin Crowell)",
+  "url": "https://www.lightandmatter.com/lm/",
+  "goodFor": "Introductory physics textbooks, algebra-based with optional calculus.",
+  "license": "per-item",
+  "apps": "link",
+  "bank": "none",
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://www.lightandmatter.com/lm/",
+        "quote": "For licensing information, please see the copyright page of the pdf version of the book, and the photo credits section in the back of the book."
+      },
+      {
+        "url": "https://www.lightandmatter.com/lm/",
+        "quote": "Web site and books (c) 1998-2019 Benjamin Crowell, CC-BY-SA license."
+      }
+    ]
+  },
+  "notes": "Partly checked. The site's footer says the site and books are CC BY-SA, and links CC BY-SA 3.0 US, but the book's own page sends readers to the PDF's copyright page and photo credits for the licence, which says the licence isn't the same for every part (photos have their own credits). The PDFs are on archive.org, which the checking machine couldn't reach, so neither was read. What's still missing: the PDF's copyright page (the licence and its version for the text) and the photo credits. Link only until then. The bank's agents don't read it and nothing from it goes into the bank."
+}

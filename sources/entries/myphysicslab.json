@@ -1,0 +1,68 @@
+{
+  "id": "myphysicslab",
+  "name": "myPhysicsLab",
+  "url": "https://www.myphysicslab.com",
+  "goodFor": "Interactive physics simulations: pendulums, springs, collisions and rigid bodies.",
+  "license": "per-item",
+  "apps": "link",
+  "bank": "none",
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://www.myphysicslab.com/",
+        "quote": "myPhysicsLab is provided as open source software under the Apache 2.0 License"
+      },
+      {
+        "url": "https://www.myphysicslab.com/",
+        "quote": "© Erik Neumann , 2004-2021"
+      }
+    ]
+  },
+  "parts": [
+    {
+      "id": "code",
+      "name": "Simulation code",
+      "url": "https://github.com/myphysicslab/myphysicslab",
+      "license": "Apache-2.0",
+      "apps": "show",
+      "attribution": "\"myPhysicsLab by Erik Neumann\", linked to https://www.myphysicslab.com; a copy of the Apache License 2.0 shipped with the code; the code's copyright notices kept; and a notice in each file Ceder changed that it was changed.",
+      "checked": {
+        "date": "2026-11-11",
+        "evidence": [
+          {
+            "url": "https://www.myphysicslab.com/",
+            "quote": "myPhysicsLab is provided as open source software under the Apache 2.0 License"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/myphysicslab/myphysicslab/master/LICENSE",
+            "quote": "Apache License Version 2.0, January 2004"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/myphysicslab/myphysicslab/master/README.md",
+            "quote": "See the accompanying file named `LICENSE`."
+          }
+        ]
+      },
+      "notes": "Apache 2.0, which allows commercial use, so an app may run a simulation built from this code, with the notices in attribution. It covers the repository's code; third-party code inside the repository wasn't checked, and the repository has no NOTICE file on master."
+    },
+    {
+      "id": "site-text",
+      "name": "Explanations and pages on the website",
+      "url": "https://www.myphysicslab.com",
+      "license": "unknown",
+      "apps": "link",
+      "checked": {
+        "date": "2026-11-11",
+        "evidence": [
+          {
+            "url": "https://www.myphysicslab.com/",
+            "quote": "© Erik Neumann , 2004-2021"
+          }
+        ]
+      },
+      "notes": "The site states the software's licence only. Its explanations, equations and pictures carry a plain copyright line and no licence, so an app only links to them."
+    }
+  ],
+  "notes": "Checked against the site's home page and the repository's LICENSE and README on GitHub (master; there is no main). The simulation code is Apache 2.0 (see parts); the site's own explanatory text isn't licensed, so the claim that the site text is unclear stands. An app may run the code with its notices, and links to the explanations. The bank's agents don't read it and nothing from it goes into the bank."
+}

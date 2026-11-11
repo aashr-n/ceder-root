@@ -1,0 +1,39 @@
+{
+  "id": "uci-openchem",
+  "name": "UCI OpenChem",
+  "url": "https://open.uci.edu/collections/open_chemistry.html",
+  "goodFor": "Recorded lectures covering an undergraduate chemistry degree.",
+  "license": "per-item",
+  "apps": "link",
+  "bank": "none",
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://open.uci.edu/collections/open_chemistry.html",
+        "quote": "by licensing the content under Creative Commons (CC-BY-SA 3.0, attribution required, share-alike)"
+      },
+      {
+        "url": "https://open.uci.edu/collections/open_chemistry.html",
+        "quote": "hosting the videos on YouTube under CC licensing"
+      },
+      {
+        "url": "https://open.uci.edu/courses/chem_1a_general_chemistry.html",
+        "quote": "Chem 1A by Amanda Brindley, Ph.D. is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License"
+      },
+      {
+        "url": "https://open.uci.edu/courses/chem_51a_organic_chemistry.html",
+        "quote": "is licensed under a Creative Commons Attribution-ShareAlike 3.0 United States License"
+      },
+      {
+        "url": "https://open.uci.edu/courses/chem_131a_quantum_principles.html",
+        "quote": "is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License"
+      },
+      {
+        "url": "https://open.uci.edu/courses/chem_1a_general_chemistry.html",
+        "quote": "Unless otherwise stated, they are not licensed under a Creative Commons license."
+      }
+    ]
+  },
+  "notes": "Checked against the Open Chemistry collection page and five course pages. The collection page says CC BY-SA 3.0, but course pages state different licences: Chem 1A CC BY-SA 3.0 Unported, Chem 51A and Chem 203 CC BY-SA 3.0 US, Chem 131A CC BY-SA 4.0, and Chem 1P states none. All the ones stated allow commercial use, but the licence has to be read course by course, and lecture by lecture where a video says otherwise. The site's Terms of Use section read \"In construction...\" on 2026-11-11, so no terms were found. The videos are on YouTube, which wasn't read; each video's own licence there wasn't checked. Recommended textbooks listed on course pages aren't openly licensed. Link only until a course's and a video's licence are read. The bank's agents don't read it and nothing from it goes into the bank."
+}

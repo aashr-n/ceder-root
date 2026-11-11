@@ -1,11 +1,36 @@
 {
   "id": "webwork-opl",
   "name": "WeBWorK Open Problem Library",
-  "url": "https://webwork.maa.org",
+  "url": "https://wiki.openwebwork.org/wiki/Open_Problem_Library",
   "goodFor": "A large library of homework problems in maths and science.",
-  "license": "unknown",
+  "license": "CC-BY-NC-SA-3.0",
+  "licenseUrl": "https://wiki.openwebwork.org/wiki/Open_Problem_Library",
   "apps": "link",
   "bank": "none",
-  "checked": null,
-  "notes": "Unverified: the licence wasn't found. On 2026-11-11 webwork.maa.org redirected its Open Problem Library page to wiki.openwebwork.org, which the checking machine couldn't reach; the library's code repository, on another host, wasn't read either. What's still missing: the Open Problem Library's own statement of its licence, and whether problems carry their own. The earlier figure of about 35,000 problems came from a search result and was dropped. The bank's agents don't read it and nothing from it goes into the bank."
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://wiki.openwebwork.org/wiki/Open_Problem_Library",
+        "quote": "Unless otherwise indicated, all contributions to the WeBWorK Open Problem Library are licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License."
+      },
+      {
+        "url": "https://wiki.openwebwork.org/wiki/Open_Problem_Library",
+        "quote": "Unless otherwise indicated, copyrights on the content contributed to the WeBWorK Open Problem Library are held by the author(s) of that content."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openwebwork/webwork-open-problem-library/main/OPL_LICENSE",
+        "quote": "Unless otherwise indicated, all contributions to the WeBWorK Open Problem Library are licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openwebwork/webwork-open-problem-library/main/OPL_LICENSE",
+        "quote": "Contributors may use alternative open source licenses as defined by the Open Source Initiative"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openwebwork/webwork-open-problem-library/main/OPL_LICENSE",
+        "quote": "contributors should include the alternative license statement in the top-level directory containing their contribution"
+      }
+    ]
+  },
+  "notes": "Checked against the Open Problem Library's wiki page and the OPL_LICENSE file in its repository (main branch). Unless a problem says otherwise, it is CC BY-NC-SA 3.0 Unported, with copyright held by its authors. NonCommercial, so a paid app only links to it. Some contributions carry another open-source licence, stated in their top-level folder or below a problem's END_DOCUMENT() line; such a problem would need its own check before anything more than a link. The earlier figure of about 35,000 problems came from a search result and was dropped. The bank's agents don't read it and nothing from it goes into the bank."
 }

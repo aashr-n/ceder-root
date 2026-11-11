@@ -1,0 +1,58 @@
+{
+  "id": "servier-medical-art",
+  "name": "Servier Medical Art",
+  "url": "https://smart.servier.com",
+  "goodFor": "Medical drawings of anatomy, cells, organs, diseases and treatments.",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://smart.servier.com/terms-of-use/",
+  "apps": "show",
+  "bank": "none",
+  "attribution": "\"Image provided by Servier Medical Art (https://smart.servier.com/), licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).\", or \"Image adapted from ...\" when the image was changed, shown with the image or in credits the student can reach from it.",
+  "access": "PNG or PPTX files downloaded by hand from smart.servier.com; its terms forbid bots and scrapers.",
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://smart.servier.com/terms-of-use/",
+        "quote": "The medical images provided in the Servier Medical Art library are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0)"
+      },
+      {
+        "url": "https://smart.servier.com/terms-of-use/",
+        "quote": "Share — Copy and redistribute the images in any medium or format, including for commercial purposes."
+      },
+      {
+        "url": "https://smart.servier.com/terms-of-use/",
+        "quote": "This Site Content is protected under applicable copyright and intellectual property laws and is not covered under the CC BY 4.0 license."
+      },
+      {
+        "url": "https://smart.servier.com/terms-of-use/",
+        "quote": "but not in a way that suggests Servier endorses you or your use."
+      },
+      {
+        "url": "https://smart.servier.com/terms-of-use/",
+        "quote": "The trademarks of SERVIER and its partners, as well as any logos displayed on the Site, are registered trademarks."
+      },
+      {
+        "url": "https://smart.servier.com/terms-of-use/",
+        "quote": "Not use automated methods (bots, scrapers, etc.) to access or download Site Content;"
+      },
+      {
+        "url": "https://smart.servier.com/using-smart-images-what-you-can-do/",
+        "quote": "Can I use SMART images in a paid course or subscription platform? Yes, that’s fine—as long as you provide the correct attribution."
+      },
+      {
+        "url": "https://smart.servier.com/using-smart-images-what-you-can-do/",
+        "quote": "Can I include SMART images in a mobile app or e-learning course? Yes, go ahead."
+      },
+      {
+        "url": "https://smart.servier.com/using-smart-images-what-you-can-do/",
+        "quote": "Can I use SMART images? Yes, as long as it’s not marketed as a standalone image library or collection."
+      },
+      {
+        "url": "https://smart.servier.com/using-smart-images-what-you-can-do/",
+        "quote": "If you’ve modified the image (changed colors, added text, etc.), use this version:"
+      }
+    ]
+  },
+  "notes": "Checked against Servier Medical Art's Terms of use and its pages on what users may do and how to credit. The images are CC BY 4.0, and Servier's own FAQ says they may be used in a paid course or subscription platform and in a mobile app, so a paid app may show one with the credit in attribution. Conditions: the app mustn't be marketed as an image library or collection, mustn't suggest Servier (a pharmaceutical company, Les Laboratoires Servier) endorses Ceder, and mustn't use Servier's names or logos. Only the images are CC BY: the site's own text, layout and databases aren't. The terms forbid bots and scrapers on the site's content, so images are downloaded by hand, not by a tool. The site presents the images as illustrations; none was checked for photographs of people, which would need consent. The library's pin command doesn't fetch from Servier, so a library item for one of its images is written by hand. The bank's agents don't read it and nothing from it goes into the bank."
+}

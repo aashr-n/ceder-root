@@ -23,6 +23,35 @@ It answers two separate questions about a source.
 
 The catalogue records; it doesn't permit. What an agent may read while it works on the bank is set by `pipeline/prompts/sources.md` and by what `tools/ref.mjs` reaches, and an entry here can't widen that: the validator refuses a `bank` value other than `none` for a source `tools/ref.mjs` doesn't reach. `plan/sources.jsonl` is a different thing: the log of every page an agent did read.
 
+## What's in it
+
+| Entry | Licence | `apps` |
+|---|---|---|
+| `wikipedia`, `wikibooks`, `wiktionary` | CC BY-SA 4.0 text | `show` |
+| `wikiversity` | CC BY-SA 4.0 text; pictures per file | `show` |
+| `wikidata` | CC0 | `show` |
+| `wikimedia-commons` | Per file | `link` |
+| `servier-medical-art` | CC BY 4.0 | `show` |
+| `reactome` | CC BY 4.0 illustrations and icons; CC0 data | `show` |
+| `lsdb-archive` | CC BY 4.0 (BodyParts3D, Togo Picture Gallery) | `show` |
+| `gene-ontology` | CC BY 4.0 data | `show` |
+| `chebi` | CC BY 4.0 | `show` |
+| `hefferon-linear-algebra` | CC BY-SA 3.0 US (or GFDL) | `show` |
+| `lebl-diffyqs` | CC BY-SA 4.0 (or CC BY-NC-SA 4.0) | `show` |
+| `opendsa` | MIT | `show` |
+| `rcsb-pdb` | Per part: CC0 archive data and Structure Summary images, CC BY 4.0 Molecule of the Month illustrations (both `show`), other text unknown | `link` |
+| `levin-discrete-math` | Per edition: 3rd CC BY-SA 4.0 (`show`), 4th CC BY-NC-SA 4.0 | `link` |
+| `myphysicslab` | Per part: Apache 2.0 code (`show`), site text unknown | `link` |
+| `openintro-statistics` | CC BY-SA 3.0, but terms the owner has to weigh | `link` |
+| `nih-bioart`, `nih-3d`, `uci-openchem`, `us-government`, `libretexts` | Per item | `link` |
+| `light-and-matter` | Per item, licence pages not read | `link` |
+| `khan-academy` | CC BY-NC-SA, version unsettled | `link` |
+| `mit-opencourseware`, `webwork-opl` | NonCommercial | `link` |
+| `uniprot` | Not checked | `link` |
+| `own-course-files` | A student's own | `private` |
+
+`show` on an entry with parts applies to the parts marked so. Every entry's `bank` is `none` except Wikipedia and Wikibooks (`read`) and Wikidata (`copy`). `node tools/library.mjs pin` fetches from Wikipedia and Wikimedia Commons only, so a piece from another `show` source is written by hand, and `validate` checks it against the entry.
+
 ## An entry
 
 One file per source, `entries/<id>.json`:

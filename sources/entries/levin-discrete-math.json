@@ -1,0 +1,76 @@
+{
+  "id": "levin-discrete-math",
+  "name": "Discrete Mathematics: An Open Introduction (Oscar Levin)",
+  "url": "https://discrete.openmathbooks.org/dmoi4.html",
+  "goodFor": "An introductory discrete mathematics textbook: logic, proofs, graph theory, counting and sequences.",
+  "license": "per-item",
+  "apps": "link",
+  "bank": "none",
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://discrete.openmathbooks.org/dmoi4.html",
+        "quote": "the book is still released under a Creative Commons License (but note the new Non-Commercial addition to the license)"
+      },
+      {
+        "url": "https://discrete.openmathbooks.org/dmoi4.html",
+        "quote": "The 3rd edition remains available."
+      }
+    ]
+  },
+  "parts": [
+    {
+      "id": "third-edition",
+      "name": "3rd edition",
+      "url": "https://discrete.openmathbooks.org/dmoi3.html",
+      "license": "CC-BY-SA-4.0",
+      "apps": "show",
+      "attribution": "\"Oscar Levin, Discrete Mathematics: An Open Introduction, 3rd edition\", with the section's title linked to its page under https://discrete.openmathbooks.org/dmoi3/; \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when the text shown was shortened or changed, a note that it was.",
+      "checked": {
+        "date": "2026-11-11",
+        "evidence": [
+          {
+            "url": "https://discrete.openmathbooks.org/dmoi3.html",
+            "quote": "Discrete Mathematics: An Open Introduction by Oscar Levin is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License"
+          },
+          {
+            "url": "https://discrete.openmathbooks.org/dmoi3.html",
+            "quote": "You are free to download, use, print, and even sell this work as you wish to."
+          },
+          {
+            "url": "https://discrete.openmathbooks.org/dmoi3.html",
+            "quote": "as long as you attribute the parts of the text you use to the author."
+          },
+          {
+            "url": "https://discrete.openmathbooks.org/dmoi3/front-colophon.html",
+            "quote": "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License."
+          }
+        ]
+      },
+      "notes": "CC BY-SA 4.0, and the author says it may even be sold, so a paid app may show a passage with the credit in attribution; what Ceder changes stays CC BY-SA 4.0. Figures weren't checked one by one."
+    },
+    {
+      "id": "fourth-edition",
+      "name": "4th edition",
+      "url": "https://discrete.openmathbooks.org/dmoi4.html",
+      "license": "CC-BY-NC-SA-4.0",
+      "apps": "link",
+      "checked": {
+        "date": "2026-11-11",
+        "evidence": [
+          {
+            "url": "https://discrete.openmathbooks.org/dmoi4/front-colophon.html",
+            "quote": "This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
+          },
+          {
+            "url": "https://discrete.openmathbooks.org/dmoi4.html",
+            "quote": "the book is still released under a Creative Commons License (but note the new Non-Commercial addition to the license)"
+          }
+        ]
+      },
+      "notes": "NonCommercial, so an app only links to it."
+    }
+  ],
+  "notes": "Checked against the book's 4th and 3rd edition pages and colophons. The current 4th edition is CC BY-NC-SA 4.0, so the claim that the book is CC BY-SA 4.0 holds only for the 3rd edition, which is still online. An app may show passages from the 3rd edition with credit, and only links to the 4th. discrete.openmathbooks.org/ itself redirects to a plain-http address, so link to the https edition pages directly. The bank's agents don't read it and nothing from it goes into the bank."
+}
