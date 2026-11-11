@@ -43,7 +43,7 @@ bank/
   "subject": "biology",
   "title": "DNA replication",
   "summary": "How a cell copies its DNA before it divides.",
-  "license": "CC-BY-4.0",
+  "license": "CC0-1.0",
   "concepts": [],
   "items": [],
   "artifacts": []
@@ -51,6 +51,8 @@ bank/
 ```
 
 A pack covers one topic: 4 to 12 concepts, at least 4 verified items per concept.
+
+`license` is always `CC0-1.0`. Everything in the bank is released under CC0 1.0, so a pack can't carry another licence.
 
 ### Concepts
 

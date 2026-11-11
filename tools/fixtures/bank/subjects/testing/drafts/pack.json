@@ -4,7 +4,7 @@
   "subject": "testing",
   "title": "Tissues",
   "summary": "A fixture pack with nothing verified, which the build leaves out.",
-  "license": "CC-BY-4.0",
+  "license": "CC0-1.0",
   "concepts": [
     {
       "id": "tissue",

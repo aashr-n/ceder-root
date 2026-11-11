@@ -4,7 +4,7 @@
   "subject": "biology",
   "title": "Cell division",
   "summary": "How cells divide: chromosomes, the cell cycle and its controls, mitosis, and meiosis with the variation it creates.",
-  "license": "CC-BY-4.0",
+  "license": "CC0-1.0",
   "concepts": [
     {
       "id": "chromosome",

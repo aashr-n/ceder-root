@@ -4,7 +4,7 @@
   "subject": "biology",
   "title": "DNA replication",
   "summary": "How a cell copies its DNA: origins and forks, the enzymes at the fork, and the leading and lagging strands.",
-  "license": "CC-BY-4.0",
+  "license": "CC0-1.0",
   "concepts": [
     {
       "id": "dna-replication",

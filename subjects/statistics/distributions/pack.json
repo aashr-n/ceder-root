@@ -4,7 +4,7 @@
   "subject": "statistics",
   "title": "Random variables and distributions",
   "summary": "Random variables, expected value and spread, the binomial and normal distributions, z-scores, and how sample means behave.",
-  "license": "CC-BY-4.0",
+  "license": "CC0-1.0",
   "concepts": [
     {
       "id": "random-variable",

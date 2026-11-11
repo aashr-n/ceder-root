@@ -29,6 +29,12 @@ test("loadBank limits itself to one pack's folder", () => {
   assert.equal(bank.subjects.length, 1);
 });
 
+test("a pack under any licence but CC0 is an error", () => {
+  const root = fixtureRoot();
+  editPack(root, (data) => { data.license = "CC-BY-4.0"; });
+  hasError(check(root), "license");
+});
+
 test("a prerequisite cycle is an error", () => {
   const root = fixtureRoot();
   editPack(root, (data) => { data.concepts[0].requires = ["organelle"]; });

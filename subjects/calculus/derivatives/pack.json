@@ -4,7 +4,7 @@
   "subject": "calculus",
   "title": "Derivatives",
   "summary": "The derivative as a rate of change and a slope, its limit definition, the rules for finding it, and reading f′ from a graph.",
-  "license": "CC-BY-4.0",
+  "license": "CC0-1.0",
   "concepts": [
     {
       "id": "derivative",

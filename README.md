@@ -61,4 +61,6 @@ The bank is meant to move to a repository of its own, so it can grow on its own 
 
 ## Licence
 
-Each pack names its licence in `license`. CC BY 4.0 is proposed for everything in the bank, so that the questions and pictures can be shared and reused with credit, but the owner hasn't decided yet. Treat the bank as not yet licensed for use outside Ceder until this section says otherwise.
+Everything in the bank is released under CC0 1.0 (`LICENSE`): the questions, answers, explanations, pictures, 3D models, tools and prompts. Use it for anything, including training models, without asking and without giving credit. Each pack says so in its `license` field.
+
+The one exception is `tools/fonts/`, which holds DejaVu Sans under its own licence (`tools/fonts/LICENSE.txt`).

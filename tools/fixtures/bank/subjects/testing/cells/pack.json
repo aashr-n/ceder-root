@@ -4,7 +4,7 @@
   "subject": "testing",
   "title": "Cells",
   "summary": "A fixture pack with one item of every kind, verified and not.",
-  "license": "CC-BY-4.0",
+  "license": "CC0-1.0",
   "concepts": [
     {
       "id": "cell",

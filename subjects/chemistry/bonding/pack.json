@@ -4,7 +4,7 @@
   "subject": "chemistry",
   "title": "Chemical bonding",
   "summary": "How atoms hold together: ionic, covalent and metallic bonds, polarity, Lewis structures, molecular shape and hydrogen bonds.",
-  "license": "CC-BY-4.0",
+  "license": "CC0-1.0",
   "concepts": [
     {
       "id": "valence-electrons",

@@ -4,7 +4,7 @@
   "subject": "statistics",
   "title": "Probability",
   "summary": "The rules of chance: sample spaces, complements, the addition and multiplication rules, conditional probability, independence and Bayes' rule.",
-  "license": "CC-BY-4.0",
+  "license": "CC0-1.0",
   "concepts": [
     {
       "id": "sample-space",

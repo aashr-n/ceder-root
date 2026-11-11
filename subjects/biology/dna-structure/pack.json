@@ -4,7 +4,7 @@
   "subject": "biology",
   "title": "DNA structure",
   "summary": "What DNA is built from: nucleotides, the sugar-phosphate backbone, base pairing and the double helix.",
-  "license": "CC-BY-4.0",
+  "license": "CC0-1.0",
   "concepts": [
     {
       "id": "nucleotide",
