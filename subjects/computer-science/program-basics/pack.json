@@ -381,7 +381,7 @@
         "Only the one written first can hold a value"
       ],
       "answer": 0,
-      "explanation": "A case-sensitive language treats letters of different case as different characters, so total and Total name separate storage. The second choice describes a case-insensitive language, which follows a different rule.",
+      "explanation": "A case-sensitive language treats letters of different case as different characters, so total and Total name separate storage. Treating them as one variable is what a case-insensitive language does, which follows a different rule.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
@@ -907,7 +907,7 @@
         "Values already printed on the screen"
       ],
       "answer": 0,
-      "explanation": "An operator needs operands of a type it can combine. For numbers, + adds them, and decimal values work too. Whole numbers only is too strict, and the last two choices have nothing to do with the operation.",
+      "explanation": "An operator needs operands of a type it can combine. For numbers, + adds them, and decimal values work too. Whole numbers only is too strict, and capital letters or what has been printed have nothing to do with the operation.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",

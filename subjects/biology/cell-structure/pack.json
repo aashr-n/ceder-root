@@ -463,18 +463,18 @@
       "prompt": "Why are viruses usually not counted as living things under cell theory?",
       "choices": [
         "They are not made of cells and cannot reproduce on their own",
-        "They contain no genetic material",
-        "They are too small to see with a light microscope",
-        "They only infect bacteria"
+        "They contain no DNA or RNA, so they carry no genes at all",
+        "They are too small to be resolved by a light microscope at all",
+        "They only infect bacteria and never animal or plant cells"
       ],
       "answer": 0,
-      "explanation": "Viruses are not made of cells and can only be copied inside a host cell. They do carry genetic material, DNA or RNA, so 'no genetic material' is wrong.",
+      "explanation": "Viruses are not made of cells and can only be copied inside a host cell. They do carry genetic material, DNA or RNA, so the choice saying they contain no DNA or RNA is wrong.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-09"
+        "at": "2026-11-11"
       }
     },
     {
@@ -526,10 +526,10 @@
       "difficulty": 2,
       "prompt": "Why do most cells stay small?",
       "choices": [
-        "Small cells hold more DNA per unit volume",
+        "Small cells pack more DNA into each unit of their volume",
         "It has more surface per unit volume for exchange",
-        "Membranes cannot grow past 100 micrometres",
-        "Small cells do not need any ATP"
+        "Membranes cannot stretch beyond roughly 100 micrometres across",
+        "Small cells need no ATP, since diffusion handles all their transport"
       ],
       "answer": 1,
       "explanation": "Everything a cell takes in or gets rid of crosses its surface, and a small cell has more surface for each unit of volume. A large cell could not exchange materials fast enough for its volume.",
@@ -538,7 +538,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-09"
+        "at": "2026-11-11",
+        "note": "b's note: Correct option begins 'It has...' with no antecedent; the stem asks why cells stay small, so the options do not parallel (others begin 'Small cells'). Wording should be 'Small cells have more surface per unit volume'."
       }
     },
     {
@@ -831,9 +832,9 @@
       "prompt": "Why do phospholipids form a bilayer in water?",
       "choices": [
         "Their tails avoid water and hide between two layers of heads",
-        "Their heads avoid water and cluster in the middle",
-        "Membrane proteins pull them into two layers",
-        "Cholesterol links them together in pairs"
+        "Their heads avoid water and hide between two layers of tails",
+        "Membrane proteins grip the heads and pull them into two layers",
+        "Cholesterol bonds each head to a tail, so they pair up in water"
       ],
       "answer": 0,
       "explanation": "The fatty acid tails are hydrophobic, so two layers form with the tails hidden between them and the water-loving heads facing out. The heads are hydrophilic, not hydrophobic.",
@@ -842,7 +843,7 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-09"
+        "at": "2026-11-11"
       }
     },
     {
@@ -1121,19 +1122,19 @@
       "difficulty": 1,
       "prompt": "What is the main job of the nucleus?",
       "choices": [
-        "Releasing energy from glucose for the cell",
-        "Packaging proteins to be sent out of the cell",
+        "Releasing energy from glucose by respiration for the whole cell",
+        "Packaging proteins into vesicles to be sent out of the cell",
         "Holding the DNA and controlling which genes are used",
-        "Breaking down worn-out organelles and waste"
+        "Breaking down worn-out organelles and waste inside the cell"
       ],
       "answer": 2,
-      "explanation": "The nucleus holds the DNA and controls which genes are used. Releasing energy from glucose is the job of mitochondria, a frequent mix-up of 'control centre' with 'power'.",
+      "explanation": "The nucleus holds the DNA and controls which genes are used. Releasing energy from glucose by respiration is the job of mitochondria, a frequent mix-up of 'control centre' with 'power'.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-09"
+        "at": "2026-11-11"
       }
     },
     {
@@ -1494,10 +1495,10 @@
       "difficulty": 3,
       "prompt": "A cell's Golgi apparatus stops working. What happens to a protein it was meant to secrete?",
       "choices": [
-        "It is never made, because translation stops",
-        "It is secreted faster than before",
+        "It is never made, because translation stops at the ribosome",
+        "It is secreted faster than before, with no sorting step needed",
         "It is made but not packaged and sent out properly",
-        "It is broken down inside the nucleus"
+        "It is broken down in the nucleus before it can leave the cell"
       ],
       "answer": 2,
       "explanation": "The protein is still made on the rough ER, but without the Golgi it is not modified, sorted or packaged, so it is not sent out properly. Translation does not depend on the Golgi.",
@@ -1506,7 +1507,7 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-09"
+        "at": "2026-11-11"
       }
     },
     {
@@ -1622,10 +1623,10 @@
       "difficulty": 3,
       "prompt": "Which observation supports the idea that mitochondria were once free-living bacteria?",
       "choices": [
-        "They are found in bacteria as well as eukaryotes",
+        "They are found in bacteria as well as in plant and animal cells",
         "They have their own circular DNA and bacteria-like ribosomes",
-        "They are made in the nucleolus",
-        "They contain chlorophyll"
+        "They are built in the nucleolus from genes copied from the nucleus",
+        "They contain chlorophyll and make their own sugar by photosynthesis"
       ],
       "answer": 1,
       "explanation": "Mitochondria have their own circular DNA and bacteria-like ribosomes, and divide by splitting like bacteria. Bacteria themselves have no mitochondria.",
@@ -1634,7 +1635,7 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-09"
+        "at": "2026-11-11"
       }
     },
     {

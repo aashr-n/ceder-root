@@ -49,7 +49,6 @@
         }
       ],
       "explain": {
-        "artifact": "atom-model",
         "text": "An atom is the smallest unit of an element that keeps that element's properties. It has a dense nucleus of protons, which are positive, and neutrons, which have no charge. Electrons, which are negative, move in shells around the nucleus. The number of protons sets which element the atom is, and the electrons in the outer shell decide how it bonds to other atoms. Carbon, for example, has six protons, and its four outer electrons let it share electrons with other atoms."
       }
     },
@@ -136,7 +135,6 @@
         }
       ],
       "explain": {
-        "artifact": "hydrogen-bond-diagram",
         "text": "A hydrogen bond is a weak attraction, not a bond that shares electrons between two atoms. It forms when a hydrogen that is covalently bonded to a strongly electronegative atom, such as oxygen, carries a partial positive charge and is drawn to a lone pair on another oxygen, nitrogen or fluorine nearby. A single hydrogen bond is much weaker than a covalent bond, but water molecules form many at once. The diagram shows two water molecules with a bridging hydrogen held between them by a dashed attraction."
       }
     },
@@ -291,60 +289,6 @@
       ],
       "answer": 2,
       "explanation": "Mass number is protons plus neutrons: 11 + 12 = 23. The answer 11 counts only the protons, 12 counts only the neutrons, and 1 is their difference.",
-      "verification": {
-        "status": "verified",
-        "method": "blind-solve",
-        "solvers": 2,
-        "agreed": 2,
-        "at": "2026-11-11"
-      }
-    },
-    {
-      "id": "biology.atoms-and-water.find-proton",
-      "concept": "atom",
-      "element": "subatomic-particles",
-      "kind": "label",
-      "difficulty": 1,
-      "prompt": "Tap the particle in the nucleus that carries a positive charge.",
-      "artifact": "atom-model",
-      "target": "proton",
-      "explanation": "Protons carry a positive charge and sit in the nucleus with the neutrons. Electrons are negative and move outside the nucleus.",
-      "verification": {
-        "status": "verified",
-        "method": "blind-solve",
-        "solvers": 2,
-        "agreed": 2,
-        "at": "2026-11-11"
-      }
-    },
-    {
-      "id": "biology.atoms-and-water.find-neutron",
-      "concept": "atom",
-      "element": "subatomic-particles",
-      "kind": "label",
-      "difficulty": 1,
-      "prompt": "Tap the particle in the nucleus that has no electric charge.",
-      "artifact": "atom-model",
-      "target": "neutron",
-      "explanation": "Neutrons have no charge and sit in the nucleus with the protons. The positive particles are the protons.",
-      "verification": {
-        "status": "verified",
-        "method": "blind-solve",
-        "solvers": 2,
-        "agreed": 2,
-        "at": "2026-11-11"
-      }
-    },
-    {
-      "id": "biology.atoms-and-water.find-outer-electron",
-      "concept": "atom",
-      "element": "electron-shells",
-      "kind": "label",
-      "difficulty": 2,
-      "prompt": "Tap the electron that is farthest from the nucleus.",
-      "artifact": "atom-model",
-      "target": "outer-electron",
-      "explanation": "The electron farthest from the nucleus is in the outer shell. The electron in the inner shell is closer, and the nucleus holds the protons and neutrons.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
@@ -652,78 +596,6 @@
         "agreed": 2,
         "at": "2026-11-11",
         "note": "Same atom."
-      }
-    },
-    {
-      "id": "biology.atoms-and-water.find-bridging-hydrogen",
-      "concept": "hydrogen-bond",
-      "element": "donor-and-acceptor",
-      "kind": "label",
-      "difficulty": 2,
-      "prompt": "Tap the hydrogen that sits between two oxygen atoms.",
-      "artifact": "hydrogen-bond-diagram",
-      "target": "bridging-hydrogen",
-      "explanation": "This hydrogen is covalently bonded to the left oxygen and attracted to a lone pair on the right oxygen. That double role makes it a hydrogen bond.",
-      "verification": {
-        "status": "verified",
-        "method": "blind-solve",
-        "solvers": 2,
-        "agreed": 2,
-        "at": "2026-11-11"
-      }
-    },
-    {
-      "id": "biology.atoms-and-water.find-hydrogen-bond",
-      "concept": "hydrogen-bond",
-      "element": "attraction-between-molecules",
-      "kind": "label",
-      "difficulty": 2,
-      "prompt": "Tap the weak attraction that holds the two molecules together.",
-      "artifact": "hydrogen-bond-diagram",
-      "target": "hydrogen-bond",
-      "explanation": "The hydrogen bond is the weak attraction between the bridging hydrogen and the lone pair on the other oxygen. The covalent bonds inside each molecule are much stronger.",
-      "verification": {
-        "status": "verified",
-        "method": "blind-solve",
-        "solvers": 2,
-        "agreed": 2,
-        "at": "2026-11-11"
-      }
-    },
-    {
-      "id": "biology.atoms-and-water.find-donor-oxygen",
-      "concept": "hydrogen-bond",
-      "element": "donor-and-acceptor",
-      "kind": "label",
-      "difficulty": 2,
-      "prompt": "Tap the oxygen that the bridging hydrogen is covalently bonded to.",
-      "artifact": "hydrogen-bond-diagram",
-      "target": "donor-oxygen",
-      "explanation": "This oxygen is the donor. It pulls the O–H electrons toward itself, leaving the hydrogen partly positive so that it can be attracted to another oxygen.",
-      "verification": {
-        "status": "verified",
-        "method": "blind-solve",
-        "solvers": 2,
-        "agreed": 2,
-        "at": "2026-11-11"
-      }
-    },
-    {
-      "id": "biology.atoms-and-water.find-acceptor-oxygen",
-      "concept": "hydrogen-bond",
-      "element": "donor-and-acceptor",
-      "kind": "label",
-      "difficulty": 2,
-      "prompt": "Tap the oxygen whose lone pair attracts the bridging hydrogen.",
-      "artifact": "hydrogen-bond-diagram",
-      "target": "acceptor-oxygen",
-      "explanation": "This oxygen is the acceptor. Its lone pair of electrons is attracted to the slightly positive hydrogen, and that attraction is the hydrogen bond.",
-      "verification": {
-        "status": "verified",
-        "method": "blind-solve",
-        "solvers": 2,
-        "agreed": 2,
-        "at": "2026-11-11"
       }
     },
     {
@@ -1118,104 +990,5 @@
       }
     }
   ],
-  "artifacts": [
-    {
-      "id": "atom-model",
-      "kind": "diagram",
-      "title": "A model atom",
-      "alt": "A round nucleus with a positive proton and a neutral neutron, surrounded by two dashed shells. One electron, marked negative, sits on the inner shell and one on the outer shell.",
-      "file": "assets/atom-model.svg",
-      "hotspots": [
-        {
-          "id": "proton",
-          "label": "Proton",
-          "x": 0.45,
-          "y": 0.5,
-          "r": 0.045
-        },
-        {
-          "id": "neutron",
-          "label": "Neutron",
-          "x": 0.55,
-          "y": 0.5,
-          "r": 0.045
-        },
-        {
-          "id": "inner-electron",
-          "label": "Inner electron",
-          "x": 0.5,
-          "y": 0.2556,
-          "r": 0.04
-        },
-        {
-          "id": "outer-electron",
-          "label": "Outer electron",
-          "x": 0.7,
-          "y": 0.2333,
-          "r": 0.04
-        }
-      ]
-    },
-    {
-      "id": "hydrogen-bond-diagram",
-      "kind": "diagram",
-      "title": "A hydrogen bond between two water molecules",
-      "alt": "Two water molecules side by side. A small bridging hydrogen on the left molecule's oxygen points toward the oxygen of the right molecule, joined to it by a dashed attraction. Each molecule has one more hydrogen joined by a line.",
-      "file": "assets/hydrogen-bond-diagram.svg",
-      "hotspots": [
-        {
-          "id": "donor-oxygen",
-          "label": "Donor oxygen",
-          "x": 0.3,
-          "y": 0.5,
-          "r": 0.06
-        },
-        {
-          "id": "bridging-hydrogen",
-          "label": "Bridging hydrogen",
-          "x": 0.4167,
-          "y": 0.4444,
-          "r": 0.05
-        },
-        {
-          "id": "hydrogen-bond",
-          "label": "Hydrogen bond",
-          "x": 0.5375,
-          "y": 0.4667,
-          "r": 0.04
-        },
-        {
-          "id": "acceptor-oxygen",
-          "label": "Acceptor oxygen",
-          "x": 0.7,
-          "y": 0.5,
-          "r": 0.06
-        }
-      ]
-    },
-    {
-      "id": "hydrogen-bond-steps",
-      "kind": "sequence",
-      "title": "Forming a hydrogen bond",
-      "over": "hydrogen-bond-diagram",
-      "alt": "Three steps: the oxygen pulls electrons, the hydrogen becomes partly positive, and the hydrogen is drawn to the other oxygen.",
-      "steps": [
-        {
-          "title": "Electrons pulled",
-          "text": "The oxygen pulls the shared electrons of its O–H bond toward itself.",
-          "focus": "donor-oxygen"
-        },
-        {
-          "title": "Hydrogen turns positive",
-          "text": "The hydrogen on that bond is left slightly positive.",
-          "focus": "bridging-hydrogen"
-        },
-        {
-          "title": "Attraction forms",
-          "text": "The hydrogen is drawn to a lone pair on the other oxygen, joining the molecules.",
-          "focus": "hydrogen-bond"
-        }
-      ]
-    }
-  ]
+  "artifacts": []
 }

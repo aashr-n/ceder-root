@@ -221,7 +221,7 @@
         "∂u/∂x + ∂u/∂t = 0"
       ],
       "answer": 2,
-      "explanation": "y′ + 3y = sin x has one unknown function y of one variable x, with its derivative. x² + y² = 9 has no derivative. The integral equation has no derivative written. The partial derivatives in the last one make it a PDE, not an ODE.",
+      "explanation": "y′ + 3y = sin x has one unknown function y of one variable x, with its derivative. x² + y² = 9 has no derivative. The integral equation has no derivative written. The partial derivatives in ∂u/∂x + ∂u/∂t = 0 make it a PDE, not an ODE.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
@@ -312,7 +312,7 @@
         "dy/dx = x/y + x"
       ],
       "answer": 0,
-      "explanation": "Divide both sides by x: dy/dx = (y + x²)/x = y/x + x. The option dy/dx = y + x divides the x² term but forgets to divide the y term. Multiplying by x instead of dividing gives the second option.",
+      "explanation": "Divide both sides by x: dy/dx = (y + x²)/x = y/x + x. The option dy/dx = y + x divides the x² term but forgets to divide the y term. Multiplying by x instead of dividing gives dy/dx = (y + x²) x.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
@@ -515,7 +515,7 @@
         "Because the order equals the power of y, which is 1"
       ],
       "answer": 1,
-      "explanation": "The order is the highest derivative that appears, here y″. Raising y′ to a power changes the degree and makes the equation nonlinear, but not the order. The first option is false, since nonlinearity does not lower order. The last option confuses order with the power on y.",
+      "explanation": "The order is the highest derivative that appears, here y″. Raising y′ to a power changes the degree and makes the equation nonlinear, but not the order. Nonlinear terms do not lower the order, and the power on y has nothing to do with it.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
@@ -583,7 +583,7 @@
         "A function that satisfies the equation only after the constants are chosen"
       ],
       "answer": 0,
-      "explanation": "A solution must satisfy the equation at every point of the interval, and the derivatives it uses must exist there. Satisfying it at one point is not enough. A solution does not need slope 0 anywhere. The last option describes a particular solution, which is a different idea from the interval condition.",
+      "explanation": "A solution must satisfy the equation at every point of the interval, and the derivatives it uses must exist there. Satisfying it at one point is not enough. A solution does not need slope 0 anywhere. Choosing the constants gives a particular solution, which is a different idea from the interval condition.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
@@ -764,7 +764,7 @@
         "y = 5 e^(2x)"
       ],
       "answer": 3,
-      "explanation": "y = 5 e^(2x) is the general formula with C = 5, and its derivative is 10e^(2x), which equals 2y. The first option still has a constant C. y = e^(2x) + C is not a solution for most C. y = 2e^x has derivative 2e^x, not 4e^x.",
+      "explanation": "y = 5 e^(2x) is the general formula with C = 5, and its derivative is 10e^(2x), which equals 2y. y = C e^(2x) still has an unchosen constant C. y = e^(2x) + C is not a solution for most C. y = 2e^x has derivative 2e^x, not 4e^x.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",

@@ -423,10 +423,10 @@
       "difficulty": 1,
       "prompt": "In a histogram of a continuous variable, why do the bars usually touch?",
       "choices": [
-        "Touching bars save space on the page",
-        "Each bar is forced to be the same height",
+        "Touching bars save space on the page, because a histogram is drawn with the bars packed together tightly",
+        "Each bar is forced to be the same height, since the classes of a continuous variable all hold equal counts",
         "The variable is continuous, so the classes have no gaps",
-        "Counts are zero between neighbouring bars"
+        "Counts are zero between neighbouring bars, so the bars meet at the points where the counts drop to nothing"
       ],
       "answer": 2,
       "explanation": "A continuous variable can take any value in a range, so neighbouring classes meet with no gap between them. Touching bars do not save space, the heights come from the counts rather than being forced equal, and zero counts between bars would not make them touch.",
@@ -469,9 +469,9 @@
       "prompt": "The same data are drawn twice: once with classes of width 5 and once with classes of width 10. What changes in the second histogram?",
       "choices": [
         "Fewer bars appear, each counting more observations, so the shape can change",
-        "Each bar's frequency doubles in every class",
-        "The total number of observations changes",
-        "The median moves to the centre of the picture"
+        "Each bar's frequency doubles in every class, because each class now spans twice as many values",
+        "The total number of observations changes, because wider classes drop some of the values from the sample",
+        "The median moves to the centre of the picture, because the middle of a histogram always marks the median"
       ],
       "answer": 0,
       "explanation": "Wider classes combine neighbouring counts into fewer bars, so the picture can look quite different even though the data have not changed. Frequencies do not double, the total stays the same, and drawing with wider classes does not move the median.",
@@ -831,9 +831,9 @@
       "prompt": "A sample has median 30. Which statement must be true?",
       "choices": [
         "At least half the values are 30 or less, and at least half are 30 or more",
-        "Exactly half the values equal 30",
-        "The mean is also 30",
-        "The mode is 30"
+        "Exactly half the values are below 30 and exactly half are above it, so 30 never appears in the sample",
+        "The mean of the sample is 30, so the values balance evenly around the centre of the data",
+        "The most common value in the sample is 30, which is why the median is also 30"
       ],
       "answer": 0,
       "explanation": "The median splits the sorted values into two halves, so at least half are at or below it and at least half are at or above it. No value has to equal it, and the mean and mode can be anything.",
@@ -920,9 +920,9 @@
       "prompt": "Why can a mean not be used to summarize favourite colour?",
       "choices": [
         "Colours cannot be added to give a meaningful mean",
-        "Colours are always stored as numbers",
-        "A mean needs at least ten categories",
-        "Colour data always have two modes"
+        "Colours are always stored as numbers in a spreadsheet, so the mean of the stored codes can be taken",
+        "A mean needs at least ten categories, because fewer categories give too few values to add up",
+        "Colour data always have two modes, one for each half of the sample, so no single average exists"
       ],
       "answer": 0,
       "explanation": "A mean needs values that can be added and divided, and colours cannot. The mode counts how often each colour occurs and reports the most common one. Colours need not be numbers, and the number of categories does not decide whether a mean exists.",
@@ -1078,10 +1078,10 @@
       "difficulty": 1,
       "prompt": "What does it mean that a value is at the 75th percentile?",
       "choices": [
-        "Exactly 75 values are above it",
+        "Exactly 75 values are above it, so it has 75 observations beyond it in the sample",
         "About 75 percent of the values are at or below it",
-        "75 percent of the values equal it",
-        "It sits 75 units above the mean"
+        "75 percent of the values equal it, so it is the value that appears most often in the sample",
+        "It sits 75 units above the mean of the sample, so its distance from the mean is 75 in the data units"
       ],
       "answer": 1,
       "explanation": "A value at the pth percentile has about p percent of the data at or below it. Counting exact values above it, equality with it, or distance from the mean are not what the percentile means.",
@@ -1213,10 +1213,10 @@
       "difficulty": 1,
       "prompt": "Why are the deviations from the mean squared when computing sample variance?",
       "choices": [
-        "To make the numbers smaller",
+        "To make the numbers smaller, since squaring always gives a result smaller than the original deviation",
         "So that positive and negative deviations do not cancel",
-        "To convert the units to percentages",
-        "So that the median can be found"
+        "To convert the units of the data into percentages, so that samples of different sizes can be compared",
+        "So that the median of the sample can be found from the squared deviations, which are sorted first"
       ],
       "answer": 1,
       "explanation": "Deviations from the mean always sum to zero, so without squaring, positive and negative deviations would cancel and hide the spread. The other options describe effects that squaring does not have.",
@@ -1225,7 +1225,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "note": "b's note: Squaring also weights large deviations more; cancellation is the standard reason."
       }
     },
     {
@@ -1308,7 +1309,7 @@
         "B has the smaller standard deviation"
       ],
       "answer": 2,
-      "explanation": "A larger variance means the values lie farther from the mean, so B is more spread out. A has the smaller variance, so the first option is false, and B's standard deviation, 6 against 2, is larger, not smaller.",
+      "explanation": "A larger variance means the values lie farther from the mean, so B is more spread out. A has the smaller variance, so the claim that A is more spread out is false, and B's standard deviation, 6 against 2, is larger, not smaller.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
@@ -1525,9 +1526,9 @@
       "prompt": "What is an outlier in a sample?",
       "choices": [
         "A value far away from the rest of the data",
-        "The most frequent value",
-        "The middle value after sorting",
-        "Any value larger than the mean"
+        "The most frequent value, which is the one that occurs more often than any other value",
+        "The middle value after sorting, which splits the data into two halves of equal size",
+        "Any value larger than the mean, since values above the average are unusually large"
       ],
       "answer": 0,
       "explanation": "An outlier is a value that lies far from the bulk of the data. The most frequent value is the mode, the middle value is the median, and a value above the mean is not necessarily unusual.",
@@ -1661,10 +1662,10 @@
       "difficulty": 3,
       "prompt": "A sample has Q1 = 40 and Q3 = 60, so the IQR is 20 and the lower fence is 10. Its smallest value is exactly 10. Is that value an outlier by the 1.5 × IQR rule?",
       "choices": [
-        "Yes, it is below the lower fence",
+        "Yes, it is on the lower fence, and the rule flags any value at or beyond the fence as an outlier",
         "No, it sits exactly on the fence rather than beyond it",
-        "Yes, because it is below the mean",
-        "No, outliers are always above Q3"
+        "Yes, because it is well below the mean, and any value that far below the mean is an outlier",
+        "No, outliers are always above Q3, so a value at the lower fence can never be one"
       ],
       "answer": 1,
       "explanation": "The rule flags values more than 1.5 times the IQR beyond the quartiles, so a value exactly on the fence is not flagged. Being below the mean does not decide it, and outliers can lie below Q1.",
@@ -1673,7 +1674,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "note": "a's note: The 1.5 x IQR rule flags values strictly beyond the fences; a value exactly on the lower fence is not flagged. Choice 0 misstates the rule. Some texts use a different boundary convention, so the question could be read more strictly. b's note: Standard rule flags values strictly beyond the fence."
       }
     }
   ],

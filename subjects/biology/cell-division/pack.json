@@ -465,10 +465,10 @@
       "difficulty": 2,
       "prompt": "How do sister chromatids differ from homologous chromosomes?",
       "choices": [
-        "Sisters are identical copies; homologues are a pair, one from each parent",
+        "Sisters are identical copies; homologues are a pair, one per parent",
         "Sisters come one from each parent; homologues are identical copies",
-        "They are two names for the same thing",
-        "Homologues are found only in eggs and sperm"
+        "They are just two different names for the same thing in every single cell",
+        "Homologues are found only in eggs and sperm, never in body cells"
       ],
       "answer": 0,
       "explanation": "Sister chromatids are identical copies made when DNA is copied, joined at a centromere. Homologues are a matching pair, one from each parent, that carry the same genes but can carry different versions of them.",
@@ -477,7 +477,7 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-09"
+        "at": "2026-11-11"
       }
     },
     {
@@ -615,9 +615,9 @@
       "difficulty": 2,
       "prompt": "Why must gametes be haploid?",
       "choices": [
-        "So that gametes can go on dividing by mitosis",
-        "Because a haploid cell is small enough to swim to the egg",
-        "So that each gamete carries both copies of every gene",
+        "So that gametes can keep dividing by mitosis to build a whole new body",
+        "Because a haploid cell is small enough to swim quickly to the egg and fuse with it",
+        "So that each gamete carries both copies of every gene in the whole body",
         "So fertilisation restores the diploid number instead of doubling it"
       ],
       "answer": 3,
@@ -627,7 +627,7 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-09"
+        "at": "2026-11-11"
       }
     },
     {
@@ -929,10 +929,10 @@
       "difficulty": 3,
       "prompt": "What does the spindle checkpoint check before anaphase begins?",
       "choices": [
-        "That the DNA has been copied",
+        "That all the DNA in the nucleus has been copied and checked",
         "That every chromosome is attached to the spindle",
-        "That the cell is large enough",
-        "That the nuclear envelope has reformed"
+        "That the cell has grown large enough to divide into two",
+        "That the nuclear envelope has reformed around both new nuclei"
       ],
       "answer": 1,
       "explanation": "The spindle checkpoint holds the cell in metaphase until every chromosome is attached to the spindle. DNA copying was checked earlier, at the G2 checkpoint.",
@@ -941,7 +941,7 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-09"
+        "at": "2026-11-11"
       }
     },
     {
@@ -1196,9 +1196,9 @@
       "prompt": "How does cytokinesis in a plant cell differ from cytokinesis in an animal cell?",
       "choices": [
         "A cell plate builds a new wall across the middle",
-        "Plant cells skip cytokinesis entirely",
-        "A cleavage furrow forms twice",
-        "The cytoplasm divides before the nucleus"
+        "Plant cells skip cytokinesis entirely and stay joined in one mass",
+        "A cleavage furrow pinches in twice, once on each side of the cell",
+        "The cytoplasm divides into two before the nucleus divides"
       ],
       "answer": 0,
       "explanation": "A plant cell has a rigid wall, so instead of pinching in with a cleavage furrow it builds a cell plate across the middle that becomes a new wall.",
@@ -1207,7 +1207,7 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-09"
+        "at": "2026-11-11"
       }
     },
     {
@@ -1498,19 +1498,19 @@
       "difficulty": 2,
       "prompt": "What does independent assortment refer to?",
       "choices": [
-        "Sections swapping between homologues",
-        "Sister chromatids separating in anaphase II",
-        "Any sperm fusing with any egg",
+        "Sections of two homologues swapping over during prophase I",
+        "Sister chromatids separating from each other in anaphase II",
+        "Any sperm fusing with any egg, at random, during fertilisation",
         "Each homologous pair lining up at random in metaphase I"
       ],
       "answer": 3,
-      "explanation": "Independent assortment is the random way each homologous pair lines up at metaphase I, regardless of the other pairs. Swapping sections between homologues is crossing over.",
+      "explanation": "Independent assortment is the random way each homologous pair lines up at metaphase I, regardless of the other pairs. Sections of two homologues swapping over during prophase I is crossing over.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-09"
+        "at": "2026-11-11"
       }
     },
     {

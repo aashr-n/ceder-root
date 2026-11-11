@@ -797,7 +797,7 @@
         "Smaller formal charges are better, and negative charge goes on the more electronegative atom"
       ],
       "answer": 2,
-      "explanation": "Structures whose formal charges are closer to zero are preferred, and a negative charge belongs on the more electronegative atom. The first choice reverses both rules.",
+      "explanation": "Structures whose formal charges are closer to zero are preferred, and a negative charge belongs on the more electronegative atom. Preferring larger charges, with the negative charge on the less electronegative atom, reverses both rules.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",

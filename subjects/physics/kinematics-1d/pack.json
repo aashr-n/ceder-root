@@ -352,9 +352,9 @@
       "difficulty": 2,
       "prompt": "A ball thrown straight up is caught at the height it was released. What is its displacement for the whole flight?",
       "choices": [
-        "Its peak height",
-        "It is measured in seconds",
-        "The distance it rose",
+        "Its peak height above the launch point, which is the highest position it reaches in the air",
+        "It is measured in seconds, because the displacement equals the time the whole flight takes",
+        "The distance it rose on the way up, which is the same as its total distance travelled",
         "Zero, because it ends where it started"
       ],
       "answer": 3,
@@ -445,12 +445,12 @@
       "prompt": "Why can the size of average velocity be smaller than average speed?",
       "choices": [
         "Velocity uses displacement, which can be less than the distance travelled",
-        "Speed is always negative",
-        "Velocity ignores the elapsed time",
-        "Speed uses only the final position"
+        "Speed is always negative, so it can never be larger than the size of the average velocity",
+        "Velocity ignores the elapsed time, so dividing by time makes it smaller than the average speed",
+        "Speed uses only the final position of the object, not the distance it covered along the way"
       ],
       "answer": 0,
-      "explanation": "Average speed divides the distance travelled by time, while average velocity divides the displacement, which can be smaller than the path length. Speed is never negative, and both use the elapsed time.",
+      "explanation": "Average speed divides the distance travelled by time, while average velocity divides the displacement, which can be smaller than the path length. Speed is never negative, and both are divided by the elapsed time.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
@@ -490,13 +490,13 @@
       "difficulty": 2,
       "prompt": "On a position–time graph, what does average velocity between two times represent?",
       "choices": [
-        "The area under the curve",
-        "The height of the curve at the start",
+        "The area under the curve between the two times, found by summing the position at each moment",
+        "The height of the curve at the start of the interval, which is the position at the first time",
         "The slope of the straight line joining the two points",
-        "The curvature of the graph"
+        "The curvature of the graph, which measures how sharply the position changes direction between the two times"
       ],
       "answer": 2,
-      "explanation": "Average velocity is the change in position over the change in time, which is the slope of the straight line between the two points on the graph. Area under the curve does not give a velocity here.",
+      "explanation": "Average velocity is the change in position over the change in time, which is the slope of the straight line between the two points on the graph. The area under the curve between the two times does not give a velocity here.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
@@ -559,10 +559,10 @@
       "difficulty": 1,
       "prompt": "What is instantaneous velocity?",
       "choices": [
-        "The velocity over a whole trip",
-        "The average of all the speeds during a trip",
+        "The velocity over a whole trip, found by dividing the total displacement by the total time taken",
+        "The average of all the speeds recorded during a trip, found by adding the readings and dividing by their number",
         "The velocity at one exact moment, found from ever shorter time intervals",
-        "The velocity at the start of a trip only"
+        "The velocity at the start of a trip only, found from the first reading on a speedometer"
       ],
       "answer": 2,
       "explanation": "Instantaneous velocity is the limit of the average velocity over shorter and shorter intervals around one moment. A whole-trip value is an average, not a value at an instant.",
@@ -880,10 +880,10 @@
       "difficulty": 2,
       "prompt": "Can an object have zero velocity and nonzero acceleration at the same instant?",
       "choices": [
-        "No, the two are always zero together",
+        "No, the two are always zero together, because acceleration and velocity must always share the same value",
         "Yes, as at the top of a ball thrown straight up",
-        "Yes, but only at constant speed",
-        "No, acceleration needs motion"
+        "Yes, but only when the object is moving at constant speed in a straight line with no forces on it",
+        "No, acceleration needs motion, so an object that is standing still at an instant cannot be accelerating"
       ],
       "answer": 1,
       "explanation": "At the top of a throw the velocity is zero for an instant, while gravity still gives about 9.8 m/s² downward. Acceleration describes change in velocity, not whether the object is moving at that instant.",
@@ -1199,10 +1199,10 @@
       "difficulty": 1,
       "prompt": "A feather and a steel ball are dropped together in a vacuum from the same height. Which lands first?",
       "choices": [
-        "The steel ball",
-        "The feather",
+        "The steel ball, because its greater mass means it is pulled down harder by gravity",
+        "The feather, because its large surface area means it falls more slowly even in a vacuum",
         "They land at the same time",
-        "Neither falls"
+        "Neither falls, because objects dropped in a vacuum stay where they are until something pushes them"
       ],
       "answer": 2,
       "explanation": "With no air resistance both have the same downward acceleration, so they land together. A feather falls slowly in air only because of air resistance, which a vacuum removes.",
@@ -1292,9 +1292,9 @@
       "prompt": "A ball thrown straight up passes its launch height on the way down. Ignoring air resistance, what is its speed there?",
       "choices": [
         "Equal to its launch speed, directed downward",
-        "Zero",
-        "Twice its launch speed",
-        "Half its launch speed"
+        "Zero, because the ball stops at the top of its flight and remains at rest until it is caught",
+        "Twice its launch speed, because gravity keeps pushing the ball faster once it has fallen back down",
+        "Half its launch speed, because the ball loses half its speed on the way up and does not regain it on the way down"
       ],
       "answer": 0,
       "explanation": "Gravity acts the same way on the way down, so the ball returns to launch height with its launch speed, moving down. Zero would mean it stopped, and the other two have no basis in constant acceleration.",

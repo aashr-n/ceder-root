@@ -325,19 +325,20 @@
       "difficulty": 1,
       "prompt": "Which statement about the limit of f(x) as x approaches a is true?",
       "choices": [
-        "It always equals f(a)",
-        "It depends only on values of f near a, not on the value at a itself",
-        "It is undefined whenever f(a) is undefined",
-        "It is the largest value f takes anywhere"
+        "It always equals f(a), because the limit simply reads the function's value at the point a directly",
+        "It depends only on the values f takes for x near a but not equal to a, so f(a) itself is ignored",
+        "It is undefined whenever f(a) is undefined, since a missing value at the point a blocks any limit there",
+        "It is the largest value f takes anywhere near a, because the limit is the maximum of nearby outputs"
       ],
       "answer": 1,
-      "explanation": "The limit looks at values of f(x) for x near a but not equal to a, so f(a) can be missing or different. The first option is the common mistake. The third is wrong because a hole has a limit even though f(a) is undefined.",
+      "explanation": "The limit looks at values of f(x) for x near a but not equal to a, so f(a) can be missing or different. Saying the limit always equals f(a) is the common mistake. Saying it is undefined whenever f(a) is undefined is wrong, because a hole has a limit even though f(a) is undefined.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "note": "a's note: The limit depends on values near a in a punctured neighbourhood, not on f(a)."
       }
     },
     {
@@ -397,7 +398,7 @@
         "The value of L itself"
       ],
       "answer": 1,
-      "explanation": "In the epsilon-delta definition, ε sets how close f(x) must be to L, and δ is the matching distance from a that guarantees it. Choosing the first option swaps δ and ε.",
+      "explanation": "In the epsilon-delta definition, ε sets how close f(x) must be to L, and δ is the matching distance from a that guarantees it. Saying that δ sets how close f(x) must be to L swaps δ and ε.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
@@ -441,7 +442,7 @@
         "Limit 10, f(3) = 10"
       ],
       "answer": 1,
-      "explanation": "The limit uses x near 3 with x ≠ 3, where f(x) = x² tends to 9. The value f(3) = 10 is set separately and does not change the limit. The first option swaps the two values.",
+      "explanation": "The limit uses x near 3 with x ≠ 3, where f(x) = x² tends to 9. The value f(3) = 10 is set separately and does not change the limit. Saying the limit is 10 with f(3) = 9 gets both values wrong.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
@@ -484,7 +485,7 @@
         "f(x) approaches a"
       ],
       "answer": 0,
-      "explanation": "The superscript plus means x comes in from the right, through values larger than a. The minus version uses values smaller than a. The last option swaps x and f(x).",
+      "explanation": "The superscript plus means x comes in from the right, through values larger than a. The minus version uses values smaller than a. Saying that f(x) approaches a swaps x and f(x).",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
@@ -544,10 +545,10 @@
       "difficulty": 2,
       "prompt": "Using the same f (1 for x < 0 and 4 for x ≥ 0), what is the two-sided limit at 0?",
       "choices": [
-        "1",
-        "4",
-        "2.5",
-        "Does not exist"
+        "1, because the left-hand limit of 1 is taken as the two-sided limit",
+        "4, because f(0) = 4 is the value at 0 and the limit at 0 equals the value there",
+        "2.5, because the average of the two one-sided limits 1 and 4 is taken as the limit",
+        "Does not exist, because the left-hand limit 1 and right-hand limit 4 differ"
       ],
       "answer": 3,
       "explanation": "The left-hand limit is 1 and the right-hand limit is 4. They differ, so the two-sided limit does not exist, even though f(0) = 4 is defined.",
@@ -556,7 +557,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "note": "a's note: Left limit 1 and right limit 4 differ, so the two-sided limit does not exist, even though f(0) = 4. b's note: Prompt says 'the same f' but defines no f itself; stands alone only with context."
       }
     },
     {
@@ -610,10 +612,10 @@
       "difficulty": 3,
       "prompt": "Which is true of f(x) = (x − 1)/|x − 1| near x = 1?",
       "choices": [
-        "The limit at 1 is 0",
-        "The right-hand limit is 1 and the left-hand limit is −1, so the limit does not exist",
-        "The limit at 1 is 1 because f is positive on the right",
-        "The limit at 1 is −1 because the left side dominates"
+        "The limit at 1 is 0, because the numerator x − 1 is zero at x = 1, so the quotient is zero there",
+        "The right-hand limit is 1 and the left-hand limit is −1, so the two-sided limit at 1 does not exist",
+        "The limit at 1 is 1 because f is positive on both sides near 1, so the absolute value changes nothing",
+        "The limit at 1 is −1 because the left-hand values dominate, so the right side of the graph can be ignored"
       ],
       "answer": 1,
       "explanation": "For x > 1, |x − 1| = x − 1, so f(x) = 1. For x < 1, |x − 1| = −(x − 1), so f(x) = −1. The one-sided limits differ, so the two-sided limit does not exist.",
@@ -622,7 +624,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "note": "a's note: For x > 1 the function is 1; for x < 1 it is -1. The right and left limits differ."
       }
     },
     {
@@ -762,10 +765,10 @@
       "difficulty": 2,
       "prompt": "The limit of f(x) at a is 5, and the limit of g(x) at a is 0. What can the laws say about the limit of f(x)/g(x)?",
       "choices": [
-        "It equals 0",
-        "It equals 5",
-        "The quotient law cannot be applied directly, so the limit needs more work",
-        "It equals infinity"
+        "It equals 0, because the quotient law says a limit of 0 in the denominator makes the whole quotient 0",
+        "It equals 5, because the quotient law says the limit of f/g is just the limit of f, whatever g does",
+        "The quotient law does not apply directly, since the denominator's limit is 0, so more work is needed",
+        "It equals infinity, because a denominator with limit 0 always sends the quotient to infinity at a"
       ],
       "answer": 2,
       "explanation": "The quotient law needs a nonzero limit in the denominator, so it does not decide the answer. The limit might be infinite or might not exist; the laws alone cannot say which.",
@@ -774,7 +777,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "note": "a's note: The quotient law needs the denominator limit to be nonzero. With limit 0 the quotient could tend to +/-infinity or have no limit, so more work is needed."
       }
     },
     {
@@ -806,13 +810,13 @@
       "difficulty": 1,
       "prompt": "What does the statement that the limit of f(x) as x → a equals ∞ mean?",
       "choices": [
-        "f(x) gets arbitrarily large as x gets close to a",
-        "f(a) equals infinity",
-        "f(x) equals a for every x",
-        "f is undefined at a"
+        "f(x) gets arbitrarily large, above any bound, as x gets close to a, though not at a itself",
+        "f(a) equals infinity, so the function takes the value infinity exactly at the point x = a",
+        "f(x) equals a for every x, so the function is constant and its values never move near a",
+        "f is undefined at a, so the limit as x approaches a is infinite because nothing is defined there"
       ],
       "answer": 0,
-      "explanation": "f(x) grows beyond any bound for x near a, but not at a itself. ∞ is not a value of f, so the second option is wrong. The last option describes a missing point, not growth.",
+      "explanation": "f(x) grows beyond any bound for x near a, but not at a itself. ∞ is not a value of f, so saying f(a) equals infinity is wrong. Saying f is undefined at a describes a missing point, not growth.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
@@ -894,10 +898,10 @@
       "difficulty": 2,
       "prompt": "When does the graph of f have a vertical asymptote at x = a?",
       "choices": [
-        "f(a) is zero",
-        "At least one one-sided limit at a is infinite or minus infinity",
-        "The limit at a is a finite number",
-        "f is continuous at a"
+        "f(a) is zero, so the graph crosses the x-axis at a, and that crossing forces a vertical asymptote there",
+        "At least one one-sided limit at a is positive or negative infinity, so the graph shoots off near a",
+        "The two-sided limit at a is a finite number, which shows the graph has a vertical asymptote at x = a",
+        "f is continuous at a, so the graph has no break there and must approach a vertical asymptote at a"
       ],
       "answer": 1,
       "explanation": "A vertical asymptote needs a one-sided limit that is infinite. A zero at a, a finite limit, or continuity at a all rule that out.",
@@ -1135,10 +1139,10 @@
       "difficulty": 1,
       "prompt": "In the squeeze theorem, where must g(x) ≤ f(x) ≤ h(x) hold?",
       "choices": [
-        "Only at x = a exactly",
-        "For x near a, though not necessarily at a itself",
-        "For all real numbers x",
-        "Only when f is continuous"
+        "Only at x = a exactly, since the bounds must match f at the single point where the limit is taken",
+        "For x near a, though not necessarily at a itself, since the limit uses only nearby values",
+        "For all real numbers x, since a squeeze has to hold across the whole domain before a limit is taken",
+        "Only when f is continuous at a, since squeezing needs f to have no jump anywhere near the point"
       ],
       "answer": 1,
       "explanation": "The bounds only need to hold near a, and f need not equal either bound at a. Requiring the inequality for all real x is stronger than the theorem needs.",
@@ -1223,19 +1227,20 @@
       "difficulty": 2,
       "prompt": "Why can the squeeze theorem not show that the limit of sin(1/x) as x approaches 0 exists?",
       "choices": [
-        "sin is never bounded",
-        "The limit is infinite",
-        "Squeeze works only for polynomials",
+        "sin is never bounded, so no squeeze bounds can ever be found for sin(1/x) near 0",
+        "The limit is infinite, because sin(1/x) grows without bound as x approaches 0 from either side",
+        "Squeeze works only for polynomials, so it can never be applied to a trigonometric function at all",
         "No two bounds with equal limits exist, because sin(1/x) keeps oscillating between −1 and 1 near 0"
       ],
       "answer": 3,
-      "explanation": "Bounds such as −1 and 1 do not share a limit, and sin(1/x) takes every value between −1 and 1 in every interval around 0. The sine function is bounded, so the first option is false.",
+      "explanation": "Bounds such as −1 and 1 do not share a limit, and sin(1/x) takes every value between −1 and 1 in every interval around 0. The sine function is bounded, so the claim that sin is never bounded is false.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "note": "a's note: The reason is that sin(1/x) oscillates between -1 and 1 with no limit, so no pair of squeeze bounds with equal limits exists. The stated reason is the best of the four options, though it is phrased loosely."
       }
     },
     {
@@ -1245,13 +1250,13 @@
       "difficulty": 3,
       "prompt": "Which argument shows that the limit of sin(x)/x as x approaches ∞ is 0?",
       "choices": [
-        "−1/x ≤ sin(x)/x ≤ 1/x for x > 0, and both bounds tend to 0",
-        "sin(x)/x ≤ 1, so the limit is 1",
-        "sin(x) equals 0 at infinity",
-        "x/sin(x) tends to 1 at infinity"
+        "For x > 0, −1/x ≤ sin(x)/x ≤ 1/x, and both outer bounds tend to 0 as x grows, so the squeeze gives 0",
+        "sin(x)/x ≤ 1 for all large x, so the limit is 1, since the upper bound is what the quotient approaches",
+        "sin(x) equals 0 at infinity, since sine is periodic and its values average out to 0 as x grows large",
+        "x/sin(x) tends to 1 at infinity, so dividing by x makes sin(x)/x approach 1 as x grows without bound"
       ],
       "answer": 0,
-      "explanation": "Dividing −1 ≤ sin x ≤ 1 by x > 0 traps sin x / x between two bounds that both go to 0. The second option gives only an upper bound, which fixes no limit. The third is false because sin x has no limit at infinity.",
+      "explanation": "Dividing −1 ≤ sin x ≤ 1 by x > 0 traps sin x / x between two bounds that both go to 0. An upper bound alone, such as sin x / x ≤ 1, fixes no limit. Saying sin x equals 0 at infinity is false, since sin x has no limit there.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
@@ -1310,10 +1315,10 @@
       "difficulty": 1,
       "prompt": "Which three conditions define the continuity of f at a?",
       "choices": [
-        "f(a) is defined, the limit at a exists, and the limit equals f(a)",
-        "f(a) is defined, f is positive, and f is increasing",
-        "The limit at a exists, f is a polynomial, and f(a) = 0",
-        "f has a derivative at a only"
+        "f(a) is defined, the limit of f at a exists, and that limit is equal to the value f(a) itself",
+        "f(a) is defined, f is positive on both sides of a, and f is increasing through the point a",
+        "The limit at a exists, f is a polynomial, and f(a) = 0, so the graph touches the axis at a",
+        "f has a derivative at a, and that alone is the full definition of continuity at a, with no limit needed"
       ],
       "answer": 0,
       "explanation": "All three must hold together. Positivity and increase are not part of the definition, and a polynomial need not be zero at a.",
@@ -1360,7 +1365,7 @@
         "No, the limit does not exist"
       ],
       "answer": 1,
-      "explanation": "Factoring gives x + 1 for x ≠ 1, so the limit is 2. Since f(1) = 5 differs, the third condition fails, and the break is removable. The limit does exist, so the last option is wrong.",
+      "explanation": "Factoring gives x + 1 for x ≠ 1, so the limit is 2. Since f(1) = 5 differs, the third condition fails, and the break is removable. The limit does exist, so saying the limit does not exist is wrong.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
@@ -1376,13 +1381,13 @@
       "difficulty": 2,
       "prompt": "Which function is NOT continuous at x = 2?",
       "choices": [
-        "x³",
-        "f(x) = 1 for x < 2 and f(x) = 3 for x ≥ 2",
-        "√(x + 7)",
-        "(x + 1)/(x² + 1)"
+        "x³, a polynomial that is continuous everywhere, so its limit at 2 equals its value at 2",
+        "f(x) = 1 for x < 2 and f(x) = 3 for x ≥ 2, so the one-sided limits at 2 differ",
+        "√(x + 7), defined and continuous for x ≥ −7, so its limit at 2 matches its value at 2",
+        "(x + 1)/(x² + 1), a rational function with nonzero denominator at 2, so no break occurs there"
       ],
       "answer": 1,
-      "explanation": "The second function jumps from 1 to 3 at 2, so the one-sided limits differ. The others are continuous at 2 with values 8, 3 and 3/5.",
+      "explanation": "The function that is 1 for x < 2 and 3 for x ≥ 2 jumps at 2, so the one-sided limits differ. The others are continuous at 2 with values 8, 3 and 3/5.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",
@@ -1552,10 +1557,10 @@
       "difficulty": 2,
       "prompt": "Does the intermediate value theorem say how many roots a function has in an interval?",
       "choices": [
-        "Exactly one",
-        "At least one, but it does not say how many",
-        "Exactly two",
-        "None"
+        "Exactly one root, because the theorem guarantees a single crossing point in every interval",
+        "At least one value is guaranteed, but the theorem does not say how many roots there are",
+        "Exactly two roots, since a continuous function must cross a target value once up and once down",
+        "None, because the theorem says a root exists only when the function is increasing on the interval"
       ],
       "answer": 1,
       "explanation": "The theorem guarantees at least one point with the target value. A function might have three roots in the interval, and the theorem would still hold.",
@@ -1596,10 +1601,10 @@
       "difficulty": 3,
       "prompt": "Let f be continuous on [0, 4] with f(0) = 1 and f(4) = 7. Which conclusion is guaranteed?",
       "choices": [
-        "f(2) = 4",
+        "f(2) = 4, since a continuous rise from 1 to 7 must pass through the average value at the midpoint 2",
         "For every value between 1 and 7 there is a c in [0, 4] with f(c) equal to that value",
-        "f is increasing on [0, 4]",
-        "f(c) = 1 for some c in the open interval (0, 4)"
+        "f is increasing on [0, 4], since any continuous function that goes from 1 up to 7 must rise at every point",
+        "f(c) = 1 for some c in the open interval (0, 4), since f starts at 1 and continuity keeps it near 1"
       ],
       "answer": 1,
       "explanation": "The theorem guarantees that every value between 1 and 7 is attained. The other options go beyond it: f need not be increasing, f(2) need not be 4, and f may equal 1 only at x = 0.",
