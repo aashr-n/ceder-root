@@ -1,0 +1,1163 @@
+{
+  "formatVersion": 1,
+  "id": "differential-equations.ode-basics",
+  "subject": "differential-equations",
+  "title": "Basics of differential equations",
+  "summary": "What an ordinary differential equation is, its order, what a solution and a general solution are, initial value problems, and direction fields.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "ode",
+      "name": "Ordinary differential equation",
+      "aliases": [
+        "ODE",
+        "ODEs",
+        "ordinary differential equations"
+      ],
+      "summary": "An equation that relates an unknown function of one variable to its own derivatives.",
+      "requires": [],
+      "elements": [
+        {
+          "id": "independent-variable",
+          "name": "Independent variable"
+        },
+        {
+          "id": "unknown-function",
+          "name": "Unknown function",
+          "aliases": [
+            "dependent variable"
+          ]
+        },
+        {
+          "id": "implicit-form",
+          "name": "Implicit form F(x, y, y′) = 0"
+        },
+        {
+          "id": "explicit-form",
+          "name": "Explicit form",
+          "aliases": [
+            "normal form"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "An ordinary differential equation, or ODE, is an equation that relates an unknown function of one variable to its own derivatives. The unknown is a function y of x, and the equation may contain x, y, y′, y″ and so on, where y′ means dy/dx. For example, y′ = 3y says that the rate of change of y is three times its current value. Such equations describe change, such as population growth, cooling, and motion under a force. The word ordinary means there is only one independent variable. When the highest derivative is isolated on one side, the equation is in explicit form, which is the form most methods expect."
+      }
+    },
+    {
+      "id": "order-of-ode",
+      "name": "Order of a differential equation",
+      "aliases": [
+        "order of an ODE",
+        "orders of differential equations"
+      ],
+      "summary": "The order of a differential equation is the highest derivative that appears in it.",
+      "requires": [
+        "ode"
+      ],
+      "elements": [
+        {
+          "id": "highest-derivative",
+          "name": "Highest derivative"
+        },
+        {
+          "id": "first-order-equation",
+          "name": "First-order equation"
+        },
+        {
+          "id": "higher-order-equation",
+          "name": "Higher-order equation"
+        }
+      ],
+      "explain": {
+        "text": "The order of a differential equation is the highest derivative that appears in it. In y″ + 3y′ = eˣ the highest derivative is y″, so the equation is second order. Order counts derivatives, not terms or powers. Raising a derivative to a power changes the degree of the equation but not its order, and missing lower derivatives do not affect it. Order matters because it sets how many constants a general solution contains and how many conditions are needed to pick out one solution."
+      }
+    },
+    {
+      "id": "solution-of-ode",
+      "name": "Solution of a differential equation",
+      "aliases": [
+        "solutions of an ODE",
+        "solution of an ordinary differential equation",
+        "integral curve"
+      ],
+      "summary": "A solution is a function that makes the equation true at every point of an interval.",
+      "requires": [
+        "ode"
+      ],
+      "elements": [
+        {
+          "id": "substitution-check",
+          "name": "Checking a solution by substitution"
+        },
+        {
+          "id": "interval-of-solution",
+          "name": "Interval of a solution"
+        },
+        {
+          "id": "global-solution",
+          "name": "Global solution"
+        }
+      ],
+      "explain": {
+        "text": "A solution of a differential equation is a function that makes the equation true when it is substituted in. For y′ = 2y, the function y = e^(2x) is a solution, because its derivative 2e^(2x) equals 2y. To check a candidate, compute the derivatives the equation uses and substitute them in. A solution is always defined on an interval, and it must satisfy the equation at every point of that interval. A solution can be defined on a smaller interval than the formula suggests, so the interval matters as much as the formula does."
+      }
+    },
+    {
+      "id": "general-solution",
+      "name": "General solution",
+      "aliases": [
+        "general solutions",
+        "general solution of an ODE"
+      ],
+      "summary": "A general solution is a formula with arbitrary constants that stands for all solutions of the equation.",
+      "requires": [
+        "solution-of-ode",
+        "order-of-ode"
+      ],
+      "elements": [
+        {
+          "id": "arbitrary-constants",
+          "name": "Arbitrary constants of integration",
+          "aliases": [
+            "constants of integration"
+          ]
+        },
+        {
+          "id": "particular-solution",
+          "name": "Particular solution"
+        },
+        {
+          "id": "family-of-solutions",
+          "name": "Family of solutions",
+          "aliases": [
+            "family of curves"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "A general solution of an ODE is a formula with arbitrary constants that includes every solution. A first-order equation has a general solution with one constant, and an equation of order n has n constants. For example, y′ = 3 has general solution y = 3x + C, since integrating gives a family of straight lines of slope 3. Choosing a specific value for each constant gives a particular solution, such as y = 3x + 2. One formula with constants stands for infinitely many solutions at once, which is why it is called general."
+      }
+    },
+    {
+      "id": "initial-value-problem",
+      "name": "Initial value problem",
+      "aliases": [
+        "initial value problems",
+        "IVP",
+        "IVPs",
+        "Cauchy problem"
+      ],
+      "summary": "An initial value problem is a differential equation together with a condition on the solution at one starting point.",
+      "requires": [
+        "general-solution"
+      ],
+      "elements": [
+        {
+          "id": "initial-condition",
+          "name": "Initial condition"
+        },
+        {
+          "id": "initial-point",
+          "name": "Initial point",
+          "aliases": [
+            "starting point"
+          ]
+        },
+        {
+          "id": "fixing-constants",
+          "name": "Fixing constants from a condition"
+        }
+      ],
+      "explain": {
+        "text": "An initial value problem, or IVP, pairs a differential equation with a condition on the solution at one starting point. For example, y′ = 2x with y(1) = 4 asks for the solution whose value at x = 1 is 4. An equation of order n usually needs n conditions, such as y and y′ at the starting point, to fix its constants. Solving the problem means finding the general solution first, then using the condition to pick out one particular solution. IVPs model systems that start from a known state, such as a cooling object with a measured starting temperature."
+      }
+    },
+    {
+      "id": "direction-field",
+      "name": "Direction field",
+      "aliases": [
+        "direction fields",
+        "slope field",
+        "slope fields"
+      ],
+      "summary": "A direction field draws the slope that a solution of y′ = f(x, y) must have at many points.",
+      "requires": [
+        "ode"
+      ],
+      "elements": [
+        {
+          "id": "slope-at-point",
+          "name": "Slope at a point"
+        },
+        {
+          "id": "isocline",
+          "name": "Isocline",
+          "aliases": [
+            "isoclines"
+          ]
+        },
+        {
+          "id": "sketching-solutions",
+          "name": "Sketching solution curves"
+        }
+      ],
+      "explain": {
+        "text": "A direction field is a picture of a first-order equation y′ = f(x, y). At many points (x, y) in the plane it draws a short segment whose slope is f(x, y), the slope a solution curve must have at that point. Once enough segments are drawn, the graph of a solution can be sketched by following them. Where the segments are horizontal, the slope is zero and the solution has a flat tangent. A direction field shows how all solutions behave at once, without solving the equation, which is useful when a formula for the solution is hard to find."
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "differential-equations.ode-basics.ode-which-is-ode",
+      "concept": "ode",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is an ordinary differential equation?",
+      "choices": [
+        "x² + y² = 9",
+        "∫₀ˣ y(t) dt = 4",
+        "y′ + 3y = sin x",
+        "∂u/∂x + ∂u/∂t = 0"
+      ],
+      "answer": 2,
+      "explanation": "y′ + 3y = sin x has one unknown function y of one variable x, with its derivative. x² + y² = 9 has no derivative. The integral equation has no derivative written. The partial derivatives in ∂u/∂x + ∂u/∂t = 0 make it a PDE, not an ODE.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.ode-independent-variable",
+      "concept": "ode",
+      "element": "independent-variable",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In the equation y′ = x + y, which symbol is the independent variable?",
+      "choices": [
+        "y",
+        "y′",
+        "y − x",
+        "x"
+      ],
+      "answer": 3,
+      "explanation": "The equation asks how y changes as x changes, so x is the independent variable. y is the unknown function that depends on x, so it is the dependent variable. y′ is its derivative, and y − x is an expression, not a variable.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.ode-unknown",
+      "concept": "ode",
+      "element": "unknown-function",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In the equation y″ + 4y′ + 5y = 0, what is the unknown that the equation determines?",
+      "choices": [
+        "The coefficient 4",
+        "The function y, whose derivatives appear",
+        "The number 0 on the right",
+        "The derivative y″ alone"
+      ],
+      "answer": 1,
+      "explanation": "The unknown is the function y, and its derivatives appear in the equation. The 4 and 5 are known coefficients, and the 0 is a known number. Solving the equation means finding y.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.ode-explicit-form",
+      "concept": "ode",
+      "element": "explicit-form",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which equation is written in explicit form for a second-order ODE?",
+      "choices": [
+        "y″ · y′ = x",
+        "x y″ + y = 0",
+        "(y″)² + y′ = 1",
+        "y″ = f(x, y, y′)"
+      ],
+      "answer": 3,
+      "explanation": "Explicit form isolates the highest derivative: y″ equals a function of x, y and y′. In y″ · y′ = x, y″ is not isolated. x y″ + y = 0 needs division by x before y″ is isolated. In (y″)² + y′ = 1, y″ is squared, so it is not isolated.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.ode-rewrite",
+      "concept": "ode",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Write x dy/dx = y + x² in explicit form for dy/dx, assuming x ≠ 0.",
+      "choices": [
+        "dy/dx = y/x + x",
+        "dy/dx = (y + x²) x",
+        "dy/dx = y + x",
+        "dy/dx = x/y + x"
+      ],
+      "answer": 0,
+      "explanation": "Divide both sides by x: dy/dx = (y + x²)/x = y/x + x. The option dy/dx = y + x divides the x² term but forgets to divide the y term. Multiplying by x instead of dividing gives dy/dx = (y + x²) x.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.ode-pde-or-ode",
+      "concept": "ode",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which describes ∂T/∂t = k ∂²T/∂x² for a temperature T that depends on position x and time t?",
+      "choices": [
+        "An ordinary differential equation, since it has one derivative",
+        "An algebraic equation, since T is not differentiated",
+        "A partial differential equation, since T depends on two variables",
+        "An integral equation, since it has a constant k"
+      ],
+      "answer": 2,
+      "explanation": "T depends on two variables, x and t, and the derivatives are partial, so this is a PDE. An ODE has one independent variable. The equation has derivatives, so it is not algebraic, and it contains no integral. It also has two derivatives, not one.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.ode-valid-domain",
+      "concept": "ode",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student writes x y″ + y = 0 as y″ = −y/x. For which x is this rewritten form valid?",
+      "choices": [
+        "Only x > 0",
+        "Only x = 0",
+        "Every real x",
+        "Only x ≠ 0"
+      ],
+      "answer": 3,
+      "explanation": "Dividing by x requires x ≠ 0, so the rewritten form holds only away from x = 0. The original equation makes sense for every real x. Saying every real x is wrong for the rewritten form, because it divides by x.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.order-third-derivative",
+      "concept": "order-of-ode",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the order of y‴ + 2y″ − y = eˣ?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "explanation": "The order is the highest derivative present, which is the third derivative y‴. So the order is 3. The 2 and 1 belong to lower derivatives, and 4 is the number of terms, which does not matter.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.order-squared-derivative",
+      "concept": "order-of-ode",
+      "element": "first-order-equation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the order of (y′)² + x y = 0?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "answer": 0,
+      "explanation": "The highest derivative is y′, a first derivative, so the order is 1. Squaring y′ changes the degree of the equation, not its order.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.order-inside-sine",
+      "concept": "order-of-ode",
+      "element": "higher-order-equation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the order of y″ + sin(y′) = 0?",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "explanation": "The highest derivative is y″, a second derivative, so the order is 2. The sine is taken of y′, a lower derivative, and that does not raise the order.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.order-missing-middle",
+      "concept": "order-of-ode",
+      "element": "highest-derivative",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "An equation contains y′ and y⁽⁵⁾ but no y⁽⁴⁾. What is its order?",
+      "choices": [
+        "1",
+        "2",
+        "4",
+        "5"
+      ],
+      "answer": 3,
+      "explanation": "The order is the highest derivative that appears, which is the fifth derivative y⁽⁵⁾. A missing y⁽⁴⁾ does not lower the order. The answer 4 counts the derivatives that appear, which is not the rule.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.order-which-is-second",
+      "concept": "order-of-ode",
+      "element": "higher-order-equation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which equation is of order 2?",
+      "choices": [
+        "y′ + x² y = 0",
+        "y″ + 3y′ = eˣ",
+        "y‴ = 1",
+        "(y′)² = 1"
+      ],
+      "answer": 1,
+      "explanation": "y″ + 3y′ = eˣ has y″ as its highest derivative, so it is second order. y′ + x² y = 0 is first order, y‴ = 1 is third order, and (y′)² = 1 is first order.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.order-spring-motion",
+      "concept": "order-of-ode",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A mass on a spring has position x(t) and obeys m x″ = −k x. What is the order of this equation?",
+      "choices": [
+        "1",
+        "3",
+        "2",
+        "0"
+      ],
+      "answer": 2,
+      "explanation": "The equation contains x″, the second derivative of position with respect to time, so it is second order. The first derivative of x does not appear, but that does not change the order.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.order-cubed-term",
+      "concept": "order-of-ode",
+      "element": "highest-derivative",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Consider y″ − (y′)³ + y = 0, which has order 2. Why does the cube on y′ not change the order?",
+      "choices": [
+        "Because nonlinear terms lower the order by one",
+        "Because the order is the highest derivative present, and (y′)³ uses only a lower derivative",
+        "Because cubes are removed when computing the order",
+        "Because the order equals the power of y, which is 1"
+      ],
+      "answer": 1,
+      "explanation": "The order is the highest derivative that appears, here y″. Raising y′ to a power changes the degree and makes the equation nonlinear, but not the order. Nonlinear terms do not lower the order, and the power on y has nothing to do with it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.solution-constant",
+      "concept": "solution-of-ode",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which function is a solution of y′ = 0 on the whole real line?",
+      "choices": [
+        "y(x) = x",
+        "y(x) = 7",
+        "y(x) = eˣ",
+        "y(x) = x²"
+      ],
+      "answer": 1,
+      "explanation": "y(x) = 7 has derivative 0 everywhere, so y′ = 0 holds. The others have nonzero derivatives: x has derivative 1, eˣ has eˣ, and x² has 2x.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.solution-exponential",
+      "concept": "solution-of-ode",
+      "element": "substitution-check",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which function is a solution of y′ = 2y?",
+      "choices": [
+        "y = 2x",
+        "y = x²",
+        "y = eˣ",
+        "y = e^(2x)"
+      ],
+      "answer": 3,
+      "explanation": "y = e^(2x) has derivative 2e^(2x), which equals 2y. eˣ has derivative eˣ, not 2eˣ. The polynomials fail because their derivatives are not twice themselves.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.solution-interval",
+      "concept": "solution-of-ode",
+      "element": "interval-of-solution",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which statement describes a solution of an ODE on an interval I?",
+      "choices": [
+        "A function that satisfies the equation at every point of I, with its derivatives existing there",
+        "A function that satisfies the equation at only one point of I",
+        "A function whose graph has slope 0 everywhere in I",
+        "A function that satisfies the equation only after the constants are chosen"
+      ],
+      "answer": 0,
+      "explanation": "A solution must satisfy the equation at every point of the interval, and the derivatives it uses must exist there. Satisfying it at one point is not enough. A solution does not need slope 0 anywhere. Choosing the constants gives a particular solution, which is a different idea from the interval condition.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.solution-substitution-check",
+      "concept": "solution-of-ode",
+      "element": "substitution-check",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Does y = x² + 1 solve x y′ − 2y = −2 for every x ≠ 0?",
+      "choices": [
+        "No, the left side equals 2x²",
+        "Yes, for every x ≠ 0",
+        "No, the left side equals −4",
+        "Only at x = 0"
+      ],
+      "answer": 1,
+      "explanation": "With y′ = 2x, x y′ − 2y = 2x² − 2(x² + 1) = −2 for every x. The left side is not 2x², because the −2y term also contributes. The value −4 comes from a sign error. The check works at every x ≠ 0.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.solution-sine-second-order",
+      "concept": "solution-of-ode",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which of these is a solution of y″ + y = 0?",
+      "choices": [
+        "y = eˣ",
+        "y = x",
+        "y = sin x",
+        "y = x²"
+      ],
+      "answer": 2,
+      "explanation": "y = sin x has y″ = −sin x, so y″ + y = 0. eˣ gives 2eˣ, which is not 0. y = x has y″ = 0 but y = x is not 0. x² gives 2 + x², which is never 0.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.solution-check-steps",
+      "concept": "solution-of-ode",
+      "element": "substitution-check",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps for checking whether a function φ solves an ODE in order.",
+      "steps": [
+        "Compute the derivatives of φ that the equation uses",
+        "Substitute φ and those derivatives into the equation",
+        "Simplify both sides of the result",
+        "Confirm both sides agree for every x in the interval"
+      ],
+      "explanation": "You cannot substitute before computing the derivatives, and you cannot confirm agreement before simplifying both sides. Checking the interval comes last, because the check holds only where both sides agree.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.solution-largest-interval",
+      "concept": "solution-of-ode",
+      "element": "global-solution",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "What is the largest interval containing x = 0 on which y(x) = 1/(1 − x) solves y′ = y²?",
+      "choices": [
+        "All real numbers",
+        "0 ≤ x < 1",
+        "x < 1",
+        "x ≥ 0"
+      ],
+      "answer": 2,
+      "explanation": "The function is undefined at x = 1, so the largest interval containing 0 stops there: x < 1. All real numbers fails at x = 1. The interval 0 ≤ x < 1 contains 0 but is not the largest. x ≥ 0 includes x = 1, where the function is undefined.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.general-two-constants",
+      "concept": "general-solution",
+      "element": "arbitrary-constants",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How many arbitrary constants does a general solution of a second-order ODE contain?",
+      "choices": [
+        "1",
+        "0",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "explanation": "A general solution of order n has n arbitrary constants of integration. For a second-order equation that is two constants, so the answer is 2.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.general-y-prime-three",
+      "concept": "general-solution",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which is a general solution of y′ = 3?",
+      "choices": [
+        "y = Cx³",
+        "y = 3x",
+        "y = 3 + C",
+        "y = 3x + C"
+      ],
+      "answer": 3,
+      "explanation": "Integrating both sides gives y = 3x + C with C arbitrary. y = 3x is one particular solution, not the general one. y = Cx³ has derivative 3Cx², not 3. y = 3 + C has derivative 0.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.general-particular-meaning",
+      "concept": "general-solution",
+      "element": "particular-solution",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What distinguishes a particular solution from a general solution?",
+      "choices": [
+        "It has no arbitrary constants",
+        "It is defined only at x = 0",
+        "It has more constants than the general solution",
+        "It is not a solution of the ODE"
+      ],
+      "answer": 0,
+      "explanation": "A particular solution comes from a general solution by setting the constants to specific values, so it has no arbitrary constants left. It is still a solution of the ODE, and it is not restricted to x = 0.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.general-pick-particular",
+      "concept": "general-solution",
+      "element": "particular-solution",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "The general solution of y′ = 2y is y = C e^(2x). Which of these is a particular solution?",
+      "choices": [
+        "y = C e^(2x)",
+        "y = e^(2x) + C",
+        "y = 2 e^x",
+        "y = 5 e^(2x)"
+      ],
+      "answer": 3,
+      "explanation": "y = 5 e^(2x) is the general formula with C = 5, and its derivative is 10e^(2x), which equals 2y. y = C e^(2x) still has an unchosen constant C. y = e^(2x) + C is not a solution for most C. y = 2e^x has derivative 2e^x, not 4e^x.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.general-two-constant-family",
+      "concept": "general-solution",
+      "element": "family-of-solutions",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "The family y = C₁ eˣ + C₂ e^(−x) solves y″ − y = 0. Why does it count as a general solution?",
+      "choices": [
+        "It has one constant only",
+        "It has no constants",
+        "It has three constants",
+        "It has two constants, matching the second order"
+      ],
+      "answer": 3,
+      "explanation": "The equation is second order, and the family has two arbitrary constants, C₁ and C₂, which matches the order. A family with one constant is too small for a second-order equation, and a family with no constants is a single function.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.general-second-derivative-zero",
+      "concept": "general-solution",
+      "element": "arbitrary-constants",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which family is a general solution of y″ = 0 with two constants?",
+      "choices": [
+        "y = C₁x²",
+        "y = C₁ + C₂x",
+        "y = C₁ eˣ",
+        "y = C₁ + C₂x²"
+      ],
+      "answer": 1,
+      "explanation": "Integrating y″ = 0 once gives y′ = C₂, and again gives y = C₁ + C₂x. y = C₁x² has second derivative 2C₁, not 0. y = C₁ eˣ has second derivative C₁ eˣ. y = C₁ + C₂x² has second derivative 2C₂, which is not 0 in general.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.general-zero-function",
+      "concept": "general-solution",
+      "element": "family-of-solutions",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "The general solution of y′ = y is y = C eˣ. Is the zero function y = 0 a solution, and is it in this family?",
+      "choices": [
+        "It is a solution, but no value of C gives it",
+        "It is not a solution",
+        "It is a solution, and it is included with C = 0",
+        "It is included with C = 1"
+      ],
+      "answer": 2,
+      "explanation": "y = 0 has derivative 0, which equals y, so it is a solution. Setting C = 0 in C eˣ gives exactly y = 0, so the family includes it. C = 1 gives eˣ, which is not the zero function.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.ivp-what-is-it",
+      "concept": "initial-value-problem",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does an initial value problem combine?",
+      "choices": [
+        "Two ODEs solved at the same time",
+        "An ODE and conditions at two endpoints",
+        "A table of numerical values for y",
+        "An ODE and a condition on the solution at one point"
+      ],
+      "answer": 3,
+      "explanation": "An IVP is an ODE together with a condition on the solution at one starting point. Conditions at two endpoints define a boundary value problem instead, which is a different problem.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.ivp-initial-condition",
+      "concept": "initial-value-problem",
+      "element": "initial-condition",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "For y′ = 4y with y(0) = 3, what is the initial condition?",
+      "choices": [
+        "y′(0) = 3",
+        "y(3) = 0",
+        "y(0) = 3",
+        "y(4) = 0"
+      ],
+      "answer": 2,
+      "explanation": "The initial condition gives the value of y at the starting point x = 0, so y(0) = 3. y′(0) = 3 is a condition on the derivative, which is a different thing.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.ivp-starting-point",
+      "concept": "initial-value-problem",
+      "element": "initial-point",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In the IVP y′ = x + y with y(1) = 2, what is the starting point x₀?",
+      "choices": [
+        "1",
+        "0",
+        "2",
+        "−2"
+      ],
+      "answer": 0,
+      "explanation": "The condition y(1) = 2 is given at x = 1, so the starting point is x₀ = 1. The value 2 is the initial value of y, not the point.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.ivp-solving-steps",
+      "concept": "initial-value-problem",
+      "element": "fixing-constants",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps for solving y′ = 2x with y(1) = 4 in order.",
+      "steps": [
+        "Find the general solution, with a constant C",
+        "Substitute x = 1 and y = 4 into the general solution",
+        "Solve the resulting equation for C",
+        "Put that value of C back into the general solution"
+      ],
+      "explanation": "The constant must exist before the condition can be used, and it must be found before it is put back. Substituting the condition comes before solving for C.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.ivp-solve-example",
+      "concept": "initial-value-problem",
+      "element": "fixing-constants",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the solution of y′ = 2x with y(1) = 4?",
+      "choices": [
+        "y = 2x² + 2",
+        "y = x² + 3",
+        "y = x² + 4",
+        "y = 2x + 2"
+      ],
+      "answer": 1,
+      "explanation": "The general solution is y = x² + C. Setting y(1) = 4 gives 1 + C = 4, so C = 3, and y = x² + 3. The option y = x² + 4 gives y(1) = 5, which fails the condition.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.ivp-how-many-conditions",
+      "concept": "initial-value-problem",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "How many initial conditions fix the constants of a second-order ODE's general solution?",
+      "choices": [
+        "One",
+        "Three",
+        "Two",
+        "None"
+      ],
+      "answer": 2,
+      "explanation": "A second-order ODE has two constants, so two conditions are needed. They are usually y(x₀) and y′(x₀) at the same starting point.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.ivp-value-at-one",
+      "concept": "initial-value-problem",
+      "element": "fixing-constants",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "What is y(1) for the IVP y′ = y with y(0) = 2?",
+      "choices": [
+        "e + 2",
+        "2e",
+        "2e²",
+        "e²"
+      ],
+      "answer": 1,
+      "explanation": "The solution is y = 2eˣ, so y(1) = 2e. The condition y(0) = 2 fixes the constant as a multiplier, not an addition. e + 2 comes from treating the solution as eˣ + 2, which does not satisfy y′ = y.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.field-what-it-shows",
+      "concept": "direction-field",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does a direction field show for y′ = f(x, y)?",
+      "choices": [
+        "The exact value of y at each x",
+        "The slope of a solution curve through each point",
+        "The area under each solution curve",
+        "The order of the equation"
+      ],
+      "answer": 1,
+      "explanation": "At each point the field shows the slope f(x, y) that a solution through that point must have. It does not give exact values of y, which would require solving the equation.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.field-slope-at-point",
+      "concept": "direction-field",
+      "element": "slope-at-point",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "For y′ = x − y, what slope does a solution have at the point (1, 3)?",
+      "choices": [
+        "2",
+        "−2",
+        "4",
+        "−4"
+      ],
+      "answer": 1,
+      "explanation": "Substituting x = 1 and y = 3 gives 1 − 3 = −2. The value 2 drops the sign, and 4 comes from adding x and y instead of subtracting.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.field-zero-slope",
+      "concept": "direction-field",
+      "element": "slope-at-point",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does a direction field for y′ = 0 look like?",
+      "choices": [
+        "Horizontal segments everywhere",
+        "Segments whose slopes change from point to point",
+        "Vertical segments everywhere",
+        "Segments of slope 1 everywhere"
+      ],
+      "answer": 0,
+      "explanation": "Every point has slope 0, so every segment is horizontal. The other options describe slopes that vary or are not zero.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.field-sketching-steps",
+      "concept": "direction-field",
+      "element": "sketching-solutions",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps for sketching a direction field in order.",
+      "steps": [
+        "Choose a grid of points (x, y) across the region",
+        "Compute the slope f(x, y) at each grid point",
+        "Draw a short segment of that slope centered at each point"
+      ],
+      "explanation": "The slope cannot be computed before the points are chosen, and a segment cannot be drawn before its slope is known. Drawing the segments comes last.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.field-slope-at-second-point",
+      "concept": "direction-field",
+      "element": "slope-at-point",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "For y′ = y² − x, what is the slope at the point (2, 0)?",
+      "choices": [
+        "2",
+        "0",
+        "−4",
+        "−2"
+      ],
+      "answer": 3,
+      "explanation": "Substituting x = 2 and y = 0 gives 0² − 2 = −2. The answer 0 forgets the −x term, and −4 comes from squaring x instead of subtracting it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.field-isocline-line",
+      "concept": "direction-field",
+      "element": "isocline",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "For y′ = x + y, which line collects every point where the slope is 1?",
+      "choices": [
+        "x + y = 0",
+        "y = 1",
+        "x = y",
+        "x + y = 1"
+      ],
+      "answer": 3,
+      "explanation": "Setting the slope to 1 gives x + y = 1, which is the isocline. x + y = 0 gives slope 0. The line y = 1 does not make the slope constant, since the slope is x + 1 there.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "differential-equations.ode-basics.field-isocline-negative",
+      "concept": "direction-field",
+      "element": "isocline",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "For y′ = x − y, which line collects every point where the slope is −1?",
+      "choices": [
+        "y = x − 1",
+        "y = −x − 1",
+        "y = x + 1",
+        "y = 1 − x"
+      ],
+      "answer": 2,
+      "explanation": "Setting x − y = −1 gives y = x + 1. The line y = x − 1 gives slope 1, not −1. The other two lines do not make x − y constant.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    }
+  ],
+  "artifacts": []
+}

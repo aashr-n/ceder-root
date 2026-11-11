@@ -1,0 +1,1451 @@
+{
+  "formatVersion": 1,
+  "id": "biology.gene-regulation",
+  "subject": "biology",
+  "title": "Gene regulation",
+  "summary": "How cells switch genes on and off, from the operon in bacteria to enhancers, epigenetic marks and alternative splicing.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "operon",
+      "name": "Operon",
+      "aliases": [
+        "Operons"
+      ],
+      "summary": "A group of adjacent bacterial genes that share one promoter and one operator, so they are switched on or off together.",
+      "requires": [],
+      "elements": [
+        {
+          "id": "promoter-and-operator",
+          "name": "Promoter and operator",
+          "aliases": []
+        },
+        {
+          "id": "structural-genes",
+          "name": "Structural genes",
+          "aliases": []
+        },
+        {
+          "id": "inducible-operon",
+          "name": "Inducible operon",
+          "aliases": []
+        },
+        {
+          "id": "repressible-operon",
+          "name": "Repressible operon",
+          "aliases": []
+        }
+      ],
+      "explain": {
+        "text": "Bacteria often need a set of enzymes only part of the time, so switching them on and off as one unit saves effort. An operon is a stretch of bacterial DNA where several genes that work together sit side by side and share one promoter and one operator. A repressor protein can sit on the operator and block RNA polymerase, so all the genes stay off. In the lac operon, a molecule called allolactose binds the repressor and makes it let go, so the genes can be read. One switch controls the whole group."
+      },
+      "misconceptions": [
+        {
+          "id": "inducer-switches-repressor-on",
+          "claim": "The inducer switches the repressor on, so the active repressor then controls the genes.",
+          "correction": "The inducer binds the repressor and makes it release the operator. It switches the repressor off, and the genes can then be read."
+        },
+        {
+          "id": "one-switch-per-gene",
+          "claim": "Each gene in an operon has its own promoter and its own switch.",
+          "correction": "The genes of an operon share one promoter and one operator, so they are switched on or off together."
+        },
+        {
+          "id": "repressor-made-on-demand",
+          "claim": "A cell makes the repressor only when the small molecule is around.",
+          "correction": "The regulatory gene is expressed all the time, so the repressor is always present. The small molecule changes whether the repressor can bind the operator."
+        }
+      ]
+    },
+    {
+      "id": "transcription-factor",
+      "name": "Transcription factor",
+      "aliases": [
+        "Transcription factors"
+      ],
+      "summary": "A protein that binds a specific DNA sequence near a gene and helps or blocks RNA polymerase from starting transcription.",
+      "requires": [],
+      "elements": [
+        {
+          "id": "activator",
+          "name": "Activator",
+          "aliases": []
+        },
+        {
+          "id": "repressor",
+          "name": "Repressor",
+          "aliases": []
+        },
+        {
+          "id": "binding-site",
+          "name": "Binding site",
+          "aliases": []
+        },
+        {
+          "id": "combinatorial-control",
+          "name": "Combinatorial control",
+          "aliases": []
+        }
+      ],
+      "explain": {
+        "text": "A transcription factor is a protein that finds a specific DNA sequence near a gene and then helps or blocks the enzyme that copies the gene. Activators help RNA polymerase start, and repressors stop it. A cell makes many of these proteins, and each gene can carry binding sites for several of them. The output of a gene depends on which factors are bound at that moment and how they combine. Because factors are made in different amounts in different cells, the same DNA can be read differently in each cell type."
+      },
+      "misconceptions": [
+        {
+          "id": "tf-is-polymerase",
+          "claim": "Transcription factors are the enzymes that copy DNA into RNA.",
+          "correction": "They copy nothing. They bind DNA and help or block RNA polymerase, which makes the RNA."
+        },
+        {
+          "id": "one-factor-one-gene",
+          "claim": "One factor decides whether a gene is on or off, so a gene has a single switch.",
+          "correction": "Many factors can bind one gene at once, and their combined effect sets how much the gene is read."
+        },
+        {
+          "id": "tf-always-blocks",
+          "claim": "A transcription factor turns off the gene it binds.",
+          "correction": "Activators bind to turn genes on. Only repressors turn genes off."
+        }
+      ]
+    },
+    {
+      "id": "enhancer",
+      "name": "Enhancer",
+      "aliases": [
+        "Enhancers"
+      ],
+      "summary": "A stretch of DNA, often far from a gene, where activator proteins bind and loop over to boost how often the gene is read.",
+      "requires": [
+        "transcription-factor"
+      ],
+      "elements": [
+        {
+          "id": "distance",
+          "name": "Distance from the gene",
+          "aliases": []
+        },
+        {
+          "id": "looping",
+          "name": "DNA looping",
+          "aliases": []
+        },
+        {
+          "id": "orientation",
+          "name": "Orientation",
+          "aliases": []
+        },
+        {
+          "id": "tissue-specific",
+          "name": "Tissue-specific enhancers",
+          "aliases": []
+        }
+      ],
+      "explain": {
+        "text": "An enhancer is a stretch of DNA that boosts how often a gene is read. It is not a gene and makes no protein. Activator proteins bind to it, and the DNA between the enhancer and the gene bends so that these activators reach the promoter. Enhancers can sit far from their gene, upstream, downstream or inside another gene, and they work in either direction. Because each cell type binds different activators to its enhancers, the same genome gives different cells different patterns of activity."
+      },
+      "misconceptions": [
+        {
+          "id": "enhancer-must-sit-beside-gene",
+          "claim": "An enhancer has to sit right next to the gene it boosts.",
+          "correction": "Enhancers can be thousands of bases away. DNA looping brings their bound activators to the promoter."
+        },
+        {
+          "id": "enhancer-is-a-gene",
+          "claim": "An enhancer is a gene that makes a protein which switches other genes on.",
+          "correction": "An enhancer is a DNA sequence that activators bind. It is not translated into protein."
+        },
+        {
+          "id": "enhancer-one-direction",
+          "claim": "An enhancer works only in the direction the gene is read.",
+          "correction": "Enhancers work in either orientation, because activator proteins bind them rather than the sequence being read."
+        }
+      ]
+    },
+    {
+      "id": "epigenetic-regulation",
+      "name": "Epigenetic regulation",
+      "aliases": [
+        "Epigenetics"
+      ],
+      "summary": "Changes to how DNA is marked and packaged that alter which genes are read, without changing the DNA sequence.",
+      "requires": [],
+      "elements": [
+        {
+          "id": "dna-methylation",
+          "name": "DNA methylation",
+          "aliases": []
+        },
+        {
+          "id": "histone-modification",
+          "name": "Histone modification",
+          "aliases": []
+        },
+        {
+          "id": "chromatin-packing",
+          "name": "Chromatin packing",
+          "aliases": []
+        },
+        {
+          "id": "inheritance",
+          "name": "Inheritance through division",
+          "aliases": []
+        }
+      ],
+      "explain": {
+        "text": "Epigenetic regulation changes which genes are read without changing the DNA letters. Chemical marks sit on the DNA, such as methyl groups added to some bases, and on the histone proteins that package it. Marks can tighten the packing so genes are hard to read, or loosen it so they are easy to read. Many marks are copied to daughter cells when a cell divides, so a cell keeps its identity. Marks can also be added and removed during life, so they are not fixed forever."
+      },
+      "misconceptions": [
+        {
+          "id": "marks-rewrite-dna",
+          "claim": "Epigenetic marks rewrite the DNA letters of a gene.",
+          "correction": "The letters stay the same. Marks sit on the DNA or its packaging and change how it is read."
+        },
+        {
+          "id": "methylation-always-silences",
+          "claim": "Methylation switches a gene off wherever the methyl groups sit.",
+          "correction": "Methylation at a promoter usually silences a gene, but the effect depends on the site and on other marks."
+        },
+        {
+          "id": "marks-are-permanent",
+          "claim": "Epigenetic marks are permanent once made and cannot change.",
+          "correction": "Many marks are added and removed during life, and some are reset in early development."
+        }
+      ]
+    },
+    {
+      "id": "alternative-splicing",
+      "name": "Alternative splicing",
+      "aliases": [
+        "Alternative RNA splicing"
+      ],
+      "summary": "Cutting the same pre-mRNA in different ways, keeping different exons, so one gene can make several different proteins.",
+      "requires": [],
+      "elements": [
+        {
+          "id": "exon-and-intron",
+          "name": "Exons and introns",
+          "aliases": []
+        },
+        {
+          "id": "splice-sites",
+          "name": "Splice sites",
+          "aliases": []
+        },
+        {
+          "id": "alternative-mrna",
+          "name": "Alternative mRNAs",
+          "aliases": []
+        },
+        {
+          "id": "exon-skipping",
+          "name": "Exon skipping and intron retention",
+          "aliases": []
+        }
+      ],
+      "explain": {
+        "text": "A gene is first copied into pre-mRNA, which holds both exons and introns. Splicing cuts out the introns and joins the exons into mRNA. Alternative splicing means the same pre-mRNA is cut differently, keeping or skipping some exons. Different cells, or the same cell at different times, can make different mRNAs from one gene. Each mRNA can be translated into a different protein, so one gene can make several proteins. The DNA is unchanged; only the cutting differs."
+      },
+      "misconceptions": [
+        {
+          "id": "one-gene-one-protein",
+          "claim": "One gene makes one mRNA, and so one protein, in every cell.",
+          "correction": "Alternative splicing can give one gene several mRNAs, so one gene can make several proteins."
+        },
+        {
+          "id": "splicing-is-random",
+          "claim": "Introns are cut out at random, and the exons that survive are kept.",
+          "correction": "Splice sites carry signals, and regulatory proteins help choose which exons stay."
+        },
+        {
+          "id": "splicing-changes-dna",
+          "claim": "Alternative splicing changes the gene in the DNA.",
+          "correction": "The DNA stays the same. The same pre-mRNA is cut in different ways to give different mRNAs."
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "biology.gene-regulation.operon-operator-job",
+      "concept": "operon",
+      "element": "promoter-and-operator",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In an operon, what is the operator?",
+      "explanation": "The operator is a short DNA segment that a repressor binds. Bound there, the repressor blocks RNA polymerase. The promoter is where polymerase starts, and the regulatory gene is a separate gene that makes the repressor.",
+      "choices": [
+        "The regulatory gene that codes for the repressor protein itself",
+        "The DNA site where RNA polymerase starts transcription",
+        "The DNA site where a repressor binds to block transcription",
+        "The mRNA segment that a ribosome reads first"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.operon-allolactose-action",
+      "concept": "operon",
+      "element": "inducible-operon",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In the lac operon, what does allolactose do to the repressor?",
+      "explanation": "Allolactose is the inducer. It binds the repressor and changes its shape, so the repressor leaves the operator and the lac genes can be read. The inducer switches the repressor off, not on.",
+      "choices": [
+        "It binds the repressor, which then blocks the operator",
+        "It binds the repressor and makes it let go of the operator",
+        "It binds the operator and stops the repressor from working",
+        "It stops the regulatory gene from making more repressor"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "inducer-switches-repressor-on",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.operon-shared-promoter",
+      "concept": "operon",
+      "element": "structural-genes",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "The lac operon's three structural genes share one promoter. What does that mean for how they are switched?",
+      "explanation": "The three lac genes are transcribed from one promoter into one long mRNA, so they are switched on and off together. Each gene does not have its own operator or its own inducer.",
+      "choices": [
+        "Each gene needs its own inducer before it is read",
+        "Just the gene nearest the promoter is read, the others not",
+        "Each gene has its own operator, so each is blocked alone",
+        "All three genes are switched on or off together as a unit"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "one-switch-per-gene",
+        null,
+        "one-switch-per-gene",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.operon-trp-repressor-state",
+      "concept": "operon",
+      "element": "repressible-operon",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "The trp repressor needs tryptophan to bind the operator. When tryptophan is scarce, what is the repressor doing?",
+      "explanation": "The trp repressor binds the operator only when tryptophan is bound to it. With little tryptophan, the repressor is inactive and the trp genes are read. The cell still makes the repressor, which is always present.",
+      "choices": [
+        "It is absent, since the cell makes it when tryptophan is around",
+        "It is active, so it binds the operator and blocks transcription",
+        "It is inactive and cannot bind the operator, so genes are read",
+        "It is active, but tryptophan is needed to carry it to the DNA"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "repressor-made-on-demand",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.operon-student-inducer-claim",
+      "concept": "operon",
+      "element": "inducible-operon",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: 'Lactose switches the repressor on, and the active repressor then switches the lac genes on.' Which statement corrects this?",
+      "explanation": "Lactose, through allolactose, inactivates the repressor. It releases the operator, so the genes can be read. The inducer does not switch the repressor on, and an active repressor would block the genes.",
+      "choices": [
+        "Lactose switches the repressor on, which then switches the genes on",
+        "Lactose inactivates the repressor, so the operator is released",
+        "Lactose binds the operator, and the repressor is not needed",
+        "Lactose is broken down before it can reach the repressor"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "inducer-switches-repressor-on",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.operon-constant-regulator",
+      "concept": "operon",
+      "element": "promoter-and-operator",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why is the lac repressor present in a cell that has no lactose?",
+      "explanation": "The regulatory gene is expressed constantly, so the repressor is present even without lactose. The inducer changes whether the repressor can bind the operator, not whether it is made.",
+      "choices": [
+        "A regulatory gene is expressed all the time, making repressor",
+        "The cell makes repressor when lactose arrives, as it is needed",
+        "Lactose is stored inside the repressor protein until it is used",
+        "The operator DNA is the source that makes the repressor"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "repressor-made-on-demand",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.operon-operator-mutation",
+      "concept": "operon",
+      "element": "structural-genes",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A mutation destroys the operator of a two-gene operon. What is the expected result?",
+      "explanation": "The operator is the site where the repressor blocks transcription of the whole operon. Without it, nothing blocks the shared promoter, so both genes are read.",
+      "choices": [
+        "Just the gene nearest the operator loses its control",
+        "Both genes are read, since nothing blocks the promoter",
+        "Neither gene is affected, since each has its own promoter",
+        "Both genes stop being read, since the operator is itself a gene"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        "one-switch-per-gene",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Correct, but the rationale 'since nothing blocks the promoter' is loose: the repressor blocks RNA polymerase at the operator, and the operator is a site distinct from the promoter. Suggest rewording the rationale.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.operon-lac-steps",
+      "concept": "operon",
+      "element": "inducible-operon",
+      "kind": "order",
+      "difficulty": 1,
+      "prompt": "Put these steps in order for the lac operon when lactose appears in a cell.",
+      "explanation": "Lactose enters the cell, and a small amount is converted to allolactose. Allolactose binds the repressor, which releases the operator, and RNA polymerase then transcribes the lac genes.",
+      "steps": [
+        "Lactose is taken into the cell",
+        "A little lactose is converted to allolactose",
+        "Allolactose binds the repressor",
+        "The repressor releases the operator",
+        "RNA polymerase transcribes the lac genes"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.gene-regulation.tf-binding-site",
+      "concept": "transcription-factor",
+      "element": "binding-site",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Where does a transcription factor bind?",
+      "explanation": "A transcription factor binds a specific DNA sequence near the gene it controls, usually in the promoter or enhancer region. It does not bind ribosomes or transfer RNA.",
+      "choices": [
+        "Inside the ribosome, beside the mRNA that it reads",
+        "At a specific DNA sequence near the gene it controls",
+        "On the transfer RNA's anticodon loop, during translation",
+        "On the sugar of a random nucleotide, with no pattern"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.tf-polymerase-role",
+      "concept": "transcription-factor",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In transcription, what does RNA polymerase do that a transcription factor does not?",
+      "explanation": "RNA polymerase copies DNA into RNA. Transcription factors do not copy anything; they bind DNA and help or block the polymerase.",
+      "choices": [
+        "The factor copies the DNA, and polymerase helps or blocks it",
+        "It copies the DNA sequence into a matching RNA strand",
+        "It binds a specific DNA sequence and nothing else",
+        "It joins amino acids into a chain at the ribosome"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "tf-is-polymerase",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.tf-student-enzyme-claim",
+      "concept": "transcription-factor",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'The transcription factor is the enzyme that makes the RNA copy of the gene.' What is the correction?",
+      "explanation": "The factor is not an enzyme. It binds DNA and helps or blocks RNA polymerase, which makes the RNA copy.",
+      "choices": [
+        "The factor binds DNA and helps or blocks the RNA polymerase",
+        "The factor makes the RNA, and polymerase just attaches to the DNA",
+        "The ribosome makes the RNA, so neither protein is needed",
+        "The factor is a sugar that gets copied into the RNA strand"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "tf-is-polymerase",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.tf-combined-output",
+      "concept": "transcription-factor",
+      "element": "combinatorial-control",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A gene has one activator site and one repressor site. What best explains how much the gene is read?",
+      "explanation": "Many factors can bind one gene. Activators and repressors bound at once combine, so the output depends on the whole set, not on whichever bound first.",
+      "choices": [
+        "Whichever factor binds first, since one site wins",
+        "The combined effect of all the factors bound at once",
+        "The activator, since activators are stronger than repressors",
+        "The repressor, since it blocks the promoter directly"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "one-factor-one-gene",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.tf-activator-role",
+      "concept": "transcription-factor",
+      "element": "activator",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does an activator do to a gene?",
+      "explanation": "An activator binds DNA and helps RNA polymerase start transcription. It turns the gene on rather than stopping it.",
+      "choices": [
+        "It helps RNA polymerase begin transcribing the gene",
+        "It stops RNA polymerase from starting the gene at all",
+        "It cuts the gene's DNA into many smaller pieces",
+        "It joins amino acids onto the gene's protein"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "tf-always-blocks",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.tf-repressor-role",
+      "concept": "transcription-factor",
+      "element": "repressor",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does a repressor do to a gene?",
+      "explanation": "A repressor binds DNA and blocks transcription of the gene it controls. It does not copy DNA or make mRNA; that is the polymerase's job.",
+      "choices": [
+        "It binds DNA and blocks the gene from being transcribed",
+        "It copies the gene's DNA into a messenger RNA strand",
+        "It attaches the gene's new mRNA to a ribosome for reading",
+        "It doubles the number of gene copies in the cell"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.tf-combined-student",
+      "concept": "transcription-factor",
+      "element": "combinatorial-control",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: 'One bound factor sets how strongly a gene is read, so a bound activator means full output.' What is wrong with this?",
+      "explanation": "A repressor bound at the same time can cancel an activator's effect. Gene output depends on all the factors bound together, not on one of them.",
+      "choices": [
+        "A repressor bound at the same time can cancel the activator's effect",
+        "An activator bound to a gene makes it fully on whatever else is bound",
+        "Activators do nothing on genes that carry a repressor site",
+        "The ribosome alone sets gene output, not the factors bound"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "one-factor-one-gene",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.tf-every-factor-off",
+      "concept": "transcription-factor",
+      "element": "repressor",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: 'Every transcription factor that binds a gene turns that gene off.' What is the correction?",
+      "explanation": "Activators bind to turn genes on, and repressors bind to turn genes off. Not every bound factor turns a gene off.",
+      "choices": [
+        "Activators turn genes on, and repressors turn them off",
+        "Every factor that binds DNA turns the gene off, as a rule",
+        "Factors that bind DNA cannot change how a gene is read",
+        "Factors act on the mRNA after it has left the gene"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "tf-always-blocks",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.enhancer-what-it-is",
+      "concept": "enhancer",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is an enhancer?",
+      "explanation": "An enhancer is a DNA sequence that activators bind. It is not a gene: it is not translated into protein, so it makes no protein that switches other genes on.",
+      "choices": [
+        "A DNA sequence that activators bind, not translated",
+        "A gene that makes a protein to switch other genes on",
+        "A short RNA that blocks the gene's promoter region",
+        "An enzyme that copies the gene's DNA before each division"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "enhancer-is-a-gene",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.enhancer-where",
+      "concept": "enhancer",
+      "element": "distance",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Where is an enhancer usually found, relative to the gene it boosts?",
+      "explanation": "Enhancers are often thousands of bases from the gene they boost, on the same DNA molecule. Sitting right beside the gene is not required.",
+      "choices": [
+        "On the same DNA molecule, often thousands of bases away",
+        "Right next to the gene, directly before its promoter sequence",
+        "Inside the ribosome, bound to the mRNA it reads",
+        "On a different cell, which passes the signal across"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "enhancer-must-sit-beside-gene",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.enhancer-looping",
+      "concept": "enhancer",
+      "element": "looping",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why can an enhancer thousands of bases away still boost a gene?",
+      "explanation": "When the DNA loops, activators bound to the enhancer can contact the promoter. Enhancers do not send RNA or proteins along the DNA, and they do not have to sit next to the gene.",
+      "choices": [
+        "The DNA loops, bringing bound activators to the promoter",
+        "The enhancer must sit right beside the gene to work",
+        "The enhancer is copied into a protein that travels to the gene",
+        "Its RNA carries the signal along the DNA to the promoter"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "enhancer-must-sit-beside-gene",
+        "enhancer-is-a-gene",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.enhancer-orientation",
+      "concept": "enhancer",
+      "element": "orientation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "An enhancer is cloned into a plasmid backward, reversed from its original direction. Does it still boost the gene?",
+      "explanation": "Enhancers work in either orientation, because activator proteins bind the DNA sequence. The sequence is not read the way a gene is, so its direction does not matter.",
+      "choices": [
+        "Yes, since enhancers work in either orientation",
+        "No, its direction must match the gene's direction",
+        "No, a reversed copy makes a different, inactive protein",
+        "Yes, though it must sit upstream of the gene"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "enhancer-one-direction",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.enhancer-must-beside-student",
+      "concept": "enhancer",
+      "element": "distance",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: 'An enhancer must sit right next to its gene, since that is where activators can act.' What is wrong with this?",
+      "explanation": "Enhancers can sit far from the promoter, and DNA looping brings bound activators into contact with it. Position relative to the gene is not fixed.",
+      "choices": [
+        "Enhancers can sit far away, and looping brings them in",
+        "Enhancers must sit right beside the promoter to work",
+        "Activators act on the ribosome, so enhancers can be anywhere",
+        "Enhancers must sit inside the gene's coding sequence"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "enhancer-must-sit-beside-gene",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.enhancer-no-coding-sequence",
+      "concept": "enhancer",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A stretch of DNA has no protein-coding sequence but raises a gene's output. What is it most likely to be?",
+      "explanation": "A regulatory sequence with no coding part, which activators bind to raise a gene's output, is an enhancer. A gene for an activator would contain coding sequence and make a protein.",
+      "choices": [
+        "An enhancer, a regulatory sequence that activators bind",
+        "A gene for a second activator protein, which the cell makes",
+        "A pseudogene that has lost its promoter",
+        "A short RNA that replaces the promoter"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "enhancer-is-a-gene",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.enhancer-tissue-specific",
+      "concept": "enhancer",
+      "element": "tissue-specific",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Liver cells and nerve cells carry the same DNA but read different genes. What best explains this?",
+      "explanation": "Each cell type expresses a different set of activators, which bind the enhancers present in that cell. The same DNA with different bound factors gives different genes read.",
+      "choices": [
+        "Each cell type binds different activators at its enhancers",
+        "Liver and nerve cells carry different DNA sequences in their genes",
+        "Enhancers are deleted from cells that do not need the gene",
+        "Each cell makes ribosomes that read some genes and skip others"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.enhancer-direction-student",
+      "concept": "enhancer",
+      "element": "orientation",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: 'Enhancers work just in the direction the gene is read, like a promoter.' What is wrong with this?",
+      "explanation": "Enhancers work in either orientation, because activators bind them. Being read by polymerase is not needed; the bound activators do the work.",
+      "choices": [
+        "Enhancers work in either orientation, because activators bind them",
+        "Enhancers work just in the direction the gene is read",
+        "Enhancers work just from the upstream side of the gene, like promoters",
+        "Enhancers are read by ribosomes, so their direction matters"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "enhancer-one-direction",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.epigenetic-methylation-definition",
+      "concept": "epigenetic-regulation",
+      "element": "dna-methylation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is DNA methylation?",
+      "explanation": "DNA methylation adds a methyl group, often to a base in a gene's promoter. It changes how the DNA is read without changing the base sequence.",
+      "choices": [
+        "Adding methyl groups to DNA, often at a gene's promoter",
+        "Changing one base of the DNA into a different base, at random",
+        "Cutting the DNA into fixed pieces at set sites",
+        "Copying the DNA just before a cell divides"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.epigenetic-histone-effect",
+      "concept": "epigenetic-regulation",
+      "element": "histone-modification",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What do histone modifications change?",
+      "explanation": "Histone modifications change how tightly DNA is packed around histone proteins, which sets how easily genes can be read. The base sequence is not changed.",
+      "choices": [
+        "How tightly the DNA is wrapped around histone proteins",
+        "The sequence of bases in the DNA, which is the gene's code",
+        "The number of chromosomes in the nucleus",
+        "The order of amino acids in a protein"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "marks-rewrite-dna",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.epigenetic-promoter-methyl",
+      "concept": "epigenetic-regulation",
+      "element": "dna-methylation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A gene's promoter is heavily methylated, and the gene is silent. What is the best explanation?",
+      "explanation": "Methylation at a promoter usually blocks the proteins that start transcription, so the gene stays silent. The effect depends on the site and on other marks.",
+      "choices": [
+        "Methyl groups at the promoter usually block transcription start",
+        "The methyl groups change the gene's bases, so it reads a different protein",
+        "Methylation silences any gene it touches, wherever the group sits",
+        "Methyl groups add energy that makes the gene read too fast"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "marks-rewrite-dna",
+        "methylation-always-silences",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.epigenetic-permanent-claim",
+      "concept": "epigenetic-regulation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about epigenetic marks is accurate?",
+      "explanation": "Many epigenetic marks are added and removed during life. They are not written into the DNA letters, and they are not fixed for life.",
+      "choices": [
+        "Many are added and removed during life, so they change",
+        "Once made, they are permanent and cannot be undone",
+        "They are written into the DNA letters, so they are fixed",
+        "They are made of protein, so they cannot be changed"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "marks-are-permanent",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.epigenetic-identical-twins",
+      "concept": "epigenetic-regulation",
+      "element": "dna-methylation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Identical twins can carry different methylation patterns. Why is this not a change to their DNA letters?",
+      "explanation": "Methylation patterns sit on the DNA and change how it is read. The base sequence is the same, so twins with identical DNA can differ in methylation.",
+      "choices": [
+        "Methyl groups sit on DNA and change how it is read",
+        "The twins' DNA letters differ at the same genes",
+        "The patterns come from the ribosome, which edits the DNA",
+        "Methyl groups replace the bases of the DNA over time"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "marks-rewrite-dna",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.epigenetic-inherited-silence",
+      "concept": "epigenetic-regulation",
+      "element": "inheritance",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A cell marks a gene silent, and all of its daughter cells keep the mark. What does this show?",
+      "explanation": "Marks are copied when the DNA is copied, so daughter cells inherit the silent pattern. The DNA letters did not change, and marks can still change later.",
+      "choices": [
+        "Marks get copied at each division, so the pattern passes on",
+        "The daughter cells' DNA letters were changed to match their mother",
+        "The marks are fixed for life, so every cell keeps them",
+        "The ribosome gives each daughter cell its marks"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "marks-rewrite-dna",
+        "marks-are-permanent",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.epigenetic-student-rewrite",
+      "concept": "epigenetic-regulation",
+      "element": "chromatin-packing",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says that when a cell adds a mark to a gene, the gene's DNA letters are rewritten. What is wrong with this?",
+      "explanation": "Marks sit on the DNA or its packaging and change how it is read. They do not rewrite the base letters, and they are not added to RNA.",
+      "choices": [
+        "The mark sits on the DNA and changes reading, not the letters",
+        "The mark rewrites the letters, though just in the promoter",
+        "The mark is added to the RNA, not to the DNA",
+        "The mark rewrites the letters, which reset at the next division"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "marks-rewrite-dna",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.epigenetic-methylation-accurate",
+      "concept": "epigenetic-regulation",
+      "element": "dna-methylation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about DNA methylation is most accurate?",
+      "explanation": "Methylation often silences a gene, but the result depends on where the methyl groups sit and what other marks are present. It does not silence every gene it touches.",
+      "choices": [
+        "It often silences a gene, but the effect varies by site",
+        "It silences every gene it touches, wherever it sits",
+        "It turns a gene on by adding energy to its promoter region",
+        "It changes the amino acids that a gene's protein contains"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "methylation-always-silences",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.splicing-exon-definition",
+      "concept": "alternative-splicing",
+      "element": "exon-and-intron",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is an exon?",
+      "explanation": "An exon is a part of a gene that is kept in the mature mRNA and coded into protein. Introns are the parts cut out during splicing.",
+      "choices": [
+        "A part of a gene that stays in the mature mRNA",
+        "A part of a gene that is cut out during splicing",
+        "The promoter region where transcription starts",
+        "The stop signal at the end of a gene"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.splicing-steps",
+      "concept": "alternative-splicing",
+      "element": "splice-sites",
+      "kind": "order",
+      "difficulty": 1,
+      "prompt": "Put these steps in order for making an mRNA from a gene that has introns.",
+      "explanation": "Transcription makes pre-mRNA with introns and exons. The splicing machinery reads the splice sites, the introns are removed, the exons are joined, and the mature mRNA leaves the nucleus.",
+      "steps": [
+        "RNA polymerase copies the gene into pre-mRNA with introns and exons",
+        "The splicing machinery recognises the splice sites",
+        "The introns are cut out and the exons are joined into one mRNA",
+        "The mature mRNA leaves the nucleus"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.gene-regulation.splicing-keep-or-skip",
+      "concept": "alternative-splicing",
+      "element": "alternative-mrna",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A pre-mRNA can keep exon 3 or skip it. What does this let one gene do?",
+      "explanation": "Keeping or skipping an exon gives different mRNAs from one pre-mRNA. Each mRNA can be translated into a different protein, so one gene can make two proteins.",
+      "choices": [
+        "Make two different mRNAs, and so two different proteins",
+        "Make one mRNA that is copied twice inside the cell nucleus",
+        "Keep one protein that is the same in every tissue",
+        "Make a protein without any ribosome involved"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.splicing-human-gene",
+      "concept": "alternative-splicing",
+      "element": "alternative-mrna",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why can one human gene make several different proteins?",
+      "explanation": "Alternative splicing joins different exons into different mRNAs from one gene. Each mRNA can be translated into a different protein.",
+      "choices": [
+        "Different exons are joined in different combinations",
+        "Each gene has one protein, so the others come from other genes",
+        "The introns are translated into extra proteins",
+        "The gene is copied several times, and each copy makes a protein"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "one-gene-one-protein",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.splicing-control-choice",
+      "concept": "alternative-splicing",
+      "element": "splice-sites",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What decides which exons a cell keeps in its mature mRNA?",
+      "explanation": "Splice sites carry signals that the splicing machinery reads, and regulatory proteins bind the pre-mRNA to help choose which exons stay. Cutting is not random.",
+      "choices": [
+        "Signals at the splice sites and proteins that bind them",
+        "Introns are cut at random, and the exons that survive are kept",
+        "The ribosome picks exons after the mRNA has left the nucleus",
+        "Exons are kept when by chance they code a full protein"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "splicing-is-random",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.splicing-liver-brain-student",
+      "concept": "alternative-splicing",
+      "element": "exon-and-intron",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says liver and brain cells have different versions of the same gene in their DNA, so their splicing differs. What is wrong?",
+      "explanation": "The DNA is the same in all cells. The same pre-mRNA can be spliced in different ways in different cell types, so the mRNAs and proteins differ.",
+      "choices": [
+        "The DNA is identical, and each cell cuts pre-mRNA differently",
+        "The DNA differs, and the gene's own sequence fixes its splicing",
+        "The DNA is identical, and the mRNA is the same in every cell",
+        "The DNA differs, but splicing is the same in every cell type"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "one-gene-one-protein",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.splicing-true-statement",
+      "concept": "alternative-splicing",
+      "element": "alternative-mrna",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which statement about alternative splicing is true?",
+      "explanation": "One DNA sequence can give different mRNAs in different cell types, because splicing differs. The DNA itself is not rewritten.",
+      "choices": [
+        "One DNA sequence gives different mRNAs in different cells",
+        "It rewrites the gene's bases in the DNA, so the gene changes",
+        "It removes every exon and keeps the introns",
+        "It happens in bacteria, which have no introns"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "splicing-changes-dna",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.gene-regulation.splicing-skip-or-retain",
+      "concept": "alternative-splicing",
+      "element": "exon-skipping",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Exon skipping and intron retention both change the mRNA made from one pre-mRNA. Which is true?",
+      "explanation": "Both exon skipping and intron retention change which sequences end up in the mRNA, using one pre-mRNA. Neither changes the DNA, and the choice is controlled by the cell.",
+      "choices": [
+        "Both change which sequences are kept in the final mRNA",
+        "Both are random errors that the cell does not control",
+        "Exon skipping keeps the exons, and retention cuts them out",
+        "Both change the DNA sequence, so the gene is read differently"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "splicing-is-random",
+        null,
+        "splicing-changes-dna"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    }
+  ],
+  "artifacts": []
+}

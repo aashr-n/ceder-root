@@ -1,0 +1,248 @@
+{
+  "formatVersion": 1,
+  "subject": "differential-equations",
+  "covers": "A first course in ordinary differential equations: first-order methods, linear higher-order equations, Laplace transforms, linear and nonlinear systems, and numerical methods. Stops before partial differential equations and before the proofs of the existence theorems in depth.",
+  "packs": [
+    {
+      "pack": "ode-basics",
+      "title": "Basics of differential equations",
+      "brief": "What an ordinary differential equation is, its order, what a solution and a general solution are, initial value problems, and direction fields. Stops before any method for solving.",
+      "concepts": [
+        { "id": "ode", "name": "Ordinary differential equation" },
+        { "id": "order-of-ode", "name": "Order of a differential equation" },
+        { "id": "solution-of-ode", "name": "Solution of a differential equation" },
+        { "id": "general-solution", "name": "General solution" },
+        { "id": "initial-value-problem", "name": "Initial value problem" },
+        { "id": "direction-field", "name": "Direction field" }
+      ],
+      "buildsOn": []
+    },
+    {
+      "pack": "separable-equations",
+      "title": "Separable equations",
+      "brief": "First-order equations whose variables can be split to each side, solved by integration, with implicit solutions and solutions lost when dividing. Stops before exact equations.",
+      "concepts": [
+        { "id": "separable-equation", "name": "Separable equation" },
+        { "id": "separation-of-variables", "name": "Separation of variables" },
+        { "id": "implicit-solution", "name": "Implicit solution" },
+        { "id": "singular-solution", "name": "Singular solution" }
+      ],
+      "buildsOn": ["ode", "solution-of-ode", "initial-value-problem"]
+    },
+    {
+      "pack": "exact-equations",
+      "title": "Exact equations and integrating factors",
+      "brief": "First-order equations written as a total differential, the test for exactness, recovering the potential function, and integrating factors that make an equation exact. Stops before linear equations.",
+      "concepts": [
+        { "id": "exact-equation", "name": "Exact equation" },
+        { "id": "exactness-test", "name": "Test for exactness" },
+        { "id": "potential-function", "name": "Potential function" },
+        { "id": "integrating-factor", "name": "Integrating factor" }
+      ],
+      "buildsOn": ["ode", "solution-of-ode", "general-solution", "implicit-solution"]
+    },
+    {
+      "pack": "linear-first-order",
+      "title": "Linear first-order equations",
+      "brief": "First-order linear equations in standard form, solved with an integrating factor, Bernoulli equations reduced to linear form, and the split into transient and steady-state parts. Stops before modeling applications.",
+      "concepts": [
+        { "id": "linear-first-order-ode", "name": "Linear first-order equation" },
+        { "id": "standard-linear-form", "name": "Standard linear form" },
+        { "id": "bernoulli-equation", "name": "Bernoulli equation" },
+        { "id": "transient-and-steady-state", "name": "Transient and steady-state solution" }
+      ],
+      "buildsOn": ["integrating-factor", "initial-value-problem"]
+    },
+    {
+      "pack": "first-order-models",
+      "title": "First-order models",
+      "brief": "Growth and decay, Newton's law of cooling, mixing problems, and the logistic equation with a carrying capacity, each set up as a first-order equation. Stops before qualitative analysis.",
+      "concepts": [
+        { "id": "exponential-growth-decay", "name": "Exponential growth and decay" },
+        { "id": "newtons-law-of-cooling", "name": "Newton's law of cooling" },
+        { "id": "mixing-problem", "name": "Mixing problem" },
+        { "id": "logistic-equation", "name": "Logistic equation" },
+        { "id": "carrying-capacity", "name": "Carrying capacity" }
+      ],
+      "buildsOn": ["separation-of-variables", "linear-first-order-ode"]
+    },
+    {
+      "pack": "existence-uniqueness",
+      "title": "Existence and uniqueness of solutions",
+      "brief": "When an initial value problem has a solution and when that solution is unique, using the Lipschitz condition and the Picard-Lindelof theorem, with examples where uniqueness fails and the interval of a solution. Stops before the full proofs.",
+      "concepts": [
+        { "id": "existence-theorem", "name": "Existence theorem" },
+        { "id": "lipschitz-condition", "name": "Lipschitz condition" },
+        { "id": "uniqueness-theorem", "name": "Uniqueness theorem" },
+        { "id": "picard-lindelof-theorem", "name": "Picard-Lindelof theorem" },
+        { "id": "maximal-interval-of-existence", "name": "Maximal interval of existence" }
+      ],
+      "buildsOn": ["initial-value-problem", "direction-field", "separable-equation"]
+    },
+    {
+      "pack": "autonomous-phase-line",
+      "title": "Autonomous equations and the phase line",
+      "brief": "First-order autonomous equations, their equilibrium points, reading the phase line to decide stability, and sketching solutions from it. Stops before systems.",
+      "concepts": [
+        { "id": "autonomous-equation", "name": "Autonomous equation" },
+        { "id": "equilibrium-point", "name": "Equilibrium point" },
+        { "id": "phase-line", "name": "Phase line" },
+        { "id": "stability-of-equilibrium", "name": "Stability of an equilibrium" }
+      ],
+      "buildsOn": ["logistic-equation", "uniqueness-theorem"]
+    },
+    {
+      "pack": "linear-homogeneous-higher-order",
+      "title": "Linear homogeneous equations of higher order",
+      "brief": "Linear equations of order n with the superposition principle, linear independence and the Wronskian, and fundamental sets of solutions. Stops before constant coefficients.",
+      "concepts": [
+        { "id": "linear-ode-of-order-n", "name": "Linear differential equation of order n" },
+        { "id": "homogeneous-linear-ode", "name": "Homogeneous linear equation" },
+        { "id": "superposition-principle", "name": "Superposition principle" },
+        { "id": "linear-independence", "name": "Linear independence of functions" },
+        { "id": "wronskian", "name": "Wronskian" },
+        { "id": "fundamental-set-of-solutions", "name": "Fundamental set of solutions" }
+      ],
+      "buildsOn": ["linear-first-order-ode", "uniqueness-theorem"]
+    },
+    {
+      "pack": "constant-coefficient-linear",
+      "title": "Constant-coefficient linear equations",
+      "brief": "Homogeneous linear equations with constant coefficients solved through the characteristic equation, for distinct real, repeated and complex roots. Stops before nonhomogeneous equations.",
+      "concepts": [
+        { "id": "characteristic-equation", "name": "Characteristic equation" },
+        { "id": "distinct-real-roots", "name": "Distinct real roots" },
+        { "id": "repeated-roots", "name": "Repeated roots" },
+        { "id": "complex-roots", "name": "Complex roots" }
+      ],
+      "buildsOn": ["superposition-principle", "fundamental-set-of-solutions"]
+    },
+    {
+      "pack": "reduction-of-order",
+      "title": "Reduction of order and Euler equations",
+      "brief": "Finding a second solution from a known one by reduction of order, using the Wronskian to get it, and Cauchy-Euler equations with variable coefficients. Stops before nonhomogeneous equations.",
+      "concepts": [
+        { "id": "reduction-of-order", "name": "Reduction of order" },
+        { "id": "second-solution-by-wronskian", "name": "Second solution from the Wronskian" },
+        { "id": "euler-equation", "name": "Cauchy-Euler equation" },
+        { "id": "abel-formula", "name": "Abel's formula" }
+      ],
+      "buildsOn": ["wronskian", "characteristic-equation"]
+    },
+    {
+      "pack": "nonhomogeneous-linear",
+      "title": "Nonhomogeneous linear equations",
+      "brief": "Nonhomogeneous linear equations with the complementary and particular solutions, the method of undetermined coefficients, and variation of parameters. Stops before applications to oscillators.",
+      "concepts": [
+        { "id": "nonhomogeneous-linear-ode", "name": "Nonhomogeneous linear equation" },
+        { "id": "complementary-solution", "name": "Complementary solution" },
+        { "id": "particular-solution", "name": "Particular solution" },
+        { "id": "undetermined-coefficients", "name": "Method of undetermined coefficients" },
+        { "id": "variation-of-parameters", "name": "Variation of parameters" }
+      ],
+      "buildsOn": ["fundamental-set-of-solutions", "characteristic-equation", "wronskian"]
+    },
+    {
+      "pack": "oscillations-and-resonance",
+      "title": "Oscillations and resonance",
+      "brief": "Spring-mass systems, free and damped motion, forced oscillation, resonance, and the RLC circuit, all set up as second-order constant-coefficient equations. Stops before the Laplace transform.",
+      "concepts": [
+        { "id": "simple-harmonic-motion", "name": "Simple harmonic motion" },
+        { "id": "damped-oscillation", "name": "Damped oscillation" },
+        { "id": "forced-oscillation", "name": "Forced oscillation" },
+        { "id": "resonance", "name": "Resonance" },
+        { "id": "rlc-circuit", "name": "RLC circuit" }
+      ],
+      "buildsOn": ["complex-roots", "undetermined-coefficients", "particular-solution"]
+    },
+    {
+      "pack": "power-series-solutions",
+      "title": "Power series solutions",
+      "brief": "Solving linear equations with variable coefficients as power series near an ordinary point, from the recurrence for the coefficients and the radius of convergence. Stops before singular points.",
+      "concepts": [
+        { "id": "power-series-solution", "name": "Power series solution" },
+        { "id": "ordinary-point", "name": "Ordinary point" },
+        { "id": "coefficient-recurrence", "name": "Recurrence for coefficients" },
+        { "id": "radius-of-convergence", "name": "Radius of convergence" }
+      ],
+      "buildsOn": ["linear-ode-of-order-n", "general-solution"]
+    },
+    {
+      "pack": "laplace-transform",
+      "title": "The Laplace transform",
+      "brief": "The Laplace transform and its inverse, the transform of a derivative, the shifting theorem, and the Heaviside step function, with a table of common transforms. Stops before solving equations with it.",
+      "concepts": [
+        { "id": "laplace-transform", "name": "Laplace transform" },
+        { "id": "inverse-laplace-transform", "name": "Inverse Laplace transform" },
+        { "id": "laplace-of-derivative", "name": "Laplace transform of a derivative" },
+        { "id": "shifting-theorem", "name": "Shifting theorem" },
+        { "id": "heaviside-step-function", "name": "Heaviside step function" }
+      ],
+      "buildsOn": ["initial-value-problem"]
+    },
+    {
+      "pack": "laplace-applications",
+      "title": "Solving with the Laplace transform",
+      "brief": "Solving initial value problems with the Laplace transform, handling forcing by delta functions and step functions, and convolution. Stops before systems.",
+      "concepts": [
+        { "id": "laplace-solution-of-ivp", "name": "Laplace transform solution of an initial value problem" },
+        { "id": "dirac-delta-function", "name": "Dirac delta function" },
+        { "id": "convolution", "name": "Convolution" },
+        { "id": "impulse-response", "name": "Impulse response" }
+      ],
+      "buildsOn": ["laplace-of-derivative", "shifting-theorem", "heaviside-step-function"]
+    },
+    {
+      "pack": "linear-systems-eigenvalues",
+      "title": "Linear systems and eigenvalues",
+      "brief": "Writing linear first-order systems in matrix form and solving them with eigenvalues and eigenvectors. Stops before the phase portraits of two-dimensional systems.",
+      "concepts": [
+        { "id": "first-order-linear-system", "name": "First-order linear system" },
+        { "id": "matrix-form-of-system", "name": "Matrix form of a system" },
+        { "id": "eigenvalue", "name": "Eigenvalue" },
+        { "id": "eigenvector", "name": "Eigenvector" },
+        { "id": "eigenvalue-method", "name": "Eigenvalue method" }
+      ],
+      "buildsOn": ["fundamental-set-of-solutions", "initial-value-problem"]
+    },
+    {
+      "pack": "phase-portraits-linear",
+      "title": "Phase portraits of linear systems",
+      "brief": "Classifying two-dimensional linear systems by eigenvalues as nodes, saddle points, spirals and centers, including the defective repeated-eigenvalue case. Stops before nonlinear systems.",
+      "concepts": [
+        { "id": "phase-plane", "name": "Phase plane" },
+        { "id": "node", "name": "Node" },
+        { "id": "saddle-point", "name": "Saddle point" },
+        { "id": "spiral-and-center", "name": "Spiral and center" },
+        { "id": "defective-eigenvalue", "name": "Defective eigenvalue" }
+      ],
+      "buildsOn": ["eigenvalue-method", "eigenvalue"]
+    },
+    {
+      "pack": "nonlinear-systems",
+      "title": "Nonlinear systems and linearization",
+      "brief": "Nonlinear autonomous systems, linearizing about an equilibrium with the Jacobian matrix, hyperbolic equilibria, limit cycles described qualitatively, and a predator-prey model. Stops before proofs of stability theorems.",
+      "concepts": [
+        { "id": "nonlinear-system", "name": "Nonlinear autonomous system" },
+        { "id": "jacobian-matrix", "name": "Jacobian matrix" },
+        { "id": "linearization", "name": "Linearization" },
+        { "id": "hyperbolic-equilibrium", "name": "Hyperbolic equilibrium" },
+        { "id": "limit-cycle", "name": "Limit cycle" },
+        { "id": "predator-prey-model", "name": "Predator-prey model" }
+      ],
+      "buildsOn": ["phase-plane", "equilibrium-point", "uniqueness-theorem"]
+    },
+    {
+      "pack": "numerical-methods",
+      "title": "Numerical methods for first-order equations",
+      "brief": "Approximating solutions of initial value problems with Euler's method, the effect of step size, the improved Euler method, and the fourth-order Runge-Kutta method. Stops before error analysis.",
+      "concepts": [
+        { "id": "euler-method", "name": "Euler's method" },
+        { "id": "step-size", "name": "Step size" },
+        { "id": "improved-euler-method", "name": "Improved Euler method" },
+        { "id": "runge-kutta-method", "name": "Runge-Kutta method" }
+      ],
+      "buildsOn": ["initial-value-problem", "direction-field"]
+    }
+  ]
+}

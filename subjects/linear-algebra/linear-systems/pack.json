@@ -1,0 +1,1693 @@
+{
+  "formatVersion": 1,
+  "id": "linear-algebra.linear-systems",
+  "subject": "linear-algebra",
+  "title": "Linear systems",
+  "summary": "Systems of linear equations, their augmented matrices, and how row operations and Gaussian elimination solve them, including free variables and solution sets.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "system-of-linear-equations",
+      "name": "System of linear equations",
+      "aliases": [
+        "linear system",
+        "systems of linear equations",
+        "simultaneous linear equations"
+      ],
+      "summary": "A list of linear equations in the same unknowns, and the values that make all of them true at once.",
+      "requires": [],
+      "elements": [
+        {
+          "id": "linear-equation",
+          "name": "Linear equation",
+          "aliases": [
+            "linear equations"
+          ]
+        },
+        {
+          "id": "solution",
+          "name": "Solution of a system",
+          "aliases": [
+            "solutions"
+          ]
+        },
+        {
+          "id": "consistency",
+          "name": "Consistent and inconsistent systems",
+          "aliases": [
+            "inconsistent system"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "A system of linear equations is a list of equations that share the same unknowns, such as x + y = 5 and x − y = 1. A solution is a set of values for the unknowns that makes every equation true at once. The system above has the solution x = 3, y = 2, because 3 + 2 = 5 and 3 − 2 = 1. Some systems have no solution, some have exactly one, and some have infinitely many. Every method in this topic is a way of finding or describing those solutions."
+      }
+    },
+    {
+      "id": "augmented-matrix",
+      "name": "Augmented matrix",
+      "aliases": [
+        "augmented matrices",
+        "coefficient and constant matrix"
+      ],
+      "summary": "A rectangular array that holds a system's coefficients and constants, with one row per equation.",
+      "requires": [
+        "system-of-linear-equations"
+      ],
+      "elements": [
+        {
+          "id": "coefficient-matrix",
+          "name": "Coefficient matrix",
+          "aliases": [
+            "coefficient matrices"
+          ]
+        },
+        {
+          "id": "constant-column",
+          "name": "Constant column",
+          "aliases": [
+            "column of constants"
+          ]
+        },
+        {
+          "id": "matrix-size",
+          "name": "Size of an augmented matrix",
+          "aliases": [
+            "dimensions"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "An augmented matrix is a compact way to write a system. Each equation becomes one row, each unknown gets its own column, and the constant terms go in a final column after a vertical bar. For x + 2y = 5 and 3x − y = 1, the first row is [1 2 | 5] and the second is [3 −1 | 1]. The part left of the bar is the coefficient matrix. Working with the matrix keeps every number in place, so the row operations never need the variable names written out."
+      }
+    },
+    {
+      "id": "elementary-row-operations",
+      "name": "Elementary row operations",
+      "aliases": [
+        "row operations",
+        "elementary row operation",
+        "row reduction operations"
+      ],
+      "summary": "The three changes to a matrix's rows that keep the solutions of its system the same.",
+      "requires": [
+        "augmented-matrix"
+      ],
+      "elements": [
+        {
+          "id": "row-swap",
+          "name": "Row swap",
+          "aliases": [
+            "interchange of rows"
+          ]
+        },
+        {
+          "id": "row-scaling",
+          "name": "Row scaling",
+          "aliases": [
+            "scaling a row"
+          ]
+        },
+        {
+          "id": "row-addition",
+          "name": "Adding a multiple of a row",
+          "aliases": [
+            "row replacement"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "Elementary row operations are the three changes allowed on an augmented matrix: swap two rows, multiply a row by a nonzero number, and add a multiple of one row to another. Each one produces a new matrix for an equivalent system, meaning a system with the same solutions. Because the solutions never change, the operations can simplify a system step by step until its answer is easy to read. The multiplying number must be nonzero, so that every step can be undone."
+      }
+    },
+    {
+      "id": "row-echelon-form",
+      "name": "Row echelon form",
+      "aliases": [
+        "echelon form",
+        "REF",
+        "staircase form"
+      ],
+      "summary": "The staircase shape of a matrix in which each leading entry lies to the right of the one above and zeros lie below.",
+      "requires": [
+        "elementary-row-operations"
+      ],
+      "elements": [
+        {
+          "id": "leading-entry",
+          "name": "Leading entry",
+          "aliases": [
+            "leading entries",
+            "pivot entry"
+          ]
+        },
+        {
+          "id": "staircase-shape",
+          "name": "Staircase shape",
+          "aliases": [
+            "step pattern"
+          ]
+        },
+        {
+          "id": "zero-rows",
+          "name": "Zero rows at the bottom",
+          "aliases": [
+            "zero row"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "A matrix is in row echelon form when its zero rows sit at the bottom, and the leading entry of each nonzero row lies strictly to the right of the leading entry in the row above. Every entry below a leading entry is zero. The leading entries form a staircase, which makes the system easy to solve from the bottom row upward. Row operations reach this form, and the form is not unique, though all echelon forms of one matrix have pivots in the same columns."
+      }
+    },
+    {
+      "id": "reduced-row-echelon-form",
+      "name": "Reduced row echelon form",
+      "aliases": [
+        "RREF",
+        "reduced echelon form"
+      ],
+      "summary": "A row echelon form in which every leading entry is 1 and the entries above and below it are zero.",
+      "requires": [
+        "row-echelon-form"
+      ],
+      "elements": [
+        {
+          "id": "leading-one",
+          "name": "Leading one",
+          "aliases": [
+            "leading 1"
+          ]
+        },
+        {
+          "id": "cleared-column",
+          "name": "Cleared pivot column",
+          "aliases": [
+            "pivot column of zeros"
+          ]
+        },
+        {
+          "id": "uniqueness",
+          "name": "Uniqueness of the reduced form",
+          "aliases": [
+            "unique reduced form"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "A matrix is in reduced row echelon form when it is in row echelon form, every leading entry equals 1, and every other entry in a leading entry's column is zero. Each leading 1 therefore stands alone in its column, so a solution can be read straight off the matrix. Every matrix has exactly one reduced row echelon form, whichever row operations were used to reach it. Reading this form is the usual last step when solving a system by hand."
+      }
+    },
+    {
+      "id": "gaussian-elimination",
+      "name": "Gaussian elimination",
+      "aliases": [
+        "row reduction",
+        "Gauss elimination",
+        "Gauss-Jordan elimination"
+      ],
+      "summary": "A procedure that uses row operations to reach echelon form and then solves the system.",
+      "requires": [
+        "row-echelon-form",
+        "elementary-row-operations"
+      ],
+      "elements": [
+        {
+          "id": "forward-phase",
+          "name": "Forward elimination",
+          "aliases": [
+            "forward phase"
+          ]
+        },
+        {
+          "id": "back-substitution",
+          "name": "Back substitution",
+          "aliases": [
+            "backward substitution"
+          ]
+        },
+        {
+          "id": "inconsistency-check",
+          "name": "Spotting an inconsistent row",
+          "aliases": [
+            "contradictory row"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "Gaussian elimination is the standard method for solving a linear system with row operations. In the forward phase you work column by column from the left: choose a pivot, swap a nonzero entry into the pivot position, and use it to clear the entries below. The result is row echelon form. Then back substitution solves the variables from the bottom up, or you continue to reduced row echelon form. A row that reads 0 0 | c, with c not zero, shows that the system has no solution."
+      }
+    },
+    {
+      "id": "pivot-and-free-variables",
+      "name": "Pivot and free variables",
+      "aliases": [
+        "pivot",
+        "pivot position",
+        "free variable",
+        "basic variable"
+      ],
+      "summary": "Pivots mark the basic variables in an echelon form, and the columns without pivots give the free variables.",
+      "requires": [
+        "row-echelon-form"
+      ],
+      "elements": [
+        {
+          "id": "pivot-position",
+          "name": "Pivot position",
+          "aliases": [
+            "pivot positions",
+            "pivot column"
+          ]
+        },
+        {
+          "id": "basic-variable",
+          "name": "Basic variable",
+          "aliases": [
+            "basic variables"
+          ]
+        },
+        {
+          "id": "free-variable",
+          "name": "Free variable",
+          "aliases": [
+            "free variables",
+            "free parameter"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "A pivot is a leading entry in an echelon form, and a pivot position is its place in the matrix. The variables in pivot columns are basic variables; they are fixed once the free variables are chosen. A variable in a column with no pivot is a free variable, and it can take any value. In a consistent system, the number of free variables equals the number of unknowns minus the number of pivots, which tells you how large the solution set is."
+      }
+    },
+    {
+      "id": "homogeneous-system",
+      "name": "Homogeneous system",
+      "aliases": [
+        "homogeneous linear system",
+        "homogeneous equations"
+      ],
+      "summary": "A system whose constant terms are all zero, which always has the zero solution.",
+      "requires": [
+        "system-of-linear-equations",
+        "pivot-and-free-variables"
+      ],
+      "elements": [
+        {
+          "id": "zero-solution",
+          "name": "Zero solution",
+          "aliases": [
+            "trivial solution"
+          ]
+        },
+        {
+          "id": "closure",
+          "name": "Closure under sums and multiples",
+          "aliases": [
+            "solution set closed under addition"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "A homogeneous system is one in which every constant term is zero, such as x + 2y = 0 and 3x + 6y = 0. It can always be written as Ax = 0. The zero solution, with every unknown equal to zero, always works, so a homogeneous system is never inconsistent. Other solutions exist exactly when there is a free variable. Adding two solutions, or multiplying one by a number, gives another solution, so the solutions form a set that passes through the origin."
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "linear-algebra.linear-systems.sle-check-pair",
+      "concept": "system-of-linear-equations",
+      "element": "solution",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which ordered pair solves both x + y = 5 and x − y = 1?",
+      "choices": [
+        "(2, 3)",
+        "(4, 1)",
+        "(3, 2)",
+        "(5, 1)"
+      ],
+      "answer": 2,
+      "explanation": "Adding the equations gives 2x = 6, so x = 3, and then y = 2. The pair (2, 3) fails the second equation, since 2 − 3 is not 1.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.sle-no-solution-name",
+      "concept": "system-of-linear-equations",
+      "element": "consistency",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A system has no set of values that makes all of its equations true. What is it called?",
+      "choices": [
+        "Homogeneous",
+        "Consistent",
+        "Inconsistent",
+        "Underdetermined"
+      ],
+      "answer": 2,
+      "explanation": "A system with no solution is inconsistent. Underdetermined describes a system with fewer useful equations than unknowns, and such a system can still be consistent.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.sle-solution-name",
+      "concept": "system-of-linear-equations",
+      "element": "solution",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What do you call a set of values for the unknowns that makes every equation in a system true?",
+      "answer": "A solution of the system",
+      "explanation": "Every equation must be true at the same time for those values. That is what makes them a solution.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both say a solution of the system."
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.sle-two-lines-no-solution",
+      "concept": "system-of-linear-equations",
+      "element": "consistency",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "The system 2x + 4y = 6 and x + 2y = 4 is what kind of system?",
+      "choices": [
+        "Consistent with exactly one solution",
+        "Consistent with infinitely many solutions",
+        "Homogeneous",
+        "Inconsistent"
+      ],
+      "answer": 3,
+      "explanation": "Halving the first equation gives x + 2y = 3, which contradicts x + 2y = 4, so no pair of values works.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Doubling the second equation gives 2x + 4y = 8, which contradicts 2x + 4y = 6."
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.sle-linear-equation",
+      "concept": "system-of-linear-equations",
+      "element": "linear-equation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which of these is a linear equation in x and y?",
+      "choices": [
+        "xy = 4",
+        "x² + y = 1",
+        "2x − 3y = 7",
+        "x/y + 1 = 2"
+      ],
+      "answer": 2,
+      "explanation": "Each unknown appears only to the first power and is never multiplied by another unknown or divided by one. xy, x² and x/y break that rule.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.sle-coefficients",
+      "concept": "system-of-linear-equations",
+      "element": "linear-equation",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "In the equation 3x − 2y = 8, what are the coefficients of x and y?",
+      "answer": "3 and −2",
+      "explanation": "A coefficient is the number multiplying an unknown. The minus sign belongs to the coefficient, so the coefficient of y is −2.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both give 3 for x and -2 for y."
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.sle-solution-pick",
+      "concept": "system-of-linear-equations",
+      "element": "solution",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which system has (1, −1) as a solution?",
+      "choices": [
+        "x + y = 1 and x − y = 2",
+        "x + y = 0 and x − y = 0",
+        "x + y = 0 and x − y = 2",
+        "x + y = 2 and x − y = 2"
+      ],
+      "answer": 2,
+      "explanation": "With x = 1 and y = −1, the sums are x + y = 0 and x − y = 2. A system that asks for x + y = 1 or x + y = 2 fails, since the sum is 0, and one that asks for x − y = 0 fails, since the difference is 2.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.sle-check-steps",
+      "concept": "system-of-linear-equations",
+      "element": "solution",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps for checking a proposed solution in order.",
+      "steps": [
+        "Write down the proposed value of each unknown",
+        "Substitute those values into each equation",
+        "Check that every equation becomes a true statement"
+      ],
+      "explanation": "The values must be known before they can be substituted, and the check is only complete once every equation has been tested.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.am-constant-column",
+      "concept": "augmented-matrix",
+      "element": "constant-column",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In the augmented matrix [A | b] for a system, what does the column b hold?",
+      "choices": [
+        "The coefficients of x",
+        "The constant terms",
+        "The unknowns",
+        "The solution values"
+      ],
+      "answer": 1,
+      "explanation": "The bar separates the coefficient matrix A from the column b. Each entry of b is the number that an equation is set equal to.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.am-coefficient-name",
+      "concept": "augmented-matrix",
+      "element": "coefficient-matrix",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What do you call the matrix made from the coefficients alone, without the constant column?",
+      "answer": "The coefficient matrix",
+      "explanation": "Removing the constant column from the augmented matrix leaves the coefficient matrix, which holds only the numbers multiplying the unknowns.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both name the coefficient matrix."
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.am-second-row",
+      "concept": "augmented-matrix",
+      "element": "coefficient-matrix",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "The system x + 2y = 5 and 3x − y = 1 has first row [1 2 | 5]. Which is its second row?",
+      "choices": [
+        "[3 1 | 1]",
+        "[−1 3 | 1]",
+        "[3 −1 | 5]",
+        "[3 −1 | 1]"
+      ],
+      "answer": 3,
+      "explanation": "The second equation is 3x − y = 1, so its coefficients are 3 and −1 and its constant is 1. Losing the minus sign on y gives [3 1 | 1].",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.am-order-write",
+      "concept": "augmented-matrix",
+      "element": "matrix-size",
+      "kind": "order",
+      "difficulty": 1,
+      "prompt": "Put these steps for writing an augmented matrix in order.",
+      "steps": [
+        "Arrange each equation with the unknowns in the same order",
+        "Write one row per equation, with 0 for each missing unknown",
+        "Add a vertical bar and put each constant after it"
+      ],
+      "explanation": "The unknowns must line up before their coefficients can be placed in columns, and the bar is added last.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Writing the rows and adding the bar could be swapped without changing the result; the order given is the usual one. b's note: Steps 0 (write rows with zeros) and 2 (add bar and constants) could arguably be done together or swapped."
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.am-coefficient-size",
+      "concept": "augmented-matrix",
+      "element": "matrix-size",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A system has 2 equations and 3 unknowns. What size is its coefficient matrix?",
+      "choices": [
+        "3 by 2",
+        "2 by 3",
+        "2 by 4",
+        "3 by 3"
+      ],
+      "answer": 1,
+      "explanation": "The coefficient matrix has one row per equation and one column per unknown, so it is 2 by 3. Rows are always counted first.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.am-augmented-size",
+      "concept": "augmented-matrix",
+      "element": "matrix-size",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What size is the augmented matrix for the same system, with 2 equations and 3 unknowns?",
+      "choices": [
+        "2 by 3",
+        "3 by 4",
+        "2 by 4",
+        "4 by 2"
+      ],
+      "answer": 2,
+      "explanation": "The augmented matrix adds one column for the constants, so it is 2 by 4. Counting the unknowns as rows gives the wrong answer, 3 by 4.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.am-why-matrix",
+      "concept": "augmented-matrix",
+      "element": "coefficient-matrix",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why can a system be solved from its augmented matrix alone?",
+      "choices": [
+        "The matrix stores the unknowns' names, which the solution needs",
+        "The matrix holds every coefficient and constant, and the names are only labels",
+        "The matrix shows each solution directly",
+        "The matrix removes the equal signs from the equations"
+      ],
+      "answer": 1,
+      "explanation": "The coefficients and constants describe the system completely, and row operations can work on those numbers alone. The names are needed only to read the answer back.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.am-column-count",
+      "concept": "augmented-matrix",
+      "element": "matrix-size",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "How many columns does the augmented matrix have for a system with 4 unknowns?",
+      "answer": "5",
+      "explanation": "Four columns hold the unknowns' coefficients, and one more column holds the constants.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both give 5 (4 unknowns plus constant column)."
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ero-count",
+      "concept": "elementary-row-operations",
+      "element": "row-swap",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "How many types of elementary row operation are there?",
+      "answer": "Three",
+      "explanation": "The three moves are exchanging two rows, scaling a row by a number other than zero, and replacing a row with itself plus a multiple of another row.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both give three; b's listed operations are the correct three."
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ero-not-one",
+      "concept": "elementary-row-operations",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is NOT an elementary row operation?",
+      "choices": [
+        "Swap two rows",
+        "Multiply a row by a nonzero number",
+        "Multiply a row by zero",
+        "Add a multiple of one row to another"
+      ],
+      "answer": 2,
+      "explanation": "Multiplying a row by zero erases its information, so the operation cannot be undone and the solution set can change.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ero-identify",
+      "concept": "elementary-row-operations",
+      "element": "row-addition",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Row 2 is replaced by row 2 + 3 × row 1. Which operation is this?",
+      "choices": [
+        "Swap rows",
+        "Scale a row",
+        "Add a multiple of a row to another row",
+        "Delete a row"
+      ],
+      "answer": 2,
+      "explanation": "Row 1 is multiplied by 3 and added to row 2, and only row 2 changes. That is the third type of operation.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ero-solution-set",
+      "concept": "elementary-row-operations",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Do elementary row operations change the solution set of the system?",
+      "choices": [
+        "Yes, each one changes it",
+        "Only swaps keep it",
+        "Only scalings keep it",
+        "No, they keep the solution set"
+      ],
+      "answer": 3,
+      "explanation": "Each operation turns the system into an equivalent one with the same solutions. Swaps, scalings and additions all preserve solutions, so none of the single-type answers is right.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ero-nonzero",
+      "concept": "elementary-row-operations",
+      "element": "row-scaling",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why must the number multiplying a row be nonzero?",
+      "choices": [
+        "Zero would make the row negative",
+        "Zero would swap the rows",
+        "Zero would erase the row's information, so the operation could not be undone",
+        "Zero would add a new unknown"
+      ],
+      "answer": 2,
+      "explanation": "Multiplying a row by a nonzero number can be reversed by multiplying by its reciprocal. Multiplying by zero cannot be reversed.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ero-order-r2",
+      "concept": "elementary-row-operations",
+      "element": "row-addition",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Rows are R1 = [1 2 | 3] and R2 = [2 1 | 4]. Put these steps for making the first entry of R2 zero in order.",
+      "steps": [
+        "Multiply row 1 by 2",
+        "Subtract that result from row 2",
+        "Keep the difference as the new row 2"
+      ],
+      "explanation": "Subtracting 2 × row 1 from row 2 gives [0 −3 | −2], with a zero in the first column. The multiple of row 1 has to be formed before the subtraction.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ero-swap-name",
+      "concept": "elementary-row-operations",
+      "element": "row-swap",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "What is the name of the operation that exchanges two rows?",
+      "answer": "Row swap (interchange)",
+      "explanation": "It is the first elementary row operation. It changes only the order of the rows, so it does not change the solutions.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both name row interchange (row swap)."
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ero-two-equal",
+      "concept": "elementary-row-operations",
+      "element": "row-addition",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "R2 ← R2 − 2R1 turns [1 2 | 3; 2 4 | 6] into [1 2 | 3; 0 0 | 0]. What does this say about the system?",
+      "choices": [
+        "The two equations describe the same line, so there are infinitely many solutions",
+        "The system has no solution",
+        "The system has exactly one solution",
+        "The second equation contradicts the first"
+      ],
+      "answer": 0,
+      "explanation": "The second equation is twice the first, so it adds nothing new. The solutions are all the points on the line x + 2y = 3.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ref-zero-rows",
+      "concept": "row-echelon-form",
+      "element": "zero-rows",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In row echelon form, where are the zero rows?",
+      "choices": [
+        "At the top",
+        "At the bottom",
+        "Between nonzero rows",
+        "In the first column"
+      ],
+      "answer": 1,
+      "explanation": "Nonzero rows come first, and all-zero rows are moved to the bottom by row swaps. A zero row between nonzero rows breaks the form.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ref-leading-entry",
+      "concept": "row-echelon-form",
+      "element": "leading-entry",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is the leading entry of a row?",
+      "answer": "Its leftmost nonzero entry",
+      "explanation": "Scanning from the left, the first entry that is not zero is the leading entry, also called the pivot of that row.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both say the leftmost/first nonzero entry."
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ref-which-matrix",
+      "concept": "row-echelon-form",
+      "element": "staircase-shape",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which matrix is in row echelon form?",
+      "choices": [
+        "[0 0 1; 2 0 0; 0 3 0]",
+        "[1 0 0; 0 0 1; 0 2 3]",
+        "[1 2 3; 0 4 5; 0 0 6]",
+        "[1 2; 3 0; 0 0]"
+      ],
+      "answer": 2,
+      "explanation": "Its leading entries are 1, 4 and 6, each further right than the one above. In the wrong choices, a leading entry is not to the right of the one above, or a zero row sits above a nonzero row.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ref-operations",
+      "concept": "row-echelon-form",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which row operations are used to reach row echelon form?",
+      "choices": [
+        "Only row swaps",
+        "Only scaling a row",
+        "Only adding one row to another",
+        "Row swaps, scaling, and adding multiples of rows"
+      ],
+      "answer": 3,
+      "explanation": "Swaps bring a nonzero entry into the pivot position, scaling can set a pivot if needed, and adding multiples clears the entries below each pivot. One type alone is not enough in general.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ref-below-zero",
+      "concept": "row-echelon-form",
+      "element": "staircase-shape",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What must be true of every entry below a leading entry in row echelon form?",
+      "choices": [
+        "It is zero",
+        "It is 1",
+        "It is larger than the leading entry",
+        "It is negative"
+      ],
+      "answer": 0,
+      "explanation": "Clearing those entries is what creates the staircase. The leading entry itself can be any nonzero number.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ref-order-steps",
+      "concept": "row-echelon-form",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps for reaching row echelon form in order.",
+      "steps": [
+        "Find the leftmost column with a nonzero entry in the rows not yet finished",
+        "Swap a row with a nonzero entry in that column into the top unfinished row",
+        "Use that row to make every entry below its leading entry zero",
+        "Repeat on the rows below, one column further right"
+      ],
+      "explanation": "A row must be in place before it can clear the entries below it, and the search moves right only after the current column is finished.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ref-right-of",
+      "concept": "row-echelon-form",
+      "element": "staircase-shape",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "In row echelon form, where is each leading entry compared with the leading entry of the row above it?",
+      "answer": "Strictly to its right",
+      "explanation": "Each leading entry sits in a later column than the leading entry above it. This is what makes the staircase.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both say strictly to the right."
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ref-same-pivots",
+      "concept": "row-echelon-form",
+      "element": "leading-entry",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Two different row echelon forms come from the same matrix. Which feature is always the same?",
+      "choices": [
+        "The values of the leading entries",
+        "The positions of the pivot columns",
+        "The entries above each pivot",
+        "The order of the nonzero rows"
+      ],
+      "answer": 1,
+      "explanation": "The pivot columns are fixed by the matrix itself. The values of the pivots, the entries above them and the row order can all differ between echelon forms.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.rref-leading-one",
+      "concept": "reduced-row-echelon-form",
+      "element": "leading-one",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "In reduced row echelon form, what must each leading entry equal?",
+      "answer": "1",
+      "explanation": "Each leading entry is scaled to 1 by a row scaling. Zeros are then cleared above and below it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both give 1; b's extra column clause is a true RREF property and does not change the answer."
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.rref-which",
+      "concept": "reduced-row-echelon-form",
+      "element": "leading-one",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which matrix is in reduced row echelon form?",
+      "choices": [
+        "[2 0 4; 0 1 2]",
+        "[1 0 4; 0 1 2]",
+        "[1 3 4; 0 1 2]",
+        "[1 0 4; 0 0 2; 0 1 0]"
+      ],
+      "answer": 1,
+      "explanation": "Its leading entries are 1, and the entries above and below them are zero. [2 0 4; 0 1 2] has a leading 2, [1 3 4; 0 1 2] has a nonzero entry above the second pivot, and the three-row matrix is not in staircase order.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.rref-clear-above",
+      "concept": "reduced-row-echelon-form",
+      "element": "cleared-column",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Going from row echelon form to reduced row echelon form, which entries must be cleared?",
+      "choices": [
+        "The entries above each leading 1",
+        "The entries to the left of the first row",
+        "Every zero row",
+        "The constant column"
+      ],
+      "answer": 0,
+      "explanation": "The entries below each leading entry are already zero in echelon form, so what remains is clearing the entries above each leading 1.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.rref-unique",
+      "concept": "reduced-row-echelon-form",
+      "element": "uniqueness",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "Is the reduced row echelon form of a matrix unique?",
+      "answer": "Yes, each matrix has exactly one",
+      "explanation": "Different sequences of row operations reach the same reduced form, which is why it can be used to read off solutions reliably.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both say yes, unique."
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.rref-scale",
+      "concept": "reduced-row-echelon-form",
+      "element": "leading-one",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Row 1 is [2 4 | 6]. Which row results from scaling it so that its leading entry becomes 1?",
+      "choices": [
+        "[2 4 | 3]",
+        "[1 2 | 6]",
+        "[1 2 | 3]",
+        "[0.5 2 | 3]"
+      ],
+      "answer": 2,
+      "explanation": "Multiplying every entry of [2 4 | 6] by 1/2 gives [1 2 | 3]. Every entry must be scaled by the same number: [1 2 | 6] leaves the constant alone, and [2 4 | 3] halves only the constant.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.rref-free-column",
+      "concept": "reduced-row-echelon-form",
+      "element": "cleared-column",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A 3 by 4 augmented matrix reduces to a form with pivots in columns 1 and 3 and no pivot in column 4. What does this say about the system?",
+      "choices": [
+        "Consistent, with the variable in column 2 free",
+        "Inconsistent",
+        "Exactly one solution",
+        "Homogeneous"
+      ],
+      "answer": 0,
+      "explanation": "Column 4 is the constant column and has no pivot, so the system is consistent. Column 2 has no pivot, so its variable is free.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.rref-zero-equals-one",
+      "concept": "reduced-row-echelon-form",
+      "element": "cleared-column",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "A reduced row echelon form has the row [0 0 | 1]. What does this tell you about the system?",
+      "answer": "The system is inconsistent, with no solution",
+      "explanation": "That row says 0 = 1, which no values of the unknowns can satisfy.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both say inconsistent, no solution."
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.rref-read-solution",
+      "concept": "reduced-row-echelon-form",
+      "element": "cleared-column",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "The reduced row echelon form of a system is [1 0 0 5; 0 1 0 −2; 0 0 1 3]. What is the solution?",
+      "choices": [
+        "(−5, 2, −3)",
+        "(5, −2, 3)",
+        "(5, 2, 3)",
+        "(1, 0, 0)"
+      ],
+      "answer": 1,
+      "explanation": "Each leading 1 makes its variable equal to the last entry of its row, so x = 5, y = −2 and z = 3. The answer (−5, 2, −3) flips every sign.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ge-method",
+      "concept": "gaussian-elimination",
+      "element": "forward-phase",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is Gaussian elimination used for?",
+      "choices": [
+        "Solving linear systems by row operations",
+        "Finding eigenvalues",
+        "Sorting a list of numbers",
+        "Computing derivatives"
+      ],
+      "answer": 0,
+      "explanation": "It applies row operations to an augmented matrix until the solutions can be read off. The other choices are different tasks.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ge-forward-name",
+      "concept": "gaussian-elimination",
+      "element": "forward-phase",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is the name of the first phase of Gaussian elimination, which produces row echelon form?",
+      "answer": "Forward elimination (the forward phase)",
+      "explanation": "Forward elimination works column by column from the left, clearing the entries below each pivot.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both name forward elimination."
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ge-after-forward",
+      "concept": "gaussian-elimination",
+      "element": "back-substitution",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "After forward elimination gives an echelon form, what is the usual next step to solve the system?",
+      "choices": [
+        "Cramer's rule on the original system",
+        "Back substitution from the bottom row up",
+        "Adding all the equations together",
+        "Doubling every constant"
+      ],
+      "answer": 1,
+      "explanation": "Back substitution solves the last equation first and then works upward. Continuing to reduced row echelon form is the other common option.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ge-no-solution",
+      "concept": "gaussian-elimination",
+      "element": "inconsistency-check",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Elimination produces the row [0 0 | 5]. What follows?",
+      "choices": [
+        "The system has no solution",
+        "The system has exactly one solution",
+        "The system has infinitely many solutions",
+        "The row can be ignored"
+      ],
+      "answer": 0,
+      "explanation": "The row says 0 = 5, which is false for every choice of the unknowns.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ge-solve-x",
+      "concept": "gaussian-elimination",
+      "element": "forward-phase",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Solve x + y = 7 and x − y = 1 by elimination. What is x?",
+      "choices": [
+        "3",
+        "4",
+        "6",
+        "7"
+      ],
+      "answer": 1,
+      "explanation": "Adding the equations gives 2x = 8, so x = 4 and y = 3. The value 3 is y, not x.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ge-order-solve",
+      "concept": "gaussian-elimination",
+      "element": "forward-phase",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps for solving x + y = 7 and x − y = 1 by elimination in order.",
+      "steps": [
+        "Add the two equations to eliminate y",
+        "Divide both sides by 2 to get x = 4",
+        "Substitute x = 4 into x + y = 7 to get y = 3"
+      ],
+      "explanation": "Adding removes y and leaves one equation in x. The substitution needs x before it can find y.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ge-order-backsub",
+      "concept": "gaussian-elimination",
+      "element": "back-substitution",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these back-substitution steps in order, for the echelon system x₁ + 2x₂ = 3 and x₂ = 2.",
+      "steps": [
+        "Solve the bottom equation for its variable: x₂ = 2",
+        "Substitute x₂ = 2 into the equation above",
+        "Solve that equation for x₁: x₁ = 3 − 2 × 2 = −1",
+        "Stop once every variable has a value"
+      ],
+      "explanation": "The bottom equation has only one unknown, so it is solved first. Each later step needs the value found before it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.ge-free-solution-set",
+      "concept": "gaussian-elimination",
+      "element": "back-substitution",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Elimination leaves an echelon form with a free variable and no contradictory row. Which describes the solution set?",
+      "choices": [
+        "Exactly one solution",
+        "No solution",
+        "Infinitely many solutions, described by the free variables",
+        "Only the zero solution"
+      ],
+      "answer": 2,
+      "explanation": "A free variable can take any value, and each value gives a solution, so the set is infinite. The other choices ignore the free variable.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.pfv-pivot-def",
+      "concept": "pivot-and-free-variables",
+      "element": "pivot-position",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is a pivot position?",
+      "answer": "The position of a leading entry in an echelon form",
+      "explanation": "A pivot position is where a leading entry sits after row reduction. The pivot columns are the columns that contain pivot positions.",
+      "verification": {
+        "status": "draft",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 1,
+        "at": "2026-11-11",
+        "note": "Key “The position of a leading entry in an echelon form”. solver-a agreed: “a position in the matrix that corresponds to a leading entry of its row echelon…” b differed: “A position in the matrix that holds a leading 1 of its row in the reduced echel…” b restricts the pivot position to a leading 1 in reduced echelon form; the key is the leading-entry position in an echelon form. b's note: Wording varies by text: pivot position is the location of a leading entry in echelon form."
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.pfv-free-name",
+      "concept": "pivot-and-free-variables",
+      "element": "free-variable",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A variable whose column has no pivot is called what?",
+      "choices": [
+        "A free variable",
+        "A basic variable",
+        "A slack variable",
+        "A dependent constant"
+      ],
+      "answer": 0,
+      "explanation": "Such a variable can take any value, and the basic variables are then determined. Basic variables sit in pivot columns.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.pfv-count",
+      "concept": "pivot-and-free-variables",
+      "element": "free-variable",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A consistent system has 5 unknowns and 2 pivots in its echelon form. How many free variables does it have?",
+      "choices": [
+        "2",
+        "5",
+        "3",
+        "7"
+      ],
+      "answer": 2,
+      "explanation": "Unknowns minus pivots gives 5 − 2 = 3 free variables. The number 2 is the pivot count, not the free count.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.pfv-four-cols",
+      "concept": "pivot-and-free-variables",
+      "element": "pivot-position",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "An echelon form has pivots in columns 1, 2 and 4 of a 4-column coefficient matrix. How many free variables are there?",
+      "choices": [
+        "0",
+        "3",
+        "1",
+        "2"
+      ],
+      "answer": 2,
+      "explanation": "Column 3 has no pivot, so its variable is free. Only one column is missing a pivot.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.pfv-infinitely-many",
+      "concept": "pivot-and-free-variables",
+      "element": "free-variable",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "In a consistent system with at least one free variable, how many solutions are there?",
+      "answer": "Infinitely many",
+      "explanation": "Each choice of values for the free variables gives a solution, and there are infinitely many such choices.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both say infinitely many."
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.pfv-true-statement",
+      "concept": "pivot-and-free-variables",
+      "element": "basic-variable",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about free variables is true?",
+      "choices": [
+        "They can be chosen freely, and then the basic variables are determined",
+        "They are always zero",
+        "They are always the first variables in the system",
+        "They must equal the constant terms"
+      ],
+      "answer": 0,
+      "explanation": "Choose any values for the free variables and back-substitute to find the basic variables. The other statements are false in general.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.pfv-four-pivots",
+      "concept": "pivot-and-free-variables",
+      "element": "free-variable",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A consistent system has 6 unknowns and a reduced row echelon form with 4 pivots. Which describes its solution set?",
+      "choices": [
+        "A family of solutions with 2 free parameters",
+        "Exactly one solution",
+        "A family of solutions with 4 free parameters",
+        "No solution"
+      ],
+      "answer": 0,
+      "explanation": "Six unknowns minus four pivots leaves 2 free variables, so the solutions depend on 2 parameters.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.pfv-express",
+      "concept": "pivot-and-free-variables",
+      "element": "basic-variable",
+      "kind": "recall",
+      "difficulty": 3,
+      "prompt": "In reduced row echelon form, how is each basic variable written in terms of the free variables?",
+      "answer": "The row's constant term minus each free-variable coefficient times that variable",
+      "explanation": "A row x₁ + a x₂ = b gives x₁ = b − a x₂, so the basic variable is the constant minus the coefficients times the free variables.",
+      "verification": {
+        "status": "draft",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 1,
+        "at": "2026-11-11",
+        "note": "Key “The row's constant term minus each free-variable coefficient times that variable”. solver-a differed: “each basic variable is a constant plus a linear combination of the free variabl…” b agreed: “As a constant minus a combination of free variables (basic variable = constant …” a says a constant plus some linear combination, which leaves out the sign relation (constant minus coefficient times variable); b states it. b's note: Ambiguous on 'how'; each row gives one basic variable expressed w…"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.hs-zero-solution",
+      "concept": "homogeneous-system",
+      "element": "zero-solution",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A homogeneous system always has which solution?",
+      "choices": [
+        "The zero solution",
+        "No solution",
+        "Exactly two solutions",
+        "A solution with every unknown equal to 1"
+      ],
+      "answer": 0,
+      "explanation": "Setting every unknown to zero makes each left side zero, which matches the zero constant on the right.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.hs-trivial-name",
+      "concept": "homogeneous-system",
+      "element": "zero-solution",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is another name for the zero solution of a homogeneous system?",
+      "answer": "The trivial solution",
+      "explanation": "It always exists and says nothing specific about the coefficients, which is why it is called trivial.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both say the trivial solution."
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.hs-which-system",
+      "concept": "homogeneous-system",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which system is homogeneous?",
+      "choices": [
+        "x + y = 1 and 2x − y = 0",
+        "xy = 0 and x − y = 0",
+        "x + y = 0 and 2x − y = 0",
+        "x + y = 0 and 2x − y = 3"
+      ],
+      "answer": 2,
+      "explanation": "Every constant term is zero in that system. The equation xy = 0 is not linear, and the systems with a 1 or a 3 on the right have a nonzero constant.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.hs-infinite",
+      "concept": "homogeneous-system",
+      "element": "closure",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "The homogeneous equation x + 2y = 0 has how many solutions?",
+      "choices": [
+        "Only (0, 0)",
+        "Exactly two",
+        "Infinitely many",
+        "None"
+      ],
+      "answer": 2,
+      "explanation": "Every choice of y gives x = −2y, so there are infinitely many solutions, such as (2, −1) and (−4, 2).",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.hs-sum",
+      "concept": "homogeneous-system",
+      "element": "closure",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "If u and v both solve a homogeneous system, does u + v also solve it?",
+      "choices": [
+        "Yes",
+        "No, only if u = v",
+        "Only if both are the zero vector",
+        "No, the sum leaves the solution set"
+      ],
+      "answer": 0,
+      "explanation": "Each equation splits into two parts that each equal zero, so their sum is zero. Solutions of a homogeneous system are closed under addition and scalar multiplication.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.hs-invertible",
+      "concept": "homogeneous-system",
+      "element": "zero-solution",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "If a homogeneous system has an invertible square coefficient matrix, how many solutions does it have?",
+      "answer": "Only the zero solution",
+      "explanation": "An invertible matrix sends only the zero vector to zero, so the zero solution is the only one.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both say only the zero solution."
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.hs-free-count",
+      "concept": "homogeneous-system",
+      "element": "zero-solution",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A homogeneous system has 4 unknowns and an echelon form with 3 pivots. How many free variables does it have?",
+      "choices": [
+        "0",
+        "1",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "explanation": "Four unknowns minus three pivots leaves one free variable. A free variable is what makes nonzero solutions possible.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "linear-algebra.linear-systems.hs-always-solution",
+      "concept": "homogeneous-system",
+      "element": "zero-solution",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why does a homogeneous system never have no solution?",
+      "choices": [
+        "The zero vector always satisfies it",
+        "It has more equations than unknowns",
+        "All its pivots are 1",
+        "Its constants are all positive"
+      ],
+      "answer": 0,
+      "explanation": "Setting every unknown to zero makes each left side zero, which matches the zero right side. The other reasons do not hold in general.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    }
+  ],
+  "artifacts": []
+}

@@ -1,0 +1,1063 @@
+{
+  "formatVersion": 1,
+  "id": "anatomy-and-physiology.body-organization",
+  "subject": "anatomy-and-physiology",
+  "title": "Organization of the body",
+  "summary": "The levels of organization from cell to organism, anatomical position and directional terms, body planes, and the body cavities.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "levels-of-organization",
+      "name": "Levels of organization",
+      "aliases": [
+        "levels of structural organization",
+        "structural levels",
+        "organization levels of the body"
+      ],
+      "summary": "The body is built in layers, from atoms and molecules up through cells, tissues, organs, and organ systems to the whole organism.",
+      "requires": [],
+      "elements": [
+        {
+          "id": "chemical-level",
+          "name": "Chemical level"
+        },
+        {
+          "id": "cellular-level",
+          "name": "Cellular level"
+        },
+        {
+          "id": "tissue-level",
+          "name": "Tissue level"
+        },
+        {
+          "id": "organ-level",
+          "name": "Organ level"
+        },
+        {
+          "id": "organ-system-level",
+          "name": "Organ system level"
+        },
+        {
+          "id": "organismal-level",
+          "name": "Organismal level"
+        }
+      ],
+      "explain": {
+        "text": "Your body is built in layers, like a set of nested boxes. The lowest layer is the chemical level, where atoms combine into molecules such as water and proteins. Molecules make up cells, the smallest unit of life, which form the cellular level. Similar cells form tissues, and several tissues working together form an organ, such as the heart. Organs that cooperate on one job form an organ system, such as the circulatory system. All the organ systems together make up the whole organism. Knowing these levels lets anatomists describe the body from the smallest part to the largest without confusion."
+      }
+    },
+    {
+      "id": "anatomical-position",
+      "name": "Anatomical position",
+      "aliases": [
+        "standard anatomical position",
+        "anatomic position"
+      ],
+      "summary": "The standard reference posture, standing upright with palms forward, that all anatomical directions and locations are described from.",
+      "requires": [],
+      "elements": [
+        {
+          "id": "upright-stance",
+          "name": "Upright stance"
+        },
+        {
+          "id": "feet-placement",
+          "name": "Feet flat and parallel"
+        },
+        {
+          "id": "palms-forward",
+          "name": "Palms facing forward"
+        },
+        {
+          "id": "subject-left-and-right",
+          "name": "Subject's left and right"
+        }
+      ],
+      "explain": {
+        "text": "Anatomical position is the standard posture that every anatomical description assumes. The body stands upright, feet flat and parallel about shoulder-width apart, toes forward. The arms hang at the sides with the palms facing forward and the thumbs turned outward. Because everyone uses this same reference, a location such as the thumb side of the hand means the same thing for every person, whatever position the body is actually in. A person lying on the back is still described using the standing posture, so their front is still anterior."
+      }
+    },
+    {
+      "id": "directional-terms",
+      "name": "Directional terms",
+      "aliases": [
+        "anatomical directional terms",
+        "directional terminology",
+        "anatomical directions"
+      ],
+      "summary": "Paired terms such as anterior and posterior, superior and inferior, and medial and lateral that give the direction of one body part relative to another.",
+      "requires": [
+        "anatomical-position"
+      ],
+      "elements": [
+        {
+          "id": "anterior-posterior",
+          "name": "Anterior and posterior"
+        },
+        {
+          "id": "superior-inferior",
+          "name": "Superior and inferior"
+        },
+        {
+          "id": "medial-lateral",
+          "name": "Medial and lateral"
+        },
+        {
+          "id": "proximal-distal",
+          "name": "Proximal and distal"
+        },
+        {
+          "id": "superficial-deep",
+          "name": "Superficial and deep"
+        },
+        {
+          "id": "dorsal-ventral",
+          "name": "Dorsal and ventral"
+        }
+      ],
+      "explain": {
+        "text": "Directional terms are paired words that describe where one body part is relative to another. Anterior means toward the front and posterior toward the back. Superior means above and inferior means below. Medial means nearer the midline of the body and lateral means farther from it. Proximal means closer to the trunk and distal means farther from it. Superficial means near the surface and deep means farther in. Because the body is always described in the anatomical position, a surgeon and a nurse name the same spot the same way, even if the patient has moved."
+      }
+    },
+    {
+      "id": "body-planes",
+      "name": "Body planes",
+      "aliases": [
+        "anatomical planes",
+        "planes of the body"
+      ],
+      "summary": "The sagittal, frontal, and transverse planes, flat imaginary surfaces that slice the body and produce sections.",
+      "requires": [
+        "directional-terms"
+      ],
+      "elements": [
+        {
+          "id": "sagittal-plane",
+          "name": "Sagittal plane"
+        },
+        {
+          "id": "midsagittal-plane",
+          "name": "Midsagittal plane"
+        },
+        {
+          "id": "parasagittal-plane",
+          "name": "Parasagittal plane"
+        },
+        {
+          "id": "frontal-plane",
+          "name": "Frontal plane"
+        },
+        {
+          "id": "transverse-plane",
+          "name": "Transverse plane"
+        }
+      ],
+      "explain": {
+        "text": "A body plane is an imaginary flat surface that slices through the body, and a cut along it makes a section. The sagittal plane runs front to back and splits the body into right and left parts. When it lies exactly down the middle, it is the midsagittal plane. The frontal plane, also called the coronal plane, runs side to side and splits the body into front and back parts. The transverse plane runs horizontally and splits the body into upper and lower parts, and its cuts are called cross sections. Medical scans such as CT images are often read along these three planes."
+      }
+    },
+    {
+      "id": "body-cavities",
+      "name": "Body cavities",
+      "aliases": [
+        "body cavity",
+        "ventral and dorsal cavities"
+      ],
+      "summary": "The dorsal and ventral body cavities and their subdivisions, which house and protect the organs.",
+      "requires": [
+        "levels-of-organization"
+      ],
+      "elements": [
+        {
+          "id": "dorsal-cavity",
+          "name": "Dorsal cavity"
+        },
+        {
+          "id": "cranial-cavity",
+          "name": "Cranial cavity"
+        },
+        {
+          "id": "spinal-cavity",
+          "name": "Spinal cavity"
+        },
+        {
+          "id": "ventral-cavity",
+          "name": "Ventral cavity"
+        },
+        {
+          "id": "thoracic-cavity",
+          "name": "Thoracic cavity"
+        },
+        {
+          "id": "abdominopelvic-cavity",
+          "name": "Abdominopelvic cavity"
+        }
+      ],
+      "explain": {
+        "text": "The body's large internal spaces are called body cavities, and they keep organs in protected compartments. The dorsal cavity lies toward the back and has two parts. The cranial cavity holds the brain, and the spinal cavity runs down the spine and holds the spinal cord. The ventral cavity lies toward the front and has two parts, the thoracic cavity above and the abdominopelvic cavity below. The diaphragm separates the thoracic cavity from the abdominopelvic cavity. The heart and lungs sit in the thoracic cavity, and the stomach and intestines sit in the abdominopelvic cavity."
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "anatomy-and-physiology.body-organization.levels-smallest-living-unit",
+      "concept": "levels-of-organization",
+      "element": "cellular-level",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which level of organization is the smallest unit of life?",
+      "choices": [
+        "Molecule",
+        "Tissue",
+        "Cell",
+        "Organ"
+      ],
+      "answer": 2,
+      "explanation": "A cell is the smallest unit that carries out all the processes of life. Molecules are smaller, but a single molecule is not alive. Tissues and organs are both built from cells.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.levels-tissue-definition",
+      "concept": "levels-of-organization",
+      "element": "tissue-level",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which level is a group of similar cells that work together for one job?",
+      "choices": [
+        "Organ",
+        "Organism",
+        "Molecule",
+        "Tissue"
+      ],
+      "answer": 3,
+      "explanation": "A tissue is a group of similar cells with a shared specialised function, such as muscle or nerve tissue. An organ is a structure made of several tissue types, and an organ system is a group of organs.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.levels-heart-level",
+      "concept": "levels-of-organization",
+      "element": "organ-level",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "The heart pumps blood. At which level of organization is the heart best described?",
+      "choices": [
+        "Cell level",
+        "Organ level",
+        "Tissue level",
+        "Organism level"
+      ],
+      "answer": 1,
+      "explanation": "The heart is an organ: a structure made of several tissue types that work together for one function. Its muscle is tissue, but the heart as a whole sits one level higher.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.levels-circulatory-group",
+      "concept": "levels-of-organization",
+      "element": "organ-system-level",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "The heart, arteries, and veins work together to move blood. At what level is this group?",
+      "choices": [
+        "Organ system",
+        "Organ",
+        "Tissue",
+        "Chemical level"
+      ],
+      "answer": 0,
+      "explanation": "Organs that work together on one body function form an organ system, here the circulatory system. The heart alone is a single organ, one level lower.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.levels-build-on-level-below",
+      "concept": "levels-of-organization",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which statement about the levels of organization is correct?",
+      "choices": [
+        "Each level is built from the level directly below it",
+        "Organs are built directly from molecules, skipping cells and tissues",
+        "Organ systems are a level below organs",
+        "Tissues are built from organ systems"
+      ],
+      "answer": 0,
+      "explanation": "The levels stack: molecules form cells, cells form tissues, tissues form organs, organs form organ systems, and organ systems form the organism. Organs are not built straight from molecules, and organ systems sit above organs, not below.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.levels-between-cells-and-organs",
+      "concept": "levels-of-organization",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "Which level of organization lies between cells and organs?",
+      "answer": "Tissue",
+      "explanation": "Cells group into tissues, and tissues group into organs, so tissues are the level between them.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Tissue level is the key fact, Tissue."
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.levels-organ-system-name",
+      "concept": "levels-of-organization",
+      "element": "organ-system-level",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "What is the name for a group of organs that work together to carry out one body function?",
+      "answer": "An organ system",
+      "explanation": "The digestive and nervous systems are examples. This level sits between organs and the whole organism.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Organ system is the same fact as the key."
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.levels-order-smallest-to-largest",
+      "concept": "levels-of-organization",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the levels of organization in order from smallest to largest.",
+      "steps": [
+        "Chemical level",
+        "Cellular level",
+        "Tissue level",
+        "Organ level",
+        "Organ system level",
+        "Organismal level"
+      ],
+      "explanation": "The order runs from atoms and molecules, to cells, tissues, organs, organ systems, and finally the whole organism. Each level is built from the one before it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.position-palms",
+      "concept": "anatomical-position",
+      "element": "palms-forward",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In anatomical position, which way do the palms face?",
+      "choices": [
+        "Backward",
+        "Inward",
+        "Downward",
+        "Forward"
+      ],
+      "answer": 3,
+      "explanation": "In anatomical position the palms face forward with the thumbs turned outward. Palms facing backward, inward, or down is a different posture, so terms like anterior would no longer match the reference.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.position-standard-posture",
+      "concept": "anatomical-position",
+      "element": "upright-stance",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which posture is the anatomical position?",
+      "choices": [
+        "Lying face down on the floor with both arms stretched out above the head",
+        "Standing upright with feet flat and shoulder-width apart, palms forward",
+        "Sitting with hands resting on the knees",
+        "Standing with feet together and arms crossed"
+      ],
+      "answer": 1,
+      "explanation": "Anatomical position is standing upright, feet flat and parallel, palms forward. Lying, sitting, or crossed arms do not match the standard reference.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.position-why-standard",
+      "concept": "anatomical-position",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Why do anatomists describe every body from the same standard position?",
+      "choices": [
+        "So that all bodies end up the same size",
+        "So that directions and locations mean the same thing for any body",
+        "So that organs move closer together",
+        "So that the heart beats more slowly"
+      ],
+      "answer": 1,
+      "explanation": "A shared reference makes terms like anterior and lateral unambiguous, whatever position the body is actually in. None of the other choices is a reason for a reference position.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.position-subjects-right-hand",
+      "concept": "anatomical-position",
+      "element": "subject-left-and-right",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A person stands facing you in anatomical position. Their right hand is on which side from your view?",
+      "choices": [
+        "Your left",
+        "Your right",
+        "Behind you",
+        "Above you"
+      ],
+      "answer": 0,
+      "explanation": "Left and right always refer to the subject's own body. Facing you, the person's right side is on your left, so their right hand appears on your left.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.position-lying-down",
+      "concept": "anatomical-position",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A patient lies on their back on a bed. Is this the anatomical position?",
+      "choices": [
+        "Yes, lying on the back is a standard posture",
+        "Yes, as long as the palms face up",
+        "No, the feet must be crossed",
+        "No, the position is standing upright with palms forward"
+      ],
+      "answer": 3,
+      "explanation": "Anatomical position is always defined as standing upright, whatever the body's actual posture. A lying patient is still described as if standing, so their front is still anterior.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.position-feet-placement",
+      "concept": "anatomical-position",
+      "element": "feet-placement",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "In anatomical position, how are the feet placed?",
+      "answer": "Flat, parallel, and about shoulder-width apart, toes forward",
+      "explanation": "The fixed stance keeps the reference the same for everyone, whatever the body is doing.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Flat, about shoulder-width apart, toes forward. Same facts."
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.position-why-subject-left-right",
+      "concept": "anatomical-position",
+      "element": "subject-left-and-right",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "Why are left and right defined by the subject rather than the observer?",
+      "answer": "So the terms mean the same thing whoever is looking at the body",
+      "explanation": "Anatomists always name the side of the body being described, so a left hand is the same hand from any viewpoint.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both solvers state the subject-fixed sides so the terms are consistent for any observer."
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.position-landmarks-top-to-bottom",
+      "concept": "anatomical-position",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these landmarks in order from highest to lowest in anatomical position.",
+      "steps": [
+        "Top of the head",
+        "Nipples",
+        "Umbilicus",
+        "Knees",
+        "Soles of the feet"
+      ],
+      "explanation": "The head is highest and the soles are lowest. The nipples sit at about chest level, the umbilicus (navel) at about waist level, and the knees below the hips.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.directions-anterior-front",
+      "concept": "directional-terms",
+      "element": "anterior-posterior",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which term means toward the front of the body?",
+      "choices": [
+        "Posterior",
+        "Distal",
+        "Anterior",
+        "Inferior"
+      ],
+      "answer": 2,
+      "explanation": "Anterior means toward the front, and posterior means toward the back. Distal means farther from the trunk, and inferior means lower.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.directions-knee-ankle",
+      "concept": "directional-terms",
+      "element": "superior-inferior",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "The knee is ___ to the ankle.",
+      "choices": [
+        "Superior",
+        "Inferior",
+        "Medial",
+        "Posterior"
+      ],
+      "answer": 0,
+      "explanation": "Superior means above. The knee sits above the ankle, so it is superior to it. Inferior would describe the ankle's position relative to the knee.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.directions-thumb",
+      "concept": "directional-terms",
+      "element": "medial-lateral",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In anatomical position, the thumb is ___ to the little finger.",
+      "choices": [
+        "Medial",
+        "Superior",
+        "Posterior",
+        "Lateral"
+      ],
+      "answer": 3,
+      "explanation": "In anatomical position the thumb sits on the side away from the midline, so it is lateral to the little finger, which is medial.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.directions-arm-order",
+      "concept": "directional-terms",
+      "element": "proximal-distal",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these points on the arm in order from closest to the trunk to farthest from it.",
+      "steps": [
+        "Shoulder",
+        "Elbow",
+        "Wrist",
+        "Fingertip"
+      ],
+      "explanation": "Along the arm the order is shoulder, elbow, wrist, then fingertip. Proximal means closer to the trunk and distal means farther from it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.directions-dorsal-posterior",
+      "concept": "directional-terms",
+      "element": "dorsal-ventral",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which pair of terms gives the same direction, toward the back of the body?",
+      "choices": [
+        "Ventral and anterior",
+        "Dorsal and posterior",
+        "Superior and posterior",
+        "Medial and superficial"
+      ],
+      "answer": 1,
+      "explanation": "Dorsal and posterior both mean toward the back. Ventral and anterior both mean toward the front, superior means above, and medial means toward the midline, so those pairs are wrong.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.directions-superficial-term",
+      "concept": "directional-terms",
+      "element": "superficial-deep",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What term means closer to the surface of the body?",
+      "answer": "Superficial",
+      "explanation": "The skin is superficial to the skull, and the brain is deep to the skull.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Superficial is the key term."
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.directions-proximal-term",
+      "concept": "directional-terms",
+      "element": "proximal-distal",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "What term means closer to the trunk, the opposite of distal?",
+      "answer": "Proximal",
+      "explanation": "The elbow is proximal to the wrist, because it is closer to the trunk.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Proximal is the key term."
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.directions-ulna-radius",
+      "concept": "directional-terms",
+      "element": "medial-lateral",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student writes that the ulna is lateral to the radius in anatomical position. Which correction is right?",
+      "choices": [
+        "The ulna is lateral to the radius",
+        "The ulna is superior to the radius",
+        "The ulna is medial to the radius",
+        "The ulna is behind the radius"
+      ],
+      "answer": 2,
+      "explanation": "With the palms forward, the radius is on the thumb side, which is lateral, so the ulna on the little-finger side is medial. The two bones lie side by side at the same height.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Choice 0 repeats the student's wrong claim. In anatomical position the radius is lateral (thumb side) and the ulna is medial."
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.planes-front-back-split",
+      "concept": "body-planes",
+      "element": "frontal-plane",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which plane divides the body into an anterior (front) part and a posterior (back) part?",
+      "choices": [
+        "Sagittal plane",
+        "Midsagittal plane",
+        "Axial plane",
+        "Frontal plane"
+      ],
+      "answer": 3,
+      "explanation": "The frontal plane runs side to side and separates front from back. The sagittal plane runs front to back and separates right from left, which is the tempting wrong answer.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: Frontal = coronal; axial is not a standard term here (transverse is)."
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.planes-left-right-name",
+      "concept": "body-planes",
+      "element": "sagittal-plane",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "Which plane divides the body into right and left sides?",
+      "answer": "Sagittal plane",
+      "explanation": "A sagittal plane runs vertically, from front to back. If it lies down the exact middle, it is the midsagittal plane.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Sagittal plane is the key term."
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.planes-horizontal-cut",
+      "concept": "body-planes",
+      "element": "transverse-plane",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A horizontal cut divides the body into upper and lower parts. Which plane is this?",
+      "choices": [
+        "Sagittal plane",
+        "Frontal plane",
+        "Transverse plane",
+        "Parasagittal plane"
+      ],
+      "answer": 2,
+      "explanation": "The transverse plane is horizontal and splits the body into upper and lower parts. Its cut is called a cross section.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.planes-midsagittal-equal",
+      "concept": "body-planes",
+      "element": "midsagittal-plane",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which plane runs down the exact middle of the body and makes two equal halves?",
+      "choices": [
+        "Parasagittal plane",
+        "Frontal plane",
+        "Transverse plane",
+        "Midsagittal plane"
+      ],
+      "answer": 3,
+      "explanation": "The midsagittal plane is a sagittal plane through the midline, giving equal right and left halves. A parasagittal plane is also vertical but off-centre.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.planes-frontal-other-name",
+      "concept": "body-planes",
+      "element": "frontal-plane",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "What is another name for the frontal plane?",
+      "answer": "Coronal plane",
+      "explanation": "Both names describe the same vertical plane that divides front from back. The name comes from the Latin for crown.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Coronal plane is the key term."
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.planes-unequal-right-left",
+      "concept": "body-planes",
+      "element": "parasagittal-plane",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A vertical slice divides the body into unequal right and left parts. Which plane is it?",
+      "choices": [
+        "Parasagittal plane",
+        "Midsagittal plane",
+        "Frontal plane",
+        "Transverse plane"
+      ],
+      "answer": 0,
+      "explanation": "A parasagittal plane is vertical like the sagittal plane but off-centre, so the two sides are unequal. Only a midsagittal plane splits the body into equal halves.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.planes-perpendicular-to-both",
+      "concept": "body-planes",
+      "element": "transverse-plane",
+      "kind": "recall",
+      "difficulty": 3,
+      "prompt": "Which plane is perpendicular to both the sagittal and frontal planes?",
+      "answer": "Transverse plane",
+      "explanation": "The sagittal and frontal planes are perpendicular to each other, and the transverse plane is perpendicular to both. Its cuts are called cross sections.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Transverse plane; solver b adds horizontal as a parenthetical synonym."
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.planes-statement-check",
+      "concept": "body-planes",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which statement about body planes is correct?",
+      "choices": [
+        "A frontal plane splits the body into right and left halves",
+        "Every sagittal plane divides the body into equal halves",
+        "A transverse plane is horizontal and gives cross sections",
+        "A midsagittal plane is horizontal"
+      ],
+      "answer": 2,
+      "explanation": "Transverse planes are horizontal and produce cross sections. Frontal planes separate front from back, sagittal planes separate right from left, and only a midsagittal plane gives equal halves.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.cavities-dorsal-parts",
+      "concept": "body-cavities",
+      "element": "dorsal-cavity",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which two cavities make up the dorsal body cavity?",
+      "choices": [
+        "Thoracic and pelvic",
+        "Cranial and spinal",
+        "Thoracic and abdominopelvic",
+        "Abdominal and pelvic"
+      ],
+      "answer": 1,
+      "explanation": "The dorsal cavity lies toward the back and is made of the cranial cavity around the brain and the spinal cavity around the spinal cord. The thoracic and abdominopelvic cavities are both part of the ventral cavity.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.cavities-brain",
+      "concept": "body-cavities",
+      "element": "cranial-cavity",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which cavity holds the brain?",
+      "choices": [
+        "Thoracic cavity",
+        "Spinal cavity",
+        "Cranial cavity",
+        "Pelvic cavity"
+      ],
+      "answer": 2,
+      "explanation": "The cranial cavity fills most of the upper skull and contains the brain. The spinal cavity holds the spinal cord, which runs down the back.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.cavities-heart-lungs",
+      "concept": "body-cavities",
+      "element": "thoracic-cavity",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "The heart and lungs sit in which body cavity?",
+      "choices": [
+        "Abdominopelvic cavity",
+        "Thoracic cavity",
+        "Spinal cavity",
+        "Cranial cavity"
+      ],
+      "answer": 1,
+      "explanation": "The thoracic cavity is enclosed by the ribs and contains the lungs and heart. The abdominopelvic cavity lies below the diaphragm.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.cavities-diaphragm-separates",
+      "concept": "body-cavities",
+      "element": "ventral-cavity",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What muscle separates the thoracic cavity from the abdominopelvic cavity?",
+      "answer": "The diaphragm",
+      "explanation": "The diaphragm is a dome-shaped muscle that sits under the lungs and heart. Because it divides the ventral cavity into its two subdivisions, the abdominopelvic organs lie beneath it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Diaphragm is the key muscle."
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.cavities-pelvic-contents",
+      "concept": "body-cavities",
+      "element": "abdominopelvic-cavity",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "Which body cavity contains the bladder and the reproductive organs?",
+      "answer": "Pelvic cavity",
+      "explanation": "The pelvic cavity is the lower, funnel-shaped part of the abdominopelvic cavity, enclosed by the pelvis.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Pelvic cavity; solver b adds a parenthetical location, not a different fact."
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.cavities-spinal-continuous",
+      "concept": "body-cavities",
+      "element": "spinal-cavity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which cavity runs down the spine and is continuous with the cranial cavity?",
+      "choices": [
+        "Thoracic cavity",
+        "Spinal cavity",
+        "Pelvic cavity",
+        "Abdominal cavity"
+      ],
+      "answer": 1,
+      "explanation": "The spinal cavity is a narrow cavity running from the skull down the whole length of the spinal cord. It is part of the dorsal cavity, while the abdominal and pelvic cavities are part of the ventral cavity.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.cavities-order-top-to-bottom",
+      "concept": "body-cavities",
+      "element": "abdominopelvic-cavity",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these body cavities in order from highest to lowest.",
+      "steps": [
+        "Cranial cavity",
+        "Thoracic cavity",
+        "Abdominal cavity",
+        "Pelvic cavity"
+      ],
+      "explanation": "The cranial cavity is in the skull, the thoracic cavity is in the chest above the diaphragm, the abdominal cavity is below it, and the pelvic cavity is the lowest.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "anatomy-and-physiology.body-organization.cavities-ventral-statement",
+      "concept": "body-cavities",
+      "element": "ventral-cavity",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which statement about the ventral body cavity is correct?",
+      "choices": [
+        "It contains the spinal cord",
+        "It contains the brain",
+        "It is enclosed by the skull and holds the brain and spinal cord together",
+        "It is divided by the diaphragm into thoracic and abdominopelvic parts"
+      ],
+      "answer": 3,
+      "explanation": "The ventral cavity lies toward the front and has a thoracic part above and an abdominopelvic part below. The brain and spinal cord are in the dorsal cavity, and the skull encloses only the cranial cavity.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    }
+  ],
+  "artifacts": []
+}

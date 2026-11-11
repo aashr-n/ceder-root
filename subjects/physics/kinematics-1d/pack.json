@@ -1,0 +1,1357 @@
+{
+  "formatVersion": 1,
+  "id": "physics.kinematics-1d",
+  "subject": "physics",
+  "title": "Motion in one dimension",
+  "summary": "Position, displacement, velocity and acceleration along a line, the constant-acceleration equations, and free fall.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "displacement",
+      "name": "Displacement",
+      "aliases": [
+        "displacements",
+        "change in position",
+        "position change"
+      ],
+      "summary": "The change in an object's position from start to end, with its direction, which depends only on where it starts and ends.",
+      "requires": [],
+      "elements": [
+        {
+          "id": "final-minus-initial",
+          "name": "Final minus initial position"
+        },
+        {
+          "id": "sign-and-direction",
+          "name": "Sign and direction"
+        },
+        {
+          "id": "displacement-vs-distance-travelled",
+          "name": "Displacement versus distance travelled"
+        }
+      ],
+      "explain": {
+        "text": "Displacement is how far an object's position has changed, and in which direction. It is the final position minus the starting position, so it is a signed number: positive for a change toward the positive direction of the axis and negative for a change the other way. A runner who walks 100 m east and then 30 m west ends up 70 m east of her start, so her displacement is 70 m east even though she walked 130 m. Displacement depends only on where the object starts and ends, not on the path between."
+      }
+    },
+    {
+      "id": "average-velocity",
+      "name": "Average velocity",
+      "aliases": [
+        "average velocities",
+        "mean velocity"
+      ],
+      "summary": "Displacement divided by the time taken, which says nothing about what happened in between.",
+      "requires": [
+        "displacement"
+      ],
+      "elements": [
+        {
+          "id": "average-velocity-formula",
+          "name": "Average velocity formula"
+        },
+        {
+          "id": "average-speed",
+          "name": "Average speed"
+        },
+        {
+          "id": "position-time-graph-slope",
+          "name": "Slope on a position–time graph"
+        }
+      ],
+      "explain": {
+        "text": "Average velocity is the displacement divided by the time it took. It is found from the two positions and the two times alone, so it says nothing about what happened in between. If a car moves 120 m east in 4 s, its average velocity is 30 m/s east. Average velocity can be zero even when the object moves the whole time: a runner who goes 60 m east and then 60 m back in the same time has an average velocity of zero. On a position–time graph, it is the slope of the straight line joining two points."
+      }
+    },
+    {
+      "id": "instantaneous-velocity",
+      "name": "Instantaneous velocity",
+      "aliases": [
+        "instantaneous velocities",
+        "velocity at an instant"
+      ],
+      "summary": "The velocity at one exact moment, found as the limit of average velocity over shrinking time intervals.",
+      "requires": [
+        "average-velocity"
+      ],
+      "elements": [
+        {
+          "id": "limit-of-average-velocity",
+          "name": "Limit of average velocity"
+        },
+        {
+          "id": "derivative-of-position",
+          "name": "Derivative of position"
+        },
+        {
+          "id": "tangent-slope",
+          "name": "Tangent slope on a graph"
+        }
+      ],
+      "explain": {
+        "text": "Instantaneous velocity is the velocity at one exact moment. It is found by taking the average velocity over a shorter and shorter time interval around that moment, and letting the interval shrink toward zero. In calculus this is the derivative of position with respect to time, v = dx/dt, and on a position–time graph it is the slope of the tangent line at that moment. A speedometer shows the size of the instantaneous velocity. An object can have zero velocity at one instant and be moving again the next."
+      }
+    },
+    {
+      "id": "acceleration",
+      "name": "Acceleration",
+      "aliases": [
+        "accelerations",
+        "rate of change of velocity"
+      ],
+      "summary": "The rate at which velocity changes, a signed quantity measured in metres per second squared.",
+      "requires": [
+        "instantaneous-velocity"
+      ],
+      "elements": [
+        {
+          "id": "change-in-velocity",
+          "name": "Change in velocity"
+        },
+        {
+          "id": "acceleration-units",
+          "name": "Units of acceleration"
+        },
+        {
+          "id": "sign-of-acceleration",
+          "name": "Sign of acceleration"
+        }
+      ],
+      "explain": {
+        "text": "Acceleration is the rate at which velocity changes. Average acceleration is the change in velocity divided by the time it takes, and its SI unit is metres per second squared, m/s². Velocity is signed, so acceleration is too: a car going from 10 m/s to 30 m/s in 4 s has an acceleration of 5 m/s² in the forward direction, while a braking car has a negative acceleration. Acceleration can be nonzero even when velocity is zero, as at the top of a ball thrown upward. Acceleration does not always mean speeding up."
+      }
+    },
+    {
+      "id": "constant-acceleration-equations",
+      "name": "Constant-acceleration equations",
+      "aliases": [
+        "constant acceleration equations",
+        "kinematic equations",
+        "equations of motion"
+      ],
+      "summary": "Equations linking velocity, acceleration, time and displacement when the acceleration stays the same.",
+      "requires": [
+        "acceleration"
+      ],
+      "elements": [
+        {
+          "id": "four-equations",
+          "name": "The kinematic equations"
+        },
+        {
+          "id": "choosing-an-equation",
+          "name": "Choosing an equation"
+        },
+        {
+          "id": "stopping-distance",
+          "name": "Stopping distance"
+        }
+      ],
+      "explain": {
+        "text": "When acceleration is constant, a set of equations links the initial and final velocity, the acceleration, the time, and the displacement. The three most useful are v = v₀ + at, x − x₀ = v₀t + ½at², and v² = v₀² + 2a(x − x₀). Each one leaves out at least one quantity, so pick the equation that contains the unknown and only quantities you know. A car starting from rest with an acceleration of 3 m/s² reaches 12 m/s after 4 s. These equations apply only when the acceleration does not change during the motion."
+      }
+    },
+    {
+      "id": "free-fall",
+      "name": "Free fall",
+      "aliases": [
+        "freefall",
+        "free falling",
+        "falling bodies"
+      ],
+      "summary": "Motion under gravity alone, where every object near Earth's surface accelerates downward at about 9.8 m/s².",
+      "requires": [
+        "constant-acceleration-equations"
+      ],
+      "elements": [
+        {
+          "id": "gravity-only",
+          "name": "Gravity as the only force"
+        },
+        {
+          "id": "g-value",
+          "name": "Value of g near Earth"
+        },
+        {
+          "id": "thrown-upward",
+          "name": "Motion when thrown upward"
+        }
+      ],
+      "explain": {
+        "text": "Free fall is motion where gravity is the only force that matters, so air resistance is ignored. Near Earth's surface every freely falling object has the same downward acceleration of about 9.8 m/s², whatever its mass. That is why a feather and a steel ball dropped together in a vacuum land at the same time. A ball thrown straight up slows at that rate, stops for an instant at the top, and falls back, passing its launch height with the same speed it had on the way up. The constant-acceleration equations apply, with a = −9.8 m/s² when up is positive."
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "physics.kinematics-1d.displacement-east-west",
+      "concept": "displacement",
+      "element": "final-minus-initial",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A walker goes 100 m east, then 30 m west. What is her displacement?",
+      "choices": [
+        "130 m east",
+        "70 m east",
+        "70 m west",
+        "130 m total path length"
+      ],
+      "answer": 1,
+      "explanation": "Displacement is final position minus starting position: 100 m − 30 m = 70 m east. The 130 m is the distance walked, which is path length, not displacement. 70 m west has the wrong direction.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.displacement-definition",
+      "concept": "displacement",
+      "element": "sign-and-direction",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which best describes displacement?",
+      "choices": [
+        "The total length of the path an object travels",
+        "The time an object takes to move between two points",
+        "The average speed over the whole trip",
+        "The change in position from start to end, including direction"
+      ],
+      "answer": 3,
+      "explanation": "Displacement is the change in position from start to end, a signed quantity. Path length is distance, which is always positive and can be larger than displacement.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.displacement-car-negative",
+      "concept": "displacement",
+      "element": "final-minus-initial",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A car's position changes from x = 20 m to x = −15 m. What is its displacement?",
+      "choices": [
+        "5 m",
+        "35 m",
+        "−35 m",
+        "−5 m"
+      ],
+      "answer": 2,
+      "explanation": "Δx = x_final − x_initial = −15 m − 20 m = −35 m. Adding the two positions gives 5 m, dropping the sign gives 35 m, and −5 m has the wrong size.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.displacement-round-track",
+      "concept": "displacement",
+      "element": "displacement-vs-distance-travelled",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A runner goes once around a 400 m circular track and stops where she started. What is her displacement?",
+      "choices": [
+        "400 m",
+        "800 m",
+        "200 m",
+        "0 m"
+      ],
+      "answer": 3,
+      "explanation": "Her final position equals her starting position, so the change is zero. The 400 m is the distance she ran, and 200 m is half a lap, which has no meaning here.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.displacement-distance-statement",
+      "concept": "displacement",
+      "element": "displacement-vs-distance-travelled",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which statement about displacement and distance is true?",
+      "choices": [
+        "Displacement is always positive",
+        "Displacement and distance are always equal",
+        "Displacement can be smaller in size than the distance travelled",
+        "Displacement can be larger than the distance travelled"
+      ],
+      "answer": 2,
+      "explanation": "Displacement depends only on the start and end, while distance counts the whole path, so the displacement can be smaller in size. It can never exceed the distance travelled, and it can be negative.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.displacement-bird-fence",
+      "concept": "displacement",
+      "element": "final-minus-initial",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A bird is 5 m from a fence at t = 0 and 12 m from it at t = 3 s, always on the same side. What is its displacement from t = 0 to t = 3 s?",
+      "choices": [
+        "5 m",
+        "12 m",
+        "17 m",
+        "7 m"
+      ],
+      "answer": 3,
+      "explanation": "Displacement is 12 m − 5 m = 7 m, away from the fence. 17 m comes from adding the two distances, and 5 m and 12 m are single positions, not changes.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.displacement-three-legs",
+      "concept": "displacement",
+      "element": "final-minus-initial",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A particle moves from x = −4 m to x = 6 m, then back to x = 1 m. What is its displacement for the whole trip?",
+      "choices": [
+        "15 m",
+        "−5 m",
+        "5 m",
+        "10 m"
+      ],
+      "answer": 2,
+      "explanation": "Displacement is 1 m − (−4 m) = 5 m. The 15 m is the total distance (10 m out plus 5 m back), −5 m reverses the subtraction, and 10 m is only the first leg.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.displacement-thrown-ball",
+      "concept": "displacement",
+      "element": "displacement-vs-distance-travelled",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A ball thrown straight up is caught at the height it was released. What is its displacement for the whole flight?",
+      "choices": [
+        "Its peak height above the launch point, which is the highest position it reaches in the air",
+        "It is measured in seconds, because the displacement equals the time the whole flight takes",
+        "The distance it rose on the way up, which is the same as its total distance travelled",
+        "Zero, because it ends where it started"
+      ],
+      "answer": 3,
+      "explanation": "The ball ends at its starting height, so the change in position is zero even though it travelled up and down. Its peak height and the distance it rose are not the displacement for the whole flight.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.average-velocity-definition",
+      "concept": "average-velocity",
+      "element": "average-velocity-formula",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How is average velocity calculated?",
+      "choices": [
+        "Total distance divided by total time",
+        "Speed multiplied by time",
+        "Displacement divided by elapsed time",
+        "Change in velocity divided by time"
+      ],
+      "answer": 2,
+      "explanation": "Average velocity is displacement divided by the time interval, Δx/Δt. Total distance over time gives average speed, the most common mix-up.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.average-velocity-car-east",
+      "concept": "average-velocity",
+      "element": "average-velocity-formula",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A car moves 120 m east in 4 s. What is its average velocity?",
+      "choices": [
+        "480 m/s east",
+        "116 m/s east",
+        "30 m/s east",
+        "0.033 m/s east"
+      ],
+      "answer": 2,
+      "explanation": "Average velocity = 120 m east ÷ 4 s = 30 m/s east. 480 m/s multiplies instead of dividing, and 116 m/s subtracts the time from the distance.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.average-velocity-out-and-back",
+      "concept": "average-velocity",
+      "element": "average-speed",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A runner goes 60 m east in 10 s, then 60 m west in 10 s. What is her average velocity over the 20 s?",
+      "choices": [
+        "6 m/s",
+        "12 m/s",
+        "0 m/s",
+        "3 m/s"
+      ],
+      "answer": 2,
+      "explanation": "Her displacement is zero, so her average velocity is zero. Her average speed is 120 m ÷ 20 s = 6 m/s, which is a different quantity.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.average-velocity-vs-speed",
+      "concept": "average-velocity",
+      "element": "average-speed",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why can the size of average velocity be smaller than average speed?",
+      "choices": [
+        "Velocity uses displacement, which can be less than the distance travelled",
+        "Speed is always negative, so it can never be larger than the size of the average velocity",
+        "Velocity ignores the elapsed time, so dividing by time makes it smaller than the average speed",
+        "Speed uses only the final position of the object, not the distance it covered along the way"
+      ],
+      "answer": 0,
+      "explanation": "Average speed divides the distance travelled by time, while average velocity divides the displacement, which can be smaller than the path length. Speed is never negative, and both are divided by the elapsed time.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.average-velocity-cyclist",
+      "concept": "average-velocity",
+      "element": "average-velocity-formula",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A cyclist is at x = 50 m at t = 2 s and at x = 170 m at t = 8 s. What is her average velocity between those times?",
+      "choices": [
+        "120 m/s",
+        "6 m/s",
+        "30 m/s",
+        "20 m/s"
+      ],
+      "answer": 3,
+      "explanation": "Δx = 170 m − 50 m = 120 m and Δt = 8 s − 2 s = 6 s, so 120 ÷ 6 = 20 m/s. 30 m/s divides by 4 s, which is not the elapsed time, and 6 m/s is the elapsed time itself.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.average-velocity-graph-slope",
+      "concept": "average-velocity",
+      "element": "position-time-graph-slope",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "On a position–time graph, what does average velocity between two times represent?",
+      "choices": [
+        "The area under the curve between the two times, found by summing the position at each moment",
+        "The height of the curve at the start of the interval, which is the position at the first time",
+        "The slope of the straight line joining the two points",
+        "The curvature of the graph, which measures how sharply the position changes direction between the two times"
+      ],
+      "answer": 2,
+      "explanation": "Average velocity is the change in position over the change in time, which is the slope of the straight line between the two points on the graph. The area under the curve between the two times does not give a velocity here.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.average-velocity-two-legs",
+      "concept": "average-velocity",
+      "element": "average-speed",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A car drives 3 km east at 60 km/h, then 3 km east at 30 km/h. What is its average velocity for the whole trip?",
+      "choices": [
+        "45 km/h east",
+        "40 km/h east",
+        "30 km/h east",
+        "50 km/h east"
+      ],
+      "answer": 1,
+      "explanation": "The first leg takes 0.05 h and the second 0.1 h, so the trip takes 0.15 h. Displacement 6 km ÷ 0.15 h = 40 km/h east. The simple average of 45 km/h ignores that the slow leg takes longer.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.average-velocity-zero-start",
+      "concept": "average-velocity",
+      "element": "average-velocity-formula",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A particle is at x = 0 at t = 0 and at x = 40 m at t = 5 s, then returns to x = 0 at t = 10 s. What is its average velocity from t = 0 to t = 5 s?",
+      "choices": [
+        "0 m/s",
+        "4 m/s",
+        "8 m/s",
+        "40 m/s"
+      ],
+      "answer": 2,
+      "explanation": "Between t = 0 and t = 5 s, Δx = 40 m and Δt = 5 s, so the average velocity is 8 m/s. The 4 m/s uses the 10 s total time, and 40 m/s forgets to divide by time. The 0 m/s is the average over the full 10 s trip.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.instantaneous-velocity-meaning",
+      "concept": "instantaneous-velocity",
+      "element": "limit-of-average-velocity",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is instantaneous velocity?",
+      "choices": [
+        "The velocity over a whole trip, found by dividing the total displacement by the total time taken",
+        "The average of all the speeds recorded during a trip, found by adding the readings and dividing by their number",
+        "The velocity at one exact moment, found from ever shorter time intervals",
+        "The velocity at the start of a trip only, found from the first reading on a speedometer"
+      ],
+      "answer": 2,
+      "explanation": "Instantaneous velocity is the limit of the average velocity over shorter and shorter intervals around one moment. A whole-trip value is an average, not a value at an instant.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.instantaneous-velocity-speedometer",
+      "concept": "instantaneous-velocity",
+      "element": "tangent-slope",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does a car's speedometer show?",
+      "choices": [
+        "Average speed",
+        "Average velocity",
+        "Acceleration",
+        "Instantaneous speed"
+      ],
+      "answer": 3,
+      "explanation": "A speedometer shows the speed at the moment you look, the magnitude of the instantaneous velocity. Average speed needs a time interval, and acceleration is the rate of change of velocity, not a reading of it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.instantaneous-velocity-derivative",
+      "concept": "instantaneous-velocity",
+      "element": "derivative-of-position",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which expression gives instantaneous velocity from position x as a function of time t?",
+      "choices": [
+        "v = dx/dt",
+        "v = dt/dx",
+        "v = x·t",
+        "v = d²x/dt²"
+      ],
+      "answer": 0,
+      "explanation": "Velocity is the derivative of position with respect to time, dx/dt. The second derivative d²x/dt² is acceleration, and dt/dx is the reciprocal, which has the wrong units.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.instantaneous-velocity-quadratic",
+      "concept": "instantaneous-velocity",
+      "element": "derivative-of-position",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A particle has position x = 3t² m, with t in seconds. What is its velocity at t = 2 s?",
+      "choices": [
+        "6 m/s",
+        "3 m/s",
+        "24 m/s",
+        "12 m/s"
+      ],
+      "answer": 3,
+      "explanation": "v = dx/dt = 6t m/s, so at t = 2 s the velocity is 12 m/s. The 6 m/s is the velocity at t = 1 s, and 24 m/s comes from applying the power rule incorrectly.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.instantaneous-velocity-at-top",
+      "concept": "instantaneous-velocity",
+      "element": "tangent-slope",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A ball is thrown straight up and reaches its highest point. What is its instantaneous velocity at that instant?",
+      "choices": [
+        "Maximum and upward",
+        "Zero",
+        "Equal to its launch speed",
+        "Maximum and downward"
+      ],
+      "answer": 1,
+      "explanation": "At the top the ball is momentarily at rest, so its velocity is zero. Its acceleration is still about 9.8 m/s² downward, and its launch speed is only its velocity at launch.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.instantaneous-velocity-tangent",
+      "concept": "instantaneous-velocity",
+      "element": "tangent-slope",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "On a position–time graph, how is instantaneous velocity at one time found?",
+      "choices": [
+        "The slope of the tangent line at that time",
+        "The slope of the line from the origin to the graph's end",
+        "The height of the graph at that time",
+        "The area under the graph up to that time"
+      ],
+      "answer": 0,
+      "explanation": "A tangent line touches the curve at one point, and its slope is the instantaneous velocity there. A line from the origin gives an average, and the height gives a position, not a velocity.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.instantaneous-velocity-x-of-t",
+      "concept": "instantaneous-velocity",
+      "element": "derivative-of-position",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A particle's position is x = 5t − t² m, with t in seconds. What is its velocity at t = 3 s?",
+      "choices": [
+        "1 m/s",
+        "−1 m/s",
+        "6 m/s",
+        "5 m/s"
+      ],
+      "answer": 1,
+      "explanation": "v = dx/dt = 5 − 2t, so at t = 3 s, v = 5 − 6 = −1 m/s, which is negative and so points in the negative direction. The 6 m/s is the position x(3), and 1 m/s drops the sign.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.instantaneous-velocity-at-rest",
+      "concept": "instantaneous-velocity",
+      "element": "derivative-of-position",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A particle has velocity v = 4 − 2t m/s, with t in seconds. At what time is it momentarily at rest?",
+      "choices": [
+        "t = 4 s",
+        "t = 0 s",
+        "t = 2 s",
+        "t = 8 s"
+      ],
+      "answer": 2,
+      "explanation": "Set v = 0: 4 − 2t = 0 gives t = 2 s. The t = 4 s forgets the factor of 2, and t = 8 s multiplies by 2 instead of dividing.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.instantaneous-velocity-steps",
+      "concept": "instantaneous-velocity",
+      "element": "limit-of-average-velocity",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in order to find the instantaneous velocity at one moment from positions.",
+      "steps": [
+        "Choose a short time interval that ends at the moment",
+        "Compute the average velocity over that interval",
+        "Make the interval shorter and shorter",
+        "Read off the value the average velocity approaches"
+      ],
+      "explanation": "Start with a short interval, average the velocity over it, shrink the interval toward zero, then read the value it approaches. That value is the instantaneous velocity.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.acceleration-rate-of-velocity",
+      "concept": "acceleration",
+      "element": "change-in-velocity",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Acceleration is the rate of change of which quantity?",
+      "choices": [
+        "Position",
+        "Displacement",
+        "Velocity",
+        "Distance"
+      ],
+      "answer": 2,
+      "explanation": "Acceleration is how fast velocity changes, a = Δv/Δt. Position and distance do not describe how velocity changes, and the rate of change of position is velocity.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.acceleration-units",
+      "concept": "acceleration",
+      "element": "acceleration-units",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the SI unit of acceleration?",
+      "choices": [
+        "m/s",
+        "m·s",
+        "m²/s",
+        "m/s²"
+      ],
+      "answer": 3,
+      "explanation": "Acceleration is a change in velocity (m/s) per second, so its unit is m/s². m/s is the unit of velocity, and the other two combinations do not give acceleration.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.acceleration-speeding-up",
+      "concept": "acceleration",
+      "element": "change-in-velocity",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A car's velocity rises from 10 m/s to 30 m/s in 4 s. What is its average acceleration?",
+      "choices": [
+        "40 m/s²",
+        "5 m/s²",
+        "0.2 m/s²",
+        "7.5 m/s²"
+      ],
+      "answer": 1,
+      "explanation": "Δv = 30 − 10 = 20 m/s, and 20 ÷ 4 = 5 m/s². 40 m/s² adds the velocities, 0.2 m/s² inverts the division, and 7.5 m/s² divides only the final velocity by time.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.acceleration-braking-cart",
+      "concept": "acceleration",
+      "element": "sign-of-acceleration",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A cart moving in the positive direction slows from 20 m/s to 0 in 5 s. What is its acceleration?",
+      "choices": [
+        "+4 m/s²",
+        "−0.25 m/s²",
+        "−100 m/s²",
+        "−4 m/s²"
+      ],
+      "answer": 3,
+      "explanation": "Δv = 0 − 20 = −20 m/s, and −20 ÷ 5 = −4 m/s². The positive choice misses that the change is negative, −100 multiplies instead of divides, and −0.25 inverts the division.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.acceleration-negative-velocity",
+      "concept": "acceleration",
+      "element": "sign-of-acceleration",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "An object moves in the negative direction, and its acceleration is positive. What is it doing?",
+      "choices": [
+        "Speeding up in the negative direction",
+        "Speeding up in the positive direction",
+        "Slowing down in the negative direction",
+        "Standing still"
+      ],
+      "answer": 2,
+      "explanation": "Its velocity is negative and the positive acceleration pushes the velocity back toward zero, so it slows down while still moving in the negative direction. Speeding up needs acceleration in the same direction as the velocity.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.acceleration-zero-velocity",
+      "concept": "acceleration",
+      "element": "change-in-velocity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Can an object have zero velocity and nonzero acceleration at the same instant?",
+      "choices": [
+        "No, the two are always zero together, because acceleration and velocity must always share the same value",
+        "Yes, as at the top of a ball thrown straight up",
+        "Yes, but only when the object is moving at constant speed in a straight line with no forces on it",
+        "No, acceleration needs motion, so an object that is standing still at an instant cannot be accelerating"
+      ],
+      "answer": 1,
+      "explanation": "At the top of a throw the velocity is zero for an instant, while gravity still gives about 9.8 m/s² downward. Acceleration describes change in velocity, not whether the object is moving at that instant.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.acceleration-steady-cyclist",
+      "concept": "acceleration",
+      "element": "sign-of-acceleration",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A cyclist rides in a straight line at a steady 5 m/s. What is her acceleration?",
+      "choices": [
+        "Zero",
+        "5 m/s²",
+        "Increasing",
+        "Equal to her displacement"
+      ],
+      "answer": 0,
+      "explanation": "Her velocity does not change, so its rate of change is zero. A steady speed in a straight line has no acceleration, although it does have a velocity.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.acceleration-sign-change",
+      "concept": "acceleration",
+      "element": "change-in-velocity",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A car's velocity changes from +6 m/s at t = 0 to −2 m/s at t = 4 s. What is its average acceleration?",
+      "choices": [
+        "2 m/s²",
+        "−8 m/s²",
+        "−2 m/s²",
+        "−0.5 m/s²"
+      ],
+      "answer": 2,
+      "explanation": "Δv = −2 − 6 = −8 m/s, and −8 ÷ 4 = −2 m/s². The 2 m/s² drops the negative sign, −8 m/s² forgets to divide by time, and −0.5 m/s² inverts the division.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.acceleration-steps",
+      "concept": "acceleration",
+      "element": "change-in-velocity",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in order to find average acceleration from two velocities.",
+      "steps": [
+        "Find the change in velocity, final minus initial, keeping its sign",
+        "Divide the change in velocity by the elapsed time",
+        "Give the result in metres per second squared"
+      ],
+      "explanation": "The change in velocity comes first, with its sign. Dividing by the elapsed time gives the average acceleration, and the answer is in m/s².",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.cae-equation-velocity-time",
+      "concept": "constant-acceleration-equations",
+      "element": "four-equations",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which equation links final velocity, initial velocity, acceleration and time?",
+      "choices": [
+        "v = v₀ + at",
+        "x = vt²",
+        "a = v²t",
+        "v = at²/2"
+      ],
+      "answer": 0,
+      "explanation": "With constant acceleration, v = v₀ + at. The others fail a units check: x = vt² would give m·s rather than m, for example.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.cae-equation-no-time",
+      "concept": "constant-acceleration-equations",
+      "element": "choosing-an-equation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which constant-acceleration equation has no time in it?",
+      "choices": [
+        "x − x₀ = v₀t + ½at²",
+        "v = v₀ + at",
+        "x − x₀ = ½(v₀ + v)t",
+        "v² = v₀² + 2a(x − x₀)"
+      ],
+      "answer": 3,
+      "explanation": "v² = v₀² + 2a(x − x₀) connects velocities, acceleration and displacement without time. The other three each contain t.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.cae-start-from-rest",
+      "concept": "constant-acceleration-equations",
+      "element": "four-equations",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A car starts from rest and accelerates at 3 m/s² for 4 s. What is its final velocity?",
+      "choices": [
+        "7 m/s",
+        "12 m/s",
+        "24 m/s",
+        "1.3 m/s"
+      ],
+      "answer": 1,
+      "explanation": "v = v₀ + at = 0 + 3 × 4 = 12 m/s. 7 m/s adds the numbers instead of multiplying, and 24 m/s is the displacement ½at² = 24 m, not a velocity.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.cae-displacement-three-seconds",
+      "concept": "constant-acceleration-equations",
+      "element": "four-equations",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "An object starts at x₀ = 0 with v₀ = 5 m/s and a = 2 m/s². What is its displacement after 3 s?",
+      "choices": [
+        "15 m",
+        "9 m",
+        "24 m",
+        "21 m"
+      ],
+      "answer": 2,
+      "explanation": "x = v₀t + ½at² = 5 × 3 + ½ × 2 × 9 = 15 + 9 = 24 m. The 21 m uses at instead of ½at², 15 m is only v₀t, and 9 m is only the acceleration term.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.cae-displacement-no-acceleration",
+      "concept": "constant-acceleration-equations",
+      "element": "choosing-an-equation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which equation finds displacement when the acceleration is not known?",
+      "choices": [
+        "x − x₀ = ½(v₀ + v)t",
+        "v = v₀ + at",
+        "v² = v₀² + 2a(x − x₀)",
+        "x − x₀ = v₀t + ½at²"
+      ],
+      "answer": 0,
+      "explanation": "x − x₀ = ½(v₀ + v)t uses only the start and end velocities and the time. The other three all contain the acceleration a.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.cae-dropped-ball-speed",
+      "concept": "constant-acceleration-equations",
+      "element": "choosing-an-equation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A ball is dropped from rest and falls a height h. Which equation gives its speed v without using time?",
+      "choices": [
+        "v = v₀ + at",
+        "v² = v₀² + 2a(x − x₀)",
+        "x − x₀ = v₀t + ½at²",
+        "a = Δv/Δt"
+      ],
+      "answer": 1,
+      "explanation": "With v₀ = 0 and a = g, the equation v² = 2gh gives the speed without time. The first and third equations use time, and a = Δv/Δt is the definition of acceleration, not a motion equation.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.cae-stopping-distance",
+      "concept": "constant-acceleration-equations",
+      "element": "stopping-distance",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A train slows from 30 m/s to rest with a constant acceleration of −3 m/s². How far does it travel while stopping?",
+      "choices": [
+        "300 m",
+        "90 m",
+        "75 m",
+        "150 m"
+      ],
+      "answer": 3,
+      "explanation": "Use v² = v₀² + 2a(x − x₀): 0 = 900 + 2(−3)(x − x₀), so x − x₀ = 900 ÷ 6 = 150 m. The 300 m forgets the factor of 2, 75 m halves the answer again, and 90 m has no basis.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.cae-solving-steps",
+      "concept": "constant-acceleration-equations",
+      "element": "choosing-an-equation",
+      "kind": "order",
+      "difficulty": 3,
+      "prompt": "Put these steps in order for solving a constant-acceleration problem.",
+      "steps": [
+        "List the known quantities and the unknown, with signs and units",
+        "Choose the equation with the unknown and only known quantities",
+        "Substitute the values and solve for the unknown",
+        "Check that the sign and size of the answer make sense"
+      ],
+      "explanation": "List the data first, then choose an equation that has the unknown and only known quantities, substitute and solve, and finally check the sign and size of the result.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.ff-only-gravity",
+      "concept": "free-fall",
+      "element": "gravity-only",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In free fall, which force is the only significant one acting on the object?",
+      "choices": [
+        "Friction",
+        "Gravity",
+        "Tension",
+        "Muscle force"
+      ],
+      "answer": 1,
+      "explanation": "Free fall means gravity is the only force that matters, with air resistance ignored. Friction and tension need contact with something, and a muscle force needs a person or animal pushing or pulling.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.ff-acceleration-near-earth",
+      "concept": "free-fall",
+      "element": "g-value",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Near Earth's surface, what is the acceleration of a freely falling object?",
+      "choices": [
+        "9.8 m/s² downward",
+        "9.8 m/s² upward",
+        "9.8 m/s downward",
+        "0 m/s²"
+      ],
+      "answer": 0,
+      "explanation": "Near Earth's surface, g is about 9.8 m/s² pointing down, the same for every freely falling object. Upward has the wrong direction, 9.8 m/s is a velocity unit, and zero would mean no gravity.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.ff-feather-and-ball",
+      "concept": "free-fall",
+      "element": "gravity-only",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A feather and a steel ball are dropped together in a vacuum from the same height. Which lands first?",
+      "choices": [
+        "The steel ball, because its greater mass means it is pulled down harder by gravity",
+        "The feather, because its large surface area means it falls more slowly even in a vacuum",
+        "They land at the same time",
+        "Neither falls, because objects dropped in a vacuum stay where they are until something pushes them"
+      ],
+      "answer": 2,
+      "explanation": "With no air resistance both have the same downward acceleration, so they land together. A feather falls slowly in air only because of air resistance, which a vacuum removes.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.ff-speed-after-3s",
+      "concept": "free-fall",
+      "element": "g-value",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A ball is dropped from rest. What is its speed after 3 s, using g = 9.8 m/s²?",
+      "choices": [
+        "14.7 m/s",
+        "88.2 m/s",
+        "9.8 m/s",
+        "29.4 m/s"
+      ],
+      "answer": 3,
+      "explanation": "v = gt = 9.8 × 3 = 29.4 m/s. The 14.7 m/s is ½gt, which is not the speed formula, 9.8 m/s is g alone, and 88.2 m/s uses t² instead of t.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.ff-distance-after-2s",
+      "concept": "free-fall",
+      "element": "g-value",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A ball is dropped from rest. How far does it fall in 2 s, using g = 9.8 m/s²?",
+      "choices": [
+        "9.8 m",
+        "19.6 m",
+        "39.2 m",
+        "4.9 m"
+      ],
+      "answer": 1,
+      "explanation": "d = ½gt² = ½ × 9.8 × 4 = 19.6 m. The 9.8 m is g alone, 39.2 m forgets the ½, and 4.9 m is ½g with t = 1 s instead of 2 s.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.ff-top-of-throw",
+      "concept": "free-fall",
+      "element": "thrown-upward",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A ball is thrown straight up at 15 m/s and air resistance is ignored. At its highest point, what are its velocity and acceleration?",
+      "choices": [
+        "v = 0, a = 9.8 m/s² downward",
+        "v = 0, a = 0",
+        "v = 15 m/s upward, a = 0",
+        "v = 9.8 m/s upward, a = 9.8 m/s² upward"
+      ],
+      "answer": 0,
+      "explanation": "At the top the velocity is zero, and gravity still gives 9.8 m/s² downward. The zero-acceleration choice wrongly treats a zero velocity as a sign of no force.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.ff-same-height-down",
+      "concept": "free-fall",
+      "element": "thrown-upward",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A ball thrown straight up passes its launch height on the way down. Ignoring air resistance, what is its speed there?",
+      "choices": [
+        "Equal to its launch speed, directed downward",
+        "Zero, because the ball stops at the top of its flight and remains at rest until it is caught",
+        "Twice its launch speed, because gravity keeps pushing the ball faster once it has fallen back down",
+        "Half its launch speed, because the ball loses half its speed on the way up and does not regain it on the way down"
+      ],
+      "answer": 0,
+      "explanation": "Gravity acts the same way on the way down, so the ball returns to launch height with its launch speed, moving down. Zero would mean it stopped, and the other two have no basis in constant acceleration.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.ff-max-height",
+      "concept": "free-fall",
+      "element": "thrown-upward",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A ball is thrown straight up at 19.6 m/s, with g = 9.8 m/s². How high does it rise?",
+      "choices": [
+        "9.8 m",
+        "384 m",
+        "39.2 m",
+        "19.6 m"
+      ],
+      "answer": 3,
+      "explanation": "At the top v = 0, so 0 = 19.6² − 2 × 9.8 × h, giving h = 384.16 ÷ 19.6 = 19.6 m. The 39.2 m doubles the answer, 9.8 m is g alone, and 384 m forgets to divide by 2g.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "physics.kinematics-1d.ff-thrown-up-order",
+      "concept": "free-fall",
+      "element": "thrown-upward",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these stages of a ball thrown straight up, from release to its return to hand height, in order.",
+      "steps": [
+        "Leaves the hand moving up at its launch speed",
+        "Slows steadily as gravity pulls it down",
+        "Stops for an instant at its highest point",
+        "Speeds up while falling back down",
+        "Returns to hand height moving down at launch speed"
+      ],
+      "explanation": "The ball slows on the way up, stops at the top, then speeds up on the way down until it returns to hand height with its launch speed, moving down.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    }
+  ],
+  "artifacts": []
+}

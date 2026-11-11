@@ -16,8 +16,9 @@ A pack covers one topic: 4 to 12 concepts, with at least 4 verified questions fo
 
 ```
 subjects/   the packs, by subject
-schema/     JSON Schemas for subject.json and pack.json
-tools/      validate, build, blind export and grading, with their tests
+plan/       each subject's list of packs to write, and every outside page an agent read
+schema/     JSON Schemas for subject.json, pack.json and a plan
+tools/      validate, build, blind export, grading, checking mistakes, plans and outside reading, with their tests
 pipeline/   how a pack gets written and checked, and the prompts the agents follow
 dist/       what the build writes (not committed)
 .work/      blind question files and solvers' answers (not committed)
@@ -35,7 +36,7 @@ npm test                                 tests the tools against tools/fixtures/
 node tools/build.mjs                     writes dist/
 ```
 
-`validate.mjs` fails on anything that breaks the format: a schema error, an ID that doesn't resolve, a prerequisite cycle, overlapping hotspots, an SVG with scripts or outside links, a missing or oversized asset. A concept with fewer than four verified items is a warning, and an error with `--require-verified`.
+`validate.mjs` fails on anything that breaks the format: a schema error, an ID that doesn't resolve, a prerequisite cycle, overlapping hotspots, an SVG with scripts or outside links, a missing or oversized asset. A concept with fewer than four verified items is a warning, and an error with `--require-verified`. A pack whose right choice is the longest, or the shortest, in more than 35% of its choice items gets a warning too, and `tools/cues.mjs` lists those items. An explanation that names a choice by its place is an error, because apps shuffle the choices.
 
 `build.mjs` validates first and builds nothing if there are errors. It writes one flat folder: `bank-index.json`, a `bankpack-<pack id>.json` for each pack with at least one verified item, and a `bankasset-<hash>.<ext>` for each picture and model those packs use. Only verified items go in, without their verification. Diagrams are rendered from SVG to PNG at 1200 pixels wide, with their text set in the fonts in `tools/fonts/`. The same source always gives the same bytes. It prints each pack it built, and each pack or subject it left out and why.
 
@@ -60,6 +61,10 @@ Every answer key is checked by solvers who never see it. The loop, with the exac
 6. The build takes the verified items.
 
 `pipeline/synthesize.workflow.js` runs the whole loop for a list of packs with Claude Code's Workflow tool.
+
+A pack can also say which wrong idea each wrong choice gives away, so an app can tell a student what they have misunderstood and not only that they were wrong. A second model checks those tags without seeing them (`FORMAT.md`, Misconceptions).
+
+What gets written is decided by each subject's plan (`plan/README.md`). While they plan, write or check, agents may read only Wikipedia, Wikibooks and Wikidata, through `tools/ref.mjs`, which logs every page and checks packs for copied text (`pipeline/prompts/sources.md`).
 
 Agreement between solvers shows a key is consistent, not that it is true. The first eight packs were written and solved by one model family, so a mistake that family shares would not have been caught.
 

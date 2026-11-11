@@ -1,0 +1,142 @@
+{
+  "formatVersion": 1,
+  "subject": "statistics",
+  "covers": "Introductory statistics, including probability, as a first college course teaches it. Stops before regression beyond simple linear, ANOVA, and Bayesian methods.",
+  "packs": [
+    {
+      "pack": "describing-data",
+      "title": "Describing data",
+      "brief": "Summarizing a single sample or variable with frequency tables, histograms, the mean, median, mode, quantiles, spread and outliers. Stops before probability.",
+      "concepts": [
+        { "id": "frequency-distribution", "name": "Frequency distribution" },
+        { "id": "histogram", "name": "Histogram" },
+        { "id": "mean", "name": "Mean" },
+        { "id": "median", "name": "Median" },
+        { "id": "mode", "name": "Mode" },
+        { "id": "quantile", "name": "Quartiles and percentiles" },
+        { "id": "sample-variance", "name": "Sample variance" },
+        { "id": "sample-standard-deviation", "name": "Sample standard deviation" },
+        { "id": "outlier", "name": "Outlier" }
+      ],
+      "buildsOn": []
+    },
+    {
+      "pack": "data-collection",
+      "title": "Collecting data",
+      "brief": "How data are gathered: observational studies, randomized experiments, and random, stratified and cluster sampling, with the bias and confounding that can spoil them. Stops before probability calculations.",
+      "concepts": [
+        { "id": "observational-study", "name": "Observational study" },
+        { "id": "randomized-experiment", "name": "Randomized experiment" },
+        { "id": "control-group", "name": "Control group" },
+        { "id": "confounding-variable", "name": "Confounding variable" },
+        { "id": "simple-random-sample", "name": "Simple random sample" },
+        { "id": "stratified-sampling", "name": "Stratified sampling" },
+        { "id": "cluster-sampling", "name": "Cluster sampling" },
+        { "id": "sampling-bias", "name": "Sampling bias" }
+      ],
+      "buildsOn": []
+    },
+    {
+      "pack": "probability",
+      "title": "Probability",
+      "brief": "The rules of chance: sample spaces, complements, the addition and multiplication rules, conditional probability, independence and Bayes' rule.",
+      "concepts": [
+        { "id": "sample-space", "name": "Sample space" },
+        { "id": "complement-rule", "name": "Complement rule" },
+        { "id": "addition-rule", "name": "Addition rule" },
+        { "id": "conditional-probability", "name": "Conditional probability" },
+        { "id": "multiplication-rule", "name": "Multiplication rule" },
+        { "id": "independent-events", "name": "Independent events" },
+        { "id": "bayes-rule", "name": "Bayes' rule" }
+      ],
+      "buildsOn": []
+    },
+    {
+      "pack": "distributions",
+      "title": "Random variables and distributions",
+      "brief": "Random variables, expected value and spread, the binomial and normal distributions, z-scores, and how sample means behave. Stops before estimation.",
+      "concepts": [
+        { "id": "random-variable", "name": "Random variable" },
+        { "id": "expected-value", "name": "Expected value" },
+        { "id": "random-variable-spread", "name": "Standard deviation of a random variable" },
+        { "id": "binomial-distribution", "name": "Binomial distribution" },
+        { "id": "normal-distribution", "name": "Normal distribution" },
+        { "id": "z-score", "name": "z-score" },
+        { "id": "sampling-distribution", "name": "Sampling distribution" },
+        { "id": "central-limit-theorem", "name": "Central limit theorem" }
+      ],
+      "buildsOn": ["sample-space", "conditional-probability", "mean", "sample-standard-deviation"]
+    },
+    {
+      "pack": "estimation",
+      "title": "Estimation and confidence intervals",
+      "brief": "Using a sample statistic to estimate a population parameter: estimators and their bias, standard error, the t distribution, and confidence intervals with their margin of error. Stops before hypothesis tests.",
+      "concepts": [
+        { "id": "estimator", "name": "Estimator" },
+        { "id": "unbiased-estimator", "name": "Unbiased estimator" },
+        { "id": "standard-error", "name": "Standard error" },
+        { "id": "t-distribution", "name": "t distribution" },
+        { "id": "confidence-interval", "name": "Confidence interval" },
+        { "id": "margin-of-error", "name": "Margin of error" }
+      ],
+      "buildsOn": ["sampling-distribution", "central-limit-theorem", "z-score", "mean", "sample-standard-deviation"]
+    },
+    {
+      "pack": "hypothesis-testing",
+      "title": "Hypothesis testing",
+      "brief": "The logic of testing one claim about a population mean: null and alternative hypotheses, test statistics, p-values, significance levels, Type I and Type II errors, and power. Stops before comparing two groups.",
+      "concepts": [
+        { "id": "null-hypothesis", "name": "Null hypothesis" },
+        { "id": "alternative-hypothesis", "name": "Alternative hypothesis" },
+        { "id": "test-statistic", "name": "Test statistic" },
+        { "id": "p-value", "name": "P-value" },
+        { "id": "significance-level", "name": "Significance level" },
+        { "id": "type-one-and-type-two-errors", "name": "Type I and Type II errors" },
+        { "id": "statistical-power", "name": "Statistical power" },
+        { "id": "one-sample-t-test", "name": "One-sample t-test" }
+      ],
+      "buildsOn": ["sampling-distribution", "standard-error", "t-distribution", "confidence-interval"]
+    },
+    {
+      "pack": "two-sample-comparisons",
+      "title": "Comparing two groups",
+      "brief": "Comparing two means: the difference in means, two-sample and paired t-tests, and their confidence intervals. Stops before proportions and chi-square tests.",
+      "concepts": [
+        { "id": "difference-of-means", "name": "Difference of means" },
+        { "id": "independent-samples", "name": "Independent samples" },
+        { "id": "two-sample-t-test", "name": "Two-sample t-test" },
+        { "id": "paired-data", "name": "Paired data" },
+        { "id": "paired-t-test", "name": "Paired t-test" }
+      ],
+      "buildsOn": ["one-sample-t-test", "confidence-interval", "standard-error", "t-distribution", "test-statistic"]
+    },
+    {
+      "pack": "categorical-data",
+      "title": "Proportions and chi-square tests",
+      "brief": "Categorical data: sample proportions, their confidence intervals and z-tests, and chi-square goodness-of-fit and independence tests. Stops before correlation.",
+      "concepts": [
+        { "id": "sample-proportion", "name": "Sample proportion" },
+        { "id": "proportion-confidence-interval", "name": "Confidence interval for a proportion" },
+        { "id": "one-proportion-z-test", "name": "One-proportion z-test" },
+        { "id": "chi-square-distribution", "name": "Chi-square distribution" },
+        { "id": "chi-square-goodness-of-fit", "name": "Chi-square goodness-of-fit test" },
+        { "id": "chi-square-test-of-independence", "name": "Chi-square test of independence" }
+      ],
+      "buildsOn": ["binomial-distribution", "normal-distribution", "confidence-interval", "test-statistic", "p-value"]
+    },
+    {
+      "pack": "correlation-and-regression",
+      "title": "Correlation and simple linear regression",
+      "brief": "Describing the linear relationship between two quantitative variables: scatter plots, the correlation coefficient, the least-squares line, residuals, and R-squared, with a warning that correlation is not causation. Stops before inference about the regression slope.",
+      "concepts": [
+        { "id": "scatter-plot", "name": "Scatter plot" },
+        { "id": "correlation-coefficient", "name": "Correlation coefficient" },
+        { "id": "correlation-vs-causation", "name": "Correlation does not imply causation" },
+        { "id": "least-squares-line", "name": "Least-squares regression line" },
+        { "id": "residual", "name": "Residual" },
+        { "id": "coefficient-of-determination", "name": "Coefficient of determination" }
+      ],
+      "buildsOn": ["z-score", "mean", "sample-standard-deviation", "confounding-variable"]
+    }
+  ]
+}

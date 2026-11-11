@@ -4,6 +4,23 @@ A question reaches students only after solvers who never saw its key agreed with
 
 The examples use the pack `subjects/biology/dna-replication`, round 0, and two solvers, `a` and `b`.
 
+What to write comes from each subject's plan (`../plan/README.md`). `grow.workflow.js` plans subjects with `prompts/planner.md`, then runs this loop on the next packs in each plan. `prompts/sources.md` says what an agent may read from outside while it plans, writes or checks: only what `tools/ref.mjs` gives it.
+
+## Who writes what
+
+A small, fast model can write a pack's text: its concepts, and its choice and order items. Pictures, sequences, 3D models and the label items on them are added in a separate step by the most capable model available, because a wrong picture teaches something false and no solver catches it. A text-only pack is checked with `node tools/validate.mjs subjects/<subject>/<pack> --text-only --kinds=choice,order`, which fails on anything else.
+
+## How well, not only whether
+
+A pack can name the wrong ideas students bring to each concept, and say which of them each wrong choice gives away (`../FORMAT.md`, Misconceptions). The author does this while writing, checked by `node tools/validate.mjs <pack> --fidelity`. After the keys are verified, a second model names the mistake behind every wrong choice without seeing the author's tags, and a tag stays only where the two agree:
+
+```
+node tools/diagnose.mjs export subjects/biology/membrane-transport --out .work/diagnose/biology.membrane-transport.json
+node tools/diagnose.mjs grade --answers .work/diagnose/biology.membrane-transport.answers.json
+```
+
+`prompts/diagnoser.md` is that model's instructions. Pictures are added after that, by `prompts/illustrator.md`, and their label items go through steps 2 to 5 like any other draft.
+
 ## 1. Author
 
 An agent writes the pack, following `prompts/author.md`. Every item starts as `"verification": { "status": "draft" }`. Diagrams are drawn as SVG and looked at as PNG:

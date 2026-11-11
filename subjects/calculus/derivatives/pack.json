@@ -1112,7 +1112,7 @@
         "(2x·sin x + x²·cos x) / sin² x"
       ],
       "answer": 1,
-      "explanation": "With f = x² and g = sin x: (f′·g − f·g′) / g² = (2x·sin x − x²·cos x) / sin² x. The first choice has the two terms the wrong way round.",
+      "explanation": "With f = x² and g = sin x: (f′·g − f·g′) / g² = (2x·sin x − x²·cos x) / sin² x. The form (x²·cos x − 2x·sin x) / sin² x has the two terms the wrong way round.",
       "verification": {
         "status": "verified",
         "method": "blind-solve",

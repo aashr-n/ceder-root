@@ -1,0 +1,1386 @@
+{
+  "formatVersion": 1,
+  "subject": "biology",
+  "covers": "Introductory biology for majors, as the two-course Biology I and II sequence teaches it: chemistry of life, cells, energy, genetics, molecular biology, evolution, diversity of life, animal and plant form and function, and ecology. Stops before graduate topics, history and biography.",
+  "packs": [
+    {
+      "pack": "atoms-and-water",
+      "title": "Atoms, bonds and water",
+      "brief": "The atoms and bonds that living matter is built from, and why water's properties matter to life. Stops before organic molecules.",
+      "concepts": [
+        {
+          "id": "atom",
+          "name": "Atom"
+        },
+        {
+          "id": "chemical-bond",
+          "name": "Chemical bond"
+        },
+        {
+          "id": "hydrogen-bond",
+          "name": "Hydrogen bond"
+        },
+        {
+          "id": "water-properties",
+          "name": "Properties of water"
+        },
+        {
+          "id": "ph-scale",
+          "name": "pH scale"
+        }
+      ],
+      "buildsOn": []
+    },
+    {
+      "pack": "biological-macromolecules",
+      "title": "Biological macromolecules",
+      "brief": "The four families of macromolecules, their monomers, and how monomers join and split. Stops before enzymes and how proteins act.",
+      "concepts": [
+        {
+          "id": "carbohydrate",
+          "name": "Carbohydrate"
+        },
+        {
+          "id": "lipid",
+          "name": "Lipid"
+        },
+        {
+          "id": "amino-acid",
+          "name": "Amino acid"
+        },
+        {
+          "id": "protein-structure",
+          "name": "Protein structure"
+        },
+        {
+          "id": "dehydration-synthesis",
+          "name": "Dehydration synthesis"
+        }
+      ],
+      "buildsOn": [
+        "chemical-bond",
+        "hydrogen-bond"
+      ]
+    },
+    {
+      "pack": "cell-structure",
+      "title": "Cell structure",
+      "brief": "What cells are made of: the membrane, the nucleus, ribosomes and the organelles that make and ship proteins and energy. Stops before how cells divide or copy their DNA.",
+      "concepts": [
+        {
+          "id": "cell-theory",
+          "name": "Cell theory"
+        },
+        {
+          "id": "prokaryotic-and-eukaryotic-cells",
+          "name": "Prokaryotic and eukaryotic cells"
+        },
+        {
+          "id": "cell-membrane",
+          "name": "Cell membrane"
+        },
+        {
+          "id": "organelle",
+          "name": "Organelle"
+        },
+        {
+          "id": "nucleus",
+          "name": "Cell nucleus"
+        },
+        {
+          "id": "ribosome",
+          "name": "Ribosome"
+        },
+        {
+          "id": "endomembrane-system",
+          "name": "Endomembrane system"
+        },
+        {
+          "id": "mitochondrion",
+          "name": "Mitochondrion"
+        }
+      ],
+      "buildsOn": [
+        "lipid",
+        "protein-structure"
+      ]
+    },
+    {
+      "pack": "membrane-structure",
+      "title": "Membrane structure",
+      "brief": "What a cell membrane is made of and why it behaves like a fluid: the bilayer, its proteins, and what can pass through unaided. Stops before how transport proteins move things across.",
+      "concepts": [
+        {
+          "id": "fluid-mosaic-model",
+          "name": "Fluid mosaic model"
+        },
+        {
+          "id": "phospholipid-bilayer",
+          "name": "Phospholipid bilayer"
+        },
+        {
+          "id": "membrane-protein",
+          "name": "Membrane protein"
+        },
+        {
+          "id": "membrane-fluidity",
+          "name": "Membrane fluidity"
+        },
+        {
+          "id": "selective-permeability",
+          "name": "Selective permeability"
+        }
+      ],
+      "buildsOn": [
+        "cell-membrane",
+        "lipid"
+      ]
+    },
+    {
+      "pack": "membrane-transport",
+      "title": "Membrane transport",
+      "brief": "How substances cross a membrane: passive movement down a gradient, osmosis and what it does to cells, pumps that use energy, and transport in vesicles.",
+      "concepts": [
+        {
+          "id": "diffusion",
+          "name": "Diffusion"
+        },
+        {
+          "id": "osmosis",
+          "name": "Osmosis"
+        },
+        {
+          "id": "tonicity",
+          "name": "Tonicity"
+        },
+        {
+          "id": "facilitated-diffusion",
+          "name": "Facilitated diffusion"
+        },
+        {
+          "id": "active-transport",
+          "name": "Active transport"
+        },
+        {
+          "id": "endocytosis-and-exocytosis",
+          "name": "Endocytosis and exocytosis"
+        }
+      ],
+      "buildsOn": [
+        "selective-permeability",
+        "membrane-protein"
+      ]
+    },
+    {
+      "pack": "cytoskeleton",
+      "title": "Cytoskeleton and cell movement",
+      "brief": "The three kinds of filament that shape a cell and move things inside it, the motor proteins that walk along them, and how cilia and flagella beat.",
+      "concepts": [
+        {
+          "id": "cytoskeleton",
+          "name": "Cytoskeleton"
+        },
+        {
+          "id": "microtubule",
+          "name": "Microtubule"
+        },
+        {
+          "id": "actin-filament",
+          "name": "Actin filament"
+        },
+        {
+          "id": "intermediate-filament",
+          "name": "Intermediate filament"
+        },
+        {
+          "id": "motor-protein",
+          "name": "Motor protein"
+        },
+        {
+          "id": "cilia-and-flagella",
+          "name": "Cilia and flagella"
+        }
+      ],
+      "buildsOn": [
+        "organelle"
+      ]
+    },
+    {
+      "pack": "cell-junctions",
+      "title": "Cell junctions and the extracellular matrix",
+      "brief": "What lies outside the membrane and how neighbouring cells hold together and talk: the matrix, the plant cell wall, and the junctions between animal and plant cells.",
+      "concepts": [
+        {
+          "id": "extracellular-matrix",
+          "name": "Extracellular matrix"
+        },
+        {
+          "id": "cell-wall",
+          "name": "Cell wall"
+        },
+        {
+          "id": "tight-junction",
+          "name": "Tight junction"
+        },
+        {
+          "id": "desmosome",
+          "name": "Desmosome"
+        },
+        {
+          "id": "gap-junction",
+          "name": "Gap junction"
+        },
+        {
+          "id": "plasmodesma",
+          "name": "Plasmodesma"
+        }
+      ],
+      "buildsOn": [
+        "cell-membrane",
+        "membrane-protein"
+      ]
+    },
+    {
+      "pack": "enzymes-and-energy",
+      "title": "Enzymes and energy",
+      "brief": "How enzymes speed reactions, how ATP stores and moves energy, and how redox reactions carry electrons. Stops before the pathways that make ATP.",
+      "concepts": [
+        {
+          "id": "enzyme",
+          "name": "Enzyme"
+        },
+        {
+          "id": "activation-energy",
+          "name": "Activation energy"
+        },
+        {
+          "id": "atp",
+          "name": "Adenosine triphosphate (ATP)"
+        },
+        {
+          "id": "redox-reactions",
+          "name": "Redox reactions"
+        },
+        {
+          "id": "feedback-inhibition",
+          "name": "Feedback inhibition"
+        }
+      ],
+      "buildsOn": [
+        "protein-structure",
+        "chemical-bond"
+      ]
+    },
+    {
+      "pack": "cellular-respiration",
+      "title": "Cellular respiration",
+      "brief": "How cells break down glucose to make ATP, from glycolysis through the electron transport chain, and fermentation without oxygen. Stops before photosynthesis.",
+      "concepts": [
+        {
+          "id": "glycolysis",
+          "name": "Glycolysis"
+        },
+        {
+          "id": "pyruvate-oxidation",
+          "name": "Pyruvate oxidation"
+        },
+        {
+          "id": "citric-acid-cycle",
+          "name": "Citric acid cycle"
+        },
+        {
+          "id": "electron-transport-chain",
+          "name": "Electron transport chain"
+        },
+        {
+          "id": "chemiosmosis",
+          "name": "Chemiosmosis"
+        },
+        {
+          "id": "fermentation",
+          "name": "Fermentation"
+        }
+      ],
+      "buildsOn": [
+        "enzyme",
+        "atp",
+        "redox-reactions",
+        "mitochondrion"
+      ]
+    },
+    {
+      "pack": "photosynthesis",
+      "title": "Photosynthesis",
+      "brief": "How light energy is captured by pigments and used to fix carbon into sugar. Stops at the Calvin cycle's products.",
+      "concepts": [
+        {
+          "id": "chloroplast",
+          "name": "Chloroplast"
+        },
+        {
+          "id": "photosynthetic-pigment",
+          "name": "Photosynthetic pigment"
+        },
+        {
+          "id": "light-dependent-reactions",
+          "name": "Light-dependent reactions"
+        },
+        {
+          "id": "calvin-cycle",
+          "name": "Calvin cycle"
+        }
+      ],
+      "buildsOn": [
+        "enzyme",
+        "atp",
+        "redox-reactions",
+        "organelle"
+      ]
+    },
+    {
+      "pack": "cell-communication",
+      "title": "Cell communication",
+      "brief": "How cells receive signals at the membrane and relay them inside, and how programmed cell death is triggered. Stops before hormones acting on whole bodies.",
+      "concepts": [
+        {
+          "id": "signal-transduction",
+          "name": "Signal transduction"
+        },
+        {
+          "id": "cell-surface-receptor",
+          "name": "Cell surface receptor"
+        },
+        {
+          "id": "second-messenger",
+          "name": "Second messenger"
+        },
+        {
+          "id": "signal-cascade",
+          "name": "Signal cascade"
+        },
+        {
+          "id": "apoptosis",
+          "name": "Apoptosis"
+        }
+      ],
+      "buildsOn": [
+        "cell-membrane",
+        "protein-structure"
+      ]
+    },
+    {
+      "pack": "dna-structure",
+      "title": "DNA structure",
+      "brief": "What DNA is built from: nucleotides, the sugar-phosphate backbone, base pairing and the double helix. Stops before replication.",
+      "concepts": [
+        {
+          "id": "nucleotide",
+          "name": "Nucleotide"
+        },
+        {
+          "id": "nitrogenous-base",
+          "name": "Nitrogenous base"
+        },
+        {
+          "id": "sugar-phosphate-backbone",
+          "name": "Sugar-phosphate backbone"
+        },
+        {
+          "id": "complementary-base-pairing",
+          "name": "Complementary base pairing"
+        },
+        {
+          "id": "chargaffs-rules",
+          "name": "Chargaff's rules"
+        },
+        {
+          "id": "antiparallel-strands",
+          "name": "Antiparallel strands"
+        },
+        {
+          "id": "dna-double-helix",
+          "name": "DNA double helix"
+        }
+      ],
+      "buildsOn": [
+        "chemical-bond",
+        "hydrogen-bond"
+      ]
+    },
+    {
+      "pack": "dna-replication",
+      "title": "DNA replication",
+      "brief": "How a cell copies its DNA: origins and forks, the enzymes at the fork, and the leading and lagging strands. Stops before the cell cycle.",
+      "concepts": [
+        {
+          "id": "dna-replication",
+          "name": "DNA replication"
+        },
+        {
+          "id": "meselson-stahl-experiment",
+          "name": "Meselson-Stahl experiment"
+        },
+        {
+          "id": "origin-of-replication",
+          "name": "Origin of replication"
+        },
+        {
+          "id": "dna-helicase",
+          "name": "DNA helicase"
+        },
+        {
+          "id": "dna-polymerase",
+          "name": "DNA polymerase"
+        },
+        {
+          "id": "rna-primer",
+          "name": "RNA primer"
+        },
+        {
+          "id": "lagging-strand",
+          "name": "Leading and lagging strands"
+        }
+      ],
+      "buildsOn": [
+        "nucleotide",
+        "dna-double-helix"
+      ]
+    },
+    {
+      "pack": "cell-division",
+      "title": "Cell division",
+      "brief": "How cells divide: chromosomes, the cell cycle and its controls, mitosis, and meiosis with the variation it creates. Stops before inheritance patterns.",
+      "concepts": [
+        {
+          "id": "chromosome",
+          "name": "Chromosome"
+        },
+        {
+          "id": "ploidy",
+          "name": "Diploid and haploid cells"
+        },
+        {
+          "id": "cell-cycle",
+          "name": "Cell cycle"
+        },
+        {
+          "id": "cell-cycle-regulation",
+          "name": "Cell cycle regulation"
+        },
+        {
+          "id": "mitosis",
+          "name": "Mitosis"
+        },
+        {
+          "id": "meiosis",
+          "name": "Meiosis"
+        },
+        {
+          "id": "genetic-variation-in-meiosis",
+          "name": "Genetic variation in meiosis"
+        }
+      ],
+      "buildsOn": [
+        "dna-replication",
+        "nucleus"
+      ]
+    },
+    {
+      "pack": "transcription",
+      "title": "Transcription",
+      "brief": "How RNA polymerase copies a gene into messenger RNA, and how the transcript is processed. Stops before the ribosome reads it.",
+      "concepts": [
+        {
+          "id": "transcription",
+          "name": "Transcription"
+        },
+        {
+          "id": "rna-polymerase",
+          "name": "RNA polymerase"
+        },
+        {
+          "id": "promoter",
+          "name": "Promoter"
+        },
+        {
+          "id": "messenger-rna",
+          "name": "Messenger RNA"
+        },
+        {
+          "id": "rna-processing",
+          "name": "RNA processing"
+        }
+      ],
+      "buildsOn": [
+        "nucleotide",
+        "dna-double-helix"
+      ]
+    },
+    {
+      "pack": "translation",
+      "title": "Translation",
+      "brief": "How the genetic code is read by transfer RNA and the ribosome to build a protein. Stops before regulating which genes are read.",
+      "concepts": [
+        {
+          "id": "genetic-code",
+          "name": "Genetic code"
+        },
+        {
+          "id": "transfer-rna",
+          "name": "Transfer RNA"
+        },
+        {
+          "id": "translation",
+          "name": "Translation"
+        },
+        {
+          "id": "post-translational-modification",
+          "name": "Post-translational modification"
+        }
+      ],
+      "buildsOn": [
+        "messenger-rna",
+        "ribosome",
+        "amino-acid"
+      ]
+    },
+    {
+      "pack": "protein-trafficking",
+      "title": "Protein sorting and trafficking",
+      "brief": "How a newly made protein reaches the place it works: signal sequences, the rough ER, vesicles, the Golgi apparatus, and the routes to lysosomes, the membrane and out of the cell.",
+      "concepts": [
+        {
+          "id": "signal-peptide",
+          "name": "Signal peptide"
+        },
+        {
+          "id": "secretory-pathway",
+          "name": "Secretory pathway"
+        },
+        {
+          "id": "vesicle-transport",
+          "name": "Vesicle transport"
+        },
+        {
+          "id": "golgi-apparatus",
+          "name": "Golgi apparatus"
+        },
+        {
+          "id": "lysosome",
+          "name": "Lysosome"
+        }
+      ],
+      "buildsOn": [
+        "endomembrane-system",
+        "ribosome",
+        "translation"
+      ]
+    },
+    {
+      "pack": "mendelian-genetics",
+      "title": "Mendelian genetics",
+      "brief": "How alleles are passed from parents to offspring in one- and two-trait crosses, and Mendel's two laws. Stops before genes that sit on the same chromosome.",
+      "concepts": [
+        {
+          "id": "allele",
+          "name": "Allele"
+        },
+        {
+          "id": "genotype-and-phenotype",
+          "name": "Genotype and phenotype"
+        },
+        {
+          "id": "monohybrid-cross",
+          "name": "Monohybrid cross"
+        },
+        {
+          "id": "dihybrid-cross",
+          "name": "Dihybrid cross"
+        },
+        {
+          "id": "law-of-segregation",
+          "name": "Law of segregation"
+        },
+        {
+          "id": "law-of-independent-assortment",
+          "name": "Law of independent assortment"
+        }
+      ],
+      "buildsOn": [
+        "meiosis",
+        "chromosome"
+      ]
+    },
+    {
+      "pack": "linkage-and-sex-chromosomes",
+      "title": "Linkage and sex chromosomes",
+      "brief": "Why genes on one chromosome do not assort independently, how recombination maps them, and inheritance on the sex chromosomes. Stops before mutation.",
+      "concepts": [
+        {
+          "id": "chromosome-theory-of-inheritance",
+          "name": "Chromosome theory of inheritance"
+        },
+        {
+          "id": "genetic-linkage",
+          "name": "Genetic linkage"
+        },
+        {
+          "id": "recombination-frequency",
+          "name": "Recombination frequency"
+        },
+        {
+          "id": "genetic-map",
+          "name": "Genetic map"
+        },
+        {
+          "id": "sex-linked-inheritance",
+          "name": "Sex-linked inheritance"
+        }
+      ],
+      "buildsOn": [
+        "law-of-independent-assortment",
+        "genetic-variation-in-meiosis"
+      ]
+    },
+    {
+      "pack": "mutation-and-dna-repair",
+      "title": "Mutation and DNA repair",
+      "brief": "The kinds of change that can alter a DNA sequence, and the systems that correct errors. Stops before the effects of mutation on populations.",
+      "concepts": [
+        {
+          "id": "mutation",
+          "name": "Mutation"
+        },
+        {
+          "id": "point-mutation",
+          "name": "Point mutation"
+        },
+        {
+          "id": "frameshift-mutation",
+          "name": "Frameshift mutation"
+        },
+        {
+          "id": "mismatch-repair",
+          "name": "Mismatch repair"
+        },
+        {
+          "id": "mutagen",
+          "name": "Mutagen"
+        }
+      ],
+      "buildsOn": [
+        "dna-polymerase",
+        "genetic-code"
+      ]
+    },
+    {
+      "pack": "cancer-biology",
+      "title": "Cell cycle control and cancer",
+      "brief": "How checkpoints and cyclin-dependent kinases decide when a cell divides, and how mutations in the genes that control division lead to cancer.",
+      "concepts": [
+        {
+          "id": "cell-cycle-checkpoint",
+          "name": "Cell cycle checkpoint"
+        },
+        {
+          "id": "cyclin-dependent-kinase",
+          "name": "Cyclin-dependent kinase"
+        },
+        {
+          "id": "proto-oncogene",
+          "name": "Proto-oncogene"
+        },
+        {
+          "id": "tumor-suppressor-gene",
+          "name": "Tumor suppressor gene"
+        },
+        {
+          "id": "metastasis",
+          "name": "Metastasis"
+        }
+      ],
+      "buildsOn": [
+        "cell-cycle-regulation",
+        "mutation"
+      ]
+    },
+    {
+      "pack": "gene-regulation",
+      "title": "Gene regulation",
+      "brief": "How cells switch genes on and off, from the operon in bacteria to chromatin and splicing in eukaryotes. Stops before biotechnology.",
+      "concepts": [
+        {
+          "id": "operon",
+          "name": "Operon"
+        },
+        {
+          "id": "transcription-factor",
+          "name": "Transcription factor"
+        },
+        {
+          "id": "enhancer",
+          "name": "Enhancer"
+        },
+        {
+          "id": "epigenetic-regulation",
+          "name": "Epigenetic regulation"
+        },
+        {
+          "id": "alternative-splicing",
+          "name": "Alternative splicing"
+        }
+      ],
+      "buildsOn": [
+        "rna-polymerase",
+        "rna-processing"
+      ]
+    },
+    {
+      "pack": "recombinant-dna-technology",
+      "title": "Recombinant DNA technology",
+      "brief": "The standard lab methods for cutting, separating, copying, reading and editing DNA. Stops at the methods themselves, not their applications.",
+      "concepts": [
+        {
+          "id": "restriction-enzyme",
+          "name": "Restriction enzyme"
+        },
+        {
+          "id": "gel-electrophoresis",
+          "name": "Gel electrophoresis"
+        },
+        {
+          "id": "pcr",
+          "name": "Polymerase chain reaction"
+        },
+        {
+          "id": "dna-sequencing",
+          "name": "DNA sequencing"
+        },
+        {
+          "id": "crispr-cas9",
+          "name": "CRISPR-Cas9"
+        }
+      ],
+      "buildsOn": [
+        "dna-polymerase",
+        "dna-double-helix"
+      ]
+    },
+    {
+      "pack": "natural-selection",
+      "title": "Natural selection",
+      "brief": "How differences in survival and reproduction change the traits of a population over generations. Stops before the genetics of populations.",
+      "concepts": [
+        {
+          "id": "natural-selection",
+          "name": "Natural selection"
+        },
+        {
+          "id": "adaptation",
+          "name": "Adaptation"
+        },
+        {
+          "id": "fitness",
+          "name": "Fitness"
+        },
+        {
+          "id": "sexual-selection",
+          "name": "Sexual selection"
+        },
+        {
+          "id": "artificial-selection",
+          "name": "Artificial selection"
+        }
+      ],
+      "buildsOn": [
+        "allele",
+        "mutation"
+      ]
+    },
+    {
+      "pack": "population-genetics",
+      "title": "Population genetics",
+      "brief": "Allele frequencies and the forces that change them: drift, gene flow and selection, with the Hardy-Weinberg baseline. Stops before new species form.",
+      "concepts": [
+        {
+          "id": "allele-frequency",
+          "name": "Allele frequency"
+        },
+        {
+          "id": "hardy-weinberg-principle",
+          "name": "Hardy-Weinberg principle"
+        },
+        {
+          "id": "genetic-drift",
+          "name": "Genetic drift"
+        },
+        {
+          "id": "gene-flow",
+          "name": "Gene flow"
+        },
+        {
+          "id": "founder-effect",
+          "name": "Founder effect"
+        }
+      ],
+      "buildsOn": [
+        "allele",
+        "natural-selection"
+      ]
+    },
+    {
+      "pack": "speciation",
+      "title": "Speciation",
+      "brief": "How one species splits into two through reproductive isolation, with and without geographic barriers. Stops before how species are classified.",
+      "concepts": [
+        {
+          "id": "species",
+          "name": "Species"
+        },
+        {
+          "id": "reproductive-isolation",
+          "name": "Reproductive isolation"
+        },
+        {
+          "id": "allopatric-speciation",
+          "name": "Allopatric speciation"
+        },
+        {
+          "id": "sympatric-speciation",
+          "name": "Sympatric speciation"
+        },
+        {
+          "id": "hybrid-zone",
+          "name": "Hybrid zone"
+        }
+      ],
+      "buildsOn": [
+        "allele-frequency",
+        "gene-flow"
+      ]
+    },
+    {
+      "pack": "phylogenetics-and-classification",
+      "title": "Phylogenetics and classification",
+      "brief": "How evolutionary trees are read and built from shared traits, and how organisms are named and grouped. Stops before the origin of life.",
+      "concepts": [
+        {
+          "id": "phylogenetic-tree",
+          "name": "Phylogenetic tree"
+        },
+        {
+          "id": "homology",
+          "name": "Homology"
+        },
+        {
+          "id": "cladistics",
+          "name": "Cladistics"
+        },
+        {
+          "id": "linnaean-classification",
+          "name": "Linnaean classification"
+        },
+        {
+          "id": "molecular-clock",
+          "name": "Molecular clock"
+        }
+      ],
+      "buildsOn": [
+        "species",
+        "natural-selection"
+      ]
+    },
+    {
+      "pack": "origin-of-life",
+      "title": "Origin of life",
+      "brief": "The hypotheses for how non-living chemistry became living cells, with the key experiments. Stops before the diversity of microbes.",
+      "concepts": [
+        {
+          "id": "abiogenesis",
+          "name": "Abiogenesis"
+        },
+        {
+          "id": "miller-urey-experiment",
+          "name": "Miller-Urey experiment"
+        },
+        {
+          "id": "rna-world",
+          "name": "RNA world hypothesis"
+        },
+        {
+          "id": "endosymbiosis",
+          "name": "Endosymbiotic theory"
+        }
+      ],
+      "buildsOn": [
+        "nucleotide",
+        "cell-membrane"
+      ]
+    },
+    {
+      "pack": "microbes-protists-and-viruses",
+      "title": "Microbes, protists and viruses",
+      "brief": "The major groups of bacteria, archaea, protists and viruses, and how viruses replicate. Stops before plants and animals.",
+      "concepts": [
+        {
+          "id": "bacteria",
+          "name": "Bacteria"
+        },
+        {
+          "id": "archaea",
+          "name": "Archaea"
+        },
+        {
+          "id": "protist",
+          "name": "Protists"
+        },
+        {
+          "id": "virus",
+          "name": "Viruses"
+        },
+        {
+          "id": "viral-replication-cycle",
+          "name": "Viral replication cycle"
+        }
+      ],
+      "buildsOn": [
+        "phylogenetic-tree",
+        "prokaryotic-and-eukaryotic-cells"
+      ]
+    },
+    {
+      "pack": "plant-diversity",
+      "title": "Plant diversity",
+      "brief": "The main plant groups, from bryophytes to flowering plants, and the life cycle they share. Stops before plant tissues and transport.",
+      "concepts": [
+        {
+          "id": "alternation-of-generations",
+          "name": "Alternation of generations"
+        },
+        {
+          "id": "bryophyte",
+          "name": "Bryophyte"
+        },
+        {
+          "id": "vascular-plant",
+          "name": "Vascular plant"
+        },
+        {
+          "id": "gymnosperm",
+          "name": "Gymnosperm"
+        },
+        {
+          "id": "angiosperm",
+          "name": "Angiosperm"
+        }
+      ],
+      "buildsOn": [
+        "phylogenetic-tree",
+        "chloroplast"
+      ]
+    },
+    {
+      "pack": "plant-structure-and-transport",
+      "title": "Plant structure and transport",
+      "brief": "The plant body's growing tissues and the xylem and phloem that move water and sugar. Stops before plant hormones.",
+      "concepts": [
+        {
+          "id": "meristem",
+          "name": "Meristem"
+        },
+        {
+          "id": "xylem",
+          "name": "Xylem"
+        },
+        {
+          "id": "phloem",
+          "name": "Phloem"
+        },
+        {
+          "id": "transpiration",
+          "name": "Transpiration"
+        },
+        {
+          "id": "stomata",
+          "name": "Stomata"
+        }
+      ],
+      "buildsOn": [
+        "angiosperm",
+        "water-properties"
+      ]
+    },
+    {
+      "pack": "plant-hormones-and-responses",
+      "title": "Plant hormones and responses",
+      "brief": "How plants sense light and gravity and change their growth in response, through hormones such as auxin. Stops before animal hormones.",
+      "concepts": [
+        {
+          "id": "plant-hormone",
+          "name": "Plant hormone"
+        },
+        {
+          "id": "auxin",
+          "name": "Auxin"
+        },
+        {
+          "id": "tropism",
+          "name": "Tropism"
+        },
+        {
+          "id": "photoperiodism",
+          "name": "Photoperiodism"
+        },
+        {
+          "id": "phytochrome",
+          "name": "Phytochrome"
+        }
+      ],
+      "buildsOn": [
+        "meristem",
+        "signal-transduction"
+      ]
+    },
+    {
+      "pack": "animal-diversity",
+      "title": "Animal diversity",
+      "brief": "The body plans and major groups of animals, from invertebrates to tetrapods. Stops before how animal bodies work.",
+      "concepts": [
+        {
+          "id": "body-symmetry",
+          "name": "Body symmetry"
+        },
+        {
+          "id": "coelom",
+          "name": "Coelom"
+        },
+        {
+          "id": "invertebrate-phyla",
+          "name": "Invertebrate phyla"
+        },
+        {
+          "id": "vertebrate-classes",
+          "name": "Vertebrate classes"
+        },
+        {
+          "id": "tetrapod",
+          "name": "Tetrapod"
+        }
+      ],
+      "buildsOn": [
+        "phylogenetic-tree",
+        "prokaryotic-and-eukaryotic-cells"
+      ]
+    },
+    {
+      "pack": "homeostasis-and-hormones",
+      "title": "Homeostasis and hormones",
+      "brief": "How the body holds its internal conditions steady through feedback loops and hormones. Stops before the nervous system.",
+      "concepts": [
+        {
+          "id": "homeostasis",
+          "name": "Homeostasis"
+        },
+        {
+          "id": "negative-feedback",
+          "name": "Negative feedback"
+        },
+        {
+          "id": "endocrine-system",
+          "name": "Endocrine system"
+        },
+        {
+          "id": "hormone-receptor",
+          "name": "Hormone receptor"
+        },
+        {
+          "id": "thermoregulation",
+          "name": "Thermoregulation"
+        }
+      ],
+      "buildsOn": [
+        "signal-transduction",
+        "cell-membrane"
+      ]
+    },
+    {
+      "pack": "nervous-system",
+      "title": "Nervous system",
+      "brief": "How neurons generate and pass on electrical signals across synapses, and how reflexes work. Stops before the brain's regions.",
+      "concepts": [
+        {
+          "id": "neuron",
+          "name": "Neuron"
+        },
+        {
+          "id": "action-potential",
+          "name": "Action potential"
+        },
+        {
+          "id": "synapse",
+          "name": "Synapse"
+        },
+        {
+          "id": "neurotransmitter",
+          "name": "Neurotransmitter"
+        },
+        {
+          "id": "reflex",
+          "name": "Reflex"
+        }
+      ],
+      "buildsOn": [
+        "cell-membrane",
+        "signal-transduction"
+      ]
+    },
+    {
+      "pack": "circulation-and-gas-exchange",
+      "title": "Circulation and gas exchange",
+      "brief": "How the heart and blood vessels move blood, and how oxygen and carbon dioxide are exchanged and carried. Stops before digestion.",
+      "concepts": [
+        {
+          "id": "circulatory-system",
+          "name": "Circulatory system"
+        },
+        {
+          "id": "cardiac-cycle",
+          "name": "Cardiac cycle"
+        },
+        {
+          "id": "blood-pressure",
+          "name": "Blood pressure"
+        },
+        {
+          "id": "gas-exchange",
+          "name": "Gas exchange"
+        },
+        {
+          "id": "hemoglobin",
+          "name": "Hemoglobin"
+        }
+      ],
+      "buildsOn": [
+        "negative-feedback",
+        "atp"
+      ]
+    },
+    {
+      "pack": "digestion-and-excretion",
+      "title": "Digestion and excretion",
+      "brief": "How food is broken down and absorbed, and how the kidney filters blood and balances water and salts. Stops before the immune system.",
+      "concepts": [
+        {
+          "id": "digestive-system",
+          "name": "Digestive system"
+        },
+        {
+          "id": "nutrient-absorption",
+          "name": "Nutrient absorption"
+        },
+        {
+          "id": "nephron",
+          "name": "Nephron"
+        },
+        {
+          "id": "urine-formation",
+          "name": "Urine formation"
+        },
+        {
+          "id": "osmoregulation",
+          "name": "Osmoregulation"
+        }
+      ],
+      "buildsOn": [
+        "enzyme",
+        "endocrine-system"
+      ]
+    },
+    {
+      "pack": "immune-system",
+      "title": "Immune system",
+      "brief": "The innate and adaptive defenses of the body, and how antibodies and vaccines work. Stops before development.",
+      "concepts": [
+        {
+          "id": "innate-immunity",
+          "name": "Innate immunity"
+        },
+        {
+          "id": "adaptive-immunity",
+          "name": "Adaptive immunity"
+        },
+        {
+          "id": "antibody",
+          "name": "Antibody"
+        },
+        {
+          "id": "t-cell",
+          "name": "T cell"
+        },
+        {
+          "id": "vaccination",
+          "name": "Vaccination"
+        }
+      ],
+      "buildsOn": [
+        "cell-membrane",
+        "protein-structure"
+      ]
+    },
+    {
+      "pack": "animal-development",
+      "title": "Animal development",
+      "brief": "How a fertilized egg becomes a body plan through division, gastrulation, differentiation and signals. Stops before ecology.",
+      "concepts": [
+        {
+          "id": "fertilization",
+          "name": "Fertilization"
+        },
+        {
+          "id": "gastrulation",
+          "name": "Gastrulation"
+        },
+        {
+          "id": "cell-differentiation",
+          "name": "Cell differentiation"
+        },
+        {
+          "id": "stem-cell",
+          "name": "Stem cell"
+        },
+        {
+          "id": "morphogen",
+          "name": "Morphogen"
+        }
+      ],
+      "buildsOn": [
+        "mitosis",
+        "signal-transduction"
+      ]
+    },
+    {
+      "pack": "population-ecology",
+      "title": "Population ecology",
+      "brief": "How populations grow, what limits them, and the life histories that shape those limits. Stops before interactions between species.",
+      "concepts": [
+        {
+          "id": "population-density",
+          "name": "Population density"
+        },
+        {
+          "id": "population-growth",
+          "name": "Population growth"
+        },
+        {
+          "id": "carrying-capacity",
+          "name": "Carrying capacity"
+        },
+        {
+          "id": "logistic-growth",
+          "name": "Logistic growth"
+        },
+        {
+          "id": "life-history-strategy",
+          "name": "Life history strategy"
+        }
+      ],
+      "buildsOn": [
+        "allele-frequency",
+        "natural-selection"
+      ]
+    },
+    {
+      "pack": "community-ecology",
+      "title": "Community ecology",
+      "brief": "How species interact through competition, predation, symbiosis and food webs. Stops before energy and nutrients move through ecosystems.",
+      "concepts": [
+        {
+          "id": "ecological-niche",
+          "name": "Ecological niche"
+        },
+        {
+          "id": "interspecific-competition",
+          "name": "Interspecific competition"
+        },
+        {
+          "id": "predator-prey-interaction",
+          "name": "Predator-prey interaction"
+        },
+        {
+          "id": "symbiosis",
+          "name": "Symbiosis"
+        },
+        {
+          "id": "keystone-species",
+          "name": "Keystone species"
+        },
+        {
+          "id": "food-web",
+          "name": "Food web"
+        }
+      ],
+      "buildsOn": [
+        "carrying-capacity",
+        "population-growth"
+      ]
+    },
+    {
+      "pack": "ecosystems",
+      "title": "Ecosystems",
+      "brief": "How energy flows through trophic levels and how nutrients cycle through the carbon and nitrogen cycles. Stops before conservation.",
+      "concepts": [
+        {
+          "id": "energy-flow",
+          "name": "Energy flow in ecosystems"
+        },
+        {
+          "id": "trophic-level",
+          "name": "Trophic level"
+        },
+        {
+          "id": "nutrient-cycling",
+          "name": "Nutrient cycling"
+        },
+        {
+          "id": "carbon-cycle",
+          "name": "Carbon cycle"
+        },
+        {
+          "id": "nitrogen-cycle",
+          "name": "Nitrogen cycle"
+        }
+      ],
+      "buildsOn": [
+        "food-web",
+        "calvin-cycle"
+      ]
+    },
+    {
+      "pack": "conservation-biology",
+      "title": "Conservation biology",
+      "brief": "Why biodiversity is lost and what small populations lose to genetic drift, and how habitat loss drives extinction. Stops at the principles, not policy.",
+      "concepts": [
+        {
+          "id": "biodiversity",
+          "name": "Biodiversity"
+        },
+        {
+          "id": "habitat-fragmentation",
+          "name": "Habitat fragmentation"
+        },
+        {
+          "id": "extinction",
+          "name": "Extinction"
+        },
+        {
+          "id": "conservation-genetics",
+          "name": "Conservation genetics"
+        }
+      ],
+      "buildsOn": [
+        "carrying-capacity",
+        "nutrient-cycling"
+      ]
+    }
+  ]
+}

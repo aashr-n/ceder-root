@@ -1,0 +1,162 @@
+{
+  "formatVersion": 1,
+  "subject": "linear-algebra",
+  "covers": "A first course in linear algebra: linear systems, vectors and matrices, linear maps, subspaces and dimension, determinants, eigenvalues, orthogonality, and the singular value decomposition. Stops before abstract vector spaces over arbitrary fields and before tensors.",
+  "packs": [
+    {
+      "pack": "linear-systems",
+      "title": "Linear systems",
+      "brief": "Systems of linear equations, how they are written as augmented matrices, and how elementary row operations and Gaussian elimination solve them, including free variables and solution sets. Stops before vectors and span.",
+      "concepts": [
+        { "id": "system-of-linear-equations", "name": "System of linear equations" },
+        { "id": "augmented-matrix", "name": "Augmented matrix" },
+        { "id": "elementary-row-operations", "name": "Elementary row operations" },
+        { "id": "row-echelon-form", "name": "Row echelon form" },
+        { "id": "reduced-row-echelon-form", "name": "Reduced row echelon form" },
+        { "id": "gaussian-elimination", "name": "Gaussian elimination" },
+        { "id": "pivot-and-free-variables", "name": "Pivot and free variables" },
+        { "id": "homogeneous-system", "name": "Homogeneous system" }
+      ],
+      "buildsOn": []
+    },
+    {
+      "pack": "vectors-and-span",
+      "title": "Vectors and span",
+      "brief": "Vectors in R^n, vector addition and scalar multiplication, linear combinations, the span of a set of vectors, and writing a system as a vector equation. Stops before matrices.",
+      "concepts": [
+        { "id": "vector-in-rn", "name": "Vector in R^n" },
+        { "id": "vector-sums-and-scalars", "name": "Vector addition and scalar multiplication" },
+        { "id": "linear-combination", "name": "Linear combination" },
+        { "id": "span", "name": "Span" },
+        { "id": "vector-equation", "name": "Vector equation" }
+      ],
+      "buildsOn": ["system-of-linear-equations", "gaussian-elimination"]
+    },
+    {
+      "pack": "matrices",
+      "title": "Matrices and matrix algebra",
+      "brief": "Matrices as arrays, their sum and scalar multiples, the matrix-vector product, the equation Ax = b, matrix multiplication, transposes, identity matrices, and inverses. Stops before linear maps as a general idea.",
+      "concepts": [
+        { "id": "matrix", "name": "Matrix" },
+        { "id": "matrix-sums-and-scalars", "name": "Matrix addition and scalar multiplication" },
+        { "id": "matrix-vector-product", "name": "Matrix-vector product" },
+        { "id": "matrix-equation-ax-equals-b", "name": "Matrix equation Ax = b" },
+        { "id": "matrix-multiplication", "name": "Matrix multiplication" },
+        { "id": "transpose", "name": "Transpose" },
+        { "id": "identity-matrix", "name": "Identity matrix" },
+        { "id": "matrix-inverse", "name": "Matrix inverse" }
+      ],
+      "buildsOn": ["vector-in-rn", "linear-combination", "vector-equation", "augmented-matrix", "gaussian-elimination"]
+    },
+    {
+      "pack": "linear-independence",
+      "title": "Linear independence",
+      "brief": "Linearly independent and dependent sets, dependence relations, spanning sets, and how to test a set of columns for independence. Stops before linear maps.",
+      "concepts": [
+        { "id": "linear-independence", "name": "Linear independence" },
+        { "id": "linear-dependence-relation", "name": "Linear dependence relation" },
+        { "id": "spanning-set", "name": "Spanning set" },
+        { "id": "independence-test-for-columns", "name": "Independence test for columns" },
+        { "id": "unique-representation-by-independent-set", "name": "Unique representation by an independent set" }
+      ],
+      "buildsOn": ["span", "homogeneous-system", "matrix-equation-ax-equals-b", "pivot-and-free-variables"]
+    },
+    {
+      "pack": "linear-transformations",
+      "title": "Linear transformations",
+      "brief": "Linear transformations from R^n to R^m, their standard matrices, one-to-one and onto maps, composition, and common geometric examples such as rotations and shears. Stops before subspaces.",
+      "concepts": [
+        { "id": "linear-transformation", "name": "Linear transformation" },
+        { "id": "standard-matrix-of-transformation", "name": "Standard matrix of a transformation" },
+        { "id": "one-to-one-transformation", "name": "One-to-one transformation" },
+        { "id": "onto-transformation", "name": "Onto transformation" },
+        { "id": "composition-of-transformations", "name": "Composition of transformations" },
+        { "id": "geometric-transformations", "name": "Geometric transformations" }
+      ],
+      "buildsOn": ["matrix-vector-product", "matrix-multiplication", "linear-independence", "spanning-set", "pivot-and-free-variables"]
+    },
+    {
+      "pack": "subspaces-and-bases",
+      "title": "Subspaces and bases",
+      "brief": "Subspaces of R^n, the column space and null space of a matrix, bases, and coordinate vectors relative to a basis. Stops before dimension and rank.",
+      "concepts": [
+        { "id": "subspace", "name": "Subspace" },
+        { "id": "column-space", "name": "Column space" },
+        { "id": "null-space", "name": "Null space" },
+        { "id": "basis", "name": "Basis" },
+        { "id": "coordinate-vector", "name": "Coordinate vector" }
+      ],
+      "buildsOn": ["span", "linear-independence", "spanning-set", "homogeneous-system", "matrix-vector-product", "linear-transformation"]
+    },
+    {
+      "pack": "dimension-and-rank",
+      "title": "Dimension and rank",
+      "brief": "Dimension of a subspace, the row space, rank of a matrix, the rank-nullity theorem, and the invertible matrix theorem linking these ideas. Stops before determinants.",
+      "concepts": [
+        { "id": "dimension", "name": "Dimension" },
+        { "id": "row-space", "name": "Row space" },
+        { "id": "rank", "name": "Rank" },
+        { "id": "rank-nullity-theorem", "name": "Rank-nullity theorem" },
+        { "id": "invertible-matrix-theorem", "name": "Invertible matrix theorem" }
+      ],
+      "buildsOn": ["subspace", "column-space", "null-space", "basis", "reduced-row-echelon-form", "matrix-inverse", "onto-transformation", "one-to-one-transformation"]
+    },
+    {
+      "pack": "determinants",
+      "title": "Determinants",
+      "brief": "The determinant of a square matrix, cofactor expansion, how row operations change it, its link to invertibility, and Cramer's rule. Stops before eigenvalues.",
+      "concepts": [
+        { "id": "determinant", "name": "Determinant" },
+        { "id": "cofactor-expansion", "name": "Cofactor expansion" },
+        { "id": "determinant-and-row-operations", "name": "Determinant and row operations" },
+        { "id": "determinant-and-invertibility", "name": "Determinant and invertibility" },
+        { "id": "cramers-rule", "name": "Cramer's rule" }
+      ],
+      "buildsOn": ["matrix-inverse", "elementary-row-operations", "invertible-matrix-theorem", "matrix-equation-ax-equals-b"]
+    },
+    {
+      "pack": "eigenvalues-and-eigenvectors",
+      "title": "Eigenvalues and eigenvectors",
+      "brief": "Eigenvalues, eigenvectors, eigenspaces, the characteristic polynomial, and diagonalization of a square matrix. Stops before orthogonality.",
+      "concepts": [
+        { "id": "eigenvalue", "name": "Eigenvalue" },
+        { "id": "eigenvector", "name": "Eigenvector" },
+        { "id": "eigenspace", "name": "Eigenspace" },
+        { "id": "characteristic-polynomial", "name": "Characteristic polynomial" },
+        { "id": "diagonalization", "name": "Diagonalization" }
+      ],
+      "buildsOn": ["determinant", "null-space", "subspace", "basis", "matrix-inverse", "matrix-multiplication", "coordinate-vector"]
+    },
+    {
+      "pack": "orthogonality",
+      "title": "Orthogonality and projections",
+      "brief": "The dot product, length, orthogonal vectors and complements, orthogonal projection onto a subspace, and the Gram-Schmidt process for building an orthogonal basis. Stops before symmetric matrices and least squares.",
+      "concepts": [
+        { "id": "dot-product", "name": "Dot product" },
+        { "id": "euclidean-norm", "name": "Euclidean norm" },
+        { "id": "orthogonal-vectors", "name": "Orthogonal vectors" },
+        { "id": "orthogonal-complement", "name": "Orthogonal complement" },
+        { "id": "orthogonal-projection", "name": "Orthogonal projection" },
+        { "id": "orthogonal-set", "name": "Orthogonal set" },
+        { "id": "gram-schmidt-process", "name": "Gram-Schmidt process" }
+      ],
+      "buildsOn": ["subspace", "column-space", "null-space", "basis", "coordinate-vector", "transpose", "matrix-multiplication", "linear-independence"]
+    },
+    {
+      "pack": "symmetric-matrices-and-least-squares",
+      "title": "Symmetric matrices, least squares, and SVD",
+      "brief": "Orthogonal matrices, symmetric matrices and their diagonalization by orthogonal matrices, the spectral theorem, least-squares solutions through the normal equations, and the singular value decomposition. Stops at the SVD and does not cover its applications in depth.",
+      "concepts": [
+        { "id": "orthogonal-matrix", "name": "Orthogonal matrix" },
+        { "id": "symmetric-matrix", "name": "Symmetric matrix" },
+        { "id": "orthogonal-diagonalization", "name": "Orthogonal diagonalization" },
+        { "id": "spectral-theorem", "name": "Spectral theorem" },
+        { "id": "least-squares-problem", "name": "Least-squares problem" },
+        { "id": "normal-equations", "name": "Normal equations" },
+        { "id": "singular-value", "name": "Singular value" },
+        { "id": "singular-value-decomposition", "name": "Singular value decomposition" }
+      ],
+      "buildsOn": ["eigenvalue", "eigenvector", "diagonalization", "orthogonal-projection", "orthogonal-set", "gram-schmidt-process", "transpose", "matrix-inverse", "rank", "dot-product"]
+    }
+  ]
+}

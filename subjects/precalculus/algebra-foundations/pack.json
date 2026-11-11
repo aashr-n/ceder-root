@@ -1,0 +1,1555 @@
+{
+  "formatVersion": 1,
+  "id": "precalculus.algebra-foundations",
+  "subject": "precalculus",
+  "title": "Algebra foundations",
+  "summary": "Real numbers, absolute value, exponent and radical rules, and simplifying and factoring polynomial and rational expressions.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "real-number-line",
+      "name": "Real number line",
+      "aliases": [
+        "number line"
+      ],
+      "summary": "Real numbers as points on a line, ordered so that numbers farther right are greater.",
+      "requires": [],
+      "elements": [
+        {
+          "id": "ordering",
+          "name": "Ordering real numbers"
+        },
+        {
+          "id": "negative-numbers",
+          "name": "Negative numbers on the line"
+        },
+        {
+          "id": "distance-between-points",
+          "name": "Distance between two points"
+        },
+        {
+          "id": "interval-notation",
+          "name": "Interval notation"
+        }
+      ],
+      "explain": {
+        "text": "The real numbers can be lined up as points on a line that runs forever in both directions. Zero sits in the middle, positive numbers lie to its right, and negative numbers lie to its left. A number that sits farther right is always the greater one, so −2 is greater than −5 even though 5 has the bigger digit. Students use the line to order numbers, measure the distance between two points, and write sets of numbers as intervals such as (2, ∞). Picture a thermometer lying on its side: the coldest reading is on the left."
+      }
+    },
+    {
+      "id": "absolute-value",
+      "name": "Absolute value",
+      "aliases": [
+        "absolute values"
+      ],
+      "summary": "The distance of a number from zero, which is never negative.",
+      "requires": [
+        "real-number-line"
+      ],
+      "elements": [
+        {
+          "id": "distance-from-zero",
+          "name": "Distance from zero"
+        },
+        {
+          "id": "piecewise-definition",
+          "name": "Piecewise definition"
+        },
+        {
+          "id": "never-negative",
+          "name": "Absolute value is never negative"
+        },
+        {
+          "id": "product-rule",
+          "name": "Absolute value of a product"
+        }
+      ],
+      "explain": {
+        "text": "The absolute value of a number is its distance from zero on the number line, so it is never negative. The absolute value of −7 is 7, and the absolute value of 7 is also 7, because both numbers are seven units from zero. Written with two vertical bars, as |x|, it strips off the sign. It is defined piece by piece: |x| is x when x is zero or positive, and −x when x is negative. Absolute value also measures distance between points, since the distance between a and b is |a − b|."
+      }
+    },
+    {
+      "id": "exponent-rules",
+      "name": "Integer exponent rules",
+      "aliases": [
+        "laws of exponents",
+        "exponent laws",
+        "zero and negative exponents"
+      ],
+      "summary": "Rules for multiplying, dividing and raising powers with whole-number exponents.",
+      "requires": [],
+      "elements": [
+        {
+          "id": "product-rule",
+          "name": "Product rule"
+        },
+        {
+          "id": "quotient-rule",
+          "name": "Quotient rule"
+        },
+        {
+          "id": "power-of-a-power",
+          "name": "Power of a power"
+        },
+        {
+          "id": "zero-exponent",
+          "name": "Zero exponent"
+        },
+        {
+          "id": "negative-exponent",
+          "name": "Negative exponent"
+        }
+      ],
+      "explain": {
+        "text": "An exponent counts how many times a base is multiplied by itself, so x⁵ means x × x × x × x × x. Several rules follow from that meaning. To multiply powers with the same base, add the exponents: x³ × x⁵ = x⁸. To divide, subtract them. A power raised to another power multiplies the exponents. Any nonzero base to the power 0 equals 1, and a negative exponent means the reciprocal: x⁻² = 1/x². These rules let a student shorten long products, such as turning 2³ × 2⁴ into 2⁷."
+      }
+    },
+    {
+      "id": "radical-expression",
+      "name": "Radical expression",
+      "aliases": [
+        "radicals",
+        "square roots"
+      ],
+      "summary": "A root written with the radical sign, and the rules for simplifying and rewriting it.",
+      "requires": [
+        "exponent-rules"
+      ],
+      "elements": [
+        {
+          "id": "principal-root",
+          "name": "Principal root"
+        },
+        {
+          "id": "product-rule-radicals",
+          "name": "Product rule for radicals"
+        },
+        {
+          "id": "simplifying-radicals",
+          "name": "Simplifying by square factors"
+        },
+        {
+          "id": "rationalizing-denominator",
+          "name": "Rationalizing the denominator"
+        }
+      ],
+      "explain": {
+        "text": "A radical is a root written with the radical sign, √. The square root of a number a is a number that, multiplied by itself, gives a. √49 is 7, because the sign means the nonnegative root. A cube root, written ∛, undoes cubing, so ∛(−8) is −2. Radicals obey a product rule: √(ab) equals √a × √b when a and b are nonnegative. To simplify, students pull out the largest perfect square factor, so √48 becomes 4√3. A denominator that holds a root is usually rewritten, which is called rationalizing."
+      }
+    },
+    {
+      "id": "rational-exponent",
+      "name": "Rational exponent",
+      "aliases": [
+        "fractional exponents"
+      ],
+      "summary": "An exponent written as a fraction, where the denominator gives the root and the numerator the power.",
+      "requires": [
+        "radical-expression"
+      ],
+      "elements": [
+        {
+          "id": "root-from-denominator",
+          "name": "Denominator as the root"
+        },
+        {
+          "id": "power-from-numerator",
+          "name": "Numerator as the power"
+        },
+        {
+          "id": "negative-rational-exponent",
+          "name": "Negative rational exponent"
+        },
+        {
+          "id": "rules-with-fractions",
+          "name": "Exponent rules with fractions"
+        }
+      ],
+      "explain": {
+        "text": "A fraction in an exponent combines a root and a power. In a^(m/n), the denominator n gives the root and the numerator m gives the power, so a^(m/n) is the nth root of a^m. For example, 8^(2/3) means the cube root of 8, squared, which is 4. A negative exponent takes the reciprocal, so a^(−m/n) is one over a^(m/n). These exponents obey the same rules as whole-number exponents, so x^(1/2) × x^(1/3) equals x^(5/6). The notation lets students move between root form and power form."
+      }
+    },
+    {
+      "id": "polynomial-expression",
+      "name": "Polynomial expression",
+      "aliases": [
+        "polynomials"
+      ],
+      "summary": "A sum of constant multiples of whole-number powers of a variable, with a degree and coefficients.",
+      "requires": [
+        "exponent-rules"
+      ],
+      "elements": [
+        {
+          "id": "terms-and-coefficients",
+          "name": "Terms and coefficients"
+        },
+        {
+          "id": "degree",
+          "name": "Degree of a polynomial"
+        },
+        {
+          "id": "leading-coefficient",
+          "name": "Leading coefficient"
+        },
+        {
+          "id": "adding-polynomials",
+          "name": "Adding and subtracting polynomials"
+        },
+        {
+          "id": "multiplying-polynomials",
+          "name": "Multiplying polynomials"
+        }
+      ],
+      "explain": {
+        "text": "A polynomial is a sum of terms, each a constant times a whole-number power of a variable, such as 4x³ − 2x + 7. Each piece of the sum is a term, and the number in front of a power is its coefficient. The degree is the largest exponent on the variable, here 3, and the leading coefficient is the coefficient of that top-degree term. Polynomials can be added, subtracted and multiplied, and the result is again a polynomial. Multiplying uses the distributive rule so that every term in one factor meets every term in the other."
+      }
+    },
+    {
+      "id": "factoring-polynomials",
+      "name": "Factoring polynomials",
+      "aliases": [
+        "factoring",
+        "factorization",
+        "factored form"
+      ],
+      "summary": "Writing a polynomial as a product of simpler polynomials, by pulling out factors and using patterns.",
+      "requires": [
+        "polynomial-expression"
+      ],
+      "elements": [
+        {
+          "id": "greatest-common-factor",
+          "name": "Greatest common factor"
+        },
+        {
+          "id": "difference-of-squares",
+          "name": "Difference of squares"
+        },
+        {
+          "id": "trinomial-factoring",
+          "name": "Trinomial factoring"
+        },
+        {
+          "id": "factoring-by-grouping",
+          "name": "Factoring by grouping"
+        },
+        {
+          "id": "factoring-completely",
+          "name": "Factoring completely"
+        }
+      ],
+      "explain": {
+        "text": "Factoring rewrites a polynomial as a product of simpler polynomials, which is the reverse of expanding. The first step is almost always to pull out the greatest common factor. After that, look for patterns: a difference of squares, x² − 9, factors as (x − 3)(x + 3). A trinomial like x² + 5x + 6 factors into two binomials whose constants multiply to 6 and add to 5, giving (x + 2)(x + 3). Factoring by grouping pairs up terms that share a factor. A polynomial is factored completely when no factor can be factored further."
+      }
+    },
+    {
+      "id": "rational-expression",
+      "name": "Rational expression",
+      "aliases": [
+        "rational fractions",
+        "algebraic fractions"
+      ],
+      "summary": "A quotient of two polynomials, simplified by cancelling common factors and avoiding zero denominators.",
+      "requires": [
+        "factoring-polynomials"
+      ],
+      "elements": [
+        {
+          "id": "domain-restrictions",
+          "name": "Values that make the denominator zero"
+        },
+        {
+          "id": "cancelling-common-factors",
+          "name": "Cancelling common factors"
+        },
+        {
+          "id": "multiplying-and-dividing",
+          "name": "Multiplying and dividing"
+        },
+        {
+          "id": "adding-rational-expressions",
+          "name": "Adding with a common denominator"
+        }
+      ],
+      "explain": {
+        "text": "A rational expression is a quotient of two polynomials, such as (x² − 4)/(x − 2). It is undefined wherever its denominator is zero, so (x + 2)/(x − 5) cannot take the value 5. To simplify, factor the top and bottom, then cancel common factors, keeping in mind the values that were excluded. Multiply rational expressions by multiplying tops and bottoms; divide by multiplying by the reciprocal. Adding needs a common denominator, built from the factored denominators. These skills prepare students for the rational functions studied later in precalculus."
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "precalculus.algebra-foundations.ordering-smallest",
+      "concept": "real-number-line",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these numbers is the smallest?",
+      "choices": [
+        "−0.9",
+        "−1/2",
+        "−1.25",
+        "0"
+      ],
+      "answer": 2,
+      "explanation": "−1.25 is 1.25 units left of zero, farther left than the others. −0.9 looks smallest only if you compare digits and forget that, on the negative side, the number farther from zero is the smaller one.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.ordering-symbol",
+      "concept": "real-number-line",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which symbol makes this statement true: −5 ___ −8?",
+      "choices": [
+        "<",
+        "=",
+        ">",
+        "≈"
+      ],
+      "answer": 2,
+      "explanation": "−5 is 5 units below zero and −8 is 8 units below zero, so −5 sits farther right and is greater. A student who thinks 5 is less than 8 wrongly picks <.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.distance-two-points",
+      "concept": "real-number-line",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A point sits at −6 and another at 4 on the number line. What is the distance between them?",
+      "choices": [
+        "2",
+        "10",
+        "−10",
+        "24"
+      ],
+      "answer": 1,
+      "explanation": "Counting from −6 up to 4 covers 4 − (−6) = 10 units. A distance is never negative, and adding −6 and 4 gives the signed difference −2, not a distance. Multiplying to get 24 is also wrong.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.interval-greater-than-two",
+      "concept": "real-number-line",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which interval in interval notation holds every real number x with x > 2?",
+      "choices": [
+        "[2, ∞)",
+        "(2, ∞)",
+        "(−∞, 2)",
+        "[2, 5]"
+      ],
+      "answer": 1,
+      "explanation": "The inequality is strict, so 2 is not included and takes a round bracket. Infinity always takes a round bracket too. [2, ∞) wrongly includes 2.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.zero-position",
+      "concept": "real-number-line",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about the number 0 on the real number line is true?",
+      "choices": [
+        "0 is positive",
+        "0 is negative",
+        "0 is neither positive nor negative",
+        "0 is smaller than −1"
+      ],
+      "answer": 2,
+      "explanation": "Zero is the dividing point between positive and negative numbers, so it is neither. It is greater than −1, not smaller, because it sits to the right of −1.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.between-fractions",
+      "concept": "real-number-line",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which number lies strictly between −2/3 and −0.6 on the number line?",
+      "choices": [
+        "−0.7",
+        "−0.65",
+        "−0.8",
+        "−0.5"
+      ],
+      "answer": 1,
+      "explanation": "−2/3 is about −0.667, and −0.6 is the right end. −0.65 lies between them. −0.7 and −0.8 are left of −2/3, and −0.5 is right of −0.6.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.negatives-closer-zero",
+      "concept": "real-number-line",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Two real numbers are both negative. Which statement must be true?",
+      "choices": [
+        "The number with larger digits is the greater one",
+        "The number farther from zero is the greater one",
+        "The two numbers must be equal",
+        "The number closer to zero is the greater one"
+      ],
+      "answer": 3,
+      "explanation": "On the negative side, moving toward zero moves right, so the value goes up. −0.5 is greater than −3. Thinking that larger digits mean greater values leads to the first wrong choice.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.abs-of-minus-seven",
+      "concept": "absolute-value",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is |−7|?",
+      "choices": [
+        "−7",
+        "7",
+        "0",
+        "−1/7"
+      ],
+      "answer": 1,
+      "explanation": "The absolute value is the distance from zero, which is 7 units for −7. Keeping the sign and writing −7 is never the result of an absolute value.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.abs-negative-x",
+      "concept": "absolute-value",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "For a negative number x, which expression equals |x|?",
+      "choices": [
+        "x",
+        "0",
+        "−x",
+        "x²"
+      ],
+      "answer": 2,
+      "explanation": "If x is negative, then −x is positive, which matches the absolute value. Writing x keeps a negative sign, and x² is not the distance in general: x = −3 gives 9, not 3.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.abs-never-negative",
+      "concept": "absolute-value",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is never negative for any real number?",
+      "choices": [
+        "−|5|",
+        "−3",
+        "x − 1",
+        "|x|"
+      ],
+      "answer": 3,
+      "explanation": "An absolute value measures distance from zero, so it is zero or positive. −|5| and −3 are negative, and x − 1 is negative whenever x is less than 1.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.abs-three-minus-neg-five",
+      "concept": "absolute-value",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is |3 − (−5)|?",
+      "choices": [
+        "8",
+        "2",
+        "−2",
+        "−8"
+      ],
+      "answer": 0,
+      "explanation": "3 − (−5) = 8, and |8| = 8. Computing 3 − 5 gives 2, which drops the minus sign on −5. An absolute value is never negative, so −8 is out.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.abs-distance-more-than-four",
+      "concept": "absolute-value",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which inequality describes every real number x whose distance from 0 is more than 4?",
+      "choices": [
+        "|x| < 4",
+        "x > 4",
+        "|x| > 4",
+        "x < −4"
+      ],
+      "answer": 2,
+      "explanation": "A distance from 0 greater than 4 means |x| > 4, which covers x > 4 and x < −4 together. |x| < 4 is the opposite, and x > 4 or x < −4 alone each miss half of the numbers.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.abs-product",
+      "concept": "absolute-value",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement is true for all real numbers a and b?",
+      "choices": [
+        "|a + b| = |a| + |b|",
+        "|ab| = |a| × |b|",
+        "|a − b| = |a| − |b|",
+        "|a| = −a"
+      ],
+      "answer": 1,
+      "explanation": "The absolute value of a product is the product of the absolute values. |a + b| can be smaller than |a| + |b|: with a = 2 and b = −3, |−1| = 1, but 2 + 3 = 5.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.abs-minimum-shift",
+      "concept": "absolute-value",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "What is the smallest value of |x − 3| + 2 over all real numbers x?",
+      "choices": [
+        "0",
+        "3",
+        "2",
+        "−2"
+      ],
+      "answer": 2,
+      "explanation": "|x − 3| is never below 0 and reaches 0 at x = 3, so the smallest sum is 0 + 2 = 2. Answering 0 forgets the +2, and 3 is the x-value where the minimum occurs, not the value itself.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.product-of-powers",
+      "concept": "exponent-rules",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is x³ × x⁵ in simplest form?",
+      "choices": [
+        "x¹⁵",
+        "x²",
+        "x⁸",
+        "x⁻²"
+      ],
+      "answer": 2,
+      "explanation": "Multiplying powers with the same base adds the exponents: 3 + 5 = 8. Multiplying the exponents would give x¹⁵, and subtracting them gives x².",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.zero-power",
+      "concept": "exponent-rules",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is 5⁰?",
+      "choices": [
+        "0",
+        "1",
+        "5",
+        "undefined"
+      ],
+      "answer": 1,
+      "explanation": "Any nonzero base raised to the power 0 equals 1, since xⁿ ÷ xⁿ = 1 and also equals x⁰. Answering 0 or undefined confuses the exponent with the base.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.negative-power",
+      "concept": "exponent-rules",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is 2⁻³?",
+      "choices": [
+        "−8",
+        "−1/8",
+        "6",
+        "1/8"
+      ],
+      "answer": 3,
+      "explanation": "A negative exponent means the reciprocal of the positive power: 2⁻³ = 1/2³ = 1/8. The result stays positive, and multiplying the base by the exponent gives 6, which is wrong.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.power-of-power",
+      "concept": "exponent-rules",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which expression equals (a²)⁴ for a nonzero a?",
+      "choices": [
+        "a⁶",
+        "a²",
+        "a⁸",
+        "a¹⁶"
+      ],
+      "answer": 2,
+      "explanation": "A power of a power multiplies the exponents: 2 × 4 = 8. Adding them gives a⁶, and a¹⁶ comes from raising a² to the 8th power by mistake, which is not the rule.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.power-of-product",
+      "concept": "exponent-rules",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is (2x)³?",
+      "choices": [
+        "8x³",
+        "6x³",
+        "2x³",
+        "8x"
+      ],
+      "answer": 0,
+      "explanation": "A power of a product raises each factor: 2³ = 8, and x³ stays. Multiplying 2 by 3 gives 6x³, and forgetting to cube the 2 gives 2x³.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.divide-powers",
+      "concept": "exponent-rules",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Simplify x⁷ ÷ x⁻².",
+      "choices": [
+        "x⁹",
+        "x⁵",
+        "x¹⁴",
+        "x⁻⁵"
+      ],
+      "answer": 0,
+      "explanation": "Dividing subtracts exponents: 7 − (−2) = 9. Treating the minus sign as a plus gives x⁵, and adding the exponents gives x¹⁴.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.simplify-negative-powers",
+      "concept": "exponent-rules",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "For nonzero x and y, what is (3x⁻²y)/(xy⁴) in simplest form?",
+      "choices": [
+        "3/(x²y³)",
+        "3x³/y³",
+        "3/(xy³)",
+        "3/(x³y³)"
+      ],
+      "answer": 3,
+      "explanation": "For x: −2 − 1 = −3. For y: 1 − 4 = −3. So the result is 3x⁻³y⁻³, which equals 3/(x³y³). Writing x² misses the x in the denominator, and 3x³/y³ flips the sign of the x exponent.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.square-root-49",
+      "concept": "radical-expression",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is √49?",
+      "choices": [
+        "±7",
+        "7",
+        "−7",
+        "24.5"
+      ],
+      "answer": 1,
+      "explanation": "The radical sign means the principal, nonnegative square root, so √49 = 7. ±7 are the two solutions of x² = 49, not the value of √49.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.cube-root-negative",
+      "concept": "radical-expression",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is ∛(−8)?",
+      "choices": [
+        "−2",
+        "2",
+        "−4",
+        "no real value"
+      ],
+      "answer": 0,
+      "explanation": "A cube root of a negative number is negative, since (−2)³ = −8. Cube roots exist for every real number, unlike even roots of negative numbers.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.root-of-square",
+      "concept": "radical-expression",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which expression equals √(a²) for every real number a?",
+      "choices": [
+        "a",
+        "−a",
+        "|a|",
+        "a²"
+      ],
+      "answer": 2,
+      "explanation": "The principal root is never negative, so √(a²) must be |a|. With a = −3, √9 = 3, which is |−3| and not −3. The choice a fails for negative a.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.simplify-sqrt-72",
+      "concept": "radical-expression",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Simplify √72.",
+      "choices": [
+        "36√2",
+        "6√2",
+        "8√9",
+        "12√6"
+      ],
+      "answer": 1,
+      "explanation": "72 = 36 × 2, and √36 = 6, so √72 = 6√2. Taking 36 out without square-rooting it gives 36√2. 8√9 equals 24, not 6√2.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.product-rule-radical",
+      "concept": "radical-expression",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement is correct for nonnegative a and b?",
+      "choices": [
+        "√(a + b) = √a + √b",
+        "√(a − b) = √a − √b",
+        "√(a/b) = √a + √b",
+        "√(ab) = √a × √b"
+      ],
+      "answer": 3,
+      "explanation": "The product rule for radicals multiplies the numbers under one root. A root of a sum is not the sum of roots: with a = b = 1, √2 is not 2.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.rationalize-one-over-root-three",
+      "concept": "radical-expression",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is 1/√3 with the denominator rationalized?",
+      "choices": [
+        "√3",
+        "1/3",
+        "√3/3",
+        "3√3"
+      ],
+      "answer": 2,
+      "explanation": "Multiply top and bottom by √3: (1 × √3)/(√3 × √3) = √3/3. Writing √3 alone, or 1/3, drops a factor of √3.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.root-of-fifth-power",
+      "concept": "radical-expression",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "For x ≥ 0, which expression equals √(x⁵)?",
+      "choices": [
+        "x²",
+        "x√x",
+        "√5 · x",
+        "x²√x"
+      ],
+      "answer": 3,
+      "explanation": "x⁵ = x⁴ × x, and √(x⁴) = x², so √(x⁵) = x²√x. Writing x√x, which is x^(3/2), takes the root of only part of the power.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.nine-to-half",
+      "concept": "rational-exponent",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is 9^(1/2)?",
+      "choices": [
+        "4.5",
+        "3",
+        "18",
+        "81"
+      ],
+      "answer": 1,
+      "explanation": "The exponent 1/2 means the square root, and √9 = 3. Multiplying 9 by 1/2 gives 4.5, and doubling gives 18.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.eight-to-third",
+      "concept": "rational-exponent",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is 8^(1/3)?",
+      "choices": [
+        "8/3",
+        "4",
+        "24",
+        "2"
+      ],
+      "answer": 3,
+      "explanation": "The denominator 3 means the cube root, and ∛8 = 2. Dividing 8 by 3 gives 8/3, and halving 8 gives 4, which uses the wrong number.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.x-to-three-quarters",
+      "concept": "rational-exponent",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which expression equals x^(3/4)?",
+      "choices": [
+        "⁴√(x³)",
+        "³√(x⁴)",
+        "√(x³)",
+        "4x³"
+      ],
+      "answer": 0,
+      "explanation": "The denominator 4 gives the fourth root and the numerator 3 gives the power, so x^(3/4) = ⁴√(x³). Swapping the numbers gives ³√(x⁴), which is x^(4/3).",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.27-to-two-thirds",
+      "concept": "rational-exponent",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is 27^(2/3)?",
+      "choices": [
+        "18",
+        "81",
+        "9",
+        "3"
+      ],
+      "answer": 2,
+      "explanation": "27^(2/3) = (∛27)² = 3² = 9. Multiplying 27 by 2 and dividing by 3 gives 18. 81 is 27 times 3, and 3 uses the root without the power.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.negative-quarter-power",
+      "concept": "rational-exponent",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is 16^(−1/4)?",
+      "choices": [
+        "1/2",
+        "−2",
+        "−1/2",
+        "−4"
+      ],
+      "answer": 0,
+      "explanation": "16^(1/4) = 2, and the negative exponent takes the reciprocal, so 16^(−1/4) = 1/2. The minus sign in the exponent does not make the answer negative.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.thirty-two-three-fifths",
+      "concept": "rational-exponent",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is 32^(3/5)?",
+      "choices": [
+        "96",
+        "19.2",
+        "8",
+        "2^(5/3)"
+      ],
+      "answer": 2,
+      "explanation": "The fifth root of 32 is 2, and 2³ = 8. Multiplying 32 by 3 gives 96, and 32 × 3/5 = 19.2 multiplies the exponent into the base. 2^(5/3) swaps the root and the power.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.add-fraction-exponents",
+      "concept": "rational-exponent",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Simplify x^(1/2) × x^(1/3) for x > 0.",
+      "choices": [
+        "x^(1/6)",
+        "x^(5/6)",
+        "x^(1/5)",
+        "x^(2/3)"
+      ],
+      "answer": 1,
+      "explanation": "Exponents add when the bases match: 1/2 + 1/3 = 3/6 + 2/6 = 5/6. Subtracting gives x^(1/6). Adding the tops and bottoms gives x^(1/5).",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.degree-of-cubic",
+      "concept": "polynomial-expression",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the degree of 4x³ − 2x + 7?",
+      "choices": [
+        "1",
+        "3",
+        "4",
+        "7"
+      ],
+      "answer": 1,
+      "explanation": "The degree is the highest power of the variable, which is 3 in 4x³. The 4 is a coefficient and 7 is a constant term, so neither sets the degree.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.which-is-polynomial",
+      "concept": "polynomial-expression",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is a polynomial?",
+      "choices": [
+        "x⁻² + 1",
+        "√x + 3",
+        "x² + 3x − 5",
+        "1/x"
+      ],
+      "answer": 2,
+      "explanation": "A polynomial has only whole-number powers of the variable. x⁻² is a negative power, √x is a fractional power, and 1/x is a negative power in disguise.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.leading-coefficient",
+      "concept": "polynomial-expression",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the leading coefficient of −5x² + 3x⁴ − x?",
+      "choices": [
+        "3",
+        "−5",
+        "−1",
+        "4"
+      ],
+      "answer": 0,
+      "explanation": "Write the terms by descending power: 3x⁴ − 5x² − x. The leading coefficient is the number in front of the highest power, 3. The first term written, −5, is not the leading coefficient.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.expand-binomials",
+      "concept": "polynomial-expression",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Expand (x + 3)(x − 2).",
+      "choices": [
+        "x² − x − 6",
+        "x² + x + 6",
+        "x² + x − 6",
+        "x² + 5x − 6"
+      ],
+      "answer": 2,
+      "explanation": "Multiply each term by each term: x² − 2x + 3x − 6 = x² + x − 6. Getting x² + 5x − 6 comes from adding the 3 and the 2 instead of combining −2x and 3x.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.subtract-polynomials",
+      "concept": "polynomial-expression",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Subtract: (5x² − 2x + 1) − (3x² − 4x − 6).",
+      "choices": [
+        "2x² + 2x − 5",
+        "2x² + 2x + 7",
+        "2x² − 6x + 7",
+        "8x² − 6x − 5"
+      ],
+      "answer": 1,
+      "explanation": "Subtract term by term: 5 − 3 = 2 for x², −2 + 4 = 2 for x, and 1 + 6 = 7 for the constant. Forgetting to change the sign of −6 gives −5 for the constant.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.square-binomial",
+      "concept": "polynomial-expression",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is (2x − 1)² written out?",
+      "choices": [
+        "4x² + 1",
+        "4x² − 2x + 1",
+        "2x² − 4x + 1",
+        "4x² − 4x + 1"
+      ],
+      "answer": 3,
+      "explanation": "(2x − 1)² = (2x − 1)(2x − 1) = 4x² − 2x − 2x + 1 = 4x² − 4x + 1. Squaring each term alone gives 4x² + 1, which drops the middle term.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.degree-of-product",
+      "concept": "polynomial-expression",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "What is the degree of (x² + 1)(x³ − 2x)(x − 4)?",
+      "choices": [
+        "3",
+        "5",
+        "6",
+        "9"
+      ],
+      "answer": 2,
+      "explanation": "Degrees add when polynomials multiply: 2 + 3 + 1 = 6. The leading term of the product is x² · x³ · x = x⁶. Stopping after two factors gives 5, and counting only the largest single factor gives 3.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.gcf-of-terms",
+      "concept": "factoring-polynomials",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the greatest common factor of 12x³ and 18x²?",
+      "choices": [
+        "6x²",
+        "2x²",
+        "6x³",
+        "36x⁵"
+      ],
+      "answer": 0,
+      "explanation": "6 divides both coefficients, and x² is the highest power of x that both terms share. 2x² is a common factor but not the greatest, since 6 also divides both.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.difference-of-squares-correct",
+      "concept": "factoring-polynomials",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which factorization is correct?",
+      "choices": [
+        "x² − 9 = (x − 9)(x + 1)",
+        "x² − 9 = (x − 3)²",
+        "x² − 9 = (x + 3)²",
+        "x² − 9 = (x − 3)(x + 3)"
+      ],
+      "answer": 3,
+      "explanation": "A difference of squares a² − b² factors as (a − b)(a + b), and 9 = 3². Squaring (x − 3) gives x² − 6x + 9, not x² − 9.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.factor-x-squared-plus-5x-6",
+      "concept": "factoring-polynomials",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Factor x² + 5x + 6.",
+      "choices": [
+        "(x + 1)(x + 6)",
+        "(x + 2)(x + 3)",
+        "(x − 2)(x − 3)",
+        "(x + 5)(x + 1)"
+      ],
+      "answer": 1,
+      "explanation": "Two numbers multiply to 6 and add to 5: 2 and 3. (x + 1)(x + 6) multiplies to 6 but adds to 7, and (x − 2)(x − 3) multiplies to 6 but adds to −5.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.factor-2x-squared",
+      "concept": "factoring-polynomials",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Factor 2x² − 7x + 3.",
+      "choices": [
+        "(2x − 1)(x − 3)",
+        "(2x + 1)(x + 3)",
+        "(2x − 3)(x − 1)",
+        "(x − 3)(x − 1)"
+      ],
+      "answer": 0,
+      "explanation": "Check by expanding: 2x² − 6x − x + 3 = 2x² − 7x + 3. (2x + 1)(x + 3) gives +7x in the middle, and (2x − 3)(x − 1) gives −5x.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.perfect-square-trinomial",
+      "concept": "factoring-polynomials",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which is the factored form of x² − 10x + 25?",
+      "choices": [
+        "(x + 5)²",
+        "(x − 25)(x + 1)",
+        "(x − 5)²",
+        "(x − 10)(x − 1)"
+      ],
+      "answer": 2,
+      "explanation": "25 is 5², and the middle term −10x is −2 × 5 × x, so the factor is (x − 5)². (x + 5)² has +10x, the wrong middle sign.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.factor-by-grouping",
+      "concept": "factoring-polynomials",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Factor x³ + 2x² + 3x + 6 by grouping.",
+      "choices": [
+        "(x² + 3)(x + 2)",
+        "(x² + 2)(x + 3)",
+        "(x² + 6)(x + 3)",
+        "(x + 2)(x + 3)"
+      ],
+      "answer": 0,
+      "explanation": "Group as (x³ + 2x²) + (3x + 6) = x²(x + 2) + 3(x + 2) = (x² + 3)(x + 2). (x² + 2)(x + 3) expands to x³ + 3x² + 2x + 6, which does not match.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.factor-completely",
+      "concept": "factoring-polynomials",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which factorization of 6x² − 54 is complete?",
+      "choices": [
+        "6(x² − 9)",
+        "6(x − 3)(x + 3)",
+        "(6x − 18)(x + 3)",
+        "3(2x² − 18)"
+      ],
+      "answer": 1,
+      "explanation": "6(x² − 9) is not finished, since x² − 9 factors further. (6x − 18)(x + 3) still has a common factor of 6 in its first part, and 3(2x² − 18) still has a common factor of 2 inside.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.undefined-value",
+      "concept": "rational-expression",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "For which value of x is (x + 2)/(x − 5) undefined?",
+      "choices": [
+        "5",
+        "−2",
+        "−5",
+        "0"
+      ],
+      "answer": 0,
+      "explanation": "The expression is undefined where the denominator is zero, so x − 5 = 0 and x = 5. The value −2 makes the numerator zero, which leaves the expression defined and equal to 0.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.cancel-difference-of-squares",
+      "concept": "rational-expression",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Simplify (x² − 4)/(x − 2) for x ≠ 2.",
+      "choices": [
+        "x − 2",
+        "x + 2",
+        "x² − 2",
+        "(x + 2)/(x − 2)"
+      ],
+      "answer": 1,
+      "explanation": "x² − 4 = (x − 2)(x + 2), and the common factor x − 2 cancels. Leaving the fraction unfactored keeps (x + 2)/(x − 2), and x² − 2 wrongly subtracts 2 from the square.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.which-is-rational",
+      "concept": "rational-expression",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is a rational expression?",
+      "choices": [
+        "√x/(x + 1)",
+        "x^(1/2) + 1",
+        "(x² + 1)/(2x − 3)",
+        "|x|/4"
+      ],
+      "answer": 2,
+      "explanation": "A rational expression is a polynomial divided by a polynomial. √x and |x| are not polynomials, and x^(1/2) + 1 is not a quotient at all.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.multiply-rational",
+      "concept": "rational-expression",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Multiply: x/(x + 1) × (x + 1)/(x − 3).",
+      "choices": [
+        "1/(x − 3)",
+        "x(x + 1)/(x − 3)",
+        "x/(x − 3)",
+        "x/((x + 1)(x − 3))"
+      ],
+      "answer": 2,
+      "explanation": "Multiply tops and bottoms, then cancel the common factor x + 1, with x ≠ −1 and x ≠ 3. Leaving x + 1 in the numerator or the denominator misses the cancellation.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.add-same-denominator",
+      "concept": "rational-expression",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Add: 1/x + 2/x.",
+      "choices": [
+        "3/x²",
+        "3/x",
+        "3/(2x)",
+        "2/x"
+      ],
+      "answer": 1,
+      "explanation": "With a common denominator, add the numerators and keep the denominator: (1 + 2)/x = 3/x. Adding the denominators gives 3/(2x), and multiplying them gives 3/x².",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.divide-rational",
+      "concept": "rational-expression",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Divide: (x² − 1)/x ÷ (x + 1)/x².",
+      "choices": [
+        "x − 1",
+        "x(x + 1)",
+        "x(x − 1)",
+        "(x − 1)/x³"
+      ],
+      "answer": 2,
+      "explanation": "Multiply by the reciprocal: (x² − 1)/x × x²/(x + 1). Factor x² − 1 as (x − 1)(x + 1), cancel x + 1 and one x, and the result is x(x − 1). Forgetting to flip the second fraction gives a different result.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.order-factor-2x3-minus-8x",
+      "concept": "factoring-polynomials",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps for factoring 2x³ − 8x completely in the right order.",
+      "steps": [
+        "Factor out the greatest common factor 2x to get 2x(x² − 4)",
+        "Recognize x² − 4 as a difference of two squares",
+        "Write x² − 4 as (x − 2)(x + 2) to get 2x(x − 2)(x + 2)"
+      ],
+      "explanation": "Remove the greatest common factor first, then look for patterns in what is left. The difference of squares can be recognized only after the 2x has been pulled out.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: Assumes GCF is factored first, then the difference of squares is recognized."
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.order-add-rational",
+      "concept": "rational-expression",
+      "kind": "order",
+      "difficulty": 3,
+      "prompt": "Put these steps for adding 3/(x² − 1) + 2/(x − 1) in the right order.",
+      "steps": [
+        "Factor each denominator: x² − 1 = (x − 1)(x + 1), and x − 1 stays as it is",
+        "Build the least common denominator (x − 1)(x + 1)",
+        "Rewrite 2/(x − 1) over that denominator by multiplying top and bottom by x + 1",
+        "Add the numerators: (3 + 2(x + 1))/((x − 1)(x + 1)), which simplifies to (2x + 5)/(x² − 1)"
+      ],
+      "explanation": "Factor first so the common denominator shows. Each fraction is rewritten over it, and only then can the numerators be added.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "precalculus.algebra-foundations.order-simplify-sqrt-48",
+      "concept": "radical-expression",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps for simplifying √48 in the right order.",
+      "steps": [
+        "Write 48 as 16 × 3, using the largest perfect square factor",
+        "Split the root: √48 = √16 × √3",
+        "Take the root of the perfect square, √16 = 4, to get 4√3"
+      ],
+      "explanation": "Find the largest perfect square factor first. The split into two roots comes next, and then the perfect square is replaced by its root.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    }
+  ],
+  "artifacts": []
+}

@@ -9,6 +9,7 @@ The bank is questions and the ideas they check, in plain JSON files. `FORMAT.md`
 | Questions on a topic that already has a pack | `items` in `subjects/<subject>/<pack>/pack.json` |
 | A topic its subject doesn't have yet | A new folder `subjects/<subject>/<pack>/` with a `pack.json` |
 | A subject | A new folder `subjects/<subject>/` with a `subject.json`, then its first pack |
+| What a subject should cover | `plan/<subject>.json`, the list of packs to write (`plan/README.md`) |
 
 Every question checks one concept in its own pack. If the idea isn't a concept there yet, add the concept first.
 
@@ -30,6 +31,7 @@ The files in `pipeline/prompts/` are instructions for agents: `author.md` writes
 ## Rules
 
 - Write every question from the idea. Never copy or reword a question or a passage from a textbook, an exam or a course's materials.
+- An agent's only outside reading is `node tools/ref.mjs` (`pipeline/prompts/sources.md`): Wikipedia and Wikibooks for what a topic covers, Wikidata for names. Run `node tools/ref.mjs check` on a pack before opening a pull request.
 - A question has one right answer. One that two careful people could answer differently gets reworded or rejected.
 - Once a question is on `main`, its `id` is never reused or renamed, and a concept's `name` never changes. Apps keep students' progress by them.
 - Everything in the bank is CC0 1.0. By opening a pull request you release what you add under it.

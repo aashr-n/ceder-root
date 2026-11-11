@@ -1,0 +1,1442 @@
+{
+  "formatVersion": 1,
+  "id": "biology.cancer-biology",
+  "subject": "biology",
+  "title": "Cell cycle control and cancer",
+  "summary": "How checkpoints and cyclin-dependent kinases decide when a cell divides, and how mutations in the genes that control division lead to cancer.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "cell-cycle-checkpoint",
+      "name": "Cell cycle checkpoint",
+      "aliases": [
+        "cell cycle checkpoints",
+        "cell-cycle checkpoints"
+      ],
+      "summary": "A checkpoint is a control point where the cell checks its own condition, such as DNA copying, damage and chromosome attachment, before it moves on.",
+      "requires": [
+        "cell-cycle-regulation"
+      ],
+      "elements": [
+        {
+          "id": "g1-checkpoint",
+          "name": "G1 checkpoint",
+          "aliases": [
+            "restriction point",
+            "G1 restriction checkpoint"
+          ]
+        },
+        {
+          "id": "g2-checkpoint",
+          "name": "G2 checkpoint"
+        },
+        {
+          "id": "spindle-checkpoint",
+          "name": "Spindle assembly checkpoint",
+          "aliases": [
+            "spindle checkpoint",
+            "metaphase checkpoint"
+          ]
+        },
+        {
+          "id": "dna-damage-response",
+          "name": "DNA damage response"
+        }
+      ],
+      "explain": {
+        "text": "A cell cycle checkpoint is a point where the cell checks its own condition before going on. The three main ones are the G1 checkpoint, which decides whether to start copying DNA; the G2 checkpoint, which checks that DNA is fully copied and undamaged before mitosis; and the spindle assembly checkpoint, which holds the cell in metaphase until every chromosome is attached to the spindle. A checkpoint responds to conditions rather than running on a timer. When it finds a problem, the cell pauses, repairs the damage and carries on, or, if the damage cannot be fixed, it may die. Checkpoints keep damaged chromosomes from reaching daughter cells."
+      },
+      "misconceptions": [
+        {
+          "id": "ck-only-damage",
+          "claim": "A cell stops at a checkpoint only when its DNA is damaged.",
+          "correction": "DNA damage is one check. Checkpoints also ask whether the cell is big enough, has growth signals, and has every chromosome attached to the spindle."
+        },
+        {
+          "id": "ck-timer",
+          "claim": "A checkpoint is a timer that holds the cell for a set time.",
+          "correction": "A checkpoint checks conditions. The cell moves on when they are met, not after a fixed number of hours."
+        },
+        {
+          "id": "ck-arrest-means-death",
+          "claim": "A cell held at a checkpoint is dying.",
+          "correction": "A held cell can repair the problem and go on, rest in a state called G0, or die by apoptosis if the damage cannot be fixed. Being held is a pause."
+        }
+      ]
+    },
+    {
+      "id": "cyclin-dependent-kinase",
+      "name": "Cyclin-dependent kinase",
+      "aliases": [
+        "CDK",
+        "CDKs"
+      ],
+      "summary": "A cyclin-dependent kinase is an enzyme that adds phosphate groups to target proteins, and it is inactive until a cyclin partner binds to it.",
+      "requires": [
+        "cell-cycle-regulation"
+      ],
+      "elements": [
+        {
+          "id": "cyclin-binding",
+          "name": "Cyclin binding"
+        },
+        {
+          "id": "phosphorylation",
+          "name": "Phosphorylation of targets"
+        },
+        {
+          "id": "cdk-cyclin-pairs",
+          "name": "Cyclin-CDK pairs"
+        },
+        {
+          "id": "g1-s-switch",
+          "name": "G1-to-S switch"
+        }
+      ],
+      "explain": {
+        "text": "A cyclin-dependent kinase, or CDK, is an enzyme that adds phosphate groups to other proteins and so switches them on or off. CDK levels stay roughly steady through the cell cycle, but the CDK is inactive until a cyclin binds to it and an activating phosphate is added. Cyclin levels rise and fall, so each cyclin-CDK pair switches on at a particular time. A G1 cyclin with CDK4 or CDK6 starts the approach to DNA copying, cyclin E with CDK2 completes the switch into S phase, and cyclin B with CDK1 drives entry into mitosis. Because a CDK adds a phosphate, it is a kinase, the opposite of a phosphatase, which removes phosphates."
+      },
+      "misconceptions": [
+        {
+          "id": "cdk-levels-cycle",
+          "claim": "The CDK protein itself rises and falls in amount through the cell cycle.",
+          "correction": "CDK levels stay about the same. The cyclin partner rises and falls, and binding it is what switches the CDK on."
+        },
+        {
+          "id": "kinase-removes-phosphate",
+          "claim": "A kinase removes phosphate groups from proteins.",
+          "correction": "A kinase adds a phosphate group, taken from ATP, to a target protein. Removing phosphates is the job of phosphatases."
+        },
+        {
+          "id": "cyclin-is-enzyme",
+          "claim": "The cyclin is the part that does the phosphorylating.",
+          "correction": "The CDK is the enzyme that adds phosphates. The cyclin is the regulatory partner that activates it and steers it toward particular targets."
+        }
+      ]
+    },
+    {
+      "id": "proto-oncogene",
+      "name": "Proto-oncogene",
+      "aliases": [
+        "proto-oncogenes",
+        "protooncogene",
+        "protooncogenes"
+      ],
+      "summary": "A proto-oncogene is a normal gene that promotes growth and division, and it becomes a cancer-promoting oncogene when a change makes it overactive.",
+      "requires": [
+        "cell-cycle-regulation"
+      ],
+      "elements": [
+        {
+          "id": "normal-function",
+          "name": "Normal function"
+        },
+        {
+          "id": "gain-of-function",
+          "name": "Gain of function"
+        },
+        {
+          "id": "dominance",
+          "name": "Dominant action"
+        },
+        {
+          "id": "activation-routes",
+          "name": "Routes of activation",
+          "aliases": [
+            "activation"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "A proto-oncogene is a normal gene whose protein helps a cell grow and divide when signals call for it. It is not a cancer gene in healthy tissue. When a change makes the gene overactive, or makes too much of its protein, the gene becomes an oncogene, which pushes cells to divide when they should not. This is a gain of function, and one altered copy is usually enough, because its effect is dominant over the normal copy. A proto-oncogene can be activated by a point mutation in the gene, by extra copies of it, or by a chromosome translocation that places it next to a strong switch."
+      },
+      "misconceptions": [
+        {
+          "id": "oncogene-harmful-from-birth",
+          "claim": "A proto-oncogene is a cancer gene from the start, harmful in healthy cells.",
+          "correction": "A proto-oncogene is a normal gene that helps cells grow and divide. It becomes harmful only after a change that makes it overactive."
+        },
+        {
+          "id": "oncogene-needs-both-copies",
+          "claim": "Both copies of a proto-oncogene must be changed before it can drive cancer.",
+          "correction": "One changed copy can be enough. Its overactive protein acts even alongside a normal copy, so the change is dominant."
+        },
+        {
+          "id": "oncogene-loss-of-function",
+          "claim": "Changes in a proto-oncogene switch its protein off, which causes cancer.",
+          "correction": "Cancer-causing changes in proto-oncogenes make the protein too active. Losing the protein is the tumor suppressor problem."
+        }
+      ]
+    },
+    {
+      "id": "tumor-suppressor-gene",
+      "name": "Tumor suppressor gene",
+      "aliases": [
+        "tumor suppressor genes",
+        "tumour suppressor gene",
+        "tumour suppressor genes",
+        "tumor suppressor",
+        "tumour suppressor"
+      ],
+      "summary": "A tumor suppressor gene makes a protein that restrains division or repairs DNA, and cancer usually needs both copies of the gene to be lost.",
+      "requires": [
+        "cell-cycle-regulation"
+      ],
+      "elements": [
+        {
+          "id": "two-hit",
+          "name": "Two-hit hypothesis",
+          "aliases": [
+            "two-hit idea",
+            "Knudson's two-hit hypothesis"
+          ]
+        },
+        {
+          "id": "loss-of-function",
+          "name": "Loss of function"
+        },
+        {
+          "id": "p53",
+          "name": "p53"
+        },
+        {
+          "id": "caretaker-genes",
+          "name": "Caretaker genes"
+        }
+      ],
+      "explain": {
+        "text": "A tumor suppressor gene makes a protein that holds back cell division, repairs DNA, or triggers death in damaged cells. Its protein works as a brake, so cancer arises when the brake is lost. Knudson's two-hit idea says that both copies of the gene usually must be damaged, because one working copy makes enough protein. A person who inherits one damaged copy starts with one hit already in every cell, which is why some inherited cancers appear early. Caretaker genes repair DNA, while gatekeeper genes control division directly. The protein p53 is a well-known example, and it helps stop damaged cells from dividing."
+      },
+      "misconceptions": [
+        {
+          "id": "one-hit-enough",
+          "claim": "Damage to one copy of a tumor suppressor gene is enough to cause cancer.",
+          "correction": "Usually both copies must be lost. The other copy normally still makes enough protein to keep the brake working."
+        },
+        {
+          "id": "suppressor-overactive",
+          "claim": "A tumor suppressor causes cancer when it is switched on too much.",
+          "correction": "Tumor suppressors cause cancer when their protein is lost. Too much activity is the oncogene problem."
+        },
+        {
+          "id": "suppressor-kills-cells",
+          "claim": "Tumor suppressors kill cancer cells directly.",
+          "correction": "Most tumor suppressors slow division, repair DNA, or trigger death in damaged cells. They work inside the cell and do not attack tumor cells."
+        }
+      ]
+    },
+    {
+      "id": "metastasis",
+      "name": "Metastasis",
+      "aliases": [
+        "metastases",
+        "metastatic spread"
+      ],
+      "summary": "Metastasis is the spread of cancer cells from a first tumor to distant sites, where they form new tumors.",
+      "requires": [
+        "cell-membrane"
+      ],
+      "elements": [
+        {
+          "id": "invasion",
+          "name": "Local invasion"
+        },
+        {
+          "id": "intravasation",
+          "name": "Intravasation and extravasation"
+        },
+        {
+          "id": "colonization",
+          "name": "Colonization"
+        },
+        {
+          "id": "common-sites",
+          "name": "Common sites"
+        }
+      ],
+      "explain": {
+        "text": "Metastasis is the spread of cancer cells from the first tumor to distant parts of the body, where they form new tumors. It happens in a series of steps. Cells loosen their attachments and invade the surrounding tissue, enter blood or lymph vessels, survive the trip, leave the vessel and grow in a new organ. The most common sites are the lungs, liver, brain and bone. Metastatic tumors are made of cells descended from the first tumor, so they carry its genetic changes. Benign tumors usually stay in one place and do not invade, which is why they are less dangerous."
+      },
+      "misconceptions": [
+        {
+          "id": "benign-lumps-spread",
+          "claim": "Any growing lump can spread to other organs.",
+          "correction": "Benign tumors usually stay in one place. Spread needs cells that invade tissue and survive in blood or lymph."
+        },
+        {
+          "id": "metastasis-new-cancer",
+          "claim": "Metastases are new cancers that start separately in each organ.",
+          "correction": "Metastases come from cells that left the first tumor, so they carry its genetic changes."
+        },
+        {
+          "id": "blood-only-spread",
+          "claim": "Cancer spreads only through the bloodstream.",
+          "correction": "Cancer cells can spread through blood vessels, through lymph vessels, or by growing directly into nearby tissue."
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "biology.cancer-biology.checkpoint-spindle-holds",
+      "concept": "cell-cycle-checkpoint",
+      "element": "spindle-checkpoint",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which checkpoint holds a cell in metaphase until every chromosome is attached to the spindle?",
+      "choices": [
+        "The G1 checkpoint, which decides whether to start copying DNA",
+        "The spindle assembly checkpoint, before anaphase begins",
+        "The G2 checkpoint, which checks the cell's size before it divides",
+        "The checkpoint that checks DNA damage, and nothing else"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "ck-only-damage"
+      ],
+      "explanation": "The spindle assembly checkpoint sits at metaphase. It holds anaphase back until each chromosome is pulled by spindle fibres from both poles, so the chromosomes do not separate loosely. The G1 checkpoint comes long before the spindle forms, and the G2 checkpoint is about DNA copying and damage, not spindle attachment.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.checkpoint-g1-restriction",
+      "concept": "cell-cycle-checkpoint",
+      "element": "g1-checkpoint",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In mammalian cells, the G1 checkpoint is also called which of these?",
+      "choices": [
+        "The metaphase plate",
+        "The spindle checkpoint",
+        "The restriction point",
+        "The G0 resting state"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Mammalian cells call the G1 checkpoint the restriction point; yeast call the same step Start. The metaphase plate is a structure in the cell, not a checkpoint. The spindle checkpoint is a different checkpoint, in metaphase. G0 is a resting state that some cells enter from G1.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.checkpoint-g2-held",
+      "concept": "cell-cycle-checkpoint",
+      "element": "g2-checkpoint",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A cell finishes copying its DNA, but one stretch is still unreplicated. What is most likely to happen at the G2 checkpoint?",
+      "choices": [
+        "The cell skips mitosis and goes straight back to G1",
+        "The cell holds in G2 until the DNA is finished and checked",
+        "The cell enters mitosis early and sorts the DNA into the daughters",
+        "The cell dies at once because its genome is incomplete"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "At the G2 checkpoint the cell is held until replication is complete and any damage is repaired, so it does not enter mitosis with broken chromosomes. Dying at once treats a pause as death. An arrested cell can usually finish the job and carry on.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.checkpoint-g1-growth-signal",
+      "concept": "cell-cycle-checkpoint",
+      "element": "g1-checkpoint",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A cell reaches the G1 checkpoint with too little growth signal. Which outcome matches what a checkpoint does?",
+      "choices": [
+        "The cell moves on after a usual fixed interval, whatever the signal",
+        "The cell waits in G1 at the checkpoint until the signal arrives",
+        "The cell starts copying its DNA with the signal still absent",
+        "The cell dies, since a missing signal counts as damage to it"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "ck-timer",
+        null,
+        null,
+        null
+      ],
+      "explanation": "A checkpoint checks conditions. The G1 checkpoint keeps the cell in G1 until growth signals and nutrients are adequate, rather than running on a fixed timer. A cell that copies DNA without the signal has skipped the check, and a missing signal does not mean the cell is dying.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.checkpoint-several-checks",
+      "concept": "cell-cycle-checkpoint",
+      "element": "spindle-checkpoint",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A cell with undamaged DNA holds at the spindle checkpoint because one chromosome is not attached. What does this show?",
+      "choices": [
+        "Checkpoints check several things, including spindle attachment",
+        "Checkpoints check DNA damage, and attachment is the same check",
+        "The spindle checkpoint is a timer that holds the cell for a set time",
+        "A cell stopped at any checkpoint is dying"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ck-only-damage",
+        "ck-timer",
+        "ck-arrest-means-death"
+      ],
+      "explanation": "Undamaged DNA can still be held, because checkpoints respond to several kinds of problem. Spindle attachment is checked separately from DNA damage, and it is a condition the cell must meet, not a timer. A held cell is paused, not dying.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.checkpoint-timer-error",
+      "concept": "cell-cycle-checkpoint",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says a checkpoint is a timer that stops the cell for a set time. What is wrong with that?",
+      "choices": [
+        "A checkpoint advances when conditions are met, not after a fixed time",
+        "A checkpoint checks DNA, so the timing of the cell does not come into it",
+        "A checkpoint is a timer, and a cell that runs out of time dies",
+        "A checkpoint is right, because a cell's timing is set in advance"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ck-only-damage",
+        null,
+        "ck-timer"
+      ],
+      "explanation": "Checkpoints respond to conditions: the cell moves on when its DNA is copied and undamaged, when spindle fibres are attached, and so on. A set time would let a cell go on without the check. Agreeing that the timing is set in advance is the most tempting error, because it is what the student already said.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.checkpoint-g2-order",
+      "concept": "cell-cycle-checkpoint",
+      "element": "dna-damage-response",
+      "kind": "order",
+      "difficulty": 3,
+      "prompt": "Put these steps in order, from a DNA break in G1 to the cell being held in G1.",
+      "steps": [
+        "ATM or ATR kinases sense the DNA break",
+        "Chk1 or Chk2 is activated, and it blocks Cdc25A and stabilizes p53",
+        "p53 switches on the gene for p21",
+        "p21 blocks cyclin E-CDK2, so the cell stays in G1"
+      ],
+      "explanation": "ATM or ATR sense the break and switch on Chk1 and Chk2. Those kinases block the phosphatase Cdc25A and stabilize p53, which turns on p21. p21 then stops cyclin E-CDK2, so the cell is held in G1.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cancer-biology.checkpoint-broken",
+      "concept": "cell-cycle-checkpoint",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A mutant cell has a broken checkpoint and keeps dividing with damaged DNA. Which conclusion is best supported?",
+      "choices": [
+        "Checkpoints mainly exist to end a damaged cell's life at once",
+        "Without the checkpoint, damaged DNA is copied into daughter cells",
+        "The checkpoint's job is to hold the cell at a set size",
+        "The checkpoint was a timer, so the damage was going to be copied anyway"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "ck-timer"
+      ],
+      "explanation": "A checkpoint that fails lets a cell with damage copy that damage into its daughters, which is why checkpoints matter. Checkpoints usually pause the cell, and death is only one later outcome. A checkpoint is not a timer, and its job is not to set cell size.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.cdk-needs-partner",
+      "concept": "cyclin-dependent-kinase",
+      "element": "cyclin-binding",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What must a CDK bind before it can phosphorylate its targets?",
+      "choices": [
+        "A phosphatase enzyme that removes its phosphates",
+        "A second copy of the CDK protein",
+        "A cyclin protein, its regulatory partner",
+        "A tumor suppressor protein that blocks its active site"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A CDK is inactive until a cyclin binds to it, and the complex is then phosphorylated on a specific site, which fully switches it on. The phosphatase is the opposite enzyme: it removes phosphate groups, so it cannot be the partner a CDK needs.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.cdk-the-kinase",
+      "concept": "cyclin-dependent-kinase",
+      "element": "phosphorylation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In a cyclin-CDK complex, which part is the kinase that adds phosphate groups to targets?",
+      "choices": [
+        "The cyclin, which carries the phosphate to targets",
+        "The CDK itself, the kinase that adds phosphates",
+        "The phosphatase, which removes phosphates from targets",
+        "A ribosome, which links amino acids in a chain"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "cyclin-is-enzyme",
+        null,
+        null,
+        null
+      ],
+      "explanation": "The CDK is the kinase: it transfers a phosphate from ATP to its target. The cyclin partner sets timing and targets and does not do the chemistry. The phosphatase is the opposite enzyme, and a ribosome builds proteins rather than adding phosphates.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.cdk-cyclin-is-enzyme",
+      "concept": "cyclin-dependent-kinase",
+      "element": "cdk-cyclin-pairs",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says the cyclin is the part that adds the phosphates. What is wrong with that?",
+      "choices": [
+        "The CDK adds phosphates, and the cyclin regulates the CDK",
+        "The cyclin is the enzyme, and the CDK holds the target in place",
+        "The cyclin and CDK both add phosphates, so the cyclin is a copy",
+        "The cyclin removes phosphates, so the CDK adds them back"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "cyclin-is-enzyme",
+        null,
+        null
+      ],
+      "explanation": "The CDK is the kinase. The cyclin binds it, switches it on and steers it toward particular targets, but it does not add the phosphate itself. Treating the cyclin as the enzyme is the most tempting mistake, since cyclin levels are the part that rises and falls.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.cdk-levels-steady",
+      "concept": "cyclin-dependent-kinase",
+      "element": "cyclin-binding",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says the CDK protein rises before mitosis and falls after it. What is the better correction?",
+      "choices": [
+        "The CDK is active all the time, and targets change",
+        "The CDK rises and falls, so it is switched on at the right time",
+        "The CDK is switched on when phosphate is removed from its active site",
+        "Cyclin rises and falls, and binding it switches the CDK on"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        "cdk-levels-cycle",
+        null,
+        null
+      ],
+      "explanation": "CDK levels stay fairly steady. Cyclin levels rise and fall, and a CDK turns on when a cyclin binds it and an activating phosphate is added. Removing phosphate from a CDK is not what switches it on.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.cdk-adds-phosphate",
+      "concept": "cyclin-dependent-kinase",
+      "element": "phosphorylation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A CDK acts on a target protein in the cell. What change does it make to that target?",
+      "choices": [
+        "It removes a phosphate group from the target, switching it off",
+        "It adds a phosphate group, taken from ATP, to the target",
+        "It cuts the target protein's chain at one site",
+        "It joins the target to a cyclin, which carries it to the nucleus"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "kinase-removes-phosphate",
+        null,
+        null,
+        null
+      ],
+      "explanation": "CDKs are kinases, so the change they make is adding a phosphate group, taken from ATP. Removing a phosphate is the phosphatase's job, the opposite. Cutting a chain and joining a target to a cyclin are not what a CDK does to its target.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.cdk-drug-binding",
+      "concept": "cyclin-dependent-kinase",
+      "element": "cyclin-binding",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A drug stops a cyclin from binding its CDK. What is the most direct result?",
+      "choices": [
+        "The complex cannot form, so targets are not phosphorylated",
+        "The CDK is destroyed, so its level falls across the cell",
+        "The CDK starts removing phosphates from its targets",
+        "The cell speeds up, because the CDK is no longer holding it back"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "cdk-levels-cycle",
+        "kinase-removes-phosphate",
+        null
+      ],
+      "explanation": "Without its cyclin, a CDK cannot form an active complex, so it cannot phosphorylate targets. The CDK protein is still present, so its level does not fall, and a CDK does not start removing phosphates.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.cdk1-cyclin-b",
+      "concept": "cyclin-dependent-kinase",
+      "element": "cdk-cyclin-pairs",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Cyclin B levels peak in late G2 and fall after anaphase. What does this pattern suggest about CDK1 in the cyclin B-CDK1 complex?",
+      "choices": [
+        "CDK1 is active while cyclin B is bound, so its activity tracks cyclin B",
+        "CDK1 levels peak and fall with cyclin B, so the CDK itself is switched off",
+        "CDK1 is active at all times, and cyclin B changes which targets it hits",
+        "CDK1 is a phosphatase whose activity drops when cyclin B falls"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "cdk-levels-cycle",
+        null,
+        "kinase-removes-phosphate"
+      ],
+      "explanation": "CDK1 is a kinase whose activity depends on the cyclin it is bound to, so activity falls when cyclin B is lost even though the CDK protein is still there. The idea that the CDK's own level tracks cyclin B is the tempting one, and it is wrong because CDK levels stay roughly steady.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.cdk-g1-s-order",
+      "concept": "cyclin-dependent-kinase",
+      "element": "g1-s-switch",
+      "kind": "order",
+      "difficulty": 3,
+      "prompt": "Put these steps of the G1-to-S switch in order.",
+      "steps": [
+        "Growth signals raise the level of cyclin D",
+        "Cyclin D binds CDK4 and CDK6 to form an active complex",
+        "The complex phosphorylates Rb, which releases E2F",
+        "E2F switches on cyclin E, which binds CDK2",
+        "Cyclin E-CDK2 phosphorylates Rb at all its sites, locking in the switch"
+      ],
+      "explanation": "Growth signals raise cyclin D, which binds CDK4 and CDK6. That complex phosphorylates Rb, freeing E2F, and E2F switches on cyclin E. Cyclin E-CDK2 then phosphorylates Rb at all its sites, so the cell is committed to S phase and cannot go back.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Step 0 'The complex' is read as the cyclin D-CDK4/6 complex from the previous step."
+      }
+    },
+    {
+      "id": "biology.cancer-biology.oncogene-normal-job",
+      "concept": "proto-oncogene",
+      "element": "normal-function",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the normal job of a proto-oncogene in a healthy cell?",
+      "choices": [
+        "It promotes cell growth and division when needed",
+        "It repairs mismatched bases in newly copied DNA",
+        "It is a cancer gene that drives tumors from birth",
+        "It breaks down the cyclins that drive the cycle"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "oncogene-harmful-from-birth",
+        null
+      ],
+      "explanation": "A proto-oncogene is a normal gene whose protein helps cells grow and divide when signals call for it. It becomes harmful only after a change, so the idea that it is a cancer gene from birth is the tempting mistake. Repairing mismatched bases is the job of a different system.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.oncogene-change-type",
+      "concept": "proto-oncogene",
+      "element": "gain-of-function",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which change turns a proto-oncogene into a cancer-promoting oncogene?",
+      "choices": [
+        "A gain of function that makes the protein overactive",
+        "Loss of both copies, so the protein is absent",
+        "A change that adds an early stop signal to the gene",
+        "A repair enzyme that fixes the DNA more often"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "oncogene-loss-of-function",
+        "oncogene-loss-of-function",
+        null
+      ],
+      "explanation": "A gain-of-function change, such as a point mutation, extra copies or a translocation, makes the protein more active or more plentiful than normal. Losing the protein is the tumor suppressor problem, so the loss ideas are the tempting wrong picks.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.oncogene-one-copy",
+      "concept": "proto-oncogene",
+      "element": "dominance",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A cell has one altered copy of a proto-oncogene and one normal copy. What does the altered copy usually do?",
+      "choices": [
+        "It makes an overactive protein, even alongside the normal copy",
+        "It does nothing, because the normal copy covers for it",
+        "It stops the normal copy from being made at all, in every cell",
+        "It makes no protein, because one copy is not enough"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "oncogene-needs-both-copies",
+        null,
+        null
+      ],
+      "explanation": "The gain of function is dominant: the altered protein is overactive while the normal copy is still present, so one changed copy can drive growth. Believing that the normal copy covers for it is the two-hit idea, which applies to tumor suppressors instead.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.oncogene-cancer-from-birth",
+      "concept": "proto-oncogene",
+      "element": "normal-function",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says a proto-oncogene is a cancer gene from birth. What is the better description?",
+      "choices": [
+        "A normal growth gene that becomes harmful when it is changed",
+        "A gene that makes cells invade other tissues from the start",
+        "A gene that repairs DNA and so prevents cancer from starting",
+        "A gene that stays switched off in healthy cells and turns on in cancer"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Proto-oncogenes are normal and needed for growth. They cause trouble when a change makes them overactive. The idea that they are cancer genes from the start is the common mistake, and the DNA-repair description belongs to other genes.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.oncogene-stuck-on",
+      "concept": "proto-oncogene",
+      "element": "gain-of-function",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A mutation leaves a proto-oncogene's protein stuck in the active state. What is the expected effect on the cell?",
+      "choices": [
+        "Growth and division signals keep coming, which can drive a tumor",
+        "Less growth, because the stuck protein cannot do its job",
+        "No change, because the normal copy cancels out the altered one",
+        "Faster DNA repair in the cell, so DNA damage is removed sooner and less often"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "oncogene-loss-of-function",
+        "oncogene-needs-both-copies",
+        null
+      ],
+      "explanation": "A protein stuck in the active state keeps sending growth signals, which is the gain-of-function problem behind many tumors. The idea that a stuck protein means less growth is the loss-of-function mix-up, which fits tumor suppressors instead.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.oncogene-tell-apart",
+      "concept": "proto-oncogene",
+      "element": "dominance",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Gene A makes a growth signal. A mutation makes the signal keep firing. What kind of gene is A, and why does one changed copy matter?",
+      "choices": [
+        "A proto-oncogene, since one active changed copy is enough",
+        "A tumor suppressor, since it needs both copies changed",
+        "A proto-oncogene, since both copies must change first",
+        "A housekeeping gene, since growth signals are normal"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "oncogene-needs-both-copies",
+        null
+      ],
+      "explanation": "Gene A is a proto-oncogene, because its normal product drives growth and one overactive copy is enough. A tumor suppressor needs both copies changed. The both-copies answer is tempting because it borrows that rule, which does not apply to growth-promoting genes.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.oncogene-gain-meaning",
+      "concept": "proto-oncogene",
+      "element": "gain-of-function",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why is a changed proto-oncogene called a gain-of-function mutation?",
+      "choices": [
+        "The changed gene makes more active protein than the normal gene did",
+        "The changed gene makes a protein that the cell can no longer use well",
+        "The cell gains a stronger repair system for its DNA",
+        "The cell loses one copy of the gene from a chromosome"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "oncogene-loss-of-function",
+        null,
+        null
+      ],
+      "explanation": "Gain of function means the change adds activity, so the protein works more or is made in greater amounts than before. A change that makes the protein unusable is the opposite, a loss of function.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.oncogene-activation-order",
+      "concept": "proto-oncogene",
+      "element": "activation-routes",
+      "kind": "order",
+      "difficulty": 3,
+      "prompt": "Put these steps in order, from a normal proto-oncogene to a tumor.",
+      "steps": [
+        "A normal proto-oncogene helps cells grow and divide when signaled",
+        "A point mutation, gene amplification or translocation changes the gene",
+        "The changed gene makes too much active protein, or keeps it active",
+        "The cell keeps dividing when it should stop",
+        "Further changes in that lineage can build up into a tumor"
+      ],
+      "explanation": "A proto-oncogene starts as a normal growth gene. A change turns it into an oncogene, which makes too much active protein, so the cell keeps dividing when it should stop. Further changes in that lineage can build up into a tumor.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cancer-biology.suppressor-job",
+      "concept": "tumor-suppressor-gene",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does a tumor suppressor gene's protein usually do?",
+      "choices": [
+        "It holds back cell division or repairs damaged DNA",
+        "It drives cell division when growth signals arrive",
+        "It attacks and kills tumor cells, like an immune cell",
+        "It copies the DNA before each division begins"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "suppressor-kills-cells",
+        null
+      ],
+      "explanation": "Most tumor suppressor proteins slow the cell cycle, repair DNA or trigger death in damaged cells. They work inside the cell and do not attack tumor cells, so the idea that they kill tumor cells is the tempting mistake.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.suppressor-two-hit",
+      "concept": "tumor-suppressor-gene",
+      "element": "two-hit",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In Knudson's two-hit idea, what must happen to a tumor suppressor gene before cancer can start?",
+      "choices": [
+        "One copy must be made more active than normal",
+        "Both copies of the gene must be lost or damaged",
+        "The gene must be copied twice in a row",
+        "One copy must be lost while the other copy stays untouched"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "suppressor-overactive",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Tumor suppressors usually need both copies inactivated, because one normal copy makes enough protein to keep working. A single lost copy is not enough. Making the gene more active is the oncogene problem, not a tumor suppressor problem.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.suppressor-one-copy-inherited",
+      "concept": "tumor-suppressor-gene",
+      "element": "two-hit",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A person inherits one damaged copy of a tumor suppressor gene, and the other copy is normal. What is most likely?",
+      "choices": [
+        "The normal copy usually makes enough protein to keep working",
+        "The cell loses its brakes, since one damaged copy is enough",
+        "The damaged copy makes a harmful protein that the cell cannot control",
+        "The normal copy repairs the damaged copy straight away in each cell"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "one-hit-enough",
+        null,
+        null
+      ],
+      "explanation": "One working copy usually gives enough protein, so the cell still works. Cancer tends to need the second copy to be lost as well, which is why an inherited first hit raises risk without causing cancer by itself.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: 'usually' - haplosufficiency; fine",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.suppressor-deletion",
+      "concept": "tumor-suppressor-gene",
+      "element": "loss-of-function",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A deletion removes the protein from a tumor suppressor gene in one cell. What is the expected effect?",
+      "choices": [
+        "Growth brakes are lost, so division may continue unchecked",
+        "Growth is held back more tightly than before the deletion",
+        "The cell stops dividing at once, so any tumor shrinks",
+        "The cell makes an extra copy of the protein, which drives faster growth"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "suppressor-overactive",
+        null,
+        null
+      ],
+      "explanation": "Losing a tumor suppressor removes a brake, so cells can divide when they should not. Holding growth back more tightly describes an overactive brake, which is not how tumor suppressors cause cancer.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: stem says deletion removes 'the protein' from gene; loosely worded; one cell with one deletion would still have another copy",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.suppressor-p53-missing",
+      "concept": "tumor-suppressor-gene",
+      "element": "p53",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does a cell without a working p53 protein keep dividing after its DNA is damaged?",
+      "choices": [
+        "The protein that halts the cycle or triggers death is missing",
+        "The protein is an immune cell that would attack the damaged cell",
+        "The protein was already cutting the DNA into smaller pieces",
+        "The protein speeds up copying, so damage is missed by the repair"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "suppressor-kills-cells",
+        null,
+        null
+      ],
+      "explanation": "p53 helps stop the cell cycle after DNA damage and can trigger death in cells that cannot be repaired. Without it, damaged cells keep dividing. p53 is a protein inside the cell, not an immune cell, so the attacking idea is the tempting error.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.suppressor-children-early",
+      "concept": "tumor-suppressor-gene",
+      "element": "two-hit",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Children who inherit one damaged copy of a tumor suppressor gene often develop tumors early and in more than one place. Why?",
+      "choices": [
+        "Each cell needs just one more hit to lose its second working copy",
+        "Their cells lost both copies at birth, so nothing else is needed",
+        "The inherited damage makes each cell's second copy extra active",
+        "Their tumor cells copy their DNA faster, which causes early tumors"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "suppressor-overactive",
+        null
+      ],
+      "explanation": "Because every cell already has one damaged copy, a single further hit in any of many cells can start a tumor. The idea that the second copy becomes more active confuses this with the oncogene pattern.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.suppressor-drug",
+      "concept": "tumor-suppressor-gene",
+      "element": "loss-of-function",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A drug is designed to restore a missing tumor suppressor protein. Which result fits how these proteins usually work?",
+      "choices": [
+        "Fewer tumor cells divide, because the protein holds back growth",
+        "Tumor cells are attacked and die, because the protein is a killer",
+        "The tumor grows faster, because the restored protein is a growth signal",
+        "The tumor is unaffected, since the protein acts on healthy cells alone"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "suppressor-kills-cells",
+        "suppressor-overactive",
+        null
+      ],
+      "explanation": "Tumor suppressors normally brake division, so restoring one should slow growth. The killer idea is tempting, but most suppressors act by holding back division or repairing DNA rather than attacking cells.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.suppressor-hit-order",
+      "concept": "tumor-suppressor-gene",
+      "element": "two-hit",
+      "kind": "order",
+      "difficulty": 3,
+      "prompt": "Put these steps in order, from one damaged copy to a tumor.",
+      "steps": [
+        "A cell has one damaged copy of a tumor suppressor gene",
+        "The remaining normal copy is lost through a second mutation or deletion",
+        "Both copies are now damaged, so the protein is absent in that cell",
+        "The cell loses growth control and divides without the usual brake",
+        "The cell's descendants grow into a tumor"
+      ],
+      "explanation": "Knudson's two-hit idea runs in this order. The first change is often inherited and the second is acquired. Only when both copies are lost does the cell lose its brake, so its descendants can form a tumor.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cancer-biology.metastasis-routes",
+      "concept": "metastasis",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Through which routes can cancer cells travel to other parts of the body?",
+      "choices": [
+        "Blood, lymph, or direct growth into nearby tissue",
+        "The blood, through the heart and arteries",
+        "The nerves, which carry the cells along to distant organs",
+        "Any growing lump, which sends its cells into the next organ"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "blood-only-spread",
+        null,
+        "benign-lumps-spread"
+      ],
+      "explanation": "Cancer cells can enter blood vessels or lymph vessels, and they can also grow into nearby tissue. Travel through the heart and arteries is one part of the picture, so the blood-only idea is the tempting mistake.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.metastasis-term",
+      "concept": "metastasis",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What term names the spread of cancer cells to a distant site, where they form a new tumor?",
+      "choices": [
+        "Angiogenesis",
+        "Benign tumor",
+        "Metastasis",
+        "Apoptosis"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Metastasis is the spread of cancer cells to distant sites, where they form new tumors. Angiogenesis is the growth of new blood vessels, apoptosis is programmed cell death, and a benign tumor does not spread.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.metastasis-liver-match",
+      "concept": "metastasis",
+      "element": "common-sites",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A liver tumor has cells that match a colon tumor's cells. What is the most likely explanation?",
+      "choices": [
+        "The liver tumor is a metastasis that came from the colon tumor",
+        "The liver grew its own cancer that happens to look like colon cancer",
+        "The liver cells mutated into colon cells in the same way",
+        "Both tumors came from a shared blood infection in the patient"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "metastasis-new-cancer",
+        null,
+        null
+      ],
+      "explanation": "Cells that match the colon tumor most likely came from it, travelling to the liver, so the liver tumor is a metastasis. The idea that the liver grew a separate cancer is the common mistake, since matching cells point to a shared origin.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.metastasis-benign-lump",
+      "concept": "metastasis",
+      "element": "invasion",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says any lump that keeps growing will eventually spread to other organs. What is the better answer?",
+      "choices": [
+        "Benign tumors usually stay put, because spread needs invading cells",
+        "Any lump that keeps growing will spread, since growth alone is enough",
+        "Lumps spread once they break through the skin surface",
+        "Lumps spread once they are large enough to press on blood vessels"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "benign-lumps-spread",
+        null,
+        null
+      ],
+      "explanation": "Spread takes cells that invade surrounding tissue and survive in blood or lymph. A benign tumor usually lacks those cells, so growth alone does not spread it. Believing that size or growth causes spread is the tempting mistake.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.metastasis-bone-test",
+      "concept": "metastasis",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A lung tumor was removed. Later a bone tumor appears, and its cells are tested. Which result would support that the bone tumor is a metastasis from the lung?",
+      "choices": [
+        "The bone tumor shares the lung tumor's gene changes",
+        "The bone tumor has its own unique changes, unlike the lung tumor",
+        "The bone tumor is made of bone cells with no cancer changes",
+        "The bone tumor is bigger than the lung tumor was"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "metastasis-new-cancer",
+        null,
+        null
+      ],
+      "explanation": "Metastatic cells descend from the first tumor, so they carry its gene changes. Unique changes point to a separate cancer, which is the mistake of treating each new tumor as an independent cancer. Size tells you nothing about origin.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.metastasis-blood-only",
+      "concept": "metastasis",
+      "element": "intravasation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A tumor grows into the tissue next to it and reaches a lymph vessel. Which spread routes are open to its cells?",
+      "choices": [
+        "Lymph vessels, and blood vessels once the cells enter them",
+        "The blood, because lymph does not carry cancer cells",
+        "Nothing, since cells cannot leave a tissue they have grown into",
+        "The nerves, which carry the cells to the heart"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "blood-only-spread",
+        null,
+        null
+      ],
+      "explanation": "Cells that reach a lymph vessel can travel in lymph, and cells that get into a blood vessel can travel in blood. The idea that blood is the only route is the tempting mistake, since blood is the route most people think of first.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.metastasis-lung-later",
+      "concept": "metastasis",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A tumor is removed, and a month later a new tumor appears in the lung. Which statement is best supported?",
+      "choices": [
+        "It may be cells that left the first tumor, sharing its changes",
+        "It must be a new cancer, since it grew after the surgery",
+        "It is harmless, since cells that travel are usually weakened",
+        "It cannot come from the first tumor, which was removed"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "metastasis-new-cancer",
+        null,
+        null
+      ],
+      "explanation": "Cells that spread from the first tumor share its gene changes, so a later tumor may be a metastasis even after the original tumor is removed. Calling it a new cancer just because it appeared later is the tempting error.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: 'May be' is the only option the evidence supports; a new primary cancer is also possible.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cancer-biology.metastasis-steps-order",
+      "concept": "metastasis",
+      "element": "intravasation",
+      "kind": "order",
+      "difficulty": 3,
+      "prompt": "Put these steps of metastasis in order.",
+      "steps": [
+        "Tumor cells loosen their adhesions and invade the surrounding tissue",
+        "Cells enter a blood or lymph vessel, which is called intravasation",
+        "Cells survive in circulation and leave the vessel at a distant site",
+        "The cells settle, divide and grow into a new tumor in that organ"
+      ],
+      "explanation": "Metastasis starts with local invasion, which lets cells reach a vessel. They then enter the vessel, survive the trip in circulation, and leave it at a distant site, where they grow into a new tumor.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    }
+  ],
+  "artifacts": []
+}

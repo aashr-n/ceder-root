@@ -1,0 +1,317 @@
+{
+  "formatVersion": 1,
+  "subject": "physics",
+  "covers": "Introductory college physics as a two-course sequence: mechanics (Physics I), then electricity and magnetism (Physics II). Stops before modern physics, relativity and thermodynamics.",
+  "packs": [
+    {
+      "pack": "kinematics-1d",
+      "title": "Motion in one dimension",
+      "brief": "Position, displacement, velocity and acceleration along a line, the constant-acceleration equations, and free fall. Stops before vectors in more than one dimension.",
+      "concepts": [
+        { "id": "displacement", "name": "Displacement" },
+        { "id": "average-velocity", "name": "Average velocity" },
+        { "id": "instantaneous-velocity", "name": "Instantaneous velocity" },
+        { "id": "acceleration", "name": "Acceleration" },
+        { "id": "constant-acceleration-equations", "name": "Constant-acceleration equations" },
+        { "id": "free-fall", "name": "Free fall" }
+      ],
+      "buildsOn": []
+    },
+    {
+      "pack": "vectors-2d",
+      "title": "Vectors and motion in two dimensions",
+      "brief": "Vectors, their components and addition, projectile motion, and relative velocity. Stops before forces and Newton's laws.",
+      "concepts": [
+        { "id": "vector", "name": "Vector" },
+        { "id": "vector-components", "name": "Vector components" },
+        { "id": "vector-addition", "name": "Vector addition" },
+        { "id": "projectile-motion", "name": "Projectile motion" },
+        { "id": "relative-velocity", "name": "Relative velocity" }
+      ],
+      "buildsOn": ["displacement", "average-velocity", "instantaneous-velocity", "acceleration", "constant-acceleration-equations"]
+    },
+    {
+      "pack": "newtons-laws",
+      "title": "Newton's laws of motion",
+      "brief": "Force, net force, inertia, mass, and the three laws of motion, with free-body diagrams as the working tool. Stops before specific kinds of force such as friction and tension.",
+      "concepts": [
+        { "id": "force", "name": "Force" },
+        { "id": "net-force", "name": "Net force" },
+        { "id": "inertia", "name": "Inertia" },
+        { "id": "newtons-first-law", "name": "Newton's first law" },
+        { "id": "newtons-second-law", "name": "Newton's second law" },
+        { "id": "mass", "name": "Mass" },
+        { "id": "newtons-third-law", "name": "Newton's third law" },
+        { "id": "free-body-diagram", "name": "Free-body diagram" }
+      ],
+      "buildsOn": ["vector-addition", "acceleration"]
+    },
+    {
+      "pack": "forces-applications",
+      "title": "Weight, contact forces and friction",
+      "brief": "Weight, normal force, tension, static and kinetic friction, inclined planes, and systems of connected objects. Stops before circular motion.",
+      "concepts": [
+        { "id": "weight", "name": "Weight" },
+        { "id": "normal-force", "name": "Normal force" },
+        { "id": "tension", "name": "Tension" },
+        { "id": "static-friction", "name": "Static friction" },
+        { "id": "kinetic-friction", "name": "Kinetic friction" },
+        { "id": "inclined-plane", "name": "Inclined plane" },
+        { "id": "connected-objects", "name": "Connected objects" }
+      ],
+      "buildsOn": ["force", "net-force", "newtons-second-law", "free-body-diagram", "vector-components"]
+    },
+    {
+      "pack": "circular-gravitation",
+      "title": "Circular motion and gravitation",
+      "brief": "Centripetal acceleration and force, Newton's law of universal gravitation, the gravitational field, and orbits. Stops before energy methods.",
+      "concepts": [
+        { "id": "centripetal-acceleration", "name": "Centripetal acceleration" },
+        { "id": "centripetal-force", "name": "Centripetal force" },
+        { "id": "universal-gravitation", "name": "Universal gravitation" },
+        { "id": "gravitational-field", "name": "Gravitational field" },
+        { "id": "orbital-motion", "name": "Orbital motion" },
+        { "id": "keplers-laws", "name": "Kepler's laws" }
+      ],
+      "buildsOn": ["instantaneous-velocity", "acceleration", "projectile-motion", "newtons-second-law", "weight"]
+    },
+    {
+      "pack": "work-energy",
+      "title": "Work and energy",
+      "brief": "Work, kinetic energy, the work-energy theorem, power, conservative forces, potential energy, and conservation of energy. Stops before collisions.",
+      "concepts": [
+        { "id": "work", "name": "Work" },
+        { "id": "kinetic-energy", "name": "Kinetic energy" },
+        { "id": "work-energy-theorem", "name": "Work-energy theorem" },
+        { "id": "power", "name": "Power" },
+        { "id": "conservative-force", "name": "Conservative force" },
+        { "id": "potential-energy", "name": "Potential energy" },
+        { "id": "conservation-of-energy", "name": "Conservation of energy" }
+      ],
+      "buildsOn": ["newtons-second-law", "constant-acceleration-equations", "vector-components", "weight", "universal-gravitation"]
+    },
+    {
+      "pack": "momentum",
+      "title": "Momentum and collisions",
+      "brief": "Linear momentum, impulse, conservation of momentum, elastic and inelastic collisions, and the center of mass. Stops before rotation.",
+      "concepts": [
+        { "id": "linear-momentum", "name": "Linear momentum" },
+        { "id": "impulse", "name": "Impulse" },
+        { "id": "conservation-of-momentum", "name": "Conservation of momentum" },
+        { "id": "elastic-collision", "name": "Elastic collision" },
+        { "id": "inelastic-collision", "name": "Inelastic collision" },
+        { "id": "center-of-mass", "name": "Center of mass" }
+      ],
+      "buildsOn": ["newtons-second-law", "newtons-third-law", "kinetic-energy", "conservation-of-energy"]
+    },
+    {
+      "pack": "rotation",
+      "title": "Rotational motion",
+      "brief": "Angular displacement, velocity and acceleration, torque, moment of inertia, rotational kinetic energy and angular momentum. Stops before equilibrium.",
+      "concepts": [
+        { "id": "angular-displacement", "name": "Angular displacement" },
+        { "id": "angular-velocity", "name": "Angular velocity" },
+        { "id": "angular-acceleration", "name": "Angular acceleration" },
+        { "id": "torque", "name": "Torque" },
+        { "id": "moment-of-inertia", "name": "Moment of inertia" },
+        { "id": "rotational-kinetic-energy", "name": "Rotational kinetic energy" },
+        { "id": "angular-momentum", "name": "Angular momentum" }
+      ],
+      "buildsOn": ["centripetal-acceleration", "kinetic-energy", "linear-momentum", "newtons-second-law", "vector-components"]
+    },
+    {
+      "pack": "equilibrium-elasticity",
+      "title": "Static equilibrium and elasticity",
+      "brief": "Conditions for a body at rest, the center of gravity, stress, strain, and Hooke's law. Stops before fluids.",
+      "concepts": [
+        { "id": "static-equilibrium", "name": "Static equilibrium" },
+        { "id": "center-of-gravity", "name": "Center of gravity" },
+        { "id": "stress", "name": "Stress" },
+        { "id": "strain", "name": "Strain" },
+        { "id": "hookes-law", "name": "Hooke's law" }
+      ],
+      "buildsOn": ["torque", "center-of-mass", "newtons-second-law", "weight"]
+    },
+    {
+      "pack": "fluids",
+      "title": "Fluids at rest and in motion",
+      "brief": "Density, pressure, Pascal's principle, buoyancy, the continuity equation and Bernoulli's equation. Stops before oscillations.",
+      "concepts": [
+        { "id": "density", "name": "Density" },
+        { "id": "pressure", "name": "Pressure" },
+        { "id": "pascal-principle", "name": "Pascal's principle" },
+        { "id": "buoyancy", "name": "Buoyancy" },
+        { "id": "continuity-equation", "name": "Continuity equation" },
+        { "id": "bernoulli-equation", "name": "Bernoulli's equation" }
+      ],
+      "buildsOn": ["weight", "newtons-second-law", "conservation-of-energy", "stress"]
+    },
+    {
+      "pack": "oscillations",
+      "title": "Oscillations",
+      "brief": "Simple harmonic motion, period and frequency, spring and pendulum oscillators, energy in oscillation, and damped and driven oscillation. Stops before waves.",
+      "concepts": [
+        { "id": "simple-harmonic-motion", "name": "Simple harmonic motion" },
+        { "id": "period-and-frequency", "name": "Period and frequency" },
+        { "id": "spring-oscillator", "name": "Spring oscillator" },
+        { "id": "simple-pendulum", "name": "Simple pendulum" },
+        { "id": "energy-in-oscillation", "name": "Energy in oscillation" },
+        { "id": "damped-oscillation", "name": "Damped oscillation" },
+        { "id": "driven-oscillation", "name": "Driven oscillation" }
+      ],
+      "buildsOn": ["hookes-law", "newtons-second-law", "conservation-of-energy"]
+    },
+    {
+      "pack": "electric-charge",
+      "title": "Electric charge and Coulomb's law",
+      "brief": "Electric charge, conservation of charge, conductors and insulators, charging by induction, and the force between point charges. Stops before electric fields.",
+      "concepts": [
+        { "id": "electric-charge", "name": "Electric charge" },
+        { "id": "conservation-of-charge", "name": "Conservation of charge" },
+        { "id": "conductors-and-insulators", "name": "Conductors and insulators" },
+        { "id": "charging-by-induction", "name": "Charging by induction" },
+        { "id": "coulomb-law", "name": "Coulomb's law" },
+        { "id": "electric-force-superposition", "name": "Superposition of electric forces" }
+      ],
+      "buildsOn": ["force", "newtons-third-law", "vector-addition", "vector-components"]
+    },
+    {
+      "pack": "electric-field",
+      "title": "Electric field",
+      "brief": "The electric field of point charges and charge distributions, field lines, electric dipoles, electric flux and Gauss's law. Stops before electric potential.",
+      "concepts": [
+        { "id": "electric-field", "name": "Electric field" },
+        { "id": "field-lines", "name": "Field lines" },
+        { "id": "point-charge-field", "name": "Field of a point charge" },
+        { "id": "electric-dipole", "name": "Electric dipole" },
+        { "id": "electric-flux", "name": "Electric flux" },
+        { "id": "gauss-law", "name": "Gauss's law" }
+      ],
+      "buildsOn": ["coulomb-law", "electric-force-superposition", "vector-components", "vector-addition"]
+    },
+    {
+      "pack": "electric-potential",
+      "title": "Electric potential",
+      "brief": "Electric potential energy, electric potential and potential difference, equipotential surfaces, and the potential of a point charge. Stops before capacitors.",
+      "concepts": [
+        { "id": "electric-potential-energy", "name": "Electric potential energy" },
+        { "id": "electric-potential", "name": "Electric potential" },
+        { "id": "potential-difference", "name": "Potential difference" },
+        { "id": "equipotential-surfaces", "name": "Equipotential surfaces" },
+        { "id": "point-charge-potential", "name": "Potential of a point charge" },
+        { "id": "electronvolt", "name": "Electronvolt" }
+      ],
+      "buildsOn": ["work", "conservative-force", "potential-energy", "electric-field", "work-energy-theorem"]
+    },
+    {
+      "pack": "capacitance",
+      "title": "Capacitance and dielectrics",
+      "brief": "Capacitors and capacitance, parallel-plate capacitors, capacitors in series and parallel, stored energy, and dielectrics. Stops before current.",
+      "concepts": [
+        { "id": "capacitor", "name": "Capacitor" },
+        { "id": "capacitance", "name": "Capacitance" },
+        { "id": "parallel-plate-capacitor", "name": "Parallel-plate capacitor" },
+        { "id": "capacitors-in-series-and-parallel", "name": "Capacitors in series and parallel" },
+        { "id": "energy-in-capacitor", "name": "Energy stored in a capacitor" },
+        { "id": "dielectric", "name": "Dielectric" }
+      ],
+      "buildsOn": ["electric-field", "electric-potential", "potential-difference", "electric-charge"]
+    },
+    {
+      "pack": "current-resistance",
+      "title": "Current and resistance",
+      "brief": "Electric current, drift velocity, resistance and resistivity, Ohm's law, electrical power, and electromotive force. Stops before circuits with several elements.",
+      "concepts": [
+        { "id": "electric-current", "name": "Electric current" },
+        { "id": "drift-velocity", "name": "Drift velocity" },
+        { "id": "resistance", "name": "Resistance" },
+        { "id": "ohms-law", "name": "Ohm's law" },
+        { "id": "resistivity", "name": "Resistivity" },
+        { "id": "electrical-power", "name": "Electrical power" },
+        { "id": "electromotive-force", "name": "Electromotive force" }
+      ],
+      "buildsOn": ["potential-difference", "electric-field", "electric-charge", "power"]
+    },
+    {
+      "pack": "dc-circuits",
+      "title": "Direct-current circuits",
+      "brief": "Resistors in series and parallel, internal resistance, Kirchhoff's rules, and RC circuits. Stops before magnetism.",
+      "concepts": [
+        { "id": "resistors-in-series-and-parallel", "name": "Resistors in series and parallel" },
+        { "id": "internal-resistance", "name": "Internal resistance" },
+        { "id": "kirchhoff-current-law", "name": "Kirchhoff's current law" },
+        { "id": "kirchhoff-voltage-law", "name": "Kirchhoff's voltage law" },
+        { "id": "rc-circuit", "name": "RC circuit" }
+      ],
+      "buildsOn": ["ohms-law", "resistance", "electrical-power", "electromotive-force", "capacitor", "capacitance"]
+    },
+    {
+      "pack": "magnetic-force",
+      "title": "Magnetic field and magnetic force",
+      "brief": "The magnetic field, the force on moving charges and on current-carrying wires, torque on a current loop, cyclotron motion and the Hall effect. Stops before sources of magnetic field.",
+      "concepts": [
+        { "id": "magnetic-field", "name": "Magnetic field" },
+        { "id": "magnetic-force-on-moving-charge", "name": "Magnetic force on a moving charge" },
+        { "id": "magnetic-force-on-wire", "name": "Magnetic force on a current-carrying wire" },
+        { "id": "torque-on-current-loop", "name": "Torque on a current loop" },
+        { "id": "cyclotron-motion", "name": "Cyclotron motion" },
+        { "id": "hall-effect", "name": "Hall effect" }
+      ],
+      "buildsOn": ["vector-components", "net-force", "electric-current", "torque"]
+    },
+    {
+      "pack": "magnetic-sources",
+      "title": "Sources of magnetic field",
+      "brief": "The Biot-Savart law, Ampere's law, and the fields of a long wire, a solenoid and a magnetic dipole. Stops before induction.",
+      "concepts": [
+        { "id": "biot-savart-law", "name": "Biot-Savart law" },
+        { "id": "amperes-law", "name": "Ampere's law" },
+        { "id": "field-of-long-wire", "name": "Field of a long straight wire" },
+        { "id": "field-of-solenoid", "name": "Field of a solenoid" },
+        { "id": "magnetic-dipole", "name": "Magnetic dipole" }
+      ],
+      "buildsOn": ["magnetic-field", "electric-current", "vector-addition"]
+    },
+    {
+      "pack": "induction",
+      "title": "Electromagnetic induction",
+      "brief": "Magnetic flux, Faraday's law, Lenz's law, motional emf, inductance and the energy stored in an inductor. Stops before AC circuits.",
+      "concepts": [
+        { "id": "magnetic-flux", "name": "Magnetic flux" },
+        { "id": "faraday-law", "name": "Faraday's law" },
+        { "id": "lenz-law", "name": "Lenz's law" },
+        { "id": "motional-emf", "name": "Motional emf" },
+        { "id": "inductance", "name": "Inductance" },
+        { "id": "energy-in-inductor", "name": "Energy stored in an inductor" }
+      ],
+      "buildsOn": ["magnetic-field", "magnetic-force-on-moving-charge", "magnetic-force-on-wire", "electromotive-force", "field-of-solenoid"]
+    },
+    {
+      "pack": "ac-circuits",
+      "title": "Alternating-current circuits",
+      "brief": "Alternating current and rms values, RLC series circuits, LC oscillation, resonance and transformers. Stops before Maxwell's equations.",
+      "concepts": [
+        { "id": "alternating-current", "name": "Alternating current" },
+        { "id": "rms-values", "name": "RMS values" },
+        { "id": "lc-oscillation", "name": "LC oscillation" },
+        { "id": "rlc-series-circuit", "name": "RLC series circuit" },
+        { "id": "resonance", "name": "Resonance" },
+        { "id": "transformer", "name": "Transformer" }
+      ],
+      "buildsOn": ["inductance", "capacitance", "resistance", "ohms-law", "faraday-law", "electrical-power"]
+    },
+    {
+      "pack": "maxwell-waves",
+      "title": "Maxwell's equations and electromagnetic waves",
+      "brief": "Displacement current, Maxwell's equations, electromagnetic waves, the electromagnetic spectrum and the Poynting vector. Ends the sequence.",
+      "concepts": [
+        { "id": "displacement-current", "name": "Displacement current" },
+        { "id": "maxwells-equations", "name": "Maxwell's equations" },
+        { "id": "electromagnetic-waves", "name": "Electromagnetic waves" },
+        { "id": "electromagnetic-spectrum", "name": "Electromagnetic spectrum" },
+        { "id": "poynting-vector", "name": "Poynting vector" }
+      ],
+      "buildsOn": ["gauss-law", "amperes-law", "faraday-law", "lenz-law", "capacitance", "lc-oscillation"]
+    }
+  ]
+}

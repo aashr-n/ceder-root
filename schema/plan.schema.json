@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ceder bank plan for one subject",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["formatVersion", "subject", "covers", "packs"],
+  "properties": {
+    "formatVersion": { "const": 1 },
+    "subject": { "$ref": "#/$defs/slug" },
+    "covers": { "type": "string", "minLength": 1, "maxLength": 300 },
+    "packs": { "type": "array", "minItems": 1, "maxItems": 80, "items": { "$ref": "#/$defs/pack" } }
+  },
+  "$defs": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 40 },
+    "pack": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pack", "title", "brief", "concepts"],
+      "properties": {
+        "pack": { "$ref": "#/$defs/slug" },
+        "title": { "type": "string", "minLength": 1, "maxLength": 80, "pattern": "^\\S(.*\\S)?$" },
+        "brief": { "type": "string", "minLength": 1, "maxLength": 400 },
+        "concepts": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 12,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "name"],
+            "properties": {
+              "id": { "$ref": "#/$defs/slug" },
+              "name": { "type": "string", "minLength": 1, "maxLength": 80, "pattern": "^\\S(.*\\S)?$" }
+            }
+          }
+        },
+        "buildsOn": {
+          "type": "array",
+          "maxItems": 12,
+          "items": { "type": "string", "pattern": "^([a-z0-9]+(-[a-z0-9]+)*/)?[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 81 }
+        }
+      }
+    }
+  }
+}

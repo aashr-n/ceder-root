@@ -1,0 +1,2069 @@
+{
+  "formatVersion": 1,
+  "id": "biology.biological-macromolecules",
+  "subject": "biology",
+  "title": "Biological macromolecules",
+  "summary": "The four families of macromolecules, their monomers, and how monomers join and split.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "carbohydrate",
+      "name": "Carbohydrate",
+      "aliases": [
+        "Carbohydrates",
+        "Saccharide",
+        "Saccharides",
+        "Monosaccharide",
+        "Monosaccharides",
+        "Polysaccharide",
+        "Polysaccharides"
+      ],
+      "summary": "A molecule built from carbon, hydrogen and oxygen, such as a simple sugar or a chain of sugars that stores energy or gives structure.",
+      "requires": [
+        "chemical-bond"
+      ],
+      "elements": [
+        {
+          "id": "monosaccharide",
+          "name": "Monosaccharide",
+          "aliases": [
+            "Simple sugar",
+            "Simple sugars"
+          ]
+        },
+        {
+          "id": "glycosidic-bond",
+          "name": "Glycosidic bond",
+          "aliases": [
+            "Glycosidic bonds",
+            "Glycosidic linkage"
+          ]
+        },
+        {
+          "id": "starch-and-glycogen",
+          "name": "Starch and glycogen",
+          "aliases": [
+            "Starch",
+            "Glycogen"
+          ]
+        },
+        {
+          "id": "cellulose",
+          "name": "Cellulose",
+          "aliases": []
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "carbs-only-fuel",
+          "claim": "Carbohydrates are only a fuel. They don't build anything.",
+          "correction": "Carbohydrates also give structure. Cellulose stiffens plant cell walls, and chitin forms the shell of insects."
+        },
+        {
+          "id": "starch-cellulose-different-sugars",
+          "claim": "Starch and cellulose are made of different sugars.",
+          "correction": "Both are chains of glucose. The links between the glucose units differ, and that difference decides whether people can digest them."
+        },
+        {
+          "id": "humans-digest-cellulose",
+          "claim": "People digest cellulose the same way they digest starch.",
+          "correction": "Humans lack the enzyme that cuts cellulose's links, so cellulose passes through the gut as fiber."
+        }
+      ],
+      "explain": {
+        "text": "A carbohydrate is a molecule made of carbon, hydrogen and oxygen, from simple sugars to long chains of sugars. The simplest ones, such as glucose, are single units called monosaccharides. Linking many units through glycosidic bonds makes a polysaccharide. Plants store glucose as starch and animals store it as glycogen, and both can be broken down when energy is needed. Cellulose is also a chain of glucose, but its links are arranged differently, so it forms stiff fibers in plant cell walls rather than a fuel store."
+      }
+    },
+    {
+      "id": "lipid",
+      "name": "Lipid",
+      "aliases": [
+        "Lipids",
+        "Fat",
+        "Fats",
+        "Triglyceride",
+        "Triglycerides",
+        "Phospholipid",
+        "Phospholipids"
+      ],
+      "summary": "A family of mostly water-repelling molecules, including fats, phospholipids and steroids, that store energy and form membranes.",
+      "requires": [
+        "hydrogen-bond"
+      ],
+      "elements": [
+        {
+          "id": "triglyceride",
+          "name": "Triglyceride",
+          "aliases": [
+            "Triglycerides",
+            "Neutral fat"
+          ]
+        },
+        {
+          "id": "fatty-acid",
+          "name": "Fatty acid",
+          "aliases": [
+            "Fatty acids",
+            "Fatty acid tail"
+          ]
+        },
+        {
+          "id": "phospholipid",
+          "name": "Phospholipid",
+          "aliases": [
+            "Phospholipids"
+          ]
+        },
+        {
+          "id": "steroid",
+          "name": "Steroid",
+          "aliases": [
+            "Steroids"
+          ]
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "all-lipids-store-energy",
+          "claim": "All lipids are stored energy, like sugar.",
+          "correction": "Many lipids are structural. Phospholipids form the membrane around every cell, and steroids such as cholesterol help set its stiffness."
+        },
+        {
+          "id": "unsaturated-solid",
+          "claim": "Unsaturated fats are solid and saturated fats are liquid.",
+          "correction": "It is the reverse. Saturated tails pack tightly and are solid, while the kinks from double bonds in unsaturated tails keep them liquid."
+        },
+        {
+          "id": "lipids-mix-with-water",
+          "claim": "Lipids dissolve in water, just more slowly than sugar.",
+          "correction": "Lipids are hydrophobic and separate from water. That is why they form membranes, and why oil stays apart from water."
+        }
+      ],
+      "explain": {
+        "text": "Lipids are a family of mostly water-repelling molecules that include fats, oils, waxes, phospholipids and steroids. Most of them are not chains of repeating units. A triglyceride, the common stored fat, is one glycerol backbone with three fatty acid tails attached. A phospholipid has two tails and a phosphate head, so one end mixes with water and the other does not. That property lets phospholipids form the two-layer membrane around cells. Lipids pack a lot of energy per gram, and they separate from water rather than dissolving in it."
+      }
+    },
+    {
+      "id": "amino-acid",
+      "name": "Amino acid",
+      "aliases": [
+        "Amino acids",
+        "Alpha-amino acid",
+        "Alpha-amino acids"
+      ],
+      "summary": "The monomer of proteins: a central carbon bonded to an amino group, a carboxyl group, a hydrogen and one side chain that differs among kinds.",
+      "requires": [
+        "chemical-bond"
+      ],
+      "elements": [
+        {
+          "id": "central-carbon",
+          "name": "Central carbon",
+          "aliases": [
+            "Alpha carbon",
+            "Alpha-carbon"
+          ]
+        },
+        {
+          "id": "amino-group",
+          "name": "Amino group",
+          "aliases": [
+            "Amine group",
+            "Amino groups"
+          ]
+        },
+        {
+          "id": "carboxyl-group",
+          "name": "Carboxyl group",
+          "aliases": [
+            "Carboxyl groups",
+            "Carboxyl"
+          ]
+        },
+        {
+          "id": "side-chain",
+          "name": "Side chain",
+          "aliases": [
+            "R group",
+            "R-group"
+          ]
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "backbone-differs",
+          "claim": "The amino acids in a protein differ in their backbone atoms.",
+          "correction": "Every amino acid has the same backbone: an amino group, a central carbon and a carboxyl group. Only the side chain differs."
+        },
+        {
+          "id": "dna-from-amino-acids",
+          "claim": "DNA is made of amino acids, just like protein.",
+          "correction": "DNA is made of nucleotides. Amino acids build proteins, and nucleotides build nucleic acids such as DNA."
+        },
+        {
+          "id": "amino-acid-is-protein",
+          "claim": "One amino acid already counts as a protein.",
+          "correction": "A protein is a chain of many amino acids linked by peptide bonds. One amino acid is a single monomer of that chain."
+        }
+      ],
+      "explain": {
+        "text": "An amino acid is the monomer of a protein. Every amino acid has the same core: a central carbon atom bonded to an amino group, a carboxyl group, a hydrogen atom and a side chain, often called the R group. The side chain is the part that changes between amino acids, and there are twenty common kinds in living things. Their differing chemistry, from charged to water-repelling, shapes the protein they build. Two amino acids join when the carboxyl group of one reacts with the amino group of the next, releasing water.",
+        "artifact": "amino-acid"
+      }
+    },
+    {
+      "id": "protein-structure",
+      "name": "Protein structure",
+      "aliases": [
+        "Protein structures",
+        "Levels of protein structure"
+      ],
+      "summary": "The shape of a protein, described at four levels: its sequence, local patterns, the whole fold, and how several chains pack together.",
+      "requires": [
+        "amino-acid",
+        "hydrogen-bond"
+      ],
+      "elements": [
+        {
+          "id": "primary-structure",
+          "name": "Primary structure",
+          "aliases": [
+            "Amino acid sequence"
+          ]
+        },
+        {
+          "id": "secondary-structure",
+          "name": "Secondary structure",
+          "aliases": [
+            "Alpha helix",
+            "Beta sheet"
+          ]
+        },
+        {
+          "id": "tertiary-structure",
+          "name": "Tertiary structure",
+          "aliases": [
+            "Three-dimensional fold"
+          ]
+        },
+        {
+          "id": "quaternary-structure",
+          "name": "Quaternary structure",
+          "aliases": [
+            "Subunit arrangement",
+            "Multimer"
+          ]
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "quaternary-everywhere",
+          "claim": "Every protein has all four levels of structure.",
+          "correction": "Quaternary structure exists only when several chains pack together. A protein made of one chain has up to tertiary structure."
+        },
+        {
+          "id": "peptide-bonds-fold",
+          "claim": "Peptide bonds hold a protein in its folded shape.",
+          "correction": "Peptide bonds join amino acids into the chain. The fold is held by weaker interactions, such as hydrogen bonds, hydrophobic packing and disulfide bonds."
+        },
+        {
+          "id": "heat-breaks-peptide",
+          "claim": "Heating a protein breaks its peptide bonds.",
+          "correction": "Heat breaks the weak interactions that hold the fold, so the protein unfolds. The peptide bonds of the chain stay intact."
+        }
+      ],
+      "explain": {
+        "text": "A protein's shape is its structure, and biologists describe it at four levels. The primary structure is the sequence of amino acids, joined end to end by peptide bonds. Local patterns held by hydrogen bonds form the secondary structure, such as the coiled alpha helix and the pleated beta sheet. The whole chain folds into a compact three-dimensional form, its tertiary structure, held by many weaker interactions. Only proteins made of several chains reach the fourth level, quaternary structure, which describes how the subunits fit together. Because the shape follows from the sequence, changing one amino acid can change how the protein works."
+      }
+    },
+    {
+      "id": "dehydration-synthesis",
+      "name": "Dehydration synthesis",
+      "aliases": [
+        "Dehydration reaction",
+        "Dehydration reactions",
+        "Condensation reaction",
+        "Condensation reactions"
+      ],
+      "summary": "Two monomers join into a polymer by removing one water molecule from between them; hydrolysis reverses it by adding one.",
+      "requires": [
+        "chemical-bond"
+      ],
+      "elements": [
+        {
+          "id": "monomer-and-polymer",
+          "name": "Monomer and polymer",
+          "aliases": [
+            "Monomers",
+            "Polymers",
+            "Polymer"
+          ]
+        },
+        {
+          "id": "water-removal",
+          "name": "Water removal",
+          "aliases": [
+            "Loss of water"
+          ]
+        },
+        {
+          "id": "hydrolysis",
+          "name": "Hydrolysis",
+          "aliases": [
+            "Hydrolysis reaction"
+          ]
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "synthesis-adds-water",
+          "claim": "Building a polymer adds water to the monomers.",
+          "correction": "Each bond made removes one water molecule. That loss is why the reaction is called dehydration, or condensation."
+        },
+        {
+          "id": "breaking-makes-water",
+          "claim": "Breaking a polymer apart releases water.",
+          "correction": "Breaking a polymer is hydrolysis, which uses up one water molecule for each bond broken."
+        },
+        {
+          "id": "dehydration-only-in-lab",
+          "claim": "Dehydration synthesis happens only in a chemistry lab.",
+          "correction": "Cells use it all the time to build proteins, starch, DNA and fats. It is one of the basic reactions of life."
+        }
+      ],
+      "explain": {
+        "text": "Dehydration synthesis is how cells join monomers into polymers. One monomer gives up a hydroxyl group, written -OH, and the other gives up a hydrogen atom, written -H. The two pieces combine to form one water molecule. The gap they leave lets the monomers share a new covalent bond. Because a water molecule is lost for each bond, the reaction is also called a condensation reaction. Its reverse, hydrolysis, splits a bond by adding a water molecule. The same two kinds of reaction build and break proteins, DNA, starch and fats.",
+        "artifact": "dehydration-steps"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "biology.biological-macromolecules.ca-elements",
+      "concept": "carbohydrate",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which three elements make up a carbohydrate?",
+      "choices": [
+        "Carbon, hydrogen and oxygen",
+        "Carbon, hydrogen and nitrogen",
+        "Carbon, oxygen and sulfur",
+        "Hydrogen, oxygen and phosphorus"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Carbohydrates are made of carbon, hydrogen and oxygen, and glucose has them in a 1 : 2 : 1 ratio. Nitrogen marks amino acids and bases, and phosphorus marks nucleotides, so the other choices name different molecule families.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.ca-cellulose-unit",
+      "concept": "carbohydrate",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Cellulose is a long chain of which sugar?",
+      "choices": [
+        "Fructose",
+        "Glucose",
+        "Ribose",
+        "Galactose"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Cellulose is a chain of glucose units, the same sugar that starch and glycogen are built from. What differs is how the units are linked. Fructose is a real sugar, but it is not the unit that cellulose repeats.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.ca-starch-vs-cellulose",
+      "concept": "carbohydrate",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Starch and cellulose are both chains of glucose. Why can people digest starch but not cellulose?",
+      "choices": [
+        "Starch is built from a different sugar than cellulose is",
+        "Cellulose contains no carbon, so the body cannot use it at all",
+        "Human enzymes can cut starch's links but not cellulose's",
+        "Starch is a protein, so the gut's enzymes break it down easily"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "starch-cellulose-different-sugars",
+        null,
+        null,
+        null
+      ],
+      "explanation": "The sugar is the same in both polymers, so the sugar is not the difference. The glucose units are linked in different arrangements, and enzymes made by people can cut the links in starch but not the links in cellulose.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.ca-plant-walls",
+      "concept": "carbohydrate",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which carbohydrate gives plant cells their rigid walls?",
+      "choices": [
+        "Plant starch",
+        "Animal glycogen",
+        "Free glucose",
+        "Cellulose fiber"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "carbs-only-fuel",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Cellulose is a glucose polymer that forms the stiff walls around plant cells. Starch and glycogen are stores of glucose kept for fuel, so a student who thinks carbohydrates are only fuel would pick them.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.ca-single-unit",
+      "concept": "carbohydrate",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is a single sugar unit that cannot be split into smaller sugars called?",
+      "choices": [
+        "A monosaccharide",
+        "A disaccharide",
+        "A polysaccharide",
+        "A glycosidic bond"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A monosaccharide is a single sugar unit, such as glucose. Two linked units make a disaccharide, and many linked units make a polysaccharide. A glycosidic bond is the link between units, not a sugar.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.ca-animal-store",
+      "concept": "carbohydrate",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Animals store extra glucose as which polysaccharide?",
+      "choices": [
+        "Starch",
+        "Glycogen",
+        "Cellulose",
+        "Chitin"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Animals store glucose as glycogen, mostly in the liver and muscle. Plants store it as starch. Cellulose builds plant walls, and chitin builds the shells of insects; neither one is a fuel store.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.ca-salad-error",
+      "concept": "carbohydrate",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says the cellulose in a salad gives people the same energy as the starch in potatoes. What is wrong with that?",
+      "choices": [
+        "Cellulose is digested just like starch, so both give the same energy",
+        "Cellulose has no glucose in it, so it gives no energy at all",
+        "People cannot break cellulose's links, so it passes through as fiber",
+        "Stomach acid turns cellulose into amino acids the body burns"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "humans-digest-cellulose",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Cellulose is a chain of glucose, but human digestive enzymes cannot cut its links, so it passes through as fiber. Starch's links can be cut, which releases glucose. The student's error is assuming cellulose is digested the same way as starch.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.ca-cellulose-digestion",
+      "concept": "carbohydrate",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about human digestion of cellulose is correct?",
+      "choices": [
+        "Human enzymes cut cellulose into glucose just as they cut starch",
+        "Stomach acid is strong enough to split cellulose's links",
+        "Cellulose is absorbed whole into the blood through the gut wall",
+        "Humans make no enzyme that can cut cellulose's glucose links"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "humans-digest-cellulose",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Humans lack the enzyme that cuts cellulose's links, so the cellulose passes through the gut as fiber. The wrong choices all assume that cellulose is digested, which it is not.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.ca-glucose-ratio",
+      "concept": "carbohydrate",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Glucose has the formula C₆H₁₂O₆. What is the ratio of carbon atoms to hydrogen atoms to oxygen atoms?",
+      "choices": [
+        "1 : 2 : 1",
+        "1 : 1 : 1",
+        "6 : 6 : 12",
+        "1 : 2 : 3"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Glucose has 6 carbons, 12 hydrogens and 6 oxygens, so the ratio is 6 : 12 : 6, which reduces to 1 : 2 : 1. A 1 : 1 : 1 ratio would undercount the hydrogens.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.ca-tree-job",
+      "concept": "carbohydrate",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the main job of cellulose in a tree?",
+      "choices": [
+        "Storing glucose to burn later in the cell",
+        "Stiffening cell walls to support the plant",
+        "Carrying oxygen through the plant's sap to its leaves",
+        "Copying the plant's genetic information"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "carbs-only-fuel",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Cellulose stiffens the walls of plant cells, which holds up the tree. Storing glucose for later is the job of starch, and a student who thinks carbohydrates only supply fuel would pick that job for cellulose.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.li-tails",
+      "concept": "lipid",
+      "element": "triglyceride",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How many fatty acid tails does a typical triglyceride carry?",
+      "choices": [
+        "One",
+        "Two",
+        "Three",
+        "Twelve"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A triglyceride is one glycerol backbone with three fatty acid tails attached. Two tails describe a phospholipid, which has a phosphate head as well. Twelve is far too many for a typical lipid.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.li-steroid-group",
+      "concept": "lipid",
+      "element": "steroid",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which group of lipids includes cholesterol, built from four fused carbon rings?",
+      "choices": [
+        "Triglycerides",
+        "Phospholipids",
+        "Waxes",
+        "Steroids"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Steroids are lipids built from four fused carbon rings, and cholesterol is one of them. Triglycerides and phospholipids have fatty acid tails rather than rings, and waxes are long-chain esters.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.li-phospholipid-arrange",
+      "concept": "lipid",
+      "element": "phospholipid",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Phospholipids are added to water. Which describes how they arrange themselves?",
+      "choices": [
+        "Heads face the water and tails hide, making a double layer",
+        "They dissolve evenly through the water as single molecules",
+        "Tails face the water and heads sink to the bottom of it",
+        "They form a solid lump that sinks, leaving no water inside"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "lipids-mix-with-water",
+        null,
+        null
+      ],
+      "explanation": "A phospholipid has a water-attracting head and water-repelling tails. Its head is drawn to water and its tails are not, so the molecules line up in a double layer. The choice saying they dissolve evenly describes the idea that lipids mix with water.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.li-oil-water",
+      "concept": "lipid",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does oil separate from water when the two are mixed?",
+      "choices": [
+        "Oil dissolves in water, just more slowly than sugar does",
+        "Oil is hydrophobic, so it cannot hydrogen-bond with water",
+        "Oil molecules are too large to pass between water molecules",
+        "Oil and water both contain carbon, so they repel each other"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "lipids-mix-with-water",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Oil molecules have almost no polar groups, so they cannot form hydrogen bonds with water and they are pushed together. The choice saying oil dissolves slowly is the idea that lipids mix with water, which they do not.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.li-unsat-kink",
+      "concept": "lipid",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about an unsaturated fatty acid is correct?",
+      "choices": [
+        "It packs tightly, so it is solid at room temperature",
+        "It has no double bonds, so its chain stays straight",
+        "It has a double bond, which puts a kink in the chain",
+        "It carries a nitrogen group in every fatty acid tail"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "unsaturated-solid",
+        null,
+        null,
+        null
+      ],
+      "explanation": "An unsaturated fatty acid has one or more double bonds, and each bond bends the chain. The bent tails cannot pack tightly, so the fat stays liquid. The choice about packing tightly describes a saturated fatty acid instead.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.li-liquid-fat",
+      "concept": "lipid",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which fat is more likely to be liquid at room temperature?",
+      "choices": [
+        "One with mostly saturated fatty acid tails",
+        "One with the longest tails, whatever their bonds",
+        "One with a phosphate group on its glycerol",
+        "One with mostly unsaturated fatty acid tails"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "unsaturated-solid",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Unsaturated tails have kinks at their double bonds, so they pack loosely and the fat stays liquid. Saturated tails are straight and pack tightly, which makes the fat solid. The longest tails do not decide the matter.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.li-cholesterol-job",
+      "concept": "lipid",
+      "element": "steroid",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Cholesterol is a steroid. Which job does it do in an animal cell membrane?",
+      "choices": [
+        "It stiffens the membrane and limits how freely lipids move",
+        "It is the main energy store that animal cells draw on",
+        "It carries amino acids to ribosomes, where proteins are built",
+        "It breaks down glucose into pyruvate inside the cytoplasm"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "all-lipids-store-energy",
+        null,
+        null
+      ],
+      "explanation": "Cholesterol sits among the phospholipids of an animal cell membrane and makes it stiffer and less fluid. It is not a fuel store. The choice naming an energy store describes the idea that all lipids store energy.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.li-structural-error",
+      "concept": "lipid",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says all lipids are stored energy, like starch. What is wrong with that?",
+      "choices": [
+        "Phospholipids are fats the body burns for quick energy, like sugar",
+        "Many lipids, like phospholipids, form the structure of membranes",
+        "Lipids are structural because they are built from sugar units",
+        "Starch is a lipid, so it stores energy the same way fats do"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "all-lipids-store-energy",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Many lipids are structural. Phospholipids make up the membrane around every cell, and steroids help set how stiff that membrane is. Only some lipids, such as triglycerides, are stored as energy, so the student has generalised from one family.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.li-stored-fat",
+      "concept": "lipid",
+      "element": "triglyceride",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which lipid is the main form of stored fat in animals?",
+      "choices": [
+        "Phospholipid",
+        "Steroid",
+        "Triglyceride",
+        "Wax"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Animals store fat as triglycerides, in fat cells. Phospholipids are membrane parts, steroids are rings, and waxes are a different family.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.li-membrane-sheet",
+      "concept": "lipid",
+      "element": "phospholipid",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why do phospholipids form a two-layer sheet, rather than single molecules, when placed in water?",
+      "choices": [
+        "The tails dissolve in water while the heads stay dry and inside",
+        "Their heads repel each other, so the molecules spin apart",
+        "Each molecule dissolves fully in the water, then settles into layers",
+        "Each head faces the water and each tail hides from the water"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        null,
+        "lipids-mix-with-water",
+        null
+      ],
+      "explanation": "The head is water-attracting and the tails are water-repelling, so each molecule turns its head to the water and its tails inward. The choice saying each molecule dissolves fully describes the idea that lipids mix with water, which they do not.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.am-how-many",
+      "concept": "amino-acid",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How many kinds of amino acid are commonly used to build proteins?",
+      "choices": [
+        "Twenty",
+        "Four",
+        "Sixty-four",
+        "Two hundred"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Living cells build proteins from twenty common amino acids. Four is the number of DNA bases, and sixty-four is the number of three-base codons. Neither counts amino acids.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.am-acid-group",
+      "concept": "amino-acid",
+      "element": "carboxyl-group",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which group at one end of an amino acid makes it acidic?",
+      "choices": [
+        "Amino group",
+        "Carboxyl group",
+        "Phosphate group",
+        "Methyl group"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The carboxyl group releases a hydrogen ion, which makes it acidic. The amino group is the basic end. A phosphate or a methyl group is not part of the core of an amino acid.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.am-shared-core",
+      "concept": "amino-acid",
+      "element": "central-carbon",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which feature is shared by all amino acids?",
+      "choices": [
+        "A side chain that is identical in all twenty kinds",
+        "A backbone that varies from one amino acid to the next",
+        "An amino group, a carboxyl group and a central carbon",
+        "A phosphate group and a five-carbon sugar ring"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        "backbone-differs",
+        null,
+        null
+      ],
+      "explanation": "Every amino acid has an amino group, a carboxyl group and a central carbon, which together form the backbone. Only the side chain differs between kinds. The phosphate and sugar choice describes a nucleotide instead.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.am-built-from",
+      "concept": "amino-acid",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which molecule is built from amino acids?",
+      "choices": [
+        "DNA",
+        "Starch",
+        "Triglyceride",
+        "Protein"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "dna-from-amino-acids",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Proteins are chains of amino acids. DNA is built from nucleotides, starch from glucose, and a triglyceride from glycerol and fatty acids.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.am-monomer-meaning",
+      "concept": "amino-acid",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is one amino acid, compared with a protein?",
+      "choices": [
+        "A monomer, which is one unit of a protein",
+        "A complete protein that is already folded",
+        "A polymer built from many separate proteins",
+        "A sugar unit that links to form carbohydrates"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "amino-acid-is-protein",
+        null,
+        null
+      ],
+      "explanation": "One amino acid is a monomer: a single unit that is linked into a chain to make a protein. The choice calling it a complete folded protein is the idea that one amino acid is already a protein.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.am-protein-error",
+      "concept": "amino-acid",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says a single amino acid already counts as a protein. What is wrong with that?",
+      "choices": [
+        "An amino acid is folded, so it counts as a complete protein",
+        "A protein is a chain of amino acids joined by peptide bonds",
+        "Amino acids become proteins once they are joined to sugar units",
+        "One amino acid carries a phosphate, which makes it a protein"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "amino-acid-is-protein",
+        null,
+        null,
+        null
+      ],
+      "explanation": "A protein is a chain of many amino acids linked by peptide bonds. One amino acid is a single unit of that chain, and folding does not turn a single unit into a protein.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.am-r-group",
+      "concept": "amino-acid",
+      "element": "side-chain",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the part of an amino acid that differs between the twenty kinds called?",
+      "choices": [
+        "The backbone, which varies from kind to kind",
+        "The carboxyl group, which is shared",
+        "Side chain, also called the R group",
+        "The central carbon atom"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "backbone-differs",
+        null,
+        null,
+        null
+      ],
+      "explanation": "The side chain, or R group, is the part attached to the central carbon that differs between amino acids. The backbone is the same in every kind, and the carboxyl group and central carbon are shared.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.am-join",
+      "concept": "amino-acid",
+      "element": "carboxyl-group",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In a chain of two amino acids, which groups join them?",
+      "choices": [
+        "The side chains of both, which bond to each other",
+        "The amino groups of both, joined directly together",
+        "The central carbons of both, bonded with no water lost",
+        "The carboxyl of one and the amino group of the other"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The carboxyl group of one amino acid reacts with the amino group of the next, and a water molecule is released. The side chains do not join the backbone, and the two amino groups cannot bond to each other.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.am-water-repelling",
+      "concept": "amino-acid",
+      "element": "side-chain",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why do water-repelling side chains usually end up inside a folded protein?",
+      "choices": [
+        "They avoid water, so they tuck into the interior",
+        "They are charged, so they bond to the water outside",
+        "They keep the chain straight, so it cannot fold at all",
+        "They bind the sugars that the chain is joined to"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Water-repelling side chains avoid contact with water, so they cluster in the interior of the folded protein. Charged side chains tend to face outward. The choice about a straight chain has the folding idea backwards.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.am-dna-monomer",
+      "concept": "amino-acid",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is the monomer of DNA?",
+      "choices": [
+        "Amino acid",
+        "Nucleotide",
+        "Monosaccharide",
+        "Fatty acid"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "dna-from-amino-acids",
+        null,
+        null,
+        null
+      ],
+      "explanation": "DNA is a polymer of nucleotides. Amino acids are the monomers of proteins, and monosaccharides and fatty acids are the building blocks of carbohydrates and fats.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.aa-tap-side-chain",
+      "concept": "amino-acid",
+      "element": "side-chain",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the side chain, the R group: the part that differs from one kind of amino acid to another.",
+      "artifact": "amino-acid",
+      "target": "side-chain",
+      "explanation": "The side chain is the pale green blob hanging from the central carbon. The other parts are the same in all twenty common amino acids, so the side chain alone sets each one's chemistry.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.aa-tap-central-carbon",
+      "concept": "amino-acid",
+      "element": "central-carbon",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the central carbon, the atom that all four other groups are bonded to.",
+      "artifact": "amino-acid",
+      "target": "central-carbon",
+      "explanation": "The central carbon is the dark green ball in the middle. Its four bonds go to the amino group, the carboxyl group, a hydrogen atom and the side chain.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.aa-tap-amino-group",
+      "concept": "amino-acid",
+      "element": "amino-group",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the amino group, the nitrogen-containing group that bonds to the carboxyl group of the previous amino acid in a chain.",
+      "artifact": "amino-acid",
+      "target": "amino-group",
+      "explanation": "The amino group is the blue-grey nitrogen with two hydrogens. In a peptide bond it gives up one hydrogen, which joins the -OH from the neighbouring carboxyl group to make water.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.aa-tap-carboxyl-group",
+      "concept": "amino-acid",
+      "element": "carboxyl-group",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the carboxyl group, the acidic group that gives up -OH when a peptide bond forms.",
+      "artifact": "amino-acid",
+      "target": "carboxyl-group",
+      "explanation": "The carboxyl group is the ochre carbon with two red oxygens, one double-bonded and one carrying a hydrogen. That -OH leaves as part of a water molecule when the next amino acid attaches.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.ps-bare-chain",
+      "concept": "protein-structure",
+      "element": "primary-structure",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which level of protein structure is the bare amino acid chain, before any folding?",
+      "choices": [
+        "Secondary, coiled helices and sheets",
+        "Tertiary, the whole folded shape",
+        "Primary, the bare amino acid chain",
+        "Quaternary, several chains packed together"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The primary structure is the order of amino acids in one chain. Secondary structure is local coiling, tertiary structure is the fold of the whole chain, and quaternary structure needs more than one chain.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.ps-single-chain",
+      "concept": "protein-structure",
+      "element": "quaternary-structure",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A protein is made of one polypeptide chain with no subunits. Which statement is true of it?",
+      "choices": [
+        "It has all four levels, since every protein does",
+        "It has primary structure alone, since folding needs subunits",
+        "It has a quaternary level but no tertiary level",
+        "It has three levels of structure, and no quaternary one"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "quaternary-everywhere",
+        null,
+        null,
+        null
+      ],
+      "explanation": "A single-chain protein can have primary, secondary and tertiary structure. Quaternary structure needs two or more chains packed together, so a single chain does not have it. The choice claiming all four levels is the idea that every protein has them.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.ps-holds-fold",
+      "concept": "protein-structure",
+      "element": "tertiary-structure",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which bonds hold the folded shape of a protein in place?",
+      "choices": [
+        "Weak interactions, like hydrogen bonds and hydrophobic packing",
+        "Peptide bonds, which join the amino acids into one long chain",
+        "Ionic bonds between the carboxyl and amino groups of the chain",
+        "Glycosidic bonds that link the sugar units in a starch chain"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "peptide-bonds-fold",
+        null,
+        null
+      ],
+      "explanation": "The fold is held by many weaker interactions, such as hydrogen bonds between backbone groups and hydrophobic packing of side chains. Peptide bonds link the amino acids into the chain, which is the primary structure, not the fold.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.ps-helix-level",
+      "concept": "protein-structure",
+      "element": "secondary-structure",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "The alpha helix and the beta sheet are examples of which level of protein structure?",
+      "choices": [
+        "Primary structure",
+        "Secondary structure",
+        "Tertiary structure",
+        "Quaternary structure"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Alpha helices and beta sheets are regular local patterns held by hydrogen bonds along the backbone. That is secondary structure. The other levels describe the sequence, the whole fold, and the packing of several chains.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.ps-side-chain-fold",
+      "concept": "protein-structure",
+      "element": "tertiary-structure",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does a protein's tertiary structure depend on the chemistry of its side chains?",
+      "choices": [
+        "Side chains form the peptide bonds that connect the chain",
+        "Side chains cut the chain so it folds into small loops",
+        "Water-repelling side chains bury inward and lock the fold",
+        "Side chains are identical, so they fix one shape for all"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Side chains differ in whether they attract or repel water and in whether they carry charge. Those properties decide where the chain folds and which contacts hold the fold together. The peptide bonds lie in the backbone, not in the side chains.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.ps-same-sequence",
+      "concept": "protein-structure",
+      "element": "quaternary-structure",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Two proteins have the same amino acid sequence. One is a single chain, and the other is two identical chains packed together. Which level differs between them?",
+      "choices": [
+        "Primary structure, since the sequence changes",
+        "Secondary structure, since helices are shorter in two chains",
+        "Tertiary structure, since two chains fold in a new shape",
+        "Quaternary structure, how the two identical chains pack"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The sequence is the same, so the primary structure is the same. The difference is in how separate chains pack together, which is quaternary structure. The tertiary structure of each chain can be unchanged.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.ps-error",
+      "concept": "protein-structure",
+      "element": "quaternary-structure",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says every protein has quaternary structure because every protein is large. What is wrong with that?",
+      "choices": [
+        "Quaternary structure needs two or more chains packed together",
+        "Every protein has four chains, so every one has a fourth level",
+        "Big proteins lack secondary structure, so the levels stop there",
+        "Quaternary structure is just a longer primary structure"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "quaternary-everywhere",
+        null,
+        null
+      ],
+      "explanation": "Quaternary structure is the arrangement of several chains, called subunits, that work together. Size does not decide it. The choice saying every protein has four chains is the idea that all proteins have all four levels.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.ps-heat-explain",
+      "concept": "protein-structure",
+      "element": "tertiary-structure",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which change does heat cause when it denatures a protein?",
+      "choices": [
+        "The peptide bonds between amino acids are broken apart",
+        "The fold loosens, but the peptide bonds stay intact too",
+        "The amino acids are reshuffled into a new sequence order",
+        "New peptide bonds form and the chain gets much shorter"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "heat-breaks-peptide",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Heat breaks the weak interactions that hold the fold, so the protein unfolds and loses its function. The sequence and the peptide bonds of the chain are not destroyed. The choice about breaking peptide bonds is the idea that heat breaks the chain.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: Choice 1 reads oddly (\"too\") but is the only correct one",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.ps-heat-predict",
+      "concept": "protein-structure",
+      "element": "tertiary-structure",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A protein is heated and stops working. What is the most likely change?",
+      "choices": [
+        "The peptide bonds break, and the amino acids separate",
+        "The sequence changes to a new order of amino acids",
+        "Weak bonds holding its fold break, and the chain unfolds",
+        "The chain grows longer as heat adds new amino acids to it"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "heat-breaks-peptide",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Heat gives the molecule energy that breaks the weak interactions in its fold, and the chain unfolds. Peptide bonds are strong covalent bonds and are not broken by this. The choice about peptide bonds is the idea that heat breaks the chain.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.ps-level-order",
+      "concept": "protein-structure",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the four levels of protein structure in the order a student would build them up, from the simplest.",
+      "steps": [
+        "Primary: the chain of amino acids",
+        "Secondary: local helices and sheets",
+        "Tertiary: one chain folded into a compact shape",
+        "Quaternary: several folded chains packed together"
+      ],
+      "explanation": "The levels build on each other. The sequence comes first, then local helices and sheets form, then the whole chain folds, and last several folded chains can pack into one working unit.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.ps-denature-order",
+      "concept": "protein-structure",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in the order they happen when a protein is heated until it stops working.",
+      "steps": [
+        "Heat adds energy to the protein's molecules",
+        "Weak bonds that hold the fold break",
+        "The chain unfolds and the protein stops working"
+      ],
+      "explanation": "Heat must first add energy to the molecules. That energy breaks the weak bonds of the fold, and once the fold is gone the chain has lost its shape and its function.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.dh-water-removed",
+      "concept": "dehydration-synthesis",
+      "element": "water-removal",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What happens to water in a dehydration synthesis reaction?",
+      "choices": [
+        "One water molecule is added for each bond formed",
+        "One water molecule is removed for each bond formed",
+        "Water takes no part, and the monomers react directly",
+        "Two water molecules are split for each bond formed"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "synthesis-adds-water",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Dehydration synthesis joins two monomers and releases one water molecule for each bond made. The choice saying water is added is the idea that building a polymer adds water.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.dh-reaction-name",
+      "concept": "dehydration-synthesis",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which reaction breaks a polymer into monomers by adding water?",
+      "choices": [
+        "Dehydration synthesis",
+        "Oxidation",
+        "Hydrolysis",
+        "Reduction"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Hydrolysis breaks a bond by adding a water molecule, with one piece taking the -OH and the other taking the -H. Dehydration synthesis is the reverse: it builds the bond and removes water.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.dh-glucose-pair",
+      "concept": "dehydration-synthesis",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Two glucose molecules bond inside a cell. What is released?",
+      "choices": [
+        "One molecule of oxygen is released per bond",
+        "One molecule of carbon dioxide is released per bond",
+        "One molecule of water is added to the pair",
+        "One molecule of water is released per bond"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        null,
+        "synthesis-adds-water",
+        null
+      ],
+      "explanation": "Each bond formed in dehydration synthesis releases one water molecule, so one bond releases one molecule of water. Oxygen and carbon dioxide are not products of this reaction. The choice saying water is added reverses the reaction.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.dh-hydrolysis-water",
+      "concept": "dehydration-synthesis",
+      "element": "hydrolysis",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A polymer is broken into monomers inside a cell. What happens to water?",
+      "choices": [
+        "One water molecule is used up for each bond broken",
+        "One water molecule is released for each bond broken",
+        "Water is made in equal amount to the monomers",
+        "Water takes no part in the breaking"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "breaking-makes-water",
+        null,
+        null
+      ],
+      "explanation": "Breaking a bond by hydrolysis uses one water molecule, which supplies the -OH and the -H to the two pieces. The choice about water being released is the idea that breaking a polymer releases water.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.dh-lab-error",
+      "concept": "dehydration-synthesis",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says dehydration synthesis needs a laboratory flask and cannot happen in living tissue. What is wrong with that?",
+      "choices": [
+        "Dehydration synthesis needs glass flasks and cannot run in tissue",
+        "Cells build proteins, starch and fats this way all the time",
+        "Cells build polymers by adding water, so no water is lost",
+        "Protein is built by a different reaction that uses no water"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "dehydration-only-in-lab",
+        null,
+        "synthesis-adds-water",
+        null
+      ],
+      "explanation": "Cells use dehydration synthesis constantly to build proteins, starch, DNA and fats. The choice about adding water describes the idea that synthesis adds water, which is the reverse of what happens.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.dh-best-description",
+      "concept": "dehydration-synthesis",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which is the best description of dehydration synthesis in a cell?",
+      "choices": [
+        "Monomers join into a polymer as one water is added",
+        "Monomers split apart as one water molecule is removed",
+        "Monomers join into a polymer as one water is removed",
+        "Monomers join with no water involved in the reaction"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "synthesis-adds-water",
+        null,
+        null,
+        null
+      ],
+      "explanation": "In dehydration synthesis, monomers join into a polymer and one water molecule is removed for each bond. Splitting apart describes hydrolysis, not this reaction.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.dh-hundred-monomers",
+      "concept": "dehydration-synthesis",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A linear polymer is built from 100 monomers by dehydration synthesis. How many water molecules are removed?",
+      "choices": [
+        "0 molecules",
+        "100 molecules",
+        "198 molecules",
+        "99 molecules"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A line of 100 monomers has 99 links between neighbours, and each link removes one water molecule, so 99 are removed. The choice of 100 counts monomers instead of bonds.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.dh-why-lose-groups",
+      "concept": "dehydration-synthesis",
+      "element": "water-removal",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why must each monomer lose an atom or group in dehydration synthesis?",
+      "choices": [
+        "The lost pieces leave open sites where a new bond can form",
+        "Each monomer adds a water molecule first, so a bond can form",
+        "The lost atoms make the monomers heavier, so they can bind",
+        "The lost atoms block the monomers from bonding at all"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "synthesis-adds-water",
+        null,
+        null
+      ],
+      "explanation": "Removing an -OH from one monomer and an -H from the other leaves open sites on both, and those sites can share a covalent bond. The choice saying each monomer adds water first is the idea that synthesis adds water.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.dh-starch-plant",
+      "concept": "dehydration-synthesis",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which reaction builds starch from glucose units inside a plant cell?",
+      "choices": [
+        "Hydrolysis",
+        "Dehydration synthesis",
+        "A reaction that needs a laboratory flask, not a living cell",
+        "Photosynthesis"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        "dehydration-only-in-lab",
+        null
+      ],
+      "explanation": "Starch is a polymer of glucose, and plant cells join its units by dehydration synthesis. Hydrolysis breaks such bonds, and photosynthesis makes glucose rather than linking it into a polymer.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.dh-hydrolysis-role",
+      "concept": "dehydration-synthesis",
+      "element": "hydrolysis",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In hydrolysis, what happens to the water molecule?",
+      "choices": [
+        "It is produced as a leftover, and it leaves the two monomers",
+        "It is not involved, since the bond breaks by itself anyway",
+        "It is used up, with its -OH and -H going to the two monomers",
+        "It is made as a by-product on each side of the broken bond"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "breaking-makes-water",
+        null,
+        null,
+        null
+      ],
+      "explanation": "In hydrolysis the water is consumed. Its -OH and -H attach to the two pieces of the broken bond. The choice saying water is produced is the idea that breaking a polymer releases water.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.dh-join-steps",
+      "concept": "dehydration-synthesis",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps of dehydration synthesis between two monomers in order.",
+      "steps": [
+        "Two monomers, each with a reactive group, come together",
+        "An -OH is removed from one and an -H from the other, forming water",
+        "The two monomers share a new covalent bond where the groups were"
+      ],
+      "explanation": "The two monomers must meet first. Their reactive groups are then removed, and those pieces form water. The groups' open sites let the monomers bond.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Steps 0 and 1 happen in one reaction; the order is fixed because step 1 refers to the groups removed in step 0."
+      }
+    },
+    {
+      "id": "biology.biological-macromolecules.dh-split-steps",
+      "concept": "dehydration-synthesis",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps of hydrolysis, which breaks a bond between two monomers, in order.",
+      "steps": [
+        "A water molecule approaches the bond between two monomers",
+        "The bond breaks, with an -OH and an -H attached to the two sides",
+        "Two separate monomers are left, each with a new group"
+      ],
+      "explanation": "Hydrolysis starts when water reaches the bond. The bond then breaks, and the water's pieces attach to the two sides, leaving two separate monomers.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "amino-acid",
+      "kind": "diagram",
+      "title": "Parts of an amino acid",
+      "alt": "A ball-and-stick amino acid. A dark green central carbon sits in the middle with four bonds. Above it is a single small sand-coloured hydrogen atom. To the left is a blue-grey nitrogen with two small hydrogens, the amino group. To the right is an ochre carbon double-bonded to one red oxygen and single-bonded to a second red oxygen that carries a hydrogen, the carboxyl group. Below hangs a pale green blob, the side chain.",
+      "file": "assets/amino-acid.svg",
+      "hotspots": [
+        {
+          "id": "central-carbon",
+          "label": "Central carbon",
+          "x": 0.5,
+          "y": 0.5,
+          "r": 0.06
+        },
+        {
+          "id": "hydrogen",
+          "label": "Hydrogen atom",
+          "x": 0.5,
+          "y": 0.239,
+          "r": 0.045
+        },
+        {
+          "id": "amino-group",
+          "label": "Amino group",
+          "x": 0.25,
+          "y": 0.5,
+          "r": 0.085
+        },
+        {
+          "id": "carboxyl-group",
+          "label": "Carboxyl group",
+          "x": 0.775,
+          "y": 0.522,
+          "r": 0.09
+        },
+        {
+          "id": "side-chain",
+          "label": "Side chain (R group)",
+          "x": 0.504,
+          "y": 0.794,
+          "r": 0.085
+        }
+      ]
+    },
+    {
+      "id": "dehydration-synthesis",
+      "kind": "diagram",
+      "title": "Joining two sugars by dehydration synthesis",
+      "alt": "Top row: two green hexagonal glucose rings face each other. The left ring ends in a red oxygen with a small hydrogen, its hydroxyl group. The right ring ends in an ochre oxygen with a small hydrogen. An arrow points down to the bottom row: the two rings now joined through the single ochre oxygen, plus a separate water molecule made of the red oxygen and two hydrogens.",
+      "file": "assets/dehydration-synthesis.svg",
+      "hotspots": [
+        {
+          "id": "monomer",
+          "label": "Glucose monomer",
+          "x": 0.217,
+          "y": 0.289,
+          "r": 0.08
+        },
+        {
+          "id": "hydroxyl",
+          "label": "Hydroxyl group",
+          "x": 0.417,
+          "y": 0.289,
+          "r": 0.055
+        },
+        {
+          "id": "hydrogen",
+          "label": "Hydrogen atom",
+          "x": 0.546,
+          "y": 0.289,
+          "r": 0.042
+        },
+        {
+          "id": "new-bond",
+          "label": "New glycosidic bond",
+          "x": 0.4,
+          "y": 0.722,
+          "r": 0.05
+        },
+        {
+          "id": "water",
+          "label": "Water molecule",
+          "x": 0.833,
+          "y": 0.739,
+          "r": 0.075
+        }
+      ]
+    },
+    {
+      "id": "dehydration-steps",
+      "kind": "sequence",
+      "title": "Building a polymer, step by step",
+      "alt": "Six steps: two glucose units line up, one gives up a hydroxyl group, the other gives up a hydrogen, those form water, the remaining oxygen bonds the units together, and hydrolysis reverses it by adding water.",
+      "over": "dehydration-synthesis",
+      "steps": [
+        {
+          "title": "Two monomers",
+          "text": "Two glucose units sit side by side. Each has a hydroxyl group, -OH, where the bond will form."
+        },
+        {
+          "title": "One gives up -OH",
+          "text": "One unit loses its whole hydroxyl group, oxygen and hydrogen together.",
+          "focus": "hydroxyl"
+        },
+        {
+          "title": "The other gives up -H",
+          "text": "The other unit loses only the hydrogen from its -OH and keeps the oxygen.",
+          "focus": "hydrogen"
+        },
+        {
+          "title": "Water forms",
+          "text": "The -OH and the -H combine into one water molecule, which leaves.",
+          "focus": "water"
+        },
+        {
+          "title": "A new covalent bond",
+          "text": "The kept oxygen now bridges the two units. In sugars this link is called a glycosidic bond.",
+          "focus": "new-bond"
+        },
+        {
+          "title": "Hydrolysis runs it backward",
+          "text": "Adding a water molecule splits the bond and gives back the two separate units."
+        }
+      ]
+    }
+  ]
+}

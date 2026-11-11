@@ -45,6 +45,7 @@ const concept = (source) => {
   const built = pick(source, ["id", "name", "aliases", "summary", "requires"]);
   if (source.elements) built.elements = source.elements.map((element) => pick(element, ["id", "name", "aliases"]));
   if (source.explain) built.explain = pick(source.explain, ["text", "artifact"]);
+  if (source.misconceptions) built.misconceptions = source.misconceptions.map((entry) => pick(entry, ["id", "claim", "correction"]));
   return built;
 };
 
@@ -55,6 +56,8 @@ const item = (source) => {
   if (source.kind !== "order") delete built.steps;
   if (source.kind !== "label") delete built.target;
   if (source.sources) built.sources = source.sources.map((entry) => pick(entry, ["title", "url"]));
+  // What each wrong choice gives away is published only once a second model, blind to it, has named the same mistake.
+  if (source.kind === "choice" && source.mistakes && source.verification.diagnosed >= 1 && source.mistakes.some((entry) => entry !== null)) built.mistakes = [...source.mistakes];
   return built;
 };
 
