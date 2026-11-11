@@ -96,8 +96,7 @@
         }
       ],
       "explain": {
-        "text": "A plant cell has a wall outside its plasma membrane, made mainly of cellulose fibres set in a gel of other sugars. The wall is stiff enough to resist the pressure that water builds up inside the cell, which keeps a healthy plant firm rather than bursting. It is not a fixed shell, though. Young walls are loosened and stretched as the cell grows, and some cells then add a thicker secondary wall. Fungi and bacteria also have walls, built from other materials such as chitin and peptidoglycan. Animal cells have no cell wall at all.",
-        "artifact": "plasmodesma"
+        "text": "A plant cell has a wall outside its plasma membrane, made mainly of cellulose fibres set in a gel of other sugars. The wall is stiff enough to resist the pressure that water builds up inside the cell, which keeps a healthy plant firm rather than bursting. It is not a fixed shell, though. Young walls are loosened and stretched as the cell grows, and some cells then add a thicker secondary wall. Fungi and bacteria also have walls, built from other materials such as chitin and peptidoglycan. Animal cells have no cell wall at all."
       },
       "misconceptions": [
         {
@@ -309,8 +308,7 @@
         }
       ],
       "explain": {
-        "text": "A plasmodesma is a channel that crosses the cell wall between two neighbouring plant cells. The plasma membrane of each cell lines the channel, so the two cells share a continuous cytoplasm. A strand of endoplasmic reticulum runs through the centre. Sugars, small ions and some small signalling molecules move through it. Plasmodesmata are not simply open holes: callose can narrow them, which lets a plant control which signals pass between its cells.",
-        "artifact": "plasmodesma"
+        "text": "A plasmodesma is a channel that crosses the cell wall between two neighbouring plant cells. The plasma membrane of each cell lines the channel, so the two cells share a continuous cytoplasm. A strand of endoplasmic reticulum runs through the centre. Sugars, small ions and some small signalling molecules move through it. Plasmodesmata are not simply open holes: callose can narrow them, which lets a plant control which signals pass between its cells."
       },
       "misconceptions": [
         {
@@ -1971,12 +1969,12 @@
       "target": "tight-junction",
       "explanation": "The tight junction is where the two membranes are pressed together by strands of claudin and occludin. The desmosome holds the cells together but leaves the gap open, and the gap junction passes small molecules from cell to cell.",
       "verification": {
-        "status": "draft",
+        "status": "verified",
         "method": "blind-solve",
         "solvers": 2,
-        "agreed": 1,
+        "agreed": 2,
         "at": "2026-11-11",
-        "note": "Key: hotspot “tight-junction”. a: E, hotspot “tight-junction” (agrees). b: 4, not a spot. a's note: Beaded apical strands between the cells = tight junction. Clear."
+        "note": "a's note: Beaded strands at the apical edge between the two cells are the tight junction."
       }
     },
     {
@@ -1990,12 +1988,12 @@
       "target": "desmosome",
       "explanation": "The desmosome is the pair of dense plaques joined across the gap by cadherins. It resists pulling but does not seal, unlike the tight junction, and it passes nothing between the cells, unlike the gap junction.",
       "verification": {
-        "status": "draft",
+        "status": "verified",
         "method": "blind-solve",
         "solvers": 2,
-        "agreed": 1,
+        "agreed": 2,
         "at": "2026-11-11",
-        "note": "Key: hotspot “desmosome”. a: E, hotspot “desmosome” (agrees). b: 4, not a spot. a's note: Plaque pair with rungs and intermediate filaments attached = desmosome. Clear."
+        "note": "a's note: Rust plaque with rungs between the cells, tied to the blue intermediate filament loops: desmosome."
       }
     },
     {
@@ -2009,12 +2007,12 @@
       "target": "keratin-filaments",
       "explanation": "Keratin intermediate filaments are held by the plaque of each desmosome and run into the cytoplasm. Because they link through the desmosomes to the next cell, a pull on one cell is spread across the whole sheet.",
       "verification": {
-        "status": "draft",
+        "status": "verified",
         "method": "blind-solve",
         "solvers": 2,
-        "agreed": 1,
+        "agreed": 2,
         "at": "2026-11-11",
-        "note": "Key: hotspot “keratin-filaments”. a: B, hotspot “keratin-filaments” (agrees). b: 1, not a spot. a's note: Blue looping filaments in the cytoplasm = intermediate filaments."
+        "note": "a's note: Blue looped filaments attached to the desmosome are the intermediate filaments."
       }
     },
     {
@@ -2028,12 +2026,12 @@
       "target": "gap-junction",
       "explanation": "Each gap junction channel is two halves of connexin, one in each membrane, lined up to make a pore. The tight junction blocks the space between cells instead, and the desmosome only anchors them.",
       "verification": {
-        "status": "draft",
+        "status": "verified",
         "method": "blind-solve",
         "solvers": 2,
-        "agreed": 1,
+        "agreed": 2,
         "at": "2026-11-11",
-        "note": "Key: hotspot “gap-junction”. a: D, hotspot “gap-junction” (agrees). b: 3, not a spot. a's note: Gap junction is not drawn with its own label; the stacked dark bars are the only remaining junction-type feature by elimination. Moderate confidence."
+        "note": "a's note: Not labelled as connexin channels in the picture. Stacked channel-like bars across the lateral membrane are the only remaining candidate for gap junction once the tight junction, desmosome, intermediate filaments and ECM are placed. Inferred by elimination."
       }
     },
     {
@@ -2047,12 +2045,12 @@
       "target": "collagen",
       "explanation": "Collagen fibres lie in the extracellular matrix beneath the cells. They are made inside cells and released outward, where they give the matrix its strength, while proteoglycans in the gel around them hold water.",
       "verification": {
-        "status": "draft",
+        "status": "verified",
         "method": "blind-solve",
         "solvers": 2,
-        "agreed": 1,
+        "agreed": 2,
         "at": "2026-11-11",
-        "note": "Key: hotspot “collagen”. a: C, hotspot “collagen” (agrees). b: 2, not a spot. a's note: Tan wavy fibres in the extracellular matrix below the basement membrane = collagen fibres."
+        "note": "a's note: Wavy brown fibres in the matrix below the basal lamina are the collagen-type fibres."
       }
     },
     {
@@ -2071,7 +2069,7 @@
         "solvers": 2,
         "agreed": 0,
         "at": "2026-11-11",
-        "note": "Key: hotspot “cell-wall”. a: D, hotspot “endoplasmic-reticulum”. b: 3, not a spot. a's note: Green cell wall outside the membrane (left diagonal). The horizontal green band at the middle could also be read as wall; the question's 'layer' wording does not separate primary from secondary wall. Moderate confidence."
+        "note": "Key: hotspot “cell-wall”. a: D, hotspot “endoplasmic-reticulum”. b: D, hotspot “endoplasmic-reticulum”. a's note: Thick dark green wall band on the outer left side. The same band also runs across the centre at the channel, but that spot is the plasmodesma in the next item, so I took the outer wall. b's note: Plant picture is hard to read: D is the dark green wall ribbon; no cellulose fibres are drawn."
       }
     },
     {
@@ -2090,7 +2088,7 @@
         "solvers": 2,
         "agreed": 1,
         "at": "2026-11-11",
-        "note": "Key: hotspot “plasmodesma”. a: C, hotspot “plasmodesma” (agrees). b: 3, not a spot. a's note: Central gap region in the wall between the two cells = plasmodesma channel. Possible overlap with the membrane item at the same spot. b's note: Spot is the cytoplasm-filled channel region; the spot on the wall-gap axis could also read as the pore. Mildly ambiguous with the desmotubule spot."
+        "note": "Key: hotspot “plasmodesma”. a: C, hotspot “plasmodesma” (agrees). b: no answer. a's note: Central gap through the wall between the two cells is the plasmodesma. b's note: Picture does not clearly show a channel through the wall. The tube is capped at both ends by blue membrane, and the only candidate (E) is an empty gap above the wall ribbon. The tube interior could also be meant."
       }
     },
     {
@@ -2105,11 +2103,7 @@
       "explanation": "Callose is a sugar polymer that builds up in the wall around the channel's openings. As more is deposited, the channel narrows, which lets the plant control which signals move between its cells.",
       "verification": {
         "status": "draft",
-        "method": "blind-solve",
-        "solvers": 2,
-        "agreed": 1,
-        "at": "2026-11-11",
-        "note": "Key: hotspot “callose”. a: E, hotspot “callose” (agrees). b: 4, not a spot. a's note: Red-brown blobs flanking the channel = callose collar."
+        "note": "Set back to draft on review, 2026-11-11: two blind solvers read this picture the other way round, taking the green band for the cell wall and the hatched slabs for cytoplasm. Redraw the plasmodesma picture so the wall and the membrane tube can't be confused, then solve again."
       }
     },
     {
@@ -2128,7 +2122,7 @@
         "solvers": 2,
         "agreed": 0,
         "at": "2026-11-11",
-        "note": "Key: hotspot “endoplasmic-reticulum”. a: A, hotspot “cell-wall”. b: 4, not a spot. a's note: Vertical brown line through the cytoplasm of the upper cell = desmotubule (ER). The spot is near the upper cell's cytoplasm; the tube's passage through the channel is not drawn distinctly. Moderate confidence. b's note: Desmotubule spot sits on the axis in the gap between the two channel halves, not directly on the tube line; somewhat unclear."
+        "note": "Key: hotspot “endoplasmic-reticulum”. a: A, hotspot “cell-wall”. b: A, hotspot “cell-wall”. a's note: The thin brown line running through the cytoplasm of the top cell and through the channel is the ER. The spot sits on the cytoplasm beside that line rather than exactly on it. b's note: A sits on hatch lines in the tube cytoplasm, not on the central line (desmotubule); reasonably but not clearly the ER."
       }
     },
     {
@@ -2143,11 +2137,7 @@
       "explanation": "The plasma membrane of each cell runs along the inner face of the wall and on through the channel to the next cell. This lining is why the cytoplasm of linked plant cells is continuous. The strand in the centre of the channel is endoplasmic reticulum.",
       "verification": {
         "status": "draft",
-        "method": "blind-solve",
-        "solvers": 2,
-        "agreed": 1,
-        "at": "2026-11-11",
-        "note": "Key: hotspot “plasma-membrane”. a: D, hotspot “plasma-membrane” (agrees). b: 3, not a spot. a's note: Blue membrane outline on the lower cell's side. The item says it continues through the channel, which the spot does not clearly show; the same channel spot is used by the channel item. Moderate confidence."
+        "note": "Set back to draft on review, 2026-11-11: two blind solvers read this picture the other way round, taking the green band for the cell wall and the hatched slabs for cytoplasm. Redraw the plasmodesma picture so the wall and the membrane tube can't be confused, then solve again."
       }
     }
   ],
