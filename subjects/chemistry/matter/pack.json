@@ -362,9 +362,9 @@
       "explanation": "Melting changes a solid to a liquid of the same substance, so melting point is a physical property. It is intensive, so it does not depend on sample size, and many nonmetals also have melting points.",
       "choices": [
         "It is a physical property, because melting changes the form of a solid but not what it is",
-        "It is a chemical property, because heat breaks bonds during melting",
-        "It changes with how much sample is heated",
-        "It is a property only of metals"
+        "It is a chemical property, because heat breaks the bonds holding the solid together",
+        "It changes with how much sample is heated, since a larger sample needs more heat to melt fully",
+        "It is a property only of metals, because nonmetals never have a melting point at all"
       ],
       "answer": 0,
       "verification": {
@@ -471,10 +471,10 @@
       "prompt": "Why is a metal's reaction with acid called a chemical property?",
       "explanation": "The reaction produces new substances with different composition, so the reactivity is a chemical property. Measuring it on a scale or the room temperature do not make it chemical.",
       "choices": [
-        "It can be measured on a scale",
+        "It only changes the metal's shape and size",
         "It forms new substances, such as a salt and hydrogen gas",
-        "It is the same for all metals",
-        "It depends on the room temperature"
+        "It is the same for all metals, since every metal reacts at one rate",
+        "It depends on room temperature, since cold acid never reacts"
       ],
       "answer": 1,
       "verification": {
@@ -493,10 +493,10 @@
       "prompt": "Magnesium ribbon burns brightly in air. How should this property of magnesium be classified?",
       "explanation": "Burning forms magnesium oxide, a new substance, so the property is chemical. Brightness and being a solid are physical properties.",
       "choices": [
-        "Physical property, because the flame is bright",
-        "Physical property, because magnesium is a solid",
+        "Physical property, because magnesium is a solid metal",
+        "Physical property, because magnesium is a solid metal that can be cut",
         "Chemical property, because magnesium forms magnesium oxide",
-        "Neither, because burning is not a property"
+        "Neither, because burning is an event rather than something a substance has"
       ],
       "answer": 2,
       "verification": {
@@ -504,7 +504,8 @@
         "method": "blind-solve",
         "solvers": 2,
         "agreed": 2,
-        "at": "2026-11-11"
+        "at": "2026-11-11",
+        "note": "b's note: Choice 3 is a defensible quibble but the property (flammability/reactivity) is chemical."
       }
     },
     {
@@ -515,9 +516,9 @@
       "prompt": "A sample of sugar turns black and gives off steam when strongly heated. What is being observed, and why?",
       "explanation": "Heating sugar breaks it down into carbon and water vapor, which are different substances. Changing color alone does not decide the class; the new substances do.",
       "choices": [
-        "Physical, because the sugar still tastes sweet",
-        "Physical, because the sugar changed color",
-        "Chemical, because the sugar melted first",
+        "Physical, because the sugar only changed its color",
+        "Physical, because the sugar changed color and the steam is only water moving away",
+        "Chemical, because the sugar melted first and then became a liquid that turned black",
         "Chemical, because the sugar has been turned into different substances"
       ],
       "answer": 3,
@@ -538,9 +539,9 @@
       "explanation": "Rust is a new substance with its own composition and properties. Changing its shape or melting it does not turn it back into iron.",
       "choices": [
         "It has different properties from iron, because it is a new substance",
-        "It is the same substance as iron, just in a different shape",
-        "It has the same density as iron",
-        "It can be turned back into iron just by melting it"
+        "It is the same substance as iron, only darker in color",
+        "It has the same density as iron, so it would sink in water just as iron does",
+        "It can be turned back into iron just by melting it in a hot furnace with no other step"
       ],
       "answer": 0,
       "verification": {
@@ -559,10 +560,10 @@
       "prompt": "A metal is needed for a sealed food can that must not corrode with acidic food. Which chemical property matters most?",
       "explanation": "The question depends on whether the metal reacts with acids to form new substances. Density, melting point and color matter less for corrosion.",
       "choices": [
-        "Density",
+        "Density, the mass per unit volume",
         "Reactivity with acidic food",
-        "Melting point",
-        "Color"
+        "Melting point of the metal",
+        "Color of the metal's surface"
       ],
       "answer": 1,
       "verification": {
@@ -603,9 +604,9 @@
       "prompt": "Which statement is true of a physical change?",
       "explanation": "In a physical change the substance keeps its composition, even though its form or state changes. Energy is often involved, and such changes happen to liquids and gases too.",
       "choices": [
-        "A new substance is always formed",
-        "Energy is never involved",
-        "It can only happen to solids",
+        "A new substance is formed, with a new composition",
+        "Energy is never involved in the change",
+        "It can only happen to solids, such as ice and metals",
         "The composition of the substance stays the same"
       ],
       "answer": 3,
@@ -649,8 +650,8 @@
       "choices": [
         "A chemical change, because the sugar disappears",
         "A physical change, because evaporating the water recovers the sugar",
-        "A chemical change, because the solution tastes sweet",
-        "A physical change, because sugar and water react"
+        "A chemical change, because the solution tastes sweet and has a new flavor",
+        "A physical change, because sugar and water react to form a sweet, clear solution"
       ],
       "answer": 1,
       "verification": {
@@ -691,9 +692,9 @@
       "prompt": "A student crushes chalk into powder, then heats the powder until a gas is released and a new solid is left. Which statement is correct?",
       "explanation": "Crushing only changes the particle size. Heating chalk breaks it down into new substances, so that step is chemical.",
       "choices": [
-        "Both steps are physical changes",
-        "Crushing is chemical; heating is physical",
-        "Both steps are chemical changes",
+        "Both steps are physical changes, since chalk keeps its composition",
+        "Crushing is chemical, because the powder has a new shape; heating is physical",
+        "Both steps are chemical changes, because a gas is released and a solid remains",
         "Crushing is physical; heating is chemical, since new substances form"
       ],
       "answer": 3,
@@ -801,9 +802,9 @@
       "prompt": "Two clear solutions are mixed, and a white solid forms. What is the best conclusion?",
       "explanation": "A new solid that was not present before is a sign of a chemical change. Clear starting liquids do not rule out a reaction.",
       "choices": [
-        "A physical change occurred, because the two liquids just mixed",
-        "No change occurred, because both starting liquids were clear",
-        "A physical change occurred, because the solid came from the liquid",
+        "A physical change occurred, because the two clear liquids simply mixed together",
+        "No change occurred, since both starting liquids were clear",
+        "A physical change occurred, because the solid came from the liquid as it was poured",
         "A chemical change most likely occurred, because a new solid substance formed"
       ],
       "answer": 3,
@@ -845,10 +846,10 @@
       "prompt": "Hydrogen gas and oxygen gas react to form water. Which is correct about the water compared with the gases?",
       "explanation": "Water is a compound with its own properties, a liquid at room temperature. It is not a mixture, and it contains hydrogen and oxygen atoms.",
       "choices": [
-        "It has the same properties as the gases",
+        "It has the same properties as the gases it came from",
         "It is a liquid at room temperature with different properties",
-        "It is a mixture of hydrogen and oxygen",
-        "It contains only hydrogen atoms"
+        "It is a mixture of hydrogen and oxygen, each keeping its properties",
+        "It contains only hydrogen, since oxygen was used up"
       ],
       "answer": 1,
       "verification": {
@@ -998,9 +999,9 @@
       "prompt": "A sample is made of only one kind of atom. How is it best classified?",
       "explanation": "A substance made of one kind of atom is an element, and elements are pure substances. A compound has two or more kinds of atoms.",
       "choices": [
-        "A compound",
-        "A mixture",
-        "A solution",
+        "A compound, made of at least two kinds of atom",
+        "A mixture of several substances",
+        "A solution, because it dissolves in water",
         "An element, which is a pure substance"
       ],
       "answer": 3,
@@ -1021,9 +1022,9 @@
       "explanation": "Matching properties make it likely the samples are the same pure substance, but they do not prove it. Several substances can share some properties.",
       "choices": [
         "They are likely the same pure substance, but other tests are still needed to be sure",
-        "They must be the same mixture",
-        "They must be different elements",
-        "They must each contain air"
+        "They must be the same mixture, because matching boiling points show that the composition is identical",
+        "They must be different elements, because elements are the only substances that have a boiling point",
+        "They must each contain air, because every sample from a natural source has air mixed through it"
       ],
       "answer": 0,
       "verification": {
@@ -1107,9 +1108,9 @@
       "prompt": "Sand and iron filings are mixed. Which method separates them most directly?",
       "explanation": "Iron is magnetic, so a magnet removes it from the sand without any chemical change. Filtering and boiling would not separate them.",
       "choices": [
-        "Filtering through paper",
-        "Boiling the mixture",
-        "Adding vinegar",
+        "Filtering through paper, which holds back iron and sand alike",
+        "Boiling the mixture to melt the iron away from the sand",
+        "Adding vinegar to dissolve the iron out of the sand",
         "Using a magnet to pull out the iron"
       ],
       "answer": 3,
@@ -1326,9 +1327,9 @@
       "explanation": "A reaction can rearrange atoms of different kinds, but an element has only one kind, so no simpler pure substance can form from it.",
       "choices": [
         "It contains only one kind of atom, so there is no simpler pure substance to form",
-        "Elements are always solids",
-        "Elements contain no electrons",
-        "Chemical reactions cannot touch elements"
+        "Elements are always solids, so a reaction cannot change them into a liquid or a gas",
+        "Elements contain no electrons, so a chemical reaction has nothing in them to act on",
+        "Chemical reactions cannot touch elements, because their atoms are too small to be reached"
       ],
       "answer": 0,
       "verification": {
@@ -1347,10 +1348,10 @@
       "prompt": "A sample contains only atoms with 8 protons each. What can be concluded?",
       "explanation": "The number of protons identifies the element, and 8 protons is oxygen. Only one kind of atom is present, so the sample is an element.",
       "choices": [
-        "It is a compound of oxygen",
+        "It is a compound of oxygen, since oxygen atoms are bonded in a fixed ratio",
         "It is an element, oxygen, because every atom with 8 protons is oxygen",
-        "It must be a mixture of eight elements",
-        "It must contain carbon"
+        "It must be a mixture of eight elements, one for each of its eight protons",
+        "It must contain carbon, because carbon and oxygen atoms always occur together in nature"
       ],
       "answer": 1,
       "verification": {
@@ -1435,10 +1436,10 @@
       "prompt": "Table salt, NaCl, is a compound. How do its properties compare with its elements?",
       "explanation": "Salt is a crystalline solid, unlike sodium, a reactive metal, and chlorine, a gas. Compounds have their own properties.",
       "choices": [
-        "It is more reactive than either element",
+        "It is more reactive than either element, since it combines readily with water",
         "It is a crystalline solid with properties different from either element",
-        "It is a gas at room temperature",
-        "It is a mixture of sodium and chlorine atoms"
+        "It is a gas at room temperature, like the chlorine element it is made from",
+        "It is a mixture of sodium and chlorine atoms, with properties the same as its elements"
       ],
       "answer": 1,
       "verification": {
@@ -1479,9 +1480,9 @@
       "prompt": "Iron and sulfur react to form iron sulfide, which has a fixed composition. How is iron sulfide best classified?",
       "explanation": "Iron sulfide has two elements chemically combined in a fixed ratio, which makes it a compound. A magnet cannot separate its parts.",
       "choices": [
-        "A mixture, because it contains two elements",
-        "An element, because it contains iron",
-        "A solution, because a magnet separates it",
+        "A mixture, because it contains two elements that can be separated by a magnet",
+        "An element, because it contains iron, which is a metal that cannot be broken down",
+        "A solution, because iron and sulfur dissolve evenly into one another in the sample",
         "A compound, because two elements are chemically combined in a fixed ratio"
       ],
       "answer": 3,
