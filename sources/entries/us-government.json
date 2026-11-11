@@ -3,8 +3,41 @@
   "name": "US federal agencies",
   "goodFor": "Science and health text and pictures from agencies such as NIH, NASA, USGS, NOAA and CDC.",
   "license": "per-item",
+  "licenseUrl": "https://www.usa.gov/government-copyright",
   "apps": "link",
   "bank": "none",
-  "checked": null,
-  "notes": "Unverified. Works by US federal agencies are mostly in the public domain, but material from others on those sites is not. An app links to an item until that item is checked. The bank's agents don't read it and nothing from it goes into the bank."
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://www.copyright.gov/title17/92chap1.html",
+        "quote": "Copyright protection under this title is not available for any work of the United States Government"
+      },
+      {
+        "url": "https://www.copyright.gov/title17/92chap1.html",
+        "quote": "A “work of the United States Government” is a work prepared by an officer or employee of the United States Government as part of that person’s official duties."
+      },
+      {
+        "url": "https://www.usa.gov/government-copyright",
+        "quote": "Not everything that appears on a federal government website is a government work."
+      },
+      {
+        "url": "https://www.usa.gov/government-copyright",
+        "quote": "Content on federal websites may include protected intellectual property used with the right holder's permission."
+      },
+      {
+        "url": "https://www.usa.gov/government-copyright",
+        "quote": "You also cannot use federal government trademarks or federal government agency logos without permission."
+      },
+      {
+        "url": "https://www.usa.gov/government-copyright",
+        "quote": "copyright laws may not protect U.S. government works outside the country."
+      },
+      {
+        "url": "https://www.usa.gov/government-copyright",
+        "quote": "In other cases, agencies may release copyright-protected materials under a Creative Commons “CC-BY” or similar license, which requires attribution for use."
+      }
+    ]
+  },
+  "notes": "Checked against 17 U.S.C. § 101 and § 105 on copyright.gov and USAGov's page on government works. A work made by a federal officer or employee as part of their duties has no US copyright, but federal sites also carry work by contractors and others used with permission, some agencies publish under CC BY, agency logos and trademarks need permission, and outside the US the government may still assert copyright. So the licence is per item: an app links to an item until that item's own page shows who made it and on what terms, and agencies' own site policies (not read here) may ask for a credit line. The bank's agents don't read it and nothing from it goes into the bank."
 }

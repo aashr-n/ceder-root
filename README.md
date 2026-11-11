@@ -2,6 +2,15 @@
 
 The bank is the set of concepts, questions, diagrams, 3D models and step-by-step sequences that Ceder's Learn tab draws on, open for anyone to use. It is plain files: one `subject.json` per subject and one `pack.json` per topic, with each pack's pictures and models beside it. Agents write the packs, other agents answer every question without seeing its key, and only the questions they all agreed with are built into what apps read. Nothing in the bank is about any student.
 
+## Licence
+
+This repository is released under CC0 1.0 (`LICENSE`), with two exceptions:
+
+- **`library/`** holds pinned pieces of outside sources. Each item there is under the licence its own file states (`license`, `licenseUrl`, `credit`), not CC0, and reusing one means following that licence.
+- **`tools/fonts/`** holds DejaVu Sans under its own licence (`tools/fonts/LICENSE.txt`).
+
+Everything else, the bank included (questions, answers, explanations, pictures, 3D models, tools and prompts), is CC0: use it for anything, including training models, without asking and without giving credit. Each pack says so in its `license` field.
+
 ## How it's organised
 
 ```
@@ -18,6 +27,7 @@ A pack covers one topic: 4 to 12 concepts, with at least 4 verified questions fo
 subjects/   the packs, by subject
 plan/       each subject's list of packs to write, and every outside page an agent read
 sources/    a curated list of outside sources, and what an app or the bank may do with each
+library/    pinned pieces of those sources for apps to show, each under its own licence (not CC0)
 schema/     JSON Schemas for subject.json, pack.json and a plan
 tools/      validate, build, blind export, grading, checking mistakes, plans and outside reading, with their tests
 pipeline/   how a pack gets written and checked, and the prompts the agents follow
@@ -41,7 +51,7 @@ node tools/build.mjs                     writes dist/
 
 `build.mjs` validates first and builds nothing if there are errors. It writes one flat folder: `bank-index.json`, a `bankpack-<pack id>.json` for each pack with at least one verified item, and a `bankasset-<hash>.<ext>` for each picture and model those packs use. Only verified items go in, without their verification. Diagrams are rendered from SVG to PNG at 1200 pixels wide, with their text set in the fonts in `tools/fonts/`. The same source always gives the same bytes. It prints each pack it built, and each pack or subject it left out and why.
 
-`node sources/validate.mjs` checks the source catalogue (`sources/README.md`).
+`node sources/validate.mjs` checks the source catalogue (`sources/README.md`), and `node tools/library.mjs validate` the library (`library/README.md`). The library has its own build, `node tools/library.mjs build`, which doesn't touch the bank's.
 
 CI runs these on every pull request and on `main`.
 
@@ -70,9 +80,3 @@ A pack can also say which wrong idea each wrong choice gives away, so an app can
 What gets written is decided by each subject's plan (`plan/README.md`). While they plan, write or check, agents may read only Wikipedia, Wikibooks and Wikidata, through `tools/ref.mjs`, which logs every page and checks packs for copied text (`pipeline/prompts/sources.md`).
 
 Agreement between solvers shows a key is consistent, not that it is true. The first eight packs were written and solved by one model family, so a mistake that family shares would not have been caught.
-
-## Licence
-
-Everything in the bank is released under CC0 1.0 (`LICENSE`): the questions, answers, explanations, pictures, 3D models, tools and prompts. Use it for anything, including training models, without asking and without giving credit. Each pack says so in its `license` field.
-
-The one exception is `tools/fonts/`, which holds DejaVu Sans under its own licence (`tools/fonts/LICENSE.txt`).

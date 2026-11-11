@@ -3,9 +3,31 @@
   "name": "Wiktionary",
   "url": "https://en.wiktionary.org",
   "goodFor": "Short definitions of single words.",
-  "license": "unknown",
-  "apps": "link",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://en.wiktionary.org/wiki/Wiktionary:Copyrights",
+  "apps": "show",
   "bank": "none",
-  "checked": null,
-  "notes": "Unverified: thought to be CC BY-SA like Wikipedia, not checked. The bank's agents don't read it and nothing from it goes into the bank."
+  "attribution": "The word, linked to its Wiktionary entry; the words \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when the definition shown was shortened or changed, a note that it was.",
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://en.wiktionary.org/wiki/Wiktionary:Copyrights",
+        "quote": "Permission is granted to copy, distribute and/or modify the text of all Wiktionary entries under the terms of the Creative Commons Attribution-ShareAlike 4.0 International License"
+      },
+      {
+        "url": "https://en.wiktionary.org/wiki/Wiktionary:Copyrights",
+        "quote": "If you want to use Wiktionary materials in your own books/articles/web sites or other publications, you may do so, but you have to follow CC-BY-SA / the GFDL."
+      },
+      {
+        "url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+        "quote": "When you reuse or redistribute a text page developed by the Wikimedia community, you agree to attribute the authors in any of the following fashions: Through hyperlink (where possible) or URL to the page or pages that you are reusing"
+      },
+      {
+        "url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+        "quote": "Please note that these licenses do allow commercial uses of your contributions, as long as such uses are compliant with the terms of the respective licenses."
+      }
+    ]
+  },
+  "notes": "Checked against Wiktionary:Copyrights and the Wikimedia Terms of Use: entries are CC BY-SA 4.0 (and GFDL), which allows commercial use, so an app may show a definition with the credit in attribution; the same share-alike and change-note rules as Wikipedia apply. Wiktionary's own summary reads share-alike more widely than the licence does (\"your materials have to be licensed under the same, similar, or compatible license\"); the licence's own text, not that summary, binds. tools/ref.mjs doesn't reach it, so the bank's agents don't read it and nothing from it goes into the bank."
 }

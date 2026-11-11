@@ -4,8 +4,37 @@
   "url": "https://commons.wikimedia.org",
   "goodFor": "Pictures and diagrams.",
   "license": "per-item",
+  "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
   "apps": "link",
   "bank": "none",
-  "checked": null,
-  "notes": "Unverified. Each file states its own licence. An app links to a file until that file's licence and credit are checked. The bank's agents don't read it and nothing from it goes into the bank."
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia",
+        "quote": "This will list information supplied by the uploader, including the copyright status, the copyright owner, and the license conditions."
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+        "quote": "Media licensed exclusively under non-commercial only licenses (like CC BY-NC-SA) are not accepted either."
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia",
+        "quote": "some licenses require that the specific license be identified when reusing (including, in some cases, stating or linking to the terms of the license)"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia",
+        "quote": "commercial use of images of people may require the explicit agreement of the subject, and not just the agreement of the image creator"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia",
+        "quote": "Directly using a Commons file via embedding its URL (\"hotlinking\") is also possible, but is not recommended."
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+        "quote": "GFDL is not permitted as the only acceptable license where all of the following are true: The content was licensed on or after 15 October 2018."
+      }
+    ]
+  },
+  "notes": "Checked against Commons:Licensing and Commons:Reusing content outside Wikimedia. Each file states its own licence and credit on its description page. Commons doesn't accept NonCommercial-only files, so most files allow commercial use, but each file still needs its own check before an app shows it: its licence (CC0, public domain, CC BY or CC BY-SA, with its version), the author and credit line it asks for, and any notice about trademarks or identifiable people. A file offered only under the GFDL (Commons still holds older ones) needs its own review: the GFDL's terms weren't checked here. Commons allows hotlinking but advises against it. Until a file is checked, an app links to it. The bank's agents don't read it and nothing from it goes into the bank."
 }

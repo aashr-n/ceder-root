@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/lewis-structure",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Lewis structure",
+  "url": "https://en.wikipedia.org/wiki/Lewis_structure",
+  "revision": 1383864520,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Lewis_structure&oldid=1383864520",
+  "retrieved": "2026-11-11",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Lewis structure” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "Lewis structures – also called Lewis dot formulas, Lewis dot structures, electron dot structures, or Lewis electron dot structures (LEDs) – are diagrams that show the bonding between atoms of a molecule, as well as the lone pairs of electrons that may exist in the molecule. Introduced by Gilbert N. Lewis in his 1916 article The Atom and the Molecule, a Lewis structure can be drawn for any covalently bonded molecule, as well as coordination compounds. Lewis structures extend the concept of the electron dot diagram by adding lines between atoms to represent shared pairs in a chemical bond.\n\nLewis structures show each atom and its position in the structure of the molecule using its chemical symbol. Lines are drawn between atoms that are bonded to one another (pairs of dots can be used instead of lines). Excess electrons that form lone pairs are represented as pairs of dots, and are placed next to the atoms.",
+  "concepts": [
+    "chemistry/lewis-structure"
+  ]
+}

@@ -7,6 +7,7 @@
 //   node tools/ref.mjs wikibooks "<page title>"          the same, from Wikibooks
 //   node tools/ref.mjs wikidata "<name>"                 a concept's name and other names (CC0, so they may be copied)
 //   node tools/ref.mjs check subjects/<subject>/<pack>   exits 1 if the pack shares a run of 10 words with a saved page
+//                                                        or with a text piece in library/
 //   --for <who>                                          who is reading, for the log (such as planner:physics)
 //
 // Pages are saved under .work/refs/, which isn't committed, and read from there the next time. Wikipedia and Wikibooks
@@ -100,8 +101,21 @@ export function packTexts(pack) {
   return texts;
 }
 
-function savedPages(refs) {
+/** The pages read so far, and the library's text pieces, which a pack mustn't copy from either. */
+export function savedPages(refs, root) {
   const pages = [];
+  const library = join(root ?? "", "library", "items");
+  if (root && existsSync(library)) {
+    for (const source of readdirSync(library).sort()) {
+      if (!statSync(join(library, source)).isDirectory()) continue;
+      for (const name of readdirSync(join(library, source)).filter((file) => file.endsWith(".json")).sort()) {
+        try {
+          const text = JSON.parse(readFileSync(join(library, source, name), "utf8")).text;
+          if (typeof text === "string") pages.push({ name: `library/items/${source}/${name}`, text });
+        } catch { /* tools/library.mjs validate reports it */ }
+      }
+    }
+  }
   for (const site of ["wikipedia", "wikibooks"]) {
     const dir = join(refs, site);
     if (!existsSync(dir)) continue;
@@ -113,24 +127,45 @@ function savedPages(refs) {
 /** One request at a time across every agent, at least GAP_MS after the last, and again when the site says to slow down. */
 async function get(site, params, refs) {
   const url = `https://${SITES[site]}/w/api.php?${new URLSearchParams({ ...params, format: "json", formatversion: "2" })}`;
+  return await (await politeFetch(url, refs, { accept: "application/json" })).json();
+}
+
+/**
+ * Fetches `url` one request at a time across every reader that shares `refs`, at least `gapMs` after the last, waiting
+ * as long as the site's Retry-After asks when it says to slow down. Returns the response once it is ok; throws on any
+ * other answer. tools/library.mjs uses it too, for the hosts it reaches.
+ */
+export async function politeFetch(url, refs, { accept = "*/*", gapMs = GAP_MS } = {}) {
+  const host = new URL(url).host;
   const lock = join(refs, ".lock");
   const last = join(refs, ".last");
   for (let attempt = 0; ; attempt++) {
-    for (let waited = 0; ; waited += 200) {
-      try { mkdirSync(lock); break; } catch {
-        if (waited > 120000 || (existsSync(lock) && Date.now() - statSync(lock).mtimeMs > 60000)) { try { rmdirSync(lock); } catch { /* another reader took it */ } }
-        sleep(200);
+    // Wait for this reader's turn. The lock is held only while a request is out, never while waiting, so a long
+    // Retry-After doesn't look like a lock left behind by a reader that died.
+    for (;;) {
+      for (let waited = 0; ; waited += 200) {
+        try { mkdirSync(lock); break; } catch {
+          if (waited > 120000 || (existsSync(lock) && Date.now() - statSync(lock).mtimeMs > 60000)) { try { rmdirSync(lock); } catch { /* another reader took it */ } }
+          sleep(200);
+        }
       }
+      const since = existsSync(last) ? Date.now() - Number(readFileSync(last, "utf8")) : gapMs;
+      if (since >= gapMs) break;
+      try { rmdirSync(lock); } catch { /* already gone */ }
+      sleep(Math.min(gapMs - since, 1000));
     }
     try {
-      const since = existsSync(last) ? Date.now() - Number(readFileSync(last, "utf8")) : GAP_MS;
-      if (since < GAP_MS) sleep(GAP_MS - since);
-      const response = await fetch(url, { headers: { "user-agent": USER_AGENT, accept: "application/json" } });
+      const response = await fetch(url, { headers: { "user-agent": USER_AGENT, accept } });
       writeFileSync(last, String(Date.now()));
-      if (response.ok) return await response.json();
-      if (response.status !== 429 && response.status < 500) throw new Error(`${SITES[site]} answered ${response.status}`);
-      if (attempt >= 4) throw new Error(`${SITES[site]} answered ${response.status} five times; try again in a few minutes`);
+      if (response.ok) {
+        // Read the body while the lock is held, so the next request waits for this one to finish.
+        const bytes = Buffer.from(await response.arrayBuffer());
+        return { status: response.status, headers: response.headers, bytes, json: async () => JSON.parse(bytes.toString("utf8")) };
+      }
+      if (response.status !== 429 && response.status < 500) throw new Error(`${host} answered ${response.status}`);
+      if (attempt >= 4) throw new Error(`${host} answered ${response.status} five times; try again in a few minutes`);
       const wait = Number(response.headers.get("retry-after")) || 5 * 3 ** attempt;
+      console.error(`${host} answered ${response.status}; waiting ${Math.min(wait, 120)} seconds`);
       writeFileSync(last, String(Date.now() + Math.min(wait, 120) * 1000));
     } finally {
       try { rmdirSync(lock); } catch { /* already gone */ }
@@ -216,7 +251,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
     } else if (command === "check") {
       const bank = loadBank(root, resolve(subject));
       if (bank.problems.length || !bank.packs.length) throw new Error(bank.problems[0] ?? `no pack under ${subject}`);
-      const pages = savedPages(refs);
+      const pages = savedPages(refs, root);
       let total = 0;
       for (const pack of bank.packs) {
         const found = sharedRuns(packTexts(pack.data), pages);

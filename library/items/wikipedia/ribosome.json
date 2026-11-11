@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/ribosome",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Ribosome",
+  "url": "https://en.wikipedia.org/wiki/Ribosome",
+  "revision": 1383910056,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Ribosome&oldid=1383910056",
+  "retrieved": "2026-11-11",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Ribosome” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "A ribosome is a ribonucleoprotein particle found in most cells that synthesizes proteins by translating genetic information encoded in messenger RNA (mRNA). During translation, the ribosome decodes successive codons in an mRNA molecule and, with the aid of transfer RNA (tRNA), links amino acids into a polypeptide chain. Each ribosome comprises a small and a large subunit, each composed of one or more ribosomal RNA (rRNA) molecules and many ribosomal proteins.\n\nRibosomes differ in size, composition and organization among bacteria, archaea and eukaryotes, but they share a core structure that reflects a common evolutionary origin. Distinct ribosomes are also found in eukaryotic mitochondria and, in plants and algae, chloroplasts. Ribosomes are assembled through ribosome biogenesis, which involves rRNA synthesis and processing together with the assembly of ribosomal proteins into functional subunits.",
+  "concepts": [
+    "biology/ribosome"
+  ]
+}

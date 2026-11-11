@@ -4,13 +4,94 @@
   "url": "https://en.wikipedia.org",
   "goodFor": "A lead paragraph and a picture for almost any term, and what a topic covers.",
   "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://en.wikipedia.org/wiki/Wikipedia:Copyrights",
   "apps": "show",
   "bank": "read",
-  "attribution": "The article's title, a link to the article, and the licence name (CC BY-SA 4.0).",
+  "attribution": "The article's title, linked to the article; the words \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when the text shown was shortened or changed, a note that it was.",
   "access": "https://en.wikipedia.org/api/rest_v1/page/summary/{title} for an app; node tools/ref.mjs wikipedia \"<title>\" for an agent.",
   "checked": {
     "date": "2026-11-11",
-    "basis": "secondary sources and Creative Commons' compatible-licences page; Wikimedia's own terms not opened"
+    "evidence": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+        "quote": "Permission is granted to copy, distribute and/or modify Wikipedia's text under the terms of the Creative Commons Attribution-ShareAlike 4.0 International License"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+        "quote": "To re-distribute text on Wikipedia in any form, provide credit to the authors either by including a) a hyperlink (where possible) or URL to the page or pages you are re-using"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+        "quote": "If you make modifications or additions, you must indicate in a reasonable fashion that the original work has been modified."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+        "quote": "Each copy or modified version that you distribute must include a licensing notice stating that the work is released under CC BY-SA and either a) a hyperlink or URL to the text of the license or b) a copy of the license."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+        "quote": "If you make modifications or additions to the page you re-use, you must license them under the Creative Commons Attribution-ShareAlike 4.0 International License or later."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+        "quote": "the trademarked Wikipedia/Wikimedia logos, which are not freely usable without permission"
+      },
+      {
+        "url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+        "quote": "Please note that these licenses do allow commercial uses of your contributions, as long as such uses are compliant with the terms of the respective licenses."
+      },
+      {
+        "url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+        "quote": "For each copy or modified version that you distribute, you agree to include a licensing notice stating which license the work is released under, along with either a hyperlink or URL to the text of the license or a copy of the license itself."
+      },
+      {
+        "url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+        "quote": "By using our APIs, you agree to abide by all applicable policies governing the use of the APIs, which include but are not limited to the User-Agent Policy"
+      }
+    ]
   },
-  "notes": "An app may show an extract with credit. The bank is CC0 and can't carry share-alike text, so agents read a page to learn what a topic covers and never copy its wording (pipeline/prompts/sources.md). Pictures carry their own licence, file by file. Articles often read above introductory level."
+  "parts": [
+    {
+      "id": "text",
+      "name": "Article text",
+      "license": "CC-BY-SA-4.0",
+      "apps": "show",
+      "attribution": "The article's title, linked to the article; the words \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when the text shown was shortened or changed, a note that it was.",
+      "checked": {
+        "date": "2026-11-11",
+        "evidence": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "quote": "Permission is granted to copy, distribute and/or modify Wikipedia's text under the terms of the Creative Commons Attribution-ShareAlike 4.0 International License"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "quote": "Text from external sources may attach additional attribution requirements to the work, which should be indicated on an article's face or on its talk page."
+          }
+        ]
+      },
+      "notes": "CC BY-SA 4.0 (also GFDL, which an app doesn't need). An article that carries a notice that text came from elsewhere may ask for more credit; keep that notice's credit with the text."
+    },
+    {
+      "id": "media",
+      "name": "Pictures and other files in articles",
+      "license": "per-item",
+      "apps": "link",
+      "checked": {
+        "date": "2026-11-11",
+        "evidence": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "quote": "Images on Wikipedia are not always covered by the same license as article text."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Wikipedia:Reusing_Wikipedia_content",
+            "quote": "if you were using a Wikipedia article for a commercial use that would otherwise be allowed by our licenses and the doctrine of fair use, would not be allowed under that commercial use"
+          }
+        ]
+      },
+      "notes": "Each file has its own licence on its description page, and some are non-free files used under US fair use, which a paid app can't rely on. The summary API's thumbnail is such a file. An app links to a picture until that file's own page is checked; see wikimedia-commons."
+    }
+  ],
+  "notes": "Checked against Wikipedia:Copyrights and the Wikimedia Terms of Use. Article text is CC BY-SA 4.0, which allows commercial use, so a paid app may show an extract with the credit in attribution. Text that Ceder changes or adds to must itself be offered under CC BY-SA 4.0, and a shortened or changed extract carries a note that it was. Pictures don't share the text's licence (see parts). The Wikipedia name and logos are trademarks and aren't covered, so don't use the logo or suggest endorsement. The REST API is used under Wikimedia's API rules, which ask for a descriptive User-Agent. The bank is CC0 and can't carry share-alike text, so agents read a page to learn what a topic covers and never copy its wording (pipeline/prompts/sources.md). Articles often read above introductory level."
 }

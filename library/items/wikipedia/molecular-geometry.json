@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/molecular-geometry",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Molecular geometry",
+  "url": "https://en.wikipedia.org/wiki/Molecular_geometry",
+  "revision": 1380442580,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Molecular_geometry&oldid=1380442580",
+  "retrieved": "2026-11-11",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Molecular geometry” by Wikipedia contributors. Plain text of the lead section. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section",
+  "text": "Molecular geometry is the three-dimensional arrangement of the atoms that constitute a molecule. It includes the general shape of the molecule as well as bond lengths, bond angles, torsional angles and any other geometrical parameters that determine the position of each atom.\n\nMolecular geometry influences several properties of a substance including its reactivity, polarity, phase of matter, color, magnetism and biological activity. The angles between bonds that an atom forms depend only weakly on the rest of a molecule, i.e. they can be understood as approximately local and hence transferable properties.",
+  "concepts": [
+    "chemistry/molecular-geometry"
+  ]
+}

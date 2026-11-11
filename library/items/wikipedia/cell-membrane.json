@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/cell-membrane",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Cell membrane",
+  "url": "https://en.wikipedia.org/wiki/Cell_membrane",
+  "revision": 1380783632,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Cell_membrane&oldid=1380783632",
+  "retrieved": "2026-11-11",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Cell membrane” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "The cell membrane (also known as the plasma membrane or cytoplasmic membrane, and historically referred to as the plasmalemma) is a semipermeable biological membrane that separates and protects the interior of a cell from the outside environment (the extracellular space). The cell membrane is a lipid bilayer, usually consisting of phospholipids and glycolipids; eukaryotes and some archaea typically have sterols (such as cholesterol in animals) interspersed between them as well, maintaining appropriate membrane fluidity at various temperatures. The membrane also contains membrane proteins, including integral proteins that span the membrane and serve as transporters, and peripheral proteins that attach to the surface of the cell membrane, acting as enzymes to facilitate interaction with the cell's environment. Glycolipids embedded in the outer lipid layer serve a similar purpose.",
+  "concepts": [
+    "biology/cell-membrane"
+  ]
+}

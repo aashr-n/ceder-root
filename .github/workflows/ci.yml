@@ -1,4 +1,4 @@
-# Checks the bank on every pull request and on main: its format, its tools, that it builds, and the source catalogue.
+# Checks the bank on every pull request and on main: its format, its tools, that it builds, the source catalogue and the library.
 name: CI
 
 on:
@@ -22,3 +22,5 @@ jobs:
       - run: npm test
       - run: node tools/build.mjs
       - run: node sources/validate.mjs
+      - run: node tools/library.mjs validate
+      - run: node tools/library.mjs build

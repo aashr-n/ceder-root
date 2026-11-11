@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/eukaryote",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Eukaryote",
+  "url": "https://en.wikipedia.org/wiki/Eukaryote",
+  "revision": 1385070551,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Eukaryote&oldid=1385070551",
+  "retrieved": "2026-11-11",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Eukaryote” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "The eukaryotes are cellular organisms of the domain Eukaryota or Eukarya, which have a distinct cell nucleus (formed by a nuclear membrane), membrane-bound organelles and organization supported by a cytoskeleton. Extant eukaryotes are traditionally grouped into four kingdoms: animals, plants, fungi and protists.\n\n\"Protists\" are a basal paraphyletic group that includes all algae, amoebae, flagellates and ciliates; however, this is now considered a wastebasket taxon and has been replaced with newer classifications that better represent the phylogeny of these organisms. As part of the prevailing three-domain system, eukaryotes constitute a major group of organisms alongside the two domains of prokaryotes: Bacteria and Archaea.",
+  "concepts": [
+    "biology/prokaryotic-and-eukaryotic-cells"
+  ]
+}
