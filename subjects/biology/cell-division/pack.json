@@ -1,0 +1,1699 @@
+{
+  "formatVersion": 1,
+  "id": "biology.cell-division",
+  "subject": "biology",
+  "title": "Cell division",
+  "summary": "How cells divide: chromosomes, the cell cycle and its controls, mitosis, and meiosis with the variation it creates.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "chromosome",
+      "name": "Chromosome",
+      "aliases": [
+        "chromosomes"
+      ],
+      "summary": "A chromosome is one long DNA molecule packed with proteins; after copying it is two sister chromatids joined at a centromere.",
+      "requires": [
+        "dna-double-helix"
+      ],
+      "elements": [
+        {
+          "id": "sister-chromatids",
+          "name": "Sister chromatids",
+          "aliases": [
+            "sister chromatid",
+            "chromatids",
+            "chromatid"
+          ]
+        },
+        {
+          "id": "centromere",
+          "name": "Centromere",
+          "aliases": [
+            "centromeres"
+          ]
+        },
+        {
+          "id": "telomeres",
+          "name": "Telomeres",
+          "aliases": [
+            "telomere"
+          ]
+        },
+        {
+          "id": "homologous-chromosomes",
+          "name": "Homologous chromosomes",
+          "aliases": [
+            "homologues",
+            "homologs",
+            "homologous pair"
+          ]
+        },
+        {
+          "id": "histones",
+          "name": "Histones",
+          "aliases": [
+            "histone"
+          ]
+        },
+        {
+          "id": "chromosome-number",
+          "name": "Chromosome number"
+        }
+      ],
+      "explain": {
+        "text": "A chromosome is one long DNA molecule wound around proteins and packed tightly enough to be moved around the cell. Humans have 46 in each body cell, in 23 pairs. One of each pair came from the mother and one from the father, and the two in a pair, called homologous chromosomes, carry the same genes in the same order. Before a cell divides, each chromosome is copied, and the two identical copies, the sister chromatids, stay joined at a narrow point called the centromere. That is what gives a chromosome in a textbook photograph its X shape.",
+        "artifact": "chromosome-pair"
+      }
+    },
+    {
+      "id": "ploidy",
+      "name": "Diploid and haploid cells",
+      "aliases": [
+        "ploidy",
+        "diploid",
+        "haploid",
+        "diploid cell",
+        "haploid cell"
+      ],
+      "summary": "A diploid cell has two sets of chromosomes, one from each parent; a haploid cell, such as an egg or sperm, has one set.",
+      "requires": [
+        "chromosome"
+      ],
+      "elements": [
+        {
+          "id": "diploid-number",
+          "name": "Diploid number",
+          "aliases": [
+            "2n"
+          ]
+        },
+        {
+          "id": "haploid-number",
+          "name": "Haploid number"
+        },
+        {
+          "id": "gametes",
+          "name": "Gametes",
+          "aliases": [
+            "gamete",
+            "sex cells"
+          ]
+        },
+        {
+          "id": "somatic-cells",
+          "name": "Somatic cells",
+          "aliases": [
+            "somatic cell",
+            "body cells"
+          ]
+        },
+        {
+          "id": "fertilisation",
+          "name": "Fertilisation",
+          "aliases": [
+            "fertilization"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "A diploid cell has two sets of chromosomes, one from each parent; a haploid cell has one set. Biologists write the number of chromosomes in one set as n, so a diploid cell is 2n. In humans n is 23: skin, muscle and other body cells are diploid with 46 chromosomes, while eggs and sperm are haploid with 23. When an egg and a sperm fuse at fertilisation, the zygote gets 23 plus 23, which restores 46. If gametes were not haploid, the number of chromosomes would double in every generation."
+      }
+    },
+    {
+      "id": "cell-cycle",
+      "name": "Cell cycle",
+      "aliases": [
+        "cell cycles",
+        "cell division cycle"
+      ],
+      "summary": "The cell cycle is the sequence a cell goes through from one division to the next: growth in G1, DNA copying in S, preparation in G2, then mitosis and cytokinesis.",
+      "requires": [
+        "chromosome",
+        "dna-replication"
+      ],
+      "elements": [
+        {
+          "id": "interphase",
+          "name": "Interphase"
+        },
+        {
+          "id": "g1-phase",
+          "name": "G1 phase",
+          "aliases": [
+            "gap 1 phase"
+          ]
+        },
+        {
+          "id": "s-phase",
+          "name": "S phase",
+          "aliases": [
+            "synthesis phase"
+          ]
+        },
+        {
+          "id": "g2-phase",
+          "name": "G2 phase",
+          "aliases": [
+            "gap 2 phase"
+          ]
+        },
+        {
+          "id": "m-phase",
+          "name": "M phase",
+          "aliases": [
+            "mitotic phase"
+          ]
+        },
+        {
+          "id": "g0-phase",
+          "name": "G0 phase",
+          "aliases": [
+            "quiescence"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "The cell cycle is the repeating series of stages a cell goes through from one division to the next. Most of it is interphase, when the cell grows and does its normal work. Interphase has three parts: G1, when the cell grows; S, when it copies its DNA; and G2, when it checks the copies and gets ready to divide. Then comes M phase, the short burst of mitosis and cytokinesis that splits it in two. Cells that stop dividing, such as most nerve cells, leave the cycle from G1 into a resting state called G0.",
+        "artifact": "cell-cycle"
+      }
+    },
+    {
+      "id": "cell-cycle-regulation",
+      "name": "Cell cycle regulation",
+      "aliases": [
+        "cell cycle control",
+        "cell cycle checkpoints"
+      ],
+      "summary": "Checkpoints, cyclins and cyclin-dependent kinases decide whether a cell moves on to the next phase; when these controls fail, cells can divide without limit.",
+      "requires": [
+        "cell-cycle"
+      ],
+      "elements": [
+        {
+          "id": "checkpoints",
+          "name": "Checkpoints",
+          "aliases": [
+            "checkpoint"
+          ]
+        },
+        {
+          "id": "cyclins",
+          "name": "Cyclins",
+          "aliases": [
+            "cyclin"
+          ]
+        },
+        {
+          "id": "cdks",
+          "name": "Cyclin-dependent kinases",
+          "aliases": [
+            "CDKs",
+            "CDK"
+          ]
+        },
+        {
+          "id": "p53",
+          "name": "p53",
+          "aliases": [
+            "p53 protein"
+          ]
+        },
+        {
+          "id": "apoptosis",
+          "name": "Apoptosis",
+          "aliases": [
+            "programmed cell death"
+          ]
+        },
+        {
+          "id": "cancer",
+          "name": "Uncontrolled division and cancer"
+        }
+      ],
+      "explain": {
+        "text": "A cell does not move through its cycle blindly. At checkpoints it pauses and checks that things are right before going on: late in G1 it checks its size and whether its DNA is damaged, late in G2 whether the DNA was copied correctly, and in mitosis whether every chromosome is attached to the spindle. Proteins called cyclins rise and fall through the cycle and switch on enzymes, cyclin-dependent kinases, that push it to the next step. If DNA is badly damaged, the protein p53 can halt the cycle or make the cell destroy itself. Cancer starts when these controls fail."
+      }
+    },
+    {
+      "id": "mitosis",
+      "name": "Mitosis",
+      "aliases": [
+        "mitotic division"
+      ],
+      "summary": "Mitosis divides a nucleus into two nuclei with identical sets of chromosomes, in prophase, metaphase, anaphase and telophase; cytokinesis then splits the cell.",
+      "requires": [
+        "cell-cycle"
+      ],
+      "elements": [
+        {
+          "id": "prophase",
+          "name": "Prophase"
+        },
+        {
+          "id": "metaphase",
+          "name": "Metaphase"
+        },
+        {
+          "id": "anaphase",
+          "name": "Anaphase"
+        },
+        {
+          "id": "telophase",
+          "name": "Telophase"
+        },
+        {
+          "id": "spindle",
+          "name": "Spindle",
+          "aliases": [
+            "mitotic spindle",
+            "spindle fibres",
+            "spindle fibers"
+          ]
+        },
+        {
+          "id": "cytokinesis",
+          "name": "Cytokinesis"
+        }
+      ],
+      "explain": {
+        "text": "Mitosis is how a eukaryotic cell divides its nucleus into two nuclei with identical sets of chromosomes. It runs in four stages. In prophase the copied chromosomes coil up and become visible, and the nuclear envelope breaks down. In metaphase a spindle of protein fibres lines the chromosomes up across the middle of the cell. In anaphase the sister chromatids are pulled apart to opposite poles. In telophase new nuclear envelopes form around each set. Cytokinesis then splits the cytoplasm, giving two daughter cells genetically identical to the parent. Mitosis is how you grow and how a cut heals.",
+        "artifact": "mitosis-steps"
+      }
+    },
+    {
+      "id": "meiosis",
+      "name": "Meiosis",
+      "aliases": [
+        "meiotic division",
+        "reduction division"
+      ],
+      "summary": "Meiosis is two divisions in a row that turn one diploid cell into four genetically different haploid cells, the gametes or spores.",
+      "requires": [
+        "mitosis",
+        "ploidy"
+      ],
+      "elements": [
+        {
+          "id": "meiosis-i",
+          "name": "Meiosis I"
+        },
+        {
+          "id": "meiosis-ii",
+          "name": "Meiosis II"
+        },
+        {
+          "id": "homologue-pairing",
+          "name": "Pairing of homologous chromosomes",
+          "aliases": [
+            "synapsis",
+            "bivalent",
+            "tetrad"
+          ]
+        },
+        {
+          "id": "reduction",
+          "name": "Halving the chromosome number"
+        },
+        {
+          "id": "gamete-formation",
+          "name": "Gamete formation",
+          "aliases": [
+            "gametogenesis"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "Meiosis is the kind of cell division that makes gametes, such as eggs and sperm. One diploid cell divides twice and ends up as four haploid cells, each with half the original number of chromosomes and a different mix of genes. In meiosis I the homologous chromosomes pair up and then separate, one of each pair going to each new cell, which is what halves the number. Meiosis II works like mitosis: the sister chromatids separate. In humans a cell with 46 chromosomes gives four cells with 23. Without meiosis, the chromosome count would double at every fertilisation."
+      }
+    },
+    {
+      "id": "genetic-variation-in-meiosis",
+      "name": "Genetic variation in meiosis",
+      "aliases": [
+        "sources of genetic variation"
+      ],
+      "summary": "Crossing over and independent assortment in meiosis, followed by random fertilisation, make every gamete and every offspring genetically different.",
+      "requires": [
+        "meiosis"
+      ],
+      "elements": [
+        {
+          "id": "crossing-over",
+          "name": "Crossing over",
+          "aliases": [
+            "recombination"
+          ]
+        },
+        {
+          "id": "chiasmata",
+          "name": "Chiasmata",
+          "aliases": [
+            "chiasma"
+          ]
+        },
+        {
+          "id": "independent-assortment",
+          "name": "Independent assortment",
+          "aliases": [
+            "independent orientation"
+          ]
+        },
+        {
+          "id": "random-fertilisation",
+          "name": "Random fertilisation",
+          "aliases": [
+            "random fertilization"
+          ]
+        },
+        {
+          "id": "non-disjunction",
+          "name": "Non-disjunction",
+          "aliases": [
+            "nondisjunction"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "Meiosis does more than halve the chromosome number; it also shuffles genes so that every gamete is different. In crossing over, paired homologous chromosomes swap matching sections in prophase I, so each chromatid becomes a new mix of the mother's and father's versions of genes. In independent assortment, each homologous pair lines up in metaphase I regardless of the others, so which parent's copy goes to which cell is a coin toss for every pair. With 23 pairs, assortment alone gives 2 to the power 23, about 8.4 million, combinations. Random fertilisation multiplies this further."
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "biology.cell-division.tap-centromere",
+      "concept": "chromosome",
+      "element": "centromere",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the centromere.",
+      "artifact": "chromosome-pair",
+      "target": "centromere",
+      "explanation": "The centromere is the narrow point where the two sister chromatids are held together, drawn here as the dark spot at the centre of the X.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.tap-telomere",
+      "concept": "chromosome",
+      "element": "telomeres",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap a telomere.",
+      "artifact": "chromosome-pair",
+      "target": "telomere",
+      "explanation": "Telomeres are the repeated DNA sequences that cap the ends of each chromosome arm and protect them from being worn down or stuck to other chromosomes.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.tap-homologue",
+      "concept": "chromosome",
+      "element": "homologous-chromosomes",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the homologous partner of the red chromosome.",
+      "artifact": "chromosome-pair",
+      "target": "homologue",
+      "explanation": "Homologous chromosomes are the same size, with the same banding and the same genes in the same order; one came from each parent. The blue chromosome matches the red one band for band.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.human-number",
+      "concept": "chromosome",
+      "element": "chromosome-number",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How many chromosomes are in a typical human body cell?",
+      "choices": [
+        "23",
+        "92",
+        "46",
+        "44"
+      ],
+      "answer": 2,
+      "explanation": "A human body cell has 46 chromosomes, in 23 pairs. 23 is the number in an egg or sperm, a common mix-up.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.sister-vs-homologue",
+      "concept": "chromosome",
+      "element": "sister-chromatids",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "How do sister chromatids differ from homologous chromosomes?",
+      "choices": [
+        "Sisters are identical copies; homologues are a pair, one from each parent",
+        "Sisters come one from each parent; homologues are identical copies",
+        "They are two names for the same thing",
+        "Homologues are found only in eggs and sperm"
+      ],
+      "answer": 0,
+      "explanation": "Sister chromatids are identical copies made when DNA is copied, joined at a centromere. Homologues are a matching pair, one from each parent, that carry the same genes but can carry different versions of them.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.histones",
+      "concept": "chromosome",
+      "element": "histones",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "What proteins does DNA wrap around to pack into a chromosome?",
+      "answer": "Histones",
+      "explanation": "Histones. DNA winds around groups of histones like thread on spools, then the spools coil further until the chromosome is compact.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-division.chromatids-in-g2",
+      "concept": "chromosome",
+      "element": "sister-chromatids",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A human cell in G2 has 46 chromosomes. How many chromatids does it have?",
+      "choices": [
+        "46",
+        "23",
+        "184",
+        "92"
+      ],
+      "answer": 3,
+      "explanation": "After S phase every chromosome is two sister chromatids, so 46 x 2 = 92. Copying DNA doubles the chromatids but not the chromosome count, which stays 46 while the sisters are joined.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.packing-order",
+      "concept": "chromosome",
+      "element": "histones",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these levels of DNA packing in order from least to most compact.",
+      "steps": [
+        "The DNA double helix",
+        "DNA wound round histones as nucleosomes",
+        "A coiled chromatin fibre",
+        "A condensed chromosome"
+      ],
+      "explanation": "The double helix wraps round histones as nucleosomes, which coil into a thicker chromatin fibre, which folds further into the condensed chromosome seen in mitosis.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.which-haploid",
+      "concept": "ploidy",
+      "element": "gametes",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which human cell is haploid?",
+      "choices": [
+        "A skin cell",
+        "A sperm cell",
+        "A liver cell",
+        "A zygote"
+      ],
+      "answer": 1,
+      "explanation": "Sperm and egg cells are haploid, with one set of 23 chromosomes. A zygote is diploid, because it has a set from each gamete.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.egg-number",
+      "concept": "ploidy",
+      "element": "haploid-number",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "How many chromosomes does a normal human egg cell contain?",
+      "answer": "23",
+      "explanation": "23, one set. The egg is haploid, and fertilisation by a sperm with another 23 restores 46.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-division.dog-sperm",
+      "concept": "ploidy",
+      "element": "haploid-number",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A dog's body cells have 78 chromosomes. How many chromosomes does a dog's sperm cell have?",
+      "choices": [
+        "78",
+        "39",
+        "156",
+        "19"
+      ],
+      "answer": 1,
+      "explanation": "Body cells are diploid, so the haploid sperm has half: 78 / 2 = 39.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.why-haploid",
+      "concept": "ploidy",
+      "element": "fertilisation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why must gametes be haploid?",
+      "choices": [
+        "So that gametes can go on dividing by mitosis",
+        "Because a haploid cell is small enough to swim to the egg",
+        "So that each gamete carries both copies of every gene",
+        "So fertilisation restores the diploid number instead of doubling it"
+      ],
+      "answer": 3,
+      "explanation": "Fertilisation adds two gametes' chromosomes together. Halving the number in each gamete means the zygote gets back the diploid number instead of double it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.haploid-from-diploid",
+      "concept": "ploidy",
+      "element": "diploid-number",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "A species has 2n = 16. What is its haploid number?",
+      "answer": "8",
+      "explanation": "The haploid number n is half the diploid number: 16 / 2 = 8.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-division.abnormal-gamete",
+      "concept": "ploidy",
+      "element": "fertilisation",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A plant has 2n = 24. An error makes a gamete with 24 chromosomes, and it fuses with a normal gamete. How many chromosomes does the zygote have?",
+      "choices": [
+        "36",
+        "24",
+        "48",
+        "12"
+      ],
+      "answer": 0,
+      "explanation": "A normal gamete has n = 12. The faulty one has 24, so the zygote has 24 + 12 = 36, three sets. This is how some new polyploid plant species arise.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.somatic-diploid",
+      "concept": "ploidy",
+      "element": "somatic-cells",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which word describes the chromosome sets in a human muscle cell?",
+      "choices": [
+        "Haploid",
+        "Triploid",
+        "Diploid",
+        "Tetraploid"
+      ],
+      "answer": 2,
+      "explanation": "Muscle cells are somatic (body) cells, which are diploid: two sets, 46 chromosomes. Only gametes are haploid.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.tap-s",
+      "concept": "cell-cycle",
+      "element": "s-phase",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the phase in which the cell copies its DNA.",
+      "artifact": "cell-cycle",
+      "target": "s-phase",
+      "explanation": "DNA is copied in S phase, the synthesis phase, which follows G1 going round the cycle.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "a's note: The picture has no text labels; the phases are identified only by segment size, clockwise order and the G0 branch off G1. Answerable, but a student must already know the usual layout."
+      }
+    },
+    {
+      "id": "biology.cell-division.tap-g1",
+      "concept": "cell-cycle",
+      "element": "g1-phase",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the phase that comes straight after a cell divides.",
+      "artifact": "cell-cycle",
+      "target": "g1-phase",
+      "explanation": "After M phase the new cells enter G1, the first gap phase, where they grow and make proteins. Following the arrows, it is the segment right after the dividing cell.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "a's note: The picture has no text labels; the phases are identified only by segment size, clockwise order and the G0 branch off G1. Answerable, but a student must already know the usual layout."
+      }
+    },
+    {
+      "id": "biology.cell-division.tap-g2",
+      "concept": "cell-cycle",
+      "element": "g2-phase",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the phase in which the cell checks its copied DNA and prepares for mitosis.",
+      "artifact": "cell-cycle",
+      "target": "g2-phase",
+      "explanation": "G2 comes after S and just before M phase. The cell checks its copied DNA and makes the proteins it needs to divide.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "a's note: The picture has no text labels; the phases are identified only by segment size, clockwise order and the G0 branch off G1. Answerable, but a student must already know the usual layout."
+      }
+    },
+    {
+      "id": "biology.cell-division.tap-g0",
+      "concept": "cell-cycle",
+      "element": "g0-phase",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the resting state that cells such as most nerve cells enter when they stop dividing.",
+      "artifact": "cell-cycle",
+      "target": "g0-phase",
+      "explanation": "G0 is a non-dividing state that cells enter from G1. It is shown outside the ring because a cell in G0 has left the cycle.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "a's note: The picture has no text labels; the phases are identified only by segment size, clockwise order and the G0 branch off G1. Answerable, but a student must already know the usual layout. b's note: The cycle diagram has no text labels, so the phases must be inferred from colour, size and arrow direction (M drawn as two cells, G0 drawn off the largest segment). Same applies to the other cell-cycle label items."
+      }
+    },
+    {
+      "id": "biology.cell-division.cycle-order",
+      "concept": "cell-cycle",
+      "element": "interphase",
+      "kind": "order",
+      "difficulty": 1,
+      "prompt": "Put the stages of the cell cycle in order, starting just after a division.",
+      "steps": [
+        "G1",
+        "S",
+        "G2",
+        "Mitosis",
+        "Cytokinesis"
+      ],
+      "explanation": "A new cell grows in G1, copies its DNA in S, prepares in G2, divides its nucleus in mitosis, and splits in cytokinesis.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.longest-phase",
+      "concept": "cell-cycle",
+      "element": "interphase",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In which part of the cell cycle does a dividing cell spend most of its time?",
+      "choices": [
+        "Prophase",
+        "Metaphase",
+        "Interphase",
+        "Cytokinesis"
+      ],
+      "answer": 2,
+      "explanation": "Interphase, made up of G1, S and G2, takes up most of the cycle. Mitosis is short, often around an hour of a roughly 24-hour cycle in human cells grown in a dish.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.s-stands-for",
+      "concept": "cell-cycle",
+      "element": "s-phase",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What does the S in S phase stand for?",
+      "answer": "Synthesis (of DNA)",
+      "explanation": "Synthesis, because new DNA is synthesised in this phase.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-division.dna-content-g2",
+      "concept": "cell-cycle",
+      "element": "g2-phase",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A cell has 2 units of DNA in G1. How many units does it have in G2?",
+      "choices": [
+        "4 units",
+        "2 units",
+        "1 unit",
+        "8 units"
+      ],
+      "answer": 0,
+      "explanation": "S phase copies all of the DNA, so G2 has twice as much: 4 units. It returns to 2 in each daughter cell after division.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.checkpoint-job",
+      "concept": "cell-cycle-regulation",
+      "element": "checkpoints",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the job of a cell cycle checkpoint?",
+      "choices": [
+        "To copy the cell's DNA before division",
+        "To split the cytoplasm into two cells",
+        "To supply ATP to the spindle fibres",
+        "To pause the cycle until conditions are right"
+      ],
+      "answer": 3,
+      "explanation": "A checkpoint pauses the cycle until conditions are right, such as undamaged DNA or every chromosome attached to the spindle. It does not itself copy DNA or divide the cell.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.cyclins",
+      "concept": "cell-cycle-regulation",
+      "element": "cyclins",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "Which proteins rise and fall in amount through the cell cycle and switch on the kinases that drive it?",
+      "answer": "Cyclins",
+      "explanation": "Cyclins. They bind and activate cyclin-dependent kinases, and are broken down when their phase is over.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-division.p53-response",
+      "concept": "cell-cycle-regulation",
+      "element": "p53",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Ultraviolet light damages a cell's DNA during G1. What does a working p53 protein do?",
+      "choices": [
+        "Speeds the cell into S phase so it divides sooner",
+        "Halts the cycle for repair, or triggers cell death",
+        "Cuts the damaged chromosome out of the nucleus",
+        "Starts mitosis early to share out the damage"
+      ],
+      "answer": 1,
+      "explanation": "p53 halts the cycle so the DNA can be repaired, and if the damage is too great it triggers apoptosis. Moving into S phase would copy the damage into both daughter cells.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.spindle-checkpoint",
+      "concept": "cell-cycle-regulation",
+      "element": "checkpoints",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "What does the spindle checkpoint check before anaphase begins?",
+      "choices": [
+        "That the DNA has been copied",
+        "That every chromosome is attached to the spindle",
+        "That the cell is large enough",
+        "That the nuclear envelope has reformed"
+      ],
+      "answer": 1,
+      "explanation": "The spindle checkpoint holds the cell in metaphase until every chromosome is attached to the spindle. DNA copying was checked earlier, at the G2 checkpoint.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.apoptosis",
+      "concept": "cell-cycle-regulation",
+      "element": "apoptosis",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is programmed cell death called?",
+      "answer": "Apoptosis",
+      "explanation": "Apoptosis: an orderly self-destruction that removes damaged or unneeded cells without harming their neighbours.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-division.p53-cancer",
+      "concept": "cell-cycle-regulation",
+      "element": "cancer",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why is a mutation that disables p53 found in many cancers?",
+      "choices": [
+        "Cells can no longer copy their DNA",
+        "Cells grow too large to divide",
+        "Cells can no longer carry out cytokinesis",
+        "Cells with damaged DNA keep dividing"
+      ],
+      "answer": 3,
+      "explanation": "Without p53, cells with damaged DNA are neither stopped nor killed, so they keep dividing and build up more mutations. p53 is not needed to copy DNA.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.cancer-definition",
+      "concept": "cell-cycle-regulation",
+      "element": "cancer",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is cancer, in terms of the cell cycle?",
+      "choices": [
+        "Cells dividing without control",
+        "Cells resting permanently in G0",
+        "Cells that cannot copy their DNA",
+        "Cells that have lost their mitochondria"
+      ],
+      "answer": 0,
+      "explanation": "Cancer is cells dividing without control because the checks on the cycle have failed. Cells resting in G0 are the opposite: they have stopped dividing.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.checkpoint-order",
+      "concept": "cell-cycle-regulation",
+      "element": "checkpoints",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the cell cycle checkpoints in the order a cell meets them, starting in G1.",
+      "steps": [
+        "G1 checkpoint",
+        "G2 checkpoint",
+        "Spindle checkpoint"
+      ],
+      "explanation": "The G1 checkpoint comes before DNA copying, the G2 checkpoint before mitosis, and the spindle checkpoint in metaphase, before anaphase.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.tap-metaphase",
+      "concept": "mitosis",
+      "element": "metaphase",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the cell in metaphase.",
+      "artifact": "mitosis-stages",
+      "target": "metaphase",
+      "explanation": "In metaphase the chromosomes are lined up in a single row across the middle of the cell, attached to spindle fibres from both poles.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.tap-anaphase",
+      "concept": "mitosis",
+      "element": "anaphase",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the cell in anaphase.",
+      "artifact": "mitosis-stages",
+      "target": "anaphase",
+      "explanation": "In anaphase the sister chromatids have separated and are being pulled toward opposite poles, so they form two V-shaped groups.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.tap-prophase",
+      "concept": "mitosis",
+      "element": "prophase",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the cell in prophase.",
+      "artifact": "mitosis-stages",
+      "target": "prophase",
+      "explanation": "In prophase the chromosomes have condensed into visible X shapes, the nuclear envelope is breaking down, and the centrosomes are moving apart.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.tap-telophase",
+      "concept": "mitosis",
+      "element": "telophase",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the cell in telophase.",
+      "artifact": "mitosis-stages",
+      "target": "telophase",
+      "explanation": "In telophase a new nucleus forms at each pole and the chromosomes unwind; the cell is usually already pinching in two by cytokinesis.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.mitosis-order",
+      "concept": "mitosis",
+      "element": "spindle",
+      "kind": "order",
+      "difficulty": 1,
+      "prompt": "Put the stages of mitosis in order.",
+      "steps": [
+        "Prophase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
+      "explanation": "Prophase, metaphase, anaphase, telophase. One way to remember it is PMAT.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.chromatids-separate",
+      "concept": "mitosis",
+      "element": "anaphase",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In which stage of mitosis do sister chromatids separate and move to opposite poles?",
+      "choices": [
+        "Prophase",
+        "Metaphase",
+        "Anaphase",
+        "Telophase"
+      ],
+      "answer": 2,
+      "explanation": "Anaphase. In metaphase the chromosomes are lined up but the sisters are still joined, which makes it the tempting wrong answer.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.daughter-cells",
+      "concept": "mitosis",
+      "element": "cytokinesis",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "How do the two daughter cells from mitosis compare with the parent cell?",
+      "choices": [
+        "Each has half the parent's chromosomes",
+        "Each differs because of crossing over",
+        "Each is genetically identical to the parent",
+        "Each has twice the parent's chromosomes"
+      ],
+      "answer": 2,
+      "explanation": "Each daughter gets one sister chromatid of every chromosome, so both are genetically identical to the parent with the same number of chromosomes. Halving happens in meiosis, not mitosis.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.cytokinesis-name",
+      "concept": "mitosis",
+      "element": "cytokinesis",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is the division of the cytoplasm that follows mitosis called?",
+      "answer": "Cytokinesis",
+      "explanation": "Cytokinesis. Mitosis divides the nucleus; cytokinesis divides the rest of the cell.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-division.plant-cytokinesis",
+      "concept": "mitosis",
+      "element": "cytokinesis",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "How does cytokinesis in a plant cell differ from cytokinesis in an animal cell?",
+      "choices": [
+        "A cell plate builds a new wall across the middle",
+        "Plant cells skip cytokinesis entirely",
+        "A cleavage furrow forms twice",
+        "The cytoplasm divides before the nucleus"
+      ],
+      "answer": 0,
+      "explanation": "A plant cell has a rigid wall, so instead of pinching in with a cleavage furrow it builds a cell plate across the middle that becomes a new wall.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.meiosis-cell-count",
+      "concept": "meiosis",
+      "element": "meiosis-ii",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How many cells does meiosis produce from one parent cell?",
+      "choices": [
+        "2",
+        "8",
+        "1",
+        "4"
+      ],
+      "answer": 3,
+      "explanation": "Meiosis is two divisions in a row, so one cell becomes two and then four. Two is the result of mitosis.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.halving-event",
+      "concept": "meiosis",
+      "element": "reduction",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which event in meiosis halves the number of chromosomes in each cell?",
+      "choices": [
+        "Sister chromatids separating in meiosis II",
+        "Homologous chromosomes separating in meiosis I",
+        "DNA being copied before meiosis",
+        "The nuclear envelope breaking down"
+      ],
+      "answer": 1,
+      "explanation": "In anaphase I homologous chromosomes go to different cells, so each gets one of each pair. Sister chromatids separating in meiosis II does not change the chromosome count per cell.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.meiosis-order",
+      "concept": "meiosis",
+      "element": "meiosis-i",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these events of meiosis in order.",
+      "steps": [
+        "Homologous chromosomes pair up",
+        "Homologous chromosomes move to opposite poles",
+        "Two haploid cells form",
+        "Sister chromatids separate",
+        "Four haploid cells form"
+      ],
+      "explanation": "Homologues pair, then separate in meiosis I to give two haploid cells; in meiosis II the sister chromatids separate, giving four haploid cells.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.gamete-division",
+      "concept": "meiosis",
+      "element": "gamete-formation",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "Which type of cell division makes eggs and sperm in animals?",
+      "answer": "Meiosis",
+      "explanation": "Meiosis. Mitosis makes identical diploid cells for growth and repair.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-division.like-mitosis",
+      "concept": "meiosis",
+      "element": "meiosis-ii",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which division of meiosis is most like mitosis?",
+      "choices": [
+        "Meiosis I",
+        "Meiosis II",
+        "Prophase I",
+        "The interphase before meiosis"
+      ],
+      "answer": 1,
+      "explanation": "In meiosis II, as in mitosis, sister chromatids separate. Meiosis I separates homologous pairs, which never happens in mitosis.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.after-meiosis-i",
+      "concept": "meiosis",
+      "element": "reduction",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A cell with 2n = 8 goes through meiosis. How many chromosomes does each cell have at the end of meiosis I?",
+      "choices": [
+        "8",
+        "2",
+        "16",
+        "4"
+      ],
+      "answer": 3,
+      "explanation": "Meiosis I separates the 4 homologous pairs, so each cell gets 4 chromosomes, each still made of two chromatids. Meiosis II separates the chromatids, leaving 4 chromosomes per cell.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "b's note: Answer 4 counts chromosomes by centromeres; each of those chromosomes still has two chromatids at the end of meiosis I."
+      }
+    },
+    {
+      "id": "biology.cell-division.bivalent",
+      "concept": "meiosis",
+      "element": "homologue-pairing",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "What is a pair of homologous chromosomes joined side by side in prophase I called?",
+      "answer": "A bivalent (or tetrad)",
+      "explanation": "A bivalent, also called a tetrad because it is made of four chromatids.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-division.crossing-over-stage",
+      "concept": "genetic-variation-in-meiosis",
+      "element": "crossing-over",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In which stage of meiosis does crossing over happen?",
+      "choices": [
+        "Prophase I",
+        "Metaphase I",
+        "Anaphase I",
+        "Telophase II"
+      ],
+      "answer": 0,
+      "explanation": "Crossing over happens in prophase I, while homologues are paired. In metaphase I the pairs are already lined up for separation.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.chiasma",
+      "concept": "genetic-variation-in-meiosis",
+      "element": "chiasmata",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "What is the point where chromatids of two homologous chromosomes cross and exchange sections called?",
+      "answer": "A chiasma (plural chiasmata)",
+      "explanation": "A chiasma, plural chiasmata. Each one marks a place where crossing over happened.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both give chiasma; the key only adds the plural."
+      }
+    },
+    {
+      "id": "biology.cell-division.assortment-count",
+      "concept": "genetic-variation-in-meiosis",
+      "element": "independent-assortment",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "An organism has 2n = 6. Ignoring crossing over, how many different chromosome combinations can its gametes have from independent assortment?",
+      "choices": [
+        "6",
+        "9",
+        "8",
+        "3"
+      ],
+      "answer": 2,
+      "explanation": "There are n = 3 homologous pairs, and each can line up two ways, so 2 x 2 x 2 = 8. Answering 6 confuses the chromosome count with the number of combinations.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.siblings-differ",
+      "concept": "genetic-variation-in-meiosis",
+      "element": "random-fertilisation",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why are brothers and sisters from the same parents genetically different, unless they are identical twins?",
+      "choices": [
+        "Mitosis in the embryo shuffles their genes",
+        "Each parent passes on all of their chromosomes",
+        "Each egg and sperm carries a different mix of alleles",
+        "Fathers pass on more genes to sons than to daughters"
+      ],
+      "answer": 2,
+      "explanation": "Every egg and sperm carries a different mix of alleles because of crossing over and independent assortment. Mitosis copies cells exactly, so it does not shuffle genes.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.non-disjunction",
+      "concept": "genetic-variation-in-meiosis",
+      "element": "non-disjunction",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is it called when chromosomes fail to separate properly during meiosis?",
+      "answer": "Non-disjunction",
+      "explanation": "Non-disjunction. It leaves one gamete with an extra chromosome and another with one missing.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-division.trisomy-21",
+      "concept": "genetic-variation-in-meiosis",
+      "element": "non-disjunction",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Non-disjunction gives a human egg two copies of chromosome 21. A normal sperm fertilises it. How many chromosomes does the zygote have?",
+      "choices": [
+        "47",
+        "45",
+        "46",
+        "69"
+      ],
+      "answer": 0,
+      "explanation": "The egg has 24 chromosomes instead of 23, and the sperm adds 23, so the zygote has 47, with three copies of chromosome 21. This is the cause of most cases of Down syndrome.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.assortment-meaning",
+      "concept": "genetic-variation-in-meiosis",
+      "element": "independent-assortment",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What does independent assortment refer to?",
+      "choices": [
+        "Sections swapping between homologues",
+        "Sister chromatids separating in anaphase II",
+        "Any sperm fusing with any egg",
+        "Each homologous pair lining up at random in metaphase I"
+      ],
+      "answer": 3,
+      "explanation": "Independent assortment is the random way each homologous pair lines up at metaphase I, regardless of the other pairs. Swapping sections between homologues is crossing over.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-division.variation-order",
+      "concept": "genetic-variation-in-meiosis",
+      "element": "crossing-over",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these events that create variation in the order they happen.",
+      "steps": [
+        "Homologous chromosomes cross over",
+        "Homologous pairs line up independently",
+        "Gametes fuse at random in fertilisation"
+      ],
+      "explanation": "Crossing over in prophase I comes first, then homologous pairs line up independently at metaphase I, then the gametes made by meiosis fuse at random at fertilisation.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "chromosome-pair",
+      "kind": "diagram",
+      "title": "A pair of homologous chromosomes",
+      "alt": "Two X-shaped copied chromosomes side by side, one red and one blue-grey, the same size with matching bands. Each is two sister chromatids joined at a dark centromere, with ochre caps at the four arm tips.",
+      "file": "assets/chromosome-pair.svg",
+      "hotspots": [
+        {
+          "id": "centromere",
+          "label": "Centromere",
+          "x": 0.333,
+          "y": 0.5,
+          "r": 0.05
+        },
+        {
+          "id": "telomere",
+          "label": "Telomere",
+          "x": 0.271,
+          "y": 0.211,
+          "r": 0.045
+        },
+        {
+          "id": "sister-chromatid",
+          "label": "Sister chromatid",
+          "x": 0.373,
+          "y": 0.67,
+          "r": 0.045
+        },
+        {
+          "id": "homologue",
+          "label": "Homologous chromosome",
+          "x": 0.667,
+          "y": 0.5,
+          "r": 0.1
+        }
+      ]
+    },
+    {
+      "id": "cell-cycle",
+      "kind": "diagram",
+      "title": "The cell cycle",
+      "alt": "An unlabelled ring of four segments running clockwise, with arrows around it showing the direction. A small red segment at the top holds a dividing cell. It is followed by a large sage segment, a blue-grey segment and a sand segment. An ochre circle outside the ring is joined to the sage segment by a dotted line.",
+      "file": "assets/cell-cycle.svg",
+      "hotspots": [
+        {
+          "id": "m-phase",
+          "label": "M phase",
+          "x": 0.564,
+          "y": 0.236,
+          "r": 0.045
+        },
+        {
+          "id": "g1-phase",
+          "label": "G1",
+          "x": 0.698,
+          "y": 0.586,
+          "r": 0.08
+        },
+        {
+          "id": "s-phase",
+          "label": "S phase",
+          "x": 0.332,
+          "y": 0.663,
+          "r": 0.08
+        },
+        {
+          "id": "g2-phase",
+          "label": "G2",
+          "x": 0.378,
+          "y": 0.276,
+          "r": 0.07
+        },
+        {
+          "id": "g0-phase",
+          "label": "G0",
+          "x": 0.888,
+          "y": 0.711,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "mitosis-stages",
+      "kind": "diagram",
+      "title": "Stages of mitosis",
+      "alt": "Five unlabelled cells, not in order: one with an intact nucleus and loose chromatin; one whose nuclear envelope is breaking up around condensed X-shaped chromosomes, with centrosomes at its edge; one with its chromosomes lined up across the middle on a spindle; a stretched cell with chromatids pulled toward the two poles; and one pinching in two with a new nucleus in each half.",
+      "file": "assets/mitosis-stages.svg",
+      "hotspots": [
+        {
+          "id": "interphase",
+          "label": "Interphase",
+          "x": 0.5,
+          "y": 0.278,
+          "r": 0.12
+        },
+        {
+          "id": "prophase",
+          "label": "Prophase",
+          "x": 0.675,
+          "y": 0.722,
+          "r": 0.12
+        },
+        {
+          "id": "metaphase",
+          "label": "Metaphase",
+          "x": 0.817,
+          "y": 0.278,
+          "r": 0.12
+        },
+        {
+          "id": "anaphase",
+          "label": "Anaphase",
+          "x": 0.183,
+          "y": 0.278,
+          "r": 0.12
+        },
+        {
+          "id": "telophase",
+          "label": "Telophase and cytokinesis",
+          "x": 0.325,
+          "y": 0.722,
+          "r": 0.13
+        }
+      ]
+    },
+    {
+      "id": "mitosis-steps",
+      "kind": "sequence",
+      "title": "Mitosis, step by step",
+      "alt": "Five steps across the cells: interphase with an intact nucleus, prophase with condensed chromosomes, metaphase with chromosomes lined up, anaphase with chromatids pulled apart, and telophase with two new nuclei as the cell splits.",
+      "over": "mitosis-stages",
+      "steps": [
+        {
+          "title": "Interphase",
+          "text": "Before mitosis the cell has copied its DNA. The chromosomes are still loose chromatin inside an intact nucleus.",
+          "focus": "interphase"
+        },
+        {
+          "title": "Prophase",
+          "text": "The chromosomes coil up into visible X shapes, the nuclear envelope breaks down and the centrosomes move apart.",
+          "focus": "prophase"
+        },
+        {
+          "title": "Metaphase",
+          "text": "Spindle fibres from both poles attach to each chromosome and line them up across the middle of the cell.",
+          "focus": "metaphase"
+        },
+        {
+          "title": "Anaphase",
+          "text": "The sister chromatids separate and are pulled to opposite poles, so each end gets a full set.",
+          "focus": "anaphase"
+        },
+        {
+          "title": "Telophase and cytokinesis",
+          "text": "A nuclear envelope forms around each set, and the cytoplasm pinches in two, giving two identical cells.",
+          "focus": "telophase"
+        }
+      ]
+    }
+  ]
+}

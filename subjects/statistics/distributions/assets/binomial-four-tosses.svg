@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+<rect width="1200" height="900" rx="44" fill="#FBF8F1"/>
+<line x1="90" y1="740" x2="1110" y2="740" stroke="#1D2A24" stroke-width="6" stroke-linecap="round"/>
+<rect x="150" y="665" width="140" height="75" rx="10" fill="#B8C99E" stroke="#2C4A3B" stroke-width="5"/>
+<text x="220" y="645" font-family="sans-serif" font-size="36" font-weight="bold" fill="#1D2A24" text-anchor="middle">1/16</text>
+<text x="220" y="795" font-family="sans-serif" font-size="40" font-weight="normal" fill="#1D2A24" text-anchor="middle">0</text>
+<rect x="350" y="440" width="140" height="300" rx="10" fill="#B8C99E" stroke="#2C4A3B" stroke-width="5"/>
+<text x="420" y="420" font-family="sans-serif" font-size="36" font-weight="bold" fill="#1D2A24" text-anchor="middle">4/16</text>
+<text x="420" y="795" font-family="sans-serif" font-size="40" font-weight="normal" fill="#1D2A24" text-anchor="middle">1</text>
+<rect x="550" y="290" width="140" height="450" rx="10" fill="#8FAE7A" stroke="#2C4A3B" stroke-width="5"/>
+<text x="620" y="270" font-family="sans-serif" font-size="36" font-weight="bold" fill="#1D2A24" text-anchor="middle">6/16</text>
+<text x="620" y="795" font-family="sans-serif" font-size="40" font-weight="normal" fill="#1D2A24" text-anchor="middle">2</text>
+<rect x="750" y="440" width="140" height="300" rx="10" fill="#B8C99E" stroke="#2C4A3B" stroke-width="5"/>
+<text x="820" y="420" font-family="sans-serif" font-size="36" font-weight="bold" fill="#1D2A24" text-anchor="middle">4/16</text>
+<text x="820" y="795" font-family="sans-serif" font-size="40" font-weight="normal" fill="#1D2A24" text-anchor="middle">3</text>
+<rect x="950" y="665" width="140" height="75" rx="10" fill="#B8C99E" stroke="#2C4A3B" stroke-width="5"/>
+<text x="1020" y="645" font-family="sans-serif" font-size="36" font-weight="bold" fill="#1D2A24" text-anchor="middle">1/16</text>
+<text x="1020" y="795" font-family="sans-serif" font-size="40" font-weight="normal" fill="#1D2A24" text-anchor="middle">4</text>
+<text x="600" y="860" font-family="sans-serif" font-size="36" font-weight="normal" fill="#1D2A24" text-anchor="middle">Number of heads in 4 tosses</text>
+<text x="600" y="130" font-family="sans-serif" font-size="40" font-weight="bold" fill="#1D2A24" text-anchor="middle">Binomial, n = 4, p = 1/2</text>
+</svg>

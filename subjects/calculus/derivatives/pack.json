@@ -1,0 +1,1840 @@
+{
+  "formatVersion": 1,
+  "id": "calculus.derivatives",
+  "subject": "calculus",
+  "title": "Derivatives",
+  "summary": "The derivative as a rate of change and a slope, its limit definition, the rules for finding it, and reading f′ from a graph.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "derivative",
+      "name": "Derivative",
+      "aliases": [
+        "derivatives",
+        "instantaneous rate of change",
+        "slope of the tangent line",
+        "derivative of a function"
+      ],
+      "summary": "The derivative of a function at a point is its instantaneous rate of change there, which is the slope of the tangent line to its graph.",
+      "elements": [
+        {
+          "id": "average-rate",
+          "name": "Average rate of change",
+          "aliases": [
+            "slope of a secant line"
+          ]
+        },
+        {
+          "id": "instantaneous-rate",
+          "name": "Instantaneous rate of change"
+        },
+        {
+          "id": "secant-line",
+          "name": "Secant line",
+          "aliases": [
+            "secant lines"
+          ]
+        },
+        {
+          "id": "tangent-slope",
+          "name": "Slope of the tangent line",
+          "aliases": [
+            "tangent line",
+            "tangent lines"
+          ]
+        },
+        {
+          "id": "tangent-equation",
+          "name": "Equation of a tangent line"
+        },
+        {
+          "id": "units",
+          "name": "Units and meaning of a derivative"
+        }
+      ],
+      "explain": {
+        "text": "The derivative of a function tells you how fast its output is changing at one exact moment. If s(t) is a car's position, its average speed between two times is the change in position divided by the change in time. Shrink that time interval toward zero and you get the speed at a single instant, the derivative s′(t). On a graph, an average rate is the slope of a secant line through two points, and the derivative is the slope of the tangent line that touches the curve at one point. For f(x) = x², the tangent at x = 3 has slope 6.",
+        "artifact": "secant-to-tangent"
+      }
+    },
+    {
+      "id": "limit-definition",
+      "name": "Limit definition of the derivative",
+      "aliases": [
+        "definition of the derivative",
+        "differentiation from first principles",
+        "derivative from first principles"
+      ],
+      "summary": "f′(x) is the limit, as h goes to 0, of the difference quotient (f(x + h) − f(x)) / h, the slope of a secant line over a shrinking step.",
+      "requires": [
+        "derivative"
+      ],
+      "elements": [
+        {
+          "id": "difference-quotient",
+          "name": "Difference quotient",
+          "aliases": [
+            "difference quotients"
+          ]
+        },
+        {
+          "id": "limit-h-to-zero",
+          "name": "Taking the limit as h goes to 0"
+        },
+        {
+          "id": "from-definition",
+          "name": "Finding derivatives from the definition"
+        },
+        {
+          "id": "notation",
+          "name": "Derivative notation",
+          "aliases": [
+            "Leibniz notation",
+            "prime notation",
+            "dy/dx"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "The derivative is defined as a limit. Take a point x and a second point a small step h further along. The slope of the secant line between them is the difference quotient, (f(x + h) − f(x)) / h. Now let h shrink toward 0. If the quotient settles on one value, that value is f′(x). For f(x) = x², the quotient is ((x + h)² − x²) / h = (2xh + h²) / h = 2x + h, and as h goes to 0 it becomes 2x. Every rule for derivatives, from the power rule on, is proved from this definition.",
+        "artifact": "secant-and-tangent"
+      }
+    },
+    {
+      "id": "power-rule",
+      "name": "Power rule",
+      "aliases": [
+        "power rule for derivatives",
+        "power rule of differentiation"
+      ],
+      "summary": "The derivative of xⁿ is n·xⁿ⁻¹ for any real power n. With the constant multiple and sum rules it differentiates every polynomial.",
+      "requires": [
+        "limit-definition"
+      ],
+      "elements": [
+        {
+          "id": "whole-powers",
+          "name": "Whole-number powers"
+        },
+        {
+          "id": "negative-fractional-powers",
+          "name": "Negative and fractional powers",
+          "aliases": [
+            "derivative of a square root",
+            "derivative of 1/x"
+          ]
+        },
+        {
+          "id": "constant-rule",
+          "name": "Derivative of a constant"
+        },
+        {
+          "id": "constant-multiple-sum",
+          "name": "Constant multiple and sum rules",
+          "aliases": [
+            "sum rule",
+            "constant multiple rule"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "The power rule finds the derivative of a power of x without working through a limit: if f(x) = xⁿ, then f′(x) = n·xⁿ⁻¹. Bring the power down in front and lower it by one, so x⁵ becomes 5x⁴. It works for negative and fractional powers too, once the function is written as a power: 1/x is x⁻¹, with derivative −x⁻², which is −1/x². A constant has derivative 0, because its graph is flat. A constant factor stays in front, and a sum is differentiated term by term, so 3x² + 4x − 7 has derivative 6x + 4."
+      }
+    },
+    {
+      "id": "product-rule",
+      "name": "Product rule",
+      "aliases": [
+        "product rule for derivatives",
+        "product rule of differentiation"
+      ],
+      "summary": "The derivative of a product is (f·g)′ = f′·g + f·g′, not the product of the two derivatives.",
+      "requires": [
+        "power-rule"
+      ],
+      "elements": [
+        {
+          "id": "product-formula",
+          "name": "The product rule formula"
+        },
+        {
+          "id": "applying-product-rule",
+          "name": "Applying the product rule"
+        },
+        {
+          "id": "product-mistake",
+          "name": "Why (f·g)′ is not f′·g′"
+        }
+      ],
+      "explain": {
+        "text": "The product rule gives the derivative of two functions multiplied together: (f·g)′ = f′·g + f·g′. In words, differentiate the first and keep the second, then keep the first and differentiate the second, and add the two. A common mistake is to multiply the two derivatives, which gives the wrong answer. Check it with x · x, which is x². The rule gives 1·x + x·1 = 2x, which matches the power rule, while multiplying the derivatives gives 1·1 = 1. For x²·sin x, the rule gives 2x·sin x + x²·cos x."
+      }
+    },
+    {
+      "id": "quotient-rule",
+      "name": "Quotient rule",
+      "aliases": [
+        "quotient rule for derivatives",
+        "quotient rule of differentiation"
+      ],
+      "summary": "The derivative of a quotient is (f/g)′ = (f′·g − f·g′) / g², wherever g is not zero.",
+      "requires": [
+        "product-rule"
+      ],
+      "elements": [
+        {
+          "id": "quotient-formula",
+          "name": "The quotient rule formula"
+        },
+        {
+          "id": "order-of-terms",
+          "name": "The order of terms in the numerator"
+        },
+        {
+          "id": "applying-quotient-rule",
+          "name": "Applying the quotient rule"
+        }
+      ],
+      "explain": {
+        "text": "The quotient rule gives the derivative of one function divided by another: (f/g)′ = (f′·g − f·g′) / g². Because of the minus sign, the order matters: the derivative of the top comes first. One way to remember it is 'low d-high minus high d-low, over low squared'. For x / (x + 1), the rule gives (1·(x + 1) − x·1) / (x + 1)², which simplifies to 1 / (x + 1)². The rule only holds where the bottom, g(x), is not 0, the same places the quotient itself is defined."
+      }
+    },
+    {
+      "id": "chain-rule",
+      "name": "Chain rule",
+      "aliases": [
+        "chain rule for derivatives",
+        "chain rule of differentiation",
+        "composite function rule"
+      ],
+      "summary": "The derivative of a composite function f(g(x)) is f′(g(x))·g′(x): the outer derivative, evaluated at the inner function, times the inner derivative.",
+      "requires": [
+        "power-rule"
+      ],
+      "elements": [
+        {
+          "id": "composite-functions",
+          "name": "Composite functions",
+          "aliases": [
+            "composition of functions",
+            "function of a function"
+          ]
+        },
+        {
+          "id": "outer-inner",
+          "name": "Outer and inner derivatives"
+        },
+        {
+          "id": "leibniz-form",
+          "name": "The chain rule in Leibniz notation"
+        },
+        {
+          "id": "applying-chain-rule",
+          "name": "Applying the chain rule"
+        }
+      ],
+      "explain": {
+        "text": "The chain rule differentiates one function inside another. If y = f(g(x)), then y′ = f′(g(x))·g′(x): take the derivative of the outer function, leave the inner function inside it untouched, then multiply by the derivative of the inner function. Think of gears: if the inner function changes 3 times as fast as x, and the outer changes 2 times as fast as its input, the whole thing changes 2 · 3 = 6 times as fast as x. For (x² + 1)⁵, the outer derivative is 5(x² + 1)⁴ and the inner is 2x, giving 10x(x² + 1)⁴."
+      }
+    },
+    {
+      "id": "elementary-derivatives",
+      "name": "Derivatives of elementary functions",
+      "aliases": [
+        "derivatives of trigonometric functions",
+        "derivatives of exponential functions",
+        "derivatives of logarithmic functions",
+        "standard derivatives",
+        "table of derivatives"
+      ],
+      "summary": "The derivatives of sin x, cos x, tan x, eˣ, aˣ and ln x, which are used so often that they are learned by heart.",
+      "requires": [
+        "limit-definition"
+      ],
+      "elements": [
+        {
+          "id": "sine-cosine",
+          "name": "Derivatives of sin x and cos x"
+        },
+        {
+          "id": "tangent-function",
+          "name": "Derivative of tan x"
+        },
+        {
+          "id": "exponential",
+          "name": "Derivatives of eˣ and aˣ",
+          "aliases": [
+            "derivative of the exponential function"
+          ]
+        },
+        {
+          "id": "logarithm",
+          "name": "Derivative of ln x",
+          "aliases": [
+            "derivative of the natural logarithm"
+          ]
+        },
+        {
+          "id": "radians",
+          "name": "Why the trigonometric rules use radians"
+        }
+      ],
+      "explain": {
+        "text": "A handful of derivatives come up so often that they are worth knowing by heart. The derivative of sin x is cos x, and the derivative of cos x is −sin x; the minus sign is the part people forget. The derivative of tan x is 1/cos² x. These rules need x in radians. The exponential function eˣ is its own derivative, which is what makes the number e special: at every point the slope of y = eˣ equals its height. For another base a, aˣ has derivative aˣ·ln a. The natural logarithm ln x has derivative 1/x."
+      }
+    },
+    {
+      "id": "graph-of-derivative",
+      "name": "Graph of the derivative",
+      "aliases": [
+        "graphs of derivatives",
+        "graphing the derivative",
+        "sketching the derivative"
+      ],
+      "summary": "Reading f′ from a graph of f: f′ is positive where f rises, negative where it falls, zero at smooth peaks and valleys, and large where the graph is steep.",
+      "requires": [
+        "derivative"
+      ],
+      "elements": [
+        {
+          "id": "sign-of-derivative",
+          "name": "Sign of f′ where f rises or falls",
+          "aliases": [
+            "increasing and decreasing functions"
+          ]
+        },
+        {
+          "id": "zeros-of-derivative",
+          "name": "Zeros of f′ at peaks and valleys",
+          "aliases": [
+            "stationary points",
+            "critical points",
+            "turning points"
+          ]
+        },
+        {
+          "id": "steepness",
+          "name": "Size of f′ and steepness"
+        },
+        {
+          "id": "sketching",
+          "name": "Sketching f′ from f"
+        }
+      ],
+      "explain": {
+        "text": "You can read the derivative off a graph of f without a formula, because f′(x) is just the slope of the graph at x. Where the graph rises, f′ is positive; where it falls, f′ is negative. At the top of a smooth hill or the bottom of a valley the tangent is flat, so f′ is 0 there. The steeper the graph, the larger f′ is in size. Take f(x) = x³ − 3x: it rises, peaks at x = −1, falls to a valley at x = 1, then rises again. So f′ is positive, crosses 0, is negative, crosses 0 again and ends positive.",
+        "artifact": "cubic-graph"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "calculus.derivatives.meaning-on-graph",
+      "concept": "derivative",
+      "element": "tangent-slope",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "On the graph of y = f(x), what does f′(a) equal?",
+      "choices": [
+        "The height of the graph at x = a",
+        "The slope of the tangent line at x = a",
+        "The area under the graph up to x = a",
+        "The slope of the secant line from x = 0 to x = a"
+      ],
+      "answer": 1,
+      "explanation": "f′(a) is the slope of the line that touches the graph at x = a. The height of the graph there is f(a), the function's value, not its rate of change.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.average-rate-squared",
+      "concept": "derivative",
+      "element": "average-rate",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "For f(x) = x², what is the average rate of change of f from x = 1 to x = 3?",
+      "choices": [
+        "8",
+        "2",
+        "6",
+        "4"
+      ],
+      "answer": 3,
+      "explanation": "Average rate of change = (f(3) − f(1)) / (3 − 1) = (9 − 1) / 2 = 4. Answering 8 forgets to divide by the change in x; 6 and 2 are the instantaneous rates f′(3) and f′(1).",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.ball-height",
+      "concept": "derivative",
+      "element": "units",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A ball's height is h(t) metres after t seconds. What does h′(2) = −3 mean?",
+      "choices": [
+        "At t = 2 s the ball is 3 m below where it started",
+        "Over the first 2 s the ball fell 3 m",
+        "At t = 2 s the ball's height is −3 m",
+        "At t = 2 s the ball is falling at 3 m per second"
+      ],
+      "answer": 3,
+      "explanation": "h′(2) is the rate of change of height at the instant t = 2, in metres per second. Negative means the height is decreasing, so the ball is falling at 3 m/s. It says nothing about the height itself, which is h(2).",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.cost-units",
+      "concept": "derivative",
+      "element": "units",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "C(n) is the cost in dollars of making n chairs. In what units is C′(n) measured?",
+      "answer": "Dollars per chair",
+      "explanation": "A derivative is a change in output divided by a change in input, so its units are the output's units per the input's units: dollars per chair. It is roughly the cost of making one more chair.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "calculus.derivatives.tangent-line-read",
+      "concept": "derivative",
+      "element": "tangent-equation",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "The tangent line to y = f(x) at x = 2 is y = 5x − 4. What are f(2) and f′(2)?",
+      "choices": [
+        "f(2) = 6 and f′(2) = 5",
+        "f(2) = 5 and f′(2) = 6",
+        "f(2) = −4 and f′(2) = 5",
+        "f(2) = 6 and f′(2) = −4"
+      ],
+      "answer": 0,
+      "explanation": "The tangent touches the curve at x = 2, so f(2) = 5·2 − 4 = 6. Its slope, 5, is f′(2). The −4 is the line's y-intercept, not a value of f or f′.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.tangent-at-one",
+      "concept": "derivative",
+      "element": "tangent-equation",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "For f(x) = x², what is the equation of the tangent line at x = 1?",
+      "answer": "y = 2x − 1",
+      "explanation": "The point is (1, f(1)) = (1, 1) and the slope is f′(1) = 2·1 = 2. So y − 1 = 2(x − 1), which is y = 2x − 1.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "calculus.derivatives.tap-tangent",
+      "concept": "derivative",
+      "element": "tangent-slope",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the tangent line.",
+      "artifact": "secant-and-tangent",
+      "target": "tangent-line",
+      "explanation": "The tangent line touches the curve at just the lower marked point and has the same slope as the curve there. The other straight line cuts through both marked points, so it is the secant.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.tap-secant",
+      "concept": "derivative",
+      "element": "secant-line",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the secant line through the two marked points.",
+      "artifact": "secant-and-tangent",
+      "target": "secant-line",
+      "explanation": "A secant line crosses the curve at two points. Its slope, Δy/Δx, is the average rate of change between them. The tangent touches the curve at only one of the points.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.tap-run",
+      "concept": "derivative",
+      "element": "average-rate",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the segment that shows Δx, the change in x between the two marked points.",
+      "artifact": "secant-and-tangent",
+      "target": "run",
+      "explanation": "Δx is the horizontal leg of the triangle under the secant line. The vertical leg is Δy, and the secant's slope is Δy divided by Δx.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.tap-rise",
+      "concept": "derivative",
+      "element": "average-rate",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the segment that shows Δy, the change in y between the two marked points.",
+      "artifact": "secant-and-tangent",
+      "target": "rise",
+      "explanation": "Δy is the vertical leg of the triangle, from the height of the lower point up to the height of the upper one. Dividing it by the horizontal leg, Δx, gives the secant's slope.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.which-definition",
+      "concept": "limit-definition",
+      "element": "difference-quotient",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which expression is the limit definition of f′(x)?",
+      "choices": [
+        "lim as h → 0 of f(x + h) − f(x)",
+        "(f(x + h) − f(x)) / h with h = 1",
+        "lim as h → 0 of (f(x + h) − f(x)) / h",
+        "lim as h → 0 of (f(x + h) + f(x)) / h"
+      ],
+      "answer": 2,
+      "explanation": "The derivative is the limit of the secant slope, rise over run, as the run h shrinks to 0. Without dividing by h, the limit of f(x + h) − f(x) is just 0 for a continuous function.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.linear-quotient",
+      "concept": "limit-definition",
+      "element": "difference-quotient",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "For f(x) = 3x + 1, what does the difference quotient (f(x + h) − f(x)) / h simplify to?",
+      "choices": [
+        "3h",
+        "3",
+        "3 + h",
+        "3x"
+      ],
+      "answer": 1,
+      "explanation": "f(x + h) − f(x) = (3x + 3h + 1) − (3x + 1) = 3h, and 3h / h = 3. A straight line has the same slope everywhere, so the quotient does not depend on h at all.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.quadratic-quotient",
+      "concept": "limit-definition",
+      "element": "from-definition",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "For f(x) = x² + x, what does the difference quotient (f(x + h) − f(x)) / h simplify to?",
+      "choices": [
+        "2x + 1",
+        "2x + h",
+        "2x + h + 1",
+        "x + h + 1"
+      ],
+      "answer": 2,
+      "explanation": "f(x + h) − f(x) = (x² + 2xh + h² + x + h) − (x² + x) = 2xh + h² + h. Dividing by h gives 2x + h + 1. 2x + 1 is the derivative, which comes only after letting h go to 0.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.quadratic-limit",
+      "concept": "limit-definition",
+      "element": "limit-h-to-zero",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "For f(x) = x² + x, the difference quotient simplifies to 2x + h + 1. What is f′(x)?",
+      "answer": "f′(x) = 2x + 1",
+      "explanation": "Let h go to 0 in 2x + h + 1, and the h term disappears, leaving 2x + 1. The power and sum rules give the same answer.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "calculus.derivatives.why-not-zero",
+      "concept": "limit-definition",
+      "element": "limit-h-to-zero",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why can't you find f′(x) by putting h = 0 straight into (f(x + h) − f(x)) / h?",
+      "choices": [
+        "It always gives 0",
+        "It gives an infinite answer",
+        "It gives 0/0, which has no value",
+        "It gives f(x) back instead of a slope"
+      ],
+      "answer": 2,
+      "explanation": "With h = 0 the top is f(x) − f(x) = 0 and the bottom is 0, so the expression is 0/0, which is undefined. The limit asks what the quotient approaches as h gets close to 0, without ever reaching it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.reciprocal-from-definition",
+      "concept": "limit-definition",
+      "element": "from-definition",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "For f(x) = 1/x, the difference quotient simplifies to −1 / (x(x + h)). What is f′(x)?",
+      "choices": [
+        "1/x²",
+        "−1/x",
+        "−1/x²",
+        "−1/(2x)"
+      ],
+      "answer": 2,
+      "explanation": "As h goes to 0, x(x + h) becomes x·x = x², so the quotient approaches −1/x². The power rule agrees: x⁻¹ has derivative −x⁻².",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.order-first-principles",
+      "concept": "limit-definition",
+      "element": "from-definition",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps of finding f′(x) from the definition in order.",
+      "steps": [
+        "Write out f(x + h)",
+        "Subtract f(x) and simplify the top",
+        "Divide by h and cancel",
+        "Let h go to 0"
+      ],
+      "explanation": "The difference quotient is built first, f(x + h) − f(x) over h. Only after h has been cancelled can it be set to 0 without dividing by zero.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.x-to-seventh",
+      "concept": "power-rule",
+      "element": "whole-powers",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the derivative of x⁷?",
+      "choices": [
+        "x⁶",
+        "7x⁸",
+        "7x⁶",
+        "6x⁷"
+      ],
+      "answer": 2,
+      "explanation": "Bring the power down and lower it by one: 7x⁶. Raising the power, 7x⁸, is a common slip; the power always goes down.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.cubic-poly",
+      "concept": "power-rule",
+      "element": "constant-multiple-sum",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is the derivative of f(x) = 4x³ − 2x + 9?",
+      "answer": "f′(x) = 12x² − 2",
+      "explanation": "Term by term: 4x³ gives 4·3x² = 12x², −2x gives −2, and the constant 9 gives 0.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "calculus.derivatives.inverse-cube",
+      "concept": "power-rule",
+      "element": "negative-fractional-powers",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the derivative of f(x) = 1/x³?",
+      "choices": [
+        "1/(3x²)",
+        "−3/x⁴",
+        "−3/x²",
+        "3/x⁴"
+      ],
+      "answer": 1,
+      "explanation": "Write 1/x³ as x⁻³. The power rule gives −3x⁻⁴, which is −3/x⁴. Lowering the power by one takes −3 to −4, not to −2.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.square-root",
+      "concept": "power-rule",
+      "element": "negative-fractional-powers",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the derivative of f(x) = √x?",
+      "choices": [
+        "√x/2",
+        "1/√x",
+        "2√x",
+        "1/(2√x)"
+      ],
+      "answer": 3,
+      "explanation": "√x is x to the power 1/2. The power rule gives (1/2)·x to the power −1/2, which is 1/(2√x). 1/√x forgets the factor 1/2.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.constant-function",
+      "concept": "power-rule",
+      "element": "constant-rule",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the derivative of the constant function f(x) = 8?",
+      "choices": [
+        "8",
+        "0",
+        "8x",
+        "1"
+      ],
+      "answer": 1,
+      "explanation": "The graph of f(x) = 8 is a horizontal line, which has slope 0 everywhere. A constant never changes, so its rate of change is 0.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.horizontal-tangents",
+      "concept": "power-rule",
+      "element": "whole-powers",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "f(x) = x³ − 6x². At which x-values is the tangent line horizontal?",
+      "choices": [
+        "x = 0 and x = 4",
+        "x = 0 and x = 6",
+        "x = 2 only",
+        "x = 4 only"
+      ],
+      "answer": 0,
+      "explanation": "A horizontal tangent has slope 0. f′(x) = 3x² − 12x = 3x(x − 4), which is 0 at x = 0 and at x = 4. x = 0 and x = 6 are where f(x) itself is 0.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.quartic-slope",
+      "concept": "power-rule",
+      "element": "whole-powers",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "What is the slope of the tangent to y = x⁴ at x = 2?",
+      "answer": "32",
+      "explanation": "The derivative is 4x³, and at x = 2 it is 4·2³ = 4·8 = 32.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "calculus.derivatives.order-negative-power",
+      "concept": "power-rule",
+      "element": "negative-fractional-powers",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps for differentiating 5/x² in order.",
+      "steps": [
+        "Rewrite it as 5x⁻²",
+        "Bring the power down: 5·(−2)x⁻³",
+        "Simplify: −10x⁻³",
+        "Write it as a fraction: −10/x³"
+      ],
+      "explanation": "The power rule needs the function written as a power first. Then the power comes down and drops by one, from −2 to −3.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.product-formula",
+      "concept": "product-rule",
+      "element": "product-formula",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which is the product rule?",
+      "choices": [
+        "(f·g)′ = f′·g′",
+        "(f·g)′ = f′·g − f·g′",
+        "(f·g)′ = f′·g + f·g′",
+        "(f·g)′ = (f′·g − f·g′) / g²"
+      ],
+      "answer": 2,
+      "explanation": "Each factor takes a turn being differentiated while the other stays the same, and the two parts are added. The version with a minus sign over g² is the quotient rule.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.x-cubed-ex",
+      "concept": "product-rule",
+      "element": "applying-product-rule",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "Use the product rule to find the derivative of x³·eˣ.",
+      "answer": "3x²·eˣ + x³·eˣ (which is x²eˣ(3 + x))",
+      "explanation": "With f = x³ and g = eˣ, f′ = 3x² and g′ = eˣ. So f′·g + f·g′ = 3x²·eˣ + x³·eˣ.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "calculus.derivatives.x-sin-x",
+      "concept": "product-rule",
+      "element": "product-mistake",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the derivative of x·sin x?",
+      "choices": [
+        "sin x + x·cos x",
+        "cos x",
+        "x·cos x",
+        "sin x − x·cos x"
+      ],
+      "answer": 0,
+      "explanation": "With f = x and g = sin x, f′·g + f·g′ = 1·sin x + x·cos x. Answering cos x multiplies the two derivatives, 1 and cos x, which is the mistake the product rule exists to avoid.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.product-values",
+      "concept": "product-rule",
+      "element": "applying-product-rule",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "f(2) = 3, f′(2) = 4, g(2) = 5 and g′(2) = −1. What is (f·g)′(2)?",
+      "choices": [
+        "−4",
+        "23",
+        "20",
+        "17"
+      ],
+      "answer": 3,
+      "explanation": "(f·g)′(2) = f′(2)·g(2) + f(2)·g′(2) = 4·5 + 3·(−1) = 20 − 3 = 17. −4 is f′(2)·g′(2), the product of the derivatives.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.product-polynomial",
+      "concept": "product-rule",
+      "element": "applying-product-rule",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Use the product rule to differentiate (2x + 1)(x² − 3).",
+      "choices": [
+        "4x",
+        "6x² − 2x − 6",
+        "6x² + 2x − 6",
+        "6x² + 2x + 6"
+      ],
+      "answer": 2,
+      "explanation": "2·(x² − 3) + (2x + 1)·2x = 2x² − 6 + 4x² + 2x = 6x² + 2x − 6. Multiplying out first, 2x³ + x² − 6x − 3, and differentiating gives the same. 4x is the product of the derivatives.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.order-product-steps",
+      "concept": "product-rule",
+      "element": "applying-product-rule",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps for differentiating x²·cos x in order.",
+      "steps": [
+        "Name the factors: f = x² and g = cos x",
+        "Differentiate each: f′ = 2x and g′ = −sin x",
+        "Form f′·g + f·g′",
+        "Simplify: 2x·cos x − x²·sin x"
+      ],
+      "explanation": "The rule needs both factors and both derivatives before it can be used. Then f′·g + f·g′ = 2x·cos x + x²·(−sin x), which simplifies to 2x·cos x − x²·sin x.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.quotient-formula",
+      "concept": "quotient-rule",
+      "element": "quotient-formula",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which is the quotient rule for (f/g)′?",
+      "choices": [
+        "(f·g′ − f′·g) / g²",
+        "(f′·g − f·g′) / g²",
+        "f′ / g′",
+        "(f′·g + f·g′) / g²"
+      ],
+      "answer": 1,
+      "explanation": "The derivative of the top comes first: (f′·g − f·g′) / g². Swapping the two terms in the numerator changes the sign of the answer.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.quotient-linear",
+      "concept": "quotient-rule",
+      "element": "applying-quotient-rule",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the derivative of (x + 2) / (x − 1)?",
+      "choices": [
+        "3/(x − 1)²",
+        "1",
+        "−1/(x − 1)²",
+        "−3/(x − 1)²"
+      ],
+      "answer": 3,
+      "explanation": "(1·(x − 1) − (x + 2)·1) / (x − 1)² = (x − 1 − x − 2) / (x − 1)² = −3/(x − 1)². The answer 1 divides the derivatives, 1/1, which is not the rule.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.reciprocal-quadratic",
+      "concept": "quotient-rule",
+      "element": "applying-quotient-rule",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "Use the quotient rule to find the derivative of 1/(x² + 1).",
+      "answer": "−2x/(x² + 1)²",
+      "explanation": "With f = 1 and g = x² + 1, f′ = 0 and g′ = 2x. So (0·(x² + 1) − 1·2x) / (x² + 1)² = −2x/(x² + 1)².",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "calculus.derivatives.quotient-values",
+      "concept": "quotient-rule",
+      "element": "order-of-terms",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "f(1) = 2, f′(1) = 3, g(1) = 4 and g′(1) = 5. What is (f/g)′(1)?",
+      "choices": [
+        "3/5",
+        "−1/8",
+        "1/8",
+        "11/8"
+      ],
+      "answer": 2,
+      "explanation": "(f′·g − f·g′) / g² = (3·4 − 2·5) / 4² = (12 − 10) / 16 = 2/16 = 1/8. Putting the terms in the wrong order gives −1/8, and 3/5 is f′/g′.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.tan-quotient",
+      "concept": "quotient-rule",
+      "element": "applying-quotient-rule",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Use the quotient rule on tan x = sin x / cos x. What do you get?",
+      "choices": [
+        "−1/cos² x",
+        "1/cos² x",
+        "−cos x / sin x",
+        "sin² x / cos² x"
+      ],
+      "answer": 1,
+      "explanation": "(cos x·cos x − sin x·(−sin x)) / cos² x = (cos² x + sin² x) / cos² x = 1/cos² x, since cos² x + sin² x = 1. A sign slip with the derivative of cos x gives −1/cos² x.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.x-squared-over-sin",
+      "concept": "quotient-rule",
+      "element": "order-of-terms",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which expression does the quotient rule give for the derivative of x² / sin x?",
+      "choices": [
+        "(x²·cos x − 2x·sin x) / sin² x",
+        "(2x·sin x − x²·cos x) / sin² x",
+        "2x / cos x",
+        "(2x·sin x + x²·cos x) / sin² x"
+      ],
+      "answer": 1,
+      "explanation": "With f = x² and g = sin x: (f′·g − f·g′) / g² = (2x·sin x − x²·cos x) / sin² x. The first choice has the two terms the wrong way round.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.order-quotient-steps",
+      "concept": "quotient-rule",
+      "element": "applying-quotient-rule",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps for differentiating x² / (x + 1) in order.",
+      "steps": [
+        "Name the top and bottom: f = x² and g = x + 1",
+        "Differentiate each: f′ = 2x and g′ = 1",
+        "Form (f′·g − f·g′) / g²: (2x(x + 1) − x²) / (x + 1)²",
+        "Simplify the top: (x² + 2x) / (x + 1)²"
+      ],
+      "explanation": "Both parts and both derivatives are needed before the rule can be used. The top then simplifies: 2x² + 2x − x² = x² + 2x.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.linear-inside-power",
+      "concept": "chain-rule",
+      "element": "outer-inner",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the derivative of (3x + 1)⁴?",
+      "choices": [
+        "12(3x + 1)³",
+        "4(3x + 1)³",
+        "3(3x + 1)⁴",
+        "12x(3x + 1)³"
+      ],
+      "answer": 0,
+      "explanation": "The outer derivative is 4(3x + 1)³ and the inner derivative is 3, so the answer is 4·3·(3x + 1)³ = 12(3x + 1)³. 4(3x + 1)³ forgets to multiply by the inner derivative.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.sin-x-squared",
+      "concept": "chain-rule",
+      "element": "outer-inner",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the derivative of sin(x²)?",
+      "choices": [
+        "cos(x²)",
+        "cos(2x)",
+        "2x·cos(x²)",
+        "2x·sin(x²)"
+      ],
+      "answer": 2,
+      "explanation": "The outer function is sin, with derivative cos, evaluated at the inner x²: cos(x²). Multiply by the inner derivative, 2x, to get 2x·cos(x²). cos(2x) wrongly puts the inner derivative inside.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.e-5x",
+      "concept": "chain-rule",
+      "element": "applying-chain-rule",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "What is the derivative of e⁵ˣ?",
+      "answer": "5e⁵ˣ",
+      "explanation": "The outer function eᵘ is its own derivative, so it stays e⁵ˣ. The inner function 5x has derivative 5, so the result is 5e⁵ˣ.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "calculus.derivatives.chain-values",
+      "concept": "chain-rule",
+      "element": "outer-inner",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "h(x) = f(g(x)). g(2) = 3, g′(2) = 4, f′(3) = 5 and f′(2) = 7. What is h′(2)?",
+      "choices": [
+        "28",
+        "15",
+        "12",
+        "20"
+      ],
+      "answer": 3,
+      "explanation": "h′(2) = f′(g(2))·g′(2) = f′(3)·4 = 5·4 = 20. Using f′(2) instead of f′(g(2)) gives 7·4 = 28, the most common slip.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.inner-function",
+      "concept": "chain-rule",
+      "element": "composite-functions",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In y = √(x² + 9), which part is the inner function?",
+      "choices": [
+        "√u",
+        "2x",
+        "x²",
+        "x² + 9"
+      ],
+      "answer": 3,
+      "explanation": "The inner function is whatever sits inside the square root: x² + 9. The outer function is the square root, √u, and 2x is the inner function's derivative.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.leibniz-chain",
+      "concept": "chain-rule",
+      "element": "leibniz-form",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "y depends on u, and u depends on x. Write the chain rule for dy/dx in Leibniz notation.",
+      "answer": "dy/dx = dy/du · du/dx",
+      "explanation": "The rate of y with respect to x is the rate of y with respect to u times the rate of u with respect to x. It looks like the du's cancel, which is a handy way to remember it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "calculus.derivatives.ln-quadratic",
+      "concept": "chain-rule",
+      "element": "applying-chain-rule",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the derivative of ln(x² + 1)?",
+      "choices": [
+        "1/(x² + 1)",
+        "2x/(x² + 1)",
+        "2x·ln(x² + 1)",
+        "1/(2x)"
+      ],
+      "answer": 1,
+      "explanation": "The outer function ln u has derivative 1/u, giving 1/(x² + 1). Multiplied by the inner derivative 2x, that is 2x/(x² + 1).",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.order-chain-steps",
+      "concept": "chain-rule",
+      "element": "applying-chain-rule",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps for differentiating y = (x² + 1)³ in order.",
+      "steps": [
+        "Set u = x² + 1, so y = u³",
+        "Find dy/du = 3u² and du/dx = 2x",
+        "Multiply: dy/dx = 3u²·2x",
+        "Put u back: dy/dx = 6x(x² + 1)²"
+      ],
+      "explanation": "Naming the inner function comes first, because both derivatives are taken with respect to it and x. The answer is written in x only at the end: 3(x² + 1)²·2x = 6x(x² + 1)².",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.cos-derivative",
+      "concept": "elementary-derivatives",
+      "element": "sine-cosine",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the derivative of cos x?",
+      "choices": [
+        "−sin x",
+        "sin x",
+        "−cos x",
+        "tan x"
+      ],
+      "answer": 0,
+      "explanation": "The derivative of cos x is −sin x. Just after x = 0, cos x starts to fall while sin x is positive, which is why the minus sign is needed.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.ex-derivative",
+      "concept": "elementary-derivatives",
+      "element": "exponential",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is the derivative of eˣ?",
+      "answer": "eˣ",
+      "explanation": "eˣ is its own derivative: at every point the slope of y = eˣ equals its height. This is what makes e the natural base for exponentials.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "calculus.derivatives.ln-derivative",
+      "concept": "elementary-derivatives",
+      "element": "logarithm",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the derivative of ln x, for x > 0?",
+      "choices": [
+        "eˣ",
+        "x·ln x − x",
+        "ln x / x",
+        "1/x"
+      ],
+      "answer": 3,
+      "explanation": "The derivative of ln x is 1/x. x·ln x − x runs the other way: it is a function whose derivative is ln x.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.two-to-x",
+      "concept": "elementary-derivatives",
+      "element": "exponential",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the derivative of 2ˣ?",
+      "choices": [
+        "x·2ˣ⁻¹",
+        "2ˣ",
+        "2ˣ·ln 2",
+        "2ˣ / ln 2"
+      ],
+      "answer": 2,
+      "explanation": "aˣ has derivative aˣ·ln a, so 2ˣ gives 2ˣ·ln 2. x·2ˣ⁻¹ wrongly uses the power rule, which only applies when the variable is in the base.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.sin-slope-zero",
+      "concept": "elementary-derivatives",
+      "element": "sine-cosine",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the slope of y = sin x at x = 0?",
+      "choices": [
+        "0",
+        "1",
+        "−1",
+        "π"
+      ],
+      "answer": 1,
+      "explanation": "The slope is the derivative, cos x, and cos 0 = 1. Answering 0 gives the height of the graph there, sin 0, not its slope.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.mixed-at-zero",
+      "concept": "elementary-derivatives",
+      "element": "exponential",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "f(x) = 3 sin x − 2eˣ. What is f′(0)?",
+      "choices": [
+        "5",
+        "−2",
+        "3",
+        "1"
+      ],
+      "answer": 3,
+      "explanation": "f′(x) = 3 cos x − 2eˣ, so f′(0) = 3·1 − 2·1 = 1. Answering 5 makes the second term positive; −2 forgets that cos 0 is 1, not 0.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.why-radians",
+      "concept": "elementary-derivatives",
+      "element": "radians",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why do the rules (sin x)′ = cos x and (cos x)′ = −sin x need x in radians?",
+      "choices": [
+        "In degrees every slope picks up an extra factor of π/180",
+        "In degrees sin x has no derivative",
+        "Radians make sin x always positive",
+        "They don't; the rules hold whatever unit the angle is measured in"
+      ],
+      "answer": 0,
+      "explanation": "Measured in degrees, sin x changes much more slowly per unit of x, so its derivative is (π/180)·cos x. Only radians give the rule with no extra factor.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.falling-means",
+      "concept": "graph-of-derivative",
+      "element": "sign-of-derivative",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "On an interval where the graph of f falls from left to right, what must be true of f′ there?",
+      "choices": [
+        "f′ is positive",
+        "f′ is negative",
+        "f′ is 0",
+        "f′ is decreasing"
+      ],
+      "answer": 1,
+      "explanation": "A falling graph has negative slopes, so f′ is negative. f′ can be rising or falling while f falls; for example f′ goes from −3 to −1 as a graph flattens out.",
+      "verification": {
+        "status": "draft",
+        "note": "Set back to draft by the coordinator on 2026-11-10. Both solvers agreed with the key and both noted that it overstates: a function that falls on an interval only needs f′ ≤ 0, with f′ = 0 allowed at isolated points (−x³ at 0). The prompt says “must”."
+      }
+    },
+    {
+      "id": "calculus.derivatives.tap-max",
+      "concept": "graph-of-derivative",
+      "element": "zeros-of-derivative",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "This is a graph of f. Tap the point where f′ changes from positive to negative.",
+      "artifact": "cubic-graph",
+      "target": "local-max",
+      "explanation": "f′ goes from positive to negative where the graph stops rising and starts falling: at the top of the hill, a local maximum. There the tangent is flat and f′ is 0.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.tap-min",
+      "concept": "graph-of-derivative",
+      "element": "zeros-of-derivative",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "This is a graph of f. Tap the point where f′ changes from negative to positive.",
+      "artifact": "cubic-graph",
+      "target": "local-min",
+      "explanation": "f′ goes from negative to positive where the graph stops falling and starts rising: at the bottom of the valley, a local minimum.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.tap-steepest-fall",
+      "concept": "graph-of-derivative",
+      "element": "steepness",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "This is a graph of f. Tap the point where f′ has its most negative value.",
+      "artifact": "cubic-graph",
+      "target": "inflection",
+      "explanation": "f′ is most negative where the graph falls most steeply. Between the hill and the valley the fall is steepest at the middle point, where the curve changes from bending down to bending up.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.tap-positive-shrinking",
+      "concept": "graph-of-derivative",
+      "element": "steepness",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "This is a graph of f. Tap the point where f′ is positive and getting smaller as x increases.",
+      "artifact": "cubic-graph",
+      "target": "rising-left",
+      "explanation": "On the left the graph rises but flattens out as it nears the hill, so its slope is positive and shrinking. On the right it rises ever more steeply, so f′ is positive and growing.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.smooth-peak",
+      "concept": "graph-of-derivative",
+      "element": "zeros-of-derivative",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "The graph of f has a smooth peak at x = 4. What is f′(4)?",
+      "choices": [
+        "4",
+        "It does not exist",
+        "0",
+        "f(4)"
+      ],
+      "answer": 2,
+      "explanation": "At a smooth peak the tangent line is horizontal, so its slope f′(4) is 0. f′ fails to exist only at a sharp corner, not a smooth peak.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.sign-change-max",
+      "concept": "graph-of-derivative",
+      "element": "sign-of-derivative",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "f′(x) is positive for x < 2 and negative for x > 2. What does f have at x = 2?",
+      "choices": [
+        "A local minimum",
+        "A local maximum",
+        "An inflection point",
+        "A vertical asymptote"
+      ],
+      "answer": 1,
+      "explanation": "f rises up to x = 2 and falls after it, so x = 2 is the top of a hill, a local maximum. A local minimum needs f′ to go from negative to positive.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "calculus.derivatives.decreasing-interval",
+      "concept": "graph-of-derivative",
+      "element": "sign-of-derivative",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "f′(x) = (x − 1)(x − 5). On which interval is f decreasing?",
+      "answer": "1 < x < 5",
+      "explanation": "f decreases where f′ is negative. Between 1 and 5, x − 1 is positive and x − 5 is negative, so their product is negative. Outside that interval both factors have the same sign and f′ is positive.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "calculus.derivatives.sin-derivative",
+      "concept": "elementary-derivatives",
+      "element": "sine-cosine",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is the derivative of sin x?",
+      "answer": "cos x",
+      "explanation": "The slope of y = sin x at each point equals cos x there. At x = 0, for example, sin x is climbing with slope 1, and cos 0 = 1.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "calculus.derivatives.x-ex",
+      "concept": "product-rule",
+      "element": "applying-product-rule",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "Use the product rule to find the derivative of x·eˣ.",
+      "answer": "eˣ + x·eˣ (which is (1 + x)eˣ)",
+      "explanation": "With f = x and g = eˣ, f′ = 1 and g′ = eˣ. So f′·g + f·g′ = 1·eˣ + x·eˣ.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "calculus.derivatives.positive-everywhere",
+      "concept": "graph-of-derivative",
+      "element": "sign-of-derivative",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "f′(x) is positive for every x. What does that tell you about the graph of f?",
+      "answer": "It is increasing everywhere: it rises from left to right",
+      "explanation": "f′ is the slope of the graph. A slope that is positive everywhere means the graph rises at every point and never turns down.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "calculus.derivatives.quotient-denominator",
+      "concept": "quotient-rule",
+      "element": "quotient-formula",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "In the quotient rule (f′·g − f·g′) / g², what is the denominator?",
+      "answer": "g², the bottom function squared",
+      "explanation": "The denominator is the square of the bottom function, g². That is why the quotient rule only applies where g is not 0.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "secant-and-tangent",
+      "kind": "diagram",
+      "title": "Secant and tangent lines",
+      "alt": "An unlabelled graph of an upward curving parabola with two marked points on it, one low and one higher. A red straight line passes through both points, a blue straight line touches the curve only at the lower point, and a dashed horizontal segment from the lower point and a dashed vertical segment up to the higher point form a right triangle.",
+      "file": "assets/secant-and-tangent.svg",
+      "hotspots": [
+        {
+          "id": "point-p",
+          "label": "Point P",
+          "x": 0.375,
+          "y": 0.817,
+          "r": 0.045
+        },
+        {
+          "id": "point-q",
+          "label": "Point Q",
+          "x": 0.675,
+          "y": 0.454,
+          "r": 0.045
+        },
+        {
+          "id": "secant-line",
+          "label": "Secant line",
+          "x": 0.812,
+          "y": 0.288,
+          "r": 0.04
+        },
+        {
+          "id": "tangent-line",
+          "label": "Tangent line",
+          "x": 0.812,
+          "y": 0.486,
+          "r": 0.04
+        },
+        {
+          "id": "run",
+          "label": "Change in x, Δx",
+          "x": 0.525,
+          "y": 0.817,
+          "r": 0.045
+        },
+        {
+          "id": "rise",
+          "label": "Change in y, Δy",
+          "x": 0.675,
+          "y": 0.722,
+          "r": 0.04
+        }
+      ]
+    },
+    {
+      "id": "secant-to-tangent",
+      "kind": "sequence",
+      "title": "From secant to tangent",
+      "alt": "Six steps over the secant and tangent graph: choose a point P, choose a second point Q, measure the run Δx and the rise Δy, take the secant's slope, then slide Q onto P to get the tangent.",
+      "over": "secant-and-tangent",
+      "steps": [
+        {
+          "title": "Pick a point P",
+          "text": "Choose the point on the curve where you want the slope. Here it is on y = x² at x = 1.",
+          "focus": "point-p"
+        },
+        {
+          "title": "Pick a second point Q",
+          "text": "Choose another point further along the curve, here at x = 2.2.",
+          "focus": "point-q"
+        },
+        {
+          "title": "Measure the run",
+          "text": "Δx is how far you move across from P to Q: 2.2 − 1 = 1.2.",
+          "focus": "run"
+        },
+        {
+          "title": "Measure the rise",
+          "text": "Δy is how far the curve climbs: 2.2² − 1² = 4.84 − 1 = 3.84.",
+          "focus": "rise"
+        },
+        {
+          "title": "Slope of the secant",
+          "text": "The secant through P and Q has slope Δy/Δx = 3.84 / 1.2 = 3.2, the average rate of change.",
+          "focus": "secant-line"
+        },
+        {
+          "title": "Slide Q onto P",
+          "text": "As Q moves toward P, the secant's slope approaches 2. The limit is the tangent, and f′(1) = 2.",
+          "focus": "tangent-line"
+        }
+      ]
+    },
+    {
+      "id": "cubic-graph",
+      "kind": "diagram",
+      "title": "Reading f′ from a graph of f",
+      "alt": "An unlabelled graph of f(x) = x³ − 3x on axes. The curve rises from the lower left to a hill, falls through the origin to a valley, then rises steeply to the upper right. Five dots mark a point on the rise at the left, the top of the hill, the origin, the bottom of the valley and a point on the rise at the right.",
+      "file": "assets/cubic-graph.svg",
+      "hotspots": [
+        {
+          "id": "local-max",
+          "label": "Local maximum",
+          "x": 0.308,
+          "y": 0.311,
+          "r": 0.05
+        },
+        {
+          "id": "local-min",
+          "label": "Local minimum",
+          "x": 0.692,
+          "y": 0.689,
+          "r": 0.05
+        },
+        {
+          "id": "inflection",
+          "label": "Inflection point",
+          "x": 0.5,
+          "y": 0.5,
+          "r": 0.05
+        },
+        {
+          "id": "rising-left",
+          "label": "Rising part on the left",
+          "x": 0.155,
+          "y": 0.541,
+          "r": 0.05
+        },
+        {
+          "id": "rising-right",
+          "label": "Rising part on the right",
+          "x": 0.845,
+          "y": 0.459,
+          "r": 0.05
+        }
+      ]
+    }
+  ]
+}
