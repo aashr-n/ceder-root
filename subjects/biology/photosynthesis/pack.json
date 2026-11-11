@@ -1399,7 +1399,12 @@
       "target": "stroma",
       "explanation": "The Calvin cycle runs in the stroma, the fluid around the thylakoids. Its enzymes, RuBisCO among them, are dissolved there, next to where the thylakoids release ATP and NADPH.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Stroma is the watery space between the thylakoid stacks and the inner membrane, where Calvin cycle enzymes including RuBisCO act. D sits in open stroma away from any membrane. C is on a thylakoid line, E is on a granum stack, and A and B are outside the envelope. b's note: Stroma is the space inside the inner membrane outside the thylakoids. D is clearly plain stroma. C is also mostly stroma but its circle sits on a stroma lamella (thylakoid) joining grana, so it is arguably ambiguous…"
       }
     },
     {
