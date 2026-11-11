@@ -1,0 +1,1783 @@
+{
+  "formatVersion": 1,
+  "id": "biology.cell-communication",
+  "subject": "biology",
+  "title": "Cell communication",
+  "summary": "How cells receive signals at the membrane and relay them inside, and how programmed cell death is triggered.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "signal-transduction",
+      "name": "Signal transduction",
+      "aliases": [
+        "cell signalling",
+        "cell signaling",
+        "signal transduction pathway"
+      ],
+      "summary": "A cell turns an outside chemical signal into a change inside itself, usually when a receptor changes shape and starts a relay of proteins.",
+      "requires": [
+        "cell-membrane"
+      ],
+      "elements": [
+        {
+          "id": "signal-molecule-binds",
+          "name": "The signal binds a receptor outside the cell"
+        },
+        {
+          "id": "shape-change-relay",
+          "name": "A shape change starts an internal relay"
+        },
+        {
+          "id": "amplification",
+          "name": "Each relay step amplifies the message"
+        },
+        {
+          "id": "switching-off",
+          "name": "Signals are switched off"
+        }
+      ],
+      "explain": {
+        "text": "Cells are constantly receiving messages. Hormones, growth factors and neurotransmitters carry information from one cell to another, but most of these molecules are too large or too charged to cross the membrane. So they stay outside and bind a receptor on the surface. Binding changes the receptor's shape, and that change starts a relay of proteins inside the cell. Turning an outside signal into an inside response is called signal transduction. A familiar picture: adrenaline binds receptors on liver cells, and a relay ends with the liver releasing glucose into the blood.",
+        "artifact": "receptor-relay-steps"
+      },
+      "misconceptions": [
+        {
+          "id": "st-signal-enters",
+          "claim": "The signal molecule itself enters the cell and carries the message inward.",
+          "correction": "Most signal molecules stay outside. Binding changes a receptor's shape, and that change, not the molecule, starts the relay inside the cell."
+        },
+        {
+          "id": "st-one-step",
+          "claim": "The cell responds to a signal in one direct step.",
+          "correction": "The message passes through a chain of proteins, and each link can amplify it, so the response is many steps away from the binding."
+        },
+        {
+          "id": "st-permanent",
+          "claim": "Once a signal starts a pathway, nothing can switch it off.",
+          "correction": "Pathways stop when the signal leaves, when phosphate groups are removed, and when messengers are broken down."
+        }
+      ]
+    },
+    {
+      "id": "cell-surface-receptor",
+      "name": "Cell surface receptor",
+      "aliases": [
+        "cell surface receptors",
+        "membrane receptor",
+        "plasma membrane receptor"
+      ],
+      "summary": "A protein in the outer membrane that binds one kind of signal molecule outside the cell and passes the message inward by changing shape.",
+      "requires": [
+        "cell-membrane"
+      ],
+      "elements": [
+        {
+          "id": "ligand-binding",
+          "name": "The outer binding site"
+        },
+        {
+          "id": "receptor-types",
+          "name": "Types of cell surface receptor"
+        },
+        {
+          "id": "specificity",
+          "name": "Specificity of the receptor"
+        },
+        {
+          "id": "down-regulation",
+          "name": "Receptors removed from the surface"
+        }
+      ],
+      "explain": {
+        "text": "A cell surface receptor is a protein built into the plasma membrane, with one part facing outside the cell. Its outer part has a site shaped to fit one kind of signal molecule, called a ligand. When the ligand fits and binds, the receptor changes shape, and its inner part triggers a response inside the cell. The ligand never crosses the membrane, so the receptor acts as the gatekeeper for the message. Common types include ion channel receptors, G protein-coupled receptors and receptor tyrosine kinases. A picture: a nerve cell's receptor for a neurotransmitter opens a channel when the chemical fits its site."
+      },
+      "misconceptions": [
+        {
+          "id": "cs-door",
+          "claim": "A receptor is an opening that lets the signal into the cell.",
+          "correction": "A receptor is a protein in the membrane. The signal binds its outer face and stays outside, and the receptor's shape change passes the message in."
+        },
+        {
+          "id": "cs-same-response",
+          "claim": "Every cell that gets a signal responds in the same way.",
+          "correction": "The response depends on which receptors and internal proteins a cell has. One hormone can speed up one tissue and slow another."
+        },
+        {
+          "id": "cs-binding-permanent",
+          "claim": "Once a signal binds, the receptor stays switched on.",
+          "correction": "Binding is reversible. Receptors switch off when the signal leaves, and they can be pulled into the cell by endocytosis."
+        }
+      ]
+    },
+    {
+      "id": "second-messenger",
+      "name": "Second messenger",
+      "aliases": [
+        "second messengers",
+        "second messenger molecule"
+      ],
+      "summary": "A small molecule or ion that a cell makes inside after a receptor is activated, carrying the signal from the membrane into the cytoplasm.",
+      "requires": [
+        "signal-transduction"
+      ],
+      "elements": [
+        {
+          "id": "examples",
+          "name": "Cyclic AMP and calcium ions"
+        },
+        {
+          "id": "production",
+          "name": "Made inside the cell after activation"
+        },
+        {
+          "id": "amplification-by-messenger",
+          "name": "One messenger acts on many targets"
+        },
+        {
+          "id": "removal",
+          "name": "Messengers are broken down or pumped out"
+        }
+      ],
+      "explain": {
+        "text": "A second messenger is a small molecule or ion that a cell makes or releases inside itself after a receptor is activated. The signal itself, the first messenger, stays outside; the second messenger carries the news into the cytoplasm. Cyclic AMP and calcium ions are classic examples. One activated receptor can make many messenger molecules, and each messenger can switch on many targets, so a weak signal can have a strong effect. Enzymes or pumps remove messengers quickly, so the response can end when the signal ends. A picture: a hormone binds a receptor, an enzyme makes cyclic AMP, and that molecule switches on other enzymes.",
+        "artifact": "receptor-relay"
+      },
+      "misconceptions": [
+        {
+          "id": "sm-is-signal",
+          "claim": "The second messenger is the original signal, passed on into the cell.",
+          "correction": "A second messenger is a small molecule or ion the cell makes inside after a receptor is activated. The original signal stays outside."
+        },
+        {
+          "id": "sm-one-for-one",
+          "claim": "One signal molecule makes one messenger molecule, so the signal is just copied.",
+          "correction": "One activated receptor makes many messenger molecules, and each one switches on many targets. The signal is amplified."
+        },
+        {
+          "id": "sm-always-protein",
+          "claim": "Second messengers are always proteins.",
+          "correction": "Many are small molecules or ions, such as cyclic AMP and calcium ions, not proteins."
+        }
+      ]
+    },
+    {
+      "id": "signal-cascade",
+      "name": "Signal cascade",
+      "aliases": [
+        "signalling cascade",
+        "signaling cascade",
+        "kinase cascade",
+        "phosphorylation cascade"
+      ],
+      "summary": "A chain of proteins in which each one activates the next, usually by adding phosphate groups, so one signal can reach many targets.",
+      "requires": [
+        "signal-transduction"
+      ],
+      "elements": [
+        {
+          "id": "chain-of-proteins",
+          "name": "A chain of different proteins"
+        },
+        {
+          "id": "kinases",
+          "name": "Protein kinases add phosphate groups"
+        },
+        {
+          "id": "phosphorylation-switch",
+          "name": "Phosphorylation switches proteins on or off"
+        }
+      ],
+      "explain": {
+        "text": "A signal cascade is a chain of proteins in which each protein activates the next. In many pathways each step is a protein kinase that adds a phosphate group to the next protein, and that usually switches it on. Because each activated protein can act on several targets, the chain spreads the message and makes it stronger at every step. A cascade can also branch, so one receptor reaches many outcomes. A picture: a row of falling dominoes, where each one knocks over several more.",
+        "artifact": "receptor-relay"
+      },
+      "misconceptions": [
+        {
+          "id": "sc-one-enzyme",
+          "claim": "One enzyme carries the whole signal from the receptor to its targets.",
+          "correction": "A cascade is a chain of different proteins, each one switching on the next, so the message branches and spreads."
+        },
+        {
+          "id": "sc-phos-off",
+          "claim": "Adding a phosphate group switches a protein off.",
+          "correction": "Phosphorylation often switches a protein on. Its effect depends on the protein it is added to."
+        },
+        {
+          "id": "sc-any-order",
+          "claim": "The steps of a cascade can happen in any order.",
+          "correction": "Each step needs the one before it, so the order is set by which protein activates which."
+        }
+      ]
+    },
+    {
+      "id": "apoptosis",
+      "name": "Apoptosis",
+      "aliases": [
+        "programmed cell death",
+        "apoptotic cell death"
+      ],
+      "summary": "Programmed cell death, a controlled sequence in which a cell shrinks, breaks into wrapped fragments and is cleared without spilling its contents.",
+      "requires": [
+        "signal-cascade"
+      ],
+      "elements": [
+        {
+          "id": "controlled-death",
+          "name": "Death the cell carries out itself"
+        },
+        {
+          "id": "caspases",
+          "name": "Caspases carry out the death"
+        },
+        {
+          "id": "clearance",
+          "name": "Fragments are cleared without inflammation"
+        },
+        {
+          "id": "roles",
+          "name": "Roles in development and defence"
+        }
+      ],
+      "explain": {
+        "text": "Apoptosis is programmed cell death: a cell follows a built-in sequence that ends with its own orderly destruction. A death signal, from outside or from damage inside, starts a cascade that activates caspases, enzymes that cut key cell parts. The cell shrinks, its membrane bubbles, and it breaks into small wrapped fragments. Neighbouring cells or immune cells eat these fragments, so the contents do not spill and cause inflammation. Apoptosis also shapes the body, separating the fingers of an embryo and removing damaged or infected cells. A picture: a tadpole's tail disappears this way as it becomes a frog."
+      },
+      "misconceptions": [
+        {
+          "id": "ap-accident",
+          "claim": "Apoptosis is just death from injury.",
+          "correction": "Apoptosis is a controlled process the cell runs itself. Injury causes necrosis, which spills contents and can cause inflammation."
+        },
+        {
+          "id": "ap-harm",
+          "claim": "Programmed cell death only harms the body by removing cells it needs.",
+          "correction": "Apoptosis shapes development, such as separating the fingers, and removes damaged or infected cells, which protects the body."
+        },
+        {
+          "id": "ap-only-damaged",
+          "claim": "Only damaged cells undergo apoptosis.",
+          "correction": "Healthy cells undergo apoptosis during development and normal tissue renewal."
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "biology.cell-communication.receptor-location",
+      "concept": "signal-transduction",
+      "element": "signal-molecule-binds",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Where does a large, water-soluble hormone such as insulin usually bind to begin its signal?",
+      "choices": [
+        "On a receptor protein in the outer face of the membrane",
+        "Deep inside the nucleus, bound to DNA",
+        "Free in the cytoplasm, attached to the surface of a ribosome",
+        "Buried in the middle of the lipid bilayer, between the tails"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Insulin is too large and polar to cross the membrane, so it binds a receptor on the cell's outer face. Choosing the nucleus assumes the signal itself enters the cell, which it does not.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.binding-effect",
+      "concept": "signal-transduction",
+      "element": "shape-change-relay",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does a signal molecule's binding do to a membrane receptor?",
+      "choices": [
+        "Carries the signal molecule through the membrane into the cell",
+        "Changes the receptor's shape so it can start a relay inside",
+        "Makes the receptor act at once, with no relay needed inside",
+        "Switches on the gene for the signal molecule in the nucleus"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        "st-one-step",
+        null
+      ],
+      "explanation": "Binding changes the receptor's shape, and that change starts a relay of proteins inside the cell. The signal stays outside, so the tempting error is that it passes through the membrane.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.insulin-large-protein",
+      "concept": "signal-transduction",
+      "element": "shape-change-relay",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Insulin is a large protein that never crosses the membrane, yet it can switch on a response inside the cell. Why?",
+      "choices": [
+        "It is broken into small pieces that cross the membrane and carry the message inward",
+        "It is carried into the nucleus, where it switches on genes directly",
+        "Its binding changes a receptor's shape, and the receptor passes the message on",
+        "It binds the membrane's lipids, which carry the message to the cytoplasm"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "st-signal-enters",
+        "st-signal-enters",
+        null,
+        null
+      ],
+      "explanation": "Insulin binds a receptor on the outer face, and the receptor's shape change starts the relay, so the signal never has to enter. The tempting error is that insulin itself must reach the nucleus.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.amplification-in-relay",
+      "concept": "signal-transduction",
+      "element": "amplification",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A very small amount of hormone produces a large response in a cell. What explains this?",
+      "choices": [
+        "Each hormone molecule is copied exactly, so the response matches the amount",
+        "Each step in the relay acts once and passes the signal on in a single go",
+        "The hormone is slowly broken down into many smaller pieces inside the cell",
+        "Each activated relay protein switches on several copies of the next protein"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        "st-one-step",
+        null,
+        null
+      ],
+      "explanation": "Each activated protein can activate several of the next protein, so the message multiplies at every step. The tempting error is a single relay step, which would give a response no bigger than the signal.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.hormone-removed",
+      "concept": "signal-transduction",
+      "element": "switching-off",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A hormone level in the blood falls to zero. What is the most likely change in the cell's response?",
+      "choices": [
+        "The receptor unbinds and the relay switches off, so the response winds down",
+        "The relay goes on until the cell divides, so the response lasts a long time",
+        "The relay keeps running, since nothing can switch it off",
+        "The hormone is stored in the nucleus and keeps the response on"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "st-permanent",
+        null
+      ],
+      "explanation": "Without the hormone the receptor releases it, and the relay steps return to their resting state, so the response winds down. The tempting error is that nothing can switch the relay off.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.receptor-blocked",
+      "concept": "signal-transduction",
+      "element": "shape-change-relay",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A drug stops a receptor from changing shape after the hormone binds, but binding still happens. What would a scientist expect?",
+      "choices": [
+        "The hormone still enters the cell and gives a normal response",
+        "No relay starts, so the cell gives no response to the hormone",
+        "The relay runs faster, since the hormone is no longer slowing it",
+        "A normal response, since binding by itself is enough to act"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "st-signal-enters",
+        null,
+        null,
+        null
+      ],
+      "explanation": "The shape change is what starts the relay, so blocking it stops the response even though the hormone still binds. The tempting error is that the hormone itself must enter the cell.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.phosphatase-role",
+      "concept": "signal-transduction",
+      "element": "switching-off",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What does removing a phosphate group from a relay protein usually do?",
+      "choices": [
+        "Makes the protein permanently active, which locks the whole relay on for good",
+        "Moves the protein into the nucleus, where it stays",
+        "Returns the protein toward its inactive shape, ending that relay step",
+        "Changes the order of amino acids, so the protein becomes a new one"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A phosphate group is removed by a phosphatase, and the protein settles back toward its inactive shape. The tempting error is that the protein stays locked on.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.signal-molecule-example",
+      "concept": "signal-transduction",
+      "element": "signal-molecule-binds",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is a chemical signal that a cell can receive?",
+      "choices": [
+        "Glucose, which is burned for energy inside the cell",
+        "Cellulose, which forms the walls of plant cells",
+        "Chlorophyll, which absorbs light inside chloroplasts",
+        "Insulin, which binds a receptor on the cell surface"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Insulin is a hormone that binds a surface receptor, so it is a signal. The other three are important molecules, but none is a message a cell receives through a receptor.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.binding-site-location",
+      "concept": "cell-surface-receptor",
+      "element": "ligand-binding",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Where is the binding site of a cell surface receptor?",
+      "choices": [
+        "On the outer part of the protein, facing the fluid outside the cell",
+        "On the inner part of the protein, where it opens a hole for the signal",
+        "In the lipid bilayer, between the two phospholipid layers",
+        "On the inner face of the nuclear envelope, facing the DNA"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "cs-door",
+        null,
+        null
+      ],
+      "explanation": "The signal molecule binds the outer part of the receptor, so it never has to cross the membrane. The tempting error is a receptor that acts as a hole, which would let the signal in.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.ion-channel-receptor",
+      "concept": "cell-surface-receptor",
+      "element": "receptor-types",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does a ligand-gated ion channel receptor do when its signal binds?",
+      "choices": [
+        "It lets the signal molecule pass through the pore into the cytoplasm",
+        "It opens a pore so that ions can flow across the membrane",
+        "It stays open after one binding, so ions flow for good",
+        "It stops ions from crossing until the signal molecule leaves"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "cs-door",
+        null,
+        "cs-binding-permanent",
+        null
+      ],
+      "explanation": "A ligand-gated channel opens its pore when a signal binds, letting ions move down their gradient. The tempting error is that the signal itself travels through the pore.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.same-hormone-different-cells",
+      "concept": "cell-surface-receptor",
+      "element": "specificity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Adrenaline acts on heart muscle and on liver cells, and each responds differently. What best explains this?",
+      "choices": [
+        "Adrenaline acts the same everywhere, so one reaction must be a side effect",
+        "Adrenaline changes its shape inside each cell it reaches",
+        "The two cells have different receptors and internal proteins",
+        "The liver takes up more adrenaline from the blood than the heart does"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "cs-same-response",
+        null,
+        null,
+        null
+      ],
+      "explanation": "The response depends on which receptors a cell carries and which internal proteins they trigger, not only on the signal. The tempting error is that one signal should act the same everywhere.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.shared-feature",
+      "concept": "cell-surface-receptor",
+      "element": "ligand-binding",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which feature do all cell surface receptors share?",
+      "choices": [
+        "A pore through which the signal molecule passes into the cytoplasm",
+        "A site inside the nucleus where the receptor binds to DNA",
+        "A bond that keeps the signal attached for good",
+        "An outer binding site that a signal molecule fits into"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "cs-door",
+        null,
+        "cs-binding-permanent",
+        null
+      ],
+      "explanation": "Every cell surface receptor has a site on its outer face where its signal binds. The tempting error is a pore through which the signal enters, which describes a different idea.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.receptor-desensitised",
+      "concept": "cell-surface-receptor",
+      "element": "down-regulation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A cell is exposed to a hormone for hours, and its response weakens. What most likely explains this?",
+      "choices": [
+        "Receptors are pulled into the cell by endocytosis, so fewer stay on the surface",
+        "The bound receptor stays switched on, so the response keeps growing",
+        "The hormone is used up in the nucleus, so the receptor has nothing left to bind at all",
+        "The membrane thickens, so the hormone cannot reach the receptor"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "cs-binding-permanent",
+        null,
+        null
+      ],
+      "explanation": "Continued signalling can lead the cell to take receptors into its interior, so fewer are left on the surface to respond. The tempting error is that a bound receptor simply stays active.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.blocked-binding-site",
+      "concept": "cell-surface-receptor",
+      "element": "receptor-types",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A drug blocks the outer binding site of a receptor. The signal molecule is still in the blood. What is the most likely result?",
+      "choices": [
+        "The signal molecule goes in through the blocked site and triggers the response",
+        "The receptor cannot change shape, so the inner response does not start",
+        "The receptor starts the response on its own and does not need the signal",
+        "The cell makes more signal molecules until the block is removed"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "cs-door",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Without binding, the receptor keeps its resting shape and nothing starts inside the cell. The tempting error is that the signal would find its own way in through the blocked site.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Option 1 is the closest fit but the stem says the drug blocks the outer site, so the signal cannot bind; the wording fits 'no inner response' better than 'cannot change shape'. Other options are clearly wrong.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.specific-site",
+      "concept": "cell-surface-receptor",
+      "element": "specificity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why is a receptor's outer site described as specific?",
+      "choices": [
+        "It binds every signal molecule that touches the membrane, to be sure",
+        "It sends the bound molecule to the nucleus for storage",
+        "It fits one kind of signal molecule, so other molecules do not bind",
+        "It holds its signal bound for good, so one binding lasts forever"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "cs-binding-permanent"
+      ],
+      "explanation": "A specific site is shaped to match one ligand, which is why one receptor responds to one signal. The tempting error is a site that holds on to its signal for good.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.speed-of-response",
+      "concept": "cell-surface-receptor",
+      "element": "receptor-types",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Two cells get the same signal. One responds in seconds and the other over hours. Which idea best explains this?",
+      "choices": [
+        "The signal molecule moves faster in one cell, so it reaches the nucleus sooner",
+        "Every cell gives the same response to a signal, so one of them must be damaged in some way",
+        "The receptor opens a bigger door for the signal in one cell than in the other",
+        "The receptor triggers different internal proteins in each cell, so speeds differ"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        "cs-same-response",
+        "cs-door",
+        null
+      ],
+      "explanation": "The receptor is only the first step, and the proteins it triggers set how fast and how long the response lasts. The tempting error is that one signal must give the same response in every cell.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.ligand-definition",
+      "concept": "cell-surface-receptor",
+      "element": "ligand-binding",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In receptor biology, what is a ligand?",
+      "choices": [
+        "The signal molecule that binds to the receptor's outer site",
+        "The inner protein that the receptor activates inside the cell",
+        "The membrane lipid that the receptor is anchored in",
+        "The enzyme that breaks the signal down outside the cell"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A ligand is any molecule that binds a receptor at a specific site, here the signal molecule outside the cell. The inner protein is the next step in the relay, not the ligand.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.classic-second-messengers",
+      "concept": "second-messenger",
+      "element": "examples",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is a classic second messenger?",
+      "choices": [
+        "Insulin, a hormone that binds a receptor outside the cell",
+        "Cyclic AMP, a small molecule made inside the cell",
+        "Cellulose, a sugar that forms plant cell walls",
+        "Actin, a protein that forms part of the cytoskeleton"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "sm-is-signal",
+        null,
+        null,
+        "sm-always-protein"
+      ],
+      "explanation": "Cyclic AMP is a small molecule the cell makes after a receptor is activated, so it fits the definition. Insulin is the first messenger, the signal that stays outside; actin is a protein, not a messenger.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.messenger-source",
+      "concept": "second-messenger",
+      "element": "production",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A receptor on the cell surface is activated. Where does the second messenger usually come from?",
+      "choices": [
+        "It is the same signal molecule that bound the receptor, now moved inside",
+        "It is carried in from the blood through the nuclear pores",
+        "It is made or released inside the cell by enzymes the receptor switches on",
+        "It is copied one for one from each signal molecule that binds the receptor"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "sm-is-signal",
+        null,
+        null,
+        "sm-one-for-one"
+      ],
+      "explanation": "The activated receptor switches on enzymes, which make or release the messenger inside the cell. The tempting error is that the original signal crosses in and becomes the messenger.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.few-molecules-big-response",
+      "concept": "second-messenger",
+      "element": "amplification-by-messenger",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why can a few hormone molecules trigger a large response through a second messenger?",
+      "choices": [
+        "Each hormone molecule makes exactly one messenger, so the response is copied one for one",
+        "The messenger is stored in the nucleus and released all at once",
+        "The messenger binds the hormone again to make a bigger signal",
+        "Each messenger molecule activates many targets, and each target makes many products"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "sm-one-for-one",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Messengers and enzymes both act as amplifiers, so a small number of molecules can reach a large effect. The tempting error is a one-for-one copy, which would leave the response no bigger than the signal.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.what-most-messengers-are",
+      "concept": "second-messenger",
+      "element": "examples",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which statement is true of most second messengers?",
+      "choices": [
+        "They are small molecules or ions made or released inside the cell",
+        "They are large proteins made in the nucleus that cross the membrane",
+        "They are the hormones that bind the receptor, carried inside afterwards",
+        "They are stored in the cell wall until a receptor needs them"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "sm-always-protein",
+        "sm-is-signal",
+        null
+      ],
+      "explanation": "Most second messengers, including cyclic AMP and calcium ions, are small and made or released inside the cell once a receptor is activated. Large proteins and the original hormone are the tempting mistakes.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.ending-the-messenger",
+      "concept": "second-messenger",
+      "element": "removal",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "The signal is gone. What ends the action of a second messenger?",
+      "choices": [
+        "It stays locked on the receptor until the cell divides",
+        "Enzymes break it down, or pumps remove it from the cytoplasm",
+        "It travels back out through the binding site it came from",
+        "It is converted back into the hormone that bound the receptor"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Messenger levels fall when enzymes destroy the molecule or pumps move it out, which ends the response. The tempting error is that the messenger turns back into the original hormone.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.cyclic-amp-breakdown-blocked",
+      "concept": "second-messenger",
+      "element": "amplification-by-messenger",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A mutation stops the enzyme that breaks down cyclic AMP. What would you expect in the cell?",
+      "choices": [
+        "Cyclic AMP is used up at once, so the response stops early and does not last",
+        "The hormone is broken down faster, so the response stops early",
+        "Cyclic AMP stays high, so the response lasts longer than normal",
+        "Cyclic AMP turns into the hormone and enters the nucleus"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "sm-is-signal"
+      ],
+      "explanation": "Breaking down cyclic AMP is what turns a response off, so blocking that step keeps the response on. The tempting error is that the messenger would be used up, not kept.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.why-calcium",
+      "concept": "second-messenger",
+      "element": "examples",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why are calcium ions useful as second messengers?",
+      "choices": [
+        "They are made in the nucleus and carried out to the membrane",
+        "They are proteins that switch on at the receptor's binding site",
+        "They are hormones that travel through the blood to the liver and switch it on",
+        "They can be released quickly from stores and bind many target proteins"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        "sm-always-protein",
+        null,
+        null
+      ],
+      "explanation": "The cell keeps calcium ions stored and releases them into the cytoplasm when a signal arrives, so a rise in calcium reaches many targets fast. The tempting error is that calcium is a protein acting at the receptor.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.first-messenger",
+      "concept": "second-messenger",
+      "element": "production",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In a cyclic AMP pathway, what is the first messenger?",
+      "choices": [
+        "The hormone that binds the receptor outside the cell",
+        "The enzyme that makes cyclic AMP in the membrane",
+        "The target enzyme that cyclic AMP switches on inside",
+        "The gene copied in the nucleus to make the receptor"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The first messenger is the signal that arrives from outside and binds the receptor. Cyclic AMP is the second messenger, and the enzymes and gene are not messengers at all.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.what-is-cascade",
+      "concept": "signal-cascade",
+      "element": "chain-of-proteins",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is a signal cascade?",
+      "choices": [
+        "A single enzyme that carries the whole signal to the nucleus",
+        "A chain of proteins in which each one activates the next",
+        "A group of receptors that all bind one signal together",
+        "A row of gene copies made in the nucleus during one cycle"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "sc-one-enzyme",
+        null,
+        null,
+        null
+      ],
+      "explanation": "In a cascade, each protein switches on the next, so the message is passed down a chain. The tempting error is a single enzyme doing it all, which would not spread the message.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.kinase-job",
+      "concept": "signal-cascade",
+      "element": "kinases",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does a protein kinase do in a signal cascade?",
+      "choices": [
+        "Removes the receptor from the membrane for recycling",
+        "Cuts the signal molecule into small pieces to end it",
+        "Adds a phosphate group to the next protein in the chain",
+        "Copies the message into a messenger RNA molecule in the nucleus"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A kinase transfers a phosphate group, which is the usual switch that passes the signal down the chain. The tempting error is that the kinase destroys the signal, which is a different job.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.phosphorylated-protein-result",
+      "concept": "signal-cascade",
+      "element": "phosphorylation-switch",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A protein in a cascade gets a phosphate group added. What usually happens to it?",
+      "choices": [
+        "Its shape changes, and it is switched off, which stops the cascade here",
+        "Its amino acids are swapped out, so it becomes a new protein entirely",
+        "It moves into the nucleus, where it is destroyed at once by enzymes",
+        "Its shape changes, and it is often switched on to act on its targets"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "sc-phos-off",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Adding a phosphate group changes a protein's shape, and for many kinases in a cascade that turns the protein on. The tempting error is that phosphorylation is always an off switch.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.always-off-claim",
+      "concept": "signal-cascade",
+      "element": "phosphorylation-switch",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'Adding a phosphate group always switches a protein off.' What is wrong with that?",
+      "choices": [
+        "Phosphorylation often switches a protein on, and the effect depends on it",
+        "Phosphorylation switches proteins off, which is why cascades end abruptly and fully",
+        "Phosphorylation removes amino acids from the protein, so it cannot work",
+        "Phosphorylation moves the protein into the membrane, where it can work"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "sc-phos-off",
+        null,
+        null
+      ],
+      "explanation": "Kinases add phosphate groups that switch proteins on as often as off, depending on the protein. The tempting error is to agree with the student that phosphorylation always switches proteins off.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.one-receptor-many-outcomes",
+      "concept": "signal-cascade",
+      "element": "chain-of-proteins",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why can one activated receptor lead to many different outcomes in a cell?",
+      "choices": [
+        "A single enzyme carries the signal to every outcome at once",
+        "Each activated protein in the chain can act on several targets",
+        "The receptor copies itself into several receptors in the nucleus",
+        "The signal molecule is split into one piece for each outcome"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "sc-one-enzyme",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Each protein in the chain can activate more than one target, so the message branches out. The tempting error is a single enzyme that carries everything, which would not branch.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.drug-blocks-second-protein",
+      "concept": "signal-cascade",
+      "element": "chain-of-proteins",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A drug blocks the second protein in a three-protein cascade. What happens to the third protein?",
+      "choices": [
+        "It is activated straight from the first protein, skipping the blocked step",
+        "It stays active forever, because nothing turned it off",
+        "It is not activated, so the response beyond that step stops",
+        "It becomes the new signal and is sent back to the receptor"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "sc-any-order",
+        null,
+        null,
+        null
+      ],
+      "explanation": "The third protein depends on the second, so with the second blocked the chain stops there. The tempting error is that a step could be skipped, so the third would still be reached.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.order-of-steps-claim",
+      "concept": "signal-cascade",
+      "element": "chain-of-proteins",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which claim about the steps of a cascade is correct?",
+      "choices": [
+        "The steps can run in any order, since each one just passes the signal along",
+        "The steps are the same protein, repeated over and over in the chain",
+        "The steps happen in the nucleus, after the receptor is replaced by a new copy",
+        "Each step needs the one before it, so the order is set by who activates whom"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "sc-any-order",
+        null,
+        null,
+        null
+      ],
+      "explanation": "A cascade is a fixed chain, so the step that comes earlier must act before the next can be switched on. The tempting error is that the steps are interchangeable.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.two-proteins-opposite-effects",
+      "concept": "signal-cascade",
+      "element": "phosphorylation-switch",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Two proteins each get a phosphate group added. One becomes more active and the other less active. What best explains this?",
+      "choices": [
+        "Each protein's shape and binding sites respond differently to the phosphate",
+        "Phosphate groups switch proteins on, so the other protein must be damaged somehow",
+        "Phosphate groups switch off every protein they touch, except the first",
+        "Phosphorylation removes amino acids from the protein, so it stops working"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "sc-phos-off",
+        null
+      ],
+      "explanation": "A phosphate group changes shape, and the effect depends on the shape and sites of each protein it is added to. The tempting error is that one phosphate group must switch off every protein it touches.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.what-is-apoptosis",
+      "concept": "apoptosis",
+      "element": "controlled-death",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is apoptosis?",
+      "choices": [
+        "The death of a cell after injury, which spills its contents out into the tissue",
+        "A controlled, programmed death in which the cell takes itself apart",
+        "The division of a cell into two identical daughter cells",
+        "The movement of a cell through the blood to a new tissue"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "ap-accident",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Apoptosis is a built-in sequence the cell runs itself, and it ends with the cell's orderly removal. The tempting error is death from injury, which is a different and messy process.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.fate-of-fragments",
+      "concept": "apoptosis",
+      "element": "clearance",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What usually happens to the fragments of an apoptotic cell?",
+      "choices": [
+        "They burst open into the tissue and cause swelling and local inflammation",
+        "They are pumped back into the bloodstream and used as hormones",
+        "They are wrapped in membrane and eaten by nearby cells or immune cells",
+        "They are copied into new cells by the nucleus during division"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "ap-accident",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Membrane-wrapped fragments are cleared by neighbouring cells and phagocytes, so their contents never leak out. The tempting error is that the contents spill and cause inflammation, as in injury.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.development-example",
+      "concept": "apoptosis",
+      "element": "roles",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which of these is an example of apoptosis shaping the body during development?",
+      "choices": [
+        "Dying of a deep cut that breaks open the cell's membrane and spills it",
+        "Making new skin cells by division at the base of the skin",
+        "Growing a new leaf from a bud on the stem of a plant",
+        "Removing the webbing between the fingers of a developing embryo"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "ap-accident",
+        null,
+        null,
+        null
+      ],
+      "explanation": "In a developing hand, cells between the digits are removed by apoptosis, which separates the fingers. The tempting error is injury-related death, which is not programmed.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.why-useful",
+      "concept": "apoptosis",
+      "element": "roles",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why is apoptosis useful to a many-celled organism?",
+      "choices": [
+        "It removes damaged or infected cells without harming the tissue around them",
+        "It removes healthy cells, which harms the tissue and does no good",
+        "It spills the cell's contents to call immune cells to the site",
+        "It stops the cell from making any proteins and from dividing again or growing"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ap-harm",
+        "ap-accident",
+        null
+      ],
+      "explanation": "Removing a damaged or infected cell in a controlled way protects the cells around it. The tempting error is that programmed death only does harm, which ignores its protective role.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.student-injury-claim",
+      "concept": "apoptosis",
+      "element": "controlled-death",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'Apoptosis is just what happens when a cell is injured and dies.' What is the best correction?",
+      "choices": [
+        "Apoptosis is the same as injury death, but happens more slowly",
+        "Apoptosis is a controlled sequence the cell runs itself, unlike death by injury",
+        "Apoptosis happens in cells that were damaged by radiation, and in no other kind of cell",
+        "Apoptosis is started by the immune system, not by the cell itself"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "ap-accident",
+        null,
+        "ap-only-damaged",
+        null
+      ],
+      "explanation": "Apoptosis is a programmed process, while death from injury is passive and messy. The tempting error is the student's idea that apoptosis is injury death, just slowed down.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.caspase-role",
+      "concept": "apoptosis",
+      "element": "caspases",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the main job of caspases in apoptosis?",
+      "choices": [
+        "They copy the cell's DNA in preparation for division",
+        "They carry oxygen into the cell from the surrounding blood",
+        "They are protein-cutting enzymes that break up key parts of the cell",
+        "They are the outside signal molecules that switch on the cell's own death"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Caspases are proteases that cut key proteins and structures, so the cell is dismantled in order. The tempting error is that caspases copy DNA or carry oxygen, which are jobs for other proteins.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.infected-cell",
+      "concept": "apoptosis",
+      "element": "controlled-death",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A cell is infected by a virus and starts apoptosis. Which outcome best shows how this protects the body?",
+      "choices": [
+        "The virus spills out of the cell and spreads to the nearby cells",
+        "The cell divides rapidly to replace itself before anything is cleared",
+        "The cell stays alive, because apoptosis does not happen in infected cells at all",
+        "The infected cell is cleared before the virus can spread to its neighbours"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Removing the infected cell in an orderly way limits the virus, since its contents are not released. The tempting error is that the spilled virus would spread, as it would after death from injury.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.healthy-tissue-claim",
+      "concept": "apoptosis",
+      "element": "roles",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says apoptosis in healthy tissue is a defect the body would be better off without. What is the best reply?",
+      "choices": [
+        "It is a normal, built-in process that shapes tissue, such as in development",
+        "It is a defect, but the body fixes it by making more healthy cells",
+        "It happens in cancer cells, so healthy tissue is unaffected",
+        "It is harmless, since the dead cell's contents go straight back into the blood"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ap-harm",
+        "ap-only-damaged",
+        null
+      ],
+      "explanation": "Apoptosis in healthy tissue is normal, for example when cells between the fingers die during development. The tempting error is that it is a defect; the idea that it only hits cancer cells is also wrong.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-communication.signal-transduction-order",
+      "concept": "signal-transduction",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps of signal transduction in order, from the outside signal to the cell's response.",
+      "steps": [
+        "A signal molecule binds a receptor on the outer membrane surface",
+        "The receptor changes shape and starts a relay of proteins inside",
+        "The relay amplifies the message through several steps",
+        "A protein inside the cell changes activity, and the cell responds"
+      ],
+      "explanation": "The signal binds first and changes the receptor's shape. Only then can the relay start, amplify the message and change a protein that drives the response.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cell-communication.messenger-steps",
+      "concept": "second-messenger",
+      "element": "production",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in order, from a hormone reaching the cell to the messenger acting inside.",
+      "steps": [
+        "A hormone binds a receptor on the outside of the membrane",
+        "The activated receptor switches on an enzyme in the membrane",
+        "The enzyme makes many second messenger molecules inside the cell",
+        "The messenger switches on target enzymes that change the cell's activity"
+      ],
+      "explanation": "The hormone binds the receptor, the receptor switches on an enzyme, the enzyme makes the messenger, and the messenger acts on targets, in that order.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cell-communication.kinase-cascade-order",
+      "concept": "signal-cascade",
+      "element": "kinases",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps of a kinase cascade in order.",
+      "steps": [
+        "A receptor activates the first kinase in the chain",
+        "The first kinase adds phosphate groups to the second protein",
+        "The second protein is switched on and acts on its targets",
+        "The targets change activity, and the cell responds"
+      ],
+      "explanation": "The receptor starts the first kinase, which phosphorylates the second protein, which then acts on its targets. Each step depends on the one before it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cell-communication.apoptosis-order",
+      "concept": "apoptosis",
+      "element": "controlled-death",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps of apoptosis in order, from the death signal to the removal of the cell.",
+      "steps": [
+        "A death signal starts a cascade that activates caspases",
+        "Caspases cut key proteins, and the cell shrinks",
+        "The cell breaks into membrane-wrapped fragments",
+        "Neighbouring cells or immune cells eat the fragments"
+      ],
+      "explanation": "A death signal activates caspases, which cut key proteins so the cell shrinks and breaks apart. Neighbouring or immune cells then clear the fragments.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cell-communication.tap-signal",
+      "concept": "cell-surface-receptor",
+      "element": "ligand-binding",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the first messenger: the molecule that brings the message to the cell but never crosses its membrane.",
+      "artifact": "receptor-relay",
+      "target": "signal",
+      "explanation": "This is the signal molecule, or ligand. It fits the outer binding site of its receptor and stays outside the cell; only the message passes inward.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cell-communication.tap-gpcr",
+      "concept": "cell-surface-receptor",
+      "element": "receptor-types",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the receptor that crosses the membrane and changes shape when the signal binds.",
+      "artifact": "receptor-relay",
+      "target": "receptor",
+      "explanation": "This receptor threads through the membrane seven times. When the signal binds its outer site, its shape changes, and the change reaches its inner side.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cell-communication.tap-g-protein",
+      "concept": "signal-transduction",
+      "element": "shape-change-relay",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the relay protein that the activated receptor switches on, which then swaps GDP for GTP.",
+      "artifact": "receptor-relay",
+      "target": "g-protein",
+      "explanation": "The G protein sits on the inner face of the membrane. An activated receptor makes it swap GDP for GTP, and the active G protein passes the signal on to an enzyme.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cell-communication.tap-adenylyl-cyclase",
+      "concept": "second-messenger",
+      "element": "production",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the enzyme that turns ATP into the second messenger.",
+      "artifact": "receptor-relay",
+      "target": "adenylyl-cyclase",
+      "explanation": "Adenylyl cyclase is a membrane enzyme switched on by the active G protein. Each one makes many cyclic AMP molecules from ATP, which amplifies the signal.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cell-communication.tap-camp",
+      "concept": "second-messenger",
+      "element": "examples",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the second messenger that carries the signal from the membrane into the cytoplasm.",
+      "artifact": "receptor-relay",
+      "target": "camp",
+      "explanation": "These are cyclic AMP molecules. They are small and spread quickly through the cytoplasm, carrying the message the first messenger left outside.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cell-communication.tap-kinase",
+      "concept": "signal-cascade",
+      "element": "kinases",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "Tap the enzyme switched on by cyclic AMP that adds phosphate groups to other proteins.",
+      "artifact": "receptor-relay",
+      "target": "kinase",
+      "explanation": "This is protein kinase A. Cyclic AMP switches it on, and it phosphorylates target proteins, switching them on or off to produce the cell's response.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "receptor-relay",
+      "kind": "diagram",
+      "title": "From receptor to response",
+      "alt": "An unlabelled strip of cell membrane with the outside of the cell above it. A diamond-shaped signal molecule sits in the top of a receptor whose seven rods cross the membrane. Below the membrane, a three-part G protein sits beside the receptor, an arrow leads to a membrane enzyme with a large inner domain, an arrow leads from that enzyme to a cluster of small hexagonal molecules, an arrow leads to a large kinase, and a final arrow points to a target protein carrying a phosphate group.",
+      "file": "assets/receptor-relay.svg",
+      "hotspots": [
+        {
+          "id": "signal",
+          "label": "Signal molecule",
+          "x": 0.225,
+          "y": 0.28,
+          "r": 0.05
+        },
+        {
+          "id": "receptor",
+          "label": "G protein-coupled receptor",
+          "x": 0.225,
+          "y": 0.436,
+          "r": 0.05
+        },
+        {
+          "id": "g-protein",
+          "label": "G protein",
+          "x": 0.429,
+          "y": 0.547,
+          "r": 0.05
+        },
+        {
+          "id": "adenylyl-cyclase",
+          "label": "Adenylyl cyclase",
+          "x": 0.608,
+          "y": 0.583,
+          "r": 0.05
+        },
+        {
+          "id": "camp",
+          "label": "Cyclic AMP",
+          "x": 0.617,
+          "y": 0.761,
+          "r": 0.05
+        },
+        {
+          "id": "kinase",
+          "label": "Protein kinase A",
+          "x": 0.804,
+          "y": 0.778,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "receptor-relay-steps",
+      "kind": "sequence",
+      "title": "Relaying a signal, step by step",
+      "alt": "Six steps: a signal binds its receptor, the receptor changes shape, it switches on a G protein, the G protein switches on adenylyl cyclase, cyclic AMP is made, and cyclic AMP switches on a kinase that phosphorylates targets.",
+      "over": "receptor-relay",
+      "steps": [
+        {
+          "title": "The signal binds",
+          "text": "A signal molecule fits the outer binding site of its receptor. It stays outside the cell.",
+          "focus": "signal"
+        },
+        {
+          "title": "The receptor changes shape",
+          "text": "Binding changes the receptor's shape, and that change reaches its inner side.",
+          "focus": "receptor"
+        },
+        {
+          "title": "A G protein switches on",
+          "text": "The changed receptor activates a G protein on the inner face of the membrane, which swaps GDP for GTP.",
+          "focus": "g-protein"
+        },
+        {
+          "title": "An enzyme is switched on",
+          "text": "The active G protein switches on adenylyl cyclase, an enzyme in the membrane.",
+          "focus": "adenylyl-cyclase"
+        },
+        {
+          "title": "Second messengers are made",
+          "text": "Adenylyl cyclase turns ATP into many cyclic AMP molecules, which spread through the cytoplasm.",
+          "focus": "camp"
+        },
+        {
+          "title": "A kinase adds phosphates",
+          "text": "Cyclic AMP switches on protein kinase A, which adds phosphate groups to target proteins and changes what they do.",
+          "focus": "kinase"
+        }
+      ]
+    }
+  ]
+}

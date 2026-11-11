@@ -2,9 +2,10 @@
   "id": "wiktionary",
   "name": "Wiktionary",
   "url": "https://en.wiktionary.org",
-  "goodFor": "Dictionary entries: definitions, etymology and word forms.",
-  "license": "CC-BY-SA-4.0",
-  "use": "copy-share-alike",
+  "goodFor": "Short definitions of single words.",
+  "license": "unknown",
+  "apps": "link",
+  "bank": "none",
   "checked": null,
-  "notes": "Same family as Wikipedia. The licence is stated as CC BY-SA 4.0 but is unverified: no licence check has been done. Until checked, treat as link-only in practice."
+  "notes": "Unverified: thought to be CC BY-SA like Wikipedia, not checked. The bank's agents don't read it and nothing from it goes into the bank."
 }

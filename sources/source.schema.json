@@ -1,86 +1,34 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/ceder/ceder-root/sources/source.schema.json",
-  "title": "Source catalogue entry",
+  "title": "A source in the catalogue",
   "type": "object",
   "additionalProperties": false,
-  "required": [
-    "id",
-    "name",
-    "goodFor",
-    "license",
-    "use",
-    "checked",
-    "notes"
-  ],
+  "required": ["id", "name", "goodFor", "license", "apps", "bank", "checked", "notes"],
   "properties": {
-    "id": {
-      "type": "string",
-      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
-    },
-    "name": {
-      "type": "string",
-      "minLength": 1
-    },
-    "url": {
-      "type": "string",
-      "pattern": "^https?://"
-    },
-    "goodFor": {
-      "type": "string",
-      "minLength": 1
-    },
-    "license": {
-      "type": "string",
-      "minLength": 1
-    },
-    "licenseUrl": {
-      "type": "string",
-      "pattern": "^https?://"
-    },
-    "use": {
-      "enum": [
-        "copy",
-        "copy-share-alike",
-        "link-only",
-        "private"
-      ]
-    },
-    "attribution": {
-      "type": "string",
-      "minLength": 1
-    },
-    "access": {
-      "type": "string",
-      "minLength": 1
-    },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "url": { "type": "string", "pattern": "^https://" },
+    "goodFor": { "type": "string", "minLength": 1 },
+    "license": { "type": "string", "minLength": 1 },
+    "licenseUrl": { "type": "string", "pattern": "^https://" },
+    "apps": { "enum": ["show", "link", "private"] },
+    "bank": { "enum": ["copy", "read", "none"] },
+    "attribution": { "type": "string", "minLength": 1 },
+    "access": { "type": "string", "minLength": 1 },
     "checked": {
       "anyOf": [
-        {
-          "type": "null"
-        },
+        { "type": "null" },
         {
           "type": "object",
           "additionalProperties": false,
-          "required": [
-            "date",
-            "basis"
-          ],
+          "required": ["date", "basis"],
           "properties": {
-            "date": {
-              "type": "string",
-              "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
-            },
-            "basis": {
-              "type": "string",
-              "minLength": 1
-            }
+            "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+            "basis": { "type": "string", "minLength": 1 }
           }
         }
       ]
     },
-    "notes": {
-      "type": "string"
-    }
+    "notes": { "type": "string", "minLength": 1 }
   }
 }

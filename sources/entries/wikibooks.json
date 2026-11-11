@@ -2,9 +2,11 @@
   "id": "wikibooks",
   "name": "Wikibooks",
   "url": "https://en.wikibooks.org",
-  "goodFor": "Open textbooks written by volunteers.",
+  "goodFor": "Textbook-style chapters, for the order a topic is taught in.",
   "license": "CC-BY-SA-4.0",
-  "use": "copy-share-alike",
+  "apps": "link",
+  "bank": "read",
+  "access": "node tools/ref.mjs wikibooks \"<title>\" for an agent.",
   "checked": null,
-  "notes": "Same family as Wikipedia. The licence is stated as CC BY-SA 4.0 but is unverified: no licence check has been done. Until checked, treat as link-only in practice."
+  "notes": "Unverified: the licence is as the bank's own rules state it (pipeline/prompts/sources.md), not checked against Wikibooks' terms. Agents read it and never copy its wording. Link only from an app until the licence is checked."
 }

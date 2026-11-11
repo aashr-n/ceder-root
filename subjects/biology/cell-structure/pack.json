@@ -1,0 +1,1863 @@
+{
+  "formatVersion": 1,
+  "id": "biology.cell-structure",
+  "subject": "biology",
+  "title": "Cell structure",
+  "summary": "What cells are made of: the membrane, the nucleus, ribosomes and the organelles that make and ship proteins and energy.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "cell-theory",
+      "name": "Cell theory",
+      "aliases": [
+        "cell doctrine"
+      ],
+      "summary": "All living things are made of cells, the cell is the smallest unit of life, and every cell comes from a cell that already existed.",
+      "elements": [
+        {
+          "id": "all-organisms-cells",
+          "name": "All organisms are made of cells"
+        },
+        {
+          "id": "basic-unit",
+          "name": "The cell as the unit of life"
+        },
+        {
+          "id": "cells-from-cells",
+          "name": "Cells come from existing cells",
+          "aliases": [
+            "omnis cellula e cellula"
+          ]
+        },
+        {
+          "id": "microscopy",
+          "name": "Light and electron microscopy",
+          "aliases": [
+            "light microscope",
+            "electron microscope"
+          ]
+        },
+        {
+          "id": "cell-size",
+          "name": "Cell size and surface area to volume ratio",
+          "aliases": [
+            "surface area to volume ratio"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "Cell theory is the starting point of modern biology. It says three things: every living thing is made of one or more cells, the cell is the smallest unit that is alive, and new cells only come from cells that already exist. It was pieced together between the 1830s and the 1850s, once microscopes were good enough to show cells in plants and animals alike. A familiar picture of it: a cut on your skin heals because the cells next to the wound divide to fill the gap. No new cell ever appears from nothing."
+      }
+    },
+    {
+      "id": "prokaryotic-and-eukaryotic-cells",
+      "name": "Prokaryotic and eukaryotic cells",
+      "aliases": [
+        "prokaryotes and eukaryotes",
+        "prokaryotic cell",
+        "eukaryotic cell",
+        "prokaryote",
+        "eukaryote",
+        "prokaryotes",
+        "eukaryotes"
+      ],
+      "summary": "Prokaryotic cells, the bacteria and archaea, have no nucleus or membrane-bound organelles; eukaryotic cells keep their DNA in a nucleus and have many organelles.",
+      "requires": [
+        "cell-theory"
+      ],
+      "elements": [
+        {
+          "id": "nucleoid",
+          "name": "Nucleoid"
+        },
+        {
+          "id": "membrane-bound-organelles",
+          "name": "Membrane-bound organelles"
+        },
+        {
+          "id": "cell-wall",
+          "name": "Cell wall",
+          "aliases": [
+            "cell walls"
+          ]
+        },
+        {
+          "id": "plasmids",
+          "name": "Plasmids",
+          "aliases": [
+            "plasmid"
+          ]
+        },
+        {
+          "id": "domains",
+          "name": "Bacteria and archaea",
+          "aliases": [
+            "prokaryotic domains"
+          ]
+        },
+        {
+          "id": "plant-and-animal-cells",
+          "name": "Plant and animal cells"
+        }
+      ],
+      "explain": {
+        "text": "Every cell is one of two kinds. Prokaryotic cells, the bacteria and archaea, have no nucleus: their main chromosome lies in a region of the cytoplasm called the nucleoid, and they have no organelles wrapped in membranes. Eukaryotic cells, which make up animals, plants, fungi and protists, keep their DNA inside a nucleus and share out their work among membrane-bound organelles. Both kinds have a cell membrane, cytoplasm, ribosomes and DNA. A typical bacterium is 1 to 5 micrometres long, while a typical animal cell is 10 to 30 micrometres across, roughly ten times wider."
+      }
+    },
+    {
+      "id": "cell-membrane",
+      "name": "Cell membrane",
+      "aliases": [
+        "plasma membrane",
+        "plasma membranes",
+        "cell membranes",
+        "cell surface membrane"
+      ],
+      "summary": "The cell membrane is a bilayer of phospholipids with proteins in it that surrounds every cell and controls what goes in and out.",
+      "requires": [
+        "cell-theory"
+      ],
+      "elements": [
+        {
+          "id": "phospholipid-bilayer",
+          "name": "Phospholipid bilayer",
+          "aliases": [
+            "lipid bilayer"
+          ]
+        },
+        {
+          "id": "membrane-proteins",
+          "name": "Membrane proteins",
+          "aliases": [
+            "channel proteins",
+            "carrier proteins",
+            "integral proteins"
+          ]
+        },
+        {
+          "id": "cholesterol",
+          "name": "Cholesterol in membranes"
+        },
+        {
+          "id": "glycoproteins",
+          "name": "Glycoproteins",
+          "aliases": [
+            "glycoprotein"
+          ]
+        },
+        {
+          "id": "selective-permeability",
+          "name": "Selective permeability",
+          "aliases": [
+            "partially permeable",
+            "selectively permeable"
+          ]
+        },
+        {
+          "id": "fluid-mosaic-model",
+          "name": "Fluid mosaic model"
+        }
+      ],
+      "explain": {
+        "text": "The cell membrane is the thin boundary around every cell. It is built from phospholipids, molecules with a head that is attracted to water and two fatty tails that avoid it. In water they line up in two layers, heads facing out and tails tucked inside, which forms the bilayer. Proteins sit in it: some form channels or carriers that let particular substances through, and some carry sugar chains that let cells recognise each other. Because the oily middle blocks ions and large molecules, the membrane controls what enters and leaves. The whole sheet is fluid, its parts drifting sideways like boats on a pond.",
+        "artifact": "membrane-bilayer"
+      }
+    },
+    {
+      "id": "organelle",
+      "name": "Organelle",
+      "aliases": [
+        "organelles",
+        "cell organelles"
+      ],
+      "summary": "Organelles are structures inside a cell that each do a particular job; in eukaryotic cells most are enclosed in their own membrane.",
+      "requires": [
+        "prokaryotic-and-eukaryotic-cells",
+        "cell-membrane"
+      ],
+      "elements": [
+        {
+          "id": "cytoplasm",
+          "name": "Cytoplasm"
+        },
+        {
+          "id": "compartments",
+          "name": "Compartmentalisation",
+          "aliases": [
+            "compartmentalization"
+          ]
+        },
+        {
+          "id": "lysosomes",
+          "name": "Lysosomes",
+          "aliases": [
+            "lysosome"
+          ]
+        },
+        {
+          "id": "cytoskeleton",
+          "name": "Cytoskeleton"
+        },
+        {
+          "id": "centrosome",
+          "name": "Centrosome",
+          "aliases": [
+            "centrosomes"
+          ]
+        },
+        {
+          "id": "chloroplasts",
+          "name": "Chloroplasts",
+          "aliases": [
+            "chloroplast"
+          ]
+        },
+        {
+          "id": "vacuoles",
+          "name": "Vacuoles",
+          "aliases": [
+            "vacuole"
+          ]
+        },
+        {
+          "id": "levels-of-organisation",
+          "name": "Levels of organisation",
+          "aliases": [
+            "levels of organization"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "An organelle is a structure inside a cell that does one particular job, much as organs do in a body. In eukaryotic cells most organelles are wrapped in their own membrane, which keeps different chemical reactions apart: digestive enzymes stay inside lysosomes instead of attacking the rest of the cell. The main ones in an animal cell are the nucleus, the endoplasmic reticulum, the Golgi apparatus, mitochondria and lysosomes, all sitting in the cytoplasm and held in place by the cytoskeleton. Plant cells add chloroplasts and a large vacuole. Turn the model to see them in a cut-away animal cell.",
+        "artifact": "animal-cell"
+      }
+    },
+    {
+      "id": "nucleus",
+      "name": "Cell nucleus",
+      "aliases": [
+        "cell nuclei"
+      ],
+      "summary": "The nucleus is the organelle that holds a eukaryotic cell's DNA inside a double membrane and controls which genes the cell uses.",
+      "requires": [
+        "organelle"
+      ],
+      "elements": [
+        {
+          "id": "nuclear-envelope",
+          "name": "Nuclear envelope",
+          "aliases": [
+            "nuclear membrane"
+          ]
+        },
+        {
+          "id": "nuclear-pores",
+          "name": "Nuclear pores",
+          "aliases": [
+            "nuclear pore"
+          ]
+        },
+        {
+          "id": "nucleolus",
+          "name": "Nucleolus",
+          "aliases": [
+            "nucleoli"
+          ]
+        },
+        {
+          "id": "chromatin",
+          "name": "Chromatin"
+        },
+        {
+          "id": "gene-control",
+          "name": "Control of the cell"
+        }
+      ],
+      "explain": {
+        "text": "The nucleus is the largest organelle in most animal cells and holds almost all of the cell's DNA. It is wrapped in the nuclear envelope, two membranes pierced by pores that let messages and proteins in and out while keeping the DNA inside. In a cell that is not dividing, the DNA is spread out as loose threads called chromatin. A dense patch inside, the nucleolus, is where the parts of ribosomes are made. Think of the nucleus as a library that keeps the master copies safe and lends out only copies of the pages that are needed.",
+        "artifact": "cell-parts"
+      }
+    },
+    {
+      "id": "ribosome",
+      "name": "Ribosome",
+      "aliases": [
+        "ribosomes"
+      ],
+      "summary": "Ribosomes are small structures of RNA and protein, without a membrane, that build proteins in every kind of cell.",
+      "requires": [
+        "prokaryotic-and-eukaryotic-cells"
+      ],
+      "elements": [
+        {
+          "id": "subunits",
+          "name": "Large and small subunits",
+          "aliases": [
+            "ribosomal subunits"
+          ]
+        },
+        {
+          "id": "ribosomal-rna",
+          "name": "Ribosomal RNA",
+          "aliases": [
+            "rRNA"
+          ]
+        },
+        {
+          "id": "free-ribosomes",
+          "name": "Free ribosomes"
+        },
+        {
+          "id": "bound-ribosomes",
+          "name": "Bound ribosomes",
+          "aliases": [
+            "membrane-bound ribosomes"
+          ]
+        },
+        {
+          "id": "70s-and-80s",
+          "name": "70S and 80S ribosomes"
+        }
+      ],
+      "explain": {
+        "text": "A ribosome is the machine that builds proteins. It reads a message copied from a gene and joins amino acids together in the order that message spells out. Each ribosome has a large and a small subunit, made of ribosomal RNA and protein, and has no membrane around it, so it is found in every kind of cell, bacteria included. In a eukaryotic cell some ribosomes float free in the cytoplasm and make proteins the cell keeps, while others sit on the rough endoplasmic reticulum and make proteins that will be exported or built into membranes. A busy cell holds millions of them.",
+        "artifact": "cell-parts"
+      }
+    },
+    {
+      "id": "endomembrane-system",
+      "name": "Endomembrane system",
+      "aliases": [
+        "endomembrane systems",
+        "secretory pathway"
+      ],
+      "summary": "The endoplasmic reticulum, Golgi apparatus and vesicles form a connected system that makes, modifies and ships proteins and lipids.",
+      "requires": [
+        "nucleus",
+        "ribosome",
+        "cell-membrane"
+      ],
+      "elements": [
+        {
+          "id": "rough-er",
+          "name": "Rough endoplasmic reticulum",
+          "aliases": [
+            "rough ER",
+            "RER"
+          ]
+        },
+        {
+          "id": "smooth-er",
+          "name": "Smooth endoplasmic reticulum",
+          "aliases": [
+            "smooth ER",
+            "SER"
+          ]
+        },
+        {
+          "id": "golgi-apparatus",
+          "name": "Golgi apparatus",
+          "aliases": [
+            "Golgi body",
+            "Golgi complex"
+          ]
+        },
+        {
+          "id": "vesicles",
+          "name": "Vesicles",
+          "aliases": [
+            "vesicle",
+            "transport vesicles"
+          ]
+        },
+        {
+          "id": "exocytosis",
+          "name": "Exocytosis"
+        }
+      ],
+      "explain": {
+        "text": "The endomembrane system is a set of membrane compartments in eukaryotic cells that make, modify and ship proteins and lipids. The rough endoplasmic reticulum, studded with ribosomes, builds proteins and threads them into its inner space. The smooth endoplasmic reticulum has no ribosomes and makes lipids. Small bubbles of membrane called vesicles carry new proteins to the Golgi apparatus, a stack of flattened sacs that modifies, sorts and packages them. Further vesicles take them to lysosomes, to the cell membrane, or out of the cell. A pancreas cell sending out insulin follows exactly this route.",
+        "artifact": "protein-export-steps"
+      }
+    },
+    {
+      "id": "mitochondrion",
+      "name": "Mitochondrion",
+      "aliases": [
+        "mitochondria"
+      ],
+      "summary": "Mitochondria are double-membraned organelles where aerobic respiration makes most of a eukaryotic cell's ATP.",
+      "requires": [
+        "organelle"
+      ],
+      "elements": [
+        {
+          "id": "cristae",
+          "name": "Cristae",
+          "aliases": [
+            "crista"
+          ]
+        },
+        {
+          "id": "matrix",
+          "name": "Mitochondrial matrix"
+        },
+        {
+          "id": "atp-production",
+          "name": "ATP production",
+          "aliases": [
+            "ATP synthesis"
+          ]
+        },
+        {
+          "id": "mitochondrial-dna",
+          "name": "Mitochondrial DNA",
+          "aliases": [
+            "mtDNA"
+          ]
+        },
+        {
+          "id": "endosymbiosis",
+          "name": "Endosymbiotic theory",
+          "aliases": [
+            "endosymbiosis"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "A mitochondrion is the organelle where most of a cell's ATP is made. ATP is the small molecule that carries energy to nearly every job a cell does. Inside, the last stages of aerobic respiration break down fuel from food using oxygen. A mitochondrion has two membranes: a smooth outer one and an inner one folded into ridges called cristae, which give more room for the enzymes that make ATP. Muscle cells and sperm, which use energy fast, are packed with them. Mitochondria also carry their own small loop of DNA, a clue that they began as bacteria living inside another cell.",
+        "artifact": "cell-parts"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "biology.cell-structure.theory-statement",
+      "concept": "cell-theory",
+      "element": "cells-from-cells",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which statement is part of cell theory?",
+      "choices": [
+        "All cells contain a nucleus",
+        "All cells contain chloroplasts or mitochondria",
+        "New cells arise only from existing cells",
+        "Cells are the smallest units of matter"
+      ],
+      "answer": 2,
+      "explanation": "Cell theory says cells arise only from existing cells. Many cells, such as bacteria, have no nucleus, so 'all cells contain a nucleus' is a common but wrong addition.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.viruses-not-cells",
+      "concept": "cell-theory",
+      "element": "all-organisms-cells",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why are viruses usually not counted as living things under cell theory?",
+      "choices": [
+        "They are not made of cells and cannot reproduce on their own",
+        "They contain no DNA or RNA, so they carry no genes at all",
+        "They are too small to be resolved by a light microscope at all",
+        "They only infect bacteria and never animal or plant cells"
+      ],
+      "answer": 0,
+      "explanation": "Viruses are not made of cells and can only be copied inside a host cell. They do carry genetic material, DNA or RNA, so the choice saying they contain no DNA or RNA is wrong.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cell-structure.virchow",
+      "concept": "cell-theory",
+      "element": "cells-from-cells",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "Which scientist made the phrase 'every cell from a cell' (omnis cellula e cellula) famous in 1855?",
+      "answer": "Rudolf Virchow",
+      "explanation": "Rudolf Virchow popularised the phrase in 1855, adding the third part of cell theory to the earlier work of Schleiden and Schwann.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-structure.sa-volume-ratio",
+      "concept": "cell-theory",
+      "element": "cell-size",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A cube-shaped cell doubles its side length. What happens to its surface area to volume ratio?",
+      "choices": [
+        "It doubles",
+        "It stays the same",
+        "It quarters",
+        "It halves"
+      ],
+      "answer": 3,
+      "explanation": "Surface area grows with the square of the side (4 times) and volume with the cube (8 times), so the ratio becomes 4/8 of what it was: it halves.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.why-cells-small",
+      "concept": "cell-theory",
+      "element": "cell-size",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why do most cells stay small?",
+      "choices": [
+        "Small cells pack more DNA into each unit of their volume",
+        "It has more surface per unit volume for exchange",
+        "Membranes cannot stretch beyond roughly 100 micrometres across",
+        "Small cells need no ATP, since diffusion handles all their transport"
+      ],
+      "answer": 1,
+      "explanation": "Everything a cell takes in or gets rid of crosses its surface, and a small cell has more surface for each unit of volume. A large cell could not exchange materials fast enough for its volume.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: Correct option begins 'It has...' with no antecedent; the stem asks why cells stay small, so the options do not parallel (others begin 'Small cells'). Wording should be 'Small cells have more surface per unit volume'."
+      }
+    },
+    {
+      "id": "biology.cell-structure.microscope-for-ribosomes",
+      "concept": "cell-theory",
+      "element": "microscopy",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "Which kind of microscope is needed to see individual ribosomes in a cell?",
+      "answer": "An electron microscope",
+      "explanation": "Ribosomes are about 20 to 30 nanometres across, far below the roughly 200 nanometre limit of a light microscope, so only an electron microscope resolves them.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-structure.size-order",
+      "concept": "cell-theory",
+      "element": "cell-size",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these in order from smallest to largest.",
+      "steps": [
+        "A ribosome",
+        "A bacterium",
+        "A human red blood cell",
+        "A human egg cell"
+      ],
+      "explanation": "A ribosome is about 25 nanometres, a bacterium about 2 micrometres, a human red blood cell about 7 to 8 micrometres, and a human egg cell about 120 micrometres across.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.eukaryote-only",
+      "concept": "prokaryotic-and-eukaryotic-cells",
+      "element": "membrane-bound-organelles",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which structure is found in a eukaryotic cell but not in a prokaryotic cell?",
+      "choices": [
+        "Ribosome",
+        "Nucleus",
+        "Cell membrane",
+        "DNA"
+      ],
+      "answer": 1,
+      "explanation": "Only eukaryotic cells have a nucleus. Ribosomes are in both kinds, which is why 'ribosome' is the tempting wrong choice: they have no membrane, so prokaryotes have them too.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.identify-bacterium",
+      "concept": "prokaryotic-and-eukaryotic-cells",
+      "element": "nucleoid",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A cell has a cell wall, ribosomes and a circular chromosome loose in its cytoplasm, but no mitochondria. What is it most likely to be?",
+      "choices": [
+        "A plant cell",
+        "A fungal cell",
+        "A white blood cell",
+        "A bacterium"
+      ],
+      "answer": 3,
+      "explanation": "A chromosome loose in the cytoplasm means no nucleus, so it is a prokaryote such as a bacterium. Plant cells have walls too, but they also have a nucleus and mitochondria.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.nucleoid-name",
+      "concept": "prokaryotic-and-eukaryotic-cells",
+      "element": "nucleoid",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is the region of a prokaryotic cell where its main chromosome lies called?",
+      "answer": "The nucleoid",
+      "explanation": "The nucleoid is the region of cytoplasm where a prokaryote's chromosome is found. It has no membrane around it, unlike a nucleus.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-structure.plant-not-animal",
+      "concept": "prokaryotic-and-eukaryotic-cells",
+      "element": "plant-and-animal-cells",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which pair of structures do plant cells have that animal cells lack?",
+      "choices": [
+        "Chloroplasts and a cell wall",
+        "Mitochondria and a Golgi apparatus",
+        "A nucleus and endoplasmic reticulum",
+        "Ribosomes and cytoplasm"
+      ],
+      "answer": 0,
+      "explanation": "Plant cells have chloroplasts and a cellulose cell wall, which animal cells lack. Plant cells also have mitochondria and a Golgi apparatus, a common mistake since plants photosynthesise.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.shared-protein-making",
+      "concept": "prokaryotic-and-eukaryotic-cells",
+      "element": "membrane-bound-organelles",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Both prokaryotic and eukaryotic cells make proteins. Which structure do both use to do it?",
+      "choices": [
+        "Rough endoplasmic reticulum",
+        "Golgi apparatus",
+        "Ribosomes",
+        "Nucleolus"
+      ],
+      "answer": 2,
+      "explanation": "Ribosomes build proteins in every cell. Rough endoplasmic reticulum is only in eukaryotes, which have membrane-bound organelles; prokaryotes have free ribosomes only.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.prokaryote-domains",
+      "concept": "prokaryotic-and-eukaryotic-cells",
+      "element": "domains",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "Which two domains of life are made of prokaryotic cells?",
+      "answer": "Bacteria and Archaea",
+      "explanation": "Bacteria and Archaea are both prokaryotic. The third domain, Eukarya, holds every organism with a nucleus.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-structure.volume-ratio",
+      "concept": "prokaryotic-and-eukaryotic-cells",
+      "element": "domains",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Treat a bacterium as a sphere 2 micrometres across and an animal cell as a sphere 20 micrometres across. About how many times larger is the animal cell's volume?",
+      "choices": [
+        "10",
+        "100",
+        "1,000",
+        "30"
+      ],
+      "answer": 2,
+      "explanation": "The animal cell is 10 times wider. Volume grows with the cube of width, so it is 10 x 10 x 10 = 1,000 times larger. Answering 10 forgets that volume is three-dimensional.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.tap-phosphate-head",
+      "concept": "cell-membrane",
+      "element": "phospholipid-bilayer",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the phosphate head of a phospholipid.",
+      "artifact": "membrane-bilayer",
+      "target": "phospholipid-head",
+      "explanation": "Each phospholipid has a phosphate head that is attracted to water. The heads line both faces of the membrane, facing the water inside and outside the cell.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.tap-channel",
+      "concept": "cell-membrane",
+      "element": "membrane-proteins",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the channel protein.",
+      "artifact": "membrane-bilayer",
+      "target": "channel-protein",
+      "explanation": "A channel protein spans the whole bilayer and has a water-filled gap that lets particular ions or small molecules pass through.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.tap-cholesterol",
+      "concept": "cell-membrane",
+      "element": "cholesterol",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the cholesterol molecule.",
+      "artifact": "membrane-bilayer",
+      "target": "cholesterol",
+      "explanation": "Cholesterol sits among the fatty acid tails of the phospholipids, where it steadies the membrane's fluidity as temperature changes.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.tap-carbohydrate",
+      "concept": "cell-membrane",
+      "element": "glycoproteins",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the carbohydrate chain that cells use to recognise each other.",
+      "artifact": "membrane-bilayer",
+      "target": "carbohydrate-chain",
+      "explanation": "Branched chains of sugar units attached to proteins on the outer face form glycoproteins. Other cells and the immune system read them as identity tags.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.tap-hydrophobic-core",
+      "concept": "cell-membrane",
+      "element": "phospholipid-bilayer",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the hydrophobic region of the bilayer.",
+      "artifact": "membrane-bilayer",
+      "target": "fatty-acid-tails",
+      "explanation": "The fatty acid tails of both layers meet in the middle of the membrane. They avoid water, so this oily core is what blocks ions and most large molecules.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.why-bilayer",
+      "concept": "cell-membrane",
+      "element": "phospholipid-bilayer",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why do phospholipids form a bilayer in water?",
+      "choices": [
+        "Their tails avoid water and hide between two layers of heads",
+        "Their heads avoid water and hide between two layers of tails",
+        "Membrane proteins grip the heads and pull them into two layers",
+        "Cholesterol bonds each head to a tail, so they pair up in water"
+      ],
+      "answer": 0,
+      "explanation": "The fatty acid tails are hydrophobic, so two layers form with the tails hidden between them and the water-loving heads facing out. The heads are hydrophilic, not hydrophobic.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cell-structure.crosses-easily",
+      "concept": "cell-membrane",
+      "element": "selective-permeability",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which of these crosses a phospholipid bilayer most easily without help from a protein?",
+      "choices": [
+        "Sodium ions",
+        "Glucose",
+        "Proteins",
+        "Oxygen"
+      ],
+      "answer": 3,
+      "explanation": "Oxygen is small and uncharged, so it slips through the hydrophobic core. Sodium ions are small too, but their charge keeps them out of the oily middle.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.fluid-mosaic",
+      "concept": "cell-membrane",
+      "element": "fluid-mosaic-model",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What name is given to the model of the membrane as a fluid sheet of lipids with proteins scattered through it?",
+      "answer": "The fluid mosaic model",
+      "explanation": "The fluid mosaic model, proposed by Singer and Nicolson in 1972: fluid because the lipids and proteins drift sideways, mosaic because proteins dot the lipid sheet.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-structure.blocked-channel",
+      "concept": "cell-membrane",
+      "element": "membrane-proteins",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A drug blocks the channel proteins that let potassium ions through a membrane. What happens to potassium movement across that membrane?",
+      "choices": [
+        "It continues through the lipids, because potassium ions are small",
+        "It largely stops, because ions cannot cross the hydrophobic core",
+        "It speeds up, because the drug opens other gaps",
+        "It reverses direction"
+      ],
+      "answer": 1,
+      "explanation": "Ions are charged and cannot pass through the hydrophobic core of the bilayer, so with the channels blocked very little potassium crosses. Being small does not help a charged particle.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.tap-lysosome",
+      "concept": "organelle",
+      "element": "lysosomes",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the organelle that holds digestive enzymes.",
+      "artifact": "cell-parts",
+      "target": "lysosome",
+      "explanation": "Lysosomes are small round sacs of digestive enzymes that break down worn-out parts of the cell and anything it has engulfed.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.why-lysosome-membrane",
+      "concept": "organelle",
+      "element": "compartments",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does it matter that a lysosome's digestive enzymes are kept behind a membrane?",
+      "choices": [
+        "The membrane makes the enzymes work faster",
+        "Loose enzymes would break down the cell's own molecules",
+        "The membrane turns the enzymes into ATP",
+        "The enzymes need light that only the membrane lets through"
+      ],
+      "answer": 1,
+      "explanation": "Kept loose in the cytoplasm, the enzymes would break down the cell's own molecules. Keeping reactions in separate compartments is the main advantage of membrane-bound organelles.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.plant-organelle",
+      "concept": "organelle",
+      "element": "chloroplasts",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which organelle is found in plant cells but not in animal cells?",
+      "choices": [
+        "Mitochondrion",
+        "Golgi apparatus",
+        "Nucleus",
+        "Chloroplast"
+      ],
+      "answer": 3,
+      "explanation": "Chloroplasts carry out photosynthesis and are found in plant cells but not animal cells. Mitochondria are in both, a common mistake since plants also make sugar.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.cytoskeleton",
+      "concept": "organelle",
+      "element": "cytoskeleton",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What network of protein fibres gives a cell its shape and moves organelles around inside it?",
+      "answer": "The cytoskeleton",
+      "explanation": "The cytoskeleton is made of microtubules, actin filaments and intermediate filaments. It holds the cell's shape and acts as tracks for moving vesicles and organelles.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-structure.centrosome-job",
+      "concept": "organelle",
+      "element": "centrosome",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In an animal cell, which structure organises the microtubules of the cytoskeleton and of the spindle?",
+      "choices": [
+        "Centrosome",
+        "Nucleolus",
+        "Golgi apparatus",
+        "Lysosome"
+      ],
+      "answer": 0,
+      "explanation": "The centrosome is the animal cell's main microtubule-organising centre, and the spindle grows from it in mitosis. The nucleolus makes ribosome parts, not microtubules.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.cytoplasm-name",
+      "concept": "organelle",
+      "element": "cytoplasm",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is everything inside the cell membrane except the nucleus called?",
+      "answer": "The cytoplasm",
+      "explanation": "The cytoplasm is the fluid cytosol together with all the organelles in it, apart from the nucleus.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-structure.many-lysosomes",
+      "concept": "organelle",
+      "element": "lysosomes",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A cell has an unusually large number of lysosomes. Which job is it most likely specialised for?",
+      "choices": [
+        "Making steroid hormones",
+        "Storing starch",
+        "Engulfing and digesting bacteria",
+        "Contracting to move a limb"
+      ],
+      "answer": 2,
+      "explanation": "Lysosomes digest what a cell engulfs, so cells such as macrophages that swallow bacteria are rich in them. Making steroid hormones calls for smooth endoplasmic reticulum instead.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.organisation-levels",
+      "concept": "organelle",
+      "element": "levels-of-organisation",
+      "kind": "order",
+      "difficulty": 1,
+      "prompt": "Put these levels of organisation in order from smallest to largest.",
+      "steps": [
+        "Organelle",
+        "Cell",
+        "Tissue",
+        "Organ"
+      ],
+      "explanation": "Organelles make up cells, cells of one kind make up a tissue, and several tissues working together make up an organ.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.tap-nucleus",
+      "concept": "nucleus",
+      "element": "gene-control",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the nucleus.",
+      "artifact": "cell-parts",
+      "target": "nucleus",
+      "explanation": "The nucleus is the largest organelle in the cell, a round body that holds the DNA.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.tap-nucleolus",
+      "concept": "nucleus",
+      "element": "nucleolus",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the part of the nucleus where ribosome subunits are made.",
+      "artifact": "cell-parts",
+      "target": "nucleolus",
+      "explanation": "The nucleolus is a dense region inside the nucleus where ribosomal RNA is made and joined with proteins into ribosome subunits.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.nucleus-job",
+      "concept": "nucleus",
+      "element": "gene-control",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the main job of the nucleus?",
+      "choices": [
+        "Releasing energy from glucose by respiration for the whole cell",
+        "Packaging proteins into vesicles to be sent out of the cell",
+        "Holding the DNA and controlling which genes are used",
+        "Breaking down worn-out organelles and waste inside the cell"
+      ],
+      "answer": 2,
+      "explanation": "The nucleus holds the DNA and controls which genes are used. Releasing energy from glucose by respiration is the job of mitochondria, a frequent mix-up of 'control centre' with 'power'.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cell-structure.envelope-name",
+      "concept": "nucleus",
+      "element": "nuclear-envelope",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is the double membrane around the nucleus called?",
+      "answer": "The nuclear envelope",
+      "explanation": "The nuclear envelope is two membranes with a narrow space between them, pierced by nuclear pores.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-structure.mrna-exit",
+      "concept": "nucleus",
+      "element": "nuclear-pores",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "How does a messenger RNA made in the nucleus reach ribosomes in the cytoplasm?",
+      "choices": [
+        "Through the nuclear pores",
+        "By diffusing through the lipids of the envelope",
+        "The nuclear envelope breaks down each time",
+        "Inside a lysosome"
+      ],
+      "answer": 0,
+      "explanation": "Messenger RNA is too large and charged to cross a lipid bilayer, so it leaves through nuclear pores, protein-lined openings in the nuclear envelope.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.red-cell-no-nucleus",
+      "concept": "nucleus",
+      "element": "gene-control",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A mature human red blood cell has no nucleus. Which of these can it no longer do?",
+      "choices": [
+        "Carry oxygen",
+        "Hold haemoglobin",
+        "Travel through blood vessels",
+        "Make new proteins from its genes"
+      ],
+      "answer": 3,
+      "explanation": "Without a nucleus it has no genes to read, so it cannot make new proteins. It still carries oxygen with the haemoglobin it made earlier, which is why it lasts only about 120 days.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.chromatin-name",
+      "concept": "nucleus",
+      "element": "chromatin",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "What name is given to the loose threads of DNA and protein in a nucleus that is not dividing?",
+      "answer": "Chromatin",
+      "explanation": "Chromatin is DNA wound around proteins. Before division it coils tightly into the compact chromosomes seen in mitosis.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-structure.tap-free-ribosomes",
+      "concept": "ribosome",
+      "element": "free-ribosomes",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the free ribosomes in the cytoplasm.",
+      "artifact": "cell-parts",
+      "target": "free-ribosomes",
+      "explanation": "Free ribosomes are the small dots loose in the cytoplasm, not attached to any membrane. They make proteins that stay inside the cell.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.ribosome-product",
+      "concept": "ribosome",
+      "element": "subunits",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What do ribosomes make?",
+      "choices": [
+        "Lipids",
+        "Proteins",
+        "Carbohydrates",
+        "DNA"
+      ],
+      "answer": 1,
+      "explanation": "Ribosomes join amino acids into proteins. Lipids are made by the smooth endoplasmic reticulum, a common confusion because both are 'made on the ER'.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.secreted-protein-site",
+      "concept": "ribosome",
+      "element": "bound-ribosomes",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Where are proteins that a cell will secrete made?",
+      "choices": [
+        "On free ribosomes floating in the cytoplasm",
+        "On ribosomes on the rough endoplasmic reticulum",
+        "Inside the nucleolus of the nucleus",
+        "Inside the sacs of the Golgi apparatus"
+      ],
+      "answer": 1,
+      "explanation": "Proteins for export are made by ribosomes on the rough endoplasmic reticulum, which threads them into the ER to be sent on. Free ribosomes make proteins that stay in the cytoplasm.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.ribosome-makeup",
+      "concept": "ribosome",
+      "element": "ribosomal-rna",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What two kinds of molecule make up a ribosome?",
+      "answer": "Ribosomal RNA and protein",
+      "explanation": "A ribosome is made of ribosomal RNA and proteins, arranged in a large and a small subunit. It has no lipid membrane.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-structure.bacteria-have-ribosomes",
+      "concept": "ribosome",
+      "element": "70s-and-80s",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Bacteria have no membrane-bound organelles. Why do they still have ribosomes?",
+      "choices": [
+        "Bacteria take ribosomes from the cells they infect",
+        "Bacterial ribosomes sit inside a nucleus",
+        "Bacterial ribosomes are made of lipid",
+        "Ribosomes are not enclosed by a membrane"
+      ],
+      "answer": 3,
+      "explanation": "Ribosomes are not enclosed by a membrane, so they are not membrane-bound organelles and every cell can have them. Bacteria make their own; they do not take them from hosts.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "a's note: The keyed-looking option only says ribosomes are not membrane-bound, so lacking membrane-bound organelles does not rule them out; it does not give the underlying reason (every cell needs ribosomes to make proteins). Defensible but weak."
+      }
+    },
+    {
+      "id": "biology.cell-structure.antibiotic-target",
+      "concept": "ribosome",
+      "element": "70s-and-80s",
+      "kind": "recall",
+      "difficulty": 3,
+      "prompt": "Streptomycin stops bacteria making proteins but leaves human cells' protein-making alone. What difference between the cells does it rely on?",
+      "answer": "Bacterial ribosomes (70S) are a different structure from human ribosomes (80S)",
+      "explanation": "Bacterial ribosomes (70S) differ in structure from the ribosomes in human cytoplasm (80S). Streptomycin binds the small subunit of the bacterial kind only.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both name the 70S versus 80S ribosome difference the key gives."
+      }
+    },
+    {
+      "id": "biology.cell-structure.subunit-assembly",
+      "concept": "ribosome",
+      "element": "subunits",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Where in a eukaryotic cell are ribosome subunits assembled?",
+      "choices": [
+        "The nucleolus",
+        "The Golgi apparatus",
+        "The smooth endoplasmic reticulum",
+        "A lysosome"
+      ],
+      "answer": 0,
+      "explanation": "Ribosomal RNA is made and packed with proteins into subunits in the nucleolus. The subunits then leave through nuclear pores and come together in the cytoplasm.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.gene-to-protein",
+      "concept": "ribosome",
+      "element": "free-ribosomes",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in order for a protein made on a free ribosome.",
+      "steps": [
+        "A gene in the nucleus is copied into messenger RNA",
+        "The messenger RNA leaves through a nuclear pore",
+        "A ribosome in the cytoplasm binds the messenger RNA",
+        "The ribosome joins amino acids into a protein"
+      ],
+      "explanation": "A gene is copied into messenger RNA in the nucleus, the mRNA leaves through a pore, a ribosome binds and reads it, and the ribosome joins amino acids into a chain.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.tap-rough-er",
+      "concept": "endomembrane-system",
+      "element": "rough-er",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the rough endoplasmic reticulum.",
+      "artifact": "cell-parts",
+      "target": "rough-er",
+      "explanation": "The rough endoplasmic reticulum is a set of folded membranes beside the nucleus, dotted with ribosomes.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.tap-golgi",
+      "concept": "endomembrane-system",
+      "element": "golgi-apparatus",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the organelle that modifies, sorts and packages proteins into vesicles.",
+      "artifact": "cell-parts",
+      "target": "golgi",
+      "explanation": "The Golgi apparatus is a stack of flattened, curved sacs with vesicles budding from its edges.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.secretion-path",
+      "concept": "endomembrane-system",
+      "element": "exocytosis",
+      "kind": "order",
+      "difficulty": 3,
+      "prompt": "Put the path of a protein that the cell secretes in order.",
+      "steps": [
+        "Ribosomes on the rough endoplasmic reticulum build the protein",
+        "A vesicle carries the protein to the Golgi apparatus",
+        "The Golgi apparatus modifies and packages the protein",
+        "A vesicle fuses with the cell membrane and releases the protein"
+      ],
+      "explanation": "The protein is built on the rough ER, carried in a vesicle to the Golgi, modified and packaged there, and released when a vesicle fuses with the cell membrane.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.smooth-er-job",
+      "concept": "endomembrane-system",
+      "element": "smooth-er",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which organelle makes lipids such as steroid hormones and has no ribosomes on it?",
+      "choices": [
+        "Rough endoplasmic reticulum",
+        "Golgi apparatus",
+        "Smooth endoplasmic reticulum",
+        "Nucleolus"
+      ],
+      "answer": 2,
+      "explanation": "The smooth endoplasmic reticulum makes lipids and steroids. The rough ER is the tempting wrong answer, but it is rough because of its ribosomes and mainly makes proteins.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.exocytosis-name",
+      "concept": "endomembrane-system",
+      "element": "exocytosis",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is it called when a vesicle fuses with the cell membrane and releases its contents outside the cell?",
+      "answer": "Exocytosis",
+      "explanation": "Exocytosis. The opposite, taking material in by wrapping it in membrane, is endocytosis.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-structure.golgi-fails",
+      "concept": "endomembrane-system",
+      "element": "golgi-apparatus",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A cell's Golgi apparatus stops working. What happens to a protein it was meant to secrete?",
+      "choices": [
+        "It is never made, because translation stops at the ribosome",
+        "It is secreted faster than before, with no sorting step needed",
+        "It is made but not packaged and sent out properly",
+        "It is broken down in the nucleus before it can leave the cell"
+      ],
+      "answer": 2,
+      "explanation": "The protein is still made on the rough ER, but without the Golgi it is not modified, sorted or packaged, so it is not sent out properly. Translation does not depend on the Golgi.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cell-structure.why-rough",
+      "concept": "endomembrane-system",
+      "element": "rough-er",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What makes rough endoplasmic reticulum look rough in an electron micrograph?",
+      "choices": [
+        "Ribosomes attached to its surface",
+        "Folds of its inner membrane",
+        "Crystals of stored lipid",
+        "Pores like those in the nuclear envelope"
+      ],
+      "answer": 0,
+      "explanation": "Ribosomes attached to its outer surface give it a studded look. Folds belong to all ER and to the inner mitochondrial membrane, so they are not what makes it rough.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.tap-mitochondrion",
+      "concept": "mitochondrion",
+      "element": "atp-production",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the organelle that makes most of the cell's ATP.",
+      "artifact": "cell-parts",
+      "target": "mitochondrion",
+      "explanation": "The mitochondrion is the sausage-shaped organelle with a folded inner membrane, where aerobic respiration makes most of the cell's ATP.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.cristae-name",
+      "concept": "mitochondrion",
+      "element": "cristae",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What are the folds of the inner mitochondrial membrane called?",
+      "answer": "Cristae",
+      "explanation": "Cristae (one crista). They carry the enzymes of the last stage of aerobic respiration.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-structure.why-folded",
+      "concept": "mitochondrion",
+      "element": "cristae",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why is the inner membrane of a mitochondrion folded?",
+      "choices": [
+        "To make room to store extra copies of its DNA",
+        "To let the mitochondrion divide in two",
+        "To keep oxygen out of the matrix",
+        "To give more surface for the enzymes that make ATP"
+      ],
+      "answer": 3,
+      "explanation": "Folding gives more membrane surface for the enzymes that make ATP, so more ATP can be made in the same space. Mitochondrial DNA sits in the matrix, not in the folds.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.most-mitochondria",
+      "concept": "mitochondrion",
+      "element": "atp-production",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which of these cells would you expect to contain the most mitochondria?",
+      "choices": [
+        "A mature red blood cell",
+        "A heart muscle cell",
+        "A fat storage cell",
+        "A dead skin cell at the surface"
+      ],
+      "answer": 1,
+      "explanation": "Heart muscle contracts nonstop and needs a great deal of ATP, so its cells are packed with mitochondria. Mature human red blood cells have none.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.endosymbiosis-evidence",
+      "concept": "mitochondrion",
+      "element": "endosymbiosis",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which observation supports the idea that mitochondria were once free-living bacteria?",
+      "choices": [
+        "They are found in bacteria as well as in plant and animal cells",
+        "They have their own circular DNA and bacteria-like ribosomes",
+        "They are built in the nucleolus from genes copied from the nucleus",
+        "They contain chlorophyll and make their own sugar by photosynthesis"
+      ],
+      "answer": 1,
+      "explanation": "Mitochondria have their own circular DNA and bacteria-like ribosomes, and divide by splitting like bacteria. Bacteria themselves have no mitochondria.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cell-structure.oxygen-need",
+      "concept": "mitochondrion",
+      "element": "atp-production",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "Which gas must a cell take in for its mitochondria to carry out aerobic respiration?",
+      "answer": "Oxygen",
+      "explanation": "Oxygen. It accepts electrons at the end of the chain on the inner membrane, and without it most ATP production stops.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09",
+        "note": "Both solvers gave the same fact as the key, differing only in wording or notation."
+      }
+    },
+    {
+      "id": "biology.cell-structure.energy-carrier",
+      "concept": "mitochondrion",
+      "element": "atp-production",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Mitochondria make a molecule the cell uses to carry energy. Which one?",
+      "choices": [
+        "Glucose",
+        "Oxygen",
+        "Protein",
+        "ATP"
+      ],
+      "answer": 3,
+      "explanation": "Mitochondria make ATP. Glucose is the fuel broken down, not the energy carrier that comes out, a common reversal.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    },
+    {
+      "id": "biology.cell-structure.layers-in",
+      "concept": "mitochondrion",
+      "element": "matrix",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the parts of a mitochondrion in order from the outside in.",
+      "steps": [
+        "Outer membrane",
+        "Intermembrane space",
+        "Inner membrane",
+        "Matrix"
+      ],
+      "explanation": "A mitochondrion has a smooth outer membrane, then the narrow intermembrane space, then the folded inner membrane, and the matrix in the middle.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-09"
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "cell-parts",
+      "kind": "diagram",
+      "title": "Parts of an animal cell",
+      "alt": "An unlabelled animal cell: an oval cell membrane around pale cytoplasm, a large blue nucleus with a dark nucleolus, curved rough endoplasmic reticulum dotted with ribosomes beside the nucleus, a stack of Golgi sacs with small vesicles, a sausage-shaped mitochondrion with a folded inner membrane, a round lysosome, and a cluster of free ribosomes.",
+      "file": "assets/cell-parts.svg",
+      "hotspots": [
+        {
+          "id": "nucleus",
+          "label": "Nucleus",
+          "x": 0.375,
+          "y": 0.522,
+          "r": 0.05
+        },
+        {
+          "id": "nucleolus",
+          "label": "Nucleolus",
+          "x": 0.492,
+          "y": 0.439,
+          "r": 0.04
+        },
+        {
+          "id": "rough-er",
+          "label": "Rough endoplasmic reticulum",
+          "x": 0.621,
+          "y": 0.478,
+          "r": 0.045
+        },
+        {
+          "id": "golgi",
+          "label": "Golgi apparatus",
+          "x": 0.738,
+          "y": 0.706,
+          "r": 0.06
+        },
+        {
+          "id": "mitochondrion",
+          "label": "Mitochondrion",
+          "x": 0.225,
+          "y": 0.283,
+          "r": 0.07
+        },
+        {
+          "id": "lysosome",
+          "label": "Lysosome",
+          "x": 0.25,
+          "y": 0.711,
+          "r": 0.05
+        },
+        {
+          "id": "free-ribosomes",
+          "label": "Free ribosomes",
+          "x": 0.521,
+          "y": 0.778,
+          "r": 0.05
+        },
+        {
+          "id": "cell-membrane",
+          "label": "Cell membrane",
+          "x": 0.937,
+          "y": 0.5,
+          "r": 0.04
+        }
+      ]
+    },
+    {
+      "id": "membrane-bilayer",
+      "kind": "diagram",
+      "title": "The phospholipid bilayer",
+      "alt": "An unlabelled strip of cell membrane: two rows of phospholipids with round heads facing outward and wavy tails meeting in the middle, a cholesterol molecule among the tails of the upper row, a channel protein spanning the membrane with small particles passing through its gap, and a large protein carrying a branched chain of sugar units on its outer side.",
+      "file": "assets/membrane-bilayer.svg",
+      "hotspots": [
+        {
+          "id": "phospholipid-head",
+          "label": "Phosphate head",
+          "x": 0.125,
+          "y": 0.378,
+          "r": 0.04
+        },
+        {
+          "id": "fatty-acid-tails",
+          "label": "Fatty acid tails",
+          "x": 0.375,
+          "y": 0.511,
+          "r": 0.045
+        },
+        {
+          "id": "cholesterol",
+          "label": "Cholesterol",
+          "x": 0.275,
+          "y": 0.444,
+          "r": 0.04
+        },
+        {
+          "id": "channel-protein",
+          "label": "Channel protein",
+          "x": 0.55,
+          "y": 0.511,
+          "r": 0.06
+        },
+        {
+          "id": "glycoprotein",
+          "label": "Glycoprotein",
+          "x": 0.767,
+          "y": 0.522,
+          "r": 0.06
+        },
+        {
+          "id": "carbohydrate-chain",
+          "label": "Carbohydrate chain",
+          "x": 0.767,
+          "y": 0.222,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "animal-cell",
+      "kind": "model3d",
+      "title": "A cut-away animal cell",
+      "alt": "A 3D animal cell with a wedge cut away, showing the cell membrane, a nucleus with a dark nucleolus inside it, sausage-shaped mitochondria, folded endoplasmic reticulum, a stack of Golgi sacs with small vesicles beside it, and ribosomes scattered as small dots through the cytoplasm.",
+      "files": {
+        "usdz": "assets/animal-cell.usdz",
+        "glb": "assets/animal-cell.glb"
+      },
+      "poster": "assets/animal-cell.png"
+    },
+    {
+      "id": "protein-export-steps",
+      "kind": "sequence",
+      "title": "How a cell exports a protein",
+      "alt": "Four steps over the animal cell: a gene's message leaves the nucleus, ribosomes on the rough endoplasmic reticulum build the protein, the Golgi apparatus packages it, and a vesicle releases it at the cell membrane.",
+      "over": "cell-parts",
+      "steps": [
+        {
+          "title": "The message leaves the nucleus",
+          "text": "A copy of the gene, messenger RNA, is made in the nucleus and leaves through a nuclear pore.",
+          "focus": "nucleus"
+        },
+        {
+          "title": "Built on the rough ER",
+          "text": "Ribosomes on the rough endoplasmic reticulum read the message and thread the new protein into the ER.",
+          "focus": "rough-er"
+        },
+        {
+          "title": "Packaged in the Golgi",
+          "text": "A vesicle carries the protein to the Golgi apparatus, which modifies it, sorts it and packs it into a new vesicle.",
+          "focus": "golgi"
+        },
+        {
+          "title": "Released at the membrane",
+          "text": "The vesicle fuses with the cell membrane and the protein is released outside the cell. This is exocytosis.",
+          "focus": "cell-membrane"
+        }
+      ]
+    }
+  ]
+}

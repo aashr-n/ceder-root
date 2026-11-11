@@ -1,0 +1,248 @@
+{
+  "formatVersion": 1,
+  "subject": "calculus",
+  "covers": "Single-variable calculus (Calculus I and II), then the start of multivariable calculus: vectors in space, functions of several variables, partial derivatives, and double integrals.",
+  "packs": [
+    {
+      "pack": "limits",
+      "title": "Limits",
+      "brief": "What a limit is and how to find one: one-sided, infinite and limits at infinity, limit laws, the squeeze theorem, and continuity with the intermediate value theorem. Stops before derivatives.",
+      "concepts": [
+        { "id": "limit", "name": "Limit of a function" },
+        { "id": "one-sided-limit", "name": "One-sided limits" },
+        { "id": "limit-laws", "name": "Limit laws" },
+        { "id": "infinite-limit", "name": "Infinite limits and vertical asymptotes" },
+        { "id": "limits-at-infinity", "name": "Limits at infinity and horizontal asymptotes" },
+        { "id": "squeeze-theorem", "name": "Squeeze theorem" },
+        { "id": "continuity", "name": "Continuity" },
+        { "id": "intermediate-value-theorem", "name": "Intermediate value theorem" }
+      ],
+      "buildsOn": []
+    },
+    {
+      "pack": "derivatives",
+      "title": "Derivatives",
+      "brief": "The derivative as a rate of change and a slope, its limit definition, the rules for finding it, and reading f′ from a graph. Stops before implicit differentiation and applications.",
+      "concepts": [
+        { "id": "derivative", "name": "Derivative" },
+        { "id": "limit-definition", "name": "Limit definition of the derivative" },
+        { "id": "power-rule", "name": "Power rule" },
+        { "id": "product-rule", "name": "Product rule" },
+        { "id": "quotient-rule", "name": "Quotient rule" },
+        { "id": "chain-rule", "name": "Chain rule" },
+        { "id": "elementary-derivatives", "name": "Derivatives of elementary functions" },
+        { "id": "graph-of-derivative", "name": "Graph of the derivative" }
+      ],
+      "buildsOn": ["limit", "continuity"]
+    },
+    {
+      "pack": "more-differentiation",
+      "title": "More differentiation",
+      "brief": "Implicit and logarithmic differentiation, higher-order derivatives, derivatives of inverse functions and inverse trigonometric functions, and linear approximation. Stops before using derivatives to analyze graphs.",
+      "concepts": [
+        { "id": "implicit-differentiation", "name": "Implicit differentiation" },
+        { "id": "higher-order-derivatives", "name": "Higher-order derivatives" },
+        { "id": "logarithmic-differentiation", "name": "Logarithmic differentiation" },
+        { "id": "inverse-function-derivatives", "name": "Derivatives of inverse functions" },
+        { "id": "inverse-trig-derivatives", "name": "Derivatives of inverse trigonometric functions" },
+        { "id": "linear-approximation", "name": "Linear approximation and differentials" }
+      ],
+      "buildsOn": ["derivative", "power-rule", "product-rule", "quotient-rule", "chain-rule", "elementary-derivatives"]
+    },
+    {
+      "pack": "applications-of-derivatives",
+      "title": "Applications of derivatives",
+      "brief": "Using derivatives to analyze and solve problems: the mean value theorem, increasing and decreasing behavior, concavity, extreme values, optimization, related rates, L'Hôpital's rule, and Newton's method. Stops before integration.",
+      "concepts": [
+        { "id": "mean-value-theorem", "name": "Mean value theorem" },
+        { "id": "critical-points", "name": "Critical points and extreme values" },
+        { "id": "first-derivative-test", "name": "Increasing and decreasing functions" },
+        { "id": "concavity", "name": "Concavity and inflection points" },
+        { "id": "optimization", "name": "Optimization problems" },
+        { "id": "related-rates", "name": "Related rates" },
+        { "id": "lhopitals-rule", "name": "L'Hôpital's rule" },
+        { "id": "newtons-method", "name": "Newton's method" }
+      ],
+      "buildsOn": ["limit", "continuity", "derivative", "graph-of-derivative", "elementary-derivatives", "implicit-differentiation", "linear-approximation"]
+    },
+    {
+      "pack": "antiderivatives",
+      "title": "Antiderivatives and the definite integral",
+      "brief": "Antiderivatives and indefinite integrals, Riemann sums as limits of approximations, the definite integral, and the fundamental theorem of calculus. Stops before integration techniques.",
+      "concepts": [
+        { "id": "antiderivative", "name": "Antiderivative" },
+        { "id": "indefinite-integral", "name": "Indefinite integral and the constant of integration" },
+        { "id": "riemann-sum", "name": "Riemann sums" },
+        { "id": "definite-integral", "name": "Definite integral" },
+        { "id": "integral-properties", "name": "Properties of the definite integral" },
+        { "id": "fundamental-theorem-of-calculus", "name": "Fundamental theorem of calculus" }
+      ],
+      "buildsOn": ["limit", "derivative", "elementary-derivatives"]
+    },
+    {
+      "pack": "substitution-and-parts",
+      "title": "Substitution and integration by parts",
+      "brief": "The substitution rule for indefinite and definite integrals, integration by parts, and tabular integration by parts. Stops before the less common techniques.",
+      "concepts": [
+        { "id": "substitution-rule", "name": "Substitution rule" },
+        { "id": "definite-integral-substitution", "name": "Substitution in definite integrals" },
+        { "id": "integration-by-parts", "name": "Integration by parts" },
+        { "id": "tabular-integration", "name": "Tabular integration by parts" }
+      ],
+      "buildsOn": ["antiderivative", "indefinite-integral", "definite-integral", "fundamental-theorem-of-calculus", "chain-rule", "product-rule"]
+    },
+    {
+      "pack": "advanced-integration",
+      "title": "Advanced integration techniques",
+      "brief": "Partial fractions, trigonometric integrals and trigonometric substitution, improper integrals, and numerical integration by the trapezoid and Simpson's rules. Stops before the applications of integrals.",
+      "concepts": [
+        { "id": "partial-fractions", "name": "Partial fraction decomposition" },
+        { "id": "trig-integrals", "name": "Trigonometric integrals" },
+        { "id": "trig-substitution", "name": "Trigonometric substitution" },
+        { "id": "improper-integral", "name": "Improper integrals" },
+        { "id": "numerical-integration", "name": "Numerical integration" }
+      ],
+      "buildsOn": ["substitution-rule", "integration-by-parts", "definite-integral", "riemann-sum", "limit"]
+    },
+    {
+      "pack": "applications-of-integration",
+      "title": "Applications of integration",
+      "brief": "Using definite integrals to find areas between curves, volumes by disks, washers and shells, arc length, and the average value of a function. Stops before parametric and polar curves.",
+      "concepts": [
+        { "id": "area-between-curves", "name": "Area between curves" },
+        { "id": "disk-and-washer-method", "name": "Volumes by disks and washers" },
+        { "id": "shell-method", "name": "Volumes by cylindrical shells" },
+        { "id": "arc-length", "name": "Arc length" },
+        { "id": "average-value", "name": "Average value of a function" }
+      ],
+      "buildsOn": ["definite-integral", "riemann-sum", "fundamental-theorem-of-calculus", "substitution-rule"]
+    },
+    {
+      "pack": "sequences-and-series",
+      "title": "Sequences and series",
+      "brief": "Sequences and their limits, infinite series and their partial sums, geometric series, telescoping series, and the nth-term test. Stops before tests for convergence.",
+      "concepts": [
+        { "id": "sequence", "name": "Sequence" },
+        { "id": "limit-of-sequence", "name": "Limit of a sequence" },
+        { "id": "monotone-convergence", "name": "Monotone convergence theorem" },
+        { "id": "series", "name": "Infinite series" },
+        { "id": "geometric-series", "name": "Geometric series" },
+        { "id": "telescoping-series", "name": "Telescoping series" },
+        { "id": "nth-term-test", "name": "Divergence test" }
+      ],
+      "buildsOn": ["limit", "limits-at-infinity", "continuity"]
+    },
+    {
+      "pack": "convergence-tests",
+      "title": "Convergence tests for series",
+      "brief": "The integral, comparison, limit comparison, ratio and alternating series tests, and absolute versus conditional convergence. Stops before power series.",
+      "concepts": [
+        { "id": "integral-test", "name": "Integral test" },
+        { "id": "comparison-test", "name": "Comparison test" },
+        { "id": "limit-comparison-test", "name": "Limit comparison test" },
+        { "id": "ratio-test", "name": "Ratio test" },
+        { "id": "alternating-series-test", "name": "Alternating series test" },
+        { "id": "absolute-convergence", "name": "Absolute and conditional convergence" }
+      ],
+      "buildsOn": ["series", "geometric-series", "nth-term-test", "improper-integral", "limit-of-sequence"]
+    },
+    {
+      "pack": "power-and-taylor-series",
+      "title": "Power and Taylor series",
+      "brief": "Power series and their radius of convergence, Taylor and Maclaurin series, Taylor's theorem with error bounds, and common Maclaurin series. Stops before parametric curves.",
+      "concepts": [
+        { "id": "power-series", "name": "Power series" },
+        { "id": "radius-of-convergence", "name": "Radius of convergence" },
+        { "id": "taylor-series", "name": "Taylor and Maclaurin series" },
+        { "id": "taylor-remainder", "name": "Taylor's theorem and error bounds" },
+        { "id": "common-maclaurin-series", "name": "Common Maclaurin series" }
+      ],
+      "buildsOn": ["series", "ratio-test", "absolute-convergence", "derivative", "higher-order-derivatives"]
+    },
+    {
+      "pack": "parametric-and-polar",
+      "title": "Parametric and polar curves",
+      "brief": "Curves given by parametric equations and by polar coordinates, with their tangents, areas and arc lengths. Stops before vectors.",
+      "concepts": [
+        { "id": "parametric-curves", "name": "Parametric curves" },
+        { "id": "parametric-calculus", "name": "Tangents and arc length of parametric curves" },
+        { "id": "polar-coordinates", "name": "Polar coordinates" },
+        { "id": "polar-calculus", "name": "Tangents and area in polar coordinates" }
+      ],
+      "buildsOn": ["derivative", "arc-length", "area-between-curves", "substitution-rule"]
+    },
+    {
+      "pack": "vectors-in-space",
+      "title": "Vectors in space",
+      "brief": "Vectors in three dimensions, their dot and cross products, and lines and planes in space. Stops before vector-valued functions.",
+      "concepts": [
+        { "id": "vector-in-space", "name": "Vectors in three dimensions" },
+        { "id": "dot-product", "name": "Dot product" },
+        { "id": "cross-product", "name": "Cross product" },
+        { "id": "lines-and-planes", "name": "Lines and planes in space" }
+      ],
+      "buildsOn": []
+    },
+    {
+      "pack": "vector-valued-functions",
+      "title": "Vector-valued functions",
+      "brief": "Functions whose outputs are vectors, with their derivatives as velocity and acceleration, unit tangent and normal vectors, and arc length of space curves. Stops before functions of several variables.",
+      "concepts": [
+        { "id": "vector-valued-function", "name": "Vector-valued function" },
+        { "id": "velocity-and-acceleration", "name": "Velocity and acceleration vectors" },
+        { "id": "tangent-and-normal-vectors", "name": "Unit tangent and normal vectors" },
+        { "id": "space-curve-arc-length", "name": "Arc length of a space curve" }
+      ],
+      "buildsOn": ["vector-in-space", "dot-product", "derivative", "arc-length"]
+    },
+    {
+      "pack": "functions-of-several-variables",
+      "title": "Functions of several variables",
+      "brief": "Functions of two or more variables, their graphs and level curves, and their limits and continuity. Stops before partial derivatives.",
+      "concepts": [
+        { "id": "multivariable-function", "name": "Functions of several variables" },
+        { "id": "level-curves", "name": "Level curves and level surfaces" },
+        { "id": "multivariable-limit", "name": "Limits of functions of several variables" },
+        { "id": "multivariable-continuity", "name": "Continuity of functions of several variables" }
+      ],
+      "buildsOn": ["limit", "continuity", "vector-in-space"]
+    },
+    {
+      "pack": "partial-derivatives",
+      "title": "Partial derivatives",
+      "brief": "Partial derivatives and what they measure, higher-order partials and Clairaut's theorem, the chain rule for several variables, and tangent planes. Stops before directional derivatives.",
+      "concepts": [
+        { "id": "partial-derivative", "name": "Partial derivative" },
+        { "id": "higher-order-partials", "name": "Higher-order partial derivatives" },
+        { "id": "clairaut-theorem", "name": "Clairaut's theorem" },
+        { "id": "multivariable-chain-rule", "name": "Chain rule for several variables" },
+        { "id": "tangent-plane", "name": "Tangent planes and linear approximation" }
+      ],
+      "buildsOn": ["derivative", "chain-rule", "linear-approximation", "higher-order-derivatives", "multivariable-function", "multivariable-limit"]
+    },
+    {
+      "pack": "gradient-and-optimization",
+      "title": "Gradient and optimization",
+      "brief": "Directional derivatives, the gradient vector, critical points of functions of two variables, and Lagrange multipliers for constrained extremes. Stops before multiple integrals.",
+      "concepts": [
+        { "id": "directional-derivative", "name": "Directional derivative" },
+        { "id": "gradient", "name": "Gradient vector" },
+        { "id": "critical-points-of-functions", "name": "Critical points of functions of two variables" },
+        { "id": "lagrange-multipliers", "name": "Lagrange multipliers" }
+      ],
+      "buildsOn": ["partial-derivative", "tangent-plane", "dot-product", "critical-points"]
+    },
+    {
+      "pack": "double-integrals",
+      "title": "Double integrals",
+      "brief": "Double integrals over rectangles and general regions, iterated integrals and Fubini's theorem, and double integrals in polar coordinates. Stops before change of variables and triple integrals.",
+      "concepts": [
+        { "id": "double-integral", "name": "Double integral over a rectangle" },
+        { "id": "iterated-integrals", "name": "Iterated integrals and Fubini's theorem" },
+        { "id": "double-integral-general-region", "name": "Double integrals over general regions" },
+        { "id": "polar-double-integrals", "name": "Double integrals in polar coordinates" }
+      ],
+      "buildsOn": ["definite-integral", "riemann-sum", "area-between-curves", "polar-coordinates"]
+    }
+  ]
+}

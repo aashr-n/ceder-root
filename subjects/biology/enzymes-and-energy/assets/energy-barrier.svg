@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+<rect width="1200" height="900" rx="44" fill="#FBF8F1"/>
+<line x1="120" y1="830" x2="120" y2="110" stroke="#1D2A24" stroke-width="6"/><polygon points="120,80 104,114 136,114" fill="#1D2A24"/>
+<line x1="116" y1="830" x2="1110" y2="830" stroke="#1D2A24" stroke-width="6"/><polygon points="1140,830 1106,814 1106,846" fill="#1D2A24"/>
+<line x1="300" y1="170" x2="590" y2="170" stroke="#1D2A24" stroke-width="3" stroke-dasharray="12 10"/>
+<line x1="790" y1="520" x2="1070" y2="520" stroke="#1D2A24" stroke-width="3" stroke-dasharray="12 10"/>
+<path d="M 360,520 C 470,520 510,400 600,400 C 690,400 720,700 840,700" fill="none" stroke="#7A99B3" stroke-width="9" stroke-dasharray="22 14" stroke-linecap="round"/>
+<path d="M 360,520 C 480,520 520,170 600,170 C 680,170 720,700 840,700" fill="none" stroke="#C96E52" stroke-width="9" stroke-linecap="round"/>
+<rect x="150" y="505" width="220" height="30" rx="12" fill="#F2C091" stroke="#B07E4E" stroke-width="5"/>
+<rect x="830" y="685" width="260" height="30" rx="12" fill="#B8C99E" stroke="#6F8458" stroke-width="5"/>
+<line x1="300" y1="500" x2="300" y2="205" stroke="#2C4A3B" stroke-width="9" stroke-linecap="round"/><polygon points="300,172 280,212 320,212" fill="#2C4A3B"/>
+<line x1="1040" y1="524" x2="1040" y2="650" stroke="#BA9957" stroke-width="9" stroke-linecap="round"/><polygon points="1040,682 1020,642 1060,642" fill="#BA9957"/>
+<circle cx="600" cy="170" r="22" fill="#FBF8F1" stroke="#1D2A24" stroke-width="6"/>
+</svg>

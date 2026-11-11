@@ -1,0 +1,1706 @@
+{
+  "formatVersion": 1,
+  "id": "biology.membrane-structure",
+  "subject": "biology",
+  "title": "Membrane structure",
+  "summary": "What a cell membrane is made of and why it behaves like a fluid: the bilayer, its proteins, and what can pass through unaided.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "phospholipid-bilayer",
+      "name": "Phospholipid bilayer",
+      "aliases": [
+        "lipid bilayer",
+        "phospholipid bilayers",
+        "lipid bilayers"
+      ],
+      "summary": "Phospholipids line up in water as a double sheet, with their water-avoiding tails together in the middle.",
+      "requires": [
+        "cell-membrane"
+      ],
+      "elements": [
+        {
+          "id": "amphipathic-lipids",
+          "name": "Amphipathic phospholipids",
+          "aliases": [
+            "amphipathic lipids"
+          ]
+        },
+        {
+          "id": "hydrophobic-core",
+          "name": "Hydrophobic core of the bilayer"
+        },
+        {
+          "id": "two-leaflets",
+          "name": "The two leaflets",
+          "aliases": [
+            "leaflets"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "A cell membrane is built from phospholipids, molecules with a water-loving head and two water-avoiding tails. Dropped into water, they line up on their own into a double sheet. The heads face the water on each side, and the tails tuck together in the middle. That middle zone holds almost no water, so it keeps out most dissolved molecules and ions. The sheet is only about two molecules thick, yet it separates the inside of a cell from the outside. Picture two rows of lollipops whose sticks meet in the middle and whose candy faces the water.",
+        "artifact": "membrane-parts"
+      },
+      "misconceptions": [
+        {
+          "id": "pb-heads-inward",
+          "claim": "The water-loving heads of phospholipids point into the middle of the membrane, with the tails facing outward.",
+          "correction": "The tails are the part that avoids water, so they point into the middle. The heads face the water on both sides."
+        },
+        {
+          "id": "pb-one-layer",
+          "claim": "The membrane is a single layer of phospholipids, one molecule thick.",
+          "correction": "The membrane is two molecular layers thick, with the tails of the two layers meeting in the middle."
+        },
+        {
+          "id": "pb-tails-watery",
+          "claim": "The lipid tails dissolve in water, so the middle of the membrane is watery.",
+          "correction": "The tails avoid water, so the middle of the bilayer holds almost no water. That is why water-soluble molecules have trouble crossing."
+        }
+      ]
+    },
+    {
+      "id": "membrane-protein",
+      "name": "Membrane protein",
+      "aliases": [
+        "membrane proteins",
+        "integral membrane proteins"
+      ],
+      "summary": "Proteins embedded in or attached to a membrane, which carry out most of the membrane's specific jobs.",
+      "requires": [
+        "phospholipid-bilayer"
+      ],
+      "elements": [
+        {
+          "id": "integral-proteins",
+          "name": "Integral membrane proteins"
+        },
+        {
+          "id": "peripheral-proteins",
+          "name": "Peripheral membrane proteins"
+        },
+        {
+          "id": "membrane-functions",
+          "name": "Functions of membrane proteins"
+        }
+      ],
+      "explain": {
+        "text": "Proteins make up a large share of most membranes and do much of their work. Integral membrane proteins pass through the lipid bilayer, with some parts on each face and the rest held by the lipids around them. Peripheral proteins sit on one face and attach more loosely. Membrane proteins act as receptors that catch signals, enzymes that speed up reactions, anchors that link the membrane to structures inside the cell, and sites where cells stick to one another. Each protein's shape and location fit the job it does, so one membrane can hold many different proteins at once.",
+        "artifact": "membrane-parts"
+      },
+      "misconceptions": [
+        {
+          "id": "mp-surface-only",
+          "claim": "Membrane proteins only sit on the outside surface of the membrane.",
+          "correction": "Many membrane proteins pass all the way through the bilayer, with parts on both faces. Those that sit on one face are attached loosely."
+        },
+        {
+          "id": "mp-all-same-job",
+          "claim": "Every membrane protein does the same job, such as holding the membrane's shape.",
+          "correction": "Membrane proteins differ widely. Some are receptors, some are enzymes, some anchor the membrane, and some help cells stick together."
+        },
+        {
+          "id": "mp-fixed-in-place",
+          "claim": "Membrane proteins are locked in place and cannot move.",
+          "correction": "Many membrane proteins drift sideways in the fluid bilayer. Others are tied to structures inside the cell, which holds them in one spot."
+        }
+      ]
+    },
+    {
+      "id": "fluid-mosaic-model",
+      "name": "Fluid mosaic model",
+      "aliases": [
+        "Singer-Nicolson model",
+        "fluid mosaic models"
+      ],
+      "summary": "A membrane is a fluid lipid bilayer with proteins scattered through it at random, like tiles in a mosaic.",
+      "requires": [
+        "phospholipid-bilayer",
+        "membrane-protein"
+      ],
+      "elements": [
+        {
+          "id": "singer-nicolson-1972",
+          "name": "Singer and Nicolson's 1972 model"
+        },
+        {
+          "id": "lateral-diffusion",
+          "name": "Lateral diffusion"
+        },
+        {
+          "id": "random-distribution",
+          "name": "Random distribution of proteins"
+        }
+      ],
+      "explain": {
+        "text": "In 1972, Singer and Nicolson proposed that a membrane is a fluid lipid bilayer with proteins floating in it. The lipids and many of the proteins drift sideways, so the surface is always moving. The proteins are scattered through the bilayer at random, which gives the membrane its mosaic look, like tiles of different colors on a floor. The model explains how membranes can bend, fuse and reform, and why they are not rigid walls. Experiments that fused human and mouse cells, then watched their membrane proteins mix over time, supported the idea.",
+        "artifact": "membrane-parts"
+      },
+      "misconceptions": [
+        {
+          "id": "fmm-rigid-wall",
+          "claim": "The membrane is a rigid, fixed wall that keeps its shape.",
+          "correction": "The membrane behaves like a two-dimensional fluid. Its lipids and many of its proteins drift sideways."
+        },
+        {
+          "id": "fmm-regular-pattern",
+          "claim": "Membrane proteins sit in a regular, repeating pattern, like bricks in a wall.",
+          "correction": "Proteins are scattered at random through the bilayer and do not hold a fixed pattern."
+        },
+        {
+          "id": "fmm-lipids-static",
+          "claim": "Lipids stay in one place, and only the proteins move.",
+          "correction": "Lipids move sideways quickly and also spin around their own axis, so both lipids and proteins move."
+        }
+      ]
+    },
+    {
+      "id": "membrane-fluidity",
+      "name": "Membrane fluidity",
+      "aliases": [
+        "fluidity of membranes",
+        "membrane fluidities"
+      ],
+      "summary": "How easily the lipids and proteins of a membrane move sideways, set mainly by temperature and by the lipid tails.",
+      "requires": [
+        "phospholipid-bilayer"
+      ],
+      "elements": [
+        {
+          "id": "fatty-acid-saturation",
+          "name": "Saturated and unsaturated tails"
+        },
+        {
+          "id": "melting-temperature",
+          "name": "Melting temperature of a membrane"
+        },
+        {
+          "id": "cholesterol-effect",
+          "name": "Cholesterol's effect on fluidity"
+        }
+      ],
+      "explain": {
+        "text": "Membrane fluidity describes how easily lipids and proteins move sideways inside a membrane. It depends mostly on temperature and on the lipid tails. Heat adds energy, so a warm membrane is more fluid and a cold one is more ordered. Tails with double bonds are kinked, so they pack loosely and keep a membrane fluid at lower temperatures. Cholesterol acts in both directions: it stiffens a fluid membrane when it is hot, and it stops the lipids from packing into a rigid solid when it is cold. Cells adjust their lipids so that the membrane stays workable."
+      },
+      "misconceptions": [
+        {
+          "id": "mf-heat-stiffens",
+          "claim": "Heating a membrane makes it stiffer and more solid.",
+          "correction": "Heat adds energy, so the lipids move around more and the membrane becomes more fluid. Cooling does the opposite."
+        },
+        {
+          "id": "mf-double-bonds-stiffen",
+          "claim": "Double bonds make a lipid tail stiffer, so they make the membrane stiffer too.",
+          "correction": "A double bond puts a kink in the tail. Kinked tails pack loosely, so the membrane stays more fluid."
+        },
+        {
+          "id": "mf-cholesterol-stiffens",
+          "claim": "Cholesterol always makes a membrane more rigid.",
+          "correction": "Cholesterol works both ways: it stiffens a fluid membrane when it is warm, and it keeps a cold membrane from turning rigid."
+        }
+      ]
+    },
+    {
+      "id": "selective-permeability",
+      "name": "Selective permeability",
+      "aliases": [
+        "semipermeable membrane",
+        "selectively permeable membranes",
+        "semipermeability"
+      ],
+      "summary": "A membrane lets some substances cross easily and others hardly at all, depending mainly on size, charge and fat solubility.",
+      "requires": [
+        "phospholipid-bilayer"
+      ],
+      "elements": [
+        {
+          "id": "small-nonpolar",
+          "name": "Small uncharged molecules"
+        },
+        {
+          "id": "ions-and-charge",
+          "name": "Charge and ions"
+        },
+        {
+          "id": "water-crossing",
+          "name": "Water crossing the bilayer"
+        }
+      ],
+      "explain": {
+        "text": "A membrane is selectively permeable: it lets some substances cross easily and others hardly at all. The lipid bilayer is the reason. Small uncharged molecules, such as oxygen and carbon dioxide, pass through its water-avoiding core. Large polar molecules and charged ions cross very slowly, because the core dislikes them. Water gets through slowly, and this slow passage matters for cells in pure water. So a membrane controls what enters and leaves a cell without being a complete barrier. Size, charge and how well a molecule dissolves in fat all matter."
+      },
+      "misconceptions": [
+        {
+          "id": "sp-size-only",
+          "claim": "Size alone decides what crosses, so any small molecule gets through.",
+          "correction": "Small uncharged, fat-soluble molecules cross easily. Small polar molecules and ions cross poorly, whatever their size."
+        },
+        {
+          "id": "sp-water-never",
+          "claim": "Water can never cross a lipid bilayer.",
+          "correction": "Water does cross the bilayer, slowly but measurably. That is one reason cells in pure water can swell."
+        },
+        {
+          "id": "sp-charge-ignored",
+          "claim": "Electric charge has no effect on whether a molecule crosses a membrane.",
+          "correction": "Charged ions cross the bilayer far more slowly than neutral molecules of similar size, because the water-avoiding core resists charge."
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "biology.membrane-structure.phosphate-head-faces-water",
+      "concept": "phospholipid-bilayer",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which part of a phospholipid faces the water on either side of a membrane?",
+      "choices": [
+        "The phosphate-containing head",
+        "The two fatty acid tails",
+        "The glycerol backbone alone",
+        "The whole molecule, evenly mixed"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The head holds a phosphate group, which is charged and mixes with water. The tails are the water-avoiding part, so they point into the middle of the membrane. The glycerol backbone links the two parts, and no single part is spread evenly through the whole molecule.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.bilayer-meaning",
+      "concept": "phospholipid-bilayer",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is a lipid bilayer, the basic structure of a cell membrane?",
+      "choices": [
+        "A lipid sheet exactly two molecules thick",
+        "A sheet of lipids one molecule thick",
+        "A sheet of proteins, two molecules across",
+        "A sheet of water held between two lipid layers"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "pb-one-layer",
+        null,
+        null
+      ],
+      "explanation": "The prefix bi means two, and the bilayer is two rows of lipid molecules with their tails facing each other. A single row would be a monolayer, and a sheet of proteins is not made of lipids at all.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: Option 0 correct; option 1 wrong",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.sheet-forms-in-water",
+      "concept": "phospholipid-bilayer",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Phospholipids are shaken into water and form a sheet. Which description of the finished sheet is correct?",
+      "choices": [
+        "Two layers, with the tails facing each other in the middle",
+        "Two layers, with the heads facing each other in the middle",
+        "One layer, with all the tails pointing up into the air",
+        "Two layers, with the tails dissolved in the water between them"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "pb-heads-inward",
+        null,
+        "pb-tails-watery"
+      ],
+      "explanation": "The heads are attracted to water and the tails avoid it, so the molecules pair tail to tail. The tails are sheltered in the middle and the heads face the water on both sides. Heads in the middle would put the tails in contact with water, which the molecules avoid.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.middle-keeps-out-ions",
+      "concept": "phospholipid-bilayer",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does the middle of a membrane keep out water-soluble ions?",
+      "choices": [
+        "Its middle is made of water-avoiding tails, with little water to carry ions",
+        "Its middle is made of water-loving heads that grab and hold the ions",
+        "Its middle is full of water, which dilutes ions until they stop moving",
+        "Its middle is a sheet so thin that ions cannot squeeze between the molecules"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "pb-tails-watery",
+        null
+      ],
+      "explanation": "The core of the bilayer is built from tails that avoid water, so it holds almost no water. Ions dissolve only in water, so they cannot easily enter the core. The thinness of the sheet is not the reason; the tails are.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.one-row-error",
+      "concept": "phospholipid-bilayer",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'A membrane is one molecule thick, because the phospholipids line up in a single row.' What is wrong with that?",
+      "choices": [
+        "The membrane is two molecular layers, with the tails meeting in the middle",
+        "Nothing is wrong, since a membrane is one row of molecules across its width",
+        "The row should have heads in the middle, with tails on the outside",
+        "The membrane is mostly water, and the lipids are a thin film on top"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "pb-one-layer",
+        "pb-heads-inward",
+        null
+      ],
+      "explanation": "A membrane has two rows of phospholipids, and the tails of the two rows meet in the middle. The student has counted one row and missed the second, which is the thing that makes it a bilayer.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.tails-point-inward",
+      "concept": "phospholipid-bilayer",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why do the tails of the two layers point toward each other rather than toward the water?",
+      "choices": [
+        "Tails avoid water, so pairing them shelters them from it",
+        "Tails are drawn to water, so they cluster to share it",
+        "Tails are heavier and sink toward the middle of the sheet",
+        "Tails are charged and grip the other layer's heads"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The tails are hydrophobic, so the cheapest arrangement keeps them away from water. Pairing them tail to tail hides them in the middle. Weight plays no part in the arrangement, and the tails are not charged.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.oil-film-model",
+      "concept": "phospholipid-bilayer",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student models a membrane as a single film of cooking oil floating on water. Which feature of a real membrane does this model miss?",
+      "choices": [
+        "A real membrane is wet on both faces, which a single film is not",
+        "A real membrane is one molecule thick, so a single film is accurate",
+        "A real membrane's tails dissolve in water, which oil cannot do",
+        "A real membrane contains proteins, so it must be made mostly of water"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "pb-one-layer",
+        "pb-tails-watery",
+        null
+      ],
+      "explanation": "The oil film has water on one face only, while a membrane is bathed in water on both faces, with its tails kept dry in the middle. The model is also one molecule thick, and a real membrane is two.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: Best of weak options; oil film has one layer, membrane has two with water on both faces",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.two-facts-keep-water-out",
+      "concept": "phospholipid-bilayer",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which pair of facts together explains why water is kept out of the middle of a membrane?",
+      "choices": [
+        "The tails avoid water and gather in the middle, while the heads face the water",
+        "The heads avoid water and gather in the middle, while the tails face the water",
+        "The tails dissolve in water and fill the middle, while the heads stick to the surface",
+        "Both parts avoid water, so the middle is an air gap between two sheets"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "pb-heads-inward",
+        "pb-tails-watery",
+        null
+      ],
+      "explanation": "The tails are the part that avoids water, so they gather in the middle, which leaves the middle nearly dry. The heads mix with water and face outward. Reversing the two parts would put the water-loving heads in the middle and the water-avoiding tails in contact with water.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.bilayer-self-assembly-order",
+      "concept": "phospholipid-bilayer",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in the order in which phospholipids form a bilayer after they are added to water.",
+      "steps": [
+        "Phospholipids are added to water.",
+        "Their water-avoiding tails are pushed together, away from the water.",
+        "Two layers pack together, with the tails in the middle and the heads facing the water."
+      ],
+      "explanation": "The molecules must first meet the water. Water then pushes the tails together, and the sheet settles with the tails hidden inside and the heads facing the water on both sides.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.membrane-structure.integral-protein-description",
+      "concept": "membrane-protein",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which description fits an integral membrane protein?",
+      "choices": [
+        "A protein embedded in the bilayer that passes through it",
+        "A protein that sits on one face of the bilayer and nowhere else",
+        "A protein that floats free in the cytoplasm, away from the membrane",
+        "A protein that forms a fiber outside the cell, away from the membrane"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mp-surface-only",
+        null,
+        null
+      ],
+      "explanation": "Integral proteins are held in the bilayer and cross it, with parts on both faces. Proteins that sit on one face are peripheral, and proteins floating in the cytoplasm or lying outside the cell are not membrane proteins at all.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.membrane-protein-job",
+      "concept": "membrane-protein",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is a job that membrane proteins do?",
+      "choices": [
+        "Receiving signals from outside the cell, such as hormones",
+        "Doing one fixed job, which is holding the membrane's shape",
+        "Building the water-avoiding tails of the phospholipids",
+        "Making the membrane's lipid heads water-soluble"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mp-all-same-job",
+        null,
+        null
+      ],
+      "explanation": "Receptor proteins catch signals such as hormones at the outer face and pass them on. Membrane proteins do many jobs, and the tails are made of lipids, not proteins.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.integral-protein-stays",
+      "concept": "membrane-protein",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does an integral membrane protein stay in the membrane when the cell sits in water?",
+      "choices": [
+        "Its water-avoiding stretches sit among the lipid tails and hold it",
+        "It is locked in place and cannot move, so it cannot drift out",
+        "It sits on the surface, where the water cannot reach it",
+        "Its water-loving parts dissolve into the lipid tails and stick there"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mp-fixed-in-place",
+        "mp-surface-only",
+        null
+      ],
+      "explanation": "An integral protein has stretches that suit the lipid core and parts that suit water, so it stays anchored in the bilayer. Many membrane proteins actually drift sideways, so being locked in place is not the reason.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.proteins-differ-in-job",
+      "concept": "membrane-protein",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says that all membrane proteins do the same job. Which statement corrects the student?",
+      "choices": [
+        "Membrane proteins differ in job, so receptors and enzymes are distinct kinds",
+        "All membrane proteins are identical, because they are all made from one gene",
+        "All membrane proteins share one job, and cells differ in how well they do it",
+        "Membrane proteins are all enzymes, and receptors are made of lipid"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "mp-all-same-job",
+        null
+      ],
+      "explanation": "Membrane proteins are a varied group. Receptors catch signals, enzymes speed up reactions, and anchors hold the membrane to other structures. Receptors are proteins, not lipids, and no single protein job covers them all.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.protein-coat-error",
+      "concept": "membrane-protein",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'Membrane proteins are just a coat on the outer face of the membrane.' What is wrong with that?",
+      "choices": [
+        "Many proteins pass through the bilayer, with parts on both faces",
+        "The proteins are a coat on the inner face, not the outer one",
+        "The proteins are made of lipid, so they dissolve into the membrane",
+        "The proteins are too small to be seen, so they cannot be a coat"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Many membrane proteins cross the bilayer, so they reach both faces. The student has imagined only a surface layer, which misses the proteins that span the membrane.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.receptor-placement",
+      "concept": "membrane-protein",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A receptor must catch a signal outside a cell and pass a message to the inside. Where must it sit?",
+      "choices": [
+        "Across the bilayer, one part outside and one part inside",
+        "On the outer face, with no part reaching the inside",
+        "Deep in the lipid core, with no part reaching either face",
+        "Free in the cytoplasm, not attached to the membrane"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mp-surface-only",
+        null,
+        null
+      ],
+      "explanation": "A receptor that spans the bilayer has one part that catches the signal outside and another that passes the message inside. A receptor on the outer face alone could not reach the inside.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.peripheral-protein-term",
+      "concept": "membrane-protein",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A protein is held to one face of the bilayer by weak bonds and does not cross it. What kind of protein is it?",
+      "choices": [
+        "A peripheral membrane protein, attached to one face",
+        "An integral membrane protein, which passes through the bilayer",
+        "A lipid tail that has bent over the edge of the sheet",
+        "A fixed protein that cannot move from its spot"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "mp-fixed-in-place"
+      ],
+      "explanation": "Peripheral proteins attach loosely to one face of the membrane and do not cross it. Integral proteins do cross, and a lipid tail is not a protein. Being fixed in place is not what defines the category.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.tethered-protein",
+      "concept": "membrane-protein",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A membrane protein is tied by a strand to a structure inside the cell and stays put, while its neighbors drift. What explains the difference?",
+      "choices": [
+        "The tethered protein is held by an inner structure, while neighbors drift",
+        "All membrane proteins are fixed, so the drifting neighbors must be lipids",
+        "The neighbors sit on the surface, where drifting is easier",
+        "The tethered protein is heavier, so it sinks into the lipid core"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mp-fixed-in-place",
+        null,
+        null
+      ],
+      "explanation": "Some membrane proteins are anchored to the cell's internal structures, so they cannot drift, while untethered proteins move freely in the fluid bilayer. Weight does not decide where a protein sits.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.hydrophobic-stretch-anchor",
+      "concept": "membrane-protein",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A protein has a long stretch of water-avoiding amino acids. Why does this suit a protein that lives in a membrane?",
+      "choices": [
+        "The stretch sits among the lipid tails and anchors the protein there",
+        "The stretch dissolves in water, so the protein can reach the cytoplasm",
+        "The stretch repels lipids, so the protein floats above the membrane",
+        "The stretch makes the protein an enzyme, so it can carry out reactions"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A water-avoiding stretch is comfortable among the lipid tails, which holds the protein inside the bilayer. A stretch that dissolved in water would not stay in the membrane, and a protein that floats above it would be on the surface.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.singer-nicolson-year",
+      "concept": "fluid-mosaic-model",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Who proposed the fluid mosaic model in 1972?",
+      "choices": [
+        "Singer and Nicolson",
+        "Watson and Crick",
+        "Davson and Danielli",
+        "Robertson alone"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Singer and Nicolson proposed the fluid mosaic model in 1972. Watson and Crick described the structure of DNA, and Davson and Danielli proposed an earlier model in which proteins lay in sheets beside the lipids.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.basic-framework",
+      "concept": "fluid-mosaic-model",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In the fluid mosaic model, what is the membrane's basic framework?",
+      "choices": [
+        "A lipid bilayer, with proteins embedded in it",
+        "A rigid sheet of protein, with lipids fixed on top of it",
+        "A solid sheet of cellulose wrapped around the cell",
+        "A row of lipids, with proteins lying on the outside"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "fmm-rigid-wall",
+        null,
+        null
+      ],
+      "explanation": "The framework is a lipid bilayer, and the proteins are embedded in it rather than forming the framework. Cellulose is a plant cell wall material, not part of the membrane model.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.dye-spreads",
+      "concept": "fluid-mosaic-model",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A protein on one side of a cell is tagged with a dye. Over minutes, the dye spreads across the whole membrane. What explains this?",
+      "choices": [
+        "The proteins drift sideways within a fluid bilayer",
+        "The membrane is rigid, so the dye must have been added to every side",
+        "The dye was added at random, so it was already spread before the test",
+        "The dye is soluble, so it dissolves through the membrane's solid core"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "fmm-rigid-wall",
+        null,
+        null
+      ],
+      "explanation": "Tagged proteins spread because they move sideways through the fluid bilayer over time. A rigid membrane would keep the dye where it was put, and the dye was not already spread in the first place.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.lipid-motion",
+      "concept": "fluid-mosaic-model",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about lipids in the fluid mosaic model is correct?",
+      "choices": [
+        "Individual lipids diffuse sideways and also spin around their own axis",
+        "Lipids stay in one place while the proteins diffuse past them",
+        "Lipids are locked into a crystal, so they cannot rotate at all",
+        "Lipids move between the two layers almost all the time and do not drift sideways"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "fmm-lipids-static",
+        null,
+        null
+      ],
+      "explanation": "Lipids move sideways very quickly and rotate about their axes. Switching from one layer to the other is rare, and it is not the main way lipids move.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.proteins-look-scattered",
+      "concept": "fluid-mosaic-model",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why do the proteins in a membrane look scattered rather than arranged in rows?",
+      "choices": [
+        "They are placed at random and drift, so no fixed pattern forms",
+        "They lock into a grid with the lipids, forming a regular pattern",
+        "They are fixed to a rigid frame, so they cannot spread out",
+        "They sink to the middle of the bilayer and spread out there"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "fmm-regular-pattern",
+        "fmm-rigid-wall",
+        null
+      ],
+      "explanation": "Proteins are distributed at random, and because they drift, they never settle into rows. Locking into a grid would need a fixed frame, which the fluid membrane does not have.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.solid-crystal-error",
+      "concept": "fluid-mosaic-model",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'The membrane is a solid crystal, so its proteins sit in fixed rows.' What is wrong with that?",
+      "choices": [
+        "The membrane acts as a fluid, and its proteins are scattered, not in rows",
+        "Nothing is wrong, since proteins sit in a regular pattern like tiles in rows",
+        "The membrane is a fluid, but only the proteins move while the lipids stay put",
+        "The membrane is a fluid, and the rows are made by the lipid tails"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "fmm-regular-pattern",
+        "fmm-lipids-static",
+        null
+      ],
+      "explanation": "The membrane behaves as a fluid, so neither its lipids nor its proteins are fixed in a crystal. The proteins are scattered at random, and the lipid tails do not make rows of proteins.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.checkerboard-model-miss",
+      "concept": "fluid-mosaic-model",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A teaching model shows the membrane's proteins in a checkerboard. What feature of the real fluid mosaic model does this model miss?",
+      "choices": [
+        "Proteins drift and do not hold a fixed checkerboard pattern",
+        "The model lacks a rigid frame that holds the proteins in place",
+        "The checkerboard is correct, since proteins sit in a regular pattern",
+        "The model shows the lipids as fixed squares that never move"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "fmm-rigid-wall",
+        "fmm-regular-pattern",
+        "fmm-lipids-static"
+      ],
+      "explanation": "In the real model the proteins drift and are scattered at random, so a fixed checkerboard misses that. The model does not need a rigid frame, and its lipids move as well.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.cells-fused-then-mixed",
+      "concept": "fluid-mosaic-model",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Human and mouse membrane proteins stay apart for a short time after two cells are fused, then mix, and cooling slows the mixing. Which pair of ideas explains this?",
+      "choices": [
+        "Proteins diffuse sideways in a fluid membrane, and cold slows them",
+        "The membrane is rigid, so proteins move only when it heats up",
+        "The proteins are fixed, and the lipids carry them slowly along",
+        "The proteins sink into the core and come back up, and cold stops that"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "fmm-rigid-wall",
+        null,
+        null
+      ],
+      "explanation": "The proteins mix because they diffuse sideways through a fluid membrane, and lowering the temperature slows that diffusion. A rigid membrane would not let proteins mix at all, and fixed proteins could not spread.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.why-fluid-mosaic-replaced-sheets",
+      "concept": "fluid-mosaic-model",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why did the fluid mosaic model replace earlier models that pictured proteins as sheets beside a lipid layer?",
+      "choices": [
+        "It put proteins inside a bilayer, fitting evidence that membranes move",
+        "It placed proteins on the surface, which explained why membranes are rigid",
+        "It showed the lipids never move, which matched the sheet models",
+        "It showed the membrane is made of sugar, not lipids"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "fmm-rigid-wall",
+        "fmm-lipids-static",
+        null
+      ],
+      "explanation": "The fluid mosaic model puts proteins inside a bilayer that is fluid, and experiments showed membrane molecules move. Earlier sheet models could not explain that motion, and the membrane is made mostly of lipids and proteins, not sugar.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.cell-fusion-order",
+      "concept": "fluid-mosaic-model",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps of the cell-fusion experiment in the order they happen.",
+      "steps": [
+        "Human and mouse cells are fused into one cell.",
+        "Right after fusion, antibody staining shows each species' proteins on its own half.",
+        "Over time the proteins spread, and the border between the two halves fades."
+      ],
+      "explanation": "The cells must fuse before any mixing can be seen. The two halves keep their own proteins for a short time, and then diffusion mixes them until the border is gone.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.membrane-structure.heat-makes-fluid",
+      "concept": "membrane-fluidity",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What happens to a membrane's fluidity when it gets warmer?",
+      "choices": [
+        "It rises, because the lipids move around more",
+        "It falls, because heat locks the lipids into place",
+        "It stays the same, because the proteins hold the lipids",
+        "It drops to zero, because the lipids line up in a crystal"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mf-heat-stiffens",
+        null,
+        null
+      ],
+      "explanation": "Heat adds energy to the lipids, so they move around more and the membrane is more fluid. Heat does not lock lipids in place, and fluidity does not fall to zero when a membrane warms.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.kinked-tail-packs-loosely",
+      "concept": "membrane-fluidity",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which lipid-tail feature makes a membrane more fluid, because it packs loosely?",
+      "choices": [
+        "A double bond that puts a kink in the tail",
+        "A double bond that holds the tail stiff and straight",
+        "A tail with no double bonds, packed flat against its neighbors",
+        "A tail with extra hydrogens and no kinks, which packs loosely"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mf-double-bonds-stiffen",
+        null,
+        null
+      ],
+      "explanation": "A double bond bends the tail, and bent tails cannot pack tightly, so the membrane stays fluid. A straight, saturated tail packs closely, which makes the membrane less fluid.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.cooled-membrane",
+      "concept": "membrane-fluidity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A membrane is cooled from body temperature to near freezing. What is the most likely change?",
+      "choices": [
+        "It becomes less fluid, with its lipids packing more closely",
+        "It becomes more fluid, because cold lipids collide more often",
+        "It stays the same, because membranes do not respond to temperature",
+        "It breaks apart, because cold lipids cannot hold their tails together"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Cooling removes energy, so the lipids move less and pack more closely, and the membrane becomes less fluid. Cold does not make lipids collide more, and membranes do respond to temperature.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.saturated-versus-kinked",
+      "concept": "membrane-fluidity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Two membranes are at the same temperature. Membrane X has mostly straight, saturated tails. Membrane Y has mostly kinked, unsaturated tails. Which is more fluid?",
+      "choices": [
+        "Membrane Y, because its kinked tails pack loosely",
+        "Membrane X, because its straight tails slide past one another",
+        "Membrane Y, because its double bonds stiffen the tails",
+        "Neither, because fluidity comes from the proteins alone"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "mf-double-bonds-stiffen",
+        null
+      ],
+      "explanation": "Kinked, unsaturated tails cannot pack as tightly, so Membrane Y is more fluid. Straight saturated tails pack closely and are less fluid, and double bonds loosen the packing rather than stiffen the tails.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.cholesterol-keeps-cold-fluid",
+      "concept": "membrane-fluidity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does cholesterol keep a cold membrane from turning rigid?",
+      "choices": [
+        "It wedges between the lipids, stopping them from packing into a rigid layer",
+        "It locks the lipid tails into straight rows, which makes the membrane rigid",
+        "It melts the lipids so they move faster at every temperature",
+        "It replaces the phosphate heads, so the membrane cannot freeze"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mf-cholesterol-stiffens",
+        null,
+        null
+      ],
+      "explanation": "Cholesterol sits between the lipid tails and stops them from clustering together, which keeps the membrane from stiffening in the cold. Locking the tails into straight rows would make the membrane more rigid, and cholesterol does not replace the heads.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.cholesterol-always-error",
+      "concept": "membrane-fluidity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'Cholesterol always makes a membrane more rigid, so a cell should have none.' What is wrong with that?",
+      "choices": [
+        "Cholesterol also keeps cold membranes from solidifying, not only stiffening",
+        "Nothing is wrong, since cholesterol stiffens membranes in every case",
+        "Cholesterol always makes a membrane more fluid, so the student has it reversed",
+        "Cholesterol is a plant molecule, so animal cells need none"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mf-cholesterol-stiffens",
+        null,
+        null
+      ],
+      "explanation": "Cholesterol works in both directions. It stiffens a membrane when it is warm and keeps a cold membrane from solidifying, so the student's word always is wrong. Animal cell membranes do contain cholesterol.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.saturated-versus-kinked-at-body-temperature",
+      "concept": "membrane-fluidity",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Two membranes have the same lipids at 37 °C, but one has many saturated tails and the other many kinked, unsaturated tails. Which pair of effects is correct?",
+      "choices": [
+        "The saturated membrane is stiffer, and the kinked membrane is more fluid",
+        "The saturated membrane is more fluid, and the kinked membrane is stiffer",
+        "Both are equally fluid, because temperature decides everything",
+        "Both are solid crystals, because 37 °C is cold for a membrane"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mf-double-bonds-stiffen",
+        null,
+        null
+      ],
+      "explanation": "Saturated tails pack closely, which makes the membrane stiffer, and kinked tails pack loosely, which keeps it fluid. At 37 °C most membranes are fluid, not crystals, and tail shape matters even at the same temperature.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.more-fluid-without-warming",
+      "concept": "membrane-fluidity",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Without changing the temperature, which change makes a membrane more fluid?",
+      "choices": [
+        "Adding more unsaturated tails, which kink and loosen the packing",
+        "Adding more straight saturated tails, which pack the lipids tighter",
+        "Adding more double bonds, which stiffen the tails and the membrane",
+        "Adding more cholesterol, which makes every membrane rigid"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "mf-double-bonds-stiffen",
+        null
+      ],
+      "explanation": "Unsaturated tails have kinks that stop the lipids packing tightly, so they make the membrane more fluid. Straight saturated tails do the opposite, and cholesterol does not make every membrane rigid.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.oxygen-and-glucose-compare",
+      "concept": "selective-permeability",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Oxygen and glucose are both small, and both sit outside a cell at equal concentration. Which crosses the bilayer faster?",
+      "choices": [
+        "Oxygen, because it is uncharged and dissolves in the fat core",
+        "They cross at the same rate, since both molecules are small",
+        "Glucose, because sugars pass through any membrane quite easily",
+        "Oxygen, because gases pass through any membrane with ease"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "sp-size-only",
+        null,
+        null
+      ],
+      "explanation": "Oxygen is small and uncharged, so it dissolves well in the fatty core and crosses quickly. Glucose is small but polar, so it crosses far more slowly. Being small is not enough on its own.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.oxygen-crosses-freely",
+      "concept": "selective-permeability",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why can oxygen cross a cell membrane without any help?",
+      "choices": [
+        "It is small and uncharged, so it can slip through the water-avoiding core",
+        "It is small, and size alone decides, so every small molecule gets through",
+        "It is pulled in by the water-loving heads, which hold it in the membrane",
+        "It gains a charge in water, which lets it pass the core"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "sp-size-only",
+        null,
+        null
+      ],
+      "explanation": "Oxygen is small and has no charge, so it can dissolve into the water-avoiding core and pass through. Size is not the whole story, and the heads do not pull molecules in.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.sodium-ions-slow",
+      "concept": "selective-permeability",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why do sodium ions cross a lipid bilayer far more slowly than small neutral molecules of similar size?",
+      "choices": [
+        "The water-avoiding core resists charge, so a charged ion is kept out",
+        "Ions are too large to fit, because their charge makes them bulky",
+        "The heads hold charged ions in place, so they cannot leave the core",
+        "The charge is cancelled by the heads, so ions pass as easily as neutral molecules"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "sp-charge-ignored"
+      ],
+      "explanation": "The core is made of tails that avoid water and dislike charge, so a charged ion has a hard time entering it. Charge does not make an ion bulky, and the heads do not cancel charge.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.size-alone-error",
+      "concept": "selective-permeability",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'Any molecule smaller than a protein crosses a membrane freely.' What is wrong with that?",
+      "choices": [
+        "Small charged and polar molecules cross poorly, so size alone is not enough",
+        "Nothing is wrong, since every molecule smaller than a protein crosses freely",
+        "Only large molecules can cross, because small ones are too light to pass",
+        "Proteins are smaller than most molecules, so they cross more easily than lipids"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "sp-size-only",
+        null,
+        null
+      ],
+      "explanation": "Charge and polarity matter as well as size. A small ion or polar molecule crosses poorly, while a small uncharged molecule crosses easily. Proteins are not smaller than most molecules, and small molecules do cross.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.cell-in-pure-water",
+      "concept": "selective-permeability",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A cell placed in pure water swells. Which explanation fits?",
+      "choices": [
+        "Water slowly crosses the bilayer, and more water enters than leaves",
+        "Sodium ions escape the cell quickly, so the cell swells",
+        "Glucose crosses as fast as oxygen, so water follows it into the cell",
+        "Water cannot cross the bilayer, so the proteins must bring it in"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "sp-water-never"
+      ],
+      "explanation": "Water does cross the bilayer, slowly, and the inside of the cell holds more dissolved material than pure water, so net water enters. Ions escaping would not cause swelling, and glucose does not cross as fast as oxygen.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Osmosis answer is an simplification; water crosses slowly and net influx follows from internal solute. Only option that fits.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.oxygen-passes-sodium-slowed",
+      "concept": "selective-permeability",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A membrane lets oxygen pass quickly but slows sodium ions a great deal. Which pair of facts best explains this?",
+      "choices": [
+        "Oxygen is small and uncharged, but sodium is charged and the core resists it",
+        "Oxygen is charged and sodium is neutral, so the charge sorts them at the surface",
+        "Both are small, so both should pass equally, and proteins block the sodium",
+        "Both are charged, so the heads repel them equally, which slows both"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "sp-size-only",
+        null
+      ],
+      "explanation": "Oxygen is small and uncharged, so it passes the core easily. Sodium ions are charged, and the water-avoiding core resists them. The wrong pair blames the surface, but the difficulty lies inside the core.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.charged-drug-modified",
+      "concept": "selective-permeability",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A drug is changed to carry an electric charge, while its size stays the same. What is the likely effect on how fast it crosses the bilayer?",
+      "choices": [
+        "It crosses much more slowly, because the core resists the charge",
+        "It crosses faster, because the charge pulls it toward the heads and into the core",
+        "It crosses at the same rate, because size is what decides",
+        "It stops crossing entirely, because charged molecules are blocked from every membrane"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "sp-size-only",
+        null
+      ],
+      "explanation": "Adding a charge makes the molecule less soluble in the water-avoiding core, so it crosses more slowly. The heads do not pull it inward, and size is not the only factor. Charged molecules still cross, just slowly.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.selectively-permeable-term",
+      "concept": "selective-permeability",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What do we call a membrane that lets some substances through but not others?",
+      "choices": [
+        "Selectively permeable, passing some substances and not others",
+        "Impermeable, so it blocks every substance from crossing at all",
+        "Fully permeable, so every substance crosses and none is blocked",
+        "Rigid, so that nothing at all can pass across its structure"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A selectively permeable membrane passes some substances and blocks others, depending on their size, charge and fat solubility. The other three names describe membranes that either block everything, pass everything, or are not about passage at all.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.easiest-to-cross",
+      "concept": "selective-permeability",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which kind of molecule crosses a lipid bilayer most easily?",
+      "choices": [
+        "A small, uncharged molecule that dissolves in fat",
+        "A small ion that carries a full electric charge",
+        "A large sugar with many polar groups spread over it",
+        "Water, which cannot cross the bilayer at all"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "sp-water-never"
+      ],
+      "explanation": "Small uncharged molecules that dissolve in fat pass the core most easily. Charged ions cross slowly, large polar sugars cross very slowly, and water does cross the bilayer, if slowly.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-structure.tap-phospholipid-head",
+      "concept": "phospholipid-bilayer",
+      "element": "amphipathic-lipids",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the charged, water-loving part of a membrane phospholipid.",
+      "artifact": "membrane-parts",
+      "target": "phospholipid-head",
+      "explanation": "This is a phospholipid head. It carries a phosphate group, so it mixes with water, and the heads of both layers face the watery fluid inside and outside the cell.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.membrane-structure.tap-hydrophobic-core",
+      "concept": "phospholipid-bilayer",
+      "element": "hydrophobic-core",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the water-avoiding zone of the membrane that keeps most ions and large polar molecules from crossing.",
+      "artifact": "membrane-parts",
+      "target": "hydrophobic-core",
+      "explanation": "This is the hydrophobic core, made of the fatty acid tails of both layers. It holds almost no water, so charged and large polar molecules cross it only very slowly.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.membrane-structure.tap-integral-protein",
+      "concept": "membrane-protein",
+      "element": "integral-proteins",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the protein held in the membrane by its own water-avoiding stretches, which could pass a message from one side of the membrane to the other.",
+      "artifact": "membrane-parts",
+      "target": "integral-protein",
+      "explanation": "This integral protein crosses the whole bilayer. Its water-avoiding middle sits among the lipid tails, and its water-loving ends reach the fluid on each side, so it can link the outside to the inside.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.membrane-structure.tap-peripheral-protein",
+      "concept": "membrane-protein",
+      "element": "peripheral-proteins",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the protein held to the membrane only by weak bonds, which could be washed off without breaking up the bilayer.",
+      "artifact": "membrane-parts",
+      "target": "peripheral-protein",
+      "explanation": "This peripheral protein sits on the inner face and never enters the water-avoiding core. Weak bonds to lipid heads or other proteins hold it, so it comes away more easily than an integral protein.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.membrane-structure.tap-cholesterol",
+      "concept": "membrane-fluidity",
+      "element": "cholesterol-effect",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the molecule that stops the membrane from getting too fluid when warm and from packing into a rigid solid when cold.",
+      "artifact": "membrane-parts",
+      "target": "cholesterol",
+      "explanation": "This is cholesterol, a stiff ring-shaped lipid tucked between the phospholipids. It holds back their motion when warm and keeps their tails from packing tightly when cold.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.membrane-structure.tap-carbohydrate-chain",
+      "concept": "membrane-protein",
+      "element": "membrane-functions",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the sugar chain that helps other cells recognise this cell.",
+      "artifact": "membrane-parts",
+      "target": "carbohydrate-chain",
+      "explanation": "This branched chain of sugars is attached to a membrane protein on the outer face, making it a glycoprotein. Sugar chains like this act as markers that other cells and molecules recognise.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "solver-a's note: The sugar chain is drawn on a transmembrane glycoprotein; no glycolipid is shown, so E is the only sugar chain."
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "membrane-parts",
+      "kind": "diagram",
+      "title": "Parts of a cell membrane",
+      "alt": "An unlabelled cut-away of a cell membrane, with the outside of the cell above and the cytoplasm below. Two rows of round lipid heads face the water on each side, and their wavy tails meet in the middle, some with kinks. A large protein crosses the whole bilayer, with a branched chain of small sugar units rising from its outer end. A smaller rounded protein sits against the inner face without entering the bilayer. A small rigid ring-shaped molecule sits among the tails of the outer layer.",
+      "file": "assets/membrane-parts.svg",
+      "hotspots": [
+        {
+          "id": "carbohydrate-chain",
+          "label": "Carbohydrate chain",
+          "x": 0.25,
+          "y": 0.256,
+          "r": 0.05
+        },
+        {
+          "id": "integral-protein",
+          "label": "Integral (transmembrane) protein",
+          "x": 0.25,
+          "y": 0.556,
+          "r": 0.05
+        },
+        {
+          "id": "phospholipid-head",
+          "label": "Phospholipid head",
+          "x": 0.492,
+          "y": 0.439,
+          "r": 0.05
+        },
+        {
+          "id": "hydrophobic-core",
+          "label": "Hydrophobic core (fatty acid tails)",
+          "x": 0.65,
+          "y": 0.556,
+          "r": 0.05
+        },
+        {
+          "id": "peripheral-protein",
+          "label": "Peripheral protein",
+          "x": 0.472,
+          "y": 0.756,
+          "r": 0.05
+        },
+        {
+          "id": "cholesterol",
+          "label": "Cholesterol",
+          "x": 0.792,
+          "y": 0.5,
+          "r": 0.05
+        }
+      ]
+    }
+  ]
+}

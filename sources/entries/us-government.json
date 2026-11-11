@@ -1,10 +1,10 @@
 {
   "id": "us-government",
-  "name": "US federal government sources",
-  "url": "https://www.usa.gov",
-  "goodFor": "Science and health text and images from federal agencies such as NIH, NASA, USGS, NOAA and CDC.",
+  "name": "US federal agencies",
+  "goodFor": "Science and health text and pictures from agencies such as NIH, NASA, USGS, NOAA and CDC.",
   "license": "per-item",
-  "use": "copy",
+  "apps": "link",
+  "bank": "none",
   "checked": null,
-  "notes": "Works by US federal agencies are mostly public domain, but third-party material on those sites is not. Copy per item, after checking that item. Unverified: no licence check has been done."
+  "notes": "Unverified. Works by US federal agencies are mostly in the public domain, but material from others on those sites is not. An app links to an item until that item is checked. The bank's agents don't read it and nothing from it goes into the bank."
 }

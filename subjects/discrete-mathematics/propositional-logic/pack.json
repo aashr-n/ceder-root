@@ -1,0 +1,1409 @@
+{
+  "formatVersion": 1,
+  "id": "discrete-mathematics.propositional-logic",
+  "subject": "discrete-mathematics",
+  "title": "Propositional logic",
+  "summary": "Propositions, the logical connectives, truth tables, tautologies and logical equivalence.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "proposition",
+      "name": "Proposition",
+      "aliases": [
+        "Propositions",
+        "Logical statement",
+        "Logical statements"
+      ],
+      "summary": "A declarative sentence that is either true or false, but not both.",
+      "requires": [],
+      "elements": [
+        {
+          "id": "truth-value",
+          "name": "Truth value"
+        },
+        {
+          "id": "declarative-sentence",
+          "name": "Declarative sentence"
+        },
+        {
+          "id": "atomic-proposition",
+          "name": "Atomic proposition"
+        },
+        {
+          "id": "propositional-variable",
+          "name": "Propositional variable"
+        }
+      ],
+      "explain": {
+        "text": "A proposition is a sentence that states something and has exactly one truth value: true or false. Paris is in France is a proposition, and it is true. 2 + 2 = 5 is also a proposition, because it is declarative, even though it is false. Questions, commands and open sentences such as x + 2 = 5 are not propositions, since they cannot be called true or false. Logic studies how propositions combine, so each one is usually written as a single letter such as p or q."
+      }
+    },
+    {
+      "id": "logical-connective",
+      "name": "Logical connective",
+      "aliases": [
+        "Logical connectives",
+        "Propositional connective",
+        "Propositional connectives",
+        "Sentential connective"
+      ],
+      "summary": "A symbol such as ¬, ∧, ∨, → or ↔ that joins propositions into a compound one with a fixed meaning.",
+      "requires": [
+        "proposition"
+      ],
+      "elements": [
+        {
+          "id": "negation",
+          "name": "Negation"
+        },
+        {
+          "id": "conjunction",
+          "name": "Conjunction"
+        },
+        {
+          "id": "disjunction",
+          "name": "Disjunction"
+        },
+        {
+          "id": "biconditional",
+          "name": "Biconditional"
+        },
+        {
+          "id": "exclusive-or",
+          "name": "Exclusive or"
+        },
+        {
+          "id": "operator-precedence",
+          "name": "Operator precedence"
+        }
+      ],
+      "explain": {
+        "text": "A logical connective joins propositions to make a new, compound proposition. The five standard ones are negation (¬, not), conjunction (∧, and), disjunction (∨, or), the conditional (→, if then) and the biconditional (↔, if and only if). Each has a fixed meaning, and the truth value of a compound depends only on the truth values of its parts. For example, p ∧ q is true only when both p and q are true. Brackets and precedence decide how a long formula is read."
+      }
+    },
+    {
+      "id": "truth-table",
+      "name": "Truth table",
+      "aliases": [
+        "Truth tables",
+        "Truth-value table"
+      ],
+      "summary": "A table that lists every assignment of truth values to the variables and works out a formula's value in each row.",
+      "requires": [
+        "proposition",
+        "logical-connective"
+      ],
+      "elements": [
+        {
+          "id": "row-count",
+          "name": "Row count"
+        },
+        {
+          "id": "subformula-columns",
+          "name": "Subformula columns"
+        },
+        {
+          "id": "connective-definitions",
+          "name": "Connective definitions"
+        },
+        {
+          "id": "row-evaluation",
+          "name": "Row evaluation"
+        }
+      ],
+      "explain": {
+        "text": "A truth table lists every way the truth values of the variables can be set, one combination per row, and works out a formula's value in each row. With n variables there are 2 to the power n rows, so two variables give 4 rows and three give 8. The table is built one column at a time: first the variables, then each smaller part of the formula, then the whole formula. The last column gives the value of the formula for every case. Because it checks every case, a truth table is a complete test for propositional formulas."
+      }
+    },
+    {
+      "id": "conditional-statement",
+      "name": "Conditional statement",
+      "aliases": [
+        "Conditional statements",
+        "Conditionals",
+        "If-then statement",
+        "Material implication"
+      ],
+      "summary": "An if-then statement p → q, false only when p is true and q is false, with its converse, inverse and contrapositive.",
+      "requires": [
+        "logical-connective"
+      ],
+      "elements": [
+        {
+          "id": "antecedent-and-consequent",
+          "name": "Antecedent and consequent"
+        },
+        {
+          "id": "converse",
+          "name": "Converse"
+        },
+        {
+          "id": "inverse",
+          "name": "Inverse"
+        },
+        {
+          "id": "contrapositive",
+          "name": "Contrapositive"
+        },
+        {
+          "id": "vacuous-truth",
+          "name": "Truth when the antecedent is false"
+        }
+      ],
+      "explain": {
+        "text": "A conditional statement, written p → q and read as if p then q, is false in exactly one case: when p is true and q is false. Here p is the antecedent and q is the consequent. Three related statements come from p → q: the converse q → p, the inverse ¬p → ¬q, and the contrapositive ¬q → ¬p. The contrapositive always has the same truth value as the original, but the converse and inverse do not. When p is false, p → q is true whatever q is, which is why if pigs fly then 2 + 2 = 5 counts as true."
+      }
+    },
+    {
+      "id": "tautology-and-contradiction",
+      "name": "Tautology and contradiction",
+      "aliases": [
+        "Tautologies",
+        "Contradictions",
+        "Logically valid formula",
+        "Self-contradiction"
+      ],
+      "summary": "A tautology is true in every row of its truth table, and a contradiction is false in every row.",
+      "requires": [
+        "truth-table"
+      ],
+      "elements": [
+        {
+          "id": "tautology",
+          "name": "Tautology"
+        },
+        {
+          "id": "contradiction",
+          "name": "Contradiction"
+        },
+        {
+          "id": "contingency",
+          "name": "Contingency"
+        },
+        {
+          "id": "truth-table-test",
+          "name": "Truth-table test"
+        }
+      ],
+      "explain": {
+        "text": "A tautology is a formula that is true in every row of its truth table, such as p ∨ ¬p. A contradiction is false in every row, such as p ∧ ¬p. A formula that is true in some rows and false in others is a contingency. Tautologies are the logically valid formulas: they hold whatever truth values the variables take. Contradictions are the formulas that can never be true. Checking the final column of a truth table tells us which of the three a formula is."
+      }
+    },
+    {
+      "id": "logical-equivalence",
+      "name": "Logical equivalence",
+      "aliases": [
+        "Logically equivalent",
+        "Logical equivalences",
+        "Truth-functional equivalence"
+      ],
+      "summary": "Two formulas are logically equivalent when they have the same truth value in every row of their truth tables.",
+      "requires": [
+        "tautology-and-contradiction",
+        "conditional-statement"
+      ],
+      "elements": [
+        {
+          "id": "equivalence-definition",
+          "name": "Equivalence definition"
+        },
+        {
+          "id": "conditional-equivalence",
+          "name": "Conditional equivalence"
+        },
+        {
+          "id": "contrapositive-equivalence",
+          "name": "Contrapositive equivalence"
+        },
+        {
+          "id": "de-morgan-laws",
+          "name": "De Morgan's laws"
+        },
+        {
+          "id": "distributive-laws",
+          "name": "Distributive laws"
+        },
+        {
+          "id": "equivalence-as-tautology",
+          "name": "Equivalence as a tautology"
+        }
+      ],
+      "explain": {
+        "text": "Two formulas are logically equivalent when they have the same truth value in every row of their truth tables. We write A ≡ B. For example, p → q is equivalent to ¬p ∨ q, and ¬(p ∧ q) is equivalent to ¬p ∨ ¬q, which is one of De Morgan's laws. Two formulas are equivalent exactly when A ↔ B is a tautology. Equivalences let a formula be rewritten into a simpler shape without changing its truth values, which is the basis of simplifying circuits and checking arguments."
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "discrete-mathematics.propositional-logic.proposition-01",
+      "concept": "proposition",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is a proposition?",
+      "explanation": "“2 + 2 = 5” is declarative, so it has a truth value. It is false, but a false statement is still a proposition. A command and a question have no truth value. “x + 2 = 5” has none either until x is given a value.",
+      "element": "declarative-sentence",
+      "choices": [
+        "2 + 2 = 5",
+        "Close the window.",
+        "Is 17 a prime number?",
+        "x + 2 = 5"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.proposition-02",
+      "concept": "proposition",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which statement is true of every proposition?",
+      "explanation": "In classical logic every proposition has exactly one truth value, whether or not anyone knows it. A proposition need not be true, nobody has to check it first, and a question is not a proposition.",
+      "element": "truth-value",
+      "choices": [
+        "It must be true",
+        "It is either true or false, and not both",
+        "It is true only once someone has checked it",
+        "It can be a question as well as a statement"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.proposition-03",
+      "concept": "proposition",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which sentence is an atomic proposition, with no logical connective in it?",
+      "explanation": "“It is raining.” has no connective, so it is atomic. “It is not raining” contains negation, and “It is raining and it is cold” contains conjunction, so both are compound. “Is it raining?” is a question, not a proposition.",
+      "element": "atomic-proposition",
+      "choices": [
+        "It is not raining.",
+        "It is raining and it is cold.",
+        "It is raining.",
+        "Is it raining?"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.proposition-04",
+      "concept": "proposition",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Let p be “n is greater than 5”, with n not yet given. What is p?",
+      "explanation": "“n is greater than 5” has a variable, and it becomes true or false only once n has a value. Until then it is an open sentence, not a proposition. Calling it true or false before n is known is the mistake being tested.",
+      "element": "declarative-sentence",
+      "choices": [
+        "A true proposition",
+        "A false proposition",
+        "A command",
+        "Not yet a proposition, since its truth value depends on n"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.proposition-05",
+      "concept": "proposition",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does a letter such as p stand for in propositional logic?",
+      "explanation": "A propositional variable stands for one proposition, which can be a true or false statement. It is not a number or a set. A row of a truth table is one assignment of truth values to the variables, not a variable.",
+      "element": "propositional-variable",
+      "choices": [
+        "Any single proposition, true or false",
+        "A number",
+        "A set of propositions",
+        "A row of a truth table"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.proposition-06",
+      "concept": "proposition",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why is “This sentence is false” not a proposition in classical logic?",
+      "explanation": "The sentence cannot be consistently given a truth value: if it is true, what it says makes it false, and if it is false, what it says makes it true. Classical logic needs every proposition to have exactly one truth value, so the sentence does not qualify. It is declarative, so grammar is not the reason.",
+      "element": "truth-value",
+      "choices": [
+        "It is always true",
+        "Assuming it true makes it false, and assuming it false makes it true",
+        "It is a question",
+        "It has a connective, namely “not”"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.proposition-07",
+      "concept": "proposition",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which sentence can be given a truth value?",
+      "explanation": "“Paris is in France, and 3 is odd” has two declarative parts, each true or false, so the whole is a true proposition. Each of the others has a command or a question in it, which has no truth value.",
+      "element": "declarative-sentence",
+      "choices": [
+        "Close the window, and it is cold.",
+        "Is the sea salty? and 4 is odd.",
+        "Paris is in France, and 3 is odd.",
+        "Go home or stay here."
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.logical-connective-08",
+      "concept": "logical-connective",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which symbol means “and” in propositional logic?",
+      "explanation": "∧ is conjunction, which stands for “and”. ∨ is disjunction, meaning “or”. → means “if then”, and ¬ means “not”.",
+      "element": "conjunction",
+      "choices": [
+        "∨",
+        "→",
+        "¬",
+        "∧"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.logical-connective-09",
+      "concept": "logical-connective",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which connective is true exactly when at least one of its parts is true?",
+      "explanation": "p ∨ q is true when p is true, when q is true, or when both are. Conjunction needs both parts true, and the biconditional needs the parts to agree. Negation has only one part, so it cannot be at least one of two.",
+      "element": "disjunction",
+      "choices": [
+        "Disjunction (∨)",
+        "Conjunction (∧)",
+        "Biconditional (↔)",
+        "Negation (¬)"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.logical-connective-10",
+      "concept": "logical-connective",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which connective is true exactly when its two parts have the same truth value?",
+      "explanation": "p ↔ q is true when p and q agree, both true or both false. The conditional p → q is true when p is false and q is true, which are different values, so it does not test agreement. Conjunction and disjunction do not test agreement either.",
+      "element": "biconditional",
+      "choices": [
+        "Conjunction (∧)",
+        "Biconditional (↔)",
+        "Disjunction (∨)",
+        "Conditional (→)"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.logical-connective-11",
+      "concept": "logical-connective",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which connective is true when exactly one of p and q is true?",
+      "explanation": "Exclusive or is true when exactly one part is true, so p ⊕ q means p or q but not both. Disjunction also allows both to be true, which is the difference students most often miss. The biconditional is true when the parts agree, so it is the opposite of exclusive or.",
+      "element": "exclusive-or",
+      "choices": [
+        "Disjunction (∨)",
+        "Conjunction (∧)",
+        "Exclusive or (⊕)",
+        "Biconditional (↔)"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.logical-connective-12",
+      "concept": "logical-connective",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which connective is false exactly when both of its parts are false?",
+      "explanation": "p ∨ q is false only in the row where p and q are both false. Exclusive or is false in that row too, but also when both parts are true, so it does not fit. Conjunction is false whenever at least one part is false, and the conditional is false only when p is true and q is false.",
+      "element": "disjunction",
+      "choices": [
+        "Exclusive or (⊕)",
+        "Conjunction (∧)",
+        "Conditional (→)",
+        "Disjunction (∨)"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.logical-connective-13",
+      "concept": "logical-connective",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the truth value of ¬p when p is false?",
+      "explanation": "Negation flips the truth value: if p is false, then ¬p is true. The answer that says the same as p is wrong, since negation always reverses it.",
+      "element": "negation",
+      "choices": [
+        "True",
+        "False",
+        "The same as p",
+        "Undefined"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.logical-connective-14",
+      "concept": "logical-connective",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Let p be “the lamp is on” and q be “the switch is up”. Which is the best reading of p ↔ q?",
+      "explanation": "p ↔ q says the lamp is on exactly when the switch is up. If then gives only one direction, and and, or exclusive or give different truth tables.",
+      "element": "biconditional",
+      "choices": [
+        "The lamp is on and the switch is up",
+        "The lamp is on if and only if the switch is up",
+        "If the lamp is on, then the switch is up",
+        "The lamp is on or the switch is up, but not both"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.logical-connective-15",
+      "concept": "logical-connective",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Under the usual convention, where ∧ binds tighter than ∨, how is p ∨ q ∧ r read?",
+      "explanation": "Conjunction binds tighter than disjunction, so q ∧ r groups first and the formula reads p ∨ (q ∧ r). Reading it as (p ∨ q) ∧ r reverses the grouping. Pairing p with r first gives a different formula. Calling it ambiguous ignores the convention, which makes it clear.",
+      "element": "operator-precedence",
+      "choices": [
+        "(p ∨ q) ∧ r",
+        "(p ∧ r) ∨ q",
+        "p ∨ (q ∧ r)",
+        "It is ambiguous, so brackets are always required"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.logical-connective-16",
+      "concept": "logical-connective",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "With the usual precedence (¬ first, then ∧, then ∨), put the steps for reading ¬p ∧ q ∨ r in order.",
+      "explanation": "¬ binds tightest, so ¬p is formed first. Then ∧ joins ¬p and q, and ∨ joins that result with r. The formula is ((¬p) ∧ q) ∨ r.",
+      "element": "operator-precedence",
+      "steps": [
+        "Apply ¬ to p, giving ¬p",
+        "Combine ¬p with q using ∧",
+        "Combine that result with r using ∨"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.truth-table-17",
+      "concept": "truth-table",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How many rows does a truth table have for 3 variables?",
+      "explanation": "Each variable doubles the rows, so 3 variables give 2 × 2 × 2 = 8 rows. The 6 and 9 come from multiplying or adding the wrong numbers, and 3 counts the variables, not the rows.",
+      "element": "row-count",
+      "choices": [
+        "6",
+        "9",
+        "3",
+        "8"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.truth-table-18",
+      "concept": "truth-table",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How many rows does a truth table have for 5 variables?",
+      "explanation": "2 to the power 5 is 32. The answer 10 comes from 5 × 2, and 25 from 5 × 5. The answer 16 is 2 to the power 4, one variable short.",
+      "element": "row-count",
+      "choices": [
+        "32",
+        "10",
+        "16",
+        "25"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.truth-table-19",
+      "concept": "truth-table",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A truth table for p and q has four rows. In how many rows is p ∧ q true?",
+      "explanation": "Conjunction is true in only one of the four rows, where both p and q are true. Disjunction would be true in three rows.",
+      "element": "subformula-columns",
+      "choices": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.truth-table-20",
+      "concept": "truth-table",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the value of p ∧ ¬p when p is true?",
+      "explanation": "When p is true, ¬p is false, and a conjunction with a false part is false. The formula is false in every row, which makes it a contradiction.",
+      "element": "row-evaluation",
+      "choices": [
+        "True",
+        "Undefined",
+        "False",
+        "The same as p"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.truth-table-21",
+      "concept": "truth-table",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which row makes p → q false?",
+      "explanation": "A conditional is false only when p is true and q is false. The other three rows give true values, including the row where p is false, which makes the conditional true whatever q is.",
+      "element": "connective-definitions",
+      "choices": [
+        "p true, q true",
+        "p false, q false",
+        "p false, q true",
+        "p true, q false"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.truth-table-22",
+      "concept": "truth-table",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A formula's values for the rows (p, q) = TT, TF, FT, FF, in that order, are T, T, F, T. In which case is it false?",
+      "explanation": "The third entry is F, and it belongs to the row p false, q true. Reading a truth table means matching each entry to its row in the standard order, so the position decides the row.",
+      "element": "subformula-columns",
+      "choices": [
+        "p false, q true",
+        "p true, q true",
+        "p true, q false",
+        "p false, q false"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.truth-table-23",
+      "concept": "truth-table",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A formula with variables p, q and r is built as (p ∧ q) ∨ ¬r. How many computed columns, not counting the input columns, does its truth table need, including the final one?",
+      "explanation": "The computed columns are p ∧ q, ¬r and the final disjunction, so three. The count of six includes the inputs p, q and r, which are not computed.",
+      "element": "subformula-columns",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Computed columns are p and q, ∧ (p ∧ q), ¬r, and the final ∨: three computed columns."
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.truth-table-24",
+      "concept": "truth-table",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps for evaluating ¬p ∨ q in one row, with p true and q false, in order.",
+      "explanation": "Substitution comes first, then each subformula is evaluated from the inside out. The last step gives F ∨ F, which is F, so ¬p ∨ q is false in this row.",
+      "element": "row-evaluation",
+      "steps": [
+        "Substitute p = T and q = F",
+        "Evaluate ¬p, which is F",
+        "Evaluate F ∨ q, which is F ∨ F, so F"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.truth-table-25",
+      "concept": "truth-table",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps for building a truth table in the right order.",
+      "explanation": "The count fixes how many rows are needed, and the rows come before any column is filled. Subformulas go in from the innermost outwards, since each column depends on the columns it uses.",
+      "element": "subformula-columns",
+      "steps": [
+        "List the propositional variables and count them, n",
+        "Write 2ⁿ rows covering every combination of T and F",
+        "Add a column for each subformula, innermost first",
+        "Fill each column from the columns it uses",
+        "Read the last column as the formula's truth values"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Adding and filling columns can interleave one column at a time; the order given is the usual textbook sequence."
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.conditional-statement-26",
+      "concept": "conditional-statement",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In the conditional p → q, which part is the antecedent?",
+      "explanation": "The antecedent is the part after if, which is p, and q is the consequent. p → q is the whole statement, not one of its parts, and ¬q does not appear in it.",
+      "element": "antecedent-and-consequent",
+      "choices": [
+        "q",
+        "p → q",
+        "p",
+        "¬q"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.conditional-statement-27",
+      "concept": "conditional-statement",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "When is p → q true?",
+      "explanation": "p → q is false only when p is true and q is false, so it is true in every other case, including whenever q is true or p is false. Requiring both parts to be true confuses it with conjunction.",
+      "element": "antecedent-and-consequent",
+      "choices": [
+        "Whenever p is true",
+        "Only when p and q are both true",
+        "Only when p and q differ",
+        "Whenever q is true, or p is false"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.conditional-statement-28",
+      "concept": "conditional-statement",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the converse of “If it rains, the ground is wet”?",
+      "explanation": "The converse swaps the antecedent and consequent: if the ground is wet, it rains. The inverse, if it does not rain then the ground is not wet, is a different statement. The contrapositive, if the ground is not wet then it does not rain, is equivalent to the original, so it is not the converse.",
+      "element": "converse",
+      "choices": [
+        "If the ground is wet, it rains",
+        "If it does not rain, the ground is not wet",
+        "If the ground is not wet, it does not rain",
+        "It rains and the ground is wet"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.conditional-statement-29",
+      "concept": "conditional-statement",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which is the contrapositive of p → q?",
+      "explanation": "The contrapositive swaps and negates both parts: ¬q → ¬p. ¬p ∨ q is equivalent to p → q, but it is not in the if-then form that the contrapositive takes.",
+      "element": "contrapositive",
+      "choices": [
+        "q → p",
+        "¬q → ¬p",
+        "¬p → ¬q",
+        "¬p ∨ q"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.conditional-statement-30",
+      "concept": "conditional-statement",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which statement about p → q and its contrapositive ¬q → ¬p is true?",
+      "explanation": "The contrapositive is logically equivalent to the original: both are false only when p is true and q is false. The converses, q → p and p → q, are a different pair and do not always match.",
+      "element": "contrapositive",
+      "choices": [
+        "They are converses of each other",
+        "The contrapositive is true only when p is false",
+        "They always have the same truth value",
+        "They have different truth tables"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.conditional-statement-31",
+      "concept": "conditional-statement",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "If p is false, what is the truth value of p → q?",
+      "explanation": "A conditional with a false antecedent is true, whatever the consequent says. This is why if the moon is cheese, then 1 = 2 counts as true in logic, even though it sounds odd in English.",
+      "element": "vacuous-truth",
+      "choices": [
+        "False, whatever q is",
+        "The same as q",
+        "The same as ¬q",
+        "True, whatever q is"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.conditional-statement-32",
+      "concept": "conditional-statement",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Let p be “the moon is made of cheese” (false) and q be “2 + 2 = 5” (false). What is the truth value of p → q?",
+      "explanation": "p is false, so p → q is true, even though q is also false. A conditional fails only when p is true and q is false.",
+      "element": "vacuous-truth",
+      "choices": [
+        "True",
+        "False",
+        "Undefined",
+        "The same as q"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.conditional-statement-33",
+      "concept": "conditional-statement",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which formula is logically equivalent to p → q, using only ¬ and ∨?",
+      "explanation": "p → q is false only when p is true and q is false, and ¬p ∨ q is false in exactly that row. p ∨ ¬q is false when p is false and q is true, so it is the wrong way round. ¬q ∨ ¬p is false only when both p and q are true.",
+      "element": "antecedent-and-consequent",
+      "choices": [
+        "p ∨ ¬q",
+        "¬p ∨ q",
+        "¬q ∨ ¬p",
+        "p ∧ ¬q"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.tautology-and-contradiction-34",
+      "concept": "tautology-and-contradiction",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is a tautology?",
+      "explanation": "A tautology is true under every assignment of truth values to its variables. A formula false in every row is a contradiction, and one true in some rows and false in others is a contingency.",
+      "element": "tautology",
+      "choices": [
+        "A formula that is false in every row of its truth table",
+        "A formula that is true in some rows and false in others",
+        "A formula that is true in every row of its truth table",
+        "A formula with no connectives"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.tautology-and-contradiction-35",
+      "concept": "tautology-and-contradiction",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is a contradiction?",
+      "explanation": "A contradiction is false under every assignment, so it can never be true. A formula true in every row is a tautology, and one true in at least one row is not a contradiction.",
+      "element": "contradiction",
+      "choices": [
+        "A formula that is true in every row",
+        "A formula that is true in at least one row",
+        "A formula whose truth table has two rows",
+        "A formula that is false in every row"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.tautology-and-contradiction-36",
+      "concept": "tautology-and-contradiction",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which formula is a tautology?",
+      "explanation": "p ∨ ¬p is true whether p is true or false, so it is a tautology. p ∧ ¬p is a contradiction, and p ∧ q and p → q are false in some rows.",
+      "element": "tautology",
+      "choices": [
+        "p ∨ ¬p",
+        "p ∧ ¬p",
+        "p ∧ q",
+        "p → q"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.tautology-and-contradiction-37",
+      "concept": "tautology-and-contradiction",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which formula is a contradiction?",
+      "explanation": "p ∧ ¬p needs p and ¬p both true, which is impossible, so it is false in every row. p ∨ ¬p and p → p are tautologies, and p ∨ q is true when p is true, so it is not a contradiction.",
+      "element": "contradiction",
+      "choices": [
+        "p ∨ ¬p",
+        "p ∧ ¬p",
+        "p → p",
+        "p ∨ q"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.tautology-and-contradiction-38",
+      "concept": "tautology-and-contradiction",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A formula is neither a tautology nor a contradiction. What is it called?",
+      "explanation": "A contingency is true in some rows and false in others, so its value depends on the variables. The other choices name a connective or a relation between formulas, not a class of formula.",
+      "element": "contingency",
+      "choices": [
+        "A conjunction",
+        "An equivalence",
+        "A contingency",
+        "An inference"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.tautology-and-contradiction-39",
+      "concept": "tautology-and-contradiction",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the truth-table test for a tautology?",
+      "explanation": "A formula is a tautology exactly when its final column is T in every row. One T is not enough, since many contingencies have some T. An all-F column would show a contradiction.",
+      "element": "truth-table-test",
+      "choices": [
+        "Check that the final column has at least one T",
+        "Check that the final column is all F",
+        "Count the connectives in the formula",
+        "Check that the final column is all T"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.tautology-and-contradiction-40",
+      "concept": "tautology-and-contradiction",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Is (p → q) ∨ (q → p) a tautology?",
+      "explanation": "Checking the four rows: TT gives T, TF gives T because q → p is true, FT gives T because p → q is true, and FF gives T. The final column is all T, so it is a tautology.",
+      "element": "truth-table-test",
+      "choices": [
+        "Yes, it is a tautology",
+        "No, it is a contradiction",
+        "No, it is a contingency",
+        "Only when p equals q"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.tautology-and-contradiction-41",
+      "concept": "tautology-and-contradiction",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Is ((p ∧ q) → r) ↔ (p → (q → r)) a tautology?",
+      "explanation": "Both sides are false in exactly the same row, p true, q true and r false, and true in every other row. So their biconditional is true in all eight rows, a tautology. Skipping the check often leads to calling it a contingency.",
+      "element": "truth-table-test",
+      "choices": [
+        "No, it is a contradiction",
+        "Yes, it is a tautology",
+        "No, it is a contingency, since it is true when r is true",
+        "No, it is a contingency, since it is false when p is false"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.tautology-and-contradiction-42",
+      "concept": "tautology-and-contradiction",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps for showing that a formula is a tautology in order.",
+      "explanation": "The rows must exist before anything is evaluated, and each subformula needs its inputs before it can be evaluated. Only once the final column is complete can its entries be checked.",
+      "element": "truth-table-test",
+      "steps": [
+        "List every row of the variables' truth table",
+        "Evaluate each subformula in every row, innermost first",
+        "Read the final column of the whole formula",
+        "Check that every entry in that column is T"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.logical-equivalence-43",
+      "concept": "logical-equivalence",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Two formulas are logically equivalent when:",
+      "explanation": "Equivalence means the formulas agree in every row. Being tautologies, or sharing letters, does not make two formulas agree: p ∧ q and p ∨ q use the same letters but are not equivalent.",
+      "element": "equivalence-definition",
+      "choices": [
+        "They are both tautologies",
+        "They have the same number of connectives",
+        "They have the same truth value in every row of their combined truth table",
+        "They use the same letters"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.logical-equivalence-44",
+      "concept": "logical-equivalence",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which pair is logically equivalent?",
+      "explanation": "p → q is false only when p is true and q is false, and ¬p ∨ q is false only in that row. The other pairs disagree in some row: p ∧ q and p ∨ q differ when p is true and q is false.",
+      "element": "conditional-equivalence",
+      "choices": [
+        "p → q and q → p",
+        "p ∧ q and p ∨ q",
+        "p → q and ¬q → p",
+        "p → q and ¬p ∨ q"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.logical-equivalence-45",
+      "concept": "logical-equivalence",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which law says ¬(p ∧ q) is equivalent to ¬p ∨ ¬q?",
+      "explanation": "De Morgan's law swaps ∧ and ∨ when a negation is moved across a bracket. The distributive law spreads one connective over another, the contrapositive turns a conditional around, and the idempotent law says p ∧ p is p.",
+      "element": "de-morgan-laws",
+      "choices": [
+        "De Morgan's law",
+        "Distributive law",
+        "Contrapositive law",
+        "Idempotent law"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.logical-equivalence-46",
+      "concept": "logical-equivalence",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which formula is logically equivalent to ¬(p ∨ q)?",
+      "explanation": "De Morgan's law gives ¬p ∧ ¬q. ¬p ∨ ¬q is true when p is false and q is true, so it is not equivalent. p ∧ q is true only when both are true, and ¬p → q is equivalent to p ∨ q, which is true in more rows than ¬(p ∨ q).",
+      "element": "de-morgan-laws",
+      "choices": [
+        "¬p ∨ ¬q",
+        "¬p ∧ ¬q",
+        "p ∧ q",
+        "¬p → q"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.logical-equivalence-47",
+      "concept": "logical-equivalence",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which law makes p → q equivalent to ¬q → ¬p?",
+      "explanation": "The contrapositive gives an equivalent conditional by swapping the parts and negating both. The converse and inverse are not equivalent to p → q, and double negation says ¬¬p is p.",
+      "element": "contrapositive-equivalence",
+      "choices": [
+        "Converse",
+        "Inverse",
+        "Contrapositive",
+        "Double negation"
+      ],
+      "answer": 2,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.logical-equivalence-48",
+      "concept": "logical-equivalence",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which statement links equivalence to tautologies?",
+      "explanation": "A ↔ B is true in a row exactly when A and B agree there, so it is a tautology exactly when they agree in every row. A ∧ B being a tautology would require both formulas to be always true, which is much stronger.",
+      "element": "equivalence-as-tautology",
+      "choices": [
+        "A and B are equivalent exactly when A ∧ B is a tautology",
+        "A and B are equivalent exactly when A → B is a contradiction",
+        "A and B are equivalent exactly when A ∨ B is a contradiction",
+        "A and B are equivalent exactly when A ↔ B is a tautology"
+      ],
+      "answer": 3,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.logical-equivalence-49",
+      "concept": "logical-equivalence",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which formula is logically equivalent to p ∧ (q ∨ r)?",
+      "explanation": "Conjunction distributes over disjunction, giving (p ∧ q) ∨ (p ∧ r). The tempting (p ∨ q) ∧ (p ∨ r) is wrong: with p false, q true and r true, the original is false but that one is true. The formula p ∨ (q ∧ r) is also wrong: with p false, q true and r false, the original is false but it is true.",
+      "element": "distributive-laws",
+      "choices": [
+        "(p ∧ q) ∨ (p ∧ r)",
+        "(p ∧ q) ∧ (p ∨ r)",
+        "(p ∨ q) ∧ (p ∨ r)",
+        "p ∨ (q ∧ r)"
+      ],
+      "answer": 0,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.logical-equivalence-50",
+      "concept": "logical-equivalence",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which pair is logically equivalent?",
+      "explanation": "p ↔ q is true when p and q agree, and (p → q) ∧ (q → p) is also true exactly when they agree. The pair p → q and q → p differs when p is true and q is false. The pair of a contradiction and a tautology is never equivalent.",
+      "element": "equivalence-definition",
+      "choices": [
+        "p → q and q → p",
+        "p ↔ q and (p → q) ∧ (q → p)",
+        "p ∨ q and p ∧ q",
+        "p ∧ ¬p and p ∨ ¬p"
+      ],
+      "answer": 1,
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "discrete-mathematics.propositional-logic.logical-equivalence-51",
+      "concept": "logical-equivalence",
+      "kind": "order",
+      "difficulty": 3,
+      "prompt": "Put the steps for proving with a truth table that p ∧ q is equivalent to ¬(¬p ∨ ¬q), in order.",
+      "explanation": "Each column depends on the ones before it, so the order is fixed. The final comparison comes last, row by row, since equivalence means the two columns match in every row.",
+      "element": "equivalence-definition",
+      "steps": [
+        "List the four rows for p and q",
+        "Fill columns for ¬p and ¬q",
+        "Fill the column for ¬p ∨ ¬q",
+        "Negate that column to get ¬(¬p ∨ ¬q)",
+        "Compare that column with p ∧ q row by row"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    }
+  ],
+  "artifacts": []
+}

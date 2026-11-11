@@ -1,0 +1,1691 @@
+{
+  "formatVersion": 1,
+  "id": "biology.photosynthesis",
+  "subject": "biology",
+  "title": "Photosynthesis",
+  "summary": "How pigments in the thylakoids capture light, how that energy makes ATP and NADPH, and how the Calvin cycle fixes carbon into sugar.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "chloroplast",
+      "name": "Chloroplast",
+      "aliases": [
+        "Chloroplasts"
+      ],
+      "summary": "The organelle in plant and algal cells where light energy is captured and carbon dioxide is turned into sugar.",
+      "requires": [
+        "organelle"
+      ],
+      "elements": [
+        {
+          "id": "thylakoid",
+          "name": "Thylakoid",
+          "aliases": [
+            "Thylakoids"
+          ]
+        },
+        {
+          "id": "stroma",
+          "name": "Stroma"
+        },
+        {
+          "id": "granum",
+          "name": "Granum",
+          "aliases": [
+            "Grana"
+          ]
+        },
+        {
+          "id": "chloroplast-envelope",
+          "name": "Chloroplast envelope"
+        }
+      ],
+      "explain": {
+        "text": "A chloroplast is the organelle in plant and algal cells where photosynthesis happens. Its outer envelope surrounds a watery fluid called the stroma, and stacks of flattened membrane sacs called thylakoids sit inside. Pigments in the thylakoid membranes catch light and turn it into chemical energy. The stroma is where that energy is spent to build sugar from carbon dioxide. A typical plant cell holds many chloroplasts, and most of them sit in the leaves. Think of the thylakoids as solar panels and the stroma as the kitchen where the sugar is cooked.",
+        "artifact": "chloroplast"
+      },
+      "misconceptions": [
+        {
+          "id": "photosynthesis-only-in-leaves",
+          "claim": "Photosynthesis happens only in leaves, so stems and roots never make sugar.",
+          "correction": "Any cell that holds chloroplasts can photosynthesise, and green stems have them. Leaves hold most of a plant's chloroplasts, so they make most of its sugar."
+        },
+        {
+          "id": "mitochondria-photosynthesise",
+          "claim": "Mitochondria are where plant cells make sugar, and chloroplasts are where they release energy.",
+          "correction": "Chloroplasts capture light and build sugar. Mitochondria break sugar down to release energy, in plants and in animals alike."
+        },
+        {
+          "id": "light-reactions-in-stroma",
+          "claim": "The light reactions happen in the stroma, the fluid around the thylakoid stacks.",
+          "correction": "The light reactions happen in the thylakoid membranes, where the pigments and electron transport chain sit. The stroma is where the Calvin cycle runs."
+        }
+      ]
+    },
+    {
+      "id": "photosynthetic-pigment",
+      "name": "Photosynthetic pigment",
+      "aliases": [
+        "Photosynthetic pigments",
+        "Chlorophyll"
+      ],
+      "summary": "The molecules that absorb particular colours of light, mainly chlorophyll, and why a leaf's colour depends on the light it does not absorb.",
+      "requires": [
+        "chloroplast"
+      ],
+      "elements": [
+        {
+          "id": "chlorophyll",
+          "name": "Chlorophyll"
+        },
+        {
+          "id": "carotenoid",
+          "name": "Carotenoid",
+          "aliases": [
+            "Carotenoids"
+          ]
+        },
+        {
+          "id": "absorption-spectrum",
+          "name": "Absorption spectrum"
+        },
+        {
+          "id": "light-harvesting-complex",
+          "name": "Light-harvesting complex",
+          "aliases": [
+            "Antenna complex"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "Photosynthetic pigments are molecules that absorb particular colours of light and pass the energy on. Chlorophyll is the main pigment in plants, and it absorbs mostly blue and red light. Carotenoids absorb blue-green light that chlorophyll takes in poorly, and they pass that energy to chlorophyll. Each pigment has an absorption spectrum, a record of how strongly it takes in each wavelength. The colours a leaf does not absorb are the ones that reach our eyes, which is why most leaves look green. Pigments sit together in light-harvesting complexes so that they can share the energy."
+      },
+      "misconceptions": [
+        {
+          "id": "green-light-absorbed",
+          "claim": "Leaves are green because chlorophyll absorbs green light.",
+          "correction": "Chlorophyll absorbs mostly blue and red light and reflects green. The reflected green is the colour the eye sees."
+        },
+        {
+          "id": "pigment-used-up",
+          "claim": "Chlorophyll is used up and turned into sugar as the plant makes food.",
+          "correction": "Chlorophyll is not a reactant. It absorbs light and passes an electron on, then regains an electron from water, so the same pigment keeps working."
+        },
+        {
+          "id": "any-light-equally",
+          "claim": "Any colour of light drives photosynthesis equally well.",
+          "correction": "Each pigment absorbs some wavelengths far better than others, so the rate of photosynthesis depends on the colour of the light."
+        }
+      ]
+    },
+    {
+      "id": "light-dependent-reactions",
+      "name": "Light-dependent reactions",
+      "aliases": [
+        "Light reactions",
+        "Light-dependent reaction",
+        "Light reaction"
+      ],
+      "summary": "Light drives electron flow in the thylakoid membranes, which makes ATP and NADPH and releases oxygen from water.",
+      "requires": [
+        "photosynthetic-pigment",
+        "redox-reactions",
+        "atp"
+      ],
+      "elements": [
+        {
+          "id": "photosystem-ii",
+          "name": "Photosystem II",
+          "aliases": [
+            "PSII"
+          ]
+        },
+        {
+          "id": "photosystem-i",
+          "name": "Photosystem I",
+          "aliases": [
+            "PSI"
+          ]
+        },
+        {
+          "id": "water-splitting",
+          "name": "Splitting water"
+        },
+        {
+          "id": "atp-synthase",
+          "name": "ATP synthase"
+        }
+      ],
+      "explain": {
+        "text": "The light-dependent reactions happen in the thylakoid membranes and turn light into chemical energy. A pigment in photosystem II absorbs light and loses an electron, which moves down an electron transport chain. Water is split to refill the lost electron and release oxygen. As the electrons move, they pump protons into the thylakoid space, and the protons flow back out through ATP synthase, which makes ATP. Photosystem I then re-excites the electron, which reduces NADP⁺ to NADPH. The reactions end with two products, ATP and NADPH, that carry energy and electrons to the Calvin cycle.",
+        "artifact": "thylakoid-membrane-steps"
+      },
+      "misconceptions": [
+        {
+          "id": "light-energy-in-sugar",
+          "claim": "Light energy is stored directly in sugar during the light reactions.",
+          "correction": "The light reactions store light energy in ATP and NADPH, and in moving electrons. The Calvin cycle uses them to build sugar later."
+        },
+        {
+          "id": "oxygen-from-co2",
+          "claim": "The oxygen released in photosynthesis comes from carbon dioxide.",
+          "correction": "The oxygen comes from water, which photosystem II splits. Carbon dioxide supplies the carbon of sugar in the Calvin cycle."
+        },
+        {
+          "id": "atp-from-light-directly",
+          "claim": "Light makes ATP directly, without any electron flow or proton gradient.",
+          "correction": "Light excites electrons. Their flow pumps protons across the thylakoid membrane, and ATP synthase uses that gradient to make ATP."
+        }
+      ]
+    },
+    {
+      "id": "calvin-cycle",
+      "name": "Calvin cycle",
+      "aliases": [
+        "Calvin-Benson cycle",
+        "Light-independent reactions",
+        "Dark reactions"
+      ],
+      "summary": "The stroma reactions that fix carbon dioxide onto RuBP and build G3P, the start of sugar.",
+      "requires": [
+        "light-dependent-reactions",
+        "enzyme"
+      ],
+      "elements": [
+        {
+          "id": "rubisco",
+          "name": "RuBisCO",
+          "aliases": [
+            "Rubisco"
+          ]
+        },
+        {
+          "id": "rubp",
+          "name": "RuBP",
+          "aliases": [
+            "Ribulose bisphosphate"
+          ]
+        },
+        {
+          "id": "g3p",
+          "name": "G3P",
+          "aliases": [
+            "Glyceraldehyde 3-phosphate",
+            "PGAL"
+          ]
+        },
+        {
+          "id": "carbon-fixation",
+          "name": "Carbon fixation"
+        }
+      ],
+      "explain": {
+        "text": "The Calvin cycle is the set of reactions in the stroma that turns carbon dioxide into sugar. RuBisCO, one of the most abundant enzymes on Earth, attaches carbon dioxide to RuBP, a five-carbon sugar. The product splits into three-carbon molecules, which ATP and NADPH from the light reactions reduce to G3P. Most G3P is used to rebuild RuBP so the cycle can continue, and the rest leaves the cycle to build glucose and other sugars. It is called light-independent because it does not use light directly, but it cannot run without the products of the light reactions.",
+        "artifact": "chloroplast"
+      },
+      "misconceptions": [
+        {
+          "id": "dark-reactions-need-darkness",
+          "claim": "The Calvin cycle happens only in the dark, so it stops in daylight.",
+          "correction": "The Calvin cycle does not use light directly, so it runs whenever ATP and NADPH are supplied. In daylight it runs alongside the light reactions."
+        },
+        {
+          "id": "plant-mass-from-soil",
+          "claim": "Plants get most of their mass from the soil.",
+          "correction": "Nearly all of a plant's dry mass is carbon fixed from carbon dioxide in the air. Soil supplies water and minerals, which make up little of the dry mass."
+        },
+        {
+          "id": "carbon-from-water",
+          "claim": "The carbon in sugar comes from the water the plant takes up.",
+          "correction": "The carbon comes from carbon dioxide, fixed by RuBisCO. Water supplies electrons and protons in the light reactions, and its oxygen is released."
+        },
+        {
+          "id": "one-step-glucose",
+          "claim": "The Calvin cycle turns one carbon dioxide into glucose in a single step.",
+          "correction": "Carbon dioxide is fixed onto RuBP and reduced over several steps. Glucose has six carbons, and two G3P are needed to make one."
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "biology.photosynthesis.chloroplast-organelle",
+      "concept": "chloroplast",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which organelle in a plant cell carries out photosynthesis?",
+      "choices": [
+        "The mitochondrion",
+        "The nucleus",
+        "The chloroplast",
+        "The Golgi apparatus"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "mitochondria-photosynthesise",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Chloroplasts hold the pigments and enzymes that turn light, water and carbon dioxide into sugar. The mitochondrion breaks sugar down to release energy, so it is not the site where sugar is made.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.chloroplast-stem-cells",
+      "concept": "chloroplast",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A cell in a plant's green stem contains chloroplasts. Can that cell photosynthesise?",
+      "choices": [
+        "No, photosynthesis happens in leaves and not in stems",
+        "Yes, but not until the plant has flowered",
+        "Yes, its chloroplasts can capture light and make sugar",
+        "No, the stem cells get too little light to use"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "photosynthesis-only-in-leaves",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Any cell with chloroplasts can photosynthesise, and green stems have them. Leaves hold most of a plant's chloroplasts, which is why leaves can seem to be the only place it happens.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.light-reactions-location",
+      "concept": "chloroplast",
+      "element": "thylakoid",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Where inside a chloroplast do the light-dependent reactions take place?",
+      "choices": [
+        "In the stroma, the fluid around the thylakoid stacks",
+        "In the thylakoid membranes, inside the stacked sacs",
+        "In the space between the envelope's two membranes",
+        "In the outer envelope membrane, facing the cytoplasm"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "light-reactions-in-stroma",
+        null,
+        null,
+        null
+      ],
+      "explanation": "The pigments and electron transport chain sit in the thylakoid membranes, where the light reactions make ATP and NADPH. The stroma is where the Calvin cycle runs, so it is not where the light reactions happen.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.chloroplast-mitochondrion-jobs",
+      "concept": "chloroplast",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which pairing correctly matches each organelle with its main job?",
+      "choices": [
+        "Chloroplast makes sugar from light; mitochondrion frees energy from sugar",
+        "Chloroplast frees energy from sugar; mitochondrion makes sugar from light",
+        "Chloroplast stores water; mitochondrion builds the cell's proteins",
+        "Chloroplast and mitochondrion both make sugar from light energy"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mitochondria-photosynthesise",
+        null,
+        null
+      ],
+      "explanation": "Chloroplasts capture light and build sugar, and mitochondria break sugar down to release the energy the cell uses. Mitochondria do not make sugar from light, in plants or in animals.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.chloroplast-mitochondrion-explain",
+      "concept": "chloroplast",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why can a chloroplast make sugar from carbon dioxide while a mitochondrion cannot?",
+      "choices": [
+        "Mitochondria make sugar at night, when the chloroplasts rest",
+        "Chloroplasts hold the light-capturing pigments and the Calvin cycle enzymes",
+        "Mitochondria have no membranes, so carbon dioxide cannot get in",
+        "Mitochondria lack DNA, so they cannot make the enzymes needed"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "mitochondria-photosynthesise",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Chloroplasts contain the pigments that absorb light and the enzymes of the Calvin cycle in their stroma. Mitochondria have neither, so they break sugar down rather than build it. Mitochondria do have membranes and their own DNA.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.stem-and-root-error",
+      "concept": "chloroplast",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: 'Only leaves photosynthesise, so a plant's stems and roots never make sugar.' What is wrong with that?",
+      "choices": [
+        "Nothing is wrong, since leaves are where the plant's chloroplasts make sugar",
+        "Any cell with chloroplasts can photosynthesise, and green stems have them",
+        "Roots photosynthesise more than leaves, because they receive more light",
+        "Stems photosynthesise at night, when the leaves have stopped making sugar"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "photosynthesis-only-in-leaves",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Any cell that holds chloroplasts can photosynthesise, and green stems have them. Leaves hold most of a plant's chloroplasts, so they make most of its sugar, but that does not rule out the rest of the plant.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.granum-name",
+      "concept": "chloroplast",
+      "element": "granum",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is a stack of thylakoids in a chloroplast called?",
+      "choices": [
+        "Stroma",
+        "Cristae",
+        "Granum",
+        "Nucleoid"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The thylakoids in a chloroplast are stacked into grana, and the fluid around them is the stroma. Cristae are folds of the inner membrane in mitochondria, and a nucleoid is the region where bacterial DNA sits.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.stroma-light-reactions-error",
+      "concept": "chloroplast",
+      "element": "stroma",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says the light reactions take place in the stroma, because the stroma holds all the enzymes. What is wrong with that?",
+      "choices": [
+        "Nothing is wrong, since the stroma holds every enzyme the chloroplast needs",
+        "The light reactions need the thylakoid membranes, where the pigments sit",
+        "The light reactions take place in the outer membrane, which takes in light",
+        "The stroma lies inside the thylakoids, so the two layers are reversed"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "light-reactions-in-stroma",
+        null,
+        null,
+        null
+      ],
+      "explanation": "The electron transport chain and ATP synthase are built into the thylakoid membrane, so the light reactions need that membrane. The stroma is the fluid where the Calvin cycle's enzymes work, and it does not hold every enzyme in the chloroplast.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.thylakoid-pigments",
+      "concept": "chloroplast",
+      "element": "thylakoid",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which part of a chloroplast holds the light-capturing pigments?",
+      "choices": [
+        "The stroma",
+        "The thylakoid membranes",
+        "The outer envelope",
+        "The fluid inside the nucleus"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "light-reactions-in-stroma",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Chlorophyll and the other pigments are built into the thylakoid membranes, where they capture light. The stroma is the fluid around the thylakoids, where sugar is built. The nucleus is not part of the chloroplast.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.pigment-green-leaves",
+      "concept": "photosynthetic-pigment",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Why do most leaves look green?",
+      "choices": [
+        "They absorb green light and reflect the red and blue",
+        "They reflect green light and absorb most red and blue",
+        "They store green light as sugar in their cells",
+        "Their chloroplasts give off green light into the air"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "green-light-absorbed",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Chlorophyll absorbs mostly red and blue light, and the green it reflects is what reaches the eye. A leaf that absorbed green would look a different colour.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.pigment-main",
+      "concept": "photosynthetic-pigment",
+      "element": "chlorophyll",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which pigment is the main light-absorbing pigment of green plants?",
+      "choices": [
+        "Chlorophyll",
+        "Carotene",
+        "Phycoerythrin",
+        "Melanin"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Chlorophyll is the main pigment of green plants, absorbing mostly red and blue light. Carotene is an accessory pigment, phycoerythrin is an accessory pigment of red algae, and melanin is found in skin and hair.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.absorption-spectrum-meaning",
+      "concept": "photosynthetic-pigment",
+      "element": "absorption-spectrum",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does a pigment's absorption spectrum show?",
+      "choices": [
+        "The number of electrons the pigment passes on each second",
+        "The temperature at which the pigment stops absorbing light",
+        "How strongly the pigment absorbs each wavelength of light",
+        "The sugar the pigment makes from each photon of light"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "An absorption spectrum plots how much light a pigment takes in at each wavelength, which explains why chlorophyll and carotenoids work in different colours. It does not measure electron flow, temperature or sugar production.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.green-light-slower",
+      "concept": "photosynthetic-pigment",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A plant is lit by green light and another by red light, both at the same brightness. How does the green-lit plant's rate of photosynthesis compare?",
+      "choices": [
+        "Slower, because chlorophyll absorbs green light poorly",
+        "The same, because light of any colour drives photosynthesis equally",
+        "Faster, because leaves are green and so absorb green best",
+        "Stopped, because plants cannot use green light at all"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "any-light-equally",
+        "green-light-absorbed",
+        null
+      ],
+      "explanation": "Chlorophyll absorbs red light much better than green, so less usable energy reaches the photosystems under green light. Light of different colours does not work equally, and the green of a leaf shows that green is reflected rather than absorbed.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.chlorophyll-after-photon",
+      "concept": "photosynthetic-pigment",
+      "element": "chlorophyll",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What happens to a chlorophyll molecule after it absorbs a photon of light?",
+      "choices": [
+        "It is converted into sugar and must be replaced by new chlorophyll",
+        "It reflects the photon as green light, so it absorbs nothing",
+        "It turns into carotene, which then absorbs the same photon",
+        "It loses an electron, which it later regains from water"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "pigment-used-up",
+        null,
+        null,
+        null
+      ],
+      "explanation": "A chlorophyll molecule that absorbs a photon loses an electron, which is passed along the transport chain. It regains an electron from water, so it is not used up and does not become sugar.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.carotenoid-role",
+      "concept": "photosynthetic-pigment",
+      "element": "carotenoid",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why do plants have carotenoids as well as chlorophyll?",
+      "choices": [
+        "Chlorophyll alone absorbs every colour equally, so extra pigments are not needed",
+        "They absorb other wavelengths and pass the energy on to chlorophyll",
+        "They open the stomata, so carbon dioxide can enter the leaf",
+        "They are turned into the starch the plant stores in its roots"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "any-light-equally",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Carotenoids absorb blue-green light that chlorophyll takes in poorly, and they pass the energy to chlorophyll. Chlorophyll does not absorb every colour equally, so the extra pigments widen the range of light a leaf can use.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.pigment-used-up-error",
+      "concept": "photosynthetic-pigment",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: 'Chlorophyll gets used up as the plant makes sugar, so the plant has to keep making new chlorophyll.' What is wrong with that?",
+      "choices": [
+        "Nothing is wrong, since chlorophyll's carbon atoms are built into the sugar the leaf makes",
+        "Nothing is wrong, since the pigment breaks down in the dark, so the leaf rebuilds it each night",
+        "Chlorophyll absorbs light and passes electrons on, then regains them, so it is not used up",
+        "Chlorophyll is used up in the dark, when no light reaches the leaf and it cannot be regained"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "pigment-used-up",
+        null,
+        null,
+        null
+      ],
+      "explanation": "A chlorophyll molecule passes an electron on when it absorbs light and gets an electron back from water, so the pigment keeps working. It is a light-absorbing pigment, not a reactant that becomes sugar.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.blue-light-faster",
+      "concept": "photosynthetic-pigment",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "One plant is lit by blue light and another by green light, both at the same brightness. Which plant photosynthesises faster?",
+      "choices": [
+        "The green-lit plant, because leaves are green and so absorb green best",
+        "The blue-lit plant, because chlorophyll absorbs blue light much better than green",
+        "They are equal, because all colours of light drive photosynthesis at the same rate",
+        "The green-lit plant, because more green light reaches the chlorophyll"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "green-light-absorbed",
+        null,
+        "any-light-equally",
+        null
+      ],
+      "explanation": "Chlorophyll absorbs blue light much better than green, so blue light drives more photosynthesis at equal brightness. A leaf looks green because it reflects green, not because it absorbs green best.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.red-algae-deep-water",
+      "concept": "photosynthetic-pigment",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Red algae live deep in water, where red light has been filtered out. Which pigment behaviour lets them still photosynthesise?",
+      "choices": [
+        "Their pigments absorb blue-green light, which passes deepest into water",
+        "Their pigments absorb green light, which water lets through best",
+        "Light of every colour reaches the same depth, so pigment colour makes no difference",
+        "Their pigments absorb red light, which they store and use later"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Water filters out red light first and lets blue-green light through deepest, so pigments that absorb blue-green can still work at depth. Pigment colour matters, because each pigment absorbs some colours far better than others.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.light-products",
+      "concept": "light-dependent-reactions",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What do the light-dependent reactions produce that the Calvin cycle then uses?",
+      "choices": [
+        "ATP and NADPH, carriers of energy and electrons",
+        "Sugar, which is stored as starch in the leaf",
+        "Oxygen, which the Calvin cycle fixes into sugar",
+        "Carbon dioxide, which the leaf takes in through its stomata"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "light-energy-in-sugar",
+        null,
+        null
+      ],
+      "explanation": "The light reactions store light energy in ATP and move electrons into NADPH. The Calvin cycle spends both to build sugar, so sugar is not made in the light reactions themselves.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.oxygen-source",
+      "concept": "light-dependent-reactions",
+      "element": "water-splitting",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Where does the oxygen released in photosynthesis come from?",
+      "choices": [
+        "Carbon dioxide, which is split apart to free its oxygen",
+        "Sugar that the leaf breaks down in the light",
+        "Water, which photosystem II splits apart",
+        "Air drawn in through the open stomata"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "oxygen-from-co2",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Photosystem II splits water to replace the electrons it has lost, and oxygen is released as a by-product. Carbon dioxide supplies the carbon of sugar in the Calvin cycle, not the oxygen.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.photosystem-ii-role",
+      "concept": "light-dependent-reactions",
+      "element": "photosystem-ii",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What does photosystem II do in the light-dependent reactions?",
+      "choices": [
+        "It makes sugar from light and carbon dioxide",
+        "It captures light and passes on an excited electron",
+        "It fixes carbon dioxide into sugar using ATP",
+        "It makes oxygen from the carbon in glucose"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "light-energy-in-sugar",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Photosystem II is a light-harvesting complex that puts an excited electron into the transport chain, and it is refilled by splitting water. It does not make sugar, which the Calvin cycle builds.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.atp-mechanism",
+      "concept": "light-dependent-reactions",
+      "element": "atp-synthase",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "How is ATP made in the light-dependent reactions?",
+      "choices": [
+        "Light falls directly on ADP and turns it into ATP, with no membrane needed",
+        "Glucose is broken down by glycolysis inside the chloroplast stroma",
+        "Oxygen is burned in the stroma to join ADP with a phosphate group",
+        "A proton gradient drives ATP synthase to join ADP and phosphate"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "atp-from-light-directly",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Electron flow pumps protons across the thylakoid membrane, and ATP synthase makes ATP as the protons flow back through it. Light starts the electron flow, but it does not make ATP directly.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.nadp-becomes",
+      "concept": "light-dependent-reactions",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In the light reactions, what does NADP⁺ become?",
+      "choices": [
+        "ATP, which carries chemical energy to the Calvin cycle",
+        "Oxygen, which the leaf releases through its stomata",
+        "NADPH, which carries electrons to the Calvin cycle",
+        "Sugar, which the leaf stores as starch"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Photosystem I passes an electron to NADP⁺, which takes up a hydrogen and becomes NADPH. NADPH and ATP are the two products the Calvin cycle uses.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.water-splitting-role",
+      "concept": "light-dependent-reactions",
+      "element": "water-splitting",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why does splitting water matter in the light reactions, beyond releasing oxygen?",
+      "choices": [
+        "It replaces electrons that photosystem II has lost, keeping the chain running",
+        "It supplies the carbon atoms that the Calvin cycle builds into the sugar",
+        "It makes protons that the Calvin cycle needs in order to make its own ATP",
+        "It stores light energy in water's bonds, which later become the sugar"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "light-energy-in-sugar"
+      ],
+      "explanation": "Photosystem II loses electrons when it absorbs light, and water supplies replacements, so the electron flow keeps going. Water does supply electrons and protons, but the carbon for sugar comes from carbon dioxide.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.atp-from-light-error",
+      "concept": "light-dependent-reactions",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says the light reactions make ATP straight from light, so no membrane is needed. What is wrong with that?",
+      "choices": [
+        "Nothing is wrong, since light energy is turned straight into the bonds of ATP",
+        "Light excites electrons, and a proton gradient across the membrane makes the ATP",
+        "The membrane matters for releasing oxygen, and ATP is made in the stroma",
+        "ATP is made from glucose in the stroma, so the membrane is not involved"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "atp-from-light-directly",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Light excites electrons in the thylakoid membrane. Their energy pumps protons across that membrane, and ATP synthase uses the gradient to make ATP. The membrane is needed for ATP as well as for oxygen.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.photosystem-ii-refill",
+      "concept": "light-dependent-reactions",
+      "element": "photosystem-ii",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Photosystem II loses an electron when it absorbs light. Which molecule gives up electrons to refill it?",
+      "choices": [
+        "Carbon dioxide, which is split to release oxygen",
+        "Water, which is split to release oxygen",
+        "Glucose, which the leaf breaks down in the light",
+        "ADP, which picks up a phosphate group"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "oxygen-from-co2",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Water is split in photosystem II, which refills the electron lost after light is absorbed and releases oxygen. Carbon dioxide is not split in the light reactions.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.atp-steps-order",
+      "concept": "light-dependent-reactions",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps that make ATP in the light-dependent reactions in order.",
+      "steps": [
+        "Photosystem II absorbs a photon, and an electron is excited",
+        "The electron moves down a transport chain, pumping protons into the thylakoid",
+        "Protons flow back through ATP synthase, which makes ATP"
+      ],
+      "explanation": "Each step depends on the one before it. The electron must move before protons are pumped, and the pumped protons must flow back through ATP synthase before any ATP is made.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.photosynthesis.electron-path-order",
+      "concept": "light-dependent-reactions",
+      "kind": "order",
+      "difficulty": 1,
+      "prompt": "Put these steps of electron flow in the light-dependent reactions in order.",
+      "steps": [
+        "Photosystem II absorbs light, and an electron is excited",
+        "The electron moves down a transport chain to photosystem I",
+        "Photosystem I re-excites the electron",
+        "NADP⁺ takes the electron and becomes NADPH"
+      ],
+      "explanation": "The electron leaves photosystem II, passes down the chain to photosystem I, is re-excited there, and is finally taken up by NADP⁺.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.photosynthesis.rubisco-enzyme",
+      "concept": "calvin-cycle",
+      "element": "rubisco",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which enzyme attaches carbon dioxide to RuBP in the Calvin cycle?",
+      "choices": [
+        "RuBisCO",
+        "Lipase",
+        "Hexokinase",
+        "ATP synthase"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "RuBisCO fixes carbon dioxide onto RuBP, the step that starts the Calvin cycle. Lipase breaks down fats, hexokinase starts glycolysis, and ATP synthase makes ATP in the thylakoid membrane.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.dry-mass-source",
+      "concept": "calvin-cycle",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Most of a plant's dry mass is built from which source?",
+      "choices": [
+        "Minerals and water taken up from the soil",
+        "Oxygen taken in from the air through the leaves",
+        "Carbon dioxide from the air, fixed into sugar",
+        "Glucose the plant absorbs through its roots"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "plant-mass-from-soil",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Nearly all of a plant's dry mass is carbon from carbon dioxide, which the Calvin cycle fixes into sugar and then into cellulose and other compounds. Soil supplies water and minerals, which make up very little of the dry mass.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.rubp-attachment",
+      "concept": "calvin-cycle",
+      "element": "rubp",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does RuBisCO attach carbon dioxide to in the Calvin cycle?",
+      "choices": [
+        "ATP, the energy carrier",
+        "RuBP, a five-carbon sugar",
+        "G3P, a three-carbon sugar",
+        "NADPH, the electron carrier"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "RuBisCO joins carbon dioxide to RuBP, a five-carbon sugar, and the product splits into two three-carbon molecules. G3P is made later from those molecules, and ATP and NADPH supply the energy and electrons.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.carbon-input",
+      "concept": "calvin-cycle",
+      "element": "carbon-fixation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which input supplies the carbon atoms that end up in the sugar a plant makes?",
+      "choices": [
+        "Carbon dioxide taken from the air",
+        "Water taken up through the roots",
+        "Oxygen taken from the air",
+        "Minerals taken up from the soil"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "carbon-from-water",
+        null,
+        null
+      ],
+      "explanation": "The carbon in sugar is fixed from carbon dioxide by RuBisCO. Water supplies electrons and protons in the light reactions, and its oxygen is released, so it is not the source of carbon.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.carbon-source-error",
+      "concept": "calvin-cycle",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says photosynthesis splits water to supply the carbon for sugar, while carbon dioxide only supplies oxygen. What is wrong with that?",
+      "choices": [
+        "Nothing is wrong, since the carbon in sugar is taken from water in the light reactions",
+        "Carbon dioxide supplies oxygen, which the leaf keeps for building the sugar",
+        "Carbon dioxide supplies the carbon, and water supplies electrons and protons",
+        "Water supplies the light energy, which the sugar then stores in its bonds"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "carbon-from-water",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Carbon dioxide is fixed into sugar by RuBisCO, so it supplies the carbon. Water is split in the light reactions to supply electrons and protons, and the oxygen from it is released to the air.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.soil-sugar-error",
+      "concept": "calvin-cycle",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says a plant grows by taking its body from the soil, and the sugar it makes comes from soil minerals. What is wrong with that?",
+      "choices": [
+        "Nothing is wrong: minerals from the soil are the carbon source the sugar is built from",
+        "The carbon in sugar is fixed from the air's carbon dioxide, and soil gives water and minerals",
+        "Soil minerals make the sugar, and the air supplies the oxygen the plant needs to live",
+        "The roots supply the sugar directly, and the leaves take in water from the surrounding air"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "plant-mass-from-soil",
+        null,
+        null,
+        null
+      ],
+      "explanation": "The carbon in sugar is fixed from carbon dioxide in the air by the Calvin cycle. The soil supplies water and minerals, which the plant needs but which make up little of its dry mass.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.g3p-count",
+      "concept": "calvin-cycle",
+      "element": "g3p",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "How many G3P molecules are needed to make one glucose molecule?",
+      "choices": [
+        "One, since a single turn of the cycle makes a whole glucose",
+        "Six, one for each carbon atom in the glucose molecule",
+        "Two, since each G3P has three carbons and glucose has six",
+        "Twelve, since each carbon dioxide molecule needs its own G3P to be made"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "one-step-glucose",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Glucose has six carbons and each G3P has three, so two G3P are needed. Most G3P is recycled into RuBP, and the rest leaves the cycle to build glucose and other sugars.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.one-step-error",
+      "concept": "calvin-cycle",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says the Calvin cycle makes glucose from one carbon dioxide molecule in a single step. What is wrong with that?",
+      "choices": [
+        "Nothing is wrong: RuBisCO turns one carbon dioxide into one glucose in one reaction",
+        "Carbon dioxide is fixed onto RuBP, then reduced over several steps, and glucose needs six carbons",
+        "Glucose is made in the light reactions, which produce sugar before the cycle starts",
+        "The cycle makes glucose from water, so carbon dioxide is not one of its inputs"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "one-step-glucose",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Each carbon dioxide is fixed onto RuBP and then reduced in several steps. A glucose has six carbons, so six carbon dioxide molecules are fixed over several turns of the cycle, and no single step makes it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.light-independent-meaning",
+      "concept": "calvin-cycle",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why is the Calvin cycle called light-independent?",
+      "choices": [
+        "It does not use light directly, so it runs whenever ATP and NADPH are supplied",
+        "It runs in the dark, when the light reactions have stopped for the night",
+        "It makes no ATP at all, so it does not need to be powered by any light",
+        "It is named after the pigment that it uses to capture light energy"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "dark-reactions-need-darkness",
+        null,
+        null
+      ],
+      "explanation": "The Calvin cycle needs ATP and NADPH from the light reactions, but it does not use light itself. In daylight it runs alongside the light reactions, and it slows when those products run short.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: Option 1 (runs in the dark) is a common misconception; option 0 is the better answer.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.dark-period-apply",
+      "concept": "calvin-cycle",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Plants get bright light during the day and none at night. What happens to the Calvin cycle during the night?",
+      "choices": [
+        "It speeds up, because the enzymes work best in the dark, away from light",
+        "It stops at once, because the enzymes need light to work directly",
+        "It slows gradually as the ATP and NADPH made in daylight run out",
+        "It keeps running at full speed, fed on the carbon dioxide already in the leaf"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "dark-reactions-need-darkness",
+        null,
+        null,
+        null
+      ],
+      "explanation": "The Calvin cycle needs ATP and NADPH, which the light reactions make only while light falls on the leaf. Without them the cycle slows, and it does not speed up in the dark.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Slows gradually as stored ATP and NADPH run out; the stop-at-once option is wrong because daylight ATP and NADPH persist briefly.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.photosynthesis.calvin-stages-order",
+      "concept": "calvin-cycle",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the three stages of the Calvin cycle in order.",
+      "steps": [
+        "RuBisCO fixes carbon dioxide onto RuBP, producing 3-carbon molecules",
+        "ATP and NADPH reduce these molecules to G3P",
+        "Five of every six G3P regenerate RuBP, and the sixth leaves to make sugar"
+      ],
+      "explanation": "The cycle starts with carbon fixation, which makes the molecules that ATP and NADPH can reduce to G3P. Only then can G3P be spent on regenerating RuBP and on making sugar.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.photosynthesis.tap-granum",
+      "concept": "chloroplast",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap a granum, where most of the chloroplast's light capture by chlorophyll takes place.",
+      "artifact": "chloroplast",
+      "target": "granum",
+      "explanation": "A granum is a stack of thylakoids. Their membranes hold the pigments and photosystems that turn light into ATP and NADPH, and stacking packs a lot of membrane into a small space.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.photosynthesis.tap-stroma",
+      "concept": "calvin-cycle",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the watery compartment where RuBisCO, dissolved among the other Calvin cycle enzymes, fixes carbon dioxide.",
+      "artifact": "chloroplast",
+      "target": "stroma",
+      "explanation": "The Calvin cycle runs in the stroma, the fluid around the thylakoids. Its enzymes, RuBisCO among them, are dissolved there, next to where the thylakoids release ATP and NADPH.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Stroma is the watery space between the thylakoid stacks and the inner membrane, where Calvin cycle enzymes including RuBisCO act. D sits in open stroma away from any membrane. C is on a thylakoid line, E is on a granum stack, and A and B are outside the envelope. b's note: Stroma is the space inside the inner membrane outside the thylakoids. D is clearly plain stroma. C is also mostly stroma but its circle sits on a stroma lamella (thylakoid) joining grana, so it is arguably ambiguous…"
+      }
+    },
+    {
+      "id": "biology.photosynthesis.tap-inner-envelope",
+      "concept": "chloroplast",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the envelope membrane whose transport proteins control which molecules pass between the cytosol and the stroma.",
+      "artifact": "chloroplast",
+      "target": "inner-membrane",
+      "explanation": "The inner envelope membrane is the chloroplast's real barrier. Its transporters move molecules such as sugar phosphates in and out, while the outer membrane lets most small molecules through.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.photosynthesis.tap-outer-envelope",
+      "concept": "chloroplast",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "Tap the envelope membrane whose large channel proteins let most small molecules pass freely.",
+      "artifact": "chloroplast",
+      "target": "outer-membrane",
+      "explanation": "The outer envelope membrane has wide channels, so small molecules cross it easily. The inner membrane, not the outer one, decides what reaches the stroma.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.photosynthesis.tap-stroma-lamella",
+      "concept": "chloroplast",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "Tap the unstacked thylakoid membrane that links one granum to another and is rich in photosystem I and ATP synthase.",
+      "artifact": "chloroplast",
+      "target": "stroma-lamella",
+      "explanation": "Stroma lamellae are single thylakoid membranes running between grana. Their faces touch the stroma, which suits photosystem I and ATP synthase, whose working parts sit on the stroma side.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.photosynthesis.tap-photosystem-ii",
+      "concept": "light-dependent-reactions",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the complex that absorbs light and replaces its lost electrons by splitting water, releasing oxygen.",
+      "artifact": "thylakoid-membrane",
+      "target": "photosystem-ii",
+      "explanation": "Photosystem II's reaction centre loses an electron when it absorbs light. It refills it from water, which is split into oxygen, protons and electrons. This is where the oxygen of photosynthesis comes from.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.photosynthesis.tap-cytochrome-b6f",
+      "concept": "light-dependent-reactions",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the complex that passes electrons from plastoquinone to plastocyanin while moving protons into the thylakoid space.",
+      "artifact": "thylakoid-membrane",
+      "target": "cytochrome-b6f",
+      "explanation": "The cytochrome b6f complex links the two photosystems. As electrons pass through it, protons are moved from the stroma into the thylakoid space, building the gradient that drives ATP synthase.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.photosynthesis.tap-photosystem-i",
+      "concept": "light-dependent-reactions",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the complex that absorbs light a second time, re-energising electrons so they can reduce NADP⁺.",
+      "artifact": "thylakoid-membrane",
+      "target": "photosystem-i",
+      "explanation": "Photosystem I receives electrons that have lost energy along the chain. Absorbing light raises them to a high enough energy to pass, through ferredoxin, to NADP⁺.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.photosynthesis.tap-nadp-reductase",
+      "concept": "light-dependent-reactions",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "Tap the enzyme that hands electrons to NADP⁺, forming the NADPH the Calvin cycle uses.",
+      "artifact": "thylakoid-membrane",
+      "target": "nadp-reductase",
+      "explanation": "NADP⁺ reductase sits on the stroma side of the membrane. It takes electrons from ferredoxin and adds them with a proton to NADP⁺, so NADPH is released right where the Calvin cycle needs it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: Assumes the orange trapezoid is ferredoxin-NADP reductase, not ferredoxin."
+      }
+    },
+    {
+      "id": "biology.photosynthesis.tap-atp-synthase",
+      "concept": "light-dependent-reactions",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the protein that makes ATP as protons flow from the thylakoid space back into the stroma.",
+      "artifact": "thylakoid-membrane",
+      "target": "atp-synthase",
+      "explanation": "Protons are crowded in the thylakoid space. Their flow back through ATP synthase turns part of it, and the head in the stroma joins ADP and phosphate into ATP.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "chloroplast",
+      "kind": "diagram",
+      "title": "Inside a chloroplast",
+      "alt": "An unlabelled chloroplast cut open lengthwise. A terracotta outer membrane surrounds a narrow pale gap and an ochre inner membrane. Inside is pale green stroma dotted with small blue-grey ribosomes. Six stacks of flat dark green discs sit in the stroma, joined to one another by thin, lighter green membrane bridges.",
+      "file": "assets/chloroplast.svg",
+      "hotspots": [
+        {
+          "id": "outer-membrane",
+          "label": "Outer membrane",
+          "x": 0.5,
+          "y": 0.091,
+          "r": 0.05
+        },
+        {
+          "id": "inner-membrane",
+          "label": "Inner membrane",
+          "x": 0.5,
+          "y": 0.837,
+          "r": 0.05
+        },
+        {
+          "id": "granum",
+          "label": "Granum (thylakoid stack)",
+          "x": 0.467,
+          "y": 0.3,
+          "r": 0.05
+        },
+        {
+          "id": "stroma",
+          "label": "Stroma",
+          "x": 0.217,
+          "y": 0.556,
+          "r": 0.05
+        },
+        {
+          "id": "stroma-lamella",
+          "label": "Stroma lamella",
+          "x": 0.533,
+          "y": 0.478,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "thylakoid-membrane",
+      "kind": "diagram",
+      "title": "The light reactions in the thylakoid membrane",
+      "alt": "An unlabelled thylakoid membrane, stroma above and a proton-crowded thylakoid space below. Left to right: a dark green complex struck by light, fed electrons from water that gives off oxygen; a small ochre hexagon in the membrane; a blue-grey complex passing protons downward; a small sand-coloured protein below; a light green complex struck by light; a sand wedge on top turning a white pentagon blue-grey; and ATP synthase, its head in the stroma, with protons flowing up through it.",
+      "file": "assets/thylakoid-membrane.svg",
+      "hotspots": [
+        {
+          "id": "photosystem-ii",
+          "label": "Photosystem II",
+          "x": 0.158,
+          "y": 0.522,
+          "r": 0.05
+        },
+        {
+          "id": "plastoquinone",
+          "label": "Plastoquinone",
+          "x": 0.325,
+          "y": 0.5,
+          "r": 0.05
+        },
+        {
+          "id": "cytochrome-b6f",
+          "label": "Cytochrome b6f complex",
+          "x": 0.454,
+          "y": 0.522,
+          "r": 0.05
+        },
+        {
+          "id": "plastocyanin",
+          "label": "Plastocyanin",
+          "x": 0.567,
+          "y": 0.767,
+          "r": 0.05
+        },
+        {
+          "id": "photosystem-i",
+          "label": "Photosystem I",
+          "x": 0.708,
+          "y": 0.511,
+          "r": 0.05
+        },
+        {
+          "id": "nadp-reductase",
+          "label": "NADP⁺ reductase",
+          "x": 0.733,
+          "y": 0.256,
+          "r": 0.05
+        },
+        {
+          "id": "atp-synthase",
+          "label": "ATP synthase",
+          "x": 0.892,
+          "y": 0.233,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "thylakoid-membrane-steps",
+      "kind": "sequence",
+      "title": "From light to ATP and NADPH",
+      "over": "thylakoid-membrane",
+      "alt": "Six steps: photosystem II absorbs light and splits water, plastoquinone carries electrons to the cytochrome complex, that complex moves protons into the thylakoid space, plastocyanin carries electrons to photosystem I, light re-energises them so NADP⁺ is reduced to NADPH, and protons flow out through ATP synthase to make ATP.",
+      "steps": [
+        {
+          "title": "Light hits photosystem II",
+          "text": "Pigments pass absorbed light energy to photosystem II, which loses an electron. Splitting water replaces it and releases oxygen and protons.",
+          "focus": "photosystem-ii"
+        },
+        {
+          "title": "Plastoquinone carries electrons",
+          "text": "The energised electrons pass to plastoquinone, a small carrier that moves through the membrane to the cytochrome complex.",
+          "focus": "plastoquinone"
+        },
+        {
+          "title": "Protons are pumped",
+          "text": "The cytochrome b6f complex passes electrons on and uses their energy to move protons from the stroma into the thylakoid space.",
+          "focus": "cytochrome-b6f"
+        },
+        {
+          "title": "Plastocyanin delivers",
+          "text": "Plastocyanin, a small protein in the thylakoid space, carries electrons one at a time to photosystem I.",
+          "focus": "plastocyanin"
+        },
+        {
+          "title": "Light again, then NADPH",
+          "text": "Photosystem I absorbs light and re-energises the electrons, which an enzyme on the stroma side uses to reduce NADP⁺ to NADPH.",
+          "focus": "nadp-reductase"
+        },
+        {
+          "title": "ATP synthase makes ATP",
+          "text": "Protons crowded in the thylakoid space flow back to the stroma through ATP synthase, which joins ADP and phosphate into ATP.",
+          "focus": "atp-synthase"
+        }
+      ]
+    }
+  ]
+}

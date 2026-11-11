@@ -1,38 +1,49 @@
-# sources
+# The source catalogue
 
-The catalogue of free learning sources Ceder knows about. One JSON file per source in `entries/<id>.json`, checked by `source.schema.json` and `validate.mjs`. This folder is CC0 1.0 (see `LICENSE`).
+A short list of outside sources worth knowing about, and what Ceder may do with each. It's curated: a source is here because it's good and someone looked at its licence, not because it exists.
 
-The catalogue is curated, not exhaustive. See the repository's `README.md` for the rules.
+It answers two separate questions about a source.
 
-## Fields
+**What may a Ceder app do with it?** (`apps`)
 
-| Field | Required | Meaning |
-|---|---|---|
-| `id` | yes | Lowercase words joined by hyphens. Must match the file name. |
-| `name` | yes | The source's name. |
-| `url` | no | Where the source lives. Left out only for a source with no public address, such as `own-course-files`. |
-| `goodFor` | yes | One sentence: what it is good for. |
-| `license` | yes | An SPDX id such as `CC-BY-4.0`, or `"per-item"` when each item states its own, or `"unknown"`. |
-| `licenseUrl` | no | The page that states the licence. |
-| `use` | yes | `copy`, `copy-share-alike`, `link-only` or `private`. See below. |
-| `attribution` | no | The credit line to show, when known. |
-| `access` | no | How a device would fetch it, such as an API endpoint, when known. |
-| `checked` | yes | `{ "date": "YYYY-MM-DD", "basis": "..." }`, or `null` when the licence hasn't been verified. `basis` says what was read. |
-| `notes` | yes | Anything a reader needs: conflicts, trademarks, limits. Say "unverified" here when `checked` is `null`. |
+| Value | Meaning |
+|---|---|
+| `show` | The app may show it to a student, with the credit in `attribution`. |
+| `link` | The app may link to it and nothing more. Every NonCommercial source is this, because Ceder has paid plans, and so is every source whose licence is unknown or differs item by item. |
+| `private` | A student's own files, used on their device for them alone. |
 
-## The four uses
+**What may go into the bank?** (`bank`) The bank is CC0, and almost nothing else is.
 
-- `copy`: the content may be copied in and shown inside Ceder, with attribution.
-- `copy-share-alike`: may be copied, but only into `share-alike/`, never `bank/`.
-- `link-only`: Ceder may link to it or open it; nothing is copied. Every NonCommercial source is this, because Ceder has paid tiers.
-- `private`: a student's own course files, used on their device for them alone and never in this repository.
+| Value | Meaning |
+|---|---|
+| `copy` | It's CC0, so it may be copied in. Today that's only names from Wikidata. |
+| `read` | An agent may read it through `tools/ref.mjs` to learn what a topic covers, and then writes from its own understanding. Its wording is never copied. |
+| `none` | Agents don't read it and nothing from it goes in. |
 
-## Adding an entry
+The catalogue records; it doesn't permit. What an agent may read while it works on the bank is set by `pipeline/prompts/sources.md` and by what `tools/ref.mjs` reaches, and an entry here can't widen that: the validator refuses a `bank` value other than `none` for a source `tools/ref.mjs` doesn't reach. `plan/sources.jsonl` is a different thing: the log of every page an agent did read.
 
-1. Find the licence on the source's own terms page. Don't rely on memory.
-2. Copy an existing file in `entries/`, name it `<id>.json`, and fill in the fields.
-3. Set `checked` only if you read the terms. Write the date and what you read in `basis`. Otherwise use `null` and say it is unverified in `notes`.
-4. If the licence is NonCommercial, or you can't tell, use `link-only`.
-5. Run `node sources/validate.mjs` from the repository's root, after `npm ci` there.
+## An entry
 
-The validator also fails when `use` doesn't fit the licence: `copy-share-alike` needs a share-alike licence, a NonCommercial licence needs `link-only`, and `copy` needs `CC0`, `CC-BY`, `PDDL` or `MIT` (or `per-item`). Not legal advice.
+One file per source, `entries/<id>.json`:
+
+| Field | |
+|---|---|
+| `id` | Lowercase words joined by hyphens. The file's name. |
+| `name` | What the source is called. |
+| `url` | Its address, when it has one. |
+| `goodFor` | One sentence on what it's useful for. |
+| `license` | An SPDX ID such as `CC-BY-SA-4.0`; `per-item` when it differs from item to item; `unknown` when nobody has found it. |
+| `licenseUrl` | Where the licence is stated, when known. |
+| `apps`, `bank` | As above. |
+| `attribution` | The credit to show. Needed for `show`, unless the source is CC0. |
+| `access` | How it's fetched: an address for an app, a command for an agent. |
+| `checked` | `{ "date", "basis" }`: when the licence was checked and against what. `null` when it wasn't, and then `notes` says so. |
+| `notes` | Anything else worth knowing, and every caveat. |
+
+## Adding or changing one
+
+1. Read the source's licence on its own terms page. A search result or another site's summary isn't that; if it's all you have, say so in `checked.basis`.
+2. Write the entry. When in doubt, `link` and `none`.
+3. Run `node sources/validate.mjs` from the repository's root.
+
+None of this is legal advice.

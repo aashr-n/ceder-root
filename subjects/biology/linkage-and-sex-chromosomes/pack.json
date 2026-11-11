@@ -1,0 +1,1694 @@
+{
+  "formatVersion": 1,
+  "id": "biology.linkage-and-sex-chromosomes",
+  "subject": "biology",
+  "title": "Linkage and sex chromosomes",
+  "summary": "How genes on one chromosome are inherited together, how crossing over maps them, and how genes on the X and Y chromosomes pass to children.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "chromosome-theory-of-inheritance",
+      "name": "Chromosome theory of inheritance",
+      "aliases": [
+        "Chromosomal theory of inheritance",
+        "Sutton-Boveri theory"
+      ],
+      "summary": "Genes sit at fixed positions on chromosomes, so they move through meiosis with the chromosomes that carry them.",
+      "requires": [
+        "meiosis",
+        "chromosome"
+      ],
+      "elements": [
+        {
+          "id": "mendels-factors",
+          "name": "Mendel's factors",
+          "aliases": [
+            "Mendelian factors"
+          ]
+        },
+        {
+          "id": "sutton-and-boveri",
+          "name": "Sutton and Boveri's proposal",
+          "aliases": [
+            "Sutton-Boveri"
+          ]
+        },
+        {
+          "id": "morgans-fly-work",
+          "name": "Morgan's fruit fly work",
+          "aliases": [
+            "Morgan's fly experiments"
+          ]
+        },
+        {
+          "id": "homologous-pairs",
+          "name": "Homologous chromosome pairs",
+          "aliases": [
+            "homologous pairs"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "Before the chromosome theory, Mendel's factors had no known physical home. In 1902 and 1903, Walter Sutton and Theodor Boveri noticed that chromosomes pair and separate in meiosis in the same way Mendel's factors do, and proposed that the factors sit on chromosomes. Each gene has a fixed position, called a locus, on one chromosome, and each chromosome carries many genes. Because whole chromosomes are sorted into gametes, genes on the same chromosome tend to travel together, and genes on different chromosomes sort independently."
+      },
+      "misconceptions": [
+        {
+          "id": "ct-genes-apart",
+          "claim": "Genes are separate from chromosomes, so chromosomes carry no inheritance information.",
+          "correction": "Genes are stretches of DNA at fixed positions on chromosomes. The chromosome is the unit that carries them."
+        },
+        {
+          "id": "ct-blending",
+          "claim": "Inherited factors blend in the offspring, the way two paints mix into one colour.",
+          "correction": "Each gene is a discrete unit on a chromosome, passed on whole. An allele keeps its identity and is not diluted by the other parent's allele."
+        },
+        {
+          "id": "ct-one-chromosome-one-trait",
+          "claim": "Each chromosome controls one trait.",
+          "correction": "A chromosome carries many genes, and each gene can affect one or more traits."
+        }
+      ]
+    },
+    {
+      "id": "genetic-linkage",
+      "name": "Genetic linkage",
+      "aliases": [
+        "Linked genes",
+        "Gene linkage"
+      ],
+      "summary": "Genes on the same chromosome tend to be inherited together, because they do not assort independently unless crossing over separates them.",
+      "requires": [
+        "chromosome-theory-of-inheritance",
+        "genetic-variation-in-meiosis"
+      ],
+      "elements": [
+        {
+          "id": "crossing-over",
+          "name": "Crossing over",
+          "aliases": [
+            "crossovers",
+            "crossover"
+          ]
+        },
+        {
+          "id": "parental-combinations",
+          "name": "Parental combinations",
+          "aliases": [
+            "parental types",
+            "parental gametes"
+          ]
+        },
+        {
+          "id": "independent-assortment",
+          "name": "Independent assortment",
+          "aliases": []
+        }
+      ],
+      "explain": {
+        "text": "Genetic linkage is the tendency of genes that sit close together on one chromosome to be inherited together. Mendel's rule of independent assortment predicts that any two genes sort freely into gametes, but in 1905 Bateson, Saunders and Punnett found sweet pea traits that stayed together more often than that rule allowed. The reason is that the genes share a chromosome, which travels into a gamete with its genes intact. Crossing over in meiosis can swap a segment between the two homologous chromosomes and split linked genes, and the closer the genes, the less often that happens."
+      },
+      "misconceptions": [
+        {
+          "id": "gl-always-together",
+          "claim": "Genes on the same chromosome are always inherited together, with no exceptions.",
+          "correction": "Linked genes usually travel together, but crossing over can split them. How often depends on how far apart they are."
+        },
+        {
+          "id": "gl-independent-always",
+          "claim": "Every pair of genes assorts independently, whatever chromosome they are on.",
+          "correction": "Genes on different chromosomes assort independently. Genes on the same chromosome are linked and do not, unless crossing over separates them."
+        },
+        {
+          "id": "gl-far-together",
+          "claim": "The farther apart two genes are on a chromosome, the more often they are inherited together.",
+          "correction": "The nearer two genes are, the less often crossing over splits them, so the closer they are, the more often they are inherited together."
+        }
+      ]
+    },
+    {
+      "id": "recombination-frequency",
+      "name": "Recombination frequency",
+      "aliases": [
+        "Recombination rate",
+        "Recombination fraction"
+      ],
+      "summary": "The recombination frequency between two genes is the fraction of gametes or offspring that carry a new combination of their alleles, and it rises with distance.",
+      "requires": [
+        "genetic-linkage"
+      ],
+      "elements": [
+        {
+          "id": "recombinant-gametes",
+          "name": "Recombinant gametes",
+          "aliases": [
+            "recombinants",
+            "recombinant offspring"
+          ]
+        },
+        {
+          "id": "double-crossovers",
+          "name": "Double crossovers",
+          "aliases": [
+            "double crossover"
+          ]
+        },
+        {
+          "id": "fifty-percent-recombination",
+          "name": "50% recombination",
+          "aliases": [
+            "50 percent recombination"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "The recombination frequency between two genes is the fraction of gametes, or offspring, that carry a new combination of their alleles. A crossover between the genes makes such a combination. Close genes rarely have a crossover between them, so the frequency is small. Distant genes are split in about half of their gametes, so their frequency approaches 50%, the same as genes on different chromosomes. A frequency of 50% therefore means unlinked. Dividing by the total gives a percentage, and 1% is called one centimorgan."
+      },
+      "misconceptions": [
+        {
+          "id": "rf-fifty-means-linked",
+          "claim": "A recombination frequency of 50% means the two genes lie very close together.",
+          "correction": "50% means the genes assort as if unlinked, either on different chromosomes or so far apart that they behave that way."
+        },
+        {
+          "id": "rf-changes-alleles",
+          "claim": "Recombination changes the alleles themselves, creating new versions of a gene.",
+          "correction": "Recombination swaps existing segments between homologous chromosomes. Each allele stays the same, and only the combinations change."
+        },
+        {
+          "id": "rf-more-recombinants-closer",
+          "claim": "More recombinant offspring means the two genes are closer together.",
+          "correction": "More recombinants mean more crossing over between the genes, so they are farther apart. Fewer recombinants mean closer."
+        }
+      ]
+    },
+    {
+      "id": "genetic-map",
+      "name": "Genetic map",
+      "aliases": [
+        "Linkage map",
+        "Genetic linkage map",
+        "Linkage maps"
+      ],
+      "summary": "A genetic map orders genes along a chromosome, with distances in centimorgans taken from recombination frequencies.",
+      "requires": [
+        "recombination-frequency"
+      ],
+      "elements": [
+        {
+          "id": "centimorgan",
+          "name": "Centimorgan",
+          "aliases": [
+            "cM",
+            "map unit",
+            "map units"
+          ]
+        },
+        {
+          "id": "gene-order",
+          "name": "Gene order",
+          "aliases": []
+        },
+        {
+          "id": "three-point-cross",
+          "name": "Three-point cross",
+          "aliases": [
+            "three-gene cross"
+          ]
+        },
+        {
+          "id": "physical-and-map-distance",
+          "name": "Physical and map distance",
+          "aliases": []
+        }
+      ],
+      "explain": {
+        "text": "A genetic map, also called a linkage map, lists genes in order along a chromosome, spaced by how often they recombine. Its unit is the centimorgan, where 1 cM is a recombination frequency of 1%. To place three genes, a cross is scored, and the two rarest classes of offspring are the double crossovers, which differ from the parents only at the middle gene. Map distances are not physical lengths: the DNA covered by one unit varies along a chromosome and between species. Short distances add up well, but long ones can hide double crossovers."
+      },
+      "misconceptions": [
+        {
+          "id": "gm-physical",
+          "claim": "A genetic map shows the physical distance between genes in base pairs.",
+          "correction": "A genetic map shows distance as recombination frequency, in centimorgans. It is not a count of DNA bases."
+        },
+        {
+          "id": "gm-additive",
+          "claim": "Map distances always add up exactly, however long the stretch.",
+          "correction": "Short distances add up well. Over long stretches, double crossovers hide some recombinants, so the sum undercounts the true distance."
+        },
+        {
+          "id": "gm-uniform",
+          "claim": "One centimorgan is the same length of DNA everywhere in the genome and in every species.",
+          "correction": "The number of base pairs per map unit varies along a chromosome and between species and sexes."
+        }
+      ]
+    },
+    {
+      "id": "sex-linked-inheritance",
+      "name": "Sex-linked inheritance",
+      "aliases": [
+        "X-linked inheritance",
+        "Sex linkage",
+        "Sex-linked traits"
+      ],
+      "summary": "Genes on the X chromosome follow the sexes differently, so X-linked recessive traits appear more often in males.",
+      "requires": [
+        "chromosome-theory-of-inheritance"
+      ],
+      "elements": [
+        {
+          "id": "x-linked-recessive",
+          "name": "X-linked recessive traits",
+          "aliases": [
+            "X-linked recessive"
+          ]
+        },
+        {
+          "id": "carriers",
+          "name": "Carriers",
+          "aliases": [
+            "carrier"
+          ]
+        },
+        {
+          "id": "dosage-compensation",
+          "name": "Dosage compensation",
+          "aliases": [
+            "X inactivation"
+          ]
+        },
+        {
+          "id": "y-chromosome-genes",
+          "name": "Genes on the Y",
+          "aliases": [
+            "Y-linked genes"
+          ]
+        },
+        {
+          "id": "morgans-fly-work",
+          "name": "Morgan's white-eyed flies",
+          "aliases": [
+            "white-eyed flies"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "Sex-linked genes sit on the X chromosome, which is not the same in the two sexes. Females have two X chromosomes and males have one X and one Y. A recessive allele on a male's only X shows, because no second X can cover it, while a female needs the allele on both X chromosomes. A son always gets his X from his mother, and a daughter gets one X from each parent. That is why X-linked traits such as red-green colour blindness and haemophilia appear more often in males, and why a son can inherit the allele from his mother even when his father is unaffected."
+      },
+      "misconceptions": [
+        {
+          "id": "sl-y-empty",
+          "claim": "The Y chromosome carries no genes, so only the X matters in inheritance.",
+          "correction": "The Y carries a few genes, including SRY, which starts male development. Most of its DNA differs from the X."
+        },
+        {
+          "id": "sl-son-from-father",
+          "claim": "A child gets an X-linked trait from the father.",
+          "correction": "A son gets his only X from his mother, so an X-linked allele comes from her. A daughter gets one X from each parent."
+        },
+        {
+          "id": "sl-same-dose",
+          "claim": "Males and females get the same dose of X genes, so X-linked traits show the same way in both.",
+          "correction": "Males have one X and females two. A recessive X-linked allele shows in a male with one copy, but a female needs two."
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "biology.linkage-and-sex-chromosomes.ct-where-genes-are",
+      "concept": "chromosome-theory-of-inheritance",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "According to the chromosome theory of inheritance, where are genes located?",
+      "explanation": "Each gene has a fixed position, called a locus, on a chromosome, so it moves with that chromosome. The tempting error is that genes float apart from chromosomes, which the theory rules out.",
+      "choices": [
+        "Floating free in the cytoplasm, not on chromosomes",
+        "At fixed positions along chromosomes",
+        "In the membrane around the nucleus",
+        "On the X and Y chromosomes, the sex pair"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "ct-genes-apart",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.ct-blending-allele",
+      "concept": "chromosome-theory-of-inheritance",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says an offspring's allele is a mix of both parents' alleles, like paints blended into one colour. What is the correct idea?",
+      "explanation": "A gene keeps its identity because it is a discrete unit on a chromosome, and each parent passes on whole chromosomes. The tempting error is the blend, which treats alleles as diluted when they are passed on.",
+      "choices": [
+        "Each allele mixes with the other parent's allele in the zygote",
+        "Each gene is a discrete unit on a chromosome, passed on whole",
+        "Alleles are diluted each time they pass to a child",
+        "Alleles are stored in the nucleolus, away from chromosomes"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "ct-blending",
+        null,
+        "ct-blending",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.ct-many-genes",
+      "concept": "chromosome-theory-of-inheritance",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "One chromosome in a cell carries genes for three different traits. What does this show?",
+      "explanation": "A chromosome holds many genes, and each gene can affect one or more traits. The tempting error is that each chromosome has one job, which would need a separate chromosome for every trait.",
+      "choices": [
+        "Each chromosome controls exactly one trait, so three are needed",
+        "The three genes blend, so the traits show as one mixed trait",
+        "The chromosome is a copy of one gene, so the genes are separate",
+        "One chromosome can carry many genes, each affecting a trait"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "ct-one-chromosome-one-trait",
+        "ct-blending",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.ct-support",
+      "concept": "chromosome-theory-of-inheritance",
+      "element": "mendels-factors",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which finding best supported the idea that chromosomes carry Mendel's factors?",
+      "explanation": "Sutton and Boveri saw that chromosomes pair and separate in meiosis in step with Mendel's factors. The tempting error is the one-trait idea, which treats a chromosome as a single switch, when each chromosome carries many genes.",
+      "choices": [
+        "Homologous chromosomes pair and split as Mendel's factors do",
+        "Chromosomes were seen to carry protein but no inheritance role",
+        "Offspring showed a blend of their parents' traits",
+        "Each chromosome was seen to control exactly one trait"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "ct-blending",
+        "ct-one-chromosome-one-trait"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.ct-sutton",
+      "concept": "chromosome-theory-of-inheritance",
+      "element": "sutton-and-boveri",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which two scientists proposed around 1902 that chromosomes carry Mendel's units of heredity?",
+      "explanation": "Walter Sutton and Theodor Boveri made this proposal independently. The tempting error is Morgan, who later tested the idea with fruit flies but did not first propose it.",
+      "choices": [
+        "Thomas Hunt Morgan and Alfred Sturtevant",
+        "Walter Sutton and Theodor Boveri",
+        "William Bateson and Reginald Punnett",
+        "Gregor Mendel and Hugo de Vries"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.ct-morgan-flies",
+      "concept": "chromosome-theory-of-inheritance",
+      "element": "morgans-fly-work",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In one of Morgan's crosses, the white-eye trait showed up only in male offspring. What does this support?",
+      "explanation": "The white-eye allele sits on the X chromosome, and males have one X while females have two, which gives the sexes different patterns. The tempting error is that each chromosome sets one trait, which the data do not show.",
+      "choices": [
+        "Eye colour depends on how many chromosomes a fly has, not on its genes",
+        "The eye-colour gene rides on the X chromosome, which differs by sex",
+        "Eye colour blends from both parents, so males and females differ",
+        "Each chromosome sets one trait, and the X sets eye colour alone"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        "ct-blending",
+        "ct-one-chromosome-one-trait"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.ct-independent",
+      "concept": "chromosome-theory-of-inheritance",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Genes A and B sit on different chromosomes. What does the chromosome theory predict about how they are inherited?",
+      "explanation": "Chromosomes sort into gametes independently of one another, so genes on different chromosomes do too. The tempting error is that the genes stay together because both are in one cell, which confuses the cell with the chromosome.",
+      "choices": [
+        "They always stay together, since both are present in the same cell",
+        "They assort independently, since each chromosome sorts on its own",
+        "They blend, so each offspring gets a mixture of A and B",
+        "They travel together, since every gene sits on one chromosome"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        "ct-blending",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.ct-chromosome-12",
+      "concept": "chromosome-theory-of-inheritance",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A geneticist finds a gene on chromosome 12. Which statement follows from the chromosome theory?",
+      "explanation": "A gene has a fixed position on its chromosome, so it moves with that chromosome through meiosis. The tempting error is that genes float free of chromosomes, which the theory rules out.",
+      "choices": [
+        "The gene can pass with any chromosome, since genes are free",
+        "The gene follows chromosome 12 through meiosis into gametes",
+        "Chromosome 12 carries only this gene and no other genes",
+        "The gene blends with its partner from the other parent"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "ct-genes-apart",
+        null,
+        "ct-one-chromosome-one-trait",
+        "ct-blending"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.ct-meiosis-order",
+      "concept": "chromosome-theory-of-inheritance",
+      "element": "homologous-pairs",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these events of meiosis I in order, for one pair of homologous chromosomes.",
+      "explanation": "Homologous chromosomes pair up in prophase I, line up across the middle in metaphase I, and are pulled apart in anaphase I. The tempting error is putting the separation before the pairing.",
+      "steps": [
+        "Homologous chromosomes pair up side by side along their length.",
+        "The pairs line up across the middle of the cell.",
+        "Each pair is pulled apart, so one chromosome goes to each new cell."
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Pairing, then alignment at the middle, then separation of homologs."
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.gl-definition",
+      "concept": "genetic-linkage",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is genetic linkage?",
+      "explanation": "Linked genes sit close together on one chromosome, so they usually move into a gamete together. The tempting error is that genes on separate chromosomes are linked, which is the opposite of what linkage means.",
+      "choices": [
+        "Genes on separate chromosomes always being inherited together",
+        "One mutation that changes two genes at once, during one cell division",
+        "Two alleles blending into one form in the offspring",
+        "Nearby genes on one chromosome tending to be inherited together"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        null,
+        "ct-blending",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.gl-two-genes",
+      "concept": "genetic-linkage",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Two genes lie close together on chromosome 3. How often are they inherited together?",
+      "explanation": "Crossing over is rare between close genes, so they usually stay together. The tempting error is that they always stay together, which ignores the crossovers that do split them.",
+      "choices": [
+        "Always, with no exceptions, since they share a chromosome",
+        "Usually, because crossing over rarely splits genes that are close",
+        "About half the time, the same rate as genes on different chromosomes",
+        "Rarely, since linked genes are always split apart"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "gl-always-together",
+        null,
+        "gl-independent-always",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.gl-far-apart",
+      "concept": "genetic-linkage",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Two genes are far apart on one chromosome. How often are they inherited together?",
+      "explanation": "Far-apart genes are separated by crossing over about half the time, so they behave nearly like unlinked genes. The tempting error is that distance makes genes stick together, which runs the wrong way.",
+      "choices": [
+        "Almost always, because they share one chromosome",
+        "About half the time, close to genes on different chromosomes",
+        "Almost always, since the farther apart the more they stay together",
+        "Never, since genes on one chromosome cannot be split apart"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "gl-always-together",
+        null,
+        "gl-far-together",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Far-apart genes on one chromosome behave close to unlinked (about 50%); the choice is acceptable.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.gl-student-claim",
+      "concept": "genetic-linkage",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says the farther apart two genes are on a chromosome, the more often they are inherited together. What is wrong with that?",
+      "explanation": "Crossing over falls between far-apart genes more often, so they are split more. The tempting error is to accept the student's claim, which reverses the relation.",
+      "choices": [
+        "Nothing: the farther apart the genes, the more often they stay together",
+        "It is backwards: nearer genes are split less and stay together more",
+        "Nothing: linked genes are always inherited together",
+        "The genes assort independently, so distance does not matter"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "gl-far-together",
+        null,
+        "gl-always-together",
+        "gl-independent-always"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.gl-crossing-over",
+      "concept": "genetic-linkage",
+      "element": "crossing-over",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Two genes on chromosome 1 are inherited together in most offspring, but a few offspring show them apart. What explains those few?",
+      "explanation": "Crossing over in meiosis swaps matching segments between homologous chromosomes, which splits genes that were linked. The tempting error is that the genes were on different chromosomes all along, which would make them assort freely.",
+      "choices": [
+        "The alleles blended, so one gene's allele was diluted in the offspring",
+        "Crossing over swapped matching segments of homologous chromosomes",
+        "The genes were on different chromosomes, so they assorted freely",
+        "A mutation changed one gene's allele during meiosis itself"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "ct-blending",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.gl-gametes",
+      "concept": "genetic-linkage",
+      "element": "parental-combinations",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A parent has dominant alleles A and B on one chromosome and recessive alleles a and b on its partner. Which gametes are most common when A and B are close together?",
+      "explanation": "With A and B close on one chromosome, most gametes keep the parental pairing, AB or ab, because crossing over is rare between them. The tempting error is four equal gametes, which is what independent assortment would give.",
+      "choices": [
+        "Four equal gametes, since every pair of genes assorts freely",
+        "The two parental gametes, AB and ab, since crossovers are rare",
+        "Recombinant gametes, since linked genes never stay together",
+        "One gamete type, because the dominant alleles cancel each other"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "gl-independent-always",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.gl-what-determines",
+      "concept": "genetic-linkage",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Two genes lie on the same chromosome. What decides how strongly they are linked?",
+      "explanation": "Linkage weakens as genes move apart, because crossing over becomes more likely between them. The tempting error is that dominance or allele count sets linkage, which it does not.",
+      "choices": [
+        "How many alleles each gene has in the whole population",
+        "How far apart the two genes are along that chromosome",
+        "Whether each gene's allele is dominant or recessive in the cross",
+        "Which parent each gene came from in the previous generation"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.gl-order",
+      "concept": "genetic-linkage",
+      "element": "crossing-over",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps of crossing over in meiosis in order.",
+      "explanation": "Pairing comes first, then the exchange at matching points, then separation into gametes that carry the recombined segments. The tempting error is putting the exchange after the gametes form.",
+      "steps": [
+        "Homologous chromosomes pair up closely, side by side.",
+        "Two non-sister chromatids break at matching points and swap segments.",
+        "The chromatids separate into gametes, some with new allele combinations."
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Step wording 'chromatids separate into gametes' is loose; order is still clear."
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.gl-why-not-independent",
+      "concept": "genetic-linkage",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why do linked genes not assort independently?",
+      "explanation": "Genes on one chromosome go into a gamete as a unit, except where crossing over swaps segments. The tempting error is that linked genes are on different chromosomes, which would let them assort freely.",
+      "choices": [
+        "They always move together, since crossing over never happens during meiosis",
+        "They share a chromosome and move together unless a crossover splits them",
+        "They are on different chromosomes, so they assort freely",
+        "Each carries a dominant allele, which keeps the pair together"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "gl-always-together",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.rf-definition",
+      "concept": "recombination-frequency",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the recombination frequency between two genes?",
+      "explanation": "Recombination frequency is the share of gametes or offspring in which crossing over leaves the two genes in a new combination. The tempting error is that recombination changes alleles, when it only reshuffles existing ones.",
+      "choices": [
+        "The number of genes lying between the two genes on that chromosome",
+        "The chance a mutation changes one of the two genes",
+        "The fraction of gametes or offspring with a new allele combination",
+        "The percentage of offspring that show both dominant traits"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        "rf-changes-alleles",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.rf-compare-pairs",
+      "concept": "recombination-frequency",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Pair X gives 30 recombinant offspring out of 100. Pair Y gives 5 out of 100. Which pair is closer on the chromosome?",
+      "explanation": "Recombinants come from crossovers between the genes, so fewer recombinants means fewer crossovers and closer genes. The tempting error is reading more recombinants as closer genes, which runs the other way.",
+      "choices": [
+        "Pair X, since more recombinants mean the two genes are closer together",
+        "Pair Y, since fewer recombinants means less crossing over between them",
+        "They are equally close, since both families have 100 offspring",
+        "Neither, since recombination says nothing about distance"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "rf-more-recombinants-closer",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.rf-fifty",
+      "concept": "recombination-frequency",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Two genes show a recombination frequency of 50%. What does this mean?",
+      "explanation": "A 50% recombination frequency is the value for unlinked genes, which assort independently. The tempting error is that 50% means close together, which reverses the meaning.",
+      "choices": [
+        "The genes are very close together on one chromosome",
+        "The genes are on one chromosome but always move together",
+        "Every single gamete carries a new combination of the two genes' alleles",
+        "The genes assort as if unlinked, on separate chromosomes or far apart"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "rf-fifty-means-linked",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.rf-three-percent",
+      "concept": "recombination-frequency",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A recombination frequency of 3% is measured between two genes. What does that show?",
+      "explanation": "A recombination frequency of 3% means the genes are linked and about 3 cM apart. The tempting error is reading the number as 3 base pairs, which confuses map distance with physical distance.",
+      "choices": [
+        "The genes are about 3 base pairs apart on that chromosome",
+        "The genes are linked and about 3 map units (cM) apart",
+        "The genes are far apart, since only 3% of offspring recombine",
+        "The genes are on different chromosomes, so they assort freely"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "gm-physical",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.rf-six-cm",
+      "concept": "recombination-frequency",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Two genes are 6 centimorgans apart. What percentage of their gametes should be recombinant?",
+      "explanation": "One centimorgan is a 1% recombination frequency, so 6 cM means 6% recombinant gametes. The tempting error is halving the distance, which has no basis in the calculation.",
+      "choices": [
+        "3%, half the map distance, since each parent contributes half",
+        "6%, since 1 cM is a recombination frequency of 1%",
+        "12%, twice the map distance, since two crossovers are counted",
+        "94%, the rest of the gametes, since recombinants are rare"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.rf-close-genes",
+      "concept": "recombination-frequency",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why are recombinant gametes rarer for two genes that lie close together?",
+      "explanation": "Recombinant gametes need a crossover between the genes, and close genes leave little room for one. The tempting error is the blend idea, which treats alleles as diluted rather than swapped.",
+      "choices": [
+        "Close genes carry fewer alleles each, so there are fewer possible new combinations",
+        "Close genes blend together into one allele, so their alleles cannot be swapped",
+        "Crossing over falls between close genes less often, so few gametes recombine",
+        "Close genes sit on different chromosomes, so they rarely end up in the same gamete"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        "ct-blending",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.rf-distant-genes",
+      "concept": "recombination-frequency",
+      "element": "double-crossovers",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why does the recombination frequency between very distant genes underestimate their true distance?",
+      "explanation": "A double crossover between distant genes puts the outer genes back in their parental arrangement, so the count misses it. The tempting error is the blend idea, which has nothing to do with how crossovers are counted.",
+      "choices": [
+        "Distant genes blend, so their alleles look alike and hide the change",
+        "Two crossovers between them can cancel, hiding some recombinations",
+        "Each crossover moves the genes farther apart, which adds distance",
+        "Distant genes are always on different chromosomes, so no swap is seen"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "ct-blending",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.rf-changes-alleles",
+      "concept": "recombination-frequency",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: 'Recombination changes the alleles themselves, making new versions of the genes.' What is wrong with that?",
+      "explanation": "Recombination swaps existing segments between homologous chromosomes, so each allele stays the same. The tempting error is that crossing over creates new alleles, which is the job of mutation.",
+      "choices": [
+        "Nothing: each crossover makes brand new versions of the genes themselves",
+        "It only reshuffles existing alleles between chromosomes, unchanged",
+        "Nothing: genes change only by blending together during meiosis",
+        "The student is right only in females, since crossing over happens there"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "rf-changes-alleles",
+        null,
+        "ct-blending",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.rf-which-pair",
+      "concept": "recombination-frequency",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which pair of genes would show a recombination frequency near 50%?",
+      "explanation": "Genes on separate chromosomes assort independently, so their recombination frequency is 50%. The tempting error is picking neighbouring genes, which give a low frequency.",
+      "choices": [
+        "Two genes located right next to each other on one chromosome",
+        "Two genes located on separate chromosomes of the cell",
+        "Two alleles of the very same gene at one locus",
+        "Two genes on one chromosome, about 2 cM apart in the map"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Distant genes on the same chromosome would also give near 50%; the choice is the clearest correct one.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.rf-order",
+      "concept": "recombination-frequency",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps for finding a recombination frequency from a test cross in order.",
+      "explanation": "The counts come first, then the division gives a fraction, and multiplying by 100 turns it into a percentage. The tempting error is dividing by the parental count, which gives the wrong fraction.",
+      "steps": [
+        "Sort every offspring into parental or recombinant types, and count each type.",
+        "Divide the number of recombinant offspring by the total number of offspring.",
+        "Multiply the result by 100 to give a percentage, which is the distance in cM."
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.gm-definition",
+      "concept": "genetic-map",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does a genetic map show?",
+      "explanation": "A genetic map orders genes by how often they recombine, which reflects how far apart they are. The tempting error is a physical map of bases, which is a different thing.",
+      "choices": [
+        "A drawing of a chromosome with every base pair marked in order",
+        "A list of every allele found in one population of living organisms",
+        "The order of genes on a chromosome, spaced by recombination rate",
+        "A chart showing which parent passed on each gene in a family"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "gm-physical",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.gm-unit",
+      "concept": "genetic-map",
+      "element": "centimorgan",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What unit is used on a genetic map?",
+      "explanation": "The centimorgan measures recombination frequency, so it describes spacing in map terms. The tempting error is the base pair, which counts DNA letters and is not a map unit.",
+      "choices": [
+        "The gene, counted as the number of genes lying in each stretch of DNA",
+        "The centimorgan, where 1 cM equals a 1% recombination frequency",
+        "The base pair, which counts the DNA letters between two genes",
+        "The chromosome, counted as the number of pairs in the cell"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        "gm-physical",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.gm-short-add",
+      "concept": "genetic-map",
+      "element": "gene-order",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Gene A is 10 cM from gene B, and gene B is 5 cM from gene C, with B between them. How far apart are A and C?",
+      "explanation": "A and B are 10 cM apart and B and C are 5 cM apart, with B between them, so A and C are 15 cM apart for these short intervals. The tempting error is picking one of the single intervals, which ignores the gene between.",
+      "choices": [
+        "5 cM, the shorter of the two distances",
+        "15 cM, since distances this short add up",
+        "10 cM, the longer of the two distances",
+        "50 cM, since genes are 50 cM apart on average"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.gm-long-claim",
+      "concept": "genetic-map",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student adds 30 cM and 40 cM for two long stretches and says the outer genes are 70 cM apart. What is the flaw?",
+      "explanation": "Over long stretches, two crossovers can cancel and leave no visible recombinant, so the summed frequencies undercount. The tempting error is that map distances add without limit, which holds for short stretches.",
+      "choices": [
+        "There is no flaw, since map distances always add exactly over any length",
+        "Long stretches hide double crossovers, so their sum can undercount",
+        "The student used the wrong genes, which should be 10 cM apart",
+        "Map distances cannot be added, since they are measured in bases"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "gm-additive",
+        null,
+        null,
+        "gm-physical"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.gm-physical-vs-map",
+      "concept": "genetic-map",
+      "element": "physical-and-map-distance",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Does one centimorgan correspond to the same number of DNA base pairs in every part of the genome?",
+      "explanation": "Recombination rates differ along a chromosome and between species, so the same map distance can span different amounts of DNA. The tempting error is the fixed-length idea, which treats a map unit as a ruler.",
+      "choices": [
+        "Yes, since a centimorgan is one fixed length of DNA in every region",
+        "Yes, since recombination frequency is always measured in bases",
+        "Yes, since every chromosome holds the same number of base pairs",
+        "No: a map unit's DNA length varies along chromosomes and species"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "gm-uniform",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.gm-uniform-unit",
+      "concept": "genetic-map",
+      "element": "physical-and-map-distance",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Two stretches on one chromosome are each 2 cM long. Why might one of them span more DNA than the other?",
+      "explanation": "A map unit reflects how often crossing over occurs, and that rate changes along the chromosome, so the DNA per unit changes too. The tempting error is that a map unit is a fixed ruler, which it is not.",
+      "choices": [
+        "Map units are fixed lengths of DNA, so 2 cM always covers the same number of bases",
+        "Crossing over happens at uneven rates, so equal map distances span different DNA",
+        "Map units count genes, so a region with more genes covers more DNA in total",
+        "Map units count alleles, so 2 cM means two alleles in every region of the chromosome"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "gm-uniform",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.gm-order-genes",
+      "concept": "genetic-map",
+      "element": "three-point-cross",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Genes A, B and C are scored in a cross. The two rarest classes of offspring differ from the parental types only at gene B. Where does gene B lie?",
+      "explanation": "Two crossovers, one on each side of the middle gene, switch only that gene, so those double crossovers are the rarest classes. The tempting error is that the rarest classes are parental types, which they are not.",
+      "choices": [
+        "At one end, since only end genes can switch in a crossover",
+        "In the middle, since double crossovers switch only the middle gene",
+        "At one end, since the rarest classes are the parental types themselves",
+        "Cannot be told, since the rarest classes say nothing about order"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.gm-most-accurate",
+      "concept": "genetic-map",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Map distances are most accurate when they are what?",
+      "explanation": "When the stretch is short, a double crossover is unlikely, so the recombination frequency estimates distance well. The tempting error is that long stretches average out, which they do not, since double crossovers hide recombinants.",
+      "choices": [
+        "Long, so small errors average out across the whole stretch",
+        "Short, so double crossovers are rare and the sums are reliable",
+        "Measured in base pairs, not in centimorgans, so units match",
+        "Between genes on two different chromosomes, which are unlinked"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        "gm-physical",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.gm-order",
+      "concept": "genetic-map",
+      "element": "gene-order",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps for building a genetic map from pairs of linked genes in order.",
+      "explanation": "Frequencies come first, then conversion to map units, and only then is the order worked out from distances that fit. The tempting error is placing genes before measuring any distances.",
+      "steps": [
+        "Measure the recombination frequency for each pair of linked genes.",
+        "Convert each frequency into centimorgans, with 1% equal to 1 cM.",
+        "Arrange the genes in a line so that the distances between neighbours fit."
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.sl-sex-chromosomes",
+      "concept": "sex-linked-inheritance",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which chromosomes are the human sex chromosomes?",
+      "explanation": "Females are XX and males are XY, so the X and Y are the sex chromosomes. The tempting error is reversing the counts, which is a slip rather than a belief about inheritance.",
+      "choices": [
+        "Two copies of chromosome 1, one from each parent",
+        "Two X chromosomes in males and one in females",
+        "X and Y, with females XX and males XY",
+        "Two Y chromosomes in females and one in males"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.sl-who-two-x",
+      "concept": "sex-linked-inheritance",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which sex has two X chromosomes in humans?",
+      "explanation": "Females have XX, one X from each parent, and males have one X with a Y. The tempting error is that both sexes carry two X chromosomes, which ignores the Y.",
+      "choices": [
+        "Males, who have XY, one from each parent",
+        "Females, who have XX, one from each parent",
+        "Both sexes equally, since both carry two X chromosomes",
+        "Neither sex, since the X is found just in eggs"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        "sl-same-dose",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.sl-y-gene",
+      "concept": "sex-linked-inheritance",
+      "element": "y-chromosome-genes",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which chromosome carries the SRY gene that starts male development?",
+      "explanation": "SRY is on the Y chromosome, which is found in males. The tempting error is the X, which both sexes carry and which a student might assume holds the only genes.",
+      "choices": [
+        "The X chromosome, which both sexes carry",
+        "Chromosome 1, the largest of the non-sex chromosomes",
+        "The Y chromosome, which is found in males",
+        "Neither, since sex is set by the environment"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.sl-y-chromosome-error",
+      "concept": "sex-linked-inheritance",
+      "element": "y-chromosome-genes",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'The Y chromosome carries no genes, so only the X matters in inheritance.' What is wrong with that?",
+      "explanation": "The Y is small but carries genes, including SRY, which starts male development in an embryo. The tempting error is to treat the small Y as empty.",
+      "choices": [
+        "The student is right, since the Y chromosome is almost empty of genes",
+        "The Y carries a few genes, including SRY, for male development",
+        "The student is right, since only X genes ever reach a child",
+        "The student is wrong, because the X carries no genes at all"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "sl-y-empty",
+        null,
+        "sl-y-empty",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.sl-carrier-son",
+      "concept": "sex-linked-inheritance",
+      "element": "x-linked-recessive",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A woman carries one copy of a recessive X-linked allele, and the father is unaffected. What is the chance a son shows the trait?",
+      "explanation": "The son gets his only X from his mother, and she passes the recessive copy on half the time. The tempting error is 25%, which treats the father as a source of the allele, but he has no copy to pass on.",
+      "choices": [
+        "0%, since a carrier mother's sons are always spared the trait",
+        "50%, since he gets one of her two X chromosomes at random",
+        "100%, since every son gets the mother's recessive allele",
+        "25%, since the trait needs one recessive allele from each parent"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.sl-father-daughters",
+      "concept": "sex-linked-inheritance",
+      "element": "carriers",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A man has an X-linked recessive trait, and the mother is not a carrier. What is true of his daughters?",
+      "explanation": "A daughter gets one X from each parent, so she gets her father's affected X and is a carrier, while her mother's normal X covers the allele. The tempting error is that all daughters are affected, which would need a second copy from the mother.",
+      "choices": [
+        "All are affected, since the trait comes straight from the father",
+        "All are carriers, since each daughter gets his affected X",
+        "None are carriers, since fathers pass the Y chromosome to daughters",
+        "Half are carriers and half are unaffected, as for any ordinary gene"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "sl-son-from-father",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.sl-son-father",
+      "concept": "sex-linked-inheritance",
+      "element": "x-linked-recessive",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A man has an X-linked recessive trait, and his wife is a carrier. Which sons could show the trait?",
+      "explanation": "A son gets his Y from his father and his X from his mother, so the father's affected X never reaches a son. The tempting error is that every son inherits the trait from him.",
+      "choices": [
+        "All sons, since each son inherits the trait directly from his affected father",
+        "Sons who get the mother's recessive X, since sons take their X from her",
+        "All sons, since the father's X chromosome goes to every son born",
+        "No sons, because the trait passes from fathers to daughters"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "sl-son-from-father",
+        null,
+        "sl-son-from-father",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.sl-males-one-x",
+      "concept": "sex-linked-inheritance",
+      "element": "x-linked-recessive",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why is an X-linked recessive trait seen more often in males than in females?",
+      "explanation": "A male has one X, so a single recessive copy shows, while a female needs two copies to show the trait. The tempting error is that males have a second X, which they do not have.",
+      "choices": [
+        "A male has two X chromosomes, so he carries twice the recessive alleles",
+        "A male has one X, so one recessive copy is enough to show the trait",
+        "A female has a Y chromosome that hides recessive alleles on her X",
+        "Males inherit more recessive alleles from the father's side"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "sl-same-dose",
+        null,
+        null,
+        "sl-son-from-father"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.sl-male-allele-shows",
+      "concept": "sex-linked-inheritance",
+      "element": "x-linked-recessive",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A male has a recessive X-linked allele on his only X. Does he show the trait?",
+      "explanation": "A male with the allele on his only X shows the trait, since no second X can cover it. The tempting error is that a male with one copy is a carrier like a female, which confuses the sexes.",
+      "choices": [
+        "No, since he is a carrier, the same as a female with one copy",
+        "Yes, since no second X copy is present to cover the allele",
+        "No, since the Y chromosome has a matching copy of this gene",
+        "Yes, but only half as strongly as a female with two copies"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "sl-same-dose",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.sl-dosage",
+      "concept": "sex-linked-inheritance",
+      "element": "dosage-compensation",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A female has two X chromosomes, but only one is mostly active in each cell. What happens to the other?",
+      "explanation": "In each female cell one X is switched off and condensed into a Barr body, which keeps the gene dose close to a male's. The tempting error is that both X chromosomes work fully, which would double the dose.",
+      "choices": [
+        "It is lost during meiosis, so only one X stays in each egg",
+        "It is doubled, so females make twice the protein of males",
+        "It is mostly switched off and condenses into a Barr body",
+        "It is turned into a Y, which females then carry too"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.linkage-and-sex-chromosomes.sl-order",
+      "concept": "sex-linked-inheritance",
+      "element": "morgans-fly-work",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps of Morgan's fruit fly experiments in order.",
+      "explanation": "Morgan found the white-eyed male, crossed him to a red-eyed female, intercrossed the F1, and then saw that white eyes appeared only in males. The tempting error is putting the sex result first, which follows only from the F2 counts.",
+      "steps": [
+        "A white-eyed male is found among red-eyed flies in the stock.",
+        "He is mated with a red-eyed female, and all the F1 flies have red eyes.",
+        "F1 siblings are mated, and the F2 shows red and white eyes in a 3 to 1 ratio.",
+        "Every white-eyed F2 fly is male, which ties the gene to the X chromosome."
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    }
+  ],
+  "artifacts": []
+}

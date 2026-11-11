@@ -1,0 +1,276 @@
+{
+  "formatVersion": 1,
+  "subject": "organic-chemistry",
+  "covers": "Organic chemistry I and II as a typical two-semester first college sequence teaches it: bonding, acids and bases, alkanes through carbonyls, acid derivatives, amines, aromatics and spectroscopy. Leaves out biochemistry and graduate topics.",
+  "packs": [
+    {
+      "pack": "bonding-and-hybridization",
+      "title": "Bonding and hybridization",
+      "brief": "How carbon forms bonds, the shapes that result, and how to draw Lewis structures with formal charges and resonance. Stops before acidity and reactions.",
+      "concepts": [
+        { "id": "hybridization", "name": "Orbital hybridization" },
+        { "id": "sigma-and-pi-bonds", "name": "Sigma and pi bonds" },
+        { "id": "formal-charge", "name": "Formal charge" },
+        { "id": "resonance-structures", "name": "Resonance structures" },
+        { "id": "bond-dipole", "name": "Bond dipoles" }
+      ],
+      "buildsOn": ["chemistry/lewis-structure", "chemistry/covalent-bond", "chemistry/molecular-geometry", "chemistry/electronegativity", "chemistry/polarity"]
+    },
+    {
+      "pack": "acids-and-bases-organic",
+      "title": "Acidity, basicity and electron pushing",
+      "brief": "How structure sets the acidity and basicity of organic molecules, and how curved arrows show electron movement in a mechanism. Stops before specific reaction types.",
+      "concepts": [
+        { "id": "organic-acidity", "name": "Acidity and pKa in organic molecules" },
+        { "id": "inductive-effect", "name": "Inductive effect" },
+        { "id": "lewis-acids-and-bases", "name": "Lewis acids and bases in organic reactions" },
+        { "id": "nucleophile-and-electrophile", "name": "Nucleophiles and electrophiles" },
+        { "id": "curved-arrow-notation", "name": "Curved arrow notation" }
+      ],
+      "buildsOn": ["chemistry/acid-base-theories", "chemistry/weak-acid-ka", "chemistry/conjugate-pair", "resonance-structures", "bond-dipole"]
+    },
+    {
+      "pack": "alkanes-and-conformations",
+      "title": "Alkanes and conformations",
+      "brief": "Naming alkanes and alkyl groups, constitutional isomers, and rotation about single bonds. Stops before rings and stereocenters.",
+      "concepts": [
+        { "id": "alkane-nomenclature", "name": "Alkane nomenclature" },
+        { "id": "alkyl-groups", "name": "Alkyl groups" },
+        { "id": "constitutional-isomers", "name": "Constitutional isomers" },
+        { "id": "newman-projections", "name": "Newman projections" },
+        { "id": "conformational-analysis", "name": "Conformational analysis" }
+      ],
+      "buildsOn": ["hybridization", "chemistry/london-dispersion", "chemistry/molecular-geometry"]
+    },
+    {
+      "pack": "cycloalkanes",
+      "title": "Cycloalkanes",
+      "brief": "Naming rings, ring strain, and the chair conformation of cyclohexane with axial and equatorial positions. Stops before stereocenters and optical activity.",
+      "concepts": [
+        { "id": "cycloalkane-nomenclature", "name": "Cycloalkane nomenclature" },
+        { "id": "ring-strain", "name": "Ring strain" },
+        { "id": "chair-conformation", "name": "Chair conformation of cyclohexane" },
+        { "id": "axial-and-equatorial-positions", "name": "Axial and equatorial positions" },
+        { "id": "cis-trans-isomerism-rings", "name": "Cis and trans isomers of rings" }
+      ],
+      "buildsOn": ["alkane-nomenclature", "conformational-analysis", "newman-projections"]
+    },
+    {
+      "pack": "stereochemistry",
+      "title": "Stereochemistry",
+      "brief": "Chirality, stereocenters, R and S labels, enantiomers, diastereomers, meso compounds and optical activity. Stops before stereochemistry of reactions.",
+      "concepts": [
+        { "id": "chirality", "name": "Chirality" },
+        { "id": "stereocenters", "name": "Stereocenters" },
+        { "id": "cip-priority-rules", "name": "CIP priority rules and R and S labels" },
+        { "id": "enantiomers", "name": "Enantiomers" },
+        { "id": "diastereomers", "name": "Diastereomers" },
+        { "id": "meso-compounds", "name": "Meso compounds" },
+        { "id": "optical-activity", "name": "Optical activity" },
+        { "id": "racemic-mixtures", "name": "Racemic mixtures" }
+      ],
+      "buildsOn": ["constitutional-isomers", "cis-trans-isomerism-rings", "cycloalkane-nomenclature", "chair-conformation"]
+    },
+    {
+      "pack": "alkenes-and-alkynes",
+      "title": "Alkenes and alkynes",
+      "brief": "Naming alkenes and alkynes, E and Z isomers, degrees of unsaturation and alkene stability. Stops before the reactions of these groups.",
+      "concepts": [
+        { "id": "alkene-nomenclature", "name": "Alkene nomenclature" },
+        { "id": "alkyne-nomenclature", "name": "Alkyne nomenclature" },
+        { "id": "e-z-isomerism", "name": "E and Z isomerism" },
+        { "id": "degree-of-unsaturation", "name": "Degree of unsaturation" },
+        { "id": "alkene-stability", "name": "Alkene stability" }
+      ],
+      "buildsOn": ["sigma-and-pi-bonds", "alkane-nomenclature", "cip-priority-rules", "diastereomers", "cis-trans-isomerism-rings"]
+    },
+    {
+      "pack": "alkene-addition-reactions",
+      "title": "Addition reactions of alkenes",
+      "brief": "Electrophilic addition to alkenes, carbocation stability and Markovnikov selectivity, with the common addition reactions. Stops before substitution and elimination.",
+      "concepts": [
+        { "id": "electrophilic-addition", "name": "Electrophilic addition" },
+        { "id": "carbocation-stability", "name": "Carbocation stability" },
+        { "id": "markovnikov-rule", "name": "Markovnikov rule" },
+        { "id": "hydrohalogenation-and-hydration", "name": "Hydrohalogenation and hydration of alkenes" },
+        { "id": "halogen-addition-to-alkenes", "name": "Halogen addition to alkenes" },
+        { "id": "hydroboration-oxidation", "name": "Hydroboration-oxidation" },
+        { "id": "catalytic-hydrogenation", "name": "Catalytic hydrogenation" }
+      ],
+      "buildsOn": ["curved-arrow-notation", "alkene-stability", "nucleophile-and-electrophile", "e-z-isomerism"]
+    },
+    {
+      "pack": "nucleophilic-substitution",
+      "title": "Nucleophilic substitution",
+      "brief": "Haloalkane naming, the SN1 and SN2 mechanisms, leaving groups, and what decides which one happens. Stops before elimination.",
+      "concepts": [
+        { "id": "haloalkane-nomenclature", "name": "Haloalkane nomenclature" },
+        { "id": "sn2-mechanism", "name": "SN2 mechanism" },
+        { "id": "sn1-mechanism", "name": "SN1 mechanism" },
+        { "id": "leaving-groups", "name": "Leaving groups" },
+        { "id": "nucleophile-strength-and-solvent-effects", "name": "Nucleophile strength and solvent effects" }
+      ],
+      "buildsOn": ["alkyl-groups", "stereocenters", "carbocation-stability", "nucleophile-and-electrophile", "organic-acidity", "alkane-nomenclature"]
+    },
+    {
+      "pack": "elimination-reactions",
+      "title": "Elimination reactions",
+      "brief": "The E1 and E2 mechanisms, Zaitsev and Hofmann products, and how elimination competes with substitution. Stops before the reactions of alkynes.",
+      "concepts": [
+        { "id": "e2-mechanism", "name": "E2 mechanism" },
+        { "id": "e1-mechanism", "name": "E1 mechanism" },
+        { "id": "zaitsev-rule", "name": "Zaitsev rule" },
+        { "id": "anti-periplanar-geometry", "name": "Anti-periplanar geometry" },
+        { "id": "substitution-vs-elimination", "name": "Substitution versus elimination" }
+      ],
+      "buildsOn": ["sn1-mechanism", "sn2-mechanism", "leaving-groups", "carbocation-stability", "alkene-stability", "nucleophile-strength-and-solvent-effects"]
+    },
+    {
+      "pack": "alkyne-reactions",
+      "title": "Reactions of alkynes",
+      "brief": "Terminal alkyne acidity, acetylide anions and their alkylation, and the reductions and hydration of alkynes. Stops before carbonyl chemistry.",
+      "concepts": [
+        { "id": "terminal-alkyne-acidity", "name": "Terminal alkyne acidity" },
+        { "id": "acetylide-anions", "name": "Acetylide anions" },
+        { "id": "acetylide-alkylation", "name": "Acetylide alkylation" },
+        { "id": "lindlar-reduction", "name": "Lindlar reduction" },
+        { "id": "alkyne-hydration", "name": "Alkyne hydration" }
+      ],
+      "buildsOn": ["organic-acidity", "sn2-mechanism", "alkyne-nomenclature", "markovnikov-rule", "catalytic-hydrogenation"]
+    },
+    {
+      "pack": "alcohols-and-ethers",
+      "title": "Alcohols and ethers",
+      "brief": "Naming and making alcohols and ethers, converting alcohols to halides and tosylates, dehydration, and epoxides. Stops before carbonyl compounds.",
+      "concepts": [
+        { "id": "alcohol-nomenclature", "name": "Alcohol nomenclature" },
+        { "id": "alcohol-dehydration", "name": "Alcohol dehydration" },
+        { "id": "alcohol-to-alkyl-halide", "name": "Converting alcohols to alkyl halides" },
+        { "id": "tosylate-activation", "name": "Tosylate activation of alcohols" },
+        { "id": "williamson-ether-synthesis", "name": "Williamson ether synthesis" },
+        { "id": "epoxides", "name": "Epoxides" }
+      ],
+      "buildsOn": ["sn2-mechanism", "sn1-mechanism", "leaving-groups", "e1-mechanism", "markovnikov-rule", "haloalkane-nomenclature"]
+    },
+    {
+      "pack": "aldehydes-and-ketones",
+      "title": "Aldehydes and ketones",
+      "brief": "Carbonyl naming, nucleophilic addition to the carbonyl group, acetals, the Wittig reaction, and keto-enol tautomerism. Stops before organometallic reagents.",
+      "concepts": [
+        { "id": "carbonyl-nomenclature", "name": "Carbonyl nomenclature" },
+        { "id": "nucleophilic-addition-to-carbonyl", "name": "Nucleophilic addition to carbonyls" },
+        { "id": "hemiacetals-and-acetals", "name": "Hemiacetals and acetals" },
+        { "id": "cyanohydrins", "name": "Cyanohydrins" },
+        { "id": "reduction-of-carbonyls", "name": "Reduction of carbonyls" },
+        { "id": "wittig-reaction", "name": "Wittig reaction" },
+        { "id": "keto-enol-tautomerism", "name": "Keto-enol tautomerism" }
+      ],
+      "buildsOn": ["nucleophile-and-electrophile", "curved-arrow-notation", "alcohol-nomenclature", "alcohol-to-alkyl-halide", "epoxides"]
+    },
+    {
+      "pack": "grignard-and-organometallic-reagents",
+      "title": "Grignard and organometallic reagents",
+      "brief": "Making and using Grignard, organolithium and Gilman reagents as carbon nucleophiles toward carbonyl compounds. Stops before carboxylic acid chemistry.",
+      "concepts": [
+        { "id": "grignard-reagents", "name": "Grignard reagents" },
+        { "id": "grignard-addition-to-carbonyls", "name": "Grignard addition to carbonyls" },
+        { "id": "organolithium-reagents", "name": "Organolithium reagents" },
+        { "id": "gilman-reagents", "name": "Gilman reagents" }
+      ],
+      "buildsOn": ["nucleophilic-addition-to-carbonyl", "haloalkane-nomenclature", "alkyl-groups", "reduction-of-carbonyls"]
+    },
+    {
+      "pack": "carboxylic-acids",
+      "title": "Carboxylic acids",
+      "brief": "Naming carboxylic acids, their acidity, Fischer esterification and the general pattern of nucleophilic acyl substitution. Stops before the individual acid derivatives.",
+      "concepts": [
+        { "id": "carboxylic-acid-nomenclature", "name": "Carboxylic acid nomenclature" },
+        { "id": "carboxylic-acid-acidity", "name": "Carboxylic acid acidity" },
+        { "id": "fischer-esterification", "name": "Fischer esterification" },
+        { "id": "nucleophilic-acyl-substitution", "name": "Nucleophilic acyl substitution" }
+      ],
+      "buildsOn": ["organic-acidity", "inductive-effect", "nucleophilic-addition-to-carbonyl", "carbonyl-nomenclature", "hemiacetals-and-acetals"]
+    },
+    {
+      "pack": "carboxylic-acid-derivatives",
+      "title": "Carboxylic acid derivatives",
+      "brief": "Acid chlorides, anhydrides, esters and amides, their hydrolysis and amide formation, and their relative reactivity. Stops before enolate chemistry.",
+      "concepts": [
+        { "id": "acyl-chlorides", "name": "Acyl chlorides" },
+        { "id": "acid-anhydrides", "name": "Acid anhydrides" },
+        { "id": "ester-hydrolysis", "name": "Ester hydrolysis" },
+        { "id": "amides", "name": "Amides" },
+        { "id": "relative-reactivity-of-acyl-compounds", "name": "Relative reactivity of acyl compounds" }
+      ],
+      "buildsOn": ["nucleophilic-acyl-substitution", "carboxylic-acid-nomenclature", "fischer-esterification", "inductive-effect"]
+    },
+    {
+      "pack": "enolate-chemistry",
+      "title": "Enolate chemistry",
+      "brief": "Enolate formation and alpha-carbon reactions, including aldol, Claisen and Michael reactions. Stops before amines.",
+      "concepts": [
+        { "id": "enolate-formation", "name": "Enolate formation" },
+        { "id": "aldol-addition", "name": "Aldol addition" },
+        { "id": "aldol-condensation", "name": "Aldol condensation" },
+        { "id": "claisen-condensation", "name": "Claisen condensation" },
+        { "id": "michael-addition", "name": "Michael addition" }
+      ],
+      "buildsOn": ["keto-enol-tautomerism", "organic-acidity", "nucleophilic-addition-to-carbonyl", "relative-reactivity-of-acyl-compounds", "carbonyl-nomenclature"]
+    },
+    {
+      "pack": "amines",
+      "title": "Amines",
+      "brief": "Naming amines, their basicity, and methods for making them: alkylation, the Gabriel synthesis and reductive amination. Stops before aromatic compounds.",
+      "concepts": [
+        { "id": "amine-nomenclature", "name": "Amine nomenclature" },
+        { "id": "amine-basicity", "name": "Amine basicity" },
+        { "id": "amine-alkylation", "name": "Amine alkylation" },
+        { "id": "gabriel-synthesis", "name": "Gabriel synthesis" },
+        { "id": "reductive-amination", "name": "Reductive amination" },
+        { "id": "hofmann-elimination", "name": "Hofmann elimination" }
+      ],
+      "buildsOn": ["sn2-mechanism", "chemistry/conjugate-pair", "carbonyl-nomenclature", "reduction-of-carbonyls", "e2-mechanism", "nucleophile-and-electrophile"]
+    },
+    {
+      "pack": "aromaticity",
+      "title": "Aromaticity",
+      "brief": "The Huckel rule, benzene and related aromatic compounds, and aromatic heterocycles. Stops before reactions of aromatic rings.",
+      "concepts": [
+        { "id": "huckel-rule", "name": "Huckel rule for aromaticity" },
+        { "id": "aromatic-nomenclature", "name": "Aromatic compound nomenclature" },
+        { "id": "antiaromaticity", "name": "Antiaromaticity" },
+        { "id": "polycyclic-aromatic-hydrocarbons", "name": "Polycyclic aromatic hydrocarbons" },
+        { "id": "heteroaromatic-compounds", "name": "Heteroaromatic compounds" }
+      ],
+      "buildsOn": ["resonance-structures", "hybridization", "sigma-and-pi-bonds", "alkene-stability"]
+    },
+    {
+      "pack": "electrophilic-aromatic-substitution",
+      "title": "Electrophilic aromatic substitution",
+      "brief": "The mechanism of substitution on benzene rings, the common ring reactions, and how existing substituents direct new ones. Stops before spectroscopy.",
+      "concepts": [
+        { "id": "eas-mechanism", "name": "Electrophilic aromatic substitution mechanism" },
+        { "id": "halogenation-of-arenes", "name": "Halogenation of arenes" },
+        { "id": "nitration-and-sulfonation", "name": "Nitration and sulfonation" },
+        { "id": "friedel-crafts-alkylation", "name": "Friedel-Crafts alkylation" },
+        { "id": "friedel-crafts-acylation", "name": "Friedel-Crafts acylation" },
+        { "id": "substituent-directing-effects", "name": "Substituent directing effects" }
+      ],
+      "buildsOn": ["huckel-rule", "aromatic-nomenclature", "electrophilic-addition", "inductive-effect", "resonance-structures"]
+    },
+    {
+      "pack": "spectroscopy",
+      "title": "Spectroscopy and structure determination",
+      "brief": "Using infrared, mass, NMR and UV-visible spectra to identify the structure of an organic compound. Stops at the level of a single unknown.",
+      "concepts": [
+        { "id": "ir-spectroscopy", "name": "Infrared spectroscopy" },
+        { "id": "mass-spectrometry", "name": "Mass spectrometry" },
+        { "id": "nmr-chemical-shift", "name": "NMR chemical shift" },
+        { "id": "spin-spin-splitting", "name": "Spin-spin splitting" },
+        { "id": "uv-vis-spectroscopy", "name": "UV-visible spectroscopy" },
+        { "id": "structure-determination", "name": "Structure determination" }
+      ],
+      "buildsOn": ["carbonyl-nomenclature", "carboxylic-acid-nomenclature", "amine-nomenclature", "alcohol-nomenclature", "huckel-rule", "constitutional-isomers", "degree-of-unsaturation"]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "formatVersion": 1,
+  "id": "testing.drafts",
+  "subject": "testing",
+  "title": "Tissues",
+  "summary": "A fixture pack with nothing verified, which the build leaves out.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "tissue",
+      "name": "Tissue",
+      "summary": "A group of similar cells that work together.",
+      "requires": ["cell"]
+    }
+  ],
+  "items": [
+    {
+      "id": "testing.drafts.tissue-made-of",
+      "concept": "tissue",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is a tissue made of?",
+      "answer": "Similar cells working together",
+      "explanation": "A tissue is a group of cells of the same kind that do one job.",
+      "verification": { "status": "draft" }
+    }
+  ],
+  "artifacts": []
+}

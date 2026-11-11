@@ -1,0 +1,809 @@
+{
+  "formatVersion": 1,
+  "subject": "chemistry",
+  "covers": "General chemistry I and II, as a typical two-semester first college sequence teaches it: matter and measurement, atoms and bonding, stoichiometry, gases, solutions, kinetics, equilibrium, acids and bases, thermodynamics, and electrochemistry. Leaves out organic, analytical and graduate topics.",
+  "packs": [
+    {
+      "pack": "matter",
+      "title": "Properties and classification of matter",
+      "brief": "Physical and chemical properties and changes, and how matter is classed as mixtures, pure substances, elements and compounds. Stops before measurement.",
+      "concepts": [
+        {
+          "id": "physical-property",
+          "name": "Physical properties"
+        },
+        {
+          "id": "chemical-property",
+          "name": "Chemical properties"
+        },
+        {
+          "id": "physical-change",
+          "name": "Physical changes"
+        },
+        {
+          "id": "chemical-change",
+          "name": "Chemical changes"
+        },
+        {
+          "id": "pure-substance",
+          "name": "Pure substances"
+        },
+        {
+          "id": "mixture",
+          "name": "Mixtures"
+        },
+        {
+          "id": "element",
+          "name": "Elements"
+        },
+        {
+          "id": "compound",
+          "name": "Compounds"
+        }
+      ],
+      "buildsOn": []
+    },
+    {
+      "pack": "measurement",
+      "title": "Measurement and units",
+      "brief": "SI units, scientific notation, significant figures, unit conversion, temperature scales and density. Stops before atoms.",
+      "concepts": [
+        {
+          "id": "si-units",
+          "name": "SI units"
+        },
+        {
+          "id": "scientific-notation",
+          "name": "Scientific notation"
+        },
+        {
+          "id": "significant-figures",
+          "name": "Significant figures"
+        },
+        {
+          "id": "unit-conversion",
+          "name": "Unit conversion"
+        },
+        {
+          "id": "temperature-scales",
+          "name": "Temperature scales"
+        },
+        {
+          "id": "density",
+          "name": "Density"
+        }
+      ],
+      "buildsOn": [
+        "physical-property"
+      ]
+    },
+    {
+      "pack": "atomic-structure",
+      "title": "Atomic structure and isotopes",
+      "brief": "Subatomic particles, atomic and mass numbers, isotopes, average atomic mass, ions, and the historical models that led to the nuclear atom. Stops before electron configurations.",
+      "concepts": [
+        {
+          "id": "atomic-theory-history",
+          "name": "History of atomic theory"
+        },
+        {
+          "id": "subatomic-particles",
+          "name": "Subatomic particles"
+        },
+        {
+          "id": "atomic-number",
+          "name": "Atomic number"
+        },
+        {
+          "id": "mass-number",
+          "name": "Mass number"
+        },
+        {
+          "id": "isotope",
+          "name": "Isotopes"
+        },
+        {
+          "id": "average-atomic-mass",
+          "name": "Average atomic mass"
+        },
+        {
+          "id": "ion",
+          "name": "Ions"
+        }
+      ],
+      "buildsOn": [
+        "element",
+        "mixture",
+        "scientific-notation",
+        "density",
+        "significant-figures"
+      ]
+    },
+    {
+      "pack": "electron-configuration",
+      "title": "Electron configuration",
+      "brief": "Quantized energy, the quantum numbers, orbitals, and how electrons fill them by the Aufbau principle, the Pauli principle and Hund's rule. Stops at the periodic table.",
+      "concepts": [
+        {
+          "id": "quantized-energy",
+          "name": "Quantized energy and photons"
+        },
+        {
+          "id": "quantum-numbers",
+          "name": "Quantum numbers"
+        },
+        {
+          "id": "atomic-orbital",
+          "name": "Atomic orbitals"
+        },
+        {
+          "id": "aufbau-principle",
+          "name": "Aufbau principle"
+        },
+        {
+          "id": "pauli-exclusion",
+          "name": "Pauli exclusion principle"
+        },
+        {
+          "id": "hunds-rule",
+          "name": "Hund's rule"
+        },
+        {
+          "id": "electron-configuration",
+          "name": "Electron configurations"
+        },
+        {
+          "id": "orbital-diagram",
+          "name": "Orbital diagrams"
+        }
+      ],
+      "buildsOn": [
+        "subatomic-particles",
+        "ion"
+      ]
+    },
+    {
+      "pack": "periodic-trends",
+      "title": "The periodic table and periodic trends",
+      "brief": "How the periodic table is organised by electron configuration, and the trends in atomic radius, ionization energy, electron affinity and electronegativity. Stops before bonding.",
+      "concepts": [
+        {
+          "id": "periodic-table",
+          "name": "The periodic table"
+        },
+        {
+          "id": "group-and-period",
+          "name": "Groups and periods"
+        },
+        {
+          "id": "metals-nonmetals",
+          "name": "Metals, nonmetals and metalloids"
+        },
+        {
+          "id": "effective-nuclear-charge",
+          "name": "Effective nuclear charge"
+        },
+        {
+          "id": "atomic-radius",
+          "name": "Atomic radius"
+        },
+        {
+          "id": "ionization-energy",
+          "name": "Ionization energy"
+        },
+        {
+          "id": "electron-affinity",
+          "name": "Electron affinity"
+        },
+        {
+          "id": "electronegativity",
+          "name": "Electronegativity"
+        }
+      ],
+      "buildsOn": [
+        "electron-configuration",
+        "quantized-energy",
+        "ion"
+      ]
+    },
+    {
+      "pack": "bonding",
+      "title": "Chemical bonding",
+      "brief": "How atoms hold together: ionic, covalent and metallic bonds, polarity, Lewis structures, molecular shape and hydrogen bonds.",
+      "concepts": [
+        {
+          "id": "valence-electrons",
+          "name": "Valence electrons"
+        },
+        {
+          "id": "ionic-bond",
+          "name": "Ionic bonding"
+        },
+        {
+          "id": "covalent-bond",
+          "name": "Covalent bonding"
+        },
+        {
+          "id": "metallic-bond",
+          "name": "Metallic bonding"
+        },
+        {
+          "id": "polarity",
+          "name": "Chemical polarity"
+        },
+        {
+          "id": "lewis-structure",
+          "name": "Lewis structures"
+        },
+        {
+          "id": "molecular-geometry",
+          "name": "Molecular geometry"
+        },
+        {
+          "id": "hydrogen-bond",
+          "name": "Hydrogen bonding"
+        }
+      ],
+      "buildsOn": [
+        "electron-configuration",
+        "electronegativity",
+        "ion"
+      ]
+    },
+    {
+      "pack": "nomenclature",
+      "title": "Naming compounds",
+      "brief": "Chemical formulas and the IUPAC rules for naming ionic compounds, polyatomic ions, molecular compounds and acids. Stops before counting atoms by the mole.",
+      "concepts": [
+        {
+          "id": "chemical-formula",
+          "name": "Chemical formulas"
+        },
+        {
+          "id": "ionic-compound-naming",
+          "name": "Naming ionic compounds"
+        },
+        {
+          "id": "polyatomic-ion",
+          "name": "Polyatomic ions"
+        },
+        {
+          "id": "molecular-compound-naming",
+          "name": "Naming molecular compounds"
+        },
+        {
+          "id": "acid-naming",
+          "name": "Naming acids"
+        }
+      ],
+      "buildsOn": [
+        "ionic-bond",
+        "covalent-bond",
+        "ion",
+        "compound"
+      ]
+    },
+    {
+      "pack": "moles",
+      "title": "The mole and molar mass",
+      "brief": "The mole and Avogadro's number, molar mass, converting between mass, moles and particles, percent composition, and empirical and molecular formulas. Stops before reaction equations.",
+      "concepts": [
+        {
+          "id": "mole",
+          "name": "The mole"
+        },
+        {
+          "id": "avogadro-number",
+          "name": "Avogadro's number"
+        },
+        {
+          "id": "molar-mass",
+          "name": "Molar mass"
+        },
+        {
+          "id": "mole-conversions",
+          "name": "Converting between mass, moles and particles"
+        },
+        {
+          "id": "percent-composition",
+          "name": "Percent composition"
+        },
+        {
+          "id": "empirical-formula",
+          "name": "Empirical and molecular formulas"
+        }
+      ],
+      "buildsOn": [
+        "average-atomic-mass",
+        "chemical-formula",
+        "scientific-notation",
+        "unit-conversion"
+      ]
+    },
+    {
+      "pack": "stoichiometry",
+      "title": "Chemical equations and stoichiometry",
+      "brief": "Writing and balancing equations, the five main reaction types, mole ratios, limiting reactants and percent yield. Stops before gases.",
+      "concepts": [
+        {
+          "id": "chemical-equation",
+          "name": "Chemical equations"
+        },
+        {
+          "id": "balancing-equations",
+          "name": "Balancing chemical equations"
+        },
+        {
+          "id": "reaction-types",
+          "name": "Types of chemical reactions"
+        },
+        {
+          "id": "mole-ratio",
+          "name": "Mole ratios"
+        },
+        {
+          "id": "stoichiometric-calculation",
+          "name": "Stoichiometric calculations"
+        },
+        {
+          "id": "limiting-reactant",
+          "name": "Limiting reactant"
+        },
+        {
+          "id": "percent-yield",
+          "name": "Percent yield"
+        }
+      ],
+      "buildsOn": [
+        "mole-conversions",
+        "chemical-formula",
+        "compound"
+      ]
+    },
+    {
+      "pack": "gases",
+      "title": "Gases and the gas laws",
+      "brief": "Gas pressure, the kinetic molecular theory, the gas laws and the ideal gas law, partial pressures, effusion and gas stoichiometry. Stops before the forces between molecules.",
+      "concepts": [
+        {
+          "id": "gas-pressure",
+          "name": "Gas pressure"
+        },
+        {
+          "id": "kinetic-molecular-theory",
+          "name": "Kinetic molecular theory"
+        },
+        {
+          "id": "boyles-law",
+          "name": "Boyle's law"
+        },
+        {
+          "id": "charles-law",
+          "name": "Charles's law"
+        },
+        {
+          "id": "avogadro-law",
+          "name": "Avogadro's law"
+        },
+        {
+          "id": "ideal-gas-law",
+          "name": "Ideal gas law"
+        },
+        {
+          "id": "partial-pressure",
+          "name": "Dalton's law of partial pressures"
+        },
+        {
+          "id": "effusion",
+          "name": "Graham's law of effusion"
+        },
+        {
+          "id": "gas-stoichiometry",
+          "name": "Gas stoichiometry"
+        }
+      ],
+      "buildsOn": [
+        "temperature-scales",
+        "mole",
+        "stoichiometric-calculation",
+        "unit-conversion"
+      ]
+    },
+    {
+      "pack": "intermolecular-forces",
+      "title": "Intermolecular forces and phases",
+      "brief": "The attractions between molecules, vapor pressure, phase changes, phase diagrams and the structure of solids. Stops before energy changes.",
+      "concepts": [
+        {
+          "id": "intermolecular-force",
+          "name": "Intermolecular forces"
+        },
+        {
+          "id": "london-dispersion",
+          "name": "London dispersion forces"
+        },
+        {
+          "id": "dipole-dipole",
+          "name": "Dipole-dipole forces"
+        },
+        {
+          "id": "vapor-pressure",
+          "name": "Vapor pressure"
+        },
+        {
+          "id": "phase-change",
+          "name": "Phase changes"
+        },
+        {
+          "id": "heating-curve",
+          "name": "Heating curves"
+        },
+        {
+          "id": "phase-diagram",
+          "name": "Phase diagrams"
+        },
+        {
+          "id": "crystal-structure",
+          "name": "Crystalline solids"
+        }
+      ],
+      "buildsOn": [
+        "hydrogen-bond",
+        "polarity",
+        "molecular-geometry",
+        "gas-pressure"
+      ]
+    },
+    {
+      "pack": "thermochemistry",
+      "title": "Energy changes in reactions",
+      "brief": "Enthalpy, calorimetry, Hess's law, enthalpies of formation and bond enthalpies. Stops before entropy and free energy.",
+      "concepts": [
+        {
+          "id": "system-and-surroundings",
+          "name": "System and surroundings"
+        },
+        {
+          "id": "exothermic-endothermic",
+          "name": "Exothermic and endothermic reactions"
+        },
+        {
+          "id": "enthalpy",
+          "name": "Enthalpy"
+        },
+        {
+          "id": "calorimetry",
+          "name": "Calorimetry"
+        },
+        {
+          "id": "hess-law",
+          "name": "Hess's law"
+        },
+        {
+          "id": "standard-enthalpy-formation",
+          "name": "Standard enthalpy of formation"
+        },
+        {
+          "id": "bond-enthalpy",
+          "name": "Bond enthalpy"
+        }
+      ],
+      "buildsOn": [
+        "chemical-equation",
+        "phase-change",
+        "mole-ratio"
+      ]
+    },
+    {
+      "pack": "solutions",
+      "title": "Solutions and aqueous reactions",
+      "brief": "Molarity, dilution, molality, solubility rules, electrolytes, precipitation reactions and net ionic equations. Stops before reaction rates.",
+      "concepts": [
+        {
+          "id": "molarity",
+          "name": "Molarity"
+        },
+        {
+          "id": "dilution",
+          "name": "Dilution"
+        },
+        {
+          "id": "molality",
+          "name": "Molality"
+        },
+        {
+          "id": "solubility",
+          "name": "Solubility"
+        },
+        {
+          "id": "solubility-rules",
+          "name": "Solubility rules"
+        },
+        {
+          "id": "electrolyte",
+          "name": "Electrolytes"
+        },
+        {
+          "id": "precipitation-reaction",
+          "name": "Precipitation reactions"
+        },
+        {
+          "id": "net-ionic-equation",
+          "name": "Net ionic equations"
+        }
+      ],
+      "buildsOn": [
+        "mole",
+        "mole-ratio",
+        "reaction-types",
+        "polarity",
+        "ionic-bond"
+      ]
+    },
+    {
+      "pack": "chemical-kinetics",
+      "title": "Chemical kinetics",
+      "brief": "Reaction rates, rate laws and reaction order, integrated rate laws and half-life, activation energy, the Arrhenius equation, mechanisms and catalysts. Stops before equilibrium.",
+      "concepts": [
+        {
+          "id": "reaction-rate",
+          "name": "Reaction rate"
+        },
+        {
+          "id": "rate-law",
+          "name": "Rate laws"
+        },
+        {
+          "id": "reaction-order",
+          "name": "Reaction order"
+        },
+        {
+          "id": "integrated-rate-law",
+          "name": "Integrated rate laws"
+        },
+        {
+          "id": "half-life",
+          "name": "Half-life"
+        },
+        {
+          "id": "activation-energy",
+          "name": "Activation energy"
+        },
+        {
+          "id": "arrhenius-equation",
+          "name": "Arrhenius equation"
+        },
+        {
+          "id": "reaction-mechanism",
+          "name": "Reaction mechanisms"
+        },
+        {
+          "id": "catalyst",
+          "name": "Catalysts"
+        }
+      ],
+      "buildsOn": [
+        "chemical-equation",
+        "molarity",
+        "mole-ratio",
+        "reaction-types"
+      ]
+    },
+    {
+      "pack": "chemical-equilibrium",
+      "title": "Chemical equilibrium",
+      "brief": "The equilibrium constant, the reaction quotient, ICE tables, Kp and Kc, and Le Chatelier's principle. Stops before acids and bases.",
+      "concepts": [
+        {
+          "id": "equilibrium-constant",
+          "name": "Equilibrium constant"
+        },
+        {
+          "id": "reaction-quotient",
+          "name": "Reaction quotient"
+        },
+        {
+          "id": "ice-table",
+          "name": "ICE tables"
+        },
+        {
+          "id": "kp-kc-relation",
+          "name": "Relating Kp and Kc"
+        },
+        {
+          "id": "le-chatelier",
+          "name": "Le Chatelier's principle"
+        }
+      ],
+      "buildsOn": [
+        "reaction-rate",
+        "molarity",
+        "ideal-gas-law",
+        "mole-ratio",
+        "reaction-mechanism"
+      ]
+    },
+    {
+      "pack": "acids-bases",
+      "title": "Acids and bases",
+      "brief": "Acid-base theories, conjugate pairs, pH and pOH, the autoionization of water, and Ka and Kb for weak acids and bases. Stops before buffers.",
+      "concepts": [
+        {
+          "id": "acid-base-theories",
+          "name": "Acid-base theories"
+        },
+        {
+          "id": "conjugate-pair",
+          "name": "Conjugate acid-base pairs"
+        },
+        {
+          "id": "ph",
+          "name": "pH and pOH"
+        },
+        {
+          "id": "water-autoionization",
+          "name": "Autoionization of water"
+        },
+        {
+          "id": "strong-acid-base",
+          "name": "Strong acids and bases"
+        },
+        {
+          "id": "weak-acid-ka",
+          "name": "Acid dissociation constant"
+        },
+        {
+          "id": "weak-base-kb",
+          "name": "Base dissociation constant"
+        }
+      ],
+      "buildsOn": [
+        "equilibrium-constant",
+        "ice-table",
+        "molarity",
+        "net-ionic-equation"
+      ]
+    },
+    {
+      "pack": "buffers-titration",
+      "title": "Buffers and titration",
+      "brief": "Buffer solutions, the Henderson-Hasselbalch equation, titration, equivalence points and titration curves. Stops before solubility.",
+      "concepts": [
+        {
+          "id": "buffer-solution",
+          "name": "Buffer solutions"
+        },
+        {
+          "id": "henderson-hasselbalch",
+          "name": "Henderson-Hasselbalch equation"
+        },
+        {
+          "id": "titration",
+          "name": "Titration"
+        },
+        {
+          "id": "equivalence-point",
+          "name": "Equivalence point"
+        },
+        {
+          "id": "titration-curve",
+          "name": "Titration curves"
+        }
+      ],
+      "buildsOn": [
+        "weak-acid-ka",
+        "conjugate-pair",
+        "ph",
+        "dilution",
+        "stoichiometric-calculation"
+      ]
+    },
+    {
+      "pack": "solubility-equilibria",
+      "title": "Solubility equilibria",
+      "brief": "The solubility product constant, molar solubility, the common-ion effect and predicting precipitation. Stops before thermodynamics.",
+      "concepts": [
+        {
+          "id": "ksp",
+          "name": "Solubility product constant"
+        },
+        {
+          "id": "molar-solubility",
+          "name": "Molar solubility"
+        },
+        {
+          "id": "common-ion-effect",
+          "name": "Common-ion effect"
+        },
+        {
+          "id": "precipitation-prediction",
+          "name": "Predicting precipitation"
+        }
+      ],
+      "buildsOn": [
+        "solubility",
+        "equilibrium-constant",
+        "reaction-quotient",
+        "ice-table",
+        "precipitation-reaction"
+      ]
+    },
+    {
+      "pack": "thermodynamics",
+      "title": "Entropy and free energy",
+      "brief": "The first and second laws, entropy, Gibbs free energy, spontaneity, and the link between free energy and equilibrium. Stops before electrochemistry.",
+      "concepts": [
+        {
+          "id": "first-law-thermodynamics",
+          "name": "First law of thermodynamics"
+        },
+        {
+          "id": "entropy",
+          "name": "Entropy"
+        },
+        {
+          "id": "second-law-thermodynamics",
+          "name": "Second law of thermodynamics"
+        },
+        {
+          "id": "spontaneity",
+          "name": "Spontaneous processes"
+        },
+        {
+          "id": "gibbs-free-energy",
+          "name": "Gibbs free energy"
+        },
+        {
+          "id": "free-energy-equilibrium",
+          "name": "Free energy and equilibrium"
+        }
+      ],
+      "buildsOn": [
+        "enthalpy",
+        "system-and-surroundings",
+        "equilibrium-constant"
+      ]
+    },
+    {
+      "pack": "electrochemistry",
+      "title": "Oxidation-reduction and electrochemistry",
+      "brief": "Oxidation states, redox reactions and their balancing, galvanic cells, standard reduction potentials, the Nernst equation and electrolysis.",
+      "concepts": [
+        {
+          "id": "oxidation-state",
+          "name": "Oxidation states"
+        },
+        {
+          "id": "redox-reaction",
+          "name": "Redox reactions"
+        },
+        {
+          "id": "balancing-redox",
+          "name": "Balancing redox equations"
+        },
+        {
+          "id": "galvanic-cell",
+          "name": "Galvanic cells"
+        },
+        {
+          "id": "standard-reduction-potential",
+          "name": "Standard reduction potentials"
+        },
+        {
+          "id": "nernst-equation",
+          "name": "Nernst equation"
+        },
+        {
+          "id": "electrolysis",
+          "name": "Electrolysis"
+        }
+      ],
+      "buildsOn": [
+        "gibbs-free-energy",
+        "chemical-equation",
+        "ion",
+        "electron-configuration"
+      ]
+    }
+  ]
+}

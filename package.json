@@ -1,13 +1,17 @@
 {
-  "name": "ceder-root",
+  "name": "ceder-bank",
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "Ceder's question bank and curated catalogue of free learning sources.",
+  "description": "Ceder's bank of concepts, verified questions, diagrams and 3D models. See FORMAT.md.",
+  "license": "CC0-1.0",
   "scripts": {
-    "validate:sources": "node sources/validate.mjs"
+    "validate": "node tools/validate.mjs",
+    "build": "node tools/build.mjs",
+    "test": "node --test \"tools/*.test.mjs\""
   },
   "devDependencies": {
+    "@resvg/resvg-js": "2.6.2",
     "ajv": "8.17.1"
   }
 }

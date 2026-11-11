@@ -1,0 +1,323 @@
+{
+  "formatVersion": 1,
+  "subject": "precalculus",
+  "covers": "College algebra and trigonometry, the course before calculus: expressions, equations, functions, polynomial, rational, exponential and log functions, systems, matrices, sequences, trigonometry, conics, polar forms and vectors.",
+  "packs": [
+    {
+      "pack": "algebra-foundations",
+      "title": "Algebra foundations",
+      "brief": "The real number line, absolute value, exponent and radical rules, and simplifying and factoring polynomial and rational expressions. Stops before equations.",
+      "concepts": [
+        { "id": "real-number-line", "name": "Real number line" },
+        { "id": "absolute-value", "name": "Absolute value" },
+        { "id": "exponent-rules", "name": "Integer exponent rules" },
+        { "id": "radical-expression", "name": "Radical expression" },
+        { "id": "rational-exponent", "name": "Rational exponent" },
+        { "id": "polynomial-expression", "name": "Polynomial expression" },
+        { "id": "factoring-polynomials", "name": "Factoring polynomials" },
+        { "id": "rational-expression", "name": "Rational expression" }
+      ],
+      "buildsOn": []
+    },
+    {
+      "pack": "linear-equations-and-inequalities",
+      "title": "Linear equations and inequalities",
+      "brief": "Solving linear equations, linear inequalities and absolute value equations, then lines in the coordinate plane through slope and distance. Stops before systems of equations.",
+      "concepts": [
+        { "id": "linear-equation", "name": "Linear equation" },
+        { "id": "linear-inequality", "name": "Linear inequality" },
+        { "id": "absolute-value-equation", "name": "Absolute value equation" },
+        { "id": "rectangular-coordinate-system", "name": "Rectangular coordinate system" },
+        { "id": "distance-and-midpoint", "name": "Distance and midpoint formulas" },
+        { "id": "slope", "name": "Slope" },
+        { "id": "slope-intercept-form", "name": "Slope-intercept form" },
+        { "id": "parallel-and-perpendicular-lines", "name": "Parallel and perpendicular lines" }
+      ],
+      "buildsOn": ["absolute-value", "radical-expression"]
+    },
+    {
+      "pack": "functions-and-graphs",
+      "title": "Functions and their graphs",
+      "brief": "What a function is, its domain and range, function notation, reading graphs, and even and odd functions. Stops before transformations.",
+      "concepts": [
+        { "id": "function", "name": "Function" },
+        { "id": "function-notation", "name": "Function notation" },
+        { "id": "domain-and-range", "name": "Domain and range" },
+        { "id": "graph-of-a-function", "name": "Graph of a function" },
+        { "id": "vertical-line-test", "name": "Vertical line test" },
+        { "id": "piecewise-function", "name": "Piecewise function" },
+        { "id": "even-and-odd-function", "name": "Even and odd functions" }
+      ],
+      "buildsOn": ["slope", "rectangular-coordinate-system", "linear-equation"]
+    },
+    {
+      "pack": "transformations-and-inverses",
+      "title": "Transformations, composition and inverses",
+      "brief": "Shifts, reflections and stretches of a graph, composing two functions, and one-to-one functions with their inverses. Stops before specific function families.",
+      "concepts": [
+        { "id": "vertical-shift", "name": "Vertical and horizontal shifts" },
+        { "id": "reflection-and-stretch", "name": "Reflections and stretches" },
+        { "id": "function-composition", "name": "Composition of functions" },
+        { "id": "one-to-one-function", "name": "One-to-one function" },
+        { "id": "inverse-function", "name": "Inverse function" }
+      ],
+      "buildsOn": ["graph-of-a-function", "domain-and-range", "function-notation"]
+    },
+    {
+      "pack": "quadratic-functions",
+      "title": "Quadratic functions",
+      "brief": "Quadratic functions in standard and vertex form, completing the square, the quadratic formula, the discriminant, and quadratic inequalities. Stops before complex numbers.",
+      "concepts": [
+        { "id": "quadratic-function", "name": "Quadratic function" },
+        { "id": "vertex-form", "name": "Vertex form of a parabola" },
+        { "id": "completing-the-square", "name": "Completing the square" },
+        { "id": "quadratic-formula", "name": "Quadratic formula" },
+        { "id": "discriminant", "name": "Discriminant" },
+        { "id": "quadratic-inequality", "name": "Quadratic inequality" }
+      ],
+      "buildsOn": ["factoring-polynomials", "vertical-shift", "function-notation"]
+    },
+    {
+      "pack": "complex-numbers",
+      "title": "Complex numbers",
+      "brief": "The imaginary unit, complex numbers and their arithmetic, conjugates, and solving quadratics with negative discriminant. Stops before polynomials of higher degree.",
+      "concepts": [
+        { "id": "imaginary-unit", "name": "Imaginary unit" },
+        { "id": "complex-number", "name": "Complex number" },
+        { "id": "complex-arithmetic", "name": "Complex arithmetic" },
+        { "id": "complex-conjugate", "name": "Complex conjugate" },
+        { "id": "complex-roots-of-quadratics", "name": "Complex solutions of quadratic equations" }
+      ],
+      "buildsOn": ["quadratic-formula", "discriminant", "radical-expression"]
+    },
+    {
+      "pack": "polynomial-functions",
+      "title": "Polynomial functions",
+      "brief": "Polynomial functions, their end behavior, zeros and multiplicity, division by long division and synthetic division, the remainder and factor theorems, and the fundamental theorem of algebra. Stops before rational functions.",
+      "concepts": [
+        { "id": "polynomial-function", "name": "Polynomial function" },
+        { "id": "end-behavior", "name": "End behavior of a polynomial" },
+        { "id": "polynomial-zero", "name": "Zeros of a polynomial" },
+        { "id": "multiplicity", "name": "Multiplicity of a zero" },
+        { "id": "polynomial-long-division", "name": "Polynomial long division" },
+        { "id": "synthetic-division", "name": "Synthetic division" },
+        { "id": "remainder-and-factor-theorems", "name": "Remainder and factor theorems" },
+        { "id": "fundamental-theorem-of-algebra", "name": "Fundamental theorem of algebra" }
+      ],
+      "buildsOn": ["graph-of-a-function", "polynomial-expression", "factoring-polynomials", "quadratic-formula", "complex-number", "complex-conjugate"]
+    },
+    {
+      "pack": "rational-functions",
+      "title": "Rational functions",
+      "brief": "Rational functions and their graphs: vertical, horizontal and oblique asymptotes, removable discontinuities, and rational equations and inequalities. Stops before exponential functions.",
+      "concepts": [
+        { "id": "rational-function", "name": "Rational function" },
+        { "id": "vertical-asymptote", "name": "Vertical asymptote" },
+        { "id": "horizontal-asymptote", "name": "Horizontal and oblique asymptotes" },
+        { "id": "removable-discontinuity", "name": "Removable discontinuity" },
+        { "id": "rational-equation", "name": "Rational equation" },
+        { "id": "rational-inequality", "name": "Rational inequality" }
+      ],
+      "buildsOn": ["rational-expression", "polynomial-zero", "polynomial-long-division", "end-behavior", "linear-inequality"]
+    },
+    {
+      "pack": "exponential-functions",
+      "title": "Exponential functions",
+      "brief": "Exponential functions, growth and decay models, the number e, compound interest, and solving exponential equations. Stops before logarithms.",
+      "concepts": [
+        { "id": "exponential-function", "name": "Exponential function" },
+        { "id": "exponential-growth-and-decay", "name": "Exponential growth and decay" },
+        { "id": "natural-base-e", "name": "The number e" },
+        { "id": "compound-interest", "name": "Compound interest" },
+        { "id": "exponential-equation", "name": "Exponential equation" }
+      ],
+      "buildsOn": ["exponent-rules", "rational-exponent", "one-to-one-function", "function-notation"]
+    },
+    {
+      "pack": "logarithmic-functions",
+      "title": "Logarithmic functions",
+      "brief": "Logarithms as inverses of exponentials, their properties, the change-of-base formula, the natural logarithm, and logarithmic equations. Stops before systems of equations.",
+      "concepts": [
+        { "id": "logarithmic-function", "name": "Logarithmic function" },
+        { "id": "logarithm-properties", "name": "Logarithm properties" },
+        { "id": "change-of-base-formula", "name": "Change-of-base formula" },
+        { "id": "natural-logarithm", "name": "Natural logarithm" },
+        { "id": "logarithmic-equation", "name": "Logarithmic equation" }
+      ],
+      "buildsOn": ["inverse-function", "exponential-function", "exponential-equation", "natural-base-e"]
+    },
+    {
+      "pack": "systems-of-equations",
+      "title": "Systems of equations",
+      "brief": "Solving systems of linear and nonlinear equations by substitution and elimination, systems with three variables, and systems of linear inequalities. Stops before matrices.",
+      "concepts": [
+        { "id": "system-of-linear-equations", "name": "System of linear equations" },
+        { "id": "substitution-and-elimination", "name": "Substitution and elimination" },
+        { "id": "three-variable-system", "name": "Three-variable linear system" },
+        { "id": "system-of-nonlinear-equations", "name": "System of nonlinear equations" },
+        { "id": "system-of-linear-inequalities", "name": "System of linear inequalities" }
+      ],
+      "buildsOn": ["linear-equation", "slope-intercept-form", "linear-inequality", "quadratic-function"]
+    },
+    {
+      "pack": "matrices",
+      "title": "Matrices",
+      "brief": "Matrices as arrays, matrix operations, row reduction, determinants, matrix inverses, and Cramer's rule for linear systems. Stops before sequences.",
+      "concepts": [
+        { "id": "matrix", "name": "Matrix" },
+        { "id": "matrix-operations", "name": "Matrix operations" },
+        { "id": "row-reduction", "name": "Row reduction" },
+        { "id": "determinant", "name": "Determinant" },
+        { "id": "matrix-inverse", "name": "Matrix inverse" },
+        { "id": "cramers-rule", "name": "Cramer's rule" }
+      ],
+      "buildsOn": ["system-of-linear-equations", "substitution-and-elimination", "three-variable-system"]
+    },
+    {
+      "pack": "sequences-and-series",
+      "title": "Sequences and series",
+      "brief": "Arithmetic and geometric sequences, sigma notation, sums of finite series, and infinite geometric series. Stops before induction.",
+      "concepts": [
+        { "id": "sequence", "name": "Sequence" },
+        { "id": "arithmetic-sequence", "name": "Arithmetic sequence" },
+        { "id": "geometric-sequence", "name": "Geometric sequence" },
+        { "id": "sigma-notation", "name": "Sigma notation" },
+        { "id": "series-sums", "name": "Sums of arithmetic and geometric series" },
+        { "id": "infinite-geometric-series", "name": "Infinite geometric series" }
+      ],
+      "buildsOn": ["function", "function-notation", "exponential-function"]
+    },
+    {
+      "pack": "induction-and-binomial-theorem",
+      "title": "Induction and the binomial theorem",
+      "brief": "Proof by mathematical induction, Pascal's triangle, binomial coefficients, and expanding a binomial with the binomial theorem. Stops before trigonometry.",
+      "concepts": [
+        { "id": "mathematical-induction", "name": "Mathematical induction" },
+        { "id": "pascals-triangle", "name": "Pascal's triangle" },
+        { "id": "binomial-coefficient", "name": "Binomial coefficient" },
+        { "id": "binomial-theorem", "name": "Binomial theorem" }
+      ],
+      "buildsOn": ["sequence", "series-sums", "polynomial-expression"]
+    },
+    {
+      "pack": "right-triangle-trigonometry",
+      "title": "Right triangle trigonometry",
+      "brief": "Angle measure, the sine, cosine and tangent ratios in a right triangle, their reciprocals, special right triangles, solving right triangles, and angles of elevation and depression. Stops before the unit circle.",
+      "concepts": [
+        { "id": "angle-measure", "name": "Angle measure" },
+        { "id": "sine-cosine-tangent", "name": "Sine, cosine and tangent" },
+        { "id": "reciprocal-trig-ratios", "name": "Cosecant, secant and cotangent" },
+        { "id": "special-right-triangles", "name": "Special right triangles" },
+        { "id": "solving-right-triangles", "name": "Solving right triangles" },
+        { "id": "angle-of-elevation-and-depression", "name": "Angle of elevation and depression" }
+      ],
+      "buildsOn": ["radical-expression", "distance-and-midpoint"]
+    },
+    {
+      "pack": "angles-and-the-unit-circle",
+      "title": "Angles and the unit circle",
+      "brief": "Radian measure, arc length, angles in standard position, coterminal and reference angles, and trigonometric values on the unit circle. Stops before graphs of trigonometric functions.",
+      "concepts": [
+        { "id": "radian-measure", "name": "Radian measure" },
+        { "id": "arc-length", "name": "Arc length" },
+        { "id": "angle-in-standard-position", "name": "Angle in standard position" },
+        { "id": "coterminal-angles", "name": "Coterminal angles" },
+        { "id": "reference-angle", "name": "Reference angle" },
+        { "id": "unit-circle", "name": "Unit circle" },
+        { "id": "unit-circle-values", "name": "Trigonometric values on the unit circle" }
+      ],
+      "buildsOn": ["angle-measure", "sine-cosine-tangent", "special-right-triangles", "function"]
+    },
+    {
+      "pack": "graphs-of-trigonometric-functions",
+      "title": "Graphs of trigonometric functions",
+      "brief": "Graphs of the sine, cosine, tangent, cotangent and reciprocal trigonometric functions, amplitude, period and phase shift, and sinusoidal models. Stops before identities.",
+      "concepts": [
+        { "id": "graphs-of-sine-and-cosine", "name": "Graphs of sine and cosine" },
+        { "id": "graphs-of-tangent-and-cotangent", "name": "Graphs of tangent and cotangent" },
+        { "id": "reciprocal-trig-graphs", "name": "Graphs of secant and cosecant" },
+        { "id": "amplitude-period-and-phase-shift", "name": "Amplitude, period and phase shift" },
+        { "id": "sinusoidal-model", "name": "Sinusoidal model" }
+      ],
+      "buildsOn": ["unit-circle-values", "vertical-shift", "reflection-and-stretch", "domain-and-range", "radian-measure"]
+    },
+    {
+      "pack": "trigonometric-identities",
+      "title": "Trigonometric identities",
+      "brief": "The Pythagorean identities, sum and difference, double-angle and half-angle formulas, and verifying identities. Stops before inverse trigonometric functions.",
+      "concepts": [
+        { "id": "pythagorean-identities", "name": "Pythagorean identities" },
+        { "id": "sum-and-difference-formulas", "name": "Sum and difference formulas" },
+        { "id": "double-angle-formulas", "name": "Double-angle formulas" },
+        { "id": "half-angle-formulas", "name": "Half-angle formulas" },
+        { "id": "verifying-identities", "name": "Verifying trigonometric identities" }
+      ],
+      "buildsOn": ["unit-circle-values", "reciprocal-trig-ratios", "radical-expression"]
+    },
+    {
+      "pack": "inverse-trigonometric-functions",
+      "title": "Inverse trigonometric functions",
+      "brief": "The inverse sine, cosine and tangent, their principal ranges, values of inverse trigonometric functions, the reciprocal inverses, and compositions with trigonometric functions. Stops before solving trigonometric equations.",
+      "concepts": [
+        { "id": "inverse-sine-cosine-tangent", "name": "Inverse sine, cosine and tangent" },
+        { "id": "principal-range", "name": "Principal range of an inverse trigonometric function" },
+        { "id": "inverse-trig-values", "name": "Values of inverse trigonometric functions" },
+        { "id": "inverse-reciprocal-trig", "name": "Inverse secant, cosecant and cotangent" },
+        { "id": "composing-trig-functions", "name": "Compositions of trigonometric and inverse functions" }
+      ],
+      "buildsOn": ["inverse-function", "one-to-one-function", "graphs-of-sine-and-cosine", "graphs-of-tangent-and-cotangent"]
+    },
+    {
+      "pack": "oblique-triangles-and-trig-equations",
+      "title": "Oblique triangles and trigonometric equations",
+      "brief": "Solving trigonometric equations, the law of sines and its ambiguous case, the law of cosines, and the area of a triangle. Stops before conic sections.",
+      "concepts": [
+        { "id": "trigonometric-equation", "name": "Trigonometric equation" },
+        { "id": "law-of-sines", "name": "Law of sines" },
+        { "id": "ambiguous-case", "name": "Ambiguous case of the law of sines" },
+        { "id": "law-of-cosines", "name": "Law of cosines" },
+        { "id": "area-of-a-triangle", "name": "Area of a triangle" }
+      ],
+      "buildsOn": ["solving-right-triangles", "sum-and-difference-formulas", "double-angle-formulas", "inverse-sine-cosine-tangent", "pythagorean-identities"]
+    },
+    {
+      "pack": "conic-sections",
+      "title": "Conic sections",
+      "brief": "Circles, parabolas, ellipses and hyperbolas in standard form, and identifying a conic from its general equation. Stops before polar coordinates.",
+      "concepts": [
+        { "id": "circle-equation", "name": "Equation of a circle" },
+        { "id": "parabola-equation", "name": "Parabola in standard form" },
+        { "id": "ellipse", "name": "Ellipse" },
+        { "id": "hyperbola", "name": "Hyperbola" },
+        { "id": "identifying-conics", "name": "Identifying a conic from its equation" }
+      ],
+      "buildsOn": ["quadratic-function", "vertex-form", "distance-and-midpoint", "completing-the-square"]
+    },
+    {
+      "pack": "polar-and-parametric-forms",
+      "title": "Polar and parametric forms",
+      "brief": "Polar coordinates and conversion to rectangular form, polar graphs, parametric equations, and the polar form of a complex number. Stops before vectors.",
+      "concepts": [
+        { "id": "polar-coordinates", "name": "Polar coordinates" },
+        { "id": "polar-to-rectangular-conversion", "name": "Converting between polar and rectangular coordinates" },
+        { "id": "polar-graphs", "name": "Polar graphs" },
+        { "id": "parametric-equations", "name": "Parametric equations" },
+        { "id": "polar-form-of-complex-number", "name": "Polar form of a complex number" }
+      ],
+      "buildsOn": ["angle-in-standard-position", "unit-circle-values", "rectangular-coordinate-system", "complex-number"]
+    },
+    {
+      "pack": "vectors",
+      "title": "Vectors",
+      "brief": "Vectors in the plane, their components and magnitude, vector addition and scalar multiplication, the dot product, and the angle between two vectors. Stops before calculus.",
+      "concepts": [
+        { "id": "vector", "name": "Vector" },
+        { "id": "vector-components", "name": "Vector components and magnitude" },
+        { "id": "vector-addition-and-scaling", "name": "Vector addition and scalar multiplication" },
+        { "id": "dot-product", "name": "Dot product" },
+        { "id": "angle-between-vectors", "name": "Angle between two vectors" }
+      ],
+      "buildsOn": ["rectangular-coordinate-system", "distance-and-midpoint", "inverse-sine-cosine-tangent"]
+    }
+  ]
+}

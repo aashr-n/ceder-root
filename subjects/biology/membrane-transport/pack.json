@@ -1,0 +1,2128 @@
+{
+  "formatVersion": 1,
+  "id": "biology.membrane-transport",
+  "subject": "biology",
+  "title": "Membrane transport",
+  "summary": "How substances cross a membrane: passive movement down a gradient, osmosis and what it does to cells, pumps that use energy, and transport in vesicles.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "diffusion",
+      "name": "Diffusion",
+      "aliases": [
+        "simple diffusion"
+      ],
+      "summary": "Particles spread from where they are more concentrated to where they are less concentrated, moving at random with no energy from the cell.",
+      "requires": [
+        "cell-membrane"
+      ],
+      "elements": [
+        {
+          "id": "random-motion",
+          "name": "Random molecular motion"
+        },
+        {
+          "id": "concentration-gradient",
+          "name": "Concentration gradient"
+        },
+        {
+          "id": "net-movement",
+          "name": "Net movement and equilibrium"
+        },
+        {
+          "id": "membrane-barrier",
+          "name": "Which particles cross the bilayer"
+        }
+      ],
+      "explain": {
+        "text": "Diffusion is the spreading of particles from where they are more concentrated to where they are less concentrated. Each particle moves at random, bumping and turning all the time, so across many particles the crowd drifts from the crowded side toward the thin side until the mix is even. The movement needs no energy from the cell. A sugar cube dropped into tea sweetens the whole cup without stirring. Once the particles are spread evenly they keep moving, but the same number crosses each way, so there is no net change."
+      },
+      "misconceptions": [
+        {
+          "id": "diffusion-needs-energy",
+          "claim": "Diffusion takes energy from the cell, like a pump does.",
+          "correction": "Diffusion is passive. Molecules move at random, so the net flow goes down the gradient with no energy spent by the cell."
+        },
+        {
+          "id": "equilibrium-stops-movement",
+          "claim": "At equilibrium, molecules stop moving.",
+          "correction": "Molecules keep crossing in both directions at equal rates. Only the net movement is zero."
+        },
+        {
+          "id": "any-molecule-crosses",
+          "claim": "Any molecule can slip through the membrane, whatever its size or charge.",
+          "correction": "The fatty core lets small nonpolar molecules through. Large or charged particles need a protein or cannot cross."
+        }
+      ]
+    },
+    {
+      "id": "osmosis",
+      "name": "Osmosis",
+      "aliases": [
+        "osmotic flow"
+      ],
+      "summary": "Osmosis is the net movement of water across a selectively permeable membrane toward the side with more dissolved solute.",
+      "requires": [
+        "diffusion",
+        "cell-membrane"
+      ],
+      "elements": [
+        {
+          "id": "solvent-movement",
+          "name": "Water moving across a membrane"
+        },
+        {
+          "id": "selective-membrane",
+          "name": "Selectively permeable membrane"
+        },
+        {
+          "id": "osmotic-pressure",
+          "name": "Osmotic pressure"
+        }
+      ],
+      "explain": {
+        "text": "Osmosis is the net movement of water across a selectively permeable membrane, toward the side with more dissolved solute. The solute holds some water back, so less water is free on that side, and the net flow runs toward it. The solute itself usually stays on its own side. Nothing has to push the water and no energy is spent, which makes osmosis passive. A plant cell placed in pure water takes water in and swells until its wall stops it. A red blood cell placed in salt water loses water and shrinks."
+      },
+      "misconceptions": [
+        {
+          "id": "osmosis-moves-solute",
+          "claim": "Osmosis is the movement of solute through a membrane.",
+          "correction": "Osmosis is the net movement of the solvent, water. The solute mostly stays on its own side."
+        },
+        {
+          "id": "water-to-less-solute",
+          "claim": "Water moves from the side with more solute to the side with less.",
+          "correction": "Water moves toward the side with more solute, where less of the water is free to move."
+        },
+        {
+          "id": "osmosis-needs-pump",
+          "claim": "Osmosis needs a pump to move the water.",
+          "correction": "Osmosis is passive. Water crosses the bilayer or through water channels, with no ATP spent."
+        }
+      ]
+    },
+    {
+      "id": "tonicity",
+      "name": "Tonicity",
+      "aliases": [
+        "hypertonic",
+        "hypotonic",
+        "isotonic"
+      ],
+      "summary": "Tonicity compares the solute concentration of two solutions separated by a membrane, and it decides whether a cell swells, shrinks or keeps its size.",
+      "requires": [
+        "osmosis"
+      ],
+      "elements": [
+        {
+          "id": "tonicity-of-solution",
+          "name": "Hypertonic, hypotonic and isotonic"
+        },
+        {
+          "id": "impermeant-solutes",
+          "name": "Solutes that cannot cross the membrane"
+        },
+        {
+          "id": "cell-responses",
+          "name": "Swelling, shrinking and bursting"
+        },
+        {
+          "id": "plant-cells",
+          "name": "Plasmolysis and turgor pressure"
+        }
+      ],
+      "explain": {
+        "text": "Tonicity describes how one solution compares with another across a membrane, or with the cytoplasm of a cell. Only solutes that cannot cross the membrane set the water flow. A hypertonic solution has more of these solutes than the cell and pulls water out, so the cell shrinks. A hypotonic solution has fewer and lets water in, so an animal cell can swell and burst. An isotonic solution has the same amount, so the cell keeps its size. Plant cells in hypotonic solutions swell against their walls instead."
+      },
+      "misconceptions": [
+        {
+          "id": "all-solutes-count",
+          "claim": "Every solute counts toward tonicity, even ones that cross the membrane freely.",
+          "correction": "Only solutes that cannot cross the membrane set the water flow. Freely crossing solutes do not change tonicity."
+        },
+        {
+          "id": "hypertonic-swells",
+          "claim": "A hypertonic solution makes the cell swell.",
+          "correction": "A hypertonic solution pulls water out of the cell, so the cell shrinks."
+        },
+        {
+          "id": "isotonic-identical",
+          "claim": "Isotonic means the two solutions are identical in every way.",
+          "correction": "Isotonic means equal concentrations of solutes that cannot cross. Water still crosses, but the net flow is zero."
+        }
+      ]
+    },
+    {
+      "id": "facilitated-diffusion",
+      "name": "Facilitated diffusion",
+      "aliases": [
+        "facilitated transport"
+      ],
+      "summary": "Facilitated diffusion moves polar molecules and ions down their gradient through channel or carrier proteins, without using ATP.",
+      "requires": [
+        "diffusion",
+        "cell-membrane"
+      ],
+      "elements": [
+        {
+          "id": "channel-proteins",
+          "name": "Channel proteins"
+        },
+        {
+          "id": "carrier-proteins",
+          "name": "Carrier proteins"
+        },
+        {
+          "id": "gated-channels",
+          "name": "Gated channels"
+        },
+        {
+          "id": "no-atp",
+          "name": "No ATP in the transport step"
+        }
+      ],
+      "explain": {
+        "text": "Facilitated diffusion moves polar molecules and ions across a membrane they cannot cross through the lipid bilayer. A transport protein gives them a route. Channel proteins form pores, and many of them are gated, opening only when a signal arrives. Carrier proteins bind one molecule, change shape, and release it on the other side. Both still move substances down their gradient, so the process needs no ATP. Glucose enters many cells this way, and each carrier works at a limited pace, so it can become saturated.",
+        "artifact": "transport-routes"
+      },
+      "misconceptions": [
+        {
+          "id": "facilitated-uses-atp",
+          "claim": "Facilitated diffusion uses ATP, because a protein is involved.",
+          "correction": "The protein provides a route. The solute moves down its gradient, and no ATP is spent."
+        },
+        {
+          "id": "carrier-pushes-uphill",
+          "claim": "Carrier proteins can push solutes up their gradient in facilitated diffusion.",
+          "correction": "Facilitated diffusion moves solutes down their gradient. Moving them uphill needs active transport."
+        },
+        {
+          "id": "channels-always-open",
+          "claim": "Channel proteins are always open.",
+          "correction": "Many channels are gated, opening and closing in response to a signal."
+        }
+      ]
+    },
+    {
+      "id": "active-transport",
+      "name": "Active transport",
+      "aliases": [
+        "primary active transport",
+        "secondary active transport"
+      ],
+      "summary": "Active transport moves substances against their concentration gradient, using energy from ATP or from an existing ion gradient.",
+      "requires": [
+        "diffusion",
+        "facilitated-diffusion"
+      ],
+      "elements": [
+        {
+          "id": "primary-active",
+          "name": "Primary active transport"
+        },
+        {
+          "id": "secondary-active",
+          "name": "Secondary active transport"
+        },
+        {
+          "id": "sodium-potassium-pump",
+          "name": "The sodium-potassium pump"
+        },
+        {
+          "id": "uphill-energy",
+          "name": "Energy input against the gradient"
+        }
+      ],
+      "explain": {
+        "text": "Active transport moves a substance against its concentration gradient, from low to high, so it needs an input of energy. Primary active transport uses ATP directly, as the sodium-potassium pump does. That pump moves three sodium ions out and two potassium ions in for each ATP it breaks. Secondary active transport uses an existing gradient, often the sodium gradient the pump built, to drive a second molecule uphill. Nerve cells rely on these pumps to keep the ion balance that carries their signals.",
+        "artifact": "transport-routes"
+      },
+      "misconceptions": [
+        {
+          "id": "active-is-faster-diffusion",
+          "claim": "Active transport is just diffusion that happens faster.",
+          "correction": "Active transport moves molecules against their gradient, and it needs an input of energy."
+        },
+        {
+          "id": "uphill-without-energy",
+          "claim": "Molecules can move against a gradient without energy if there are enough of them.",
+          "correction": "Crowding pushes molecules down a gradient, not up it. Moving them against a gradient needs energy."
+        },
+        {
+          "id": "active-always-atp",
+          "claim": "Active transport always uses ATP directly.",
+          "correction": "Secondary active transport uses an existing ion gradient, not ATP, to drive the move."
+        }
+      ]
+    },
+    {
+      "id": "endocytosis-and-exocytosis",
+      "name": "Endocytosis and exocytosis",
+      "aliases": [
+        "endocytosis",
+        "exocytosis"
+      ],
+      "summary": "Endocytosis takes material into a cell inside vesicles formed from the membrane, and exocytosis releases material by fusing vesicles with the membrane. Both use energy.",
+      "requires": [
+        "active-transport",
+        "endomembrane-system"
+      ],
+      "elements": [
+        {
+          "id": "endocytosis",
+          "name": "Endocytosis"
+        },
+        {
+          "id": "phagocytosis",
+          "name": "Phagocytosis"
+        },
+        {
+          "id": "receptor-mediated",
+          "name": "Receptor-mediated endocytosis"
+        },
+        {
+          "id": "exocytosis",
+          "name": "Exocytosis"
+        },
+        {
+          "id": "membrane-recycling",
+          "name": "Membrane recycling"
+        }
+      ],
+      "explain": {
+        "text": "Endocytosis brings material into a cell. The membrane wraps around the material, forming a pocket that pinches off as a vesicle inside the cytoplasm. Phagocytosis is cell eating, and pinocytosis is cell drinking. Receptor-mediated endocytosis uses receptors that catch specific molecules into coated pits. Exocytosis is the reverse: a vesicle fuses with the plasma membrane and releases its contents outside. Both processes need energy, and the membrane is recycled rather than lost.",
+        "artifact": "endocytosis-steps"
+      },
+      "misconceptions": [
+        {
+          "id": "endocytosis-through-pore",
+          "claim": "Endocytosis takes material in through a pore in the membrane.",
+          "correction": "The membrane wraps around the material and pinches off a vesicle. Nothing passes through a hole."
+        },
+        {
+          "id": "exocytosis-destroys-membrane",
+          "claim": "Exocytosis destroys the vesicle's membrane, so the cell must keep making membrane.",
+          "correction": "The vesicle membrane fuses with the plasma membrane and becomes part of it, so it is recycled."
+        },
+        {
+          "id": "endocytosis-is-passive",
+          "claim": "Endocytosis is passive, since the membrane just bends around the material.",
+          "correction": "Endocytosis uses energy, such as ATP, to bend the membrane and pinch off the vesicle."
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "biology.membrane-transport.meaning-of-diffusion",
+      "concept": "diffusion",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which statement describes diffusion?",
+      "explanation": "Diffusion is the net movement of particles down a concentration gradient, driven by their random motion, so the cell spends no energy. The idea that it stops at equal numbers is wrong: particles keep moving, and only the net flow is zero.",
+      "choices": [
+        "Particles spread from more concentrated to less concentrated areas, with no energy from the cell",
+        "Particles move from where they are less concentrated to where they are more, powered by ATP from the cell",
+        "Particles spread until both sides hold equal numbers, and then they stop moving altogether",
+        "Water alone crosses a membrane toward the side that holds more dissolved solute"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "diffusion-needs-energy",
+        "equilibrium-stops-movement",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.food-dye-spread",
+      "concept": "diffusion",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A drop of food dye falls into still water and slowly colours the whole glass. Why does the colour spread?",
+      "explanation": "The dye particles move at random, so over time they spread from the dense spot through the whole glass. No energy from a cell is involved. The idea that the colour stops once spread fails, because the particles keep moving.",
+      "choices": [
+        "Each dye particle uses energy from the water to push itself away from the others",
+        "Its particles move at random and spread from dense spots to sparse ones",
+        "It spreads until it fills the glass, then its particles stop moving and hold the colour",
+        "Gravity pulls each dye particle down into the water one at a time"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "diffusion-needs-energy",
+        null,
+        "equilibrium-stops-movement",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.equal-concentration-crossing",
+      "concept": "diffusion",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Solute is at the same concentration on both sides of a membrane. What is true of its molecules now?",
+      "explanation": "At equal concentration the molecules still cross in both directions, and the two rates match, so the net movement is zero. The idea that they stop is the equilibrium error. Diffusion needs no pump, so no ATP is involved.",
+      "choices": [
+        "They have stopped crossing, so there is no movement through the membrane at all",
+        "They are pumped across by membrane proteins that use ATP to keep the sides equal",
+        "They keep crossing both ways at equal rates, so the net movement is zero",
+        "They all drift to the side that has the bigger membrane surface"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "equilibrium-stops-movement",
+        "diffusion-needs-energy",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.molecule-crossing-bilayer",
+      "concept": "diffusion",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which molecule crosses a phospholipid bilayer most easily by simple diffusion?",
+      "explanation": "Small nonpolar molecules such as oxygen dissolve in the fatty core and pass through. Large or charged particles such as glucose and sodium ions cannot, so they need a protein. Starch is large and does not cross by simple diffusion.",
+      "choices": [
+        "Glucose, a large polar sugar",
+        "Sodium, a small charged ion",
+        "Starch, a large stored sugar",
+        "Oxygen, a small nonpolar gas"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "any-molecule-crosses",
+        "any-molecule-crosses",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.diffusion-needs-push",
+      "concept": "diffusion",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: \"Particles diffuse only when there is a big difference in concentration, because they need a push to start moving.\" What is wrong with that?",
+      "explanation": "Particles move at random whatever the concentration. A gradient does not start them moving; it sets the direction of the net flow. No push is needed, and the cell spends no energy.",
+      "choices": [
+        "Particles move at random regardless, and a gradient sets the net direction",
+        "Particles need energy from the cell to start moving, and the cell supplies it",
+        "Particles stop moving once the concentrations even out, so the push is lost",
+        "Particles move faster in cold water, so the concentration difference does not matter"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "diffusion-needs-energy",
+        "equilibrium-stops-movement",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.what-decides-crossing",
+      "concept": "diffusion",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A small gas and a large sugar sit on one side of a membrane made of a phospholipid bilayer. What decides whether a particle can diffuse across the bilayer?",
+      "explanation": "The fatty core of the bilayer lets small nonpolar particles through and blocks large or polar ones. A gradient alone does not decide it: the idea that every particle crosses is missing the bilayer's barrier.",
+      "choices": [
+        "Nothing about it, since every particle with a gradient crosses the membrane",
+        "Its size and polarity, since the fatty core blocks large and polar particles",
+        "Its colour, since coloured particles are blocked by the membrane's surface",
+        "Its weight, since heavy particles sink and cannot reach the membrane's core"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "any-molecule-crosses",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.diffusion-vs-active-transport",
+      "concept": "diffusion",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Diffusion and active transport both move a substance across a membrane. Which difference is correct?",
+      "explanation": "Diffusion moves substances down their gradient with no energy input. Active transport moves them against the gradient and needs energy. The idea that diffusion needs energy reverses the roles of the two.",
+      "choices": [
+        "Diffusion moves substances against their gradient and needs energy; active transport moves them down it",
+        "Diffusion needs a pump protein, while active transport needs no protein at all",
+        "Diffusion moves substances down their gradient without energy; active transport moves them against it",
+        "Both need energy, but diffusion draws on ATP and active transport draws on the gradient"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "diffusion-needs-energy"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.equilibrium-dye",
+      "concept": "diffusion",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: \"A beaker holds dye on both sides of a membrane at equal strength, so the dye has reached equilibrium and stops moving.\" What is wrong?",
+      "explanation": "Equilibrium means the rates match. The dye keeps moving in both directions, and the net movement is zero. Equal strength does not stop molecules, and no energy is needed to keep them moving.",
+      "choices": [
+        "The dye has stopped, because equal strength on each side means no molecule can move",
+        "The dye needs ATP to keep moving once its strength is even on both sides",
+        "The dye is moving faster at equilibrium, because the molecules collide more often",
+        "The dye keeps moving both ways at equal rates, so the net movement is zero"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "equilibrium-stops-movement",
+        "diffusion-needs-energy",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.why-no-energy",
+      "concept": "diffusion",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why can diffusion move molecules across a membrane without the cell spending energy?",
+      "explanation": "Molecules are in constant random motion, and that motion spreads them down a gradient with no energy from the cell. A membrane pump would need ATP, and a bilayer has no holes big enough for any molecule.",
+      "choices": [
+        "Molecules are in constant random motion, which spreads them down a gradient",
+        "The membrane pumps molecules along the gradient, using ATP that the cell has stored",
+        "The gradient heats molecules so they push across the membrane by themselves",
+        "The membrane has holes big enough for any molecule to pass through"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "diffusion-needs-energy",
+        null,
+        "any-molecule-crosses"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.solvent-moves",
+      "concept": "osmosis",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What substance moves across a membrane during osmosis?",
+      "explanation": "Osmosis is the movement of the solvent, which is water, across a selectively permeable membrane. The solute stays where it is. No pump is involved, because osmosis is passive.",
+      "choices": [
+        "Solute, the dissolved particles, across the same kind of membrane",
+        "Water, the solvent, across a selectively permeable membrane",
+        "Water, moved across by a protein pump that the cell powers with ATP",
+        "Oxygen, moving toward the side of the cell that holds the most of it"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "osmosis-moves-solute",
+        null,
+        "osmosis-needs-pump",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.salt-cell-direction",
+      "concept": "osmosis",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A cell is placed in a salt solution with more solute than its cytoplasm. Which way does the net water flow go?",
+      "explanation": "Water goes out of the cell toward the side with more solute, so the cell shrinks. The idea that water moves from the more concentrated side to the less concentrated side reverses the flow. Solute that cannot cross stays on its side.",
+      "choices": [
+        "Into the cell, from the side with more solute to the side with less",
+        "Nowhere, because the salt in the solution blocks the water from crossing",
+        "Out of the cell, toward the side with more solute",
+        "Salt moves into the cell, and the water follows the salt in"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "water-to-less-solute",
+        null,
+        null,
+        "osmosis-moves-solute"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.direction-explained",
+      "concept": "osmosis",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement explains the direction of water movement during osmosis?",
+      "explanation": "Water moves toward the side with more solute, because the solute holds some water back and less of the water on that side is free. The reverse idea, that water moves to the side with less solute, is the common error. Osmosis is passive, so no pump moves the water.",
+      "choices": [
+        "Water moves toward the side with less solute, where more of the water is free to move",
+        "Water is carried by a protein pump toward whichever side holds more solute",
+        "Water moves toward whichever side is colder, since heat drives it across",
+        "Water moves toward the side with more solute, where less of the water is free to move"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "water-to-less-solute",
+        "osmosis-needs-pump",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.student-sugar-follows",
+      "concept": "osmosis",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: \"Osmosis moves sugar into the cell, and the water follows the sugar.\" What is wrong?",
+      "explanation": "In osmosis the solvent moves, and a solute that cannot cross stays on its side. The water is not following any solute; it moves down its own gradient. The student has swapped the solvent and the solute.",
+      "choices": [
+        "Osmosis moves the solvent, water, and the solute need not cross",
+        "Osmosis moves the solute, and the water is pulled along as a passenger",
+        "Osmosis moves sugar and water together, in equal amounts, across the membrane",
+        "Osmosis moves water through a pump protein that the cell powers"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "osmosis-moves-solute",
+        null,
+        "osmosis-needs-pump"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.osmosis-passive",
+      "concept": "osmosis",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about osmosis is correct?",
+      "explanation": "Osmosis is passive. Water crosses by diffusion through the bilayer or through water channels, down its own gradient, so the cell spends no energy. The idea that a pump moves water is the osmosis-needs-pump error.",
+      "choices": [
+        "Water crosses a membrane through a pump that the cell powers with ATP",
+        "Water crosses a membrane passively, down its gradient, with no energy used",
+        "Water crosses at the cell wall, which is made of cellulose in plant cells",
+        "Solute crosses a membrane passively and drags the water across behind it"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "osmosis-needs-pump",
+        null,
+        null,
+        "osmosis-moves-solute"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.pure-water-sugar",
+      "concept": "osmosis",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Pure water is on one side of a membrane and a sugar solution is on the other. The membrane lets water through and holds sugar back. Which way does the net water flow go?",
+      "explanation": "Water flows toward the sugar solution, which has more solute and less free water. The sugar does not cross the membrane. The flow away from the solute is the common error.",
+      "choices": [
+        "Toward the pure water, which holds less solute and so has more free water",
+        "Sugar moves into the pure water, and the water follows the sugar across",
+        "Toward the sugar solution, which holds more solute and less free water",
+        "Nowhere, because the membrane is selectively permeable and blocks all movement"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "water-to-less-solute",
+        "osmosis-moves-solute",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.osmosis-vs-solute-diffusion",
+      "concept": "osmosis",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "How does osmosis differ from diffusion of a dissolved solute?",
+      "explanation": "Osmosis is the net movement of the solvent, water, across a membrane. Solute diffusion is the movement of the dissolved particles themselves. The idea that osmosis moves solute swaps the two, and osmosis needs no pump.",
+      "choices": [
+        "Osmosis is the movement of solute across a membrane, so the solvent does not have to move",
+        "Osmosis needs a pump, since the solvent cannot cross a membrane without one",
+        "Osmosis happens in open water, with no membrane needed to separate the two sides",
+        "Osmosis moves the solvent across a membrane, so the solute need not move"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "osmosis-moves-solute",
+        "osmosis-needs-pump",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.two-cells-gain",
+      "concept": "osmosis",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Two identical cells each have a different amount of solute inside. Both are placed in pure water. Which cell gains more water?",
+      "explanation": "The cell with more solute inside pulls more water in, because water moves toward the side with more solute. The idea that water leaves the side with more solute reverses this. Solute that cannot cross the membrane stays inside.",
+      "choices": [
+        "The cell with more solute inside, since water moves toward more solute",
+        "The cell with less solute inside, because water leaves the side with more solute",
+        "Both gain the same, since the cells are identical in size and shape",
+        "The cell with more solute inside, since its solute flows out into the pure water"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "water-to-less-solute",
+        null,
+        "osmosis-moves-solute"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.what-diffuses-in-osmosis",
+      "concept": "osmosis",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Osmosis is the net diffusion of which substance across a membrane?",
+      "explanation": "Osmosis is the net diffusion of water, the solvent. Dissolved salt is a solute: it sets the direction of the flow but does not itself cross the membrane.",
+      "choices": [
+        "Dissolved salt, the solute",
+        "Water, the solvent",
+        "Carbon dioxide, a gas",
+        "Glucose, a sugar"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "osmosis-moves-solute",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.hypertonic-term",
+      "concept": "tonicity",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A solution has more dissolved solute than a cell's cytoplasm. What is the solution called compared with the cell?",
+      "explanation": "A solution with more solute than the cytoplasm is hypertonic to it, so water leaves the cell. A hypotonic solution has less solute. The idea that the two are identical in every way is wrong: isotonic means equal solute concentration, with no net water flow.",
+      "choices": [
+        "Hypotonic, so water leaves the cell",
+        "Isotonic, since the two are identical in every way",
+        "Hypertonic, so water leaves the cell",
+        "Hypotonic, so water enters the cell"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        "isotonic-identical",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.red-cell-dilute",
+      "concept": "tonicity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A red blood cell is placed in a solution with less solute than its cytoplasm. What happens to the cell?",
+      "explanation": "The solution is hypotonic, so water moves into the cell, which swells and may burst. The idea that a hypertonic solution makes it swell reverses the cause.",
+      "choices": [
+        "It shrinks, because water moves out toward the more dilute solution",
+        "It stays the same, because the membrane blocks water in both directions",
+        "It swells, because the solution is hypertonic and pushes water in",
+        "It swells, because water moves in toward the more concentrated cytoplasm"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        null,
+        "hypertonic-swells",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.glucose-and-salt",
+      "concept": "tonicity",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Glucose crosses the membrane freely, and salt does not. A cell's cytoplasm has the same salt as the outside, but the outside has much more glucose. What happens to the water?",
+      "explanation": "Only solutes that cannot cross the membrane set the water flow. The salt is equal on both sides, so no net water moves. The glucose crosses freely and does not count. The idea that all solutes count is the error.",
+      "choices": [
+        "No net water moves, since the salt is equal and the glucose crosses freely",
+        "Water leaves the cell, since the outside glucose is more concentrated and counts toward the flow",
+        "Water enters the cell, since the cell holds more water than the solution does",
+        "Water crosses both ways, so the cell swells and then shrinks"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "all-solutes-count",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Glucose permeates, so it does not drive tonicity; with equal impermeant salt there is no net water movement. Stem wording of the glucose clause is slightly tricky but the key holds.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.plasmolysis-solution",
+      "concept": "tonicity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which solution would make a plant cell's membrane pull away from its cell wall?",
+      "explanation": "Plasmolysis happens when the solution is hypertonic and water leaves the cell. A hypotonic solution makes the cell turgid instead. A urea solution that crosses the membrane freely does not cause it, even at high concentration.",
+      "choices": [
+        "One that is hypotonic to the cytoplasm, so the cell's membrane pulls away from the wall",
+        "One that is hypertonic to the cytoplasm, so water leaves the cell",
+        "One that is isotonic, since it holds exactly the same solutes as the cell",
+        "One rich in urea, which crosses the membrane freely, so the cell loses water"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        "isotonic-identical",
+        "all-solutes-count"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.isotonic-property",
+      "concept": "tonicity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is true of isotonic solutions on either side of a cell membrane?",
+      "explanation": "Isotonic solutions have equal concentrations of solutes that cannot cross. Water still crosses, but the net flow is zero, so the cell keeps its size. Equal total solute, counting the solutes that cross, is not the test.",
+      "choices": [
+        "The two solutions contain exactly the same substances in the same amounts",
+        "Water stops crossing the membrane, so the cell keeps its size",
+        "Water crosses in both directions at equal rates, so the cell keeps its size",
+        "Their total solute counts match, with the solutes that cross counted as well"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "isotonic-identical",
+        "equilibrium-stops-movement",
+        null,
+        "all-solutes-count"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Choice A (identical substances in identical amounts) is stronger than needed; isotonic means equal non-penetrating solute, and choice C is the intended one. b's note: Choice 3 is also loosely defensible; chose 2.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.student-hypertonic-burst",
+      "concept": "tonicity",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: \"A cell placed in a hypertonic solution swells and then bursts, because the solution is strong.\" What is wrong?",
+      "explanation": "A hypertonic solution pulls water out of the cell, so the cell shrinks. Bursting happens in hypotonic solutions, where water enters. The idea that a strong solution swells cells reverses the outcome.",
+      "choices": [
+        "A hypertonic solution pulls water in, so the cell swells and then bursts",
+        "A hypertonic solution has no effect, since the membrane keeps water out of the cell",
+        "A hypertonic solution makes the cell's membrane stronger, so it cannot burst",
+        "A hypertonic solution pulls water out, so the cell shrinks instead of swelling"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "hypertonic-swells",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.half-molar-water",
+      "concept": "tonicity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A cell has 0.15 mol/L of solute inside, which cannot cross its membrane. It is placed in a solution with 0.30 mol/L of the same solute. Which way does the water go?",
+      "explanation": "The outside solution has twice the solute, so it is hypertonic and water leaves the cell. The idea that a hypertonic solution pulls water in reverses the flow. Equal concentrations would give no net movement.",
+      "choices": [
+        "Out of the cell, since the outside solution is hypertonic",
+        "Into the cell, since the outside solution is hypertonic and pushes water in",
+        "Nowhere, since the solute cannot cross the membrane and so holds water back",
+        "Into the cell, since the cell holds less water than the outside solution"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "hypertonic-swells",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.hypotonic-definition",
+      "concept": "tonicity",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which statement defines a hypotonic solution?",
+      "explanation": "A hypotonic solution has less solute than the solution it is compared with, so water moves into the more concentrated side. The reversed definition is a slip. The isotonic idea of equal everything is different.",
+      "choices": [
+        "One with a higher solute concentration than the solution it is compared with",
+        "One with a lower solute concentration than the solution it is compared with",
+        "One with exactly the same amount of water and solute as the solution it is compared with",
+        "One that is more concentrated than the cytoplasm of most cells"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        "isotonic-identical",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.most-at-risk-bursting",
+      "concept": "tonicity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which cell is most at risk of bursting when placed in pure water?",
+      "explanation": "A cell with no wall, such as an animal cell, takes in water until its membrane breaks. A plant cell's wall pushes back and prevents bursting. Hypertonic solutions shrink cells rather than burst them.",
+      "choices": [
+        "An animal cell in a hypertonic solution, since water rushes in and bursts it",
+        "A plant cell in pure water, since its wall gives way under the water",
+        "An animal cell, which has no wall to resist the water it takes in",
+        "A plant cell in a hypertonic solution, since its wall is pulled apart"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "hypertonic-swells",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.carrier-route",
+      "concept": "facilitated-diffusion",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does facilitated diffusion use to move a solute across a membrane?",
+      "explanation": "Facilitated diffusion uses a transport protein to give a solute a route, and the solute still moves down its gradient with no ATP. The idea that the protein spends ATP comes from confusing it with active transport.",
+      "choices": [
+        "A transport protein, with ATP paying for each molecule that crosses",
+        "The lipid bilayer alone, which moves the solute down its gradient",
+        "A transport protein, moving the solute up its gradient from low to high",
+        "A transport protein, moving the solute down its gradient without ATP"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "facilitated-uses-atp",
+        null,
+        "carrier-pushes-uphill",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.carrier-inward-glucose",
+      "concept": "facilitated-diffusion",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A solute is more concentrated outside a cell than inside, and a carrier protein moves it in. Which statement is correct?",
+      "explanation": "The solute moves in down its gradient, so the carrier needs no ATP. The carrier is not pushing the solute uphill. Believing that carriers push solutes uphill is the common error.",
+      "choices": [
+        "The solute moves in down its gradient, and the carrier needs no ATP",
+        "The carrier burns ATP for each solute, because the solute is moving in",
+        "The carrier pushes the solute in against its gradient, moving it uphill",
+        "The solute cannot enter at all, since it is more concentrated outside"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "facilitated-uses-atp",
+        "carrier-pushes-uphill",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.gated-channel",
+      "concept": "facilitated-diffusion",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A potassium channel is described as gated. What does that mean?",
+      "explanation": "A gated channel opens and closes in response to a signal, such as a change in voltage, so the cell controls when ions pass. The idea that channels are always open ignores this. Gating is not a pump.",
+      "choices": [
+        "It stays open at all times, so ions pass whenever they can",
+        "It opens and closes in response to a signal, controlling when ions can pass",
+        "It binds each ion in turn and carries it across the membrane",
+        "It is a gap in the bilayer that forms when the cell is damaged"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "channels-always-open",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.compare-oxygen",
+      "concept": "facilitated-diffusion",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Compare facilitated diffusion with the diffusion of oxygen through a bilayer. Which difference is correct?",
+      "explanation": "Facilitated diffusion needs a transport protein, while oxygen dissolves in the bilayer and crosses directly. Both move substances down their gradient with no energy input. The uphill idea is wrong, because facilitated diffusion is passive.",
+      "choices": [
+        "Facilitated diffusion uses ATP, while oxygen crosses without any energy input",
+        "Facilitated diffusion can move solutes uphill, while oxygen moves down its gradient",
+        "Facilitated diffusion uses a membrane protein; oxygen crosses the bilayer",
+        "Facilitated diffusion moves water, while oxygen cannot cross a membrane at all"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "facilitated-uses-atp",
+        "carrier-pushes-uphill",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.student-glucose-atp",
+      "concept": "facilitated-diffusion",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: \"Glucose enters muscle cells by facilitated diffusion, so the carrier must spend ATP every time to let it in.\" What is wrong?",
+      "explanation": "The carrier changes shape, and glucose moves down its gradient with no ATP spent. The student has assumed that any carrier-based move must be an active one.",
+      "choices": [
+        "The carrier spends ATP to change its shape, which is what lets glucose in",
+        "The carrier moves glucose up its gradient, which is why it needs the energy",
+        "Glucose enters faster than oxygen does, which is why a carrier is needed",
+        "The carrier changes shape, and glucose moves down its gradient with no ATP spent"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "facilitated-uses-atp",
+        "carrier-pushes-uphill",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.carrier-shape",
+      "concept": "facilitated-diffusion",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What lets a carrier protein move a solute across a membrane?",
+      "explanation": "A carrier binds its solute on one side, changes shape so the site faces the other side, and releases the solute there. The idea that it pushes the solute uphill, or burns ATP, is false.",
+      "choices": [
+        "It changes shape, so its binding site faces one side and then the other",
+        "It pushes the solute toward the side that already holds more of it",
+        "It dissolves in the lipid tails and carries the solute through them",
+        "It burns ATP to pull the solute across the lipid tails"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "carrier-pushes-uphill",
+        null,
+        "facilitated-uses-atp"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.channel-vs-carrier",
+      "concept": "facilitated-diffusion",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How does a channel protein differ from a carrier protein?",
+      "explanation": "A carrier binds its solute and changes shape, while a channel forms a water-filled pore. The idea that channels are always open is wrong: many are gated.",
+      "choices": [
+        "A channel stays open at all times, while a carrier changes shape when it binds",
+        "A carrier binds its solute and changes shape, while a channel forms a pore",
+        "A carrier burns ATP to move its solute, while a channel moves it without energy",
+        "A channel moves solute one molecule at a time, while a carrier moves many at once"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "channels-always-open",
+        null,
+        "facilitated-uses-atp",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: Choice 0 wrong since channels can be gated.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.many-glucose-carriers",
+      "concept": "facilitated-diffusion",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A cell has many glucose carriers but almost none for oxygen. Which reason best explains this?",
+      "explanation": "Glucose is large and polar, so it cannot cross the bilayer quickly, while oxygen dissolves in it. Carriers are needed for glucose because it is large and polar, not because it moves uphill.",
+      "choices": [
+        "Glucose moves uphill into the cell, so carriers are needed to pull it in",
+        "Glucose needs ATP to cross, while oxygen moves freely by diffusion",
+        "Glucose is large and polar, so it cannot cross the bilayer quickly",
+        "Glucose is needed more than oxygen, so the cell makes more of its carriers"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "carrier-pushes-uphill",
+        "facilitated-uses-atp",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.carrier-step-order",
+      "concept": "facilitated-diffusion",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps of carrier-mediated glucose transport in the order they happen.",
+      "explanation": "The carrier binds glucose where glucose is more concentrated, changes shape to face the other side, and releases the glucose there. Then the empty carrier returns to its original shape, ready for the next molecule.",
+      "steps": [
+        "Glucose binds to the carrier's site on the side with more glucose",
+        "The carrier changes shape, so the site faces the other side",
+        "Glucose is released on the side with less glucose",
+        "The empty carrier changes back to its original shape"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.membrane-transport.needs-energy",
+      "concept": "active-transport",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does active transport need that diffusion does not?",
+      "explanation": "Active transport moves a substance against its gradient, from low to high concentration, so it needs an input of energy. Diffusion needs none. The faster-rate idea is wrong: speed does not decide whether energy is needed.",
+      "choices": [
+        "A faster rate of movement, since the molecules are pushed across more quickly",
+        "A larger number of molecules, since the crowd pushes them across the membrane",
+        "A protein channel that lets the molecules through in both directions",
+        "An input of energy, used to move molecules against their concentration gradient"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "active-is-faster-diffusion",
+        "uphill-without-energy",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.sodium-pump-out",
+      "concept": "active-transport",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A cell pumps sodium out against a steep gradient. Which statement is true?",
+      "explanation": "Pumping sodium out against its gradient takes energy, usually from ATP. Sodium moved this way does not leave by crowding, and the pump is not just a faster form of diffusion.",
+      "choices": [
+        "Energy is spent, usually from ATP, to move the sodium against its gradient",
+        "No energy is spent, since the crowding of sodium inside the cell pushes it out",
+        "Energy is spent to speed up the sodium, which would leave by itself anyway",
+        "Energy is spent, but the sodium is moved down its gradient through a channel"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "uphill-without-energy",
+        "active-is-faster-diffusion",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.glucose-rides-gradient",
+      "concept": "active-transport",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A cell takes up glucose against its gradient by using the sodium gradient that a pump built. Which statement is correct?",
+      "explanation": "The glucose rides on the energy stored in the sodium gradient, so no ATP is spent at the glucose step. The idea that every active step burns ATP directly is the error.",
+      "choices": [
+        "Glucose burns ATP at that step, the same way the sodium pump does",
+        "Glucose uses the energy stored in the sodium gradient, so no ATP is spent at that step",
+        "Glucose enters down its gradient, so no energy is needed at all",
+        "Glucose moves against its gradient on its own, because sodium pulls it in without energy"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "active-always-atp",
+        null,
+        null,
+        "uphill-without-energy"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.secondary-definition",
+      "concept": "active-transport",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which best describes secondary active transport?",
+      "explanation": "Secondary active transport moves one solute against its gradient, powered by another ion moving down its gradient, which a pump set up using ATP. The idea that it burns ATP directly describes primary transport, not this.",
+      "choices": [
+        "A solute moves against its gradient, powered directly by ATP at each step",
+        "A solute moves faster than in diffusion, because another ion pushes it along",
+        "A solute moves against its gradient, powered by the gradient of another ion",
+        "A solute moves down its gradient through a channel, with no energy needed"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "active-always-atp",
+        "active-is-faster-diffusion",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.pump-ion-out",
+      "concept": "active-transport",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which ion does the sodium-potassium pump move out of the cell?",
+      "explanation": "The pump moves sodium out and potassium in, so the cell holds more potassium and less sodium. Chloride and calcium are not moved by this pump.",
+      "choices": [
+        "Potassium ions",
+        "Chloride ions",
+        "Calcium ions",
+        "Sodium ions"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.student-pore-atp",
+      "concept": "active-transport",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A pump moves ions uphill and uses ATP at each cycle. A student says the ATP only opens a pore so the ions can slip through. What is wrong?",
+      "explanation": "The ATP changes the pump's shape so it can carry ions uphill, against their gradient, one cycle at a time. The idea that the ions slip through a pore is a diffusion picture, and it leaves out the energy.",
+      "choices": [
+        "The ATP changes the pump's shape so it can carry ions uphill against their gradient",
+        "The ATP opens the pore so the ions can slip through by diffusion, which is faster",
+        "The ATP is not needed, since the ions are pushed uphill by the crowd of ions",
+        "The ATP makes the ions move through the pore faster than diffusion would allow"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "uphill-without-energy",
+        "active-is-faster-diffusion"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.pump-stoichiometry",
+      "concept": "active-transport",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about the sodium-potassium pump is correct?",
+      "explanation": "Each cycle that uses one ATP moves three sodium ions out and two potassium ions in. The reversed numbers are a slip. The pump is not faster than diffusion, and it does not work without ATP.",
+      "choices": [
+        "For each ATP used, it moves two sodium ions out and three potassium ions in",
+        "For each ATP used, it moves three sodium ions out and two potassium ions in",
+        "It moves ions faster than diffusion would, so it needs no ATP to start",
+        "It moves ions up their gradients without ATP, using the crowding of the ions"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        "active-is-faster-diffusion",
+        "uphill-without-energy"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.student-diffusion-harder",
+      "concept": "active-transport",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: \"Active transport is just diffusion pushed harder, so a cell needs more of it when it has more molecules.\" What is wrong?",
+      "explanation": "Active transport moves molecules against their gradient using energy, so crowding does not drive it. Diffusion is a different process, and more molecules make it faster, not energy-driven.",
+      "choices": [
+        "It is diffusion at a higher rate, so more molecules mean faster movement",
+        "It moves molecules up a gradient through crowding alone, with no energy needed",
+        "It moves molecules against their gradient using energy, not crowding",
+        "It needs a membrane with no proteins, since proteins slow the molecules down"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "active-is-faster-diffusion",
+        "uphill-without-energy",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.poison-stops-first",
+      "concept": "active-transport",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A poison stops a cell from making ATP. Which process stops working right away because of it?",
+      "explanation": "The sodium-potassium pump stops at once, since it needs ATP at every cycle. Glucose uptake runs on the sodium gradient, which fades slowly without the pump. Oxygen diffusion needs no ATP and carries on.",
+      "choices": [
+        "Glucose uptake along the sodium gradient, which burns ATP at every molecule",
+        "Water moving by osmosis, which uses ATP to pull the water through",
+        "Oxygen moving through the bilayer, which needs ATP to dissolve in it",
+        "Pumping sodium out against its gradient, which burns ATP at every cycle"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "active-always-atp",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.pump-cycle-order",
+      "concept": "active-transport",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps of one cycle of the sodium-potassium pump in order.",
+      "explanation": "Three sodium ions bind inside, and ATP passes a phosphate to the pump, which turns outward and releases the sodium. Two potassium ions then bind outside, the phosphate leaves, and the pump turns back and releases the potassium inside.",
+      "steps": [
+        "Three sodium ions bind to the pump on the inside of the cell",
+        "ATP passes a phosphate to the pump, changing its shape",
+        "The pump opens to the outside and releases the three sodium ions",
+        "Two potassium ions bind to the pump on the outside",
+        "The phosphate leaves, the pump turns back, and the potassium is released inside"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.membrane-transport.what-is-endocytosis",
+      "concept": "endocytosis-and-exocytosis",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is endocytosis?",
+      "explanation": "In endocytosis the membrane wraps around material outside the cell and pinches off a vesicle inside it. It uses energy. The pore idea and the passive idea are both wrong.",
+      "choices": [
+        "The membrane wraps around material and pinches off a vesicle, using energy",
+        "Material passes through a pore that opens in the membrane, with no vesicle formed",
+        "A vesicle fuses with the membrane and releases its contents outside the cell",
+        "The membrane bends on its own, letting material in with no energy needed"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "endocytosis-through-pore",
+        null,
+        "endocytosis-is-passive"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.what-is-exocytosis",
+      "concept": "endocytosis-and-exocytosis",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is exocytosis?",
+      "explanation": "In exocytosis a vesicle fuses with the plasma membrane and releases its contents outside the cell. The vesicle membrane joins the cell membrane, so it is recycled rather than destroyed.",
+      "choices": [
+        "A vesicle fuses with the plasma membrane, and its own membrane is destroyed",
+        "A vesicle fuses with the plasma membrane and releases its contents outside the cell",
+        "Material enters the cell as the membrane pinches off a vesicle inside",
+        "Material leaves the cell through a pore that opens in the membrane"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "exocytosis-destroys-membrane",
+        null,
+        null,
+        "endocytosis-through-pore"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.engulfing-bacterium",
+      "concept": "endocytosis-and-exocytosis",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A white blood cell engulfs a bacterium. Which description fits?",
+      "explanation": "The cell surrounds the bacterium with membrane and pinches off a vesicle inside: endocytosis, in the form called phagocytosis. Passing through a pore, or passive bending, are the wrong ideas.",
+      "choices": [
+        "Passage through a pore that opens in the membrane while the bacterium squeezes past",
+        "Passive uptake, since the membrane simply bends around the bacterium with no energy",
+        "Endocytosis, as the membrane surrounds the bacterium and pinches off inside the cell",
+        "Exocytosis, since the bacterium is pushed out of a vesicle into the cell"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "endocytosis-through-pore",
+        "endocytosis-is-passive",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.why-endocytosis-active",
+      "concept": "endocytosis-and-exocytosis",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does endocytosis count as active transport?",
+      "explanation": "Endocytosis uses energy to bend the membrane and pinch off the vesicle. The passive idea, that the membrane bends by itself, ignores this energy cost.",
+      "choices": [
+        "The membrane bends by itself, so the process is passive and needs no energy",
+        "Material crosses a pore that the cell must hold open with ATP",
+        "Material is pushed in by the crowded contents of the cell with no energy",
+        "It uses energy, such as ATP, to bend the membrane and pinch off the vesicle"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "endocytosis-is-passive",
+        "endocytosis-through-pore",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.student-exocytosis-destroys",
+      "concept": "endocytosis-and-exocytosis",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: \"Exocytosis destroys the membrane of each vesicle, so the cell must keep making new membrane.\" What is wrong?",
+      "explanation": "In exocytosis the vesicle membrane joins the plasma membrane, so it is recycled, not destroyed. The idea that it is destroyed is common, but a cell does not rebuild its whole surface each time.",
+      "choices": [
+        "The vesicle membrane joins the plasma membrane and is recycled, not destroyed",
+        "The vesicle membrane breaks down, so the cell must build new membrane each time",
+        "The vesicle membrane leaves the cell with its contents and is lost for good",
+        "The vesicle membrane passes through a pore in the plasma membrane, so none is joined"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "exocytosis-destroys-membrane",
+        "exocytosis-destroys-membrane",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.student-reverse-diffusion",
+      "concept": "endocytosis-and-exocytosis",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: \"Endocytosis is just the reverse of diffusion: the material slips through the membrane.\" What is wrong?",
+      "explanation": "Endocytosis wraps the membrane around the material and pinches off a vesicle, which needs energy. Material does not slip through a pore, and the process is not passive.",
+      "choices": [
+        "The material slips through a pore that opens as it passes, so no vesicle forms",
+        "The membrane wraps around the material and pinches off a vesicle, which needs energy",
+        "The membrane is passive, so no energy is needed for it to wrap around the material",
+        "The material is a gas, which crosses any membrane directly without a vesicle"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "endocytosis-through-pore",
+        null,
+        "endocytosis-is-passive",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.hormone-vesicle-membrane",
+      "concept": "endocytosis-and-exocytosis",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A cell releases a hormone stored in vesicles. What happens to each vesicle's membrane?",
+      "explanation": "The vesicle fuses with the plasma membrane, so its membrane becomes part of the cell's surface and is recycled. The idea that the membrane is destroyed is the error.",
+      "choices": [
+        "It is broken down, and the cell builds a new plasma membrane to replace it",
+        "It passes into the cytoplasm and is lost there, so the cell must make more",
+        "It fuses with the plasma membrane and becomes part of the cell's surface",
+        "It stays inside the vesicle, and the hormone diffuses out through its wall"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "exocytosis-destroys-membrane",
+        "exocytosis-destroys-membrane",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.receptor-loss",
+      "concept": "endocytosis-and-exocytosis",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A cell with receptors that catch a nutrient loses those receptors. Which effect is most likely?",
+      "explanation": "Receptor-mediated endocytosis depends on receptors that gather molecules into coated pits, so losing them lowers uptake. The idea that uptake needs no energy is wrong, and no pore is involved.",
+      "choices": [
+        "Uptake stays the same, because the nutrient already crosses through pores in the membrane",
+        "Uptake stays the same, since endocytosis needs no energy and runs without receptors",
+        "Uptake rises, because more of the nutrient is left free in the water around the cell",
+        "Uptake of that nutrient drops, because the receptors no longer gather it into coated pits"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "endocytosis-through-pore",
+        "endocytosis-is-passive",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.enzyme-release",
+      "concept": "endocytosis-and-exocytosis",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Digestive enzymes made in the pancreas are released into the gut. Which process moves them out of the cell?",
+      "explanation": "Exocytosis releases the enzymes: vesicles fuse with the plasma membrane and open outward. The wrong ideas are a pore, or a reversed process.",
+      "choices": [
+        "Exocytosis, with vesicles fusing and releasing enzymes outside",
+        "Diffusion through a pore that the enzymes open in the membrane",
+        "Endocytosis, where the gut wall pinches off a vesicle of enzymes",
+        "Passive leakage, since the enzymes slip out along with the water"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "endocytosis-through-pore",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.membrane-transport.receptor-endocytosis-order",
+      "concept": "endocytosis-and-exocytosis",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps of receptor-mediated endocytosis in order.",
+      "explanation": "Molecules bind receptors, coated pits form and pinch off as vesicles, then the coat is shed and the vesicle joins an endosome. Passive bending, without these steps, is the wrong idea.",
+      "steps": [
+        "Receptors on the membrane bind the molecules they are built to catch",
+        "The membrane under the bound receptors sinks into a coated pit",
+        "The pit pinches off inside the cell as a coated vesicle",
+        "The vesicle sheds its coat and fuses with an endosome inside the cell"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.membrane-transport.tap-lipid-bilayer",
+      "concept": "diffusion",
+      "element": "membrane-barrier",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the part that small nonpolar molecules such as oxygen cross on their own, with no protein to help them.",
+      "artifact": "transport-routes",
+      "target": "lipid-bilayer",
+      "explanation": "Oxygen and carbon dioxide are small and nonpolar, so they dissolve through the oily middle of the lipid bilayer and diffuse straight across, down their gradient.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "solver-a's note: Spot B sits in the lipid bilayer with no protein, and a small molecule passes straight through it."
+      }
+    },
+    {
+      "id": "biology.membrane-transport.tap-channel-protein",
+      "concept": "facilitated-diffusion",
+      "element": "channel-proteins",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the protein that forms an open pore, letting ions flow down their gradient without binding them.",
+      "artifact": "transport-routes",
+      "target": "channel-protein",
+      "explanation": "A channel protein is a pore lined with water-friendly parts. Ions stream through it down their gradient, so no ATP is spent.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "solver-a's note: Spot C is the blue two-part channel spanning the bilayer, with ions passing through an open pore."
+      }
+    },
+    {
+      "id": "biology.membrane-transport.tap-carrier-protein",
+      "concept": "facilitated-diffusion",
+      "element": "carrier-proteins",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the protein that binds a glucose molecule, changes shape, and releases it on the other side without spending ATP.",
+      "artifact": "transport-routes",
+      "target": "carrier-protein",
+      "explanation": "A carrier protein holds one molecule at a time and flips its shape to release it across the membrane. Glucose still moves down its gradient, so this is facilitated diffusion.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "solver-a's note: Spot D is the carrier with a cleft that holds one hexagonal molecule on one side and releases it on the other, with no ATP drawn."
+      }
+    },
+    {
+      "id": "biology.membrane-transport.tap-sodium-potassium-pump",
+      "concept": "active-transport",
+      "element": "sodium-potassium-pump",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the protein that sends three sodium ions out and brings two potassium ions in, each against its gradient.",
+      "artifact": "transport-routes",
+      "target": "sodium-potassium-pump",
+      "explanation": "The sodium-potassium pump moves both ions from where they are scarce to where they are crowded. That uphill work is active transport and needs energy.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "solver-a's note: Spot B is the ATP-linked pump (dark green). The picture does not show ion identities or counts (3 Na+ out, 2 K+ in), so this rests on identifying it as the only ATP-driven transporter."
+      }
+    },
+    {
+      "id": "biology.membrane-transport.tap-atp",
+      "concept": "active-transport",
+      "element": "primary-active",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "Tap the molecule whose breakdown directly powers the uphill transport in this picture.",
+      "artifact": "transport-routes",
+      "target": "atp",
+      "explanation": "ATP gives up its last phosphate to the pump, and that energy drives sodium and potassium against their gradients. Using ATP directly makes this primary active transport.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "solver-a's note: Spot E is the ATP-like molecule (a base-and-sugar part with a chain of three phosphate-like circles). Its breakdown powers the uphill pump. The picture is schematic, so the identification is inferred from the drawing."
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "transport-routes",
+      "kind": "diagram",
+      "title": "Ways across the membrane",
+      "alt": "An unlabelled strip of membrane, outside above and cytoplasm below. Left to right: oxygen molecules crossing straight through the lipid bilayer; a blue channel protein with an open pore that ions pass through; an ochre cup-shaped carrier holding one glucose molecule; and a dark green pump sending sodium out and potassium in against their gradients, powered by an ATP molecule beside it.",
+      "file": "assets/transport-routes.svg",
+      "hotspots": [
+        {
+          "id": "lipid-bilayer",
+          "label": "Lipid bilayer",
+          "x": 0.104,
+          "y": 0.522,
+          "r": 0.05
+        },
+        {
+          "id": "channel-protein",
+          "label": "Channel protein",
+          "x": 0.333,
+          "y": 0.522,
+          "r": 0.05
+        },
+        {
+          "id": "carrier-protein",
+          "label": "Carrier protein",
+          "x": 0.567,
+          "y": 0.578,
+          "r": 0.06
+        },
+        {
+          "id": "sodium-potassium-pump",
+          "label": "Sodium-potassium pump",
+          "x": 0.817,
+          "y": 0.528,
+          "r": 0.06
+        },
+        {
+          "id": "atp",
+          "label": "ATP",
+          "x": 0.721,
+          "y": 0.767,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "endocytosis-stages",
+      "kind": "diagram",
+      "title": "Endocytosis, stage by stage",
+      "alt": "A cell membrane seen edge-on, outside above and cytoplasm below, shown at four moments from left to right: a particle outside above the flat membrane; the membrane dipping into a shallow pocket around the particle; a deep round pocket enclosing the particle, joined to the membrane by a narrow neck; and a closed vesicle in the cytoplasm with the particle inside, the membrane above flat again.",
+      "file": "assets/endocytosis-stages.svg",
+      "hotspots": [
+        {
+          "id": "particle-outside",
+          "label": "Particle outside the cell",
+          "x": 0.138,
+          "y": 0.233,
+          "r": 0.06
+        },
+        {
+          "id": "shallow-pocket",
+          "label": "Membrane folding inward",
+          "x": 0.379,
+          "y": 0.433,
+          "r": 0.06
+        },
+        {
+          "id": "deep-pocket",
+          "label": "Pocket closing at the neck",
+          "x": 0.621,
+          "y": 0.522,
+          "r": 0.06
+        },
+        {
+          "id": "vesicle",
+          "label": "Vesicle in the cytoplasm",
+          "x": 0.867,
+          "y": 0.622,
+          "r": 0.06
+        }
+      ]
+    },
+    {
+      "id": "endocytosis-steps",
+      "kind": "sequence",
+      "title": "Taking material in by endocytosis",
+      "alt": "Four steps: a particle waits outside the cell, the membrane folds inward around it, the pocket deepens and closes at its neck, and a vesicle pinches off into the cytoplasm.",
+      "over": "endocytosis-stages",
+      "steps": [
+        {
+          "title": "Material outside",
+          "text": "A particle sits outside the cell, too large to pass through the bilayer or through any transport protein.",
+          "focus": "particle-outside"
+        },
+        {
+          "title": "Membrane folds in",
+          "text": "The plasma membrane bends inward around the particle, forming a shallow pocket. Nothing passes through a hole.",
+          "focus": "shallow-pocket"
+        },
+        {
+          "title": "Pocket closes",
+          "text": "The pocket deepens until only a narrow neck joins it to the rest of the membrane. This reshaping uses energy.",
+          "focus": "deep-pocket"
+        },
+        {
+          "title": "Vesicle pinches off",
+          "text": "The neck seals, and a vesicle carries the particle into the cytoplasm. The membrane above closes up again.",
+          "focus": "vesicle"
+        }
+      ]
+    }
+  ]
+}

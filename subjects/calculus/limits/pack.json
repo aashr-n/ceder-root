@@ -1,0 +1,1642 @@
+{
+  "formatVersion": 1,
+  "id": "calculus.limits",
+  "subject": "calculus",
+  "title": "Limits",
+  "summary": "What a limit is and how to find one: one-sided and infinite limits, limits at infinity, limit laws, the squeeze theorem, and continuity with the intermediate value theorem.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "limit",
+      "name": "Limit of a function",
+      "aliases": [
+        "limits of functions",
+        "limit at a point",
+        "limit of f(x)"
+      ],
+      "summary": "The limit of f(x) as x approaches a is the value f(x) gets close to when x gets close to a, whether or not f(a) exists.",
+      "elements": [
+        {
+          "id": "approaching-not-evaluating",
+          "name": "Approaching a point is not reaching it"
+        },
+        {
+          "id": "direct-substitution",
+          "name": "Direct substitution",
+          "aliases": [
+            "plugging in"
+          ]
+        },
+        {
+          "id": "factor-and-cancel",
+          "name": "Factoring to remove a 0/0 form"
+        },
+        {
+          "id": "removable-discontinuity",
+          "name": "Removable discontinuity",
+          "aliases": [
+            "hole in a graph"
+          ]
+        },
+        {
+          "id": "epsilon-delta",
+          "name": "Epsilon-delta definition"
+        }
+      ],
+      "explain": {
+        "text": "The limit of f(x) as x approaches a is the value that f(x) gets arbitrarily close to as x gets close to a, with x not equal to a. Only the values near a matter, so f(a) can be missing or different from the limit. Picture a graph with a hole at x = 2 and a single point off the hole at (2, 5): the limit is the height of the hole, 4 if the curve is y = x + 2. If f is a polynomial or another continuous function, the limit is found by plugging a in. When plugging in gives 0/0, factor and cancel first. The notation is lim as x → a of f(x)."
+      }
+    },
+    {
+      "id": "one-sided-limit",
+      "name": "One-sided limits",
+      "aliases": [
+        "one-sided limit",
+        "left-hand limit",
+        "right-hand limit",
+        "left and right limits"
+      ],
+      "summary": "A one-sided limit approaches a from only one side: from the right, written x → a⁺, or from the left, written x → a⁻.",
+      "requires": [
+        "limit"
+      ],
+      "elements": [
+        {
+          "id": "right-hand-limit",
+          "name": "Right-hand limit"
+        },
+        {
+          "id": "left-hand-limit",
+          "name": "Left-hand limit"
+        },
+        {
+          "id": "two-sided-limit-exists",
+          "name": "When the two-sided limit exists"
+        },
+        {
+          "id": "jump-discontinuity",
+          "name": "Jump discontinuity"
+        }
+      ],
+      "explain": {
+        "text": "A one-sided limit looks at the values of f(x) from only one side of a. The right-hand limit, written x → a⁺, uses x values bigger than a. The left-hand limit, written x → a⁻, uses x values smaller than a. Picture a staircase: standing at the edge of one step, the height reached from the right and the height reached from the left can differ. The two-sided limit exists only when both one-sided limits exist and are equal, and then it is their common value. If they differ, the function has a jump at a."
+      }
+    },
+    {
+      "id": "limit-laws",
+      "name": "Limit laws",
+      "aliases": [
+        "limit law",
+        "limit properties",
+        "limit rules"
+      ],
+      "summary": "The limit laws say that the limit of a sum, product, quotient or power can be found from the limits of its parts, when those limits exist.",
+      "requires": [
+        "limit"
+      ],
+      "elements": [
+        {
+          "id": "sum-and-difference",
+          "name": "Sum and difference law"
+        },
+        {
+          "id": "product-law",
+          "name": "Product law"
+        },
+        {
+          "id": "constant-multiple",
+          "name": "Constant multiple law"
+        },
+        {
+          "id": "quotient-law",
+          "name": "Quotient law"
+        },
+        {
+          "id": "power-and-root-law",
+          "name": "Power and root law"
+        }
+      ],
+      "explain": {
+        "text": "The limit laws let you find the limit of a combined function from the limits of its parts. If the limit of f and the limit of g both exist at a, then the limit of f plus g is the sum of the two limits, and the same holds for differences, products and constant multiples. The quotient law works when the limit of g is not zero. For a power or a root, you can take the power or root of the limit, as long as the result is defined. These laws turn many limits into plain arithmetic, such as substituting a into a polynomial."
+      }
+    },
+    {
+      "id": "infinite-limit",
+      "name": "Infinite limits and vertical asymptotes",
+      "aliases": [
+        "infinite limit",
+        "vertical asymptote",
+        "vertical asymptotes",
+        "limit equal to infinity"
+      ],
+      "summary": "An infinite limit means f(x) grows without bound as x approaches a, and a vertical asymptote is the line x = a near which this happens.",
+      "requires": [
+        "limit",
+        "one-sided-limit"
+      ],
+      "elements": [
+        {
+          "id": "positive-infinity",
+          "name": "Limit equal to positive infinity"
+        },
+        {
+          "id": "negative-infinity",
+          "name": "Limit equal to negative infinity"
+        },
+        {
+          "id": "vertical-asymptote",
+          "name": "Vertical asymptote"
+        },
+        {
+          "id": "sign-from-each-side",
+          "name": "Sign of a limit from each side"
+        }
+      ],
+      "explain": {
+        "text": "Sometimes f(x) grows without bound as x approaches a. Writing the limit of f(x) as x → a equals ∞ means that f(x) gets larger than any number you choose, once x is close enough to a but not equal to a. The line x = a is then a vertical asymptote. An infinite limit is not a number, so the two-sided limit does not exist as a real number. For f(x) = 1/x, the function is large and positive just to the right of 0 and large and negative just to the left, so the two one-sided limits at 0 are ∞ and −∞."
+      }
+    },
+    {
+      "id": "limits-at-infinity",
+      "name": "Limits at infinity and horizontal asymptotes",
+      "aliases": [
+        "horizontal asymptote",
+        "horizontal asymptotes",
+        "limit as x goes to infinity",
+        "end behavior"
+      ],
+      "summary": "A limit at infinity describes what f(x) approaches as x grows without bound, and a horizontal asymptote is the horizontal line the graph approaches that way.",
+      "requires": [
+        "limit"
+      ],
+      "elements": [
+        {
+          "id": "x-to-infinity",
+          "name": "Limit as x → ∞"
+        },
+        {
+          "id": "x-to-negative-infinity",
+          "name": "Limit as x → −∞"
+        },
+        {
+          "id": "degree-comparison",
+          "name": "Comparing degrees of polynomials"
+        },
+        {
+          "id": "horizontal-asymptote",
+          "name": "Horizontal asymptote"
+        }
+      ],
+      "explain": {
+        "text": "A limit at infinity asks what f(x) approaches as x grows without bound, written x → ∞, or as x decreases without bound, written x → −∞. For example, 1/x approaches 0 as x grows, so the line y = 0 is a horizontal asymptote. For a rational function, divide the top and bottom by the highest power of x in the denominator. Then every term with x in the denominator goes to 0. If the numerator has a higher degree than the denominator, the function grows without bound and has no horizontal asymptote."
+      }
+    },
+    {
+      "id": "squeeze-theorem",
+      "name": "Squeeze theorem",
+      "aliases": [
+        "sandwich theorem",
+        "squeeze rule",
+        "pinching theorem"
+      ],
+      "summary": "If g(x) ≤ f(x) ≤ h(x) near a, and g and h both have the same limit L at a, then f also has limit L at a.",
+      "requires": [
+        "limit",
+        "limit-laws"
+      ],
+      "elements": [
+        {
+          "id": "bounding-functions",
+          "name": "Bounding functions"
+        },
+        {
+          "id": "bounded-times-small",
+          "name": "Bounded function times a function going to zero"
+        },
+        {
+          "id": "sin-x-over-x",
+          "name": "The limit of sin x / x at 0"
+        },
+        {
+          "id": "equal-limits-requirement",
+          "name": "Equal limits for both bounds"
+        }
+      ],
+      "explain": {
+        "text": "The squeeze theorem handles a function that is trapped between two simpler functions. If g(x) ≤ f(x) ≤ h(x) for x near a, and g and h both approach the same limit L as x approaches a, then f must also approach L. Picture f as a filling pressed between two slices of bread. It is useful when f is hard to evaluate directly, such as x² times sin(1/x). Because −1 ≤ sin(1/x) ≤ 1 gives simple bounds, the squeeze can finish the job. The bounds need to hold only near a, not at a itself."
+      }
+    },
+    {
+      "id": "continuity",
+      "name": "Continuity",
+      "aliases": [
+        "continuous function",
+        "continuous at a point",
+        "continuity at a point"
+      ],
+      "summary": "A function is continuous at a when f(a) is defined, its limit at a exists, and the two are equal, so its graph has no break at that point.",
+      "requires": [
+        "limit",
+        "one-sided-limit"
+      ],
+      "elements": [
+        {
+          "id": "three-conditions",
+          "name": "Three conditions for continuity"
+        },
+        {
+          "id": "polynomials-continuous",
+          "name": "Polynomials and rational functions are continuous"
+        },
+        {
+          "id": "one-sided-continuity",
+          "name": "Continuity from one side"
+        },
+        {
+          "id": "types-of-break",
+          "name": "Types of discontinuity"
+        }
+      ],
+      "explain": {
+        "text": "A function f is continuous at a when three things hold: f(a) is defined, the limit of f(x) as x approaches a exists, and that limit equals f(a). If any one fails, the graph has a break at a. Polynomials are continuous everywhere, and rational functions are continuous everywhere they are defined. A function is continuous on an interval if it is continuous at every point of the interval. The break may be a hole, a jump, or an infinite gap, depending on which condition fails."
+      }
+    },
+    {
+      "id": "intermediate-value-theorem",
+      "name": "Intermediate value theorem",
+      "aliases": [
+        "IVT",
+        "intermediate value property"
+      ],
+      "summary": "If f is continuous on a closed interval [a, b], then f takes every value between f(a) and f(b), so it has a solution wherever its values change sign.",
+      "requires": [
+        "continuity"
+      ],
+      "elements": [
+        {
+          "id": "closed-interval-hypothesis",
+          "name": "Closed interval hypothesis"
+        },
+        {
+          "id": "sign-change-gives-root",
+          "name": "A sign change gives a root"
+        },
+        {
+          "id": "existence-not-location",
+          "name": "Existence without locating the root"
+        },
+        {
+          "id": "bisection-method",
+          "name": "Bisection method"
+        }
+      ],
+      "explain": {
+        "text": "The intermediate value theorem says that a function continuous on a closed interval [a, b] takes every value between f(a) and f(b). A typical use is finding a root. If f(a) is negative and f(b) is positive, then f must equal 0 somewhere between a and b. The theorem guarantees that such a point exists, but it does not say how many there are or how to find it exactly. Picture a continuous curve that starts below a horizontal line and ends above it: it must cross the line. Continuity on the whole interval is essential."
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "calculus.limits.limit-plug-polynomial",
+      "concept": "limit",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the limit of x² + 1 as x approaches 2?",
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "2"
+      ],
+      "answer": 2,
+      "explanation": "x² + 1 is a polynomial, so the limit is found by substitution: 2² + 1 = 5. The tempting answer 4 squares 2 but drops the +1. The answer 3 uses 2 + 1 and forgets the square.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.limit-meaning",
+      "concept": "limit",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which statement about the limit of f(x) as x approaches a is true?",
+      "choices": [
+        "It always equals f(a), because the limit simply reads the function's value at the point a directly",
+        "It depends only on the values f takes for x near a but not equal to a, so f(a) itself is ignored",
+        "It is undefined whenever f(a) is undefined, since a missing value at the point a blocks any limit there",
+        "It is the largest value f takes anywhere near a, because the limit is the maximum of nearby outputs"
+      ],
+      "answer": 1,
+      "explanation": "The limit looks at values of f(x) for x near a but not equal to a, so f(a) can be missing or different. Saying the limit always equals f(a) is the common mistake. Saying it is undefined whenever f(a) is undefined is wrong, because a hole has a limit even though f(a) is undefined.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: The limit depends on values near a in a punctured neighbourhood, not on f(a)."
+      }
+    },
+    {
+      "id": "calculus.limits.limit-factor-cancel",
+      "concept": "limit",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the limit of (x² − 4)/(x − 2) as x approaches 2?",
+      "choices": [
+        "0",
+        "2",
+        "4",
+        "Undefined"
+      ],
+      "answer": 2,
+      "explanation": "Substitution gives 0/0. Factor the numerator as (x − 2)(x + 2), cancel the common factor for x ≠ 2, and get x + 2, which tends to 4. The answer 0 treats 0/0 as 0, and 'Undefined' confuses the value at 2 with the limit.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.limit-negative-factor",
+      "concept": "limit",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the limit of (x² − 1)/(x + 1) as x approaches −1?",
+      "choices": [
+        "−2",
+        "0",
+        "1",
+        "2"
+      ],
+      "answer": 0,
+      "explanation": "Factor x² − 1 as (x − 1)(x + 1) and cancel x + 1 for x ≠ −1 to get x − 1, which tends to −2 at −1. The answer 2 drops the sign. The answer 0 assumes the value is zero because the numerator vanishes, which is not how limits work.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.limit-epsilon-delta",
+      "concept": "limit",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In the definition saying the limit of f(x) as x approaches a is L, what does δ control?",
+      "choices": [
+        "How close f(x) must be to L",
+        "How close x must be to a",
+        "How large f(x) must be",
+        "The value of L itself"
+      ],
+      "answer": 1,
+      "explanation": "In the epsilon-delta definition, ε sets how close f(x) must be to L, and δ is the matching distance from a that guarantees it. Saying that δ sets how close f(x) must be to L swaps δ and ε.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.limit-removable",
+      "concept": "limit",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which best describes a removable discontinuity at x = a?",
+      "choices": [
+        "The function jumps to a different value on each side of a",
+        "The function grows without bound as x approaches a",
+        "The limit at a exists, but f(a) is undefined or differs from it",
+        "The function oscillates forever near a"
+      ],
+      "answer": 2,
+      "explanation": "Both sides approach the same limit L, so redefining f(a) = L removes the gap. A jump has different one-sided limits, infinite growth is an infinite limit, and oscillation has no limit at all.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.limit-value-versus-limit",
+      "concept": "limit",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Let f(x) = x² for x ≠ 3, and f(3) = 10. What are the limit of f(x) as x approaches 3 and the value of f(3)?",
+      "choices": [
+        "Limit 10, f(3) = 9",
+        "Limit 9, f(3) = 10",
+        "Limit 9, f(3) = 9",
+        "Limit 10, f(3) = 10"
+      ],
+      "answer": 1,
+      "explanation": "The limit uses x near 3 with x ≠ 3, where f(x) = x² tends to 9. The value f(3) = 10 is set separately and does not change the limit. Saying the limit is 10 with f(3) = 9 gets both values wrong.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.limit-steps-order",
+      "concept": "limit",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps for finding the limit of (x² − 4)/(x − 2) as x approaches 2, in order.",
+      "steps": [
+        "Try direct substitution and see that it gives 0/0",
+        "Factor the numerator as (x − 2)(x + 2)",
+        "Cancel the common factor x − 2, which is allowed because x ≠ 2",
+        "Substitute 2 into x + 2 to get 4"
+      ],
+      "explanation": "Substitution comes first to reveal the 0/0 form. Factoring must come before cancelling, and the final substitution is valid only after the common factor is removed.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.one-sided-meaning",
+      "concept": "one-sided-limit",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does the limit of f(x) as x → a⁺ mean?",
+      "choices": [
+        "x approaches a from values greater than a",
+        "x approaches a from values less than a",
+        "x is exactly equal to a",
+        "f(x) approaches a"
+      ],
+      "answer": 0,
+      "explanation": "The superscript plus means x comes in from the right, through values larger than a. The minus version uses values smaller than a. Saying that f(x) approaches a swaps x and f(x).",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.one-sided-agree",
+      "concept": "one-sided-limit",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "The left-hand limit at 3 is 5, and the right-hand limit at 3 is also 5. What is the two-sided limit at 3?",
+      "choices": [
+        "Undefined",
+        "5",
+        "3",
+        "10"
+      ],
+      "answer": 1,
+      "explanation": "When both one-sided limits exist and are equal, the two-sided limit exists and equals their common value. The answer 3 confuses the point being approached with the limit value.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.one-sided-right-step",
+      "concept": "one-sided-limit",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Let f(x) = 1 for x < 0 and f(x) = 4 for x ≥ 0. What is the right-hand limit of f at 0?",
+      "choices": [
+        "4",
+        "1",
+        "Does not exist",
+        "2.5"
+      ],
+      "answer": 0,
+      "explanation": "For x just above 0, f(x) is 4, so the right-hand limit is 4. The value 1 is the left-hand limit, which comes from the other side.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.one-sided-two-sided-step",
+      "concept": "one-sided-limit",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Using the same f (1 for x < 0 and 4 for x ≥ 0), what is the two-sided limit at 0?",
+      "choices": [
+        "1, because the left-hand limit of 1 is taken as the two-sided limit",
+        "4, because f(0) = 4 is the value at 0 and the limit at 0 equals the value there",
+        "2.5, because the average of the two one-sided limits 1 and 4 is taken as the limit",
+        "Does not exist, because the left-hand limit 1 and right-hand limit 4 differ"
+      ],
+      "answer": 3,
+      "explanation": "The left-hand limit is 1 and the right-hand limit is 4. They differ, so the two-sided limit does not exist, even though f(0) = 4 is defined.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Left limit 1 and right limit 4 differ, so the two-sided limit does not exist, even though f(0) = 4. b's note: Prompt says 'the same f' but defines no f itself; stands alone only with context."
+      }
+    },
+    {
+      "id": "calculus.limits.one-sided-sign-ratio",
+      "concept": "one-sided-limit",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the left-hand limit of |x|/x as x approaches 0?",
+      "choices": [
+        "0",
+        "1",
+        "−1",
+        "Does not exist"
+      ],
+      "answer": 2,
+      "explanation": "For x < 0, |x| = −x, so |x|/x = −x/x = −1 for every negative x. The right-hand limit is 1, which is why the two-sided limit fails.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.one-sided-jump",
+      "concept": "one-sided-limit",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which describes a jump discontinuity at a?",
+      "choices": [
+        "Both one-sided limits exist but are different",
+        "Both one-sided limits are infinite",
+        "The function is undefined at a",
+        "Both one-sided limits equal f(a) and each other"
+      ],
+      "answer": 0,
+      "explanation": "A jump has finite one-sided limits that differ. Infinite one-sided limits describe an infinite discontinuity, and a function undefined at a may still have a limit there.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.one-sided-absolute-quotient",
+      "concept": "one-sided-limit",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which is true of f(x) = (x − 1)/|x − 1| near x = 1?",
+      "choices": [
+        "The limit at 1 is 0, because the numerator x − 1 is zero at x = 1, so the quotient is zero there",
+        "The right-hand limit is 1 and the left-hand limit is −1, so the two-sided limit at 1 does not exist",
+        "The limit at 1 is 1 because f is positive on both sides near 1, so the absolute value changes nothing",
+        "The limit at 1 is −1 because the left-hand values dominate, so the right side of the graph can be ignored"
+      ],
+      "answer": 1,
+      "explanation": "For x > 1, |x − 1| = x − 1, so f(x) = 1. For x < 1, |x − 1| = −(x − 1), so f(x) = −1. The one-sided limits differ, so the two-sided limit does not exist.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: For x > 1 the function is 1; for x < 1 it is -1. The right and left limits differ."
+      }
+    },
+    {
+      "id": "calculus.limits.one-sided-steps-order",
+      "concept": "one-sided-limit",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps for deciding whether the two-sided limit at a exists, in order.",
+      "steps": [
+        "Find the left-hand limit and the right-hand limit at a",
+        "Compare the two one-sided limits",
+        "If they are equal, that common value is the two-sided limit"
+      ],
+      "explanation": "Both one-sided limits must be found before they can be compared, and the common value is reported only after the comparison confirms they match.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.law-sum",
+      "concept": "limit-laws",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the limit of 3x + 1 as x approaches 2?",
+      "choices": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "answer": 1,
+      "explanation": "The limit of 3x is 6 by the constant multiple law, and adding the limit of 1 gives 7. The answer 6 forgets the +1.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.law-product-name",
+      "concept": "limit-laws",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which law says the limit of f(x) times g(x) is the product of the two limits, when both exist?",
+      "choices": [
+        "Sum law",
+        "Product law",
+        "Quotient law",
+        "Power law"
+      ],
+      "answer": 1,
+      "explanation": "The product law multiplies the limits. The sum law adds them, and the quotient law divides them only when the denominator's limit is not zero.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.law-quotient-value",
+      "concept": "limit-laws",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the limit of (x + 5)/(x − 1) as x approaches 4?",
+      "choices": [
+        "3",
+        "4",
+        "9",
+        "Undefined"
+      ],
+      "answer": 0,
+      "explanation": "The numerator tends to 9 and the denominator to 3, so the quotient tends to 9/3 = 3. The answer 9 ignores the denominator, and 'Undefined' wrongly assumes a zero denominator limit.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.law-quotient-condition",
+      "concept": "limit-laws",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "The quotient law for limits applies when which condition holds?",
+      "choices": [
+        "The limit of the denominator is zero",
+        "The limit of the denominator is not zero",
+        "The numerator is a polynomial",
+        "Both functions are integers"
+      ],
+      "answer": 1,
+      "explanation": "The quotient law can divide only when the limit of the denominator is nonzero. The other options are not conditions of the law.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.law-root",
+      "concept": "limit-laws",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the limit of √(x + 3) as x approaches 1?",
+      "choices": [
+        "√3",
+        "2",
+        "4",
+        "1"
+      ],
+      "answer": 1,
+      "explanation": "The root law lets you take the square root of the limit: x + 3 tends to 4, and √4 = 2. The answer √3 forgets to add 1 first, and 4 forgets the square root.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.law-quotient-zero",
+      "concept": "limit-laws",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "The limit of f(x) at a is 5, and the limit of g(x) at a is 0. What can the laws say about the limit of f(x)/g(x)?",
+      "choices": [
+        "It equals 0, because the quotient law says a limit of 0 in the denominator makes the whole quotient 0",
+        "It equals 5, because the quotient law says the limit of f/g is just the limit of f, whatever g does",
+        "The quotient law does not apply directly, since the denominator's limit is 0, so more work is needed",
+        "It equals infinity, because a denominator with limit 0 always sends the quotient to infinity at a"
+      ],
+      "answer": 2,
+      "explanation": "The quotient law needs a nonzero limit in the denominator, so it does not decide the answer. The limit might be infinite or might not exist; the laws alone cannot say which.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: The quotient law needs the denominator limit to be nonzero. With limit 0 the quotient could tend to +/-infinity or have no limit, so more work is needed."
+      }
+    },
+    {
+      "id": "calculus.limits.law-combined",
+      "concept": "limit-laws",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "What is the limit of (2x² − x)/(x + 3) as x approaches −1?",
+      "choices": [
+        "3/2",
+        "2/3",
+        "3",
+        "1"
+      ],
+      "answer": 0,
+      "explanation": "The numerator tends to 2(1) − (−1) = 3 and the denominator to 2, so the limit is 3/2. The answer 2/3 inverts the fraction, and 3 forgets the denominator.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.infinite-meaning",
+      "concept": "infinite-limit",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does the statement that the limit of f(x) as x → a equals ∞ mean?",
+      "choices": [
+        "f(x) gets arbitrarily large, above any bound, as x gets close to a, though not at a itself",
+        "f(a) equals infinity, so the function takes the value infinity exactly at the point x = a",
+        "f(x) equals a for every x, so the function is constant and its values never move near a",
+        "f is undefined at a, so the limit as x approaches a is infinite because nothing is defined there"
+      ],
+      "answer": 0,
+      "explanation": "f(x) grows beyond any bound for x near a, but not at a itself. ∞ is not a value of f, so saying f(a) equals infinity is wrong. Saying f is undefined at a describes a missing point, not growth.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.infinite-asymptote-1-over-x-4",
+      "concept": "infinite-limit",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which line is a vertical asymptote of f(x) = 1/(x − 4)?",
+      "choices": [
+        "y = 4",
+        "x = 4",
+        "y = 0",
+        "x = 0"
+      ],
+      "answer": 1,
+      "explanation": "The denominator is zero at x = 4, so f grows without bound there, and x = 4 is the vertical asymptote. y = 0 is a horizontal asymptote of this function, but the question asks for a vertical one.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.infinite-left-of-zero",
+      "concept": "infinite-limit",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the left-hand limit of 1/x as x approaches 0?",
+      "choices": [
+        "∞",
+        "0",
+        "−∞",
+        "1"
+      ],
+      "answer": 2,
+      "explanation": "For negative x close to 0, 1/x is a large negative number, so the left-hand limit is −∞. The right-hand limit is ∞, which is why the two-sided limit fails.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.infinite-square-denominator",
+      "concept": "infinite-limit",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the limit of 1/(x − 3)² as x approaches 3?",
+      "choices": [
+        "0",
+        "∞",
+        "−∞",
+        "Does not exist"
+      ],
+      "answer": 1,
+      "explanation": "The square is positive on both sides of 3 and grows without bound, so the limit is ∞. The answer −∞ forgets the square is always positive, and 0 confuses the limit with the function's value far from 3.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.infinite-asymptote-definition",
+      "concept": "infinite-limit",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "When does the graph of f have a vertical asymptote at x = a?",
+      "choices": [
+        "f(a) is zero, so the graph crosses the x-axis at a, and that crossing forces a vertical asymptote there",
+        "At least one one-sided limit at a is positive or negative infinity, so the graph shoots off near a",
+        "The two-sided limit at a is a finite number, which shows the graph has a vertical asymptote at x = a",
+        "f is continuous at a, so the graph has no break there and must approach a vertical asymptote at a"
+      ],
+      "answer": 1,
+      "explanation": "A vertical asymptote needs a one-sided limit that is infinite. A zero at a, a finite limit, or continuity at a all rule that out.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.infinite-shifted-square",
+      "concept": "infinite-limit",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the limit of (x + 1)/(x − 2)² as x approaches 2?",
+      "choices": [
+        "3",
+        "−∞",
+        "∞",
+        "0"
+      ],
+      "answer": 2,
+      "explanation": "The numerator tends to 3 and the squared denominator tends to 0 from above, so the quotient grows without bound: ∞. The answer 3 uses the numerator alone, and −∞ wrongly assumes a negative sign.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.infinite-left-negative",
+      "concept": "infinite-limit",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "What is the left-hand limit of x/(x − 1) as x approaches 1?",
+      "choices": [
+        "0",
+        "1",
+        "∞",
+        "−∞"
+      ],
+      "answer": 3,
+      "explanation": "Just below 1, the numerator is about 1 and the denominator is a small negative number, so the quotient is a large negative number: −∞. The answer ∞ comes from looking at the right side instead.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.infinity-one-over-x",
+      "concept": "limits-at-infinity",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the limit of 1/x as x approaches ∞?",
+      "choices": [
+        "1",
+        "∞",
+        "0",
+        "Does not exist"
+      ],
+      "answer": 2,
+      "explanation": "As x grows without bound, 1/x shrinks toward 0, so y = 0 is a horizontal asymptote. The value 1 is what 1/x equals at x = 1, not its limit at infinity.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.infinity-horizontal-asymptote",
+      "concept": "limits-at-infinity",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which is a horizontal asymptote of f(x) = (3x + 2)/x?",
+      "choices": [
+        "y = 2",
+        "y = 3",
+        "x = 0",
+        "y = 0"
+      ],
+      "answer": 1,
+      "explanation": "Dividing top and bottom by x gives 3 + 2/x, which approaches 3, so y = 3 is the horizontal asymptote. x = 0 is a vertical asymptote, not a horizontal one.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.infinity-equal-degree",
+      "concept": "limits-at-infinity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the limit of (2x² + 1)/(x² − 5) as x approaches ∞?",
+      "choices": [
+        "0",
+        "2",
+        "∞",
+        "1/2"
+      ],
+      "answer": 1,
+      "explanation": "Dividing top and bottom by x² gives (2 + 1/x²)/(1 − 5/x²), which tends to 2/1 = 2. The answer 1/2 inverts the ratio of the leading coefficients.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.infinity-higher-numerator",
+      "concept": "limits-at-infinity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the limit of (x² + 1)/x as x approaches ∞?",
+      "choices": [
+        "0",
+        "1",
+        "∞",
+        "−∞"
+      ],
+      "answer": 2,
+      "explanation": "The function equals x + 1/x, which grows without bound as x grows. It is positive, so the limit is ∞, not −∞.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.infinity-negative-side",
+      "concept": "limits-at-infinity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the limit of 1/x² as x approaches −∞?",
+      "choices": [
+        "∞",
+        "−1",
+        "1",
+        "0"
+      ],
+      "answer": 3,
+      "explanation": "x² is positive and grows without bound as x decreases, so 1/x² shrinks to 0. The answer 1 treats x² as constant, and ∞ mistakes growth for the reciprocal.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.infinity-horizontal-condition",
+      "concept": "limits-at-infinity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which condition is needed for a rational function to have a horizontal asymptote?",
+      "choices": [
+        "The numerator has higher degree than the denominator",
+        "The numerator's degree is at most the denominator's degree",
+        "The function has a zero at x = 0",
+        "The function is continuous everywhere"
+      ],
+      "answer": 1,
+      "explanation": "When the numerator's degree is at most the denominator's, the function settles to a finite value, so a horizontal asymptote exists. A higher numerator degree makes the function grow without bound instead.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.infinity-cubic",
+      "concept": "limits-at-infinity",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "What is the limit of (3x³ − 2x)/(x³ + 5) as x approaches ∞?",
+      "choices": [
+        "0",
+        "3",
+        "−2",
+        "∞"
+      ],
+      "answer": 1,
+      "explanation": "Dividing by x³ gives (3 − 2/x²)/(1 + 5/x³), which tends to 3/1 = 3. The −2 is a lower-order term and does not affect the limit.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.infinity-steps-order",
+      "concept": "limits-at-infinity",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps for finding the limit of (4x + 1)/(2x − 3) as x approaches ∞, in order.",
+      "steps": [
+        "Divide the numerator and the denominator by x",
+        "Simplify to (4 + 1/x)/(2 − 3/x)",
+        "Let x approach ∞, so each 1/x term goes to 0",
+        "Conclude the limit is 4/2 = 2"
+      ],
+      "explanation": "Dividing by the highest power of x comes first. The simplified form then exposes terms that shrink to zero, and only after that can the limit be read off.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.squeeze-bounds-region",
+      "concept": "squeeze-theorem",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In the squeeze theorem, where must g(x) ≤ f(x) ≤ h(x) hold?",
+      "choices": [
+        "Only at x = a exactly, since the bounds must match f at the single point where the limit is taken",
+        "For x near a, though not necessarily at a itself, since the limit uses only nearby values",
+        "For all real numbers x, since a squeeze has to hold across the whole domain before a limit is taken",
+        "Only when f is continuous at a, since squeezing needs f to have no jump anywhere near the point"
+      ],
+      "answer": 1,
+      "explanation": "The bounds only need to hold near a, and f need not equal either bound at a. Requiring the inequality for all real x is stronger than the theorem needs.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.squeeze-same-limit",
+      "concept": "squeeze-theorem",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "If g(x) ≤ f(x) ≤ h(x) near a, and both g and h have limit 4 at a, what is the limit of f at a?",
+      "choices": [
+        "Does not exist",
+        "4",
+        "2",
+        "Cannot be determined"
+      ],
+      "answer": 1,
+      "explanation": "The squeeze theorem forces f into the same limit as the two bounds. Saying 'cannot be determined' forgets that the theorem applies once the bounds share a limit.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.squeeze-x2-sin",
+      "concept": "squeeze-theorem",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the limit of x² · sin(1/x) as x approaches 0?",
+      "choices": [
+        "1",
+        "0",
+        "∞",
+        "Does not exist"
+      ],
+      "answer": 1,
+      "explanation": "Since −1 ≤ sin(1/x) ≤ 1, multiplying by x² ≥ 0 gives −x² ≤ x² · sin(1/x) ≤ x², and both bounds tend to 0. The answer 'Does not exist' ignores the squeeze.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.squeeze-sin-x-over-x-bounds",
+      "concept": "squeeze-theorem",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "For x in (0, π/2), which pair of bounds is used to squeeze sin x / x toward 1?",
+      "choices": [
+        "−1 and 1",
+        "cos x and 1",
+        "x and 2x",
+        "0 and 1"
+      ],
+      "answer": 1,
+      "explanation": "For small positive x, cos x ≤ sin x / x ≤ 1. Both bounds tend to 1 as x approaches 0, so sin x / x does too. The bounds −1 and 1 are too far apart to give a limit.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.squeeze-sin-one-over-x",
+      "concept": "squeeze-theorem",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why can the squeeze theorem not show that the limit of sin(1/x) as x approaches 0 exists?",
+      "choices": [
+        "sin is never bounded, so no squeeze bounds can ever be found for sin(1/x) near 0",
+        "The limit is infinite, because sin(1/x) grows without bound as x approaches 0 from either side",
+        "Squeeze works only for polynomials, so it can never be applied to a trigonometric function at all",
+        "No two bounds with equal limits exist, because sin(1/x) keeps oscillating between −1 and 1 near 0"
+      ],
+      "answer": 3,
+      "explanation": "Bounds such as −1 and 1 do not share a limit, and sin(1/x) takes every value between −1 and 1 in every interval around 0. The sine function is bounded, so the claim that sin is never bounded is false.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: The reason is that sin(1/x) oscillates between -1 and 1 with no limit, so no pair of squeeze bounds with equal limits exists. The stated reason is the best of the four options, though it is phrased loosely."
+      }
+    },
+    {
+      "id": "calculus.limits.squeeze-sin-x-over-x-infinity",
+      "concept": "squeeze-theorem",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which argument shows that the limit of sin(x)/x as x approaches ∞ is 0?",
+      "choices": [
+        "For x > 0, −1/x ≤ sin(x)/x ≤ 1/x, and both outer bounds tend to 0 as x grows, so the squeeze gives 0",
+        "sin(x)/x ≤ 1 for all large x, so the limit is 1, since the upper bound is what the quotient approaches",
+        "sin(x) equals 0 at infinity, since sine is periodic and its values average out to 0 as x grows large",
+        "x/sin(x) tends to 1 at infinity, so dividing by x makes sin(x)/x approach 1 as x grows without bound"
+      ],
+      "answer": 0,
+      "explanation": "Dividing −1 ≤ sin x ≤ 1 by x > 0 traps sin x / x between two bounds that both go to 0. An upper bound alone, such as sin x / x ≤ 1, fixes no limit. Saying sin x equals 0 at infinity is false, since sin x has no limit there.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.squeeze-alt-name",
+      "concept": "squeeze-theorem",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "The squeeze theorem is also known by which name?",
+      "choices": [
+        "Sandwich theorem",
+        "Chain rule",
+        "Mean value theorem",
+        "Bisection theorem"
+      ],
+      "answer": 0,
+      "explanation": "The name sandwich theorem describes a function held between two bounds. The other names belong to different results in calculus.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.squeeze-steps-order",
+      "concept": "squeeze-theorem",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps for finding the limit of x² · sin(1/x) as x approaches 0, in order.",
+      "steps": [
+        "Use −1 ≤ sin(1/x) ≤ 1 for every x ≠ 0",
+        "Multiply all three expressions by x², which keeps the inequalities because x² ≥ 0",
+        "Find that the limits of −x² and x² are both 0",
+        "Conclude that the limit of x² · sin(1/x) is 0"
+      ],
+      "explanation": "The bounds come first, then multiplying them by x², then the limits of the bounds, and last the conclusion drawn from the squeeze.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.continuity-three-conditions",
+      "concept": "continuity",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which three conditions define the continuity of f at a?",
+      "choices": [
+        "f(a) is defined, the limit of f at a exists, and that limit is equal to the value f(a) itself",
+        "f(a) is defined, f is positive on both sides of a, and f is increasing through the point a",
+        "The limit at a exists, f is a polynomial, and f(a) = 0, so the graph touches the axis at a",
+        "f has a derivative at a, and that alone is the full definition of continuity at a, with no limit needed"
+      ],
+      "answer": 0,
+      "explanation": "All three must hold together. Positivity and increase are not part of the definition, and a polynomial need not be zero at a.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.continuity-x-squared-plus-one",
+      "concept": "continuity",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Is f(x) = x² + 1 continuous at x = 2?",
+      "choices": [
+        "No, because f is not a line",
+        "Yes, because the limit at 2 is 5 and f(2) is 5",
+        "No, because 2 is not 0",
+        "Yes, because f(x) is always positive"
+      ],
+      "answer": 1,
+      "explanation": "The limit 5 equals f(2) = 5, so all three conditions hold. A function does not need to be linear to be continuous, and 2 being nonzero is irrelevant.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.continuity-removable-factor",
+      "concept": "continuity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Let f(x) = (x² − 1)/(x − 1) for x ≠ 1, and f(1) = 5. Is f continuous at 1?",
+      "choices": [
+        "Yes, the limit is 5",
+        "No, the limit is 2 but f(1) = 5",
+        "Yes, f is a polynomial",
+        "No, the limit does not exist"
+      ],
+      "answer": 1,
+      "explanation": "Factoring gives x + 1 for x ≠ 1, so the limit is 2. Since f(1) = 5 differs, the third condition fails, and the break is removable. The limit does exist, so saying the limit does not exist is wrong.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.continuity-not-continuous-at-2",
+      "concept": "continuity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which function is NOT continuous at x = 2?",
+      "choices": [
+        "x³, a polynomial that is continuous everywhere, so its limit at 2 equals its value at 2",
+        "f(x) = 1 for x < 2 and f(x) = 3 for x ≥ 2, so the one-sided limits at 2 differ",
+        "√(x + 7), defined and continuous for x ≥ −7, so its limit at 2 matches its value at 2",
+        "(x + 1)/(x² + 1), a rational function with nonzero denominator at 2, so no break occurs there"
+      ],
+      "answer": 1,
+      "explanation": "The function that is 1 for x < 2 and 3 for x ≥ 2 jumps at 2, so the one-sided limits differ. The others are continuous at 2 with values 8, 3 and 3/5.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.continuity-polynomial",
+      "concept": "continuity",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is true of every polynomial at every real number?",
+      "choices": [
+        "It is continuous there",
+        "It has a vertical asymptote there",
+        "It has a removable discontinuity there",
+        "It has a jump there"
+      ],
+      "answer": 0,
+      "explanation": "Polynomials have no breaks, so they are continuous at every real number. The other options describe breaks, which polynomials do not have.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.continuity-from-right",
+      "concept": "continuity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which equation says f is continuous from the right at a?",
+      "choices": [
+        "The right-hand limit of f at a equals f(a)",
+        "The limit of f at a equals 0",
+        "The right-hand limit at a equals the left-hand limit at a",
+        "The left-hand limit of f at a is infinite"
+      ],
+      "answer": 0,
+      "explanation": "Continuity from the right needs the right-hand limit to match the value at a. Equal one-sided limits describe whether the two-sided limit exists, and the other options are unrelated.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.continuity-fill-the-hole",
+      "concept": "continuity",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "For f(x) = (x² − 4)/(x − 2) when x ≠ 2, which value c for f(2) = c makes f continuous at 2?",
+      "choices": [
+        "0",
+        "2",
+        "4",
+        "−4"
+      ],
+      "answer": 2,
+      "explanation": "Factoring gives x + 2 for x ≠ 2, so the limit is 4, and only c = 4 matches it. Choosing 2 confuses the point 2 with the limit.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.ivt-closed-interval",
+      "concept": "intermediate-value-theorem",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "The intermediate value theorem requires f to be continuous on what kind of set?",
+      "choices": [
+        "A closed interval [a, b]",
+        "A single point",
+        "Only the integers",
+        "Only the rational numbers"
+      ],
+      "answer": 0,
+      "explanation": "The theorem uses the values at both endpoints of a closed interval. A single point gives no values in between, and the integers and rationals are not intervals.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.ivt-value-guaranteed",
+      "concept": "intermediate-value-theorem",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Suppose f is continuous on [1, 3], f(1) = −2, and f(3) = 4. What must be true?",
+      "choices": [
+        "f(2) = 1",
+        "f(c) = 0 for some c between 1 and 3",
+        "f has a maximum at 3",
+        "f(x) = 0 for every x in [1, 3]"
+      ],
+      "answer": 1,
+      "explanation": "0 lies between −2 and 4, so the theorem guarantees a point c in [1, 3] with f(c) = 0. It does not say f(2) = 1, and f is not zero everywhere.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.ivt-cubic-root",
+      "concept": "intermediate-value-theorem",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Let f(x) = x³ − x − 1 on [1, 2], where f(1) = −1 and f(2) = 5. What does the theorem give?",
+      "choices": [
+        "A root in the open interval (1, 2)",
+        "No roots in [1, 2]",
+        "f(1.5) = 0 exactly",
+        "Roots at both x = 1 and x = 2"
+      ],
+      "answer": 0,
+      "explanation": "f is a polynomial, so it is continuous, and it changes sign from −1 to 5. A root therefore lies in (1, 2). The claim f(1.5) = 0 is false, since f(1.5) = 0.875: the theorem gives a root without locating it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.ivt-one-over-x-fails",
+      "concept": "intermediate-value-theorem",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does the theorem not guarantee a zero of f(x) = 1/x on [−1, 1], even though f(−1) < 0 < f(1)?",
+      "choices": [
+        "f(−1) and f(1) are not whole numbers",
+        "f is not continuous on [−1, 1], since it is undefined at x = 0",
+        "f(0) must equal 0",
+        "The interval [−1, 1] has length 2, which is too long"
+      ],
+      "answer": 1,
+      "explanation": "The continuity hypothesis fails at x = 0, so the sign change does not force a zero. Indeed 1/x never equals 0. The whole-number option is irrelevant to the theorem's hypotheses.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.ivt-how-many-roots",
+      "concept": "intermediate-value-theorem",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Does the intermediate value theorem say how many roots a function has in an interval?",
+      "choices": [
+        "Exactly one root, because the theorem guarantees a single crossing point in every interval",
+        "At least one value is guaranteed, but the theorem does not say how many roots there are",
+        "Exactly two roots, since a continuous function must cross a target value once up and once down",
+        "None, because the theorem says a root exists only when the function is increasing on the interval"
+      ],
+      "answer": 1,
+      "explanation": "The theorem guarantees at least one point with the target value. A function might have three roots in the interval, and the theorem would still hold.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.ivt-x-minus-cos",
+      "concept": "intermediate-value-theorem",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Does f(x) = x − cos x have a root in (0, 1) by the intermediate value theorem?",
+      "choices": [
+        "Yes, because f(0) < 0 < f(1)",
+        "No, because f(0) = 0",
+        "No, because cos x is never larger than x",
+        "Yes, because f(1) = 0"
+      ],
+      "answer": 0,
+      "explanation": "f(0) = −1 and f(1) = 1 − cos 1, which is about 0.46 and positive. Since f is continuous, a root lies in (0, 1). The claim f(1) = 0 is false, because cos 1 is not 1.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.ivt-every-value",
+      "concept": "intermediate-value-theorem",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Let f be continuous on [0, 4] with f(0) = 1 and f(4) = 7. Which conclusion is guaranteed?",
+      "choices": [
+        "f(2) = 4, since a continuous rise from 1 to 7 must pass through the average value at the midpoint 2",
+        "For every value between 1 and 7 there is a c in [0, 4] with f(c) equal to that value",
+        "f is increasing on [0, 4], since any continuous function that goes from 1 up to 7 must rise at every point",
+        "f(c) = 1 for some c in the open interval (0, 4), since f starts at 1 and continuity keeps it near 1"
+      ],
+      "answer": 1,
+      "explanation": "The theorem guarantees that every value between 1 and 7 is attained. The other options go beyond it: f need not be increasing, f(2) need not be 4, and f may equal 1 only at x = 0.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "calculus.limits.ivt-bisection-order",
+      "concept": "intermediate-value-theorem",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps of the bisection method for a continuous f on [a, b] with a sign change, in order.",
+      "steps": [
+        "Check that f(a) and f(b) have opposite signs",
+        "Evaluate f at the midpoint c of [a, b]",
+        "Keep the half-interval where the sign still changes",
+        "Repeat with the smaller interval until it is small enough"
+      ],
+      "explanation": "The sign check must come first, because the theorem guarantees a root only when the sign changes. Each halving needs the midpoint value before a half can be chosen.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    }
+  ],
+  "artifacts": []
+}

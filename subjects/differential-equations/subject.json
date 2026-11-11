@@ -1,0 +1,7 @@
+{
+  "formatVersion": 1,
+  "id": "differential-equations",
+  "name": "Differential equations",
+  "domain": "formal",
+  "summary": "Equations that relate a function to its rates of change, and how to solve them."
+}

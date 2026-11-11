@@ -1,0 +1,1172 @@
+{
+  "formatVersion": 1,
+  "id": "biology.atoms-and-water",
+  "subject": "biology",
+  "title": "Atoms, bonds and water",
+  "summary": "The atoms and bonds that living matter is built from, and why water's properties matter to life.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "atom",
+      "name": "Atom",
+      "aliases": [
+        "Atoms",
+        "Atomic structure"
+      ],
+      "summary": "An atom is the smallest unit of an element, with protons and neutrons in a nucleus and electrons moving outside it.",
+      "requires": [],
+      "elements": [
+        {
+          "id": "subatomic-particles",
+          "name": "Subatomic particles",
+          "aliases": [
+            "Protons, neutrons and electrons"
+          ]
+        },
+        {
+          "id": "atomic-number",
+          "name": "Atomic number",
+          "aliases": []
+        },
+        {
+          "id": "mass-number",
+          "name": "Mass number",
+          "aliases": []
+        },
+        {
+          "id": "isotopes",
+          "name": "Isotopes",
+          "aliases": [
+            "Isotope"
+          ]
+        },
+        {
+          "id": "electron-shells",
+          "name": "Electron shells",
+          "aliases": [
+            "Electron shell"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "An atom is the smallest unit of an element that keeps that element's properties. It has a dense nucleus of protons, which are positive, and neutrons, which have no charge. Electrons, which are negative, move in shells around the nucleus. The number of protons sets which element the atom is, and the electrons in the outer shell decide how it bonds to other atoms. Carbon, for example, has six protons, and its four outer electrons let it share electrons with other atoms.",
+        "artifact": "carbon-atom"
+      }
+    },
+    {
+      "id": "chemical-bond",
+      "name": "Chemical bond",
+      "aliases": [
+        "Chemical bonds",
+        "Covalent bond",
+        "Ionic bond"
+      ],
+      "summary": "A chemical bond holds atoms together by sharing electrons, as in a covalent bond, or by transferring them, as in an ionic bond.",
+      "requires": [
+        "atom"
+      ],
+      "elements": [
+        {
+          "id": "covalent-bond",
+          "name": "Covalent bond",
+          "aliases": [
+            "Covalent bonds"
+          ]
+        },
+        {
+          "id": "ionic-bond",
+          "name": "Ionic bond",
+          "aliases": [
+            "Ionic bonds"
+          ]
+        },
+        {
+          "id": "electronegativity",
+          "name": "Electronegativity",
+          "aliases": []
+        },
+        {
+          "id": "polar-covalent-bond",
+          "name": "Polar covalent bond",
+          "aliases": [
+            "Polar bond"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "A chemical bond holds atoms together in a molecule or a solid. In a covalent bond, two atoms share one or more pairs of electrons. In an ionic bond, one atom gives electrons to another, and the resulting opposite charges attract. Atoms differ in how strongly they pull on shared electrons, which is called electronegativity. When the pull is unequal, the bond is polar, so one end is slightly negative and the other slightly positive. Oxygen pulls harder than hydrogen, which is why the bonds in water are polar."
+      }
+    },
+    {
+      "id": "hydrogen-bond",
+      "name": "Hydrogen bond",
+      "aliases": [
+        "Hydrogen bonds",
+        "H-bond"
+      ],
+      "summary": "A hydrogen bond is a weak attraction between a hydrogen bonded to oxygen or nitrogen and a lone pair on another oxygen or nitrogen.",
+      "requires": [
+        "chemical-bond"
+      ],
+      "elements": [
+        {
+          "id": "attraction-between-molecules",
+          "name": "Attraction between molecules",
+          "aliases": []
+        },
+        {
+          "id": "relative-strength",
+          "name": "Strength of a hydrogen bond",
+          "aliases": []
+        },
+        {
+          "id": "partial-charges",
+          "name": "Partial charges",
+          "aliases": [
+            "Partial charge"
+          ]
+        },
+        {
+          "id": "donor-and-acceptor",
+          "name": "Donor and acceptor",
+          "aliases": [
+            "Hydrogen bond donor",
+            "Hydrogen bond acceptor"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "A hydrogen bond is a weak attraction, not a bond that shares electrons between two atoms. It forms when a hydrogen that is covalently bonded to a strongly electronegative atom, such as oxygen, carries a partial positive charge and is drawn to a lone pair on another oxygen, nitrogen or fluorine nearby. A single hydrogen bond is much weaker than a covalent bond, but water molecules form many at once. The diagram shows two water molecules with a bridging hydrogen held between them by a dashed attraction.",
+        "artifact": "hydrogen-bond-steps"
+      }
+    },
+    {
+      "id": "water-properties",
+      "name": "Properties of water",
+      "aliases": [
+        "Water properties",
+        "Properties of water molecules"
+      ],
+      "summary": "Water's high boiling point, cohesion, heat capacity and solvent power all come from its polar molecules and the hydrogen bonds between them.",
+      "requires": [
+        "hydrogen-bond"
+      ],
+      "elements": [
+        {
+          "id": "high-boiling-point",
+          "name": "High boiling point",
+          "aliases": []
+        },
+        {
+          "id": "cohesion",
+          "name": "Cohesion",
+          "aliases": [
+            "Adhesion"
+          ]
+        },
+        {
+          "id": "heat-capacity",
+          "name": "High heat capacity",
+          "aliases": [
+            "Specific heat"
+          ]
+        },
+        {
+          "id": "ice-density",
+          "name": "Ice is less dense than water",
+          "aliases": [
+            "Ice floats"
+          ]
+        },
+        {
+          "id": "solvent-power",
+          "name": "Solvent power",
+          "aliases": [
+            "Water as a solvent"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "Water is a small molecule, but it boils at a much higher temperature than similar molecules. The reason is hydrogen bonding: each water molecule can form up to four hydrogen bonds with its neighbours, and energy is needed to break them. The same bonds make water cohesive, so its molecules stick together and can rise up narrow tubes. Water also absorbs a lot of heat before its temperature rises, which keeps lakes and living bodies from swinging in temperature. Solid water is less dense than liquid water, so ice floats."
+      }
+    },
+    {
+      "id": "ph-scale",
+      "name": "pH scale",
+      "aliases": [
+        "pH",
+        "pH value"
+      ],
+      "summary": "The pH scale measures how acidic a solution is, using the concentration of hydrogen ions on a logarithmic scale where each unit is a tenfold change.",
+      "requires": [
+        "water-properties"
+      ],
+      "elements": [
+        {
+          "id": "hydrogen-ion-concentration",
+          "name": "Hydrogen ion concentration",
+          "aliases": [
+            "H+ concentration"
+          ]
+        },
+        {
+          "id": "logarithmic-scale",
+          "name": "Logarithmic scale",
+          "aliases": []
+        },
+        {
+          "id": "neutral-point",
+          "name": "Neutral pH",
+          "aliases": [
+            "Neutral point"
+          ]
+        },
+        {
+          "id": "acid-and-base",
+          "name": "Acidic and basic solutions",
+          "aliases": [
+            "Acids and bases"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "pH is a measure of how many hydrogen ions a solution contains. It equals the negative base-10 logarithm of the hydrogen ion concentration in moles per litre. Pure water at 25 °C has a hydrogen ion concentration of 10⁻⁷ moles per litre, so its pH is 7, which is neutral. Solutions below 7 are acidic and solutions above 7 are basic. Because the scale is logarithmic, a solution with pH 3 has a hydrogen ion concentration 100 times higher than a solution with pH 5."
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "biology.atoms-and-water.electron-charge",
+      "concept": "atom",
+      "element": "subatomic-particles",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which subatomic particle carries a negative electric charge?",
+      "choices": [
+        "Proton",
+        "Electron",
+        "Neutron",
+        "Photon"
+      ],
+      "answer": 1,
+      "explanation": "Electrons carry a negative charge equal in size to a proton's positive charge. Protons are positive and neutrons have no charge, so both are wrong. A photon is a particle of light and is not part of an atom.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.atomic-number",
+      "concept": "atom",
+      "element": "atomic-number",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What do you call the number of protons in an atom's nucleus?",
+      "answer": "Atomic number",
+      "explanation": "The atomic number sets which element an atom is. Carbon has atomic number 6, so every carbon atom has six protons.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Same fact: the proton count."
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.mass-number-sum",
+      "concept": "atom",
+      "element": "mass-number",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "An atom has 11 protons and 12 neutrons. What is its mass number?",
+      "choices": [
+        "11",
+        "12",
+        "23",
+        "1"
+      ],
+      "answer": 2,
+      "explanation": "Mass number is protons plus neutrons: 11 + 12 = 23. The answer 11 counts only the protons, 12 counts only the neutrons, and 1 is their difference.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.carbon-14-neutrons",
+      "concept": "atom",
+      "element": "mass-number",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Carbon-14 has six protons. How many neutrons does a carbon-14 atom have?",
+      "choices": [
+        "6",
+        "14",
+        "20",
+        "8"
+      ],
+      "answer": 3,
+      "explanation": "Mass number 14 minus 6 protons leaves 8 neutrons. The 6 is the proton count, 14 is the mass number itself, and 20 comes from adding the two numbers.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.isotopes",
+      "concept": "atom",
+      "element": "isotopes",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "Atoms with the same number of protons but different numbers of neutrons are called what?",
+      "answer": "Isotopes",
+      "explanation": "Isotopes share an atomic number and so are the same element, but they differ in mass. Carbon-12 and carbon-14 are isotopes of carbon.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Same term."
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.bonding-electrons",
+      "concept": "atom",
+      "element": "electron-shells",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which electrons take part most in chemical bonding?",
+      "choices": [
+        "Electrons in the innermost shell",
+        "Electrons in the outermost shell",
+        "Protons in the nucleus",
+        "Neutrons in the nucleus"
+      ],
+      "answer": 1,
+      "explanation": "Outer-shell electrons are the ones an atom shares or transfers when it bonds. Inner-shell electrons are held tightly, and protons and neutrons stay in the nucleus.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.covalent-definition",
+      "concept": "chemical-bond",
+      "element": "covalent-bond",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "In a covalent bond, what do the atoms do?",
+      "choices": [
+        "Transfer electrons completely to one atom",
+        "Attract each other across a gap with no electrons involved",
+        "Give up protons to each other",
+        "Share one or more pairs of electrons"
+      ],
+      "answer": 3,
+      "explanation": "A covalent bond is a shared pair of electrons. Transfer describes an ionic bond, and an attraction with no electrons involved is closer to a hydrogen bond. Atoms never swap protons in a bond, since that would change the element.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.ionic-definition",
+      "concept": "chemical-bond",
+      "element": "ionic-bond",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which bond forms when one atom gives electrons to another, so both become charged ions?",
+      "choices": [
+        "Covalent bond",
+        "Hydrogen bond",
+        "Ionic bond",
+        "Metallic bond"
+      ],
+      "answer": 2,
+      "explanation": "An ionic bond forms when electrons move from one atom to another, leaving a positive ion and a negative ion that attract. A covalent bond shares electrons instead, and a hydrogen bond is a weaker attraction.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.electronegativity",
+      "concept": "chemical-bond",
+      "element": "electronegativity",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What do you call an atom's pull on the electrons it shares in a bond?",
+      "answer": "Electronegativity",
+      "explanation": "Oxygen has a higher electronegativity than hydrogen, so it pulls shared electrons more strongly. Unequal pulls make a bond polar.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Same term."
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.water-oxygen-pull",
+      "concept": "chemical-bond",
+      "element": "polar-covalent-bond",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "In the O–H bond of water, which atom pulls the shared electrons more strongly?",
+      "choices": [
+        "Hydrogen",
+        "Both pull equally",
+        "Neither, because the bond is ionic",
+        "Oxygen"
+      ],
+      "answer": 3,
+      "explanation": "Oxygen is much more electronegative than hydrogen, so it pulls the shared electrons toward itself. The bond is polar covalent, not ionic, because the electrons are shared rather than transferred.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.hydrogen-molecule-steps",
+      "concept": "chemical-bond",
+      "element": "covalent-bond",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in the order they happen when two hydrogen atoms form an H₂ molecule.",
+      "steps": [
+        "The two hydrogen atoms move close together",
+        "Their 1s orbitals overlap, so one pair of electrons is shared between them",
+        "The shared pair holds both nuclei together at a lower energy"
+      ],
+      "explanation": "The atoms must come close before their orbitals can overlap, and the shared pair lowers the energy only once it exists. The order cannot be swapped.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "solver-a's note: Moving together comes before orbital overlap; the last two steps follow directly from the shared pair and are in the only sensible order."
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.sodium-chloride-pair",
+      "concept": "chemical-bond",
+      "element": "ionic-bond",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which pair of atoms is most likely to form an ionic bond?",
+      "choices": [
+        "Hydrogen and hydrogen",
+        "Sodium and chlorine",
+        "Carbon and oxygen",
+        "Oxygen and oxygen"
+      ],
+      "answer": 1,
+      "explanation": "Sodium gives up its one outer electron easily, and chlorine takes one to fill its outer shell, so Na⁺ and Cl⁻ attract. Two hydrogen or two oxygen atoms share electrons, and carbon and oxygen share electrons in CO₂.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.nonpolar-molecule",
+      "concept": "chemical-bond",
+      "element": "polar-covalent-bond",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which molecule has a nonpolar covalent bond?",
+      "choices": [
+        "Water",
+        "Hydrogen chloride",
+        "Oxygen gas, O₂",
+        "Ammonia"
+      ],
+      "answer": 2,
+      "explanation": "In O₂ both atoms are oxygen, so they pull equally on the shared electrons. Water, hydrogen chloride and ammonia each join atoms of different electronegativity, so their bonds are polar.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.polar-covalent-name",
+      "concept": "chemical-bond",
+      "element": "polar-covalent-bond",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "What is a covalent bond called when the shared electrons are pulled unevenly?",
+      "answer": "Polar covalent bond",
+      "explanation": "Uneven sharing gives the atoms partial charges, but the electrons are still shared, so the bond is covalent rather than ionic. Water's O–H bonds are polar covalent.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Same term."
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.hydrogen-bond-joins",
+      "concept": "hydrogen-bond",
+      "element": "attraction-between-molecules",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does a hydrogen bond usually join?",
+      "choices": [
+        "Two atoms within the same covalent bond",
+        "A hydrogen on one molecule and a lone pair on another, or on a distant part of a large molecule",
+        "Two hydrogen atoms that share one electron pair",
+        "Two positive ions of the same charge"
+      ],
+      "answer": 1,
+      "explanation": "A hydrogen bond attracts a hydrogen on one molecule to a lone pair elsewhere. Two atoms in the same covalent bond share electrons, which is not a hydrogen bond, and two hydrogens sharing a pair is a covalent bond.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.hydrogen-bond-strength",
+      "concept": "hydrogen-bond",
+      "element": "relative-strength",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How does a hydrogen bond compare with a covalent bond?",
+      "choices": [
+        "Much weaker",
+        "Much stronger",
+        "About the same strength",
+        "Stronger, but only in ice"
+      ],
+      "answer": 0,
+      "explanation": "A typical hydrogen bond is much weaker than a covalent bond, so it breaks more easily. Water's many hydrogen bonds still hold it together as a liquid. Ice does not have stronger bonds; it has more of them in fixed positions.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.partial-negative-in-water",
+      "concept": "hydrogen-bond",
+      "element": "partial-charges",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "In water, which atom carries the partial negative charge?",
+      "answer": "Oxygen",
+      "explanation": "Oxygen pulls the shared electrons toward itself, so it is slightly negative and its lone pairs can accept a hydrogen bond. The hydrogens are slightly positive.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Same atom."
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.hydrogen-bond-steps-order",
+      "concept": "hydrogen-bond",
+      "element": "attraction-between-molecules",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in the order they happen when a hydrogen bond forms between two water molecules.",
+      "steps": [
+        "Oxygen in one water molecule pulls the shared electrons of its O–H bond toward itself",
+        "The hydrogen on that bond becomes slightly positive",
+        "The hydrogen is drawn to a lone pair on a nearby oxygen, linking the two molecules"
+      ],
+      "explanation": "The hydrogen can only become positive after its oxygen pulls the electrons away, and it can only be attracted once it is positive. The steps cannot be swapped.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.why-n-o-f",
+      "concept": "hydrogen-bond",
+      "element": "donor-and-acceptor",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why do hydrogen bonds form mainly with oxygen, nitrogen and fluorine?",
+      "choices": [
+        "They are the largest atoms",
+        "They have the most protons",
+        "They are the only atoms with lone pairs",
+        "They pull shared electrons strongly, so a hydrogen bonded to them becomes partly positive"
+      ],
+      "answer": 3,
+      "explanation": "Oxygen, nitrogen and fluorine pull shared electrons strongly, which leaves a hydrogen bonded to them partly positive. Size and proton count are not the reason, and sulfur has lone pairs but forms much weaker hydrogen bonds.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: Lone pairs are not unique to O, N, F, but option 3 is the best answer."
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.boiling-point-reason",
+      "concept": "water-properties",
+      "element": "high-boiling-point",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What mainly makes water boil at a higher temperature than similar small molecules?",
+      "choices": [
+        "Hydrogen bonds between molecules",
+        "Covalent bonds inside each molecule",
+        "Its low molecular mass",
+        "Its large size"
+      ],
+      "answer": 0,
+      "explanation": "Hydrogen bonds between water molecules take extra energy to break, so water boils at a higher temperature. Covalent bonds inside a molecule do not link molecules together. Water's molecular mass is small, which would lower its boiling point.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.cohesion-definition",
+      "concept": "water-properties",
+      "element": "cohesion",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is cohesion in water?",
+      "choices": [
+        "Water molecules sticking to other substances",
+        "Water molecules sticking to each other",
+        "Water absorbing heat without warming",
+        "Water dissolving salts"
+      ],
+      "answer": 1,
+      "explanation": "Cohesion is attraction between like molecules, here water to water through hydrogen bonds. Adhesion is water sticking to other surfaces, such as glass. The other two choices describe heat capacity and solvent power.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.capillary-action",
+      "concept": "water-properties",
+      "element": "cohesion",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "What is the name for water rising up a narrow tube against gravity, due to cohesion and adhesion?",
+      "answer": "Capillary action (capillarity)",
+      "explanation": "Adhesion pulls water up the tube walls, and cohesion pulls the water column along with it. Capillary action helps water move through plant stems and soil.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Same phenomenon; the key adds an alias only."
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.ice-floats",
+      "concept": "water-properties",
+      "element": "ice-density",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does ice float on liquid water?",
+      "choices": [
+        "Ice is made of lighter atoms",
+        "Hydrogen bonds in ice hold molecules in an open lattice that is less dense than liquid water",
+        "Ice has more covalent bonds than liquid water",
+        "Ice contains only air bubbles"
+      ],
+      "answer": 1,
+      "explanation": "In ice each molecule is held by hydrogen bonds in a regular, open arrangement, so the molecules take up more space than in liquid water. The atoms are the same, and the covalent bonds do not change between ice and liquid.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.freezing-steps",
+      "concept": "water-properties",
+      "element": "ice-density",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in order as water freezes and the ice floats.",
+      "steps": [
+        "The water cools and its molecules slow down",
+        "Hydrogen bonds lock the molecules into an open lattice",
+        "The lattice takes up more space, so the solid is less dense than the liquid",
+        "The ice floats on the denser liquid water below"
+      ],
+      "explanation": "Cooling slows the molecules, and then hydrogen bonds fix them in a lattice. The open lattice is less dense, so the ice floats. Each step depends on the one before it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "solver-a's note: The order of the last two steps (lattice takes more space vs. hydrogen bonds locking the lattice) is close; the lock-in comes first in the sequence used here."
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.dissolve-salt",
+      "concept": "water-properties",
+      "element": "solvent-power",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why does water dissolve table salt, sodium chloride?",
+      "choices": [
+        "Salt is a covalent molecule that mixes with water",
+        "Water breaks apart the sodium nucleus",
+        "Water's hydrogen bonds turn salt into a gas",
+        "Its partial charges surround and separate the Na⁺ and Cl⁻ ions"
+      ],
+      "answer": 3,
+      "explanation": "Water's partial charges pull on the ions, and each ion becomes surrounded by water molecules. Salt is ionic, not covalent. Water does not split nuclei, and dissolved salt does not become a gas.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.solvent-property",
+      "concept": "water-properties",
+      "element": "solvent-power",
+      "kind": "recall",
+      "difficulty": 2,
+      "prompt": "What property of water molecules lets them surround and separate ions?",
+      "answer": "Polarity (partial charges)",
+      "explanation": "The oxygen end of a water molecule is partly negative and the hydrogen ends are partly positive, so water attracts both positive and negative ions.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Same property: partial charges (polarity). Extra wording only."
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.heat-capacity",
+      "concept": "water-properties",
+      "element": "heat-capacity",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why does water absorb a lot of heat before its temperature rises much?",
+      "choices": [
+        "Water has no kinetic energy",
+        "Its molecules repel heat",
+        "Its covalent bonds are weak",
+        "Some heat breaks hydrogen bonds instead of speeding up the molecules"
+      ],
+      "answer": 3,
+      "explanation": "Part of the heat goes into breaking hydrogen bonds, so less goes into raising the temperature. This high heat capacity moderates temperature in lakes and in living bodies. Water's covalent bonds are strong, not weak.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.ph-definition",
+      "concept": "ph-scale",
+      "element": "hydrogen-ion-concentration",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How is pH defined?",
+      "choices": [
+        "The negative base-10 logarithm of the hydrogen ion concentration",
+        "The number of hydrogen atoms in a molecule",
+        "The base-10 logarithm of the hydrogen ion concentration with no minus sign",
+        "The total number of ions in a solution"
+      ],
+      "answer": 0,
+      "explanation": "pH is the negative base-10 logarithm of the hydrogen ion concentration in moles per litre. Leaving out the minus sign reverses the scale, so acids would read as bases. Counting atoms or ions does not define pH.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.neutral-ph",
+      "concept": "ph-scale",
+      "element": "neutral-point",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "At 25 °C, what is the pH of pure water?",
+      "choices": [
+        "0",
+        "7",
+        "10",
+        "14"
+      ],
+      "answer": 1,
+      "explanation": "Pure water has equal hydrogen and hydroxide ion concentrations, each 10⁻⁷ moles per litre, which gives pH 7. pH 0 is strongly acidic, pH 10 is basic, and pH 14 is strongly basic.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.ph-ion",
+      "concept": "ph-scale",
+      "element": "hydrogen-ion-concentration",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "pH is calculated from the concentration of which ion?",
+      "answer": "Hydrogen ion, H⁺ (also written H₃O⁺)",
+      "explanation": "Hydrogen ions in water are usually written H⁺, but they exist as hydronium, H₃O⁺. Both forms give the same pH.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Same ion: H+. Solver a adds the hydronium notation the key also gives."
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.tenfold-comparison",
+      "concept": "ph-scale",
+      "element": "logarithmic-scale",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A solution has pH 3. How does its hydrogen ion concentration compare with a solution of pH 5?",
+      "choices": [
+        "100 times lower",
+        "Two times higher",
+        "The same",
+        "100 times higher"
+      ],
+      "answer": 3,
+      "explanation": "Each pH unit is a tenfold change, so two units is a factor of 10 × 10 = 100. pH 3 is 10⁻³ and pH 5 is 10⁻⁵ moles per litre, and 10⁻³ is 100 times 10⁻⁵.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.ph-calculation-steps",
+      "concept": "ph-scale",
+      "element": "hydrogen-ion-concentration",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in order to find the pH of a solution with hydrogen ion concentration 10⁻³ moles per litre.",
+      "steps": [
+        "Write the hydrogen ion concentration: 10⁻³ moles per litre",
+        "Take the base-10 logarithm: log₁₀ of 10⁻³ is −3",
+        "Change the sign to get the pH: pH = 3"
+      ],
+      "explanation": "Start from the concentration, take log₁₀ to get −3, then flip the sign to get 3. Flipping the sign before taking the logarithm is not a valid step.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.ph-of-1e-9",
+      "concept": "ph-scale",
+      "element": "hydrogen-ion-concentration",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A solution has a hydrogen ion concentration of 10⁻⁹ moles per litre. What is its pH?",
+      "choices": [
+        "−9",
+        "0.000000001",
+        "7",
+        "9"
+      ],
+      "answer": 3,
+      "explanation": "pH is the negative logarithm of 10⁻⁹, which is 9, so the solution is basic. The value −9 is the logarithm without the minus sign, 0.000000001 is the concentration rather than the pH, and 7 is neutral.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.acidic-ph-4",
+      "concept": "ph-scale",
+      "element": "acid-and-base",
+      "kind": "recall",
+      "difficulty": 1,
+      "prompt": "A solution has pH 4. Is it acidic, neutral or basic?",
+      "answer": "Acidic",
+      "explanation": "Values below 7 are acidic, so pH 4 has more hydrogen ions than pure water. Values above 7 are basic.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Same answer."
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.basic-solution",
+      "concept": "ph-scale",
+      "element": "acid-and-base",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which solution is basic at 25 °C?",
+      "choices": [
+        "Lemon juice, pH 2",
+        "Pure water, pH 7",
+        "Sodium hydroxide solution, pH 13",
+        "Vinegar, pH 3"
+      ],
+      "answer": 2,
+      "explanation": "Basic solutions have pH above 7, so a pH 13 sodium hydroxide solution is basic. Lemon juice and vinegar are acidic, and pure water is neutral.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.tap-hydrogen-bond",
+      "concept": "hydrogen-bond",
+      "element": "attraction-between-molecules",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the weak attraction that holds the two water molecules together.",
+      "artifact": "water-hydrogen-bond",
+      "target": "hydrogen-bond",
+      "explanation": "The hydrogen bond is the dashed line from a hydrogen on one molecule to a lone pair on the other. The solid sticks are covalent bonds, which share electrons inside each molecule.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: A is the dashed hydrogen-bond line between the two molecules; the weak attraction is the hydrogen bond itself."
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.tap-bridging-hydrogen",
+      "concept": "hydrogen-bond",
+      "element": "partial-charges",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the partly positive atom that is attracted to the other water molecule.",
+      "artifact": "water-hydrogen-bond",
+      "target": "bridging-hydrogen",
+      "explanation": "This hydrogen is covalently bonded to one oxygen and drawn to a lone pair on the other. The other hydrogens are also partly positive, but none of them is attracted to the second molecule here.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: D is the hydrogen bonded to the left water's oxygen, which is attracted to the lone pair on the other molecule's oxygen. b's note: Donor hydrogen, left of the dashed bond"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.tap-acceptor-lone-pair",
+      "concept": "hydrogen-bond",
+      "element": "donor-and-acceptor",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the unshared electron pair that accepts the hydrogen bond.",
+      "artifact": "water-hydrogen-bond",
+      "target": "acceptor-lone-pair",
+      "explanation": "The accepting lone pair is the one the dashed line reaches. Each oxygen has two lone pairs, but only this one takes part in the hydrogen bond shown.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: E is the lone pair on the right water's oxygen that faces the donor hydrogen."
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.tap-donor-oxygen",
+      "concept": "chemical-bond",
+      "element": "electronegativity",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "Tap the atom whose pull on shared electrons makes the hydrogen in the hydrogen bond partly positive.",
+      "artifact": "water-hydrogen-bond",
+      "target": "donor-oxygen",
+      "explanation": "The donor oxygen is covalently bonded to the hydrogen in the hydrogen bond. Being more electronegative, it pulls their shared electrons toward itself. The other oxygen does not share electrons with that hydrogen.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: D is the left water's oxygen, whose pull on the shared electrons makes the bonded hydrogen partly positive. b's note: Donor oxygen, left molecule"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.tap-acceptor-oxygen",
+      "concept": "hydrogen-bond",
+      "element": "donor-and-acceptor",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "Tap the hydrogen bond acceptor atom.",
+      "artifact": "water-hydrogen-bond",
+      "target": "acceptor-oxygen",
+      "explanation": "The acceptor is the partly negative oxygen whose lone pair receives the hydrogen. The donor is the oxygen covalently bonded to that hydrogen.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: A is the oxygen atom of the right water, the acceptor atom (not the lone pair itself). b's note: Acceptor oxygen, right molecule; the lone-pair spot is a separate choice"
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "water-hydrogen-bond",
+      "kind": "diagram",
+      "title": "A hydrogen bond between two water molecules",
+      "alt": "Two water molecules, each a large red oxygen atom joined by solid green sticks to two small sand-coloured hydrogen atoms in a bent shape, with two green lone-pair lobes holding two dots each. One hydrogen of the left molecule points at a lone pair on the right molecule's oxygen, and a dashed blue line joins them.",
+      "file": "assets/water-hydrogen-bond.svg",
+      "hotspots": [
+        {
+          "id": "donor-oxygen",
+          "label": "Oxygen of the donor molecule",
+          "x": 0.192,
+          "y": 0.478,
+          "r": 0.05
+        },
+        {
+          "id": "bridging-hydrogen",
+          "label": "Hydrogen in the hydrogen bond",
+          "x": 0.367,
+          "y": 0.478,
+          "r": 0.05
+        },
+        {
+          "id": "hydrogen-bond",
+          "label": "Hydrogen bond",
+          "x": 0.48,
+          "y": 0.504,
+          "r": 0.05
+        },
+        {
+          "id": "acceptor-lone-pair",
+          "label": "Lone pair that accepts the hydrogen bond",
+          "x": 0.592,
+          "y": 0.53,
+          "r": 0.05
+        },
+        {
+          "id": "acceptor-oxygen",
+          "label": "Oxygen of the acceptor molecule",
+          "x": 0.695,
+          "y": 0.554,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "hydrogen-bond-steps",
+      "kind": "sequence",
+      "title": "How a hydrogen bond forms",
+      "alt": "Four steps over the two water molecules: the donor oxygen pulls on its shared electrons, its hydrogen becomes partly positive, the other oxygen offers a lone pair, and the dashed hydrogen bond forms between them.",
+      "over": "water-hydrogen-bond",
+      "steps": [
+        {
+          "title": "Oxygen pulls the electrons",
+          "text": "Oxygen is more electronegative than hydrogen, so it pulls the shared electrons of its O–H bond toward itself.",
+          "focus": "donor-oxygen"
+        },
+        {
+          "title": "Hydrogen becomes partly positive",
+          "text": "With the electrons pulled away, this hydrogen carries a partial positive charge.",
+          "focus": "bridging-hydrogen"
+        },
+        {
+          "title": "A lone pair on another oxygen",
+          "text": "The oxygen of a nearby water molecule is partly negative and has an unshared pair of electrons.",
+          "focus": "acceptor-lone-pair"
+        },
+        {
+          "title": "The hydrogen bond forms",
+          "text": "The partly positive hydrogen is attracted to that lone pair. This weak attraction links the two molecules.",
+          "focus": "hydrogen-bond"
+        }
+      ]
+    },
+    {
+      "id": "carbon-atom",
+      "kind": "diagram",
+      "title": "A carbon atom",
+      "alt": "A carbon atom drawn as a nucleus of six red protons and six green neutrons, circled by an inner shell with two blue electrons and an outer shell with four blue electrons. Labels name the outer shell with 4 electrons, the inner shell with 2 electrons, and the nucleus with 6 protons and 6 neutrons.",
+      "file": "assets/carbon-atom.svg"
+    }
+  ]
+}

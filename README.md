@@ -1,47 +1,78 @@
-# Ceder root
+# Ceder's bank
 
-The public home of Ceder's question bank and a curated catalogue of free learning sources. Ceder is a study app for iPhone and the web.
+The bank is the set of concepts, questions, diagrams, 3D models and step-by-step sequences that Ceder's Learn tab draws on, open for anyone to use. It is plain files: one `subject.json` per subject and one `pack.json` per topic, with each pack's pictures and models beside it. Agents write the packs, other agents answer every question without seeing its key, and only the questions they all agreed with are built into what apps read. Nothing in the bank is about any student.
+
+## How it's organised
 
 ```
-bank/         the question bank: subjects and packs, schemas, tools and pipeline
-sources/      the source catalogue: one JSON file per source, with a schema and a validator
-share-alike/  material adapted from share-alike sources such as Wikipedia (empty for now)
+subject        Biology                      subjects/biology/subject.json
+└─ pack        DNA replication              subjects/biology/dna-replication/pack.json
+   ├─ concepts   what a student learns, and what each one builds on
+   ├─ items      the questions; each checks one concept and has a checked answer
+   └─ artifacts  diagrams, 3D models and sequences, with their files in assets/
 ```
 
-Start with `bank/README.md` and `bank/FORMAT.md` for the bank, and `sources/README.md` for the catalogue.
+A pack covers one topic: 4 to 12 concepts, with at least 4 verified questions for each. `FORMAT.md` is the format. Read it before writing or changing anything here. `CONTRIBUTING.md` is the short way in to adding questions.
 
-## Licences
+```
+subjects/   the packs, by subject
+plan/       each subject's list of packs to write, and every outside page an agent read
+sources/    a curated list of outside sources, and what an app or the bank may do with each
+schema/     JSON Schemas for subject.json, pack.json and a plan
+tools/      validate, build, blind export, grading, checking mistakes, plans and outside reading, with their tests
+pipeline/   how a pack gets written and checked, and the prompts the agents follow
+dist/       what the build writes (not committed)
+.work/      blind question files and solvers' answers (not committed)
+```
 
-Each folder carries its own licence in a `LICENSE` file. The top-level `LICENSE` is an index.
+## Checking and building
 
-| Folder | Licence | Why |
-|---|---|---|
-| `bank/subjects/` (concepts, questions, diagrams, models) | CC BY 4.0 | Ceder's own content. Permissive, credit required. Matches `"license": "CC-BY-4.0"` in the pack format. |
-| `bank/tools/`, `bank/pipeline/`, `bank/schema/` (code) | MIT, `Copyright (c) 2026 Ceder` | Code. |
-| `sources/` (links and facts) | CC0 1.0 | The catalogue is only links and facts. |
-| `share-alike/` | CC BY-SA 4.0 | Wikipedia text is CC BY-SA. Adaptations must stay BY-SA, so they can never sit in the CC BY bank. |
+From the repository's root, with Node 22:
 
-The fonts in `bank/tools/fonts/` keep their own licence, in that folder.
+```
+npm ci
+node tools/validate.mjs                  checks the whole bank against FORMAT.md
+node tools/validate.mjs subjects/biology checks one subject or one pack's folder
+npm test                                 tests the tools against tools/fixtures/
+node tools/build.mjs                     writes dist/
+```
 
-## Rules
+`validate.mjs` fails on anything that breaks the format: a schema error, an ID that doesn't resolve, a prerequisite cycle, overlapping hotspots, an SVG with scripts or outside links, a missing or oversized asset. A concept with fewer than four verified items is a warning, and an error with `--require-verified`. A pack whose right choice is the longest, or the shortest, in more than 35% of its choice items gets a warning too, and `tools/cues.mjs` lists those items. An explanation that names a choice by its place is an error, because apps shuffle the choices.
 
-- **Curated, not exhaustive.** A source is added because it is good and its licence is known, not because it exists.
-- **Four ways to use a source**, set per source in `sources/`:
-  - `copy`: its content may be copied in and shown inside Ceder, with attribution.
-  - `copy-share-alike`: may be copied, but only into `share-alike/`, never `bank/`.
-  - `link-only`: Ceder may link to it or open it; nothing is copied. Every NonCommercial source is this, because Ceder has paid tiers.
-  - `private`: a student's own course files. Used on their device for them alone, never in this repository.
-- **A licence can't be looser than what is copied in.** A folder's licence must be one that every source copied into it allows. This is not legal advice.
-- **No course materials, ever.**
+`build.mjs` validates first and builds nothing if there are errors. It writes one flat folder: `bank-index.json`, a `bankpack-<pack id>.json` for each pack with at least one verified item, and a `bankasset-<hash>.<ext>` for each picture and model those packs use. Only verified items go in, without their verification. Diagrams are rendered from SVG to PNG at 1200 pixels wide, with their text set in the fonts in `tools/fonts/`. The same source always gives the same bytes. It prints each pack it built, and each pack or subject it left out and why.
 
-## Adding a source
+`node sources/validate.mjs` checks the source catalogue (`sources/README.md`).
 
-Add `sources/entries/<id>.json` as described in `sources/README.md`, and run `npm ci` and `node sources/validate.mjs` in the root. Only add a source whose licence you have read on its own terms page.
+CI runs these on every pull request and on `main`.
 
-## Adding a pack
+An app that ships a copy of the built bank can keep it in step with the source:
 
-Write it under `bank/subjects/<subject>/<pack>/` as `bank/FORMAT.md` describes, and take it through the checking loop in `bank/pipeline/README.md`. Then, in `bank/`, run `node tools/validate.mjs` and `npm test`. Packs are CC BY 4.0, so don't copy in text, pictures or models from a source whose use isn't `copy` with a CC BY or more permissive licence. Adapt from a share-alike source only in `share-alike/`.
+```
+node tools/build.mjs --app --app-dir <folder>         rebuilds dist/ and replaces the bank files in <folder>
+node tools/build.mjs --check-app --app-dir <folder>   changes nothing; fails if <folder> isn't what --app would write
+```
 
-## Checks
+## How a pack gets written and verified
 
-CI runs, in `bank/`: `npm ci`, `node tools/validate.mjs`, `npm test`; then in the root: `npm ci`, `node sources/validate.mjs`.
+Every answer key is checked by solvers who never see it. The loop, with the exact commands, is in `pipeline/README.md`:
+
+1. An author writes the pack (`pipeline/prompts/author.md`). Every item starts as a draft.
+2. `tools/blind.mjs` writes its draft questions without their answers.
+3. Two or more solvers answer them separately (`pipeline/prompts/solver.md`).
+4. `tools/grade.mjs` compares the answers with the keys. An item every solver agreed with becomes verified; any other stays a draft with a note saying what each solver answered (`pipeline/prompts/grader.md`).
+5. A repairer fixes or rejects each item that wasn't verified (`pipeline/prompts/repair.md`), and changed items go back to step 2.
+6. The build takes the verified items.
+
+`pipeline/synthesize.workflow.js` runs the whole loop for a list of packs with Claude Code's Workflow tool.
+
+A pack can also say which wrong idea each wrong choice gives away, so an app can tell a student what they have misunderstood and not only that they were wrong. A second model checks those tags without seeing them (`FORMAT.md`, Misconceptions).
+
+What gets written is decided by each subject's plan (`plan/README.md`). While they plan, write or check, agents may read only Wikipedia, Wikibooks and Wikidata, through `tools/ref.mjs`, which logs every page and checks packs for copied text (`pipeline/prompts/sources.md`).
+
+Agreement between solvers shows a key is consistent, not that it is true. The first eight packs were written and solved by one model family, so a mistake that family shares would not have been caught.
+
+## Licence
+
+Everything in the bank is released under CC0 1.0 (`LICENSE`): the questions, answers, explanations, pictures, 3D models, tools and prompts. Use it for anything, including training models, without asking and without giving credit. Each pack says so in its `license` field.
+
+The one exception is `tools/fonts/`, which holds DejaVu Sans under its own licence (`tools/fonts/LICENSE.txt`).

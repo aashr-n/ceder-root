@@ -2,14 +2,15 @@
   "id": "wikipedia",
   "name": "Wikipedia",
   "url": "https://en.wikipedia.org",
-  "goodFor": "Encyclopedia articles, for a lead paragraph and a thumbnail on almost any topic.",
+  "goodFor": "A lead paragraph and a picture for almost any term, and what a topic covers.",
   "license": "CC-BY-SA-4.0",
-  "use": "copy-share-alike",
+  "apps": "show",
+  "bank": "read",
   "attribution": "The article's title, a link to the article, and the licence name (CC BY-SA 4.0).",
-  "access": "https://en.wikipedia.org/api/rest_v1/page/summary/{title} (lead paragraph and thumbnail)",
+  "access": "https://en.wikipedia.org/api/rest_v1/page/summary/{title} for an app; node tools/ref.mjs wikipedia \"<title>\" for an agent.",
   "checked": {
     "date": "2026-11-11",
     "basis": "secondary sources and Creative Commons' compatible-licences page; Wikimedia's own terms not opened"
   },
-  "notes": "Text is CC BY-SA 4.0, so copied text may only go in share-alike/, never bank/. Images carry their own per-file licences. Articles often read above introductory level."
+  "notes": "An app may show an extract with credit. The bank is CC0 and can't carry share-alike text, so agents read a page to learn what a topic covers and never copy its wording (pipeline/prompts/sources.md). Pictures carry their own licence, file by file. Articles often read above introductory level."
 }

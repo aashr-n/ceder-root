@@ -1,0 +1,2271 @@
+{
+  "formatVersion": 1,
+  "id": "biology.cytoskeleton",
+  "subject": "biology",
+  "title": "Cytoskeleton and cell movement",
+  "summary": "The three kinds of filament that shape a cell and move things inside it, the motor proteins that walk along them, and how cilia and flagella beat.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "cytoskeleton",
+      "name": "Cytoskeleton",
+      "aliases": [
+        "cytoskeletons",
+        "cytoskeletal network"
+      ],
+      "summary": "A network of protein filaments inside every eukaryotic cell that gives it shape, positions its organelles and lets it change form.",
+      "requires": [
+        "organelle"
+      ],
+      "elements": [
+        {
+          "id": "three-filament-types",
+          "name": "The three filament types"
+        },
+        {
+          "id": "constant-rebuilding",
+          "name": "Filaments built and broken down constantly"
+        },
+        {
+          "id": "organelle-placement",
+          "name": "Anchoring and moving organelles"
+        }
+      ],
+      "explain": {
+        "text": "The cytoskeleton is a network of protein filaments that runs through the cytoplasm of every eukaryotic cell. It gives the cell its shape, holds the organelles in their places and moves them when needed. It is built from three kinds of filament: thin actin filaments, hollow microtubules and intermediate filaments. The filaments are not fixed. The cell keeps assembling and taking them apart, which is why a cell can crawl, divide and change form. A cell wall, where a cell has one, sits outside the membrane and is not part of this network."
+      },
+      "misconceptions": [
+        {
+          "id": "cytoskeleton-is-outer-wall",
+          "claim": "The cytoskeleton is a rigid outer wall around the cell, like a cell wall.",
+          "correction": "The cytoskeleton is a network of filaments inside the membrane. A plant or fungal cell wall sits outside the membrane and is a different structure."
+        },
+        {
+          "id": "cytoskeleton-is-fixed",
+          "claim": "The cytoskeleton is a fixed frame that does not change.",
+          "correction": "Its filaments are built and broken down all the time, so the cell can change shape, move and move its organelles."
+        },
+        {
+          "id": "bacteria-no-cytoskeleton",
+          "claim": "Bacteria have no cytoskeleton, because they have no nucleus.",
+          "correction": "Bacteria have filament proteins such as FtsZ and MreB that help set the cell's shape and divide it."
+        }
+      ]
+    },
+    {
+      "id": "microtubule",
+      "name": "Microtubule",
+      "aliases": [
+        "microtubules"
+      ],
+      "summary": "A hollow tube of tubulin, about 25 nm across, that grows and shrinks at its ends and acts as a track for motor proteins.",
+      "requires": [
+        "cytoskeleton"
+      ],
+      "elements": [
+        {
+          "id": "tubulin-tube",
+          "name": "Tubulin subunits in a hollow tube"
+        },
+        {
+          "id": "polarity",
+          "name": "Plus and minus ends"
+        },
+        {
+          "id": "dynamic-growth",
+          "name": "Growth and shrinkage at the ends"
+        },
+        {
+          "id": "centrosome",
+          "name": "Organised from the centrosome"
+        }
+      ],
+      "explain": {
+        "text": "A microtubule is a hollow tube about 25 nm across, built from alpha and beta tubulin subunits that stack into a wall of thirteen strands. It is much wider than an actin filament, and it resists squeezing more than pulling. Each microtubule has two different ends. The plus end adds and loses subunits quickly, and the minus end is slower and is usually anchored at the centrosome. Because the ends differ, microtubules give motor proteins a direction to walk along. They pull chromosomes apart in mitosis and carry vesicles through the cell."
+      },
+      "misconceptions": [
+        {
+          "id": "microtubule-is-actin",
+          "claim": "Microtubules are made of actin, like microfilaments.",
+          "correction": "Microtubules are hollow tubes built from tubulin. Actin makes thinner, solid filaments, so the two are different polymers."
+        },
+        {
+          "id": "microtubule-both-ends-alike",
+          "claim": "Both ends of a microtubule grow at the same rate, so it has no direction.",
+          "correction": "The plus end adds and loses subunits faster than the minus end, so each microtubule has a direction."
+        },
+        {
+          "id": "microtubule-bears-tension",
+          "claim": "Microtubules are the filaments that bear the pulling forces in a cell.",
+          "correction": "Intermediate filaments bear tension. Microtubules mainly resist squeezing."
+        }
+      ]
+    },
+    {
+      "id": "actin-filament",
+      "name": "Actin filament",
+      "aliases": [
+        "actin filaments",
+        "microfilament",
+        "microfilaments",
+        "F-actin"
+      ],
+      "summary": "A thin, two-stranded polymer of actin that pushes the cell's edge forward and gives the track along which myosin pulls.",
+      "requires": [
+        "cytoskeleton"
+      ],
+      "elements": [
+        {
+          "id": "actin-subunits",
+          "name": "Globular actin subunits"
+        },
+        {
+          "id": "polarity",
+          "name": "Barbed and pointed ends"
+        },
+        {
+          "id": "myosin-track",
+          "name": "Myosin walks along actin"
+        },
+        {
+          "id": "crawling-edge",
+          "name": "Pushing a crawling edge"
+        }
+      ],
+      "explain": {
+        "text": "An actin filament is the thinnest of the three filaments, about 7 nm across. It is made from globular actin subunits that join into two chains twisted around each other. The filament has two ends that differ: the barbed end adds subunits faster than the pointed end. Actin is found in most eukaryotic cells, where it lines the cell's edge and forms the cortex under the membrane. When a filament grows against the membrane, it pushes the membrane out, which lets a cell crawl. Myosin walks along actin to make bundles pull and muscle contract."
+      },
+      "misconceptions": [
+        {
+          "id": "actin-only-in-muscle",
+          "claim": "Actin is found mainly in muscle cells and is rare in other cells.",
+          "correction": "Actin is in most eukaryotic cell types, forming the cell's cortex and its crawling edge. Muscle just has a great deal of it."
+        },
+        {
+          "id": "actin-no-polarity",
+          "claim": "The two ends of an actin filament are identical, so the filament has no direction.",
+          "correction": "The barbed end adds subunits faster than the pointed end, so the two ends differ."
+        }
+      ]
+    },
+    {
+      "id": "intermediate-filament",
+      "name": "Intermediate filament",
+      "aliases": [
+        "intermediate filaments",
+        "keratin filament",
+        "lamin"
+      ],
+      "summary": "A rope-like filament about 10 nm across, made of one of several protein families by cell type, that is strongly bound and bears tension.",
+      "requires": [
+        "cytoskeleton"
+      ],
+      "elements": [
+        {
+          "id": "subunit-families",
+          "name": "Subunit families by cell type"
+        },
+        {
+          "id": "stability",
+          "name": "Stability and tension"
+        },
+        {
+          "id": "nuclear-lamina",
+          "name": "Lamins and the nuclear lamina"
+        },
+        {
+          "id": "assembly",
+          "name": "Assembly from dimers"
+        }
+      ],
+      "explain": {
+        "text": "Intermediate filaments are about 10 nm across, between actin and microtubules, and the name comes from that middle size. Their subunits differ by cell type. Keratin forms them in skin and other epithelial cells, vimentin in mesenchymal cells, and lamins line the nucleus as the nuclear lamina. The subunits are strongly bound once assembled, so these filaments are among the most stable parts of the cytoskeleton. They bear tension and hold organelles and cells together, which lets skin resist stretching and tearing. They are not tracks for motor proteins."
+      },
+      "misconceptions": [
+        {
+          "id": "if-motor-track",
+          "claim": "Intermediate filaments are the tracks that motor proteins carry cargo along.",
+          "correction": "Kinesin and dynein walk on microtubules, and myosin walks on actin. Intermediate filaments anchor organelles and bear tension."
+        },
+        {
+          "id": "if-least-stable",
+          "claim": "Intermediate filaments are the least stable filaments, rebuilt within minutes.",
+          "correction": "They are the most stable of the three types, with strongly bound subunits."
+        },
+        {
+          "id": "if-one-protein",
+          "claim": "Every intermediate filament is made of the same protein.",
+          "correction": "The subunit depends on the cell type, such as keratin in epithelia, vimentin in mesenchymal cells and lamins in the nucleus."
+        }
+      ]
+    },
+    {
+      "id": "motor-protein",
+      "name": "Motor protein",
+      "aliases": [
+        "motor proteins",
+        "molecular motor",
+        "molecular motors"
+      ],
+      "summary": "A protein that uses ATP to step along a filament, carrying cargo such as vesicles in a set direction.",
+      "requires": [
+        "microtubule",
+        "actin-filament"
+      ],
+      "elements": [
+        {
+          "id": "atp-stepping",
+          "name": "Stepping powered by ATP"
+        },
+        {
+          "id": "direction",
+          "name": "Direction of travel"
+        },
+        {
+          "id": "families",
+          "name": "Each family grips one filament type"
+        },
+        {
+          "id": "cargo",
+          "name": "Moving cargo along a track"
+        }
+      ],
+      "explain": {
+        "text": "A motor protein is a protein that walks along a filament and carries cargo with it. Each step uses energy released when ATP is split, so the motor does not drift; a diffusing molecule does not need this. Kinesin walks toward the plus end of a microtubule, which usually points to the cell's edge. Dynein walks the other way, toward the minus end and the nucleus. Myosin walks along actin. Each family grips one filament type, and the filament stays put while the motor moves. A vesicle carried by a motor is pulled along the track.",
+        "artifact": "kinesin-step-steps"
+      },
+      "misconceptions": [
+        {
+          "id": "motor-needs-no-atp",
+          "claim": "A motor protein moves cargo along a filament without using energy.",
+          "correction": "Each step uses energy from splitting ATP. Passive diffusion does not move a motor along a track."
+        },
+        {
+          "id": "kinesin-dynein-same-direction",
+          "claim": "Kinesin and dynein walk in the same direction along microtubules.",
+          "correction": "Kinesin walks toward the plus end and dynein toward the minus end, so they go in opposite directions."
+        },
+        {
+          "id": "motor-walks-any-filament",
+          "claim": "A motor protein can walk along any kind of filament.",
+          "correction": "Each motor family grips one filament type: kinesin and dynein on microtubules, myosin on actin."
+        },
+        {
+          "id": "filament-walks-motor",
+          "claim": "The filament slides along a motor that stays put.",
+          "correction": "The motor walks along a filament that stays in place, carrying its cargo with it."
+        }
+      ]
+    },
+    {
+      "id": "cilia-and-flagella",
+      "name": "Cilia and flagella",
+      "aliases": [
+        "cilium",
+        "flagellum",
+        "flagella"
+      ],
+      "summary": "Hair-like structures whose ring of microtubule doublets bends as dynein arms slide them past one another, so cilia and flagella beat.",
+      "requires": [
+        "microtubule",
+        "motor-protein"
+      ],
+      "elements": [
+        {
+          "id": "nine-plus-two",
+          "name": "The 9+2 arrangement"
+        },
+        {
+          "id": "dynein-sliding",
+          "name": "Dynein sliding of doublets"
+        },
+        {
+          "id": "beat",
+          "name": "The power and recovery strokes"
+        },
+        {
+          "id": "bacterial-flagella",
+          "name": "Bacterial flagella"
+        }
+      ],
+      "explain": {
+        "text": "Cilia are short, numerous hair-like structures, and flagella are longer and fewer, but eukaryotic cilia and flagella share one inner design. A ring of nine microtubule doublets surrounds a central pair of microtubules, the 9+2 arrangement. Dynein arms on each doublet grab the neighbouring doublet and slide it along. The sliding is held in check by linkers and the base, so it turns into a bend. A motile cilium beats with a power stroke that pushes fluid past it, then a recovery stroke. Bacterial flagella are different: they turn like a propeller and have no microtubules.",
+        "artifact": "axoneme"
+      },
+      "misconceptions": [
+        {
+          "id": "cilia-no-microtubules",
+          "claim": "A cilium is a hollow tube with no microtubules inside.",
+          "correction": "A cilium has nine microtubule doublets around a central pair, and it is the sliding of these that bends it."
+        },
+        {
+          "id": "doublets-shorten-to-bend",
+          "claim": "The microtubules of a cilium shorten, and the shortening bends it.",
+          "correction": "Dynein arms slide the doublets past one another, and linkers turn that sliding into a bend. The doublets do not shorten."
+        },
+        {
+          "id": "bacteria-flagella-same",
+          "claim": "Bacterial flagella work like eukaryotic flagella, with dynein sliding microtubules.",
+          "correction": "Bacterial flagella are helical filaments of flagellin, turned by a rotary motor in the membrane. They have no microtubules."
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "biology.cytoskeleton.three-filament-types",
+      "concept": "cytoskeleton",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which three kinds of filament make up a eukaryotic cell's cytoskeleton?",
+      "explanation": "A eukaryotic cytoskeleton is built from microfilaments of actin, microtubules of tubulin and intermediate filaments. A plant's cell wall lies outside the membrane and is not part of the cytoskeleton.",
+      "choices": [
+        "Microfilaments, microtubules and intermediate filaments",
+        "Microfilaments, microtubules and the cell wall of plants",
+        "Microtubules, intermediate filaments and cell membranes",
+        "Microfilaments, septal plates and the nuclear envelope"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.shape-change",
+      "concept": "cytoskeleton",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A cell in a tissue must change shape quickly to crawl or to divide. What does this need from its cytoskeleton?",
+      "explanation": "The cytoskeleton is a set of filaments the cell keeps building and breaking down, so it can reshape the cell. A cell wall, where there is one, lies outside the membrane and is not what changes the shape.",
+      "choices": [
+        "Filaments built and taken apart constantly, so the shape can change",
+        "Filaments that stay fixed, while the membrane alone changes the shape",
+        "A cell wall that loosens at one spot so the cell can bend",
+        "New membrane made fast, while the old filaments drop away"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "cytoskeleton-is-fixed",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.every-eukaryote",
+      "concept": "cytoskeleton",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about the cytoskeleton is true of every eukaryotic cell?",
+      "explanation": "Every eukaryotic cell has a cytoskeleton of three filament types. The cytoskeleton is inside the membrane, not an outer wall, and it is not limited to muscle and nerve cells.",
+      "choices": [
+        "Every eukaryotic cell has a cytoskeleton built from three kinds of filament",
+        "A cytoskeleton is found mainly in muscle and nerve cells, not in skin cells",
+        "The cytoskeleton is the rigid wall that sits outside the membrane of an animal cell",
+        "A cytoskeleton is made of cellulose fibres that the cell lays down as it grows"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "cytoskeleton-is-outer-wall",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.stiff-frame",
+      "concept": "cytoskeleton",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: 'The cytoskeleton is a stiff frame, so it cannot change while the cell is alive.' What is wrong with that?",
+      "explanation": "The filaments are assembled and broken down all the time, so the frame is rebuilt as the cell needs. The frame is not fixed, and a stiff-looking structure can still be remade.",
+      "choices": [
+        "Its filaments are constantly built and broken down, so the frame is remade",
+        "Its frame is stiff because it is made of lipid, so it cannot change at all",
+        "Its frame is stiff in animal cells, while plant cells have no frame at all",
+        "The student is right, because a stiff frame must keep the same shape as it grows"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "cytoskeleton-is-fixed"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.organelle-job",
+      "concept": "cytoskeleton",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What does the cytoskeleton do for the organelles inside a cell?",
+      "explanation": "The cytoskeleton anchors organelles in place and moves them where they are needed. It does not digest them, pump them across the membrane, or wrap them in a wall.",
+      "choices": [
+        "It anchors them in place and moves them where they are needed",
+        "It digests them once they are damaged, recycling their parts",
+        "It pumps them across the membrane, spending energy from ATP to do so",
+        "It wraps each one in its own outer wall, like a cell wall"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "cytoskeleton-is-outer-wall"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.bacteria-have-filaments",
+      "concept": "cytoskeleton",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Do bacteria have a cytoskeleton?",
+      "explanation": "Bacteria have protein filaments such as FtsZ and MreB that help shape the cell and divide it. A cytoskeleton does not need a nucleus, and it is not made of cellulose.",
+      "choices": [
+        "Yes, protein filaments such as FtsZ and MreB shape and divide the cell",
+        "No, a cytoskeleton needs a nucleus to form, and bacteria have none",
+        "Yes, but it is made of cellulose, just as the walls of plant cells are",
+        "Yes, it is made of the same three filaments that eukaryotic cells use"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "bacteria-no-cytoskeleton",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.bacteria-correction",
+      "concept": "cytoskeleton",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: 'Bacteria cannot have a cytoskeleton, since their shape comes from the cell wall.' What is the correction?",
+      "explanation": "Bacteria have filament proteins such as MreB that help set the cell's shape and FtsZ that forms a ring for division. The wall does not have to do all the work.",
+      "choices": [
+        "Bacteria have filament proteins such as MreB that help set the cell's shape",
+        "Bacteria have no filaments, and the wall does all the work of holding shape",
+        "Bacteria have the same three filaments as eukaryotic cells, but in smaller amounts",
+        "Bacteria have microtubules, which form the wall and divide the cell"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "bacteria-no-cytoskeleton",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.filaments-broken",
+      "concept": "cytoskeleton",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A drug breaks down a cell's filaments. Which result is most likely?",
+      "explanation": "Filaments hold the cell's shape and place its organelles, so without them the shape goes and organelles drift. Breaking filaments does not directly stop the DNA or the mitochondria from working. The membrane does not depend on a wall to hold together.",
+      "choices": [
+        "The cell loses its shape, and its organelles drift out of their places",
+        "The cell's membrane dissolves at once, because the wall that held it is gone",
+        "The cell's DNA leaves the nucleus and spreads through the cytoplasm",
+        "The mitochondria stop making ATP, because their filaments are gone"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.mt-what-made-of",
+      "concept": "microtubule",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What are microtubules made of?",
+      "explanation": "Microtubules are hollow tubes of alpha and beta tubulin. Actin makes the thinner, solid microfilaments, and lamin and keratin make intermediate filaments.",
+      "choices": [
+        "Alpha and beta tubulin, which pack into hollow tubes",
+        "Actin, which forms thinner solid strands",
+        "Lamin, which forms a mesh under the nuclear envelope",
+        "Keratin, which forms rope-like bundles in skin cells"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "microtubule-is-actin",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.mt-widths",
+      "concept": "microtubule",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which pair of widths is correct for these filaments?",
+      "explanation": "Microtubules are about 25 nm across and microfilaments about 7 nm. Intermediate filaments are about 10 nm, which is why they sit between the other two.",
+      "choices": [
+        "Microtubules about 25 nm across and microfilaments about 7 nm",
+        "Microtubules about 7 nm across and microfilaments about 25 nm",
+        "Both about 10 nm across, the same as intermediate filaments",
+        "Microtubules about 2.5 nm across and microfilaments about 0.7 nm"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.mt-ends-grow",
+      "concept": "microtubule",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'Both ends of a microtubule grow at the same rate, so it has no direction.' What is wrong?",
+      "explanation": "The plus end adds and loses tubulin faster than the minus end. That difference gives each microtubule a direction, which motor proteins use.",
+      "choices": [
+        "The plus end grows and shrinks faster than the minus end, so it has a direction",
+        "Both ends grow at the same rate, but the middle grows fastest of all",
+        "Microtubules have no direction, because a hollow tube looks the same at each end",
+        "The minus end grows faster than the plus end, so the minus end leads"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "microtubule-both-ends-alike",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.mt-tension-filament",
+      "concept": "microtubule",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which filament type is built mainly to bear tension, the pulling that holds a cell's shape?",
+      "explanation": "Intermediate filaments are strongly bound and bear tension. Microtubules mainly resist squeezing, not pulling.",
+      "choices": [
+        "Intermediate filaments, strongly bound together",
+        "Microtubules, which are hollow and rigid",
+        "Centrioles, which are rings of nine triplets",
+        "Basal bodies, which anchor the base of a cilium"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "microtubule-bears-tension",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.mt-spindle-job",
+      "concept": "microtubule",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What do the microtubules of the mitotic spindle mainly do?",
+      "explanation": "During mitosis, spindle microtubules attach to the copied chromosomes and shorten to pull them toward opposite poles. The actin ring that pinches a dividing cell is a different structure.",
+      "choices": [
+        "They pull copied chromosomes toward opposite poles of the cell",
+        "They build the outer wall that encloses the two daughter cells",
+        "They make a ring of actin filaments that pinches the cell in two",
+        "They carry ATP from mitochondria to the nucleus of the cell"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.mt-dynamic",
+      "concept": "microtubule",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why are microtubules called dynamic?",
+      "explanation": "Tubulin subunits are added and lost at the ends, so a microtubule can lengthen or shorten quickly. This lets the cell rebuild its network when it needs a new layout.",
+      "choices": [
+        "They grow and shrink at their ends as subunits are added and lost",
+        "They are fixed in place once built, and their length stays the same",
+        "They are made of a protein whose shape the cell cannot change at all",
+        "They grow at the minus end and shrink at the plus end of each tube"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "cytoskeleton-is-fixed",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.mt-centrosome",
+      "concept": "microtubule",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Microtubules usually radiate from one spot near the nucleus. Which structure is that spot?",
+      "explanation": "The centrosome is the main microtubule-organising centre of an animal cell. The Golgi apparatus, nuclear envelope and cell membrane each do other jobs.",
+      "choices": [
+        "The centrosome, which organises the microtubules",
+        "The Golgi apparatus, which packs proteins for shipping",
+        "The nuclear envelope, which holds the DNA",
+        "The cell membrane, which controls what enters"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.mt-not-actin",
+      "concept": "microtubule",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: 'Microtubules are the same polymer as actin, so a drug that breaks actin will break microtubules too.' What is wrong?",
+      "explanation": "Microtubules are built from tubulin and actin filaments from actin, so they are different polymers that need different drugs. Breaking one does not automatically break the other.",
+      "choices": [
+        "They are different polymers, built from tubulin rather than from actin",
+        "They are the same polymer, so one drug breaks both at the same rate",
+        "They are linked, so breaking one filament type breaks the other too",
+        "Actin breaks down, but microtubules are made of lipid and are unaffected"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "microtubule-is-actin",
+        "microtubule-is-actin",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.mt-vesicle-trip",
+      "concept": "microtubule",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "How do microtubules help carry a vesicle to another part of the cell?",
+      "explanation": "Motor proteins walk along microtubules and carry the vesicle to its target. The microtubule itself does not push or slide under the vesicle.",
+      "choices": [
+        "Motor proteins walk along them and carry vesicles to targets",
+        "The microtubule slides under the vesicle as it shrinks behind it",
+        "The microtubules melt and release the vesicle at the target",
+        "They hold the vesicle still while the cytoplasm streams past it"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "filament-walks-motor",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.mt-tension-correction",
+      "concept": "microtubule",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student claims that microtubules hold a cell's shape by bearing pulling forces. Which correction is best?",
+      "explanation": "Intermediate filaments are the ones that bear tension. Microtubules mainly resist squeezing, so the student has the two types swapped.",
+      "choices": [
+        "Intermediate filaments bear tension, while microtubules mainly resist squeezing",
+        "Microtubules bear tension, while intermediate filaments mainly resist squeezing",
+        "Both filament types mainly resist squeezing, and neither bears pulling",
+        "Neither filament type matters, since the membrane alone holds the shape"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "microtubule-bears-tension",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.mt-plus-end",
+      "concept": "microtubule",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about the two ends of a microtubule is correct?",
+      "explanation": "The plus end is the more dynamic end, switching between growth and shrinkage. The minus end changes more slowly, and the two ends are not identical.",
+      "choices": [
+        "The plus end is more dynamic, switching between growth and shrinkage",
+        "Both ends add subunits at the same speed, so neither end leads the way",
+        "The minus end is the fast-growing end, and it leads the growth",
+        "The plus end is anchored in the centrosome and does not grow at all"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "microtubule-both-ends-alike",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.mt-growth-steps",
+      "concept": "microtubule",
+      "kind": "order",
+      "difficulty": 3,
+      "prompt": "Put these steps in the order they happen as a microtubule switches from growing to shrinking.",
+      "explanation": "Subunits add as GTP-tubulin. The GTP in the lattice behind the tip is then hydrolysed to GDP. When the hydrolysis reaches the tip, the GTP cap is gone and the end shrinks quickly.",
+      "steps": [
+        "GTP-tubulin subunits add to the growing plus end",
+        "The GTP in the lattice behind the tip is hydrolysed to GDP",
+        "Hydrolysis reaches the tip, so the GTP cap is lost",
+        "Subunits leave the end quickly, and the microtubule shrinks"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.actin-made-of",
+      "concept": "actin-filament",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What are actin filaments made of?",
+      "explanation": "Actin filaments are chains of globular actin subunits that twist into two intertwined strands. Tubulin makes microtubules, and lamin and keratin make intermediate filaments.",
+      "choices": [
+        "Globular actin subunits that link into two intertwined chains",
+        "Tubulin dimers that stack into hollow tubes",
+        "Lamin proteins that stack into a mesh under the nuclear envelope",
+        "Keratin proteins that twist into coiled ropes in skin"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.actin-front-edge",
+      "concept": "actin-filament",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which job is done by actin filaments at the front of a crawling cell?",
+      "explanation": "Actin filaments that grow against the membrane push it out into a crawling edge, which moves the cell forward. The other jobs belong to different structures.",
+      "choices": [
+        "Pushing the membrane out to form a crawling edge that moves the cell",
+        "Carrying hormones from the membrane into the nucleus of the cell",
+        "Separating two sets of chromosomes at the poles of the spindle",
+        "Holding the nuclear envelope flat as a supporting sheet of protein"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.actin-where-found",
+      "concept": "actin-filament",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Where are actin filaments found in eukaryotic cells?",
+      "explanation": "Actin is in most eukaryotic cell types, from skin and plant cells to muscle, where it lines the cell's edge. Muscle has a great deal of it, but other cells use it too.",
+      "choices": [
+        "In most cell types, including skin, plant and muscle cells",
+        "Mainly in muscle cells, with few or none in other cell types",
+        "In the nucleus, where they hold the chromosomes apart in division",
+        "In bacteria, where they make up the outer cell wall"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "actin-only-in-muscle",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.actin-myosin-walks",
+      "concept": "actin-filament",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which motor protein walks along actin filaments?",
+      "explanation": "Myosin grips actin and walks along it, producing contraction in muscle and in the stress fibres of other cells. Kinesin and dynein walk on microtubules, and spectrin is a scaffold protein that does not walk.",
+      "choices": [
+        "Myosin",
+        "Kinesin",
+        "Dynein",
+        "Spectrin"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "motor-walks-any-filament",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.actin-ends-differ",
+      "concept": "actin-filament",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about the two ends of an actin filament is correct?",
+      "explanation": "The barbed end adds subunits faster than the pointed end, so the two ends differ and the filament has a direction.",
+      "choices": [
+        "The two ends differ: the barbed end adds subunits faster than the pointed",
+        "Both ends are identical, so the filament has no direction at all",
+        "The pointed end adds subunits faster, so it is the end that grows",
+        "The ends differ, but subunits are added in the middle of the whole filament"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "actin-no-polarity",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.actin-crawling-process",
+      "concept": "actin-filament",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which process is driven by actin filaments pushing against the membrane?",
+      "explanation": "Actin filaments that push against the membrane form a crawling edge, as at the front of a moving white blood cell. Splitting a nucleus, sorting proteins and moving hormones are not driven this way.",
+      "choices": [
+        "Forming a crawling edge at the front of a moving white blood cell",
+        "Splitting one nucleus into two daughter nuclei during cell division",
+        "Sorting newly made proteins into the Golgi apparatus for shipping",
+        "Moving hormones along the inner wall of a blood vessel to a target"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.actin-muscle-drug",
+      "concept": "actin-filament",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A drug stops myosin from pulling on actin in a muscle fibre. What is the expected result?",
+      "explanation": "Myosin pulls the actin filaments along, so without that pull the fibre cannot contract. The drug does not make the fibre contract harder, and actin does not contract by itself.",
+      "choices": [
+        "The fibre cannot contract, because the actin is not drawn along",
+        "The fibre contracts harder, because the actin is pushed without a pull",
+        "The actin filaments break down at once, before any pulling starts",
+        "The fibre keeps contracting, since actin contracts on its own"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.actin-stress-fibres",
+      "concept": "actin-filament",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about stress fibres in a cell is correct?",
+      "explanation": "Stress fibres are bundles of actin and myosin that pull on the cell and keep it taut. The other options describe filaments made of different proteins.",
+      "choices": [
+        "They are bundles of actin and myosin that pull the cell taut",
+        "They are bundles of tubulin that push the cell apart",
+        "They are rods of keratin that resist squeezing from outside",
+        "They are sheets of lamin that line the inside of the membrane"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.actin-crawling-cell",
+      "concept": "actin-filament",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which cell can crawl by pushing an actin-filled front edge forward?",
+      "explanation": "A white blood cell moves through tissue this way. Nerve cells do have actin, bacteria do not use actin to crawl, and a muscle fibre does not crawl.",
+      "choices": [
+        "A white blood cell that moves through the tissue around it",
+        "A nerve cell, which has no actin, so it cannot move about",
+        "A bacterium, which crawls by pushing with a stiff actin tube",
+        "A muscle fibre, which crawls by sliding its actin along itself"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.actin-uneven-growth",
+      "concept": "actin-filament",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: 'Subunits add to both ends of an actin filament at equal speed, so the filament has no direction.' What is the correction?",
+      "explanation": "The barbed end adds subunits faster than the pointed end, so the filament grows unevenly. Its two ends are different, which gives it a direction.",
+      "choices": [
+        "The barbed end adds subunits faster than the pointed one, so growth is uneven",
+        "Subunits add at equal speed, as the student says, because the two ends match",
+        "Subunits are added in the middle of the filament, away from both ends",
+        "The pointed end adds subunits faster, so the filament grows from that end"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "actin-no-polarity",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.if-epithelial-protein",
+      "concept": "intermediate-filament",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which protein family makes up the intermediate filaments of epithelial cells, such as those in the skin?",
+      "explanation": "Keratins form the intermediate filaments of epithelial cells. Vimentins belong to mesenchymal cells, tubulins build microtubules and actins build microfilaments.",
+      "choices": [
+        "Keratins, which form intermediate filaments in epithelia",
+        "Vimentins, which form the intermediate filaments of mesenchymal cells",
+        "Tubulins, which build the hollow tubes of microtubules",
+        "Actins, which build the thin filaments of muscle"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: Choice 1 (vimentin) is also a true statement about a different cell type; answer 0 fits the epithelial prompt.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.if-width",
+      "concept": "intermediate-filament",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "About how wide is an intermediate filament?",
+      "explanation": "Intermediate filaments average about 10 nm across, between actin at about 7 nm and microtubules at about 25 nm. Their name comes from that middle size.",
+      "choices": [
+        "About 10 nm",
+        "About 7 nm",
+        "About 25 nm",
+        "About 2 nm"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.if-lamina",
+      "concept": "intermediate-filament",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which filament type forms the nuclear lamina that supports the inside of the nuclear envelope?",
+      "explanation": "Lamins are intermediate-filament proteins that form the nuclear lamina. Actin, microtubules and septins form other structures.",
+      "choices": [
+        "Lamin intermediate filaments, which line the nucleus",
+        "Actin microfilaments, which push the cell's crawling edge",
+        "Microtubules, which pull copied chromosomes apart",
+        "Septin rings, which divide yeast cells in two"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.if-epithelial-stretch",
+      "concept": "intermediate-filament",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why do epithelial cells rely on intermediate filaments to resist stretching?",
+      "explanation": "Intermediate filaments are strongly bound and form tough, rope-like networks that bear tension. They are not motor tracks, and they are among the most stable filaments rather than the least.",
+      "choices": [
+        "The filaments are strongly bound and form tough, rope-like networks",
+        "The filaments are tracks that motor proteins carry cargo along in cells",
+        "The filaments break down quickly, so the cell can reshape at once",
+        "The filaments pump ions across the membrane, using energy from ATP"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "if-motor-track",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.if-kinesin-tracks",
+      "concept": "intermediate-filament",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'Kinesin walks along intermediate filaments to carry vesicles.' What is wrong?",
+      "explanation": "Kinesin walks along microtubules. Intermediate filaments anchor organelles and bear tension, and they are not motor tracks.",
+      "choices": [
+        "Kinesin walks along microtubules, while intermediate filaments anchor organelles",
+        "Kinesin walks along intermediate filaments, which are the right tracks for vesicles",
+        "Kinesin walks along microfilaments, which are the same thing as intermediate filaments",
+        "Vesicles move through the filament mesh on their own, with no motor"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "if-motor-track",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Correct choice is 0, but its correction clause (intermediate filaments anchor organelles) is looser than the rest of the item; the kinesin-on-microtubule part is what is being tested.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.if-stability",
+      "concept": "intermediate-filament",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about how stable intermediate filaments are is correct?",
+      "explanation": "Intermediate filaments are among the most stable of the three types, because their subunits bind strongly once assembled. They are not the least stable.",
+      "choices": [
+        "They are among the most stable of the three types, strongly bound once made",
+        "They are the least stable of the three types and are rebuilt within minutes",
+        "They break apart quickly in every cell, and cells must rebuild them each hour",
+        "They are made of subunits that fall apart without any binding between them"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "if-least-stable",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.if-subunit-by-cell",
+      "concept": "intermediate-filament",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about the protein subunits of intermediate filaments is correct?",
+      "explanation": "The subunit depends on the cell type: keratin in skin and other epithelia, vimentin in mesenchymal cells, and lamins in the nucleus. The filaments are not built from one protein.",
+      "choices": [
+        "The subunit depends on cell type, such as keratin in skin or lamins in the nucleus",
+        "Every intermediate filament is built from one protein that every cell type shares",
+        "The filaments are built from actin in muscle cells and from tubulin in all other cells",
+        "Each filament is built from a different protein in every subunit of its length"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "if-one-protein",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.if-skin-keratin",
+      "concept": "intermediate-filament",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: 'Skin cells have keratin filaments, so every cell's intermediate filaments are keratin.' What is wrong?",
+      "explanation": "Intermediate filament proteins vary by cell type. Mesenchymal cells use vimentin, and nuclei use lamins. Keratin is not a motor protein, and it is not made of actin.",
+      "choices": [
+        "Intermediate filaments are built from different proteins, such as vimentin",
+        "Intermediate filaments are built from keratin in every cell type, as the student says",
+        "Keratin is a motor protein that walks along keratin filaments in the cell",
+        "Keratin filaments are made of actin, so every cell still has actin"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "if-one-protein",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.if-lamin-layer",
+      "concept": "intermediate-filament",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Where do lamins form a supporting layer?",
+      "explanation": "Lamins form the nuclear lamina, a supporting layer on the inner face of the nuclear envelope. The other places named have no lamin layer.",
+      "choices": [
+        "On the inner face of the nuclear envelope, next to the DNA",
+        "On the outer face of the plasma membrane, facing the cell wall",
+        "Along the spindle, between the two poles of a dividing cell",
+        "Inside the inner membrane of the mitochondria"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.if-assembly-steps",
+      "concept": "intermediate-filament",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in the order that intermediate filaments assemble.",
+      "explanation": "Intermediate filament subunits pair into dimers, then dimers into tetramers, then tetramers into short unit-length filaments, which pack into a mature filament. The subunits build one level at a time.",
+      "steps": [
+        "Two coiled-coil subunits pair up into a dimer",
+        "Dimers pair up side by side into staggered tetramers",
+        "Tetramers join end to end into unit-length filaments",
+        "Unit-length filaments pack together into a mature filament"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.motor-energy-source",
+      "concept": "motor-protein",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What supplies the energy for each step a motor protein takes?",
+      "explanation": "Each step is powered by splitting ATP, which releases energy that changes the motor's shape. Diffusion of cargo, heat and light do not drive the motor.",
+      "choices": [
+        "Splitting ATP, which releases energy to change the motor's shape",
+        "Passive diffusion of the cargo, which pulls the motor forward",
+        "Heat from the cell membrane, which warms the motor until it moves",
+        "Light absorbed by pigment in the membrane"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.motor-kinesin-direction",
+      "concept": "motor-protein",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which way does kinesin walk along a microtubule?",
+      "explanation": "Kinesin walks toward the plus end, which usually points out toward the cell's edge. Walking toward the minus end is dynein's direction.",
+      "choices": [
+        "Toward the plus end, which usually points out to the cell edge",
+        "Toward the minus end, which usually points in toward the nucleus",
+        "Sideways, across the microtubule, to bind the next tubulin unit",
+        "Back and forth along the same spot, with no net direction"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.motor-opposite-walkers",
+      "concept": "motor-protein",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Kinesin and dynein both carry cargo along microtubules. Which comparison is correct?",
+      "explanation": "Kinesin walks toward the plus end and dynein toward the minus end, so they move in opposite directions along the same microtubule.",
+      "choices": [
+        "They walk in opposite directions along the same microtubule",
+        "They walk in the same direction, toward the plus end",
+        "They walk in the same direction, toward the minus end",
+        "They walk along different filaments, with dynein on actin and kinesin on lamin"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "kinesin-dynein-same-direction",
+        "kinesin-dynein-same-direction",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.motor-filament-stays",
+      "concept": "motor-protein",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'The filament slides along a motor that stays fixed to the vesicle.' What is wrong?",
+      "explanation": "The motor walks along a filament that stays in place, and the vesicle rides with the motor. The filament does not slide under a fixed motor.",
+      "choices": [
+        "The motor walks along a filament that stays in place, carrying the vesicle",
+        "The filament slides along a motor anchored in the membrane, as the student says",
+        "The motor stays still while the vesicle drifts on a loose filament",
+        "Motors need no track, since they move freely through the cytoplasm"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "filament-walks-motor",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.motor-any-filament",
+      "concept": "motor-protein",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'Motors walk along any filament with the same head, so dynein could walk along actin.' What is wrong?",
+      "explanation": "Each motor family grips one filament type. Dynein walks on microtubules and does not grip actin. Myosin is the motor that walks on actin.",
+      "choices": [
+        "Each motor family grips one filament type, so dynein cannot walk on actin",
+        "Motors use the same head on every filament, so dynein could walk on actin",
+        "Dynein walks on actin, while myosin walks on microtubules, so they swap",
+        "Motors grip whichever filament the cargo is on, so dynein can walk on actin"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "motor-walks-any-filament",
+        null,
+        "motor-walks-any-filament"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.motor-one-direction",
+      "concept": "motor-protein",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does a motor protein move in one direction along a filament rather than back and forth?",
+      "explanation": "The motor's ATP-driven shape changes happen in a set order, so each step goes the same way along the filament. Diffusion and the cargo do not set the direction.",
+      "choices": [
+        "Its ATP-driven shape changes follow a fixed order, so steps go one way",
+        "Diffusion in the cytoplasm pushes it forward, so each step goes one way",
+        "Its tail is anchored to the membrane, so the head can move one way",
+        "The cargo pulls it toward the cell edge, so every step goes outward"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.motor-atp-blocked",
+      "concept": "motor-protein",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A drug stops ATP from binding to kinesin. What is the most likely result?",
+      "explanation": "Without ATP, kinesin cannot take steps, so its cargo stays where it is. A motor does not run faster without ATP, and diffusion does not carry it along.",
+      "choices": [
+        "Kinesin stops stepping, so its cargo stays exactly where it is",
+        "Kinesin walks faster, because it no longer has to pay for each step",
+        "Kinesin keeps walking, since diffusion carries the cargo along",
+        "Kinesin switches to walking along actin, using the same head"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "motor-needs-no-atp",
+        "motor-needs-no-atp",
+        "motor-walks-any-filament"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.motor-converts-energy",
+      "concept": "motor-protein",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What does a motor protein do that a filament does not?",
+      "explanation": "A motor protein converts chemical energy from ATP into movement along a filament. A filament is a track and does not move cargo by itself.",
+      "choices": [
+        "It converts chemical energy into movement along a filament",
+        "It adds tubulin subunits to the plus end, so the filament grows",
+        "It stores energy as a gradient of ions across the membrane",
+        "It seals the ends of filaments so that they stop growing"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.motor-dynein-vesicle",
+      "concept": "motor-protein",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A dynein-carried vesicle moves toward the nucleus. What is moving?",
+      "explanation": "Dynein walks along the microtubule and carries the vesicle with it. The microtubule stays in place and the vesicle does not walk on dynein.",
+      "choices": [
+        "Dynein walks along the microtubule, carrying the vesicle on it",
+        "The microtubule slides under a dynein anchored to the vesicle",
+        "The vesicle walks along a dynein that is fixed to the microtubule",
+        "The nucleus pushes dynein, which carries the vesicle inward"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "filament-walks-motor",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.motor-dynein-direction",
+      "concept": "motor-protein",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about dynein is correct?",
+      "explanation": "Dynein walks toward the minus end of a microtubule, which usually points inward toward the nucleus. Kinesin is the motor that walks toward the plus end.",
+      "choices": [
+        "Dynein walks toward the minus end, usually inward toward the nucleus",
+        "Dynein walks toward the plus end, the same way that kinesin walks",
+        "Dynein walks toward the plus end, usually outward toward the cell edge",
+        "Dynein walks along actin filaments, toward the barbed end of each"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "kinesin-dynein-same-direction",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.motor-vesicle-steps",
+      "concept": "motor-protein",
+      "kind": "order",
+      "difficulty": 3,
+      "prompt": "Put these steps in order for one motor carrying a vesicle along a microtubule.",
+      "explanation": "The motor first binds its cargo, then grips the microtubule. ATP splitting drives a forward swing of the head, and the head lets go and grips again farther along, so the vesicle moves.",
+      "steps": [
+        "The motor's tail binds the vesicle",
+        "A head grips the microtubule",
+        "ATP is split and the head swings forward",
+        "The head lets go and grips again farther along the track"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Assumes the tail binds the vesicle before the head starts stepping. The three stepping steps are in a fixed sequence; the cargo-binding position is an assumption, so the order is less firm than the others. b's note: Tail binding vs head gripping could arguably swap; chose tail-binds-cargo first."
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.cilia-arrangement",
+      "concept": "cilia-and-flagella",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which microtubule arrangement is found in a motile cilium or a eukaryotic flagellum?",
+      "explanation": "A motile cilium or eukaryotic flagellum has nine doublets in a ring around a central pair, the 9+2 arrangement. Centrioles use nine triplets, and actin does not form the shaft.",
+      "choices": [
+        "Nine doublets in a ring around a central pair, the 9+2 arrangement",
+        "Nine triplets around a hollow core, the arrangement of a centriole",
+        "A hollow shaft with no microtubules inside",
+        "A solid core of actin wrapped in a sheath of keratin"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "cilia-no-microtubules",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.cilia-bend-driver",
+      "concept": "cilia-and-flagella",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What drives the bending of a motile cilium?",
+      "explanation": "Dynein arms slide neighbouring doublets along each other, and the base and linkers turn that sliding into a bend. The doublets do not shorten.",
+      "choices": [
+        "Dynein arms slide neighbouring doublets along each other",
+        "Each doublet shortens, and the shortening bends the whole cilium",
+        "Kinesin pulls the membrane outward against the central pair",
+        "Actin filaments contract at the base of the shaft"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "doublets-shorten-to-bend",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.cilia-hollow-tube",
+      "concept": "cilia-and-flagella",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'A cilium is a hollow tube with no microtubules, so it bends as its membrane tightens.' What is the correction?",
+      "explanation": "A cilium holds nine doublets around a central pair, and dynein arms slide the doublets to bend it. The membrane does not bend the cilium by tightening.",
+      "choices": [
+        "A cilium holds nine doublets and a central pair, and dynein arms slide them",
+        "A cilium is a hollow tube whose membrane tightens to bend it, as the student says",
+        "A cilium bends by itself with no motor, and its doublets are decoration",
+        "A cilium contains dynein in its base, so the shaft cannot bend at all"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "cilia-no-microtubules",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.cilia-beat",
+      "concept": "cilia-and-flagella",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which best describes how a motile cilium beats?",
+      "explanation": "A motile cilium has a power stroke that pushes fluid along and a recovery stroke that brings it back for the next push. It does not spin like a propeller or stay straight.",
+      "choices": [
+        "A power stroke pushes fluid along, then a recovery stroke resets the beat",
+        "Its tip turns like a propeller, pushing fluid around in wide circles",
+        "It stays straight and vibrates at one fixed rate, with no stroke of its own",
+        "It bends once, stays bent, and then waits until its ATP runs out"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.cilia-bacterial-flagellum",
+      "concept": "cilia-and-flagella",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "How do bacterial flagella differ from eukaryotic flagella?",
+      "explanation": "Bacterial flagella are helical filaments of flagellin that a rotary motor in the membrane turns. They have no microtubules and do not bend with dynein arms.",
+      "choices": [
+        "Flagellin filaments turned by a rotary motor, with no microtubules",
+        "They bend with dynein arms, just like eukaryotic flagella and cilia do",
+        "They slide microtubule doublets in a 9+2 ring, as eukaryotic ones do",
+        "They slide actin filaments past one another, which makes the bend"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "bacteria-flagella-same",
+        "bacteria-flagella-same",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.cilia-rotary-motor",
+      "concept": "cilia-and-flagella",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which part of a bacterial flagellum makes the filament turn?",
+      "explanation": "A rotary motor anchored in the cell membrane at the base turns a bacterial flagellum. Dynein arms and doublets are features of eukaryotic cilia and flagella.",
+      "choices": [
+        "A rotary motor anchored in the cell membrane at the base",
+        "Dynein arms running along the shaft, as in eukaryotic flagella",
+        "Microtubule doublets sliding at the base, as in cilia",
+        "Actin rings packed at the tip of the filament"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "bacteria-flagella-same",
+        "bacteria-flagella-same",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.cilia-linkers-cut",
+      "concept": "cilia-and-flagella",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Linkers join neighbouring doublets in a cilium. If the linkers are cut but the dynein arms still work, what happens?",
+      "explanation": "Without the linkers, the dynein sliding is not turned into a bend, so the doublets slide past one another instead. The doublets do not shorten, and the linkers do real work in the beat.",
+      "choices": [
+        "The doublets slide freely past one another, so no controlled bend forms",
+        "The doublets stop sliding, so the cilium stays straight and stiff",
+        "The doublets shorten, so the cilium bends more sharply and at once",
+        "Nothing changes, because the linkers do no real work in the beat at all"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "doublets-shorten-to-bend",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.cilia-basal-body",
+      "concept": "cilia-and-flagella",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the name of the structure at the base of a cilium that anchors it?",
+      "explanation": "The basal body anchors a cilium at the cell surface and is built from a centriole-like structure. The other names are not structures that anchor cilia.",
+      "choices": [
+        "Basal body",
+        "Centromere",
+        "Nucleolus",
+        "Golgi cisterna"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.cilia-beat-steps",
+      "concept": "cilia-and-flagella",
+      "kind": "order",
+      "difficulty": 3,
+      "prompt": "Put these steps in the order they happen in one cycle of a cilium's bend.",
+      "explanation": "Dynein arms on one doublet grab its neighbour, the power stroke slides that doublet along, and the arms let go and grab again farther along. The linkers and base turn the sliding into a bend.",
+      "steps": [
+        "Dynein arms grab the neighbouring doublet",
+        "The power stroke slides that doublet along its neighbour",
+        "The arms let go and grab again farther along"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.tap-central-pair",
+      "concept": "cilia-and-flagella",
+      "element": "nine-plus-two",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the \"2\" of the 9+2 arrangement.",
+      "artifact": "axoneme",
+      "target": "central-pair",
+      "explanation": "These are the two single microtubules of the central pair. The nine doublets around them make the \"9\".",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Central pair (two singlet microtubules) sits at the centre of the 9+2 cross-section."
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.tap-doublet",
+      "concept": "cilia-and-flagella",
+      "element": "nine-plus-two",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap one of the nine units that dynein slides against each other to bend the cilium.",
+      "artifact": "axoneme",
+      "target": "doublet",
+      "explanation": "This is an outer doublet: a complete microtubule fused to a partial one. Nine of them make the \"9\" of 9+2.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Top spot is one of the nine outer doublets. b's note: Spot C sits on a doublet; spot B overlaps the doublet edge and dynein arms, slightly close."
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.tap-dynein-arms",
+      "concept": "cilia-and-flagella",
+      "element": "dynein-sliding",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the motor proteins that split ATP to pull on the neighbouring doublet.",
+      "artifact": "axoneme",
+      "target": "dynein-arms",
+      "explanation": "These are dynein arms. Each grips the next doublet and walks along it, so the doublets slide past each other.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: The dashed circle at E encloses the red outer dynein arm arcs of the 3 o'clock doublet. The circle at C also catches a red arc but mostly covers a nexin link, so E is the clearer choice."
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.tap-nexin-link",
+      "concept": "cilia-and-flagella",
+      "element": "dynein-sliding",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "Tap the elastic linker that keeps neighbouring doublets from sliding apart, so sliding turns into a bend.",
+      "artifact": "axoneme",
+      "target": "nexin-link",
+      "explanation": "This is a nexin link. Because it ties neighbouring doublets together, dynein's sliding bends the cilium instead of pushing doublets out.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Nexin link (dashed tan line) between two neighbouring doublets, at C."
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.tap-radial-spoke",
+      "concept": "cilia-and-flagella",
+      "element": "nine-plus-two",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "Tap the structure that connects a doublet to the central pair and helps control when dynein arms fire.",
+      "artifact": "axoneme",
+      "target": "radial-spoke",
+      "explanation": "This is a radial spoke. It links each doublet to the central pair, and signals passed through it help coordinate the beat.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Radial spoke (dark green, from the 8 o'clock doublet toward the centre), at D."
+      }
+    },
+    {
+      "id": "biology.cytoskeleton.tap-membrane",
+      "concept": "cilia-and-flagella",
+      "element": "nine-plus-two",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the lipid bilayer, continuous with the cell's plasma membrane, that covers the cilium.",
+      "artifact": "axoneme",
+      "target": "membrane",
+      "explanation": "This is the membrane of the cilium. A cilium is an extension of the cell, so its covering is part of the plasma membrane.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Ciliary membrane, the outer green band, at B."
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "axoneme",
+      "kind": "diagram",
+      "title": "Inside a cilium: the 9+2 axoneme",
+      "alt": "An unlabelled cross-section of a motile cilium. A double-lined ring of membrane surrounds the shaft. Inside, nine pairs of joined tubules sit evenly around a circle. Each pair carries two curved arms reaching toward the next pair, and dashed links join neighbouring pairs. From each pair a rod with a flattened head points inward toward two single round tubules joined at the centre.",
+      "file": "assets/axoneme.svg",
+      "hotspots": [
+        {
+          "id": "central-pair",
+          "label": "Central pair of microtubules",
+          "x": 0.5,
+          "y": 0.5,
+          "r": 0.06
+        },
+        {
+          "id": "doublet",
+          "label": "Outer microtubule doublet",
+          "x": 0.5,
+          "y": 0.178,
+          "r": 0.05
+        },
+        {
+          "id": "dynein-arms",
+          "label": "Dynein arms",
+          "x": 0.75,
+          "y": 0.532,
+          "r": 0.05
+        },
+        {
+          "id": "radial-spoke",
+          "label": "Radial spoke",
+          "x": 0.338,
+          "y": 0.604,
+          "r": 0.05
+        },
+        {
+          "id": "nexin-link",
+          "label": "Nexin link",
+          "x": 0.312,
+          "y": 0.356,
+          "r": 0.05
+        },
+        {
+          "id": "membrane",
+          "label": "Membrane of the cilium",
+          "x": 0.664,
+          "y": 0.878,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "kinesin-step",
+      "kind": "diagram",
+      "title": "Kinesin carrying a vesicle",
+      "alt": "A microtubule lies across the bottom, its minus end on the left and plus end on the right, built of alternating tubulin subunits. A kinesin motor stands on it: its front head grips the track, and its rear head is lifted, with a dashed arrow showing it swinging forward toward the plus end. A stalk rises from the two heads to a forked tail holding a round vesicle at the top.",
+      "file": "assets/kinesin-step.svg",
+      "hotspots": [
+        {
+          "id": "vesicle",
+          "label": "Vesicle (cargo)",
+          "x": 0.508,
+          "y": 0.167,
+          "r": 0.06
+        },
+        {
+          "id": "tail",
+          "label": "Kinesin tail",
+          "x": 0.508,
+          "y": 0.333,
+          "r": 0.05
+        },
+        {
+          "id": "rear-head",
+          "label": "Rear head, swinging forward",
+          "x": 0.408,
+          "y": 0.609,
+          "r": 0.05
+        },
+        {
+          "id": "front-head",
+          "label": "Front head, gripping the track",
+          "x": 0.633,
+          "y": 0.673,
+          "r": 0.05
+        },
+        {
+          "id": "microtubule",
+          "label": "Microtubule track",
+          "x": 0.25,
+          "y": 0.8,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "kinesin-step-steps",
+      "kind": "sequence",
+      "title": "How kinesin walks, step by step",
+      "alt": "Five steps: the tail holds a vesicle, one head grips the microtubule, ATP drives the rear head forward, the new front head grips farther along while the old one lets go, and repeated steps carry the vesicle toward the plus end.",
+      "over": "kinesin-step",
+      "steps": [
+        {
+          "title": "The tail holds the cargo",
+          "text": "Kinesin's tail binds a vesicle. The heads at the other end do the walking.",
+          "focus": "tail"
+        },
+        {
+          "title": "A head grips the track",
+          "text": "One head binds tightly to a tubulin subunit of the microtubule.",
+          "focus": "front-head"
+        },
+        {
+          "title": "ATP drives the swing",
+          "text": "ATP binding to the gripping head swings the rear head forward, past it, toward the plus end.",
+          "focus": "rear-head"
+        },
+        {
+          "title": "A new grip farther along",
+          "text": "The swinging head grips the track about 8 nm ahead. The other head splits its ATP and lets go.",
+          "focus": "microtubule"
+        },
+        {
+          "title": "The cargo moves",
+          "text": "Step after step, the vesicle is pulled toward the plus end, usually the cell's edge. The track stays put.",
+          "focus": "vesicle"
+        }
+      ]
+    }
+  ]
+}

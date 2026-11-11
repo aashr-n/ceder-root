@@ -1,0 +1,7 @@
+{
+  "formatVersion": 1,
+  "id": "linear-algebra",
+  "name": "Linear algebra",
+  "domain": "formal",
+  "summary": "Vectors, matrices, and the linear maps between spaces."
+}
