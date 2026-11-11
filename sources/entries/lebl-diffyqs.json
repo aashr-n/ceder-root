@@ -1,0 +1,29 @@
+{
+  "id": "lebl-diffyqs",
+  "name": "Notes on Diffy Qs (Jiří Lebl)",
+  "url": "https://www.jirka.org/diffyqs/",
+  "goodFor": "An introductory differential equations textbook for engineers.",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://www.jirka.org/diffyqs/",
+  "apps": "show",
+  "bank": "none",
+  "attribution": "\"Jiří Lebl, Notes on Diffy Qs\", with the section's title linked to its page under https://www.jirka.org/diffyqs/html/; \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when the text shown was shortened or changed, a note that it was.",
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://www.jirka.org/diffyqs/",
+        "quote": "This work is dual licensed under a Creative Commons Attribution-Noncommercial-Share Alike 4.0 License and Creative Commons Attribution-Share Alike 4.0 License"
+      },
+      {
+        "url": "https://www.jirka.org/diffyqs/",
+        "quote": "You can base your own book/notes on these and reuse parts if you keep the license the same (that is, as long as you use at least one of the two licenses)."
+      },
+      {
+        "url": "https://www.jirka.org/diffyqs/",
+        "quote": "If you do modify the book, mark it prominently as such to avoid confusion."
+      }
+    ]
+  },
+  "notes": "Checked against the book's home page. It is dual licensed, CC BY-NC-SA 4.0 and CC BY-SA 4.0, and a user may follow either; Ceder takes CC BY-SA 4.0, which allows commercial use, so a paid app may show a passage with the credit in attribution. What Ceder changes must stay under CC BY-SA 4.0 and be marked as changed. Figures weren't checked one by one. The bank's agents don't read it and nothing from it goes into the bank."
+}

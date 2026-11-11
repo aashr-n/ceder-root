@@ -1,0 +1,44 @@
+{
+  "id": "nih-3d",
+  "name": "NIH 3D",
+  "url": "https://3d.nih.gov",
+  "goodFor": "3D models of molecules, cells, anatomy and lab equipment, for viewing or 3D printing.",
+  "license": "per-item",
+  "licenseUrl": "https://3d.nih.gov/terms",
+  "apps": "link",
+  "bank": "none",
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://3d.nih.gov/terms",
+        "quote": "Users are responsible for selecting and applying the appropriate license to their content."
+      },
+      {
+        "url": "https://3d.nih.gov/terms",
+        "quote": "While many entries in NIH 3D fall under public domain or Creative Commons licenses (e.g., CC-BY), others may have more restrictive terms."
+      },
+      {
+        "url": "https://3d.nih.gov/terms",
+        "quote": "Visitors and other Users must review and comply with the licensing terms associated with each file before use."
+      },
+      {
+        "url": "https://3d.nih.gov/terms",
+        "quote": "Users must not upload or share identifiable facial data (e.g., CT scans, 3D reconstructions) without documented consent from the individual."
+      },
+      {
+        "url": "https://3d.nih.gov/terms",
+        "quote": "NIH 3D does not proactively screen submissions for IRB or ethical compliance; however, content may be removed if a complaint is received or a violation is identified."
+      },
+      {
+        "url": "https://3d.nih.gov/terms",
+        "quote": "Users may not use the names, logos, or trademarks of NIH, DHHS, or any NIH component in a way that implies endorsement or affiliation without approval."
+      },
+      {
+        "url": "https://3d.nih.gov/faqs",
+        "quote": "In addition to any instructions provided by the author, to cite an entry in NIH 3D, you should include the author/username, version number, year, URL, and DOI (if applicable)."
+      }
+    ]
+  },
+  "notes": "Checked against NIH 3D's Terms and Conditions and FAQs. Models are uploaded by users, who choose each model's licence, and the terms say some are more restrictive than public domain or CC BY, so the licence is per item. The one entry page sampled shows \"Licensing:\" with the value filled in by a script, so a model's licence couldn't be read from the page's own text. Many models are made from scans of people: the terms require consent for identifiable facial data and de-identified uploads, but NIH 3D doesn't screen submissions for ethics approval, so a model from human imaging needs its own check. A credit names the author or username, version, year, URL and DOI, plus any instructions the author gives. NIH's names and logos can't be used to suggest endorsement. An app links to a model until its own licence is read. The bank's agents don't read it and nothing from it goes into the bank."
+}

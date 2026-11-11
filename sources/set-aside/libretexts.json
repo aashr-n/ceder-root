@@ -1,0 +1,27 @@
+{
+  "id": "libretexts",
+  "name": "LibreTexts",
+  "url": "https://www.libretexts.org",
+  "goodFor": "Open textbooks across the sciences.",
+  "license": "per-item",
+  "apps": "link",
+  "bank": "none",
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://www.libretexts.org/privacy",
+        "quote": "Those with instructor accounts may post educational content of any sort on the site as long as it is covered by an open copyright which is specified."
+      },
+      {
+        "url": "https://www.libretexts.org/privacy",
+        "quote": "LibreTexts provides online content through the Mindtouch Platform."
+      },
+      {
+        "url": "https://www.libretexts.org/terms",
+        "quote": "You should update this document to reflect your T&C."
+      }
+    ]
+  },
+  "notes": "Partly checked. www.libretexts.org has no licensing page: its footer's Legal link opens the Privacy Policy, which says only that content posted by instructors must carry an open licence that is stated; its /terms page is an unedited shop template (\"You should update this document to reflect your T&C.\"), not real terms. It doesn't say which open licences, and doesn't rule out NonCommercial ones, so the licence is per page. The books themselves are on subject sites (chem.libretexts.org, math.libretexts.org and others), which weren't read, so no page's licence was seen. What's still missing: the licence shown on each page an app would use, and any terms of use for the book sites. Link only, and only to pages, until those are read. The bank's agents don't read it and nothing from it goes into the bank."
+}

@@ -1,0 +1,41 @@
+{
+  "id": "chebi",
+  "name": "ChEBI (Chemical Entities of Biological Interest)",
+  "url": "https://www.ebi.ac.uk/chebi/",
+  "goodFor": "Names, definitions, structures and classes of small molecules that matter in biology.",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://www.ebi.ac.uk/chebi/about",
+  "apps": "show",
+  "bank": "none",
+  "attribution": "\"ChEBI\" and the entry's ID (CHEBI:<number>), linked to the entry's page on www.ebi.ac.uk/chebi; \"CC BY 4.0\", linked to https://creativecommons.org/licenses/by/4.0/; and a note when what's shown was changed.",
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://www.ebi.ac.uk/chebi/about",
+        "quote": "The data on this website is available under the Creative Commons License ( CC BY 4.0 ), and governed by EMBL-EBI’s terms of use"
+      },
+      {
+        "url": "https://www.ebi.ac.uk/chebi/about",
+        "quote": "Each data item is fully traceable and explicitly referenced to the original source."
+      },
+      {
+        "url": "https://www.ebi.ac.uk/about/terms-of-use/",
+        "quote": "EMBL-EBI itself places no additional restrictions on the use or redistribution of the data available via its Data Resources and Tools other than those provided by the original data owners, unless otherwise specified in these Terms of Use."
+      },
+      {
+        "url": "https://www.ebi.ac.uk/about/terms-of-use/",
+        "quote": "EMBL-EBI expects attribution (e.g. in publications, services or products) for the use of any of its Data Resources and Tools in accordance with good scientific practice."
+      },
+      {
+        "url": "https://www.ebi.ac.uk/about/terms-of-use/",
+        "quote": "It is the responsibility of users of EMBL-EBI Data Resources and Tools to ensure that their exploitation of the data does not infringe any of the rights of such third parties."
+      },
+      {
+        "url": "https://www.ebi.ac.uk/about/terms-of-use/",
+        "quote": "Any attempt to use EMBL-EBI Data Resources and Tools to a level that prevents, or is likely to prevent, EMBL-EBI providing services to others, will result in the user being blocked."
+      }
+    ]
+  },
+  "notes": "Checked against ChEBI's About page and EMBL-EBI's Terms of Use (last revised 14 October 2026). ChEBI's data are CC BY 4.0, and EMBL-EBI's terms add no restriction beyond the data owners' own, so commercial use is allowed and a paid app may show an entry's name, definition or structure with the credit in attribution. EMBL-EBI expects credit in products too, which the attribution covers; ChEBI also asks that publications cite its paper. Each data item names its original source, which may hold rights of its own; EMBL-EBI leaves that to the user. Heavy automated use gets a client blocked, so an app shouldn't query ChEBI from every student's device. The bank's agents don't read it and nothing from it goes into the bank."
+}

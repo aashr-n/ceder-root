@@ -1,0 +1,45 @@
+{
+  "id": "gene-ontology",
+  "name": "Gene Ontology",
+  "url": "https://geneontology.org",
+  "goodFor": "Standard names and definitions for what genes do: molecular functions, cellular components and biological processes.",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://geneontology.org/docs/go-citation-policy/",
+  "apps": "show",
+  "bank": "none",
+  "attribution": "\"Gene Ontology data from the <release date> release (DOI:<release DOI>) is made available under the terms of the CC BY 4.0 license\", with the licence name linked to https://creativecommons.org/licenses/by/4.0/; the term's ID linked to its PURL (https://purl.obolibrary.org/obo/GO_<id>); and a note when a definition shown was changed.",
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://geneontology.org/docs/go-citation-policy/",
+        "quote": "Gene Ontology Consortium data and data products are licensed under the Creative Commons Attribution 4.0 Unported License"
+      },
+      {
+        "url": "https://geneontology.org/docs/go-citation-policy/",
+        "quote": "Gene Ontology data from the 2024-01-17 release ( DOI:10.5281/zenodo.10536401 ) is made available under the terms of the CC BY 4.0 license"
+      },
+      {
+        "url": "https://geneontology.org/docs/go-citation-policy/",
+        "quote": "If you produce tools and/or services that use GO data, the user should be provided with the GO release date and DOI along with the results"
+      },
+      {
+        "url": "https://geneontology.org/docs/go-citation-policy/",
+        "quote": "If you use or provide links to the following entities, please ensure you are using PURLs."
+      },
+      {
+        "url": "https://geneontology.org/docs/go-citation-policy/",
+        "quote": "All information on this website is copyright"
+      },
+      {
+        "url": "https://geneontology.org/docs/go-citation-policy/",
+        "quote": "Users of the data are solely responsible for compliance with any copyright restrictions."
+      },
+      {
+        "url": "https://geneontology.org/docs/go-citation-policy/",
+        "quote": "For reuse, please do not hotlink images, but download them instead"
+      }
+    ]
+  },
+  "notes": "Checked against the GO citation policy and license page. GO's data and data products (the ontology's terms, definitions and annotations) are CC BY 4.0 (the page calls it \"4.0 Unported\" but links CC BY 4.0), which allows commercial use, so a paid app may show a term and its definition with the credit in attribution, naming the release date and DOI the data came from. Only the data are CC BY: the website's own text is copyright of the GO Consortium and isn't covered. Annotations come from contributing groups, and GO says users are responsible for any copyright restrictions on the data. GO asks that links to terms use PURLs (purl.obolibrary.org, not read here) and that its logo isn't hotlinked. The bank's agents don't read it and nothing from it goes into the bank."
+}

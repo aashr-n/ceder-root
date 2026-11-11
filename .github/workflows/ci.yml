@@ -22,5 +22,6 @@ jobs:
       - run: npm test
       - run: node tools/build.mjs
       - run: node sources/validate.mjs
+      - run: node sources/validate.mjs sources/set-aside
       - run: node tools/library.mjs validate
       - run: node tools/library.mjs build

@@ -1,0 +1,82 @@
+{
+  "id": "lsdb-archive",
+  "name": "BodyParts3D and the Togo Picture Gallery (NBDC Life Science Database Archive)",
+  "url": "https://dbarchive.biosciencedbc.jp/index-e.html",
+  "goodFor": "3D models of the parts of the human body, and simple life-science pictures: organisms, lab equipment and diagrams.",
+  "license": "CC-BY-4.0",
+  "apps": "show",
+  "bank": "none",
+  "attribution": "The credit line the database asks for (see parts), with the licence name linked to https://creativecommons.org/licenses/by/4.0/, and a note when the piece was changed.",
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+        "quote": "The license for this database is specified in the Creative Commons Attribution 4.0 International."
+      },
+      {
+        "url": "https://dbarchive.biosciencedbc.jp/en/togo-pic/desc.html",
+        "quote": "Since it is licensed under Creative Commons attribution 4.0 International (CC BY 4.0), you can use it as long as you describe the credit."
+      }
+    ]
+  },
+  "parts": [
+    {
+      "id": "bodyparts3d",
+      "name": "BodyParts3D",
+      "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+      "license": "CC-BY-4.0",
+      "apps": "show",
+      "attribution": "\"BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International\", with the licence name linked to https://creativecommons.org/licenses/by/4.0/, and a note when the model, or a picture rendered from it, was changed.",
+      "checked": {
+        "date": "2026-11-11",
+        "evidence": [
+          {
+            "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+            "quote": "The license for this database is specified in the Creative Commons Attribution 4.0 International."
+          },
+          {
+            "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+            "quote": "\"BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International\""
+          },
+          {
+            "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+            "quote": "Last updated : 2025/02/27"
+          },
+          {
+            "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
+            "quote": "three-dimensional whole-body model for an adult human male"
+          }
+        ]
+      },
+      "notes": "CC BY 4.0 since the licence page was updated on 2025-02-27; the claim that it is CC BY-SA 2.1 Japan didn't match the page. The models segment one adult male body; the archive's pages don't say whose body or under what consent, so that is unknown. The original site, lifesciencedb.jp, wasn't read."
+    },
+    {
+      "id": "togo-picture-gallery",
+      "name": "Togo Picture Gallery",
+      "url": "https://dbarchive.biosciencedbc.jp/en/togo-pic/desc.html",
+      "license": "CC-BY-4.0",
+      "apps": "show",
+      "attribution": "\"© 2016 DBCLS TogoTV / CC-BY-4.0\", with the licence linked to https://creativecommons.org/licenses/by/4.0/, and a note when the picture was changed.",
+      "checked": {
+        "date": "2026-11-11",
+        "evidence": [
+          {
+            "url": "https://dbarchive.biosciencedbc.jp/en/togo-pic/lic.html",
+            "quote": "please be sure attribute this database as follows: \"© 2016 DBCLS TogoTV / CC-BY-4.0\""
+          },
+          {
+            "url": "https://dbarchive.biosciencedbc.jp/en/togo-pic/lic.html",
+            "quote": "You can freely provide links to all contents in this database."
+          },
+          {
+            "url": "https://dbarchive.biosciencedbc.jp/en/togo-pic/desc.html",
+            "quote": "Since it is licensed under Creative Commons attribution 4.0 International (CC BY 4.0), you can use it as long as you describe the credit."
+          }
+        ]
+      },
+      "notes": "CC BY 4.0. The archive holds the picture list and files under dbarchive.biosciencedbc.jp/data/togo-pic/; the gallery's original site, togotv.dbcls.jp, wasn't read."
+    }
+  ],
+  "notes": "Checked against the archive's English licence and description pages for each database (BodyParts3D's Japanese licence page agrees). Both are CC BY 4.0, which allows commercial use, each with its own credit line. The archive's Terms of Service (an English PDF, read but not quotable here) say each database's data follow the Creative Commons licence shown in its metadata, and forbid using researcher information from the service for advertising or other commercial activity, which a pinned picture or model doesn't involve. The library's pin command doesn't fetch from the archive, so a library item is written by hand. The bank's agents don't read it and nothing from it goes into the bank."
+}

@@ -1,0 +1,11 @@
+{
+  "id": "uniprot",
+  "name": "UniProt",
+  "url": "https://www.uniprot.org",
+  "goodFor": "Protein sequences and what each protein does.",
+  "license": "unknown",
+  "apps": "link",
+  "bank": "none",
+  "checked": null,
+  "notes": "Unverified. On 2026-11-11 www.uniprot.org answered with a page that builds everything with scripts, and the help pages, its licence page included, are loaded from rest.uniprot.org, which the checking machine couldn't reach; the site's own scripts don't carry the licence text. So the claim that UniProt is CC BY 4.0 wasn't confirmed. What's still missing: UniProt's own licence page (www.uniprot.org/help/license, served by rest.uniprot.org) and any terms on using its API. Link only until those are read. The bank's agents don't read it and nothing from it goes into the bank."
+}

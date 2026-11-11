@@ -23,6 +23,28 @@ It answers two separate questions about a source.
 
 The catalogue records; it doesn't permit. What an agent may read while it works on the bank is set by `pipeline/prompts/sources.md` and by what `tools/ref.mjs` reaches, and an entry here can't widen that: the validator refuses a `bank` value other than `none` for a source `tools/ref.mjs` doesn't reach. `plan/sources.jsonl` is a different thing: the log of every page an agent did read.
 
+## What's in it
+
+Only sources Ceder may store and show in full, and a student's own files. A source that qualifies only in part, or that an app could only link to, isn't here: it's kept in `set-aside/`, with why (the owner, 2026-11-11).
+
+| Entry | Licence | `apps` |
+|---|---|---|
+| `wikipedia`, `wikibooks`, `wiktionary`, `wikiversity` | CC BY-SA 4.0 text | `show` |
+| `wikidata` | CC0 | `show` |
+| `wikimedia-commons` | Per file | `link` |
+| `reactome` | CC BY 4.0 illustrations and icons; CC0 data | `show` |
+| `lsdb-archive` | CC BY 4.0 (BodyParts3D, Togo Picture Gallery) | `show` |
+| `gene-ontology` | CC BY 4.0 data | `show` |
+| `chebi` | CC BY 4.0 | `show` |
+| `hefferon-linear-algebra` | CC BY-SA 3.0 US (or GFDL) | `show` |
+| `lebl-diffyqs` | CC BY-SA 4.0 (or CC BY-NC-SA 4.0; the reader picks) | `show` |
+| `opendsa` | MIT | `show` |
+| `own-course-files` | A student's own | `private` |
+
+Two kinds of entry need a word. The pictures on a Wikimedia wiki aren't covered by its text licence, so a wiki's entry may have a pictures part that isn't shown. And Wikimedia Commons stays although its licence is set file by file: a file is stored only when its own page states a free licence, and the library keeps that page's licence fields as evidence with the file.
+
+Every entry's `bank` is `none` except Wikipedia and Wikibooks (`read`) and Wikidata (`copy`). `node tools/library.mjs pin` fetches from Wikipedia and Wikimedia Commons only, so a piece from another `show` source is written by hand, and `validate` checks it against the entry.
+
 ## An entry
 
 One file per source, `entries/<id>.json`:
@@ -54,6 +76,9 @@ The tests are in `sources/validate.test.mjs`: `node --test "sources/*.test.mjs"`
 
 ## Left out
 
-OpenStax and PhET were checked against their own pages on 2026-11-11 and left out, because their terms don't allow use in an app with paid plans. PhET's terms also forbid linking from commercial activity without an agreement.
+Checked against their own pages on 2026-11-11 and not used in any way:
+
+- **OpenStax and PhET.** Their terms don't allow use in an app with paid plans. PhET's terms also forbid linking from commercial activity without an agreement.
+- **OpenIntro Statistics and Servier Medical Art.** Their site terms limit how their content may be collected, or the kind of product that may carry it. Ceder keeps to the intent of those terms as well as their letter, so neither is used, linked to or kept in `set-aside/`. Don't add them back, and don't fetch their sites with a tool.
 
 None of this is legal advice.

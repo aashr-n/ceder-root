@@ -1,0 +1,85 @@
+{
+  "id": "reactome",
+  "name": "Reactome",
+  "url": "https://reactome.org",
+  "goodFor": "Pathway diagrams and an icon library for cell biology and biochemistry.",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://reactome.org/license",
+  "apps": "show",
+  "bank": "none",
+  "attribution": "\"Reactome\", linked to https://reactome.org, with the illustration's or icon's name linked to its page where it has one; \"CC BY 4.0\", linked to https://creativecommons.org/licenses/by/4.0/; and a note when it was changed.",
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://reactome.org/license",
+        "quote": "Pathway Illustrations, Icon Library, Art, and Branding Materials"
+      },
+      {
+        "url": "https://reactome.org/license",
+        "quote": "This Reactome content is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0)"
+      },
+      {
+        "url": "https://reactome.org/license",
+        "quote": "User may copy, modify, and distribute these materials, provided that appropriate credit is given, a link to the license is included, and any modifications made by User are clearly indicated."
+      },
+      {
+        "url": "https://reactome.org/license",
+        "quote": "Reactome reserves the right to modify this Agreement at any time."
+      },
+      {
+        "url": "https://reactome.org/about/disclaimer",
+        "quote": "The content of this site is intended for educational and scientific research purposes only and not as a source of medical advice or consultation."
+      }
+    ]
+  },
+  "parts": [
+    {
+      "id": "illustrations",
+      "name": "Pathway illustrations and the icon library",
+      "url": "https://reactome.org/icon-lib",
+      "license": "CC-BY-4.0",
+      "apps": "show",
+      "attribution": "\"Reactome\", linked to https://reactome.org, with the illustration's or icon's name linked to its page where it has one; \"CC BY 4.0\", linked to https://creativecommons.org/licenses/by/4.0/; and a note when it was changed.",
+      "checked": {
+        "date": "2026-11-11",
+        "evidence": [
+          {
+            "url": "https://reactome.org/license",
+            "quote": "Pathway Illustrations, Icon Library, Art, and Branding Materials"
+          },
+          {
+            "url": "https://reactome.org/license",
+            "quote": "This Reactome content is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0)"
+          },
+          {
+            "url": "https://reactome.org/license",
+            "quote": "Images and analyses generated on the Reactome website using FoamTree software are free to use with no restriction."
+          }
+        ]
+      },
+      "notes": "CC BY 4.0, which allows commercial use. The icon library's page builds its list with a script, so whether an icon names its own designer wasn't seen; credit any designer an icon's page names."
+    },
+    {
+      "id": "data",
+      "name": "Pathway data",
+      "license": "CC0-1.0",
+      "apps": "show",
+      "checked": {
+        "date": "2026-11-11",
+        "evidence": [
+          {
+            "url": "https://reactome.org/license",
+            "quote": "All data in the Reactome database and files derived from that data are licensed under the Creative Commons Public Domain Dedication (CC0)"
+          },
+          {
+            "url": "https://reactome.org/license",
+            "quote": "User may copy, modify, and distribute these data, even for commercial purposes, without asking for permission."
+          }
+        ]
+      },
+      "notes": "CC0; credit is encouraged but not required."
+    }
+  ],
+  "notes": "Checked against Reactome's License Agreement and Disclaimer. Pathway illustrations, the icon library, art and branding materials are CC BY 4.0; the data are CC0; Reactome's software is Apache 2.0, except dependencies under copyleft licences and the FoamTree component, which has its own licence (pictures FoamTree makes on the website are free to use). So a paid app may show a pathway illustration or icon with the credit in attribution. CC BY doesn't allow suggesting Reactome endorses Ceder, even though the branding materials are CC BY. The disclaimer says the site's content is for education and research and isn't medical advice; it doesn't narrow the licence. Reactome may change the agreement at any time, so recheck it before relying on it. The library's pin command doesn't fetch from Reactome, so a library item is written by hand. The bank's agents don't read it and nothing from it goes into the bank."
+}

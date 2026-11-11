@@ -1,0 +1,41 @@
+{
+  "id": "wikiversity",
+  "name": "Wikiversity",
+  "url": "https://en.wikiversity.org",
+  "goodFor": "Course pages and learning resources written by volunteers, of uneven depth and quality.",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+  "apps": "show",
+  "bank": "none",
+  "attribution": "The page's title, linked to the page; the words \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when the text shown was shortened or changed, a note that it was.",
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://en.wikiversity.org/wiki/Wikiversity:Copyrights",
+        "quote": "Text is available under the Creative Commons Attribution-ShareAlike License"
+      },
+      {
+        "url": "https://en.wikiversity.org/wiki/Wikiversity:Copyrights",
+        "quote": "Wikiversity content can be copied, modified, and redistributed, either commercially or noncommercially, so long as the new version grants the same freedoms to others and acknowledges the authors of the Wikiversity content used"
+      },
+      {
+        "url": "https://en.wikiversity.org/wiki/Wikiversity:Copyrights",
+        "quote": "You can help develop this proposal or share your thoughts about its adoption as a Wikiversity policy or guideline"
+      },
+      {
+        "url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+        "quote": "When you submit text to which you hold the copyright, you agree to license it under: Creative Commons Attribution-ShareAlike 4.0 International License (\"CC BY-SA 4.0\")"
+      },
+      {
+        "url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+        "quote": "Please note that these licenses do allow commercial uses of your contributions, as long as such uses are compliant with the terms of the respective licenses."
+      },
+      {
+        "url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+        "quote": "For each copy or modified version that you distribute, you agree to include a licensing notice stating which license the work is released under, along with either a hyperlink or URL to the text of the license or a copy of the license itself."
+      }
+    ]
+  },
+  "notes": "Checked against Wikiversity:Copyrights, its page footer and the Wikimedia Terms of Use. Text is CC BY-SA 4.0 (the footer links that version, and the Terms of Use set it for text contributed to any Wikimedia project), which allows commercial use, so an app may show a passage with the credit in attribution, under the same share-alike and change-note rules as Wikipedia. Wikiversity's own copyright page is only a proposed policy, so the Terms of Use are what binds. Pictures carry their own licence, file by file, and an app links to them until a file is checked (see wikimedia-commons). The text licence doesn't cover the Wikiversity name or logo (see wikipedia on Wikimedia's trademarks). Pages are written by anyone and vary a lot in accuracy and level, so read a page before pinning it. The bank's agents don't read it and nothing from it goes into the bank."
+}

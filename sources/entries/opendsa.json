@@ -1,0 +1,38 @@
+{
+  "id": "opendsa",
+  "name": "OpenDSA",
+  "url": "https://github.com/OpenDSA/OpenDSA",
+  "goodFor": "An interactive data structures and algorithms textbook, with step-by-step visualizations and exercises.",
+  "license": "MIT",
+  "licenseUrl": "https://raw.githubusercontent.com/OpenDSA/OpenDSA/master/MIT-license.txt",
+  "apps": "show",
+  "bank": "none",
+  "attribution": "The module's title, linked to its source file; the copyright line of the file shown (for example \"Copyright (c) 2012-2020 by the OpenDSA Project Contributors\"); and the MIT permission notice, reachable from where the content is shown.",
+  "access": "Source files from the repository's master branch, raw.githubusercontent.com/OpenDSA/OpenDSA/master/.",
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/OpenDSA/OpenDSA/master/MIT-license.txt",
+        "quote": "OpenDSA Project Distributed under the MIT License"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/OpenDSA/OpenDSA/master/MIT-license.txt",
+        "quote": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/OpenDSA/OpenDSA/master/MIT-license.txt",
+        "quote": "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/OpenDSA/OpenDSA/master/README.md",
+        "quote": "OpenDSA is distributed under an MIT open source license."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/OpenDSA/OpenDSA/master/RST/en/Sorting/InsertionSort.rst",
+        "quote": "Copyright (c) 2012-2020 by the OpenDSA Project Contributors, and .. distributed under an MIT open source license."
+      }
+    ]
+  },
+  "notes": "Checked against the repository's MIT-license.txt and README, and the headers of two prose modules (Insertion Sort and Mergesort), each of which says it is distributed under the MIT licence. So the prose isn't unclear, at least in the modules read: the repository puts the software and its documentation under MIT, which allows commercial use, and an app may show a module or run a visualization with the copyright line and MIT notice. What it doesn't cover: third-party libraries and any vendored code in the repository (the README mentions an old copy of Khan Academy's exercise framework, being removed), pictures, and any module whose header says otherwise; read a module's header before pinning it. The hosted textbooks and opendsa.org weren't read. The bank's agents don't read it and nothing from it goes into the bank."
+}
