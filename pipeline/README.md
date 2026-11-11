@@ -1,6 +1,6 @@
 # Writing and verifying a pack
 
-A question reaches students only after solvers who never saw its key agreed with it. This is the loop, in order, with the commands each step runs from `bank/`. The prompts in `prompts/` are the instructions each agent follows; `synthesize.workflow.js` runs the whole loop for a list of packs with Claude Code's Workflow tool.
+A question reaches students only after solvers who never saw its key agreed with it. This is the loop, in order, with the commands each step runs from the repository's root. The prompts in `prompts/` are the instructions each agent follows; `synthesize.workflow.js` runs the whole loop for a list of packs with Claude Code's Workflow tool.
 
 The examples use the pack `subjects/biology/dna-replication`, round 0, and two solvers, `a` and `b`.
 
@@ -65,7 +65,6 @@ A repairer follows `prompts/repair.md` for each item still draft: it fixes the k
 ```
 node tools/validate.mjs
 node tools/build.mjs
-node tools/build.mjs --app
 ```
 
-The build takes only verified items. `--app` replaces the iPhone app's seed bank in `../Ceder/Ceder/Learn/SeedBank/`, which CI checks with `node tools/build.mjs --check-app`.
+The build takes only verified items, and writes them to `dist/`.

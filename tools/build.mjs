@@ -4,14 +4,13 @@
 //
 //   node tools/build.mjs                  writes dist/
 //   --out <dir>                           writes there instead
-//   --app                                 also writes the iPhone app's seed bank, ../Ceder/Ceder/Learn/SeedBank/
-//   --check-app                           writes nothing; exits 1 if the seed bank isn't exactly what --app would write
-//   --app-dir <dir>                       the seed bank's folder, for --app and --check-app
+//   --app --app-dir <dir>                 also writes an app's copy of the built bank (its seed bank) into <dir>
+//   --check-app --app-dir <dir>           writes nothing; exits 1 if <dir> isn't exactly what --app would write
 //   --root <dir>                          the bank's folder (this tool's parent folder when not given)
 //
 // The same source always gives the same bytes: keys are written in a fixed order, packs and subjects by ID, and an
-// asset is named by its own hash. Diagrams are rendered from SVG here, so text on a diagram can render differently on
-// a machine with other fonts; diagrams students tap carry no text.
+// asset is named by its own hash. Diagrams are rendered from SVG here, with their text set in the fonts in tools/fonts/
+// (render.mjs), so a picture is the same on every machine.
 
 import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
@@ -189,6 +188,7 @@ export function differences(files, dir) {
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  const USAGE = "usage: node tools/build.mjs [--out <dir>] [(--app | --check-app) --app-dir <dir>] [--root <dir>]";
   const args = process.argv.slice(2);
   let root = bankRoot;
   let out = null;
@@ -203,12 +203,16 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
     else if (args[i] === "--check-app") checkApp = true;
     else {
       console.error(`unknown option ${args[i]}`);
-      console.error("usage: node tools/build.mjs [--out <dir>] [--app | --check-app] [--app-dir <dir>] [--root <dir>]");
+      console.error(USAGE);
       process.exit(2);
     }
   }
   out ??= join(root, "dist");
-  appDir ??= resolve(root, "../Ceder/Ceder/Learn/SeedBank");
+  if ((app || checkApp) && !appDir) {
+    console.error("--app and --check-app need --app-dir <dir>, the folder that holds the app's copy of the built bank");
+    console.error(USAGE);
+    process.exit(2);
+  }
 
   const result = buildBank({ root });
   if (result.errors.length) {
@@ -229,7 +233,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
     const found = differences(result.files, appDir);
     if (found.length) {
       for (const line of found) console.log(`seed bank: ${line}`);
-      console.log(`${appDir} isn't what the build makes (${summary}); run node tools/build.mjs --app`);
+      console.log(`${appDir} isn't what the build makes (${summary}); run node tools/build.mjs --app --app-dir ${appDir}`);
       process.exit(1);
     }
     console.log(`${appDir} matches the build (${summary})`);

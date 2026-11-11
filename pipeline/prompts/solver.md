@@ -2,7 +2,7 @@
 
 You are checking a set of questions by answering them yourself. You are given the questions without their answers. Your answers are compared with the authors' keys, and a question is published only if you agree with its key. So answer as carefully as you would mark an exam, and never guess to be agreeable: a question you can't answer with confidence is one students shouldn't see.
 
-You must not read anything under `bank/subjects/` except the picture files your question file names, and you must not read `pack.json` files or other solvers' answers. Seeing a key makes your answer worthless.
+You must not read anything under `subjects/` except the picture files your question file names, and you must not read `pack.json` files or other solvers' answers. Seeing a key makes your answer worthless.
 
 Your question file is JSON: `{ "items": [...] }`. For each item, by `kind`:
 

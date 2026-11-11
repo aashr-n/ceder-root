@@ -2,12 +2,10 @@
 
 Version 1. The bank is a set of plain files: concepts, questions with checked answers, and the diagrams, 3D models and animations that go with them. Agents write it, other agents check it, and Ceder's apps read a built copy of it. Nothing in it is about any student.
 
-This folder is meant to become its own repository. Until then it lives here, and nothing outside it is needed to validate or build it.
-
 ## Layout
 
 ```
-bank/
+ceder-root/
   subjects/<subject>/subject.json          one per subject
   subjects/<subject>/<pack>/pack.json      concepts, questions and artifacts on one topic
   subjects/<subject>/<pack>/assets/        the pack's own files: .svg, .usdz, .glb, .png
@@ -183,9 +181,9 @@ Every artifact has `id` (unique in the pack), `kind`, `title`, `alt` (what it sh
 | File | |
 |---|---|
 | `bank-index.json` | The subjects, and each pack's file, hash, counts and assets. Its `revision` changes when anything does. |
-| `bankpack-<pack id>.json` | One pack: its concepts, verified items and artifacts. Types: `web/src/lib/learn/types.ts`. |
+| `bankpack-<pack id>.json` | One pack: its concepts, verified items and artifacts. |
 | `bankasset-<hash>.<ext>` | One asset, named by the first 16 hex digits of its SHA-256, so a file never changes under its name. |
 
 In a built pack, a diagram's `file` becomes `image: { file, width, height }` (a PNG 1200 pixels wide), a model's `files` become `usdz` and `glb` asset names with `poster` as an image, items lose `verification`, and items that aren't verified are left out. A concept left with no items stays, so prerequisites still resolve. The build is deterministic: the same source gives the same bytes.
 
-`node tools/build.mjs --app` also copies the built bank into the iPhone app as its starting bank (`Ceder/Ceder/Learn/SeedBank/`).
+An app that ships a copy of the built bank keeps it in step with `node tools/build.mjs --app --app-dir <folder>`, which also writes the built bank there, and `--check-app --app-dir <folder>`, which fails if that folder isn't what the build makes.

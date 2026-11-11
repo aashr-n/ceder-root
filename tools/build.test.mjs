@@ -117,6 +117,13 @@ test("the command line writes --out, --app writes the seed bank, and --check-app
   const out = join(temp(), "dist");
   const app = join(temp(), "SeedBank");
 
+  for (const flag of ["--app", "--check-app"]) {
+    const bare = run(["--root", root, "--out", out, flag]);
+    assert.equal(bare.status, 2, bare.stdout + bare.stderr);
+    assert.match(bare.stderr, /need --app-dir/);
+    assert.ok(!existsSync(out));
+  }
+
   const missing = run(["--root", root, "--check-app", "--app-dir", app]);
   assert.equal(missing.status, 1);
   assert.match(missing.stdout, /seed bank: bank-index\.json is missing/);

@@ -12,4 +12,4 @@ If the solvers slipped and the item is right as written, change nothing: it goes
 
 Any item you change goes back to `"verification": { "status": "draft" }`. Never mark an item verified yourself. Keep every item's `id`. If a concept is left with fewer than four items that are verified or draft, write new ones for it, following `author.md`.
 
-Finish with `node tools/validate.mjs subjects/<subject>/<pack>` from `bank/`, and report what you did to each item in one line.
+Finish with `node tools/validate.mjs subjects/<subject>/<pack>` from the repository's root, and report what you did to each item in one line.

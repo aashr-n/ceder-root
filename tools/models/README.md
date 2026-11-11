@@ -9,16 +9,16 @@ loads.
 ## Rebuild everything
 
 ```sh
-bank/tools/models/build.sh
+tools/models/build.sh
 ```
 
-This creates a Python virtual environment at `bank/.work/venv` and installs
-`requirements.txt` into it, installs three.js into `bank/.work/render` for the
+This creates a Python virtual environment at `.work/venv` and installs
+`requirements.txt` into it, installs three.js into `.work/render` for the
 poster renderer, builds every model, checks every USDZ, and renders every
-poster. `bank/.work` is ignored by git. Pass model names to rebuild only those:
+poster. `.work` is ignored by git. Pass model names to rebuild only those:
 
 ```sh
-bank/tools/models/build.sh animal-cell water-molecule
+tools/models/build.sh animal-cell water-molecule
 ```
 
 `usd-core` is pinned to 26.5 because it is the last release that ships
@@ -54,7 +54,7 @@ the angles are exact.
 
 ## Rules every model follows
 
-These come from `bank/FORMAT.md` and from what iOS needs to load the file:
+These come from `FORMAT.md` and from what iOS needs to load the file:
 
 - Metres, about 0.3 across, centred on the origin, Y up. `build.py` recentres
   the bounding box after building.

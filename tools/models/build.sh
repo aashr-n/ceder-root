@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Rebuild every 3D model in the bank: USDZ, GLB and poster PNG.
-# Usage: bank/tools/models/build.sh [model-name ...]
+# Usage: tools/models/build.sh [model-name ...]
 set -euo pipefail
 
 here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

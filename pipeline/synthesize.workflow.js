@@ -3,14 +3,14 @@
 // It's a script for Claude Code's Workflow tool. Ask for it in words ("run the bank synthesis workflow for these
 // packs"), or call it directly:
 //
-//   Workflow({ scriptPath: "bank/pipeline/synthesize.workflow.js", args: {
-//     bank: "/absolute/path/to/bank",
+//   Workflow({ scriptPath: "pipeline/synthesize.workflow.js", args: {
+//     bank: "/absolute/path/to/ceder-root",
 //     date: "2026-11-09",
 //     packs: [{ subject: "physics", pack: "kinematics", brief: "Displacement, velocity, acceleration, …" }],
 //   } })
 //
 // args:
-//   bank     the bank's folder, as an absolute path
+//   bank     this repository's folder, as an absolute path
 //   date     today, YYYY-MM-DD, written into each verified item (a workflow script has no clock)
 //   packs    what to write. `subject` must already have a subject.json. `brief` says what the pack covers, which
 //            concept IDs it must define, and which concepts in other packs it may build on.

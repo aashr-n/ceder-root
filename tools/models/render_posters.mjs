@@ -5,7 +5,7 @@
 //
 // Each poster is 1200 x 900 with a transparent background, the model lit by a
 // soft studio environment and seen from a three-quarter view. three.js is
-// loaded from bank/.work/render/node_modules (see README.md).
+// loaded from .work/render/node_modules (see README.md).
 
 import { createServer } from 'node:http';
 import { readFile, writeFile } from 'node:fs/promises';
