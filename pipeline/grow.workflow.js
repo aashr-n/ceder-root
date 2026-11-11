@@ -179,7 +179,7 @@ You are solver "${who}". Run:
   node tools/blind.mjs subjects/${subject}/${pack} --out .work/blind/${subject}.${pack}-r${round}-${who}.json
 Then answer every item in that file and write your answers to ${bank}/.work/answers/${subject}.${pack}-r${round}-${who}.json.
 
-Work each answer out yourself. For a fact you aren't sure of, you may read up to six pages with node tools/ref.mjs wikipedia "<page title>" --for solver-${who}:${subject}.${pack}. Never search for a question's own words.
+Work each answer out yourself. For a label item, open its picture and answer with the letter of the spot, as a string such as "C", never a number. For a fact you aren't sure of, you may read up to six pages with node tools/ref.mjs wikipedia "<page title>" --for solver-${who}:${subject}.${pack}. Never search for a question's own words.
 
 Do not open any pack.json, anything else under subjects/ except pictures your question file names, anything under plan/ or dist/, any other file under .work/blind/, .work/answers/ or .work/diagnose/, or git history. Another solver is answering the same questions separately.`
 
