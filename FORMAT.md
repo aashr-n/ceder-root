@@ -98,7 +98,7 @@ Every item has:
 
 By kind:
 
-- **`choice`**: `choices` (2 to 5 strings, each at most 200 characters, no "all of the above") and `answer` (the index of the right one). Exactly one choice is right, and every wrong one is wrong for a reason a student could state.
+- **`choice`**: `choices` (2 to 5 strings, each at most 200 characters, no "all of the above") and `answer` (the index of the right one). Exactly one choice is right, and every wrong one is wrong for a reason a student could state. Apps must show the choices in a shuffled order, so their order here means nothing, and a prompt or explanation never names a choice by its place ("the first choice"): it says what the choice says. Length survives a shuffle, so the right choice shouldn't stand out by being the longest or the shortest (`tools/cues.mjs`).
 - **`recall`**: `answer`, at most 300 characters. The student recalls it, turns the card over, and says whether they had it. Write prompts with one defensible answer.
 - **`order`**: `steps`, 3 to 6 strings in the right order, each at most 120 characters. Only one order is right.
 - **`label`**: `artifact` (a diagram in the pack, required) and `target` (the ID of one of its hotspots). The prompt names the part to find without giving away where it is.

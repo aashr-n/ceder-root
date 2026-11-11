@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { fixtureRoot } from "./fixtures/fixture.mjs";
-import { checkPlan, nextPacks } from "./plan.mjs";
+import { checkPlan, nextPacks, overview } from "./plan.mjs";
 import { loadBank } from "./validate.mjs";
 
 /** A plan that lists the fixture bank's packs as they are, then one new pack. */
@@ -87,4 +87,13 @@ test("a plan for a subject the bank doesn't have is an error", () => {
   const { bank, plan } = fixturePlan(root);
   plan.subject = "elsewhere";
   hasError(check(root, plan, bank), "has no subjects/elsewhere/subject.json");
+});
+
+test("overview lists each subject's packs in order and marks the written ones", () => {
+  const root = fixtureRoot();
+  const { bank, plan } = fixturePlan(root);
+  const page = overview([plan], bank);
+  assert.match(page, /^## Testing$/m);
+  assert.match(page, /^\d+\. \*\*Tissues\*\*: epithelium, connective tissue, muscle tissue, nervous tissue$/m);
+  assert.equal(page.split("\n").filter((line) => line.includes(" ✓: ")).length, plan.packs.length - 1);
 });

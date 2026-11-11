@@ -28,7 +28,10 @@ A plan is the list of packs a subject should have, in teaching order, with the c
 node tools/plan.mjs check plan/calculus.json   checks a plan against schema/plan.schema.json and the bank
 node tools/plan.mjs next calculus 2            the next packs to write
 node tools/plan.mjs written calculus           the packs the bank has, with their concepts
+node tools/plan.mjs overview                   writes OVERVIEW.md, every plan as one page a person can read
 ```
+
+`OVERVIEW.md` is the place to read the plans: each subject's packs in order, with the concepts each teaches. Correct a plan by editing its JSON file, then run `overview` again.
 
 `pipeline/prompts/planner.md` is the planner's instructions.
 

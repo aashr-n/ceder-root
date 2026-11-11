@@ -33,7 +33,8 @@ export const meta = {
 //   subjects   [{ subject, course }]: each subject must already have a subject.json; `course` says what to plan it as
 //   packs      how many packs to write per subject, in the plan's order (1 when not given)
 //   rounds     how many times disagreements are repaired and solved again (1 when not given)
-//   textOnly   false to allow diagrams, label items and recall items (text only when not given)
+//   textOnly   false to allow diagrams, label items and recall items (text only when not given). Leave it on for a
+//              small model: pictures and 3D models are a separate step for the most capable model (README.md).
 //   models     which model each role runs on: { planner, author, solvers: [one per solver], grader, repair }.
 //              A role left out runs on the session's model. The number of solvers is the length of `solvers` (2 when not given).
 //   agentType  a custom agent type for every agent, such as one without web tools
@@ -52,6 +53,9 @@ if (typeof bank !== 'string' || !bank.startsWith('/')) throw new Error('args.ban
 if (!/^\d{4}-\d{2}-\d{2}$/.test(date ?? '')) throw new Error('args.date must be today as YYYY-MM-DD')
 if (!subjects.length) throw new Error('args.subjects is empty')
 for (const s of subjects) if (!SLUG.test(s.subject ?? '') || typeof s.course !== 'string') throw new Error('each subject needs a subject (lowercase words joined by hyphens) and a course')
+
+// What every pack must pass before it is solved: nothing that gives an answer away, and for a text-only pack nothing but text.
+const CHECKS = (textOnly ? '--text-only --kinds=choice,order ' : '') + '--strict-cues'
 
 const opts = (label, phase, model, extra) => ({ label, phase, ...(model ? { model } : {}), ...(input.agentType ? { agentType: input.agentType } : {}), ...(extra ?? {}) })
 
@@ -120,10 +124,10 @@ This pack is text only, so that every answer can be checked by a tool. The parts
 - "license" is "CC0-1.0".
 - "requires": only concepts that exist now, which are ones in your own pack, and ones that node tools/plan.mjs written <subject> lists for this or another subject. Leave out a prerequisite whose pack isn't written yet.
 - Write mathematics and formulas as plain text with Unicode symbols, such as f′(x), x², √x, ×, ÷, ≤, π, H₂O, and fractions as (a + b)/c. No LaTeX and no Markdown.
-- Make each item's choices alike in length, and spread the right choice evenly over the places. validate warns when the right choice is the longest, or sits in one place, too often: fix those warnings too.
+- Follow "What gives an answer away" in author.md: make each item's choices alike in length, and never name a choice by its place.
 - You may read a few pages on the topic through tools/ref.mjs, with --for author:${subject}.${pack}, to settle what the concepts cover. Then write from your own understanding.
 
-Create only that folder. Finish by running node tools/validate.mjs subjects/${subject}/${pack} and node tools/ref.mjs check subjects/${subject}/${pack}, fixing every error either reports, until both pass. Warnings about verified counts are expected.`
+Create only that folder. Finish by running node tools/validate.mjs subjects/${subject}/${pack} ${CHECKS} and node tools/ref.mjs check subjects/${subject}/${pack}, fixing every error either reports, until both pass. Warnings about verified counts are expected.`
 
 const solver = (subject, pack, who, round) => SHARED + `Answer a set of questions without seeing their answers. Follow ${bank}/pipeline/prompts/solver.md exactly; it is your instructions.
 
@@ -144,7 +148,7 @@ const repair = (subject, pack, unverified) => SHARED + `Repair one pack's unveri
 The pack is ${bank}/subjects/${subject}/${pack}/pack.json. The grader's reading of each item still unverified:
 ${unverified.map((item) => `- ${item.id}: ${item.reading}`).join('\n')}
 
-When you have finished, run node tools/validate.mjs subjects/${subject}/${pack} and node tools/ref.mjs check subjects/${subject}/${pack}, and fix every error either reports.`
+When you have finished, run node tools/validate.mjs subjects/${subject}/${pack} ${CHECKS} and node tools/ref.mjs check subjects/${subject}/${pack}, and fix every error either reports.`
 
 async function onePack(subject, pack) {
   const name = `${subject}.${pack}`

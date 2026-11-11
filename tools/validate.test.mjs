@@ -35,7 +35,7 @@ test("a pack under any licence but CC0 is an error", () => {
   hasError(check(root), "license");
 });
 
-test("a pack whose right choices stand out by length or place gets a warning", () => {
+test("a pack whose right choice is too often the longest gets a warning, and fails with strictCues", () => {
   const root = fixtureRoot();
   editPack(root, (data) => {
     const concept = data.concepts[0].id;
@@ -46,7 +46,43 @@ test("a pack whose right choices stand out by length or place gets a warning", (
   const result = check(root);
   assert.deepEqual(result.errors, []);
   assert.ok(result.warnings.some((warning) => warning.includes("is the longest in")), result.warnings.join("\n"));
-  assert.ok(result.warnings.some((warning) => warning.includes("is in place 2 in")), result.warnings.join("\n"));
+  hasError(check(root, { strictCues: true }), "is the longest in");
+
+  const padded = fixtureRoot();
+  editPack(padded, (data) => {
+    const concept = data.concepts[0].id;
+    for (let n = 0; n < 12; n++) {
+      data.items.push({ id: `${data.id}.cue-${n}`, concept, kind: "choice", difficulty: 1, prompt: `Question ${n}?`, choices: ["A wrong choice, padded with a reason", "Right", "Another wrong one, padded as well"], answer: 1, explanation: "Because.", verification: { status: "draft" } });
+    }
+  });
+  assert.ok(check(padded).warnings.some((warning) => warning.includes("is the shortest in")));
+});
+
+test("an explanation that names a choice by its place is an error, since apps shuffle choices", () => {
+  const root = fixtureRoot();
+  editPack(root, (data) => { data.items.find((item) => item.kind === "choice").explanation = "The first choice mixes up the two parts."; });
+  hasError(check(root), "names a choice by its place (“first choice”)");
+
+  const maybe = fixtureRoot();
+  editPack(maybe, (data) => { data.items.find((item) => item.kind === "choice").explanation = "The third is wrong because it has no nucleus."; });
+  const result = check(maybe);
+  assert.deepEqual(result.errors, []);
+  assert.ok(result.warnings.some((warning) => warning.includes("seems to name a choice by its place")));
+  hasError(check(maybe, { strictCues: true }), "seems to name a choice by its place");
+
+  const value = fixtureRoot();
+  editPack(value, (data) => { data.items.find((item) => item.kind === "choice").explanation = "The answer 4 forgets the first step, and the choice a fails."; });
+  assert.deepEqual(check(value).errors, []);
+});
+
+test("textOnly and kinds refuse pictures and other kinds of item", () => {
+  const root = fixtureRoot();
+  const text = check(root, { textOnly: true });
+  hasError(text, "this pack is text only");
+  hasError(text, "uses a picture");
+  const kinds = check(root, { kinds: ["choice", "order"] });
+  hasError(kinds, "this pack takes only choice and order items");
+  assert.deepEqual(check(root, { kinds: ["choice", "recall", "order", "label"] }).errors, []);
 });
 
 test("a prerequisite cycle is an error", () => {
