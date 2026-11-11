@@ -4,6 +4,8 @@ A question reaches students only after solvers who never saw its key agreed with
 
 The examples use the pack `subjects/biology/dna-replication`, round 0, and two solvers, `a` and `b`.
 
+What to write comes from each subject's plan (`../plan/README.md`). `grow.workflow.js` plans subjects with `prompts/planner.md`, then runs this loop on the next packs in each plan. `prompts/sources.md` says what an agent may read from outside while it plans, writes or checks: only what `tools/ref.mjs` gives it.
+
 ## 1. Author
 
 An agent writes the pack, following `prompts/author.md`. Every item starts as `"verification": { "status": "draft" }`. Diagrams are drawn as SVG and looked at as PNG:

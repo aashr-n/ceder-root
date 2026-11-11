@@ -16,8 +16,9 @@ A pack covers one topic: 4 to 12 concepts, with at least 4 verified questions fo
 
 ```
 subjects/   the packs, by subject
-schema/     JSON Schemas for subject.json and pack.json
-tools/      validate, build, blind export and grading, with their tests
+plan/       each subject's list of packs to write, and every outside page an agent read
+schema/     JSON Schemas for subject.json, pack.json and a plan
+tools/      validate, build, blind export, grading, plans and outside reading, with their tests
 pipeline/   how a pack gets written and checked, and the prompts the agents follow
 dist/       what the build writes (not committed)
 .work/      blind question files and solvers' answers (not committed)
@@ -60,6 +61,8 @@ Every answer key is checked by solvers who never see it. The loop, with the exac
 6. The build takes the verified items.
 
 `pipeline/synthesize.workflow.js` runs the whole loop for a list of packs with Claude Code's Workflow tool.
+
+What gets written is decided by each subject's plan (`plan/README.md`). While they plan, write or check, agents may read only Wikipedia, Wikibooks and Wikidata, through `tools/ref.mjs`, which logs every page and checks packs for copied text (`pipeline/prompts/sources.md`).
 
 Agreement between solvers shows a key is consistent, not that it is true. The first eight packs were written and solved by one model family, so a mistake that family shares would not have been caught.
 
