@@ -78,6 +78,7 @@ A pack covers one topic: 4 to 12 concepts, at least 4 verified items per concept
 - `requires` lists what the concept builds on: an ID in the same subject, or a ref (`chemistry/covalent-bond`) in another. No cycles. Keep it to direct prerequisites, at most 6.
 - `elements` are the 2 to 8 specific things to master inside the concept. An element's `id` is unique in its concept.
 - `explain` is what a student who has never met the concept reads first: 50 to 110 words of plain text, no Markdown, written to be read on a phone in one look. `artifact` names an artifact in the pack to show with it.
+- `misconceptions` is optional: the wrong ideas students bring to the concept. See Misconceptions, below.
 
 ### Items
 
@@ -105,6 +106,27 @@ By kind:
 
 Write questions from the idea, never by rewording a textbook's question or copying its text.
 
+### Misconceptions
+
+A question can show more than whether a student is right. It can show which wrong idea they hold, which is what an app needs to know to correct it.
+
+```json
+"misconceptions": [
+  { "id": "equilibrium-stops-movement", "claim": "At equilibrium, molecules stop moving.", "correction": "Molecules keep crossing in both directions at the same rate. Only the net movement is zero." }
+]
+```
+
+```json
+"choices": ["Water stops crossing the membrane", "Water crosses equally in both directions", "All the solute leaves the cell"],
+"answer": 1,
+"mistakes": ["equilibrium-stops-movement", null, null]
+```
+
+- A concept's `misconceptions` are at most 6 wrong ideas. `id` is unique in the pack. `claim` is the idea as a student would say it, at most 200 characters. `correction` is what is true instead, at most 300, written to be shown to a student who holds the idea.
+- A choice item's `mistakes` has one entry for each choice, in the same order. It is `null` for the right choice. For a wrong choice it is the `id` of the misconception that leads a student to pick it, or `null` when the choice is only a slip or a guess. Apps that shuffle `choices` shuffle `mistakes` with them.
+- A misconception is worth listing only if wrong choices in at least 2 items give it away. One wrong answer can be a slip. The same wrong idea twice is a pattern.
+- The tags are checked the way keys are. A second model names the mistake behind every wrong choice without seeing the tags (`tools/diagnose.mjs`), and a tag stays only where the two agree. `verification.diagnosed` counts those checks, and the build leaves out the `mistakes` of an item no one has checked.
+
 ### Verification
 
 ```json
@@ -114,7 +136,8 @@ Write questions from the idea, never by rewording a textbook's question or copyi
 - `status` is `draft`, `verified`, or `rejected`. Only `verified` items are built into what apps read.
 - An item is `verified` only when solvers who never saw its answer agreed with it: `tools/blind.mjs` writes the questions without their answers, each solver answers those, and `tools/grade.mjs` compares. `solvers` is how many answered, `agreed` how many matched the key.
 - A `recall` item is verified when the solver's own answer means the same as the key; the grader records that judgement in `note`.
-- Changing an item's prompt, choices, steps, target or answer sets it back to `draft`.
+- Changing an item's prompt, choices, steps, target or answer sets it back to `draft`, which also drops `diagnosed`.
+- `diagnosed` is how many times a second model has checked the item's `mistakes` (see Misconceptions).
 - `rejected` items stay in the file with a `note`, so the same mistake isn't written again.
 
 ### Artifacts
@@ -184,6 +207,6 @@ Every artifact has `id` (unique in the pack), `kind`, `title`, `alt` (what it sh
 | `bankpack-<pack id>.json` | One pack: its concepts, verified items and artifacts. |
 | `bankasset-<hash>.<ext>` | One asset, named by the first 16 hex digits of its SHA-256, so a file never changes under its name. |
 
-In a built pack, a diagram's `file` becomes `image: { file, width, height }` (a PNG 1200 pixels wide), a model's `files` become `usdz` and `glb` asset names with `poster` as an image, items lose `verification`, and items that aren't verified are left out. A concept left with no items stays, so prerequisites still resolve. The build is deterministic: the same source gives the same bytes.
+In a built pack, a diagram's `file` becomes `image: { file, width, height }` (a PNG 1200 pixels wide), a model's `files` become `usdz` and `glb` asset names with `poster` as an image, items lose `verification`, a choice item keeps `mistakes` only if they were checked, and items that aren't verified are left out. A concept left with no items stays, so prerequisites still resolve. The build is deterministic: the same source gives the same bytes.
 
 An app that ships a copy of the built bank keeps it in step with `node tools/build.mjs --app --app-dir <folder>`, which also writes the built bank there, and `--check-app --app-dir <folder>`, which fails if that folder isn't what the build makes.

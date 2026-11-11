@@ -49,45 +49,51 @@ Human anatomy and physiology I and II, as a typical two-course college sequence 
 
 ## Biology
 
-Introductory biology for majors, as the two-course Biology I and II sequence teaches it: chemistry of life, cells, energy, genetics, molecular biology, evolution, diversity of life, animal and plant form and function, and ecology. Stops before graduate topics, history and biography. 37 packs, 193 concepts, 5 written.
+Introductory biology for majors, as the two-course Biology I and II sequence teaches it: chemistry of life, cells, energy, genetics, molecular biology, evolution, diversity of life, animal and plant form and function, and ecology. Stops before graduate topics, history and biography. 43 packs, 226 concepts, 5 written.
 
 1. **Atoms, bonds and water** ✓: Atom, Chemical bond, Hydrogen bond, Properties of water, pH scale
 2. **Biological macromolecules**: Carbohydrate, Lipid, Amino acid, Protein structure, Dehydration synthesis
 3. **Cell structure** ✓: Cell theory, Prokaryotic and eukaryotic cells, Cell membrane, Organelle, Cell nucleus, Ribosome, Endomembrane system, Mitochondrion
-4. **Enzymes and energy**: Enzyme, Activation energy, Adenosine triphosphate (ATP), Redox reactions, Feedback inhibition
-5. **Cellular respiration**: Glycolysis, Pyruvate oxidation, Citric acid cycle, Electron transport chain, Chemiosmosis, Fermentation
-6. **Photosynthesis**: Chloroplast, Photosynthetic pigment, Light-dependent reactions, Calvin cycle
-7. **Cell communication**: Signal transduction, Cell surface receptor, Second messenger, Signal cascade, Apoptosis
-8. **DNA structure** ✓: Nucleotide, Nitrogenous base, Sugar-phosphate backbone, Complementary base pairing, Chargaff's rules, Antiparallel strands, DNA double helix
-9. **DNA replication** ✓: DNA replication, Meselson-Stahl experiment, Origin of replication, DNA helicase, DNA polymerase, RNA primer, Leading and lagging strands
-10. **Cell division** ✓: Chromosome, Diploid and haploid cells, Cell cycle, Cell cycle regulation, Mitosis, Meiosis, Genetic variation in meiosis
-11. **Transcription**: Transcription, RNA polymerase, Promoter, Messenger RNA, RNA processing
-12. **Translation**: Genetic code, Transfer RNA, Translation, Post-translational modification
-13. **Mendelian genetics**: Allele, Genotype and phenotype, Monohybrid cross, Dihybrid cross, Law of segregation, Law of independent assortment
-14. **Linkage and sex chromosomes**: Chromosome theory of inheritance, Genetic linkage, Recombination frequency, Genetic map, Sex-linked inheritance
-15. **Mutation and DNA repair**: Mutation, Point mutation, Frameshift mutation, Mismatch repair, Mutagen
-16. **Gene regulation**: Operon, Transcription factor, Enhancer, Epigenetic regulation, Alternative splicing
-17. **Recombinant DNA technology**: Restriction enzyme, Gel electrophoresis, Polymerase chain reaction, DNA sequencing, CRISPR-Cas9
-18. **Natural selection**: Natural selection, Adaptation, Fitness, Sexual selection, Artificial selection
-19. **Population genetics**: Allele frequency, Hardy-Weinberg principle, Genetic drift, Gene flow, Founder effect
-20. **Speciation**: Species, Reproductive isolation, Allopatric speciation, Sympatric speciation, Hybrid zone
-21. **Phylogenetics and classification**: Phylogenetic tree, Homology, Cladistics, Linnaean classification, Molecular clock
-22. **Origin of life**: Abiogenesis, Miller-Urey experiment, RNA world hypothesis, Endosymbiotic theory
-23. **Microbes, protists and viruses**: Bacteria, Archaea, Protists, Viruses, Viral replication cycle
-24. **Plant diversity**: Alternation of generations, Bryophyte, Vascular plant, Gymnosperm, Angiosperm
-25. **Plant structure and transport**: Meristem, Xylem, Phloem, Transpiration, Stomata
-26. **Plant hormones and responses**: Plant hormone, Auxin, Tropism, Photoperiodism, Phytochrome
-27. **Animal diversity**: Body symmetry, Coelom, Invertebrate phyla, Vertebrate classes, Tetrapod
-28. **Homeostasis and hormones**: Homeostasis, Negative feedback, Endocrine system, Hormone receptor, Thermoregulation
-29. **Nervous system**: Neuron, Action potential, Synapse, Neurotransmitter, Reflex
-30. **Circulation and gas exchange**: Circulatory system, Cardiac cycle, Blood pressure, Gas exchange, Hemoglobin
-31. **Digestion and excretion**: Digestive system, Nutrient absorption, Nephron, Urine formation, Osmoregulation
-32. **Immune system**: Innate immunity, Adaptive immunity, Antibody, T cell, Vaccination
-33. **Animal development**: Fertilization, Gastrulation, Cell differentiation, Stem cell, Morphogen
-34. **Population ecology**: Population density, Population growth, Carrying capacity, Logistic growth, Life history strategy
-35. **Community ecology**: Ecological niche, Interspecific competition, Predator-prey interaction, Symbiosis, Keystone species, Food web
-36. **Ecosystems**: Energy flow in ecosystems, Trophic level, Nutrient cycling, Carbon cycle, Nitrogen cycle
-37. **Conservation biology**: Biodiversity, Habitat fragmentation, Extinction, Conservation genetics
+4. **Membrane structure**: Fluid mosaic model, Phospholipid bilayer, Membrane protein, Membrane fluidity, Selective permeability
+5. **Membrane transport**: Diffusion, Osmosis, Tonicity, Facilitated diffusion, Active transport, Endocytosis and exocytosis
+6. **Cytoskeleton and cell movement**: Cytoskeleton, Microtubule, Actin filament, Intermediate filament, Motor protein, Cilia and flagella
+7. **Cell junctions and the extracellular matrix**: Extracellular matrix, Cell wall, Tight junction, Desmosome, Gap junction, Plasmodesma
+8. **Enzymes and energy**: Enzyme, Activation energy, Adenosine triphosphate (ATP), Redox reactions, Feedback inhibition
+9. **Cellular respiration**: Glycolysis, Pyruvate oxidation, Citric acid cycle, Electron transport chain, Chemiosmosis, Fermentation
+10. **Photosynthesis**: Chloroplast, Photosynthetic pigment, Light-dependent reactions, Calvin cycle
+11. **Cell communication**: Signal transduction, Cell surface receptor, Second messenger, Signal cascade, Apoptosis
+12. **DNA structure** ✓: Nucleotide, Nitrogenous base, Sugar-phosphate backbone, Complementary base pairing, Chargaff's rules, Antiparallel strands, DNA double helix
+13. **DNA replication** ✓: DNA replication, Meselson-Stahl experiment, Origin of replication, DNA helicase, DNA polymerase, RNA primer, Leading and lagging strands
+14. **Cell division** ✓: Chromosome, Diploid and haploid cells, Cell cycle, Cell cycle regulation, Mitosis, Meiosis, Genetic variation in meiosis
+15. **Transcription**: Transcription, RNA polymerase, Promoter, Messenger RNA, RNA processing
+16. **Translation**: Genetic code, Transfer RNA, Translation, Post-translational modification
+17. **Protein sorting and trafficking**: Signal peptide, Secretory pathway, Vesicle transport, Golgi apparatus, Lysosome
+18. **Mendelian genetics**: Allele, Genotype and phenotype, Monohybrid cross, Dihybrid cross, Law of segregation, Law of independent assortment
+19. **Linkage and sex chromosomes**: Chromosome theory of inheritance, Genetic linkage, Recombination frequency, Genetic map, Sex-linked inheritance
+20. **Mutation and DNA repair**: Mutation, Point mutation, Frameshift mutation, Mismatch repair, Mutagen
+21. **Cell cycle control and cancer**: Cell cycle checkpoint, Cyclin-dependent kinase, Proto-oncogene, Tumor suppressor gene, Metastasis
+22. **Gene regulation**: Operon, Transcription factor, Enhancer, Epigenetic regulation, Alternative splicing
+23. **Recombinant DNA technology**: Restriction enzyme, Gel electrophoresis, Polymerase chain reaction, DNA sequencing, CRISPR-Cas9
+24. **Natural selection**: Natural selection, Adaptation, Fitness, Sexual selection, Artificial selection
+25. **Population genetics**: Allele frequency, Hardy-Weinberg principle, Genetic drift, Gene flow, Founder effect
+26. **Speciation**: Species, Reproductive isolation, Allopatric speciation, Sympatric speciation, Hybrid zone
+27. **Phylogenetics and classification**: Phylogenetic tree, Homology, Cladistics, Linnaean classification, Molecular clock
+28. **Origin of life**: Abiogenesis, Miller-Urey experiment, RNA world hypothesis, Endosymbiotic theory
+29. **Microbes, protists and viruses**: Bacteria, Archaea, Protists, Viruses, Viral replication cycle
+30. **Plant diversity**: Alternation of generations, Bryophyte, Vascular plant, Gymnosperm, Angiosperm
+31. **Plant structure and transport**: Meristem, Xylem, Phloem, Transpiration, Stomata
+32. **Plant hormones and responses**: Plant hormone, Auxin, Tropism, Photoperiodism, Phytochrome
+33. **Animal diversity**: Body symmetry, Coelom, Invertebrate phyla, Vertebrate classes, Tetrapod
+34. **Homeostasis and hormones**: Homeostasis, Negative feedback, Endocrine system, Hormone receptor, Thermoregulation
+35. **Nervous system**: Neuron, Action potential, Synapse, Neurotransmitter, Reflex
+36. **Circulation and gas exchange**: Circulatory system, Cardiac cycle, Blood pressure, Gas exchange, Hemoglobin
+37. **Digestion and excretion**: Digestive system, Nutrient absorption, Nephron, Urine formation, Osmoregulation
+38. **Immune system**: Innate immunity, Adaptive immunity, Antibody, T cell, Vaccination
+39. **Animal development**: Fertilization, Gastrulation, Cell differentiation, Stem cell, Morphogen
+40. **Population ecology**: Population density, Population growth, Carrying capacity, Logistic growth, Life history strategy
+41. **Community ecology**: Ecological niche, Interspecific competition, Predator-prey interaction, Symbiosis, Keystone species, Food web
+42. **Ecosystems**: Energy flow in ecosystems, Trophic level, Nutrient cycling, Carbon cycle, Nitrogen cycle
+43. **Conservation biology**: Biodiversity, Habitat fragmentation, Extinction, Conservation genetics
 
 ## Calculus
 
