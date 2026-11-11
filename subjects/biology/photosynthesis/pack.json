@@ -41,7 +41,8 @@
         }
       ],
       "explain": {
-        "text": "A chloroplast is the organelle in plant and algal cells where photosynthesis happens. Its outer envelope surrounds a watery fluid called the stroma, and stacks of flattened membrane sacs called thylakoids sit inside. Pigments in the thylakoid membranes catch light and turn it into chemical energy. The stroma is where that energy is spent to build sugar from carbon dioxide. A typical plant cell holds many chloroplasts, and most of them sit in the leaves. Think of the thylakoids as solar panels and the stroma as the kitchen where the sugar is cooked."
+        "text": "A chloroplast is the organelle in plant and algal cells where photosynthesis happens. Its outer envelope surrounds a watery fluid called the stroma, and stacks of flattened membrane sacs called thylakoids sit inside. Pigments in the thylakoid membranes catch light and turn it into chemical energy. The stroma is where that energy is spent to build sugar from carbon dioxide. A typical plant cell holds many chloroplasts, and most of them sit in the leaves. Think of the thylakoids as solar panels and the stroma as the kitchen where the sugar is cooked.",
+        "artifact": "chloroplast"
       },
       "misconceptions": [
         {
@@ -156,7 +157,8 @@
         }
       ],
       "explain": {
-        "text": "The light-dependent reactions happen in the thylakoid membranes and turn light into chemical energy. A pigment in photosystem II absorbs light and loses an electron, which moves down an electron transport chain. Water is split to refill the lost electron and release oxygen. As the electrons move, they pump protons into the thylakoid space, and the protons flow back out through ATP synthase, which makes ATP. Photosystem I then re-excites the electron, which reduces NADP⁺ to NADPH. The reactions end with two products, ATP and NADPH, that carry energy and electrons to the Calvin cycle."
+        "text": "The light-dependent reactions happen in the thylakoid membranes and turn light into chemical energy. A pigment in photosystem II absorbs light and loses an electron, which moves down an electron transport chain. Water is split to refill the lost electron and release oxygen. As the electrons move, they pump protons into the thylakoid space, and the protons flow back out through ATP synthase, which makes ATP. Photosystem I then re-excites the electron, which reduces NADP⁺ to NADPH. The reactions end with two products, ATP and NADPH, that carry energy and electrons to the Calvin cycle.",
+        "artifact": "thylakoid-membrane-steps"
       },
       "misconceptions": [
         {
@@ -218,7 +220,8 @@
         }
       ],
       "explain": {
-        "text": "The Calvin cycle is the set of reactions in the stroma that turns carbon dioxide into sugar. RuBisCO, one of the most abundant enzymes on Earth, attaches carbon dioxide to RuBP, a five-carbon sugar. The product splits into three-carbon molecules, which ATP and NADPH from the light reactions reduce to G3P. Most G3P is used to rebuild RuBP so the cycle can continue, and the rest leaves the cycle to build glucose and other sugars. It is called light-independent because it does not use light directly, but it cannot run without the products of the light reactions."
+        "text": "The Calvin cycle is the set of reactions in the stroma that turns carbon dioxide into sugar. RuBisCO, one of the most abundant enzymes on Earth, attaches carbon dioxide to RuBP, a five-carbon sugar. The product splits into three-carbon molecules, which ATP and NADPH from the light reactions reduce to G3P. Most G3P is used to rebuild RuBP so the cycle can continue, and the rest leaves the cycle to build glucose and other sugars. It is called light-independent because it does not use light directly, but it cannot run without the products of the light reactions.",
+        "artifact": "chloroplast"
       },
       "misconceptions": [
         {
@@ -1368,7 +1371,279 @@
         "agreed": 2,
         "at": "2026-11-11"
       }
+    },
+    {
+      "id": "biology.photosynthesis.tap-granum",
+      "concept": "chloroplast",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap a granum, where most of the chloroplast's light capture by chlorophyll takes place.",
+      "artifact": "chloroplast",
+      "target": "granum",
+      "explanation": "A granum is a stack of thylakoids. Their membranes hold the pigments and photosystems that turn light into ATP and NADPH, and stacking packs a lot of membrane into a small space.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.photosynthesis.tap-stroma",
+      "concept": "calvin-cycle",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap where RuBisCO fixes carbon dioxide during the Calvin cycle.",
+      "artifact": "chloroplast",
+      "target": "stroma",
+      "explanation": "The Calvin cycle runs in the stroma, the fluid around the thylakoids. Its enzymes, RuBisCO among them, are dissolved there, next to where the thylakoids release ATP and NADPH.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.photosynthesis.tap-inner-envelope",
+      "concept": "chloroplast",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the envelope membrane whose transport proteins control which molecules pass between the cytosol and the stroma.",
+      "artifact": "chloroplast",
+      "target": "inner-membrane",
+      "explanation": "The inner envelope membrane is the chloroplast's real barrier. Its transporters move molecules such as sugar phosphates in and out, while the outer membrane lets most small molecules through.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.photosynthesis.tap-outer-envelope",
+      "concept": "chloroplast",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "Tap the envelope membrane whose large channel proteins let most small molecules pass freely.",
+      "artifact": "chloroplast",
+      "target": "outer-membrane",
+      "explanation": "The outer envelope membrane has wide channels, so small molecules cross it easily. The inner membrane, not the outer one, decides what reaches the stroma.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.photosynthesis.tap-stroma-lamella",
+      "concept": "chloroplast",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "Tap the unstacked thylakoid membrane that links one granum to another and is rich in photosystem I and ATP synthase.",
+      "artifact": "chloroplast",
+      "target": "stroma-lamella",
+      "explanation": "Stroma lamellae are single thylakoid membranes running between grana. Their faces touch the stroma, which suits photosystem I and ATP synthase, whose working parts sit on the stroma side.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.photosynthesis.tap-photosystem-ii",
+      "concept": "light-dependent-reactions",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the complex that absorbs light and replaces its lost electrons by splitting water, releasing oxygen.",
+      "artifact": "thylakoid-membrane",
+      "target": "photosystem-ii",
+      "explanation": "Photosystem II's reaction centre loses an electron when it absorbs light. It refills it from water, which is split into oxygen, protons and electrons. This is where the oxygen of photosynthesis comes from.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.photosynthesis.tap-cytochrome-b6f",
+      "concept": "light-dependent-reactions",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the complex that passes electrons from plastoquinone to plastocyanin while moving protons into the thylakoid space.",
+      "artifact": "thylakoid-membrane",
+      "target": "cytochrome-b6f",
+      "explanation": "The cytochrome b6f complex links the two photosystems. As electrons pass through it, protons are moved from the stroma into the thylakoid space, building the gradient that drives ATP synthase.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.photosynthesis.tap-photosystem-i",
+      "concept": "light-dependent-reactions",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the complex that absorbs light a second time, re-energising electrons so they can reduce NADP⁺.",
+      "artifact": "thylakoid-membrane",
+      "target": "photosystem-i",
+      "explanation": "Photosystem I receives electrons that have lost energy along the chain. Absorbing light raises them to a high enough energy to pass, through ferredoxin, to NADP⁺.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.photosynthesis.tap-nadp-reductase",
+      "concept": "light-dependent-reactions",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "Tap the enzyme that hands electrons to NADP⁺, forming the NADPH the Calvin cycle uses.",
+      "artifact": "thylakoid-membrane",
+      "target": "nadp-reductase",
+      "explanation": "NADP⁺ reductase sits on the stroma side of the membrane. It takes electrons from ferredoxin and adds them with a proton to NADP⁺, so NADPH is released right where the Calvin cycle needs it.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.photosynthesis.tap-atp-synthase",
+      "concept": "light-dependent-reactions",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the protein that makes ATP as protons flow from the thylakoid space back into the stroma.",
+      "artifact": "thylakoid-membrane",
+      "target": "atp-synthase",
+      "explanation": "Protons are crowded in the thylakoid space. Their flow back through ATP synthase turns part of it, and the head in the stroma joins ADP and phosphate into ATP.",
+      "verification": {
+        "status": "draft"
+      }
     }
   ],
-  "artifacts": []
+  "artifacts": [
+    {
+      "id": "chloroplast",
+      "kind": "diagram",
+      "title": "Inside a chloroplast",
+      "alt": "An unlabelled chloroplast cut open lengthwise. A terracotta outer membrane surrounds a narrow pale gap and an ochre inner membrane. Inside is pale green stroma dotted with small blue-grey ribosomes. Six stacks of flat dark green discs sit in the stroma, joined to one another by thin, lighter green membrane bridges.",
+      "file": "assets/chloroplast.svg",
+      "hotspots": [
+        {
+          "id": "outer-membrane",
+          "label": "Outer membrane",
+          "x": 0.5,
+          "y": 0.091,
+          "r": 0.05
+        },
+        {
+          "id": "inner-membrane",
+          "label": "Inner membrane",
+          "x": 0.5,
+          "y": 0.837,
+          "r": 0.05
+        },
+        {
+          "id": "granum",
+          "label": "Granum (thylakoid stack)",
+          "x": 0.467,
+          "y": 0.3,
+          "r": 0.05
+        },
+        {
+          "id": "stroma",
+          "label": "Stroma",
+          "x": 0.217,
+          "y": 0.556,
+          "r": 0.05
+        },
+        {
+          "id": "stroma-lamella",
+          "label": "Stroma lamella",
+          "x": 0.533,
+          "y": 0.478,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "thylakoid-membrane",
+      "kind": "diagram",
+      "title": "The light reactions in the thylakoid membrane",
+      "alt": "An unlabelled thylakoid membrane, stroma above and a proton-crowded thylakoid space below. Left to right: a dark green complex struck by light, fed electrons from water that gives off oxygen; a small ochre hexagon in the membrane; a blue-grey complex passing protons downward; a small sand-coloured protein below; a light green complex struck by light; a sand wedge on top turning a white pentagon blue-grey; and ATP synthase, its head in the stroma, with protons flowing up through it.",
+      "file": "assets/thylakoid-membrane.svg",
+      "hotspots": [
+        {
+          "id": "photosystem-ii",
+          "label": "Photosystem II",
+          "x": 0.158,
+          "y": 0.522,
+          "r": 0.05
+        },
+        {
+          "id": "plastoquinone",
+          "label": "Plastoquinone",
+          "x": 0.325,
+          "y": 0.5,
+          "r": 0.05
+        },
+        {
+          "id": "cytochrome-b6f",
+          "label": "Cytochrome b6f complex",
+          "x": 0.454,
+          "y": 0.522,
+          "r": 0.05
+        },
+        {
+          "id": "plastocyanin",
+          "label": "Plastocyanin",
+          "x": 0.567,
+          "y": 0.767,
+          "r": 0.05
+        },
+        {
+          "id": "photosystem-i",
+          "label": "Photosystem I",
+          "x": 0.708,
+          "y": 0.511,
+          "r": 0.05
+        },
+        {
+          "id": "nadp-reductase",
+          "label": "NADP⁺ reductase",
+          "x": 0.733,
+          "y": 0.256,
+          "r": 0.05
+        },
+        {
+          "id": "atp-synthase",
+          "label": "ATP synthase",
+          "x": 0.892,
+          "y": 0.233,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "thylakoid-membrane-steps",
+      "kind": "sequence",
+      "title": "From light to ATP and NADPH",
+      "over": "thylakoid-membrane",
+      "alt": "Six steps: photosystem II absorbs light and splits water, plastoquinone carries electrons to the cytochrome complex, that complex moves protons into the thylakoid space, plastocyanin carries electrons to photosystem I, light re-energises them so NADP⁺ is reduced to NADPH, and protons flow out through ATP synthase to make ATP.",
+      "steps": [
+        {
+          "title": "Light hits photosystem II",
+          "text": "Pigments pass absorbed light energy to photosystem II, which loses an electron. Splitting water replaces it and releases oxygen and protons.",
+          "focus": "photosystem-ii"
+        },
+        {
+          "title": "Plastoquinone carries electrons",
+          "text": "The energised electrons pass to plastoquinone, a small carrier that moves through the membrane to the cytochrome complex.",
+          "focus": "plastoquinone"
+        },
+        {
+          "title": "Protons are pumped",
+          "text": "The cytochrome b6f complex passes electrons on and uses their energy to move protons from the stroma into the thylakoid space.",
+          "focus": "cytochrome-b6f"
+        },
+        {
+          "title": "Plastocyanin delivers",
+          "text": "Plastocyanin, a small protein in the thylakoid space, carries electrons one at a time to photosystem I.",
+          "focus": "plastocyanin"
+        },
+        {
+          "title": "Light again, then NADPH",
+          "text": "Photosystem I absorbs light and re-energises the electrons, which an enzyme on the stroma side uses to reduce NADP⁺ to NADPH.",
+          "focus": "nadp-reductase"
+        },
+        {
+          "title": "ATP synthase makes ATP",
+          "text": "Protons crowded in the thylakoid space flow back to the stroma through ATP synthase, which joins ADP and phosphate into ATP.",
+          "focus": "atp-synthase"
+        }
+      ]
+    }
+  ]
 }
