@@ -4,11 +4,33 @@
   "url": "https://ocw.mit.edu",
   "goodFor": "University course notes, problem sets and lecture videos.",
   "license": "CC-BY-NC-SA-4.0",
+  "licenseUrl": "https://ocw.mit.edu/pages/privacy-and-terms-of-use/",
   "apps": "link",
   "bank": "none",
   "checked": {
     "date": "2026-11-11",
-    "basis": "MIT OpenCourseWare's terms, via search"
+    "evidence": [
+      {
+        "url": "https://ocw.mit.edu/pages/privacy-and-terms-of-use/",
+        "quote": "Creative Commons License Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)"
+      },
+      {
+        "url": "https://ocw.mit.edu/pages/privacy-and-terms-of-use/",
+        "quote": "Non-commercial use means that users may not sell, profit from, or commercialize OCW materials or works derived from them."
+      },
+      {
+        "url": "https://ocw.mit.edu/pages/privacy-and-terms-of-use/",
+        "quote": "Example: A commercial education or training business may not offer courses based on OCW materials if students pay a fee for those courses and the business intends to profit as a result."
+      },
+      {
+        "url": "https://ocw.mit.edu/pages/privacy-and-terms-of-use/",
+        "quote": "Except for purposes of attribution as required by our Creative Commons License, you may not use MIT’s names or logos, or any variations thereof, without prior written consent of MIT."
+      },
+      {
+        "url": "https://ocw.mit.edu/pages/privacy-and-terms-of-use/",
+        "quote": "AI models trained on OCW content shall be used for non-commercial purposes."
+      }
+    ]
   },
-  "notes": "NonCommercial, and Ceder has paid plans, so an app only links to it. The bank's agents don't read it and nothing from it goes into the bank."
+  "notes": "Checked against OCW's Privacy and Terms of Use page: CC BY-NC-SA 4.0, and MIT reads NonCommercial as no selling, profiting from or commercialising the materials. Ceder has paid plans, so an app only links to it. MIT's name and logos may be used only as the licence's credit. The same page limits AI models trained on OCW content to non-commercial use, another reason the bank's agents don't read it; nothing from it goes into the bank."
 }

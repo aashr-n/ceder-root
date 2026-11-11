@@ -4,9 +4,35 @@
   "url": "https://en.wikibooks.org",
   "goodFor": "Textbook-style chapters, for the order a topic is taught in.",
   "license": "CC-BY-SA-4.0",
-  "apps": "link",
+  "licenseUrl": "https://en.wikibooks.org/wiki/Wikibooks:Copyrights",
+  "apps": "show",
   "bank": "read",
+  "attribution": "The book and page title, linked to the page; the words \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when the text shown was shortened or changed, a note that it was.",
   "access": "node tools/ref.mjs wikibooks \"<title>\" for an agent.",
-  "checked": null,
-  "notes": "Unverified: the licence is as the bank's own rules state it (pipeline/prompts/sources.md), not checked against Wikibooks' terms. Agents read it and never copy its wording. Link only from an app until the licence is checked."
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://en.wikibooks.org/wiki/Wikibooks:Copyrights",
+        "quote": "Permission is granted to copy, distribute and/or modify Wikibooks' text under the terms of the Creative Commons Attribution-ShareAlike 4.0 International License"
+      },
+      {
+        "url": "https://en.wikibooks.org/wiki/Wikibooks:Copyrights",
+        "quote": "To re-distribute a text page in any form, provide credit to the authors either by including a) a hyperlink (where possible) or URL to the page or pages you are re-using"
+      },
+      {
+        "url": "https://en.wikibooks.org/wiki/Wikibooks:Copyrights",
+        "quote": "If you make modifications or additions to the page you re-use, you must license them under the Creative Commons Attribution-Share-Alike License 4.0 or later."
+      },
+      {
+        "url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+        "quote": "Please note that these licenses do allow commercial uses of your contributions, as long as such uses are compliant with the terms of the respective licenses."
+      },
+      {
+        "url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+        "quote": "For each copy or modified version that you distribute, you agree to include a licensing notice stating which license the work is released under, along with either a hyperlink or URL to the text of the license or a copy of the license itself."
+      }
+    ]
+  },
+  "notes": "Checked against Wikibooks:Copyrights and the Wikimedia Terms of Use. Text is CC BY-SA 4.0 (most of it also GFDL), which allows commercial use, so an app may show a passage with the credit in attribution; the same share-alike and change-note rules as Wikipedia apply. Pictures carry their own licence, file by file, and an app links to them until a file is checked (see wikimedia-commons). Agents read it and never copy its wording."
 }

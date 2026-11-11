@@ -3,13 +3,44 @@
   "name": "PhET Interactive Simulations",
   "url": "https://phet.colorado.edu",
   "goodFor": "Interactive simulations for physics, chemistry, maths and biology.",
-  "license": "CC-BY-4.0",
-  "apps": "show",
+  "license": "CC-BY-NC-4.0",
+  "licenseUrl": "https://phet.colorado.edu/en/licensing",
+  "apps": "none",
   "bank": "none",
-  "attribution": "PhET Interactive Simulations, University of Colorado Boulder, https://phet.colorado.edu",
   "checked": {
     "date": "2026-11-11",
-    "basis": "PhET's licensing page, via search"
+    "evidence": [
+      {
+        "url": "https://phet.colorado.edu/en/licensing",
+        "fromScript": true,
+        "quote": "which permits free use and redistribution for non-commercial purposes in accordance with the license and the"
+      },
+      {
+        "url": "https://phet.colorado.edu/en/licensing",
+        "fromScript": true,
+        "quote": "Simulation by PhET Interactive Simulations, University of Colorado Boulder, licensed under"
+      },
+      {
+        "url": "https://phet.colorado.edu/en/licensing",
+        "fromScript": true,
+        "quote": "As part of this model, all commercial use of PhET simulations requires a commercial license from the University of Colorado Boulder."
+      },
+      {
+        "url": "https://phet.colorado.edu/en/licensing",
+        "fromScript": true,
+        "quote": "Incorporating simulations into paid or subscription-based products"
+      },
+      {
+        "url": "https://phet.colorado.edu/en/terms-of-use",
+        "fromScript": true,
+        "quote": "Use, link to, or direct traffic to any Content, the Site, or any other content owned or provided by PhET, whether publicly available or available through a separate license from PhET, for commercial activities without a separate commercial agreement."
+      },
+      {
+        "url": "https://phet.colorado.edu/en/terms-of-use",
+        "fromScript": true,
+        "quote": "Frame the Site, place pop-up windows over its pages, or otherwise affect the display of its pages; or"
+      }
+    ]
   },
-  "notes": "The HTML simulations are CC BY 4.0. The PhET name and logo are trademarks and aren't covered. CC BY asks for credit, which the CC0 bank can't carry, so nothing from PhET goes into the bank."
+  "notes": "Changed: PhET's simulations are now CC BY-NC 4.0, not CC BY 4.0 as this entry said. Checked against PhET's licensing page and Terms of Use (effective 20 September 2026); both pages build their text with a script, so the quotes are found in the script the pages load. PhET lists \"Incorporating simulations into paid or subscription-based products\" as commercial use, which needs a commercial licence from the University of Colorado Boulder, so an app may not show or embed a simulation. The Terms of Use go further and forbid linking to PhET or directing traffic to it \"for commercial activities\" without a commercial agreement, so this entry says none: an app doesn't even link to it until the owner decides whether a link from a free part of Ceder is allowed, or Ceder gets a licence. The PhET name and logo are trademarks. The bank's agents don't read it and nothing from it goes into the bank."
 }

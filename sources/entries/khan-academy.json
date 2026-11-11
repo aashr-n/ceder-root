@@ -4,11 +4,41 @@
   "url": "https://www.khanacademy.org",
   "goodFor": "Videos, articles and exercises for school and early university subjects.",
   "license": "unknown",
+  "licenseUrl": "https://support.khanacademy.org/hc/en-us/articles/202262954",
   "apps": "link",
   "bank": "none",
   "checked": {
     "date": "2026-11-11",
-    "basis": "Khan Academy's support article on using its videos, name, materials and links, via search"
+    "evidence": [
+      {
+        "url": "https://support.khanacademy.org/api/v2/help_center/en-us/articles/202262954.json",
+        "quote": "You are welcome to link the materials on our website and, in general, to use the website offerings at www.khanacademy.org , as long as there is not a charge specific to using the resource"
+      },
+      {
+        "url": "https://support.khanacademy.org/api/v2/help_center/en-us/articles/202262954.json",
+        "quote": "The use of our content by an organization that is incorporating it into a paid offering is NOT \"non-commercial\""
+      },
+      {
+        "url": "https://support.khanacademy.org/api/v2/help_center/en-us/articles/202262954.json",
+        "quote": "Creative Commons (CC by NC SA) license (for video and exercise use)"
+      },
+      {
+        "url": "https://support.khanacademy.org/api/v2/help_center/en-us/articles/202263034.json",
+        "quote": "An organization may provide a link to the www.khanacademy.org site or a page starting with www.khanacademy.org."
+      },
+      {
+        "url": "https://support.khanacademy.org/api/v2/help_center/en-us/articles/202263034.json",
+        "quote": "You agree not to link or embed Khan Academy’s site or materials in any manner such that the site or materials are “framed,” surrounded, or obfuscated by any third-party content, materials, or branding (e.g., banner ads or putting Khan Academy materials behind a paid login wall is commercial)."
+      },
+      {
+        "url": "https://support.khanacademy.org/api/v2/help_center/en-us/articles/202263034.json",
+        "quote": "We may require that any link to or embedding of Khan Academy materials be discontinued and may revoke your right to link to the sites from any other website at any time."
+      },
+      {
+        "url": "https://support.khanacademy.org/api/v2/help_center/en-us/articles/202263034.json",
+        "quote": "Use Khan Academy trademarks in the naming or promotion of an app or other services"
+      }
+    ]
   },
-  "notes": "Content is CC BY-NC-SA; which version wasn't confirmed, so the licence field says unknown. Khan's own support page counts a paid offering as commercial use, and Ceder has paid plans, so an app only links to it. The bank's agents don't read it and nothing from it goes into the bank."
+  "notes": "Checked against Khan Academy's two help articles on using its materials and its trademark policy, read through the help centre's own JSON API because the article pages and www.khanacademy.org/about/tos answer automated requests with a bot challenge. The Terms of Service themselves were not read. The content is CC BY-NC-SA, but the version isn't settled: the articles link both CC BY-NC-SA 4.0 and CC BY-NC-SA 3.0 US, so the licence field says unknown. Either way it's NonCommercial, and Khan's own terms call use inside a paid offering commercial, so an app only links to it. Even a link has conditions: open khanacademy.org itself (not framed or wrapped in Ceder's own content), don't put the link behind a paid plan, don't use Khan's name or logo to promote Ceder, and Khan may withdraw the right to link. The bank's agents don't read it and nothing from it goes into the bank."
 }

@@ -7,5 +7,5 @@
   "apps": "link",
   "bank": "none",
   "checked": null,
-  "notes": "Unverified. The licence is per page and mixed. Link only until a page is checked. The bank's agents don't read it and nothing from it goes into the bank."
+  "notes": "Unverified. On 2026-11-11 libretexts.org redirected every page, its legal page included, to www.libretexts.org, which the checking machine couldn't reach, so neither its legal page nor any book page was read. What's still missing: LibreTexts' own legal or licensing page, and the licence shown on each page an app would use (its pages are believed to carry mixed licences, some NonCommercial). Link only, and only to pages, until those are read. The bank's agents don't read it and nothing from it goes into the bank."
 }

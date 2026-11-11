@@ -4,9 +4,26 @@
   "url": "https://www.wikidata.org",
   "goodFor": "A concept's name and the other names it goes by.",
   "license": "CC0-1.0",
+  "licenseUrl": "https://www.wikidata.org/wiki/Wikidata:Licensing",
   "apps": "show",
   "bank": "copy",
   "access": "node tools/ref.mjs wikidata \"<name>\" for an agent.",
-  "checked": null,
-  "notes": "Unverified: the licence is as the bank's own rules state it (pipeline/prompts/sources.md), not checked against Wikidata's terms. Names may be copied into a concept's aliases, leaving out any that also mean something else."
+  "checked": {
+    "date": "2026-11-11",
+    "evidence": [
+      {
+        "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+        "quote": "the main, Property, Lexeme, and EntitySchema namespaces) is released into the public domain under Creative Commons Zero"
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+        "quote": "Text in other namespaces is copyrighted and available under the Creative Commons Attribution-ShareAlike 4.0 License"
+      },
+      {
+        "url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+        "quote": "By using our APIs, you agree to abide by all applicable policies governing the use of the APIs, which include but are not limited to the User-Agent Policy"
+      }
+    ]
+  },
+  "notes": "Checked against Wikidata:Licensing. An item's labels and aliases are structured data in the main namespace, which is CC0, so names may be copied into a concept's aliases (leaving out any that also mean something else) and shown without credit. CC0 covers only the data: discussion and project pages are CC BY-SA 4.0, and a picture an item points to is a Commons file with its own licence (see wikimedia-commons). The Wikidata name and logo are Wikimedia trademarks. Its API is used under Wikimedia's API rules, which ask for a descriptive User-Agent."
 }

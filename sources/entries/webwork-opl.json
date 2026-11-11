@@ -2,10 +2,10 @@
   "id": "webwork-opl",
   "name": "WeBWorK Open Problem Library",
   "url": "https://webwork.maa.org",
-  "goodFor": "About 35,000 homework problems in maths and science.",
+  "goodFor": "A large library of homework problems in maths and science.",
   "license": "unknown",
   "apps": "link",
   "bank": "none",
   "checked": null,
-  "notes": "Unverified: the licence wasn't found. The size is from the WeBWorK wiki, via search on 2026-11-11. The bank's agents don't read it and nothing from it goes into the bank."
+  "notes": "Unverified: the licence wasn't found. On 2026-11-11 webwork.maa.org redirected its Open Problem Library page to wiki.openwebwork.org, which the checking machine couldn't reach; the library's code repository, on another host, wasn't read either. What's still missing: the Open Problem Library's own statement of its licence, and whether problems carry their own. The earlier figure of about 35,000 problems came from a search result and was dropped. The bank's agents don't read it and nothing from it goes into the bank."
 }
