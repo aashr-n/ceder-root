@@ -1,0 +1,887 @@
+{
+  "formatVersion": 1,
+  "id": "computer-science.program-basics",
+  "subject": "computer-science",
+  "title": "Program basics",
+  "summary": "Values, variables, assignment, expressions, primitive types, type conversion, and simple console input and output.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "variable",
+      "name": "Variable",
+      "aliases": ["variables"],
+      "summary": "A variable is a named place that holds a value, which the program can read and replace while it runs.",
+      "requires": [],
+      "elements": [
+        { "id": "name", "name": "Variable names" },
+        { "id": "value", "name": "Stored value" },
+        { "id": "reassignment", "name": "Reassignment" },
+        { "id": "case-sensitivity", "name": "Case sensitivity" }
+      ],
+      "explain": {
+        "text": "A variable is a name that refers to a place in the computer's memory holding a value. You create one by giving it a name and a value, such as score = 10. Later you can read the value by using the name, and you can replace it at any time by assigning a new value. A variable holds only one value at a time, so when score is changed to 25, the old 10 is gone. Variables let a program remember and update information while it runs, such as a running total or a player's score."
+      }
+    },
+    {
+      "id": "assignment",
+      "name": "Assignment statement",
+      "aliases": ["assignments", "assignment operator"],
+      "summary": "An assignment computes the right-hand side and stores the result in the variable named on the left.",
+      "requires": ["variable"],
+      "elements": [
+        { "id": "assignment-operator", "name": "Assignment operator" },
+        { "id": "right-side-first", "name": "Right side evaluated first" },
+        { "id": "left-side-variable", "name": "Left side must be a variable" },
+        { "id": "reassignment", "name": "Reassigning a variable" },
+        { "id": "swapping", "name": "Swapping two values" }
+      ],
+      "explain": {
+        "text": "An assignment statement stores a value in a variable. In most languages the single equals sign means assignment, not a question about whether two things are equal. The computer first works out the expression on the right, using the current values, and then stores the result in the variable on the left. So total = total + 4 reads the old total, adds 4, and writes the sum back into total. The left side must be a place that can hold a value, so 7 = total is not valid. Assignments are how a program changes what it remembers as it runs."
+      }
+    },
+    {
+      "id": "primitive-type",
+      "name": "Primitive data type",
+      "aliases": ["primitive types", "primitive data types", "basic data types"],
+      "summary": "Primitive types are the basic built-in kinds of value, such as whole numbers, decimals, true-or-false values and single characters.",
+      "requires": [],
+      "elements": [
+        { "id": "integer", "name": "Integer type" },
+        { "id": "floating-point", "name": "Floating-point type" },
+        { "id": "boolean", "name": "Boolean type" },
+        { "id": "character", "name": "Character type" },
+        { "id": "limited-range", "name": "Limited range" }
+      ],
+      "explain": {
+        "text": "A primitive data type is a basic kind of value that a language provides directly. The common ones are integers, which are whole numbers such as 27; floating-point numbers, which can carry a fractional part such as 3.75; Booleans, which are true or false; and characters, which hold a single symbol such as B. Each type fixes which values are allowed and which operations make sense for them. Choosing the right type matters: a Boolean cannot hold 3, and an integer cannot hold 3.75. Each type also has a limited range or precision, which affects very large or very precise values."
+      }
+    },
+    {
+      "id": "expression",
+      "name": "Expression",
+      "aliases": ["expressions", "arithmetic expression"],
+      "summary": "An expression is evaluated to a single value from literals, variables and operators.",
+      "requires": ["variable", "primitive-type"],
+      "elements": [
+        { "id": "literal", "name": "Literal" },
+        { "id": "operator", "name": "Operator" },
+        { "id": "operand", "name": "Operand" },
+        { "id": "evaluation", "name": "Evaluation to a single value" },
+        { "id": "parentheses", "name": "Parentheses" }
+      ],
+      "explain": {
+        "text": "An expression is a piece of code that is evaluated to produce a single value. It is built from literals, which are fixed values such as 4 or 2.5; from variables; and from operators such as + and ×, which combine their operands. For example, 2 + 3 evaluates to 5, and price × quantity evaluates to the product of whatever those two variables hold. Parentheses group parts of an expression so they are worked out together. An expression can appear on the right side of an assignment, inside a print statement, or as part of a larger expression."
+      }
+    },
+    {
+      "id": "operator-precedence",
+      "name": "Operator precedence and associativity",
+      "aliases": ["operator precedence rules", "order of operations", "operator associativity"],
+      "summary": "Precedence and associativity rules decide which operation an expression performs first when several operators appear together.",
+      "requires": ["expression"],
+      "elements": [
+        { "id": "precedence-levels", "name": "Precedence levels" },
+        { "id": "left-associativity", "name": "Left associativity" },
+        { "id": "parentheses-override", "name": "Parentheses override precedence" },
+        { "id": "equal-precedence", "name": "Operators of equal precedence" }
+      ],
+      "explain": {
+        "text": "When an expression has several operators, the language uses precedence rules to decide which operation is done first. Multiplication and division are done before addition and subtraction, so 2 + 3 × 4 is 14, not 20. When operators have equal precedence, associativity decides the order, and most arithmetic operators group from left to right, so 20 − 8 − 3 is 9. Parentheses override both rules, so writing (2 + 3) × 4 gives 20. Knowing these rules lets you read an expression the way the computer does."
+      }
+    },
+    {
+      "id": "type-conversion",
+      "name": "Type conversion",
+      "aliases": ["type casting", "type coercion", "data type conversion"],
+      "summary": "Type conversion changes a value from one type to another, and converting a decimal to an integer drops its fraction.",
+      "requires": ["primitive-type"],
+      "elements": [
+        { "id": "widening", "name": "Widening conversion" },
+        { "id": "truncation", "name": "Truncation toward zero" },
+        { "id": "parsing-text", "name": "Parsing text to a number" },
+        { "id": "failed-conversion", "name": "Failed conversion" }
+      ],
+      "explain": {
+        "text": "Type conversion changes a value from one type to another, such as turning the integer 7 into the floating-point 7.0, or the text 42 into the number 42. Converting an integer to a floating-point number is safe, because nothing is lost. Converting a floating-point number to an integer drops the fraction: 3.9 becomes 3, and −3.9 becomes −3, because the fraction is cut off toward zero. Converting text that is not a valid number, such as three, fails. Programs convert values on purpose so that arithmetic and output behave as intended."
+      }
+    },
+    {
+      "id": "console-io",
+      "name": "Console input and output",
+      "aliases": ["console I/O", "standard input and output", "stdin and stdout"],
+      "summary": "Console input and output lets a program print values to the screen and read typed text from the user.",
+      "requires": ["variable", "primitive-type"],
+      "elements": [
+        { "id": "output", "name": "Output with print" },
+        { "id": "input-as-text", "name": "Input as text" },
+        { "id": "converting-input", "name": "Converting input" },
+        { "id": "prompt", "name": "Prompt before input" }
+      ],
+      "explain": {
+        "text": "Console input and output lets a program talk to a person through a text window. An output statement, often called print, shows a value on the screen. An input statement pauses and waits for the user to type something, and in most languages it returns what was typed as text. Before arithmetic can be done on typed numbers, the text must be converted to a number. A good program prompts the user first, saying what to type, so the person knows what is expected."
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "computer-science.program-basics.variable-name-choice",
+      "concept": "variable",
+      "element": "name",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which is a valid name for a variable that holds a student's age?",
+      "choices": ["student age", "student_age", "1st_age", "age!"],
+      "answer": 1,
+      "explanation": "Names cannot contain spaces or punctuation such as !, and in most languages they cannot start with a digit. student_age uses only letters and an underscore. 'student age' has a space, which splits it into two words.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.variable-reassign-value",
+      "concept": "variable",
+      "element": "value",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A variable named score holds 10. The program then runs score = 25. What does score hold now?",
+      "choices": ["35", "10", "25", "score"],
+      "answer": 2,
+      "explanation": "Assignment replaces the old value, so score holds 25. 35 would come from adding 25 to the old value, which needs score = score + 25 instead. A variable holds a value, not its own name.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.variable-vs-number",
+      "concept": "variable",
+      "element": "value",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the main difference between a variable and a number such as 7?",
+      "choices": [
+        "A variable names a place whose value can change, while 7 is a fixed value",
+        "A variable can only hold whole numbers, while 7 can hold any value",
+        "A number is stored under a name, while a variable is stored as a number",
+        "There is no difference, since both hold a value that never changes"
+      ],
+      "answer": 0,
+      "explanation": "A variable is a name for storage that can be given a new value later. The literal 7 is always 7. Variables are not limited to whole numbers, and a number is not stored under a name.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.variable-copy-value",
+      "concept": "variable",
+      "element": "reassignment",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A program runs a = 4, then b = a, then a = 9. What is b now?",
+      "choices": ["9", "13", "4", "0"],
+      "answer": 2,
+      "explanation": "b = a copies the value 4 at that moment. Changing a to 9 later does not change b, because assignment does not make b another name for a. 9 would be right only if b tracked a, and 13 comes from adding 4 and 9.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.variable-one-value",
+      "concept": "variable",
+      "element": "value",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "At any single moment in a running program, how many values does one variable hold?",
+      "choices": ["Exactly one", "One for every line of code", "Every value it has ever held", "Two, its old value and its new value"],
+      "answer": 0,
+      "explanation": "Each assignment overwrites the previous value, so only the latest one remains. The other choices describe a history that the variable does not keep.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.variable-case",
+      "concept": "variable",
+      "element": "case-sensitivity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In a case-sensitive language, what happens when a program uses both total and Total as variable names?",
+      "choices": [
+        "They are two different variables",
+        "They are the same variable, written two ways",
+        "The second name causes an error",
+        "Only the one written first can hold a value"
+      ],
+      "answer": 0,
+      "explanation": "A case-sensitive language treats letters of different case as different characters, so total and Total name separate storage. The second choice describes a case-insensitive language, which follows a different rule.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.variable-reassign-chain",
+      "concept": "variable",
+      "element": "reassignment",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A program runs x = 3, then y = x + 1, then x = x × 2. What are x and y at the end?",
+      "choices": ["x = 6, y = 7", "x = 3, y = 4", "x = 6, y = 4", "x = 6, y = 3"],
+      "answer": 2,
+      "explanation": "y is computed while x is still 3, so y = 4. Then x doubles to 6, and y stays 4. x = 6, y = 7 would use the new x to compute y, and x = 6, y = 3 forgets the + 1.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.variable-score-steps",
+      "concept": "variable",
+      "element": "reassignment",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in the order a program carries them out for a variable named score.",
+      "steps": [
+        "Assign 5 to score",
+        "Read score in an expression, which gives 5",
+        "Assign 8 to score",
+        "Read score again, which now gives 8"
+      ],
+      "explanation": "A variable needs a value before it is read, and the second assignment overwrites the first. Reading score after each assignment shows which value it holds at that moment.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.assignment-equals-meaning",
+      "concept": "assignment",
+      "element": "assignment-operator",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In most programming languages, what does the single equals sign do in the statement total = 7?",
+      "choices": [
+        "Compares total with 7 and reports whether they match",
+        "Stores 7 in the variable total",
+        "Prints total and 7 side by side",
+        "Declares that total is a Boolean"
+      ],
+      "answer": 1,
+      "explanation": "Assignment copies the value on the right into the variable on the left. Comparison is usually written with two equals signs, and the other two choices describe statements the line does not make.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.assignment-valid-statement",
+      "concept": "assignment",
+      "element": "left-side-variable",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is a valid assignment statement?",
+      "choices": ["7 = total", "total == 7", "total = 7", "total + 1 = 9"],
+      "answer": 2,
+      "explanation": "The left side must name a place that can hold a value, so 7 and total + 1 cannot be assigned to. total == 7 asks a question and stores nothing.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.assignment-right-side-first",
+      "concept": "assignment",
+      "element": "right-side-first",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Before this line runs, n holds 5. What does n hold after n = n + n × 2?",
+      "choices": ["10", "20", "15", "7"],
+      "answer": 2,
+      "explanation": "The right side is worked out first, and × comes before +: 5 + (5 × 2) = 15. 20 comes from adding first, (5 + 5) × 2. 10 comes from ignoring the first n in the sum.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.assignment-repeated-statements",
+      "concept": "assignment",
+      "element": "reassignment",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A program sets count = 0, then runs count = count + 1 three times in a row, one statement after another. What is count at the end?",
+      "choices": ["0", "1", "3", "4"],
+      "answer": 2,
+      "explanation": "Each statement adds 1 to the value left by the one before, so the value climbs 0, 1, 2, 3. 4 counts the starting value as an extra step, and 1 wrongly treats only the last statement as counting.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.assignment-minus-two",
+      "concept": "assignment",
+      "element": "reassignment",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What does the statement total = total − 2 do when total holds 10?",
+      "choices": [
+        "Stores 8 in total",
+        "Leaves total at 10 and does nothing",
+        "Stores −2 in total",
+        "Causes an error, because total is on both sides"
+      ],
+      "answer": 0,
+      "explanation": "The right side is worked out with the current value 10, giving 8, and 8 is stored in total. A variable may appear on both sides of an assignment, so the error choice is wrong.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.assignment-swap",
+      "concept": "assignment",
+      "element": "swapping",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Variables a = 2 and b = 5. Which sequence of statements leaves a = 5 and b = 2?",
+      "choices": [
+        "a = b, then b = a",
+        "t = a, then a = b, then b = t",
+        "b = a, then a = b",
+        "a = a + b, then b = a − b"
+      ],
+      "answer": 1,
+      "explanation": "The first copy would overwrite a before it is saved, so a temporary variable t keeps the old a. 'a = b, then b = a' gives 5 and 5, 'b = a, then a = b' gives 2 and 2, and the last sequence leaves a at 7.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.assignment-old-value",
+      "concept": "assignment",
+      "element": "reassignment",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "When a variable is assigned a new value, what happens to its old value?",
+      "choices": [
+        "It is replaced, and the variable no longer holds it",
+        "It is added to the new value automatically",
+        "It is moved into a list the variable remembers",
+        "It stays in the variable beside the new one"
+      ],
+      "answer": 0,
+      "explanation": "Assignment overwrites the stored value. Nothing is added or kept in a hidden history, so the old value is no longer available through that variable.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.assignment-update-steps",
+      "concept": "assignment",
+      "element": "right-side-first",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in the order a computer carries out total = total + price, when total is 10 and price is 4.",
+      "steps": [
+        "Read the current values: total is 10 and price is 4",
+        "Add them to get 14",
+        "Store 14 in the variable total"
+      ],
+      "explanation": "The right side is worked out from the values held before the statement, and only then is the result stored in total.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.primitive-boolean",
+      "concept": "primitive-type",
+      "element": "boolean",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which primitive type holds only the values true or false?",
+      "choices": ["Integer", "Floating-point", "Boolean", "Character"],
+      "answer": 2,
+      "explanation": "Boolean values answer yes-or-no questions. Integers and floating-point numbers hold numbers, and a character holds a single symbol.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.primitive-letter-grade",
+      "concept": "primitive-type",
+      "element": "character",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "A program stores a single letter grade, such as B. Which primitive type fits best?",
+      "choices": ["Integer", "Boolean", "Character", "Floating-point"],
+      "answer": 2,
+      "explanation": "A character holds one symbol. An integer holds whole numbers, a floating-point type holds decimal numbers, and a Boolean holds only true or false.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.primitive-integer-literal",
+      "concept": "primitive-type",
+      "element": "integer",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these values is an integer?",
+      "choices": ["−12", "0.5", "7.25", "2.0"],
+      "answer": 0,
+      "explanation": "Integers are whole numbers written without a decimal point. The other three are written with decimal points, so a floating-point type stores them.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.primitive-price-type",
+      "concept": "primitive-type",
+      "element": "floating-point",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which type should store a price such as 3.75?",
+      "choices": [
+        "Integer, because prices are numbers",
+        "Floating-point, because the price has a fractional part",
+        "Boolean, because the price is either paid or not",
+        "Character, because the price has a dot in it"
+      ],
+      "answer": 1,
+      "explanation": "3.75 has a fractional part, which an integer cannot hold. A floating-point type stores it. The other choices give reasons that do not match the value.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.primitive-eight-bit-range",
+      "concept": "primitive-type",
+      "element": "limited-range",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "An 8-bit unsigned integer can store whole numbers from 0 up to what largest value?",
+      "choices": ["256", "127", "128", "255"],
+      "answer": 3,
+      "explanation": "Eight bits give 256 different patterns, which count from 0 to 255. 256 is off by one, because 0 is one of the values. 127 is the largest value of a signed 8-bit integer, and 128 is one more than that.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.primitive-float-error",
+      "concept": "primitive-type",
+      "element": "floating-point",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does 0.1 + 0.2 sometimes display as 0.30000000000000004 in a program?",
+      "choices": [
+        "The second number is cut to an integer first",
+        "Floating-point numbers store most decimals only approximately, in binary",
+        "The plus sign joins the digits as text",
+        "Decimal numbers cannot be added at all"
+      ],
+      "answer": 1,
+      "explanation": "Most decimals, including 0.1, have no exact binary form, so the stored values are close but not exact, and their sum shows the small error. The other choices describe rules that do not apply to this addition.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.primitive-score-and-flag",
+      "concept": "primitive-type",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A program must hold a whole-number score and a true or false flag for whether the game is over. Which pair of primitive types fits them?",
+      "choices": ["Floating-point and character", "Integer and Boolean", "Boolean and floating-point", "Character and integer"],
+      "answer": 1,
+      "explanation": "A whole-number score is an integer, and a true or false flag is a Boolean. Each of the other pairs swaps in a type that does not match one of the two values.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.expression-operator-part",
+      "concept": "expression",
+      "element": "operator",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In the expression 4 + 7, which part is the operator?",
+      "choices": ["4", "7", "+", "The whole expression"],
+      "answer": 2,
+      "explanation": "The operator is the symbol that combines the operands, here +. 4 and 7 are operands, and the whole expression is the combination of all three parts.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.expression-single-value",
+      "concept": "expression",
+      "element": "evaluation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What single value does the expression 6 + 2 evaluate to?",
+      "choices": ["62", "8", "6", "2"],
+      "answer": 1,
+      "explanation": "Adding two numbers gives their sum, 8. 62 would come from joining the digits as text, which is not what + does to numbers. An expression evaluates to one value, not to each of its parts.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.expression-literal",
+      "concept": "expression",
+      "element": "literal",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these is a literal rather than a variable?",
+      "choices": ["total", "12", "price", "count"],
+      "answer": 1,
+      "explanation": "A literal is a fixed value written directly in the code, and 12 is one. The other three are names whose values can change.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.expression-x-times-x-minus-3",
+      "concept": "expression",
+      "element": "evaluation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "x holds 5. What does the expression x × x − 3 evaluate to?",
+      "choices": ["10", "2", "22", "−2"],
+      "answer": 2,
+      "explanation": "Multiply first: 5 × 5 = 25, then subtract 3 to get 22. 10 comes from 5 × (5 − 3). 2 comes from computing only x − 3 and skipping the multiplication.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.expression-parentheses",
+      "concept": "expression",
+      "element": "parentheses",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which expression equals 4 times the sum of 3 and 5?",
+      "choices": ["4 × 3 + 5", "4 × (3 + 5)", "4 + 3 × 5", "(4 × 3) + 5"],
+      "answer": 1,
+      "explanation": "The parentheses make 3 + 5 happen first, giving 4 × 8 = 32. The other three expressions evaluate to 17, 19 and 17.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.expression-operand-types",
+      "concept": "expression",
+      "element": "operand",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In the expression total + tax, what must the operands be for + to give a sensible value?",
+      "choices": [
+        "Values the operator can combine, such as numbers",
+        "Whole numbers only",
+        "Words written in capital letters",
+        "Values already printed on the screen"
+      ],
+      "answer": 0,
+      "explanation": "An operator needs operands of a type it can combine. For numbers, + adds them, and decimal values work too. Whole numbers only is too strict, and the last two choices have nothing to do with the operation.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.expression-three-variables",
+      "concept": "expression",
+      "element": "evaluation",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "The variables a, b and c hold 2, 3 and 4. What does a + b × c evaluate to?",
+      "choices": ["20", "24", "14", "9"],
+      "answer": 2,
+      "explanation": "Multiply first: b × c = 12, then a + 12 = 14. 20 is what you get if + is done first, as (2 + 3) × 4. 9 comes from adding all three numbers and ignoring the ×.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.expression-evaluation-steps",
+      "concept": "expression",
+      "element": "evaluation",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in the order that evaluates 2 + 3 × 4 − 1.",
+      "steps": [
+        "Multiply 3 by 4 to get 12",
+        "Add 2 to 12 to get 14",
+        "Subtract 1 from 14 to get 13"
+      ],
+      "explanation": "Multiplication comes before addition and subtraction, and each step needs the result of the step before it.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.precedence-first-operation",
+      "concept": "operator-precedence",
+      "element": "precedence-levels",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which operation is done first in the expression 2 + 3 × 4?",
+      "choices": [
+        "Addition, because it is written first",
+        "Multiplication, because it has higher precedence",
+        "Both at the same time",
+        "Whichever operator is on the right"
+      ],
+      "answer": 1,
+      "explanation": "Multiplication has higher precedence than addition, so 3 × 4 is worked out before 2 is added. Operations are done one at a time, so 'both at the same time' is wrong.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.precedence-value",
+      "concept": "operator-precedence",
+      "element": "precedence-levels",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What value does 2 + 3 × 4 evaluate to?",
+      "choices": ["20", "14", "9", "24"],
+      "answer": 1,
+      "explanation": "3 × 4 is 12, and 2 + 12 is 14. 20 comes from adding first, as (2 + 3) × 4. 9 comes from adding all three numbers and ignoring the ×. 24 comes from multiplying 2 × 3 × 4.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.precedence-subtract-chain",
+      "concept": "operator-precedence",
+      "element": "left-associativity",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the value of 20 − 8 − 3?",
+      "choices": ["15", "17", "−9", "9"],
+      "answer": 3,
+      "explanation": "Subtraction groups from the left: 20 − 8 = 12, then 12 − 3 = 9. 15 comes from grouping the right two first, as 20 − (8 − 3). 17 comes from a sign error, treating the last 3 as added.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.precedence-parentheses",
+      "concept": "operator-precedence",
+      "element": "parentheses-override",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Parentheses are added so the expression reads (2 + 3) × 4. What is its value?",
+      "choices": ["5", "14", "20"],
+      "answer": 2,
+      "explanation": "The parentheses make 2 + 3 = 5 happen first, and then 5 × 4 = 20. 14 is the result without the parentheses, and 5 is the group alone, before the × 4.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.precedence-equal-operators",
+      "concept": "operator-precedence",
+      "element": "equal-precedence",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "In 12 ÷ 4 × 3, the ÷ and × have equal precedence. Which operation is done first?",
+      "choices": [
+        "The ÷, because operators of equal precedence group from left to right",
+        "The ×, because it is the last operator",
+        "Either one, and the answer comes out the same",
+        "The 4, since numbers are evaluated before operators"
+      ],
+      "answer": 0,
+      "explanation": "Grouped from the left, (12 ÷ 4) × 3 = 9. Doing the × first gives 12 ÷ 12 = 1, so the rule decides the answer.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.precedence-value-16",
+      "concept": "operator-precedence",
+      "element": "precedence-levels",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which expression has the value 16?",
+      "choices": ["2 × 3 + 2 × 5", "2 × (3 + 2) × 5", "2 × 3 + 2 + 5", "(2 × 3 + 2) × 5"],
+      "answer": 0,
+      "explanation": "2 × 3 + 2 × 5 is 6 + 10 = 16. The others give 50, 13 and 40. 13 comes from treating the second 2 as an addend rather than a factor.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.precedence-division-chain",
+      "concept": "operator-precedence",
+      "element": "left-associativity",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "What is the value of 100 ÷ 10 ÷ 5?",
+      "choices": ["50", "10", "2", "0.5"],
+      "answer": 2,
+      "explanation": "Grouped from the left, 100 ÷ 10 = 10, then 10 ÷ 5 = 2. Grouping the right two first gives 100 ÷ 2 = 50. Stopping after one division gives 10. 0.5 comes from dividing 5 by 10.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.precedence-subtract-multiply-steps",
+      "concept": "operator-precedence",
+      "element": "precedence-levels",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in the order that evaluates 10 − 2 × 3 + 4.",
+      "steps": [
+        "Multiply 2 by 3 to get 6",
+        "Subtract 6 from 10 to get 4",
+        "Add 4 to get 8"
+      ],
+      "explanation": "The multiplication comes first, then the subtraction and addition are done from left to right.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.conversion-parse-text",
+      "concept": "type-conversion",
+      "element": "parsing-text",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What integer does the text 42 convert to?",
+      "choices": ["4", "42", "42.0", "4.2"],
+      "answer": 1,
+      "explanation": "Converting the text 42 to an integer gives the number 42. 42.0 is a floating-point value, and the other two change or drop a digit.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.conversion-truncate-positive",
+      "concept": "type-conversion",
+      "element": "truncation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What integer does 3.9 become when it is converted to an integer?",
+      "choices": ["4", "3.9", "0", "3"],
+      "answer": 3,
+      "explanation": "Converting to an integer drops the fraction, so 3.9 becomes 3. 4 would come from rounding to the nearest whole number, which is a separate operation.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.conversion-truncate-negative",
+      "concept": "type-conversion",
+      "element": "truncation",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "What integer does −3.9 become when it is converted to an integer?",
+      "choices": ["−4", "−3.9", "4", "−3"],
+      "answer": 3,
+      "explanation": "The fraction is cut off toward zero, so −3.9 becomes −3. −4 is what you get by rounding down, which conversion does not do here.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.conversion-widening",
+      "concept": "type-conversion",
+      "element": "widening",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What does 7 + 0.5 give in a language that adds an integer to a floating-point number?",
+      "choices": [
+        "An error, because the types differ",
+        "7, because the fraction is dropped",
+        "7.5, because the integer is converted to floating-point first",
+        "The text 7.5"
+      ],
+      "answer": 2,
+      "explanation": "Mixed arithmetic first widens the integer 7 to a floating-point number, so the sum is 7.5. The fraction would be dropped only if the result were converted to an integer afterwards.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.conversion-failed",
+      "concept": "type-conversion",
+      "element": "failed-conversion",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What happens when a program tries to convert the text three to an integer?",
+      "choices": [
+        "It becomes 3 automatically",
+        "It becomes 0 in every language",
+        "It fails with an error or a failure value, depending on the language",
+        "It becomes the letter t"
+      ],
+      "answer": 2,
+      "explanation": "The text is a word, not digits, so it cannot be read as a number. Some languages raise an error and others return a special failure value. Quietly becoming 0 is not the same in every language.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.conversion-decimal-text",
+      "concept": "type-conversion",
+      "element": "parsing-text",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which conversion turns the text 2.5 into a number that can be added to 1 to give 3.5?",
+      "choices": [
+        "Converting 2.5 to an integer",
+        "Converting 2.5 to a floating-point number",
+        "Converting 2.5 to a Boolean",
+        "Converting 2.5 to a character"
+      ],
+      "answer": 1,
+      "explanation": "A floating-point conversion keeps the .5, so 2.5 + 1 = 3.5. An integer conversion would drop the .5 and give 3, and a Boolean or character is not a number at all.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.conversion-sum-to-integer",
+      "concept": "type-conversion",
+      "element": "truncation",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A program computes 5 + 2.6 and converts the result to an integer. Which integer is kept?",
+      "choices": ["8", "7.6", "5", "7"],
+      "answer": 3,
+      "explanation": "5 + 2.6 is 7.6, and truncation drops the fraction, leaving 7. 8 comes from rounding to the nearest whole number, which conversion does not do. 5 ignores the 2.6, and 7.6 is not an integer.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.conversion-compute-steps",
+      "concept": "type-conversion",
+      "element": "truncation",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in the order that computes 2.5 + 3.6 and shows the result as an integer.",
+      "steps": [
+        "Add 2.5 and 3.6 to get 6.1",
+        "Convert 6.1 to an integer, dropping the fraction, which gives 6",
+        "Print 6"
+      ],
+      "explanation": "The sum must exist before it can be converted, and the conversion must happen before the value is printed.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.console-print-statement",
+      "concept": "console-io",
+      "element": "output",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which kind of statement shows a value on the console?",
+      "choices": ["An assignment", "A print or output statement", "A type conversion", "A variable declaration"],
+      "answer": 1,
+      "explanation": "An output statement, often called print, writes a value to the console. The other choices store, change or name values without showing them.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.console-input-type",
+      "concept": "console-io",
+      "element": "input-as-text",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In most languages, what does a console read return when the user types 15?",
+      "choices": ["The text 15", "The whole number 15", "The Boolean value true", "The floating-point number 15.0"],
+      "answer": 0,
+      "explanation": "A console read usually returns the typed characters as text, so 15 must be converted before arithmetic. The other choices assume the input was already converted.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.console-why-convert",
+      "concept": "console-io",
+      "element": "converting-input",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why must a program usually convert typed input before doing arithmetic on it?",
+      "choices": [
+        "Because the typed characters are text until they are converted",
+        "Because typing always adds a decimal point",
+        "Because the console accepts only letters",
+        "Because output must always be a whole number"
+      ],
+      "answer": 0,
+      "explanation": "Typed input arrives as text, which arithmetic does not treat as a number. The other choices describe rules that do not exist.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.console-prompt-purpose",
+      "concept": "console-io",
+      "element": "prompt",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the main purpose of a prompt message shown before a console read?",
+      "choices": [
+        "To tell the user what to type",
+        "To convert the input to a number",
+        "To store the input in a constant",
+        "To end the program"
+      ],
+      "answer": 0,
+      "explanation": "A prompt tells the person what kind of answer the program is waiting for. Converting, storing and ending are things the program does with the input, not the purpose of the prompt.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.console-join-text",
+      "concept": "console-io",
+      "element": "input-as-text",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A program reads the text 21 twice and joins the two pieces together. What does it get?",
+      "choices": ["42", "2121", "21", "23"],
+      "answer": 1,
+      "explanation": "Joining text places the characters side by side, giving 2121. Adding the two numbers, which gives 42, needs both inputs converted first. 21 and 23 match neither operation.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.console-print-variable",
+      "concept": "console-io",
+      "element": "output",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "After the statements total = 12 and then print total, what appears on the console?",
+      "choices": ["total", "12", "total = 12", "An error"],
+      "answer": 1,
+      "explanation": "Printing a variable shows the value it holds, 12. The name alone is not printed, and the assignment is not repeated.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.console-sum-of-inputs",
+      "concept": "console-io",
+      "element": "converting-input",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A program reads the text 4 and the text 5, converts both to integers, and prints their sum. What is printed?",
+      "choices": ["45", "9", "4 + 5", "An error, because input cannot be added"],
+      "answer": 1,
+      "explanation": "After conversion, the sum is 4 + 5 = 9. Joining the text without converting would print 45, and printing 4 + 5 shows the expression instead of its value.",
+      "verification": { "status": "draft" }
+    },
+    {
+      "id": "computer-science.program-basics.console-double-steps",
+      "concept": "console-io",
+      "element": "converting-input",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in the order a program follows to double a number the user types.",
+      "steps": [
+        "Show a prompt and read what the user types, which is the text 21",
+        "Convert the text 21 to the integer 21",
+        "Multiply 21 by 2 to get 42",
+        "Print 42"
+      ],
+      "explanation": "The program must read the input before converting it, and must convert it before doing arithmetic on it.",
+      "verification": { "status": "draft" }
+    }
+  ],
+  "artifacts": []
+}
