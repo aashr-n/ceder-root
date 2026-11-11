@@ -1,8 +1,18 @@
 # Ceder's bank
 
-The bank is the set of concepts, questions, diagrams, 3D models and step-by-step sequences that Ceder's Learn tab draws on. It is plain files: one `subject.json` per subject and one `pack.json` per topic, with each pack's pictures and models beside it. Agents write the packs, other agents answer every question without seeing its key, and only the questions they all agreed with are built into what the apps read. Nothing in the bank is about any student.
+The bank is the set of concepts, questions, diagrams, 3D models and step-by-step sequences that Ceder's Learn tab draws on, open for anyone to use. It is plain files: one `subject.json` per subject and one `pack.json` per topic, with each pack's pictures and models beside it. Agents write the packs, other agents answer every question without seeing its key, and only the questions they all agreed with are built into what apps read. Nothing in the bank is about any student.
 
-`FORMAT.md` is the format. Read it before writing or changing anything here.
+## How it's organised
+
+```
+subject        Biology                      subjects/biology/subject.json
+└─ pack        DNA replication              subjects/biology/dna-replication/pack.json
+   ├─ concepts   what a student learns, and what each one builds on
+   ├─ items      the questions; each checks one concept and has a checked answer
+   └─ artifacts  diagrams, 3D models and sequences, with their files in assets/
+```
+
+A pack covers one topic: 4 to 12 concepts, with at least 4 verified questions for each. `FORMAT.md` is the format. Read it before writing or changing anything here. `CONTRIBUTING.md` is the short way in to adding questions.
 
 ```
 subjects/   the packs, by subject
@@ -15,7 +25,7 @@ dist/       what the build writes (not committed)
 
 ## Checking and building
 
-From this folder, with Node 22:
+From the repository's root, with Node 22:
 
 ```
 npm ci
@@ -27,16 +37,16 @@ node tools/build.mjs                     writes dist/
 
 `validate.mjs` fails on anything that breaks the format: a schema error, an ID that doesn't resolve, a prerequisite cycle, overlapping hotspots, an SVG with scripts or outside links, a missing or oversized asset. A concept with fewer than four verified items is a warning, and an error with `--require-verified`.
 
-`build.mjs` validates first and builds nothing if there are errors. It writes one flat folder: `bank-index.json`, a `bankpack-<pack id>.json` for each pack with at least one verified item, and a `bankasset-<hash>.<ext>` for each picture and model those packs use. Only verified items go in, without their verification. Diagrams are rendered from SVG to PNG at 1200 pixels wide. The same source always gives the same bytes. It prints each pack it built, and each pack or subject it left out and why.
+`build.mjs` validates first and builds nothing if there are errors. It writes one flat folder: `bank-index.json`, a `bankpack-<pack id>.json` for each pack with at least one verified item, and a `bankasset-<hash>.<ext>` for each picture and model those packs use. Only verified items go in, without their verification. Diagrams are rendered from SVG to PNG at 1200 pixels wide, with their text set in the fonts in `tools/fonts/`. The same source always gives the same bytes. It prints each pack it built, and each pack or subject it left out and why.
 
-The iPhone app ships a copy of the built bank as its starting bank, in `../Ceder/Ceder/Learn/SeedBank/`:
+CI runs these on every pull request and on `main`.
+
+An app that ships a copy of the built bank can keep it in step with the source:
 
 ```
-node tools/build.mjs --app         rebuilds dist/ and replaces the bank files in SeedBank/
-node tools/build.mjs --check-app   changes nothing; fails if SeedBank/ isn't what --app would write
+node tools/build.mjs --app --app-dir <folder>         rebuilds dist/ and replaces the bank files in <folder>
+node tools/build.mjs --check-app --app-dir <folder>   changes nothing; fails if <folder> isn't what --app would write
 ```
-
-CI runs `--check-app`, so after changing a pack, run `--app` and commit `SeedBank/` with it. A diagram with text on it renders with the machine's fonts, so its PNG can differ between a Mac and CI; diagrams that students tap carry no text, and labelled ones should keep text to a minimum.
 
 ## How a pack gets written and verified
 
@@ -51,13 +61,7 @@ Every answer key is checked by solvers who never see it. The loop, with the exac
 
 `pipeline/synthesize.workflow.js` runs the whole loop for a list of packs with Claude Code's Workflow tool.
 
-## Becoming its own repository
-
-The bank is meant to move to a repository of its own, so it can grow on its own schedule and be shared with other apps. Nothing outside this folder is needed to validate, test or build it. Moving it would take:
-
-- Moving this folder, with its `package.json` and `package-lock.json`, to the new repository's root, and the `bank` job in `.github/workflows/ci.yml` with it (without the `--check-app` step, which needs the app).
-- A way for this repository to get a built bank: hosting `dist/` at a stable address, which the app already knows how to download (`BankConfiguration.remoteURL` in `Ceder/Ceder/Learn/BankStore.swift`), and a script here that copies a chosen revision into `SeedBank/`, replacing `build.mjs --app` and `--check-app`.
-- Copying the built bank's types, now in `web/src/lib/learn/types.ts`, into the bank's repository as the published contract, and changing `FORMAT.md` to point at them.
+Agreement between solvers shows a key is consistent, not that it is true. The first eight packs were written and solved by one model family, so a mistake that family shares would not have been caught.
 
 ## Licence
 
