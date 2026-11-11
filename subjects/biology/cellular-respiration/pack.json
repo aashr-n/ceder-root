@@ -33,7 +33,8 @@
         }
       ],
       "explain": {
-        "text": "Glycolysis is the first stage of cellular respiration. It takes place in the cytoplasm, not in the mitochondria, and it breaks one six-carbon glucose molecule into two three-carbon molecules of pyruvate. It needs no oxygen. The cell first spends 2 ATP to prepare the sugar, then earns 4 ATP back, so the net gain is 2 ATP per glucose. Electrons are also picked up by NAD⁺ to make 2 NADH, which carry energy onward. Because it works without oxygen, glycolysis can keep running when oxygen is scarce."
+        "text": "Glycolysis is the first stage of cellular respiration. It takes place in the cytoplasm, not in the mitochondria, and it breaks one six-carbon glucose molecule into two three-carbon molecules of pyruvate. It needs no oxygen. The cell first spends 2 ATP to prepare the sugar, then earns 4 ATP back, so the net gain is 2 ATP per glucose. Electrons are also picked up by NAD⁺ to make 2 NADH, which carry energy onward. Because it works without oxygen, glycolysis can keep running when oxygen is scarce.",
+        "artifact": "respiration-sites"
       },
       "misconceptions": [
         {
@@ -80,7 +81,8 @@
         }
       ],
       "explain": {
-        "text": "Pyruvate oxidation is the bridge between glycolysis and the citric acid cycle. Each pyruvate from glycolysis, which has three carbons, enters the mitochondrion's innermost compartment, called the matrix. There one carbon leaves as carbon dioxide. The remaining two-carbon acetyl group is attached to a carrier called coenzyme A, making acetyl-CoA, and electrons are passed to NAD⁺ to form NADH. This step makes no ATP itself. Because each glucose makes two pyruvate, it happens twice per glucose."
+        "text": "Pyruvate oxidation is the bridge between glycolysis and the citric acid cycle. Each pyruvate from glycolysis, which has three carbons, enters the mitochondrion's innermost compartment, called the matrix. There one carbon leaves as carbon dioxide. The remaining two-carbon acetyl group is attached to a carrier called coenzyme A, making acetyl-CoA, and electrons are passed to NAD⁺ to form NADH. This step makes no ATP itself. Because each glucose makes two pyruvate, it happens twice per glucose.",
+        "artifact": "respiration-sites"
       },
       "misconceptions": [
         {
@@ -126,7 +128,8 @@
         }
       ],
       "explain": {
-        "text": "The citric acid cycle is a ring of reactions in the mitochondrial matrix. Each turn starts when acetyl-CoA joins oxaloacetate to form citrate, a six-carbon molecule. Over the turn, two carbons leave as CO₂, and energy is captured by passing electrons to NAD⁺ and FAD, making NADH and FADH₂. The ring then regenerates oxaloacetate, ready for the next turn. Each turn makes one ATP or GTP. Since each glucose gives two acetyl-CoA, the cycle turns twice per glucose."
+        "text": "The citric acid cycle is a ring of reactions in the mitochondrial matrix. Each turn starts when acetyl-CoA joins oxaloacetate to form citrate, a six-carbon molecule. Over the turn, two carbons leave as CO₂, and energy is captured by passing electrons to NAD⁺ and FAD, making NADH and FADH₂. The ring then regenerates oxaloacetate, ready for the next turn. Each turn makes one ATP or GTP. Since each glucose gives two acetyl-CoA, the cycle turns twice per glucose.",
+        "artifact": "respiration-sites-steps"
       },
       "misconceptions": [
         {
@@ -172,7 +175,8 @@
         }
       ],
       "explain": {
-        "text": "The electron transport chain is a series of protein carriers built into the folded inner mitochondrial membrane. NADH and FADH₂ from the earlier stages drop off their electrons at the start. The electrons move from carrier to carrier, losing energy at each step. That energy pumps hydrogen ions, called protons, from the matrix into the space between the two membranes. At the end, oxygen accepts the electrons and combines with protons to form water. Without oxygen, the chain backs up and the earlier stages stop."
+        "text": "The electron transport chain is a series of protein carriers built into the folded inner mitochondrial membrane. NADH and FADH₂ from the earlier stages drop off their electrons at the start. The electrons move from carrier to carrier, losing energy at each step. That energy pumps hydrogen ions, called protons, from the matrix into the space between the two membranes. At the end, oxygen accepts the electrons and combines with protons to form water. Without oxygen, the chain backs up and the earlier stages stop.",
+        "artifact": "electron-transport-steps"
       },
       "misconceptions": [
         {
@@ -218,7 +222,8 @@
         }
       ],
       "explain": {
-        "text": "Chemiosmosis is how the energy of the electron transport chain becomes ATP. The chain pumps protons into the space between the inner and outer mitochondrial membranes, so that space holds more protons than the matrix does. The inner membrane lets very few protons through, except at ATP synthase, a molecular turbine. As protons flow back through it into the matrix, ATP synthase joins ADP and phosphate to make ATP. The stored difference in proton concentration and charge is the proton gradient, and it links the chain to ATP production."
+        "text": "Chemiosmosis is how the energy of the electron transport chain becomes ATP. The chain pumps protons into the space between the inner and outer mitochondrial membranes, so that space holds more protons than the matrix does. The inner membrane lets very few protons through, except at ATP synthase, a molecular turbine. As protons flow back through it into the matrix, ATP synthase joins ADP and phosphate to make ATP. The stored difference in proton concentration and charge is the proton gradient, and it links the chain to ATP production.",
+        "artifact": "electron-transport"
       },
       "misconceptions": [
         {
@@ -1696,7 +1701,308 @@
         "at": "2026-11-11",
         "diagnosed": 1
       }
+    },
+    {
+      "id": "biology.cellular-respiration.tap-glycolysis-site",
+      "concept": "glycolysis",
+      "element": "location",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap where glucose is split into two pyruvate, the stage that needs no oxygen and no mitochondrion.",
+      "artifact": "respiration-sites",
+      "target": "cytoplasm",
+      "explanation": "Glycolysis runs in the cytoplasm. Its enzymes are dissolved there, so a cell with no mitochondria, such as a red blood cell, can still make ATP this way.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.tap-citric-acid-cycle-site",
+      "concept": "citric-acid-cycle",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap where acetyl-CoA joins oxaloacetate and the citric acid cycle releases CO₂.",
+      "artifact": "respiration-sites",
+      "target": "matrix",
+      "explanation": "The citric acid cycle's enzymes are dissolved in the matrix, the innermost compartment. Pyruvate oxidation happens there too, so acetyl-CoA is made right where the cycle uses it.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.tap-chain-membrane",
+      "concept": "electron-transport-chain",
+      "element": "membrane-location",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the membrane that holds the electron transport chain and ATP synthase.",
+      "artifact": "respiration-sites",
+      "target": "inner-membrane",
+      "explanation": "The chain and ATP synthase sit in the inner membrane. Its many folds, the cristae, give it a large area, so more chains and synthases fit in one mitochondrion.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.tap-proton-reservoir",
+      "concept": "chemiosmosis",
+      "element": "proton-gradient",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the compartment where pumped protons build up to a high concentration before flowing back to make ATP.",
+      "artifact": "respiration-sites",
+      "target": "intermembrane-space",
+      "explanation": "The chain pumps protons out of the matrix into the intermembrane space, between the two membranes. Their return through ATP synthase into the matrix drives ATP production.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.tap-complex-i",
+      "concept": "electron-transport-chain",
+      "element": "electron-carriers",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the complex that takes electrons from NADH and starts the chain.",
+      "artifact": "electron-transport",
+      "target": "complex-i",
+      "explanation": "Complex I accepts two electrons from NADH, turning it back into NAD⁺, and uses their energy to pump protons. FADH₂ enters later, at complex II, so it powers less pumping.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.tap-ubiquinone",
+      "concept": "electron-transport-chain",
+      "element": "electron-carriers",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "Tap the small, fat-soluble carrier that collects electrons from both NADH's complex and FADH₂'s complex and delivers them to the next complex.",
+      "artifact": "electron-transport",
+      "target": "ubiquinone",
+      "explanation": "Ubiquinone, also called coenzyme Q, is a small lipid-soluble molecule. It moves within the membrane, collecting electrons from complexes I and II and passing them to complex III.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.tap-cytochrome-c",
+      "concept": "electron-transport-chain",
+      "element": "electron-carriers",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "Tap the small protein that carries electrons one at a time from complex III to complex IV.",
+      "artifact": "electron-transport",
+      "target": "cytochrome-c",
+      "explanation": "Cytochrome c is a small protein loosely held on the outer face of the inner membrane. It shuttles single electrons from complex III to complex IV.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.tap-complex-iv",
+      "concept": "electron-transport-chain",
+      "element": "oxygen-role",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the complex that hands electrons to oxygen, the final electron acceptor, forming water.",
+      "artifact": "electron-transport",
+      "target": "complex-iv",
+      "explanation": "Complex IV passes electrons to oxygen, which combines with protons to make water. Without oxygen to take them, electrons back up and the whole chain stops.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.tap-atp-synthase",
+      "concept": "chemiosmosis",
+      "element": "atp-synthase",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the protein that makes ATP from ADP and phosphate as protons flow through it into the matrix.",
+      "artifact": "electron-transport",
+      "target": "atp-synthase",
+      "explanation": "ATP synthase is the main way protons can cross the inner membrane. Their flow turns part of it like a rotor, and the head in the matrix joins ADP and phosphate into ATP.",
+      "verification": {
+        "status": "draft"
+      }
     }
   ],
-  "artifacts": []
+  "artifacts": [
+    {
+      "id": "respiration-sites",
+      "kind": "diagram",
+      "title": "Where each stage happens",
+      "alt": "An unlabelled section of a cell. In the cytoplasm on the left, a six-sided glucose has an arrow down to two triangular pyruvate, and a dashed arrow leads to a mitochondrion cut open lengthwise. It has a smooth terracotta outer membrane, a pale space inside it, and an ochre inner membrane folded into finger-like cristae reaching into a blue-grey matrix. Small knobbed proteins line the cristae on the matrix side.",
+      "file": "assets/respiration-sites.svg",
+      "hotspots": [
+        {
+          "id": "cytoplasm",
+          "label": "Cytoplasm (glycolysis)",
+          "x": 0.125,
+          "y": 0.478,
+          "r": 0.05
+        },
+        {
+          "id": "outer-membrane",
+          "label": "Outer membrane",
+          "x": 0.833,
+          "y": 0.26,
+          "r": 0.05
+        },
+        {
+          "id": "intermembrane-space",
+          "label": "Intermembrane space",
+          "x": 0.608,
+          "y": 0.817,
+          "r": 0.05
+        },
+        {
+          "id": "inner-membrane",
+          "label": "Inner membrane (crista)",
+          "x": 0.667,
+          "y": 0.522,
+          "r": 0.05
+        },
+        {
+          "id": "matrix",
+          "label": "Matrix",
+          "x": 0.842,
+          "y": 0.522,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "respiration-sites-steps",
+      "kind": "sequence",
+      "title": "Following glucose through the cell",
+      "alt": "Five steps: glucose splits into pyruvate in the cytoplasm, pyruvate is oxidised in the matrix, the citric acid cycle turns in the matrix, the electron transport chain in the inner membrane pumps protons into the intermembrane space, and protons flow back through ATP synthase.",
+      "over": "respiration-sites",
+      "steps": [
+        {
+          "title": "Glycolysis",
+          "text": "In the cytoplasm, one glucose is split into two pyruvate, netting 2 ATP and 2 NADH. No oxygen is needed.",
+          "focus": "cytoplasm"
+        },
+        {
+          "title": "Pyruvate oxidation",
+          "text": "Pyruvate crosses both membranes into the matrix, loses one carbon as CO₂, and becomes acetyl-CoA, making NADH.",
+          "focus": "matrix"
+        },
+        {
+          "title": "Citric acid cycle",
+          "text": "In the matrix, each acetyl-CoA is broken down to CO₂ while NAD⁺ and FAD pick up electrons.",
+          "focus": "matrix"
+        },
+        {
+          "title": "Electron transport chain",
+          "text": "Carriers in the inner membrane pass electrons from NADH and FADH₂ to oxygen and pump protons outward.",
+          "focus": "inner-membrane"
+        },
+        {
+          "title": "Chemiosmosis",
+          "text": "Protons pile up in the intermembrane space, then flow back into the matrix through ATP synthase, making ATP.",
+          "focus": "intermembrane-space"
+        }
+      ]
+    },
+    {
+      "id": "electron-transport",
+      "kind": "diagram",
+      "title": "The chain in the inner membrane",
+      "alt": "An unlabelled strip of inner mitochondrial membrane, with many protons above it and few in the matrix below. Left to right: a green L-shaped complex fed by NADH; a pale green complex fed by FADH₂; a small ochre carrier in the membrane; a blue-grey complex; a small terracotta protein on the upper face; a dark green complex passing electrons to oxygen, which becomes water; and ATP synthase, a ring in the membrane with a stalk to a large head in the matrix.",
+      "file": "assets/electron-transport.svg",
+      "hotspots": [
+        {
+          "id": "complex-i",
+          "label": "Complex I",
+          "x": 0.15,
+          "y": 0.667,
+          "r": 0.05
+        },
+        {
+          "id": "ubiquinone",
+          "label": "Ubiquinone (Q)",
+          "x": 0.35,
+          "y": 0.489,
+          "r": 0.05
+        },
+        {
+          "id": "complex-iii",
+          "label": "Complex III",
+          "x": 0.468,
+          "y": 0.5,
+          "r": 0.05
+        },
+        {
+          "id": "cytochrome-c",
+          "label": "Cytochrome c",
+          "x": 0.568,
+          "y": 0.317,
+          "r": 0.05
+        },
+        {
+          "id": "complex-iv",
+          "label": "Complex IV",
+          "x": 0.672,
+          "y": 0.478,
+          "r": 0.05
+        },
+        {
+          "id": "atp-synthase",
+          "label": "ATP synthase",
+          "x": 0.859,
+          "y": 0.739,
+          "r": 0.05
+        },
+        {
+          "id": "ims-protons",
+          "label": "Intermembrane space",
+          "x": 0.75,
+          "y": 0.167,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "electron-transport-steps",
+      "kind": "sequence",
+      "title": "Electrons down the chain",
+      "alt": "Six steps: NADH hands electrons to complex I, ubiquinone carries them to complex III, cytochrome c carries them to complex IV, oxygen accepts them and forms water, protons collect in the intermembrane space, and they flow back through ATP synthase to make ATP.",
+      "over": "electron-transport",
+      "steps": [
+        {
+          "title": "NADH drops off electrons",
+          "text": "NADH gives two electrons to complex I, which uses their energy to pump protons out of the matrix.",
+          "focus": "complex-i"
+        },
+        {
+          "title": "Ubiquinone ferries them",
+          "text": "Ubiquinone moves through the membrane, carrying electrons from complexes I and II to complex III.",
+          "focus": "ubiquinone"
+        },
+        {
+          "title": "Cytochrome c hands on",
+          "text": "Complex III pumps more protons and passes electrons to cytochrome c, which carries them to complex IV.",
+          "focus": "cytochrome-c"
+        },
+        {
+          "title": "Oxygen takes the electrons",
+          "text": "Complex IV pumps protons and gives the electrons to oxygen, which joins protons to form water.",
+          "focus": "complex-iv"
+        },
+        {
+          "title": "A gradient builds",
+          "text": "Pumped protons collect in the intermembrane space, far more than in the matrix.",
+          "focus": "ims-protons"
+        },
+        {
+          "title": "ATP synthase turns",
+          "text": "Protons flow back into the matrix through ATP synthase, which joins ADP and phosphate into ATP.",
+          "focus": "atp-synthase"
+        }
+      ]
+    }
+  ]
 }
