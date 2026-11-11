@@ -1,0 +1,1702 @@
+{
+  "formatVersion": 1,
+  "id": "biology.cellular-respiration",
+  "subject": "biology",
+  "title": "Cellular respiration",
+  "summary": "How cells break down glucose to make ATP, from glycolysis through the electron transport chain, and fermentation without oxygen.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "glycolysis",
+      "name": "Glycolysis",
+      "aliases": [
+        "Glycolytic pathway"
+      ],
+      "summary": "Glycolysis splits one glucose into two pyruvate in the cytoplasm, netting 2 ATP and 2 NADH without using oxygen.",
+      "requires": [],
+      "elements": [
+        {
+          "id": "energy-investment",
+          "name": "Energy investment phase"
+        },
+        {
+          "id": "energy-payoff",
+          "name": "Energy payoff phase"
+        },
+        {
+          "id": "net-yield",
+          "name": "Net ATP yield"
+        },
+        {
+          "id": "location",
+          "name": "Location in the cell"
+        }
+      ],
+      "explain": {
+        "text": "Glycolysis is the first stage of cellular respiration. It takes place in the cytoplasm, not in the mitochondria, and it breaks one six-carbon glucose molecule into two three-carbon molecules of pyruvate. It needs no oxygen. The cell first spends 2 ATP to prepare the sugar, then earns 4 ATP back, so the net gain is 2 ATP per glucose. Electrons are also picked up by NAD⁺ to make 2 NADH, which carry energy onward. Because it works without oxygen, glycolysis can keep running when oxygen is scarce."
+      },
+      "misconceptions": [
+        {
+          "id": "g-needs-oxygen",
+          "claim": "Glycolysis needs oxygen, so it stops when a cell runs out of oxygen.",
+          "correction": "Glycolysis runs with no oxygen at all. Oxygen is used later, at the end of the electron transport chain. Without oxygen, fermentation keeps glycolysis going."
+        },
+        {
+          "id": "g-makes-most-atp",
+          "claim": "Glycolysis makes most of a cell's ATP.",
+          "correction": "Glycolysis nets only 2 ATP per glucose. Most of the ATP from glucose comes from the electron transport chain and chemiosmosis in the mitochondria."
+        },
+        {
+          "id": "g-in-mitochondria",
+          "claim": "Glycolysis takes place inside the mitochondria.",
+          "correction": "Glycolysis takes place in the cytoplasm, outside the mitochondria. Only the later stages of respiration happen inside them."
+        }
+      ]
+    },
+    {
+      "id": "pyruvate-oxidation",
+      "name": "Pyruvate oxidation",
+      "aliases": [
+        "Link reaction",
+        "Pyruvate decarboxylation"
+      ],
+      "summary": "Pyruvate oxidation moves each pyruvate into the mitochondrial matrix, releases one carbon as CO₂, and makes NADH and acetyl-CoA.",
+      "requires": [
+        "glycolysis",
+        "mitochondrion"
+      ],
+      "elements": [
+        {
+          "id": "carbon-loss",
+          "name": "Carbon release"
+        },
+        {
+          "id": "acetyl-coa",
+          "name": "Acetyl-CoA formation"
+        },
+        {
+          "id": "nadh-production",
+          "name": "NADH production"
+        }
+      ],
+      "explain": {
+        "text": "Pyruvate oxidation is the bridge between glycolysis and the citric acid cycle. Each pyruvate from glycolysis, which has three carbons, enters the mitochondrion's innermost compartment, called the matrix. There one carbon leaves as carbon dioxide. The remaining two-carbon acetyl group is attached to a carrier called coenzyme A, making acetyl-CoA, and electrons are passed to NAD⁺ to form NADH. This step makes no ATP itself. Because each glucose makes two pyruvate, it happens twice per glucose."
+      },
+      "misconceptions": [
+        {
+          "id": "co2-from-oxygen",
+          "claim": "The CO₂ we breathe out is made from the oxygen we breathe in.",
+          "correction": "The carbon in CO₂ comes from the carbon in food. The oxygen we breathe in is used at the end of the electron transport chain and ends up mostly in water."
+        },
+        {
+          "id": "po-makes-atp",
+          "claim": "Pyruvate oxidation makes a lot of ATP directly.",
+          "correction": "Pyruvate oxidation makes no ATP. It releases CO₂ and makes NADH and acetyl-CoA, which carry the energy onward."
+        }
+      ]
+    },
+    {
+      "id": "citric-acid-cycle",
+      "name": "Citric acid cycle",
+      "aliases": [
+        "Krebs cycle",
+        "TCA cycle",
+        "Tricarboxylic acid cycle"
+      ],
+      "summary": "The citric acid cycle oxidises acetyl-CoA in the mitochondrial matrix, releasing CO₂ and passing electrons to NAD⁺ and FAD.",
+      "requires": [
+        "pyruvate-oxidation"
+      ],
+      "elements": [
+        {
+          "id": "citrate-formation",
+          "name": "Citrate formation"
+        },
+        {
+          "id": "carbon-release",
+          "name": "Carbon release"
+        },
+        {
+          "id": "reduced-carriers",
+          "name": "Reduced electron carriers"
+        },
+        {
+          "id": "turns-per-glucose",
+          "name": "Turns per glucose"
+        }
+      ],
+      "explain": {
+        "text": "The citric acid cycle is a ring of reactions in the mitochondrial matrix. Each turn starts when acetyl-CoA joins oxaloacetate to form citrate, a six-carbon molecule. Over the turn, two carbons leave as CO₂, and energy is captured by passing electrons to NAD⁺ and FAD, making NADH and FADH₂. The ring then regenerates oxaloacetate, ready for the next turn. Each turn makes one ATP or GTP. Since each glucose gives two acetyl-CoA, the cycle turns twice per glucose."
+      },
+      "misconceptions": [
+        {
+          "id": "cycle-once-per-glucose",
+          "claim": "The citric acid cycle turns once for each glucose.",
+          "correction": "Each glucose makes two pyruvate, and so two acetyl-CoA. Each acetyl-CoA starts its own turn, so the cycle turns twice per glucose."
+        },
+        {
+          "id": "cac-makes-most-atp",
+          "claim": "The citric acid cycle makes most of the cell's ATP.",
+          "correction": "Each turn makes one ATP or GTP. Most of the energy leaves the cycle in NADH and FADH₂, and the electron transport chain turns those into most of the ATP."
+        }
+      ]
+    },
+    {
+      "id": "electron-transport-chain",
+      "name": "Electron transport chain",
+      "aliases": [
+        "Electron transport system",
+        "Respiratory chain"
+      ],
+      "summary": "A chain of carriers in the inner mitochondrial membrane passes electrons from NADH and FADH₂ to oxygen and uses the energy to pump protons.",
+      "requires": [
+        "mitochondrion",
+        "citric-acid-cycle"
+      ],
+      "elements": [
+        {
+          "id": "electron-carriers",
+          "name": "Electron carriers"
+        },
+        {
+          "id": "proton-pumping",
+          "name": "Proton pumping"
+        },
+        {
+          "id": "oxygen-role",
+          "name": "Role of oxygen"
+        },
+        {
+          "id": "membrane-location",
+          "name": "Location in the inner membrane"
+        }
+      ],
+      "explain": {
+        "text": "The electron transport chain is a series of protein carriers built into the folded inner mitochondrial membrane. NADH and FADH₂ from the earlier stages drop off their electrons at the start. The electrons move from carrier to carrier, losing energy at each step. That energy pumps hydrogen ions, called protons, from the matrix into the space between the two membranes. At the end, oxygen accepts the electrons and combines with protons to form water. Without oxygen, the chain backs up and the earlier stages stop."
+      },
+      "misconceptions": [
+        {
+          "id": "oxygen-is-fuel",
+          "claim": "Oxygen is the fuel that is burned to release energy from food.",
+          "correction": "Energy comes from electrons removed from food. Oxygen is the final electron acceptor, which keeps the chain running and forms water."
+        },
+        {
+          "id": "etc-makes-atp",
+          "claim": "The electron transport chain makes ATP itself.",
+          "correction": "The chain pumps protons across the inner membrane. ATP is made only when they flow back through ATP synthase."
+        },
+        {
+          "id": "nadh-is-atp",
+          "claim": "NADH is a form of ATP that can power work directly.",
+          "correction": "NADH and FADH₂ carry electrons. Their energy is used to pump protons, and they make no ATP themselves."
+        }
+      ]
+    },
+    {
+      "id": "chemiosmosis",
+      "name": "Chemiosmosis",
+      "aliases": [
+        "Chemiosmotic coupling",
+        "Chemiosmotic theory"
+      ],
+      "summary": "Chemiosmosis uses the proton gradient built by the chain to drive ATP synthase, which makes ATP as protons flow back into the matrix.",
+      "requires": [
+        "electron-transport-chain"
+      ],
+      "elements": [
+        {
+          "id": "proton-gradient",
+          "name": "Proton gradient"
+        },
+        {
+          "id": "atp-synthase",
+          "name": "ATP synthase"
+        },
+        {
+          "id": "membrane-impermeability",
+          "name": "Membrane impermeability to protons"
+        }
+      ],
+      "explain": {
+        "text": "Chemiosmosis is how the energy of the electron transport chain becomes ATP. The chain pumps protons into the space between the inner and outer mitochondrial membranes, so that space holds more protons than the matrix does. The inner membrane lets very few protons through, except at ATP synthase, a molecular turbine. As protons flow back through it into the matrix, ATP synthase joins ADP and phosphate to make ATP. The stored difference in proton concentration and charge is the proton gradient, and it links the chain to ATP production."
+      },
+      "misconceptions": [
+        {
+          "id": "protons-leak",
+          "claim": "Protons leak across the inner membrane wherever they like.",
+          "correction": "The inner membrane is almost impermeable to protons, so they return through ATP synthase. Leaks would drain the gradient, and it does not drain."
+        },
+        {
+          "id": "gradient-is-equilibrium",
+          "claim": "Once protons are piled up on one side, the system is at equilibrium and nothing more happens.",
+          "correction": "The chain keeps pumping protons, and their flow through ATP synthase makes ATP. The gradient is stored energy, not a balance."
+        },
+        {
+          "id": "atp-in-intermembrane",
+          "claim": "ATP is made in the intermembrane space, where the protons collect.",
+          "correction": "ATP is made on the matrix side of ATP synthase, from ADP and phosphate, as the protons flow into the matrix."
+        }
+      ]
+    },
+    {
+      "id": "fermentation",
+      "name": "Fermentation",
+      "aliases": [
+        "Anaerobic fermentation"
+      ],
+      "summary": "Fermentation regenerates NAD⁺ without oxygen by passing electrons from NADH to pyruvate, so glycolysis can keep running.",
+      "requires": [
+        "glycolysis"
+      ],
+      "elements": [
+        {
+          "id": "nad-regeneration",
+          "name": "NAD⁺ regeneration"
+        },
+        {
+          "id": "lactate-pathway",
+          "name": "Lactate fermentation"
+        },
+        {
+          "id": "ethanol-pathway",
+          "name": "Ethanol fermentation"
+        }
+      ],
+      "explain": {
+        "text": "Fermentation is what a cell does when oxygen is missing. Glycolysis still runs, but it makes NADH, and NAD⁺ runs out unless it is recycled. Fermentation passes electrons from NADH to pyruvate, which regenerates NAD⁺ so glycolysis can carry on. Muscle cells make lactate this way, and yeast makes ethanol and carbon dioxide. Fermentation makes no extra ATP. The cell's ATP still comes from glycolysis, which nets 2 ATP per glucose."
+      },
+      "misconceptions": [
+        {
+          "id": "ferm-no-atp",
+          "claim": "Without oxygen, a cell makes no ATP at all.",
+          "correction": "Glycolysis still nets 2 ATP. Fermentation only regenerates NAD⁺ so that glycolysis can keep going."
+        },
+        {
+          "id": "ferm-is-full-minus-oxygen",
+          "claim": "Fermentation is the full respiration pathway run without oxygen.",
+          "correction": "Fermentation skips the citric acid cycle and the electron transport chain. It only reduces pyruvate, so it makes far less ATP."
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "biology.cellular-respiration.glycolysis-location",
+      "concept": "glycolysis",
+      "element": "location",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Where in a eukaryotic cell does glycolysis take place?",
+      "choices": [
+        "Inside the mitochondrial matrix, with the citric acid cycle",
+        "In the cytoplasm, outside the mitochondria",
+        "In the nucleus, next to the DNA",
+        "In the thylakoid membranes of the chloroplast"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "g-in-mitochondria",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Glycolysis splits glucose in the cytoplasm and does not need mitochondria. The citric acid cycle is the stage that runs in the matrix, which is why placing glycolysis there is the tempting error.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.glycolysis-net-atp",
+      "concept": "glycolysis",
+      "element": "net-yield",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How many ATP does glycolysis make, net, from one glucose?",
+      "choices": [
+        "2 ATP",
+        "4 ATP",
+        "8 ATP",
+        "0 ATP"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Two ATP are spent in the investment phase and four are made in the payoff phase, so the net is 2. The 4 is the gross yield, and students who report it have forgotten the cost.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.glycolysis-start-atp",
+      "concept": "glycolysis",
+      "element": "energy-investment",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does glycolysis start by spending ATP?",
+      "choices": [
+        "To add phosphate groups to glucose so it can be split",
+        "To power the electron transport chain in the inner membrane",
+        "To pump protons into the intermembrane space at once",
+        "To carry glucose through the mitochondrial membranes"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Adding phosphate to glucose makes it less stable, so it splits into two three-carbon pieces. The payoff phase then makes 4 ATP, which repays the 2 spent.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.glycolysis-sealed-tube",
+      "concept": "glycolysis",
+      "element": "net-yield",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A yeast cell is sealed in a tube with glucose and no oxygen. Which pathway can it still use to make ATP?",
+      "choices": [
+        "Glycolysis, followed by fermentation to regenerate NAD⁺",
+        "No ATP can be made without oxygen at all",
+        "The citric acid cycle, which makes most of the ATP alone",
+        "The electron transport chain, using glucose as its acceptor"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ferm-no-atp",
+        "cac-makes-most-atp",
+        null
+      ],
+      "explanation": "Glycolysis needs no oxygen and still nets 2 ATP. Fermentation keeps it running by returning NAD⁺. The citric acid cycle stalls without the chain, which needs oxygen as its final acceptor, and glucose is never an electron acceptor.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.glycolysis-oxygen-stops",
+      "concept": "glycolysis",
+      "element": "energy-payoff",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'Glycolysis stops as soon as a cell runs out of oxygen.' What is wrong with that?",
+      "choices": [
+        "Glycolysis needs no oxygen, so it keeps running without any",
+        "Oxygen is used up as the very first step of glycolysis",
+        "Glycolysis runs in the presence of light, like photosynthesis",
+        "The student is right, because no ATP can be made without oxygen"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "g-needs-oxygen",
+        null,
+        "ferm-no-atp"
+      ],
+      "explanation": "Glycolysis runs in the cytoplasm and uses no oxygen, so running out of oxygen does not stop it. What stops is the later recycling of its NADH, which needs the chain, and fermentation can keep the pathway going.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.glycolysis-blocked-mitochondria",
+      "concept": "glycolysis",
+      "element": "net-yield",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A cell's mitochondria are blocked, so pyruvate piles up and glycolysis slows. Which statement is correct?",
+      "choices": [
+        "Glycolysis slows down unless fermentation regenerates NAD⁺",
+        "Glycolysis stops at once, since pyruvate cannot leave the cell",
+        "Glycolysis makes most of the cell's ATP, so nothing changes",
+        "Glycolysis moves into the mitochondria to keep running"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "g-makes-most-atp",
+        "g-in-mitochondria"
+      ],
+      "explanation": "Glycolysis needs NAD⁺, which it gets back from NADH. In mitochondria the chain does that. When the mitochondria are blocked, NAD⁺ runs out, and fermentation, which passes electrons to pyruvate, can keep glycolysis going.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.glycolysis-carbon-count",
+      "concept": "glycolysis",
+      "element": "energy-payoff",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How many carbon atoms does each pyruvate made by glycolysis have?",
+      "choices": [
+        "3 carbon atoms",
+        "6 carbon atoms",
+        "2 carbon atoms",
+        "12 carbon atoms"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Glucose has six carbons, and glycolysis splits it into two three-carbon pyruvate molecules. Answering 6 means the glucose was not split.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.glycolysis-stage-order",
+      "concept": "glycolysis",
+      "element": "energy-payoff",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the main stages of glycolysis in the order they happen.",
+      "steps": [
+        "Glucose is given phosphate groups, using 2 ATP",
+        "Glucose splits into two three-carbon sugars",
+        "Each three-carbon sugar is oxidised to pyruvate, making ATP and NADH"
+      ],
+      "explanation": "Glucose must be prepared with phosphate from ATP before it can split. The two three-carbon halves are then oxidised, which makes the ATP and NADH that repay the investment.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.glycolysis-why-chain-matters",
+      "concept": "glycolysis",
+      "element": "net-yield",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why does a cell that relies on glycolysis alone make far less ATP from glucose than one that also uses its mitochondria?",
+      "choices": [
+        "Glycolysis nets 2 ATP per glucose, and the chain makes more",
+        "Glycolysis uses up its glucose before the chain can start running",
+        "Glycolysis needs oxygen to split glucose, which this cell lacks",
+        "The mitochondria make glucose that glycolysis then splits"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "g-needs-oxygen",
+        null
+      ],
+      "explanation": "Glycolysis nets only 2 ATP per glucose. Most of the rest comes from NADH and FADH₂ that feed the chain in the mitochondria, which needs oxygen as its final acceptor. Glycolysis itself needs no oxygen.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.pyruvate-oxidation-carbon-loss",
+      "concept": "pyruvate-oxidation",
+      "element": "carbon-loss",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What leaves each pyruvate during pyruvate oxidation?",
+      "choices": [
+        "One carbon, released as carbon dioxide gas",
+        "Nothing at all, since every carbon stays in the matrix",
+        "Two hydrogen atoms, released as H₂ gas",
+        "The whole molecule, released as ethanol"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Pyruvate has three carbons. Pyruvate oxidation removes one as CO₂, leaving the two-carbon acetyl group. Ethanol belongs to fermentation in yeast, not to this step.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.pyruvate-co2-source",
+      "concept": "pyruvate-oxidation",
+      "element": "carbon-loss",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'The CO₂ we breathe out is made from the oxygen we breathe in.' What is wrong with that?",
+      "choices": [
+        "Food supplies the carbon in CO₂, and inhaled oxygen mostly ends up in water",
+        "The oxygen is first stored in pyruvate, and is then released again as CO₂ gas",
+        "Lungs make CO₂ from the carbon carried in the blood, not from food",
+        "Oxygen and carbon are the same kind of atom, so they become CO₂"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "co2-from-oxygen",
+        null,
+        null
+      ],
+      "explanation": "The carbon in CO₂ was in the glucose, and it leaves at pyruvate oxidation and in the cycle. Inhaled oxygen is used at the end of the electron transport chain and ends up mostly in water. The idea that oxygen becomes CO₂ is a common error.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.pyruvate-why-convert",
+      "concept": "pyruvate-oxidation",
+      "element": "acetyl-coa",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why must pyruvate be converted before the citric acid cycle can use it?",
+      "choices": [
+        "It makes acetyl-CoA, the two-carbon fuel the cycle needs",
+        "It makes ATP that the cycle spends to start each turn",
+        "It converts glucose into the pyruvate that the cycle uses directly",
+        "It removes oxygen, so the cycle can start in the matrix"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "po-makes-atp",
+        null,
+        null
+      ],
+      "explanation": "Pyruvate has three carbons, and the cycle needs the two-carbon acetyl-CoA, so this step converts one into the other. It makes no ATP, which is why the idea that it does is the tempting error.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.pyruvate-acetyl-carrier",
+      "concept": "pyruvate-oxidation",
+      "element": "acetyl-coa",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which molecule carries the two-carbon acetyl group into the citric acid cycle?",
+      "choices": [
+        "Coenzyme A, which holds the acetyl group as acetyl-CoA",
+        "Oxaloacetate, which the acetyl group joins in the cycle",
+        "Glucose, which is split by glycolysis first",
+        "Oxygen, which is needed at the end of the chain"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Coenzyme A binds the acetyl group to form acetyl-CoA, which carries it into the cycle. Oxaloacetate is the molecule the acetyl group joins inside the cycle, so it is the tempting wrong answer.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.pyruvate-tell-apart",
+      "concept": "pyruvate-oxidation",
+      "element": "nadh-production",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Cell A runs glycolysis and pyruvate oxidation on one glucose. Cell B runs glycolysis alone. Which statement compares them correctly?",
+      "choices": [
+        "Cell A releases CO₂ and makes NADH, while both net the same 2 ATP",
+        "Cell A makes more ATP directly, because pyruvate oxidation makes ATP",
+        "Cell B makes more ATP, because glycolysis makes most of the ATP",
+        "Cell A breathes out oxygen, because its CO₂ comes from inhaled oxygen"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "po-makes-atp",
+        "g-makes-most-atp",
+        "co2-from-oxygen"
+      ],
+      "explanation": "Pyruvate oxidation releases CO₂ and makes NADH, but no ATP, so both cells net the same ATP from glycolysis. The wrong answers hold that this step makes ATP, that glycolysis makes most ATP, and that CO₂ comes from inhaled oxygen.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.pyruvate-find-error",
+      "concept": "pyruvate-oxidation",
+      "element": "nadh-production",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student writes: 'Pyruvate oxidation is the step where the cell makes most of its ATP.' Which correction is right?",
+      "choices": [
+        "It makes no ATP itself, but NADH and CO₂ that the later steps use",
+        "It is right: pyruvate oxidation is the main ATP step in the cell",
+        "Most ATP comes from glycolysis, which makes its ATP in the matrix",
+        "It is right, because each pyruvate loses its oxygen to make CO₂"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "po-makes-atp",
+        null,
+        "co2-from-oxygen"
+      ],
+      "explanation": "Pyruvate oxidation makes NADH and CO₂ but no ATP. The cell's ATP mostly comes later, from the chain. Glycolysis happens in the cytoplasm and nets only 2 ATP, so it is not the main source either.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.pyruvate-stage-order",
+      "concept": "pyruvate-oxidation",
+      "element": "acetyl-coa",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps of pyruvate oxidation in order.",
+      "steps": [
+        "Pyruvate enters the mitochondrial matrix",
+        "Pyruvate loses one carbon as CO₂ and passes electrons to NAD⁺",
+        "The two-carbon acetyl group joins coenzyme A"
+      ],
+      "explanation": "Pyruvate has to enter the matrix before the reaction can happen there. The carbon loss and the NADH form together, and the leftover acetyl group then attaches to coenzyme A.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Pyruvate loses CO2 and passes electrons to NAD+ in the same enzyme complex that attaches the acetyl group to CoA; the textbook order is used here, but the CO2/NADH step and the CoA step are close together."
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.pyruvate-totals-per-glucose",
+      "concept": "pyruvate-oxidation",
+      "element": "nadh-production",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "How much CO₂ and NADH does pyruvate oxidation release and make from one glucose, in total?",
+      "choices": [
+        "2 CO₂ and 2 NADH",
+        "1 CO₂ and 1 NADH",
+        "2 CO₂ and 2 ATP",
+        "6 CO₂ and 2 NADH"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "po-makes-atp",
+        null
+      ],
+      "explanation": "Each glucose makes two pyruvate, and each pyruvate gives off one CO₂ and makes one NADH, so the totals are 2 and 2. Pyruvate oxidation makes no ATP.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.cycle-co2-per-glucose",
+      "concept": "citric-acid-cycle",
+      "element": "carbon-release",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How many CO₂ molecules does one glucose give off through the citric acid cycle?",
+      "choices": [
+        "4 CO₂",
+        "2 CO₂",
+        "6 CO₂",
+        "1 CO₂"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "cycle-once-per-glucose",
+        null,
+        null
+      ],
+      "explanation": "Each turn releases two CO₂, and each glucose gives two acetyl-CoA, so the cycle turns twice and releases four. Answering 2 assumes one turn per glucose.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Per glucose there are two turns of the cycle, each releasing 2 CO2, so 4 in total.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.cycle-location",
+      "concept": "citric-acid-cycle",
+      "element": "citrate-formation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In a eukaryotic cell, where does the citric acid cycle take place?",
+      "choices": [
+        "In the mitochondrial matrix",
+        "In the cytoplasm, beside glycolysis",
+        "On the inner membrane's electron carriers",
+        "In the intermembrane space"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The cycle's enzymes are dissolved in the matrix, the innermost compartment of the mitochondrion. The intermembrane space and the inner membrane belong to the chain and chemiosmosis, which is why they are tempting wrong answers.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.cycle-stalls",
+      "concept": "citric-acid-cycle",
+      "element": "reduced-carriers",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does the citric acid cycle stall when the electron transport chain stops?",
+      "choices": [
+        "NADH and FADH₂ cannot be recycled, so the cycle runs out of carriers",
+        "The cycle uses oxygen directly, so it needs the chain to keep supplying it",
+        "The chain makes the acetyl-CoA that the cycle uses as fuel",
+        "The chain makes ATP that the cycle needs to start each turn"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The cycle makes NADH and FADH₂ and needs NAD⁺ and FAD back to continue. Only the chain can recycle them, by taking electrons from NADH and FADH₂. Without that, the carriers stay full and the cycle stalls.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.cycle-atp-claim",
+      "concept": "citric-acid-cycle",
+      "element": "reduced-carriers",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'Each turn makes one ATP, so the cycle makes most of the cell's ATP.' What is wrong with that?",
+      "choices": [
+        "Each turn makes one ATP or GTP, and most energy leaves as NADH and FADH₂",
+        "It is right: the cycle's ATP output is the main energy source the cell uses",
+        "Each turn makes three ATP, one for each NADH it produces",
+        "The cycle makes its ATP when oxygen is present in the matrix"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "cac-makes-most-atp",
+        null,
+        null
+      ],
+      "explanation": "Each turn makes one ATP or GTP. Most of the energy from acetyl-CoA is carried away in NADH and FADH₂, which the chain turns into most of the ATP. Counting the cycle's own ATP alone is the tempting mistake.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.cycle-turn-order",
+      "concept": "citric-acid-cycle",
+      "element": "citrate-formation",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the main events of one turn of the citric acid cycle in order.",
+      "steps": [
+        "Acetyl-CoA joins oxaloacetate to form citrate",
+        "Carbon leaves as CO₂, and NAD⁺ and FAD gain electrons",
+        "Oxaloacetate is regenerated to start the next turn"
+      ],
+      "explanation": "A turn begins when the two-carbon acetyl group joins the four-carbon oxaloacetate. The six-carbon citrate is then oxidised, releasing CO₂ and making NADH and FADH₂, and the ring returns to oxaloacetate.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.cycle-turns-per-glucose",
+      "concept": "citric-acid-cycle",
+      "element": "turns-per-glucose",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "How many turns of the citric acid cycle does one glucose molecule produce, and why?",
+      "choices": [
+        "Two turns, because each glucose makes two acetyl-CoA",
+        "One turn, because each glucose makes one acetyl-CoA",
+        "Four turns, because each glucose makes four pyruvate",
+        "Six turns, one for each carbon in the glucose molecule"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "cycle-once-per-glucose",
+        null,
+        null
+      ],
+      "explanation": "Glycolysis makes two pyruvate from one glucose, and each pyruvate becomes one acetyl-CoA. Each acetyl-CoA starts its own turn, so the cycle turns twice. Answering one counts the glucose instead of its pyruvate.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.cycle-pair-reduced",
+      "concept": "citric-acid-cycle",
+      "element": "reduced-carriers",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which pair does the citric acid cycle reduce, by giving them electrons?",
+      "choices": [
+        "NAD⁺ and FAD, which gain electrons to become NADH and FADH₂",
+        "ADP and phosphate, which become ATP in the matrix",
+        "Oxygen and water, which become carbon dioxide in the cycle",
+        "Citrate and carbon dioxide, which become oxaloacetate again in the matrix"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The cycle's oxidations pass electrons to NAD⁺ and FAD, reducing them to NADH and FADH₂. Oxygen is not used in the cycle, so a student who makes CO₂ from oxygen has confused this step with gas exchange in the lungs.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.cycle-tell-apart",
+      "concept": "citric-acid-cycle",
+      "element": "carbon-release",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Which statement correctly tells the citric acid cycle apart from glycolysis?",
+      "choices": [
+        "The cycle runs in the matrix and releases CO₂; glycolysis releases none",
+        "The cycle makes most of the cell's ATP, while glycolysis makes none at all",
+        "Both run in the matrix, and both release CO₂ as they work",
+        "Glycolysis releases more CO₂ than the cycle does per glucose"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "cac-makes-most-atp",
+        null,
+        null
+      ],
+      "explanation": "The cycle runs in the mitochondrial matrix and gives off CO₂. Glycolysis runs in the cytoplasm and gives off no CO₂. The cycle's own ATP is small, so the claim that it makes most of the cell's ATP is the tempting error.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.chain-location",
+      "concept": "electron-transport-chain",
+      "element": "membrane-location",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Where in a mitochondrion is the electron transport chain built?",
+      "choices": [
+        "In the inner membrane",
+        "In the outer membrane",
+        "In the matrix",
+        "In the cytoplasm, outside the mitochondria"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The chain's carriers are built into the folded inner membrane, which holds the proton gradient. The outer membrane is smooth and holds no chain. The matrix and cytoplasm are where the earlier stages run.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.chain-oxygen-role",
+      "concept": "electron-transport-chain",
+      "element": "oxygen-role",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the role of oxygen in the electron transport chain?",
+      "choices": [
+        "It is the final electron acceptor, forming water with protons",
+        "It is the fuel whose energy the chain releases as it burns",
+        "It is a product the chain makes from glucose and water",
+        "It is the carrier that passes electrons from NADH to the chain"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "oxygen-is-fuel",
+        null,
+        null
+      ],
+      "explanation": "Electrons come from food, not from oxygen. Oxygen sits at the end of the chain and accepts the spent electrons, combining with protons to form water. Without it the chain backs up, which is why it stops when oxygen is missing.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.chain-energy-use",
+      "concept": "electron-transport-chain",
+      "element": "proton-pumping",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "As electrons move down the chain, the energy they release is used for what?",
+      "choices": [
+        "Pumping protons from the matrix into the intermembrane space",
+        "Making ATP directly at each carrier as the electrons pass along",
+        "Splitting water into oxygen and hydrogen inside the matrix",
+        "Heating the membrane, so that the carriers release their electrons"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "etc-makes-atp",
+        null,
+        null
+      ],
+      "explanation": "The chain's carriers use the energy of each electron to move protons across the membrane. ATP is made later, when protons flow back through ATP synthase. Splitting water belongs to photosynthesis, not to this chain.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.chain-atp-claim",
+      "concept": "electron-transport-chain",
+      "element": "proton-pumping",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'The electron transport chain makes ATP as the electrons pass down it.' What is wrong with that?",
+      "choices": [
+        "It pumps protons, and ATP forms only as they flow back through ATP synthase",
+        "It is right: each carrier adds a phosphate to ADP as the electrons pass along it",
+        "The chain makes ATP from oxygen, which joins ADP at the very end of it"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "etc-makes-atp",
+        null
+      ],
+      "explanation": "The chain's carriers move protons, not phosphate. ATP is made by ATP synthase when protons flow back into the matrix. The idea that carriers make ATP is the tempting error.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.chain-nadh-role",
+      "concept": "electron-transport-chain",
+      "element": "electron-carriers",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What do NADH and FADH₂ do when they reach the electron transport chain?",
+      "choices": [
+        "They carry electrons, and the energy released pumps protons",
+        "They are a second form of ATP, which the chain spends to power itself",
+        "They are waste products that are removed from the cell as water",
+        "They pump protons directly across the outer membrane"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "nadh-is-atp",
+        null,
+        null
+      ],
+      "explanation": "NADH and FADH₂ are electron carriers. They hand their electrons to the chain, and the chain's energy pumps the protons. They store energy in their electrons, not as ATP, so they make no ATP until the chemiosmosis stage.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.chain-poison-blocked",
+      "concept": "electron-transport-chain",
+      "element": "proton-pumping",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A poison blocks the last carrier, so electrons stop flowing down the chain. What happens next?",
+      "choices": [
+        "Pumping stops and ATP output falls, since no gradient builds up",
+        "Pumping goes on, and ATP output rises because the electrons pile up",
+        "ATP output stays the same, since the chain makes its own ATP",
+        "Pumping stops, but ATP still forms from the NADH already made"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "etc-makes-atp",
+        null
+      ],
+      "explanation": "The chain's pumping depends on electrons moving to the end. When the last carrier is blocked, pumping stops, no gradient is built, and ATP output falls. NADH holds electrons, not ATP, so it cannot keep ATP output up.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.chain-no-oxygen",
+      "concept": "electron-transport-chain",
+      "element": "oxygen-role",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does the electron transport chain stop in a cell with no oxygen, even though NADH is still being made?",
+      "choices": [
+        "No final acceptor is left, so NADH cannot be turned back into NAD⁺",
+        "Glucose runs out before the chain can run without any oxygen present",
+        "Oxygen is needed to split glucose in the cytoplasm before the chain runs",
+        "The chain makes ATP from oxygen, so no ATP is made without it"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "g-needs-oxygen",
+        null
+      ],
+      "explanation": "Oxygen is the last acceptor. With none, the electrons back up, the carriers stay full, NADH is not recycled, and the chain stops. Oxygen is not a fuel, and glycolysis does not need it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.chain-stage-order",
+      "concept": "electron-transport-chain",
+      "element": "electron-carriers",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps of electron transport in order, from the start of the chain to its end.",
+      "steps": [
+        "NADH and FADH₂ give up electrons to the carriers at the start of the chain",
+        "Electrons pass down the carriers, and the energy pumps protons",
+        "Electrons reach oxygen, which combines with protons to form water"
+      ],
+      "explanation": "Electrons enter the chain from NADH and FADH₂, pass down the carriers while their energy pumps protons, and end at oxygen, which forms water.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.chemiosmosis-atp-synthase-location",
+      "concept": "chemiosmosis",
+      "element": "atp-synthase",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Where in a mitochondrion is ATP synthase built?",
+      "choices": [
+        "Built into the inner membrane, facing the matrix",
+        "Floating free in the matrix, not built into any membrane at all",
+        "In the outer membrane, facing the cytoplasm",
+        "In the cytoplasm, next to the enzymes of glycolysis"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "ATP synthase is an enzyme built into the inner membrane, with its catalytic part on the matrix side. Protons flow back through it into the matrix, and ATP is made on that side.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.chemiosmosis-where-protons-collect",
+      "concept": "chemiosmosis",
+      "element": "proton-gradient",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "During chemiosmosis, where do the protons build up?",
+      "choices": [
+        "In the intermembrane space, outside the inner membrane",
+        "In the matrix, where ATP synthase makes its ATP from ADP",
+        "In the outer membrane, facing the cytoplasm",
+        "Among the carriers in the middle of the cristae"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The chain pumps protons out of the matrix, so they collect in the intermembrane space. The matrix side becomes depleted, and ATP synthase lets the protons back into it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.chemiosmosis-leak-claim",
+      "concept": "chemiosmosis",
+      "element": "membrane-impermeability",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says protons pumped out of the matrix would simply leak back across the inner membrane anywhere. What is wrong with that?",
+      "choices": [
+        "The inner membrane barely lets protons through, except at ATP synthase",
+        "Protons leak back freely, so no gradient ever builds up in the cell",
+        "Protons cannot cross any membrane, so they stay where they were pumped",
+        "Protons return through the outer membrane into the cytoplasm instead"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "protons-leak",
+        null,
+        null
+      ],
+      "explanation": "The inner membrane is nearly impermeable to protons, so they return through ATP synthase, and the gradient builds up. Leaks across the whole membrane would drain the gradient, which is why the claim fails.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.chemiosmosis-equilibrium-claim",
+      "concept": "chemiosmosis",
+      "element": "proton-gradient",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'Once protons pile up in the intermembrane space, the system is at equilibrium and ATP stops being made.' What is wrong?",
+      "choices": [
+        "The chain keeps pumping protons, and their flow through ATP synthase makes ATP",
+        "Nothing is wrong: the gradient is equal on both sides, so nothing moves",
+        "The flow of electrons along the chain makes ATP while the gradient stays flat and steady",
+        "ATP is made when protons cross the outer membrane into the cytoplasm"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "gradient-is-equilibrium",
+        "etc-makes-atp",
+        null
+      ],
+      "explanation": "A gradient is not a balance. Its stored energy is spent as protons flow through ATP synthase, while the chain keeps pumping to replace them. Thinking the gradient is at equilibrium misses that the flow is what makes ATP.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.chemiosmosis-atp-side",
+      "concept": "chemiosmosis",
+      "element": "atp-synthase",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "On which side of the membrane is ATP made during chemiosmosis?",
+      "choices": [
+        "On the matrix side of ATP synthase, from ADP and phosphate",
+        "In the intermembrane space, where the protons collect",
+        "In the cytoplasm, where glycolysis first makes its ADP and NADH",
+        "Inside the outer membrane, next to the carriers"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "atp-in-intermembrane",
+        null,
+        null
+      ],
+      "explanation": "ATP synthase's catalytic part faces the matrix, where ADP and phosphate are joined into ATP. The intermembrane space is where protons collect, not where ATP is made, which is the tempting error.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.chemiosmosis-block-synthase",
+      "concept": "chemiosmosis",
+      "element": "atp-synthase",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A researcher wants the chain to keep pumping protons but stop all ATP made by chemiosmosis. Which change does that?",
+      "choices": [
+        "Blocking ATP synthase, so protons cannot flow back through it",
+        "Blocking the outer membrane, so protons cannot leave the cell",
+        "Adding more oxygen, so the chain pumps protons faster",
+        "Moving ATP synthase into the intermembrane space, facing out"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Blocking ATP synthase lets the gradient keep building while it removes the route back, so no ATP is made by chemiosmosis. Moving the synthase would not stop ATP, because it would still make it from the gradient.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.chemiosmosis-stage-order",
+      "concept": "chemiosmosis",
+      "element": "atp-synthase",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps of chemiosmosis in the order they happen.",
+      "steps": [
+        "The chain pumps protons into the intermembrane space",
+        "A proton gradient builds up across the inner membrane",
+        "Protons flow back through ATP synthase into the matrix",
+        "ATP synthase joins ADP and phosphate to make ATP"
+      ],
+      "explanation": "The chain's pumping creates the gradient. The gradient drives protons back through ATP synthase, and that flow powers the joining of ADP and phosphate into ATP.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.chemiosmosis-gradient-meaning",
+      "concept": "chemiosmosis",
+      "element": "proton-gradient",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which description of the proton gradient is correct?",
+      "choices": [
+        "A stored difference in proton concentration and charge across the membrane",
+        "A balance of protons on both sides of the membrane, at which nothing flows",
+        "Protons leaking through the whole membrane, which the synthase blocks",
+        "Heat from the carriers, which the synthase turns into motion"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "gradient-is-equilibrium",
+        "protons-leak",
+        null
+      ],
+      "explanation": "The gradient is a store of energy: protons are more concentrated on one side, and the charge across the membrane adds to that. Flow through ATP synthase releases it. A balance with nothing flowing would store nothing.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.fermentation-nad-role",
+      "concept": "fermentation",
+      "element": "nad-regeneration",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What must fermentation regenerate for glycolysis to keep running?",
+      "choices": [
+        "NAD⁺ from NADH",
+        "ATP from ADP",
+        "Oxygen from water",
+        "CO₂ from pyruvate"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Glycolysis needs NAD⁺ to accept electrons, and it turns NAD⁺ into NADH. Fermentation converts NADH back to NAD⁺, which keeps glycolysis running. Making ATP is not what fermentation regenerates.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.fermentation-sealed-tube",
+      "concept": "fermentation",
+      "element": "nad-regeneration",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does a yeast cell in a sealed tube keep making ATP through glycolysis after its oxygen runs out?",
+      "choices": [
+        "Glycolysis needs no oxygen, and fermentation keeps NAD⁺ available for it",
+        "Without oxygen, glycolysis makes no ATP, so the yeast relies on fermentation for ATP",
+        "The mitochondria keep working with the carbon dioxide the yeast makes",
+        "The yeast switches to the citric acid cycle, which runs without NADH"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Glycolysis runs without oxygen and nets 2 ATP. Fermentation regenerates the NAD⁺ it needs, so glycolysis keeps going. Fermentation makes no ATP of its own.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.fermentation-minus-oxygen-claim",
+      "concept": "fermentation",
+      "element": "nad-regeneration",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says fermentation is aerobic respiration with the oxygen left out. What is wrong with that?",
+      "choices": [
+        "Fermentation skips the cycle and the chain, and only reduces pyruvate",
+        "Nothing is wrong: fermentation runs the same steps as respiration, minus oxygen",
+        "The chain still runs, but it uses pyruvate in place of oxygen",
+        "The cycle still runs, but it makes lactate instead of carbon dioxide"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ferm-is-full-minus-oxygen",
+        null,
+        null
+      ],
+      "explanation": "Fermentation stops after glycolysis. It reduces pyruvate to lactate or ethanol to regenerate NAD⁺, so the citric acid cycle and the chain never run, and far less ATP is made.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.fermentation-lactate",
+      "concept": "fermentation",
+      "element": "lactate-pathway",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In a muscle cell short of oxygen, pyruvate takes electrons from NADH and becomes what?",
+      "choices": [
+        "Lactate, which is made when NADH gives electrons to pyruvate",
+        "Ethanol and carbon dioxide, released in yeast cells",
+        "Acetyl-CoA, which then enters the citric acid cycle",
+        "Citrate, which then starts the citric acid cycle in the matrix"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "In muscle, NADH passes electrons to pyruvate, which becomes lactate and regenerates NAD⁺. Ethanol belongs to yeast fermentation, and acetyl-CoA and citrate belong to the aerobic route, which is why they are tempting wrong answers.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.fermentation-yeast-products",
+      "concept": "fermentation",
+      "element": "ethanol-pathway",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which products does yeast make by fermentation?",
+      "choices": [
+        "Ethanol and carbon dioxide, released as gases from the cell",
+        "Lactate, which yeast makes as well as muscle does",
+        "Acetyl-CoA, which yeast passes on into the citric acid cycle",
+        "Water and oxygen, made by the chain in yeast cells"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Yeast converts pyruvate to acetaldehyde, which is reduced to ethanol, and releases CO₂. Lactate is the muscle product, and acetyl-CoA belongs to the aerobic route, which is why they are tempting wrong answers.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.fermentation-stage-order",
+      "concept": "fermentation",
+      "element": "nad-regeneration",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps by which fermentation keeps glycolysis running, in order.",
+      "steps": [
+        "Glycolysis splits glucose and makes two pyruvate and NADH",
+        "Pyruvate takes electrons from NADH",
+        "NAD⁺ returns to glycolysis, which keeps running"
+      ],
+      "explanation": "Glycolysis makes NADH as it goes. Pyruvate takes the electrons, which turns NADH back into NAD⁺, and the NAD⁺ returns to glycolysis so it keeps running.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.fermentation-atp-yeast",
+      "concept": "fermentation",
+      "element": "ethanol-pathway",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Yeast in an oxygen-free tube makes ethanol from one glucose. Which statement about its ATP is correct?",
+      "choices": [
+        "Fermentation makes far more ATP than the chain would have made with oxygen",
+        "Glycolysis still nets 2 ATP, and fermentation adds no ATP of its own",
+        "The ethanol holds the energy, so the yeast makes no ATP at all",
+        "The ethanol is burned later in the chain, adding ATP to the total"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        "ferm-no-atp",
+        null
+      ],
+      "explanation": "Glycolysis nets 2 ATP per glucose, and fermentation makes none. Ethanol still holds energy, but the cell cannot burn it without oxygen, so the total stays small. Saying no ATP is made at all is the tempting error.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cellular-respiration.fermentation-why-less-atp",
+      "concept": "fermentation",
+      "element": "nad-regeneration",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why does fermentation yield far less ATP per glucose than aerobic respiration does?",
+      "choices": [
+        "It stops at pyruvate, so the cycle and the chain never make their ATP",
+        "It burns glucose faster, so less of its energy stays in the molecules",
+        "Its enzymes are weaker, so they release less of the glucose's energy",
+        "It releases the glucose's energy as heat, with no ATP made at all in the cell"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "ferm-no-atp"
+      ],
+      "explanation": "Fermentation stops at pyruvate, so the cycle and the chain, which make most of the ATP, never run. The heat idea is a wrong picture of energy, not a feature of fermentation.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    }
+  ],
+  "artifacts": []
+}

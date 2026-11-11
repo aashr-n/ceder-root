@@ -49,7 +49,8 @@
         }
       ],
       "explain": {
-        "text": "An atom is the smallest unit of an element that keeps that element's properties. It has a dense nucleus of protons, which are positive, and neutrons, which have no charge. Electrons, which are negative, move in shells around the nucleus. The number of protons sets which element the atom is, and the electrons in the outer shell decide how it bonds to other atoms. Carbon, for example, has six protons, and its four outer electrons let it share electrons with other atoms."
+        "text": "An atom is the smallest unit of an element that keeps that element's properties. It has a dense nucleus of protons, which are positive, and neutrons, which have no charge. Electrons, which are negative, move in shells around the nucleus. The number of protons sets which element the atom is, and the electrons in the outer shell decide how it bonds to other atoms. Carbon, for example, has six protons, and its four outer electrons let it share electrons with other atoms.",
+        "artifact": "carbon-atom"
       }
     },
     {
@@ -135,7 +136,8 @@
         }
       ],
       "explain": {
-        "text": "A hydrogen bond is a weak attraction, not a bond that shares electrons between two atoms. It forms when a hydrogen that is covalently bonded to a strongly electronegative atom, such as oxygen, carries a partial positive charge and is drawn to a lone pair on another oxygen, nitrogen or fluorine nearby. A single hydrogen bond is much weaker than a covalent bond, but water molecules form many at once. The diagram shows two water molecules with a bridging hydrogen held between them by a dashed attraction."
+        "text": "A hydrogen bond is a weak attraction, not a bond that shares electrons between two atoms. It forms when a hydrogen that is covalently bonded to a strongly electronegative atom, such as oxygen, carries a partial positive charge and is drawn to a lone pair on another oxygen, nitrogen or fluorine nearby. A single hydrogen bond is much weaker than a covalent bond, but water molecules form many at once. The diagram shows two water molecules with a bridging hydrogen held between them by a dashed attraction.",
+        "artifact": "hydrogen-bond-steps"
       }
     },
     {
@@ -988,7 +990,183 @@
         "agreed": 2,
         "at": "2026-11-11"
       }
+    },
+    {
+      "id": "biology.atoms-and-water.tap-hydrogen-bond",
+      "concept": "hydrogen-bond",
+      "element": "attraction-between-molecules",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the weak attraction that holds the two water molecules together.",
+      "artifact": "water-hydrogen-bond",
+      "target": "hydrogen-bond",
+      "explanation": "The hydrogen bond is the dashed line from a hydrogen on one molecule to a lone pair on the other. The solid sticks are covalent bonds, which share electrons inside each molecule.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: A is the dashed hydrogen-bond line between the two molecules; the weak attraction is the hydrogen bond itself."
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.tap-bridging-hydrogen",
+      "concept": "hydrogen-bond",
+      "element": "partial-charges",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the partly positive atom that is attracted to the other water molecule.",
+      "artifact": "water-hydrogen-bond",
+      "target": "bridging-hydrogen",
+      "explanation": "This hydrogen is covalently bonded to one oxygen and drawn to a lone pair on the other. The other hydrogens are also partly positive, but none of them is attracted to the second molecule here.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: D is the hydrogen bonded to the left water's oxygen, which is attracted to the lone pair on the other molecule's oxygen. b's note: Donor hydrogen, left of the dashed bond"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.tap-acceptor-lone-pair",
+      "concept": "hydrogen-bond",
+      "element": "donor-and-acceptor",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the unshared electron pair that accepts the hydrogen bond.",
+      "artifact": "water-hydrogen-bond",
+      "target": "acceptor-lone-pair",
+      "explanation": "The accepting lone pair is the one the dashed line reaches. Each oxygen has two lone pairs, but only this one takes part in the hydrogen bond shown.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: E is the lone pair on the right water's oxygen that faces the donor hydrogen."
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.tap-donor-oxygen",
+      "concept": "chemical-bond",
+      "element": "electronegativity",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "Tap the atom whose pull on shared electrons makes the hydrogen in the hydrogen bond partly positive.",
+      "artifact": "water-hydrogen-bond",
+      "target": "donor-oxygen",
+      "explanation": "The donor oxygen is covalently bonded to the hydrogen in the hydrogen bond. Being more electronegative, it pulls their shared electrons toward itself. The other oxygen does not share electrons with that hydrogen.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: D is the left water's oxygen, whose pull on the shared electrons makes the bonded hydrogen partly positive. b's note: Donor oxygen, left molecule"
+      }
+    },
+    {
+      "id": "biology.atoms-and-water.tap-acceptor-oxygen",
+      "concept": "hydrogen-bond",
+      "element": "donor-and-acceptor",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "Tap the hydrogen bond acceptor atom.",
+      "artifact": "water-hydrogen-bond",
+      "target": "acceptor-oxygen",
+      "explanation": "The acceptor is the partly negative oxygen whose lone pair receives the hydrogen. The donor is the oxygen covalently bonded to that hydrogen.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: A is the oxygen atom of the right water, the acceptor atom (not the lone pair itself). b's note: Acceptor oxygen, right molecule; the lone-pair spot is a separate choice"
+      }
     }
   ],
-  "artifacts": []
+  "artifacts": [
+    {
+      "id": "water-hydrogen-bond",
+      "kind": "diagram",
+      "title": "A hydrogen bond between two water molecules",
+      "alt": "Two water molecules, each a large red oxygen atom joined by solid green sticks to two small sand-coloured hydrogen atoms in a bent shape, with two green lone-pair lobes holding two dots each. One hydrogen of the left molecule points at a lone pair on the right molecule's oxygen, and a dashed blue line joins them.",
+      "file": "assets/water-hydrogen-bond.svg",
+      "hotspots": [
+        {
+          "id": "donor-oxygen",
+          "label": "Oxygen of the donor molecule",
+          "x": 0.192,
+          "y": 0.478,
+          "r": 0.05
+        },
+        {
+          "id": "bridging-hydrogen",
+          "label": "Hydrogen in the hydrogen bond",
+          "x": 0.367,
+          "y": 0.478,
+          "r": 0.05
+        },
+        {
+          "id": "hydrogen-bond",
+          "label": "Hydrogen bond",
+          "x": 0.48,
+          "y": 0.504,
+          "r": 0.05
+        },
+        {
+          "id": "acceptor-lone-pair",
+          "label": "Lone pair that accepts the hydrogen bond",
+          "x": 0.592,
+          "y": 0.53,
+          "r": 0.05
+        },
+        {
+          "id": "acceptor-oxygen",
+          "label": "Oxygen of the acceptor molecule",
+          "x": 0.695,
+          "y": 0.554,
+          "r": 0.05
+        }
+      ]
+    },
+    {
+      "id": "hydrogen-bond-steps",
+      "kind": "sequence",
+      "title": "How a hydrogen bond forms",
+      "alt": "Four steps over the two water molecules: the donor oxygen pulls on its shared electrons, its hydrogen becomes partly positive, the other oxygen offers a lone pair, and the dashed hydrogen bond forms between them.",
+      "over": "water-hydrogen-bond",
+      "steps": [
+        {
+          "title": "Oxygen pulls the electrons",
+          "text": "Oxygen is more electronegative than hydrogen, so it pulls the shared electrons of its O–H bond toward itself.",
+          "focus": "donor-oxygen"
+        },
+        {
+          "title": "Hydrogen becomes partly positive",
+          "text": "With the electrons pulled away, this hydrogen carries a partial positive charge.",
+          "focus": "bridging-hydrogen"
+        },
+        {
+          "title": "A lone pair on another oxygen",
+          "text": "The oxygen of a nearby water molecule is partly negative and has an unshared pair of electrons.",
+          "focus": "acceptor-lone-pair"
+        },
+        {
+          "title": "The hydrogen bond forms",
+          "text": "The partly positive hydrogen is attracted to that lone pair. This weak attraction links the two molecules.",
+          "focus": "hydrogen-bond"
+        }
+      ]
+    },
+    {
+      "id": "carbon-atom",
+      "kind": "diagram",
+      "title": "A carbon atom",
+      "alt": "A carbon atom drawn as a nucleus of six red protons and six green neutrons, circled by an inner shell with two blue electrons and an outer shell with four blue electrons. Labels name the outer shell with 4 electrons, the inner shell with 2 electrons, and the nucleus with 6 protons and 6 neutrons.",
+      "file": "assets/carbon-atom.svg"
+    }
+  ]
 }

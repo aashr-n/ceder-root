@@ -1,0 +1,1900 @@
+{
+  "formatVersion": 1,
+  "id": "biology.enzymes-and-energy",
+  "subject": "biology",
+  "title": "Enzymes and energy",
+  "summary": "How enzymes speed reactions, how ATP stores and moves energy, and how redox reactions carry electrons.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "enzyme",
+      "name": "Enzyme",
+      "aliases": [
+        "Enzymes",
+        "Biological catalyst"
+      ],
+      "summary": "An enzyme is a protein that speeds up one kind of chemical reaction by lowering its energy barrier, and comes out unchanged.",
+      "requires": [],
+      "elements": [
+        {
+          "id": "active-site",
+          "name": "Active site",
+          "aliases": [
+            "Active sites"
+          ]
+        },
+        {
+          "id": "substrate",
+          "name": "Substrate",
+          "aliases": [
+            "Substrates"
+          ]
+        },
+        {
+          "id": "catalysis",
+          "name": "Catalysis",
+          "aliases": []
+        },
+        {
+          "id": "cofactor",
+          "name": "Cofactor",
+          "aliases": [
+            "Cofactors",
+            "Coenzymes"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "An enzyme is a protein that speeds up a chemical reaction without being changed by it. Each enzyme has an active site, a pocket whose shape and charge match one substrate or a few related ones. When a substrate fits, the enzyme holds it in a position that makes its bonds easier to break or form, and the product then leaves. The enzyme is free to bind another substrate straight away. Living cells depend on enzymes because most of their reactions would be far too slow at body temperature without them.",
+        "artifact": "enzyme-cycle-steps"
+      },
+      "misconceptions": [
+        {
+          "id": "enz-used-up",
+          "claim": "Enzymes are used up in the reaction they speed up.",
+          "correction": "An enzyme is not consumed. It binds a substrate, releases the product, and is free to act again."
+        },
+        {
+          "id": "enz-changes-equilibrium",
+          "claim": "An enzyme changes where a reaction ends up, so it makes products that would not form otherwise.",
+          "correction": "An enzyme speeds up both directions equally, so the final mix at equilibrium is the same with or without it."
+        },
+        {
+          "id": "enz-any-substrate",
+          "claim": "One enzyme can speed up any molecule of about the same size.",
+          "correction": "The active site has a shape and charge that fit specific substrates. That is what makes enzymes specific."
+        }
+      ]
+    },
+    {
+      "id": "activation-energy",
+      "name": "Activation energy",
+      "aliases": [
+        "Energy of activation",
+        "Activation barrier"
+      ],
+      "summary": "Activation energy is the energy a reaction must absorb to reach its transition state before products can form.",
+      "requires": [
+        "chemical-bond"
+      ],
+      "elements": [
+        {
+          "id": "transition-state",
+          "name": "Transition state",
+          "aliases": []
+        },
+        {
+          "id": "energy-barrier",
+          "name": "Energy barrier",
+          "aliases": [
+            "Energy barriers"
+          ]
+        },
+        {
+          "id": "energy-diagram",
+          "name": "Energy diagram",
+          "aliases": [
+            "Reaction coordinate diagram"
+          ]
+        },
+        {
+          "id": "lowering-the-barrier",
+          "name": "Lowering the barrier",
+          "aliases": []
+        }
+      ],
+      "explain": {
+        "text": "Activation energy is the extra energy that reactant molecules must absorb before a reaction can go. As bonds start to stretch and break, the molecules pass through a short-lived peak called the transition state. Only molecules with enough energy reach that peak, so a higher barrier means fewer molecules react in a given time. Activation energy is absorbed, and it is separate from the overall energy the reaction releases. Heating a mixture speeds it up because more molecules get over the barrier. Enzymes lower the barrier rather than adding energy.",
+        "artifact": "energy-barrier"
+      },
+      "misconceptions": [
+        {
+          "id": "ae-energy-released",
+          "claim": "Activation energy is energy the reaction gives off as it runs.",
+          "correction": "Activation energy is absorbed to reach the transition state before products form. The overall energy release is a separate quantity."
+        },
+        {
+          "id": "ae-exergonic-no-barrier",
+          "claim": "A reaction that releases energy overall needs no energy to start.",
+          "correction": "Overall energy release and the height of the barrier are separate. Many reactions that release energy still need a push to cross their barrier."
+        },
+        {
+          "id": "ae-enzyme-adds-energy",
+          "claim": "Enzymes supply the energy that starts a reaction.",
+          "correction": "An enzyme lowers the activation energy. It adds no energy, and the energy change between reactants and products stays the same."
+        }
+      ]
+    },
+    {
+      "id": "atp",
+      "name": "Adenosine triphosphate (ATP)",
+      "aliases": [
+        "ATP",
+        "Adenosine triphosphate"
+      ],
+      "summary": "ATP is a nucleotide that carries energy in a cell: removing its outer phosphate releases energy, and ADP is recycled back into ATP.",
+      "requires": [
+        "nucleotide"
+      ],
+      "elements": [
+        {
+          "id": "atp-structure",
+          "name": "Structure of ATP",
+          "aliases": []
+        },
+        {
+          "id": "hydrolysis",
+          "name": "Hydrolysis of ATP",
+          "aliases": [
+            "ATP hydrolysis"
+          ]
+        },
+        {
+          "id": "energy-coupling",
+          "name": "Energy coupling",
+          "aliases": []
+        },
+        {
+          "id": "atp-adp-cycle",
+          "name": "ATP and ADP cycle",
+          "aliases": [
+            "ADP recycling"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "ATP, adenosine triphosphate, is a nucleotide with a chain of three phosphate groups. Hydrolyzing ATP, which removes the outer phosphate, releases energy because ADP and phosphate are more stable than ATP. A cell uses that energy by coupling the reaction to work that needs it, such as moving a protein or building a molecule. ATP is a short-term carrier rather than a store. A cell holds little of it at any moment and recycles ADP and phosphate back into ATP over and over, like a battery that is used and recharged."
+      },
+      "misconceptions": [
+        {
+          "id": "atp-bond-breaking",
+          "claim": "Breaking the bond between two phosphates releases the energy stored in that bond.",
+          "correction": "Breaking a bond takes energy. Hydrolysis releases energy overall because ADP and phosphate are more stable than ATP."
+        },
+        {
+          "id": "atp-long-term-store",
+          "claim": "ATP is the cell's long-term energy store, like fat.",
+          "correction": "ATP is a short-term carrier that is used and remade quickly. Long-term energy is kept in molecules such as fats and glycogen."
+        },
+        {
+          "id": "atp-used-up",
+          "claim": "Once a cell uses an ATP, that molecule is gone.",
+          "correction": "The leftover ADP and phosphate are rebuilt into ATP again and again. The same molecules are recycled."
+        }
+      ]
+    },
+    {
+      "id": "redox-reactions",
+      "name": "Redox reactions",
+      "aliases": [
+        "Oxidation-reduction reactions",
+        "Oxidation and reduction",
+        "Redox"
+      ],
+      "summary": "In a redox reaction, electrons move from a substance that is oxidized to one that is reduced.",
+      "requires": [
+        "chemical-bond",
+        "atom"
+      ],
+      "elements": [
+        {
+          "id": "oxidation",
+          "name": "Oxidation",
+          "aliases": [
+            "Oxidized"
+          ]
+        },
+        {
+          "id": "reduction",
+          "name": "Reduction",
+          "aliases": [
+            "Reduced"
+          ]
+        },
+        {
+          "id": "reducing-agent",
+          "name": "Reducing agent",
+          "aliases": [
+            "Electron donor"
+          ]
+        },
+        {
+          "id": "electron-transfer",
+          "name": "Electron transfer",
+          "aliases": []
+        }
+      ],
+      "explain": {
+        "text": "A redox reaction moves electrons from one substance to another. The substance that loses electrons is oxidized, and the one that gains them is reduced. The two always happen together, because an electron cannot be lost unless another substance takes it. Oxidation was first used for reactions with oxygen, but the electron definition covers them all, including reactions with no oxygen at all. An electron moved to an atom that pulls it more strongly loses energy, and cells use many small redox steps to release the energy in food."
+      },
+      "misconceptions": [
+        {
+          "id": "redox-oxygen-only",
+          "claim": "Oxidation means gaining oxygen, and reduction means losing it.",
+          "correction": "Oxidation is a loss of electrons and reduction a gain. Gaining or losing oxygen is one common case, not the definition."
+        },
+        {
+          "id": "redox-agent-swap",
+          "claim": "The reducing agent is the substance that gets reduced.",
+          "correction": "The reducing agent donates electrons, so it is the one that gets oxidized. The oxidizing agent gains them and is reduced."
+        },
+        {
+          "id": "redox-only-burning",
+          "claim": "Oxidation only happens when something burns.",
+          "correction": "Any loss of electrons is oxidation. Cells oxidize fuel in many small steps with no flame."
+        }
+      ]
+    },
+    {
+      "id": "feedback-inhibition",
+      "name": "Feedback inhibition",
+      "aliases": [
+        "End-product inhibition"
+      ],
+      "summary": "In feedback inhibition, a pathway's end product slows an early enzyme in the same pathway, so the cell stops making more than it needs.",
+      "requires": [
+        "enzyme"
+      ],
+      "elements": [
+        {
+          "id": "end-product",
+          "name": "End product",
+          "aliases": [
+            "End products"
+          ]
+        },
+        {
+          "id": "allosteric-site",
+          "name": "Allosteric site",
+          "aliases": [
+            "Allosteric sites"
+          ]
+        },
+        {
+          "id": "committed-step",
+          "name": "Committed step",
+          "aliases": []
+        },
+        {
+          "id": "negative-feedback",
+          "name": "Negative feedback",
+          "aliases": []
+        }
+      ],
+      "explain": {
+        "text": "Many cells make a molecule through a pathway, a series of enzyme-catalyzed steps. When the final product builds up, it often binds an allosteric site on an early enzyme in the same pathway. That binding changes the enzyme's shape and slows it, so less product is made. This is feedback inhibition, a kind of negative feedback. The cell saves raw materials and energy. When the product is used up, it lets go, and the enzyme works again. Nothing is destroyed in the process."
+      },
+      "misconceptions": [
+        {
+          "id": "fi-stops-forever",
+          "claim": "Feedback inhibition destroys the enzyme for good.",
+          "correction": "The end product binds and lets go. When its level falls, the enzyme works again, and no new enzyme has to be made."
+        },
+        {
+          "id": "fi-activates",
+          "claim": "When product builds up, the enzyme that makes it speeds up.",
+          "correction": "A high end product slows an early enzyme. This negative feedback keeps the pathway from overproducing."
+        },
+        {
+          "id": "fi-same-site",
+          "claim": "The end product blocks the same spot the substrate uses.",
+          "correction": "Feedback inhibitors usually bind an allosteric site elsewhere on the enzyme, and that changes the shape of the active site."
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "biology.enzymes-and-energy.enzyme-definition",
+      "concept": "enzyme",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which description fits an enzyme?",
+      "explanation": "An enzyme is a protein that speeds up a reaction and is not consumed by it. A molecule that is used up while it speeds a reaction is a reactant, not an enzyme.",
+      "choices": [
+        "A protein that speeds up a reaction and comes out of it unchanged",
+        "A fat that stores energy in the cell until a reaction needs it",
+        "A sugar that carries electrons from one molecule to another one",
+        "A molecule that is used up as it speeds up a reaction in the cell"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "enz-used-up"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.enzyme-after-reaction",
+      "concept": "enzyme",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What happens to an enzyme once it has turned a substrate into a product?",
+      "explanation": "After the product leaves, the enzyme's active site is free again. Because an enzyme comes out unchanged, one enzyme molecule can convert many substrate molecules.",
+      "choices": [
+        "It is used up, so the cell must make a new one for each reaction it runs",
+        "It is turned into the product that leaves the active site of the enzyme",
+        "It is broken down into the amino acids it was built from, and recycled",
+        "It is unchanged, and it can bind another substrate molecule"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "enz-used-up",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.enzyme-equilibrium",
+      "concept": "enzyme",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says an enzyme makes a reversible reaction end with more product than it would without the enzyme. What is wrong with that?",
+      "explanation": "An enzyme lowers the energy barrier in both directions, so it reaches the same equilibrium sooner. It does not change where the reaction ends up. The enzyme is still there at equilibrium, so it is not used up either.",
+      "choices": [
+        "An enzyme is used up once equilibrium is reached, so no more product forms",
+        "An enzyme stops working once the reactants drop below a set level and the reaction halts",
+        "An enzyme speeds up both directions equally, so the final balance stays the same",
+        "An enzyme blocks the reverse reaction, so products pile up at the end"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "enz-used-up",
+        null,
+        null,
+        "enz-changes-equilibrium"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.enzyme-specificity",
+      "concept": "enzyme",
+      "element": "active-site",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about enzyme specificity is correct?",
+      "explanation": "An active site's shape and charge fit a few substrates. An enzyme that fit any molecule of similar size would not be specific, and cells rely on specificity to keep reactions apart.",
+      "choices": [
+        "An active site is built from fat, so it binds oils and other lipids",
+        "An active site fits a few substrates whose shape and charge match it",
+        "An active site fits any molecule of similar size, so one enzyme serves many reactions",
+        "Every enzyme has the same active site, so all enzymes bind the same molecules"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        "enz-any-substrate",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.enzyme-two-runs",
+      "concept": "enzyme",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Two identical reactions run at the same temperature, one with an enzyme and one without. Which is true?",
+      "explanation": "Both runs reach the same equilibrium; the enzyme only makes it arrive sooner. A higher yield or products the other run never makes would mean the equilibrium had moved, and an enzyme does not move it.",
+      "choices": [
+        "The enzyme reaction reaches equilibrium sooner, with the same final mix",
+        "The enzyme reaction reaches a higher yield than the reaction without one",
+        "The enzyme reaction makes products that the other reaction can never make",
+        "The enzyme reaction uses up its enzyme and stops early"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "enz-changes-equilibrium",
+        "enz-changes-equilibrium",
+        "enz-used-up"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.enzyme-substrate-binding",
+      "concept": "enzyme",
+      "element": "substrate",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Where does an enzyme's substrate bind?",
+      "explanation": "The substrate binds in the active site, a pocket on the enzyme's surface. Other spots on the surface do not have the shape and charge to hold it.",
+      "choices": [
+        "Anywhere on the enzyme's surface, since any spot will hold it",
+        "Inside the nucleus, where the enzyme was made",
+        "Inside the membrane that encloses the cell",
+        "In the active site, a pocket on the enzyme's surface"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.enzyme-denaturation",
+      "concept": "enzyme",
+      "element": "active-site",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "An enzyme is heated until it denatures. Which part of it changes first?",
+      "explanation": "Heat unfolds the enzyme's protein, so its three-dimensional shape is lost and the active site no longer fits the substrate. Moderate heat does not break the amino acid sequence, so the sequence is not the part that changes first.",
+      "choices": [
+        "Its number of peptide bonds, which heat removes one by one",
+        "Its substrate, which heat turns into product before the reaction starts",
+        "Its three-dimensional shape, so the active site no longer fits",
+        "Its amino acid sequence, which heat breaks into free amino acids"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.enzyme-catalytic-cycle",
+      "concept": "enzyme",
+      "element": "catalysis",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps of one enzyme-catalyzed reaction in order.",
+      "explanation": "The enzyme binds the substrate, strains it, converts it, releases the product, and is ready again. The enzyme itself returns to its starting state at the end.",
+      "steps": [
+        "A substrate binds to the active site",
+        "The enzyme and substrate change shape, straining a bond",
+        "The substrate is converted into product",
+        "The product leaves the active site",
+        "The enzyme is free to bind another substrate"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.enzyme-mutation",
+      "concept": "enzyme",
+      "element": "active-site",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Suppose a mutation changes an enzyme's active site so that it binds its substrate poorly. What would most likely happen to the reaction?",
+      "explanation": "The fit between active site and substrate is what lets the enzyme act. A poorer fit slows the reaction. Changing the active site does not change the reaction's energy change, and the enzyme is not used up by one reaction.",
+      "choices": [
+        "It would stop, since the enzyme's shape is used up by the reaction",
+        "It would slow down, since the enzyme would bind its substrate less often",
+        "It would speed up, since the new active site lowers the reaction's energy change",
+        "It would run the same, since shape does not matter to catalysis"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "enz-used-up",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.activation-energy-definition",
+      "concept": "activation-energy",
+      "element": "transition-state",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is activation energy?",
+      "explanation": "Activation energy is the input needed to reach the transition state, the peak between reactants and products. It is absorbed, and it is separate from the energy the reaction releases overall.",
+      "choices": [
+        "The energy a reaction must absorb to reach its transition state",
+        "The energy a reaction gives off as it finishes forming products",
+        "The energy an enzyme adds to the reactants to start the reaction",
+        "The energy stored in the bonds of the products once they have formed"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ae-energy-released",
+        "ae-enzyme-adds-energy",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.activation-energy-direction",
+      "concept": "activation-energy",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Is activation energy absorbed or released during a reaction?",
+      "explanation": "Activation energy must be put in to reach the transition state, so it is absorbed. A reaction that releases energy overall still has to get over its barrier first.",
+      "choices": [
+        "Released as the products form, which starts the next step",
+        "Released by the reactants as soon as they meet",
+        "Not needed at all when the reaction releases energy overall",
+        "Absorbed by the reactants, before the products can form"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "ae-energy-released",
+        "ae-energy-released",
+        "ae-exergonic-no-barrier",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.activation-energy-slow-reaction",
+      "concept": "activation-energy",
+      "element": "energy-barrier",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Two reactions both release energy overall. One runs quickly at room temperature and the other almost not at all. What explains the difference?",
+      "explanation": "Speed depends on how many molecules can reach the barrier, which depends on its height, not on the overall energy change. A reaction can release energy and still be slow because its barrier is high.",
+      "choices": [
+        "The fast one releases energy as heat during its start, which speeds up the start",
+        "The slow one is short of enzyme, which supplies all of its energy to start",
+        "The slow one has a higher barrier that few molecules can cross at room temperature",
+        "The slow one releases less energy overall, so it has less energy available to start"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "ae-energy-released",
+        "ae-enzyme-adds-energy",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.activation-energy-no-start",
+      "concept": "activation-energy",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says a reaction that releases energy overall needs no activation energy, so it should start on its own. What is wrong with that?",
+      "explanation": "Overall energy release and the height of the barrier are separate quantities. A reaction that releases energy still has to get its reactants over the barrier before products form.",
+      "choices": [
+        "Products form first, and the energy they give off pays for the start of the reaction",
+        "The overall energy release and the barrier are separate, so the barrier still applies",
+        "Released energy is paid back at the start, so the barrier is cancelled out in full",
+        "The barrier is zero whenever the products sit lower than the reactants in energy"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "ae-exergonic-no-barrier"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.activation-energy-heating",
+      "concept": "activation-energy",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Warming a reaction mixture speeds it up. What best explains this?",
+      "explanation": "Temperature sets how many molecules have enough energy to get over the barrier. Heat does not change the barrier itself, and it does not change the energy the reaction releases overall.",
+      "choices": [
+        "More molecules have enough energy to cross the activation barrier",
+        "The reaction releases energy faster as it warms, so it finishes sooner",
+        "Heat makes the products more stable, so they form faster",
+        "Heat adds the activation energy to every reactant molecule at once"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.activation-energy-enzyme-effect",
+      "concept": "activation-energy",
+      "element": "lowering-the-barrier",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "An enzyme is added to a reaction that releases energy overall. What does the enzyme change?",
+      "explanation": "An enzyme lowers the barrier by providing a better path. It does not add energy, and the energy change between reactants and products is the same with or without it.",
+      "choices": [
+        "It supplies the activation energy itself, so the reaction can start on its own",
+        "It makes the overall energy release larger, so the reaction gives off more heat",
+        "It makes the products lower in energy than the reactants, so they form more easily",
+        "It lowers the activation energy, so more molecules get over the barrier"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "ae-enzyme-adds-energy",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.activation-energy-barrier-height",
+      "concept": "activation-energy",
+      "element": "energy-barrier",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Reaction X has a barrier twice as high as reaction Y, and both release the same energy overall. Which is true at the same temperature?",
+      "explanation": "Rate depends on how many molecules reach the barrier. The overall energy change does not decide the rate, and energy is not released to start a reaction. A higher barrier means a slower reaction.",
+      "choices": [
+        "X runs faster, since it must release twice as much energy to start",
+        "Y runs slower, since its products form with more energy",
+        "X runs slower, since fewer molecules can cross its higher barrier",
+        "X and Y run at the same rate, since their overall energy change is the same"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "ae-energy-released",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.activation-energy-body-temperature",
+      "concept": "activation-energy",
+      "element": "lowering-the-barrier",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A cell needs a reaction to run at body temperature. Which change best fits how enzymes help?",
+      "explanation": "At body temperature few molecules have the energy to cross the full barrier. An enzyme lowers that barrier, so more molecules cross it at that temperature, without heating anything.",
+      "choices": [
+        "Warming the active site above the temperature of the rest of the cell, so it reacts",
+        "Lowering the barrier, so enough reactant molecules cross it at body temperature",
+        "Supplying energy, so reactants reach the barrier without needing any heat from the cell",
+        "Raising the energy the reaction releases, so starting it is easier at low heat"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        "ae-enzyme-adds-energy",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.activation-energy-diagram",
+      "concept": "activation-energy",
+      "element": "energy-diagram",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "On an energy diagram of a reaction, what does the activation energy measure?",
+      "explanation": "On the diagram, activation energy is the rise from the reactants up to the transition state. The drop after the peak is the energy the reaction releases, not the barrier.",
+      "choices": [
+        "The rise from the reactants up to the transition state",
+        "The drop from the transition state down to the products",
+        "The difference in height between the reactants and the products",
+        "The energy of a catalyst, shown as a separate bar"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ae-energy-released",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.atp-parts",
+      "concept": "atp",
+      "element": "atp-structure",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which three parts make up one ATP molecule?",
+      "explanation": "ATP is adenosine, which is the base adenine joined to the sugar ribose, with a chain of three phosphate groups. Deoxyribose is the sugar of DNA, and two phosphates would give ADP.",
+      "choices": [
+        "Adenine, deoxyribose and two phosphate groups",
+        "Guanine, ribose and three phosphate groups",
+        "Adenine, ribose and one phosphate group, bonded to a fatty acid",
+        "Adenine, ribose and three phosphate groups"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.atp-amount-held",
+      "concept": "atp",
+      "element": "atp-adp-cycle",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about how much ATP a cell holds is correct?",
+      "explanation": "ATP is a short-term carrier. A cell turns it over quickly, so the amount at any moment is small. Its long-term energy is kept in other molecules.",
+      "choices": [
+        "A cell holds no ATP and makes fresh molecules each time it needs energy",
+        "A cell holds a large store of ATP inside its nucleus, packed next to its DNA",
+        "A cell holds a small amount of ATP at any moment and remakes it constantly",
+        "A cell holds a large store of ATP that lasts for days without food"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "atp-used-up",
+        null,
+        null,
+        "atp-long-term-store"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.atp-why-hydrolysis-releases",
+      "concept": "atp",
+      "element": "hydrolysis",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does hydrolyzing ATP to ADP and phosphate release energy?",
+      "explanation": "Breaking a bond takes energy. Hydrolysis releases energy overall because ADP and phosphate are more stable than ATP, so the difference is free to do work. The phosphate is not burned.",
+      "choices": [
+        "The ribose sugar heats up when the phosphate is removed from it",
+        "The products are more stable than ATP, so the change releases energy overall",
+        "The bond between two phosphates is high energy, so breaking it releases that energy",
+        "The phosphate group burns as it leaves the molecule and gives off heat"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        "atp-bond-breaking",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Choice 2 uses the common 'high-energy phosphate bond' wording, which is a misconception: the energy comes from the products being more stable than ATP. Choice 1 is the accurate one, but the item could be clearer. b's note: Choice 1 is the sound one; choice 2 states the high-energy-bond misconception.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.atp-store-claim",
+      "concept": "atp",
+      "element": "atp-adp-cycle",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says ATP stores energy the way fat does, so one ATP lasts a long time. What is wrong with that?",
+      "explanation": "ATP is a short-term carrier that is recycled. Fat is the long-term store, and it holds much more energy per gram than ATP does.",
+      "choices": [
+        "ATP is a carrier that is used and remade within moments, not a store",
+        "ATP stores more energy per gram than fat, so it lasts longer on the cell's supply",
+        "ATP is made from fat, so it is really a stored form of fat energy",
+        "ATP holds its energy in the sugar ring, not in the phosphates"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "atp-long-term-store",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.atp-after-use",
+      "concept": "atp",
+      "element": "atp-adp-cycle",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "After a cell uses ATP, what happens to the molecule that is left?",
+      "explanation": "When ATP gives up a phosphate it becomes ADP, and ADP plus a phosphate can be rebuilt into ATP. The cell recycles the same pool of molecules rather than discarding them.",
+      "choices": [
+        "It is destroyed, and the cell must make new ATP from scratch each time",
+        "It is stored as fat in the cell until the cell next needs energy",
+        "It is broken into free sugar and free phosphate for export",
+        "ADP and phosphate are rebuilt into ATP, which the cell uses again"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "atp-used-up",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.atp-coupling",
+      "concept": "atp",
+      "element": "energy-coupling",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why can ATP's breakdown drive a reaction that would not happen on its own?",
+      "explanation": "Coupling adds the two energy changes together. ATP's breakdown releases more than the other reaction needs, so the sum is negative and the pair proceeds. The breaking bond does not pay for the work, since breaking a bond takes energy.",
+      "choices": [
+        "The two reactions share one enzyme, and the enzyme supplies the energy",
+        "The needy reaction is heated by the phosphate as it is released",
+        "The coupled pair has a negative overall energy change, so it can proceed",
+        "The reaction takes energy from the bond that breaks, so that bond must be weak"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.atp-muscle-exercise",
+      "concept": "atp",
+      "element": "atp-adp-cycle",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A muscle cell uses ATP very fast during exercise, yet its ATP level stays steady. Which explanation fits best?",
+      "explanation": "A cell's ATP level stays roughly steady because the same molecules cycle between ATP and ADP. Used ATP is not gone; it is recycled as fast as it is spent.",
+      "choices": [
+        "Its ATP is kept in the nucleus and carried out whenever it is needed",
+        "ADP and phosphate are rebuilt into ATP about as fast as ATP is spent",
+        "Its fat stores are converted straight into ATP to replace what is spent",
+        "Each ATP used is gone, so the cell must make each new one from scratch"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "atp-used-up"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.atp-protein-steps",
+      "concept": "atp",
+      "element": "energy-coupling",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps of an ATP-powered change in a protein in order.",
+      "explanation": "ATP has to bind before it can give up its phosphate. The phosphate changes the protein's shape, the shape change does the work, and then ADP and the phosphate are released.",
+      "steps": [
+        "ATP binds to the protein",
+        "A phosphate from ATP is transferred to the protein",
+        "The protein changes shape and does its work",
+        "ADP and the phosphate leave the protein"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.atp-versus-adp",
+      "concept": "atp",
+      "element": "atp-structure",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How does ATP differ from ADP?",
+      "explanation": "ADP is ATP minus one phosphate group. Removing a phosphate is what releases energy, and adding one back is how ADP is recharged into ATP.",
+      "choices": [
+        "ATP has one more phosphate group than ADP",
+        "ADP has one more adenine than ATP",
+        "ADP has a sugar ring that ATP lacks",
+        "ATP has a double bond where ADP has a single one"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.redox-define-oxidation",
+      "concept": "redox-reactions",
+      "element": "oxidation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does oxidation mean, in terms of electrons?",
+      "explanation": "Oxidation is losing electrons. Gaining electrons is reduction. Gaining oxygen is one example of oxidation, a special case that does not define it.",
+      "choices": [
+        "A gain of electrons by an atom or molecule",
+        "A gain of oxygen by an atom or molecule",
+        "A gain of hydrogen ions by an atom or molecule",
+        "A loss of electrons by an atom or molecule"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        "redox-oxygen-only",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.redox-define-reduction",
+      "concept": "redox-reactions",
+      "element": "reduction",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does reduction mean, in terms of electrons?",
+      "explanation": "Reduction is gaining electrons, the opposite of oxidation. Losing oxygen is one example of reduction, not the definition.",
+      "choices": [
+        "A loss of oxygen by an atom or molecule",
+        "A loss of hydrogen ions by an atom or molecule",
+        "A gain of electrons by an atom or molecule",
+        "A loss of electrons by an atom or molecule"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "redox-oxygen-only",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.redox-reducing-agent",
+      "concept": "redox-reactions",
+      "element": "reducing-agent",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In a redox reaction, which substance is the reducing agent?",
+      "explanation": "The reducing agent donates electrons, so it is itself oxidized. A student who thinks the reducing agent is the one that gets reduced has swapped the two roles.",
+      "choices": [
+        "The substance that is burned during the reaction",
+        "The substance that loses electrons and is oxidized",
+        "The substance that gains electrons and is reduced",
+        "The substance that gains oxygen during the reaction"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        "redox-agent-swap",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.redox-burning-claim",
+      "concept": "redox-reactions",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says oxidation happens only when something burns. What is wrong with that?",
+      "explanation": "Oxidation is loss of electrons, with or without a flame. Respiration oxidizes glucose step by step, which is why cells do not need to burn their fuel.",
+      "choices": [
+        "Any loss of electrons is oxidation, and cells oxidize fuel in small steps without flame",
+        "Oxidation is a fast, hot reaction, so slow changes inside living cells are not oxidation at all",
+        "Burning gains electrons, which makes it reduction rather than oxidation",
+        "Electrons move in burning and nowhere else, so cells must burn fuel to get energy"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "redox-only-burning",
+        null,
+        "redox-only-burning"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.redox-sodium-chlorine",
+      "concept": "redox-reactions",
+      "element": "electron-transfer",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A sodium atom gives an electron to a chlorine atom. Which atom is reduced?",
+      "explanation": "Chlorine gains the electron, so it is reduced. Sodium gives the electron up and is oxidized. The atom that gives electrons away is the one that is oxidized, never the one that is reduced.",
+      "choices": [
+        "Sodium, which is reduced because it gives up the electron",
+        "Sodium, which gains an electron and becomes a positive ion",
+        "Chlorine, which loses the electron and becomes a positive ion",
+        "Chlorine, which gains the electron and becomes a negative ion"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.redox-sodium-chloride-reagent",
+      "concept": "redox-reactions",
+      "element": "reducing-agent",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In 2Na + Cl₂ → 2NaCl, which substance is the reducing agent?",
+      "explanation": "Sodium loses an electron to each chlorine, so it is oxidized and is the reducing agent. Chlorine gains the electrons and is reduced; it is the oxidizing agent.",
+      "choices": [
+        "Sodium, which gains an electron from each chlorine atom",
+        "Chlorine, which loses electrons to each sodium atom",
+        "Sodium, which loses an electron to each chlorine atom",
+        "Chlorine, which is reduced as it gains each electron"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "redox-agent-swap"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.redox-energy-release",
+      "concept": "redox-reactions",
+      "element": "electron-transfer",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why do electron transfers in a cell release energy?",
+      "explanation": "Electronegativity measures how strongly an atom pulls shared or transferred electrons. Moving an electron toward a more electronegative atom lowers its energy, and the difference is released. Oxygen is a common case, not the only one.",
+      "choices": [
+        "Electrons release energy when they are moved into the nucleus of an atom",
+        "Electrons move to an atom that pulls them more strongly, which lowers their energy",
+        "Electrons move to an atom that holds them more weakly, which raises their energy level",
+        "Electrons release energy when oxygen is the one that receives them"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.redox-small-steps",
+      "concept": "redox-reactions",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why does a cell oxidize its food in many small steps instead of one burst?",
+      "explanation": "Respiration releases energy in many small redox steps, so the energy can be captured instead of escaping as one burst of heat and light.",
+      "choices": [
+        "Energy released in small amounts can be captured, rather than lost as one burst of heat",
+        "Each small step adds oxygen to the food molecule, which the cell then keeps for later",
+        "Small steps avoid oxidation entirely, since each one reduces the food instead of burning it",
+        "Small steps need a flame, and one burst would put the flame out before it could spread"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "redox-oxygen-only",
+        null,
+        "redox-only-burning"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.redox-electron-transfer-steps",
+      "concept": "redox-reactions",
+      "element": "electron-transfer",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps of one electron transfer in order, from donor to acceptor.",
+      "explanation": "Oxidation and reduction happen together. The donor loses the electron, the electron moves across, and the acceptor gains it.",
+      "steps": [
+        "The donor atom loses an electron and is oxidized",
+        "The electron passes to the acceptor atom",
+        "The acceptor atom gains the electron and is reduced"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.feedback-definition",
+      "concept": "feedback-inhibition",
+      "element": "end-product",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is feedback inhibition?",
+      "explanation": "In feedback inhibition, the product of a pathway slows one of its early enzymes, which reduces the product's own production. It is reversible and does not destroy the enzyme.",
+      "choices": [
+        "A pathway's end product speeds up its own first enzyme when it builds up",
+        "An enzyme is permanently destroyed when its product builds up",
+        "A pathway's last enzyme is destroyed by the substrate it acts on",
+        "A pathway's end product slows an enzyme early in the same pathway"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "fi-activates",
+        "fi-stops-forever",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.feedback-which-enzyme",
+      "concept": "feedback-inhibition",
+      "element": "committed-step",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which enzyme of a pathway does feedback inhibition usually slow?",
+      "explanation": "Blocking an early, committed step means the pathway's intermediates are not made in vain. The end product usually switches off an enzyme near the start, not the one that makes it.",
+      "choices": [
+        "The enzyme that copies the cell's DNA before the cell divides into two",
+        "The enzyme that breaks down the end product as soon as it forms in the cell",
+        "The first enzyme, or a step near the start that commits the substrate",
+        "The last enzyme in the chain, the one that makes the end product itself"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.feedback-binding-result",
+      "concept": "feedback-inhibition",
+      "element": "allosteric-site",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "The end product builds up and binds to a site on an early enzyme that is away from its active site. What happens?",
+      "explanation": "Binding at an allosteric site changes the active site's shape, so the enzyme slows. When the end product falls, it leaves and the enzyme recovers. Nothing is destroyed.",
+      "choices": [
+        "The substrate changes into end product before the enzyme can act",
+        "The enzyme changes shape and slows, so less end product is made",
+        "The enzyme is blocked for good and broken down, so the pathway stops",
+        "The enzyme makes extra end product, which raises its own level"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        "fi-stops-forever",
+        "fi-activates"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.feedback-turned-off-forever",
+      "concept": "feedback-inhibition",
+      "element": "negative-feedback",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says feedback inhibition turns an enzyme off forever, so the cell must make new enzyme after each use. What is wrong with that?",
+      "explanation": "The end product is a reversible signal. It binds, slows the enzyme, and lets go when its level falls, so no new enzyme needs to be made.",
+      "choices": [
+        "The end product binds and lets go, so the enzyme works again when product falls",
+        "The enzyme is broken down during each use, so the cell has to make it again every time",
+        "Feedback makes the enzyme more active when the product builds up, not less at all",
+        "The end product sits in the active site, so it competes with the substrate"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "fi-stops-forever",
+        "fi-activates",
+        "fi-same-site"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.feedback-binding-site",
+      "concept": "feedback-inhibition",
+      "element": "allosteric-site",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Where on its enzyme does a feedback inhibitor usually bind?",
+      "explanation": "Feedback inhibitors usually bind an allosteric site, which changes the active site's shape from a distance. Putting the inhibitor in the active site itself describes a different kind of inhibition.",
+      "choices": [
+        "In the active site, where the substrate would normally bind",
+        "On the membrane that encloses the cell",
+        "On the DNA that codes for the enzyme",
+        "At an allosteric site, away from the active site"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "fi-same-site",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.feedback-remove-product",
+      "concept": "feedback-inhibition",
+      "element": "negative-feedback",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A pathway runs A → B → C → D, and D slows the enzyme that turns A into B. If D is removed, what happens?",
+      "explanation": "D removes the block when it is gone, so the enzyme makes B again. A student who thinks the product switches the enzyme on would expect the opposite, and one who thinks the block is permanent would expect nothing to change.",
+      "choices": [
+        "The enzyme stays blocked for good, since the block is permanent",
+        "B builds up instead, since the enzyme now turns B back into A",
+        "The enzyme speeds up again, and the pathway makes more B, C and D",
+        "The enzyme stops, so A builds up because D had been switching it on"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "fi-stops-forever",
+        null,
+        null,
+        "fi-activates"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.feedback-excess-product",
+      "concept": "feedback-inhibition",
+      "element": "negative-feedback",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "The end product of a pathway is in excess. Which change best describes what the pathway does?",
+      "explanation": "Negative feedback keeps production matched to need. Feedback inhibition is reversible, so the enzyme's activity follows the end product's level.",
+      "choices": [
+        "The first enzyme is unchanged, but the excess substrate slowly destroys the enzyme",
+        "The first enzyme slows, so less substrate enters and less end product forms",
+        "The first enzyme speeds up, so more end product forms to match the demand in the cell",
+        "The last enzyme is destroyed, so the pathway stops for good and cannot restart"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        "fi-activates",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.feedback-purpose",
+      "concept": "feedback-inhibition",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why is feedback inhibition useful to a cell?",
+      "explanation": "A cell that keeps making a product it has enough of wastes raw materials and energy. Feedback inhibition throttles the pathway as product builds up, without destroying anything.",
+      "choices": [
+        "It stops making a product the cell already has enough of, saving materials and energy",
+        "It destroys enzymes the cell no longer needs, so their parts can be recycled",
+        "It raises the level of the end product, so the cell keeps a larger reserve on hand",
+        "It makes every enzyme in the pathway run at the same fixed rate, whatever the cell needs at the time"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "fi-stops-forever",
+        "fi-activates",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.feedback-control-type",
+      "concept": "feedback-inhibition",
+      "element": "negative-feedback",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Feedback inhibition is an example of which kind of control?",
+      "explanation": "Negative feedback reduces a process when its output rises. In feedback inhibition, the process slows as its end product accumulates.",
+      "choices": [
+        "Positive feedback, where a product speeds up the process that makes it",
+        "Positive feedback, where a product destroys the enzyme that makes it",
+        "No control, since the enzyme runs at a fixed rate",
+        "Negative feedback, where a product slows the process that makes it"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "fi-activates",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.feedback-steps",
+      "concept": "feedback-inhibition",
+      "element": "end-product",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the steps of feedback inhibition in order.",
+      "explanation": "The pathway makes end product, which builds up and binds an early enzyme. The enzyme slows, so less substrate enters and the end product falls.",
+      "steps": [
+        "The pathway makes end product from its substrate through several enzyme steps",
+        "End product builds up beyond what the cell needs",
+        "End product binds an allosteric site on an early enzyme",
+        "The early enzyme changes shape and slows",
+        "Less substrate enters, so less end product forms"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.tap-active-site",
+      "concept": "enzyme",
+      "element": "active-site",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the region of the enzyme whose shape and charge match the substrate, where the substrate binds.",
+      "artifact": "enzyme-cycle",
+      "target": "active-site",
+      "explanation": "The active site is a pocket in the enzyme lined with the parts that fit one substrate. It is empty before the substrate arrives and empty again after the products leave.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.tap-substrate",
+      "concept": "enzyme",
+      "element": "substrate",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the molecule the enzyme acts on, before the reaction has changed it.",
+      "artifact": "enzyme-cycle",
+      "target": "substrate",
+      "explanation": "The substrate is the reactant an enzyme binds. Its shape matches the active site, and the enzyme turns it into products.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.tap-enzyme-substrate-complex",
+      "concept": "enzyme",
+      "element": "catalysis",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the enzyme while it holds its substrate in the position that makes the substrate's bond easier to break.",
+      "artifact": "enzyme-cycle",
+      "target": "enzyme-substrate-complex",
+      "explanation": "Bound in the active site, the substrate forms an enzyme-substrate complex. Holding it this way lowers the activation energy, so the bond breaks faster.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.tap-products",
+      "concept": "enzyme",
+      "element": "catalysis",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the molecules the reaction makes, which leave so the enzyme can bind again.",
+      "artifact": "enzyme-cycle",
+      "target": "products",
+      "explanation": "The substrate is split into two products, which no longer fit the active site and drift away. The enzyme itself is not used up.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.tap-transition-state",
+      "concept": "activation-energy",
+      "element": "transition-state",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the short-lived, unstable arrangement the molecules pass through as bonds break and form, in the reaction without an enzyme.",
+      "artifact": "energy-barrier",
+      "target": "transition-state",
+      "explanation": "The transition state is the highest-energy point the reacting molecules reach. Only molecules with enough energy get there, and from it they go on to form products.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.tap-activation-energy",
+      "concept": "activation-energy",
+      "element": "energy-barrier",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the energy the reactants must absorb before the reaction without an enzyme can go.",
+      "artifact": "energy-barrier",
+      "target": "activation-energy",
+      "explanation": "Activation energy is the rise from the reactants' level to the transition state. It is absorbed, which is why the arrow points up.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.tap-catalyzed-path",
+      "concept": "activation-energy",
+      "element": "lowering-the-barrier",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the path the same reaction takes when an enzyme is present.",
+      "artifact": "energy-barrier",
+      "target": "catalyzed-path",
+      "explanation": "An enzyme lowers the barrier, so its curve has a smaller peak between the same reactants and products. More molecules get over it in a given time.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.tap-energy-released",
+      "concept": "activation-energy",
+      "element": "energy-diagram",
+      "kind": "label",
+      "difficulty": 3,
+      "prompt": "Tap the energy the reaction gives off overall, which an enzyme does not change.",
+      "artifact": "energy-barrier",
+      "target": "energy-released",
+      "explanation": "The overall energy change is the drop from the reactants' level to the products' level. Both curves start and end at the same levels, so an enzyme leaves it the same.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.enzymes-and-energy.tap-reactants",
+      "concept": "activation-energy",
+      "element": "energy-diagram",
+      "kind": "label",
+      "difficulty": 1,
+      "prompt": "Tap the energy level of the molecules the reaction starts with.",
+      "artifact": "energy-barrier",
+      "target": "reactants",
+      "explanation": "An energy diagram reads from left to right, so the reactants come first. Their level is higher than the products' level because this reaction releases energy.",
+      "verification": {
+        "status": "draft"
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "enzyme-cycle",
+      "kind": "diagram",
+      "title": "One enzyme, one reaction",
+      "alt": "An enzyme shown at three moments, left to right, with arrows between them. First, a green enzyme with an empty, blue-lined pocket in its top, and a terracotta two-part substrate above it. Second, the substrate sitting snugly in the pocket. Third, the same enzyme with its pocket empty again, and two small sand-coloured products moving away from it.",
+      "file": "assets/enzyme-cycle.svg",
+      "hotspots": [
+        {
+          "id": "substrate",
+          "label": "Substrate",
+          "x": 0.175,
+          "y": 0.333,
+          "r": 0.05
+        },
+        {
+          "id": "active-site",
+          "label": "Active site",
+          "x": 0.175,
+          "y": 0.556,
+          "r": 0.05
+        },
+        {
+          "id": "enzyme-substrate-complex",
+          "label": "Enzyme-substrate complex",
+          "x": 0.5,
+          "y": 0.551,
+          "r": 0.06
+        },
+        {
+          "id": "products",
+          "label": "Products",
+          "x": 0.825,
+          "y": 0.333,
+          "r": 0.07
+        },
+        {
+          "id": "free-enzyme",
+          "label": "Enzyme, unchanged",
+          "x": 0.825,
+          "y": 0.678,
+          "r": 0.06
+        }
+      ]
+    },
+    {
+      "id": "enzyme-cycle-steps",
+      "kind": "sequence",
+      "title": "How an enzyme speeds a reaction",
+      "alt": "Four steps: the substrate meets the active site, it binds to form a complex, the products leave, and the unchanged enzyme is ready again.",
+      "over": "enzyme-cycle",
+      "steps": [
+        {
+          "title": "Substrate meets the enzyme",
+          "text": "A substrate molecule collides with the enzyme. Its shape and charge match the active site.",
+          "focus": "substrate"
+        },
+        {
+          "title": "Substrate binds",
+          "text": "The substrate fits into the active site, forming an enzyme-substrate complex.",
+          "focus": "enzyme-substrate-complex"
+        },
+        {
+          "title": "Products leave",
+          "text": "Held in place, the substrate's bond breaks more easily. The products then leave the active site.",
+          "focus": "products"
+        },
+        {
+          "title": "Enzyme is ready again",
+          "text": "The enzyme comes out unchanged, so it can bind another substrate straight away.",
+          "focus": "free-enzyme"
+        }
+      ]
+    },
+    {
+      "id": "energy-barrier",
+      "kind": "diagram",
+      "title": "The energy barrier, with and without an enzyme",
+      "alt": "An unlabelled energy diagram: energy rises up the side, the reaction runs left to right. Reactants sit on a sand level at the left, products on a lower sage level at the right. A solid terracotta curve joins them over a high peak marked with a ring; a dashed blue-grey curve joins them over a much lower peak. A green arrow rises from the reactant level to the high peak, and an ochre arrow drops from the reactant level to the product level.",
+      "file": "assets/energy-barrier.svg",
+      "hotspots": [
+        {
+          "id": "transition-state",
+          "label": "Transition state",
+          "x": 0.5,
+          "y": 0.189,
+          "r": 0.05
+        },
+        {
+          "id": "catalyzed-path",
+          "label": "Path with an enzyme",
+          "x": 0.5,
+          "y": 0.444,
+          "r": 0.05
+        },
+        {
+          "id": "activation-energy",
+          "label": "Activation energy",
+          "x": 0.25,
+          "y": 0.378,
+          "r": 0.05
+        },
+        {
+          "id": "reactants",
+          "label": "Reactants",
+          "x": 0.179,
+          "y": 0.578,
+          "r": 0.05
+        },
+        {
+          "id": "products",
+          "label": "Products",
+          "x": 0.775,
+          "y": 0.778,
+          "r": 0.05
+        },
+        {
+          "id": "energy-released",
+          "label": "Energy released overall",
+          "x": 0.867,
+          "y": 0.667,
+          "r": 0.05
+        }
+      ]
+    }
+  ]
+}

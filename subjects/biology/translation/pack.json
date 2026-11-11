@@ -1,0 +1,1288 @@
+{
+  "formatVersion": 1,
+  "id": "biology.translation",
+  "subject": "biology",
+  "title": "Translation",
+  "summary": "How the genetic code is read by transfer RNA and the ribosome to build a protein, and how proteins are changed afterwards.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "genetic-code",
+      "name": "Genetic code",
+      "aliases": [
+        "Codon table",
+        "Codons",
+        "Codon"
+      ],
+      "summary": "The table of three-nucleotide codons, each naming one amino acid or a stop signal, that cells use to read mRNA.",
+      "requires": [
+        "nitrogenous-base"
+      ],
+      "elements": [
+        {
+          "id": "codon",
+          "name": "Codon",
+          "aliases": [
+            "Codons"
+          ]
+        },
+        {
+          "id": "start-and-stop-codons",
+          "name": "Start and stop codons",
+          "aliases": [
+            "Start codon",
+            "Stop codon"
+          ]
+        },
+        {
+          "id": "degeneracy",
+          "name": "Degeneracy of the code",
+          "aliases": [
+            "Redundancy of the genetic code"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "The genetic code is the table that matches each three-nucleotide codon in mRNA to an amino acid or to a stop signal. Cells read a gene three letters at a time, so the 64 possible codons cover the 20 amino acids that proteins use. Three codons are stop signals, and AUG is the usual start, which also codes for methionine. Most amino acids have more than one codon, so the code is degenerate. Almost every organism uses the same table, so a bacterium and a person read the same codon the same way."
+      },
+      "misconceptions": [
+        {
+          "id": "gc-one-base-one-aa",
+          "claim": "One nucleotide codes for one amino acid.",
+          "correction": "A codon is three nucleotides. Four bases read one at a time give only four signals, too few for 20 amino acids. Read three at a time they give 64."
+        },
+        {
+          "id": "gc-one-codon-per-aa",
+          "claim": "Each amino acid has exactly one codon.",
+          "correction": "Most amino acids have two to six codons. Because the code is degenerate, different codons can name the same amino acid."
+        },
+        {
+          "id": "gc-code-varies-by-species",
+          "claim": "Each species has its own genetic code.",
+          "correction": "The code is nearly universal: the same codon names the same amino acid in nearly all life. Rare exceptions exist, such as in some mitochondria."
+        }
+      ]
+    },
+    {
+      "id": "transfer-rna",
+      "name": "Transfer RNA",
+      "aliases": [
+        "tRNA",
+        "tRNAs",
+        "Transfer RNAs"
+      ],
+      "summary": "A small RNA that carries one amino acid to the ribosome, using an anticodon to pair with the matching mRNA codon.",
+      "requires": [
+        "genetic-code",
+        "complementary-base-pairing",
+        "enzyme"
+      ],
+      "elements": [
+        {
+          "id": "anticodon",
+          "name": "Anticodon",
+          "aliases": [
+            "Anticodons"
+          ]
+        },
+        {
+          "id": "aminoacyl-trna-synthetase",
+          "name": "Aminoacyl-tRNA synthetase",
+          "aliases": [
+            "tRNA synthetase",
+            "Aminoacyl-tRNA synthetases"
+          ]
+        },
+        {
+          "id": "charged-trna",
+          "name": "Charged tRNA",
+          "aliases": [
+            "Aminoacyl-tRNA",
+            "Charged tRNAs"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "Transfer RNA, or tRNA, is a small RNA that carries one amino acid to the ribosome. Each tRNA has an anticodon, three bases that pair with a matching codon on the mRNA, and an attachment site at its other end for one amino acid. An enzyme, aminoacyl-tRNA synthetase, loads each tRNA with the right amino acid before it is used. The loaded form is called an aminoacyl-tRNA. The ribosome reads the pairing and joins the carried amino acid to the growing chain."
+      },
+      "misconceptions": [
+        {
+          "id": "trna-one-per-aa",
+          "claim": "Each amino acid has just one tRNA.",
+          "correction": "Many amino acids have several tRNAs, which differ in their anticodons. Each tRNA still carries one amino acid."
+        },
+        {
+          "id": "trna-ribosome-charges",
+          "claim": "The ribosome attaches the amino acid to the tRNA.",
+          "correction": "An aminoacyl-tRNA synthetase, an enzyme, attaches each amino acid to its matching tRNA before the ribosome uses it."
+        },
+        {
+          "id": "trna-anticodon-same-as-codon",
+          "claim": "The anticodon is the same sequence as the codon.",
+          "correction": "The anticodon pairs with the codon, so it is complementary to it, and the two run in opposite directions."
+        }
+      ]
+    },
+    {
+      "id": "translation",
+      "name": "Translation",
+      "aliases": [
+        "Protein synthesis",
+        "Translation of mRNA"
+      ],
+      "summary": "The ribosome reads mRNA codon by codon and joins the amino acids carried by tRNAs into a polypeptide chain.",
+      "requires": [
+        "genetic-code",
+        "transfer-rna",
+        "ribosome"
+      ],
+      "elements": [
+        {
+          "id": "initiation",
+          "name": "Initiation",
+          "aliases": []
+        },
+        {
+          "id": "elongation",
+          "name": "Elongation",
+          "aliases": []
+        },
+        {
+          "id": "termination",
+          "name": "Termination",
+          "aliases": []
+        },
+        {
+          "id": "ribosome-sites",
+          "name": "Ribosome sites",
+          "aliases": [
+            "A, P and E sites"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "Translation builds a protein from an mRNA sequence. A ribosome in the cytoplasm reads the mRNA codon by codon and moves along it. Each aminoacyl-tRNA whose anticodon pairs with the codon enters the A site, a peptide bond forms, and the ribosome shifts one codon. Translation starts at an AUG start codon and ends when a stop codon is read and a release factor frees the finished chain. Several ribosomes can read one mRNA at once, so many copies of a protein can be made quickly."
+      },
+      "misconceptions": [
+        {
+          "id": "tl-in-nucleus",
+          "claim": "Translation happens inside the nucleus, along with transcription.",
+          "correction": "Translation happens on ribosomes in the cytoplasm, outside the nucleus. Transcription, which makes the mRNA, happens in the nucleus."
+        },
+        {
+          "id": "tl-adds-at-start",
+          "claim": "New amino acids join at the start of the chain.",
+          "correction": "Each new amino acid joins the carboxyl end, so the chain grows from its amino end toward its carboxyl end."
+        },
+        {
+          "id": "tl-one-ribosome",
+          "claim": "An mRNA is read by one ribosome at a time.",
+          "correction": "Several ribosomes can read one mRNA at once, following one another along it. The group is called a polyribosome."
+        }
+      ]
+    },
+    {
+      "id": "post-translational-modification",
+      "name": "Post-translational modification",
+      "aliases": [
+        "Post-translational modifications",
+        "PTMs"
+      ],
+      "summary": "Changes made to a protein after translation, such as adding phosphate or sugar groups or cutting the chain, which alter what it does.",
+      "requires": [
+        "translation",
+        "enzyme"
+      ],
+      "elements": [
+        {
+          "id": "phosphorylation",
+          "name": "Phosphorylation",
+          "aliases": []
+        },
+        {
+          "id": "glycosylation",
+          "name": "Glycosylation",
+          "aliases": [
+            "Sugar addition"
+          ]
+        },
+        {
+          "id": "proteolytic-cleavage",
+          "name": "Proteolytic cleavage",
+          "aliases": [
+            "Protein cutting"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "After translation, many proteins are changed before they work. Enzymes can add a phosphate group, which can switch an enzyme on or off, or a sugar chain, which can help a protein fold and direct it to the right place. Some proteins are also cut by proteases into shorter, active forms. These changes alter the protein, not the gene: the DNA sequence stays the same. A protein's final shape and activity depend on its amino acid sequence and on what is added or cut afterwards."
+      },
+      "misconceptions": [
+        {
+          "id": "ptm-sequence-fixes",
+          "claim": "The amino acid sequence fixes everything about a protein, so nothing changes after translation.",
+          "correction": "Many proteins are changed after translation by adding groups such as phosphate or sugar, or by cutting the chain. These changes alter how the protein works."
+        },
+        {
+          "id": "ptm-changes-gene",
+          "claim": "Changing a protein after translation changes the gene.",
+          "correction": "A modification changes only the protein. The DNA sequence stays the same, so the gene is not altered."
+        },
+        {
+          "id": "ptm-cosmetic",
+          "claim": "Modifications are cosmetic and do not affect what a protein does.",
+          "correction": "Phosphorylation can switch an enzyme on or off, and sugar chains affect how a protein folds and where it goes."
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "biology.translation.codon-length",
+      "concept": "genetic-code",
+      "element": "codon",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How many nucleotides make up one codon?",
+      "choices": [
+        "One",
+        "Two",
+        "Three",
+        "Sixteen"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "gc-one-base-one-aa",
+        null,
+        null,
+        null
+      ],
+      "explanation": "A codon is three nucleotides. Three bases give 64 combinations, enough for the 20 amino acids. One base gives 4 signals, and two bases give only 16, which is still too few for 20 amino acids.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.codon-total",
+      "concept": "genetic-code",
+      "element": "codon",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How many codons does the genetic code have, counting the three stop codons?",
+      "choices": [
+        "20",
+        "61",
+        "64",
+        "256"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "gc-one-codon-per-aa",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Four bases in each of three positions give 4 × 4 × 4 = 64 codons. Of these, 61 name amino acids and three are stop signals. The number 20 is the count of amino acids, not of codons.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.degenerate-code-error",
+      "concept": "genetic-code",
+      "element": "degeneracy",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: each amino acid has exactly one codon, so any change to a codon must change the protein. What is wrong with that?",
+      "choices": [
+        "Each codon names one amino acid, so every codon change alters the protein",
+        "A codon has four nucleotides, so one change shifts every later codon",
+        "Several codons can name the same amino acid, so some changes leave it the same",
+        "The ribosome repairs a changed codon before reading it, so the protein stays the same"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "gc-one-codon-per-aa",
+        null,
+        null,
+        null
+      ],
+      "explanation": "The premise is false: most amino acids have two to six codons, so some single-base changes swap one codon for a synonym and leave the amino acid unchanged. Ribosomes do not repair codons.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.start-codon",
+      "concept": "genetic-code",
+      "element": "start-and-stop-codons",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which amino acid does the start codon AUG normally code for?",
+      "choices": [
+        "Methionine",
+        "Glycine",
+        "Tryptophan",
+        "Lysine"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "AUG is the usual start codon, and it codes for methionine, so new proteins begin with methionine, which may be removed later. Glycine, tryptophan and lysine each have their own codons, none of them AUG.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.stop-codon-statement",
+      "concept": "genetic-code",
+      "element": "start-and-stop-codons",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about the stop codons UAA, UAG and UGA is correct?",
+      "choices": [
+        "Each one is read by a tRNA that carries a specific amino acid",
+        "Each one ends translation, and no amino acid is added for it",
+        "Each one marks the start of translation, so it is read first",
+        "Each one codes for an amino acid that is found at the end of a protein"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Release factors, not tRNAs, recognise the three stop codons, and the finished chain is released with no amino acid added. Stop codons mark the end; AUG is the usual start.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.shared-code-across-life",
+      "concept": "genetic-code",
+      "element": "degeneracy",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A bacterial gene and a human gene each code for a protein. Which statement about the genetic code they share is most accurate?",
+      "choices": [
+        "Each species has its own code, so the same codon names different amino acids in each",
+        "The same codon names the same amino acid in nearly all life, with rare exceptions",
+        "The code differs inside the nucleus, so the two genes cannot be compared",
+        "Bacteria read codons of two nucleotides and humans read codons of three"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "gc-code-varies-by-species",
+        null,
+        null,
+        null
+      ],
+      "explanation": "The genetic code is nearly universal. The rare exceptions, such as some mitochondrial codons, do not change the general rule. A student who thinks each species has its own table would pick the claim that the codons differ between species.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.human-gene-in-bacteria",
+      "concept": "genetic-code",
+      "element": "degeneracy",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A human gene is put into bacteria, which then make the correct human protein from it. What does this show?",
+      "choices": [
+        "The same codons name the same amino acids in both, so the message is read alike",
+        "The human gene is first converted into a bacterial code, so the amino acids match by design",
+        "Bacteria and humans use different codons, and the amino acids match by chance",
+        "The bacteria copy the human ribosome, so they translate the gene directly"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "gc-code-varies-by-species",
+        null
+      ],
+      "explanation": "The protein is correct because the codons name the same amino acids in both organisms. A student who holds that each species has its own code would call the match a coincidence.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.silent-codon-change",
+      "concept": "genetic-code",
+      "element": "degeneracy",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A DNA change turns the codon GAA into GAG. Both codons name glutamate. What is the effect on the protein at that position?",
+      "choices": [
+        "The protein gets a different amino acid at that position",
+        "The protein stops early, because the new codon is a stop codon",
+        "None: glutamate is still added, so the amino acid sequence is unchanged",
+        "The ribosome skips that codon, so the protein is one amino acid shorter"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "gc-one-codon-per-aa",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Glutamate has two codons, GAA and GAG, so this change is silent: the same amino acid goes into the chain. A student who thinks each amino acid has one codon would expect a different amino acid here.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.why-three-bases",
+      "concept": "genetic-code",
+      "element": "codon",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does the genetic code read nucleotides three at a time rather than one at a time?",
+      "choices": [
+        "Each base alone is one amino acid, so one base per codon would be enough",
+        "Three bases are needed to attach the amino acid to the ribosome",
+        "Three bases give 64 combinations, enough for 20 amino acids",
+        "A codon of three bases is the length of one tRNA molecule"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "gc-one-base-one-aa",
+        null,
+        null,
+        null
+      ],
+      "explanation": "With four bases, one base gives 4 signals and two bases give 16, both too few for 20 amino acids. Three bases give 64, which leaves room for every amino acid with some codons to spare.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.stop-codon-inserted",
+      "concept": "genetic-code",
+      "element": "start-and-stop-codons",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A mutation changes a codon in the middle of a gene into UAA, a stop codon. What is the most likely result?",
+      "choices": [
+        "Translation ends early at that codon, and a shorter protein is made",
+        "The new stop codon is skipped, so the protein keeps its full length",
+        "Translation continues, with the amino acid there replaced by a different one",
+        "The mRNA breaks down in the nucleus before it reaches the ribosome"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A stop codon ends the chain, so every codon after the mutation is lost and the protein is shorter. Stop codons are read by release factors, not skipped, and the mRNA is not destroyed by this change.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.anticodon-pairing",
+      "concept": "transfer-rna",
+      "element": "anticodon",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A tRNA's anticodon is GAA, written 5′ to 3′. Which mRNA codon, also written 5′ to 3′, does it pair with?",
+      "choices": [
+        "UUC",
+        "GAA",
+        "CUU",
+        "AAG"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "trna-anticodon-same-as-codon",
+        null,
+        null
+      ],
+      "explanation": "The strands pair antiparallel, with A pairing with U and G with C. GAA reads as UUC in the mRNA. Writing the same letters, GAA, is the mistake of thinking the anticodon and codon are identical.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.anticodon-site",
+      "concept": "transfer-rna",
+      "element": "anticodon",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which part of a tRNA pairs with the codon on the mRNA?",
+      "choices": [
+        "The anticodon",
+        "The amino acid attachment site",
+        "The 5′ cap",
+        "The poly-A tail"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The anticodon is three bases that pair with a codon. The attachment site holds the amino acid, and the 5′ cap and poly-A tail belong to mRNA, not to tRNA.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.synthetase-attaches",
+      "concept": "transfer-rna",
+      "element": "aminoacyl-trna-synthetase",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which enzyme attaches each amino acid to its matching tRNA?",
+      "choices": [
+        "Aminoacyl-tRNA synthetase",
+        "The ribosome, as it reads the mRNA",
+        "RNA polymerase",
+        "DNA ligase"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "trna-ribosome-charges",
+        null,
+        null
+      ],
+      "explanation": "Each aminoacyl-tRNA synthetase matches one amino acid to its tRNA and makes the bond. The ribosome uses charged tRNAs but does not load them, and RNA polymerase and DNA ligase do other jobs.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.aminoacyl-trna-name",
+      "concept": "transfer-rna",
+      "element": "charged-trna",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is an aminoacyl-tRNA?",
+      "choices": [
+        "A tRNA with its amino acid attached",
+        "An mRNA codon with an amino acid attached",
+        "A ribosome subunit that holds an amino acid",
+        "A tRNA with its anticodon removed"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "An aminoacyl-tRNA is a tRNA that has been charged with its own amino acid, ready to be delivered to the ribosome. Codons and ribosome subunits are not tRNAs, and a tRNA without its anticodon could not pair with a codon.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.several-trnas",
+      "concept": "transfer-rna",
+      "element": "anticodon",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why can one amino acid be carried by several different tRNAs?",
+      "choices": [
+        "Each tRNA carries two amino acids, so one amino acid needs several",
+        "Different codons for one amino acid need tRNAs with different anticodons",
+        "Each amino acid has just one tRNA, and the rest are copies made by mistake",
+        "The ribosome uses up tRNAs, so the cell has to make many copies of them"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        "trna-one-per-aa",
+        null
+      ],
+      "explanation": "An amino acid can have several codons, and each codon pairs with a tRNA that has a matching anticodon. A tRNA carries one amino acid, and tRNAs are reused rather than used up.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.one-trna-error",
+      "concept": "transfer-rna",
+      "element": "anticodon",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: each amino acid has exactly one tRNA, so one tRNA can read every codon for that amino acid. What is wrong with that?",
+      "choices": [
+        "The student is right, because one tRNA carries each amino acid",
+        "Many amino acids have several tRNAs, each with its own anticodon",
+        "A tRNA can carry any amino acid, so the number of tRNAs does not matter",
+        "The cell makes tRNAs in the nucleus, so it has just one kind"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "trna-one-per-aa",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Many amino acids have several codons, and each codon can need a tRNA with a different anticodon. One tRNA carries one amino acid, but a single tRNA cannot pair with every codon for it.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.charging-steps",
+      "concept": "transfer-rna",
+      "element": "charged-trna",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in order, from start to finish, for loading an amino acid onto its tRNA.",
+      "steps": [
+        "The enzyme binds the correct amino acid and ATP, and activates the amino acid",
+        "The activated amino acid is transferred onto the 3′ end of its matching tRNA",
+        "The charged tRNA is released, ready to carry its amino acid to the ribosome"
+      ],
+      "explanation": "The synthetase first binds and activates the amino acid, then passes it to the tRNA. The charged tRNA is released only after the bond is made, so the order cannot be swapped.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.lysine-anticodon-swap",
+      "concept": "transfer-rna",
+      "element": "charged-trna",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A tRNA is loaded with lysine, but its anticodon is changed so that it pairs with a codon for phenylalanine. What happens to the protein?",
+      "choices": [
+        "Phenylalanine is placed at lysine codons, and lysine at phenylalanine codons",
+        "Lysine is placed at phenylalanine codons, so the protein is wrong there",
+        "Nothing changes, because the amino acid is chosen by the anticodon",
+        "The ribosome rejects the tRNA, so translation stops at that codon"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The synthetase sets the amino acid when it loads the tRNA, so the anticodon does not choose it. Pairing with a phenylalanine codon puts lysine there. The ribosome checks the anticodon pairing, not the amino acid carried, so the error reaches the protein.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.no-charging-enzyme",
+      "concept": "transfer-rna",
+      "element": "aminoacyl-trna-synthetase",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A cell lacks the enzyme that attaches amino acids to tRNAs. What is the most likely effect on translation?",
+      "choices": [
+        "The ribosome attaches amino acids to tRNAs itself, so translation runs normally",
+        "Uncharged tRNAs cannot deliver amino acids, so the protein chain cannot grow",
+        "The tRNAs still arrive charged from the cytoplasm, so translation is unaffected",
+        "The mRNA is read backwards, so the protein is made from its end"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "trna-ribosome-charges",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Without the synthetase, tRNAs stay uncharged, so no amino acid reaches the A site and the chain stops growing. The ribosome reads the codon and joins amino acids, but it does not load the tRNAs.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.anticodon-complementary",
+      "concept": "transfer-rna",
+      "element": "anticodon",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why is an anticodon described as complementary to its codon?",
+      "choices": [
+        "It has the same bases as the codon, so the two match letter for letter",
+        "It pairs with the codon by base pairing, in the opposite direction",
+        "It is made of amino acids that match the letters of the codon",
+        "It is a copy of the amino acid that the codon names"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "trna-anticodon-same-as-codon",
+        null,
+        null,
+        null
+      ],
+      "explanation": "A pairs with U and G with C, and the two strands run in opposite directions. Identical sequences would not pair with each other, so the match is complementary, not identical.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.where-translation-happens",
+      "concept": "translation",
+      "element": "initiation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Where in a eukaryotic cell does translation take place?",
+      "choices": [
+        "In the nucleus, alongside transcription",
+        "On ribosomes in the cytoplasm",
+        "Inside the lysosome",
+        "On the outer surface of the cell membrane"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "tl-in-nucleus",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Translation happens on ribosomes in the cytoplasm, outside the nucleus. Transcription, which makes the mRNA, happens in the nucleus, so placing translation there mixes up the two steps.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.chain-growth-end",
+      "concept": "translation",
+      "element": "elongation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Where is each new amino acid joined onto a growing polypeptide?",
+      "choices": [
+        "At the carboxyl (C) end of the chain",
+        "At the amino (N) end of the chain",
+        "At a random point along the chain",
+        "At the 5′ end of the mRNA molecule, where it begins"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "tl-adds-at-start",
+        null,
+        null
+      ],
+      "explanation": "Each new amino acid joins the carboxyl end, so the chain grows from its amino end toward its carboxyl end. The amino end is where the chain starts, not where new amino acids are added.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.several-ribosomes",
+      "concept": "translation",
+      "element": "elongation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why do cells often have several ribosomes reading one mRNA at the same time?",
+      "choices": [
+        "A single ribosome can read an mRNA at a time, so extra ribosomes waste energy",
+        "Each ribosome reads a different gene on the same mRNA",
+        "Many copies of the protein can be made quickly from one mRNA",
+        "The first ribosome uses up the mRNA, so others take over its job"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "tl-one-ribosome",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Ribosomes follow one another along the same mRNA, so one message makes many protein copies at once. A student who holds that one ribosome at a time is the rule would call the extra ribosomes wasteful.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.usual-start-codon",
+      "concept": "translation",
+      "element": "initiation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which codon is the usual start of translation?",
+      "choices": [
+        "AUG",
+        "UAA",
+        "UAG",
+        "UGA"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "AUG is the usual start codon, and it codes for methionine. UAA, UAG and UGA are the three stop codons, which end translation.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.after-peptide-bond",
+      "concept": "translation",
+      "element": "elongation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In elongation, what happens right after a peptide bond forms between two amino acids?",
+      "choices": [
+        "The ribosome moves one codon, so the next codon sits in the A site",
+        "The ribosome slides back to the start codon and starts over",
+        "The finished chain is released, and the ribosome splits into subunits",
+        "The mRNA is copied again from the gene before the next amino acid joins"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "After the peptide bond, translocation moves the ribosome one codon along the mRNA, shifting the tRNAs into the P and E sites and opening the A site for the next aminoacyl-tRNA. Release and splitting happen only at the end.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.stop-codon-in-a-site",
+      "concept": "translation",
+      "element": "termination",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A ribosome reaches a UAG stop codon in its A site. What binds to the A site next?",
+      "choices": [
+        "A tRNA carrying the amino acid that UAG usually codes for",
+        "A release factor, which triggers the chain to be freed",
+        "A tRNA carrying the last amino acid of the chain",
+        "The start codon's methionine tRNA, which restarts translation"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "tRNAs do not recognise stop codons. A release factor binds the stop codon, and the ribosome releases the finished chain. A stop codon codes for no amino acid, so no tRNA carries one for it.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.bacteria-overlap",
+      "concept": "translation",
+      "element": "initiation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In bacteria, ribosomes often start reading an mRNA before it is fully made. Why is that possible?",
+      "choices": [
+        "Transcription and translation both happen in the nucleus, so they can overlap",
+        "Bacteria have no nucleus, so transcription and translation share the cytoplasm",
+        "Bacterial ribosomes wait until the whole gene has been copied before they begin",
+        "Bacterial mRNA is made inside the ribosome, so reading starts at once"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "tl-in-nucleus",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Without a nuclear membrane, a bacterium's mRNA is still being made when ribosomes attach to its free end, so the two processes overlap. In eukaryotes the mRNA is made in the nucleus and exported first.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.readthrough",
+      "concept": "translation",
+      "element": "termination",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A mutation stops release factors from binding stop codons. What is the most likely result for a gene that normally ends with a stop codon?",
+      "choices": [
+        "Translation stops one codon early, and a shorter protein is made",
+        "Translation runs past the stop codon, making a longer protein",
+        "The stop codon is skipped without any change in the protein",
+        "The ribosome falls off the mRNA before the start codon is reached"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Without release at the stop codon, the ribosome keeps adding amino acids until it meets another stop codon, so the protein is longer. Stopping early would need a stop codon to be read sooner.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.ribosome-spacing",
+      "concept": "translation",
+      "element": "elongation",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Several ribosomes read one mRNA, spaced along it. Which ribosome has made the longest chain so far?",
+      "choices": [
+        "The one nearest the 3′ end, which started reading earliest",
+        "The one nearest the 5′ end, which started reading last",
+        "A single ribosome reads an mRNA at a time, so that one has made the longest chain",
+        "All of them have made chains of the same length"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "tl-one-ribosome",
+        null
+      ],
+      "explanation": "Ribosomes start at the 5′ end and move toward the 3′ end, so the one furthest along started earliest and has the longest chain. Ribosomes at different points along the mRNA have chains of different lengths.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.p-site-holds-chain",
+      "concept": "translation",
+      "element": "ribosome-sites",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "During elongation, which ribosome site holds the tRNA that carries the growing chain?",
+      "choices": [
+        "The A site",
+        "The P site",
+        "The E site",
+        "The stop site"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The P (peptidyl) site holds the tRNA whose amino acid is part of the growing chain. The A site receives the next aminoacyl-tRNA, and the E site is where empty tRNAs leave.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.stages-of-translation",
+      "concept": "translation",
+      "element": "initiation",
+      "kind": "order",
+      "difficulty": 1,
+      "prompt": "Put the stages of translation in order, from start to finish.",
+      "steps": [
+        "Initiation: the small subunit and start tRNA assemble on the start codon",
+        "Elongation: amino acids are added one codon at a time",
+        "Termination: a stop codon is reached and a release factor frees the chain",
+        "Recycling: the ribosome splits into subunits so they can be reused"
+      ],
+      "explanation": "Translation starts with initiation, adds amino acids during elongation, ends at a stop codon, and then the ribosome is recycled. Recycling comes last because the subunits are only free once the chain is released.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.elongation-cycle-steps",
+      "concept": "translation",
+      "element": "elongation",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these events of one elongation cycle in order, from start to finish.",
+      "steps": [
+        "A tRNA carrying the matching amino acid enters the A site",
+        "A peptide bond forms, moving the chain onto the tRNA in the A site",
+        "The ribosome moves one codon, shifting the tRNAs into the P and E sites",
+        "The empty tRNA leaves from the E site, and the A site is free again"
+      ],
+      "explanation": "The incoming tRNA must arrive first, the bond forms next, the ribosome then shifts, and the empty tRNA leaves last. Each step depends on the one before it.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.polypeptide-growth-statement",
+      "concept": "translation",
+      "element": "elongation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about how a polypeptide grows during translation is correct?",
+      "choices": [
+        "It grows by adding amino acids to its carboxyl end",
+        "It grows by adding amino acids to its amino end",
+        "It grows from both of its ends at the same time",
+        "It grows only after a stop codon is read, all at once"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "tl-adds-at-start",
+        null,
+        null
+      ],
+      "explanation": "Each amino acid is joined to the carboxyl end of the chain, so the chain lengthens there. Growth at both ends, or a single burst after a stop codon, does not happen.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.kinase-group",
+      "concept": "post-translational-modification",
+      "element": "phosphorylation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which small group do kinases most often add to a protein?",
+      "choices": [
+        "A phosphate group",
+        "A sugar chain",
+        "A lipid tail",
+        "An extra amino acid"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Kinases transfer a phosphate group, usually from ATP, onto specific amino acids of a protein. Sugar chains and lipid tails are added by other enzymes, and an extra amino acid would need a new codon in the gene.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.cut-chain",
+      "concept": "post-translational-modification",
+      "element": "proteolytic-cleavage",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which modification shortens a protein by cutting its backbone?",
+      "choices": [
+        "Proteolytic cleavage, a cut through peptide bonds",
+        "Glycosylation, which adds sugar chains to the protein",
+        "Phosphorylation, which adds a phosphate group",
+        "Ubiquitination, which tags a protein for removal"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Proteases cut peptide bonds, which removes or activates part of a chain. Glycosylation adds sugars, phosphorylation adds a phosphate, and ubiquitination attaches a small protein tag.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.kinase-class",
+      "concept": "post-translational-modification",
+      "element": "phosphorylation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which class of enzyme adds phosphate groups to proteins?",
+      "choices": [
+        "Kinases",
+        "Ligases",
+        "Polymerases",
+        "Ribozymes"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Kinases transfer phosphate groups onto proteins. Ligases join pieces together, polymerases copy nucleic acids, and ribozymes are RNA molecules that catalyse reactions.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.phosphate-switch",
+      "concept": "post-translational-modification",
+      "element": "phosphorylation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A kinase adds a phosphate to an enzyme, and the enzyme becomes active. What does this show?",
+      "choices": [
+        "A protein's activity can be switched by a change that alters its shape or charge",
+        "The enzyme's activity is fixed by its amino acid sequence, so the phosphate has no effect",
+        "The phosphate changes the gene, so the next copy of the enzyme is active",
+        "The phosphate is a sugar that changes which codon the enzyme reads"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ptm-sequence-fixes",
+        "ptm-changes-gene",
+        null
+      ],
+      "explanation": "A phosphate group carries negative charge and changes the protein's shape, so the protein's activity can be switched. The sequence does not fix activity by itself, and the gene is not changed by a phosphate.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.gene-unchanged",
+      "concept": "post-translational-modification",
+      "element": "phosphorylation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A protein is phosphorylated after translation. What does that mean for the gene that encoded the protein?",
+      "choices": [
+        "The gene is unchanged, and only the protein carries the phosphate",
+        "The gene now carries a phosphate and passes it to each new copy",
+        "The gene's codons change, so the next protein has a different sequence",
+        "The gene is switched off for good, so the protein can never be made again"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ptm-changes-gene",
+        null,
+        null
+      ],
+      "explanation": "The phosphate is added to the finished protein by an enzyme. The DNA sequence and its codons are not changed, so the next copy of the gene makes the same protein before any modification.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.sugar-chain-role",
+      "concept": "post-translational-modification",
+      "element": "glycosylation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Glycosylation adds sugar chains to some proteins. What is a main job of those chains?",
+      "choices": [
+        "They help a protein fold and direct it to its destination",
+        "They replace the amino acids that the codons name",
+        "They are cosmetic and leave what the protein does unchanged",
+        "They make the protein's gene copy itself faster"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "ptm-cosmetic",
+        null
+      ],
+      "explanation": "Sugar chains added in the endoplasmic reticulum and Golgi help proteins fold and act as address labels for sorting. They do not replace amino acids, and they do not act on the gene.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.enzyme-switched-off",
+      "concept": "post-translational-modification",
+      "element": "phosphorylation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A cell switches an enzyme off by adding a phosphate. Which statement describes what changed?",
+      "choices": [
+        "The enzyme's activity changed, with no change to its gene",
+        "The enzyme was destroyed, so it cannot be used again",
+        "The enzyme's amino acid sequence was rewritten by the phosphate",
+        "The enzyme was switched off by a change in its codons"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "ptm-changes-gene"
+      ],
+      "explanation": "Phosphorylation changed the enzyme's activity while leaving its gene and amino acid sequence intact. Phosphate can be removed again, so the enzyme is not destroyed.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.sequence-alone-reply",
+      "concept": "post-translational-modification",
+      "element": "phosphorylation",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says a protein's function is set by its amino acid sequence alone, so nothing added later can change it. What is the best reply?",
+      "choices": [
+        "Later changes such as phosphorylation can switch the protein's activity on or off",
+        "The sequence is enough, because the ribosome reads the final function from the codons",
+        "Changes to DNA alone decide a protein's function, so the student is right",
+        "Proteins are fixed once they are made, so the student is right"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ptm-sequence-fixes",
+        null,
+        "ptm-sequence-fixes"
+      ],
+      "explanation": "Modifications added after translation can switch a protein's activity, so the sequence alone does not decide function. The ribosome reads codons but does not set final activity, and the DNA is not what changes the protein.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.cut-to-activate",
+      "concept": "post-translational-modification",
+      "element": "proteolytic-cleavage",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A protein made by translation is cut by a protease, and the cut piece is the active form. Which idea does this illustrate?",
+      "choices": [
+        "A modification by cutting can be needed before a protein is active",
+        "Cutting is cosmetic and leaves what the protein does unchanged",
+        "The cut changes the codons, so the next copy of the protein is shorter",
+        "Cutting happens in bacteria, where ribosomes make shorter chains"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ptm-cosmetic",
+        "ptm-changes-gene",
+        null
+      ],
+      "explanation": "Here the cut is what switches the protein on, so modification after translation can be required for activity. The gene is not changed by a cut, and cutting happens in many organisms, not only bacteria.",
+      "verification": {
+        "status": "draft"
+      }
+    },
+    {
+      "id": "biology.translation.protein-life-steps",
+      "concept": "post-translational-modification",
+      "element": "glycosylation",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in order, from start to finish, for a protein that is secreted from the cell.",
+      "steps": [
+        "The ribosome makes the polypeptide from the mRNA's codons",
+        "A signal sequence at the chain's start guides it into the endoplasmic reticulum",
+        "Enzymes in the endoplasmic reticulum add sugar chains to the protein",
+        "Vesicles carry the modified protein on toward the Golgi apparatus"
+      ],
+      "explanation": "The chain is made first, then guided into the endoplasmic reticulum, where sugars are added, and only then packed into vesicles for the Golgi. Sugar addition needs the chain to be inside the endoplasmic reticulum.",
+      "verification": {
+        "status": "draft"
+      }
+    }
+  ],
+  "artifacts": []
+}

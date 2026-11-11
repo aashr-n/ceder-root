@@ -1,0 +1,1483 @@
+{
+  "formatVersion": 1,
+  "id": "biology.protein-trafficking",
+  "subject": "biology",
+  "title": "Protein sorting and trafficking",
+  "summary": "How a new protein is sorted and carried to where it works, through signal peptides, the rough ER, vesicles, the Golgi apparatus and lysosomes.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "signal-peptide",
+      "name": "Signal peptide",
+      "aliases": [
+        "signal peptides",
+        "signal sequence",
+        "signal sequences"
+      ],
+      "summary": "A short run of amino acids at one end of a new protein that tells the cell where to send it.",
+      "requires": [
+        "ribosome"
+      ],
+      "elements": [
+        {
+          "id": "position",
+          "name": "Position on the chain",
+          "aliases": [
+            "N-terminal signal"
+          ]
+        },
+        {
+          "id": "signal-recognition-particle",
+          "name": "Signal recognition particle",
+          "aliases": [
+            "SRP"
+          ]
+        },
+        {
+          "id": "cleavage",
+          "name": "Cleavage by signal peptidase",
+          "aliases": [
+            "signal peptidase"
+          ]
+        },
+        {
+          "id": "co-translational-targeting",
+          "name": "Targeting while the chain is made"
+        }
+      ],
+      "explain": {
+        "text": "A signal peptide is a short run of amino acids, usually at the start of a new protein chain, that works like a postal code. While a ribosome is still building the chain, the signal emerges and a signal recognition particle grabs it. That pauses the ribosome and guides it to the rough ER, where the chain is threaded through a channel into the ER's inner space. There an enzyme called signal peptidase usually cuts the signal off, so the finished protein lacks it. Proteins without a signal usually stay in the cytosol."
+      },
+      "misconceptions": [
+        {
+          "id": "sig-stays-on",
+          "claim": "The signal peptide stays on the protein for life, like a label.",
+          "correction": "Most signal peptides are cut off by signal peptidase once the chain enters the ER, so most finished proteins lack them."
+        },
+        {
+          "id": "sig-every-protein-to-er",
+          "claim": "Every protein made on a ribosome passes into the endoplasmic reticulum.",
+          "correction": "Ribosomes free in the cytosol make proteins that stay there. Only chains carrying a signal sequence are sent into the ER."
+        },
+        {
+          "id": "sig-tag-after-finished",
+          "claim": "The address is added to the protein after it has been finished.",
+          "correction": "The signal is part of the amino acid sequence. It is read while the chain is still coming off the ribosome."
+        }
+      ]
+    },
+    {
+      "id": "secretory-pathway",
+      "name": "Secretory pathway",
+      "aliases": [
+        "secretory route",
+        "protein secretion pathway"
+      ],
+      "summary": "Proteins for export or for the cell's outer membrane pass from the rough ER through the Golgi apparatus in vesicles.",
+      "requires": [
+        "endomembrane-system",
+        "signal-peptide"
+      ],
+      "elements": [
+        {
+          "id": "er-entry",
+          "name": "Entry into the rough ER"
+        },
+        {
+          "id": "transport-to-golgi",
+          "name": "Transport from the ER to the Golgi"
+        },
+        {
+          "id": "exit-to-membrane",
+          "name": "Exit to the plasma membrane",
+          "aliases": [
+            "constitutive secretion"
+          ]
+        },
+        {
+          "id": "sugar-work-in-transit",
+          "name": "Sugar work in transit",
+          "aliases": [
+            "glycosylation"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "The secretory pathway is the route a protein takes when it is made for export or for the cell's outer membrane. It starts on the rough ER, where the new chain is threaded into the ER's inner space and begins to fold. Vesicles then carry it to the Golgi apparatus, where it is modified and sorted. Vesicles leave the Golgi and fuse with the plasma membrane, releasing the protein outside the cell or building it into the membrane. Hormones and antibodies made for export travel this way."
+      },
+      "misconceptions": [
+        {
+          "id": "path-skips-organelles",
+          "claim": "Secreted proteins go straight from the ribosome to the outside of the cell.",
+          "correction": "Secreted proteins enter the ER, pass to the Golgi in vesicles, and leave in vesicles that fuse with the plasma membrane."
+        },
+        {
+          "id": "golgi-is-factory",
+          "claim": "The Golgi apparatus makes the proteins it sends out.",
+          "correction": "Ribosomes make the proteins. The Golgi receives them and then modifies, sorts and packages them."
+        },
+        {
+          "id": "er-is-dead-end",
+          "claim": "Once a protein enters the ER, it stays there.",
+          "correction": "Transport from the ER to the Golgi is continuous. The ER is a stage on the route, and only proteins kept there on purpose stay."
+        }
+      ]
+    },
+    {
+      "id": "vesicle-transport",
+      "name": "Vesicle transport",
+      "aliases": [
+        "vesicular transport",
+        "vesicle trafficking"
+      ],
+      "summary": "Small membrane sacs bud from one compartment, carry cargo, and fuse with another, so membrane and contents move through the cell.",
+      "requires": [
+        "cell-membrane",
+        "endomembrane-system"
+      ],
+      "elements": [
+        {
+          "id": "budding",
+          "name": "Budding of a vesicle"
+        },
+        {
+          "id": "coat-proteins",
+          "name": "Coat proteins",
+          "aliases": [
+            "COPI",
+            "COPII",
+            "clathrin"
+          ]
+        },
+        {
+          "id": "snare-pairing",
+          "name": "SNARE pairing",
+          "aliases": [
+            "SNARE proteins",
+            "SNAREs"
+          ]
+        },
+        {
+          "id": "fusion",
+          "name": "Membrane fusion"
+        }
+      ],
+      "explain": {
+        "text": "A vesicle is a small sac of membrane that pinches off one compartment and carries its contents to another. Coat proteins shape the bud and are shed once it has pinched off. The vesicle is then tethered to its target, and matching SNARE proteins on the vesicle and the target pair up and pull the two membranes together. The membranes fuse and the cargo is released into the target. The vesicle's membrane is not lost: it becomes part of the target membrane, so the cell reuses its membrane all the time."
+      },
+      "misconceptions": [
+        {
+          "id": "vesicle-drift",
+          "claim": "Vesicles wander until they bump into the right target.",
+          "correction": "Vesicles are guided. Matching SNARE proteins on the vesicle and target pair up, and only matched membranes fuse."
+        },
+        {
+          "id": "membrane-lost",
+          "claim": "When a vesicle fuses, its membrane is used up and has to be made again.",
+          "correction": "Membrane is conserved. The vesicle's membrane joins the target membrane, and the cargo is released into the target."
+        }
+      ]
+    },
+    {
+      "id": "golgi-apparatus",
+      "name": "Golgi apparatus",
+      "aliases": [
+        "Golgi body",
+        "Golgi complex"
+      ],
+      "summary": "A stack of flattened membrane sacs that receives proteins from the ER, modifies them, and sorts them to their destinations.",
+      "requires": [
+        "vesicle-transport",
+        "endomembrane-system"
+      ],
+      "elements": [
+        {
+          "id": "cis-face",
+          "name": "Cis face",
+          "aliases": [
+            "receiving face"
+          ]
+        },
+        {
+          "id": "trans-face",
+          "name": "Trans face",
+          "aliases": [
+            "shipping face"
+          ]
+        },
+        {
+          "id": "cisternae",
+          "name": "Cisternae",
+          "aliases": [
+            "cisterna"
+          ]
+        },
+        {
+          "id": "sugar-modification",
+          "name": "Sugar modification"
+        },
+        {
+          "id": "sorting",
+          "name": "Sorting at the trans face"
+        },
+        {
+          "id": "mannose-6-phosphate",
+          "name": "Mannose-6-phosphate sorting"
+        }
+      ],
+      "explain": {
+        "text": "The Golgi apparatus is a stack of flattened membrane sacs called cisternae. Vesicles from the rough ER fuse with its cis face, the side nearest the ER. As proteins move toward the trans face, enzymes trim and add sugars and tag some proteins for particular destinations. At the trans face the cargo is sorted into new vesicles that go to the plasma membrane, to lysosomes, or to other compartments. A stack has a direction, so it works like an assembly line with an entrance and an exit."
+      },
+      "misconceptions": [
+        {
+          "id": "golgi-storage",
+          "claim": "The Golgi apparatus is a storage bin where proteins wait until they are needed.",
+          "correction": "Cargo is processed as it passes through: sugars are trimmed and added, and cargo is sorted to its destinations."
+        },
+        {
+          "id": "golgi-faces-backwards",
+          "claim": "Cargo enters the Golgi at the trans face, next to the plasma membrane.",
+          "correction": "Cargo enters at the cis face, the side nearest the ER, and leaves from the trans face."
+        },
+        {
+          "id": "golgi-one-exit",
+          "claim": "Everything that leaves the Golgi goes to the cell surface.",
+          "correction": "Cargo is sorted at the trans face. Some goes to the plasma membrane, some to lysosomes, and some to other compartments."
+        }
+      ]
+    },
+    {
+      "id": "lysosome",
+      "name": "Lysosome",
+      "aliases": [
+        "lysosomes"
+      ],
+      "summary": "An acidic, membrane-bound organelle full of digestive enzymes that breaks down food, invaders and worn-out parts of the cell.",
+      "requires": [
+        "endomembrane-system",
+        "golgi-apparatus"
+      ],
+      "elements": [
+        {
+          "id": "acidic-interior",
+          "name": "Acidic interior"
+        },
+        {
+          "id": "hydrolytic-enzymes",
+          "name": "Hydrolytic enzymes",
+          "aliases": [
+            "acid hydrolases"
+          ]
+        },
+        {
+          "id": "proton-pump",
+          "name": "Proton pump",
+          "aliases": [
+            "V-ATPase"
+          ]
+        },
+        {
+          "id": "mannose-6-phosphate",
+          "name": "Mannose-6-phosphate tag",
+          "aliases": [
+            "M6P tag"
+          ]
+        },
+        {
+          "id": "autophagy",
+          "name": "Autophagy"
+        }
+      ],
+      "explain": {
+        "text": "A lysosome is a membrane-bound organelle that digests. Its inside holds dozens of enzymes that break down proteins, fats, sugars and nucleic acids, and proton pumps in its membrane keep the interior acidic, at about pH 4.5 to 5. The enzymes are made on the rough ER and reach the lysosome through the Golgi, which tags them for it. Lysosomes digest material brought in from outside, such as bacteria, and also the cell's own worn-out parts, a process called autophagy."
+      },
+      "misconceptions": [
+        {
+          "id": "lys-neutral-ph",
+          "claim": "Lysosome enzymes work best at the neutral pH of the cytoplasm.",
+          "correction": "Lysosome enzymes need the acid inside the lysosome, about pH 4.5 to 5. Proton pumps keep it acid."
+        },
+        {
+          "id": "lys-made-inside",
+          "claim": "Lysosome enzymes are made inside the lysosome.",
+          "correction": "They are made by ribosomes on the rough ER, then travel through the Golgi, which tags them for the lysosome."
+        },
+        {
+          "id": "lys-only-food",
+          "claim": "Lysosomes only digest material taken in from outside the cell.",
+          "correction": "They also digest the cell's own worn-out organelles, in autophagy, as well as material taken in from outside."
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "biology.protein-trafficking.signal-where-on-chain",
+      "concept": "signal-peptide",
+      "element": "position",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Where on a new protein chain is a secretory signal peptide usually found?",
+      "choices": [
+        "In the middle, away from both ends",
+        "Added as a tag to the whole chain after it is finished",
+        "At the start (N-terminal) end of the chain",
+        "Attached as a sugar chain to one side residue"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        "sig-tag-after-finished",
+        null,
+        null
+      ],
+      "explanation": "Signal peptides usually sit at the N-terminal end, the start of the chain, so the signal is read as the chain emerges from the ribosome. A label added after the chain is finished is a different idea, and the signal is part of the sequence from the start.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.signal-cytosolic-protein",
+      "concept": "signal-peptide",
+      "element": "co-translational-targeting",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A ribosome in the cytosol finishes a protein that has no signal peptide. Where does that protein usually end up?",
+      "choices": [
+        "It usually stays in the cytosol",
+        "It is threaded into the ER lumen",
+        "It is carried to the Golgi first",
+        "It is released outside the cell"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "sig-every-protein-to-er",
+        null,
+        null
+      ],
+      "explanation": "A protein with no signal peptide is not threaded into the ER, so it usually stays in the cytosol. The tempting answer, that every protein made on a ribosome enters the ER, treats the ribosome's location as the address. The signal decides the route, not the ribosome.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.signal-cut-off",
+      "concept": "signal-peptide",
+      "element": "cleavage",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A protein enters the ER lumen through its signal peptide. What happens to that signal peptide next?",
+      "choices": [
+        "It stays attached to the finished protein as an address",
+        "It is copied back onto the messenger RNA",
+        "It is moved to the nucleus on a vesicle",
+        "Signal peptidase cuts it off, inside the ER"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "sig-stays-on",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Signal peptidase, an enzyme in the ER, cuts most signal peptides off once the chain has entered, so the mature protein usually lacks them. The tempting answer keeps the signal as a permanent address, but its job is finished once the chain is in the ER.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.signal-two-proteins",
+      "concept": "signal-peptide",
+      "element": "co-translational-targeting",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Two proteins are made on ribosomes. One has a signal peptide at its start and the other has none. Which statement is correct?",
+      "choices": [
+        "Both enter the ER, since both are made on ribosomes",
+        "The signal protein enters the ER; the other stays in the cytosol",
+        "The protein with no signal enters the ER; the other stays in the cytosol",
+        "The protein with the signal stays in the cytosol and goes to the Golgi"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "sig-every-protein-to-er",
+        null,
+        null,
+        null
+      ],
+      "explanation": "The signal peptide decides the route, while both proteins are made on ribosomes in the same way. Saying both enter the ER because both are made on ribosomes treats the ribosome as the address, which is the mistake.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.signal-why-at-start",
+      "concept": "signal-peptide",
+      "element": "signal-recognition-particle",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why must a signal peptide sit at the start of the chain rather than at the far end?",
+      "choices": [
+        "So the recognition particle can read it once the chain is already finished",
+        "So the protein can fold fully before the ribosome releases it",
+        "So the recognition particle can bind it while the chain is still growing",
+        "So the ribosome can attach to the nuclear envelope"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "sig-tag-after-finished",
+        null,
+        null,
+        null
+      ],
+      "explanation": "The signal recognition particle has to bind while the chain is still growing, so that the ribosome pauses and docks at the ER. A signal read only after the chain is finished would come too late for this co-translational targeting.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.signal-nuclear-tell-apart",
+      "concept": "signal-peptide",
+      "element": "position",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A protein is sent into the nucleus through a nuclear pore. Which statement about its targeting sequence is correct?",
+      "choices": [
+        "It is a signal peptide, cut off by signal peptidase in the ER",
+        "It is a sugar chain added to the protein in the Golgi",
+        "It is a signal peptide, passed along to the Golgi",
+        "It is a nuclear localization sequence, which stays on it"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A nuclear localization sequence directs passage through the nuclear pore and is not cut off. Signal peptides are a different sort of sequence, which send a chain into the ER, and the Golgi plays no part in nuclear import.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.signal-mature-protein",
+      "concept": "signal-peptide",
+      "element": "cleavage",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about a finished secreted protein is correct?",
+      "choices": [
+        "Its signal peptide has usually been cut off in the ER",
+        "Its signal peptide is still attached for later sorting",
+        "Its signal peptide has been copied onto a vesicle",
+        "Its signal peptide has been digested by the nucleus"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "sig-stays-on",
+        null,
+        null
+      ],
+      "explanation": "Most signal peptides are removed in the ER, so a finished secreted protein usually lacks them. Keeping the signal attached for later sorting treats the address as a permanent label, which is the mistake the wrong choice makes.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.signal-targeting-steps",
+      "concept": "signal-peptide",
+      "element": "co-translational-targeting",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps of sending a secreted protein into the ER in the order they happen.",
+      "steps": [
+        "The signal sequence emerges from the ribosome as the chain grows",
+        "A signal recognition particle binds the signal and pauses translation",
+        "The ribosome docks at a receptor on the rough ER membrane",
+        "The chain feeds through a channel into the ER lumen",
+        "Signal peptidase cuts the signal peptide off"
+      ],
+      "explanation": "The signal is exposed while the chain grows, the recognition particle pauses translation, the ribosome docks at the ER, the chain feeds through the channel, and the signal is cut off inside the lumen.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Signal sequence emerges, SRP binds and pauses translation, ribosome docks at the SRP receptor, chain feeds through the channel, signal peptidase cuts. Step order is standard textbook sequence; the docking and SRP-binding steps are the only ones a reader might swap, but SRP binding must precede docking."
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.secretory-organelle-after-er",
+      "concept": "secretory-pathway",
+      "element": "transport-to-golgi",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which organelle receives proteins from the rough ER and modifies them before they move on?",
+      "choices": [
+        "The Golgi apparatus",
+        "The nucleolus",
+        "The lysosome, a store of digestive enzymes",
+        "The peroxisome, which breaks down some fatty acids"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The Golgi apparatus is the next stop after the rough ER in the secretory route. The nucleolus makes ribosome parts, and the lysosome and peroxisome do not receive proteins directly from the rough ER.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.secretory-route-order",
+      "concept": "secretory-pathway",
+      "element": "transport-to-golgi",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which route does a protein made for export follow?",
+      "choices": [
+        "Ribosome, then straight to the plasma membrane, skipping organelles",
+        "Rough ER, then lysosome, then plasma membrane",
+        "Nucleus, then Golgi, then the cytosol",
+        "Rough ER, then Golgi, then vesicle, then plasma membrane"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "path-skips-organelles",
+        null,
+        null,
+        null
+      ],
+      "explanation": "A protein for export is threaded into the rough ER, carried by vesicles to the Golgi, and leaves the Golgi in vesicles that fuse with the plasma membrane. The tempting route skips the ER and Golgi, which the protein does not do.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.secretory-who-makes",
+      "concept": "secretory-pathway",
+      "element": "er-entry",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says the Golgi apparatus makes the proteins it sends out, because they leave from there. What is wrong with that?",
+      "choices": [
+        "The Golgi makes them, and the ribosome folds them afterwards, in the ER",
+        "Ribosomes make the proteins; the Golgi modifies and sorts them",
+        "The nucleus makes them, and ribosomes copy them out",
+        "The plasma membrane builds them from lipid parts"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "golgi-is-factory",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Proteins are made on ribosomes, and the Golgi processes them after they arrive. Leaving from the Golgi says where the protein is sent, not where it was made.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.secretory-shared-route",
+      "concept": "secretory-pathway",
+      "element": "transport-to-golgi",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement is true of both secreted proteins and lysosomal enzymes?",
+      "choices": [
+        "Both stay in the ER for good once they reach its inner space",
+        "Both are made by the Golgi, then sent out",
+        "Both pass through the rough ER and the Golgi apparatus",
+        "Both are made by free ribosomes in the cytosol"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "er-is-dead-end",
+        "golgi-is-factory",
+        null,
+        null
+      ],
+      "explanation": "Lysosomal enzymes are made on the rough ER and travel through the Golgi, the same route as secreted proteins. Neither stays in the ER, and the Golgi does not make either of them.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.secretory-er-blocked",
+      "concept": "secretory-pathway",
+      "element": "transport-to-golgi",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A mutation stops vesicles from leaving the ER. Which result is expected?",
+      "choices": [
+        "Secreted proteins reach the surface faster, skipping the ER",
+        "Proteins in the Golgi are sent back to the ribosomes",
+        "Lysosomes stop making their enzymes on free ribosomes",
+        "Secreted proteins pile up in the ER; few reach the surface"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Vesicles carry proteins from the ER to the Golgi, so blocking them leaves the proteins stuck in the ER. The tempting answer assumes the route is a shortcut that does not need the ER.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.secretory-why-golgi",
+      "concept": "secretory-pathway",
+      "element": "sugar-work-in-transit",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why does a protein that has entered the ER often still need the Golgi apparatus?",
+      "choices": [
+        "The ER folds proteins, but the Golgi sorts and finishes them",
+        "Proteins stay in the ER for good, so none of them need the Golgi at all",
+        "The ER has no membrane of its own, so proteins cannot be held inside it",
+        "Ribosomes attach to the Golgi and not to the ER"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "er-is-dead-end",
+        null,
+        null
+      ],
+      "explanation": "The ER folds proteins and adds the first sugars, while the Golgi trims and extends those sugars, sorts the cargo and packages it. The tempting answer, that proteins stay in the ER for good, misses that transport from the ER is continuous.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.secretory-rough-er-role",
+      "concept": "secretory-pathway",
+      "element": "er-entry",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the rough ER's main role in the secretory route?",
+      "choices": [
+        "It digests proteins once they have reached the cell surface and left",
+        "It receives new proteins and starts folding them in its lumen",
+        "It stores ATP for the Golgi to use",
+        "It copies the DNA before the protein is made"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The rough ER is studded with ribosomes that feed new chains into its lumen, where folding starts. The other choices describe jobs of other organelles or of the nucleus.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.secretory-steps",
+      "concept": "secretory-pathway",
+      "element": "exit-to-membrane",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps of sending a protein from the rough ER to the cell surface in order.",
+      "steps": [
+        "Ribosomes on the rough ER feed the chain into its lumen",
+        "A vesicle budding from the ER carries the protein to the Golgi",
+        "The Golgi modifies the protein and sorts it",
+        "A vesicle from the Golgi carries the protein to the plasma membrane",
+        "The vesicle fuses with the plasma membrane and releases the protein"
+      ],
+      "explanation": "The chain enters the ER, leaves it in a vesicle for the Golgi, is modified and sorted there, and leaves the Golgi in a vesicle that fuses with the plasma membrane.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.vesicle-what-it-does",
+      "concept": "vesicle-transport",
+      "element": "budding",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does a vesicle do in a cell?",
+      "choices": [
+        "It makes ATP from glucose inside the cell",
+        "It digests the cell's DNA into separate bases, one at a time",
+        "It carries material between membrane compartments",
+        "It copies a gene into an RNA message, piece by piece"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A vesicle is a small membrane sac that moves contents from one compartment to another. Mitochondria make ATP, and the other two choices describe jobs of the nucleus or of enzymes that copy DNA and RNA.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.vesicle-fusion-result",
+      "concept": "vesicle-transport",
+      "element": "fusion",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A vesicle reaches the membrane it is addressed to. What must happen for its cargo to enter the target compartment?",
+      "choices": [
+        "The vesicle membrane fuses with the target membrane",
+        "The vesicle membrane is used up, and the cargo is passed in",
+        "The cargo is pushed through the target membrane as they touch",
+        "The nucleus pulls the vesicle back out"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "membrane-lost",
+        null,
+        null
+      ],
+      "explanation": "Fusion merges the vesicle's membrane with the target, which releases the cargo inside. The tempting answer assumes the membrane is used up in the process, but it is kept and joined to the target.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.vesicle-targeting",
+      "concept": "vesicle-transport",
+      "element": "snare-pairing",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "How does a vesicle end up fusing with the right membrane?",
+      "choices": [
+        "It drifts at random and fuses with the first membrane it meets",
+        "Its coat dissolves on contact with any membrane",
+        "The nucleus sends an electrical signal to each vesicle",
+        "Matching SNARE proteins on the vesicle and target pair up"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "vesicle-drift",
+        null,
+        null,
+        null
+      ],
+      "explanation": "SNAREs work as matched pairs: a vesicle SNARE and a target SNARE zip together and pull the membranes into fusion. Vesicles are not released at random to fuse with whatever they meet.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.vesicle-coat-vs-snare",
+      "concept": "vesicle-transport",
+      "element": "coat-proteins",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the difference between coat proteins and SNARE proteins on a vesicle?",
+      "choices": [
+        "Coat proteins fuse the two membranes, and SNAREs shape the bud into a vesicle",
+        "Coat proteins shape the bud; SNAREs pair vesicle and target to fuse",
+        "Both shape the bud, and neither plays a part in fusion",
+        "Both are lipids that stay in the vesicle after fusion"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Coat proteins deform the membrane into a bud and are shed before fusion. SNAREs are the matched proteins that bring the vesicle and target together. The choice that swaps the two roles is wrong.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.vesicle-no-snare",
+      "concept": "vesicle-transport",
+      "element": "snare-pairing",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A vesicle carrying cargo reaches a membrane that lacks its matching SNAREs. What happens?",
+      "choices": [
+        "It fuses with the membrane anyway, since any membrane will do",
+        "The membrane digests it, and the cargo is lost",
+        "It fails to fuse and stays separate from the membrane",
+        "It turns into a membrane lipid and joins the target"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Fusion needs matching SNAREs, so without them the vesicle does not merge. The tempting answer assumes that any membrane will accept a vesicle, which is the wrong picture of targeting.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.vesicle-membrane-recycled",
+      "concept": "vesicle-transport",
+      "element": "fusion",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A plasma membrane gains membrane when vesicles fuse with it, and loses membrane when it takes material in. What does this imply?",
+      "choices": [
+        "Each fusion uses up membrane, so the cell must keep making membrane",
+        "Fusion adds membrane with no limit, so the cell swells",
+        "Vesicles keep their membrane apart from the plasma membrane",
+        "Membrane is recycled, so its total stays roughly the same"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "membrane-lost",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Exocytosis adds vesicle membrane to the plasma membrane and endocytosis takes it back, so the membrane is recycled and its total stays roughly constant. The tempting answer treats fusion as using membrane up, which is the mistake.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.vesicle-what-made-of",
+      "concept": "vesicle-transport",
+      "element": "budding",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is a vesicle built from?",
+      "choices": [
+        "A lipid bilayer, like the plasma membrane",
+        "A sheet of folded protein with no lipid",
+        "A ring of RNA wrapped in sugar",
+        "A sac of sugar with no membrane around it"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A vesicle is a small sac of the same phospholipid bilayer as the plasma membrane. The other choices describe materials that vesicles do not contain.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.vesicle-cycle-steps",
+      "concept": "vesicle-transport",
+      "element": "budding",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps of vesicle transport in order, from budding to release.",
+      "steps": [
+        "A coat protein shapes a bud from the donor membrane",
+        "The bud pinches off as a vesicle carrying cargo",
+        "The coat is shed and the vesicle is tethered to its target",
+        "SNARE proteins on the vesicle and target pair up",
+        "The membranes fuse and the cargo is released"
+      ],
+      "explanation": "The coat shapes the bud and is shed after the vesicle pinches off. Tethering comes before SNAREs pair, and fusion releases the cargo into the target.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Tethering is placed before SNARE pairing, which is the usual textbook order; the tether and SNARE steps could be read as overlapping."
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.golgi-where-vesicles-go",
+      "concept": "golgi-apparatus",
+      "element": "sorting",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Vesicles leave the trans face of the Golgi apparatus. Where do they go?",
+      "choices": [
+        "All of them go to the cell surface, with no sorting done along the way",
+        "To several places, such as the plasma membrane and lysosomes",
+        "To the nucleus, through its pores, for storage",
+        "Into the cytosol, where they become free ribosomes"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "golgi-one-exit",
+        null,
+        null,
+        null
+      ],
+      "explanation": "The trans face sorts cargo into separate vesicles by destination. The Golgi does not send everything to the cell surface, and it does not send cargo into the nucleus.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.golgi-which-face",
+      "concept": "golgi-apparatus",
+      "element": "cis-face",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which face of the Golgi apparatus receives vesicles from the rough ER?",
+      "choices": [
+        "The trans face, nearest the plasma membrane",
+        "The medial region, in the middle of the stack",
+        "The cis face, the entry side nearest the ER",
+        "The nucleus, through its pores"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "golgi-faces-backwards",
+        null,
+        null,
+        null
+      ],
+      "explanation": "The cis face is the entry side, nearest the ER, and the trans face is the exit side nearest the plasma membrane. The tempting answer reverses the two faces.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.golgi-sugar-change",
+      "concept": "golgi-apparatus",
+      "element": "sugar-modification",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A protein passes through the Golgi apparatus. What change is commonly made to it there?",
+      "choices": [
+        "Its sugar chains are trimmed and extended",
+        "Nothing; the cargo waits there until it is shipped",
+        "Its amino acid sequence is rewritten",
+        "Its gene is copied before it is shipped"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "golgi-storage",
+        null,
+        null
+      ],
+      "explanation": "Enzymes in the Golgi trim and add sugar chains as cargo moves through the stack. The Golgi is more than a waiting room, and it does not change the amino acid sequence or copy genes.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.golgi-m6p-tag",
+      "concept": "golgi-apparatus",
+      "element": "mannose-6-phosphate",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A protein in the Golgi is tagged with mannose-6-phosphate. What does this tag do?",
+      "choices": [
+        "It sends the protein out of the cell",
+        "It keeps the protein in the Golgi forever",
+        "It makes the protein fuse with the outer nuclear envelope membrane",
+        "It is recognized by receptors that send it to lysosomes"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The tag is recognized by receptors at the trans face, which package the protein into vesicles bound for lysosomes. It is a sorting signal, not a route out of the cell or a reason to stay in the Golgi.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.golgi-why-two-faces",
+      "concept": "golgi-apparatus",
+      "element": "trans-face",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why does a Golgi stack have a cis face and a trans face?",
+      "choices": [
+        "Cargo enters at the trans face, next to the plasma membrane, and leaves from the cis face",
+        "Cargo enters at one side and leaves from the other, so the stack has a direction",
+        "The two faces hold different lipids, which keep them apart",
+        "The two faces are identical, so cargo can enter either side"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "golgi-faces-backwards",
+        null,
+        null,
+        null
+      ],
+      "explanation": "The Golgi is a polarised stack: vesicles from the ER join at the cis face, and cargo leaves in vesicles from the trans face. The tempting answer reverses the entry and exit sides.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Option 1 is the only correct one, but it is vague: it says the stack has a direction without naming the cis and trans faces.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.golgi-cisterna",
+      "concept": "golgi-apparatus",
+      "element": "cisternae",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is a cisterna in the Golgi apparatus?",
+      "choices": [
+        "A channel through the nuclear envelope",
+        "A free ribosome that makes Golgi enzymes",
+        "A flattened membrane sac in the Golgi stack",
+        "A storage vacuole that holds the plant's water"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The Golgi is a stack of cisternae, flattened membrane sacs that cargo passes through. The other choices name structures that are not part of the Golgi.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.golgi-missing-tag",
+      "concept": "golgi-apparatus",
+      "element": "mannose-6-phosphate",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A cell cannot add the mannose-6-phosphate tag to its lysosomal enzymes. Where do those enzymes most likely end up?",
+      "choices": [
+        "They reach lysosomes anyway, since the tag is optional",
+        "They stay in the Golgi, since nothing leaves it",
+        "They remain in the rough ER for good",
+        "They are secreted out of the cell by default"
+      ],
+      "answer": 3,
+      "mistakes": [
+        null,
+        null,
+        "er-is-dead-end",
+        null
+      ],
+      "explanation": "Without the tag the enzymes are not sorted to lysosomes, so they follow the default route to the cell surface and out. Lysosomes depend on the tag to receive their enzymes.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.golgi-cargo-steps",
+      "concept": "golgi-apparatus",
+      "element": "sugar-modification",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps of cargo passing through the Golgi apparatus in order.",
+      "steps": [
+        "A vesicle from the rough ER fuses with the cis face",
+        "Cargo moves through the cisternae, where enzymes trim and add sugars",
+        "Cargo is sorted at the trans face into separate vesicles",
+        "Each vesicle carries its cargo to a destination"
+      ],
+      "explanation": "A vesicle from the ER delivers cargo at the cis face, the cargo is modified as it crosses the stack, it is sorted at the trans face, and vesicles carry it on.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.lysosome-what-is-it",
+      "concept": "lysosome",
+      "element": "hydrolytic-enzymes",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is a lysosome?",
+      "choices": [
+        "A membrane sac full of digestive enzymes",
+        "A membrane-free granule of RNA and protein",
+        "A stack of flattened sacs that sorts proteins",
+        "A tube of protein that carries ATP"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A lysosome is a membrane-bound organelle full of hydrolytic enzymes. The membrane-free granule is a ribosome, the stack of sacs is the Golgi apparatus, and the tube that carries ATP is not a cell part.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.lysosome-ph",
+      "concept": "lysosome",
+      "element": "acidic-interior",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What pH is kept inside a lysosome?",
+      "choices": [
+        "About pH 7.4, the same as the cytoplasm",
+        "About pH 2, close to stomach acid",
+        "About pH 10, a strong base",
+        "About pH 4.5 to 5, which is acidic"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "lys-neutral-ph",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Lysosome enzymes work best at an acid pH of about 4.5 to 5, which proton pumps maintain. The tempting answer is the neutral pH of the cytoplasm, the mistake of expecting the enzymes to work there.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.lysosome-spill",
+      "concept": "lysosome",
+      "element": "acidic-interior",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A lysosome membrane breaks and its enzymes spill into the cytoplasm, at about neutral pH. What is the most likely result?",
+      "choices": [
+        "The enzymes digest the cytoplasm at full speed, unharmed by its pH",
+        "The enzymes lose most of their activity, limiting the damage",
+        "The enzymes are made again inside the lysosome, from its own RNA",
+        "The enzymes travel back to the Golgi on their own"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "lys-neutral-ph",
+        null,
+        "lys-made-inside",
+        null
+      ],
+      "explanation": "Lysosome enzymes need the acid of the lysosome to work well, so at neutral cytoplasmic pH their activity falls sharply. Leakage is still harmful, but the enzymes are much less active there.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.lysosome-enzyme-origin",
+      "concept": "lysosome",
+      "element": "hydrolytic-enzymes",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Where are the enzymes inside a lysosome made, and how do they arrive?",
+      "choices": [
+        "Inside the lysosome itself, from RNA stored in its membrane",
+        "On free ribosomes, then sent straight to the lysosome",
+        "On the rough ER, then through the Golgi to the lysosome",
+        "Inside the nucleus, then carried by vesicles"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "lys-made-inside",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Lysosomal enzymes are made by ribosomes on the rough ER, travel through the Golgi where they receive the mannose-6-phosphate tag, and are delivered to lysosomes. A lysosome does not make its own enzymes.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.lysosome-worn-mitochondrion",
+      "concept": "lysosome",
+      "element": "autophagy",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A cell has a worn-out mitochondrion inside it. Can a lysosome digest that part of the cell?",
+      "choices": [
+        "No, since lysosomes handle food taken in from outside the cell",
+        "No, since the nucleus digests mitochondria instead",
+        "Yes, but the Golgi does the digesting instead",
+        "Yes, cells recycle their own parts through autophagy"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "lys-only-food",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Autophagy lets lysosomes digest the cell's own worn-out organelles. The tempting answer assumes lysosomes handle outside food alone, which is the mistake this choice makes.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.lysosome-acid-drug",
+      "concept": "lysosome",
+      "element": "proton-pump",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A drug blocks the proton pump in a lysosome's membrane. What is the likely effect on digestion?",
+      "choices": [
+        "The enzymes lose much of their activity, so digestion slows",
+        "The enzymes work faster, since the pH rises toward neutral",
+        "The lysosome membrane dissolves at once, so digestion stops",
+        "The enzymes move into the nucleus to finish digesting"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Without proton pumping the lysosome's pH rises, and its enzymes, which need an acid interior, slow down. The enzymes do not work better at a higher pH; that belief is the neutral-pH mistake.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.lysosome-student-claim",
+      "concept": "lysosome",
+      "element": "autophagy",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: 'Lysosomes digest only the food that enters the cell, and they never touch the cell's own parts.' What is wrong with that?",
+      "choices": [
+        "The student is right, since lysosomes digest food from outside the cell",
+        "They also digest the cell's own worn-out parts (autophagy)",
+        "Lysosomes make the cell's ATP by digesting its parts",
+        "Lysosomal enzymes are made in the Golgi itself"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "lys-only-food",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Autophagy delivers a cell's own parts, such as old mitochondria, to lysosomes to be broken down. The student's belief that lysosomes handle only food is the mistake in the claim.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.protein-trafficking.lysosome-phagocytosis-steps",
+      "concept": "lysosome",
+      "element": "acidic-interior",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps of how a cell digests an engulfed bacterium in order.",
+      "steps": [
+        "The cell engulfs the bacterium inside a membrane sac",
+        "The sac fuses with a lysosome",
+        "Proton pumps acidify the combined compartment",
+        "Enzymes break the bacterium into small molecules",
+        "The small molecules pass into the cytoplasm for reuse"
+      ],
+      "explanation": "The bacterium is engulfed in a sac, the sac fuses with a lysosome, proton pumps acidify the compartment, enzymes digest the bacterium, and the products are recycled.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    }
+  ],
+  "artifacts": []
+}

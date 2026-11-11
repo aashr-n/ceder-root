@@ -1,0 +1,1959 @@
+{
+  "formatVersion": 1,
+  "id": "biology.cell-junctions",
+  "subject": "biology",
+  "title": "Cell junctions and the extracellular matrix",
+  "summary": "What lies outside the cell membrane, and how neighbouring cells hold together, seal off and talk to each other.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "extracellular-matrix",
+      "name": "Extracellular matrix",
+      "aliases": [
+        "ECM",
+        "intercellular matrix",
+        "extracellular matrices"
+      ],
+      "summary": "The network of proteins and sugars that cells make and release outside their membrane, which supports tissues and signals to the cells in them.",
+      "requires": [
+        "cell-membrane"
+      ],
+      "elements": [
+        {
+          "id": "components",
+          "name": "Main components"
+        },
+        {
+          "id": "secretion",
+          "name": "Made by resident cells and secreted"
+        },
+        {
+          "id": "cell-attachment",
+          "name": "Cell attachment through integrins"
+        },
+        {
+          "id": "stiffness",
+          "name": "Stiffness that cells sense"
+        },
+        {
+          "id": "signalling",
+          "name": "Signalling and stored growth factors"
+        }
+      ],
+      "explain": {
+        "text": "Outside the plasma membrane of an animal cell lies the extracellular matrix, a mesh of fibres and sugar-rich gels. Its main parts are collagen, which gives strength, and proteoglycans, which hold water. Cells that live in a tissue make these parts inside themselves and then release them outward, where they join the mesh. The matrix does more than fill space. It anchors cells, guides them as they move, and stores growth factors that signal them. Cells sense how stiff it is and react. A tendon is a good picture: its fibres are laid down by the fibroblasts that live among them."
+      },
+      "misconceptions": [
+        {
+          "id": "ecm-inert",
+          "claim": "The matrix is passive packing that holds cells apart and has no effect on what they do.",
+          "correction": "The matrix signals to cells. Its stiffness changes how cells move, divide and specialise, and it stores growth factors that switch cells on."
+        },
+        {
+          "id": "ecm-made-outside",
+          "claim": "The matrix is made outside the cells, from the blood or the environment.",
+          "correction": "Resident cells make its components inside themselves and secrete them, so the cells decide what the matrix contains."
+        },
+        {
+          "id": "ecm-is-cell-wall",
+          "claim": "Only plant cells have an extracellular matrix, and it is the cell wall.",
+          "correction": "Animal cells have an extracellular matrix of collagen and proteoglycans and no cell wall. Plants have a matrix too, and their cell wall is part of it."
+        }
+      ]
+    },
+    {
+      "id": "cell-wall",
+      "name": "Cell wall",
+      "aliases": [
+        "plant cell wall",
+        "cell walls"
+      ],
+      "summary": "The stiff outer wall of plant, fungal and bacterial cells, which resists water pressure and lets the cell grow.",
+      "requires": [
+        "cell-membrane"
+      ],
+      "elements": [
+        {
+          "id": "composition",
+          "name": "What walls are made of"
+        },
+        {
+          "id": "turgor",
+          "name": "Resisting water pressure"
+        },
+        {
+          "id": "growth",
+          "name": "Growing while staying firm"
+        },
+        {
+          "id": "other-walls",
+          "name": "Walls of fungi and bacteria"
+        },
+        {
+          "id": "formation",
+          "name": "How walls are laid down"
+        }
+      ],
+      "explain": {
+        "text": "A plant cell has a wall outside its plasma membrane, made mainly of cellulose fibres set in a gel of other sugars. The wall is stiff enough to resist the pressure that water builds up inside the cell, which keeps a healthy plant firm rather than bursting. It is not a fixed shell, though. Young walls are loosened and stretched as the cell grows, and some cells then add a thicker secondary wall. Fungi and bacteria also have walls, built from other materials such as chitin and peptidoglycan. Animal cells have no cell wall at all."
+      },
+      "misconceptions": [
+        {
+          "id": "cw-animal-wall",
+          "claim": "Animal cells have a cell wall too, just a thinner one.",
+          "correction": "Animal cells have no cell wall. They rely on the plasma membrane and the extracellular matrix outside it."
+        },
+        {
+          "id": "cw-keeps-water-out",
+          "claim": "The cell wall keeps water out, which is why plant cells do not burst.",
+          "correction": "Water still enters by osmosis. The wall pushes back against the pressure that builds up inside, and that stops the cell bursting."
+        },
+        {
+          "id": "cw-rigid-stops-growth",
+          "claim": "A cell wall is a fixed shell, so it stops the cell growing bigger.",
+          "correction": "The primary wall is loosened and stretched as the cell takes in water and expands, so the cell can grow."
+        },
+        {
+          "id": "cw-same-polymer",
+          "claim": "All cell walls are made of cellulose, like plant walls.",
+          "correction": "Fungi build walls from chitin and bacteria from peptidoglycan. Cellulose is the main material of plant walls only."
+        }
+      ]
+    },
+    {
+      "id": "tight-junction",
+      "name": "Tight junction",
+      "aliases": [
+        "tight junctions",
+        "zonula occludens"
+      ],
+      "summary": "A belt-like seal that closes the gap between neighbouring epithelial cells and fences the cell membrane into regions.",
+      "requires": [
+        "cell-membrane"
+      ],
+      "elements": [
+        {
+          "id": "sealing-strands",
+          "name": "Sealing strands of claudin and occludin"
+        },
+        {
+          "id": "barrier",
+          "name": "Barrier across epithelial sheets"
+        },
+        {
+          "id": "fence",
+          "name": "Fence within the membrane"
+        }
+      ],
+      "explain": {
+        "text": "A tight junction is a seal between neighbouring epithelial cells, the sheet-like cells that line the gut and other surfaces. Strands of claudin and occludin proteins join the two membranes in a continuous belt around each cell, so the gap between the cells is blocked. Substances must then cross through the cells, where the membrane can control them. The strands also act as a fence, keeping the membrane proteins on the top of the cell apart from those on its sides. Tight junctions are found in animals, and they make the gut and the blood-brain barrier selective."
+      },
+      "misconceptions": [
+        {
+          "id": "tj-channel",
+          "claim": "Tight junctions are pores that let water and ions pass between cells.",
+          "correction": "Tight junctions seal the gap between cells, so substances cannot slip through it. Pores that join the cells' cytoplasm are gap junctions."
+        },
+        {
+          "id": "tj-glue",
+          "claim": "Tight junctions are spot glue that holds cells together against pulling.",
+          "correction": "Spot anchors that resist pulling are desmosomes. Tight junctions form a continuous seal around each cell."
+        },
+        {
+          "id": "tj-no-fence",
+          "claim": "Membrane proteins drift freely over the whole cell, so tight junctions do not divide the membrane.",
+          "correction": "Tight junction strands act as a fence. They keep the proteins on the top side of an epithelial cell apart from those on its sides."
+        }
+      ]
+    },
+    {
+      "id": "desmosome",
+      "name": "Desmosome",
+      "aliases": [
+        "desmosomes",
+        "macula adherens"
+      ],
+      "summary": "A spot-like anchoring junction that holds neighbouring cells together through keratin filaments, so a pull is shared across a tissue.",
+      "requires": [
+        "cell-membrane"
+      ],
+      "elements": [
+        {
+          "id": "cadherin-links",
+          "name": "Cadherin links across the gap"
+        },
+        {
+          "id": "filament-anchor",
+          "name": "Plaque and intermediate filaments"
+        },
+        {
+          "id": "load-bearing-tissues",
+          "name": "Tissues that bear strain"
+        },
+        {
+          "id": "hemidesmosome",
+          "name": "Hemidesmosomes to the matrix"
+        }
+      ],
+      "explain": {
+        "text": "A desmosome is a spot-like anchoring junction between two cells. Cadherin proteins from each cell stick across the narrow gap between them, and a dense plaque inside each cell holds keratin intermediate filaments. Because the filaments run through the cytoplasm and join neighbouring cells, a pull on one cell is spread across a sheet of tissue. Desmosomes do not seal the gap, and they pass nothing from cell to cell. Skin and heart muscle, which are stretched and squeezed, contain many of them."
+      },
+      "misconceptions": [
+        {
+          "id": "desmo-seal",
+          "claim": "Desmosomes seal the gap between cells so nothing can leak through.",
+          "correction": "Sealing is a tight junction's job. Desmosomes are spots that hold cells together under stress, and the gap stays open."
+        },
+        {
+          "id": "desmo-channel",
+          "claim": "Desmosomes are channels that let ions and small molecules pass between cells.",
+          "correction": "The channels that pass ions are gap junctions. A desmosome has no pore between the cells."
+        },
+        {
+          "id": "desmo-membrane-only",
+          "claim": "A desmosome is only a spot where two membranes fuse, with nothing inside the cell.",
+          "correction": "Inside each cell a plaque anchors keratin filaments, which spread pulling forces across the tissue."
+        }
+      ]
+    },
+    {
+      "id": "gap-junction",
+      "name": "Gap junction",
+      "aliases": [
+        "gap junctions",
+        "communicating junction"
+      ],
+      "summary": "A channel that joins two neighbouring cells directly, letting ions and small molecules pass from one cytoplasm to the other.",
+      "requires": [
+        "cell-membrane"
+      ],
+      "elements": [
+        {
+          "id": "channels",
+          "name": "Connexin channels"
+        },
+        {
+          "id": "passage",
+          "name": "What can pass through"
+        },
+        {
+          "id": "coupling",
+          "name": "Electrical coupling"
+        },
+        {
+          "id": "gating",
+          "name": "Opening and closing"
+        },
+        {
+          "id": "assembly",
+          "name": "How a channel forms"
+        }
+      ],
+      "explain": {
+        "text": "A gap junction is a set of channels that join two neighbouring cells directly. Each channel is built from connexin proteins, and two halves, one in each membrane, line up to form a pore. Ions and small molecules pass through, so the cytoplasm of the two cells becomes one continuous space for them. Gap junctions let electrical signals spread from cell to cell, and heart muscle depends on them to beat as one unit. Large molecules cannot pass, and the channels close when calcium rises or the cell becomes acidic."
+      },
+      "misconceptions": [
+        {
+          "id": "gj-any-molecule",
+          "claim": "Gap junctions let any molecule pass, including large proteins.",
+          "correction": "The pore is narrow. Ions and small molecules pass, and large molecules such as proteins cannot."
+        },
+        {
+          "id": "gj-chemical",
+          "claim": "Gap junctions pass signals by releasing chemicals into the space between cells, like a synapse.",
+          "correction": "A gap junction is a direct channel between two cytoplasms. Nothing is released into the gap."
+        },
+        {
+          "id": "gj-always-open",
+          "claim": "Gap junctions are always open, so damage or signals spread freely to every neighbour.",
+          "correction": "Gap junctions close in response to changes such as a rise in calcium or a fall in pH, which isolates damaged cells."
+        }
+      ]
+    },
+    {
+      "id": "plasmodesma",
+      "name": "Plasmodesma",
+      "aliases": [
+        "plasmodesmata"
+      ],
+      "summary": "Membrane-lined channels through the cell walls of plants that connect the cytoplasm of neighbouring cells.",
+      "requires": [
+        "cell-wall",
+        "cell-membrane"
+      ],
+      "elements": [
+        {
+          "id": "channel-through-wall",
+          "name": "Channel through the wall"
+        },
+        {
+          "id": "structure",
+          "name": "Lining and central strand"
+        },
+        {
+          "id": "control",
+          "name": "Closing with callose"
+        },
+        {
+          "id": "what-passes",
+          "name": "What moves through"
+        },
+        {
+          "id": "comparison",
+          "name": "Comparison with gap junctions"
+        }
+      ],
+      "explain": {
+        "text": "A plasmodesma is a channel that crosses the cell wall between two neighbouring plant cells. The plasma membrane of each cell lines the channel, so the two cells share a continuous cytoplasm. A strand of endoplasmic reticulum runs through the centre. Sugars, small ions and some small signalling molecules move through it. Plasmodesmata are not simply open holes: callose can narrow them, which lets a plant control which signals pass between its cells."
+      },
+      "misconceptions": [
+        {
+          "id": "pd-empty-hole",
+          "claim": "Plasmodesmata are just holes in the cell wall with nothing inside.",
+          "correction": "Each is lined by the plasma membrane and holds a strand of endoplasmic reticulum, so the cytoplasm of the two cells is continuous."
+        },
+        {
+          "id": "pd-always-open",
+          "claim": "Plasmodesmata are always wide open, so nothing is regulated between plant cells.",
+          "correction": "Callose can narrow plasmodesmata and reduce what passes, so plants control movement between their cells."
+        },
+        {
+          "id": "pd-same-as-gap",
+          "claim": "Plasmodesmata are plant gap junctions and work in exactly the same way.",
+          "correction": "Both link neighbouring cells, but plasmodesmata cross a cell wall and contain an ER strand, which gap junctions lack."
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "biology.cell-junctions.collagen-most-abundant",
+      "concept": "extracellular-matrix",
+      "element": "components",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which protein is the most abundant in the animal extracellular matrix?",
+      "choices": [
+        "Haemoglobin, which carries oxygen in blood",
+        "Actin, which forms filaments inside cells",
+        "Collagen, which gives the matrix strength",
+        "Insulin, which regulates blood sugar"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Collagen is the most abundant protein of the matrix and gives it strength. Haemoglobin carries oxygen, actin is a filament inside cells, and insulin is a hormone, so none of them is a matrix protein.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.where-components-made",
+      "concept": "extracellular-matrix",
+      "element": "secretion",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Where are the components of the extracellular matrix made?",
+      "choices": [
+        "In the blood, which soaks them into the tissue",
+        "In the nucleus, which exports the finished matrix",
+        "Inside the resident cells, which then secrete them",
+        "In the wall of neighbouring cells, which grows outward"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "ecm-made-outside",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Cells that live in a tissue make matrix components inside themselves and secrete them, so the cells decide what the matrix holds. Blood does not supply the matrix, and the nucleus holds the genes rather than exporting finished matrix.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.surface-binder",
+      "concept": "extracellular-matrix",
+      "element": "cell-attachment",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which molecule binds a cell to the extracellular matrix through its surface?",
+      "choices": [
+        "Aquaporin, which moves water across membranes",
+        "Integrin, which spans the membrane and grips matrix",
+        "Cellulose, which forms the plant cell wall",
+        "Histone, which packs DNA into chromatin"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Integrins are membrane-spanning receptors that grip matrix proteins such as fibronectin and laminin, and link the matrix to the cell's inside. Cellulose is a plant wall polymer, aquaporins move water, and histones pack DNA.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.durotaxis-direction",
+      "concept": "extracellular-matrix",
+      "element": "stiffness",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Single cells are placed on a surface that gets stiffer from one side to the other. Which way do they tend to move?",
+      "choices": [
+        "Towards the softer side",
+        "Towards the stiffer side",
+        "They stay put; stiffness has no effect",
+        "At random; they cannot sense stiffness"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        "ecm-inert",
+        null
+      ],
+      "explanation": "Cells sense how stiff their surroundings are and move towards stiffer areas, a behaviour called durotaxis. A matrix that did nothing would give them no reason to choose a side.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.just-packing-reply",
+      "concept": "extracellular-matrix",
+      "element": "signalling",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'The matrix is just packing between cells, so its make-up does not change how they behave.' Which reply is correct?",
+      "choices": [
+        "The matrix signals cells and changes how they move, grow and specialise",
+        "The matrix only holds cells apart, so they never touch one another",
+        "The matrix is made of cell walls, which cannot send any signals",
+        "The matrix is made of blood, so its make-up is the same everywhere"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ecm-inert",
+        "ecm-is-cell-wall",
+        null
+      ],
+      "explanation": "The matrix is a signalling environment: its stiffness and its stored growth factors change what cells do. It is not a passive gap filler, and animal cells have no wall that could be the matrix.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.wound-matrix-source",
+      "concept": "extracellular-matrix",
+      "element": "signalling",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A wound heals, and new matrix fills the gap within days. Where did that matrix come from?",
+      "choices": [
+        "Blood plasma that leaked into the wound and set",
+        "Cells near the wound, which made it and released it",
+        "Bacteria that drifted into the wound and spun threads",
+        "Skin cells' nuclei, which moved out of the cells"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "ecm-made-outside",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Cells near a wound make matrix components and release them into the gap. Plasma can leak into a wound but does not set into matrix, and bacteria do not build the matrix of animal tissue.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.true-statement-matrix",
+      "concept": "extracellular-matrix",
+      "element": "components",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about the extracellular matrix is correct?",
+      "choices": [
+        "Animal cells have an extracellular matrix but no cell wall",
+        "Only plant cells have an extracellular matrix, and it is the wall",
+        "Only bacteria have a matrix, and it is made of collagen",
+        "Animal and plant matrices always have the same composition"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "ecm-is-cell-wall",
+        null,
+        null
+      ],
+      "explanation": "Animal cells make a matrix of collagen, proteoglycans and glycoproteins, and they have no wall. Plant cells have a matrix too, and their wall is part of it. Bacteria do not make collagen, and plant and animal matrices differ in make-up.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.stiffness-stem-cells",
+      "concept": "extracellular-matrix",
+      "element": "signalling",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Stem cells are grown on a soft gel that mimics brain tissue, then on a stiff gel that mimics bone. Which best explains why they become different cell types?",
+      "choices": [
+        "Matrix stiffness changes which genes the cells switch on",
+        "The gels contain different genes that the cells copy directly",
+        "Stiffness has no effect; only the nutrients in the gel matter",
+        "The cells were grown at different times, so they age differently"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "ecm-inert",
+        null
+      ],
+      "explanation": "Matrix stiffness acts on cells through signals that change which genes are active. Soft, brain-like gels favour neuron-like cells and stiff, bone-like gels favour bone-forming cells. Gels carry no genes for cells to copy.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.wall-main-polymer",
+      "concept": "cell-wall",
+      "element": "composition",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which polymer forms the main load-bearing fibres of a plant cell wall?",
+      "choices": [
+        "Glycogen, a storage sugar in animals and fungi",
+        "Cellulose, a long chain of glucose units",
+        "Keratin, a tough protein in hair and nails",
+        "Collagen, a fibrous protein of animal tissue"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Cellulose forms long microfibrils that give the plant cell wall its strength. Glycogen is a storage sugar, while keratin and collagen are structural proteins, and none of them is the main fibre of a plant wall.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.cell-with-wall",
+      "concept": "cell-wall",
+      "element": "composition",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these cells has a cell wall outside its plasma membrane?",
+      "choices": [
+        "A red blood cell in a human",
+        "A nerve cell in a human body",
+        "A mature leaf cell in a tree",
+        "A skin cell in a human body"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "cw-animal-wall",
+        null,
+        null,
+        "cw-animal-wall"
+      ],
+      "explanation": "A plant cell, such as a leaf cell, has a wall outside its plasma membrane. Animal cells, including red blood cells, nerve cells and skin cells, have no cell wall.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.bacterial-wall-material",
+      "concept": "cell-wall",
+      "element": "other-walls",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which molecule is the main building material of a bacterial cell wall?",
+      "choices": [
+        "Cellulose, the same polymer as in plant walls",
+        "Peptidoglycan, a mesh of sugars and short peptides",
+        "Collagen, the protein of animal matrix",
+        "Keratin, the protein of hair and nails"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "cw-same-polymer",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Bacterial walls are built mainly from peptidoglycan, a mesh of sugar chains cross-linked by short peptides. Cellulose is the plant wall material, and collagen and keratin are animal proteins.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.firm-not-bursting",
+      "concept": "cell-wall",
+      "element": "turgor",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A plant cell takes in water until it is firm, but it does not burst. What stops it bursting?",
+      "choices": [
+        "The wall stops any water from entering the cell",
+        "The wall pushes back on the pressure built up inside",
+        "The membrane shrinks so that it fits within the wall",
+        "The wall pumps excess water out through its pores"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "cw-keeps-water-out",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Water enters the cell by osmosis and builds turgor pressure inside it. The wall is stiff enough to push back on that pressure, so the cell stays firm. The wall does not stop water entering, and the membrane does not shrink to fit it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.fixed-shell-student",
+      "concept": "cell-wall",
+      "element": "growth",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'A cell wall is a fixed shell, so a plant cell cannot grow bigger.' What is wrong with that?",
+      "choices": [
+        "The wall loosens and stretches as the cell expands",
+        "The wall never changes, so cells grow only by dividing",
+        "The wall is made of living cells that can pull apart",
+        "The wall is removed in the middle of growth and replaced"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "cw-rigid-stops-growth",
+        null,
+        null
+      ],
+      "explanation": "The primary wall is loosened and stretched while the cell expands, so the cell can grow without splitting. Walls are not living, and they are not removed and rebuilt during normal growth.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.fungal-bacterial-walls",
+      "concept": "cell-wall",
+      "element": "other-walls",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about fungal and bacterial cell walls is correct?",
+      "choices": [
+        "They use other materials, such as chitin or peptidoglycan",
+        "They are made of cellulose, the same as plant walls",
+        "They are made of collagen, the same as animal matrix",
+        "Animal cells have walls too, like those of fungi"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "cw-same-polymer",
+        null,
+        "cw-animal-wall"
+      ],
+      "explanation": "Fungi build their walls mainly from chitin and bacteria from peptidoglycan. Cellulose is the plant wall material, collagen is an animal matrix protein, and animal cells have no walls.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.plasmolysis-wall",
+      "concept": "cell-wall",
+      "element": "turgor",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A plant cell is placed in a strong salt solution, and its membrane pulls away from the wall. What happens to the wall?",
+      "choices": [
+        "It keeps its size, and only the membrane shrinks",
+        "It blocks water loss, so the membrane cannot move",
+        "It collapses inward, pulled along with the membrane",
+        "It dissolves in the salt solution and disappears"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "cw-keeps-water-out",
+        null,
+        null
+      ],
+      "explanation": "In a strong salt solution water leaves the cell, so the membrane pulls away from the wall while the rigid wall keeps its shape. A wall does not block water loss, and it does not dissolve in salt.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.water-grown-cell",
+      "concept": "cell-wall",
+      "element": "growth",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A plant cell takes in a lot of water and grows much larger. What lets the wall allow this?",
+      "choices": [
+        "The primary wall loosens and stretches as the cell expands",
+        "The wall is fixed in size, so the cell must divide to grow",
+        "The wall is made of cellulose, which stretches like rubber",
+        "The wall has no effect, since water enters through the membrane"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "cw-rigid-stops-growth",
+        null,
+        null
+      ],
+      "explanation": "Primary walls loosen and stretch as the cell takes in water, so the cell can enlarge. The wall is not fixed in size, and cellulose does not stretch like rubber. Water does pass through the membrane, but the wall still has to give way.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.strand-proteins",
+      "concept": "tight-junction",
+      "element": "sealing-strands",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which proteins form the sealing strands of a tight junction?",
+      "choices": [
+        "Cadherins and catenins",
+        "Claudins and occludins",
+        "Keratin and vimentin",
+        "Integrins and fibronectin"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Claudins and occludins are transmembrane proteins that form the strands of a tight junction. Cadherins and catenins belong to adhesive junctions, keratin and vimentin are filaments inside cells, and integrins bind the matrix.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.junction-cell-types",
+      "concept": "tight-junction",
+      "element": "barrier",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which cells have tight junctions that seal the gap between neighbours?",
+      "choices": [
+        "Red blood cells floating in the blood plasma",
+        "Epithelial cells lining the inside of the gut",
+        "Bone-forming cells inside the bone marrow",
+        "Plant leaf cells, which connect through plasmodesmata"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Epithelial cells form sheets that line the gut and other surfaces, and tight junctions seal the gaps between them. Red blood cells and bone-forming cells are not epithelia, and plant cells join through plasmodesmata instead.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.main-job",
+      "concept": "tight-junction",
+      "element": "sealing-strands",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What is the main job of a tight junction?",
+      "choices": [
+        "It seals the gap, so substances cannot slip between the cells",
+        "It lets ions pass straight from one cell into the next",
+        "It holds cells together against strong pulling forces",
+        "It stores calcium so that nerve cells can fire"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "tj-channel",
+        "tj-glue",
+        null
+      ],
+      "explanation": "A tight junction is a belt of sealing strands that closes the gap between neighbouring epithelial cells, so substances must cross the cells themselves. Pulling strength comes from desmosomes, and the passage of ions between cells is what a tight junction blocks.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.pores-student",
+      "concept": "tight-junction",
+      "element": "sealing-strands",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'Tight junctions are pores that let water and ions pass between cells.' What is wrong with that?",
+      "choices": [
+        "They seal the gap completely, so nothing slips through it",
+        "They are spot anchors that pull cells together under strain",
+        "They are gap channels that pass proteins to the neighbours",
+        "They are pores that let small molecules pass in both directions"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "tj-glue",
+        null,
+        "tj-channel"
+      ],
+      "explanation": "A tight junction is a continuous seal, so the gap is blocked rather than opened. Spot anchors are desmosomes, and channels that pass molecules from cell to cell are gap junctions, which are a different structure.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: Some claudins form ion pores; the statement is wrong mainly because junctions seal.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.fence-membrane",
+      "concept": "tight-junction",
+      "element": "fence",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What does a tight junction do to the membrane of an epithelial cell?",
+      "choices": [
+        "It keeps the top and side membranes distinct",
+        "It lets membrane proteins drift from the top to the side",
+        "It fuses the two cells' membranes into one sheet",
+        "It exists only in brain cells, not in the gut"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "tj-no-fence",
+        null,
+        null
+      ],
+      "explanation": "Tight junction strands act as a fence within the membrane. Proteins on the top (apical) side and the side (basolateral) stay in their own regions, which keeps the cell polarised. Membrane proteins do not drift freely from one region to the other.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.drug-breaks-strands",
+      "concept": "tight-junction",
+      "element": "barrier",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A drug breaks down the sealing strands in the gut lining. What is the most likely result?",
+      "choices": [
+        "Substances pass between cells that should be blocked",
+        "Cells lose their ability to divide and the lining thins",
+        "Cells form stronger links that stop nutrients entering",
+        "The lining stores extra calcium inside the cells"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The sealing strands close the gaps between gut cells. If they fail, molecules that should be kept out of the tissue beneath can leak through between the cells. The other choices name effects that the strands do not control.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.seal-versus-load",
+      "concept": "tight-junction",
+      "element": "barrier",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A tight junction and a desmosome both join two neighbouring cells. Which pair of jobs is correct?",
+      "choices": [
+        "Tight junctions seal the gap; desmosomes resist pulling",
+        "Tight junctions resist pulling; desmosomes seal the gap",
+        "Both only let small ions pass through the gap",
+        "Both are channels that join the cytoplasm of two cells"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Tight junctions are seals that close the gap between cells. Desmosomes are spot anchors that spread pulling forces. The wrong pair gives the tight junction the anchoring job, which belongs to desmosomes.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.brain-capillaries",
+      "concept": "tight-junction",
+      "element": "barrier",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Brain capillaries are sealed by tight junctions. Why does that help control what reaches brain tissue?",
+      "choices": [
+        "Substances must pass through the cells, where they can be screened",
+        "Substances pass freely between cells, so the barrier relies on speed",
+        "Tight junctions open to let nutrients in between the cells",
+        "Tight junctions glue the blood cells to the brain tissue"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Capillaries in the brain have tight junctions, so most substances must cross the endothelial cells themselves, where transporters and membranes can filter them. Junctions do not open to admit nutrients, and they do not stick cells to tissue.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.protein-top-side",
+      "concept": "tight-junction",
+      "element": "fence",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A protein sits only on the top side of an epithelial cell. Why does it not spread to the side membrane?",
+      "choices": [
+        "Tight junctions form a fence that keeps the two regions apart",
+        "Membrane proteins drift freely, so it would soon reach the side",
+        "The protein is too large to fit into the side membrane",
+        "Proteins on the side membrane destroy any protein from the top"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "tj-no-fence",
+        null,
+        null
+      ],
+      "explanation": "Tight junction strands form a fence within the membrane, so proteins on the top (apical) side and the side (basolateral) stay in their own regions. Membrane proteins do not drift freely across the whole cell.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.linking-proteins",
+      "concept": "desmosome",
+      "element": "cadherin-links",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which proteins link two neighbouring cells across a desmosome?",
+      "choices": [
+        "Connexins, which form the pores",
+        "Claudins, which form the seal",
+        "Cadherins, which bind across the gap",
+        "Integrins, which grip the matrix"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Cadherins from each cell bind to each other across the narrow gap of a desmosome. Connexins form gap junction pores, claudins form tight junction seals, and integrins grip the matrix rather than another cell.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.plaque-anchors",
+      "concept": "desmosome",
+      "element": "filament-anchor",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does the inner plaque of a desmosome anchor?",
+      "choices": [
+        "Microtubules, which run through the cytoplasm",
+        "Nothing, since the plaque only touches the membrane",
+        "Intermediate filaments, such as keratin fibres",
+        "Ribosomes, which build the cell's proteins"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        "desmo-membrane-only",
+        null,
+        null
+      ],
+      "explanation": "The inner plaque of a desmosome holds intermediate filaments, mainly keratin in skin. Microtubules, ribosomes and the membrane itself are not what the plaque anchors.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.tissue-with-desmosomes",
+      "concept": "desmosome",
+      "element": "load-bearing-tissues",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In which tissue are desmosomes especially common, because the tissue is stretched and rubbed?",
+      "choices": [
+        "The outer layer of the skin",
+        "The fluid part of the blood",
+        "The hard centre of a bone",
+        "The inside of a chloroplast"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The outer layer of skin is stretched and rubbed, so it is packed with desmosomes that share the load. Blood plasma is a fluid, a bone's centre is not an epithelium, and a chloroplast is an organelle inside a plant cell.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.nothing-inside-student",
+      "concept": "desmosome",
+      "element": "filament-anchor",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'A desmosome has nothing inside the cell, just a bond between two membranes.' What is wrong with that?",
+      "choices": [
+        "Its plaque anchors keratin filaments, which spread the pull",
+        "Its plaque is made of collagen, which absorbs water",
+        "It has a pore that connects the two cells' cytoplasm",
+        "It is only a spot where two membranes fuse together"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "desmo-channel",
+        "desmo-membrane-only"
+      ],
+      "explanation": "The inner plaque holds keratin intermediate filaments, which run through the cell and spread a pull across the tissue. A desmosome has no pore, and it is more than a spot where membranes are fused.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.tearing-junction",
+      "concept": "desmosome",
+      "element": "load-bearing-tissues",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A tissue is pulled hard enough to tear. Which cell junction most directly resists the tearing?",
+      "choices": [
+        "Desmosomes, which anchor cells to a filament network",
+        "Gap junctions, which pass ions between neighbouring cells",
+        "Tight junctions, which seal the gap between neighbouring cells",
+        "Nuclear pores, which let mRNA leave the nucleus"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Desmosomes are built to take strain: cadherins hold neighbouring cells and keratin filaments carry the load across the tissue. Gap and tight junctions are not built to bear strain, and nuclear pores are not cell junctions.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.stress-not-seal",
+      "concept": "desmosome",
+      "element": "cadherin-links",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about desmosomes is correct?",
+      "choices": [
+        "They hold cells together under stress without sealing the gap",
+        "They seal the gap so that nothing can leak between cells",
+        "They pass ions from one cell's cytoplasm to the next",
+        "They float free in the membrane and never touch the other cell"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "desmo-seal",
+        "desmo-channel",
+        null
+      ],
+      "explanation": "A desmosome is an anchoring spot, not a seal or a channel. Its cadherins bind across the gap and its filaments spread the load, so the gap stays open.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.skin-without-desmosomes",
+      "concept": "desmosome",
+      "element": "load-bearing-tissues",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Skin cells lose their desmosomes. What is the most likely result?",
+      "choices": [
+        "The skin blisters and tears as its cells pull apart",
+        "Ions stop passing from one skin cell to the next",
+        "Water can no longer enter the skin cells at all",
+        "The skin stops making keratin for its filaments"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Without desmosomes, skin cells cannot share strain, so under pull they separate and the skin blisters. Desmosomes do not carry ions, and they do not control water entry or keratin production.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.pull-spreads",
+      "concept": "desmosome",
+      "element": "cadherin-links",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Two skin cells are joined by desmosomes whose filaments run into each cell. One cell is pulled. What happens next?",
+      "choices": [
+        "The pull spreads through the filament network to neighbours",
+        "The pull is absorbed by the gap and blocked there",
+        "The pull travels through a pore into the next cell",
+        "The pull stays inside the one cell that was pulled"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "desmo-channel",
+        null
+      ],
+      "explanation": "Desmosomes join the filament networks of neighbouring cells, so force passes from cell to cell and across the sheet. The gap is not a barrier to that force, and no pore carries it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.hemidesmosome-role",
+      "concept": "desmosome",
+      "element": "hemidesmosome",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Hemidesmosomes attach the basal cells of skin to the matrix below. Which description is most accurate?",
+      "choices": [
+        "They link intermediate filaments to matrix proteins through integrins",
+        "They link two neighbouring cells together through cadherins",
+        "They pass ions from the cell straight into the matrix",
+        "They seal the matrix tightly against the surface of the cell"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "A hemidesmosome anchors intermediate filaments to the matrix through integrins, so the cell is tied to the matrix rather than to a neighbour. It does not pass ions or seal anything, and it is not a cell-to-cell junction.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.built-from-connexins",
+      "concept": "gap-junction",
+      "element": "channels",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What are gap junction channels built from?",
+      "choices": [
+        "Cadherin proteins that bind two cells",
+        "Claudin proteins that form a seal",
+        "Connexin proteins that form pores",
+        "Keratin proteins that form filaments"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Each gap junction channel is built from connexin proteins. Six connexins form a connexon in each membrane, and two connexons join across the gap. Cadherins, claudins and keratins belong to other junctions or to the cytoskeleton.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.what-passes",
+      "concept": "gap-junction",
+      "element": "passage",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which of these can pass directly from one cell into a neighbour through a gap junction?",
+      "choices": [
+        "Large proteins such as antibodies",
+        "Whole mitochondria, the energy organelles",
+        "Small ions and small molecules, like sugars",
+        "Cell walls, which are shared by the cells"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "gj-any-molecule",
+        null,
+        null,
+        null
+      ],
+      "explanation": "Gap junction pores admit ions and molecules up to about a kilodalton, roughly the size of a small sugar. Large proteins such as antibodies cannot pass, and whole organelles and cell walls never move through a gap junction.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.heart-coupling",
+      "concept": "gap-junction",
+      "element": "coupling",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which tissue relies on gap junctions to spread electrical signals so that it beats as one unit?",
+      "choices": [
+        "Bone matrix of the skeleton",
+        "Muscle of the heart wall",
+        "Blood plasma in the vessels",
+        "Cartilage in the knee joint"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Heart muscle cells are joined by gap junctions, so an electrical signal spreads from cell to cell and the heart contracts as one unit. Bone, blood plasma and cartilage do not depend on electrical coupling of this kind.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.signal-route",
+      "concept": "gap-junction",
+      "element": "passage",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Two touching cells pass a signal through gap junctions. How does the signal travel?",
+      "choices": [
+        "Ions and small molecules pass directly through the joined channels",
+        "A chemical messenger is released into the gap and binds the other cell",
+        "A hormone travels through the blood between the two cells",
+        "The two cells swap whole nuclei through the open gap"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "gj-chemical",
+        null,
+        null
+      ],
+      "explanation": "A gap junction joins the cytoplasm of two cells, so ions and small molecules move through the channel itself. No messenger is released into a gap, and the blood does not carry the signal between two touching cells.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.synapse-student",
+      "concept": "gap-junction",
+      "element": "passage",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'Gap junctions work like a synapse, releasing messengers into a gap.' What is wrong with that?",
+      "choices": [
+        "The channels join the two cytoplasms directly, so nothing is released",
+        "Gap junctions do release messengers, but only in the heart",
+        "The gap is too wide for any signal to cross from one cell",
+        "Messengers are released into the blood, which carries them over"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "gj-chemical",
+        null,
+        null
+      ],
+      "explanation": "A gap junction is a direct channel, so the two cells share their cytoplasm for small molecules and nothing is secreted into a gap. A synapse is the structure that releases messengers into a gap.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.what-decides",
+      "concept": "gap-junction",
+      "element": "passage",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What decides whether a molecule can cross a gap junction?",
+      "choices": [
+        "Its size, because the channel only admits small molecules",
+        "Whether it is a protein, since proteins pass more easily",
+        "Whether it is bound to a membrane, like a vesicle",
+        "Whether it was made in the nucleus, like mRNA"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "gj-any-molecule",
+        null,
+        null
+      ],
+      "explanation": "The channel is narrow, so size decides passage: ions and small molecules fit through and larger molecules do not, whatever their chemical type. Being a protein does not help a molecule pass.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.calcium-closes",
+      "concept": "gap-junction",
+      "element": "gating",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Gap junctions can be closed by a change inside the cells. Which change does this?",
+      "choices": [
+        "A rise in calcium inside the cells",
+        "A fall in calcium inside the cells",
+        "Gap junctions never close once they have formed",
+        "The two cells dividing at the same time"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "gj-always-open",
+        null
+      ],
+      "explanation": "A rise in calcium, or a fall in pH, closes gap junction channels, which isolates a damaged cell from its neighbours. A fall in calcium does not close them, and cell division is not the trigger.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.drug-blocks-channels",
+      "concept": "gap-junction",
+      "element": "coupling",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Heart cells are joined by gap junctions. A drug blocks those channels. What is the most likely result?",
+      "choices": [
+        "Each cell's signal no longer reaches its neighbours",
+        "Each cell sends a chemical message into the gap instead",
+        "The signal reaches every cell at once, unslowed",
+        "The cells build more channels at once to compensate"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "gj-chemical",
+        null,
+        null
+      ],
+      "explanation": "Blocking gap junctions cuts electrical coupling, so each cell is no longer driven by its neighbours and the beat falls out of step. Cells do not switch to chemical messages when the channels are blocked.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.injury-calcium",
+      "concept": "gap-junction",
+      "element": "gating",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A cell is injured and its calcium level rises. What do the gap junctions to its healthy neighbours most likely do?",
+      "choices": [
+        "They close, which cuts the damaged cell off from its neighbours",
+        "They open wider, so healthy cells receive more calcium",
+        "They never close, so damage spreads to healthy neighbours",
+        "They release the calcium into the gap for repair"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "gj-always-open",
+        null
+      ],
+      "explanation": "A rise in calcium closes gap junctions, which limits the spread of damage. They do not open wider in injury, and they do not release calcium into the gap.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.channel-through-wall",
+      "concept": "plasmodesma",
+      "element": "channel-through-wall",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which structure links the cytoplasm of neighbouring plant cells across their walls?",
+      "choices": [
+        "Desmosomes",
+        "Plasmodesmata",
+        "Tight junctions",
+        "Gap junctions"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Plasmodesmata are channels through the cell walls of plants that connect the cytoplasm of neighbouring cells. Desmosomes, tight junctions and gap junctions are animal junctions and do not cross plant walls.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.centre-of-plasmodesma",
+      "concept": "plasmodesma",
+      "element": "structure",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What runs through the centre of a plasmodesma?",
+      "choices": [
+        "Nothing, since it is an empty hole in the wall",
+        "A strand of endoplasmic reticulum inside the channel",
+        "A bundle of collagen fibres running through the wall",
+        "A column of actin filaments running through the cell"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "pd-empty-hole",
+        null,
+        null,
+        null
+      ],
+      "explanation": "A plasmodesma is lined by plasma membrane and holds a strand of endoplasmic reticulum, called the desmotubule, through its centre. Collagen and actin do not occur in plasmodesmata.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.main-role",
+      "concept": "plasmodesma",
+      "element": "channel-through-wall",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the main role of plasmodesmata in a plant?",
+      "choices": [
+        "They connect the cytoplasm of neighbouring cells",
+        "They seal the walls so that water cannot leak",
+        "They build the cellulose that forms the wall",
+        "They pump calcium out through the plasma membrane"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Plasmodesmata let neighbouring plant cells share their cytoplasm and exchange small molecules and signals. They do not seal walls, make cellulose, or pump calcium.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.holes-student",
+      "concept": "plasmodesma",
+      "element": "structure",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says: 'Plasmodesmata are just holes in the cell wall.' What is wrong with that?",
+      "choices": [
+        "Each is lined by membrane and holds an ER strand inside",
+        "They do not link the cytoplasm of two cells at all",
+        "Each is a hole lined with cellulose only, so ions cannot pass",
+        "They are holes in the membrane, not in the cell wall"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "pd-empty-hole",
+        null,
+        null
+      ],
+      "explanation": "A plasmodesma is a membrane-lined channel with an ER strand through it, so the cytoplasm of the two cells is continuous. It is not an empty hole, and it is lined by plasma membrane rather than cellulose.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.callose-closes",
+      "concept": "plasmodesma",
+      "element": "control",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Plasmodesmata can be closed by a deposit of callose. What does this show?",
+      "choices": [
+        "Plasmodesmata are regulated, so passage can be switched off",
+        "Plasmodesmata are always open, and callose only strengthens the wall",
+        "Callose makes the channels wider, so more molecules pass",
+        "Callose is a sugar that only animal cells can make"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "pd-always-open",
+        null,
+        null
+      ],
+      "explanation": "Callose narrows plasmodesmata and reduces what passes, which lets a plant control signalling between its cells. Callose does not widen channels, and it is made by plant cells, not animal cells.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.what-moves",
+      "concept": "plasmodesma",
+      "element": "what-passes",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which of these can move from one plant cell to its neighbour through plasmodesmata?",
+      "choices": [
+        "Sugars and small ions, such as potassium",
+        "Whole chloroplasts, such as those in leaves",
+        "Cellulose fibres, such as those in the wall",
+        "Entire nuclei, such as those with their DNA"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Plasmodesmata let sugars and small ions pass between neighbouring cells. Chloroplasts and nuclei are far too large to move through, and cellulose is a wall material that stays in place.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.plasmodesma-vs-gap",
+      "concept": "plasmodesma",
+      "element": "comparison",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Plasmodesmata and gap junctions both join neighbouring cells. Which difference is correct?",
+      "choices": [
+        "Plasmodesmata cross a wall and contain an ER strand, which gap junctions lack",
+        "Plasmodesmata join membranes without any cytoplasm, unlike gap junctions",
+        "Gap junctions cross a cell wall, but plasmodesmata never cross any wall",
+        "They are the same structure, so the two names mean one thing"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "pd-same-as-gap"
+      ],
+      "explanation": "Both link neighbouring cells, but a plasmodesma passes through a wall and is lined by plasma membrane around an ER strand. A gap junction joins two membranes directly and has no wall to cross.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.dye-route",
+      "concept": "plasmodesma",
+      "element": "comparison",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A small dye is put into one plant cell and spreads to every neighbour within minutes. Which route most likely carried it?",
+      "choices": [
+        "Through plasmodesmata, which link the cytoplasm",
+        "Through gap junctions set into the cell walls",
+        "Through the wall itself, by soaking slowly across",
+        "Through the vacuole, which leaks into the next cell"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "pd-same-as-gap",
+        null,
+        null
+      ],
+      "explanation": "Plasmodesmata let small molecules such as dyes pass from one cell's cytoplasm to its neighbour's. Gap junctions are animal structures, and the wall and vacuole do not carry dye between cells this way.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.callose-movement",
+      "concept": "plasmodesma",
+      "element": "control",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Callose closes the plasmodesmata in a wall. What happens to the movement of small molecules across that wall?",
+      "choices": [
+        "It is reduced, so fewer molecules pass between the two cells",
+        "It is unchanged, because callose has no effect on movement",
+        "It increases, because callose widens the channel",
+        "It stops for all molecules, because the wall is sealed off"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Callose narrows plasmodesmata, so less passes between the cells. It does not widen the channels.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.cell-junctions.collagen-route",
+      "concept": "extracellular-matrix",
+      "element": "secretion",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in the order that collagen takes from its making to its place in the matrix.",
+      "steps": [
+        "Ribosomes on the rough ER make procollagen chains",
+        "Procollagen moves through the Golgi and is packed into vesicles",
+        "Vesicles fuse with the membrane and release procollagen outside",
+        "Enzymes outside the cell cut the ends off the procollagen",
+        "The collagen molecules assemble into fibrils in the matrix"
+      ],
+      "explanation": "Collagen is made as procollagen inside the cell, passed through the secretory pathway and released by exocytosis. Enzymes trim its ends outside the cell, and the trimmed molecules then assemble into fibrils.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.cell-junctions.wall-after-division",
+      "concept": "cell-wall",
+      "element": "formation",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in the order that a plant cell lays down its wall after dividing.",
+      "steps": [
+        "A cell plate forms between the two new nuclei",
+        "Primary wall material is laid down on each side of the plate",
+        "The cell stops growing, so its primary wall stops stretching",
+        "A secondary wall is added inside the primary wall"
+      ],
+      "explanation": "The cell plate becomes the first wall between the two daughter cells. Primary walls are laid down while the cells grow, and a secondary wall is added inside them once growth has stopped.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "solver-a's note: Step 2 (growth stops) is a late event that could be read as loosely placed, but it falls after the plate and primary wall and before the secondary wall, so the order holds."
+      }
+    },
+    {
+      "id": "biology.cell-junctions.gap-junction-assembly",
+      "concept": "gap-junction",
+      "element": "assembly",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps in the order that a gap junction forms between two cells.",
+      "steps": [
+        "Connexin subunits assemble into a connexon in each cell's membrane",
+        "Connexons from the two cells dock across the narrow gap",
+        "The docked pair forms a pore for ions and small molecules"
+      ],
+      "explanation": "Six connexins form a connexon in each membrane. Two connexons from neighbouring cells dock across the gap to make one complete channel.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    }
+  ],
+  "artifacts": []
+}

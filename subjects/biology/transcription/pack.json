@@ -1,0 +1,1565 @@
+{
+  "formatVersion": 1,
+  "id": "biology.transcription",
+  "subject": "biology",
+  "title": "Transcription",
+  "summary": "How RNA polymerase copies a gene into RNA at a promoter, and how a eukaryotic transcript is processed into messenger RNA.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "transcription",
+      "name": "Transcription",
+      "aliases": [
+        "Gene transcription",
+        "DNA transcription"
+      ],
+      "summary": "RNA polymerase copies one strand of a gene's DNA into a single-stranded RNA molecule, using base pairing.",
+      "requires": [
+        "nucleotide",
+        "dna-double-helix"
+      ],
+      "elements": [
+        {
+          "id": "template-strand",
+          "name": "Template strand",
+          "aliases": [
+            "Antisense strand",
+            "Template DNA strand"
+          ]
+        },
+        {
+          "id": "coding-strand",
+          "name": "Coding strand",
+          "aliases": [
+            "Sense strand",
+            "Non-template strand"
+          ]
+        },
+        {
+          "id": "uracil-for-thymine",
+          "name": "Uracil in place of thymine",
+          "aliases": [
+            "Uracil in RNA",
+            "U in RNA"
+          ]
+        },
+        {
+          "id": "stages",
+          "name": "Initiation, elongation and termination",
+          "aliases": [
+            "Stages of transcription"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "Transcription is the first step in using a gene. RNA polymerase reads one strand of the gene's DNA, the template strand, and builds a single-stranded RNA molecule whose bases pair with it. RNA uses uracil where DNA uses thymine, so an A in the template gives a U in the RNA. The RNA is built 5′ to 3′ and is released when the polymerase reaches the end of the gene. The DNA itself is left unchanged, so the gene can be transcribed again."
+      },
+      "misconceptions": [
+        {
+          "id": "rna-matches-template-letters",
+          "claim": "The RNA has the same letters as the template strand it is made from.",
+          "correction": "RNA pairs with the template, so each RNA base is the partner of the template base, not a copy of it. The RNA has the letters of the coding strand, with U for T."
+        },
+        {
+          "id": "rna-keeps-thymine",
+          "claim": "The RNA keeps thymine, so its bases are the same as DNA's.",
+          "correction": "RNA uses uracil (U) in place of thymine. A pairs with U in RNA, where DNA pairs A with T."
+        },
+        {
+          "id": "whole-chromosome-copied",
+          "claim": "Transcription copies a whole chromosome in one go.",
+          "correction": "Transcription makes RNA from one gene, or a short stretch, at a time. Other genes on the same chromosome are transcribed separately, and only when they are switched on."
+        },
+        {
+          "id": "dna-used-up",
+          "claim": "Transcription uses up the DNA, so the gene is gone afterward.",
+          "correction": "The DNA is left intact. The polymerase makes an RNA copy and leaves, so the gene can be transcribed again."
+        }
+      ]
+    },
+    {
+      "id": "rna-polymerase",
+      "name": "RNA polymerase",
+      "aliases": [
+        "RNA polymerases",
+        "RNAP",
+        "RNA pol"
+      ],
+      "summary": "The enzyme that builds RNA from a DNA template, starting at a promoter and growing the chain from 5′ to 3′.",
+      "requires": [
+        "transcription"
+      ],
+      "elements": [
+        {
+          "id": "promoter-binding",
+          "name": "Binding at the promoter",
+          "aliases": [
+            "Promoter recognition"
+          ]
+        },
+        {
+          "id": "chain-growth",
+          "name": "Direction of chain growth",
+          "aliases": [
+            "5′ to 3′ synthesis"
+          ]
+        },
+        {
+          "id": "polymerase-types",
+          "name": "Polymerases I, II and III",
+          "aliases": [
+            "Pol I",
+            "Pol II",
+            "Pol III"
+          ]
+        },
+        {
+          "id": "no-primer",
+          "name": "No primer needed",
+          "aliases": [
+            "De novo synthesis"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "RNA polymerase is the enzyme that makes RNA from a DNA template. It binds a promoter, unwinds a short stretch of the double helix, and adds ribonucleotides one at a time to a growing chain. Each one pairs with a template base and joins the RNA's 3′ end, so the chain grows from 5′ to 3′. Unlike DNA polymerase, it needs no primer. Eukaryotic nuclei have three main polymerases: polymerase II makes messenger RNA, while I and III make other RNAs."
+      },
+      "misconceptions": [
+        {
+          "id": "polymerase-needs-primer",
+          "claim": "RNA polymerase needs a primer to start, as DNA polymerase does.",
+          "correction": "RNA polymerase starts a new RNA chain on its own, at a promoter. DNA polymerase needs a primer already paired to the template."
+        },
+        {
+          "id": "one-polymerase-for-all-rna",
+          "claim": "One RNA polymerase makes every kind of RNA in a cell.",
+          "correction": "Eukaryotic nuclei have three main RNA polymerases. Polymerase II makes mRNA, while I and III make ribosomal and transfer RNAs."
+        },
+        {
+          "id": "polymerase-grows-chain-from-5-end",
+          "claim": "RNA polymerase adds nucleotides to the 5′ end of the growing RNA.",
+          "correction": "New nucleotides join the 3′ end, so the RNA chain grows from 5′ to 3′."
+        }
+      ]
+    },
+    {
+      "id": "promoter",
+      "name": "Promoter",
+      "aliases": [
+        "Promoters",
+        "Promoter sequence",
+        "Promoter region"
+      ],
+      "summary": "The DNA sequence upstream of a gene where RNA polymerase binds and transcription begins. It is not copied into the RNA.",
+      "requires": [
+        "rna-polymerase"
+      ],
+      "elements": [
+        {
+          "id": "upstream-position",
+          "name": "Position upstream of the start site",
+          "aliases": [
+            "Upstream element"
+          ]
+        },
+        {
+          "id": "tata-box",
+          "name": "TATA box",
+          "aliases": [
+            "TATA sequence"
+          ]
+        },
+        {
+          "id": "start-site",
+          "name": "Transcription start site",
+          "aliases": [
+            "Start site",
+            "+1 site"
+          ]
+        },
+        {
+          "id": "promoter-variation",
+          "name": "Variation between genes",
+          "aliases": [
+            "Promoter strength"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "A promoter is a DNA sequence just upstream of a gene, where transcription starts. RNA polymerase, helped by other proteins, binds the promoter and then begins making RNA at the transcription start site, which lies downstream of the promoter. The promoter itself is not copied into the RNA. Promoters differ between genes, so each gene can be switched on or off on its own. In some eukaryotic genes a short TATA box in the promoter helps place the polymerase."
+      },
+      "misconceptions": [
+        {
+          "id": "promoter-is-transcribed",
+          "claim": "The promoter is copied into the RNA, so it appears in the transcript.",
+          "correction": "The promoter lies upstream of the start site and is not transcribed. It is the binding site where transcription begins."
+        },
+        {
+          "id": "promoter-marks-stop",
+          "claim": "The promoter is the signal where transcription stops.",
+          "correction": "Transcription stops at a terminator. The promoter is where RNA polymerase binds to start."
+        },
+        {
+          "id": "promoters-identical",
+          "claim": "All genes share one promoter sequence.",
+          "correction": "Promoter sequences differ between genes. That difference is how each gene is switched on or off separately."
+        }
+      ]
+    },
+    {
+      "id": "messenger-rna",
+      "name": "Messenger RNA",
+      "aliases": [
+        "mRNA",
+        "Messenger RNAs",
+        "mRNA transcript"
+      ],
+      "summary": "The RNA copy of a protein-coding gene, read by the ribosome in three-base codons and broken down after a while.",
+      "requires": [
+        "transcription"
+      ],
+      "elements": [
+        {
+          "id": "codons",
+          "name": "Codons",
+          "aliases": [
+            "Triplet codons"
+          ]
+        },
+        {
+          "id": "untranslated-regions",
+          "name": "Untranslated regions",
+          "aliases": [
+            "UTRs",
+            "5′ UTR",
+            "3′ UTR"
+          ]
+        },
+        {
+          "id": "pre-mrna",
+          "name": "Pre-mRNA",
+          "aliases": [
+            "Primary transcript"
+          ]
+        },
+        {
+          "id": "mrna-decay",
+          "name": "mRNA decay",
+          "aliases": [
+            "mRNA degradation",
+            "mRNA turnover"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "Messenger RNA, or mRNA, is the RNA copy of a protein-coding gene that carries its instructions to the ribosome. The ribosome reads it in three-base codons, and each codon specifies one amino acid. In eukaryotes the first copy, pre-mRNA, contains introns that are removed before the mature mRNA leaves the nucleus. The mRNA does not last forever: cells break it down after a while, and how fast it decays helps set how much protein is made."
+      },
+      "misconceptions": [
+        {
+          "id": "mrna-exact-copy",
+          "claim": "The mRNA is a perfect copy of the whole gene, every base included.",
+          "correction": "The first RNA copy contains introns. Processing removes them, so mature mRNA is shorter than the gene, and the untranslated ends are not read as codons."
+        },
+        {
+          "id": "mrna-carries-amino-acids",
+          "claim": "mRNA carries the amino acids to the ribosome.",
+          "correction": "mRNA carries the code as a sequence of codons. Transfer RNA carries the amino acids."
+        },
+        {
+          "id": "mrna-lasts-forever",
+          "claim": "Once made, an mRNA stays in the cell until the cell dies.",
+          "correction": "mRNA is broken down after a time. How fast it decays helps set how much protein a cell makes."
+        }
+      ]
+    },
+    {
+      "id": "rna-processing",
+      "name": "RNA processing",
+      "aliases": [
+        "Post-transcriptional processing",
+        "Pre-mRNA processing",
+        "mRNA processing"
+      ],
+      "summary": "The changes made to pre-mRNA in eukaryotes: a 5′ cap, a poly-A tail, and splicing out the introns.",
+      "requires": [
+        "messenger-rna"
+      ],
+      "elements": [
+        {
+          "id": "five-prime-cap",
+          "name": "5′ cap",
+          "aliases": [
+            "Cap",
+            "7-methylguanosine cap"
+          ]
+        },
+        {
+          "id": "poly-a-tail",
+          "name": "Poly-A tail",
+          "aliases": [
+            "Poly(A) tail"
+          ]
+        },
+        {
+          "id": "splicing",
+          "name": "RNA splicing",
+          "aliases": [
+            "Intron removal"
+          ]
+        },
+        {
+          "id": "introns-and-exons",
+          "name": "Introns and exons",
+          "aliases": [
+            "Intron",
+            "Exon"
+          ]
+        },
+        {
+          "id": "spliceosome",
+          "name": "Spliceosome",
+          "aliases": [
+            "Splicing complex"
+          ]
+        }
+      ],
+      "explain": {
+        "text": "In eukaryotes, the RNA made by transcription is changed before it becomes mRNA. A 5′ cap is added to the front end and a poly-A tail to the back end, which protect the RNA and help it reach the ribosome. Splicing then removes the introns, which are non-coding segments, and joins the exons, which hold the coding sequence. Specific signal sequences at the ends of each intron guide where the cuts are made. Bacterial mRNA usually needs none of this."
+      },
+      "misconceptions": [
+        {
+          "id": "introns-stay-in-mrna",
+          "claim": "Introns stay in the mature mRNA and are translated along with the exons.",
+          "correction": "Splicing removes introns and joins the exons, so the mature mRNA carries only exon sequence."
+        },
+        {
+          "id": "caps-added-late",
+          "claim": "The 5′ cap and poly-A tail are added after the protein is made.",
+          "correction": "The cap and tail are added during processing, before the mRNA leaves the nucleus. They protect the mRNA and help the ribosome start."
+        },
+        {
+          "id": "splicing-is-random",
+          "claim": "Splicing cuts the RNA at random places and keeps what is left.",
+          "correction": "Splice sites carry signal sequences, and the spliceosome removes each intron at those defined sites."
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "biology.transcription.transcription-product",
+      "concept": "transcription",
+      "element": "stages",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does transcription make from a gene?",
+      "choices": [
+        "An RNA copy of the gene's DNA sequence",
+        "A protein folded from the gene's sequence",
+        "A second copy of the whole chromosome",
+        "Using up the gene's DNA to make RNA"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "whole-chromosome-copied",
+        "dna-used-up"
+      ],
+      "explanation": "Transcription makes a single-stranded RNA copy of a gene. Folding a protein from RNA is translation, a later step. Copying a whole chromosome is replication, and transcription does not use up the DNA it reads.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.template-strand-read",
+      "concept": "transcription",
+      "element": "template-strand",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which DNA strand does RNA polymerase read to build the RNA?",
+      "choices": [
+        "The template strand, read 3′ to 5′",
+        "The coding strand, read 5′ to 3′",
+        "Both strands, one after the other",
+        "Whichever strand carries more genes"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The template strand is the one the RNA pairs with, and it is read 3′ to 5′ while the new RNA grows 5′ to 3′. The coding strand has the RNA's sequence, with U for T, but it is not the one read. Only one strand of a gene is read at a time.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.rna-from-coding",
+      "concept": "transcription",
+      "element": "coding-strand",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A gene's coding strand reads 5′-ATGGCC-3′. Which RNA does transcription make?",
+      "choices": [
+        "5′-AUGGCC-3′",
+        "5′-ATGGCC-3′",
+        "3′-UACCGG-5′",
+        "5′-UACCGG-3′"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "rna-keeps-thymine",
+        null,
+        null
+      ],
+      "explanation": "The RNA matches the coding strand, with U in place of T, and runs 5′ to 3′ in the same direction. ATGGCC keeps T, which RNA does not use. UACCGG is the template's letters, and RNA pairs with the template rather than copying it.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.chromosome-copied",
+      "concept": "transcription",
+      "difficulty": 2,
+      "kind": "choice",
+      "prompt": "A chromosome carries many genes. How much of it does one transcription event usually copy?",
+      "choices": [
+        "One gene, or a short stretch of DNA",
+        "The whole chromosome, in one piece",
+        "Every gene the cell carries at once",
+        "Just the promoter region, not the gene itself"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "whole-chromosome-copied",
+        null,
+        null
+      ],
+      "explanation": "Transcription makes RNA from one gene or a short stretch of DNA, and each gene's promoter decides where that starts. Copying the whole chromosome would be a different process. Genes are transcribed separately, and only the ones switched on are read.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.dna-afterwards",
+      "concept": "transcription",
+      "element": "stages",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "After RNA polymerase has transcribed a gene, what is the state of that gene's DNA?",
+      "choices": [
+        "It stays intact, and the gene can be read again",
+        "It is used up and must be rebuilt before reuse",
+        "Its strands are sealed off and cannot be read again",
+        "It is turned into the RNA, so the gene is gone"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "dna-used-up",
+        null,
+        "dna-used-up"
+      ],
+      "explanation": "The polymerase copies the gene and leaves, and the double helix closes back up. The gene is still there and can be transcribed again, which is why a cell can make the same RNA many times.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.template-complement",
+      "concept": "transcription",
+      "element": "template-strand",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A gene's template strand reads 3′-TACGGA-5′. Which RNA does transcription make from it?",
+      "choices": [
+        "5′-AUGCCU-3′",
+        "5′-UACGGA-3′",
+        "3′-AUGCCU-5′",
+        "5′-ATGCCT-3′"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "rna-matches-template-letters",
+        null,
+        "rna-keeps-thymine"
+      ],
+      "explanation": "Each RNA base pairs with the template base opposite it: T gives A, A gives U, C gives G and G gives C. Written 5′ to 3′, that is AUGCCU. Copying the template's letters, as in UACGGA, is the mistake, and ATGCCT keeps T, which RNA does not use.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.rna-base-for-thymine",
+      "concept": "transcription",
+      "element": "uracil-for-thymine",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What base does RNA use in place of thymine?",
+      "choices": [
+        "Uracil (U)",
+        "Thymine (T)",
+        "Adenine (A)",
+        "Cytosine"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "rna-keeps-thymine",
+        null,
+        null
+      ],
+      "explanation": "RNA uses uracil, which pairs with adenine, where DNA uses thymine. Adenine and cytosine are found in both DNA and RNA. A student who thinks RNA keeps thymine has missed this one difference.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.stage-order",
+      "concept": "transcription",
+      "element": "stages",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put the stages of transcription in order, from start to finish.",
+      "steps": [
+        "RNA polymerase binds the promoter and the DNA opens into a bubble",
+        "The polymerase leaves the promoter and starts the RNA chain",
+        "The RNA chain grows, one base at a time, as the polymerase moves on",
+        "The polymerase reaches a terminator and releases the RNA"
+      ],
+      "explanation": "Initiation starts at the promoter, the polymerase then leaves the promoter, elongation builds the chain, and termination ends it and releases the RNA.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.transcription.polymerase-name",
+      "concept": "rna-polymerase",
+      "element": "promoter-binding",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which enzyme builds an RNA chain from a DNA template?",
+      "choices": [
+        "RNA polymerase",
+        "DNA ligase",
+        "DNA helicase",
+        "Reverse transcriptase"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "RNA polymerase reads a DNA template and joins ribonucleotides into an RNA chain. DNA ligase seals breaks in the DNA backbone, helicase unwinds the double helix, and reverse transcriptase makes DNA from RNA.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.polymerase-primer-claim",
+      "concept": "rna-polymerase",
+      "element": "no-primer",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student says RNA polymerase, like DNA polymerase, needs a primer before it can start. What is the correct view?",
+      "choices": [
+        "It starts a new RNA chain on its own, at a promoter",
+        "It needs a primer, as DNA polymerase does, to begin the chain",
+        "It needs a short DNA primer to begin",
+        "It starts from the end of the previous gene"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "polymerase-needs-primer",
+        null,
+        null
+      ],
+      "explanation": "RNA polymerase begins a chain at the promoter with no primer. DNA polymerase needs a primer already paired to the template. Thinking RNA polymerase also needs one is the mistake to avoid.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.polymerase-count",
+      "concept": "rna-polymerase",
+      "element": "polymerase-types",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How many main RNA polymerases does a eukaryotic nucleus use?",
+      "choices": [
+        "Three",
+        "One",
+        "Two",
+        "Four or more"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "one-polymerase-for-all-rna",
+        null,
+        null
+      ],
+      "explanation": "Eukaryotic nuclei have three main RNA polymerases. I makes most ribosomal RNA, II makes messenger RNA, and III makes transfer RNA and other small RNAs. One enzyme cannot do all three jobs.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: Pol I, II, III in animals/fungi; plants also have IV and V.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.polymerase-ii-job",
+      "concept": "rna-polymerase",
+      "element": "polymerase-types",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which RNA polymerase in a eukaryotic nucleus makes messenger RNA?",
+      "choices": [
+        "RNA polymerase II",
+        "RNA polymerase I",
+        "RNA polymerase III",
+        "DNA polymerase II"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Polymerase II transcribes protein-coding genes into pre-mRNA. Polymerase I makes most ribosomal RNA and III makes transfer RNA. DNA polymerase II is a DNA-copying enzyme, not a transcription enzyme.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.one-enzyme-argument",
+      "concept": "rna-polymerase",
+      "element": "polymerase-types",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A student argues that a cell needs only one RNA polymerase, because one enzyme can read any gene. What is the flaw?",
+      "choices": [
+        "Nuclei use several polymerases, each for one kind of RNA",
+        "Nothing, since one enzyme is enough to read every single gene",
+        "Nothing, since DNA polymerase also copies all of the DNA",
+        "The cell is too small to hold more than one kind of enzyme"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "one-polymerase-for-all-rna",
+        null,
+        null
+      ],
+      "explanation": "Eukaryotic nuclei use polymerases I, II and III, each for different RNAs, so one enzyme does not read every gene. DNA polymerase copies DNA, not RNA, and cell size does not limit how many enzymes a cell holds.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.elongation-direction",
+      "concept": "rna-polymerase",
+      "element": "chain-growth",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "During elongation, which way does RNA polymerase add nucleotides to the growing RNA?",
+      "choices": [
+        "5′ to 3′, adding to the 3′ end",
+        "3′ to 5′, adding to the 5′ end",
+        "5′ to 3′, adding to the 5′ end",
+        "From both ends, growing outward from the middle"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "New nucleotides join the 3′ end of the chain, so the RNA grows 5′ to 3′. Adding to the 5′ end is the reverse of how the chain is built. The chain does not grow from both ends or from the middle.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.why-chain-5-to-3",
+      "concept": "rna-polymerase",
+      "element": "chain-growth",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "The template strand is read 3′ to 5′, yet the RNA chain grows 5′ to 3′. Why is that possible?",
+      "choices": [
+        "The new RNA runs antiparallel to the template, adding at its 3′ end",
+        "The new RNA adds at its 5′ end, so the chain grows backward",
+        "The template is turned around inside the enzyme as it reads it",
+        "The RNA is cut into short pieces, then rejoined in the correct order"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "polymerase-grows-chain-from-5-end",
+        null,
+        null
+      ],
+      "explanation": "A chain grows by adding to its 3′ end, and the new RNA runs antiparallel to the template, so a 3′ to 5′ template gives a 5′ to 3′ RNA. The idea that the chain joins at its 5′ end gets the direction backward.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.start-requirement",
+      "concept": "rna-polymerase",
+      "element": "promoter-binding",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What does RNA polymerase need in place before it can start a new RNA chain?",
+      "choices": [
+        "A promoter sequence on the DNA that it can bind",
+        "A primer of RNA already paired to the template strand",
+        "A ribosome bound to a start codon",
+        "An Okazaki fragment to extend along the gene"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "polymerase-needs-primer",
+        null,
+        null
+      ],
+      "explanation": "RNA polymerase binds a promoter and starts there without a primer. An RNA primer is used in DNA replication, not transcription. Ribosomes read mRNA after it is made, and Okazaki fragments are pieces of DNA made during replication.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.chain-addition-order",
+      "concept": "rna-polymerase",
+      "element": "chain-growth",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps for adding one nucleotide to the RNA chain in order.",
+      "steps": [
+        "A matching nucleotide pairs with the template base at the active site",
+        "The new nucleotide is joined to the RNA's 3′ end",
+        "The polymerase moves one base along the template, ready for the next"
+      ],
+      "explanation": "The incoming nucleotide has to pair with the template base before it can be joined. After it is joined, the enzyme moves one base along to take the next template base.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.transcription.promoter-location",
+      "concept": "promoter",
+      "element": "upstream-position",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Where is a promoter found, relative to the gene it controls?",
+      "choices": [
+        "Just upstream of the transcription start site",
+        "Inside the transcript, at the gene's first base",
+        "Just after the gene's stop codon",
+        "Halfway through the gene's coding region"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "promoter-is-transcribed",
+        "promoter-marks-stop",
+        null
+      ],
+      "explanation": "The promoter lies upstream of the start site, before the first base of the RNA. It is not inside the transcript, and it is not at the stop codon or in the middle of the coding region.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.polymerase-at-promoter",
+      "concept": "promoter",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What does RNA polymerase do at a promoter?",
+      "choices": [
+        "It binds there and sets where transcription starts",
+        "It stops, and releases the finished RNA molecule",
+        "It copies the promoter into the very start of the mRNA",
+        "It cuts the DNA to open room for the gene"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "promoter-marks-stop",
+        "promoter-is-transcribed",
+        null
+      ],
+      "explanation": "The polymerase, with other proteins, binds the promoter and begins transcription at the start site. Release happens at a terminator, and the promoter itself is not copied into the RNA. Cutting DNA is not part of this.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.promoters-differ",
+      "concept": "promoter",
+      "element": "promoter-variation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about promoters is true?",
+      "choices": [
+        "Promoters differ, so each gene can be switched on separately",
+        "Every gene has one shared promoter, so they all start together",
+        "The promoter is the longest stretch of any gene's DNA",
+        "The promoter is copied into the RNA as its first base pairs"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "promoters-identical",
+        null,
+        "promoter-is-transcribed"
+      ],
+      "explanation": "Each gene has its own promoter sequence, which proteins recognise, so genes can be switched on or off separately. A shared promoter would make them start together. The promoter is upstream of the start site and is not copied into the RNA.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.tata-box",
+      "concept": "promoter",
+      "element": "tata-box",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which short sequence is found in the core promoter of some eukaryotic genes?",
+      "choices": [
+        "TATA box sequence",
+        "Poly-A signal sequence",
+        "Shine-Dalgarno sequence",
+        "Kozak sequence"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The TATA box is an A-T rich sequence upstream of the start site that helps place the polymerase in some genes. The poly-A signal marks the 3′ end of an RNA, Shine-Dalgarno sits near bacterial start codons, and the Kozak sequence sits near eukaryotic start codons.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.promoter-deleted",
+      "concept": "promoter",
+      "element": "promoter-variation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A mutation deletes a gene's promoter but leaves its coding region intact. What is most likely to happen?",
+      "choices": [
+        "Little or no RNA is made, because polymerase cannot bind",
+        "The gene is still read, since all genes share one promoter",
+        "The mRNA is made, but its first codon is missing",
+        "The gene is transcribed backward from its stop codon"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "promoters-identical",
+        null,
+        null
+      ],
+      "explanation": "The promoter is where polymerase binds to start. Without it the enzyme has nowhere to begin, so little or no RNA is made. The coding region does not supply a start site, and genes do not share one promoter.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.promoter-mutation-effect",
+      "concept": "promoter",
+      "element": "promoter-variation",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A mutation weakens a gene's promoter, so polymerase starts less often. Which change is expected, and why?",
+      "choices": [
+        "Less mRNA is made, with the same amino acid sequence as before",
+        "More mRNA is made, since the promoter now blocks the ribosome",
+        "The mRNA is shorter, since the promoter marks where it stops",
+        "The protein has different amino acids, because the code changed"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        "promoter-marks-stop",
+        null
+      ],
+      "explanation": "The promoter sets how often polymerase starts, so a weaker one gives less mRNA. It does not change the coding sequence, so the amino acids stay the same. A promoter is not a stop signal, and it does not block the ribosome.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.promoter-copied-error",
+      "concept": "promoter",
+      "element": "upstream-position",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: 'The promoter is part of the gene the mRNA is made from, so it must be in the mRNA.' What is wrong with that?",
+      "choices": [
+        "The promoter lies before the start site, so it is not transcribed",
+        "Nothing is wrong: transcription copies the whole region it binds to",
+        "The promoter is copied, but the ribosome removes it later",
+        "The promoter is transcribed in some cells but not in others"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "promoter-is-transcribed",
+        null,
+        null
+      ],
+      "explanation": "Transcription begins at the start site, and the promoter sits upstream of it, so polymerase binds there without copying it. The ribosome does not remove anything from mRNA to fix this.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.repressor-blocks",
+      "concept": "promoter",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A repressor protein sits on a gene's promoter and the gene goes silent. Why does transcription stop?",
+      "choices": [
+        "RNA polymerase cannot bind the promoter, so it cannot start",
+        "RNA polymerase starts, then stops at the promoter's far end",
+        "The repressor is copied into the mRNA and blocks the ribosome",
+        "The gene is cut out of the chromosome before it is read"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "promoter-marks-stop",
+        null,
+        null
+      ],
+      "explanation": "A repressor that covers the promoter keeps polymerase from binding, so no transcription starts. Polymerase stops at terminators, not at promoters, and the repressor is not copied into RNA.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.mrna-name",
+      "concept": "messenger-rna",
+      "element": "codons",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which RNA carries the protein-coding message from the gene to the ribosome?",
+      "choices": [
+        "Messenger RNA",
+        "Transfer RNA",
+        "Ribosomal RNA",
+        "Small nuclear RNA"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Messenger RNA carries the codons that set a protein's sequence to the ribosome. Transfer RNA brings amino acids, ribosomal RNA forms part of the ribosome, and small nuclear RNA takes part in splicing.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.mrna-message-content",
+      "concept": "messenger-rna",
+      "element": "codons",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What does a messenger RNA carry to the ribosome?",
+      "choices": [
+        "A sequence of codons that sets which amino acids are added",
+        "The amino acids themselves, one for each codon it carries",
+        "The enzymes that copy the gene, so the ribosome can use them",
+        "An exact copy of the gene, introns and all, as a single unit"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mrna-carries-amino-acids",
+        null,
+        "mrna-exact-copy"
+      ],
+      "explanation": "The mRNA's codons set the order of amino acids, and transfer RNA brings the amino acids. The mRNA does not carry amino acids, and it is not an uncut copy of the gene, because introns are removed first in eukaryotes.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.first-rna-longer",
+      "concept": "messenger-rna",
+      "element": "pre-mrna",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "In a eukaryotic cell, the first RNA made from a gene is longer than the mature mRNA. Why?",
+      "choices": [
+        "Introns are cut out of the first RNA, then the exons are joined",
+        "Nothing is removed: the mRNA is a perfect copy of the first RNA",
+        "Ribosomes chew up part of the first RNA before it leaves",
+        "The first RNA has extra copies of the coding region at its ends"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mrna-exact-copy",
+        null,
+        null
+      ],
+      "explanation": "The first RNA, pre-mRNA, contains introns. They are spliced out and the exons are joined into the mature mRNA. A perfect copy with nothing removed is the mistake to avoid.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.mrna-fate",
+      "concept": "messenger-rna",
+      "element": "mrna-decay",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What happens to an mRNA molecule in a cell after it has been translated for a while?",
+      "choices": [
+        "It is broken down, so how fast it decays helps set protein levels",
+        "It stays in the cell until the cell itself dies and is then recycled",
+        "It is copied back into DNA, so the gene stays in the cell",
+        "It binds the ribosome for good and is never released"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mrna-lasts-forever",
+        null,
+        null
+      ],
+      "explanation": "mRNA is broken down after a time, so its lifetime helps set how much protein a cell makes. It is not copied back into DNA, and it is released from the ribosome when translation ends.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.protein-after-switch-off",
+      "concept": "messenger-rna",
+      "element": "mrna-decay",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A gene is switched on briefly, then off. Its protein level stays high for a long time afterward. What best explains this?",
+      "choices": [
+        "Its mRNA is still present and keeps being translated for a while",
+        "Its mRNA is permanent, so translation keeps going for good",
+        "The gene keeps copying itself in the nucleus after switch-off",
+        "Ribosomes made from the gene keep the protein from being broken down"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mrna-lasts-forever",
+        null,
+        null
+      ],
+      "explanation": "Protein levels fall only as fast as the protein and its mRNA are lost. A message that lasts keeps making protein after the gene is off. Permanent mRNA is the mistake to avoid, because mRNA does decay.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Persistent protein could also be explained by slow protein turnover (stability), which is not an option; the mRNA-persistence choice is the intended best fit.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.translated-part",
+      "concept": "messenger-rna",
+      "element": "untranslated-regions",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which part of a mature eukaryotic mRNA does the ribosome read as codons?",
+      "choices": [
+        "The coding region, from the start codon to the stop codon",
+        "Every base of the transcript, since each one of them codes for protein",
+        "The 5′ cap, which holds the first amino acid",
+        "The promoter region, copied into the message"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Translation starts at the start codon and ends at the stop codon, so only the coding region is read as codons. The untranslated ends and the cap do not code for amino acids, and the promoter is not copied into the mRNA.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.pre-mrna-name",
+      "concept": "messenger-rna",
+      "element": "pre-mrna",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is the RNA called before introns are removed and its ends are finished?",
+      "choices": [
+        "Pre-mRNA",
+        "rRNA",
+        "Transfer RNA",
+        "Mature mRNA"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Pre-mRNA is the first RNA copy of a protein-coding gene, before processing. Ribosomal RNA and transfer RNA are different molecules, and mature mRNA is what remains after processing.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.amino-acid-carrier",
+      "concept": "messenger-rna",
+      "element": "codons",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "During translation, which RNA brings each amino acid to the ribosome?",
+      "choices": [
+        "Transfer RNA, which pairs with the mRNA codon",
+        "Messenger RNA, which carries the amino acid along",
+        "Ribosomal RNA, which holds the amino acid in place",
+        "Pre-mRNA, which is spliced into amino acids"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "mrna-carries-amino-acids",
+        null,
+        null
+      ],
+      "explanation": "Transfer RNA carries an amino acid and pairs its anticodon with the codon on the mRNA. The mRNA carries the codons, not the amino acids. Ribosomal RNA is part of the ribosome, and pre-mRNA is not a source of amino acids.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.splicing-removes",
+      "concept": "rna-processing",
+      "element": "introns-and-exons",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "During RNA splicing, which segments are cut out of the pre-mRNA?",
+      "choices": [
+        "Non-coding introns between exons",
+        "Coding exons, the parts that code for protein",
+        "Codon triplets",
+        "Promoter regions"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "Splicing removes the introns, and the exons on either side are joined. Exons are kept because they carry the coding sequence. Codons are read later from the mature mRNA, and promoters lie upstream of the gene, not inside the RNA.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.why-splicing-matters",
+      "concept": "rna-processing",
+      "element": "splicing",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why does splicing change the protein a gene makes?",
+      "choices": [
+        "Introns are removed, so only exon sequence is read as codons",
+        "Introns are kept in the mRNA and read as codons with the exons",
+        "Splicing deletes the exons and keeps the introns as coding sequence",
+        "Splicing adds a cap, which sets which amino acid comes first"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "introns-stay-in-mrna",
+        null,
+        null
+      ],
+      "explanation": "The ribosome reads the spliced mRNA, so the introns must be removed for the codons to come from the exons. Keeping introns, or deleting exons, would change the protein. Splicing does not add the cap.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: Stem says splicing changes the protein; strictly splicing removes introns so the mRNA codes only exon sequence. Fine but loosely worded.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.cap-tail-timing",
+      "concept": "rna-processing",
+      "element": "five-prime-cap",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "When are the 5′ cap and poly-A tail added to a eukaryotic pre-mRNA?",
+      "choices": [
+        "During processing, before the mRNA leaves the nucleus",
+        "After the protein is made, to mark the mRNA for recycling",
+        "Once the ribosome has finished reading the whole mRNA",
+        "During DNA replication, before the gene is copied"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "caps-added-late",
+        "caps-added-late",
+        null
+      ],
+      "explanation": "The cap and tail are added during processing, while the RNA is still in the nucleus. They protect the mRNA and help its export and translation. They are not added after translation, and not during replication.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: Capping and polyadenylation are mostly co-transcriptional; answer still right.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.missing-tail",
+      "concept": "rna-processing",
+      "element": "poly-a-tail",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A mature mRNA lacks its poly-A tail. What is the most likely effect?",
+      "choices": [
+        "The mRNA breaks down sooner, so less protein is made",
+        "The ribosome reads the introns instead of the exons",
+        "The protein gets extra amino acids at its far end",
+        "The mRNA is spliced again, so more introns are removed"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "explanation": "The poly-A tail helps protect the mRNA from decay, so without it the message is broken down sooner. The introns were removed earlier, and the ribosome does not read them.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.splice-site-signal",
+      "concept": "rna-processing",
+      "element": "spliceosome",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What guides the spliceosome to the correct places to cut?",
+      "choices": [
+        "Short sequence signals at each intron's ends, the splice sites",
+        "It cuts at random spots, wherever the strand breaks most easily",
+        "It measures the length and cuts at a fixed spacing each time",
+        "It reads one codon at a time and cuts at each stop codon"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "splicing-is-random",
+        null,
+        null
+      ],
+      "explanation": "Splice sites are short sequences at the ends of introns, and the spliceosome recognises them. Splicing is not random, and it does not use a fixed spacing or stop codons.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.mrna-ends",
+      "concept": "rna-processing",
+      "element": "five-prime-cap",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which two additions mark the two ends of a eukaryotic mature mRNA?",
+      "choices": [
+        "A 5′ cap at the front and a poly-A tail at the back",
+        "A promoter at the front and a terminator at the back",
+        "An intron at the front and an exon at the back",
+        "Both are added after the protein is made, at each end"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        "caps-added-late"
+      ],
+      "explanation": "The 5′ cap is added to the front end and the poly-A tail to the back end during processing. Promoters and terminators are DNA signals, not parts of the mRNA. Introns are cut out, and the ends are not added after translation.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.random-splicing-error",
+      "concept": "rna-processing",
+      "element": "splicing",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says: 'Splicing is just random snipping, so any cut would do.' What is wrong with that?",
+      "choices": [
+        "Cuts happen at defined splice sites, so exons are joined exactly",
+        "Nothing is wrong: the snips are random and exons are sorted later",
+        "Nothing is wrong: the cap decides which pieces are kept",
+        "Nothing is wrong: the ribosome cuts out whatever it cannot read"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "splicing-is-random",
+        null,
+        null
+      ],
+      "explanation": "Splicing cuts at defined signals at the intron ends, which is why exons join in the right order. The cap protects the RNA and does not choose which pieces are kept. The ribosome does not splice.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.transcription.lost-splice-site",
+      "concept": "rna-processing",
+      "element": "spliceosome",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A mutation destroys the splice site at the end of one intron. What is the most likely result?",
+      "choices": [
+        "That intron may stay, so its non-coding sequence reaches the mRNA",
+        "The intron is removed anyway, because cutting is essentially random",
+        "The exons on both sides get removed instead of the intron",
+        "The poly-A tail is lost, and the rest of the mRNA is unchanged"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "splicing-is-random",
+        null,
+        null
+      ],
+      "explanation": "Without a working splice site, the spliceosome may skip that intron, so it stays in the mRNA. Splicing is guided rather than random, so the intron is not removed anyway. The mutation sits at the intron's end, so the exons are not lost.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    }
+  ],
+  "artifacts": []
+}

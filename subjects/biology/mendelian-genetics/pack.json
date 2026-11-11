@@ -1,0 +1,1861 @@
+{
+  "formatVersion": 1,
+  "id": "biology.mendelian-genetics",
+  "subject": "biology",
+  "title": "Mendelian genetics",
+  "summary": "How alleles pass from parents to offspring in one- and two-trait crosses, and Mendel's two laws.",
+  "license": "CC0-1.0",
+  "concepts": [
+    {
+      "id": "allele",
+      "name": "Allele",
+      "aliases": [
+        "alleles",
+        "allelomorph"
+      ],
+      "summary": "One of the alternative forms of a gene, sitting at the same locus on each chromosome of a homologous pair.",
+      "requires": [
+        "chromosome"
+      ],
+      "elements": [
+        {
+          "id": "locus",
+          "name": "Locus of a gene"
+        },
+        {
+          "id": "diploid-pairs",
+          "name": "Two alleles per gene in a diploid cell"
+        },
+        {
+          "id": "dominant-recessive",
+          "name": "Dominant and recessive alleles"
+        }
+      ],
+      "explain": {
+        "text": "An allele is one of the alternative forms of a gene. A gene is a stretch of DNA that carries the instructions for a trait, and its alleles differ in the instructions they carry, such as one for purple flowers and one for white. Each allele sits at the same place on a chromosome, called its locus. Body cells are diploid, so they hold a pair of homologous chromosomes, and most genes come as two alleles, one from each parent. If the two match, the individual is homozygous; if they differ, it is heterozygous."
+      },
+      "misconceptions": [
+        {
+          "id": "dominant-is-common",
+          "claim": "A dominant allele is the common one, and a recessive allele is the rare one.",
+          "correction": "Dominant and recessive describe how an allele shows when it is paired with a different one. They say nothing about how often an allele occurs."
+        },
+        {
+          "id": "alleles-are-different-genes",
+          "claim": "Two alleles are two different genes that control two different traits.",
+          "correction": "Alleles are versions of one gene, found at the same locus. They affect the same trait, in different forms."
+        },
+        {
+          "id": "dominance-erases-recessive",
+          "claim": "In a heterozygote the dominant allele deletes the recessive one from the cell.",
+          "correction": "Both alleles stay in the cell and can be passed on. Only the dominant allele's effect shows in the trait."
+        },
+        {
+          "id": "one-copy-per-cell",
+          "claim": "A body cell carries only one allele of each gene.",
+          "correction": "Body cells are diploid. Each gene has two alleles, one on each chromosome of a homologous pair."
+        }
+      ]
+    },
+    {
+      "id": "genotype-and-phenotype",
+      "name": "Genotype and phenotype",
+      "aliases": [
+        "genotype",
+        "phenotype",
+        "genotypes",
+        "phenotypes"
+      ],
+      "summary": "The genotype is the alleles an organism carries for a gene. The phenotype is the trait it shows.",
+      "requires": [
+        "allele"
+      ],
+      "elements": [
+        {
+          "id": "genotype-notation",
+          "name": "Writing genotypes with letters"
+        },
+        {
+          "id": "homozygous-heterozygous",
+          "name": "Homozygous and heterozygous genotypes"
+        },
+        {
+          "id": "phenotype-from-genotype",
+          "name": "Phenotype as the trait shown"
+        }
+      ],
+      "explain": {
+        "text": "The genotype is the set of alleles an organism carries for a gene, written with letters such as PP, Pp or pp. The phenotype is the trait it actually shows, such as purple or white flowers. The two are different things. A dominant allele shows its trait in both PP and Pp, so two plants with the same phenotype can have different genotypes. The phenotype also depends on the environment, so the look of an organism does not always reveal its alleles. Geneticists work out genotypes from the offspring that crosses produce."
+      },
+      "misconceptions": [
+        {
+          "id": "same-thing",
+          "claim": "Genotype and phenotype are two names for the same thing.",
+          "correction": "The genotype is the alleles an organism carries. The phenotype is the trait it shows. Two organisms can share one and differ in the other."
+        },
+        {
+          "id": "look-shows-genes",
+          "claim": "What an organism looks like tells you exactly which alleles it carries.",
+          "correction": "PP and Pp both give the dominant trait, so the look does not show which two alleles are present."
+        },
+        {
+          "id": "heterozygote-blends",
+          "claim": "A heterozygote always shows a blend of its two parents' traits.",
+          "correction": "With complete dominance a heterozygote shows the dominant trait in full. A blend is a different pattern."
+        }
+      ]
+    },
+    {
+      "id": "monohybrid-cross",
+      "name": "Monohybrid cross",
+      "aliases": [
+        "monohybrid crosses",
+        "one-trait cross",
+        "one-gene cross"
+      ],
+      "summary": "A cross that follows one gene with one pair of alleles, predicted with a Punnett square and expected ratios.",
+      "requires": [
+        "allele",
+        "genotype-and-phenotype",
+        "meiosis"
+      ],
+      "elements": [
+        {
+          "id": "parental-gametes",
+          "name": "Gametes of each parent"
+        },
+        {
+          "id": "punnett-square",
+          "name": "The Punnett square"
+        },
+        {
+          "id": "expected-ratios",
+          "name": "Expected genotype and phenotype ratios"
+        }
+      ],
+      "explain": {
+        "text": "A monohybrid cross follows one gene, with one pair of alleles, from two parents to their offspring. Each parent makes gametes that carry one allele each, and the gametes meet at random. A Punnett square is a grid that lists the combinations. For two heterozygous parents, Aa and Aa, one box in four is AA, two are Aa and one is aa. With complete dominance the phenotypes come out as three showing the dominant trait for every one showing the recessive trait. These are expected values, so a small family can differ from them."
+      },
+      "misconceptions": [
+        {
+          "id": "exact-ratio",
+          "claim": "Every cross gives exactly the textbook ratio, even in a small family.",
+          "correction": "The ratios are expected values, the average over many offspring. Small families can differ from them by chance."
+        },
+        {
+          "id": "gamete-carries-both",
+          "claim": "Each gamete carries both alleles of its parent's gene.",
+          "correction": "Meiosis separates the pair, so each gamete carries one allele of each gene."
+        }
+      ]
+    },
+    {
+      "id": "dihybrid-cross",
+      "name": "Dihybrid cross",
+      "aliases": [
+        "dihybrid crosses",
+        "two-trait cross",
+        "two-gene cross"
+      ],
+      "summary": "A cross that follows two genes at once, whose gametes and phenotype ratios multiply out from the single-gene case.",
+      "requires": [
+        "monohybrid-cross"
+      ],
+      "elements": [
+        {
+          "id": "gamete-kinds",
+          "name": "Kinds of gamete from two genes"
+        },
+        {
+          "id": "sixteen-boxes",
+          "name": "The sixteen-box grid"
+        },
+        {
+          "id": "nine-three-three-one",
+          "name": "The 9:3:3:1 ratio"
+        }
+      ],
+      "explain": {
+        "text": "A dihybrid cross follows two genes, each with its own pair of alleles, at the same time. A parent heterozygous for both genes, AaBb, makes four kinds of gamete: AB, Ab, aB and ab, in equal numbers. Crossing two such parents needs a grid of sixteen boxes. When the genes sit on different chromosomes and show complete dominance, the offspring fall into four phenotype classes in the ratio 9:3:3:1. Each gene can be followed on its own first, and the two results are then multiplied together.",
+        "artifact": "independent-assortment"
+      },
+      "misconceptions": [
+        {
+          "id": "traits-travel-together",
+          "claim": "The two traits in a dihybrid cross always travel together as one package.",
+          "correction": "Genes on different chromosomes sort independently, so each trait is inherited separately."
+        },
+        {
+          "id": "933-always",
+          "claim": "Every dihybrid cross gives 9:3:3:1, whatever the parents are.",
+          "correction": "9:3:3:1 needs two parents heterozygous for both genes, with complete dominance. Other parents give other ratios."
+        },
+        {
+          "id": "two-gamete-kinds",
+          "claim": "A parent heterozygous for two genes makes two kinds of gamete, like a single-gene heterozygote.",
+          "correction": "Two genes on different chromosomes give four kinds of gamete: AB, Ab, aB and ab, in equal numbers."
+        }
+      ]
+    },
+    {
+      "id": "law-of-segregation",
+      "name": "Law of segregation",
+      "aliases": [
+        "Mendel's first law",
+        "first law of inheritance",
+        "segregation of alleles"
+      ],
+      "summary": "Mendel's first law: the two alleles of a gene separate when gametes form, so each gamete carries one of them.",
+      "requires": [
+        "monohybrid-cross",
+        "meiosis"
+      ],
+      "elements": [
+        {
+          "id": "alleles-separate",
+          "name": "Separation of the two alleles"
+        },
+        {
+          "id": "one-allele-per-gamete",
+          "name": "One allele in each gamete"
+        },
+        {
+          "id": "restored-at-fertilisation",
+          "name": "The pair restored at fertilisation"
+        }
+      ],
+      "explain": {
+        "text": "Mendel's law of segregation says the two alleles of a gene separate when gametes form, so each gamete carries only one of them. Fertilisation then restores the pair, with one allele from each parent. A heterozygote Bb makes half its gametes with B and half with b. The separation happens in meiosis, when homologous chromosomes move apart. The law explains why a recessive trait can vanish in one generation and return in the next: the hidden allele was passed on all along, and it was never destroyed or blended.",
+        "artifact": "segregation-steps"
+      },
+      "misconceptions": [
+        {
+          "id": "alleles-blend",
+          "claim": "Alleles blend in the offspring, so the two alleles lose their identity.",
+          "correction": "Alleles keep their identity. Each gamete gets one of them, and the pair is restored at fertilisation."
+        },
+        {
+          "id": "hidden-allele-lost",
+          "claim": "A recessive allele disappears from a family when its trait is hidden.",
+          "correction": "A hidden allele is still carried and passed on, and it shows again when two carriers have a child."
+        },
+        {
+          "id": "parents-pass-traits",
+          "claim": "Parents pass their traits to their offspring, not alleles.",
+          "correction": "Parents pass alleles in their gametes. The trait is what the alleles produce."
+        }
+      ]
+    },
+    {
+      "id": "law-of-independent-assortment",
+      "name": "Law of independent assortment",
+      "aliases": [
+        "Mendel's second law",
+        "second law of inheritance",
+        "independent assortment"
+      ],
+      "summary": "Mendel's second law: alleles of genes on different chromosomes sort into gametes independently of each other.",
+      "requires": [
+        "dihybrid-cross",
+        "law-of-segregation"
+      ],
+      "elements": [
+        {
+          "id": "different-chromosomes",
+          "name": "Genes on different chromosomes"
+        },
+        {
+          "id": "sorting-in-meiosis",
+          "name": "Sorting of homologous pairs in meiosis"
+        },
+        {
+          "id": "combinations-multiply",
+          "name": "Combinations that multiply"
+        }
+      ],
+      "explain": {
+        "text": "Mendel's law of independent assortment says that alleles of genes on different chromosomes sort into gametes independently of one another. In meiosis each pair of homologous chromosomes lines up and separates by chance, so which chromosome of one pair a gamete receives tells you nothing about the other pair. A parent heterozygous for two such genes therefore makes every combination of alleles in equal numbers. The law does not create new alleles. It only reshuffles the ones a parent already carries.",
+        "artifact": "independent-assortment"
+      },
+      "misconceptions": [
+        {
+          "id": "always-independent",
+          "claim": "Any two genes always sort independently, wherever they sit on the chromosomes.",
+          "correction": "The law covers genes on different chromosomes. Genes on one chromosome are linked and tend to travel together."
+        },
+        {
+          "id": "assortment-makes-alleles",
+          "claim": "Independent assortment creates new alleles, so offspring differ from both parents.",
+          "correction": "It reshuffles the alleles a parent already has. New alleles come from mutation."
+        },
+        {
+          "id": "sorting-at-fertilisation",
+          "claim": "Genes sort independently when two gametes meet at fertilisation.",
+          "correction": "Sorting happens in meiosis, when gametes form. Fertilisation joins the gametes that were already made."
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "biology.mendelian-genetics.allele-definition",
+      "concept": "allele",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is an allele?",
+      "explanation": "An allele is one of the alternative forms of a gene, found at the locus of that gene on a homologous chromosome. A separate gene that controls a different trait is not an allele of this one, and the protein a gene encodes is a product of the gene, not an allele.",
+      "choices": [
+        "One of the alternative forms of a gene, found at the same locus on a homologous chromosome",
+        "A separate gene that controls a different trait from the one its partner controls",
+        "The protein that a gene's DNA sequence is used to build inside the cell",
+        "A copy of a whole chromosome that is passed from a parent to each child"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "alleles-are-different-genes",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.two-copies-of-one-gene",
+      "concept": "allele",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A pea plant has two copies of its flower-colour gene. What are those two copies?",
+      "explanation": "The two copies are two alleles of one gene, one inherited from each parent, both sitting at the same locus on a pair of homologous chromosomes. They are not two separate genes, and a body cell does carry both copies.",
+      "choices": [
+        "Two different genes, each one controlling flower colour in its own way",
+        "Two alleles of one gene, one from each parent, at the same locus",
+        "One copy, because each gene is found once in each cell",
+        "Two identical copies that were made from a single gene in one parent"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "alleles-are-different-genes",
+        null,
+        "one-copy-per-cell",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.purple-flower-heterozygote",
+      "concept": "allele",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A pea plant has one allele for purple flowers (P) and one for white (p). P is dominant over p. Why are its flowers purple?",
+      "explanation": "The dominant allele P shows its trait even when only one copy is present, so the effect of p is hidden. Both alleles are still there and both can be passed on. The ideas that P deletes p, or that P wins because it is more common, are both wrong.",
+      "choices": [
+        "The allele P deletes the allele p from the cell, leaving a single purple copy",
+        "The allele P is more common in pea plants, so it wins over the allele p",
+        "The dominant allele P hides the effect of p, so the purple trait shows",
+        "The alleles P and p blend into a colour halfway between purple and white"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "dominance-erases-recessive",
+        "dominant-is-common",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.dominance-meaning",
+      "concept": "allele",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which statement about dominant and recessive alleles is correct?",
+      "explanation": "Dominance describes how an allele shows when it is paired with a different allele. It says nothing about how common the allele is in a population. A dominant allele does not remove a recessive one; both are present, and the recessive trait stays hidden in heterozygotes.",
+      "choices": [
+        "Whether an allele is dominant depends on how often that allele occurs in the population",
+        "When a dominant and a recessive allele are paired, the dominant one removes the recessive one",
+        "A recessive allele cannot be passed on by a parent who shows the dominant trait",
+        "Whether an allele is dominant describes how it shows when paired with a different allele"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "dominant-is-common",
+        "dominance-erases-recessive",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.bb-mouse-copies",
+      "concept": "allele",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A mouse with the genotype bb has two copies of its fur-colour gene. How are those copies related?",
+      "explanation": "A bb mouse carries two alleles, both b, one from each parent. They are copies of the same allele, not two different genes. Since neither copy is dominant, the mouse shows the recessive brown fur.",
+      "choices": [
+        "They are two copies of the same allele, one inherited from each parent",
+        "They are two different genes, each making its own fur colour in the body",
+        "They are a dominant allele and a recessive one, with the dominant copy hidden",
+        "One copy, since each body cell carries just one allele of each gene"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "alleles-are-different-genes",
+        null,
+        "one-copy-per-cell"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.black-mouse-lost-allele",
+      "concept": "allele",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A mouse with genotype Bb has black fur, and B is dominant over b. A student says the b allele must have been lost, because B overwrites it. What is wrong with that?",
+      "explanation": "Both alleles are still present in the mouse's cells, and both can be passed on. B's effect is what shows, and b's effect is hidden in the fur. Dominance does not delete an allele, and a common allele is not the same as a dominant one.",
+      "choices": [
+        "Nothing is wrong, since B removes b from the cell when the two are paired",
+        "Both alleles are still in the cells, and B's effect hides b's effect in the fur",
+        "Nothing is wrong, since black is the usual fur colour in mice, so B must be the common allele",
+        "The b allele can be lost, since each body cell keeps just one allele of each gene"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "dominance-erases-recessive",
+        null,
+        "dominant-is-common",
+        "one-copy-per-cell"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.copies-per-body-cell",
+      "concept": "allele",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How many alleles of one gene does a typical diploid body cell carry?",
+      "explanation": "A diploid body cell has a pair of each chromosome, one from each parent, so it carries two alleles of each gene. The answer one confuses a body cell with a gamete, which carries a single allele of each gene.",
+      "choices": [
+        "One, because each gene is found once in each body cell",
+        "Four, two from each parent, since body cells hold two sets of chromosomes",
+        "Two, one on each chromosome of a homologous pair",
+        "Many, one copy for each ancestor who carried the gene"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "one-copy-per-cell",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.locus-of-two-alleles",
+      "concept": "allele",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In a diploid body cell, where are the two alleles of one gene found?",
+      "explanation": "The two alleles of a gene sit at the same locus on each chromosome of a homologous pair. They are not two different genes, and they are not held outside the chromosomes.",
+      "choices": [
+        "On two different genes that sit side by side on the same chromosome",
+        "Both in the cytoplasm, outside the chromosomes, where they make the trait",
+        "In a single copy on one chromosome, since the second is lost during growth",
+        "At the same locus on each chromosome of a homologous pair"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "alleles-are-different-genes",
+        null,
+        "one-copy-per-cell",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.genotype-meaning",
+      "concept": "genotype-and-phenotype",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is an organism's genotype?",
+      "explanation": "The genotype is the pair of alleles an organism carries for a gene, such as PP or Pp. The trait it shows is its phenotype, and the protein its alleles build is a product of the genotype, not the genotype itself.",
+      "choices": [
+        "The alleles it carries for a gene, such as PP or Pp",
+        "The trait it shows, such as purple flowers or white flowers",
+        "The number of chromosomes found in each of its body cells",
+        "The protein that its alleles build inside each of its cells"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "same-thing",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.phenotype-meaning",
+      "concept": "genotype-and-phenotype",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What is an organism's phenotype?",
+      "explanation": "The phenotype is the observable trait an organism shows, such as its flower colour or height. It comes from the genotype and can be affected by the environment. The alleles an organism carries are its genotype, not its phenotype.",
+      "choices": [
+        "The pair of alleles it carries for a gene, such as PP or Pp",
+        "The observable trait an organism shows, such as flower colour or height",
+        "The sex that its sex chromosomes set at the time of fertilisation",
+        "The place on a chromosome where a gene for a trait is found"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "same-thing",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.two-purple-plants",
+      "concept": "genotype-and-phenotype",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Two pea plants both have purple flowers, and purple is dominant. What must be true of them?",
+      "explanation": "Purple flowers can come from PP or Pp, so two plants with the same phenotype may differ in genotype. Looking alike does not prove the alleles match. The idea that both must be PP is the common error.",
+      "choices": [
+        "They must carry the same two alleles, since their flowers look the same",
+        "They must each carry two dominant alleles, because purple is the dominant trait",
+        "They might carry different alleles, since one can be PP and the other Pp",
+        "They must belong to the same species, since they share a flower colour"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "look-shows-genes",
+        "look-shows-genes",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "b's note: Stem says must be true; only c is a true statement",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.genotype-and-phenotype-pair",
+      "concept": "genotype-and-phenotype",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A pea plant with the genotype Pp has purple flowers, and P is dominant over p. Which pair names its genotype and its phenotype?",
+      "explanation": "Pp is the genotype, the two alleles carried, and purple is the phenotype, the trait shown. A heterozygote with complete dominance shows the dominant trait in full, not a blend. Swapping the two terms is the same-thing mistake.",
+      "choices": [
+        "Genotype purple flowers, phenotype Pp",
+        "Genotype Pp, phenotype a blend of purple and white flowers",
+        "Genotype PP, phenotype purple flowers",
+        "Genotype Pp, phenotype purple flowers"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "same-thing",
+        "heterozygote-blends",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.heterozygote-dominant-trait",
+      "concept": "genotype-and-phenotype",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "When one allele is fully dominant, what does a heterozygote show?",
+      "explanation": "With complete dominance a heterozygote shows the dominant trait in full, and the recessive trait stays hidden. A blend would need the two alleles to mix in the phenotype, which complete dominance does not do.",
+      "choices": [
+        "The dominant trait in full, with the recessive trait hidden",
+        "A blend that is halfway between the two parents' traits",
+        "The recessive trait in full, since the two alleles cancel the dominant one",
+        "Whichever trait came from the mother, since the mother's allele alone is used"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "heterozygote-blends",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.find-error-tall-plant",
+      "concept": "genotype-and-phenotype",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "In pea plants, T for tall is dominant over t. A student says a tall plant must carry two tall alleles, because tall looks dominant. What is wrong with that?",
+      "explanation": "A tall plant can be TT or Tt, and both show the dominant trait. Its look does not show which two alleles it carries. A heterozygote does not come out as a blend either, so a height halfway between is not the sign of Tt.",
+      "choices": [
+        "Nothing is wrong, since a tall plant carries two tall alleles by definition",
+        "A tall plant might be TT or Tt, and the look does not reveal which two alleles it carries",
+        "A tall plant must be Tt, because a heterozygote grows to a height halfway between",
+        "The genotype is set by the soil the plant grows in, not by its alleles"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "look-shows-genes",
+        null,
+        "heterozygote-blends",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.homozygous-pattern",
+      "concept": "genotype-and-phenotype",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which pattern of letters shows a homozygous genotype?",
+      "explanation": "A homozygous genotype has two copies of the same allele, such as TT or tt. Tt has two different alleles, so it is heterozygous. A single letter is not a full genotype for a gene carried in two copies.",
+      "choices": [
+        "Two different alleles, such as Tt, which carry one of each",
+        "One letter, such as T, since a single allele is enough to set the trait",
+        "Two copies of the same allele, such as TT or tt",
+        "Any pair of letters, since the letters just name the gene"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.why-phenotype-misses-genotype",
+      "concept": "genotype-and-phenotype",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why can't the phenotype alone tell PP from Pp, when P is dominant?",
+      "explanation": "Both PP and Pp carry a dominant allele, and either genotype gives the dominant trait. The phenotype therefore cannot separate them. A test cross or the offspring of a cross can, and the monohybrid cross topic covers that.",
+      "choices": [
+        "PP and Pp show different traits, so the look reveals which one it is",
+        "PP and Pp both show a blend, so the look cannot separate the two of them",
+        "Pp carries the dominant allele, but PP carries none, so it shows no trait",
+        "Both PP and Pp carry a dominant allele, and both show the dominant trait"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "look-shows-genes",
+        "heterozygote-blends",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.punnett-box-meaning",
+      "concept": "monohybrid-cross",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "In a Punnett square for one gene, what does one box show?",
+      "explanation": "Each box pairs one allele from the gamete at the top with one from the gamete at the side. It is one possible genotype for an offspring. A gamete carries one allele of the gene, not both of its parent's alleles.",
+      "choices": [
+        "One possible pair of alleles, from one gamete of each parent",
+        "Both alleles of one parent, carried together by a single gamete",
+        "The number of offspring that show each trait in the family",
+        "The chromosome number that the offspring will have in their cells"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "gamete-carries-both",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.genotype-ratio-aa-cross",
+      "concept": "monohybrid-cross",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What genotype ratio do you expect from a cross of two heterozygotes, Aa × Aa?",
+      "explanation": "The gametes are A or a, half each, so the four equally likely boxes give AA, Aa, Aa and aa. That is one AA, two Aa and one aa. The phenotypes give three to one, but that is a different ratio.",
+      "choices": [
+        "1 AA : 1 Aa : 1 aa",
+        "1 AA : 2 Aa : 1 aa",
+        "2 AA : 2 Aa : 2 aa",
+        "3 AA : 1 aa, with no Aa at all"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.recessive-fraction",
+      "concept": "monohybrid-cross",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Two Aa parents have children. About what fraction of their offspring show the recessive trait?",
+      "explanation": "Each child has a one in four chance of aa, since each parent passes its a allele half the time. The fraction is an average over many children, so a small family can show more or fewer.",
+      "choices": [
+        "Exactly one in four, so every family of four has one",
+        "One in two, since each parent passes its recessive allele half the time",
+        "About one in four, on average over many offspring",
+        "Three in four, since the dominant trait is three times as likely"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "exact-ratio",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.four-children-none",
+      "concept": "monohybrid-cross",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A cross of two Aa parents has four children, and none shows the recessive trait. What is the most accurate comment?",
+      "explanation": "With a one in four chance per child, four children can all miss the recessive trait by chance, about three times in ten. The expected ratio does not change, and each child still has that one in four chance.",
+      "choices": [
+        "The cross is wrong, since a 3:1 ratio must appear in every family of four",
+        "The parents must both be AA, since no recessive child appeared among the four",
+        "Chance cannot do this, so one parent must have carried just the dominant allele",
+        "Chance can do this in four children, and each child still has a one in four chance"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "exact-ratio",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.recessive-child-possible",
+      "concept": "monohybrid-cross",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Two parents with the dominant trait are both Aa. Could one of their children show the recessive trait?",
+      "explanation": "Yes. Each parent gives its a allele half the time, so a child is aa in about one case in four. Parents who show the dominant trait can have a recessive child when both carry the allele.",
+      "choices": [
+        "Yes, with about a one in four chance per child, since both parents carry the a allele",
+        "No, two parents who show the dominant trait must have children who show it too",
+        "Yes, but the child must be a boy, since the recessive allele sits on the sex chromosome",
+        "No, since the recessive allele is lost from parents who show the dominant trait"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.find-error-gamete-alleles",
+      "concept": "monohybrid-cross",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student crosses two Aa parents and writes that each gamete carries both alleles, A and a, so each child gets two from each parent. What is wrong with that?",
+      "explanation": "Meiosis separates the pair, so each gamete carries one allele of the gene. Fertilisation joins one gamete from each parent, which gives the child two alleles in total, one from each parent.",
+      "choices": [
+        "Nothing is wrong, since each gamete keeps both alleles of its parent's gene",
+        "Each gamete carries one allele of the gene, so the child gets one from each parent",
+        "Gametes carry traits rather than alleles, so the child gets no alleles at all",
+        "Each gamete carries one allele, but the child receives three alleles from its parents"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "gamete-carries-both",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.test-cross-tt",
+      "concept": "monohybrid-cross",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A tall pea plant of unknown genotype (T dominant over t) is crossed with a short plant, tt. Which result shows the tall parent is most likely TT?",
+      "explanation": "A TT parent gives only T gametes, so every child gets a T and is tall. A Tt parent gives a t gamete half the time, so about half the children would be short. Seeing only tall children points toward TT.",
+      "choices": [
+        "Half the offspring are short, which shows the tall parent is TT",
+        "Some offspring are short, since the tall parent must carry a short allele",
+        "All the offspring are tall, since a TT parent passes the T allele in every gamete",
+        "Any result would do, since the cross is random and tells nothing about the parent"
+      ],
+      "answer": 2,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: All-tall offspring makes TT most likely, not proven; a Tt parent could also give this by chance, but with much lower probability.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.gamete-kinds-aabb",
+      "concept": "dihybrid-cross",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How many kinds of gametes does a parent with the genotype AaBb make, when the two genes are on different chromosomes?",
+      "explanation": "Each gene sorts its alleles on its own, so the combinations multiply: AB, Ab, aB and ab, in equal numbers. The idea of two kinds comes from the single-gene case and does not carry over.",
+      "choices": [
+        "Two kinds: AB and ab, the same as a single-gene heterozygote makes",
+        "Eight kinds, one for each allele of each gene in its own gamete",
+        "One kind, since each gamete copies the whole genotype, AaBb, from its parent",
+        "Four kinds: AB, Ab, aB and ab, in equal numbers"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "two-gamete-kinds",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.punnett-box-count",
+      "concept": "dihybrid-cross",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "How many boxes does a dihybrid Punnett square have when both parents are AaBb?",
+      "explanation": "Each parent makes four kinds of gamete, so the grid is four by four, which gives sixteen boxes. A four-box answer treats the gametes as if there were two kinds.",
+      "choices": [
+        "Sixteen, from a four by four grid of gamete pairs",
+        "Four, from a two by two grid, as for two kinds of gamete",
+        "Nine, from a three by three grid of genotype pairs",
+        "Eight, two for each of the four kinds of gamete"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "two-gamete-kinds",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.ratio-933",
+      "concept": "dihybrid-cross",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "What phenotype ratio do you expect from AaBb × AaBb, with complete dominance for both genes?",
+      "explanation": "Each gene splits three to one on its own, and the two splits multiply, giving nine, three, three and one across four phenotype classes. Other crosses can give other ratios, so this one is not fixed for every cross.",
+      "choices": [
+        "9:3:3:1, the same for every dihybrid cross whatever the parents are",
+        "9:3:3:1, across four phenotype classes",
+        "3:1, the same as a single-gene cross, since the two genes add no classes",
+        "1:1:1:1, across four phenotype classes of equal size"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "933-always",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Option 0 says 9:3:3:1 holds for every dihybrid cross, which is false; the ratio depends on the parents.",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.test-cross-ratio",
+      "concept": "dihybrid-cross",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A dihybrid AaBb is crossed with aabb, the double recessive. What phenotype ratio is expected?",
+      "explanation": "The aabb parent gives only ab gametes, so each offspring takes one of the four combinations from the AaBb parent at random. That gives four equal classes, 1:1:1:1. The 9:3:3:1 ratio needs two heterozygous parents.",
+      "choices": [
+        "9:3:3:1, the same as any dihybrid cross",
+        "3:1, since the parents differ in just one trait",
+        "1:1:1:1, four classes of equal size, one for each combination",
+        "1:2:1, one class for each genotype of a single gene"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "933-always",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.why-gamete-kinds-multiply",
+      "concept": "dihybrid-cross",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Why do the genes in a dihybrid cross give more gamete kinds than a single-gene cross?",
+      "explanation": "Each gene sorts its alleles into gametes on its own, so the choices for one gene combine with the choices for the other. Two genes give 2 × 2 = 4 kinds. The idea that the two genes stay locked together is wrong for genes on different chromosomes.",
+      "choices": [
+        "The two genes stay locked together, so the gametes carry just two combinations",
+        "Each gene adds one more gamete kind, so two genes give two kinds in all",
+        "The alleles are made by mitosis, so a second gene doubles their number",
+        "Each gene sorts its alleles on its own, so the choices for the two genes combine"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "traits-travel-together",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.find-error-linked-seed",
+      "concept": "dihybrid-cross",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says that in a dihybrid cross the seed colour and seed shape alleles always sort together, so only two kinds of gamete form. What is wrong with that?",
+      "explanation": "The genes are on different chromosomes, so they sort independently and four kinds of gamete form. Two traits in one plant do not travel together by default.",
+      "choices": [
+        "Genes on different chromosomes sort independently, so four kinds of gamete form",
+        "Nothing is wrong, since two traits in one plant travel together as a package",
+        "Two traits cannot sort at all, so the student should expect eight kinds of gamete",
+        "The alleles sort by chance at fertilisation, so the number of gamete kinds varies"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "traits-travel-together",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.independent-product-recessive",
+      "concept": "dihybrid-cross",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "In an AaBb × AaBb cross, what fraction of offspring show both recessive traits?",
+      "explanation": "The chance of showing the recessive trait for one gene is one in four, and for the other gene one in four too. Since the genes sort independently, the chances multiply: one in four times one in four is one in sixteen.",
+      "choices": [
+        "One in four, the same as for one gene, since the two traits travel together",
+        "One in sixteen, since one in four multiplied by one in four",
+        "One in eight, since the two chances are added and halved",
+        "Three in sixteen, the share with one recessive trait and one dominant"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "traits-travel-together",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.segregation-statement",
+      "concept": "law-of-segregation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does the law of segregation say?",
+      "explanation": "The two alleles of a gene separate when gametes form, so each gamete carries one of them. Blending and passing finished traits are both wrong. Separate genes sorting independently is the law of independent assortment, a different claim.",
+      "choices": [
+        "The two alleles of a gene blend in each gamete, so each gamete carries a mixture",
+        "A parent passes its finished traits to each gamete, one trait at a time",
+        "The two alleles of a gene separate when gametes form, so each gamete gets one",
+        "Genes on different chromosomes sort into gametes independently of one another"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "alleles-blend",
+        "parents-pass-traits",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.meiosis-event",
+      "concept": "law-of-segregation",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "Which event in meiosis explains the law of segregation?",
+      "explanation": "In meiosis the homologous pair of chromosomes separates, which puts one allele of each gene into each gamete. Sister chromatids separating in mitosis is a different event, and it keeps the number of alleles the same.",
+      "choices": [
+        "Alleles mix during meiosis, so each gamete carries a blend of both",
+        "Sister chromatids separate in mitosis, so each new cell keeps a full set",
+        "Chromosomes double before the zygote divides, so each cell has four copies",
+        "Homologous chromosomes separate, so each gamete gets one allele of each gene"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "alleles-blend",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.chance-of-b",
+      "concept": "law-of-segregation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A heterozygote Bb makes gametes. What fraction of them carry the recessive allele b?",
+      "explanation": "The two alleles separate, so half the gametes get B and half get b. The fraction is one half. Saying none carry b because B hides it is wrong, since a hidden allele is still passed on.",
+      "choices": [
+        "One half, since the two alleles separate into different gametes",
+        "None, since the b allele is hidden by B and so is not passed on",
+        "All of them, since the two alleles mix into every gamete",
+        "One quarter, since two parents each pass on a quarter of their alleles"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "hidden-allele-lost",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.why-recessive-child",
+      "concept": "law-of-segregation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Two Bb parents both show the dominant trait. Why can one of their children show the recessive trait?",
+      "explanation": "Each parent gives its b allele half the time, so a child gets two b alleles in about one case in four. Both parents carry b all along, and it was never lost or blended.",
+      "choices": [
+        "The two alleles blend in each parent, so some children inherit a blended b that shows",
+        "Each parent passes b in half its gametes, so bb children come in about one case in four",
+        "Each parent passes on its visible trait, so a child can get the recessive trait from one parent",
+        "A new recessive allele appears in each child by mutation, which is rare"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "alleles-blend",
+        null,
+        "parents-pass-traits",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.f2-reappearance",
+      "concept": "law-of-segregation",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Pp plants with purple flowers are crossed with each other. Some offspring have white flowers. Which account fits the law of segregation?",
+      "explanation": "The white allele was carried by the Pp parents all along. Their alleles separated into gametes, so some offspring received p from each parent and are pp. Nothing was lost or blended.",
+      "choices": [
+        "The p allele was lost from the Pp parents and had to be made again in their children",
+        "The purple and white alleles blended in the parents, so a white mix reappeared",
+        "The p allele was carried by the Pp parents, separated into some gametes, and gave pp",
+        "Each parent passed its white trait to its children, which then showed it"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "hidden-allele-lost",
+        "alleles-blend",
+        null,
+        "parents-pass-traits"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.find-error-purple-parents",
+      "concept": "law-of-segregation",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says two purple parents, both Pp, can never make a white child, because the white allele must have been used up. What is wrong with that?",
+      "explanation": "Both parents still carry p, and it separates into their gametes. A pp child is possible, with a one in four chance. Hidden alleles are not used up, and a purple parent passes on alleles, not traits.",
+      "choices": [
+        "Nothing is wrong, since the white allele is used up once its trait is hidden",
+        "Nothing is wrong, since a purple parent passes its purple trait, not alleles, to the child",
+        "The parents must both be PP, since a purple plant carries two purple alleles",
+        "Both parents still carry p, which separates into their gametes, so a pp child can appear"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "hidden-allele-lost",
+        "parents-pass-traits",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.tall-half-short",
+      "concept": "law-of-segregation",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A tall Tt plant is crossed with a short tt plant, and half the offspring are short. Which account uses segregation to explain this?",
+      "explanation": "The Tt parent makes gametes with T and with t in equal numbers. A short child is tt, which needs a t from the Tt parent, half the time. The short parent can only pass on t, so the outcome depends on the tall parent's gametes.",
+      "choices": [
+        "The Tt parent makes T and t gametes in equal numbers, so half its children get t and are tt",
+        "The Tt parent's two alleles blend into a short mix, so half its children look short",
+        "The short parent passes its shortness to half its children, which then show it",
+        "The T allele is lost from half the children, so those children show the recessive trait"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "alleles-blend",
+        "parents-pass-traits",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.ia-statement",
+      "concept": "law-of-independent-assortment",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "What does the law of independent assortment say?",
+      "explanation": "Alleles of genes on different chromosomes sort into gametes independently of one another. The law does not make new alleles, and genes on the same chromosome are a separate case that the law does not cover.",
+      "choices": [
+        "Alleles of any two genes sort independently, wherever the genes sit on the chromosomes",
+        "Alleles of genes on different chromosomes sort into gametes independently of one another",
+        "Independent assortment creates new alleles, so each gamete differs from its parents",
+        "Each gamete takes all of its alleles from one parent, so the genes stay in one package"
+      ],
+      "answer": 1,
+      "mistakes": [
+        "always-independent",
+        null,
+        "assortment-makes-alleles",
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.sorting-time",
+      "concept": "law-of-independent-assortment",
+      "kind": "choice",
+      "difficulty": 1,
+      "prompt": "When do alleles of genes on different chromosomes sort independently?",
+      "explanation": "They sort when gametes form in meiosis, as each pair of homologous chromosomes lines up and separates by chance. Fertilisation comes later and only joins gametes that already exist.",
+      "choices": [
+        "When two gametes meet at fertilisation, which gives each zygote a random mix",
+        "During mitosis, when the zygote divides to make the cells of the body",
+        "During meiosis, when each homologous pair separates by chance into gametes",
+        "Before meiosis starts, when each chromosome is copied in the nucleus"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "sorting-at-fertilisation",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.gametes-aabb-ia",
+      "concept": "law-of-independent-assortment",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A plant is AaBb, and A and B sit on different chromosomes. Which gametes does independent assortment predict, in equal numbers?",
+      "explanation": "Independent assortment predicts one gamete of each combination: AB, Ab, aB and ab. The idea of new allele types from meiosis is wrong, since meiosis reshuffles the alleles the plant already has.",
+      "choices": [
+        "Four new allele types, made from A and B by changes during meiosis",
+        "AB and ab, since the alleles of each parent stay together",
+        "AA, Aa, aa and BB, one for each gene and each of its alleles",
+        "AB, Ab, aB and ab, one gamete of each combination in equal numbers"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "assortment-makes-alleles",
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.meiosis-feature",
+      "concept": "law-of-independent-assortment",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "Which feature of meiosis makes independent assortment possible?",
+      "explanation": "Each homologous pair lines up and separates on its own, facing either side by chance, so the split of one pair does not decide the split of another. Copying a gene into a single gamete is not what happens.",
+      "choices": [
+        "Each homologous pair lines up and separates on its own, facing either side by chance",
+        "Each pair of gametes sorts out its alleles when it fuses at fertilisation",
+        "Both alleles of each gene are copied into the same gamete during the division",
+        "Sister chromatids of one chromosome are split apart by the spindle at random"
+      ],
+      "answer": 0,
+      "mistakes": [
+        null,
+        "sorting-at-fertilisation",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.ab-share",
+      "concept": "law-of-independent-assortment",
+      "kind": "choice",
+      "difficulty": 2,
+      "prompt": "A parent is AaBb, with the genes on different chromosomes. What share of its gametes carry the combination Ab?",
+      "explanation": "Four combinations are equally likely, so Ab is one in four. The chance is not one half, because the other gene's allele also varies independently.",
+      "choices": [
+        "One in two, since each gene passes on one of its two alleles",
+        "One in four, since each gamete is one of four equally likely combinations",
+        "One in eight, since the two genes share the work of making each gamete",
+        "None, since a gamete takes both alleles of one gene and no others"
+      ],
+      "answer": 1,
+      "mistakes": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.find-error-same-chromosome",
+      "concept": "law-of-independent-assortment",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "A student says two genes on the same chromosome also sort independently, so the law covers them too. What is wrong with that?",
+      "explanation": "The law covers genes on different chromosomes. Genes on one chromosome are linked and tend to travel together, which is a separate case that this topic does not cover.",
+      "choices": [
+        "Nothing is wrong, since every pair of genes sorts independently, wherever the genes sit",
+        "The genes must be on different chromosomes, because two genes cannot share one cell",
+        "The law covers genes on different chromosomes, and genes on one chromosome tend to travel together",
+        "The two genes sort at fertilisation, so their position on the chromosome makes no difference"
+      ],
+      "answer": 2,
+      "mistakes": [
+        "always-independent",
+        null,
+        null,
+        "sorting-at-fertilisation"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.nine-three-three-one-why",
+      "concept": "law-of-independent-assortment",
+      "kind": "choice",
+      "difficulty": 3,
+      "prompt": "Why does a dihybrid cross give the 9:3:3:1 ratio?",
+      "explanation": "Because each gene's alleles sort independently, each gene's 3:1 split happens on its own, and the two splits multiply, giving 9:3:3:1. Explanations based on fertilisation or on new alleles are wrong.",
+      "choices": [
+        "The two genes sort at fertilisation, so their 3:1 splits add up to 9:3:3:1",
+        "The genes mutate in each cross, so the 9:3:3:1 ratio comes from new allele types",
+        "The two genes split as one unit, so each trait alone shows a 3:1 ratio",
+        "Each gene splits 3:1 on its own, and the two splits multiply, giving 9:3:3:1"
+      ],
+      "answer": 3,
+      "mistakes": [
+        "sorting-at-fertilisation",
+        "assortment-makes-alleles",
+        null,
+        null
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "diagnosed": 1
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.order-punnett-steps",
+      "concept": "monohybrid-cross",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps for a one-gene Punnett square in the order you do them.",
+      "explanation": "First the gametes are listed along the top and side, then the boxes are filled, and last they are counted. Reversing any two steps breaks the square.",
+      "steps": [
+        "List each parent's gametes, one allele each, along the top and down the side of a grid",
+        "Fill each box with the pair of alleles from its row and its column",
+        "Count the boxes for each genotype and each phenotype to get the ratio"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.order-dihybrid-steps",
+      "concept": "dihybrid-cross",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these steps for an AaBb × AaBb dihybrid cross in the order you do them.",
+      "explanation": "Work out the gametes first, lay them on the grid, fill the sixteen boxes, and count. The count comes last, because it needs the filled grid.",
+      "steps": [
+        "Write each parent's genotype, then list the four kinds of gamete it makes",
+        "Set the four gametes of each parent along the top and down the side of a grid",
+        "Fill each of the sixteen boxes with the pair of alleles from its row and column",
+        "Count the boxes for each phenotype to get the ratio"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.order-segregation-events",
+      "concept": "law-of-segregation",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these events from a heterozygous parent to its offspring in the order they happen.",
+      "explanation": "The parent's alleles sit on a pair of chromosomes, meiosis separates them into gametes, and fertilisation restores the pair in the zygote.",
+      "steps": [
+        "A heterozygous parent has two alleles of a gene on a pair of homologous chromosomes",
+        "Meiosis separates the homologous pair, so each gamete gets one of the two alleles",
+        "Fertilisation joins one gamete from each parent, restoring two alleles in the zygote"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.order-meiosis-ia",
+      "concept": "law-of-independent-assortment",
+      "kind": "order",
+      "difficulty": 2,
+      "prompt": "Put these events of meiosis in order, for two genes on different chromosomes.",
+      "explanation": "The pairs line up, then separate, then the cells form, then they divide again. Each step depends on the one before, so the order cannot change.",
+      "steps": [
+        "Each homologous pair lines up across the middle of the cell, facing either side at random",
+        "Each pair separates, so one chromosome from each pair moves to each new cell",
+        "Two cells form, each with one chromosome from each pair in a mix that differs between cells",
+        "Those cells divide again, and four gametes form with mixed combinations of alleles"
+      ],
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.tap-heterozygous-parent",
+      "concept": "law-of-segregation",
+      "element": "alleles-separate",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the cell whose two different alleles of the gene are about to be separated by meiosis.",
+      "artifact": "segregation",
+      "target": "parent-cell",
+      "explanation": "The parent cell is diploid and heterozygous: its two homologous chromosomes carry different alleles at the same locus, drawn as a dark band and a pale band. Meiosis separates them.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "solver-a's note: The top-left cell is in meiosis I, with a homologous pair (dark and light allele chromosomes) still paired inside the nuclear outline. Homologues separate at anaphase I."
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.tap-fertilising-gamete",
+      "concept": "law-of-segregation",
+      "element": "one-allele-per-gamete",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the gamete from the heterozygous parent that goes on to fertilisation.",
+      "artifact": "segregation",
+      "target": "gamete",
+      "explanation": "The sperm with an arrow leading to the fertilised cell came from the heterozygous parent. Like every gamete, it carries just one allele of the gene, here the pale one.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "solver-a's note: The sperm with the arrow to the zygote comes from the heterozygous parent's meiosis, so it carries one allele of each pair. The picture uses a sperm, so this is an animal-style example."
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.tap-other-parent-gamete",
+      "concept": "law-of-segregation",
+      "element": "one-allele-per-gamete",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the gamete that the other parent contributes to fertilisation.",
+      "artifact": "segregation",
+      "target": "other-gamete",
+      "explanation": "The egg comes from the other parent. It carries one chromosome of the pair, so one allele of the gene, and joins the sperm at fertilisation.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "solver-a's note: The top-right cell has one chromosome, so it is haploid. It is the other parent's gamete, drawn as a cell, with no separate egg shown. The arrow goes straight to the zygote."
+      }
+    },
+    {
+      "id": "biology.mendelian-genetics.tap-zygote",
+      "concept": "law-of-segregation",
+      "element": "restored-at-fertilisation",
+      "kind": "label",
+      "difficulty": 2,
+      "prompt": "Tap the cell in which fertilisation restores a pair of alleles.",
+      "artifact": "segregation",
+      "target": "zygote",
+      "explanation": "The fertilised cell, or zygote, holds two chromosomes of the pair again, one from each gamete. Both carry the pale allele, so a trait hidden in the heterozygous parent can show.",
+      "verification": {
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "solver-a's note: The bottom-right cell is the zygote, which has two chromosomes, one from each parent, so a pair of alleles is restored."
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "segregation",
+      "kind": "diagram",
+      "title": "Alleles separating and pairing again",
+      "alt": "Unlabelled. At top left, a large green parent cell holds two matching red chromosomes, one with a dark band and one with a pale band at the same place. An arrow leads down to four sperm: two carry one chromosome with the dark band, two carry one with the pale band. At right, a large egg holds one red chromosome with a pale band. Arrows from the last sperm and from the egg meet at a fertilised cell below the egg, which holds two red chromosomes, both with pale bands.",
+      "file": "assets/segregation.svg",
+      "hotspots": [
+        {
+          "id": "parent-cell",
+          "label": "Heterozygous parent cell",
+          "x": 0.275,
+          "y": 0.222,
+          "r": 0.1
+        },
+        {
+          "id": "gamete",
+          "label": "Gamete carrying one allele",
+          "x": 0.45,
+          "y": 0.52,
+          "r": 0.05
+        },
+        {
+          "id": "other-gamete",
+          "label": "Gamete from the other parent",
+          "x": 0.75,
+          "y": 0.278,
+          "r": 0.09
+        },
+        {
+          "id": "zygote",
+          "label": "Zygote",
+          "x": 0.742,
+          "y": 0.767,
+          "r": 0.1
+        }
+      ]
+    },
+    {
+      "id": "segregation-steps",
+      "kind": "sequence",
+      "title": "Segregation, step by step",
+      "alt": "Five steps: a heterozygous parent cell, its alleles separating in meiosis, gametes with one allele each, a gamete from the other parent, and a zygote with the pair restored.",
+      "over": "segregation",
+      "steps": [
+        {
+          "title": "A heterozygous parent",
+          "text": "This diploid cell has two different alleles of one gene, dark and pale, at the same locus on a pair of homologous chromosomes.",
+          "focus": "parent-cell"
+        },
+        {
+          "title": "The alleles separate",
+          "text": "In meiosis the homologous chromosomes move apart, so the two alleles end up in different gametes."
+        },
+        {
+          "title": "One allele per gamete",
+          "text": "Each sperm carries one allele of the gene: half carry the dark allele and half the pale one.",
+          "focus": "gamete"
+        },
+        {
+          "title": "A gamete from the other parent",
+          "text": "The egg also carries a single allele of the same gene, here the pale one.",
+          "focus": "other-gamete"
+        },
+        {
+          "title": "The pair is restored",
+          "text": "Fertilisation joins one allele from each parent. This zygote has two pale alleles, so a trait hidden in the parent can show again.",
+          "focus": "zygote"
+        }
+      ]
+    },
+    {
+      "id": "independent-assortment",
+      "kind": "diagram",
+      "title": "Two pairs of chromosomes sorting independently",
+      "alt": "Two cells in meiosis, side by side, with the word or between them. Each holds a long red pair of chromosomes carrying A and a, and a short blue pair carrying B and b, lined up on either side of a dashed middle line. In the left cell A and B sit on the same side, giving gametes AB and ab. In the right cell A sits with b, giving gametes Ab and aB.",
+      "file": "assets/independent-assortment.svg",
+      "hotspots": [
+        {
+          "id": "arrangement-one",
+          "label": "A lined up with B",
+          "x": 0.25,
+          "y": 0.3,
+          "r": 0.15
+        },
+        {
+          "id": "arrangement-two",
+          "label": "A lined up with b",
+          "x": 0.75,
+          "y": 0.3,
+          "r": 0.15
+        },
+        {
+          "id": "gamete-ab-big",
+          "label": "Gamete AB",
+          "x": 0.158,
+          "y": 0.756,
+          "r": 0.07
+        },
+        {
+          "id": "gamete-ab-small",
+          "label": "Gamete ab",
+          "x": 0.342,
+          "y": 0.756,
+          "r": 0.07
+        },
+        {
+          "id": "gamete-a-b",
+          "label": "Gamete Ab",
+          "x": 0.658,
+          "y": 0.756,
+          "r": 0.07
+        },
+        {
+          "id": "gamete-a-big-b",
+          "label": "Gamete aB",
+          "x": 0.842,
+          "y": 0.756,
+          "r": 0.07
+        }
+      ]
+    }
+  ]
+}
