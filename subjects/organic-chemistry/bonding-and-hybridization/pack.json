@@ -639,7 +639,12 @@
       ],
       "explanation": "The sigma bond forms first and fixes the positions of the carbons. Only then are the p orbitals parallel to each other, and their side-by-side overlap makes the pi bond.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Sigma bond from head-on sp2 overlap forms first; that holds the carbons in place so the unhybridized p orbitals become parallel; side-by-side p overlap then makes the pi bond."
       }
     },
     {

@@ -372,7 +372,12 @@
       "answer": "A solution of the system",
       "explanation": "Every equation must be true at the same time for those values. That is what makes them a solution.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both say a solution of the system."
       }
     },
     {
@@ -432,7 +437,12 @@
       "answer": "3 and −2",
       "explanation": "A coefficient is the number multiplying an unknown. The minus sign belongs to the coefficient, so the coefficient of y is −2.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both give 3 for x and -2 for y."
       }
     },
     {
@@ -512,7 +522,12 @@
       "answer": "The coefficient matrix",
       "explanation": "Removing the constant column from the augmented matrix leaves the coefficient matrix, which holds only the numbers multiplying the unknowns.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both name the coefficient matrix."
       }
     },
     {
@@ -639,7 +654,12 @@
       "answer": "5",
       "explanation": "Four columns hold the unknowns' coefficients, and one more column holds the constants.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both give 5 (4 unknowns plus constant column)."
       }
     },
     {
@@ -706,7 +726,12 @@
       "answer": "Three",
       "explanation": "The three moves are exchanging two rows, scaling a row by a number other than zero, and replacing a row with itself plus a multiple of another row.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both give three; b's listed operations are the correct three."
       }
     },
     {
@@ -830,7 +855,12 @@
       "answer": "Row swap (interchange)",
       "explanation": "It is the first elementary row operation. It changes only the order of the rows, so it does not change the solutions.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both name row interchange (row swap)."
       }
     },
     {
@@ -889,7 +919,12 @@
       "answer": "Its leftmost nonzero entry",
       "explanation": "Scanning from the left, the first entry that is not zero is the leading entry, also called the pivot of that row.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both say the leftmost/first nonzero entry."
       }
     },
     {
@@ -991,7 +1026,12 @@
       "answer": "Strictly to its right",
       "explanation": "Each leading entry sits in a later column than the leading entry above it. This is what makes the staircase.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both say strictly to the right."
       }
     },
     {
@@ -1027,7 +1067,12 @@
       "answer": "1",
       "explanation": "Each leading entry is scaled to 1 by a row scaling. Zeros are then cleared above and below it.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both give 1; b's extra column clause is a true RREF property and does not change the answer."
       }
     },
     {
@@ -1086,7 +1131,12 @@
       "answer": "Yes, each matrix has exactly one",
       "explanation": "Different sequences of row operations reach the same reduced form, which is why it can be used to read off solutions reliably.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both say yes, unique."
       }
     },
     {
@@ -1145,7 +1195,12 @@
       "answer": "The system is inconsistent, with no solution",
       "explanation": "That row says 0 = 1, which no values of the unknowns can satisfy.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both say inconsistent, no solution."
       }
     },
     {
@@ -1204,7 +1259,12 @@
       "answer": "Forward elimination (the forward phase)",
       "explanation": "Forward elimination works column by column from the left, clearing the entries below each pivot.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both name forward elimination."
       }
     },
     {
@@ -1352,7 +1412,12 @@
       "answer": "The position of a leading entry in an echelon form",
       "explanation": "A pivot position is where a leading entry sits after row reduction. The pivot columns are the columns that contain pivot positions.",
       "verification": {
-        "status": "draft"
+        "status": "draft",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 1,
+        "at": "2026-11-11",
+        "note": "Key “The position of a leading entry in an echelon form”. solver-a agreed: “a position in the matrix that corresponds to a leading entry of its row echelon…” b differed: “A position in the matrix that holds a leading 1 of its row in the reduced echel…” b restricts the pivot position to a leading 1 in reduced echelon form; the key is the leading-entry position in an echelon form. b's note: Wording varies by text: pivot position is the location of a leading entry in echelon form."
       }
     },
     {
@@ -1434,7 +1499,12 @@
       "answer": "Infinitely many",
       "explanation": "Each choice of values for the free variables gives a solution, and there are infinitely many such choices.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both say infinitely many."
       }
     },
     {
@@ -1493,7 +1563,12 @@
       "answer": "The row's constant term minus each free-variable coefficient times that variable",
       "explanation": "A row x₁ + a x₂ = b gives x₁ = b − a x₂, so the basic variable is the constant minus the coefficients times the free variables.",
       "verification": {
-        "status": "draft"
+        "status": "draft",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 1,
+        "at": "2026-11-11",
+        "note": "Key “The row's constant term minus each free-variable coefficient times that variable”. solver-a differed: “each basic variable is a constant plus a linear combination of the free variabl…” b agreed: “As a constant minus a combination of free variables (basic variable = constant …” a says a constant plus some linear combination, which leaves out the sign relation (constant minus coefficient times variable); b states it. b's note: Ambiguous on 'how'; each row gives one basic variable expressed w…"
       }
     },
     {
@@ -1547,7 +1622,12 @@
       "answer": "The trivial solution",
       "explanation": "It always exists and says nothing specific about the coefficients, which is why it is called trivial.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both say the trivial solution."
       }
     },
     {
@@ -1628,7 +1708,12 @@
       "answer": "Only the zero solution",
       "explanation": "An invertible matrix sends only the zero vector to zero, so the zero solution is the only one.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "Both say only the zero solution."
       }
     },
     {
