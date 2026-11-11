@@ -1508,7 +1508,11 @@
       "target": "trna-a-site",
       "explanation": "The A site takes in each new aminoacyl-tRNA. Its anticodon pairs with the codon there, and it carries one amino acid that will join the chain.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1522,7 +1526,11 @@
       "target": "trna-p-site",
       "explanation": "The tRNA in the P site holds the chain made so far. When a peptide bond forms, the chain passes to the amino acid on the A-site tRNA.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1536,7 +1544,11 @@
       "target": "trna-e-site",
       "explanation": "After the ribosome moves on, the tRNA that gave up its chain sits in the E site, carrying nothing, and then leaves to be loaded again.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1550,7 +1562,11 @@
       "target": "mrna",
       "explanation": "The mRNA runs between the two subunits. Its codons are read three bases at a time, and each one is matched by a tRNA anticodon.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1564,7 +1580,12 @@
       "target": "large-subunit",
       "explanation": "The large subunit catalyses the peptide bond between the chain on the P-site tRNA and the amino acid on the A-site tRNA.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Only the large subunit region is marked; the peptidyl transferase center is inside the large subunit, so C is the closest correct spot. The picture doesn't mark the catalytic site itself. b's note: Large subunit is a big region; the spot is only an empty part of it, peptidyl transferase site is not specifically drawn"
       }
     },
     {
@@ -1578,7 +1599,11 @@
       "target": "small-subunit",
       "explanation": "The small subunit binds the mRNA and finds the start codon with the initiator tRNA. The large subunit joins afterwards.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1592,7 +1617,11 @@
       "target": "anticodon",
       "explanation": "The anticodon is three bases in the bottom loop of the tRNA. They pair with a complementary codon in the mRNA.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1606,7 +1635,11 @@
       "target": "codon",
       "explanation": "A codon is three mRNA bases read together. The tRNA whose anticodon pairs with them brings the matching amino acid.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1620,7 +1653,12 @@
       "target": "acceptor-stem",
       "explanation": "The amino acid is joined to the end of the acceptor stem, at the opposite end of the tRNA from the anticodon.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: The amino acid attaches to the 3' end at the top of the acceptor stem; C is on that arm."
       }
     },
     {
@@ -1634,7 +1672,11 @@
       "target": "amino-acid",
       "explanation": "A charged tRNA carries one amino acid on its acceptor end. At the ribosome that amino acid is added to the growing chain.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     }
   ],
