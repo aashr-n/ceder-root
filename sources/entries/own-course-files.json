@@ -1,0 +1,10 @@
+{
+  "id": "own-course-files",
+  "name": "A student's own course files",
+  "goodFor": "The most relevant source there is: what the student's own course teaches.",
+  "license": "per-item",
+  "apps": "private",
+  "bank": "none",
+  "checked": null,
+  "notes": "Used on the student's device, for that student alone. Never stored in this repository, and never shared between students."
+}

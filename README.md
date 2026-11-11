@@ -17,6 +17,7 @@ A pack covers one topic: 4 to 12 concepts, with at least 4 verified questions fo
 ```
 subjects/   the packs, by subject
 plan/       each subject's list of packs to write, and every outside page an agent read
+sources/    a curated list of outside sources, and what an app or the bank may do with each
 schema/     JSON Schemas for subject.json, pack.json and a plan
 tools/      validate, build, blind export, grading, checking mistakes, plans and outside reading, with their tests
 pipeline/   how a pack gets written and checked, and the prompts the agents follow
@@ -39,6 +40,8 @@ node tools/build.mjs                     writes dist/
 `validate.mjs` fails on anything that breaks the format: a schema error, an ID that doesn't resolve, a prerequisite cycle, overlapping hotspots, an SVG with scripts or outside links, a missing or oversized asset. A concept with fewer than four verified items is a warning, and an error with `--require-verified`. A pack whose right choice is the longest, or the shortest, in more than 35% of its choice items gets a warning too, and `tools/cues.mjs` lists those items. An explanation that names a choice by its place is an error, because apps shuffle the choices.
 
 `build.mjs` validates first and builds nothing if there are errors. It writes one flat folder: `bank-index.json`, a `bankpack-<pack id>.json` for each pack with at least one verified item, and a `bankasset-<hash>.<ext>` for each picture and model those packs use. Only verified items go in, without their verification. Diagrams are rendered from SVG to PNG at 1200 pixels wide, with their text set in the fonts in `tools/fonts/`. The same source always gives the same bytes. It prints each pack it built, and each pack or subject it left out and why.
+
+`node sources/validate.mjs` checks the source catalogue (`sources/README.md`).
 
 CI runs these on every pull request and on `main`.
 

@@ -1,0 +1,14 @@
+{
+  "id": "mit-opencourseware",
+  "name": "MIT OpenCourseWare",
+  "url": "https://ocw.mit.edu",
+  "goodFor": "University course notes, problem sets and lecture videos.",
+  "license": "CC-BY-NC-SA-4.0",
+  "apps": "link",
+  "bank": "none",
+  "checked": {
+    "date": "2026-11-11",
+    "basis": "MIT OpenCourseWare's terms, via search"
+  },
+  "notes": "NonCommercial, and Ceder has paid plans, so an app only links to it. The bank's agents don't read it and nothing from it goes into the bank."
+}

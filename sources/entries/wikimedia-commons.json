@@ -1,0 +1,11 @@
+{
+  "id": "wikimedia-commons",
+  "name": "Wikimedia Commons",
+  "url": "https://commons.wikimedia.org",
+  "goodFor": "Pictures and diagrams.",
+  "license": "per-item",
+  "apps": "link",
+  "bank": "none",
+  "checked": null,
+  "notes": "Unverified. Each file states its own licence. An app links to a file until that file's licence and credit are checked. The bank's agents don't read it and nothing from it goes into the bank."
+}

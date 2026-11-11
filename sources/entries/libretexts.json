@@ -1,0 +1,11 @@
+{
+  "id": "libretexts",
+  "name": "LibreTexts",
+  "url": "https://libretexts.org",
+  "goodFor": "Open textbooks across the sciences.",
+  "license": "per-item",
+  "apps": "link",
+  "bank": "none",
+  "checked": null,
+  "notes": "Unverified. The licence is per page and mixed. Link only until a page is checked. The bank's agents don't read it and nothing from it goes into the bank."
+}

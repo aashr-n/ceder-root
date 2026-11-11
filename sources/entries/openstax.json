@@ -1,0 +1,11 @@
+{
+  "id": "openstax",
+  "name": "OpenStax",
+  "url": "https://openstax.org",
+  "goodFor": "Free peer-reviewed textbooks for college and high school.",
+  "license": "per-item",
+  "apps": "link",
+  "bank": "none",
+  "checked": null,
+  "notes": "Unverified, and the licence is per book. What was found conflicts: the Biology 2e preface reads CC BY-NC-SA 4.0, while a Concepts of Biology preface read CC BY 4.0. Link only until a book is checked. The bank's agents don't read it and nothing from it goes into the bank."
+}

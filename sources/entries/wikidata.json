@@ -1,0 +1,12 @@
+{
+  "id": "wikidata",
+  "name": "Wikidata",
+  "url": "https://www.wikidata.org",
+  "goodFor": "A concept's name and the other names it goes by.",
+  "license": "CC0-1.0",
+  "apps": "show",
+  "bank": "copy",
+  "access": "node tools/ref.mjs wikidata \"<name>\" for an agent.",
+  "checked": null,
+  "notes": "Unverified: the licence is as the bank's own rules state it (pipeline/prompts/sources.md), not checked against Wikidata's terms. Names may be copied into a concept's aliases, leaving out any that also mean something else."
+}
