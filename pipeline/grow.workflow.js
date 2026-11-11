@@ -55,7 +55,7 @@ for (const s of subjects) if (!SLUG.test(s.subject ?? '') || typeof s.course !==
 
 const opts = (label, phase, model, extra) => ({ label, phase, ...(model ? { model } : {}), ...(input.agentType ? { agentType: input.agentType } : {}), ...(extra ?? {}) })
 
-const SHARED = `You are one of many agents working on the question bank at ${bank}, at the same time. Run every command from ${bank}. Never run git. Touch only what this brief gives you. Your only outside reading is node tools/ref.mjs, as ${bank}/pipeline/prompts/sources.md says: never use a web search, a web fetch, curl, or any other way to reach a site. Your final message is a report for the script that runs you, not for a person: keep it short and factual.
+const SHARED = `You are one of many agents working on the question bank at ${bank}, at the same time. Run every command from ${bank}. Never run git. Touch only what this brief gives you. Your only outside reading is node tools/ref.mjs, as ${bank}/pipeline/prompts/sources.md says: never use a web search, a web fetch, curl, or any other way to reach a site. Never call a tool whose name starts with mcp__; you need only files and the shell. Your final message is a report for the script that runs you, not for a person: keep it short and factual.
 
 `
 
@@ -86,7 +86,7 @@ const GRADED = {
   type: 'object',
   required: ['verified', 'unverified', 'rejected'],
   properties: {
-    verified: { type: 'integer', description: 'Items in the pack now verified' },
+    verified: { type: 'integer', description: 'Every verified item in the pack, counting earlier rounds: the verified total in the table the grade tool prints for the pack' },
     rejected: { type: 'integer', description: 'Items in the pack marked rejected' },
     unverified: {
       type: 'array',
@@ -115,11 +115,12 @@ const author = (subject, pack) => SHARED + `Write one pack. Follow ${bank}/pipel
 
 The pack: ${bank}/subjects/${subject}/${pack}/pack.json, with the ID ${subject}.${pack}. Its entry in ${bank}/plan/${subject}.json (the one whose "pack" is "${pack}") gives its title, its brief, and the concepts it must define. Use exactly those concept IDs and names, and add no others.
 ${textOnly ? `
-This pack is text only, so that every answer can be checked by a tool. Write "artifacts": [], no label items and no recall items: only choice items, and order items where a topic has steps with one right order. At least 7 items per concept.
+This pack is text only, so that every answer can be checked by a tool. The parts of author.md about recall items, label items, diagrams and sequences do not apply to it. Write "artifacts": [], no label items and no recall items: only choice items, and order items where a topic has steps with one right order. At least 7 items per concept.
 ` : ''}
 - "license" is "CC0-1.0".
 - "requires": only concepts that exist now, which are ones in your own pack, and ones that node tools/plan.mjs written <subject> lists for this or another subject. Leave out a prerequisite whose pack isn't written yet.
 - Write mathematics and formulas as plain text with Unicode symbols, such as f′(x), x², √x, ×, ÷, ≤, π, H₂O, and fractions as (a + b)/c. No LaTeX and no Markdown.
+- Make each item's choices alike in length, and spread the right choice evenly over the places. validate warns when the right choice is the longest, or sits in one place, too often: fix those warnings too.
 - You may read a few pages on the topic through tools/ref.mjs, with --for author:${subject}.${pack}, to settle what the concepts cover. Then write from your own understanding.
 
 Create only that folder. Finish by running node tools/validate.mjs subjects/${subject}/${pack} and node tools/ref.mjs check subjects/${subject}/${pack}, fixing every error either reports, until both pass. Warnings about verified counts are expected.`

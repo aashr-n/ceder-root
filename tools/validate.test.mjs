@@ -35,6 +35,20 @@ test("a pack under any licence but CC0 is an error", () => {
   hasError(check(root), "license");
 });
 
+test("a pack whose right choices stand out by length or place gets a warning", () => {
+  const root = fixtureRoot();
+  editPack(root, (data) => {
+    const concept = data.concepts[0].id;
+    for (let n = 0; n < 12; n++) {
+      data.items.push({ id: `${data.id}.cue-${n}`, concept, kind: "choice", difficulty: 1, prompt: `Question ${n}?`, choices: ["No", "The long and careful right answer", "Never"], answer: 1, explanation: "Because.", verification: { status: "draft" } });
+    }
+  });
+  const result = check(root);
+  assert.deepEqual(result.errors, []);
+  assert.ok(result.warnings.some((warning) => warning.includes("is the longest in")), result.warnings.join("\n"));
+  assert.ok(result.warnings.some((warning) => warning.includes("is in place 2 in")), result.warnings.join("\n"));
+});
+
 test("a prerequisite cycle is an error", () => {
   const root = fixtureRoot();
   editPack(root, (data) => { data.concepts[0].requires = ["organelle"]; });

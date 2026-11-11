@@ -40,4 +40,4 @@ Draw each as an SVG on a 1200 by 900 canvas. It will be shown about 350 points w
 
 ## Before you finish
 
-From the repository's root: `node tools/validate.mjs subjects/<subject>/<pack> --allow-missing-assets`. Fix every error. Warnings about verified counts are expected until the pack is checked.
+From the repository's root: `node tools/validate.mjs subjects/<subject>/<pack> --allow-missing-assets`. Fix every error, and every warning that says the right choice is too often the longest or in one place. Warnings about verified counts are expected until the pack is checked.

@@ -216,6 +216,16 @@ export function checkBank(bank, { root = bankRoot, allowMissingAssets = false, r
     for (const [id, count] of verified) {
       if (count < 4) (requireVerified ? errors : warnings).push(`${at}: concept “${id}” has ${count} verified item${count === 1 ? "" : "s"}; a pack needs 4 for each`);
     }
+    // A student can score without knowing the subject when the right choice stands out by its length or its place.
+    const choices = data.items.filter((item) => item.kind === "choice" && item.verification.status !== "rejected");
+    if (choices.length >= 12) {
+      const longest = choices.filter((item) => item.choices.every((choice, index) => index === item.answer || choice.length < item.choices[item.answer].length)).length;
+      if (longest / choices.length > 0.4) warnings.push(`${at}: the right choice is the longest in ${longest} of ${choices.length} choice items; make each item's choices alike in length`);
+      const places = new Map();
+      for (const item of choices) places.set(item.answer, (places.get(item.answer) ?? 0) + 1);
+      const [place, most] = [...places].sort((a, b) => b[1] - a[1])[0];
+      if (most / choices.length > 0.45) warnings.push(`${at}: the right choice is in place ${place + 1} in ${most} of ${choices.length} choice items; spread it across the places`);
+    }
   }
 
   // Prerequisites must not cycle, anywhere in the bank.
