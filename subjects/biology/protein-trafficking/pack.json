@@ -583,7 +583,7 @@
         "solvers": 2,
         "agreed": 1,
         "at": "2026-11-11",
-        "note": "Key: hotspot “signal-peptide”. a: D, hotspot “srp”. b: C, hotspot “signal-peptide” (agrees). a's note: Answer is the one distinctly coloured green stretch at the free end of the chain (the signal sequence, emerging first from the ribosome). Less certain: the diagram does not label it, and A is the only other free chain end; A looks like plain polypeptide. b's note: C is the highlighted segment of the nascent chain in the membrane next to signal peptidase F; A is mRNA, B ribosome, D SRP, E trans…"
+        "note": "Key: hotspot “signal-peptide”. a: no answer. b: C, hotspot “signal-peptide” (agrees). a's note: The picture shows a ribosome (blue) with a tan nascent chain, but it does not mark which end is the N-terminus or where the hydrophobic signal sequence sits relative to the ribosome. Spot A sits on the free left end of the tan chain, which would fit a signal sequence at the N-terminus, but spot D is on the chain's other end, a separate pale-green object that could also be read as the marked stretch. …"
       }
     },
     {

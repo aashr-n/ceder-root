@@ -1230,12 +1230,11 @@
       "target": "side-chain",
       "explanation": "The side chain is the pale green blob hanging from the central carbon. The other parts are the same in all twenty common amino acids, so the side chain alone sets each one's chemistry.",
       "verification": {
-        "status": "draft",
+        "status": "verified",
         "method": "blind-solve",
         "solvers": 2,
-        "agreed": 1,
-        "at": "2026-11-11",
-        "note": "Key: hotspot “side-chain”. a: 1, not a spot. b: B, hotspot “side-chain” (agrees). a's note: Green blob at bottom (spot B) is the side chain/R group; the other groups are the amino group, the central alpha carbon, the carboxyl group and an H."
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1249,12 +1248,11 @@
       "target": "central-carbon",
       "explanation": "The central carbon is the dark green ball in the middle. Its four bonds go to the amino group, the carboxyl group, a hydrogen atom and the side chain.",
       "verification": {
-        "status": "draft",
+        "status": "verified",
         "method": "blind-solve",
         "solvers": 2,
-        "agreed": 1,
-        "at": "2026-11-11",
-        "note": "Key: hotspot “central-carbon”. a: 0, not a spot. b: A, hotspot “central-carbon” (agrees). a's note: Dark central carbon (spot A) is the alpha carbon bonded to the other four groups."
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1268,12 +1266,11 @@
       "target": "amino-group",
       "explanation": "The amino group is the blue-grey nitrogen with two hydrogens. In a peptide bond it gives up one hydrogen, which joins the -OH from the neighbouring carboxyl group to make water.",
       "verification": {
-        "status": "draft",
+        "status": "verified",
         "method": "blind-solve",
         "solvers": 2,
-        "agreed": 1,
-        "at": "2026-11-11",
-        "note": "Key: hotspot “amino-group”. a: 4, not a spot. b: E, hotspot “amino-group” (agrees). a's note: Blue nitrogen with two H (spot E) is the amino group."
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
@@ -1287,12 +1284,11 @@
       "target": "carboxyl-group",
       "explanation": "The carboxyl group is the ochre carbon with two red oxygens, one double-bonded and one carrying a hydrogen. That -OH leaves as part of a water molecule when the next amino acid attaches.",
       "verification": {
-        "status": "draft",
+        "status": "verified",
         "method": "blind-solve",
         "solvers": 2,
-        "agreed": 1,
-        "at": "2026-11-11",
-        "note": "Key: hotspot “carboxyl-group”. a: 3, not a spot. b: D, hotspot “carboxyl-group” (agrees). a's note: Right-hand group with C=O and -OH (spot D) is the carboxyl group."
+        "agreed": 2,
+        "at": "2026-11-11"
       }
     },
     {
