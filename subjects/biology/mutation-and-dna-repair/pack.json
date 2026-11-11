@@ -310,7 +310,12 @@
       ],
       "explanation": "Across a genome, most mutations fall where they have no measurable effect on fitness. A few are harmful and a few beneficial. Changing the number of chromosomes is a separate, larger kind of change.",
       "verification": {
-        "status": "draft"
+        "status": "verified",
+        "method": "blind-solve",
+        "solvers": 2,
+        "agreed": 2,
+        "at": "2026-11-11",
+        "note": "a's note: Most mutations across the genome are neutral (no measurable fitness effect), since most of the genome is non-coding. Choice 1 is true only for the coding subset, so the question is slightly narrower than 'across a whole genome' suggests, but choice 0 is the intended answer. b's note: Whole-genome framing makes neutral the best answer (most of the genome is noncoding/redundant). Ambiguous: among mutations with any effect, most are deleterious, so choice 1 could be read as correct. 'No …"
       }
     },
     {
