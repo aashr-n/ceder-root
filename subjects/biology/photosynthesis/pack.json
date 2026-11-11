@@ -1394,17 +1394,12 @@
       "concept": "calvin-cycle",
       "kind": "label",
       "difficulty": 1,
-      "prompt": "Tap where RuBisCO fixes carbon dioxide during the Calvin cycle.",
+      "prompt": "Tap the watery compartment where RuBisCO, dissolved among the other Calvin cycle enzymes, fixes carbon dioxide.",
       "artifact": "chloroplast",
       "target": "stroma",
       "explanation": "The Calvin cycle runs in the stroma, the fluid around the thylakoids. Its enzymes, RuBisCO among them, are dissolved there, next to where the thylakoids release ATP and NADPH.",
       "verification": {
-        "status": "draft",
-        "method": "blind-solve",
-        "solvers": 2,
-        "agreed": 1,
-        "at": "2026-11-11",
-        "note": "Key: hotspot “stroma”. a: D, hotspot “stroma” (agrees). b: no answer. a's note: Two stroma spots exist (A and B). A sits on a stroma lamella line, so I chose the free-stroma spot D (the B target). If the key intends A, the picture does not separate them clearly. b's note: Spots C and D are both in the stroma (D in an empty stroma area, C on a stromal lamella); both fit."
+        "status": "draft"
       }
     },
     {
