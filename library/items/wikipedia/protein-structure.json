@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/protein-structure",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Protein structure",
+  "url": "https://en.wikipedia.org/wiki/Protein_structure",
+  "revision": 1356374334,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Protein_structure&oldid=1356374334",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Protein structure” by Wikipedia contributors. Plain text of the lead section, shortened to its first 7 sentences. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 7 sentences",
+  "text": "Protein structure is the three-dimensional arrangement of atoms in an amino acid-chain molecule. Proteins are polymers – specifically polypeptides – formed from sequences of amino acids, which are the monomers of the polymer. A single amino acid monomer may also be called a residue, which indicates a repeating unit of a polymer. Proteins form by amino acids undergoing condensation reactions, in which the amino acids lose one water molecule per reaction in order to attach to one another with a peptide bond. By convention, a chain under 30 amino acids is often identified as a peptide, rather than a protein. To be able to perform their biological function, proteins fold into one or more specific spatial conformations driven by a number of non-covalent interactions, such as hydrogen bonding, ionic interactions, Van der Waals forces, and hydrophobic packing. To understand the functions of proteins at a molecular level, it is often necessary to determine their three-dimensional structure.",
+  "concepts": [
+    "biology/protein-structure"
+  ]
+}

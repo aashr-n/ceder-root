@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/meiosis",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Meiosis",
+  "url": "https://en.wikipedia.org/wiki/Meiosis",
+  "revision": 1384679900,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Meiosis&oldid=1384679900",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Meiosis” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "Meiosis is a special type of cell division of germ cells in sexually-reproducing organisms that produces the gametes: the sperm or egg cells. It involves two rounds of division that ultimately result in four cells, each with only one copy of each chromosome (haploid). Additionally, prior to the division, genetic material from the paternal and maternal copies of each chromosome is crossed over, creating new combinations of code on each chromosome. Later on, during fertilisation, the haploid cells produced by meiosis from a male and a female will fuse to create a zygote, a cell with two copies of each chromosome. In mammals, the process of meiosis finishes only after fertilization so the product is a zygote.\n\nErrors in meiosis resulting in aneuploidy (an abnormal number of chromosomes) are the leading known cause of miscarriage and the most frequent genetic cause of developmental disabilities.",
+  "concepts": [
+    "biology/meiosis"
+  ]
+}

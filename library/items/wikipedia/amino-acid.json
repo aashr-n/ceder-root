@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/amino-acid",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Amino acid",
+  "url": "https://en.wikipedia.org/wiki/Amino_acid",
+  "revision": 1383292554,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Amino_acid&oldid=1383292554",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Amino acid” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "Amino acids are a large group of organic compounds that contain both amino and carboxylic acid functional groups. Although over 500 amino acids exist in nature, by far the most important are the 22 α-amino acids incorporated into proteins. Only these 22 appear in the genetic code of life.\n\nAmino acids can be classified according to the locations of the core structural functional groups (alpha- (α-), beta- (β-), gamma- (γ-) amino acids, etc.); other categories relate to polarity, ionization, and side-chain group type (aliphatic, acyclic, aromatic, polar, etc.). In the form of proteins, amino-acid residues form the second-largest component (water being the largest) of human muscles and other tissues. Beyond their role as residues in proteins, amino acids participate in a number of processes such as neurotransmitter transport and biosynthesis. It is thought that they played a key role in enabling life on Earth and its emergence.",
+  "concepts": [
+    "biology/amino-acid"
+  ]
+}

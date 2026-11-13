@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/extracellular-matrix",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Extracellular matrix",
+  "url": "https://en.wikipedia.org/wiki/Extracellular_matrix",
+  "revision": 1381646924,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Extracellular_matrix&oldid=1381646924",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Extracellular matrix” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "In biology, the extracellular matrix (ECM), also called the intercellular matrix, is a network consisting of extracellular macromolecules and minerals, such as collagen, enzymes, glycoproteins, glycosaminoglycans, and hydroxyapatite that provide structural and biochemical support to surrounding cells. Because multicellularity evolved independently in different multicellular lineages, the composition of ECM varies between multicellular structures; however, cell adhesion, cell-to-cell communication and differentiation are common functions of the ECM.",
+  "concepts": [
+    "biology/extracellular-matrix"
+  ]
+}

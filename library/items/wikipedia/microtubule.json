@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/microtubule",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Microtubule",
+  "url": "https://en.wikipedia.org/wiki/Microtubule",
+  "revision": 1384532650,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Microtubule&oldid=1384532650",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Microtubule” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "Microtubules are biopolymers of tubulin that form part of the cytoskeleton to provide structure and shape to a eukaryotic cell. Microtubules can be as long as 50 micrometres, as wide as 23 to 27 nm and have an inner diameter between 11 and 15 nm. They are formed by the polymerization of a dimer of two globular proteins, alpha and beta tubulin into protofilaments that can then associate laterally to form a hollow tube, the microtubule. The most common form of a microtubule consists of 13 protofilaments in the tubular arrangement.",
+  "concepts": [
+    "biology/microtubule"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/actin-filament",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Actin filament",
+  "url": "https://en.wikipedia.org/wiki/Actin_filament",
+  "revision": 1382125384,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Actin_filament&oldid=1382125384",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Actin filament” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "Actin filaments (also known as microfilaments) are protein filaments in the cytoplasm of eukaryotic cells that form part of the cytoskeleton. They are primarily composed of polymers of actin, but are modified by and interact with numerous other proteins in the cell. Actin filaments are usually about 7 nm in diameter and made up of two strands of actin. Microfilament functions include cytokinesis, amoeboid movement, cell motility, changes in cell shape, endocytosis and exocytosis, cell contractility, and mechanical stability. In inducing cell motility, one end of the actin filament elongates while the other end contracts, presumably by myosin II molecular motors. Additionally, they function as part of actomyosin-driven contractile molecular motors, wherein the thin filaments serve as tensile platforms for myosin's ATP-dependent pulling action in muscle contraction and pseudopod advancement. Microfilaments have a tough, flexible framework which helps the cell in movement.",
+  "concepts": [
+    "biology/actin-filament"
+  ]
+}

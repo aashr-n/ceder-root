@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/fermentation",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Fermentation",
+  "url": "https://en.wikipedia.org/wiki/Fermentation",
+  "revision": 1382176954,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Fermentation&oldid=1382176954",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Fermentation” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "Fermentation is a type of anaerobic metabolism that harnesses the redox potential of the reactants to make adenosine triphosphate (ATP) and organic end products. Organic molecules, such as glucose or other sugars, are catabolized and their electrons are transferred to other organic molecules (cofactors, coenzymes, etc.). The transfer to organic molecules distinguishes fermentation from cellular respiration which concerns the transfer to oxygen (aerobic) or other inorganic (anaerobic) molecules. Anaerobic glycolysis is a related term used to describe the occurrence of fermentation in organisms (usually multicellular organisms such as animals) when aerobic respiration cannot keep up with the ATP demand, due to insufficient oxygen supply or anaerobic conditions.",
+  "concepts": [
+    "biology/fermentation"
+  ]
+}

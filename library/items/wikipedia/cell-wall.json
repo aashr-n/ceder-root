@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/cell-wall",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Cell wall",
+  "url": "https://en.wikipedia.org/wiki/Cell_wall",
+  "revision": 1373949252,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Cell_wall&oldid=1373949252",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Cell wall” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "A cell wall is a structural layer that surrounds some cell types, found immediately outside the cell membrane. It can be tough, flexible, and sometimes rigid. Primarily, it provides the cell with structural support, shape, protection, and functions as a selective barrier. Another vital role of the cell wall is to help the cell withstand osmotic pressure and mechanical stress. Cell walls are found in most prokaryotes, with the exception of mollicute bacteria. Among the eukaryotes, cells walls are prevalent in fungi, algae and plants but absent from animals and many other taxa.",
+  "concepts": [
+    "biology/cell-wall"
+  ]
+}

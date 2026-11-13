@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/second-messenger-system",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Second messenger system",
+  "url": "https://en.wikipedia.org/wiki/Second_messenger_system",
+  "revision": 1374981571,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Second_messenger_system&oldid=1374981571",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Second messenger system” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "Second messengers are intracellular signaling molecules released by the target cell in response to exposure to extracellular signaling molecules—the first messengers. (Intercellular signals, a non-local form of cell signaling, encompassing both first messengers and second messengers, are classified as autocrine, juxtacrine, paracrine, and endocrine signaling depending on the range of the signal.) Second messengers trigger physiological changes at cellular level such as proliferation, differentiation, migration, survival, apoptosis and depolarization.\n\nThey are one of the triggers of intracellular signal transduction cascades.",
+  "concepts": [
+    "biology/second-messenger"
+  ]
+}

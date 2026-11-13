@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/chemical-bond",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Chemical bond",
+  "url": "https://en.wikipedia.org/wiki/Chemical_bond",
+  "revision": 1368837112,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Chemical_bond&oldid=1368837112",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Chemical bond” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "A chemical bond is the association of atoms or ions to form molecules, crystals, and other structures. The bond may result from the electrostatic force between oppositely charged ions, as in ionic bonds; the sharing of electrons, as in covalent bonds; or some combination of these effects. Chemical bonds are described as having different strengths: there are \"strong bonds\" or \"primary bonds\" such as covalent, ionic, and metallic bonds, and \"weak bonds\" or \"secondary bonds\" such as dipole–dipole interactions, the London dispersion force, and hydrogen bonds.",
+  "concepts": [
+    "biology/chemical-bond"
+  ]
+}

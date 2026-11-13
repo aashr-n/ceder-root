@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/nucleic-acid-double-helix",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Nucleic acid double helix",
+  "url": "https://en.wikipedia.org/wiki/Nucleic_acid_double_helix",
+  "revision": 1373038059,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Nucleic_acid_double_helix&oldid=1373038059",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Nucleic acid double helix” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "In molecular biology, the double helix is the structure formed by double-stranded molecules of nucleic acids such as DNA. The double-helical structure of a nucleic acid complex arises as a consequence of its secondary structure, and is a fundamental component in determining its tertiary structure.\n\nThe DNA double-helix biopolymer of nucleic acids is held together by nucleotides which base pair together. In B-DNA, the most common double-helical structure found in nature, the double helix is right-handed with about 10–10.5 base pairs per turn. The double-helix structure of DNA contains a major groove and minor groove. In B-DNA the major groove is wider than the minor groove. Given the difference in widths of the major groove and minor groove, many proteins which bind to B-DNA do so through the wider major groove.",
+  "concepts": [
+    "biology/dna-double-helix"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/motor-protein",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Motor protein",
+  "url": "https://en.wikipedia.org/wiki/Motor_protein",
+  "revision": 1372197670,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Motor_protein&oldid=1372197670",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Motor protein” by Wikipedia contributors. Plain text of the lead section. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section",
+  "text": "Motor proteins are a class of molecular motors that can move along the cytoskeleton of cells. They do this by converting chemical energy into mechanical work by the hydrolysis of ATP.",
+  "concepts": [
+    "biology/motor-protein"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/glycolysis",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Glycolysis",
+  "url": "https://en.wikipedia.org/wiki/Glycolysis",
+  "revision": 1382744387,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Glycolysis&oldid=1382744387",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Glycolysis” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "Glycolysis is the metabolic pathway that converts glucose (C6H12O6) into pyruvate and, in most organisms, occurs in the liquid part of cells (the cytosol). The free energy released in this process is used to form the high-energy molecules adenosine triphosphate (ATP) and reduced nicotinamide adenine dinucleotide (NADH). Glycolysis is a sequence of ten reactions catalyzed by enzymes.\n\nThe wide occurrence of glycolysis in other species indicates that it is an ancient metabolic pathway. Indeed, the reactions that make up glycolysis and its parallel pathway, the pentose phosphate pathway, can occur in the oxygen-free conditions of the Archean oceans, also in the absence of enzymes, catalyzed by metal ions, meaning this is a plausible prebiotic pathway for abiogenesis.",
+  "concepts": [
+    "biology/glycolysis"
+  ]
+}

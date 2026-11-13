@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/helicase",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Helicase",
+  "url": "https://en.wikipedia.org/wiki/Helicase",
+  "revision": 1384658738,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Helicase&oldid=1384658738",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Helicase” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "Helicases are a class of enzymes that are vital to all organisms. Their main function is to unpack an organism's genetic material. Helicases are motor proteins that move directionally along a nucleic double helix, separating the two hybridized nucleic acid strands (hence helic- + -ase), via the energy gained from ATP hydrolysis. There are many helicases, representing the great variety of processes in which strand separation must be catalyzed. Approximately 1% of eukaryotic genes code for helicases.",
+  "concepts": [
+    "biology/dna-helicase"
+  ]
+}

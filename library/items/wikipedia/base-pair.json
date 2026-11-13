@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/base-pair",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Base pair",
+  "url": "https://en.wikipedia.org/wiki/Base_pair",
+  "revision": 1383594883,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Base_pair&oldid=1383594883",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Base pair” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 sentences. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 sentences",
+  "text": "A base pair (bp) is a fundamental unit of double-stranded nucleic acids consisting of two nucleobases bound to each other by hydrogen bonds. They form the building blocks of the DNA double helix and contribute to the folded structure of both DNA and RNA. Dictated by specific hydrogen bonding patterns, \"Watson–Crick\" (or \"Watson–Crick–Franklin\") base pairs (guanine–cytosine and adenine–thymine/uracil) allow the DNA helix to maintain a regular helical structure that is subtly dependent on its nucleotide sequence.",
+  "concepts": [
+    "biology/complementary-base-pairing"
+  ]
+}
