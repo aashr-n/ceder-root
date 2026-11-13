@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/plasmodesma",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Plasmodesma",
+  "url": "https://en.wikipedia.org/wiki/Plasmodesma",
+  "revision": 1377314381,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Plasmodesma&oldid=1377314381",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Plasmodesma” by Wikipedia contributors. Plain text of the lead section, shortened to its first 5 sentences. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 5 sentences",
+  "text": "Plasmodesmata (singular: plasmodesma) are microscopic channels which traverse the cell walls of plant cells and some algal cells, enabling transport and communication between them. Plasmodesmata evolved independently in several lineages, and species that have these structures include members of the Charophyceae, Charales, Coleochaetales and Phaeophyceae (which are all algae), as well as all embryophytes, better known as land plants. Unlike animal cells, almost every plant cell is surrounded by a polysaccharide cell wall. Neighbouring plant cells are therefore separated by a pair of cell walls and the intervening middle lamella, forming an extracellular domain known as the apoplast. Although cell walls are permeable to small soluble proteins and other solutes, plasmodesmata enable direct, regulated, symplastic transport of substances between cells.",
+  "concepts": [
+    "biology/plasmodesma"
+  ]
+}

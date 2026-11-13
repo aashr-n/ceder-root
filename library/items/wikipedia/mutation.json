@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/mutation",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Mutation",
+  "url": "https://en.wikipedia.org/wiki/Mutation",
+  "revision": 1381934584,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Mutation&oldid=1381934584",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Mutation” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "In biology, a mutation is an alteration in the nucleic acid sequence of the genome of an organism, virus, or extrachromosomal DNA. Mutations result from errors during replication, mitosis, meiosis, or damage to DNA, which then may trigger error-prone repair or cause an error during replication (translesion synthesis). Mutations may also result from substitution, insertion or deletion of segments of DNA due to mobile genetic elements.\n\nMutations may or may not produce detectable changes in the observable characteristics (phenotype) of an organism. Mutations play a part in both normal and abnormal biological processes including: evolution, cancer, and the development of the immune system, including junctional diversity. Mutation is the ultimate source of all genetic variation, providing the raw material on which evolutionary forces such as natural selection can act.",
+  "concepts": [
+    "biology/mutation"
+  ]
+}

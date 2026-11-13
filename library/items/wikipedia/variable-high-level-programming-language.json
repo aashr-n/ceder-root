@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/variable-high-level-programming-language",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Variable (high-level programming language)",
+  "url": "https://en.wikipedia.org/wiki/Variable_(high-level_programming_language)",
+  "revision": 1362917208,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Variable_%28high-level_programming_language%29&oldid=1362917208",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Variable (high-level programming language)” by Wikipedia contributors. Plain text of the lead section, shortened to its first 5 sentences. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 5 sentences",
+  "text": "In some high-level programming languages, a variable is an abstract storage or indirection location paired with an associated symbolic name, which contains some known or unknown quantity of data or object referred to as a value; or in simpler terms, a variable is a named container for a particular set of bits or type of data (like integer, float, string, etc...) or undefined. In some other languages such as BASIC, Python, or Ruby — a variable is more accurately described as a name associated with a value, with memory allocation handled transparently by the interpreter or runtime. A variable can eventually be associated with or identified by a memory address. The variable name is the usual way to reference the stored value, in addition to referring to the variable itself, depending on the context. This separation of name and content allows the name to be used independently of the exact information it represents.",
+  "concepts": [
+    "computer-science/variable"
+  ]
+}

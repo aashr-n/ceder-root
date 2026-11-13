@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/nucleotide",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Nucleotide",
+  "url": "https://en.wikipedia.org/wiki/Nucleotide",
+  "revision": 1384038752,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Nucleotide&oldid=1384038752",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Nucleotide” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "Nucleotides are organic molecules composed of a nitrogenous base, a pentose sugar and a phosphate. They serve as monomeric units of the nucleic acid polymers – deoxyribonucleic acid (DNA) and ribonucleic acid (RNA), both of which are essential biomolecules within all life-forms on Earth. Nucleotides are obtained in the diet and are also synthesized from common nutrients by the liver.\n\nNucleotides are composed of three subunit molecules: a nucleobase, a five-carbon sugar (ribose or deoxyribose), and a phosphate group consisting of one to three phosphates. The four nucleobases in DNA are guanine, adenine, cytosine, and thymine (G, A, C, and T); in RNA, uracil (U) is used in place of thymine.",
+  "concepts": [
+    "biology/nucleotide"
+  ]
+}

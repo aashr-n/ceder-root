@@ -1,15 +1,16 @@
 import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { cpSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
+import { cpSync, existsSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import test from "node:test";
 import { deflateSync } from "node:zlib";
 import {
-  MAX_TEXT, PUBLIC_DOMAIN, buildLibrary, checkLibrary, commonsItem, commonsLicense, fitPicture, imageSize, leadText, licenseFromUrl,
+  MAX_TEXT, PUBLIC_DOMAIN, appAccess, buildLibrary, buildSourcesIndex, loadCatalogue, checkLibrary, commonsItem, commonsLicense, fitPicture, imageSize, leadText, licenseFromUrl,
   licenseName, notPlain, storable, wikipediaItem, writeItem,
 } from "./library.mjs";
+import { buildAppCopy } from "./build.mjs";
 import { fixtureRoot, realRoot, toolsDir } from "./fixtures/fixture.mjs";
 
 const sha256 = (bytes) => createHash("sha256").update(bytes).digest("hex");
@@ -345,11 +346,13 @@ test("the build lists items by concept, with text and credit inline and pictures
   assert.deepEqual(Object.keys(index), ["formatVersion", "revision", "concepts", "items"]);
   assert.deepEqual(index.concepts, { "testing/cell": ["courses/cells", "pictures/cell", "wikipedia/cell"], "testing/organelle": ["pictures/cell"] });
   const [link, picture, text] = index.items;
-  assert.deepEqual(link, { id: "courses/cells", source: "courses", kind: "link", title: "Cells", url: "https://courses.example.org/cells", retrieved: "2026-11-11", linking: { external: true, freeOnly: true } });
+  assert.deepEqual(link, { id: "courses/cells", source: "courses", sourceName: "Courses", apps: "link", kind: "link", title: "Cells", url: "https://courses.example.org/cells", retrieved: "2026-11-11", linking: { external: true, freeOnly: true }, concepts: ["testing/cell"] });
+  assert.deepEqual([text.apps, text.sourceName, picture.apps, picture.sourceName], ["show", "Wikipedia", "show", "Pictures"]);
+  assert.deepEqual(picture.concepts, ["testing/cell", "testing/organelle"]);
   // Only a link carries its source's linking conditions.
   assert.ok(!("linking" in text) && !("linking" in picture));
   assert.deepEqual(picture.image, { file: asset, width: 40, height: 30, alt: "A round cell with a dark nucleus." });
-  assert.ok(!("sha256" in picture) && !("concepts" in picture));
+  assert.ok(!("sha256" in picture) && !("file" in picture));
   assert.equal(text.text, "The cell is the basic unit of life.");
   assert.equal(text.credit.line, "“Cell (biology)” by Wikipedia contributors. Plain text of the lead section. Offered under CC BY-SA 4.0.");
   assert.ok(!("evidence" in text) && !("part" in text));
@@ -378,4 +381,130 @@ test("the command line validates, builds into a folder, and builds nothing when 
 
 test("the repository's own library is valid", () => {
   assert.deepEqual(checkLibrary(realRoot).errors, []);
+});
+
+test("what an app may do with a piece comes from the catalogue: show, link or nothing", () => {
+  const root = libraryRoot();
+  const catalogue = loadCatalogue(root);
+  const items = Object.fromEntries(checkLibrary(root).items.map((item) => [item.id, item]));
+  assert.equal(appAccess(items["wikipedia/cell"], catalogue), "show");
+  assert.equal(appAccess(items["pictures/cell"], catalogue), "show");
+  assert.equal(appAccess(items["courses/cells"], catalogue), "link");
+  // Anything the catalogue forbids, or doesn't know, is never exportable, whatever kind of piece it is.
+  for (const kind of ["link", "text"]) {
+    for (const source of ["banned", "mine", "nowhere"]) assert.equal(appAccess({ source, kind, id: `${source}/x`, concepts: [] }, catalogue), null, `${kind} from ${source}`);
+  }
+  // A part the catalogue doesn't have, and stored content from a link-only source without its file's own licence evidence.
+  assert.equal(appAccess({ ...items["wikipedia/cell"], part: "maps" }, catalogue), null);
+  assert.equal(appAccess({ ...items["pictures/cell"], source: "courses" }, catalogue), null);
+  assert.equal(appAccess({ ...items["pictures/cell"], source: "courses", evidence: { url: "x", metadata: {} } }, catalogue), "show");
+  // A link-only part of a source that may be shown is link only.
+  assert.equal(appAccess({ id: "wikipedia/x", source: "wikipedia", part: "media", kind: "link", concepts: [] }, catalogue), "link");
+  assert.equal(appAccess({ id: "wikipedia/x", source: "wikipedia", part: "media", kind: "image", concepts: [] }, catalogue), null);
+});
+
+test("a piece from a source that is none, private, unchecked or missing can't be built", () => {
+  const root = libraryRoot();
+  const banned = { id: "banned/cells", source: "banned", kind: "link", title: "Cells", url: "https://banned.example.org/cells", retrieved: "2026-11-11", concepts: ["testing/cell"] };
+  const mine = { id: "mine/cells", source: "mine", kind: "link", title: "Cells", url: "https://courses.example.org/cells", retrieved: "2026-11-11", concepts: ["testing/cell"] };
+  const unknown = { id: "nowhere/cells", source: "nowhere", kind: "link", title: "Cells", url: "https://nowhere.example.org/cells", retrieved: "2026-11-11", concepts: ["testing/cell"] };
+  for (const item of [banned, mine, unknown]) {
+    const copy = libraryRoot();
+    put(copy, item);
+    assert.ok(checkLibrary(copy).errors.length > 0, item.id);
+    const result = buildLibrary({ root: copy });
+    assert.ok(result.errors.length > 0, item.id);
+    assert.equal(result.files.size, 0, item.id);
+    assert.equal(buildAppCopy({ root: copy }).files.size, 0, item.id);
+  }
+  // Nothing from a set-aside source either: only sources/entries/ is read.
+  mkdirSync(join(root, "sources", "set-aside"), { recursive: true });
+  writeFileSync(join(root, "sources", "set-aside", "aside.json"), JSON.stringify({ ...ENTRIES.pictures, id: "aside" }));
+  put(root, { ...banned, id: "aside/cells", source: "aside", url: "https://pictures.example.org/cells" });
+  assert.match(checkLibrary(root).errors.join("\n"), /“aside” isn't in sources\/entries/);
+  assert.equal(buildAppCopy({ root }).files.size, 0);
+});
+
+test("the sources index lists only the sources an app may show or link to, with their subjects", () => {
+  const root = libraryRoot();
+  writeFileSync(join(root, "sources", "entries", "pictures.json"), JSON.stringify({ ...ENTRIES.pictures, subjects: ["testing"] }));
+  const result = buildSourcesIndex({ root });
+  assert.deepEqual(result.errors, []);
+  const index = JSON.parse(result.files.get("sources-index.json"));
+  assert.deepEqual(Object.keys(index), ["formatVersion", "revision", "sources"]);
+  assert.deepEqual(index.sources.map((source) => source.id), ["courses", "per-file", "pictures", "unchecked", "wikimedia-commons", "wikipedia"]);
+  assert.ok(!index.sources.some((source) => ["banned", "mine"].includes(source.id)));
+  const pictures = index.sources.find((source) => source.id === "pictures");
+  assert.deepEqual(pictures, { id: "pictures", name: "Pictures", url: "https://pictures.example.org", license: "CC-BY-4.0", attribution: "The author.", apps: "show", subjects: ["testing"] });
+  assert.deepEqual(index.sources.find((source) => source.id === "courses").linking, { external: true, freeOnly: true });
+  assert.deepEqual(index.sources.find((source) => source.id === "wikipedia").subjects, []);
+  // A subject the bank doesn't have is an error.
+  writeFileSync(join(root, "sources", "entries", "pictures.json"), JSON.stringify({ ...ENTRIES.pictures, subjects: ["nothing"] }));
+  const bad = buildSourcesIndex({ root });
+  assert.match(bad.errors.join("\n"), /“nothing”, which isn't a subject/);
+  assert.equal(bad.files.size, 0);
+});
+
+test("an app's copy holds the bank, the library and the sources index, and --check-app compares all of them", () => {
+  const root = libraryRoot();
+  const copy = buildAppCopy({ root });
+  assert.deepEqual(copy.errors, []);
+  const names = [...copy.files.keys()];
+  assert.ok(names.includes("bank-index.json") && names.includes("library-index.json") && names.includes("sources-index.json"));
+  assert.equal(names.filter((name) => name.startsWith("libraryasset-")).length, 1);
+  assert.ok([...copy.bankFiles.keys()].every((name) => !/^library|^sources/.test(name)));
+
+  const out = join(mkdtempSync(join(tmpdir(), "app-out-")), "dist");
+  const app = join(mkdtempSync(join(tmpdir(), "app-copy-")), "SeedBank");
+  const build = (...args) => spawnSync(process.execPath, [join(toolsDir, "build.mjs"), "--root", root, ...args], { encoding: "utf8" });
+  const built = build("--out", out, "--app", "--app-dir", app);
+  assert.equal(built.status, 0, built.stdout + built.stderr);
+  assert.match(built.stdout, /3 library items, 6 sources/);
+  // dist/ keeps only the bank; the app's copy adds the library's and the catalogue's files.
+  assert.ok(!readdirSync(out).some((name) => /^library|^sources/.test(name)));
+  assert.deepEqual(readdirSync(app).sort(), names.sort());
+  assert.equal(build("--check-app", "--app-dir", app).status, 0);
+
+  // Each added file is checked: a changed or missing one fails, and so does a stale one.
+  const libraryAsset = names.find((name) => name.startsWith("libraryasset-"));
+  writeFileSync(join(app, "sources-index.json"), "{}");
+  rmSync(join(app, "library-index.json"));
+  writeFileSync(join(app, "libraryasset-1111111111111111.png"), "stale");
+  const drifted = build("--check-app", "--app-dir", app);
+  assert.equal(drifted.status, 1);
+  assert.match(drifted.stdout, /sources-index\.json differs/);
+  assert.match(drifted.stdout, /library-index\.json is missing/);
+  assert.match(drifted.stdout, /libraryasset-1111111111111111\.png is there but the build doesn't make it/);
+  assert.ok(readdirSync(app).includes(libraryAsset));
+
+  // A rewrite repairs it and removes the stale file.
+  assert.equal(build("--out", out, "--app", "--app-dir", app).status, 0);
+  assert.equal(build("--check-app", "--app-dir", app).status, 0);
+  assert.ok(!readdirSync(app).includes("libraryasset-1111111111111111.png"));
+
+  // A library error exports nothing, not even the bank.
+  put(root, textItem({ concepts: ["testing/nothing"] }));
+  const app2 = join(mkdtempSync(join(tmpdir(), "app-copy-")), "SeedBank");
+  const failed = build("--out", join(out, "x"), "--app", "--app-dir", app2);
+  assert.equal(failed.status, 1);
+  assert.match(failed.stdout, /not built/);
+  assert.ok(!existsSync(app2));
+});
+
+test("the repository's own app copy never holds a piece or source the catalogue forbids", () => {
+  const copy = buildAppCopy({ root: realRoot });
+  assert.deepEqual(copy.errors, []);
+  const catalogue = loadCatalogue(realRoot);
+  const library = JSON.parse(copy.files.get("library-index.json"));
+  for (const item of library.items) {
+    const entry = catalogue.get(item.source);
+    assert.ok(["show", "link"].includes(entry.apps), item.id);
+    assert.ok(["show", "link"].includes(item.apps), item.id);
+    assert.equal(item.sourceName, entry.name);
+    if (item.apps === "show") assert.ok(item.license && item.licenseUrl && item.credit?.line, item.id);
+  }
+  const sources = JSON.parse(copy.files.get("sources-index.json")).sources;
+  assert.ok(sources.length > 0);
+  for (const source of sources) assert.ok(["show", "link"].includes(catalogue.get(source.id).apps), source.id);
+  assert.ok(!sources.some((source) => ["own-course-files", "khan-academy", "libretexts", "openstax", "phet", "openintro", "servier"].includes(source.id)));
 });

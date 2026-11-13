@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/desmosome",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Desmosome",
+  "url": "https://en.wikipedia.org/wiki/Desmosome",
+  "revision": 1372974819,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Desmosome&oldid=1372974819",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Desmosome” by Wikipedia contributors. Plain text of the lead section. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section",
+  "text": "A desmosome (\"binding body\"), also known as a macula adherens (plural: maculae adherentes) (Latin for adhering spot), is a cell structure specialized for cell-to-cell adhesion. A type of junctional complex, they are localized spot-like adhesions randomly arranged on the lateral sides of plasma membranes. Desmosomes are one of the stronger cell-to-cell adhesion types and are found in tissue that experience intense mechanical stress, such as cardiac muscle tissue, bladder tissue, gastrointestinal mucosa, and epithelia.",
+  "concepts": [
+    "biology/desmosome"
+  ]
+}

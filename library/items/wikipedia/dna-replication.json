@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/dna-replication",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "DNA replication",
+  "url": "https://en.wikipedia.org/wiki/DNA_replication",
+  "revision": 1382472971,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=DNA_replication&oldid=1382472971",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“DNA replication” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "DNA replication is the process by which a cell makes exact copies of its DNA. This process occurs in all organisms and is essential to biological inheritance, cell division, and repair of damaged tissues. DNA replication ensures that each of the newly divided daughter cells receives its own copy of each DNA molecule.",
+  "concepts": [
+    "biology/dna-replication"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/chemical-compound",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Chemical compound",
+  "url": "https://en.wikipedia.org/wiki/Chemical_compound",
+  "revision": 1377531815,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Chemical_compound&oldid=1377531815",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Chemical compound” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "A chemical compound is a chemical substance composed of many identical molecules (or molecular entities) containing atoms from more than one chemical element held together by chemical bonds. A molecule consisting of atoms of only one element, called homonuclear molecule, is therefore not a compound. A compound can be transformed into a different substance by a chemical reaction, which may involve interactions with other substances. In this process, bonds between atoms may be broken or new bonds formed or both.\n\nThere are four major types of compounds, distinguished by how the constituent atoms are bonded together. Molecular compounds are held together by covalent bonds, ionic compounds are held together by ionic bonds, intermetallic compounds are held together by metallic bonds, and coordination complexes are held together by coordinate covalent bonds. Non-stoichiometric compounds form a disputed marginal case.",
+  "concepts": [
+    "chemistry/compound"
+  ]
+}

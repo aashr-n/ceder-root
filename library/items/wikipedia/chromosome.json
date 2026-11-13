@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/chromosome",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Chromosome",
+  "url": "https://en.wikipedia.org/wiki/Chromosome",
+  "revision": 1378699250,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Chromosome&oldid=1378699250",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Chromosome” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "A chromosome is a package of DNA containing part of or all of the genetic material of an organism. In most chromosomes, the very long thin DNA fibers are coated with nucleosome-forming packaging proteins; in eukaryotic cells, the most important of these proteins are the histones. Aided by chaperone proteins, the histones bind to and condense the DNA molecule to maintain its integrity. These eukaryotic chromosomes display a complex three-dimensional structure that has a significant role in transcriptional regulation.",
+  "concepts": [
+    "biology/chromosome"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/cell-cycle",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Cell cycle",
+  "url": "https://en.wikipedia.org/wiki/Cell_cycle",
+  "revision": 1371110776,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Cell_cycle&oldid=1371110776",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Cell cycle” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "The cell cycle, or cell-division cycle, is the sequence of events that take place in a cell and lead to its division into two daughter cells. These events include the growth of the cell, duplication of its DNA (DNA replication) and some of its organelles, and subsequently the partitioning of its cytoplasm, chromosomes and other components into two daughter cells in a process called cell division.",
+  "concepts": [
+    "biology/cell-cycle"
+  ]
+}

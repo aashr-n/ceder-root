@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/enzyme",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Enzyme",
+  "url": "https://en.wikipedia.org/wiki/Enzyme",
+  "revision": 1376216228,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Enzyme&oldid=1376216228",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Enzyme” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "An enzyme is a biological macromolecule, usually a protein, that acts as a biological catalyst, accelerating chemical reactions without being consumed in the process. The molecules on which enzymes act are called substrates, which are converted into products. Nearly all metabolic processes within a cell depend on enzyme catalysis to occur at biologically relevant rates. A metabolic pathway is typically composed of a series of enzyme-catalyzed steps. The study of enzymes is known as enzymology, and a related field focuses on pseudoenzymes—proteins that have lost catalytic activity but may retain regulatory or scaffolding functions, often indicated by alterations in their amino acid sequences or unusual 'pseudocatalytic' behavior.",
+  "concepts": [
+    "biology/enzyme"
+  ]
+}

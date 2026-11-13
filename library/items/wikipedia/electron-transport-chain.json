@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/electron-transport-chain",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Electron transport chain",
+  "url": "https://en.wikipedia.org/wiki/Electron_transport_chain",
+  "revision": 1384698825,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Electron_transport_chain&oldid=1384698825",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Electron transport chain” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "An electron transport chain (ETC) is a series of protein complexes and other molecules which transfer electrons from electron donors to electron acceptors via redox reactions (both reduction and oxidation occurring simultaneously) and couples this electron transfer with the transfer of protons (H+ ions) across a membrane. Many of the enzymes in the electron transport chain are embedded within the membrane.\n\nThe flow of electrons through the electron transport chain is an exergonic process. The energy from the redox reactions creates an electrochemical proton gradient that drives the synthesis of adenosine triphosphate (ATP). In aerobic respiration, the flow of electrons terminates with molecular oxygen as the final electron acceptor. In anaerobic respiration, other electron acceptors are used, such as sulfate.",
+  "concepts": [
+    "biology/electron-transport-chain"
+  ]
+}

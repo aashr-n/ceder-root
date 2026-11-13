@@ -16,6 +16,13 @@
     "attribution": { "type": "string", "minLength": 1 },
     "access": { "type": "string", "minLength": 1 },
     "checked": { "$ref": "#/definitions/checked" },
+    "subjects": {
+      "description": "The bank's subjects (subjects/<id>/) this source is good for, by id. Leave it out for a general source that serves any subject.",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/definitions/id" }
+    },
     "linking": {
       "description": "Conditions the source's own terms put on a link to it, for an app to obey.",
       "type": "object",

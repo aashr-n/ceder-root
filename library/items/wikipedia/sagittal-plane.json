@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/sagittal-plane",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Sagittal plane",
+  "url": "https://en.wikipedia.org/wiki/Sagittal_plane",
+  "revision": 1356192762,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Sagittal_plane&oldid=1356192762",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Sagittal plane” by Wikipedia contributors. Plain text of the lead section. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section",
+  "text": "The sagittal plane (also known as the longitudinal plane) is an anatomical plane in bilaterians that divides the body into right and left sections. It is perpendicular to the transverse and coronal planes. The plane may be in the center of the body and divide it into two equal parts (mid-sagittal), or away from the midline and divide it into unequal parts (para-sagittal).\n\nThe term \"sagittal\" was coined by Gerard of Cremona.",
+  "concepts": [
+    "anatomy-and-physiology/body-planes"
+  ]
+}

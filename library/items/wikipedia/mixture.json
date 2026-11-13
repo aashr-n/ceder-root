@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/mixture",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Mixture",
+  "url": "https://en.wikipedia.org/wiki/Mixture",
+  "revision": 1385050187,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Mixture&oldid=1385050187",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Mixture” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "In chemistry, a mixture is a material made up of two or more different chemical substances which can be separated by physical method. It is an impure substance made up of two or more elements or compounds mechanically mixed together in any proportion. A mixture is the physical combination of two or more substances in which the identities are retained and are mixed in the form of solutions, suspensions or colloids.",
+  "concepts": [
+    "chemistry/mixture"
+  ]
+}

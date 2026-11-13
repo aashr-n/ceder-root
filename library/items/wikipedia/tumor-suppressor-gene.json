@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/tumor-suppressor-gene",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Tumor suppressor gene",
+  "url": "https://en.wikipedia.org/wiki/Tumor_suppressor_gene",
+  "revision": 1368288780,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Tumor_suppressor_gene&oldid=1368288780",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Tumor suppressor gene” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "A tumor suppressor gene (TSG), or anti-oncogene, is a gene that regulates a cell during cell division and replication. When a tumor suppressor gene is mutated, it results in a loss or reduction in its function. In combination with other genetic mutations, this could allow the cell to grow abnormally. The loss of function for these genes may be even more significant in the development of human cancers, compared to the activation of oncogenes.",
+  "concepts": [
+    "biology/tumor-suppressor-gene"
+  ]
+}

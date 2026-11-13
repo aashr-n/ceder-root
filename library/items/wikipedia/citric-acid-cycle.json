@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/citric-acid-cycle",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Citric acid cycle",
+  "url": "https://en.wikipedia.org/wiki/Citric_acid_cycle",
+  "revision": 1383584189,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Citric_acid_cycle&oldid=1383584189",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Citric acid cycle” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "The citric acid cycle—also known as the Krebs cycle, Szent–Györgyi–Krebs cycle, or TCA cycle (tricarboxylic acid cycle)—is a series of biochemical reactions that release the energy stored in nutrients through acetyl-CoA oxidation. The energy released is available in the form of ATP. The Krebs cycle is used by organisms that generate energy via respiration, either anaerobically or aerobically (organisms that ferment use different pathways). In addition, the cycle provides precursors of certain amino acids, as well as the reducing agent NADH, which are used in other reactions. Its central importance to many biochemical pathways suggests that it was one of the earliest metabolic components. Even though it is branded as a \"cycle\", it is not necessary for metabolites to follow a specific route; at least three alternative pathways of the citric acid cycle are recognized.",
+  "concepts": [
+    "biology/citric-acid-cycle"
+  ]
+}

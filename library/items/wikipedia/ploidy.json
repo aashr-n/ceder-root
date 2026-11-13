@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/ploidy",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Ploidy",
+  "url": "https://en.wikipedia.org/wiki/Ploidy",
+  "revision": 1376794098,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Ploidy&oldid=1376794098",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Ploidy” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "Ploidy is the number of complete sets of chromosomes in a cell, and hence the number of possible alleles for autosomal and pseudoautosomal genes. Here sets of chromosomes refers to the number of maternal and paternal chromosome copies, respectively, in each homologous chromosome pair—the form in which chromosomes naturally exist. Somatic cells, tissues, and individual organisms can be described according to the number of sets of chromosomes present (the \"ploidy level\"): monoploid (1 set), diploid (2 sets), triploid (3 sets), tetraploid (4 sets), pentaploid (5 sets), hexaploid (6 sets), heptaploid or septaploid (7 sets), etc. The generic term polyploid is often used to describe cells with three or more sets of chromosomes.",
+  "concepts": [
+    "biology/ploidy"
+  ]
+}

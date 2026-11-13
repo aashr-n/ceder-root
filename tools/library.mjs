@@ -44,6 +44,7 @@ export const MAX_ORIGINAL_BYTES = 25 * 1024 * 1024;
 /** The licence ID for a work in the public domain. SPDX has none, so this is a LicenseRef. */
 export const PUBLIC_DOMAIN = "LicenseRef-public-domain";
 export const INDEX_FILE = "library-index.json";
+export const SOURCES_FILE = "sources-index.json";
 /** The files a built library is made of, and so the only files the build removes from a folder it writes into. */
 export const BUILT_FILE = /^(library-index\.json|libraryasset-[0-9a-f]{16}\.[a-z0-9]+)$/;
 /** The only hosts pinning reaches. */
@@ -305,6 +306,24 @@ export function loadCatalogue(root = bankRoot) {
   return catalogue;
 }
 
+/**
+ * What an app may do with a piece, from the catalogue alone: "show" (stored text or a picture, shown in full with its
+ * credit), "link" (only a link), or null when it may not be exported at all. Independent of the validator's checks, so
+ * that nothing the catalogue forbids can reach an app's copy even if a check were ever loosened: a source or part
+ * whose `apps` is none or private, or that isn't in the catalogue, is never exported, and stored content from a
+ * link-only source goes only with the evidence of its own file's licence.
+ */
+export function appAccess(item, catalogue) {
+  const entry = catalogue.get(item.source);
+  if (!entry) return null;
+  const terms = item.part ? (entry.parts ?? []).find((part) => part.id === item.part) : entry;
+  if (!terms) return null;
+  if (!["show", "link"].includes(entry.apps) || !["show", "link"].includes(terms.apps)) return null;
+  if (item.kind === "link") return "link";
+  if (terms.apps === "show") return "show";
+  return item.evidence ? "show" : null;
+}
+
 /** Every concept in the bank, by ref. */
 export function conceptRefs(root = bankRoot) {
   const refs = new Set();
@@ -413,6 +432,8 @@ const schemaOf = (root) => new Ajv({ allErrors: true }).compile(readJson(join(ro
 
 /** Everything wrong with the library, as `{ items, errors }`: `items` are the loaded items' data. */
 export function checkLibrary(root = bankRoot) {
+  // A bank with no library has no pieces; there is nothing to check.
+  if (!existsSync(join(root, "library"))) return { items: [], errors: [] };
   const check = schemaOf(root);
   const catalogue = loadCatalogue(root);
   const concepts = conceptRefs(root);
@@ -462,7 +483,15 @@ export function buildLibrary({ root = bankRoot } = {}) {
   const built = [];
   const byConcept = new Map();
   for (const item of [...items].sort((a, b) => a.id.localeCompare(b.id))) {
-    const entry = pick(item, ["id", "source", "kind", "title", "url", "revision", "permalink", "retrieved", "license", "licenseUrl", "credit", "changes", "text"]);
+    const apps = appAccess(item, catalogue);
+    if (!apps) {
+      errors.push(`${item.id}: the catalogue doesn't let an app use this piece, so it can't be built`);
+      continue;
+    }
+    const entry = pick(item, ["id", "source"]);
+    entry.sourceName = catalogue.get(item.source).name;
+    entry.apps = apps;
+    Object.assign(entry, pick(item, ["kind", "title", "url", "revision", "permalink", "retrieved", "license", "licenseUrl", "credit", "changes", "text"]));
     // Conditions the source's terms put on a link, so an app can obey them without reading the catalogue's notes.
     const linking = catalogue.get(item.source)?.linking;
     if (item.kind === "link" && linking) entry.linking = pick(linking, ["external", "freeOnly"]);
@@ -472,9 +501,11 @@ export function buildLibrary({ root = bankRoot } = {}) {
       assets.set(name, bytes);
       entry.image = { file: name, width: item.width, height: item.height, alt: item.alt };
     }
+    entry.concepts = [...item.concepts];
     built.push(entry);
     for (const ref of item.concepts) byConcept.set(ref, [...(byConcept.get(ref) ?? []), item.id]);
   }
+  if (errors.length) return result;
   const concepts = Object.fromEntries([...byConcept.keys()].sort().map((ref) => [ref, byConcept.get(ref)]));
   const assetNames = [...assets.keys()].sort();
   const revision = sha256(JSON.stringify({ concepts, items: built, assets: assetNames })).slice(0, 16);
@@ -482,6 +513,32 @@ export function buildLibrary({ root = bankRoot } = {}) {
   result.items = built.length;
   result.files.set(INDEX_FILE, json({ formatVersion: FORMAT_VERSION, revision, concepts, items: built }));
   for (const name of assetNames) result.files.set(name, assets.get(name));
+  return result;
+}
+
+/**
+ * The source catalogue as an app reads it, `sources-index.json`: `{ files, sources, errors, revision }`. Only sources an
+ * app may show or link to (`apps` show or link) are listed, by id, each with what the app needs to credit it and to
+ * offer it for a subject. `subjects` is the bank's subject ids the source is tagged for, empty for a general source.
+ */
+export function buildSourcesIndex({ root = bankRoot } = {}) {
+  const catalogue = loadCatalogue(root);
+  const subjects = new Set(existsSync(join(root, "subjects")) ? readdirSync(join(root, "subjects"), { withFileTypes: true }).filter((entry) => entry.isDirectory()).map((entry) => entry.name) : []);
+  const result = { files: new Map(), sources: 0, errors: [], revision: null };
+  const sources = [];
+  for (const entry of [...catalogue.values()].sort((a, b) => a.id.localeCompare(b.id))) {
+    if (!["show", "link"].includes(entry.apps)) continue;
+    for (const subject of entry.subjects ?? []) if (!subjects.has(subject)) result.errors.push(`${entry.id}: subjects names “${subject}”, which isn't a subject in the bank`);
+    const built = pick(entry, ["id", "name", "url", "license", "licenseUrl", "attribution", "apps"]);
+    built.subjects = [...(entry.subjects ?? [])].sort();
+    if (entry.linking) built.linking = pick(entry.linking, ["external", "freeOnly"]);
+    sources.push(built);
+  }
+  if (result.errors.length) return result;
+  const revision = sha256(JSON.stringify(sources)).slice(0, 16);
+  result.revision = revision;
+  result.sources = sources.length;
+  result.files.set(SOURCES_FILE, json({ formatVersion: FORMAT_VERSION, revision, sources }));
   return result;
 }
 

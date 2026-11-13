@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/dehydration-reaction",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Dehydration reaction",
+  "url": "https://en.wikipedia.org/wiki/Dehydration_reaction",
+  "revision": 1367976503,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Dehydration_reaction&oldid=1367976503",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Dehydration reaction” by Wikipedia contributors. Plain text of the lead section. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section",
+  "text": "In chemistry, a dehydration reaction is a chemical reaction that involves the loss of an H2O from the reacting molecule(s) or ion(s). This reaction results in the release of the H2O as water. When the reaction involves the coupling of two molecules into a single molecule it is referred to as a condensation reaction. Dehydration reactions are common processes in the manufacture of chemical compounds as well as naturally occurring within living organisms.\n\nThe reverse of a dehydration reaction is called a hydration reaction. The reverse of a condensation reaction yielding water is called hydrolysis.",
+  "concepts": [
+    "biology/dehydration-synthesis"
+  ]
+}

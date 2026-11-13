@@ -72,6 +72,8 @@ node tools/library.mjs validate
 | `library-index.json` | `concepts`: for each concept ref, the IDs of the items that support it. `items`: every item, with its text, licence, credit and changes inline, a picture as `image: { file, width, height, alt }`, and on a link the `linking` conditions its source's catalogue entry sets (`external`: open the source's own site outside the app; `freeOnly`: never behind a paid feature). `revision` changes when anything does. |
 | `libraryasset-<hash>.<ext>` | A picture, named by the first 16 hex digits of its SHA-256. |
 
+Each item in the index also carries `sourceName`, `apps` (`show` for stored text or a picture, `link` for a link) and `concepts`. A piece is built only if the catalogue lets an app use its source (and part): never one whose `apps` is `none` or `private`. `node tools/build.mjs --app --app-dir <folder>` writes these files, with `sources-index.json`, into an app's copy of the bank (`FORMAT.md`, An app's copy).
+
 The same source gives the same bytes. It's separate from the bank's build, `tools/build.mjs`, whose output the library never changes.
 
 An app shows a piece with its `credit.line`, which names the licence and what was changed, with the title linked to its `url` (or `permalink`) and the licence name linked to `licenseUrl`. Follow the source's `attribution` in the catalogue. Text and pictures under CC BY-SA stay under CC BY-SA, changes included.

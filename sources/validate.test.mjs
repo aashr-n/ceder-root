@@ -123,3 +123,12 @@ test("linking conditions are true flags on a source an app may link to, with an 
   const { url, ...noUrl } = linked;
   assert.match(validate(noUrl).out, /needs the url a link opens/);
 });
+
+test("subjects must be the bank's own subject ids, on a source an app may show or link to", () => {
+  assert.equal(validate({ ...base, subjects: ["biology", "chemistry"] }).code, 0);
+  assert.match(validate({ ...base, subjects: ["biologyy"] }).out, /“biologyy”, which isn't a subject in the bank/);
+  assert.equal(validate({ ...base, subjects: [] }).code, 1);
+  assert.equal(validate({ ...base, subjects: ["biology", "biology"] }).code, 1);
+  assert.equal(validate({ ...base, subjects: "biology" }).code, 1);
+  assert.match(validate({ ...base, apps: "none", subjects: ["biology"] }).out, /no app offers it for a subject/);
+});

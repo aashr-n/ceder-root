@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/metastasis",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Metastasis",
+  "url": "https://en.wikipedia.org/wiki/Metastasis",
+  "revision": 1383422101,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Metastasis&oldid=1383422101",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Metastasis” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "Metastasis is the spread of a pathogenic agent from an initial or primary site to a different or secondary site within the host's body; the term is typically used when referring to metastasis by a cancerous tumor. The newly pathological sites, then, are metastases (mets). It is generally distinguished from cancer invasion, which is the direct extension and penetration by cancer cells into neighboring tissues.\n\nCancer occurs after cells are genetically altered to proliferate rapidly and indefinitely. This uncontrolled proliferation by mitosis produces a primary heterogeneic tumour. The cells which constitute the tumor eventually undergo metaplasia, followed by dysplasia then anaplasia, resulting in a malignant phenotype. This malignancy allows for invasion into the circulation, followed by invasion to a second site for tumorigenesis.",
+  "concepts": [
+    "biology/metastasis"
+  ]
+}

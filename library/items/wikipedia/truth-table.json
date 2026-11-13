@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/truth-table",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Truth table",
+  "url": "https://en.wikipedia.org/wiki/Truth_table",
+  "revision": 1384621587,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Truth_table&oldid=1384621587",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Truth table” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "A truth table is a mathematical table used in logic—specifically in connection with Boolean algebra, Boolean functions, and propositional calculus—which sets out the functional values of logical expressions on each of their functional arguments, that is, for each combination of values taken by their logical variables. In particular, truth tables can be used to show whether a propositional expression is true for all legitimate input values, that is, logically valid.\n\nA truth table has one column for each input variable (for example, A and B), and one final column showing the result of the logical operation that the table represents (for example, A XOR B). Each row of the truth table contains one possible configuration of the input variables (for instance, A=true, B=false), and the result of the operation for those values.",
+  "concepts": [
+    "discrete-mathematics/truth-table"
+  ]
+}

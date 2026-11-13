@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/lipid",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Lipid",
+  "url": "https://en.wikipedia.org/wiki/Lipid",
+  "revision": 1383530663,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Lipid&oldid=1383530663",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Lipid” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "Lipids are a broad group of organic compounds that include fats, waxes, sterols, fat-soluble vitamins (such as vitamins A, D, E and K), monoglycerides, diglycerides, phospholipids, and others. The functions of lipids include storing energy, signaling, and acting as structural components of cell membranes. Lipids have applications in the cosmetic and food industries, and in nanotechnology.",
+  "concepts": [
+    "biology/lipid"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/signal-transduction",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Signal transduction",
+  "url": "https://en.wikipedia.org/wiki/Signal_transduction",
+  "revision": 1381762214,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Signal_transduction&oldid=1381762214",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Signal transduction” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "Signal transduction is the process by which a chemical or physical signal is transmitted through a cell as a series of molecular events. Proteins responsible for detecting stimuli are generally termed receptors, although in some cases the term sensor is used. The changes elicited by ligand binding (or signal sensing) in a receptor give rise to a biochemical cascade, which is a chain of biochemical events known as a signaling pathway.",
+  "concepts": [
+    "biology/signal-transduction"
+  ]
+}

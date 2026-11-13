@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/tight-junction",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Tight junction",
+  "url": "https://en.wikipedia.org/wiki/Tight_junction",
+  "revision": 1372975222,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Tight_junction&oldid=1372975222",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Tight junction” by Wikipedia contributors. Plain text of the lead section. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section",
+  "text": "Tight junctions, also known as occluding junctions or zonulae occludentes (singular, zonula occludens), are multiprotein junctional complexes between epithelial cells, sealing and preventing leakage of solutes and water. They also play a critical role maintaining the structure and permeability of endothelial cells. Tight junctions may also serve as leaky pathways by forming selective channels for small cations, anions, or water. The corresponding junctions that occur in invertebrates are septate junctions.",
+  "concepts": [
+    "biology/tight-junction"
+  ]
+}

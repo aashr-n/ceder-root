@@ -209,4 +209,16 @@ Every artifact has `id` (unique in the pack), `kind`, `title`, `alt` (what it sh
 
 In a built pack, a diagram's `file` becomes `image: { file, width, height }` (a PNG 1200 pixels wide), a model's `files` become `usdz` and `glb` asset names with `poster` as an image, items lose `verification`, a choice item keeps `mistakes` only if they were checked, and items that aren't verified are left out. A concept left with no items stays, so prerequisites still resolve. The build is deterministic: the same source gives the same bytes.
 
-An app that ships a copy of the built bank keeps it in step with `node tools/build.mjs --app --app-dir <folder>`, which also writes the built bank there, and `--check-app --app-dir <folder>`, which fails if that folder isn't what the build makes.
+## An app's copy
+
+An app that ships a copy keeps it in step with `node tools/build.mjs --app --app-dir <folder>`, which also writes the built bank there, and `--check-app --app-dir <folder>`, which fails if that folder isn't exactly what the build makes. The copy is the built bank above plus the human-made material the catalogue lets an app use (`library/README.md`, `sources/README.md`). It is one flat folder; `dist/` itself holds the bank's files only.
+
+| File | |
+|---|---|
+| `library-index.json` | The library's built index: `formatVersion`, `revision`, `concepts` (each concept ref's item IDs) and `items`. |
+| `libraryasset-<hash>.<ext>` | A stored picture, named by the first 16 hex digits of its SHA-256. |
+| `sources-index.json` | `formatVersion`, `revision` and `sources`: the catalogue's sources an app may show or link to. |
+
+A `library-index.json` item has `id`, `source` (the source's catalogue ID), `sourceName`, `apps`, `kind`, `title`, `url`, then, where it has them, `revision`, `permalink`, `retrieved`, `license`, `licenseUrl`, `credit` (`authors`, `line`), `changes`, `text`, `image` (`file`, `width`, `height`, `alt`) and `linking`, and last `concepts`, the refs it supports. `apps` is `show` for stored text or a picture (show it in full, with `credit.line`, the title linked to `url` or `permalink`, and the licence named and linked to `licenseUrl`) and `link` for a link (show only the title, linked to `url`, and obey `linking`). A `sources-index.json` source has `id`, `name`, `url`, `license`, `licenseUrl`, `attribution`, `apps` (`show` or `link`), `subjects` (the subject IDs it is tagged for, empty for a general source) and, where its terms set conditions on a link, `linking`.
+
+Only what the catalogue allows is exported. A piece or source whose `apps` is `none` or `private`, that isn't in `sources/entries/`, or that is only in `sources/set-aside/` can't be built: the build stops and writes nothing, the bank included.

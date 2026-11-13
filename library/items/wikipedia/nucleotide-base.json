@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/nucleotide-base",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Nucleotide base",
+  "url": "https://en.wikipedia.org/wiki/Nucleotide_base",
+  "revision": 1358034339,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Nucleotide_base&oldid=1358034339",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Nucleotide base” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "Nucleotide bases (also nucleobases, nitrogenous bases) are nitrogen-containing biological compounds that form nucleosides, which, in turn, are components of nucleotides, with all of these monomers constituting the basic building blocks of nucleic acids. The ability of nucleobases to form base pairs and to stack one upon another leads directly to long-chain helical structures such as deoxyribonucleic acid (DNA). Five nucleobases—adenine (A), cytosine (C), guanine (G), thymine (T), and uracil (U)—are called primary or canonical. They function as the fundamental units of the genetic code, with the bases A, C, G and T being found in DNA while A, C, G and U are found in RNA. Thymine and uracil are distinguished by merely the presence or absence of a methyl group on the fifth carbon (C5) of these heterocyclic six-membered rings.\n\nIn addition, some viruses have aminoadenine (Z) instead of adenine. It differs in having an extra amine group, creating a more stable bond to thymine.",
+  "concepts": [
+    "biology/nitrogenous-base"
+  ]
+}

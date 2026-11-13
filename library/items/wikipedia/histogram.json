@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/histogram",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Histogram",
+  "url": "https://en.wikipedia.org/wiki/Histogram",
+  "revision": 1384946941,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Histogram&oldid=1384946941",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Histogram” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "A histogram is a visual representation of the distribution of quantitative data. To construct a histogram, the first step is to \"bin\" (or \"bucket\") the range of values— divide the entire range of values into a series of intervals—and then count how many values fall into each interval. The bins are usually specified as consecutive, non-overlapping intervals of a variable. The bins (intervals) are adjacent and are typically (but not required to be) of equal size.\n\nHistograms give a rough sense of the density of the underlying distribution of the data, and often for density estimation: estimating the probability density function of the underlying variable. The total area of a histogram used for probability density is always normalized to 1. If the length of the intervals on the x-axis are all 1, then a histogram is identical to a relative frequency plot.",
+  "concepts": [
+    "statistics/histogram"
+  ]
+}

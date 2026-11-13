@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/chargaff-s-rules",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Chargaff's rules",
+  "url": "https://en.wikipedia.org/wiki/Chargaff's_rules",
+  "revision": 1374887856,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Chargaff%27s_rules&oldid=1374887856",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Chargaff's rules” by Wikipedia contributors. Plain text of the lead section. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section",
+  "text": "Chargaff's rules (given by Erwin Chargaff) state that in the DNA of any species and any organism, the amount of guanine should be equal to the amount of cytosine and the amount of adenine should be equal to the amount of thymine. Further, a 1:1 stoichiometric ratio of purine and pyrimidine bases (i.e., A+G=T+C) should exist. This pattern is found in both strands of the DNA. They were discovered by Austrian-born chemist Erwin Chargaff in the late 1940s.",
+  "concepts": [
+    "biology/chargaffs-rules"
+  ]
+}

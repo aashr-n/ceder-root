@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/free-fall",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Free fall",
+  "url": "https://en.wikipedia.org/wiki/Free_fall",
+  "revision": 1380780171,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Free_fall&oldid=1380780171",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Free fall” by Wikipedia contributors. Plain text of the lead section, shortened to its first 3 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 3 paragraphs",
+  "text": "In classical mechanics, free fall is any motion of a body where gravity is the only force acting upon it.\n\nA freely falling object may not necessarily be falling down in the vertical direction. If the common definition of the word \"fall\" is used, an object moving upwards is not considered to be falling, but using scientific definitions, if it is subject to only the force of gravity, it is said to be in free fall. The Moon is thus in free fall around the Earth, though its orbital speed keeps it in very far orbit from the Earth's surface.\n\nIn a roughly uniform gravitational field, gravity acts on each part of a body approximately equally. When there are no other forces, such as the normal force exerted between a body (e.g. an astronaut in orbit) and its surrounding objects, it will result in the sensation of weightlessness, a condition that also occurs when the gravitational field is weak (such as when the body is far away from any source of gravity).",
+  "concepts": [
+    "physics/free-fall"
+  ]
+}

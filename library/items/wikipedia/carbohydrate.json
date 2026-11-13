@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/carbohydrate",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Carbohydrate",
+  "url": "https://en.wikipedia.org/wiki/Carbohydrate",
+  "revision": 1382924572,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Carbohydrate&oldid=1382924572",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Carbohydrate” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "A carbohydrate is a sugar (saccharide), a polysaccharide such as starch, or a derivative of these compounds. For many carbohydrates such as simple sugars, the carbon-to-hydrogen-to-oxygen atomic ratio is 1:2:1 so their empirical formula is CH2O and their molecular formulas have the form Cn(H2O)n. Along with amino acids, fats, and nucleic acids, the carbohydrates are one of the major families of biomolecules.\n\nCarbohydrates perform numerous roles in living organisms. Polysaccharides serve as an energy store (e.g., starch and glycogen) and as structural components (e.g., cellulose in plants and chitin in arthropods and fungi). The 5-carbon monosaccharide ribose is an important component of coenzymes (e.g., ATP, FAD and NAD) and the backbone of the genetic molecule known as RNA. The related deoxyribose is a component of DNA. Saccharides and their derivatives play key roles in the immune system, fertilization, preventing pathogenesis, blood clotting, and development.",
+  "concepts": [
+    "biology/carbohydrate"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/chemiosmosis",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Chemiosmosis",
+  "url": "https://en.wikipedia.org/wiki/Chemiosmosis",
+  "revision": 1384510876,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Chemiosmosis&oldid=1384510876",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Chemiosmosis” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "Chemiosmosis is the movement of ions across a semipermeable membrane through an integral membrane protein, down their electrochemical gradient. An important example is the formation of adenosine triphosphate (ATP) by the movement of hydrogen ions (H+) through ATP synthase during cellular respiration or photophosphorylation.\n\nHydrogen ions, or protons, will diffuse from a region of high proton concentration to a region of lower proton concentration, and an electrochemical concentration gradient of protons across a membrane can be harnessed to make ATP. This process is related to osmosis, the movement of water across a selective membrane, which is why it is called \"chemiosmosis\".",
+  "concepts": [
+    "biology/chemiosmosis"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/gap-junction",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Gap junction",
+  "url": "https://en.wikipedia.org/wiki/Gap_junction",
+  "revision": 1378381928,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Gap_junction&oldid=1378381928",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Gap junction” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "Gap junctions are membrane channels between adjacent cells that allow the direct exchange of cytoplasmic substances, such as small molecules, substrates, and metabolites. Gap junctions were first described as close appositions alongside tight junctions, but based on electron microscopy studies, they were later renamed gap junctions to distinguish them from tight junctions. They bridge a 2-4 nm gap between cell membranes.\n\nGap junctions use protein complexes known as connexons, composed of connexin proteins to connect one cell to another. Gap junction proteins include the more than 26 types of connexin, as well as at least 12 non-connexin components that make up the gap junction complex or nexus, including the tight junction protein ZO-1—a protein that holds membrane content together and adds structural clarity to a cell, sodium channels, and aquaporin.",
+  "concepts": [
+    "biology/gap-junction"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/properties-of-water",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Properties of water",
+  "url": "https://en.wikipedia.org/wiki/Properties_of_water",
+  "revision": 1384697386,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Properties_of_water&oldid=1384697386",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Properties of water” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "Water (H2O) is a polar inorganic compound that is, at room temperature, a tasteless and odorless liquid, which is nearly colorless apart from an inherent hint of blue. It is by far the most studied chemical compound and is described as the \"universal solvent\" and the \"solvent of life\". It is the most abundant substance on the surface of Earth and the only common substance to exist as a solid, liquid, and gas on Earth's surface. It is also the third most abundant molecule in the universe (behind molecular hydrogen and carbon monoxide).\n\nWater molecules form hydrogen bonds with each other and are strongly polar. This polarity allows them to dissociate ions in salts and bond to other polar substances such as alcohols and acids, thus dissolving them. Their hydrogen bonding causes their many unique properties, such as having a solid form less dense than its liquid form, a relatively high boiling point of 100 °C for its molar mass, and a high heat capacity.",
+  "concepts": [
+    "biology/water-properties"
+  ]
+}

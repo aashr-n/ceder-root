@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/diffusion",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Diffusion",
+  "url": "https://en.wikipedia.org/wiki/Diffusion",
+  "revision": 1376558677,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Diffusion&oldid=1376558677",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Diffusion” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "Diffusion is the net movement of anything (for example, atoms, ions, molecules, energy) generally from a region of higher concentration to a region of lower concentration. Diffusion is driven by a gradient in Gibbs free energy or chemical potential. It is possible to diffuse \"uphill\" from a region of lower concentration to a region of higher concentration, as in spinodal decomposition. Diffusion is a stochastic process due to the inherent randomness of the diffusing entity and can be used to model many real-life stochastic scenarios. Therefore, diffusion and the corresponding mathematical models are used in several fields beyond physics, such as statistics, probability theory, information theory, neural networks, finance, and marketing.",
+  "concepts": [
+    "biology/diffusion"
+  ]
+}

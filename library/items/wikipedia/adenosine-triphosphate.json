@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/adenosine-triphosphate",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Adenosine triphosphate",
+  "url": "https://en.wikipedia.org/wiki/Adenosine_triphosphate",
+  "revision": 1384091254,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Adenosine_triphosphate&oldid=1384091254",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Adenosine triphosphate” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "Adenosine triphosphate (ATP) is a nucleoside triphosphate that provides free energy of approximately 58 kJ/mol (0.6 eV) to drive and support many processes in living cells, such as muscle contraction, nerve impulse propagation, and chemical synthesis. Found in all known forms of life, it is often referred to as the \"molecular unit of currency\" for intracellular energy transfer.\n\nWhen consumed in a metabolic process, ATP converts either to adenosine diphosphate (ADP) or to adenosine monophosphate (AMP). Other processes, such as oxidative phosphorylation or substrate-level phosphorylation, regenerate ATP. ATP is also a precursor to DNA and RNA, and is used as a coenzyme. Daily, an average adult human recycles through synthesis and hydrolysis around 50 kilograms of ATP (about 100 moles).",
+  "concepts": [
+    "biology/atp"
+  ]
+}

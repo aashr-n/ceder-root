@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/atom",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Atom",
+  "url": "https://en.wikipedia.org/wiki/Atom",
+  "revision": 1384671172,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Atom&oldid=1384671172",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Atom” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "Atoms are the basic particles of the chemical elements and the fundamental building blocks of matter. An atom consists of a nucleus of protons and generally neutrons, surrounded by an electromagnetically bound swarm of electrons. The chemical elements are distinguished from each other by the number of protons that are in their atoms. For example, any atom that contains 11 protons is sodium, and any atom that contains 29 protons is copper. Atoms with the same number of protons but a different number of neutrons are called isotopes of the same element.\n\nAtoms are extremely small, typically around 100 picometers across. A human hair is about a million carbon atoms wide. Atoms are smaller than the shortest wavelength of visible light, which means humans cannot see atoms with conventional microscopes. They are so small that accurately predicting their behavior using classical physics is not possible due to quantum effects.",
+  "concepts": [
+    "biology/atom"
+  ]
+}

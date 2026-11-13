@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/cytoskeleton",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Cytoskeleton",
+  "url": "https://en.wikipedia.org/wiki/Cytoskeleton",
+  "revision": 1380962901,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Cytoskeleton&oldid=1380962901",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Cytoskeleton” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "The cytoskeleton is a complex, dynamic network of interlinking protein filaments present in the cytoplasm of all cells, including those of bacteria and archaea. In eukaryotes, it extends from the cell nucleus to the cell membrane and is composed of similar proteins in the various organisms. It is composed of three main components: microfilaments, intermediate filaments, and microtubules, and these are all capable of rapid growth and/or disassembly depending on the cell's requirements.",
+  "concepts": [
+    "biology/cytoskeleton"
+  ]
+}

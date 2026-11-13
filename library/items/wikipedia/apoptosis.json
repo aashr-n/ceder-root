@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/apoptosis",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Apoptosis",
+  "url": "https://en.wikipedia.org/wiki/Apoptosis",
+  "revision": 1381329138,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Apoptosis&oldid=1381329138",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Apoptosis” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "Apoptosis (from Ancient Greek: ἀπόπτωσις, romanized: apóptōsis, lit. 'falling off') is a form of programmed cell death that occurs in multicellular organisms and in some eukaryotic, single-celled microorganisms such as yeast. Biochemical events lead to characteristic cellular changes (morphology) and death. These changes include blebbing, cell shrinkage, nuclear fragmentation, chromatin condensation, DNA fragmentation, and mRNA decay. The average adult human loses 50 to 70 billion cells each day to apoptosis. For the average human child between 8 and 14 years old, each day the approximate loss is 20 to 30 billion cells.",
+  "concepts": [
+    "biology/apoptosis"
+  ]
+}
