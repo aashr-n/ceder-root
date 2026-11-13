@@ -6,6 +6,10 @@
   "license": "CC-BY-4.0",
   "apps": "show",
   "bank": "none",
+  "subjects": [
+    "anatomy-and-physiology",
+    "biology"
+  ],
   "attribution": "The credit line the database asks for (see parts), with the licence name linked to https://creativecommons.org/licenses/by/4.0/, and a note when the piece was changed.",
   "checked": {
     "date": "2026-11-11",

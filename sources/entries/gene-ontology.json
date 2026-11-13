@@ -7,6 +7,9 @@
   "licenseUrl": "https://geneontology.org/docs/go-citation-policy/",
   "apps": "show",
   "bank": "none",
+  "subjects": [
+    "biology"
+  ],
   "attribution": "\"Gene Ontology data from the <release date> release (DOI:<release DOI>) is made available under the terms of the CC BY 4.0 license\", with the licence name linked to https://creativecommons.org/licenses/by/4.0/; the term's ID linked to its PURL (https://purl.obolibrary.org/obo/GO_<id>); and a note when a definition shown was changed.",
   "checked": {
     "date": "2026-11-11",

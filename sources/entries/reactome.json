@@ -7,6 +7,9 @@
   "licenseUrl": "https://reactome.org/license",
   "apps": "show",
   "bank": "none",
+  "subjects": [
+    "biology"
+  ],
   "attribution": "\"Reactome\", linked to https://reactome.org, with the illustration's or icon's name linked to its page where it has one; \"CC BY 4.0\", linked to https://creativecommons.org/licenses/by/4.0/; and a note when it was changed.",
   "checked": {
     "date": "2026-11-11",

@@ -7,6 +7,9 @@
   "licenseUrl": "https://raw.githubusercontent.com/OpenDSA/OpenDSA/master/MIT-license.txt",
   "apps": "show",
   "bank": "none",
+  "subjects": [
+    "computer-science"
+  ],
   "attribution": "The module's title, linked to its source file; the copyright line of the file shown (for example \"Copyright (c) 2012-2020 by the OpenDSA Project Contributors\"); and the MIT permission notice, reachable from where the content is shown.",
   "access": "Source files from the repository's master branch, raw.githubusercontent.com/OpenDSA/OpenDSA/master/.",
   "checked": {

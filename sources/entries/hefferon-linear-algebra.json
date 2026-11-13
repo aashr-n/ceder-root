@@ -7,6 +7,9 @@
   "licenseUrl": "https://hefferon.net/source.html",
   "apps": "show",
   "bank": "none",
+  "subjects": [
+    "linear-algebra"
+  ],
   "attribution": "\"Jim Hefferon, Linear Algebra\", linked to https://hefferon.net/linearalgebra/, with the section named; \"CC BY-SA 3.0 US\", linked to https://creativecommons.org/licenses/by-sa/3.0/us/; and, when the text shown was shortened or changed, a note that it was.",
   "checked": {
     "date": "2026-11-11",

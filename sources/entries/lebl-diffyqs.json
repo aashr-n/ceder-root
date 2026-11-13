@@ -7,6 +7,9 @@
   "licenseUrl": "https://www.jirka.org/diffyqs/",
   "apps": "show",
   "bank": "none",
+  "subjects": [
+    "differential-equations"
+  ],
   "attribution": "\"Jiří Lebl, Notes on Diffy Qs\", with the section's title linked to its page under https://www.jirka.org/diffyqs/html/; \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when the text shown was shortened or changed, a note that it was.",
   "checked": {
     "date": "2026-11-11",

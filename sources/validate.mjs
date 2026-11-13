@@ -5,7 +5,7 @@
 //   node sources/validate.mjs [folder of entries]
 //
 // It doesn't fetch anything. node sources/recheck.mjs re-reads the evidence pages and reports quotes that have gone.
-import { readdirSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { basename, dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import Ajv from "ajv";
@@ -13,6 +13,8 @@ import { SITES } from "../tools/ref.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const folder = process.argv[2] ? resolve(process.argv[2]) : join(here, "entries");
+/** The bank's subject IDs, which an entry's `subjects` must come from. */
+const subjectIds = new Set(existsSync(join(here, "..", "subjects")) ? readdirSync(join(here, "..", "subjects"), { withFileTypes: true }).filter((entry) => entry.isDirectory()).map((entry) => entry.name) : []);
 const check = new Ajv({ allErrors: true }).compile(JSON.parse(readFileSync(join(here, "source.schema.json"), "utf8")));
 
 /** An SPDX licence ID, or one of the two words for a source that has no single licence or whose licence isn't known. */
@@ -51,6 +53,8 @@ for (const file of files) {
   if (ids.has(entry.id)) fail(`another entry has the id "${entry.id}"`);
   ids.add(entry.id);
   licenceRules(entry, fail);
+  for (const subject of entry.subjects ?? []) if (!subjectIds.has(subject)) fail(`subjects names “${subject}”, which isn't a subject in the bank (subjects/)`);
+  if (entry.subjects && !["show", "link"].includes(entry.apps)) fail(`it has subjects, but apps is "${entry.apps}", so no app offers it for a subject`);
   // The bank is CC0, so only what's CC0 can be copied into it, and agents read only what tools/ref.mjs reaches.
   if (entry.bank === "copy" && entry.license !== "CC0-1.0") fail(`bank is "copy", but only a CC0-1.0 source can be copied into the bank`);
   if (entry.bank === "copy" && entry.checked === null) fail(`bank is "copy", but the licence isn't checked`);

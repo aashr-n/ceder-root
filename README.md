@@ -55,10 +55,10 @@ node tools/build.mjs                     writes dist/
 
 CI runs these on every pull request and on `main`.
 
-An app that ships a copy of the built bank can keep it in step with the source:
+An app that ships a copy of the built bank can keep it in step with the source. The copy also gets the human-made material the catalogue lets an app use: `library-index.json`, its `libraryasset-*` files and `sources-index.json` (`FORMAT.md`, An app's copy).
 
 ```
-node tools/build.mjs --app --app-dir <folder>         rebuilds dist/ and replaces the bank files in <folder>
+node tools/build.mjs --app --app-dir <folder>         rebuilds dist/ and replaces the bank, library and source index files in <folder>
 node tools/build.mjs --check-app --app-dir <folder>   changes nothing; fails if <folder> isn't what --app would write
 ```
 
