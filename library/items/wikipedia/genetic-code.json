@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/genetic-code",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Genetic code",
+  "url": "https://en.wikipedia.org/wiki/Genetic_code",
+  "revision": 1381521675,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Genetic_code&oldid=1381521675",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Genetic code” by Wikipedia contributors. Plain text of the lead section. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section",
+  "text": "Genetic code is a set of rules used by living cells to translate information encoded within genetic material (DNA or RNA sequences of nucleotide triplets or codons) into proteins. Translation is accomplished by the ribosome, which links proteinogenic amino acids in an order specified by messenger RNA (mRNA), using transfer RNA (tRNA) molecules to carry amino acids and to read the mRNA three nucleotides at a time. The genetic code is highly similar among all organisms and can be expressed in a simple table with 64 entries.\n\nThe codons specify which amino acid will be added next during protein biosynthesis. With some exceptions, a three-nucleotide codon in a nucleic acid sequence specifies a single amino acid. The vast majority of genes are encoded with a single scheme (see the RNA codon table). That scheme is often called the canonical or standard genetic code, or simply the genetic code, though variant codes (such as in mitochondria) exist.",
+  "concepts": [
+    "biology/genetic-code"
+  ]
+}

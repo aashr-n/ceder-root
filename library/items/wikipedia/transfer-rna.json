@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/transfer-rna",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Transfer RNA",
+  "url": "https://en.wikipedia.org/wiki/Transfer_RNA",
+  "revision": 1382046851,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Transfer_RNA&oldid=1382046851",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Transfer RNA” by Wikipedia contributors. Plain text of the lead section. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section",
+  "text": "Transfer ribonucleic acid (tRNA), formerly referred to as soluble ribonucleic acid (sRNA), is an adaptor molecule composed of RNA, typically 76 to 90 nucleotides in length (in eukaryotes). In a cell, it provides the physical link between the genetic code in messenger RNA (mRNA) and the amino acid sequence of proteins, carrying the correct sequence of amino acids to be combined by the protein-synthesizing machinery, the ribosome. Each three-nucleotide codon in mRNA is complemented by a three-nucleotide anticodon in tRNA. As such, tRNAs are a necessary component of translation, the biological synthesis of new proteins in accordance with the genetic code.",
+  "concepts": [
+    "biology/transfer-rna"
+  ]
+}

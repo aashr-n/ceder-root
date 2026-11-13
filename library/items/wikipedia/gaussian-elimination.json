@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/gaussian-elimination",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Gaussian elimination",
+  "url": "https://en.wikipedia.org/wiki/Gaussian_elimination",
+  "revision": 1380056789,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Gaussian_elimination&oldid=1380056789",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Gaussian elimination” by Wikipedia contributors. Plain text of the lead section, shortened to its first 5 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 5 paragraphs",
+  "text": "In mathematics, Gaussian elimination, also known as row reduction, is an algorithm for solving systems of linear equations. It consists of a sequence of row-wise operations performed on the corresponding matrix of coefficients. This method can also be used to compute the rank of a matrix, the determinant of a square matrix, and the inverse of an invertible matrix. The method is named after Carl Friedrich Gauss (1777–1855).\n\nTo perform row reduction on a matrix, one uses a sequence of elementary row operations to modify the matrix until the lower left-hand corner of the matrix is filled with zeros, as much as possible. There are three types of elementary row operations:\n\nswapping two rows,\n\nmultiplying a row by a nonzero number, and\n\nadding a multiple of one row to another row.",
+  "concepts": [
+    "linear-algebra/gaussian-elimination"
+  ]
+}

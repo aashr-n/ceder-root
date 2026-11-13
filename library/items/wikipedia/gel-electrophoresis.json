@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/gel-electrophoresis",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Gel electrophoresis",
+  "url": "https://en.wikipedia.org/wiki/Gel_electrophoresis",
+  "revision": 1384859108,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Gel_electrophoresis&oldid=1384859108",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Gel electrophoresis” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "Gel electrophoresis is a method for separation and analysis of biomacromolecules (DNA, RNA, proteins, etc.) and their fragments, based on their size and charge as they move through a gel under an electric field. It is used in clinical chemistry to separate proteins by charge or size and in biochemistry and molecular biology to separate a mixed population of DNA and RNA fragments by length, to estimate the size of DNA and RNA fragments, or to separate proteins by charge.",
+  "concepts": [
+    "biology/gel-electrophoresis"
+  ]
+}

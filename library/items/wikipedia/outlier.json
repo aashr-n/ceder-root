@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/outlier",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Outlier",
+  "url": "https://en.wikipedia.org/wiki/Outlier",
+  "revision": 1369038753,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Outlier&oldid=1369038753",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Outlier” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "In statistics, an outlier is a data point that differs significantly from other observations. An outlier may be due to a variability in the measurement, an indication of novel data, or it may be the result of experimental error; the latter are sometimes excluded from the data set. An outlier can be an indication of exciting possibility, but can also cause serious problems in statistical analyses.",
+  "concepts": [
+    "statistics/outlier"
+  ]
+}

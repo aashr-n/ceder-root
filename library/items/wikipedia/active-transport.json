@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/active-transport",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Active transport",
+  "url": "https://en.wikipedia.org/wiki/Active_transport",
+  "revision": 1384671585,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Active_transport&oldid=1384671585",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Active transport” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "In cellular biology, active transport is the movement of molecules or ions across a cell membrane from a region of lower concentration to a region of higher concentration—against the concentration gradient. Active transport requires cellular energy to achieve this movement. There are two types of active transport: primary active transport that uses adenosine triphosphate (ATP), and secondary active transport that uses an electrochemical gradient. This process is in contrast to passive transport, which allows molecules or ions to move down their concentration gradient, from an area of high concentration to an area of low concentration, without using energy.",
+  "concepts": [
+    "biology/active-transport"
+  ]
+}

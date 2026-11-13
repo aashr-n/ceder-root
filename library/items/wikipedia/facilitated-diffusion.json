@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/facilitated-diffusion",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Facilitated diffusion",
+  "url": "https://en.wikipedia.org/wiki/Facilitated_diffusion",
+  "revision": 1342392157,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Facilitated_diffusion&oldid=1342392157",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Facilitated diffusion” by Wikipedia contributors. Plain text of the lead section, shortened to its first 4 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 4 paragraphs",
+  "text": "Facilitated diffusion (also known as facilitated transport or passive-mediated transport) is the process of spontaneous passive transport (as opposed to active transport) of molecules or ions across a biological membrane via specific transmembrane integral proteins. Being passive, facilitated transport does not directly require chemical energy from ATP hydrolysis in the transport step itself; rather, molecules and ions move down their concentration gradient according to the principles of diffusion.\n\nFacilitated diffusion differs from simple diffusion in several ways:\n\nThe transport relies on molecular binding between the cargo and the membrane-embedded channel or carrier protein.\n\nThe rate of facilitated diffusion is saturable with respect to the concentration difference between the two phases; unlike free diffusion which is linear in the concentration difference.",
+  "concepts": [
+    "biology/facilitated-diffusion"
+  ]
+}

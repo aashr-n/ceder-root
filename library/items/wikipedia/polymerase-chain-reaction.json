@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/polymerase-chain-reaction",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Polymerase chain reaction",
+  "url": "https://en.wikipedia.org/wiki/Polymerase_chain_reaction",
+  "revision": 1382133071,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Polymerase_chain_reaction&oldid=1382133071",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Polymerase chain reaction” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "The polymerase chain reaction (PCR) is a laboratory method widely used to amplify copies of specific DNA sequences rapidly, to enable detailed study. PCR was invented in 1983 by American biochemist Kary Mullis at Cetus Corporation. Mullis and biochemist Michael Smith, who had developed other essential ways of manipulating DNA, were jointly awarded the Nobel Prize in Chemistry in 1993.\n\nPCR is fundamental to many of the procedures used in genetic testing, research, including analysis of ancient samples of DNA, and identification of infectious agents. Using PCR, copies of very small amounts of DNA sequences are exponentially amplified in a series of cycles of temperature changes. PCR is now a common and often indispensable technique used in medical laboratory research for a broad variety of applications including biomedical research and forensic science.",
+  "concepts": [
+    "biology/pcr"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/chemical-element",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Chemical element",
+  "url": "https://en.wikipedia.org/wiki/Chemical_element",
+  "revision": 1384320749,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Chemical_element&oldid=1384320749",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Chemical element” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "A chemical element is a species of atom defined by its number of protons. The number of protons is called the atomic number of that element. For example, oxygen has an atomic number of 8: each oxygen atom has 8 protons in its nucleus. Atoms of the same element can have different numbers of neutrons in their nuclei, known as isotopes of the element. Atoms of one element can be transformed into atoms of a different element in nuclear reactions, which change an atom's atomic number. Almost all baryonic matter in the universe is composed of elements (among rare exceptions are neutron stars).\n\nThe term \"chemical element\" is also widely used to mean a pure chemical substance consisting of a single element. For example, oxygen gas consists only of atoms of oxygen.",
+  "concepts": [
+    "chemistry/element"
+  ]
+}

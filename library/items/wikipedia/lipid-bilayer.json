@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/lipid-bilayer",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Lipid bilayer",
+  "url": "https://en.wikipedia.org/wiki/Lipid_bilayer",
+  "revision": 1378374263,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Lipid_bilayer&oldid=1378374263",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Lipid bilayer” by Wikipedia contributors. Plain text of the lead section, shortened to its first paragraph. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first paragraph",
+  "text": "The lipid bilayer (or phospholipid bilayer) is a thin polar membrane made of two layers of lipid molecules. These membranes form a continuous barrier around all cells. The cell membranes of almost all organisms and many viruses are made of a lipid bilayer, as are the nuclear membrane surrounding the cell nucleus, and membranes of the membrane-bound organelles in the cell. The lipid bilayer is the barrier that keeps ions, proteins and other molecules where they are needed and prevents them from diffusing into areas where they should not be. Lipid bilayers are ideally suited to this role, even though they are only a few nanometers in width, because they are impermeable to most water-soluble (hydrophilic) molecules. Bilayers are particularly impermeable to ions, which allows cells to regulate salt concentrations and pH by transporting ions across their membranes using proteins called ion pumps.",
+  "concepts": [
+    "biology/phospholipid-bilayer"
+  ]
+}

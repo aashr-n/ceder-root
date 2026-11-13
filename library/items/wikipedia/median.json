@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/median",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Median",
+  "url": "https://en.wikipedia.org/wiki/Median",
+  "revision": 1380907355,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Median&oldid=1380907355",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Median” by Wikipedia contributors. Plain text of the lead section. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section",
+  "text": "The median of a set of numbers is the value separating the higher half from the lower half of a data sample, a population, or a probability distribution. For a data set, it may be thought of as the \"middle\" value. The basic feature of the median in describing data compared to the mean (often simply described as the \"average\") is that it is not skewed by a small proportion of extreme values, and therefore provides a better representation of the center. Median income, for example, may be a better way to describe the center of the income distribution because increases in the largest incomes alone have no effect on the median. For this reason, the median is of central importance in robust statistics.\n\nMedian is a 2-quantile; it is the value that partitions a set into two equal parts.",
+  "concepts": [
+    "statistics/median"
+  ]
+}

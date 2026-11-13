@@ -1,0 +1,22 @@
+{
+  "id": "wikipedia/tautology-logic",
+  "source": "wikipedia",
+  "part": "text",
+  "kind": "text",
+  "title": "Tautology (logic)",
+  "url": "https://en.wikipedia.org/wiki/Tautology_(logic)",
+  "revision": 1374888675,
+  "permalink": "https://en.wikipedia.org/w/index.php?title=Tautology_%28logic%29&oldid=1374888675",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "credit": {
+    "authors": "Wikipedia contributors",
+    "line": "“Tautology (logic)” by Wikipedia contributors. Plain text of the lead section, shortened to its first 2 paragraphs. Offered under CC BY-SA 4.0."
+  },
+  "changes": "Plain text of the lead section, shortened to its first 2 paragraphs",
+  "text": "In mathematical logic, a tautology (from Ancient Greek: ταυτολογία) is a formula that is true regardless of the interpretation of its component terms, with only the logical constants having a fixed meaning. It is a logical truth. For example, a formula that states \"the ball is green or the ball is not green\" is always true, regardless of what a ball is and regardless of its colour. Tautology is usually, though not always, used to refer to valid formulas of propositional logic.\n\nThe philosopher Ludwig Wittgenstein first applied the term to redundancies of propositional logic in 1921, borrowing from rhetoric, where a tautology is a repetitive statement. In logic, a formula is satisfiable if it is true under at least one interpretation, and thus a tautology is a formula whose negation is unsatisfiable. In other words, it cannot be false.",
+  "concepts": [
+    "discrete-mathematics/tautology-and-contradiction"
+  ]
+}
