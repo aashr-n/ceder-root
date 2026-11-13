@@ -1,0 +1,45 @@
+name: Request a subject
+description: Ask for a subject to be added to Ceder's public bank of concepts and questions.
+title: "Subject request: "
+labels: ["subject-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue is public, and so is the subject it asks for.** Anyone can read it, and the subject becomes part of an open bank.
+
+        Don't write anything from a private course here: no course names or codes, no teacher's or school's name, no assignments, no quotes from course materials, no files. Give only the name of a subject, the way a textbook's index would list it.
+  - type: input
+    id: subject
+    attributes:
+      label: Subject name
+      description: For example "Genetics" or "Macroeconomics". The name of a subject, not of a course.
+      placeholder: Macroeconomics
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Level
+      options:
+        - Secondary school
+        - Introductory college or university
+        - Upper-level college or university
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Public links to open syllabi (optional)
+      description: One link per line, only to openly published pages anyone can read without logging in. They only help a maintainer see what the subject usually covers. Leave this empty if you have none.
+      placeholder: https://example.edu/open-syllabus
+    validations:
+      required: false
+  - type: checkboxes
+    id: public
+    attributes:
+      label: Before you submit
+      options:
+        - label: I understand this issue and the subject it asks for are public, and nothing here comes from a private course.
+          required: true
