@@ -1,0 +1,123 @@
+{
+  "comment": "A draft as the app's tutor function makes it (checkPack, then gradeBlind with item 6 answered wrong), for tools/intake.test.mjs. Made up for the test; nothing about any student.",
+  "pack": {
+    "formatVersion": 1,
+    "id": "molecular-biology.telomeres-and-telomerase",
+    "subject": "molecular-biology",
+    "title": "Telomeres and telomerase",
+    "summary": "How cells copy and protect the ends of their chromosomes.",
+    "license": "CC0-1.0",
+    "concepts": [
+      {
+        "id": "telomeres",
+        "name": "Telomeres",
+        "summary": "Repeated DNA at chromosome ends that protects them from loss and fusion."
+      },
+      {
+        "id": "telomerase",
+        "name": "Telomerase",
+        "summary": "The enzyme that extends telomeres using its own RNA template."
+      }
+    ],
+    "items": [
+      {
+        "id": "molecular-biology.telomeres-and-telomerase.telomeres-1",
+        "concept": "telomeres",
+        "kind": "choice",
+        "difficulty": 1,
+        "prompt": "What are telomeres made of?",
+        "choices": [
+          "Repeated DNA sequences",
+          "Ribosomal proteins",
+          "Lipid caps",
+          "Spindle fibres"
+        ],
+        "answer": 0,
+        "explanation": "Telomeres are tandem repeats of a short DNA sequence; proteins bind them, but they aren't proteins.",
+        "verification": {
+          "status": "draft"
+        }
+      },
+      {
+        "id": "molecular-biology.telomeres-and-telomerase.telomeres-2",
+        "concept": "telomeres",
+        "kind": "choice",
+        "difficulty": 2,
+        "prompt": "Why do telomeres shorten with each round of replication in most somatic cells?",
+        "choices": [
+          "The lagging strand can't be finished at the very end",
+          "DNA polymerase cuts them off on purpose",
+          "Telomeres are digested after mitosis",
+          "Helicase skips the chromosome ends"
+        ],
+        "answer": 0,
+        "explanation": "The last primer on the lagging strand leaves a gap that polymerase can't fill, so the end shortens.",
+        "verification": {
+          "status": "draft"
+        }
+      },
+      {
+        "id": "molecular-biology.telomeres-and-telomerase.telomeres-3",
+        "concept": "telomeres",
+        "kind": "order",
+        "difficulty": 2,
+        "prompt": "Put these in the order they happen as a cell line keeps dividing without telomerase.",
+        "steps": [
+          "Telomeres shorten with each division",
+          "Telomeres reach a critical length",
+          "The cell senses damaged ends",
+          "The cell stops dividing"
+        ],
+        "explanation": "Shortening comes first; at a critical length the ends look like damage, which stops division.",
+        "verification": {
+          "status": "draft"
+        }
+      },
+      {
+        "id": "molecular-biology.telomeres-and-telomerase.telomerase-1",
+        "concept": "telomerase",
+        "kind": "choice",
+        "difficulty": 1,
+        "prompt": "Which molecule serves as telomerase's template?",
+        "choices": [
+          "An RNA it carries",
+          "The leading strand",
+          "A DNA primer",
+          "Messenger RNA from the nucleus"
+        ],
+        "answer": 0,
+        "explanation": "Telomerase is a reverse transcriptase that carries its own RNA template.",
+        "verification": {
+          "status": "draft"
+        }
+      },
+      {
+        "id": "molecular-biology.telomeres-and-telomerase.telomerase-2",
+        "concept": "telomerase",
+        "kind": "choice",
+        "difficulty": 3,
+        "prompt": "A tumour's cells keep dividing for decades. What would you most expect in them?",
+        "choices": [
+          "High telomerase activity",
+          "No telomeres at all",
+          "Very short, shrinking telomeres",
+          "Telomeres made of RNA"
+        ],
+        "answer": 0,
+        "explanation": "Most cancers reactivate telomerase, which keeps telomeres long enough to keep dividing.",
+        "verification": {
+          "status": "draft"
+        }
+      }
+    ],
+    "artifacts": []
+  },
+  "verdicts": {
+    "molecular-biology.telomeres-and-telomerase.telomeres-1": "agreed",
+    "molecular-biology.telomeres-and-telomerase.telomeres-2": "agreed",
+    "molecular-biology.telomeres-and-telomerase.telomeres-3": "agreed",
+    "molecular-biology.telomeres-and-telomerase.telomerase-1": "agreed",
+    "molecular-biology.telomeres-and-telomerase.telomerase-2": "agreed",
+    "molecular-biology.telomeres-and-telomerase.telomerase-3": "disagreed"
+  }
+}

@@ -26,7 +26,9 @@ Only `tools/grade.mjs` marks a question verified. Never write `verified` by hand
 
 ## Asking for a subject
 
-Anyone can ask for a subject the bank doesn't have with the issue form "Request a subject" (`.github/ISSUE_TEMPLATE/subject-request.yml`): https://github.com/aashr-n/ceder-root/issues/new?template=subject-request.yml. It asks only for a subject's name, a level, and optional links to open syllabi, and says the issue is public. An app may open that address, with the template chosen, so a student can type the name themselves. Nothing from a student's course goes in it, and an app never fills it in from one.
+Anyone can ask for a subject the bank doesn't have with the issue form "Request a subject" (`.github/ISSUE_TEMPLATE/subject-request.yml`): https://github.com/aashr-n/ceder-root/issues/new?template=subject-request.yml. It asks only for a subject's name, a level, and optional links to open syllabi, and says the issue is public. An app may open that address, with the template chosen, so a student can type the name themselves. The form is always typed by the person asking: an app never fills it in, and nothing from a student's course goes in it.
+
+Ceder's app has a second, private route, which never opens an issue. A student can send Ceder the subject and topic names in their "What's the bank missing?" list, after reviewing them and editing or removing any; only those names are sent, never a course's name or code, a file name, a quote or anything else from their courses. They can also have an AI write draft questions on one topic, given only the subject's and topic's names, a level and this bank's catalogue. Both wait in Ceder's private review queue until a maintainer takes them in (below). Nothing from the queue is public until it has passed this bank's blind solve and been merged.
 
 To turn a request into a subject, a maintainer:
 
@@ -36,6 +38,19 @@ To turn a request into a subject, a maintainer:
 4. Adds `subjects/<subject>/subject.json` (`FORMAT.md`), because a plan for a subject the bank doesn't have is an error.
 5. Runs `node tools/plan.mjs check plan/<subject>.json` and `node tools/plan.mjs overview`, then writes the first packs from the plan, checked by blind solvers, with the pipeline in `pipeline/README.md` (`node tools/plan.mjs next <subject> 3` lists them, and `pipeline/grow.workflow.js` runs the whole loop).
 6. Runs the checks above and opens a pull request that says `Closes #<issue number>`.
+
+## Taking in what Ceder's app sent
+
+Ceder's maintainers export the review queue as a JSON Lines file (`scripts/bank-queue-export.mjs` in the app's repository, with the queue's service login). A line holds a subject and topic name and how many students sent it, or a draft pack with the models that wrote and checked it. No line holds anything about a student. A draft is text-only choice and order items, written from the names alone, and every item is `draft`: the app's blind second model agreed with each one, which is a first filter, not a verification.
+
+1. Run `node tools/intake.mjs <export.jsonl>`. It checks every line (exactly its keys, the names' rules, `--text-only --kinds=choice,order`, every item exactly `{ "status": "draft" }`, no web or email address) and stages what passes in `.work/intake/`: each draft at `drafts/<id>/pack.json` with `intake.json` beside it, and the topic requests added up in `requests.json`. It prints, for each, the packs in `plan/` and `subjects/` whose names it shares. It exits 1 if a line fails; fix nothing in such a line by hand, and tell the app's maintainers.
+2. Read each draft and request. Reject anything that looks like it came from a private course (a course name or code, a teacher or school, an assignment, a quote), or that isn't a topic of a subject.
+3. Check the topic against `plan/`. If a planned pack covers it, that is where it goes. If none does and the subject is in the bank, add a pack to `plan/<subject>.json` (`plan/README.md`). If the bank doesn't have the subject, follow "Asking for a subject" above first, steps 2 to 5.
+4. Place the draft: `node tools/intake.mjs --place <id> --as <subject>/<pack>`, adding `--concept <draft concept>=<plan concept>` for each concept the plan names differently. It writes only `subjects/<subject>/<pack>/pack.json`, renamed to the plan's pack and concepts, and never overwrites a pack. For questions on a pack that already exists, copy the items into it by hand instead. The queue's ID, the dates and the models stay in `.work/`, which is never committed.
+5. Fill the pack out where the plan asks for more (`pipeline/prompts/author.md`), then run `node tools/validate.mjs subjects/<subject>/<pack> --text-only --kinds=choice,order` and `node tools/plan.mjs check plan/<subject>.json`.
+6. Verify it as any draft is verified: the blind export, two or more solvers, `tools/grade.mjs`, and repairs (`pipeline/README.md`, steps 2 to 5). Only `tools/grade.mjs` marks an item verified.
+7. Run the checks under "The steps" and open a pull request. Say which topic requests it answers, with no student's details.
+8. After it is merged, or if a draft is rejected, the app's maintainers mark the draft's row in the queue `merged` or `rejected` with its ID from `intake.json`.
 
 ## With an agent
 

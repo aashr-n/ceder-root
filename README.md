@@ -29,10 +29,10 @@ plan/       each subject's list of packs to write, and every outside page an age
 sources/    a curated list of outside sources, and what an app or the bank may do with each
 library/    pinned pieces of those sources for apps to show, each under its own licence (not CC0)
 schema/     JSON Schemas for subject.json, pack.json and a plan
-tools/      validate, build, blind export, grading, checking mistakes, plans and outside reading, with their tests
+tools/      validate, build, blind export, grading, checking mistakes, plans, outside reading and taking in drafts from Ceder's app, with their tests
 pipeline/   how a pack gets written and checked, and the prompts the agents follow
 dist/       what the build writes (not committed)
-.work/      blind question files and solvers' answers (not committed)
+.work/      blind question files, solvers' answers and drafts taken in from Ceder's app (not committed)
 ```
 
 ## Checking and building
