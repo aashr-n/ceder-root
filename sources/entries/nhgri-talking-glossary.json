@@ -1,0 +1,40 @@
+{
+  "id": "nhgri-talking-glossary",
+  "name": "NHGRI Talking Glossary of Genomic and Genetic Terms",
+  "url": "https://www.genome.gov/genetics-glossary",
+  "goodFor": "Plain-language definitions of genetics and genomics terms, with a spoken narration for each.",
+  "license": "LicenseRef-US-Government-Public-Domain",
+  "licenseUrl": "https://www.genome.gov/about-nhgri/Policies-Guidance/Copyright",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "biology",
+    "genetics"
+  ],
+  "kinds": [
+    "reference"
+  ],
+  "attribution": "\"Talking Glossary of Genomic and Genetic Terms\", linked to the term's page on https://www.genome.gov/genetics-glossary, with \"Courtesy: National Human Genome Research Institute\" linked to https://www.genome.gov; and a note when the text shown was shortened or changed. Not used to suggest NHGRI endorses Ceder.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://www.genome.gov/about-nhgri/Policies-Guidance/Copyright",
+        "quote": "Text, graphics, videos, illustrations and other information on National Human Genome Research Institute (NHGRI) websites are in the public domain, unless otherwise indicated."
+      },
+      {
+        "url": "https://www.genome.gov/about-nhgri/Policies-Guidance/Copyright",
+        "quote": "You may freely use and distribute this information; however, we request acknowledgement, such as: \"Courtesy: National Human Genome Research Institute\" with a link back to genome.gov."
+      },
+      {
+        "url": "https://www.genome.gov/about-nhgri/Policies-Guidance/Copyright",
+        "quote": "Previously copyrighted text is published on genome.gov from time to time with the permission of the copyright holder."
+      },
+      {
+        "url": "https://www.genome.gov/about-nhgri/Policies-Guidance/Copyright",
+        "quote": "Using a graphic, photo or illustration from genome.gov does not explicitly or implicitly convey NHGRI's endorsement of the site where it is used."
+      }
+    ]
+  },
+  "notes": "Checked against NHGRI's own Copyright Policy page (the site's policy page): text, graphics, videos and illustrations on NHGRI websites are public domain unless otherwise indicated, and may be freely used and distributed; NHGRI asks for acknowledgement (\"Courtesy: National Human Genome Research Institute\") and a link to genome.gov. Excepted: anything marked as otherwise indicated, and previously copyrighted text published with a rights holder's permission, which carries a credit line naming the real owner and is not covered; NHGRI logos and marks are not covered, and use of NHGRI material must not imply endorsement. The glossary term pages read (Allele) show a definition and narration text with no third-party credit line, but the audio files and illustrations were not individually inspected, so check each term page for a credit line before showing it. The policy has no clause against commercial, automated or AI use. The glossary landing page (an A-Z list of terms with short definitions) shows no third-party credit line. The policy page also says the views of authors on genome.gov may not be used for advertising or product endorsement. Definitions are short and aimed at general readers, suitable for introductory courses. The bank's agents don't read it and nothing from it goes into the bank."
+}

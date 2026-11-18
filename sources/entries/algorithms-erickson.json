@@ -1,0 +1,85 @@
+{
+  "id": "algorithms-erickson",
+  "name": "Algorithms (Jeff Erickson), the textbook",
+  "url": "https://jeffe.cs.illinois.edu/teaching/algorithms/",
+  "goodFor": "A free algorithms textbook on recursion, backtracking, dynamic programming, greedy algorithms, graph algorithms and NP-hardness.",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://jeffe.cs.illinois.edu/teaching/algorithms/",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "algorithms",
+    "computer-science"
+  ],
+  "kinds": [
+    "textbook"
+  ],
+  "attribution": "\"Jeff Erickson, Algorithms\", linked to https://jeffe.cs.illinois.edu/teaching/algorithms/ (the author asks for a link back to that page), with the chapter named; \"CC BY 4.0\", linked to https://creativecommons.org/licenses/by/4.0/; and, when the text shown was shortened or changed, a note that it was.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://jeffe.cs.illinois.edu/teaching/algorithms/",
+        "quote": "The textbook Algorithms (in both paper and electronic forms) is licensed under a Creative Commons Attribution 4.0 International license"
+      },
+      {
+        "url": "https://jeffe.cs.illinois.edu/teaching/algorithms/",
+        "quote": "Anyone is welcome to download, print, use, copy, and/or distribute anything on this page, either electronically or on paper."
+      },
+      {
+        "url": "https://jeffe.cs.illinois.edu/teaching/algorithms/",
+        "quote": "If you redistribute any of this material, please include a link back to this web page"
+      },
+      {
+        "url": "https://jeffe.cs.illinois.edu/teaching/algorithms/",
+        "quote": "All other lecture notes are licensed under a more restrictive Attribution-NonCommercial-ShareAlike 4.0 International license"
+      }
+    ]
+  },
+  "parts": [
+    {
+      "id": "textbook",
+      "name": "The textbook Algorithms (1st edition, 2019)",
+      "url": "https://jeffe.cs.illinois.edu/teaching/algorithms/",
+      "license": "CC-BY-4.0",
+      "apps": "show",
+      "attribution": "\"Jeff Erickson, Algorithms\", linked to https://jeffe.cs.illinois.edu/teaching/algorithms/ (the author asks for a link back to that page), with the chapter named; \"CC BY 4.0\", linked to https://creativecommons.org/licenses/by/4.0/; and, when the text shown was shortened or changed, a note that it was.",
+      "checked": {
+        "date": "2026-11-18",
+        "evidence": [
+          {
+            "url": "https://jeffe.cs.illinois.edu/teaching/algorithms/",
+            "quote": "The textbook Algorithms (in both paper and electronic forms) is licensed under a Creative Commons Attribution 4.0 International license"
+          },
+          {
+            "url": "https://jeffe.cs.illinois.edu/teaching/algorithms/",
+            "quote": "Anyone is welcome to download, print, use, copy, and/or distribute anything on this page, either electronically or on paper."
+          },
+          {
+            "url": "https://jeffe.cs.illinois.edu/teaching/algorithms/",
+            "quote": "If you redistribute any of this material, please include a link back to this web page"
+          }
+        ]
+      },
+      "notes": "The author states that the textbook, in paper and electronic form, is CC BY 4.0, and asks for a link back to the page on redistribution. The book is a PDF. Its Image Credits list a few figures that aren't the author's: most are public domain, but one is a portrait included with the artist's permission and one comes from the Yale Law Library under an unnamed Creative Commons licence; those two aren't covered and aren't shown. Chapter epigraphs quote other authors and aren't covered either."
+    },
+    {
+      "id": "lecture-notes",
+      "name": "The other lecture notes on the same page",
+      "url": "https://jeffe.cs.illinois.edu/teaching/algorithms/",
+      "license": "CC-BY-NC-SA-4.0",
+      "apps": "link",
+      "checked": {
+        "date": "2026-11-18",
+        "evidence": [
+          {
+            "url": "https://jeffe.cs.illinois.edu/teaching/algorithms/",
+            "quote": "All other lecture notes are licensed under a more restrictive Attribution-NonCommercial-ShareAlike 4.0 International license"
+          }
+        ]
+      },
+      "notes": "The author says all other lecture notes are under the more restrictive CC BY-NC-SA 4.0. NonCommercial, so link only; the textbook's licence doesn't cover them. The archive of homework, exams and labs (hwex.html) wasn't read and states no licence on the page above, so it is link only as well."
+    }
+  ],
+  "notes": "Checked against the author's Algorithms page, which has no separate terms page: its Permissions paragraph is the terms. Only the textbook is CC BY 4.0, which allows commercial use, so a paid app may show a passage with the credit in attribution. The other lecture notes on the same page are CC BY-NC-SA 4.0 and the homework and exam archive states no licence, so neither is shown (see parts). The book's copyright page (a PDF, so not usable as evidence) repeats CC BY 4.0, and its Image Credits say all figures are the author's except a listed few: those are mostly public domain, but a portrait by Tina Erickson is included with the artist's permission and a figure from the Yale Law Library's \"Legal Trees\" gallery is under an unnamed Creative Commons licence, so those two figures, and the epigraphs quoting other authors, aren't shown. The book is written for Illinois's CS 374, a sophomore-to-junior course, so it sits at the top of lower-division. The bank's agents don't read it and nothing from it goes into the bank."
+}

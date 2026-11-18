@@ -1,0 +1,40 @@
+{
+  "id": "practical-python-programming",
+  "name": "Practical Python Programming (David Beazley)",
+  "url": "https://dabeaz-course.github.io/practical-python/",
+  "goodFor": "Hands-on Python course notes and exercises for someone who already programs in another language.",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://raw.githubusercontent.com/dabeaz-course/practical-python/main/README.md",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "computer-science"
+  ],
+  "kinds": [
+    "lessons",
+    "exercises"
+  ],
+  "attribution": "\"Practical Python Programming\" by David Beazley, linked to https://dabeaz-course.github.io/practical-python/, with the section named; \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when the text shown was shortened or changed, a note that it was. Anything Ceder changes stays under CC BY-SA 4.0.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/dabeaz-course/practical-python/main/README.md",
+        "quote": "Practical Python Programming is licensed under a Creative Commons Attribution ShareAlike 4.0 International License."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/dabeaz-course/practical-python/main/README.md",
+        "quote": "Yes, as long as such works carry the same license terms and provide attribution."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/dabeaz-course/practical-python/main/README.md",
+        "quote": "This is not a course for absolute beginners on how to program a computer."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/dabeaz-course/practical-python/main/LICENSE.md",
+        "quote": "Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:"
+      }
+    ]
+  },
+  "notes": "Read from the project's GitHub repository (README and LICENSE.md, the CC BY-SA 4.0 text), which is the course's home; the GitHub Pages site (dabeaz-course.github.io) was not reachable and was not read, and there is no separate terms page. CC BY-SA 4.0 allows commercial use, so a paid app may show a passage with the credit in attribution; changes Ceder makes must be shared under the same licence. The README's statement is about the course as a whole; it does not list third-party items, so a data file or image from elsewhere in the repository was not checked. It is a course for people who already program (\"not a course for absolute beginners\"), so it suits a second programming course, not a first. The same author's python-mastery course is a different work and was not read. The bank's agents don't read it and nothing from it goes into the bank."
+}

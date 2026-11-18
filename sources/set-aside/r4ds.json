@@ -1,0 +1,30 @@
+{
+  "id": "r4ds",
+  "name": "R for Data Science (Hadley Wickham and others)",
+  "url": "https://r4ds.hadley.nz/",
+  "goodFor": "A standard introduction to importing, tidying, transforming and visualising data in R.",
+  "license": "CC-BY-NC-ND-3.0-US",
+  "licenseUrl": "https://raw.githubusercontent.com/hadley/r4ds/main/LICENSE",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "data-science"
+  ],
+  "kinds": [
+    "textbook"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/hadley/r4ds/main/LICENSE",
+        "quote": "This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 United States License."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/hadley/r4ds/main/LICENSE",
+        "quote": "To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/3.0/us/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA."
+      }
+    ]
+  },
+  "notes": "Read from the book's own GitHub repository (LICENSE; its README confirms the repository holds the source of the book): CC BY-NC-ND 3.0 US. NonCommercial and NoDerivatives, so an app only links to it and may not show or adapt it. The website (r4ds.hadley.nz) and any terms there were not reachable and were not read. The bank's agents don't read it and nothing from it goes into the bank."
+}

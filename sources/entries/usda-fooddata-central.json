@@ -1,0 +1,89 @@
+{
+  "id": "usda-fooddata-central",
+  "name": "USDA FoodData Central",
+  "url": "https://fdc.nal.usda.gov/",
+  "goodFor": "Nutrient composition values for foods, for any nutrition lookup question.",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://fdc.nal.usda.gov/",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "nutrition"
+  ],
+  "kinds": [
+    "data",
+    "reference"
+  ],
+  "attribution": "\"U.S. Department of Agriculture, Agricultural Research Service, Beltsville Human Nutrition Research Center. FoodData Central\", linked to https://fdc.nal.usda.gov/. Credit is requested, not required.",
+  "access": "https://fdc.nal.usda.gov/ (the site's API needs a free key; not used or read here).",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://fdc.nal.usda.gov/",
+        "quote": "USDA FoodData Central data are in the public domain and they are not copyrighted."
+      },
+      {
+        "url": "https://fdc.nal.usda.gov/",
+        "quote": "They are published under CC0 1.0 Universal (CC0 1.0)"
+      },
+      {
+        "url": "https://fdc.nal.usda.gov/",
+        "quote": "No permission is needed for their use, but we request that users list FoodData Central as the source of the data"
+      },
+      {
+        "url": "https://fdc.nal.usda.gov/",
+        "quote": "Label data collected through a public-private partnership."
+      }
+    ]
+  },
+  "parts": [
+    {
+      "id": "usda-data",
+      "name": "Foundation Foods, SR Legacy, FNDDS and Experimental Foods data",
+      "url": "https://fdc.nal.usda.gov/",
+      "license": "CC0-1.0",
+      "apps": "show",
+      "checked": {
+        "date": "2026-11-18",
+        "evidence": [
+          {
+            "url": "https://fdc.nal.usda.gov/",
+            "quote": "USDA FoodData Central data are in the public domain and they are not copyrighted."
+          },
+          {
+            "url": "https://fdc.nal.usda.gov/",
+            "quote": "They are published under CC0 1.0 Universal (CC0 1.0)"
+          }
+        ]
+      },
+      "notes": "CC0 by the site's own licensing statement. These data types are USDA's own analyses and compilations; Experimental Foods comes from research published with USDA, which the statement does not except. Credit is requested, not required."
+    },
+    {
+      "id": "branded-foods",
+      "name": "Branded Foods (USDA Global Branded Food Products Database)",
+      "url": "https://fdc.nal.usda.gov/GBFPD_Documentation/",
+      "license": "CC0-1.0",
+      "apps": "link",
+      "checked": {
+        "date": "2026-11-18",
+        "evidence": [
+          {
+            "url": "https://fdc.nal.usda.gov/",
+            "quote": "Label data collected through a public-private partnership."
+          },
+          {
+            "url": "https://fdc.nal.usda.gov/GBFPD_Documentation/",
+            "quote": "Information in the GBFPD is received from a number of food industry data providers, and these organizations are therefore responsible for the data."
+          },
+          {
+            "url": "https://fdc.nal.usda.gov/GBFPD_Documentation/",
+            "quote": "Mention of trade names, commercial products, or companies in this publication is solely for the purpose of providing specific information and does not imply recommendation nor endorsement by the U.S. Department of Agriculture or others not mentioned."
+          }
+        ]
+      },
+      "notes": "The home page's CC0 statement is not worded to exclude this data type, but its records are supplied by food companies and commercial data vendors (1WorldSync through GS1's network, Euromonitor International, and earlier NielsenIQ Label Insight, whose category system the FAQ calls proprietary), carry brand and product names that are the makers' trademarks, and are not USDA's own work. Kept link only until a page states plainly that the supplied label data are CC0; it is not needed for a nutrition course."
+    }
+  ],
+  "notes": "Checked against the Licensing statement on the site's home page, the About Us page, the FAQ, and the Global Branded Food Products Database documentation; no separate terms-of-use page was found on the site (its footer links go to USDA-wide Privacy Policy, Information Quality and similar pages, which were not read). The statement says FoodData Central data are public domain and published under CC0 1.0, and names no exception. Ceder shows only the USDA data types (Foundation Foods, SR Legacy, FNDDS, Experimental Foods); Branded Foods is link only (see parts), because its label data come from food companies and commercial data vendors and carry their trademarks. Credit (the suggested citation) and telling USDA about a product that uses the data are requested, not required. The licence covers the data, not the site's design, USDA and ARS logos or its videos, which were not checked; USDA's name and logos must not suggest endorsement. Public domain status under US law may not hold outside the US, but the CC0 dedication covers that. The API needs a free api.data.gov key whose terms were not read, and the downloads were not read. The bank's agents don't read it and nothing from it goes into the bank."
+}

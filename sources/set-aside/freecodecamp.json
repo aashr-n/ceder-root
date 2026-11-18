@@ -1,0 +1,31 @@
+{
+  "id": "freecodecamp",
+  "name": "freeCodeCamp curriculum",
+  "url": "https://www.freecodecamp.org/learn/",
+  "goodFor": "Free interactive lessons and projects in HTML, CSS, JavaScript and Python for beginning programmers.",
+  "license": "unknown",
+  "licenseUrl": "https://raw.githubusercontent.com/freeCodeCamp/freeCodeCamp/main/README.md",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "computer-science"
+  ],
+  "kinds": [
+    "lessons",
+    "exercises"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/freeCodeCamp/freeCodeCamp/main/README.md",
+        "quote": "The computer software is licensed under the [BSD-3-Clause](LICENSE.md) license."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/freeCodeCamp/freeCodeCamp/main/README.md",
+        "quote": "The learning resources in the [`/curriculum`](/curriculum) directory including their subdirectories therein are copyright © 2014 freeCodeCamp.org"
+      }
+    ]
+  },
+  "notes": "The repository README gives the platform's software a BSD 3-Clause licence but says only that the learning resources in /curriculum are copyright freeCodeCamp.org: it grants no licence to the lessons, so they are in effect all rights reserved. The website freecodecamp.org and its terms of service weren't reachable, so any conditions they put on links weren't read. Link only. The bank's agents don't read it and nothing from it goes into the bank."
+}

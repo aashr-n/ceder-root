@@ -1,0 +1,44 @@
+{
+  "id": "ung-british-literature-i",
+  "name": "British Literature I: Middle Ages to the Eighteenth Century and Neoclassicism (Robinson and Getty)",
+  "url": "https://oer.galileo.usg.edu/english-textbooks/17/",
+  "goodFor": "An anthology of British literature from the Middle Ages to the eighteenth century, with introductions and review questions, for a survey course.",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://oer.galileo.usg.edu/english-textbooks/17/",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "literature"
+  ],
+  "kinds": [
+    "texts",
+    "textbook"
+  ],
+  "attribution": "\"British Literature I: Middle Ages to the Eighteenth Century and Neoclassicism\", by Bonnie J. Robinson and Laura Getty (University of North Georgia Press), linked to https://oer.galileo.usg.edu/english-textbooks/17/; \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when the text shown was shortened or changed, a note that it was.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://oer.galileo.usg.edu/english-textbooks/17/",
+        "quote": "This work is licensed under a Creative Commons Attribution-Share Alike 4.0 International License"
+      },
+      {
+        "url": "https://oer.galileo.usg.edu/english-textbooks/17/",
+        "quote": "This textbook is an Open Access Resource. It can be reused, remixed, and reedited freely without seeking permission."
+      },
+      {
+        "url": "https://oer.galileo.usg.edu/english-textbooks/17/",
+        "quote": "Featuring over 50 authors and full texts of their works"
+      },
+      {
+        "url": "https://oer.galileo.usg.edu/english-textbooks/17/",
+        "quote": "Over 100 historical images"
+      },
+      {
+        "url": "https://oer.galileo.usg.edu/faq.html",
+        "quote": "Each document in ALG Commons is classified by its Creative Commons license."
+      }
+    ]
+  },
+  "notes": "Checked against the book's own page in the GALILEO Open Learning Materials repository (ALG Commons, run by Affordable Learning Georgia, the book's co-publisher with the University of North Georgia Press), which states CC BY-SA 4.0 for the whole work; the repository's FAQ says each document carries its own Creative Commons licence, so the licence is set per book and only this book was read. CC BY-SA allows commercial use; what Ceder changes stays under CC BY-SA 4.0. The anthology reprints works by over 50 authors and has over 100 historical images; the page does not say where each text, translation or picture comes from, so a picture or a translation of an older-language work (for example Old or Middle English) should have its source checked before it is shown. The repository's FAQ and About pages were read and add no other terms; its footer Copyright link goes to Elsevier's website terms for the Digital Commons platform (www.elsevier.com, not reachable), which were not read. The book is a 49 MB PDF; the page lists no HTML version."
+}

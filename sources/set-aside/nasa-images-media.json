@@ -1,0 +1,45 @@
+{
+  "id": "nasa-images-media",
+  "name": "NASA images, video and media",
+  "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "goodFor": "Space and Earth imagery, video and visualisations for astronomy and Earth science.",
+  "license": "per-item",
+  "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "astronomy",
+    "environmental-science",
+    "physical-geography"
+  ],
+  "kinds": [
+    "media",
+    "data"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "quote": "The NASA Insignia, Logotype, identifiers, and imagery are not in the public domain."
+      },
+      {
+        "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "quote": "generally are not subject to copyright in the United States."
+      },
+      {
+        "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "quote": "NASA occasionally uses copyright-protected material of third parties with permission on its website."
+      },
+      {
+        "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "quote": "If a NASA image, audio, video or media includes an identifiable person, using the media for commercial purposes may infringe that person’s right of privacy or publicity, and permission should be obtained from the person."
+      },
+      {
+        "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+        "quote": "References like “according to NASA” or similar are prohibited in SI products."
+      }
+    ]
+  },
+  "notes": "Checked against NASA's Guidelines for using NASA Images and Media and the Brand Center's linking section. The page says NASA content is \"generally\" not subject to copyright in the US and may be used for educational or informational purposes with NASA acknowledged, but it also says outright that NASA's insignia, logotype, identifiers and imagery are not in the public domain and that imagery is made available under its Media Usage Guidelines. It adds that third-party copyright material appears on the site, marked with the holder's name; that commercial use needs care (no implied endorsement, clearances for logos or NASA employees, permission from identifiable people, astronauts' and employees' names and likenesses barred from commercial products); and it sets rules for AI (\"SI\") applications, including that outputs must not be attributed to NASA (\"according to NASA\" is prohibited), which collides with Ceder AI citing a source. Links to NASA sites need no permission but must not suggest NASA endorses a commercial product. Because of these terms it is link only. The separate NASA science sites (Earth Observatory, SVS, JPL, Hubble, Webb) were not read. See also us-government. The bank's agents don't read it and nothing from it goes into the bank."
+}

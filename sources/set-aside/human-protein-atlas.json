@@ -1,0 +1,46 @@
+{
+  "id": "human-protein-atlas",
+  "name": "Human Protein Atlas",
+  "url": "https://www.proteinatlas.org/",
+  "goodFor": "Images and data on where proteins are found in human cells and tissues.",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://www.proteinatlas.org/about/licence",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "biology",
+    "cell-biology",
+    "anatomy-and-physiology"
+  ],
+  "kinds": [
+    "data",
+    "media",
+    "reference"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://www.proteinatlas.org/about/licence",
+        "quote": "The Human Protein Atlas is licensed under the Creative Commons Attribution 4.0 International License for all copyrightable parts of our database."
+      },
+      {
+        "url": "https://www.proteinatlas.org/about/licence",
+        "quote": "While we encourage you to use our resource for your research and commercial purposes, we want to ensure that our content is given proper citation in all cases where it is used."
+      },
+      {
+        "url": "https://www.proteinatlas.org/about/licence",
+        "quote": "Data subject to third-party constraints may also be included and it is the responsibility of users of the Human Protein Atlas to ensure that their utilization of the data does not infringe any of the rights of such third parties."
+      },
+      {
+        "url": "https://www.proteinatlas.org/about/licence",
+        "quote": "If you cite or display any content, or reference our organization, in any format, written or otherwise, including print or web publications, presentations, grant applications, websites, other online applications such as blogs, or other works, you must follow these guidelines."
+      },
+      {
+        "url": "https://www.proteinatlas.org/about/licence",
+        "quote": "ProteinTalks-DB Non-commercial research use, additional restrictions apply"
+      }
+    ]
+  },
+  "notes": "Checked against the Licence & Citation page. The Atlas's own copyrightable content is CC BY 4.0 and the page welcomes commercial use, but it says third-party data is mixed in and the user must make sure their use doesn't infringe those rights; its table of external sources lists terms that differ (user terms, CC BY-SA 3.0 and 4.0, a NonCommercial row for ProteinTalks-DB, and a CC BY-NC-SA 4.0 row for AlphaFold 3). The Atlas's own images and the third-party data can't be told apart cleanly from the pages read, so only a link is recorded. It also sets citation rules that apply when content is displayed: cite a primary publication and the website, and credit images as \"Human Protein Atlas\" with the versioned URL. A research resource rather than a course text, so useful for examples in introductory biology. Older versions were licensed differently (not checked). The bank's agents don't read it and nothing from it goes into the bank."
+}

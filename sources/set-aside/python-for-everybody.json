@@ -1,0 +1,36 @@
+{
+  "id": "python-for-everybody",
+  "name": "Python for Everybody (Charles Severance)",
+  "url": "https://www.py4e.com/book",
+  "goodFor": "A gentle introduction to programming in Python 3, with chapters on data handling (web, databases, visualisation).",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://www.py4e.com/",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "computer-science",
+    "data-science"
+  ],
+  "kinds": [
+    "textbook",
+    "lessons"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://www.py4e.com/",
+        "quote": "Copyright Creative Commons Attribution 4.0 - Charles R. Severance"
+      },
+      {
+        "url": "https://www.py4e.com/book",
+        "quote": "Chapters 2-10 are heavily adapted from the open book titled"
+      },
+      {
+        "url": "https://www.py4e.com/",
+        "quote": "you could make your own copy of the course site, publish it and remix it any way you like."
+      }
+    ]
+  },
+  "notes": "The footer of the author's site, on both the home and book pages, reads \"Copyright Creative Commons Attribution 4.0 - Charles R. Severance\", with no version link, licence text or terms-of-use page; the home page's remix sentence is about the site's code and course content on GitHub. The book page says chapters 2-10 are heavily adapted from Think Python (Allen B. Downey and Jeff Elkner); that book's licence was not read, so whether the adapted chapters can be under CC BY could not be settled. The book's own copyright page (in the PDF and EPUB on do1.dr-chuck.com, not reachable from here; the HTML edition on py4e.com has none) was not read and may state a different licence, possibly a NonCommercial one, so the footer alone doesn't settle the book's licence. The LibreTexts copy is a separate adaptation, not read. Set aside as link-only."
+}

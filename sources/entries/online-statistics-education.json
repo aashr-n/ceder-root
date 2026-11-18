@@ -1,0 +1,81 @@
+{
+  "id": "online-statistics-education",
+  "name": "Online Statistics Education (David Lane and others)",
+  "url": "https://onlinestatbook.com/",
+  "goodFor": "An introductory statistics text with exercises, a glossary and video, developed at Rice, Houston Clear Lake and Tufts.",
+  "license": "LicenseRef-Public-Domain",
+  "licenseUrl": "https://onlinestatbook.com/",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "statistics"
+  ],
+  "kinds": [
+    "textbook",
+    "exercises"
+  ],
+  "attribution": "\"Online Statistics Education: A Multimedia Course of Study\", Project Leader David M. Lane, Rice University, linked to https://onlinestatbook.com/, with the chapter named; the words \"public domain\"; and, when the text shown was shortened or changed, a note that it was.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://onlinestatbook.com/",
+        "quote": "This work is in the public domain. Therefore, it can be copied and reproduced without limitation."
+      },
+      {
+        "url": "https://onlinestatbook.com/2/index.html",
+        "quote": "This work is in the public domain. Therefore, it can be copied and reproduced without limitation."
+      },
+      {
+        "url": "https://onlinestatbook.com/",
+        "quote": "However, we would appreciate a citation where possible."
+      }
+    ]
+  },
+  "parts": [
+    {
+      "id": "textbook",
+      "name": "The online book (chapters, exercises, glossary), except its Case Studies section",
+      "url": "https://onlinestatbook.com/2/index.html",
+      "license": "LicenseRef-Public-Domain",
+      "apps": "show",
+      "attribution": "\"Online Statistics Education: A Multimedia Course of Study\", Project Leader David M. Lane, Rice University, linked to https://onlinestatbook.com/, with the chapter named; the words \"public domain\"; and, when the text shown was shortened or changed, a note that it was.",
+      "checked": {
+        "date": "2026-11-18",
+        "evidence": [
+          {
+            "url": "https://onlinestatbook.com/2/index.html",
+            "quote": "This work is in the public domain. Therefore, it can be copied and reproduced without limitation."
+          }
+        ]
+      },
+      "notes": "Public domain on the book's own contents page and home page; a citation is requested, not required. The book's Case Studies section (/2/case_studies/) is excluded and is in the link-only part."
+    },
+    {
+      "id": "case-studies-analysis-lab",
+      "name": "Case Studies (including the book's /2/case_studies/ section) and Analysis Lab (Rice Virtual Lab)",
+      "url": "https://onlinestatbook.com/rvls.html",
+      "license": "unknown",
+      "apps": "link",
+      "checked": {
+        "date": "2026-11-18",
+        "evidence": [
+          {
+            "url": "https://onlinestatbook.com/rvls.html",
+            "quote": "If you wish to copy and/or distribute any portion of the Case Studies, or the Analysis Lab, please contact David Lane ."
+          },
+          {
+            "url": "https://onlinestatbook.com/rvls.html",
+            "quote": "Permission is granted to link to any portion of the Rice Virtual Lab."
+          },
+          {
+            "url": "https://onlinestatbook.com/rvls.html",
+            "quote": "The applets in the simulations/demonstrations are hereby in the public domain and can therefore be used without restriction."
+          }
+        ]
+      },
+      "notes": "The Rice Virtual Lab page asks for permission before copying or distributing any portion of the Case Studies or the Analysis Lab, while the book's own pages (which list Case Studies in their contents, at /2/case_studies/) say the whole work is public domain. The pages disagree, so the case studies, in the book and in the Rice Virtual Lab, and the Analysis Lab are link only; the same page allows linking to any portion. It puts only the simulation applets in the public domain."
+    }
+  ],
+  "notes": "Checked against the project's home page, the book's contents page and the Rice Virtual Lab page. 'Public domain' is the project's own wording, with no Creative Commons or other licence named, so the licence field is 'LicenseRef-Public-Domain', not an SPDX id. The book's chapters, exercises and glossary are shown under that statement; the Case Studies (both the book's /2/case_studies/ section and the Rice Virtual Lab's) and the Analysis Lab are held back (see parts) because the Rice Virtual Lab page asks for contact before copying them, which contradicts the book's blanket statement for that material. No terms-of-use page was found. Not checked: third-party data sets, figures and quotations inside individual chapters, and the embedded Java/JavaScript simulations. The Rice Virtual Lab page links to a Chegg ad and the home page to commercial affiliates; they are not part of the work. The project asks for a citation and offers an instructor's manual by email. The bank's agents don't read it and nothing from it goes into the bank."
+}

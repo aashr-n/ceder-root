@@ -1,0 +1,77 @@
+{
+  "id": "active-calculus-multivariable",
+  "name": "Active Calculus Multivariable, 2nd edition (Long, Keller, Schlicker)",
+  "url": "https://activecalculus.org/multi2e/frontmatter.html",
+  "goodFor": "An active-learning calculus III text: vectors, partial derivatives, multiple integrals and vector fields.",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://activecalculus.org/multi2e/frontmatter-3.html",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "multivariable-calculus"
+  ],
+  "kinds": [
+    "textbook",
+    "exercises"
+  ],
+  "attribution": "\"Active Calculus Multivariable\", by Nicholas Long, Mitchel T. Keller and Steven Schlicker, linked to https://activecalculus.org/multi2e/frontmatter.html, with the section named; \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when the text shown was shortened or changed, a note that it was.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://activecalculus.org/multi2e/frontmatter-3.html",
+        "quote": "Permission is granted to copy and (re)distribute this material in any format and/or adapt it (even commercially) under the terms of the Creative Commons Attribution-ShareAlike 4.0 International License."
+      },
+      {
+        "url": "https://activecalculus.org/multi2e/frontmatter-3.html",
+        "quote": "The work may be used for free in any way by any party so long as attribution is given to the author(s) and if the material is modified, the resulting contributions are distributed under the same license as this original."
+      },
+      {
+        "url": "https://activecalculus.org/",
+        "quote": "Each text carries a Creative Commons BY-SA license that allows users to clone, fork, and modify the GitHub source"
+      }
+    ]
+  },
+  "parts": [
+    {
+      "id": "second-edition",
+      "name": "Second edition (/multi2e/)",
+      "url": "https://activecalculus.org/multi2e/frontmatter.html",
+      "license": "CC-BY-SA-4.0",
+      "apps": "show",
+      "attribution": "\"Active Calculus Multivariable\", by Nicholas Long, Mitchel T. Keller and Steven Schlicker, linked to https://activecalculus.org/multi2e/frontmatter.html, with the section named; \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when the text shown was shortened or changed, a note that it was.",
+      "checked": {
+        "date": "2026-11-18",
+        "evidence": [
+          {
+            "url": "https://activecalculus.org/multi2e/frontmatter-3.html",
+            "quote": "Permission is granted to copy and (re)distribute this material in any format and/or adapt it (even commercially) under the terms of the Creative Commons Attribution-ShareAlike 4.0 International License."
+          },
+          {
+            "url": "https://activecalculus.org/multi2e/frontmatter-3.html",
+            "quote": "The work may be used for free in any way by any party so long as attribution is given to the author(s) and if the material is modified, the resulting contributions are distributed under the same license as this original."
+          }
+        ]
+      },
+      "notes": "Colophon of the 2nd edition, (c) 2013-2026 Nicholas Long, Mitchel T. Keller and Steven Schlicker: CC BY-SA 4.0, commercial adaptation allowed."
+    },
+    {
+      "id": "first-edition",
+      "name": "First edition (/multi1e/)",
+      "url": "https://activecalculus.org/multi1e/frontmatter.html",
+      "license": "CC-BY-NC-SA-4.0",
+      "apps": "link",
+      "checked": {
+        "date": "2026-11-18",
+        "evidence": [
+          {
+            "url": "https://activecalculus.org/multi1e/frontmatter-3.html",
+            "quote": "Permission is granted to copy, distribute and/or modify this document under the terms of the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
+          }
+        ]
+      },
+      "notes": "The first edition's colophon is NonCommercial and says no party may sell the work or its derivatives, so an app only links to it. It contradicts the project home page's blanket 'each text carries CC BY-SA' line, which is why only the second edition is a show part."
+    }
+  ],
+  "notes": "Only the 2nd edition (/multi2e/) is covered: its own colophon says CC BY-SA 4.0. The 1st edition (/multi1e/) is CC BY-NC-SA 4.0 (see parts), so the home page's statement that each text carries BY-SA does not hold for it; take the edition's own colophon, not the home page. The candidate's address /multivariable/ returns 'Page not found'. Not checked: individual figures, photographs and the interactive WeBWorK exercises (run on a separate server, problem code not read). No separate terms-of-use page was found on activecalculus.org. The bank's agents don't read it and nothing from it goes into the bank."
+}

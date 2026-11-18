@@ -1,0 +1,30 @@
+{
+  "id": "supreme-court-opinions",
+  "name": "US Supreme Court opinions",
+  "url": "https://www.supremecourt.gov/opinions/opinions.aspx",
+  "goodFor": "The Court's own slip opinions for landmark cases a civics or constitutional law student reads.",
+  "license": "unknown",
+  "licenseUrl": "https://www.supremecourt.gov/policies/web_policies_and_notices.aspx",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "american-government"
+  ],
+  "kinds": [
+    "texts"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://www.supremecourt.gov/policies/web_policies_and_notices.aspx",
+        "quote": "The Supreme Court cannot authorize the use of copyrighted materials contained in linked websites."
+      },
+      {
+        "url": "https://www.supremecourt.gov/policies/web_policies_and_notices.aspx",
+        "quote": "The Supreme Court may provide links to both government-owned or sponsored and commercial websites."
+      }
+    ]
+  },
+  "notes": "Link only. The Court's Website Policies and Notices page (the address the candidate listed, /about/website.aspx, returns 404) covers links, endorsement and monitoring and says nothing about copyright or reuse of the opinions, so the site's own policy gives no licence or public-domain statement to rely on. Court opinions are works of government in US law generally, but the site does not say so, and syllabi, concurring text and headnote-like material were not checked. Not read: the Privacy Policy, and the opinion pages themselves."
+}

@@ -1,0 +1,19 @@
+{
+  "id": "mathematics-for-cs",
+  "name": "Mathematics for Computer Science (Lehman, Leighton, Meyer)",
+  "url": "https://courses.csail.mit.edu/6.042/spring18/mcs.pdf",
+  "goodFor": "MIT 6.042's text on proofs, induction, graphs, counting and probability for computer science.",
+  "license": "unknown",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "discrete-mathematics",
+    "probability",
+    "computer-science"
+  ],
+  "kinds": [
+    "textbook"
+  ],
+  "checked": null,
+  "notes": "Licence not confirmed by a page the recheck tool can read. The 2018 PDF's copyright page (read as text, but a PDF, so it can't be a quoted proof) says \"This work is available under the terms of the Creative Commons Attribution-ShareAlike 3.0 license\". The course directory and index page on courses.csail.mit.edu state no licence in their HTML, and the MIT OpenCourseWare version of 6.042J (ocw.mit.edu) falls under OCW's CC BY-NC-SA 4.0 terms (see mit-opencourseware), so the sources disagree. Until an HTML page of the authors states the grant and the OCW and edition difference is settled, an app only links to the authors' PDF, and the book is not shown. The bank's agents don't read it and nothing from it goes into the bank."
+}

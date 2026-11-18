@@ -1,0 +1,35 @@
+{
+  "id": "seeing-theory",
+  "name": "Seeing Theory (Brown University)",
+  "url": "https://seeing-theory.brown.edu/",
+  "goodFor": "Interactive visualisations of basic probability and statistics.",
+  "license": "unknown",
+  "licenseUrl": "https://raw.githubusercontent.com/seeingtheory/Seeing-Theory/master/README.md",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "statistics"
+  ],
+  "kinds": [
+    "simulation",
+    "lessons"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/seeingtheory/Seeing-Theory/master/README.md",
+        "quote": "Feel free to use Seeing Theory for educational purposes, but we ask that you do not use the visualizations for commerical use."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/seeingtheory/Seeing-Theory/master/LICENSE",
+        "quote": "Apache License Version 2.0, January 2004"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/seeingtheory/Seeing-Theory/master/README.md",
+        "quote": "Seeing Theory is no longer being mantained."
+      }
+    ]
+  },
+  "notes": "The project's GitHub README asks that the visualisations not be used commercially, while the repository's LICENSE file is Apache 2.0, so its own pages disagree; Ceder has paid plans, so an app only links to it. The site itself (seeing-theory.brown.edu) couldn't be reached from this container and its terms weren't read; the README links an older address on students.brown.edu. The README says (2019 update) the project is no longer maintained and the site stays hosted by Brown University."
+}

@@ -1,0 +1,31 @@
+{
+  "id": "moderndive",
+  "name": "Statistical Inference via Data Science: ModernDive",
+  "url": "https://moderndive.com/",
+  "goodFor": "Introductory data science and statistics in R with the tidyverse.",
+  "license": "CC-BY-NC-SA-4.0",
+  "licenseUrl": "https://raw.githubusercontent.com/moderndive/ModernDive_book/master/LICENSE.md",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "data-science",
+    "statistics"
+  ],
+  "kinds": [
+    "textbook"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/moderndive/ModernDive_book/master/LICENSE.md",
+        "quote": "## Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/moderndive/ModernDive_book/master/LICENSE.md",
+        "quote": "A. reproduce and Share the Licensed Material, in whole or in part, for NonCommercial purposes only; and"
+      }
+    ]
+  },
+  "notes": "The book repository's LICENSE.md is the CC BY-NC-SA 4.0 legal code, which is NonCommercial, so Ceder, with paid plans, may only link. The book's own site (moderndive.com) was not reachable and not read."
+}

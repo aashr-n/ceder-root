@@ -1,0 +1,40 @@
+{
+  "id": "lippman-math-in-society",
+  "name": "Math in Society (David Lippman)",
+  "url": "https://www.opentextbookstore.com/mathinsociety/",
+  "goodFor": "A survey of mathematics for liberal-arts students: voting, apportionment, fair division, graph theory, growth, finance, statistics, probability, sets, logic.",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://www.opentextbookstore.com/mathinsociety/",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "quantitative-reasoning"
+  ],
+  "kinds": [
+    "textbook",
+    "exercises"
+  ],
+  "attribution": "\"David Lippman, Math in Society\", linked to https://www.opentextbookstore.com/mathinsociety/, with the chapter named; \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when the text shown was shortened or changed, a note that it was.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://www.opentextbookstore.com/mathinsociety/",
+        "quote": "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License ."
+      },
+      {
+        "url": "https://www.opentextbookstore.com/mathinsociety/",
+        "quote": "The only requirements are that you include attribution to the original authors, and make your changes available with the same permissions."
+      },
+      {
+        "url": "https://www.opentextbookstore.com/mathinsociety/",
+        "quote": "The current version is 2.6, released July 2022."
+      },
+      {
+        "url": "https://www.opentextbookstore.com/mathinsociety/",
+        "quote": "This license means that you have full permission to modify the text to your liking, have it printed, and use it in your classes."
+      }
+    ]
+  },
+  "notes": "Checked against the book's own home page (version 2.6): CC BY-SA 4.0 for the whole book. The 2.6 PDF's front matter (read, not rechecked) credits portions of Statistics, Describing Data and Probability to Jeff Eldridge (CC-BY-SA) and onlinestatbook.com (public domain declaration), Apportionment to Mike Kenyon (CC-BY-SA), Historical Counting Systems to Lawrence Morales (CC-BY-SA) and Cryptography to Lippman and Rasmussen's Precalculus (CC-BY-SA), and a CC-BY 2.0 cover photo; all are compatible with the book's licence, and a passage from those chapters should also credit the contributor named there. Individual images in the book were not checked one by one. The site has no terms-of-use page; none was found. The site links a LibreTexts HTML copy, which was not read and isn't this source. The bank's agents don't read it and nothing from it goes into the bank."
+}

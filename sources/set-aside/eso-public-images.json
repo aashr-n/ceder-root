@@ -1,0 +1,42 @@
+{
+  "id": "eso-public-images",
+  "name": "ESO public images, videos and press-release text",
+  "url": "https://www.eso.org/public/",
+  "goodFor": "Observatory images, videos and press-release explainers for astronomy.",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://www.eso.org/public/outreach/copyright/",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "astronomy"
+  ],
+  "kinds": [
+    "media"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://www.eso.org/public/outreach/copyright/",
+        "quote": "Unless specifically noted, the images, videos, and music distributed on the public ESO website"
+      },
+      {
+        "url": "https://www.eso.org/public/outreach/copyright/",
+        "quote": "are licensed under a Creative Commons Attribution 4.0 International License"
+      },
+      {
+        "url": "https://www.eso.org/public/outreach/copyright/",
+        "quote": "If an image includes a picture of an identifiable person, using that image for commercial purposes is not permitted."
+      },
+      {
+        "url": "https://www.eso.org/public/outreach/copyright/",
+        "quote": "In particular, you must clearly indicate if you have used AI to modify our content."
+      },
+      {
+        "url": "https://www.eso.org/public/outreach/copyright/",
+        "quote": "Also note that music, scientific papers, code, and text other than press releases, announcements, pictures of the week, blog posts and captions on this site are not released under the Creative Commons Attribution 4.0 International License and can not be used for non-ESO products."
+      }
+    ]
+  },
+  "notes": "Checked against ESO's Copyright Notice page, its AI Disclaimer and the site's Terms and Conditions (the footer's Terms & Conditions link, /public/about-eso/privacy/). Images, videos and the texts of press releases, announcements, pictures of the week, blog posts and captions are CC BY 4.0 unless specifically noted, with a visible, unaltered credit (for example \"ESO/José Francisco\"), no implied endorsement, and any modification indicated, including modification with AI. The page disagrees with itself on music (licensed in its summary, excluded later except the Music Archive). Kept as link only because the page bars commercial use of any image with an identifiable person, which Ceder's paid plans would meet and which can't be screened without looking at each image; the ESO logo may not be used without written consent; other text, scientific papers and code on the site are not CC BY and can't be used for non-ESO products; and images under /public/outreach/eduoff/vt-2004/ are copyright of their owners. The Terms and Conditions say everything else on the site is copyright ESO or the credited provider unless specified otherwise, and that some sub-sites add their own terms. If every image used were first checked for identifiable people and its own credit, the credited images and press-release text could be shown. The bank's agents don't read it and nothing from it goes into the bank."
+}

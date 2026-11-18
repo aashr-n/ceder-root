@@ -1,0 +1,75 @@
+{
+  "id": "american-yawp",
+  "name": "The American Yawp",
+  "url": "https://www.americanyawp.com/textbook",
+  "goodFor": "A free, collaboratively written US history survey textbook in two volumes, before 1877 and after 1877.",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://www.americanyawp.com/about.html",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "us-history"
+  ],
+  "kinds": [
+    "textbook"
+  ],
+  "attribution": "The chapter's title and \"The American Yawp\", linked to the chapter's page on https://www.americanyawp.com/textbook, with the chapter's editor as its Reference Material section names them; \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when the text shown was shortened or changed, a note that it was.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://www.americanyawp.com/about.html",
+        "quote": "The American Yawp is an open resource: you are encouraged to use it, download it, distribute it, and modify it as you see fit."
+      },
+      {
+        "url": "https://www.americanyawp.com/about.html",
+        "quote": "The project is formally operated under a Creative Commons Attribution-Share Alike 4.0 International (CC-BY-SA) License and is designed to meet the standards of a \"Free Cultural Work.\""
+      },
+      {
+        "url": "https://www.americanyawp.com/textbook/01-american-origins",
+        "quote": "Published in Partnership with Stanford University Press CC BY-SA 4.0"
+      }
+    ]
+  },
+  "parts": [
+    {
+      "id": "text",
+      "name": "Chapter text (Updated Edition)",
+      "url": "https://www.americanyawp.com/textbook",
+      "license": "CC-BY-SA-4.0",
+      "apps": "show",
+      "attribution": "The chapter's title and \"The American Yawp\", linked to the chapter's page on https://www.americanyawp.com/textbook, with the chapter's editor as its Reference Material section names them; \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when the text shown was shortened or changed, a note that it was.",
+      "checked": {
+        "date": "2026-11-18",
+        "evidence": [
+          {
+            "url": "https://www.americanyawp.com/about.html",
+            "quote": "The project is formally operated under a Creative Commons Attribution-Share Alike 4.0 International (CC-BY-SA) License and is designed to meet the standards of a \"Free Cultural Work.\""
+          },
+          {
+            "url": "https://www.americanyawp.com/textbook/01-american-origins",
+            "quote": "This chapter was edited by Christen Mucher, with content contributions by"
+          }
+        ]
+      },
+      "notes": "The narrative text written for the book. Quotations from other works within it (primary-source excerpts, retold stories credited to someone else) carry their own rights; show them only when they are public domain or the credit says so."
+    },
+    {
+      "id": "figures",
+      "name": "Figures",
+      "license": "per-item",
+      "apps": "link",
+      "checked": {
+        "date": "2026-11-18",
+        "evidence": [
+          {
+            "url": "https://www.americanyawp.com/textbook/01-american-origins",
+            "quote": "Andreas F. Borchert, Mesa Verde National Park Cliff Palace. Wikimedia. Creative Commons Attribution-Share Alike 3.0 Germany."
+          }
+        ]
+      },
+      "notes": "Each figure carries its own credit, and they differ (CC BY-SA 3.0 Germany, \"Wikimedia\", \"Flickr, Creative Commons\" with no version, museum credits). They aren't covered by the book's licence statement in any way that can be relied on, so an app links to a picture, or checks its original source's page first."
+    }
+  ],
+  "notes": "Checked against the About page and the footer of a current Updated Edition chapter page (Chapter 1). The About page says the project is formally operated under CC BY-SA 4.0 and invites use, distribution and modification; the About page's own timeline is the 2013-2015 text, but the current chapter pages, published in partnership with Stanford University Press, carry \"CC BY-SA 4.0\" in their footer, so the licence covers the current edition. CC BY-SA allows commercial use, so a paid app may show chapter text with the credit in attribution, and what Ceder changes stays under CC BY-SA 4.0. Figures carry their own, varied credits and are link only (see parts); quoted primary sources inside chapters need their own check. No terms-of-use page was found on the site. Only Chapter 1 was read; other chapters were assumed to carry the same footer. The Primary Source Reader, the first-edition archive and the Stanford print and PDF editions weren't read and aren't covered by this entry. The bank's agents don't read it and nothing from it goes into the bank."
+}

@@ -1,0 +1,33 @@
+{
+  "id": "census-bureau",
+  "name": "US Census Bureau data and publications",
+  "url": "https://www.census.gov",
+  "goodFor": "Official US population, income, housing and demographic data for sociology and geography examples.",
+  "license": "unknown",
+  "licenseUrl": "https://www.census.gov/about/policies/open-gov.html",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "sociology",
+    "human-geography",
+    "public-policy"
+  ],
+  "kinds": [
+    "data",
+    "reference"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://www.census.gov/about/policies/open-gov.html",
+        "quote": "The U.S. Census Bureau publishes its data as open data, meaning it is freely available for use and re-use by the public."
+      },
+      {
+        "url": "https://www.census.gov/about/policies/citation.html",
+        "quote": "Data users who create their own estimates using data from disseminated tables and other data should cite the Census Bureau as the source of the original data only."
+      }
+    ]
+  },
+  "notes": "Link only. The Bureau's own policy pages say its data is open and free to re-use and ask for citation, but none of the pages read (Policies, Open Government, Citing our Data, Privacy) says the content is public domain or gives a licence, and none says what is excepted (third-party pictures, restricted-use data). The agency's Terms page returned only a notice about inappropriate terms. The candidate's claim of public domain therefore rests on US law in general, which the us-government record covers per item. Recheck if the Bureau publishes a copyright statement."
+}

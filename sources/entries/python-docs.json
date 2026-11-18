@@ -1,0 +1,44 @@
+{
+  "id": "python-docs",
+  "name": "Python documentation and tutorial",
+  "url": "https://docs.python.org/3/tutorial/",
+  "goodFor": "The official Python tutorial and library reference.",
+  "license": "PSF-2.0",
+  "licenseUrl": "https://docs.python.org/3/license.html",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "computer-science"
+  ],
+  "kinds": [
+    "documentation",
+    "reference"
+  ],
+  "attribution": "\"Python documentation\" with the page's title, linked to the page on https://docs.python.org/3/; \"Copyright © 2001 Python Software Foundation; All Rights Reserved\" and \"PSF License Version 2\", linked to https://docs.python.org/3/license.html; and, when the text shown was shortened or changed, a brief note of the changes.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://docs.python.org/3/license.html",
+        "quote": "Python software and documentation are licensed under the Python Software Foundation License Version 2."
+      },
+      {
+        "url": "https://docs.python.org/3/license.html",
+        "quote": "Starting with Python 3.8.6, examples, recipes, and other code in the documentation are dual licensed under the PSF License Version 2 and the Zero-Clause BSD license"
+      },
+      {
+        "url": "https://docs.python.org/3/license.html",
+        "quote": "Subject to the terms and conditions of this License Agreement, PSF hereby grants Licensee a nonexclusive, royalty-free, world-wide license to reproduce, analyze, test, perform and/or display publicly, prepare derivative works, distribute, and otherwise use Python alone or in any derivative version"
+      },
+      {
+        "url": "https://docs.python.org/3/license.html",
+        "quote": "This License Agreement does not grant permission to use PSF trademarks or trade name in a trademark sense to endorse or promote products or services of Licensee, or any third party."
+      },
+      {
+        "url": "https://docs.python.org/3/copyright.html",
+        "quote": "This page is licensed under the Python Software Foundation License Version 2."
+      }
+    ]
+  },
+  "notes": "Checked against the History and License and Copyright pages of docs.python.org. The documentation is under the Python Software Foundation License Version 2, a permissive licence that allows commercial use on condition that the PSF licence agreement and the notice \"Copyright © 2001 Python Software Foundation; All Rights Reserved\" are retained and a brief summary of changes is included in a derivative work; so a shown passage carries that notice and a link to the licence page. In the documentation of Python 3.8.6 and later, examples, recipes and other code are also under the Zero-Clause BSD licence. The Copyright page also lists older copyrights of BeOpen.com, CNRI and Stichting Mathematisch Centrum, whose licence agreements on the same page are also permissive. The PSF licence does not allow using PSF trademarks or names to endorse or promote Ceder, so don't use the Python or PSF logos; the PSF trademark policy (www.python.org) wasn't read because that host isn't reachable, nor were any python.org site terms. Some software incorporated into Python is under other licences (listed on the licence page for the software, not the docs). The tutorial is dense for absolute beginners and the library reference is reference material, not a course. The bank's agents don't read it and nothing from it goes into the bank."
+}

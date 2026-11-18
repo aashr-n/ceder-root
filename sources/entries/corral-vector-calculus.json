@@ -1,0 +1,36 @@
+{
+  "id": "corral-vector-calculus",
+  "name": "Vector Calculus (Michael Corral)",
+  "url": "https://www.mecmath.net/",
+  "goodFor": "A concise multivariable calculus text (vectors, partial derivatives, multiple integrals, line and surface integrals) with 420 exercises and answers to selected ones.",
+  "license": "GFDL-1.2",
+  "licenseUrl": "https://www.mecmath.net/",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "multivariable-calculus"
+  ],
+  "kinds": [
+    "textbook",
+    "exercises"
+  ],
+  "attribution": "\"Michael Corral, Vector Calculus\", linked to https://www.mecmath.net/, with the section named; \"GNU Free Documentation License, Version 1.2\", linked to https://www.gnu.org/licenses/old-licenses/fdl-1.2.html; and, when the text shown was shortened or changed, a note that it was.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://www.mecmath.net/",
+        "quote": "The book is distributed under the terms of the GNU Free Documentation License, Version 1.2 ."
+      },
+      {
+        "url": "https://www.mecmath.net/",
+        "quote": "This is a text on elementary multivariable calculus, designed for students who have completed courses in single-variable calculus."
+      },
+      {
+        "url": "https://www.mecmath.net/",
+        "quote": "There are 420 exercises in the book."
+      }
+    ]
+  },
+  "notes": "Checked against the book's home page, which says GFDL Version 1.2 and links the licence. The PDF's copyright page (read, not rechecked, since the recheck tool can't read a PDF) says GFDL 1.2 or any later version, with no Invariant Sections and no Cover Texts; the record takes 1.2 as the page states. GFDL allows commercial use, but a copy or extract that is distributed must keep the copyright notice and the licence notice and be accompanied by the licence text (or a link an app shows with it), and a modified version stays under the GFDL. The site has no terms-of-use page; none was found. Figures weren't checked one by one. The Java, MATLAB and Sage code samples were not read (the MATLAB versions are credited to Benson Muite). The bank's agents don't read it and nothing from it goes into the bank."
+}

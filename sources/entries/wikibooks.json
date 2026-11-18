@@ -7,6 +7,9 @@
   "licenseUrl": "https://en.wikibooks.org/wiki/Wikibooks:Copyrights",
   "apps": "show",
   "bank": "read",
+  "kinds": [
+    "textbook"
+  ],
   "attribution": "The book and page title, linked to the page; the words \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when the text shown was shortened or changed, a note that it was.",
   "access": "node tools/ref.mjs wikibooks \"<title>\" for an agent.",
   "checked": {

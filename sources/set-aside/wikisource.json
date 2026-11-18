@@ -1,0 +1,47 @@
+{
+  "id": "wikisource",
+  "name": "Wikisource (English)",
+  "url": "https://en.wikisource.org/",
+  "goodFor": "Transcribed public-domain and freely licensed texts and documents: founding documents, speeches, classic works and translations.",
+  "license": "per-item",
+  "licenseUrl": "https://en.wikisource.org/wiki/Wikisource:Copyright_policy",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "literature",
+    "us-history",
+    "american-government",
+    "philosophy",
+    "world-literature",
+    "political-theory"
+  ],
+  "kinds": [
+    "texts"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://en.wikisource.org/wiki/Wikisource:Copyright_policy",
+        "quote": "All works on Wikisource must be in the public domain or released under a license compatible with the free content definition"
+      },
+      {
+        "url": "https://en.wikisource.org/wiki/Wikisource:Copyright_policy",
+        "quote": "Free content is content which can be freely viewed, used, distributed, modified, and exploited by anyone, in any form, and for any purpose (including commercial exploitation) without exception and without limitation"
+      },
+      {
+        "url": "https://en.wikisource.org/wiki/Wikisource:Copyright_policy",
+        "quote": "Unless otherwise noted, all user contributions to Wikisource are released under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+      },
+      {
+        "url": "https://en.wikisource.org/wiki/Wikisource:Copyright_policy",
+        "quote": "The copyright laws applicable to Wikisource are primarily those of the United States of America, where the physical Wikimedia servers are located."
+      },
+      {
+        "url": "https://en.wikisource.org/wiki/Wikisource:Copyright_policy",
+        "quote": "A template should be used on the source material page to indicate the license that the source material is posted under"
+      }
+    ]
+  },
+  "notes": "Checked against Wikisource's Copyright policy. It requires every work to be public domain or under a licence that meets its free-content definition (which allows commercial use), and says user contributions are CC BY-SA 4.0 and GFDL 'unless otherwise noted'. But the status is set work by work, by a licence template on each text's page, and public domain is judged mainly by US law, so a text may still be protected elsewhere; contributors assert each status themselves. So the licence is per item: an app links, and a text could be shown only after its own page's licence template is checked, as for wikimedia-commons. Original translations made on Wikisource are CC BY-SA. The Wikimedia Terms of Use (foundation.wikimedia.org) also apply and were not re-read here; the other Wikimedia wikis' entries cite them."
+}

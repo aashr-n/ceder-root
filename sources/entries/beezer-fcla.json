@@ -1,0 +1,40 @@
+{
+  "id": "beezer-fcla",
+  "name": "A First Course in Linear Algebra (Robert Beezer)",
+  "url": "https://linear.pugetsound.edu/",
+  "goodFor": "A theorem-based linear algebra text with archetype examples and solutions to most exercises.",
+  "license": "GFDL-1.2-no-invariants-or-later",
+  "licenseUrl": "https://linear.pugetsound.edu/html/fcla.html",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "linear-algebra"
+  ],
+  "kinds": [
+    "textbook",
+    "exercises"
+  ],
+  "attribution": "\"A First Course in Linear Algebra\", by Robert A. Beezer, linked to https://linear.pugetsound.edu/, with the section named; \"GNU Free Documentation License, version 1.2 or later\", linked to https://www.gnu.org/licenses/fdl-1.2.html; and, when the text shown was shortened or changed, a note saying where it was changed.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://linear.pugetsound.edu/html/fcla.html",
+        "quote": "Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.2 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts."
+      },
+      {
+        "url": "https://linear.pugetsound.edu/",
+        "quote": "I have applied a copyright to the book, and subsequently licensed it with a GNU Free Documentation License (GFDL)."
+      },
+      {
+        "url": "https://linear.pugetsound.edu/",
+        "quote": "The main caveat is that if you make modifications and then distribute a modified version, you are required to again apply the GFDL license to the result so that others may benefit from your modifications."
+      },
+      {
+        "url": "https://linear.pugetsound.edu/html/preface.html",
+        "quote": "If you make changes and distribute the changed version, then you must offer the same license for the new version, you must acknowledge the original author's work, and you must indicate where you have made changes."
+      }
+    ]
+  },
+  "notes": "Checked against the book's online title page, the project's home page and its preface (version 3.50, 2015; copyright 2004-2015 Robert Beezer). The grant is the GFDL 1.2 or any later version with no Invariant Sections, no Front-Cover Texts and no Back-Cover Texts (SPDX GFDL-1.2-no-invariants-or-later), which allows commercial use, so a paid app may show a passage with the credit in attribution. The GFDL's conditions are heavier than a Creative Commons licence's (modified versions keep the licence and a record of changes, and copies may not use technical measures to obstruct reading or copying), and the licence text was not read here, so the owner should decide how a passage is shown. The Sage code in the book runs in an embedded Sage cell from sagecell.sagemath.org, which has its own terms and was not read. No separate terms-of-use page was found. The project moved from linear.ups.edu to linear.pugetsound.edu. The bank's agents don't read it and nothing from it goes into the bank."
+}

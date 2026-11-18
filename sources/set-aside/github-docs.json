@@ -1,0 +1,35 @@
+{
+  "id": "github-docs",
+  "name": "GitHub Docs",
+  "url": "https://docs.github.com/en/get-started",
+  "goodFor": "Official guides to Git, GitHub and pull requests for newcomers.",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://raw.githubusercontent.com/github/docs/main/README.md",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "computer-science"
+  ],
+  "kinds": [
+    "documentation",
+    "reference"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/github/docs/main/README.md",
+        "quote": "* **Creative Commons Attribution 4.0** - for documentation and content in the assets, content, and data folders (see [LICENSE](LICENSE))"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/github/docs/main/README.md",
+        "quote": "* **MIT License** - for code (see [LICENSE-CODE](LICENSE-CODE))"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/github/docs/main/LICENSE",
+        "quote": "Patent and trademark rights are not licensed under this"
+      }
+    ]
+  },
+  "notes": "The github/docs repository README says its documentation and content folders are CC BY 4.0 and its code MIT, and its LICENSE file holds the CC BY 4.0 text, which doesn't license trademark rights (GitHub's name and logos). That is the licence of the repository's content files. The published site docs.github.com and its site policy (the terms the candidate list pointed to) are on a host that couldn't be reached, so whether the site's terms add conditions was not read, and the record stays link-only until they are. Only content files in the repository are CC BY; the repository's site-building code is separate. Product documentation: the Get Started section is general Git, the rest is specific to GitHub."
+}

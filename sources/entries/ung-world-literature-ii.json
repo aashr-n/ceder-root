@@ -1,0 +1,45 @@
+{
+  "id": "ung-world-literature-ii",
+  "name": "Compact Anthology of World Literature II: Volumes 4, 5, and 6 (University of North Georgia Press)",
+  "url": "https://oer.galileo.usg.edu/english-textbooks/18/",
+  "goodFor": "An anthology of world literature from the seventeenth century to the present, with unit introductions, for a world literature survey course.",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://oer.galileo.usg.edu/english-textbooks/18/",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "world-literature",
+    "literature"
+  ],
+  "kinds": [
+    "texts",
+    "textbook"
+  ],
+  "attribution": "\"Compact Anthology of World Literature II: Volumes 4, 5, and 6\", by Anita Turlington, Matthew Horton, Karen Dodson, Laura Getty, Kyounghye Kwon and Laura Ng (University of North Georgia Press), linked to https://oer.galileo.usg.edu/english-textbooks/18/; \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when the text shown was shortened or changed, a note that it was.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://oer.galileo.usg.edu/english-textbooks/18/",
+        "quote": "This work is licensed under a Creative Commons Attribution-Share Alike 4.0 International License"
+      },
+      {
+        "url": "https://oer.galileo.usg.edu/english-textbooks/18/",
+        "quote": "Texts in the public domain--those published or translated before 1923--are replicated here."
+      },
+      {
+        "url": "https://oer.galileo.usg.edu/english-textbooks/18/",
+        "quote": "Thus, in Part 6, most of the texts are accessible in the form of links to outside sites."
+      },
+      {
+        "url": "https://oer.galileo.usg.edu/english-textbooks/18/",
+        "quote": "The UNG Press and the editors of this anthology are looking into issues with links in Volumes 5 and 6."
+      },
+      {
+        "url": "https://oer.galileo.usg.edu/faq.html",
+        "quote": "Each document in ALG Commons is classified by its Creative Commons license."
+      }
+    ]
+  },
+  "notes": "Checked against the book's own page in the GALILEO Open Learning Materials repository (ALG Commons), which states CC BY-SA 4.0 for the whole work; the repository's FAQ says each document carries its own Creative Commons licence, so the licence is set per book and only this book was read. CC BY-SA allows commercial use; what Ceder changes stays under CC BY-SA 4.0. The page says the anthology reprints only texts published or translated before 1923 (public domain in the US) and links to outside sites for later ones, so in Part 6 (twentieth-century and contemporary literature) most texts are links, not part of the book: what may be shown is the editors' introductions and discussion questions plus the pre-1923 texts, and a linked text is never shown. The page also says (note dated 2022-06-03) the editors were looking into broken links in volumes 5 and 6 and that a revision links to Open Library copies where possible. The repository's FAQ and About pages were read and add no other terms; its footer Copyright link goes to Elsevier's platform terms (not reachable), which were not read. The companion book for World Literature I in the same repository (a different anthology) is CC BY-NC-SA and is in set-aside as ung-world-literature-i."
+}

@@ -1,0 +1,36 @@
+{
+  "id": "keller-trotter-applied-combinatorics",
+  "name": "Applied Combinatorics (Mitchel T. Keller and William T. Trotter)",
+  "url": "https://rellek.net/book/app-comb.html",
+  "goodFor": "A combinatorics and graph theory textbook with exercises: counting, induction, graphs, posets, inclusion-exclusion, generating functions, recurrences and discrete probability.",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://rellek.net/book/app-comb-2-3.html",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "discrete-mathematics"
+  ],
+  "kinds": [
+    "textbook",
+    "exercises"
+  ],
+  "attribution": "\"Mitchel T. Keller and William T. Trotter, Applied Combinatorics\", linked to https://rellek.net/book/app-comb.html, with the section named; \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when the text shown was shortened or changed, a note that it was.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://rellek.net/book/app-comb-2-3.html",
+        "quote": "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License."
+      },
+      {
+        "url": "https://rellek.net/book/app-comb-2-7.html",
+        "quote": "At Georgia Tech, MATH 3012: Applied Combinatorics, is a junior-level course targeted primarily at students pursuing the B.S. in Computer Science."
+      },
+      {
+        "url": "https://rellek.net/book/app-comb-2-7.html",
+        "quote": "We feel that the topics of Chapters 1–9 plus Chapters 12, 13 and 14 are the core of a one semester course in Applied Combinatorics."
+      }
+    ]
+  },
+  "notes": "Checked against the book's Colophon on the authors' site (edition 2017.3, copyright 2006–2025 Keller and Trotter): CC BY-SA 4.0 for the work, which allows commercial use; what Ceder changes stays under that licence. No per-chapter or per-figure exceptions were seen on the Colophon, Acknowledgements or Prefaces; figures weren't checked one by one. The colophon names appliedcombinatorics.org as the edition website, and a Runestone copy exists; neither was reachable or read, nor any terms of use for them, and rellek.net's home page returned an error, so no site terms were found. The book embeds SageMathCells, a third-party service. Its preface says it was written for a junior-level Georgia Tech course taken after calculus and some linear algebra, though its proofs are pitched below upper-division level; the early chapters (counting, induction, graphs) fit a lower-division discrete mathematics course, the later ones go beyond it. The bank's agents don't read it and nothing from it goes into the bank."
+}

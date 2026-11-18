@@ -1,0 +1,31 @@
+{
+  "id": "data8-textbook",
+  "name": "Computational and Inferential Thinking (Berkeley Data 8)",
+  "url": "https://inferentialthinking.com/",
+  "goodFor": "The text of Berkeley's introductory data science course: Python tables, visualisation and statistical inference.",
+  "license": "CC-BY-NC-ND-4.0",
+  "licenseUrl": "https://raw.githubusercontent.com/data-8/textbook/main/LICENSE.md",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "data-science",
+    "statistics"
+  ],
+  "kinds": [
+    "textbook"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/data-8/textbook/main/LICENSE.md",
+        "quote": "By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/data-8/textbook/main/README.md",
+        "quote": "This repository holds the Jupyter Book source for Computational and Inferential Thinking: The Foundations of Data Science."
+      }
+    ]
+  },
+  "notes": "The LICENSE.md in the book's GitHub repository (data-8/textbook) is the CC BY-NC-ND 4.0 licence. NonCommercial and NoDerivatives, so link only. The README states no licence of its own. The website inferentialthinking.com wasn't reachable, so its footer and any terms page weren't read. The bank's agents don't read it and nothing from it goes into the bank."
+}

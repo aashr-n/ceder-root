@@ -1,0 +1,35 @@
+{
+  "id": "cp-algorithms",
+  "name": "Algorithms for Competitive Programming (cp-algorithms)",
+  "url": "https://cp-algorithms.com/",
+  "goodFor": "Concise articles on algorithms and data structures, each with an implementation, for reference beside an algorithms course.",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://raw.githubusercontent.com/cp-algorithms/cp-algorithms/main/LICENSE",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "algorithms",
+    "computer-science"
+  ],
+  "kinds": [
+    "reference"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/cp-algorithms/cp-algorithms/main/mkdocs.yml",
+        "quote": "Text is available under the Creative Commons Attribution Share Alike 4.0 International License"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/cp-algorithms/cp-algorithms/main/LICENSE",
+        "quote": "By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-ShareAlike 4.0 International Public License"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/cp-algorithms/cp-algorithms/main/README.md",
+        "quote": "This project translates [e-maxx.ru/algo](https://e-maxx.ru/algo) into English."
+      }
+    ]
+  },
+  "notes": "Link only. The project's GitHub repository, which builds the site, states CC BY-SA 4.0: the footer text in mkdocs.yml says the text is CC BY-SA 4.0 and the LICENSE file is that licence. But the README says the project translates e-maxx.ru/algo into English, and many articles are such translations or extend them; e-maxx's own licence, and any permission to relicense its articles, weren't found, so whether the CC BY-SA grant covers the translated text is unknown and the translated articles can't be cleanly separated from the original ones. The site cp-algorithms.com isn't reachable from here, so its rendered footer, any terms page and any per-article notices weren't read. The articles' code samples have no separate licence stated. Many topics are contest techniques beyond lower-division; the basic ones (binary search, graph search, shortest paths, introductory dynamic programming) suit an algorithms course. Move to entries only after the site's pages and e-maxx's terms are read. The bank's agents don't read it and nothing from it goes into the bank."
+}

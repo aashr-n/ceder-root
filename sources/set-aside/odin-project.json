@@ -1,0 +1,30 @@
+{
+  "id": "odin-project",
+  "name": "The Odin Project",
+  "url": "https://www.theodinproject.com/",
+  "goodFor": "An open full-stack web development curriculum.",
+  "license": "CC-BY-NC-SA-4.0",
+  "licenseUrl": "https://raw.githubusercontent.com/TheOdinProject/curriculum/main/license.md",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "computer-science"
+  ],
+  "kinds": [
+    "lessons"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/TheOdinProject/curriculum/main/license.md",
+        "quote": "This curriculum is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/)."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/TheOdinProject/curriculum/main/license.md",
+        "quote": "It basically means you can do whatever you want with the material as long as it's for non-commercial use"
+      }
+    ]
+  },
+  "notes": "The curriculum repository's license.md says CC BY-NC-SA 4.0 and non-commercial use only, with credit to the original author, Erik Trautman, so Ceder, with paid plans, may only link. The site www.theodinproject.com and its terms were not reachable and not read. A job-training curriculum rather than a college course, so the subject match to computer-science is loose."
+}

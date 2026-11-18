@@ -1,0 +1,44 @@
+{
+  "id": "dickinson-college-commentaries",
+  "name": "Dickinson College Commentaries",
+  "url": "https://dcc.dickinson.edu/",
+  "goodFor": "Annotated Latin and Greek readings with notes and running vocabulary, a Latin grammar and core vocabularies, for students past their first year.",
+  "license": "per-item",
+  "licenseUrl": "https://dcc.dickinson.edu/terms-use",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "latin",
+    "ancient-greek"
+  ],
+  "kinds": [
+    "texts",
+    "reference"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://dcc.dickinson.edu/terms-use",
+        "quote": "Dickinson College Commentaries by Dickinson College is licensed under a Creative Commons Attribution-ShareAlike License ( CC BY-SA )"
+      },
+      {
+        "url": "https://dcc.dickinson.edu/terms-use",
+        "quote": "Users are free to use and reproduce this electronic content, as long as they give credit and share the material under the same terms."
+      },
+      {
+        "url": "https://dcc.dickinson.edu/terms-use",
+        "quote": "The authors put considerable time, effort, and expertise into this content, so if you make it available elsewhere for another public purpose you must give full and explicit credit to them."
+      },
+      {
+        "url": "https://dcc.dickinson.edu/gesta-francorum/intro/preface",
+        "quote": "content is available for re-use under a Creative Commons CC-BY-SA 3.0 license."
+      },
+      {
+        "url": "https://dcc.dickinson.edu/gesta-francorum/intro/preface",
+        "quote": "The text is largely of Rosalind Hill, The Deeds of the Franks and the Other Pilgrims to Jerusalem (Oxford Medieval Texts. Oxford, 1962), but I have added section numbers to the book and chapter headings of the text in Hill."
+      }
+    ]
+  },
+  "notes": "Checked against the site's Terms of Use, the About page, a commentary preface and the Latin grammar's credits page. The terms page states CC BY-SA for the site with no version, the Gesta Francorum commentary says CC BY-SA 3.0, and the grammar page an unversioned CC BY-SA, so the version differs by page. Not all of it is the project's own: the Gesta Francorum's Latin text is largely Rosalind Hill's 1962 Oxford edition, the grammar is based on a Perseus Project digitisation of Allen and Greenough, cover images credit outside museums and Flickr users, and the About page says an agreement with Open Book Publishers brought substantial content, whose terms weren't read. So the licence can't be taken as one for the whole site and is treated as per item; not every commentary was read, and none was found with a NonCommercial clause on the pages read. The terms ask users to email the project about their use and to give full and explicit credit. Link only until each commentary an app would show is read on its own pages. The bank's agents don't read it and nothing from it goes into the bank."
+}

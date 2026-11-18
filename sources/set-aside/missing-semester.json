@@ -1,0 +1,31 @@
+{
+  "id": "missing-semester",
+  "name": "The Missing Semester of Your CS Education (MIT)",
+  "url": "https://missing.csail.mit.edu/",
+  "goodFor": "Shell, editors, Git, debugging and other tools that CS courses assume.",
+  "license": "CC-BY-NC-SA-4.0",
+  "licenseUrl": "https://raw.githubusercontent.com/missing-semester/missing-semester/master/README.md",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "computer-science"
+  ],
+  "kinds": [
+    "lessons",
+    "video"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/missing-semester/missing-semester/master/README.md",
+        "quote": "is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). See [here](https://missing.csail.mit.edu/license) for more information on contributions or translations."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/missing-semester/missing-semester/master/README.md",
+        "quote": "All content in this course, including the website source code, lecture notes, exercises, and lecture videos"
+      }
+    ]
+  },
+  "notes": "The site's repository README puts all content, lecture notes, exercises and videos under CC BY-NC-SA 4.0, which is NonCommercial, so Ceder, with paid plans, may only link. The site's own licence page (missing.csail.mit.edu/license) is on a host that couldn't be reached and was not read."
+}

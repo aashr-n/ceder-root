@@ -7,6 +7,9 @@
   "licenseUrl": "https://en.wikipedia.org/wiki/Wikipedia:Copyrights",
   "apps": "show",
   "bank": "read",
+  "kinds": [
+    "reference"
+  ],
   "attribution": "The article's title, linked to the article; the words \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when the text shown was shortened or changed, a note that it was.",
   "access": "https://en.wikipedia.org/api/rest_v1/page/summary/{title} for an app; node tools/ref.mjs wikipedia \"<title>\" for an agent.",
   "checked": {

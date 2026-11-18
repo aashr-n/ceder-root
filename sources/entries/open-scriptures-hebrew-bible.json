@@ -1,0 +1,97 @@
+{
+  "id": "open-scriptures-hebrew-bible",
+  "name": "Open Scriptures Hebrew Bible (morphhb)",
+  "url": "https://github.com/openscriptures/morphhb",
+  "goodFor": "The Hebrew Bible's text with lemma and morphology tags on each word, for reading and parsing practice in Biblical Hebrew.",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://raw.githubusercontent.com/openscriptures/morphhb/master/LICENSE.md",
+  "apps": "show",
+  "bank": "none",
+  "attribution": "\"Original work of the Open Scriptures Hebrew Bible available at https://github.com/openscriptures/morphhb\" (the wording LICENSE.md requires), with the book, chapter and verse named; \"CC BY 4.0\", linked to https://creativecommons.org/licenses/by/4.0/; the Westminster Leningrad Codex text is public domain; and, when the text or tags shown were shortened or changed, a note that they were.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/openscriptures/morphhb/master/LICENSE.md",
+        "quote": "This work is based on *The Westminster Leningrad Codex*, which is in the public domain."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openscriptures/morphhb/master/LICENSE.md",
+        "quote": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openscriptures/morphhb/master/LICENSE.md",
+        "quote": "for any purpose, even commercially."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openscriptures/morphhb/master/README.md",
+        "quote": "For attribution purposes, credit the Open Scriptures Hebrew Bible Project."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/openscriptures/morphhb/master/MAPM/readme.txt",
+        "quote": "License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  },
+  "subjects": [
+    "biblical-studies"
+  ],
+  "kinds": [
+    "texts",
+    "data"
+  ],
+  "parts": [
+    {
+      "id": "wlc",
+      "name": "WLC text with lemma and morphology tags (the wlc folder)",
+      "url": "https://github.com/openscriptures/morphhb/tree/master/wlc",
+      "license": "CC-BY-4.0",
+      "apps": "show",
+      "attribution": "\"Original work of the Open Scriptures Hebrew Bible available at https://github.com/openscriptures/morphhb\" (the wording LICENSE.md requires), with the book, chapter and verse named; \"CC BY 4.0\", linked to https://creativecommons.org/licenses/by/4.0/; the Westminster Leningrad Codex text is public domain; and, when the text or tags shown were shortened or changed, a note that they were.",
+      "checked": {
+        "date": "2026-11-18",
+        "evidence": [
+          {
+            "url": "https://raw.githubusercontent.com/openscriptures/morphhb/master/README.md",
+            "quote": "These files are found in the `wlc` directory."
+          },
+          {
+            "url": "https://raw.githubusercontent.com/openscriptures/morphhb/master/README.md",
+            "quote": "For attribution purposes, credit the Open Scriptures Hebrew Bible Project."
+          },
+          {
+            "url": "https://raw.githubusercontent.com/openscriptures/morphhb/master/LICENSE.md",
+            "quote": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/openscriptures/morphhb/master/LICENSE.md",
+            "quote": "for any purpose, even commercially."
+          }
+        ]
+      },
+      "notes": "The README says the lemma and morphology data in the wlc folder are CC BY 4.0 and the WLC text itself is public domain; LICENSE.md sets the credit wording and allows commercial use. Lemmas use an augmented form of Strong's numbers; morphology was still being added when the README was last updated."
+    },
+    {
+      "id": "mapm",
+      "name": "Miqra according to the Masorah text (the MAPM folder)",
+      "url": "https://github.com/openscriptures/morphhb/tree/master/MAPM",
+      "license": "CC-BY-SA-4.0",
+      "apps": "link",
+      "checked": {
+        "date": "2026-11-18",
+        "evidence": [
+          {
+            "url": "https://raw.githubusercontent.com/openscriptures/morphhb/master/MAPM/readme.txt",
+            "quote": "License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/openscriptures/morphhb/master/MAPM/readme.txt",
+            "quote": "All of the material is available under the CC-BY-SA 4.0 license, which is found at the following link:"
+          }
+        ]
+      },
+      "notes": "A separate text (Seth Kadish's Miqra according to the Masorah, from Hebrew Wikisource) under CC BY-SA 4.0, not the repository's CC BY 4.0, with its own credit rule (to \"Hebrew Wikisource\" with a link to the MAM page). Kept link only here because it isn't covered by the main entry's licence or attribution; it could be shown under CC BY-SA 4.0 with that credit if the owner wants it."
+    }
+  ],
+  "notes": "Checked against the repository's LICENSE.md and README.md (raw files on raw.githubusercontent.com; the github.com pages weren't fetched) and MAPM/readme.txt. The lemma and morphology data are CC BY 4.0, which allows commercial use, and the Westminster Leningrad Codex text is public domain, so a paid app may show a verse with its tags with the credit in attribution, using LICENSE.md's required wording. The repository isn't all one licence: the MAPM folder is a different text under CC BY-SA 4.0 with its own credit (see parts), and the OSHB Graphics folder holds the project's logos, which are for crediting or linking and aren't to be used to suggest endorsement. Other folders (HomeFiles, structure, scripts) weren't read. Biblical Hebrew only, not Modern Hebrew. The bank's agents don't read it and nothing from it goes into the bank."
+}

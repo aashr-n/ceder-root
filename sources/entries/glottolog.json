@@ -1,0 +1,91 @@
+{
+  "id": "glottolog",
+  "name": "Glottolog",
+  "url": "https://glottolog.org",
+  "goodFor": "A catalogue of the world's languages, families and dialects, with a classification tree, codes, alternative names and locations for each.",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://glottolog.org/legal",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "linguistics"
+  ],
+  "kinds": [
+    "reference",
+    "data"
+  ],
+  "attribution": "\"Glottolog\" with the edition cited as the site asks (Hammarström, Forkel, Haspelmath & Bank, Max Planck Institute for Evolutionary Anthropology), linked to https://glottolog.org; \"CC BY 4.0\", linked to https://creativecommons.org/licenses/by/4.0/; and a note when the data shown was shortened or changed.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://glottolog.org/legal",
+        "quote": "is licensed under a Creative Commons Attribution 4.0 International License"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/glottolog/glottolog/master/LICENSE",
+        "quote": "This work is licensed under the Creative Commons Attribution 4.0 International License."
+      },
+      {
+        "url": "https://glottolog.org/",
+        "quote": "Glottolog is an initiative of the Max Planck Institute for Evolutionary Anthropology, Leipzig."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/glottolog/glottolog/master/SOURCES.md",
+        "quote": "Most of the information in Glottolog is aggregated from other sources"
+      },
+      {
+        "url": "https://glottolog.org/about",
+        "quote": "The Agglomerated Endangerment Status (AES) is derived from the databases of The Catalogue of Endangered Languages (ELCat)"
+      }
+    ]
+  },
+  "notes": "Checked against glottolog.org's Legal page (which is also what the footer's Disclaimer link opens), its home and About pages, one language page (Wolaytta), and the data repository's LICENSE and SOURCES.md. The footer and Legal page state that the current edition, edited by Hammarström, Forkel, Haspelmath and Bank, is under CC BY 4.0, and the repository's LICENSE says the same; CC BY allows commercial use, and no NonCommercial clause, terms of use, or rule on automated or AI use was found on the site. The Legal page otherwise holds only a pointer to the Max Planck Institute's imprint and a note on external links; the privacy policy and imprint, on eva.mpg.de, were not read. SOURCES.md says most of Glottolog's information is aggregated from other sources. So the record is split: Glottolog's own classification, codes, names and locations are show; the endangerment statuses with their source comments (from ELCat, UNESCO and Ethnologue) and the bibliography are link only (see parts). Cite the edition as the home page asks; CC BY doesn't cover the Max Planck Institute's name or logo or allow implying its endorsement. Research reference, used in introductory linguistics for language families and classification.",
+  "parts": [
+    {
+      "id": "classification",
+      "name": "Classification, Glottocodes, names, countries and locations",
+      "license": "CC-BY-4.0",
+      "apps": "show",
+      "attribution": "\"Glottolog\" with the edition cited as the site asks (Hammarström, Forkel, Haspelmath & Bank, Max Planck Institute for Evolutionary Anthropology), linked to https://glottolog.org; \"CC BY 4.0\", linked to https://creativecommons.org/licenses/by/4.0/; and a note when the data shown was shortened or changed.",
+      "checked": {
+        "date": "2026-11-18",
+        "evidence": [
+          {
+            "url": "https://glottolog.org/legal",
+            "quote": "is licensed under a Creative Commons Attribution 4.0 International License"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/glottolog/glottolog/master/LICENSE",
+            "quote": "This work is licensed under the Creative Commons Attribution 4.0 International License."
+          }
+        ]
+      },
+      "notes": "Glottolog's own curation: SOURCES.md says the language inventory and classification are the editors' main task. CC BY 4.0 as the site and repository state, which allows commercial use. Alternative names are listed by the catalogue they come from (multitree, WALS, Lexvo and others); show them as names, not as a copied list."
+    },
+    {
+      "id": "endangerment-and-references",
+      "name": "Endangerment status, its comments, and the bibliography",
+      "license": "per-item",
+      "apps": "link",
+      "checked": {
+        "date": "2026-11-18",
+        "evidence": [
+          {
+            "url": "https://glottolog.org/about",
+            "quote": "The Agglomerated Endangerment Status (AES) is derived from the databases of The Catalogue of Endangered Languages (ELCat)"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/glottolog/glottolog/master/SOURCES.md",
+            "quote": "Most of the information in Glottolog is aggregated from other sources"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/glottolog/glottolog/master/SOURCES.md",
+            "quote": "Glottolog aggregates bibliographical references from a number of so-called"
+          }
+        ]
+      },
+      "notes": "The endangerment status is merged from ELCat, the UNESCO Atlas and Ethnologue, and a language page shows a comment credited to that source; on the Wolaytta page read, the comment is credited to Eberhard, Simons and Robinson 2026 (names that match Ethnologue's editors), whose own terms weren't read. The bibliography is aggregated from many providers. The site's CC BY line covers the whole work and names no exception, but whether those providers' text may be reused under it wasn't confirmed, so an app links to these rather than storing or showing them."
+    }
+  ]
+}

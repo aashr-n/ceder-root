@@ -1,0 +1,40 @@
+{
+  "id": "jonick-financial-accounting",
+  "name": "Principles of Financial Accounting (Christine Jonick, University of North Georgia Press)",
+  "url": "https://ung.edu/university-press/books/principles-fin-accounting.php",
+  "goodFor": "A seven-chapter introduction to the accounting cycle and financial statements, with Excel exercises.",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://oer.galileo.usg.edu/business-textbooks/7",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "financial-accounting"
+  ],
+  "kinds": [
+    "textbook",
+    "exercises"
+  ],
+  "attribution": "\"Principles of Financial Accounting\", by Christine Jonick (University of North Georgia Press), linked to https://oer.galileo.usg.edu/business-textbooks/7; \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when the text shown was shortened or changed, a note that it was.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://oer.galileo.usg.edu/business-textbooks/7",
+        "quote": "This work is licensed under a Creative Commons Attribution-Share Alike 4.0 International License"
+      },
+      {
+        "url": "https://oer.galileo.usg.edu/business-textbooks/7",
+        "quote": "This textbook is an Open Education Resource. It can be reused, remixed, and reedited freely without seeking permission."
+      },
+      {
+        "url": "https://ung.edu/university-press/books/principles-fin-accounting.php",
+        "quote": "This textbook is an Open Education Resource. It can be reused, remixed, and reedited freely without seeking permission."
+      },
+      {
+        "url": "https://oer.galileo.usg.edu/faq.html",
+        "quote": "Each document in ALG Commons is classified by its Creative Commons license."
+      }
+    ]
+  },
+  "notes": "Checked against the book's page in the GALILEO Open Learning Materials repository (ALG Commons; Affordable Learning Georgia co-published the book with the University of North Georgia Press), which states CC BY-SA 4.0 for the whole work and lists it for ACCT 2101. The publisher's own book page at ung.edu names no licence but says the book can be reused, remixed and reedited freely without permission, which agrees. CC BY-SA allows commercial use; what Ceder changes stays under CC BY-SA 4.0. The book's PDF front matter (on web.ung.edu, not reachable) was not read, so any credit lines for its charts or graphs weren't seen; check a figure's source before showing it. The repository's footer Copyright link goes to Elsevier's platform terms (not reachable), which were not read. The GALILEO page's description calls it \"Accounting I\" in one place. Instructor resources are by request and not covered here."
+}

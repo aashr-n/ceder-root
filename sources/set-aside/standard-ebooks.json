@@ -1,0 +1,45 @@
+{
+  "id": "standard-ebooks",
+  "name": "Standard Ebooks",
+  "url": "https://standardebooks.org/",
+  "goodFor": "Carefully typeset US-public-domain novels, poetry, drama and philosophy as clean ebooks, for literature and philosophy readings.",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://standardebooks.org/about",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "literature",
+    "world-literature",
+    "history-of-philosophy",
+    "classical-civilization"
+  ],
+  "kinds": [
+    "texts"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://standardebooks.org/about",
+        "quote": "The text and cover art in our ebooks are already believed to be in the U.S. public domain, and Standard Ebooks dedicates its own work to the public domain, thus releasing the entirety of each ebook file into the public domain."
+      },
+      {
+        "url": "https://standardebooks.org/about",
+        "quote": "Content not produced by or for Standard Ebooks L 3 C but displayed on this website may be subject to copyright."
+      },
+      {
+        "url": "https://standardebooks.org/ebooks/jane-austen/emma/text/uncopyright",
+        "quote": "Standard Ebooks makes no representations regarding the copyright status of the source text or artwork in this ebook in any country other than the United States."
+      },
+      {
+        "url": "https://standardebooks.org/ebooks/jane-austen/emma/text/uncopyright",
+        "quote": "This dedication doesn’t change the copyright status of the source text or artwork."
+      },
+      {
+        "url": "https://standardebooks.org/robots.txt",
+        "quote": "Disallow: /ebooks/*/text*"
+      }
+    ]
+  },
+  "notes": "Standard Ebooks dedicates its own work (markup, typography, metadata, cover composition) to the public domain under CC0 1.0, but the texts and cover art themselves are only believed to be public domain in the United States, and the site makes no claim for any other country; each ebook's Uncopyright page says so. Its robots.txt asks AI assistant user agents (claude-user, claude-web, chatgpt-user, MistralAI-User, Perplexity-User) not to fetch /ebooks/*/text* or /ebooks/*/downloads/*, and its bulk downloads are a benefit of paid Patrons Circle membership; the licence pages don't say whether an app that stores and shows the books may fetch them automatically. Ceder keeps to the intent of that, so this is link-only until the owner decides (the same public-domain works may be available from a source without that request, such as Project Gutenberg, which isn't covered here). The About page says content on the site that Standard Ebooks did not produce may be subject to copyright. The site has no separate terms-of-use page linked from About; the Get Involved and Accessibility pages and the GitHub repositories (github.com isn't reachable) were not read."
+}

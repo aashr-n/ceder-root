@@ -1,0 +1,44 @@
+{
+  "id": "palmer-penguins",
+  "name": "Palmer Penguins data (Horst, Hill and Gorman)",
+  "url": "https://allisonhorst.github.io/palmerpenguins/",
+  "goodFor": "A small, clean multi-variable data set (species, island, bill and flipper size, body mass, sex) for introductory data analysis and statistics.",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/README.md",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "data-science",
+    "statistics"
+  ],
+  "kinds": [
+    "data"
+  ],
+  "attribution": "Data: Horst AM, Hill AP, Gorman KB (2020), palmerpenguins, linked to https://allisonhorst.github.io/palmerpenguins/, from Palmer Station Antarctica LTER and K. Gorman. Credit is courteous; CC0 does not require it.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/README.md",
+        "quote": "Data are available by [CC-0](https://creativecommons.org/share-your-work/public-domain/cc0/) license in accordance with the [Palmer Station LTER Data Policy](https://pallter.marine.rutgers.edu/data/) and the [LTER Data Access Policy for Type I data](https://lternet.edu/data-access-policy/)."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/DESCRIPTION",
+        "quote": "License: CC0"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/LICENSE.md",
+        "quote": "# CC0 1.0 Universal"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/README.md",
+        "quote": "Individuals interested in using these data are expected to follow the US LTER Network’s Data Access Policy, Requirements and Use Agreement"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/allisonhorst/palmerpenguins/main/README.md",
+        "quote": "If you use this artwork, please cite with: “Artwork by @allison_horst”."
+      }
+    ]
+  },
+  "notes": "Checked against the package's README, DESCRIPTION and LICENSE.md in its GitHub repository: the data are CC0 1.0, 'in accordance with' the Palmer Station LTER Data Policy and the LTER Data Access Policy for Type I data. The same README, quoting Gorman et al. (2014), says users of the data 'are expected to follow the US LTER Network’s Data Access Policy, Requirements and Use Agreement', and asks anyone interested in publishing the data to contact Dr. Kristen Gorman about analysis and working together. Those policy pages are on pallter.marine.rutgers.edu and lternet.edu, which this check could not reach, so any citation, notification or other condition in them was not read; the owner should read the LTER policy before relying on 'show'. This entry covers the data only (penguins and penguins_raw). The package's R code and the penguin artwork in the repository are not covered: the artwork has no licence stated beyond a request to cite 'Artwork by @allison_horst'. The project site allisonhorst.github.io was not reachable and was not read. The data come from Environmental Data Initiative records and Gorman, Williams and Fraser (2014, PLoS ONE); the authors ask for citation of both. The bank's agents don't read it and nothing from it goes into the bank."
+}

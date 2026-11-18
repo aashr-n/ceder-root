@@ -1,0 +1,44 @@
+{
+  "id": "national-archives-founding-docs",
+  "name": "National Archives founding documents",
+  "url": "https://www.archives.gov/founding-docs",
+  "goodFor": "Transcripts and images of the Declaration of Independence, the Constitution and the Bill of Rights.",
+  "license": "per-item",
+  "licenseUrl": "https://www.archives.gov/global-pages/privacy.html",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "american-government",
+    "us-history",
+    "political-theory"
+  ],
+  "kinds": [
+    "texts"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://www.archives.gov/global-pages/privacy.html",
+        "quote": "Works of the U.S. Government that have been produced by the National Archives and Records Administration are in the public domain and may be copied and distributed without permission."
+      },
+      {
+        "url": "https://www.archives.gov/global-pages/privacy.html",
+        "quote": "However, not all materials appearing on this website are in the public domain."
+      },
+      {
+        "url": "https://www.archives.gov/global-pages/privacy.html",
+        "quote": "We request that you link to our site rather than downloading portions of it to another web server, so that our viewers will see our most up-to-date information."
+      },
+      {
+        "url": "https://www.archives.gov/global-pages/privacy.html",
+        "quote": "Please note that because we cannot guarantee the status of specific items, you use materials found in our holdings at your own risk."
+      },
+      {
+        "url": "https://www.archives.gov/global-pages/privacy.html",
+        "quote": "These works are available for worldwide use and reuse under the terms of the Creative Commons CC0 1.0 Universal license."
+      }
+    ]
+  },
+  "notes": "The site's Copyright, Restrictions, and Permissions Notice (in its privacy and legal notices page) says NARA-produced works are public domain and available under CC0 1.0, but also that not all material on the site is public domain, that donor-restricted items and images from other organizations occur, and that NARA cannot confirm the status of any item and that use is at the user's own risk. It also asks people to link rather than download portions to another server. The founding-docs pages themselves state no licence, and the text there was not confirmed item by item, so the source is not bounded cleanly enough to show. Link to the pages; check the transcript's page before storing any."
+}
