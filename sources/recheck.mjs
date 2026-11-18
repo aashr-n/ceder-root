@@ -1,7 +1,7 @@
 // Re-fetches every evidence page that a checked entry cites, and reports each quote that is no longer on its page
 // word for word. Run it by hand from the repository's root; CI doesn't, because it needs the network:
 //
-//   node sources/recheck.mjs [id ...]
+//   node sources/recheck.mjs [--folder <folder of entries>] [id ...]
 //
 // A page is compared as text: tags, scripts and styles removed, character references decoded, runs of white space
 // made one space. A JSON answer (an API's) is compared as the text of all its string values, in order, joined by
@@ -10,7 +10,7 @@
 // half second, and a 429 is waited out as its Retry-After asks. Behind an HTTPS proxy, run it with
 // NODE_USE_ENV_PROXY=1 so Node's fetch uses the proxy.
 import { readdirSync, readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
+import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const USER_AGENT = "ceder-root-licence-check/0.1";
@@ -103,8 +103,11 @@ export const evidenceOf = (entry) => [
 ];
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  const folder = join(dirname(fileURLToPath(import.meta.url)), "entries");
-  const only = new Set(process.argv.slice(2));
+  const args = process.argv.slice(2);
+  const at = args.indexOf("--folder");
+  const folder = at === -1 ? join(dirname(fileURLToPath(import.meta.url)), "entries") : resolve(args[at + 1]);
+  if (at !== -1) args.splice(at, 2);
+  const only = new Set(args);
   const entries = readdirSync(folder)
     .filter((file) => file.endsWith(".json"))
     .sort()

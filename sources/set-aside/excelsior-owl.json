@@ -1,0 +1,32 @@
+{
+  "id": "excelsior-owl",
+  "name": "Excelsior Online Writing Lab",
+  "url": "https://owl.excelsior.edu/",
+  "goodFor": "Citation and research-writing guides for MLA, APA and Chicago.",
+  "license": "CC-BY-NC-4.0",
+  "licenseUrl": "https://owl.excelsior.edu/",
+  "apps": "link",
+  "bank": "none",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://owl.excelsior.edu/",
+        "quote": "Copyright 2025. Excelsior Online Writing Lab (OWL)"
+      },
+      {
+        "url": "https://owl.excelsior.edu/",
+        "quote": "This site is licensed under a Creative Commons Attribution-NonCommercial-4.0 International License"
+      }
+    ]
+  },
+  "subjects": [
+    "college-composition",
+    "technical-writing"
+  ],
+  "kinds": [
+    "reference",
+    "lessons"
+  ],
+  "notes": "The home page footer (repeated on the About pages read) says the site is licensed under Creative Commons Attribution-NonCommercial 4.0 International, and its licence link and badge image both point to by-nc/4.0. The badge's alt text alone says plain CC Attribution 4.0 \"for any purpose\"; the visible statement, link and badge all say NonCommercial, so NonCommercial is recorded and, as Ceder has paid plans, it is link only. Excelsior's privacy and terms page (www.excelsior.edu/PrivacyNoticeTermsOfUse) is on a host that wasn't reachable and wasn't read, so terms on linking or automated use are unknown. Embedded H5P activities and any third-party material may carry their own terms. Revisit if the OWL corrects the alt text or states plain CC BY."
+}

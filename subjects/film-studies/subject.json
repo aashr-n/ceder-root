@@ -1,0 +1,15 @@
+{
+  "formatVersion": 1,
+  "id": "film-studies",
+  "name": "Film studies",
+  "domain": "humanities",
+  "summary": "How films work and how to analyse them: film form, genres, authors and the history of cinema.",
+  "aliases": [
+    "Intro to film",
+    "Introduction to film studies",
+    "Cinema studies",
+    "Film analysis",
+    "Film appreciation",
+    "Film history"
+  ]
+}

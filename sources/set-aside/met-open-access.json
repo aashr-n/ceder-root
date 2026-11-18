@@ -1,0 +1,35 @@
+{
+  "id": "met-open-access",
+  "name": "The Met Open Access (data and images)",
+  "url": "https://www.metmuseum.org/art/collection",
+  "goodFor": "CC0 object data for the museum's collection and CC0 images of its public-domain works.",
+  "license": "per-item",
+  "licenseUrl": "https://raw.githubusercontent.com/metmuseum/openaccess/master/README.md",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "art-history"
+  ],
+  "kinds": [
+    "media",
+    "data"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/metmuseum/openaccess/master/README.md",
+        "quote": "The Metropolitan Museum of Art provides select datasets of information on more than 470,000 artworks in its Collection for unrestricted commercial and noncommercial use."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/metmuseum/openaccess/master/README.md",
+        "quote": "Images are not included and are not part of the dataset."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/metmuseum/openaccess/master/README.md",
+        "quote": "You must not use The Metropolitan Museum of Art’s trademarks or otherwise claim or imply that the Museum or any other third party endorses you or your use of the dataset."
+      }
+    ]
+  },
+  "notes": "Only the museum's GitHub README for the open data set (github.com/metmuseum/openaccess) was read, not a page on the museum's own website. It waives copyright in the data set (CSV object records, including identifying data for works still under copyright) under CC0 for commercial and noncommercial use. It says images are not part of the data set, and that companion artworks covered by the policy carry the CC0 icon in the website's Collection section. The museum's Open Access page and terms and conditions could not be read (www.metmuseum.org returned a Vercel security checkpoint, HTTP 429, to curl on 2026-11-18), so the image licence, any limits on automated or AI use and any link conditions are unread. Per-item and link only. Modified data must be labelled as modified, and the museum's trademarks and any implied endorsement are excluded. The bank's agents don't read it and nothing from it goes into the bank."
+}

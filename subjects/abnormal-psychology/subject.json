@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "abnormal-psychology",
+  "name": "Abnormal psychology",
+  "domain": "social",
+  "summary": "Psychological disorders in more depth than intro psychology: how they are classified and diagnosed, what causes them, and how they are treated.",
+  "aliases": [
+    "Psychopathology",
+    "Abnormal psych",
+    "Psychological disorders"
+  ]
+}

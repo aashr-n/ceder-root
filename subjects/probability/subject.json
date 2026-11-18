@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "probability",
+  "name": "Probability",
+  "domain": "formal",
+  "summary": "Probability with calculus, beyond the chance unit of intro statistics: counting, random variables, distributions, expectation, joint distributions and limit theorems.",
+  "aliases": [
+    "Introduction to probability",
+    "Intro probability",
+    "Probability theory",
+    "Probability for engineers"
+  ]
+}

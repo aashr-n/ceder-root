@@ -1,0 +1,36 @@
+{
+  "id": "scipy-lectures",
+  "name": "Scientific Python Lectures",
+  "url": "https://lectures.scientific-python.org/",
+  "goodFor": "Tutorials on Python, NumPy, SciPy, matplotlib and pandas for data analysis.",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://raw.githubusercontent.com/scipy-lectures/scipy-lecture-notes/master/LICENSE.md",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "data-science",
+    "computer-science"
+  ],
+  "kinds": [
+    "lessons"
+  ],
+  "attribution": "\"Scientific Python Lectures\" by its authors (listed in the project's AUTHORS.md), linked to https://lectures.scientific-python.org/, with the chapter named; \"CC BY 4.0\", linked to https://creativecommons.org/licenses/by/4.0/; and, when the text shown was shortened or changed, a note that it was.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/scipy-lectures/scipy-lecture-notes/master/LICENSE.md",
+        "quote": "All code and material is licensed under a Creative Commons Attribution 4.0 International License (CC-by)"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/scipy-lectures/scipy-lecture-notes/master/README.md",
+        "quote": "As stated in the `LICENSE.md` file, this material comes with no strings attached."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/scipy-lectures/scipy-lecture-notes/master/README.md",
+        "quote": "You can view the online version at:"
+      }
+    ]
+  },
+  "notes": "Read from the project's GitHub repository (LICENSE.md and README.md; the repository has since been renamed, and the raw address redirects to it). The licence file says \"All code and material\" is CC BY 4.0, which allows commercial use (the README's \"no strings attached\" is informal; credit is still required by the licence), so a paid app may show a passage with the credit in attribution. The website (lectures.scientific-python.org, the older scipy-lectures.org) and the AUTHORS file were not reachable or not read, and there is no separate terms page. Pictures or datasets taken from other projects inside the notes were not checked and may carry their own terms. Some chapters are intermediate and some code is for older library versions. The bank's agents don't read it and nothing from it goes into the bank."
+}

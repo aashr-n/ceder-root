@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "genetics",
+  "name": "Genetics",
+  "domain": "natural",
+  "summary": "Genetics beyond introductory biology: Mendelian inheritance, linkage and mapping, gene regulation, mutation, population genetics and genomics.",
+  "aliases": [
+    "Principles of genetics",
+    "General genetics",
+    "Introduction to genetics",
+    "Human genetics"
+  ]
+}

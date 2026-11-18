@@ -1,0 +1,43 @@
+{
+  "id": "mdn-web-docs",
+  "name": "MDN Web Docs",
+  "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+  "goodFor": "Mozilla's HTML, CSS and JavaScript tutorials and reference, including the Learn web development path.",
+  "license": "CC-BY-SA-2.5",
+  "licenseUrl": "https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "computer-science"
+  ],
+  "kinds": [
+    "documentation",
+    "lessons"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license",
+        "quote": "Unless otherwise indicated, the content is available under the terms of the Creative Commons Attribution-ShareAlike license (CC-BY-SA), v2.5 or any later version."
+      },
+      {
+        "url": "https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license",
+        "quote": "Code samples added on or after August 20, 2010 are in the public domain"
+      },
+      {
+        "url": "https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license",
+        "quote": "Code samples added before August 20, 2010 are available under the MIT license"
+      },
+      {
+        "url": "https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license",
+        "quote": "(or occasionally an alternative license already specified by the page you are editing)"
+      },
+      {
+        "url": "https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license",
+        "quote": "The rights in the logos, trademarks, and service marks of the Mozilla Foundation, as well as the look and feel of this website, are not licensed under the Creative Commons license"
+      }
+    ]
+  },
+  "notes": "Checked against MDN's Attribution and copyright licensing page (the same grant is in the mdn/content repository's LICENSE.md: prose CC BY-SA 2.5, code examples CC0 from 2010-08-20, MIT before that). CC BY-SA 2.5 allows commercial use, so this would be a show entry, but it is set aside because the site's terms of use (the Mozilla Websites terms, linked from MDN's footer at www.mozilla.org) were not read: that host wasn't reachable, so it's unconfirmed that nothing there limits automated or commercial use. Also, MDN says its prose is CC BY-SA 2.5 \"unless otherwise indicated\" and some pages carry another licence, the licence of pre-2010 code can't now be told per sample (the page says so), and the logos and look and feel aren't licensed. Reading www.mozilla.org/about/legal/terms/mozilla and confirming no clause undercuts the licence would let it move to entries. Credit: title, link to the page, \"Mozilla Contributors\" and CC BY-SA 2.5; changes must be indicated, and changed text stays under CC BY-SA. MDN's page says linking to it is allowed. The bank's agents don't read it and nothing from it goes into the bank."
+}

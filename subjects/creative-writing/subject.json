@@ -1,0 +1,15 @@
+{
+  "formatVersion": 1,
+  "id": "creative-writing",
+  "name": "Creative writing",
+  "domain": "humanities",
+  "summary": "Workshop course in writing poetry, fiction and creative non-fiction, reading as a writer; neither academic nor technical writing.",
+  "aliases": [
+    "Intro to creative writing",
+    "Fiction writing",
+    "Poetry writing",
+    "Fiction workshop",
+    "Poetry workshop",
+    "Creative nonfiction"
+  ]
+}

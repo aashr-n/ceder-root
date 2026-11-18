@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "kinesiology",
+  "name": "Kinesiology",
+  "domain": "applied",
+  "summary": "The science of human movement and exercise: functional anatomy, exercise physiology, biomechanics, motor learning and fitness.",
+  "aliases": [
+    "Exercise science",
+    "Movement science",
+    "Human movement",
+    "Intro to kinesiology"
+  ]
+}

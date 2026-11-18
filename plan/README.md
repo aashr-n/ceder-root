@@ -38,3 +38,7 @@ node tools/plan.mjs overview                   writes OVERVIEW.md, every plan as
 ## Sources
 
 `sources.jsonl` lists every page an agent read through `tools/ref.mjs` while it planned, wrote or checked: the site, the page, its revision, and who read it. Agents may read nothing else (`pipeline/prompts/sources.md`).
+
+## Source leads
+
+`source-leads.jsonl` lists outside sources someone found but nobody has read on their own pages: one JSON object a line, with the subjects each might serve, the licence it is said to have, whether it would be shown or only linked to, and what stopped it being checked (`blocker`, with the `hosts` involved). Every licence in it is a claim, never evidence. It isn't a plan, and no tool reads it. A lead becomes an entry only by the steps in `sources/README.md` (Adding or changing one); then remove its line.

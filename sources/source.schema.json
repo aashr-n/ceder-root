@@ -23,6 +23,14 @@
       "uniqueItems": true,
       "items": { "$ref": "#/definitions/id" }
     },
+    "kinds": {
+      "description": "What the source is, so a lookup can pick the right sort of resource: a course text, a reference work (encyclopedia, glossary, dictionary), official documentation, exercises, data, media (pictures, 3D models, audio, scores), primary texts, or lessons (lecture notes, lesson modules).",
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "uniqueItems": true,
+      "items": { "enum": ["textbook", "reference", "documentation", "exercises", "data", "media", "texts", "lessons", "simulation", "video"] }
+    },
     "linking": {
       "description": "Conditions the source's own terms put on a link to it, for an app to obey.",
       "type": "object",

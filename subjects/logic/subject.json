@@ -1,0 +1,15 @@
+{
+  "formatVersion": 1,
+  "id": "logic",
+  "name": "Logic",
+  "domain": "formal",
+  "summary": "Logic as philosophy teaches it: arguments and fallacies, then propositional and predicate logic with truth tables and proofs; not the logic unit of discrete mathematics.",
+  "aliases": [
+    "Symbolic logic",
+    "Formal logic",
+    "Introduction to logic",
+    "Deductive logic",
+    "Critical thinking",
+    "Logic and critical thinking"
+  ]
+}

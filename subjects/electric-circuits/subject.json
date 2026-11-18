@@ -1,0 +1,15 @@
+{
+  "formatVersion": 1,
+  "id": "electric-circuits",
+  "name": "Electric circuits",
+  "domain": "applied",
+  "summary": "Circuit analysis for engineers: resistive networks and Kirchhoff's laws, op-amps, capacitors and inductors, transients and AC steady state.",
+  "aliases": [
+    "Circuits",
+    "Circuit analysis",
+    "Electric circuit analysis",
+    "Electrical circuits",
+    "Linear circuits",
+    "Circuit theory"
+  ]
+}

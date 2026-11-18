@@ -3,5 +3,12 @@
   "id": "discrete-mathematics",
   "name": "Discrete mathematics",
   "domain": "formal",
-  "summary": "Logic, proof, counting, and the structures computing is built on."
+  "summary": "Logic, proof, counting, and the structures computing is built on.",
+  "aliases": [
+    "Discrete math",
+    "Discrete structures",
+    "Discrete mathematical structures",
+    "Mathematics for computer science",
+    "Intro to proofs"
+  ]
 }

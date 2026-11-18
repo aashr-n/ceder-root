@@ -1,0 +1,30 @@
+{
+  "id": "web-dev-learn",
+  "name": "web.dev Learn (Google Chrome team)",
+  "url": "https://web.dev/learn",
+  "goodFor": "Structured courses on HTML, CSS, JavaScript and accessibility for web development.",
+  "license": "unknown",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "computer-science"
+  ],
+  "kinds": [
+    "lessons",
+    "documentation"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/GoogleChrome/web.dev/main/LICENSE",
+        "quote": "Except as otherwise noted, the content of this site is licensed under the Creative Commons Attribution 3.0 License, and code samples are licensed under the Apache 2.0 License."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/GoogleChrome/web.dev/main/README.md",
+        "quote": "This site is migrated to a new platform and this repository is available in a read-only mode."
+      }
+    ]
+  },
+  "notes": "Not confirmed for the live site. The only readable statement is the LICENSE file of the site's old GitHub repository (GoogleChrome/web.dev): CC BY 3.0 for content and Apache 2.0 for code samples, \"except as otherwise noted\". That repository's README says it is archived and the site has moved to a new platform, so the LICENSE describes the archived copy and may not describe the pages now at web.dev/learn. web.dev itself (its page footers, any terms page and the Learn course pages) is not reachable from here and was not read, so the licence is recorded as unknown. Link only. Google names and logos are trademarks and are not covered by any content licence."
+}

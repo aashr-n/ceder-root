@@ -1,0 +1,40 @@
+{
+  "id": "ernst-intro-proof-ibl",
+  "name": "An Introduction to Proof via Inquiry-Based Learning (Dana Ernst)",
+  "url": "https://dcernst.github.io/IBL-IntroToProof",
+  "goodFor": "A transition-to-proof text built on guided questions: logic, sets, induction, functions, cardinality and a little number theory.",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://raw.githubusercontent.com/dcernst/IBL-IntroToProof/master/README.md",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "discrete-mathematics"
+  ],
+  "kinds": [
+    "textbook",
+    "exercises"
+  ],
+  "attribution": "\"An Introduction to Proof via Inquiry-Based Learning\", by Dana C. Ernst, with Chris Drupieski, T. Kyle Petersen, Bridget Tenner, Paul Ellis, Jason Grout, Anders Hendrickson, Rebecca Jayne, Matthew Jones, Stan Yoshinobu, David Richeson, Carol Schumacher and Josh Wiscons as listed in its README, linked to https://github.com/dcernst/IBL-IntroToProof, with the section named; \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when the text shown was shortened or changed, a note that it was.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/dcernst/IBL-IntroToProof/master/README.md",
+        "quote": "This work is licensed under a [Creative Commons Attribution-Share Alike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/dcernst/IBL-IntroToProof/master/README.md",
+        "quote": "for any purpose, even commercially."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/dcernst/IBL-IntroToProof/master/README.md",
+        "quote": "When attributing this work, please include the individuals listed above, as well as me."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/dcernst/IBL-IntroToProof/master/README.md",
+        "quote": "Moreover, due to the open-source nature of the book, I have been able to incorporate content written by others."
+      }
+    ]
+  },
+  "notes": "Checked against the README of the book's own GitHub repository (dcernst/IBL-IntroToProof), which says the work is CC BY-SA 4.0, 'for any purpose, even commercially'. CC BY-SA 4.0 allows commercial use, so a paid app may show a passage with the credit in attribution; what Ceder changes stays under the same licence. The book's HTML site (dcernst.github.io) is on a host this check could not reach, so its own licence statement and any terms there were not read; check it before relying on this entry. The README asks that credit name 'the individuals listed above' as well as the author: its acknowledgements list Drupieski, Petersen, Tenner, Ellis, Grout, Hendrickson, Jayne, Jones, Yoshinobu, Richeson, Schumacher and Wiscons, and call it a partial list. It says several sections and appendices are adaptations or derivatives of content those people wrote, without saying whether they are under a different licence. The AMS/MAA Press print edition is a separate publication and was not read; this entry covers only the open version in the repository. The README says nothing about terms of use. Subjects: a transition-to-proof course, listed under discrete mathematics; it is not a philosophy logic text. The bank's agents don't read it and nothing from it goes into the bank."
+}

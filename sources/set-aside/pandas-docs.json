@@ -1,0 +1,39 @@
+{
+  "id": "pandas-docs",
+  "name": "pandas user guide and documentation",
+  "url": "https://pandas.pydata.org/docs/user_guide/",
+  "goodFor": "The official guide to data tables, cleaning and analysis in Python.",
+  "license": "BSD-3-Clause",
+  "licenseUrl": "https://raw.githubusercontent.com/pandas-dev/pandas/main/LICENSE",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "data-science"
+  ],
+  "kinds": [
+    "documentation",
+    "reference"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/pandas-dev/pandas/main/LICENSE",
+        "quote": "Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/pandas-dev/pandas/main/LICENSE",
+        "quote": "Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/pandas-dev/pandas/main/LICENSE",
+        "quote": "Neither the name of the copyright holder nor the names of its"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/pandas-dev/pandas/main/README.md",
+        "quote": "[BSD 3](LICENSE)"
+      }
+    ]
+  },
+  "notes": "The repository's LICENSE is BSD 3-Clause and its README names it as the project's licence. The licence text speaks of source and binary forms of software and doesn't say that the documentation or user guide is covered, and the published docs site (pandas.pydata.org, not reachable) with any copyright or terms page was not read, so the docs text can't be shown on this evidence. Link only until the docs site's own statement is read. BSD 3-Clause bars using the copyright holders' or contributors' names to endorse or promote derived products. The pandas name and logo were not checked for trademark terms."
+}

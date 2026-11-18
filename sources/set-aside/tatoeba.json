@@ -1,0 +1,48 @@
+{
+  "id": "tatoeba",
+  "name": "Tatoeba example sentences",
+  "url": "https://tatoeba.org/",
+  "goodFor": "Crowd-sourced translated example sentences in hundreds of languages.",
+  "license": "per-item",
+  "licenseUrl": "https://tatoeba.org/en/terms_of_use",
+  "apps": "link",
+  "bank": "none",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://tatoeba.org/en/terms_of_use",
+        "quote": "Tatoeba's technical infrastructure uses the default Creative Commons Attribution 2.0 France license (CC-BY 2.0 FR) for the use of textual sentences."
+      },
+      {
+        "url": "https://tatoeba.org/en/terms_of_use",
+        "quote": "Tatoeba allows licensing each text sentence, and applying the same license for all the audio contributions of the same contributor."
+      },
+      {
+        "url": "https://tatoeba.org/en/terms_of_use",
+        "quote": "We are not generally opposed to using our content for commercial purposes. However, this choice depends primarily on contributors."
+      },
+      {
+        "url": "https://tatoeba.org/en/terms_of_use",
+        "quote": "Certain phrases, in particular audio, may be contributed with a non-marketing condition, and therefore must not be marketed."
+      },
+      {
+        "url": "https://tatoeba.org/en/terms_of_use",
+        "quote": "Exceptionally, audio sentences may be under other licenses than Creative Commons"
+      }
+    ]
+  },
+  "subjects": [
+    "spanish",
+    "french",
+    "german",
+    "italian",
+    "japanese",
+    "mandarin-chinese"
+  ],
+  "kinds": [
+    "data",
+    "texts"
+  ],
+  "notes": "Checked against the Terms of Use (in force since 24 April 2022; the French version prevails). The default licence for text sentences is CC BY 2.0 FR, but a licence is set for each sentence (CC0 and CC BY are the examples given; ShareAlike and NoDerivatives conditions are possible), commercial use \"depends primarily on contributors\", some phrases, mostly audio, carry a non-commercial condition, and some audio isn't under Creative Commons at all. Because the licence is per sentence, it is link only; a sentence could be shown only after its own licence is read. The terms ban automated use that overloads the site; bulk data is offered from the downloads host (downloads.tatoeba.org, not reached). User-contributed, and the terms say translations and audio aren't checked by professionals."
+}

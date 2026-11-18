@@ -1,0 +1,40 @@
+{
+  "id": "pubchem",
+  "name": "PubChem",
+  "url": "https://pubchem.ncbi.nlm.nih.gov/",
+  "goodFor": "Looking up the structure, properties and identifiers of a compound.",
+  "license": "per-item",
+  "licenseUrl": "https://pubchem.ncbi.nlm.nih.gov/pcfe/docs/markdown/downloads.md",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "chemistry",
+    "organic-chemistry"
+  ],
+  "kinds": [
+    "data",
+    "reference"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/pcfe/docs/markdown/downloads.md",
+        "quote": "Exceptions may exist in cases where licensing agreements prevent our data contributors from allowing bulk downloads of some data sets."
+      },
+      {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/pcfe/docs/markdown/downloads.md",
+        "quote": "A data source may provide explicit data license information."
+      },
+      {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/pcfe/docs/markdown/downloads.md",
+        "quote": "One should check with the PubChem data source for the most current data licensing information."
+      },
+      {
+        "url": "https://pubchem.ncbi.nlm.nih.gov/pcfe/docs/markdown/programmatic-access.md",
+        "quote": "We ask that any user, application, or organization not make more than 5 requests per second, in order to avoid overloading these servers."
+      }
+    ]
+  },
+  "notes": "Partly checked. PubChem's own Downloading PubChem Data page (the markdown file its docs page loads, since the docs pages are built by script) says the data come from hundreds of contributors, each of which may state its own licence, that a record's provenance shows its contributor's licence, and that some data sets can't be bulk downloaded. So the licence is per item. The page points to the NCBI Policies and Disclaimers page (www.ncbi.nlm.nih.gov) and the NLM Web Policies page (www.nlm.nih.gov), which are the documents that would say whether NLM-produced content is public domain; neither host was reachable, so neither was read. The Programmatic Access page asks every user, application or organization to stay under 5 requests per second and says requests are throttled automatically, so an app that queries it must keep to that. Link only until the NCBI and NLM policy pages are read, and until a record's contributor licence is checked. The bank's agents don't read it and nothing from it goes into the bank."
+}

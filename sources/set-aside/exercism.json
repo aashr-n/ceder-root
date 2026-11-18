@@ -1,0 +1,34 @@
+{
+  "id": "exercism",
+  "name": "Exercism (Python track)",
+  "url": "https://exercism.org/tracks/python",
+  "goodFor": "Graded programming exercises with test suites; the Python track suits an introductory programming course.",
+  "license": "MIT",
+  "licenseUrl": "https://raw.githubusercontent.com/exercism/python/main/LICENSE",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "computer-science"
+  ],
+  "kinds": [
+    "exercises"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/exercism/python/main/README.md",
+        "quote": "This repository uses the [MIT License](/LICENSE)."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/exercism/python/main/LICENSE",
+        "quote": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/exercism/python/main/README.md",
+        "quote": "Starting with `Python 3.8.6`, examples, recipes, and other code in the Python documentation are dual licensed under the [PSF License Agreement][psf-license] and the [Zero-Clause BSD license][zero-clause-bsd]."
+      }
+    ]
+  },
+  "notes": "Only the Python track's repository (github.com/exercism/python) was read: it is MIT, and its README also quotes the Python documentation's PSF and Zero-Clause BSD terms for material from the Python docs. Exercism has many tracks, each its own repository with its own licence, and the exercises' wording is shared with exercism/problem-specifications, whose per-exercise sources weren't read. The website exercism.org and its Terms of Use weren't reachable, so nothing read says the terms leave room to store or show the exercises. Link only until the terms are read and each track used is checked. The bank's agents don't read it and nothing from it goes into the bank."
+}

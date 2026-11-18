@@ -3,5 +3,15 @@
   "id": "statistics",
   "name": "Statistics",
   "domain": "formal",
-  "summary": "Describing data, chance, and what a sample can say."
+  "summary": "Describing data, chance, and what a sample can say.",
+  "aliases": [
+    "Stats",
+    "Intro stats",
+    "Elementary statistics",
+    "Introductory statistics",
+    "Applied statistics",
+    "Statistical methods",
+    "Business statistics",
+    "Biostatistics"
+  ]
 }

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "american-sign-language",
+  "name": "American Sign Language",
+  "domain": "humanities",
+  "summary": "Elementary and intermediate ASL: signing, fingerspelling, grammar, receptive skills and Deaf culture.",
+  "aliases": [
+    "ASL",
+    "Sign language",
+    "Elementary ASL",
+    "Intermediate ASL"
+  ]
+}

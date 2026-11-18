@@ -3,5 +3,13 @@
   "id": "precalculus",
   "name": "Precalculus",
   "domain": "formal",
-  "summary": "Functions, algebra and trigonometry that calculus builds on."
+  "summary": "Functions, algebra and trigonometry that calculus builds on.",
+  "aliases": [
+    "Pre-calc",
+    "Precalc",
+    "College algebra",
+    "Algebra and trigonometry",
+    "Trigonometry",
+    "Elementary functions"
+  ]
 }

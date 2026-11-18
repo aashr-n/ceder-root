@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "microbiology",
+  "name": "Microbiology",
+  "domain": "natural",
+  "summary": "Bacteria, archaea, fungi, protists and viruses: their structure, growth, metabolism and genetics, the immune response, and infectious disease.",
+  "aliases": [
+    "General microbiology",
+    "Introductory microbiology",
+    "Microbiology for health sciences",
+    "Microbiology for nursing"
+  ]
+}

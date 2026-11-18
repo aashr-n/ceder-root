@@ -49,31 +49,31 @@ Human anatomy and physiology I and II, as a typical two-course college sequence 
 
 ## Biology
 
-Introductory biology for majors, as the two-course Biology I and II sequence teaches it: chemistry of life, cells, energy, genetics, molecular biology, evolution, diversity of life, animal and plant form and function, and ecology. Stops before graduate topics, history and biography. 43 packs, 226 concepts, 5 written.
+Introductory biology for majors, as the two-course Biology I and II sequence teaches it: chemistry of life, cells, energy, genetics, molecular biology, evolution, diversity of life, animal and plant form and function, and ecology. Stops before graduate topics, history and biography. 43 packs, 226 concepts, 23 written.
 
 1. **Atoms, bonds and water** ✓: Atom, Chemical bond, Hydrogen bond, Properties of water, pH scale
-2. **Biological macromolecules**: Carbohydrate, Lipid, Amino acid, Protein structure, Dehydration synthesis
+2. **Biological macromolecules** ✓: Carbohydrate, Lipid, Amino acid, Protein structure, Dehydration synthesis
 3. **Cell structure** ✓: Cell theory, Prokaryotic and eukaryotic cells, Cell membrane, Organelle, Cell nucleus, Ribosome, Endomembrane system, Mitochondrion
-4. **Membrane structure**: Fluid mosaic model, Phospholipid bilayer, Membrane protein, Membrane fluidity, Selective permeability
-5. **Membrane transport**: Diffusion, Osmosis, Tonicity, Facilitated diffusion, Active transport, Endocytosis and exocytosis
-6. **Cytoskeleton and cell movement**: Cytoskeleton, Microtubule, Actin filament, Intermediate filament, Motor protein, Cilia and flagella
-7. **Cell junctions and the extracellular matrix**: Extracellular matrix, Cell wall, Tight junction, Desmosome, Gap junction, Plasmodesma
-8. **Enzymes and energy**: Enzyme, Activation energy, Adenosine triphosphate (ATP), Redox reactions, Feedback inhibition
-9. **Cellular respiration**: Glycolysis, Pyruvate oxidation, Citric acid cycle, Electron transport chain, Chemiosmosis, Fermentation
-10. **Photosynthesis**: Chloroplast, Photosynthetic pigment, Light-dependent reactions, Calvin cycle
-11. **Cell communication**: Signal transduction, Cell surface receptor, Second messenger, Signal cascade, Apoptosis
+4. **Membrane structure** ✓: Fluid mosaic model, Phospholipid bilayer, Membrane protein, Membrane fluidity, Selective permeability
+5. **Membrane transport** ✓: Diffusion, Osmosis, Tonicity, Facilitated diffusion, Active transport, Endocytosis and exocytosis
+6. **Cytoskeleton and cell movement** ✓: Cytoskeleton, Microtubule, Actin filament, Intermediate filament, Motor protein, Cilia and flagella
+7. **Cell junctions and the extracellular matrix** ✓: Extracellular matrix, Cell wall, Tight junction, Desmosome, Gap junction, Plasmodesma
+8. **Enzymes and energy** ✓: Enzyme, Activation energy, Adenosine triphosphate (ATP), Redox reactions, Feedback inhibition
+9. **Cellular respiration** ✓: Glycolysis, Pyruvate oxidation, Citric acid cycle, Electron transport chain, Chemiosmosis, Fermentation
+10. **Photosynthesis** ✓: Chloroplast, Photosynthetic pigment, Light-dependent reactions, Calvin cycle
+11. **Cell communication** ✓: Signal transduction, Cell surface receptor, Second messenger, Signal cascade, Apoptosis
 12. **DNA structure** ✓: Nucleotide, Nitrogenous base, Sugar-phosphate backbone, Complementary base pairing, Chargaff's rules, Antiparallel strands, DNA double helix
 13. **DNA replication** ✓: DNA replication, Meselson-Stahl experiment, Origin of replication, DNA helicase, DNA polymerase, RNA primer, Leading and lagging strands
 14. **Cell division** ✓: Chromosome, Diploid and haploid cells, Cell cycle, Cell cycle regulation, Mitosis, Meiosis, Genetic variation in meiosis
-15. **Transcription**: Transcription, RNA polymerase, Promoter, Messenger RNA, RNA processing
-16. **Translation**: Genetic code, Transfer RNA, Translation, Post-translational modification
-17. **Protein sorting and trafficking**: Signal peptide, Secretory pathway, Vesicle transport, Golgi apparatus, Lysosome
-18. **Mendelian genetics**: Allele, Genotype and phenotype, Monohybrid cross, Dihybrid cross, Law of segregation, Law of independent assortment
-19. **Linkage and sex chromosomes**: Chromosome theory of inheritance, Genetic linkage, Recombination frequency, Genetic map, Sex-linked inheritance
-20. **Mutation and DNA repair**: Mutation, Point mutation, Frameshift mutation, Mismatch repair, Mutagen
-21. **Cell cycle control and cancer**: Cell cycle checkpoint, Cyclin-dependent kinase, Proto-oncogene, Tumor suppressor gene, Metastasis
-22. **Gene regulation**: Operon, Transcription factor, Enhancer, Epigenetic regulation, Alternative splicing
-23. **Recombinant DNA technology**: Restriction enzyme, Gel electrophoresis, Polymerase chain reaction, DNA sequencing, CRISPR-Cas9
+15. **Transcription** ✓: Transcription, RNA polymerase, Promoter, Messenger RNA, RNA processing
+16. **Translation** ✓: Genetic code, Transfer RNA, Translation, Post-translational modification
+17. **Protein sorting and trafficking** ✓: Signal peptide, Secretory pathway, Vesicle transport, Golgi apparatus, Lysosome
+18. **Mendelian genetics** ✓: Allele, Genotype and phenotype, Monohybrid cross, Dihybrid cross, Law of segregation, Law of independent assortment
+19. **Linkage and sex chromosomes** ✓: Chromosome theory of inheritance, Genetic linkage, Recombination frequency, Genetic map, Sex-linked inheritance
+20. **Mutation and DNA repair** ✓: Mutation, Point mutation, Frameshift mutation, Mismatch repair, Mutagen
+21. **Cell cycle control and cancer** ✓: Cell cycle checkpoint, Cyclin-dependent kinase, Proto-oncogene, Tumor suppressor gene, Metastasis
+22. **Gene regulation** ✓: Operon, Transcription factor, Enhancer, Epigenetic regulation, Alternative splicing
+23. **Recombinant DNA technology** ✓: Restriction enzyme, Gel electrophoresis, Polymerase chain reaction, DNA sequencing, CRISPR-Cas9
 24. **Natural selection**: Natural selection, Adaptation, Fitness, Sexual selection, Artificial selection
 25. **Population genetics**: Allele frequency, Hardy-Weinberg principle, Genetic drift, Gene flow, Founder effect
 26. **Speciation**: Species, Reproductive isolation, Allopatric speciation, Sympatric speciation, Hybrid zone
@@ -322,3 +322,5 @@ Introductory statistics, including probability, as a first college course teache
 7. **Comparing two groups**: Difference of means, Independent samples, Two-sample t-test, Paired data, Paired t-test
 8. **Proportions and chi-square tests**: Sample proportion, Confidence interval for a proportion, One-proportion z-test, Chi-square distribution, Chi-square goodness-of-fit test, Chi-square test of independence
 9. **Correlation and simple linear regression**: Scatter plot, Correlation coefficient, Correlation does not imply causation, Least-squares regression line, Residual, Coefficient of determination
+
+No plan yet (105 subjects): Abnormal psychology; African American studies; African history; Algorithms; American government; American Sign Language; Ancient Greek; Arabic; Archaeology; Art history; Asian American studies; Astronomy; Atmospheric science; Biblical studies; Biological anthropology; Business; Business law; Cell biology; Chicano and Latino studies; Chinese; Classical civilization; Classical mythology; Cognitive science; College composition; Communication studies; Comparative politics; Computer organization and systems; Computer science principles; Creative writing; Cultural anthropology; Data science; Developmental psychology; Digital logic design; Dynamics; East Asian history; Ecology and evolution; Education; Electric circuits; Engineering design and graphics; Engineering thermodynamics; Environmental science; Ethics; Ethnic studies; European history; Film studies; Finance; Financial accounting; French; Gender and sexuality studies; Genetics; Geographic information systems; Geology; German; Hindi and Urdu; History of philosophy; Human geography; International relations; Italian; Japanese; Kinesiology; Korean; Latin; Latin American history; Linguistics; Literature; Logic; Macroeconomics; Managerial accounting; Marketing; Materials science; Mechanics of materials; Microbiology; Microeconomics; Middle Eastern history; Modern Hebrew; Multivariable calculus; Music appreciation; Music theory; Neuroscience; Nutrition; Oceanography; Philosophy; Physical geography; Political theory; Portuguese; Probability; Psychology; Public health; Public policy; Public speaking; Quantitative reasoning; Russian; Social psychology; Sociology; Spanish; Statics; Studio art foundations; Technical writing; Theatre; United States history; Waves, thermal and modern physics; Western civilization; World history; World literature; World religions.

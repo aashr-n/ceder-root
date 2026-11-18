@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "dynamics",
+  "name": "Dynamics",
+  "domain": "applied",
+  "summary": "Engineering mechanics after statics: kinematics and kinetics of particles and rigid bodies with Newton's laws, work and energy, and impulse and momentum.",
+  "aliases": [
+    "Engineering dynamics",
+    "Engineering mechanics: dynamics",
+    "Rigid body dynamics"
+  ]
+}

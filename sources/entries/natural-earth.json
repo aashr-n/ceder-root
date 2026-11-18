@@ -1,0 +1,41 @@
+{
+  "id": "natural-earth",
+  "name": "Natural Earth",
+  "url": "https://www.naturalearthdata.com",
+  "goodFor": "Public-domain world vector and raster map data at 1:10m, 1:50m and 1:110m scales for building country, coastline and physical maps.",
+  "license": "LicenseRef-PublicDomain",
+  "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "geographic-information-systems",
+    "physical-geography",
+    "human-geography"
+  ],
+  "kinds": [
+    "data"
+  ],
+  "attribution": "Optional (the terms say crediting is unnecessary), but Ceder credits it: \"Made with Natural Earth. Free vector and raster map data @ naturalearthdata.com\", linked to https://www.naturalearthdata.com.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+        "quote": "All versions of Natural Earth raster + vector map data found on this website are in the public domain."
+      },
+      {
+        "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+        "quote": "No permission is needed to use Natural Earth."
+      },
+      {
+        "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+        "quote": "The authors used data from The Washington Post, here is their release: Natural Earth is hereby granted a non-exclusive license to use the data being provided by The Washington Post for the sole purpose of creating a world base map."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/README.md",
+        "quote": "Natural Earth is a public domain map dataset available at 1:10m, 1:50m, and 1:110 million scales."
+      }
+    ]
+  },
+  "notes": "Checked against the site's Terms of Use and the vector repository's README: the map data is public domain, and its authors invite personal, educational and commercial use, with no permission or credit needed. The page records that some layers were built from data licensed to Natural Earth by The Washington Post, the EC Joint Research Centre, XNR Productions and International Mapping Associates (for the sole purpose of creating a world base map), which are not themselves public-domain grants, so Ceder relies on the authors' public-domain statement for the finished dataset; names in more than 20 languages come from Wikidata (CC0). The site's footer still reads All rights reserved, which the page's own terms override for the data. The page names no SPDX licence (the candidate's CC0-1.0 claim is not on it), so the id is LicenseRef-PublicDomain. Boundaries and names are cartographic choices, not an authority on disputed borders. It is map data, so it serves geography and GIS exercises, not as explanatory text; the site's logos are offered only for crediting Natural Earth."
+}

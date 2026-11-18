@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "cognitive-science",
+  "name": "Cognitive science",
+  "domain": "social",
+  "summary": "The mind as an information processor, drawing on psychology, linguistics, philosophy, neuroscience and computing: perception, memory, language, reasoning and models.",
+  "aliases": [
+    "Cog sci",
+    "Intro to cognitive science",
+    "Mind and cognition"
+  ]
+}

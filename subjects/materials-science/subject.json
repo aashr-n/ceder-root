@@ -1,0 +1,14 @@
+{
+  "formatVersion": 1,
+  "id": "materials-science",
+  "name": "Materials science",
+  "domain": "applied",
+  "summary": "How structure sets properties: bonding, crystals, defects, diffusion, phase diagrams, and the mechanical and electrical behaviour of metals, ceramics and polymers.",
+  "aliases": [
+    "Materials science and engineering",
+    "Intro to materials science",
+    "Engineering materials",
+    "Materials engineering",
+    "Structure and properties of materials"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "formatVersion": 1,
+  "id": "ancient-greek",
+  "name": "Ancient Greek",
+  "domain": "humanities",
+  "summary": "Elementary and intermediate Ancient Greek: grammar and vocabulary, then reading authors such as Homer, Plato and the New Testament.",
+  "aliases": [
+    "Classical Greek",
+    "Attic Greek",
+    "Koine Greek",
+    "Biblical Greek",
+    "Elementary Ancient Greek"
+  ]
+}

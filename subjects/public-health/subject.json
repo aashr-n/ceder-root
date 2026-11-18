@@ -1,0 +1,14 @@
+{
+  "formatVersion": 1,
+  "id": "public-health",
+  "name": "Public health",
+  "domain": "applied",
+  "summary": "The health of populations rather than patients: determinants of health, basic epidemiology, prevention, health systems and policy, and disparities.",
+  "aliases": [
+    "Introduction to public health",
+    "Global health",
+    "Community health",
+    "Population health",
+    "Introduction to epidemiology"
+  ]
+}

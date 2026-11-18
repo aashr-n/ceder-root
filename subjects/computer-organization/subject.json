@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "computer-organization",
+  "name": "Computer organization and systems",
+  "domain": "formal",
+  "summary": "How a computer runs a program, the layer below CS1 and CS2: data representation, assembly language, the processor, the memory hierarchy and C systems programming.",
+  "aliases": [
+    "Computer organization",
+    "Computer architecture",
+    "Computer systems",
+    "Introduction to computer systems",
+    "Machine structures",
+    "Assembly language",
+    "Computer organization and assembly language",
+    "Systems programming"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "world-history",
+  "name": "World history",
+  "domain": "humanities",
+  "summary": "Societies across the globe and how they connected: states, empires, trade, religion, technology and migration, from early civilisations to now.",
+  "aliases": [
+    "World civilizations",
+    "History of world civilizations",
+    "Global history"
+  ]
+}

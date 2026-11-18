@@ -1,0 +1,44 @@
+{
+  "id": "open-data-structures",
+  "name": "Open Data Structures (Pat Morin)",
+  "url": "https://opendatastructures.org/",
+  "goodFor": "A data structures textbook with every structure analysed and implemented, in Java, C++ and pseudocode editions with their source code.",
+  "license": "CC-BY-2.5-CA",
+  "licenseUrl": "https://opendatastructures.org/",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "algorithms",
+    "computer-science"
+  ],
+  "kinds": [
+    "textbook"
+  ],
+  "attribution": "\"Pat Morin, Open Data Structures\", linked to https://opendatastructures.org/, with the chapter named; \"CC BY 2.5 Canada\", linked to http://creativecommons.org/licenses/by/2.5/ca/; and, when the text shown was shortened or changed, a note that it was.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://opendatastructures.org/",
+        "quote": "and are released under a Creative Commons Attribution License."
+      },
+      {
+        "url": "https://opendatastructures.org/",
+        "quote": "Users are free to copy, distribute, use, and adapt the text and source code, even commercially."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/patmorin/ods/master/COPYING",
+        "quote": "This code is released under a Creative Commons Attribution license."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/patmorin/ods/master/COPYING",
+        "quote": "Users of this code should attribute the work to the Open Data Structures project by displaying a notice stating their product contains code and/or text from the Open Data Structures Project and/or linking to opendatastructures.org."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/patmorin/ods/master/COPYING",
+        "quote": "Consult the file headers of the files in these directories for information about their copyright status."
+      }
+    ]
+  },
+  "notes": "Checked against the book's home page and the COPYING file in the author's repository (github.com/patmorin/ods). The home page says the book and its source code are released under a Creative Commons Attribution licence (the link goes to CC BY 2.5 Canada) and that users may adapt them 'even commercially'; the SPDX list has no id for the 2.5 Canada port, so CC-BY-2.5-CA follows the page's link. COPYING covers the latex/ and java/ods/ directories and asks users to credit the Open Data Structures project or link to opendatastructures.org. Third-party code in java/test/acc/ and java/test/jdk/ (Sun Microsystems, Apache Foundation) has its own headers and isn't covered. The book's figures weren't checked one by one for outside sources. Some third-party catalogues list the 2013 AU Press print edition as CC BY-NC-ND; that wasn't seen on the author's pages and the AU Press edition wasn't read, so show only the author's editions from opendatastructures.org. The home page's 'Related projects' list links to other people's books under other licences, some NonCommercial; none of them is part of this entry. The bank's agents don't read it and nothing from it goes into the bank."
+}

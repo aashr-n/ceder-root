@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "mechanics-of-materials",
+  "name": "Mechanics of materials",
+  "domain": "applied",
+  "summary": "How solid parts deform and fail under load, after statics: stress and strain, axial load, torsion, bending and shear, beam deflection and column buckling.",
+  "aliases": [
+    "Strength of materials",
+    "Mechanics of solids",
+    "Solid mechanics",
+    "Mechanics of deformable bodies"
+  ]
+}

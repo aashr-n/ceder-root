@@ -1,0 +1,44 @@
+{
+  "id": "open-logic-project",
+  "name": "Open Logic Project",
+  "url": "https://openlogicproject.org/",
+  "goodFor": "An open text on propositional and first-order logic, sets, relations and computability for philosophy, mathematics and CS.",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://raw.githubusercontent.com/OpenLogicProject/OpenLogic/master/README.md",
+  "apps": "show",
+  "bank": "none",
+  "attribution": "\"The Open Logic Text\" by The Open Logic Project, linked to https://openlogicproject.org/ (authors listed at https://openlogicproject.org/people/); \"CC BY 4.0\", linked to https://creativecommons.org/licenses/by/4.0/; and a note when the text shown was shortened or changed.",
+  "subjects": [
+    "logic",
+    "discrete-mathematics"
+  ],
+  "kinds": [
+    "textbook"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/OpenLogicProject/OpenLogic/master/README.md",
+        "quote": "is licensed under a Creative Commons Attribution 4.0 International License"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/OpenLogicProject/OpenLogic/master/README.md",
+        "quote": "The text can be rearranged and remixed."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/OpenLogicProject/OpenLogic/master/README.md",
+        "quote": "The Open Logic Project is an open source, open access collection of materials on advanced logic, aimed mainly at philosophers, but also suitable for computer scientists and mathematicians."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/OpenLogicProject/OpenLogic/master/README.md",
+        "quote": "This repository contains LaTeX source files only."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/OpenLogicProject/OpenLogic/master/LICENSE.md",
+        "quote": "Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:"
+      }
+    ]
+  },
+  "notes": "The project's own GitHub repository README declares The Open Logic Text CC BY 4.0 (\"Author(s): The Open Logic Project\"), and LICENSE.md holds the CC BY 4.0 legal code, which allows commercial use, so a paid app may show a passage with the credit in attribution; nothing read limits commercial or automated use. The licence statement read is the repository's, not the project website's: openlogicproject.org and builds.openlogicproject.org were not reachable and not read, so any site terms are unchecked. The repository holds LaTeX source only, so text shown would come from a PDF build of that source. The README describes the material as advanced logic aimed mainly at philosophers; the propositional and first-order logic, sets, relations and functions parts suit an introductory logic or discrete mathematics course, while the metalogic, computability and incompleteness parts are beyond lower division. Figures or passages the text credits to others were not checked. The bank's agents don't read it and nothing from it goes into the bank."
+}

@@ -1,0 +1,47 @@
+{
+  "id": "medlineplus",
+  "name": "MedlinePlus (National Library of Medicine)",
+  "url": "https://medlineplus.gov/",
+  "goodFor": "Plain-language health topic, genetics and medical test pages for anatomy, nutrition and public health questions.",
+  "license": "per-item",
+  "licenseUrl": "https://medlineplus.gov/about/using/usingcontent/",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "anatomy-and-physiology",
+    "nutrition",
+    "public-health"
+  ],
+  "kinds": [
+    "reference"
+  ],
+  "linking": {
+    "external": true
+  },
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://medlineplus.gov/about/using/usingcontent/",
+        "quote": "Some of the content on MedlinePlus is in the public domain (not copyrighted), and other content is copyrighted and licensed specifically for use on MedlinePlus."
+      },
+      {
+        "url": "https://medlineplus.gov/about/using/usingcontent/",
+        "quote": "You may reproduce, redistribute, and link freely to non-copyrighted content, including on social media."
+      },
+      {
+        "url": "https://medlineplus.gov/about/using/usingcontent/",
+        "quote": "Images, illustrations, and photos, except those noted above, may be copyright protected"
+      },
+      {
+        "url": "https://medlineplus.gov/about/using/usingcontent/",
+        "quote": "Images on Health Topic and Genetics pages with no attribution: These are stock images licensed expressly for MedlinePlus; you may not reproduce or redistribute these images."
+      },
+      {
+        "url": "https://medlineplus.gov/about/using/usingcontent/",
+        "quote": "You may not frame or manipulate web addresses (URLs) so that MedlinePlus pages appear on a URL other than www.nlm.nih.gov or medlineplus.gov."
+      }
+    ]
+  },
+  "notes": "Checked against MedlinePlus's own page on linking to and using its content (last updated October 26, 2022). It says the site mixes public-domain and copyrighted material: the home page, health topic summaries, medical test information, Genetics summaries, illustrations carrying the National Library of Medicine watermark, healthy recipes, videos and two tutorials are public domain (credit requested), while the A.D.A.M. Medical Encyclopedia and ASHP drug monographs are copyrighted, other images may be copyrighted, and unattributed images are stock licensed only to MedlinePlus. Copyrighted items are labelled, usually near the bottom of a page. The page asks for the credit \"Courtesy of MedlinePlus from the National Library of Medicine\" or \"Source: MedlinePlus, National Library of Medicine\". Public-domain status rests on US law. Because the status varies by page and by image, and a student-facing app can't tell them apart reliably, it is recorded per-item and link only; a bounded public-domain part could be reconsidered after checking each page type. The page forbids framing a MedlinePlus page under another address, so links open the site itself (linking.external). The page says nothing about AI or automated use beyond a ban on ingesting the copyrighted content into health IT systems; the RSS feeds are personal use only. NLM's separate copyright and web policies pages were not read. The bank's agents don't read it and nothing from it goes into the bank."
+}

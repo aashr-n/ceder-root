@@ -1,0 +1,31 @@
+{
+  "id": "lippman-precalculus",
+  "name": "Precalculus: An Investigation of Functions (David Lippman and Melonie Rasmussen)",
+  "url": "https://www.opentextbookstore.com/precalc/",
+  "goodFor": "A function-centred precalculus text including trigonometry, with exercises and answers.",
+  "license": "per-item",
+  "licenseUrl": "https://www.opentextbookstore.com/precalc/",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "precalculus"
+  ],
+  "kinds": [
+    "textbook",
+    "exercises"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://www.opentextbookstore.com/precalc/",
+        "quote": "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License ."
+      },
+      {
+        "url": "https://www.opentextbookstore.com/precalc/",
+        "quote": "The detailed solutions manual was contributed by Shoreline Community College and Evergreen State College, and is licensed under a Creative Commons Attribution-NonCommercial ShareAlike License ."
+      }
+    ]
+  },
+  "notes": "The book's home page states CC BY-SA 4.0 for the book but puts its detailed solutions manual under a NonCommercial licence. The 2nd edition PDF's front matter (read, not rechecked, since the recheck tool can't read a PDF) says portions of chapter 3 were remixed from Stitz and Zeager's College Algebra, originally CC BY-SA-NC, used with permission, and that chapter 9 contains content from OpenStax's Precalculus, which Ceder leaves out; it also marks selected exercises [UW] from a GFDL work. Those portions aren't marked in the page text, so the part that qualifies can't be cleanly bounded. The PDF also allows small portions (under 10%) to be remixed into CC-BY, CC-BY-SA-NC or GFDL works. Link only. The book itself is otherwise a good lower-division text. The site has no terms-of-use page; none was found. A LibreTexts copy was not read."
+}

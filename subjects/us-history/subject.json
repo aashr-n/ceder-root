@@ -1,0 +1,14 @@
+{
+  "formatVersion": 1,
+  "id": "us-history",
+  "name": "United States history",
+  "domain": "humanities",
+  "summary": "The United States from colonial settlement to the present, usually as two surveys split at the Civil War or Reconstruction.",
+  "aliases": [
+    "American history",
+    "US history",
+    "History of the United States",
+    "American history survey",
+    "Early American history"
+  ]
+}

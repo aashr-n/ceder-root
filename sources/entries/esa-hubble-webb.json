@@ -1,0 +1,48 @@
+{
+  "id": "esa-hubble-webb",
+  "name": "ESA/Hubble and ESA/Webb images, videos and web texts",
+  "url": "https://esahubble.org/",
+  "goodFor": "Hubble and Webb images and videos with explanations, credit lines and press-release text for astronomy.",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://esahubble.org/copyright/",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "astronomy"
+  ],
+  "kinds": [
+    "media",
+    "video"
+  ],
+  "attribution": "The credit line shown under each image or video on the source page, unaltered (for example \"ESA/Hubble\" or \"ESA/Webb\"), linked to the page; \"CC BY 4.0\", linked to https://creativecommons.org/licenses/by/4.0/; web text credited to \"ESA/Hubble\" or \"ESA/Webb\"; and, when an image was changed beyond resizing or cropping, a note of the change after the credit line.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://esahubble.org/copyright/",
+        "quote": "ESA/Hubble images, videos and web texts are released under the Creative Commons Attribution 4.0 International license and may on a non-exclusive basis be reproduced without fee provided they are clearly and visibly credited."
+      },
+      {
+        "url": "https://esahubble.org/copyright/",
+        "quote": "Also note that music, scientific papers and code on this site are not released under the Creative Commons Attribution 4.0 International license and can not be used for non-ESA/Hubble products."
+      },
+      {
+        "url": "https://esahubble.org/copyright/",
+        "quote": "Note that this general permission does not extend to the use of ESA/Hubble's logos, which shall remain protected and may not be used or reproduced without prior and individual written consent of ESA/Hubble."
+      },
+      {
+        "url": "https://esahubble.org/copyright/",
+        "quote": "If an image shows an identifiable person, using that image for commercial purposes may infringe that person's right of privacy, and separate permission should be obtained from the individual."
+      },
+      {
+        "url": "https://esawebb.org/copyright/",
+        "quote": "ESA/Webb images, videos and web texts are released under the Creative Commons Attribution 4.0 International license and may on a non-exclusive basis be reproduced without fee provided they are clearly and visibly credited."
+      },
+      {
+        "url": "https://esawebb.org/copyright/",
+        "quote": "Unless explicitly stated otherwise, all the images and videos on ESAWebb.org are available for use without prior permission and without charge."
+      }
+    ]
+  },
+  "notes": "Checked against the usage pages of esahubble.org and esawebb.org (the same wording on both). Images, videos and web texts are CC BY 4.0, which allows commercial use, so a paid app may show them with the credit line. The credit must be clear, visible, unaltered and never separated from the image; the credit names may not be removed. Excepted: music, scientific papers and code (not CC BY); ESA/Hubble and ESA/Webb logos (protected, written consent needed); an identifiable person in an image, whose own privacy rights may need separate permission for commercial use, so an app doesn't show such an image without it (unlike ESO's page, which takes such images out of the licence for commercial use, this is a warning about the person's rights, as Wikimedia Commons gives, not a narrower licence; see eso-public-images); anything the site explicitly states otherwise. The material may not be used to state or imply endorsement of a commercial product or service. Many images carry multi-party credits (ESA, NASA, STScI and others); the pages say those parties need not be contacted unless an image explicitly states otherwise, so an app checks each image's own page for a differing statement and always shows the full credit. The pages for HubbleSite.org (NASA) state different conditions and were not read. The sites' separate privacy policy and any site-wide terms beyond the usage pages were not read. Page text was read in full only for the two usage pages; they say nothing about automated access or AI use. Using a logo even for a link needs prior authorisation; a plain text link has no stated condition. The sites also host press-release text whose images may come from other observatories; those images follow their own credit and any statement on their page."
+}

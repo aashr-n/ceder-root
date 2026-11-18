@@ -1,0 +1,30 @@
+{
+  "id": "econometrics-with-r",
+  "name": "Introduction to Econometrics with R (Hanck, Arnold, Gerber, Schmelzer)",
+  "url": "https://www.econometrics-with-r.org/",
+  "goodFor": "Hands-on regression, instrumental variables and panel data with R code, as a companion to a standard econometrics course.",
+  "license": "CC-BY-NC-SA-4.0",
+  "licenseUrl": "https://raw.githubusercontent.com/mca91/EconometricsWithR/master/README.md",
+  "apps": "link",
+  "bank": "none",
+  "subjects": ["statistics", "data-science"],
+  "kinds": ["textbook"],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/mca91/EconometricsWithR/master/README.md",
+        "quote": "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/mca91/EconometricsWithR/master/LICENSE",
+        "quote": "Attribution-NonCommercial-ShareAlike 4.0 International"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/mca91/EconometricsWithR/master/README.md",
+        "quote": "is an interactive companion to the well-received textbook"
+      }
+    ]
+  },
+  "notes": "Checked against the book's GitHub repository (README and LICENSE, the CC BY-NC-SA 4.0 legal text), which is where the book is developed and which links to the book's site. The licence is NonCommercial, and Ceder has paid plans, so an app only links to it. The book is a companion to Stock and Watson's Introduction to Econometrics (Pearson), so it follows that textbook's empirical applications. The book's own website (www.econometrics-with-r.org) was not reachable from this check and was not read, so any terms stated only there are unseen; its interactive exercises use DataCamp Light, a third-party tool whose terms weren't read. The repository's code and the book's figures were not checked separately. The bank's agents don't read it and nothing from it goes into the bank."
+}

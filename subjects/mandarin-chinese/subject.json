@@ -1,0 +1,15 @@
+{
+  "formatVersion": 1,
+  "id": "mandarin-chinese",
+  "name": "Chinese",
+  "domain": "humanities",
+  "summary": "Elementary and intermediate Mandarin Chinese: pinyin and tones, characters, grammar, conversation and reading.",
+  "aliases": [
+    "Mandarin",
+    "Mandarin Chinese",
+    "Elementary Chinese",
+    "Intermediate Chinese",
+    "Beginning Chinese",
+    "Elementary Mandarin"
+  ]
+}

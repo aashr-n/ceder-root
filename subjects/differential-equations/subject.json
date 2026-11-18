@@ -3,5 +3,12 @@
   "id": "differential-equations",
   "name": "Differential equations",
   "domain": "formal",
-  "summary": "Equations that relate a function to its rates of change, and how to solve them."
+  "summary": "Equations that relate a function to its rates of change, and how to solve them.",
+  "aliases": [
+    "ODEs",
+    "Diff eq",
+    "Diffy Q",
+    "Ordinary differential equations",
+    "Elementary differential equations"
+  ]
 }

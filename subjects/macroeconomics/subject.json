@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "macroeconomics",
+  "name": "Macroeconomics",
+  "domain": "social",
+  "summary": "The economy as a whole: GDP, unemployment, inflation, growth, money and banking, fiscal and monetary policy, and international trade and finance.",
+  "aliases": [
+    "Principles of macroeconomics",
+    "Intro to macroeconomics",
+    "Intro macro",
+    "Macro"
+  ]
+}

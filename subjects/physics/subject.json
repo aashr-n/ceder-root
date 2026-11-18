@@ -3,5 +3,16 @@
   "id": "physics",
   "name": "Physics",
   "domain": "natural",
-  "summary": "Motion, forces, energy, and the fields behind electricity and magnetism."
+  "summary": "Motion, forces, energy, and the fields behind electricity and magnetism.",
+  "aliases": [
+    "General physics",
+    "University physics",
+    "College physics",
+    "Physics for scientists and engineers",
+    "Calculus-based physics",
+    "Algebra-based physics",
+    "Electricity and magnetism",
+    "E&M",
+    "Newtonian mechanics"
+  ]
 }

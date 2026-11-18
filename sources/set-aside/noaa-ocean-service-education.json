@@ -1,0 +1,36 @@
+{
+  "id": "noaa-ocean-service-education",
+  "name": "NOAA National Ocean Service Education",
+  "url": "https://oceanservice.noaa.gov/education/",
+  "goodFor": "Agency-written ocean, coastal and climate explainers and lessons for oceanography and environmental science.",
+  "license": "per-item",
+  "licenseUrl": "https://oceanservice.noaa.gov/disclaimer.html",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "oceanography",
+    "environmental-science"
+  ],
+  "kinds": [
+    "lessons",
+    "reference"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://oceanservice.noaa.gov/disclaimer.html",
+        "quote": "Information presented on this website is considered public information and may be distributed or copied, unless specifically noted otherwise."
+      },
+      {
+        "url": "https://oceanservice.noaa.gov/disclaimer.html",
+        "quote": "The seals, initials, and agency identification can not be used without the written permission of the agency."
+      },
+      {
+        "url": "https://oceanservice.noaa.gov/disclaimer.html",
+        "quote": "The quality and completeness of both the metadata, data and information products are the responsibility of the individual contributor, and not NOAA or DOC."
+      }
+    ]
+  },
+  "notes": "Checked against the National Ocean Service Website Disclaimers page only. It calls the site's information 'public information' that may be distributed or copied 'unless specifically noted otherwise', but does not say the content is in the public domain or not copyrighted, and lessons and images may include material by others, so the licence is per item: an app links to it. The same page says contributors, not NOAA, are responsible for the quality and completeness of data and information products, and that seals, initials and agency identification need written permission. The NOAA-wide policy pages (www.noaa.gov/disclaimer and others) returned a 403 from the site, climate.gov's policy page is a 404 and the site shows a banner saying it is an archived copy as of June 25, 2025, and weather.gov (JetStream) and oceanexplorer.noaa.gov are not reachable here, so those sites were not checked and are not covered by this record. The us-government record covers federal works generally; this one adds the NOS education section as a link destination for oceanography and environmental science. The bank's agents don't read it and nothing from it goes into the bank."
+}

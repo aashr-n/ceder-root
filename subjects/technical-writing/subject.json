@@ -1,0 +1,15 @@
+{
+  "formatVersion": 1,
+  "id": "technical-writing",
+  "name": "Technical writing",
+  "domain": "humanities",
+  "summary": "Writing for work in science, engineering and business: reports, proposals, instructions and documentation for a specific audience; practical, not academic or creative.",
+  "aliases": [
+    "Technical communication",
+    "Professional writing",
+    "Business writing",
+    "Scientific writing",
+    "Writing for engineers",
+    "Engineering communication"
+  ]
+}

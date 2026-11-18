@@ -1,0 +1,39 @@
+{
+  "id": "lumen-principles-of-management",
+  "name": "Principles of Management (Lumen Waymaker)",
+  "url": "https://courses.lumenlearning.com/wm-principlesofmanagement/",
+  "goodFor": "Planning, organising, leading and controlling, with modules on ethics, diversity and global management.",
+  "license": "per-item",
+  "licenseUrl": "https://courses.lumenlearning.com/wm-principlesofmanagement/",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "business"
+  ],
+  "kinds": [
+    "textbook",
+    "lessons"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://courses.lumenlearning.com/wm-principlesofmanagement/",
+        "quote": "This courseware includes resources copyrighted and openly licensed by multiple individuals and organizations."
+      },
+      {
+        "url": "https://courses.lumenlearning.com/wm-principlesofmanagement/",
+        "quote": "Click the words \"Licenses and Attributions\" at the bottom of each page for copyright and licensing information specific to the material on that page."
+      },
+      {
+        "url": "https://courses.lumenlearning.com/wm-principlesofmanagement/chapter/about-this-course",
+        "quote": "IMPORTANT REMINDER: This Waymaker Principles of Management course has moved into Lumen One ."
+      },
+      {
+        "url": "https://courses.lumenlearning.com/wm-principlesofmanagement/chapter/about-this-course",
+        "quote": "When we can’t find pre-existing OER, we create original content and license it as OER (under a Creative Commons Attribution license)."
+      }
+    ]
+  },
+  "notes": "The course's own front page says licences are set page by page and that the courseware mixes resources from several owners. Five chapter pages were read (Introduction: Bureaucratic Management, Introduction: Humanistic Management, Role of Strategy in Management, Stages of Team Development, Key Dimensions of Organizational Culture); each was marked original Lumen Learning content under CC BY (version not stated), with images from Walmart on Flickr (CC BY) and Pixabay (CC0) credited separately. The other several hundred pages were not read and may carry other licences, third-party media or adapted text. The About page says Lumen uses existing OER where it can and licenses its own content under a Creative Commons Attribution licence, without a version. The course has moved to Lumen One and is no longer updated here. No terms-of-use page was found on courses.lumenlearning.com. Set aside as link-only."
+}

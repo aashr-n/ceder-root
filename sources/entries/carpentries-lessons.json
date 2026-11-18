@@ -1,0 +1,45 @@
+{
+  "id": "carpentries-lessons",
+  "name": "The Carpentries lessons (Software, Data and Library Carpentry)",
+  "url": "https://carpentries.org/lessons/",
+  "goodFor": "Short hands-on beginner lessons with exercises on the Unix shell, Git, Python, SQL and R.",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://raw.githubusercontent.com/swcarpentry/shell-novice/main/LICENSE.md",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "computer-science",
+    "data-science"
+  ],
+  "kinds": [
+    "lessons",
+    "exercises"
+  ],
+  "attribution": "The lesson's title, linked to the lesson's page, with \"derived from work that is Copyright (c) The Carpentries\" linked to https://carpentries.org/; \"CC BY 4.0\", linked to https://creativecommons.org/licenses/by/4.0/; and a note when the text shown was shortened or changed.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/swcarpentry/shell-novice/main/LICENSE.md",
+        "quote": "All Carpentries (Software Carpentry, Data Carpentry, and Library Carpentry) instructional material is made available under the [Creative Commons Attribution license][cc-by-human]."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/swcarpentry/shell-novice/main/LICENSE.md",
+        "quote": "for any purpose, even commercially."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/swcarpentry/shell-novice/main/LICENSE.md",
+        "quote": "You must give appropriate credit (mentioning that your work is derived from work that is Copyright (c) The Carpentries and, where practical, linking to"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/swcarpentry/shell-novice/main/LICENSE.md",
+        "quote": "are registered trademarks of [The Carpentries, Inc.](https://carpentries.org)."
+      },
+      {
+        "url": "https://carpentries.org/license/",
+        "quote": "Unless specified otherwise, the text content of this website is licensed Creative Commons Attribution 4.0 International License"
+      }
+    ]
+  },
+  "notes": "Checked against the LICENSE.md of the shell-novice lesson repository, the same file in git-novice (Software Carpentry), python-ecology-lesson (Data Carpentry) and lc-shell (Library Carpentry), which differ only in how one link is written, and the licence page on carpentries.org. The repository statement says all Software, Data and Library Carpentry instructional material is CC BY 4.0, \"for any purpose, even commercially\"; credit must say the work is derived from work that is Copyright (c) The Carpentries, link to carpentries.org where practical, link to the licence and say if changes were made. Example programs and other software are MIT \"except where otherwise noted\". Only those four repositories' LICENSE.md files were read; the lesson sites (swcarpentry.github.io, datacarpentry.github.io, librarycarpentry.github.io) were not, so a lesson whose repository carries a different LICENSE.md, and any figure or dataset a lesson credits to someone else, needs its own check. HPC Carpentry lessons and the Carpentries Incubator and Lab community lessons are not named in the statement and are not covered by this entry. On carpentries.org the text is CC BY 4.0 unless specified otherwise, and images there belong to their creators unless otherwise specified, so a picture on the website is not covered. \"The Carpentries\", \"Software Carpentry\", \"Data Carpentry\", \"Library Carpentry\" and their logos are registered trademarks and aren't licensed; don't use them to suggest endorsement. No terms-of-use page was found on carpentries.org. The bank's agents don't read it and nothing from it goes into the bank."
+}

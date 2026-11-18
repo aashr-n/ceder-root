@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "college-composition",
+  "name": "College composition",
+  "domain": "humanities",
+  "summary": "The first-year writing course: reading critically, arguing from evidence, drafting and revising, and the researched academic essay.",
+  "aliases": [
+    "English composition",
+    "Freshman composition",
+    "Freshman English",
+    "First-year writing",
+    "Expository writing",
+    "Academic writing",
+    "Rhetoric and composition",
+    "College writing"
+  ]
+}

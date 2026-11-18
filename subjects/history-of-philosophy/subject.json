@@ -1,0 +1,14 @@
+{
+  "formatVersion": 1,
+  "id": "history-of-philosophy",
+  "name": "History of philosophy",
+  "domain": "humanities",
+  "summary": "The major Western philosophers in historical order, from the Presocratics, Plato and Aristotle through Descartes and Hume to Kant; a survey, not a topics course.",
+  "aliases": [
+    "History of Western philosophy",
+    "Ancient philosophy",
+    "Greek philosophy",
+    "Modern philosophy",
+    "Early modern philosophy"
+  ]
+}

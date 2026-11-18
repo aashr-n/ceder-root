@@ -1,0 +1,36 @@
+{
+  "id": "riscv-isa-manual",
+  "name": "The RISC-V Instruction Set Manual",
+  "url": "https://github.com/riscv/riscv-isa-manual",
+  "goodFor": "The official specification of the RISC-V instruction set, a reference beside a computer organisation course.",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://raw.githubusercontent.com/riscv/riscv-isa-manual/main/README.md",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "computer-organization"
+  ],
+  "kinds": [
+    "reference",
+    "documentation"
+  ],
+  "attribution": "\"The RISC-V Instruction Set Manual\" by the RISC-V contributors, linked to https://github.com/riscv/riscv-isa-manual, with the volume and section named; \"CC BY 4.0\", linked to https://creativecommons.org/licenses/by/4.0/; and, when the text shown was shortened or changed, a note that it was.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/riscv/riscv-isa-manual/main/README.md",
+        "quote": "This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/riscv/riscv-isa-manual/main/README.md",
+        "quote": "This repository contains the source files for the RISC-V Instruction Set Manual."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/riscv/riscv-isa-manual/main/LICENSE",
+        "quote": "Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:"
+      }
+    ]
+  },
+  "notes": "Read from the manual's own GitHub repository (README and LICENSE, the CC BY 4.0 text); riscv.org, which hosts the official ratified versions and any terms of use, was not reachable and was not read. CC BY 4.0 allows commercial use, so a paid app may show a passage with the credit in attribution. It is a specification, not a teaching text: a student needs a course text beside it. \"RISC-V\" is a trademark of RISC-V International and is not covered by the licence; do not suggest endorsement. The README's grant covers \"this work\"; figures or quoted material from elsewhere inside the manual were not checked. The bank's agents don't read it and nothing from it goes into the bank."
+}

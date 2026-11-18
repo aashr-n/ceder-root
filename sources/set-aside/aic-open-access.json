@@ -1,0 +1,46 @@
+{
+  "id": "aic-open-access",
+  "name": "Art Institute of Chicago Open Access",
+  "url": "https://www.artic.edu/open-access/open-access-images",
+  "goodFor": "CC0 images and object data for the museum's public-domain works, strong on Impressionism and American art.",
+  "license": "per-item",
+  "licenseUrl": "https://www.artic.edu/terms",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "art-history"
+  ],
+  "kinds": [
+    "media",
+    "data"
+  ],
+  "linking": {
+    "external": true
+  },
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://www.artic.edu/open-access/open-access-images",
+        "quote": "The Art Institute of Chicago is pleased to offer free, unrestricted use of over 50,000 images of works in the collection believed to be in the public domain or to which the museum otherwise waives any copyright it might have."
+      },
+      {
+        "url": "https://www.artic.edu/open-access/open-access-images",
+        "quote": "Note: The Art Institute of Chicago has many artworks which are covered by a copyright."
+      },
+      {
+        "url": "https://www.artic.edu/terms",
+        "quote": "You are welcome to use any images or data with the label “CC0 Public Domain Designation,” or otherwise stated as made available by AIC under the CC0 license, for any purpose, including commercial and noncommercial uses, without additional permission from AIC."
+      },
+      {
+        "url": "https://www.artic.edu/terms",
+        "quote": "Except as otherwise provided above, you may not copy, distribute, modify, transmit, download, or otherwise use the contents of the Site for commercial purposes without the express prior written permission of AIC."
+      },
+      {
+        "url": "https://www.artic.edu/terms",
+        "quote": "You may not frame or transport viewers to any other location outside the Art Institute’s website using the Art Institute’s name, or any variation thereof, without the prior written permission of the Art Institute of Chicago."
+      }
+    ]
+  },
+  "notes": "Read on the museum's own Open Access and Terms pages. Only images and data labelled CC0 Public Domain Designation (an artwork's page shows a download button when its image is public domain) and the CC0 object data and API are free for commercial use; the museum says many other works are under copyright, and the Terms limit all other site content to noncommercial educational and personal use and fair use. So the licence is item by item and the source is link only. The museum asks for the caption \"Artist. Title, Date. The Art Institute of Chicago.\" and says the user must obtain any third-party permissions. Its Link-Exchange Policy asks that a link identify the museum as \"The Art Institute of Chicago®\" or by its URL, forbids framing or taking viewers outside its site under its name, and forbids use of its logo, lion statues and building image, so a link opens artic.edu outside the app. A CC0 image could be shown after its own page is checked, but that was not done. The API's own terms and the image licensing page were not read, and no clause on automated access or AI use was found on the pages read. The bank's agents don't read it and nothing from it goes into the bank."
+}

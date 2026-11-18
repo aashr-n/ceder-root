@@ -1,0 +1,15 @@
+{
+  "formatVersion": 1,
+  "id": "world-literature",
+  "name": "World literature",
+  "domain": "humanities",
+  "summary": "Major fiction, poetry and drama from many cultures and eras, read in translation and compared across traditions rather than within English.",
+  "aliases": [
+    "Comparative literature",
+    "Comp lit",
+    "Masterpieces of world literature",
+    "World masterpieces",
+    "Global literature",
+    "Great books"
+  ]
+}

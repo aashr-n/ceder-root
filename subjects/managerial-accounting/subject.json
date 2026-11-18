@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "managerial-accounting",
+  "name": "Managerial accounting",
+  "domain": "applied",
+  "summary": "Accounting for decisions inside a firm, after financial accounting: cost behaviour, product costing, cost-volume-profit analysis, budgeting and performance.",
+  "aliases": [
+    "Management accounting",
+    "Intro to managerial accounting",
+    "Accounting for managers",
+    "Cost accounting"
+  ]
+}

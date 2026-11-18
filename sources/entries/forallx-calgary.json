@@ -1,0 +1,41 @@
+{
+  "id": "forallx-calgary",
+  "name": "forall x: Calgary (An Introduction to Formal Logic)",
+  "url": "https://forallx.openlogicproject.org/",
+  "goodFor": "A standard introduction to symbolic logic (truth tables, first-order logic, Fitch-style natural deduction) with exercises and solutions.",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://forallx.openlogicproject.org/",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "logic",
+    "philosophy"
+  ],
+  "kinds": [
+    "textbook",
+    "exercises"
+  ],
+  "attribution": "\"forall x: Calgary\", by Aaron Thomas-Bolduc and Richard Zach, linked to https://forallx.openlogicproject.org/; \"CC BY 4.0\", linked to https://creativecommons.org/licenses/by/4.0/; and, when the text shown was shortened or changed, a note that it was. Keep the credit to the books it is based on (Tim Button's forall x: Cambridge and P. D. Magnus's forall x) where the passage comes from them.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://forallx.openlogicproject.org/",
+        "quote": "This work is licensed under a Creative Commons Attribution 4.0 International License"
+      },
+      {
+        "url": "https://forallx.openlogicproject.org/",
+        "quote": "forall x: Calgary is based on forall x: Cambridge , by Tim Button used under a CC BY 4.0 license"
+      },
+      {
+        "url": "https://forallx.openlogicproject.org/",
+        "quote": "A Modal Logic Primer by Robert Trueman , used with permission."
+      },
+      {
+        "url": "https://forallx.openlogicproject.org/",
+        "quote": "from forall x: Lorain County Remix , by Cathal Woods and J. Robert Loftis, used with permission"
+      }
+    ]
+  },
+  "notes": "Checked against the book's home page (Credits and License section); the README of its GitHub repository (rzach/forallx-yyc) repeats the same credits and licence. The book is offered as a whole under CC BY 4.0, which allows commercial use. It remixes Tim Button's forall x: Cambridge and Metatheory and P. D. Magnus's forall x (all stated as CC BY 4.0; the README's and page's link for Magnus's licence points at the CC BY 3.0 deed, an inconsistency in the page). It also includes material from Cathal Woods and J. Robert Loftis's forall x: Lorain County Remix and Robert Trueman's A Modal Logic Primer that the page says is 'used with permission', without saying those parts are CC BY; the book's licence line covers the whole work, but a passage that comes from those sources (notably the modal logic material) should have the original author's terms checked before it is shown. No terms-of-use page was found on the site. The authors say the files change whenever the source changes and suggest downloading the PDFs or SCORM package rather than linking to the site, so a link may land on a newer version than a stored passage. The separate forallxworkbook.com site is unaffiliated and was not checked. The Open Textbook Library listing was not used as evidence."
+}

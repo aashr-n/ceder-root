@@ -1,0 +1,43 @@
+{
+  "id": "jmdict-edrdg",
+  "name": "JMdict and KANJIDIC (EDRDG)",
+  "url": "https://www.edrdg.org/jmdict/j_jmdict.html",
+  "goodFor": "Japanese-English dictionary and kanji data.",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://www.edrdg.org/edrdg/licence.html",
+  "apps": "link",
+  "bank": "none",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://www.edrdg.org/edrdg/licence.html",
+        "quote": "The dictionary files are made available under a Creative Commons Attribution-ShareAlike Licence (V4.0)."
+      },
+      {
+        "url": "https://www.edrdg.org/edrdg/licence.html",
+        "quote": "Note also that provided the conditions above are met, there is NO restriction placed on commercial use of the files."
+      },
+      {
+        "url": "https://www.edrdg.org/edrdg/licence.html",
+        "quote": "Failure to keep the versions up-to-date is a violation of the licence to use the data."
+      },
+      {
+        "url": "https://www.edrdg.org/edrdg/licence.html",
+        "quote": "to indemnify the Group or its members in the case of action by a third party on the basis of the use of the files, or any information included in the files."
+      },
+      {
+        "url": "https://www.edrdg.org/edrdg/licence.html",
+        "quote": "the translational equivalents in other languages, e.g. German, French, Dutch, etc. are covered by separate copyright held by the compilers of that material."
+      }
+    ]
+  },
+  "subjects": [
+    "japanese"
+  ],
+  "kinds": [
+    "reference",
+    "data"
+  ],
+  "notes": "Checked against the EDRDG General Dictionary Licence Statement. The files are under CC BY-SA 4.0 and commercial use is allowed, but the statement adds conditions beyond the Creative Commons licence: an app or server using the data must update it regularly (a monthly update is the example for web servers) or the licence is violated; users must accept all liability and indemnify the Group; a web server must acknowledge the source on each screen that shows words from the files, and a phone app on a separate screen such as \"About\"; users must not claim copyright over material from the files. The licence covers only the Japanese and English parts of JMdict; the other-language glosses have separate copyright held by their compilers. KANJIDIC files include material whose holders keep their copyright (SKIP codes under Jack Halpern's own similar licence, Pinyin, Four Corner, Morohashi, Spahn-Hadamitzky descriptors, Korean readings, De Roo codes). Kept link only because of these extra conditions; the owner may decide to show the Japanese and English parts of JMdict if they are acceptable. No separate website terms were read."
+}

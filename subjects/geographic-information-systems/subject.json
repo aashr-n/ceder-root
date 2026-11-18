@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "geographic-information-systems",
+  "name": "Geographic information systems",
+  "domain": "applied",
+  "summary": "Making and analysing maps with GIS software: spatial data, coordinate systems and projections, cartography and spatial analysis.",
+  "aliases": [
+    "GIS",
+    "Intro to GIS",
+    "Geospatial analysis"
+  ]
+}

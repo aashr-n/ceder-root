@@ -1,0 +1,14 @@
+{
+  "formatVersion": 1,
+  "id": "nutrition",
+  "name": "Nutrition",
+  "domain": "natural",
+  "summary": "Nutrients and how the body uses them: digestion, energy balance, vitamins and minerals, and diet and health across the life cycle.",
+  "aliases": [
+    "Human nutrition",
+    "Intro to nutrition",
+    "Principles of nutrition",
+    "Nutrition science",
+    "Nutrition and health"
+  ]
+}

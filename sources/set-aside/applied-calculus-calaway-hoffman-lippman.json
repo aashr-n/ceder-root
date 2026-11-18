@@ -1,0 +1,38 @@
+{
+  "id": "applied-calculus-calaway-hoffman-lippman",
+  "name": "Applied Calculus (Shana Calaway, Dale Hoffman and David Lippman)",
+  "url": "https://www.opentextbookstore.com/details.php?id=14",
+  "goodFor": "An applied (business-oriented) calculus text: functions review, derivatives, integrals, and an introduction to functions of two variables.",
+  "license": "CC-BY-3.0-US",
+  "licenseUrl": "https://www.opentextbookstore.com/details.php?id=14",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "calculus"
+  ],
+  "kinds": [
+    "textbook"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://www.opentextbookstore.com/details.php?id=14",
+        "quote": "This book is heavily remixed from Dale Hoffman's Contemporary Calculus textbook, and retains the same conceptual focus from that text."
+      },
+      {
+        "url": "https://www.opentextbookstore.com/details.php?id=14",
+        "quote": "License: Creative Commons Attribution ."
+      },
+      {
+        "url": "https://www.opentextbookstore.com/details.php?id=14",
+        "quote": "It allows reuse, remixing, and distribution (including commercial), only requiring attribution."
+      },
+      {
+        "url": "https://www.opentextbookstore.com/",
+        "quote": "Just to be clear, we are not a publisher."
+      }
+    ]
+  },
+  "notes": "Link only. The book has no page of its own: the only HTML page is a catalogue listing on OpenTextBookStore, which says it is a listing site and not a publisher; that listing says 'Creative Commons Attribution' and allows commercial reuse, but gives no version. The version, CC BY 3.0 United States, is stated only on the copyright page of the book's PDF (copyright 2014, read but not recheckable, since the recheck tool can't read a PDF). The same PDF page says chapter 1 was remixed from Lippman and Rasmussen's Precalculus: An Investigation of Functions 'used under the Creative Commons Attribution license by permission of the authors', and that Precalculus is CC BY-SA and includes portions remixed, by permission, from Stitz and Zeager's College Algebra, which was NonCommercial (see lippman-precalculus); how far that permission reaches into this CC BY book isn't stated. Chapters 2-4 were remixed from Hoffman's Contemporary Calculus, whose own licence wasn't read. Third-party images weren't checked. The site has no terms-of-use page; none was found. With the version resting on a PDF and a chapter of unclear provenance, it isn't recorded as show. The bank's agents don't read it and nothing from it goes into the bank."
+}

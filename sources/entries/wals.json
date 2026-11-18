@@ -1,0 +1,40 @@
+{
+  "id": "wals",
+  "name": "World Atlas of Language Structures (WALS Online)",
+  "url": "https://wals.info",
+  "goodFor": "Typology data and short chapters on the sound-system, grammatical and lexical features of the world's languages, for comparing how languages differ.",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://wals.info/about/legal",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "linguistics"
+  ],
+  "kinds": [
+    "data",
+    "reference"
+  ],
+  "attribution": "\"WALS Online\", edited by Matthew S. Dryer and Martin Haspelmath (Leipzig: Max Planck Institute for Evolutionary Anthropology, 2013), linked to https://wals.info, with the chapter or feature named; \"CC BY 4.0\", linked to https://creativecommons.org/licenses/by/4.0/; and, when the text or data shown was shortened or changed, a note that it was.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://wals.info/about/legal",
+        "quote": "WALS Online edited by Dryer, Matthew S. & Haspelmath, Martin is licensed under a Creative Commons Attribution 4.0 International License"
+      },
+      {
+        "url": "https://wals.info/about/credits",
+        "quote": "WALS Online edited by Dryer, Matthew S. & Haspelmath, Martin is licensed under a Creative Commons Attribution 4.0 International License"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/cldf-datasets/wals/master/README.md",
+        "quote": "This dataset is licensed under a CC-BY-4.0 license"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/cldf-datasets/wals/master/README.md",
+        "quote": "> Dryer, Matthew S. & Haspelmath, Martin (eds.) 2013. The World Atlas of Language Structures Online. Leipzig: Max Planck Institute for Evolutionary Anthropology. (Available online at https://wals.info)"
+      }
+    ]
+  },
+  "notes": "Checked against the site's Legal page (the footer's Disclaimer link opens the same page; its text covers only links to third-party sites and the licence), the Credits page footer, the home page and the README of its CLDF dataset on GitHub: WALS Online as a whole is CC BY 4.0, which allows commercial use with credit. The README asks users to cite Dryer and Haspelmath (eds.) 2013 and, for the dataset, the DOI of the release used; the home page asks that a citation give the version listed on Zenodo. The first edition was an Oxford University Press book (2005); the licence statement is for WALS Online, the separate Max Planck Institute publication, not the print book. The Max Planck Institute's privacy policy and imprint were not read, and no separate terms of use were found. The statement is site-wide; the chapters are by named authors, and the licence page does not list third-party figures, so a map or picture taken from a chapter should be spot-checked. It is a data atlas for linguistics, more useful as a supplement to an introductory linguistics course than as a text."
+}

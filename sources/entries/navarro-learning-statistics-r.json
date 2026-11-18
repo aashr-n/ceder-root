@@ -1,0 +1,36 @@
+{
+  "id": "navarro-learning-statistics-r",
+  "name": "Learning Statistics with R (Danielle Navarro)",
+  "url": "https://learningstatisticswithr.com/",
+  "goodFor": "A beginner's introductory statistics text taught with R: descriptive statistics, probability, testing, regression, ANOVA and Bayesian ideas.",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://learningstatisticswithr.com/",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "statistics",
+    "data-science"
+  ],
+  "kinds": [
+    "textbook"
+  ],
+  "attribution": "\"Learning Statistics with R\", by Danielle Navarro, linked to https://learningstatisticswithr.com/, with the chapter named; \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when the text shown was shortened or changed, a note that it was.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://learningstatisticswithr.com/",
+        "quote": "Rather than sign a contract with a commercial publisher, I decided that it would be most useful for everyone if I released the work under a permissive creative commons licence, CC BY-SA 4.0"
+      },
+      {
+        "url": "https://learningstatisticswithr.com/",
+        "quote": "so that anyone could expand on it, reuse it, and adapt it to other contexts."
+      },
+      {
+        "url": "https://learningstatisticswithr.com/",
+        "quote": "The site you are currently on represents the HTML version of the book."
+      }
+    ]
+  },
+  "notes": "The author states CC BY-SA 4.0 in the book's Preface on the book's own site (the same page links the licence at creativecommons.org). CC BY-SA 4.0 allows commercial use, so a paid app may show a passage with the credit in attribution; what Ceder changes stays under the same licence. The site has no licence footer, licence page or terms page, so the Preface is the only statement seen, and the quote says the work is released under it without listing exceptions. Not checked: third-party figures, data sets and quotations in individual chapters, and the separately distributed lsr R package. This is the 2020s Quarto port; the older edition at old.learningstatisticswithr.com is being retired and was not read. The author notes the book is dated (written about 2010-2015) and adds short epilogue sections where it has aged. The bank's agents don't read it and nothing from it goes into the bank."
+}

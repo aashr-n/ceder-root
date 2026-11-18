@@ -1,0 +1,14 @@
+{
+  "formatVersion": 1,
+  "id": "digital-logic",
+  "name": "Digital logic design",
+  "domain": "applied",
+  "summary": "How bits become hardware: Boolean algebra and logic gates, combinational and sequential circuits, finite-state machines and a hardware description language.",
+  "aliases": [
+    "Digital logic",
+    "Logic design",
+    "Digital design",
+    "Digital systems",
+    "Digital circuits"
+  ]
+}

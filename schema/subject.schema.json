@@ -10,7 +10,12 @@
     "id": { "$ref": "#/$defs/slug" },
     "name": { "type": "string", "minLength": 1, "maxLength": 60 },
     "domain": { "enum": ["natural", "formal", "social", "humanities", "applied"] },
-    "summary": { "type": "string", "minLength": 1, "maxLength": 200 }
+    "summary": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "aliases": {
+      "description": "Other names people use for the subject or its usual courses, such as \"Calc\" or \"Principles of Microeconomics\". Never a school's course code.",
+      "type": "array", "maxItems": 16, "uniqueItems": true,
+      "items": { "type": "string", "minLength": 2, "maxLength": 60 }
+    }
   },
   "$defs": {
     "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 40 }

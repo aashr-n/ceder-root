@@ -25,12 +25,16 @@ ceder-root/
   "id": "biology",
   "name": "Biology",
   "domain": "natural",
-  "summary": "Cells, genes, and how living things work."
+  "summary": "Cells, genes, and how living things work.",
+  "aliases": ["Intro Biology", "General Biology"]
 }
 ```
 
 - `name` is what a concept's subject reads as on a student's knowledge map. It never changes once students have it.
 - `domain` is one of `natural`, `formal`, `social`, `humanities`, `applied`, the map's five branches of knowledge.
+- `aliases` is optional: up to 16 other names people use for the subject or its usual courses, such as "Calc" or "Principles of marketing". Compared lower-cased with white space evened out, an alias can't be its own subject's name, another subject's name or ID (read with spaces for hyphens), or another subject's alias, so each leads to one subject. It has no digits: an alias is a common name, never a school's course code.
+
+A subject can be registered with only its `subject.json`, before it has a plan or any pack. It is then part of the vocabulary a tutor classifies a student's question into, and it is in an app's `routes-index.json`, but not in `bank-index.json`, which lists only subjects with a built pack.
 
 ## pack.json
 
@@ -218,7 +222,10 @@ An app that ships a copy keeps it in step with `node tools/build.mjs --app --app
 | `library-index.json` | The library's built index: `formatVersion`, `revision`, `concepts` (each concept ref's item IDs) and `items`. |
 | `libraryasset-<hash>.<ext>` | A stored picture, named by the first 16 hex digits of its SHA-256. |
 | `sources-index.json` | `formatVersion`, `revision` and `sources`: the catalogue's sources an app may show or link to. |
+| `routes-index.json` | `formatVersion`, `revision` and `subjects`: every subject, with or without packs, and the sources to offer for it. |
 
-A `library-index.json` item has `id`, `source` (the source's catalogue ID), `sourceName`, `apps`, `kind`, `title`, `url`, then, where it has them, `revision`, `permalink`, `retrieved`, `license`, `licenseUrl`, `credit` (`authors`, `line`), `changes`, `text`, `image` (`file`, `width`, `height`, `alt`) and `linking`, and last `concepts`, the refs it supports. `apps` is `show` for stored text or a picture (show it in full, with `credit.line`, the title linked to `url` or `permalink`, and the licence named and linked to `licenseUrl`) and `link` for a link (show only the title, linked to `url`, and obey `linking`). A `sources-index.json` source has `id`, `name`, `url`, `license`, `licenseUrl`, `attribution`, `apps` (`show` or `link`), `subjects` (the subject IDs it is tagged for, empty for a general source) and, where its terms set conditions on a link, `linking`.
+A `library-index.json` item has `id`, `source` (the source's catalogue ID), `sourceName`, `apps`, `kind`, `title`, `url`, then, where it has them, `revision`, `permalink`, `retrieved`, `license`, `licenseUrl`, `credit` (`authors`, `line`), `changes`, `text`, `image` (`file`, `width`, `height`, `alt`) and `linking`, and last `concepts`, the refs it supports. `apps` is `show` for stored text or a picture (show it in full, with `credit.line`, the title linked to `url` or `permalink`, and the licence named and linked to `licenseUrl`) and `link` for a link (show only the title, linked to `url`, and obey `linking`). A `sources-index.json` source has `id`, `name`, `url`, `license`, `licenseUrl`, `attribution`, `apps` (`show` or `link`), `subjects` (the subject IDs it is tagged for, empty for a general source), then, where the entry has them, `kinds` (what sort of resource it is, such as `textbook` or `reference`, in the entry's order) and `linking`, the conditions its terms set on a link.
+
+`routes-index.json` is the subject-level routing table. Its `subjects` are every subject in `subjects/`, by ID, each with `id`, `name`, `domain`, `summary`, `aliases` (empty when it has none), `packs` (how many of its packs the build ships, 0 for a subject that has none yet) and `sources`: the IDs of the `sources-index.json` sources tagged for it, in a fixed order. They go by the first of each source's `kinds`, in the order `textbook`, `lessons`, `reference`, `documentation`, `exercises`, `texts`, `data`, `media`, `simulation`, `video`, with a source that has no `kinds` last, and then by ID. An app matches a tutor's subject to it by `id`, `name` or an alias, and offers those sources in that order. Routes to a single concept aren't repeated here: they are `library-index.json`'s `concepts`, and a library item names only concepts the build ships.
 
 Only what the catalogue allows is exported. A piece or source whose `apps` is `none` or `private`, that isn't in `sources/entries/`, or that is only in `sources/set-aside/` can't be built: the build stops and writes nothing, the bank included.

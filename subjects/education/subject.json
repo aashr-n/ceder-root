@@ -1,0 +1,14 @@
+{
+  "formatVersion": 1,
+  "id": "education",
+  "name": "Education",
+  "domain": "applied",
+  "summary": "Schools and teaching: the purposes of education, how people learn, equity and policy, often with classroom observation.",
+  "aliases": [
+    "Introduction to education",
+    "Foundations of education",
+    "Intro to teaching",
+    "Schools and society",
+    "Educational psychology"
+  ]
+}

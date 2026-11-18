@@ -1,0 +1,14 @@
+{
+  "formatVersion": 1,
+  "id": "modern-hebrew",
+  "name": "Modern Hebrew",
+  "domain": "humanities",
+  "summary": "Elementary and intermediate Modern Hebrew as spoken in Israel: script, grammar, conversation and reading.",
+  "aliases": [
+    "Hebrew",
+    "Elementary Hebrew",
+    "Intermediate Hebrew",
+    "Beginning Hebrew",
+    "Israeli Hebrew"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "our-world-in-data",
+  "name": "Our World in Data",
+  "url": "https://ourworldindata.org/",
+  "goodFor": "Charts, datasets and explanatory articles on income, growth, health, environment and other world-scale topics.",
+  "license": "per-item",
+  "licenseUrl": "https://ourworldindata.org/faqs",
+  "apps": "link",
+  "bank": "none",
+  "subjects": ["macroeconomics", "data-science", "quantitative-reasoning", "environmental-science", "public-health", "sociology"],
+  "kinds": ["data", "reference"],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://ourworldindata.org/faqs",
+        "quote": "Unless otherwise stated, you can use, reproduce, and distribute any chart we made (those with our logo and CC BY copyright stamp), provided that you cite us."
+      },
+      {
+        "url": "https://ourworldindata.org/faqs",
+        "quote": "Note that some of the charts on our site were produced by third parties and are subject to their license terms."
+      },
+      {
+        "url": "https://ourworldindata.org/faqs",
+        "quote": "Most of the data on Our World in Data comes from third-party providers (such as the WHO, UN, and World Bank) and is subject to the license terms of those providers."
+      },
+      {
+        "url": "https://ourworldindata.org/faqs",
+        "quote": "You must not edit the material, except to reflect relative changes in time, location and editorial style."
+      },
+      {
+        "url": "https://ourworldindata.org/faqs",
+        "quote": "You are not permitted to use our logo on its own or to imply endorsement."
+      }
+    ]
+  },
+  "notes": "Checked against the site's FAQs, which hold its reuse terms, and the legal disclaimer on its Organization page (a warranty and liability disclaimer only). Charts Our World in Data made itself (those carrying its logo and CC BY stamp), data it produces itself (marked as collated or processed by it) and its articles are CC BY unless stated otherwise, but most of the data and some charts come from third parties under their own terms, so the licence differs chart by chart and dataset by dataset. Republishing an article carries conditions beyond CC BY: a fixed credit line, a link back, no edits except for time, place and editorial style, and no context implying endorsement of another position. The name and logo may be used only as they appear on the material, never alone or to imply endorsement. The Grapher software is not freely licensed (its earlier MIT-licensed versions stay MIT). The FAQs set no conditions on plain links. Link only until a specific chart or dataset, and its source's licence, is checked. The bank's agents don't read it and nothing from it goes into the bank."
+}

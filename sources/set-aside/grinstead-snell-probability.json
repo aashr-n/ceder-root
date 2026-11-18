@@ -1,0 +1,39 @@
+{
+  "id": "grinstead-snell-probability",
+  "name": "Introduction to Probability (Grinstead and Snell)",
+  "url": "https://math.dartmouth.edu/~prob/prob/prob.pdf",
+  "goodFor": "A classic probability text for a first course, with many worked examples and exercises, covering discrete and continuous probability.",
+  "license": "unknown",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "probability"
+  ],
+  "kinds": [
+    "textbook",
+    "exercises"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://math.dartmouth.edu/~prob/prob/prob.tex",
+        "quote": "This work is freely redistributable under the terms of the GNU Free Documentation License."
+      },
+      {
+        "url": "https://math.dartmouth.edu/~prob/prob/prob.tex",
+        "quote": "This work is a version of Grinstead and Snell's `Introduction to Probability, 2nd edition', published by the American Mathematical Society, Copyright (C) 2003 Charles M. Grinstead and J. Laurie Snell."
+      },
+      {
+        "url": "https://math.dartmouth.edu/~prob/prob/prob.tex",
+        "quote": "Copyright (C) 2006 Peter G. Doyle."
+      },
+      {
+        "url": "https://math.dartmouth.edu/~prob/prob/preface.tex",
+        "quote": "their willingness to make the work freely redistributable."
+      }
+    ]
+  },
+  "notes": "Link only. The book's LaTeX source on the same Dartmouth host (prob.tex, plain text) states the licence: the 2006 version by Peter G. Doyle of Grinstead and Snell's AMS-published 2nd edition 'is freely redistributable under the terms of the GNU Free Documentation License'. It names no GFDL version and says nothing about Invariant Sections or cover texts, and the 'Copying' chapter that would carry the licence text is commented out of front.tex, so no SPDX id can be given and the licence field stays 'unknown'. The preface (preface.tex) thanks the American Mathematical Society for its 'willingness to make the work freely redistributable', which speaks of redistribution only. The Dartmouth directory (math.dartmouth.edu/~prob/prob/) is a bare file listing with no page stating terms of use. The project's own page, chance.dartmouth.edu/teaching_aids/books_articles/probability_book/book.html, is on a host this check could not reach. The AIM approved-textbook listing is third-party and not evidence. The owner may promote it to 'show' if the CHANCE page or the authors confirm a GFDL version; until then it stays link only. Solutions are for instructors only. The bank's agents don't read it and nothing from it goes into the bank.",
+  "licenseUrl": "https://math.dartmouth.edu/~prob/prob/prob.tex"
+}

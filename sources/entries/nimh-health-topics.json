@@ -1,0 +1,97 @@
+{
+  "id": "nimh-health-topics",
+  "name": "NIMH Health Topics",
+  "url": "https://www.nimh.nih.gov/health/topics",
+  "goodFor": "Plain-language, expert-reviewed summaries of mental disorders, symptoms and treatments from the US National Institute of Mental Health.",
+  "license": "LicenseRef-PublicDomain",
+  "licenseUrl": "https://www.nimh.nih.gov/site-info/policies",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "abnormal-psychology",
+    "psychology"
+  ],
+  "kinds": [
+    "reference"
+  ],
+  "attribution": "\"National Institute of Mental Health\", linked to the page the text came from; and, when the text shown was shortened or changed, a note that it was (never changed in a way that is misleading or inaccurate). Text only: no NIMH images, logos or endorsement.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://www.nimh.nih.gov/site-info/policies",
+        "quote": "Yes, unless otherwise indicated, text on the NIMH website and in NIMH materials may be copied and reused."
+      },
+      {
+        "url": "https://www.nimh.nih.gov/site-info/policies",
+        "quote": "The information on our website and in our materials is in the public domain. You may copy and reuse it without permission."
+      },
+      {
+        "url": "https://www.nimh.nih.gov/site-info/policies",
+        "quote": "You can edit or reformat the copied text, but you cannot change it in a way that is misleading or inaccurate."
+      },
+      {
+        "url": "https://www.nimh.nih.gov/site-info/policies",
+        "quote": "If you use our information or publications, please cite the National Institute of Mental Health as the source."
+      },
+      {
+        "url": "https://www.nimh.nih.gov/site-info/policies",
+        "quote": "No, you may not copy or reuse images on the NIMH website or in our materials, even if you cite them."
+      }
+    ]
+  },
+  "parts": [
+    {
+      "id": "text",
+      "name": "Text of the website and publications",
+      "url": "https://www.nimh.nih.gov/health/topics",
+      "license": "LicenseRef-PublicDomain",
+      "apps": "show",
+      "attribution": "\"National Institute of Mental Health\", linked to the page the text came from; and, when the text shown was shortened or changed, a note that it was.",
+      "checked": {
+        "date": "2026-11-18",
+        "evidence": [
+          {
+            "url": "https://www.nimh.nih.gov/site-info/policies",
+            "quote": "Yes, unless otherwise indicated, text on the NIMH website and in NIMH materials may be copied and reused."
+          },
+          {
+            "url": "https://www.nimh.nih.gov/site-info/policies",
+            "quote": "The information on our website and in our materials is in the public domain. You may copy and reuse it without permission."
+          },
+          {
+            "url": "https://www.nimh.nih.gov/site-info/policies",
+            "quote": "Like the website, the information in NIMH publications is in the public domain and may be reused or copied without permission."
+          },
+          {
+            "url": "https://www.nimh.nih.gov/site-info/policies",
+            "quote": "Do not use our publications to give the appearance of providing specific medical advice, treatment recommendations, or referrals."
+          }
+        ]
+      },
+      "notes": "Public domain by NIMH's own Copyright Policy, with conditions: no changes that are misleading or inaccurate, cite NIMH as the source, no logos added, no use to advertise or endorse products or services (the policy lists these for publications). The grant begins \"unless otherwise indicated\", so a page that marks text as someone else's is excepted. The same list says not to use NIMH publications to give the appearance of specific medical advice, treatment recommendations or referrals, so a tutor quoting them must not present them as advice to the student."
+    },
+    {
+      "id": "images",
+      "name": "Images on the website and in publications",
+      "url": "https://www.nimh.nih.gov/health/topics",
+      "license": "unknown",
+      "apps": "link",
+      "checked": {
+        "date": "2026-11-18",
+        "evidence": [
+          {
+            "url": "https://www.nimh.nih.gov/site-info/policies",
+            "quote": "No, you may not copy or reuse images on the NIMH website or in our materials, even if you cite them."
+          },
+          {
+            "url": "https://www.nimh.nih.gov/site-info/policies",
+            "quote": "You may not reuse or copy any of the publication images."
+          }
+        ]
+      },
+      "notes": "Not reusable for any purpose: most are stock photos of professional models. A link to the page is the most an app may do."
+    }
+  ],
+  "notes": "Checked against NIMH's Website Policies page (Copyright Policy section), www.nimh.nih.gov/site-info/policies; the address the candidate listed (/about/policies) returns 404. Text is public domain and may be shown with the credit in attribution; images are excluded and must not be shown. NIMH logos and NIH branding are not covered and the credit must not suggest endorsement. The page also says NIMH encourages linking to keep information current. Clinical, not course, content: it is a reference for what a disorder is and how it is treated, not a textbook, so it suits abnormal and introductory psychology as a supplement only. NIMH asks that its publications not be used to give the appearance of specific medical advice, treatment recommendations or referrals, nor to advertise or endorse products or services. Health information changes, so a stored extract may go out of date."
+}

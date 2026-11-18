@@ -1,0 +1,11 @@
+{
+  "formatVersion": 1,
+  "id": "physical-geography",
+  "name": "Physical geography",
+  "domain": "natural",
+  "summary": "Earth's surface systems and how they vary from place to place: weather and climate, landforms, soils, vegetation and water.",
+  "aliases": [
+    "Introduction to physical geography",
+    "Earth systems science"
+  ]
+}

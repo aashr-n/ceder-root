@@ -1,0 +1,14 @@
+{
+  "formatVersion": 1,
+  "id": "biblical-studies",
+  "name": "Biblical studies",
+  "domain": "humanities",
+  "summary": "The Hebrew Bible and New Testament read in their historical settings: how the texts were written, collected and interpreted.",
+  "aliases": [
+    "Introduction to the Bible",
+    "Bible as literature",
+    "Hebrew Bible",
+    "Old Testament",
+    "New Testament"
+  ]
+}

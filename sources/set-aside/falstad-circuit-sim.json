@@ -1,0 +1,39 @@
+{
+  "id": "falstad-circuit-sim",
+  "name": "Falstad Circuit Simulator (CircuitJS1)",
+  "url": "https://www.falstad.com/circuit/",
+  "goodFor": "A browser circuit simulator for DC, AC and logic circuits that a student can run and change.",
+  "license": "GPL-2.0-or-later",
+  "licenseUrl": "https://raw.githubusercontent.com/pfalstad/circuitjs1/master/README.md",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "electric-circuits",
+    "digital-logic"
+  ],
+  "kinds": [
+    "simulation"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/pfalstad/circuitjs1/master/README.md",
+        "quote": "CircuitJS1 is an electronic circuit simulator that runs in the browser."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/pfalstad/circuitjs1/master/README.md",
+        "quote": "modify it under the terms of the GNU General Public License"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/pfalstad/circuitjs1/master/README.md",
+        "quote": "as published by the Free Software Foundation; either version 2"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/pfalstad/circuitjs1/master/README.md",
+        "quote": "If you want to embed the application in another page then use an iframe with the src being the full-page version."
+      }
+    ]
+  },
+  "notes": "Checked against the README of the simulator's GitHub repository (pfalstad/circuitjs1; Iain Sharp's GWT fork at sharpie7/circuitjs1 states the same licence). The program's code is GPL 2 or later, a copyleft licence not on the commercial-reuse list, so it is only linked to. The simulator's own site, www.falstad.com, isn't reachable from here, so its page text, its example circuits and any terms of use there were not read; the README does not say how the hosted site's content is licensed, and the README's mention of embedding in an iframe is a technical note, not a grant. Linking to the hosted simulator was not checked against any terms. The bank's agents don't read it and nothing from it goes into the bank."
+}

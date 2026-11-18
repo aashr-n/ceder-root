@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "algorithms",
+  "name": "Algorithms",
+  "domain": "formal",
+  "summary": "Designing and analysing algorithms beyond CS2: running time, divide and conquer, greedy methods, dynamic programming, graph algorithms and intractability.",
+  "aliases": [
+    "Design and analysis of algorithms",
+    "Analysis of algorithms",
+    "Algorithm design",
+    "Introduction to algorithms"
+  ]
+}

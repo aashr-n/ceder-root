@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "korean",
+  "name": "Korean",
+  "domain": "humanities",
+  "summary": "Elementary and intermediate Korean: Hangul, speech levels, grammar, conversation and reading.",
+  "aliases": [
+    "Elementary Korean",
+    "Intermediate Korean",
+    "Beginning Korean"
+  ]
+}

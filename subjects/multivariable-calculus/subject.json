@@ -1,0 +1,14 @@
+{
+  "formatVersion": 1,
+  "id": "multivariable-calculus",
+  "name": "Multivariable calculus",
+  "domain": "formal",
+  "summary": "Several-variable calculus in full, after single-variable: vectors, partial derivatives, multiple integrals, line and surface integrals, and Green's, Stokes' and the divergence theorems.",
+  "aliases": [
+    "Multivariable calc",
+    "Multivariate calculus",
+    "Vector calculus",
+    "Calculus of several variables",
+    "Several variable calculus"
+  ]
+}

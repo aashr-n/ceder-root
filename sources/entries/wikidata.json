@@ -7,6 +7,9 @@
   "licenseUrl": "https://www.wikidata.org/wiki/Wikidata:Licensing",
   "apps": "show",
   "bank": "copy",
+  "kinds": [
+    "data"
+  ],
   "access": "node tools/ref.mjs wikidata \"<name>\" for an agent.",
   "checked": {
     "date": "2026-11-11",

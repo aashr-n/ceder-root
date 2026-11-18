@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "italian",
+  "name": "Italian",
+  "domain": "humanities",
+  "summary": "Elementary and intermediate Italian: speaking, listening, reading and writing, with Italian culture.",
+  "aliases": [
+    "Elementary Italian",
+    "Intermediate Italian",
+    "Beginning Italian"
+  ]
+}

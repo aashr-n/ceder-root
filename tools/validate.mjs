@@ -46,6 +46,9 @@ export const rightIsLongest = (items) => items.filter((item) => live(item) && it
 /** A pack's choice items in which the right choice is shorter than every other choice. */
 export const rightIsShortest = (items) => items.filter((item) => live(item) && item.choices.every((choice, index) => index === item.answer || choice.length > item.choices[item.answer].length));
 
+/** A subject's name or alias as names are compared: lower-cased, with runs of white space made one space. */
+export const subjectKey = (name) => name.toLowerCase().replace(/\s+/g, " ").trim();
+
 const readJson = (path) => JSON.parse(readFileSync(path, "utf8"));
 const folders = (path) => existsSync(path) ? readdirSync(path).filter((name) => !name.startsWith(".") && statSync(join(path, name)).isDirectory()).sort() : [];
 
@@ -85,6 +88,12 @@ export function loadBank(root = bankRoot, only) {
   return { subjects, packs, problems };
 }
 
+/**
+ * Whether the build ships a pack: one with at least one verified item. A pack without any is left out of what apps
+ * read, and so are its concepts.
+ */
+export const ships = (pack) => Array.isArray(pack?.items) && pack.items.some((item) => item?.verification?.status === "verified");
+
 const refOf = (subject, id) => id.includes("/") ? id : `${subject}/${id}`;
 
 /**
@@ -104,6 +113,45 @@ export function checkBank(bank, { root = bankRoot, allowMissingAssets = false, r
     const at = where(subject, "subject.json");
     if (!validSubject(subject.data)) errors.push(...schemaErrors(validSubject, at));
     else if (subject.data.id !== subject.folder) errors.push(`${at}: id “${subject.data.id}” doesn't match its folder “${subject.folder}”`);
+  }
+
+  // A subject's name and aliases are what a tutor's free-text subject is matched against, so each must lead to one
+  // subject only. Aliases are common names, never a school's course code, so they hold no digits.
+  const subjectNames = new Map();
+  // An app matches by ID too, so an alias can't be another subject's ID either, read as words (“computer science”).
+  const subjectIds = new Map();
+  for (const subject of all.subjects) {
+    if (typeof subject.data?.name === "string") subjectNames.set(subjectKey(subject.data.name), subject.data.id);
+    if (typeof subject.data?.id === "string") subjectIds.set(subject.data.id.replace(/-/g, " "), subject.data.id);
+  }
+  const aliasOwners = new Map();
+  for (const subject of all.subjects) {
+    for (const alias of Array.isArray(subject.data?.aliases) ? subject.data.aliases : []) {
+      if (typeof alias !== "string") continue;
+      const key = subjectKey(alias);
+      if (!aliasOwners.has(key)) aliasOwners.set(key, []);
+      aliasOwners.get(key).push(subject);
+    }
+  }
+  for (const subject of bank.subjects) {
+    const at = where(subject, "subject.json");
+    const id = subject.data?.id;
+    const seen = new Set();
+    for (const alias of Array.isArray(subject.data?.aliases) ? subject.data.aliases : []) {
+      if (typeof alias !== "string") continue;
+      const key = subjectKey(alias);
+      if (/\d/.test(alias)) errors.push(`${at}: alias “${alias}” has a digit; aliases are common names, never a school's course code`);
+      if (seen.has(key)) errors.push(`${at}: alias “${alias}” appears twice`);
+      seen.add(key);
+      const named = subjectNames.get(key);
+      if (named === id) errors.push(`${at}: alias “${alias}” is the subject's own name`);
+      else if (named !== undefined) errors.push(`${at}: alias “${alias}” is the name of the subject ${named}; ${id} can't have it too`);
+      const byId = subjectIds.get(key.replace(/-/g, " "));
+      if (byId !== undefined && byId !== id && byId !== named) errors.push(`${at}: alias “${alias}” is the ID of the subject ${byId}; ${id} can't have it`);
+      for (const other of aliasOwners.get(key) ?? []) {
+        if (other !== subject && other.data.id !== id) errors.push(`${at}: alias “${alias}” is also an alias of ${other.data.id}; an alias leads to one subject only`);
+      }
+    }
   }
 
   // Every concept in the whole bank, by ref, so prerequisites can cross packs and subjects.

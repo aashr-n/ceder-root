@@ -7,6 +7,9 @@
   "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
   "apps": "link",
   "bank": "none",
+  "kinds": [
+    "media"
+  ],
   "checked": {
     "date": "2026-11-11",
     "evidence": [

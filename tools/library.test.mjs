@@ -445,6 +445,38 @@ test("the sources index lists only the sources an app may show or link to, with 
   assert.equal(bad.files.size, 0);
 });
 
+test("a piece may name only a concept the build ships, never one in a pack with no verified items", () => {
+  const root = libraryRoot();
+  // testing.drafts has only a draft item, so the build leaves it, and its concept “tissue”, out.
+  assert.match(errorsWith(root, textItem({ concepts: ["testing/tissue"] })).join("\n"), /concept “testing\/tissue” isn't in the bank, or only in a pack with no verified items/);
+  assert.equal(buildAppCopy({ root }).files.size, 0);
+});
+
+test("every concept the repository's built library names is in its built bank", () => {
+  const copy = buildAppCopy({ root: realRoot });
+  assert.deepEqual(copy.errors, []);
+  const built = new Set();
+  for (const [name, bytes] of copy.files) {
+    if (!/^bankpack-.+\.json$/.test(name)) continue;
+    const pack = JSON.parse(bytes);
+    for (const concept of pack.concepts) built.add(`${pack.subject}/${concept.id}`);
+  }
+  const library = JSON.parse(copy.files.get("library-index.json"));
+  assert.ok(library.items.length > 0 && built.size > 0);
+  for (const ref of Object.keys(library.concepts)) assert.ok(built.has(ref), ref);
+  for (const item of library.items) for (const ref of item.concepts) assert.ok(built.has(ref), `${item.id}: ${ref}`);
+});
+
+test("the sources index carries a source's kinds, in the entry's order, only where the entry has them", () => {
+  const root = libraryRoot();
+  writeFileSync(join(root, "sources", "entries", "pictures.json"), JSON.stringify({ ...ENTRIES.pictures, subjects: ["testing"], kinds: ["media", "reference"] }));
+  const index = JSON.parse(buildSourcesIndex({ root }).files.get("sources-index.json"));
+  const pictures = index.sources.find((source) => source.id === "pictures");
+  assert.deepEqual(Object.keys(pictures), ["id", "name", "url", "license", "attribution", "apps", "subjects", "kinds"]);
+  assert.deepEqual(pictures.kinds, ["media", "reference"]);
+  assert.ok(index.sources.filter((source) => source.id !== "pictures").every((source) => !("kinds" in source)));
+});
+
 test("an app's copy holds the bank, the library and the sources index, and --check-app compares all of them", () => {
   const root = libraryRoot();
   const copy = buildAppCopy({ root });

@@ -1,0 +1,40 @@
+{
+  "id": "coerll-spanish-materials",
+  "name": "COERLL Spanish materials",
+  "url": "https://coerll.utexas.edu/coerll/materials/language/spanish/",
+  "goodFor": "Open Spanish textbooks, grammar exercises and native-speaker video collections from the University of Texas at Austin's language centre.",
+  "license": "per-item",
+  "licenseUrl": "https://coerll.utexas.edu/coerll/materials/language/spanish/",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "spanish"
+  ],
+  "kinds": [
+    "textbook",
+    "exercises",
+    "video"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://coerll.utexas.edu/coerll/materials/language/spanish/",
+        "quote": "Format: Open Textbook License: CC-BY-NC-SA Go to OER"
+      },
+      {
+        "url": "https://coerll.utexas.edu/coerll/materials/language/spanish/",
+        "quote": "Format: Open Textbook License: CC-BY-SA Go to OER"
+      },
+      {
+        "url": "https://coerll.utexas.edu/coerll/materials/language/spanish/",
+        "quote": "Format: Media Collection License: CC-BY Go to OER"
+      },
+      {
+        "url": "https://coerll.utexas.edu/coerll/materials/language/spanish/",
+        "quote": "Format: Assessment Tool , Professional Development Modules License: CC-BY-NC-ND Go to OER"
+      }
+    ]
+  },
+  "notes": "Checked against COERLL's own Spanish listing page only. Each title carries its own licence label: CC-BY-NC-SA (Así me expreso, Estamos aquí!, Spanish Grammar in Context, SpinTX Video Archive), CC-BY-SA (Hecho en Texas, an adaptation of Trayectos, and Trayectos), CC-BY (Spanish Proficiency Exercises, ¡Listos!, Recorridos por la literatura hispana, the Heritage Spanish modules), CC-BY-NC-ND and CC-BY-NC on two assessment tools. So the licence is per title and a link is all an app may do. The listing gives no licence version, and each title's own site (several on other hosts) wasn't read, so a label here isn't proof of that title's licence; the video collections show native speakers and may carry their own terms. COERLL's Site Policies link goes to www.utexas.edu, which wasn't reachable, so site-wide terms weren't read. Several titles are intermediate or heritage-speaker level. Portuguese and German titles are on other COERLL listing pages and aren't covered by this record. A CC BY or CC BY-SA title could become its own entry once its own pages are read. The bank's agents don't read it and nothing from it goes into the bank."
+}

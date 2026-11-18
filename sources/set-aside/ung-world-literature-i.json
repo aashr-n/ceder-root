@@ -1,0 +1,35 @@
+{
+  "id": "ung-world-literature-i",
+  "name": "Open Anthology of Early World Literature in English Translation (Hrach and Koech, Columbus State University)",
+  "url": "https://oer.galileo.usg.edu/english-textbooks/1/",
+  "goodFor": "A collection of early world literature in English translation, with multiple translations to compare.",
+  "license": "CC-BY-NC-SA-4.0",
+  "licenseUrl": "https://oer.galileo.usg.edu/english-textbooks/1/",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "world-literature",
+    "literature"
+  ],
+  "kinds": [
+    "texts"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://oer.galileo.usg.edu/english-textbooks/1/",
+        "quote": "This work is licensed under a Creative Commons Attribution-NonCommercial-Share Alike 4.0 International License"
+      },
+      {
+        "url": "https://oer.galileo.usg.edu/english-textbooks/1/",
+        "quote": "A collection of free and open primary texts in digital formats for the study of early world literature in English translation."
+      },
+      {
+        "url": "https://oer.galileo.usg.edu/english-textbooks/1/",
+        "quote": "A printable copy of this LibGuides-based open textbook is available as an additional file."
+      }
+    ]
+  },
+  "notes": "The book's own page in the GALILEO repository states CC BY-NC-SA 4.0. NonCommercial, and Ceder has paid plans, so an app only links to it. The page says it is a LibGuides-based open textbook with a printable copy as an additional file; the LibGuides site and the translations it gathers (which may carry their own licences) were not read."
+}

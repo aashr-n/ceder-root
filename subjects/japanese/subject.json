@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "japanese",
+  "name": "Japanese",
+  "domain": "humanities",
+  "summary": "Elementary and intermediate Japanese: hiragana, katakana and kanji, polite and plain speech, conversation and reading.",
+  "aliases": [
+    "Elementary Japanese",
+    "Intermediate Japanese",
+    "Beginning Japanese"
+  ]
+}

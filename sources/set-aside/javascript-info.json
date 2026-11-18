@@ -1,0 +1,39 @@
+{
+  "id": "javascript-info",
+  "name": "The Modern JavaScript Tutorial",
+  "url": "https://javascript.info/",
+  "goodFor": "A comprehensive JavaScript tutorial from the basics up, with exercises.",
+  "license": "CC-BY-NC-4.0",
+  "licenseUrl": "https://raw.githubusercontent.com/javascript-tutorial/en.javascript.info/master/LICENSE.md",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "computer-science"
+  ],
+  "kinds": [
+    "textbook",
+    "exercises"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://raw.githubusercontent.com/javascript-tutorial/en.javascript.info/master/LICENSE.md",
+        "quote": "The tutorial is free to read."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/javascript-tutorial/en.javascript.info/master/LICENSE.md",
+        "quote": "If you'd like to do something else with it, please get a permission from Ilya Kantor, iliakan@javascript.info."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/javascript-tutorial/en.javascript.info/master/LICENSE.md",
+        "quote": "The license is based on [CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/legalcode)."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/javascript-tutorial/en.javascript.info/master/LICENSE.md",
+        "quote": "**NonCommercial** — You may not use the material for commercial purposes."
+      }
+    ]
+  },
+  "notes": "The English repository's LICENSE.md calls its licence based on CC BY-NC 4.0 and asks for the author's permission for any other use, so it is NonCommercial and Ceder, with paid plans, may only link. The site javascript.info and its own terms were not reachable and not read. The text is the author's own wording of a CC BY-NC-based licence, so the SPDX id is the nearest, not an exact match."
+}

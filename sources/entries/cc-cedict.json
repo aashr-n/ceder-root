@@ -1,0 +1,36 @@
+{
+  "id": "cc-cedict",
+  "name": "CC-CEDICT",
+  "url": "https://cc-cedict.org/wiki/",
+  "goodFor": "An open Chinese-English dictionary of words and characters, with pinyin, for first- and second-year Mandarin.",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://cc-cedict.org/wiki/",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "mandarin-chinese"
+  ],
+  "kinds": [
+    "reference",
+    "data"
+  ],
+  "attribution": "\"CC-CEDICT\" by the CC-CEDICT editors (MDBG), linked to https://cc-cedict.org/wiki/; \"CC BY-SA 4.0\", linked to https://creativecommons.org/licenses/by-sa/4.0/; and, when entries shown were shortened or changed, a note that they were.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://cc-cedict.org/wiki/",
+        "quote": "CC-CEDICT is licensed under a Creative Commons Attribution-Share Alike 4.0 License (click the link for detailed information)."
+      },
+      {
+        "url": "https://cc-cedict.org/wiki/",
+        "quote": "CC-CEDICT is a continuation of the CEDICT project."
+      },
+      {
+        "url": "https://cc-cedict.org/wiki/contact",
+        "quote": "This WIKI is hosted and maintained by MDBG ."
+      }
+    ]
+  },
+  "notes": "Checked against the project's home page on cc-cedict.org, which states CC BY-SA 4.0 for CC-CEDICT as a whole and links the 4.0 licence deed; no exception or \"except where otherwise noted\" clause was found there or on the wiki's guidelines, contact and app-developer pages. The app-developer page gives display suggestions only, no further conditions. Share-alike applies to what Ceder shows and to any changes it makes to entries. The wiki is hosted and maintained by MDBG; the download file and MDBG's own site (www.mdbg.net) weren't reachable, so the licence header inside the data file and any MDBG terms weren't read, and the wiki's download page (cc-cedict:download) doesn't exist. No separate terms-of-use page was found on cc-cedict.org. A dictionary only: no lessons or exercises, so it supports a Mandarin course rather than serving as one. The bank's agents don't read it and nothing from it goes into the bank."
+}

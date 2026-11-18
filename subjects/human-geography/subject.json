@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "human-geography",
+  "name": "Human geography",
+  "domain": "social",
+  "summary": "How people use and shape places: population and migration, culture, cities, economic development and the environment, seen spatially.",
+  "aliases": [
+    "Introduction to human geography",
+    "Cultural geography",
+    "World regional geography",
+    "World geography"
+  ]
+}

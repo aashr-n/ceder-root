@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "french",
+  "name": "French",
+  "domain": "humanities",
+  "summary": "Elementary and intermediate French: speaking, listening, reading and writing, with the cultures of the French-speaking world.",
+  "aliases": [
+    "Elementary French",
+    "Intermediate French",
+    "Beginning French"
+  ]
+}

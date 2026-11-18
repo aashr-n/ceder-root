@@ -1,0 +1,42 @@
+{
+  "id": "perseus",
+  "name": "Perseus Digital Library (Tufts)",
+  "url": "https://www.perseus.tufts.edu/hopper/",
+  "goodFor": "Greek and Latin texts with translations, lexica and commentaries for classics courses.",
+  "license": "unknown",
+  "licenseUrl": "https://www.perseus.tufts.edu/hopper/help/copyright.jsp",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "classical-civilization",
+    "classical-mythology",
+    "latin",
+    "ancient-greek"
+  ],
+  "kinds": [
+    "texts",
+    "reference"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://www.perseus.tufts.edu/hopper/help/copyright.jsp",
+        "quote": "Any commercial use or publication without authorization is strictly prohibited."
+      },
+      {
+        "url": "https://www.perseus.tufts.edu/hopper/help/copyright.jsp",
+        "quote": "Materials within the Perseus DL have varying copyright status: please contact the project for more information about a specific component or object."
+      },
+      {
+        "url": "https://www.perseus.tufts.edu/hopper/help/copyright.jsp",
+        "quote": "We welcome all links to the Perseus site and to any page therein provided that you properly attribute the source of the data and add a pointer, whenever appropriate."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/README.md",
+        "quote": "Unless otherwise indicated, all contents of this repository are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+      }
+    ]
+  },
+  "notes": "The Perseus website's own copyright page and the project's GitHub data repository disagree. The website says Tufts holds the overall copyright, its materials are for the personal use of students, scholars and the public, commercial use or publication without authorization is prohibited, and copyright status varies by item; some texts are used by agreement with publishers (Loeb, Oxford, Focus) and some are under special copyrights that prohibit reproduction outside Perseus. The canonical-greekLit README repeats the same Tufts copyright paragraph, then says its contents are CC BY-SA 4.0 unless otherwise indicated and asks that modifications be offered to Perseus; only that repository was read, not the Latin, lexica or other repositories. Which licence governs the website's texts and translations is not settled, so the licence is unknown and the source is link only. The site welcomes links provided the source is attributed and a pointer added, and prefers links to copying; it sets no framing rule, so no linking flag applies, but a link should name Perseus. Per-text headers were not read. The data repositories may be a separate, clearer route; that needs its own check. The bank's agents don't read it and nothing from it goes into the bank."
+}

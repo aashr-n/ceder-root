@@ -1,0 +1,14 @@
+{
+  "formatVersion": 1,
+  "id": "art-history",
+  "name": "Art history",
+  "domain": "humanities",
+  "summary": "Survey of art and architecture, Western and global, from prehistory to the present, and how to analyse a work in its historical context.",
+  "aliases": [
+    "Art history survey",
+    "History of art",
+    "History of Western art",
+    "Intro to art history",
+    "Art appreciation"
+  ]
+}

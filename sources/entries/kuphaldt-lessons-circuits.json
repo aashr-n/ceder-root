@@ -1,0 +1,105 @@
+{
+  "id": "kuphaldt-lessons-circuits",
+  "name": "Lessons In Electric Circuits and the Modular Electronics Learning project (Tony Kuphaldt)",
+  "url": "https://www.ibiblio.org/kuphaldt/electricCircuits/",
+  "goodFor": "Free electric-circuits textbooks (DC, AC, semiconductors, digital) and circuit tutorials with question sets by one author.",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://www.ibiblio.org/kuphaldt/electricCircuits/DC/DC_A3.html",
+  "apps": "show",
+  "bank": "none",
+  "subjects": [
+    "electric-circuits",
+    "digital-logic",
+    "physics"
+  ],
+  "kinds": [
+    "textbook",
+    "lessons",
+    "exercises"
+  ],
+  "attribution": "\"Lessons In Electric Circuits\", Tony R. Kuphaldt, linked to https://www.ibiblio.org/kuphaldt/electricCircuits/, with the volume and chapter named; \"CC BY 4.0\", linked to https://creativecommons.org/licenses/by/4.0/; and, when the text shown was shortened or changed, a note that it was. For the ModEL project: \"Modular Electronics Learning (ModEL) project\", Tony R. Kuphaldt, linked to https://www.ibiblio.org/kuphaldt/socratic/model/, with the module named; \"CC BY 4.0\", linked to https://creativecommons.org/licenses/by/4.0/; and, when the text shown was shortened or changed, a note that it was.",
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://www.ibiblio.org/kuphaldt/electricCircuits/",
+        "quote": "These books and all related files are published under the terms and conditions of the Creative Commons License."
+      },
+      {
+        "url": "https://www.ibiblio.org/kuphaldt/electricCircuits/DC/DC_A3.html",
+        "quote": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+      },
+      {
+        "url": "https://www.ibiblio.org/kuphaldt/electricCircuits/DC/DC_A3.html",
+        "quote": "Adapt -- remix, transform, and build upon the material for any purpose, even commercially."
+      },
+      {
+        "url": "https://www.ibiblio.org/kuphaldt/electricCircuits/Semi/",
+        "quote": "Creative Commons CC BY license (Appendix 3) for details regarding copying and distribution"
+      },
+      {
+        "url": "https://www.ibiblio.org/kuphaldt/socratic/model/",
+        "quote": "These documents and all related files are copyrighted works, but licensed under the Creative Commons Attribution 4.0 International Public License."
+      }
+    ]
+  },
+  "parts": [
+    {
+      "id": "lessons-in-electric-circuits",
+      "name": "Lessons In Electric Circuits (Volumes I to VI)",
+      "url": "https://www.ibiblio.org/kuphaldt/electricCircuits/",
+      "license": "CC-BY-4.0",
+      "apps": "show",
+      "attribution": "\"Lessons In Electric Circuits\", Tony R. Kuphaldt, linked to https://www.ibiblio.org/kuphaldt/electricCircuits/, with the volume and chapter named; \"CC BY 4.0\", linked to https://creativecommons.org/licenses/by/4.0/; and, when the text shown was shortened or changed, a note that it was.",
+      "checked": {
+        "date": "2026-11-18",
+        "evidence": [
+          {
+            "url": "https://www.ibiblio.org/kuphaldt/electricCircuits/",
+            "quote": "These books and all related files are published under the terms and conditions of the Creative Commons License."
+          },
+          {
+            "url": "https://www.ibiblio.org/kuphaldt/electricCircuits/DC/DC_A3.html",
+            "quote": "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+          },
+          {
+            "url": "https://www.ibiblio.org/kuphaldt/electricCircuits/DC/DC_A3.html",
+            "quote": "Adapt -- remix, transform, and build upon the material for any purpose, even commercially."
+          },
+          {
+            "url": "https://www.ibiblio.org/kuphaldt/electricCircuits/Semi/",
+            "quote": "Creative Commons CC BY license (Appendix 3) for details regarding copying and distribution"
+          },
+          {
+            "url": "https://www.ibiblio.org/kuphaldt/electricCircuits/Ref/",
+            "quote": "Creative Commons CC BY license (Appendix 3) for details regarding copying and distribution"
+          }
+        ]
+      },
+      "notes": "The home page says only \"the Creative Commons License\" and points to Appendix 3 of each volume. Appendix 3 of volume I (DC) is the CC BY 4.0 summary, and its plain-language section says no one needs to ask permission or pay royalties; the tables of contents of volumes III (Semiconductors) and V (Reference) also point to \"the Creative Commons CC BY license (Appendix 3)\". Volume I's contributor log says the Design Science License was replaced with CC BY in November 2021, so the lead's Design Science License is out of date. The books include chapters and sections by outside contributors, first contributed under the Design Science License (a copyleft licence that also allows commercial use); whether each contributor agreed to the move to CC BY isn't stated."
+    },
+    {
+      "id": "model",
+      "name": "Modular Electronics Learning (ModEL) project",
+      "url": "https://www.ibiblio.org/kuphaldt/socratic/model/",
+      "license": "CC-BY-4.0",
+      "apps": "show",
+      "attribution": "\"Modular Electronics Learning (ModEL) project\", Tony R. Kuphaldt, linked to https://www.ibiblio.org/kuphaldt/socratic/model/, with the module named; \"CC BY 4.0\", linked to https://creativecommons.org/licenses/by/4.0/; and, when the text shown was shortened or changed, a note that it was.",
+      "checked": {
+        "date": "2026-11-18",
+        "evidence": [
+          {
+            "url": "https://www.ibiblio.org/kuphaldt/socratic/model/",
+            "quote": "These documents and all related files are copyrighted works, but licensed under the Creative Commons Attribution 4.0 International Public License."
+          },
+          {
+            "url": "https://www.ibiblio.org/kuphaldt/socratic/model/",
+            "quote": "Every single file that is part of this project is covered by the Creative Commons ``Attribution'' license"
+          }
+        ]
+      },
+      "notes": "CC BY 4.0 for the modules and every file in the project. The hosted NGSPICE 31 build and its manual are a derivative of Berkeley SPICE under a modified BSD licence, with their own notices: not part of this grant. The module PDFs are PDFs, so a quote from one can't be rechecked; the page text above is what was checked."
+    }
+  ],
+  "notes": "Checked against the author's own pages on ibiblio.org (re-read 2026-11-18: home page, volume I Appendices 1 to 3, the volume III and V tables of contents, and the ModEL page). Two works, both CC BY 4.0, which allows commercial use with credit; the books moved from the Design Science License to CC BY in November 2021. Caveats: outside contributors' sections were first contributed under the Design Science License, and their agreement to the change isn't stated (worst case that text is under the DSL, which is copyleft but allows commercial use); third-party figures or datasheet excerpts inside chapters weren't looked for; ibiblio.org's own site terms weren't read; the NGSPICE build hosted on the ModEL page is under its own modified BSD licence and isn't part of the grant. Edition dates run from 2006 to 2023. The bank's agents don't read it and nothing from it goes into the bank."
+}

@@ -1,0 +1,14 @@
+{
+  "formatVersion": 1,
+  "id": "business",
+  "name": "Business",
+  "domain": "applied",
+  "summary": "A survey of how businesses work before the separate courses: forms of ownership, management, marketing, finance, accounting, operations and ethics.",
+  "aliases": [
+    "Introduction to business",
+    "Intro to business",
+    "Business administration",
+    "Business fundamentals",
+    "Foundations of business"
+  ]
+}

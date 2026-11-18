@@ -1,0 +1,42 @@
+{
+  "id": "dorrell-intro-human-geography",
+  "name": "Introduction to Human Geography, 2nd ed. (Dorrell, Henderson, Lindley and Connor)",
+  "url": "https://oer.galileo.usg.edu/geo-textbooks/2",
+  "goodFor": "An introductory human geography textbook (population, migration, culture, language, religion, political geography, development, cities) with exercises, sample questions and lecture slides.",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://oer.galileo.usg.edu/geo-textbooks/2",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "human-geography"
+  ],
+  "kinds": [
+    "textbook"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://oer.galileo.usg.edu/geo-textbooks/2",
+        "quote": "This work is licensed under a Creative Commons Attribution 4.0 International License"
+      },
+      {
+        "url": "https://oer.galileo.usg.edu/geo-textbooks/2",
+        "quote": "This partner text with the University of North Georgia Press was created under a Round Eleven Mini-Grant for Ancillary Materials Creation and Revision."
+      },
+      {
+        "url": "https://oer.galileo.usg.edu/about.html",
+        "quote": "Most works hosted in ALG Commons have a Creative Commons license, allowing the reuse, redistribution, remix, and revision of these materials."
+      },
+      {
+        "url": "https://oer.galileo.usg.edu/faq.html",
+        "quote": "while open access to materials created was required, an open license was only recommended"
+      },
+      {
+        "url": "https://ung.edu/university-press/books/introduction-to-human-geography.php",
+        "quote": "Through thirteen thematically organized chapters, the text examines major areas of human geographic inquiry"
+      }
+    ]
+  },
+  "notes": "The Affordable Learning Georgia repository's record for the 2nd edition (2019; David Dorrell, Joseph Henderson, Todd Lindley and Georgeta Connor of Georgia Gwinnett College; a partner text with the University of North Georgia Press) states CC BY 4.0, which would allow commercial use. Kept at link because the book itself wasn't read: its PDF on oer.galileo.usg.edu returned a Cloudflare 'Just a moment' page instead of the file, and the copy the UNG Press page offers is on web.ung.edu, which isn't reachable. The UNG Press page states no licence and sells a print edition, and the repository says most, not all, of its works carry a Creative Commons licence. Whether the book has an 'except where otherwise noted' clause or third-party maps and photos under other terms (the press calls it richly illustrated) is unknown. The repository's footer Copyright link points to Elsevier's website terms (Digital Commons), which weren't read. Re-read on 2026-11-18 when the catalogue was made consistent: the press page still states no licence and, unlike its pages for British Literature I and Principles of Financial Accounting (both in the catalogue), says nothing about reuse; it now describes thirteen chapters, including agriculture and food systems, which the repository's 2019 record doesn't list, so the edition the press offers may not be the one the repository licenses. ung-world-literature-ii is set aside on the same evidence. To move it to entries, read the licence on the book's own copyright page and check how its figures are credited."
+}
