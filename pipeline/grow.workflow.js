@@ -156,13 +156,15 @@ Pass --for planner:${s.subject} to every tools/ref.mjs call. Write ${bank}/plan/
 
 Finish with: node tools/plan.mjs check plan/${s.subject}.json (fix every error it reports, and run it again), then: node tools/plan.mjs next ${s.subject} ${count}`
 
-const author = (subject, pack) => SHARED + `Write one pack. Follow ${bank}/pipeline/prompts/author.md; it is your instructions. Read it, then ${bank}/FORMAT.md and ${bank}/pipeline/prompts/sources.md. Where this brief and author.md differ, follow this brief.
+// What an author needn't read of FORMAT.md: validate.mjs enforces the rest, and these parts are about things this brief rules out.
+const SKIP = `skip its sections ${[textOnly && 'Artifacts', !fidelity && 'Misconceptions', 'The built bank', "An app's copy"].filter(Boolean).join(', ')}`
+const author = (subject, pack) => SHARED + `Write one pack. Follow ${bank}/pipeline/prompts/author.md; it is your instructions. Read it, then ${bank}/FORMAT.md (${SKIP}) and ${bank}/pipeline/prompts/sources.md. Where this brief and author.md differ, follow this brief.
 
 The pack: ${bank}/subjects/${subject}/${pack}/pack.json, with the ID ${subject}.${pack}. Its entry in ${bank}/plan/${subject}.json (the one whose "pack" is "${pack}") gives its title, its brief, and the concepts it must define. Use exactly those concept IDs and names, and add no others.
 ${textOnly ? `
 This pack is text only, so that every answer can be checked by a tool. The parts of author.md about recall items, label items, diagrams and sequences do not apply to it. Write "artifacts": [], no label items and no recall items: only choice items, and order items where a topic has steps with one right order.
 ` : ''}${fidelity ? `
-This pack must test how well a student understands, as "Testing how well a student understands" in author.md says: 2 to 4 misconceptions for each concept, a "mistakes" entry for every choice of every choice item, each misconception given away by wrong choices in at least 2 items, and at most 40% of items at difficulty 1.
+This pack must test how well a student understands, as ${bank}/pipeline/prompts/fidelity.md says (read it before you write): 2 to 4 misconceptions for each concept, a "mistakes" entry for every choice of every choice item, each misconception given away by wrong choices in at least 2 items, and at most 40% of items at difficulty 1.
 ` : ''}
 - At least ${perConcept} items per concept.
 - "license" is "CC0-1.0".
@@ -206,7 +208,7 @@ and report the line it prints. Do not change your answers after that.
 
 Do not open any pack.json, or anything else under subjects/, plan/ or dist/.`
 
-const illustrator = (subject, pack) => SHARED + `Add pictures to one pack. Follow ${bank}/pipeline/prompts/illustrator.md; it is your instructions. Read it, then the Artifacts part of ${bank}/FORMAT.md and the Diagrams part of ${bank}/pipeline/prompts/author.md.
+const illustrator = (subject, pack) => SHARED + `Add pictures to one pack. Follow ${bank}/pipeline/prompts/illustrator.md; it is your instructions. Read it, then the Artifacts part of ${bank}/FORMAT.md and ${bank}/pipeline/prompts/diagrams.md.
 
 The pack: ${bank}/subjects/${subject}/${pack}/pack.json. Put its picture files in ${bank}/subjects/${subject}/${pack}/assets/. Change nothing outside that pack's folder.
 

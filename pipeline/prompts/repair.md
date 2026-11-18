@@ -10,6 +10,6 @@ For each item that isn't verified, read its `verification.note` and work the que
 
 If the solvers slipped and the item is right as written, change nothing: it goes to the solvers again as it is.
 
-Any item you change goes back to `"verification": { "status": "draft" }`. Never mark an item verified yourself. Keep every item's `id`. If a concept is left with fewer than four items that are verified or draft, write new ones for it, following `author.md`.
+Any item you change goes back to `"verification": { "status": "draft" }`. Never mark an item verified yourself. Keep every item's `id`. If a concept is left with fewer than four items that are verified or draft, write new ones for it, following `author.md` (and `fidelity.md` if the pack's concepts have `misconceptions`).
 
 Finish with `node tools/validate.mjs subjects/<subject>/<pack>` from the repository's root, and report what you did to each item in one line.
