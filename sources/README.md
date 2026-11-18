@@ -1,6 +1,6 @@
 # The source catalogue
 
-A short list of outside sources worth knowing about, and what Ceder may do with each. It's curated: a source is here because it's good and someone read its licence on its own pages, not because it exists.
+A list of outside sources worth knowing about, and what Ceder may do with each. It's curated: a source is here because it's good and someone read its licence on its own pages, not because it exists.
 
 It answers two separate questions about a source.
 
@@ -25,20 +25,61 @@ The catalogue records; it doesn't permit. What an agent may read while it works 
 
 ## What's in it
 
-Only sources Ceder may store and show in full, and a student's own files. A source that qualifies only in part, or that an app could only link to, isn't here: it's kept in `set-aside/`, with why (the owner, 2026-11-11).
+Only sources Ceder may store and show in full, and a student's own files. A source that qualifies only in part, or that an app could only link to, isn't here: it's kept in `set-aside/`, with why (the owner, 2026-11-11). Sources someone found but nobody has yet read on their own pages are listed in `plan/source-leads.jsonl`; a licence there is a claim, not evidence.
+
+49 entries. Where only part of a source may be shown, the `apps` column names the part that is only `link`.
 
 | Entry | Licence | `apps` |
 |---|---|---|
-| `wikipedia`, `wikibooks`, `wiktionary`, `wikiversity` | CC BY-SA 4.0 text | `show` |
+| **General reference** | | |
+| `wikipedia` | CC BY-SA 4.0 text | `show`; pictures `link` |
+| `wikibooks`, `wiktionary`, `wikiversity` | CC BY-SA 4.0 text | `show` |
 | `wikidata` | CC0 | `show` |
 | `wikimedia-commons` | Per file | `link` |
+| **Mathematics, statistics and logic** | | |
+| `active-calculus` | CC BY-SA 4.0 | `show` |
+| `active-calculus-multivariable` | CC BY-SA 4.0 (2nd edition) | `show`; 1st edition (CC BY-NC-SA 4.0) `link` |
+| `corral-trigonometry` | GFDL 1.3 | `show` |
+| `corral-vector-calculus` | GFDL 1.2 | `show` |
+| `hefferon-linear-algebra` | CC BY-SA 3.0 US (or GFDL) | `show` |
+| `beezer-fcla` | GFDL 1.2 or later, no invariant sections | `show` |
+| `interactive-linear-algebra` | GFDL 1.2 or later | `show` |
+| `lebl-diffyqs` | CC BY-SA 4.0 (or CC BY-NC-SA 4.0; the reader picks) | `show` |
+| `keller-trotter-applied-combinatorics`, `ernst-intro-proof-ibl` | CC BY-SA 4.0 | `show` |
+| `lippman-math-in-society` | CC BY-SA 4.0 | `show` |
+| `online-statistics-education` | Public domain, in the project's own words | `show`; Case Studies and Analysis Lab `link` |
+| `navarro-learning-statistics-r` | CC BY-SA 4.0 | `show` |
+| `palmer-penguins` | CC0 (the data) | `show` |
+| `forallx-calgary`, `open-logic-project` | CC BY 4.0 | `show` |
+| **Computing and electronics** | | |
+| `algorithms-erickson` | CC BY 4.0 (the textbook) | `show`; other lecture notes (CC BY-NC-SA 4.0) `link` |
+| `open-data-structures` | CC BY 2.5 Canada | `show` |
+| `opendsa` | MIT | `show` |
+| `carpentries-lessons`, `scipy-lectures` | CC BY 4.0 | `show` |
+| `practical-python-programming` | CC BY-SA 4.0 | `show` |
+| `python-docs` | PSF License 2.0 | `show` |
+| `riscv-isa-manual` | CC BY 4.0 | `show` |
+| `kuphaldt-lessons-circuits` | CC BY 4.0 | `show` |
+| **Natural sciences and health** | | |
 | `reactome` | CC BY 4.0 illustrations and icons; CC0 data | `show` |
 | `lsdb-archive` | CC BY 4.0 (BodyParts3D, Togo Picture Gallery) | `show` |
 | `gene-ontology` | CC BY 4.0 data | `show` |
 | `chebi` | CC BY 4.0 | `show` |
-| `hefferon-linear-algebra` | CC BY-SA 3.0 US (or GFDL) | `show` |
-| `lebl-diffyqs` | CC BY-SA 4.0 (or CC BY-NC-SA 4.0; the reader picks) | `show` |
-| `opendsa` | MIT | `show` |
+| `nhgri-talking-glossary` | Public domain (US government work) | `show` |
+| `nimh-health-topics` | Public domain text | `show`; images `link` |
+| `usda-fooddata-central` | CC0 | `show`; Branded Foods `link` |
+| `esa-hubble-webb` | CC BY 4.0 images, videos and web texts | `show` |
+| **History, business and geography** | | |
+| `american-yawp` | CC BY-SA 4.0 chapter text | `show`; figures (per figure) `link` |
+| `jonick-financial-accounting` | CC BY-SA 4.0 | `show` |
+| `natural-earth` | Public domain | `show` |
+| **Humanities and languages** | | |
+| `ung-british-literature-i`, `ung-world-literature-ii` | CC BY-SA 4.0 | `show` |
+| `open-scriptures-hebrew-bible` | CC BY 4.0 tags; the Westminster Leningrad Codex text public domain | `show`; MAPM text (CC BY-SA 4.0) `link` |
+| `cc-cedict` | CC BY-SA 4.0 | `show` |
+| `glottolog` | CC BY 4.0 | `show`; endangerment statuses and bibliography `link` |
+| `wals` | CC BY 4.0 | `show` |
+| **A student's own** | | |
 | `own-course-files` | A student's own | `private` |
 
 Two kinds of entry need a word. The pictures on a Wikimedia wiki aren't covered by its text licence, so a wiki's entry may have a pictures part that isn't shown. And Wikimedia Commons stays although its licence is set file by file: a file is stored only when its own page states a free licence, and the library keeps that page's licence fields as evidence with the file.

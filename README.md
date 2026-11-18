@@ -25,7 +25,7 @@ A pack covers one topic: 4 to 12 concepts, with at least 4 verified questions fo
 
 ```
 subjects/   the packs, by subject
-plan/       each subject's list of packs to write, and every outside page an agent read
+plan/       each subject's list of packs to write, every outside page an agent read, and sources not yet checked
 sources/    a curated list of outside sources, and what an app or the bank may do with each
 library/    pinned pieces of those sources for apps to show, each under its own licence (not CC0)
 schema/     JSON Schemas for subject.json, pack.json and a plan
