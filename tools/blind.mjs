@@ -143,7 +143,8 @@ export function exportBlind(paths, out, { root = bankRoot, all = false } = {}) {
     for (const item of wanted) items.push(blindItem(item, pack, subjects.get(pack.subjectFolder)?.name ?? pack.subjectFolder, imageFor));
     counts.push({ pack: pack.data.id, items: wanted.length, of: (pack.data.items ?? []).length });
   }
-  writeFileSync(target, JSON.stringify({ items }, null, 2) + "\n");
+  // One item a line: the same JSON, about a quarter fewer tokens for each solver to read than indented output.
+  writeFileSync(target, `{"items":[\n${items.map((item) => JSON.stringify(item)).join(",\n")}\n]}\n`);
   return { file: target, items: items.length, counts };
 }
 

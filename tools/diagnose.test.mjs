@@ -95,6 +95,8 @@ test("the command line exports wrong choices and grades a diagnoser's answers in
   assert.equal(exported.status, 0, exported.stdout + exported.stderr);
   const file = JSON.parse(readFileSync(out, "utf8"));
   assert.equal(file.packs.length, 1);
+  // One entry a line, so the diagnoser reads it in fewer tokens.
+  assert.equal(readFileSync(out, "utf8").trim().split("\n").length, file.packs[0].misconceptions.length + file.packs[0].entries.length + 5);
   const answersFile = out.replace(".json", ".answers.json");
   writeFileSync(answersFile, JSON.stringify({ solver: "d", answers: Object.fromEntries(file.packs[0].entries.map((entry) => [entry.id, "bigger-is-older"])) }));
   const graded = run(["grade", "--answers", answersFile]);
