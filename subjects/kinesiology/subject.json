@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "kinesiology",
+  "name": "Kinesiology",
+  "domain": "applied",
+  "summary": "Movement science, exercise physiology, biomechanics and fitness; lower-division core in most kinesiology programs.",
+  "aliases": [
+    "Exercise Science",
+    "Human Movement",
+    "Intro Kinesiology"
+  ]
+}

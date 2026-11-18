@@ -1,0 +1,10 @@
+{
+  "formatVersion": 1,
+  "id": "marketing",
+  "name": "Marketing",
+  "domain": "applied",
+  "summary": "Markets, customers, segmentation, product, price, place and promotion.",
+  "aliases": [
+    "Introduction to marketing"
+  ]
+}

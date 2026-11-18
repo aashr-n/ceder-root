@@ -1,0 +1,10 @@
+{
+  "formatVersion": 1,
+  "id": "latin-american-history",
+  "name": "Latin American history",
+  "domain": "humanities",
+  "summary": "Colonial era, independence and modern Latin America.",
+  "aliases": [
+    "History of Latin America"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "public-health",
+  "name": "Public health",
+  "domain": "applied",
+  "summary": "Population health, epidemiology basics, health systems, prevention and health disparities.",
+  "aliases": [
+    "Introduction to public health",
+    "Epidemiology basics",
+    "Intro to Global Health"
+  ]
+}

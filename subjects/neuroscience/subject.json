@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "neuroscience",
+  "name": "Neuroscience",
+  "domain": "natural",
+  "summary": "Neurons, circuits, sensory and motor systems, learning, and the biology of behaviour.",
+  "aliases": [
+    "Intro Neuro",
+    "Neurobiology",
+    "Brain and Behavior",
+    "Biological Psychology"
+  ]
+}

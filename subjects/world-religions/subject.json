@@ -1,0 +1,11 @@
+{
+  "formatVersion": 1,
+  "id": "world-religions",
+  "name": "World religions",
+  "domain": "humanities",
+  "summary": "Beliefs, practices and histories of the major religions, studied non-confessionally.",
+  "aliases": [
+    "Intro to Religious Studies",
+    "Comparative Religion"
+  ]
+}

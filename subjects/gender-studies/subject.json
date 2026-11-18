@@ -1,0 +1,11 @@
+{
+  "formatVersion": 1,
+  "id": "gender-studies",
+  "name": "Gender and sexuality studies",
+  "domain": "social",
+  "summary": "Gender, sexuality, feminist theory and intersectionality across disciplines.",
+  "aliases": [
+    "Women's Studies",
+    "Intro to Gender Studies"
+  ]
+}

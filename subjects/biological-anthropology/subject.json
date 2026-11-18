@@ -1,0 +1,11 @@
+{
+  "formatVersion": 1,
+  "id": "biological-anthropology",
+  "name": "Biological anthropology",
+  "domain": "social",
+  "summary": "Human evolution, primates, the fossil record and human variation.",
+  "aliases": [
+    "Physical Anthropology",
+    "Human Evolution"
+  ]
+}

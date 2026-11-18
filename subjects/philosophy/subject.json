@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "philosophy",
+  "name": "Philosophy",
+  "domain": "humanities",
+  "summary": "Knowledge, reality, mind, free will and morality through classic and contemporary arguments.",
+  "aliases": [
+    "Introduction to philosophy",
+    "Intro to philosophy",
+    "Intro Philosophy",
+    "Problems of Philosophy"
+  ]
+}

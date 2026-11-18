@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "finance",
+  "name": "Finance",
+  "domain": "applied",
+  "summary": "Time value of money, risk and return, valuing bonds and stocks, and how firms choose investments.",
+  "aliases": [
+    "Principles of finance",
+    "Corporate finance",
+    "Business finance",
+    "Introduction to finance"
+  ]
+}

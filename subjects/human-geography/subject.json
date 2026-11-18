@@ -1,0 +1,11 @@
+{
+  "formatVersion": 1,
+  "id": "human-geography",
+  "name": "Human geography",
+  "domain": "social",
+  "summary": "Population, culture, cities, economy and environment from a spatial viewpoint.",
+  "aliases": [
+    "Cultural Geography",
+    "World Regional Geography"
+  ]
+}

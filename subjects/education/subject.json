@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "education",
+  "name": "Education",
+  "domain": "applied",
+  "summary": "Schools, teaching, learning theory, equity, and policy at a survey level.",
+  "aliases": [
+    "Introduction to education",
+    "Foundations of education",
+    "Intro to Teaching",
+    "Educational Psychology"
+  ]
+}

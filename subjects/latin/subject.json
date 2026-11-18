@@ -1,0 +1,10 @@
+{
+  "formatVersion": 1,
+  "id": "latin",
+  "name": "Latin",
+  "domain": "humanities",
+  "summary": "Elementary and intermediate Latin: grammar and reading Roman authors.",
+  "aliases": [
+    "Elementary Latin"
+  ]
+}

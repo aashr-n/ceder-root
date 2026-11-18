@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "engineering-design",
+  "name": "Engineering design and graphics",
+  "domain": "applied",
+  "summary": "Design process, sketching, CAD, teamwork and prototyping in a first-year project course.",
+  "aliases": [
+    "Intro to Engineering",
+    "Engineering Graphics",
+    "CAD",
+    "Design Thinking"
+  ]
+}

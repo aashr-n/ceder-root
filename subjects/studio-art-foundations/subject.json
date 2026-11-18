@@ -1,0 +1,10 @@
+{
+  "formatVersion": 1,
+  "id": "studio-art-foundations",
+  "name": "Studio art foundations",
+  "domain": "humanities",
+  "summary": "Drawing, two-dimensional design and basic composition.",
+  "aliases": [
+    "Foundations Drawing"
+  ]
+}

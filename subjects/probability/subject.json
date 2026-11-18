@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "probability",
+  "name": "Probability",
+  "domain": "formal",
+  "summary": "Random variables, distributions, expectation and limit theorems, taught with calculus.",
+  "aliases": [
+    "Intro Probability",
+    "Probability Theory",
+    "Probability for Engineers"
+  ]
+}

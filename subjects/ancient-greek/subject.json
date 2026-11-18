@@ -1,0 +1,10 @@
+{
+  "formatVersion": 1,
+  "id": "ancient-greek",
+  "name": "Ancient Greek",
+  "domain": "humanities",
+  "summary": "Elementary and intermediate Ancient Greek.",
+  "aliases": [
+    "Classical Greek"
+  ]
+}

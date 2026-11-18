@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "public-speaking",
+  "name": "Public speaking",
+  "domain": "humanities",
+  "summary": "Preparing and delivering informative and persuasive speeches.",
+  "aliases": [
+    "Speech",
+    "Oral Communication",
+    "Fundamentals of Speech"
+  ]
+}

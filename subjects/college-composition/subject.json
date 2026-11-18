@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "college-composition",
+  "name": "College composition",
+  "domain": "humanities",
+  "summary": "Academic writing: argument, evidence, drafting, revision and research writing.",
+  "aliases": [
+    "English Composition",
+    "Freshman Composition",
+    "First-Year Writing"
+  ]
+}

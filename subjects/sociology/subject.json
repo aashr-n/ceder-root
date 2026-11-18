@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "sociology",
+  "name": "Sociology",
+  "domain": "social",
+  "summary": "Social structure, inequality, institutions, culture, race, class and gender in society.",
+  "aliases": [
+    "Introduction to Sociology",
+    "Intro Soc",
+    "Principles of Sociology"
+  ]
+}

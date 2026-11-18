@@ -1,0 +1,15 @@
+{
+  "formatVersion": 1,
+  "id": "literature",
+  "name": "Literature",
+  "domain": "humanities",
+  "summary": "Reading and interpreting fiction, poetry and drama; British and American surveys in many places.",
+  "aliases": [
+    "Introduction to literature",
+    "English literature",
+    "British literature",
+    "American literature",
+    "Literary analysis",
+    "Lit Analysis"
+  ]
+}

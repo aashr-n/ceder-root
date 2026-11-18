@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "environmental-science",
+  "name": "Environmental science",
+  "domain": "natural",
+  "summary": "Ecosystems, climate, energy, water, pollution and the human impact on them.",
+  "aliases": [
+    "Intro Environmental Science",
+    "Environmental Studies",
+    "Sustainability",
+    "ENVSCI"
+  ]
+}

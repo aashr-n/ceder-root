@@ -1,0 +1,10 @@
+{
+  "formatVersion": 1,
+  "id": "korean",
+  "name": "Korean",
+  "domain": "humanities",
+  "summary": "Elementary and intermediate Korean.",
+  "aliases": [
+    "Elementary Korean"
+  ]
+}

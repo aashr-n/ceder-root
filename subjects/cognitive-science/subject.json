@@ -1,0 +1,11 @@
+{
+  "formatVersion": 1,
+  "id": "cognitive-science",
+  "name": "Cognitive science",
+  "domain": "social",
+  "summary": "Perception, attention, memory, language, reasoning and how minds are modelled computationally.",
+  "aliases": [
+    "Intro Cog Sci",
+    "Mind and Brain"
+  ]
+}

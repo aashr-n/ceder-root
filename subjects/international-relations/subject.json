@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "international-relations",
+  "name": "International relations",
+  "domain": "social",
+  "summary": "War, cooperation, institutions, security and the global economy as political problems.",
+  "aliases": [
+    "Intro to IR",
+    "World Politics",
+    "Global Politics"
+  ]
+}

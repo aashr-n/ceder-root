@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "theatre",
+  "name": "Theatre",
+  "domain": "humanities",
+  "summary": "Plays, performance and production; acting as a survey.",
+  "aliases": [
+    "Theater Appreciation",
+    "Intro to Acting",
+    "Drama"
+  ]
+}

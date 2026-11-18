@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "logic",
+  "name": "Logic",
+  "domain": "formal",
+  "summary": "Argument analysis, fallacies, propositional and predicate logic.",
+  "aliases": [
+    "Critical Thinking",
+    "Symbolic Logic",
+    "Formal Logic"
+  ]
+}

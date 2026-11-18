@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "atmospheric-science",
+  "name": "Atmospheric science",
+  "domain": "natural",
+  "summary": "Weather and climate: the atmosphere's structure and energy, winds, storms, and how climate changes.",
+  "aliases": [
+    "Meteorology",
+    "Weather and climate",
+    "Introduction to atmospheric science",
+    "Climate science"
+  ]
+}

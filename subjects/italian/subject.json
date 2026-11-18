@@ -1,0 +1,10 @@
+{
+  "formatVersion": 1,
+  "id": "italian",
+  "name": "Italian",
+  "domain": "humanities",
+  "summary": "Elementary and intermediate Italian.",
+  "aliases": [
+    "Elementary Italian"
+  ]
+}

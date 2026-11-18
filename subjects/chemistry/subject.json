@@ -3,5 +3,11 @@
   "id": "chemistry",
   "name": "Chemistry",
   "domain": "natural",
-  "summary": "Atoms, the bonds between them, and how matter changes."
+  "summary": "Atoms, the bonds between them, and how matter changes.",
+  "aliases": [
+    "General chemistry",
+    "Gen chem",
+    "Introductory chemistry",
+    "Preparatory chemistry"
+  ]
 }

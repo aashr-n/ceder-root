@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "digital-logic",
+  "name": "Digital logic design",
+  "domain": "applied",
+  "summary": "Boolean algebra, combinational and sequential circuits, finite state machines and hardware description.",
+  "aliases": [
+    "Logic Design",
+    "Digital Design",
+    "Digital Systems"
+  ]
+}

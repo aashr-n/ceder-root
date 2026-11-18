@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "algorithms",
+  "name": "Algorithms",
+  "domain": "formal",
+  "summary": "Designing and analysing algorithms: sorting, searching, graphs, dynamic programming and running time.",
+  "aliases": [
+    "Introduction to algorithms",
+    "Design and analysis of algorithms",
+    "Algorithm design"
+  ]
+}

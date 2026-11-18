@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "east-asian-history",
+  "name": "East Asian history",
+  "domain": "humanities",
+  "summary": "China, Japan and Korea from earliest times to the present.",
+  "aliases": [
+    "Asian Civilizations",
+    "History of China",
+    "History of Japan"
+  ]
+}

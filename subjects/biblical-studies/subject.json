@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "biblical-studies",
+  "name": "Biblical studies",
+  "domain": "humanities",
+  "summary": "Hebrew Bible and New Testament in historical context, text and interpretation.",
+  "aliases": [
+    "Introduction to the Bible",
+    "Hebrew Bible",
+    "New Testament",
+    "Old Testament"
+  ]
+}

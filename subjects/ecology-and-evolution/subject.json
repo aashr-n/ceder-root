@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "ecology-and-evolution",
+  "name": "Ecology and evolution",
+  "domain": "natural",
+  "summary": "Natural selection, speciation, populations, communities and ecosystems.",
+  "aliases": [
+    "Evolution",
+    "Ecology",
+    "Evolutionary Biology",
+    "Population Biology"
+  ]
+}

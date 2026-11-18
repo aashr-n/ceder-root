@@ -1,0 +1,11 @@
+{
+  "formatVersion": 1,
+  "id": "abnormal-psychology",
+  "name": "Abnormal psychology",
+  "domain": "social",
+  "summary": "Mental disorders: symptoms, causes, diagnosis and treatment; mostly a second-year or upper course.",
+  "aliases": [
+    "Psychopathology",
+    "Clinical Psychology Intro"
+  ]
+}

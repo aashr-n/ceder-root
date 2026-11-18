@@ -1,0 +1,11 @@
+{
+  "formatVersion": 1,
+  "id": "archaeology",
+  "name": "Archaeology",
+  "domain": "social",
+  "summary": "How the human past is reconstructed from material remains; methods and world prehistory.",
+  "aliases": [
+    "Intro Archaeology",
+    "World Prehistory"
+  ]
+}

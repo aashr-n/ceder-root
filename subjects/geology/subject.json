@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "geology",
+  "name": "Geology",
+  "domain": "natural",
+  "summary": "Minerals, rocks, plate tectonics, surface processes and Earth history.",
+  "aliases": [
+    "Physical Geology",
+    "Earth Science",
+    "Historical Geology",
+    "Intro Geology"
+  ]
+}

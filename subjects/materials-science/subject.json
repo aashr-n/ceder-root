@@ -1,0 +1,11 @@
+{
+  "formatVersion": 1,
+  "id": "materials-science",
+  "name": "Materials science",
+  "domain": "applied",
+  "summary": "Atomic structure, bonding, crystals, defects, phase diagrams and properties of metals, ceramics and polymers.",
+  "aliases": [
+    "Intro Materials Science",
+    "Engineering Materials"
+  ]
+}

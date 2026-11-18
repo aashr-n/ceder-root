@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "computer-organization",
+  "name": "Computer organization and systems",
+  "domain": "formal",
+  "summary": "Number representation, assembly, the memory hierarchy and how a machine runs programs.",
+  "aliases": [
+    "Machine Structures",
+    "Computer Architecture",
+    "Systems Programming",
+    "Assembly Language"
+  ]
+}

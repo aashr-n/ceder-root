@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "nutrition",
+  "name": "Nutrition",
+  "domain": "natural",
+  "summary": "Nutrients, digestion, energy balance, diet and health across the life cycle.",
+  "aliases": [
+    "Human Nutrition",
+    "Intro Nutrition",
+    "Nutrition Science"
+  ]
+}

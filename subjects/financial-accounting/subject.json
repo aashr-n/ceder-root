@@ -1,0 +1,11 @@
+{
+  "formatVersion": 1,
+  "id": "financial-accounting",
+  "name": "Financial accounting",
+  "domain": "applied",
+  "summary": "Recording transactions and reading the balance sheet, income statement and cash flow statement.",
+  "aliases": [
+    "Principles of Accounting",
+    "Intro Financial Accounting"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "communication-studies",
+  "name": "Communication studies",
+  "domain": "social",
+  "summary": "Interpersonal, group, organisational and media communication theory.",
+  "aliases": [
+    "Intro to Communication",
+    "Interpersonal Communication",
+    "Mass Communication",
+    "Media Studies"
+  ]
+}

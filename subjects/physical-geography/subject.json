@@ -1,0 +1,10 @@
+{
+  "formatVersion": 1,
+  "id": "physical-geography",
+  "name": "Physical geography",
+  "domain": "natural",
+  "summary": "Landforms, climate, soils, vegetation and hydrology as systems.",
+  "aliases": [
+    "Intro Physical Geography"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "formatVersion": 1,
+  "id": "us-history",
+  "name": "United States history",
+  "domain": "humanities",
+  "summary": "American history from colonial era to the present, usually split at 1865 into two courses.",
+  "aliases": [
+    "American History"
+  ]
+}

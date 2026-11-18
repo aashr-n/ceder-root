@@ -1,0 +1,10 @@
+{
+  "formatVersion": 1,
+  "id": "arabic",
+  "name": "Arabic",
+  "domain": "humanities",
+  "summary": "Elementary and intermediate Modern Standard Arabic.",
+  "aliases": [
+    "Modern Standard Arabic"
+  ]
+}

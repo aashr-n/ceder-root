@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "macroeconomics",
+  "name": "Macroeconomics",
+  "domain": "social",
+  "summary": "GDP, inflation, unemployment, growth, money, fiscal and monetary policy and trade.",
+  "aliases": [
+    "Principles of Macroeconomics",
+    "Intro Macro",
+    "Macro"
+  ]
+}

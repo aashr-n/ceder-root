@@ -3,5 +3,9 @@
   "id": "statistics",
   "name": "Statistics",
   "domain": "formal",
-  "summary": "Describing data, chance, and what a sample can say."
+  "summary": "Describing data, chance, and what a sample can say.",
+  "aliases": [
+    "Intro Stats",
+    "Elementary Statistics"
+  ]
 }

@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "oceanography",
+  "name": "Oceanography",
+  "domain": "natural",
+  "summary": "The oceans: basins, seawater, currents, waves, tides, marine life and the ocean's part in climate.",
+  "aliases": [
+    "Introduction to oceanography",
+    "Marine science",
+    "Ocean science"
+  ]
+}

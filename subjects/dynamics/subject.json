@@ -1,0 +1,11 @@
+{
+  "formatVersion": 1,
+  "id": "dynamics",
+  "name": "Dynamics",
+  "domain": "applied",
+  "summary": "Kinematics and kinetics of particles and rigid bodies with Newton laws, energy and momentum methods.",
+  "aliases": [
+    "Engineering Dynamics",
+    "Engineering Mechanics Dynamics"
+  ]
+}

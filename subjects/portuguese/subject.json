@@ -1,0 +1,10 @@
+{
+  "formatVersion": 1,
+  "id": "portuguese",
+  "name": "Portuguese",
+  "domain": "humanities",
+  "summary": "Elementary and intermediate Portuguese.",
+  "aliases": [
+    "Brazilian Portuguese"
+  ]
+}

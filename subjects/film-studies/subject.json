@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "film-studies",
+  "name": "Film studies",
+  "domain": "humanities",
+  "summary": "Film form, history and criticism; the language of cinema.",
+  "aliases": [
+    "Intro to Film",
+    "Film Appreciation",
+    "Film History"
+  ]
+}

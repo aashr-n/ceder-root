@@ -3,5 +3,12 @@
   "id": "calculus",
   "name": "Calculus",
   "domain": "formal",
-  "summary": "Rates of change, accumulation, and the limits behind both."
+  "summary": "Rates of change, accumulation, and the limits behind both.",
+  "aliases": [
+    "Calc",
+    "Business calculus",
+    "Applied calculus",
+    "Calculus for life sciences",
+    "Single-variable calculus"
+  ]
 }

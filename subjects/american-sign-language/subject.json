@@ -1,0 +1,10 @@
+{
+  "formatVersion": 1,
+  "id": "american-sign-language",
+  "name": "American Sign Language",
+  "domain": "humanities",
+  "summary": "Elementary and intermediate ASL; accepted as a language requirement at many schools.",
+  "aliases": [
+    "Sign Language"
+  ]
+}

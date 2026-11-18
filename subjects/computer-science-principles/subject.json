@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "computer-science-principles",
+  "name": "Computer science principles",
+  "domain": "formal",
+  "summary": "Big ideas of computing for everyone: how the internet, data and algorithms work, with light programming.",
+  "aliases": [
+    "CS Principles",
+    "Computer Literacy",
+    "Intro to Computing"
+  ]
+}

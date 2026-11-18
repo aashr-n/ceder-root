@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "data-science",
+  "name": "Data science",
+  "domain": "formal",
+  "summary": "Cleaning, exploring, visualising and modelling data with code; inference and prediction.",
+  "aliases": [
+    "Intro Data Science",
+    "Foundations of Data Science",
+    "Data Analysis with Python or R"
+  ]
+}

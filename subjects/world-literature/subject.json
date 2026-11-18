@@ -1,0 +1,11 @@
+{
+  "formatVersion": 1,
+  "id": "world-literature",
+  "name": "World literature",
+  "domain": "humanities",
+  "summary": "Major works of fiction, poetry and drama from many cultures read in translation.",
+  "aliases": [
+    "Comparative Literature",
+    "Masterpieces of World Literature"
+  ]
+}

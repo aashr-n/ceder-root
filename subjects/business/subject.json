@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "business",
+  "name": "Business",
+  "domain": "applied",
+  "summary": "Forms of business, management, marketing, finance, operations and ethics in a survey.",
+  "aliases": [
+    "Introduction to business",
+    "Business administration",
+    "Intro to Business",
+    "Principles of Management"
+  ]
+}

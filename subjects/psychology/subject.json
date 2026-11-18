@@ -1,0 +1,12 @@
+{
+  "formatVersion": 1,
+  "id": "psychology",
+  "name": "Psychology",
+  "domain": "social",
+  "summary": "Behaviour and mental processes: brain, learning, memory, development, personality, disorders and social life.",
+  "aliases": [
+    "Introduction to Psychology",
+    "Intro Psych",
+    "General Psychology"
+  ]
+}
