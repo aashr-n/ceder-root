@@ -256,7 +256,8 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   }
   for (const entry of result.leftOut) if (entry.pack) console.log(`left out ${entry.pack}: ${entry.reason}`);
   const noPacks = result.leftOut.filter((entry) => entry.subject).map((entry) => entry.subject);
-  if (noPacks.length) console.log(`left out ${noPacks.length} subject${noPacks.length === 1 ? "" : "s"} with no built packs: ${noPacks.join(", ")}`);
+  // A long list is noise for whoever reads the build; the first few say what kind of thing is left out.
+  if (noPacks.length) console.log(`left out ${noPacks.length} subject${noPacks.length === 1 ? "" : "s"} with no built packs: ${noPacks.slice(0, 10).join(", ")}${noPacks.length > 10 ? `, and ${noPacks.length - 10} more` : ""}`);
   const assetCount = [...result.files.keys()].filter((name) => name.startsWith("bankasset-")).length;
   const libraryNote = result.libraryItems === undefined ? "" : `, ${result.libraryItems} library item${result.libraryItems === 1 ? "" : "s"}, ${result.sources} source${result.sources === 1 ? "" : "s"}, ${result.routedSubjects} routed subject${result.routedSubjects === 1 ? "" : "s"}`;
   const summary = `${result.built.length} pack${result.built.length === 1 ? "" : "s"}, ${assetCount} asset${assetCount === 1 ? "" : "s"}${libraryNote}, revision ${result.revision}`;
