@@ -254,7 +254,9 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
     const missing = pack.draft + pack.rejected;
     console.log(`built ${pack.file}: ${pack.concepts} concepts, ${pack.items} items${missing ? ` (left out ${pack.draft} draft, ${pack.rejected} rejected)` : ""}, ${pack.assets} asset${pack.assets === 1 ? "" : "s"}`);
   }
-  for (const entry of result.leftOut) console.log(`left out ${entry.pack ?? `subject ${entry.subject}`}: ${entry.reason}`);
+  for (const entry of result.leftOut) if (entry.pack) console.log(`left out ${entry.pack}: ${entry.reason}`);
+  const noPacks = result.leftOut.filter((entry) => entry.subject).map((entry) => entry.subject);
+  if (noPacks.length) console.log(`left out ${noPacks.length} subject${noPacks.length === 1 ? "" : "s"} with no built packs: ${noPacks.join(", ")}`);
   const assetCount = [...result.files.keys()].filter((name) => name.startsWith("bankasset-")).length;
   const libraryNote = result.libraryItems === undefined ? "" : `, ${result.libraryItems} library item${result.libraryItems === 1 ? "" : "s"}, ${result.sources} source${result.sources === 1 ? "" : "s"}, ${result.routedSubjects} routed subject${result.routedSubjects === 1 ? "" : "s"}`;
   const summary = `${result.built.length} pack${result.built.length === 1 ? "" : "s"}, ${assetCount} asset${assetCount === 1 ? "" : "s"}${libraryNote}, revision ${result.revision}`;

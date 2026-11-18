@@ -118,8 +118,11 @@ export function checkBank(bank, { root = bankRoot, allowMissingAssets = false, r
   // A subject's name and aliases are what a tutor's free-text subject is matched against, so each must lead to one
   // subject only. Aliases are common names, never a school's course code, so they hold no digits.
   const subjectNames = new Map();
+  // An app matches by ID too, so an alias can't be another subject's ID either, read as words (“computer science”).
+  const subjectIds = new Map();
   for (const subject of all.subjects) {
     if (typeof subject.data?.name === "string") subjectNames.set(subjectKey(subject.data.name), subject.data.id);
+    if (typeof subject.data?.id === "string") subjectIds.set(subject.data.id.replace(/-/g, " "), subject.data.id);
   }
   const aliasOwners = new Map();
   for (const subject of all.subjects) {
@@ -143,6 +146,8 @@ export function checkBank(bank, { root = bankRoot, allowMissingAssets = false, r
       const named = subjectNames.get(key);
       if (named === id) errors.push(`${at}: alias “${alias}” is the subject's own name`);
       else if (named !== undefined) errors.push(`${at}: alias “${alias}” is the name of the subject ${named}; ${id} can't have it too`);
+      const byId = subjectIds.get(key.replace(/-/g, " "));
+      if (byId !== undefined && byId !== id && byId !== named) errors.push(`${at}: alias “${alias}” is the ID of the subject ${byId}; ${id} can't have it`);
       for (const other of aliasOwners.get(key) ?? []) {
         if (other !== subject && other.data.id !== id) errors.push(`${at}: alias “${alias}” is also an alias of ${other.data.id}; an alias leads to one subject only`);
       }

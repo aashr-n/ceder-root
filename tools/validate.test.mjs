@@ -181,6 +181,14 @@ test("an alias may lead to one subject only, and is never a course code", () => 
   writeSubject(twice, { id: "testing", name: "Testing", aliases: ["Lab work", "lab Work"] });
   hasError(check(twice), "alias “lab Work” appears twice");
 
+  // An app matches by ID too: another subject's ID, read as words, is taken; the subject's own isn't.
+  const byId = fixtureRoot();
+  writeSubject(byId, { id: "lab-work", name: "Laboratory work", aliases: ["Lab work"] });
+  writeSubject(byId, { id: "testing", name: "Testing", aliases: ["Lab  Work"] });
+  const idResult = check(byId);
+  hasError(idResult, "subjects/testing/subject.json: alias “Lab  Work” is the ID of the subject lab-work; testing can't have it");
+  assert.ok(!idResult.errors.some((error) => error.startsWith("subjects/lab-work/") && error.includes("is the ID of")));
+
   const code = fixtureRoot();
   writeSubject(code, { id: "testing", name: "Testing", aliases: ["TEST 101"] });
   hasError(check(code), "alias “TEST 101” has a digit");

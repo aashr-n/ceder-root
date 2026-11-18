@@ -70,6 +70,9 @@ test("a subject's sources go textbook first, by first kind, then by id, with unt
   const testing = index(routesRoot()).subjects.find((subject) => subject.id === "testing");
   assert.deepEqual(testing.sources, ["another-book", "book", "atlas", "videos", "plain"]);
   assert.deepEqual(KIND_ORDER, ["textbook", "lessons", "reference", "documentation", "exercises", "texts", "data", "media", "simulation", "video"]);
+  // Every kind the catalogue allows has a place, so none falls to the end with the untyped sources by accident.
+  const allowed = JSON.parse(readFileSync(join(realRoot, "sources", "source.schema.json"), "utf8")).properties.kinds.items.enum;
+  assert.deepEqual([...KIND_ORDER].sort(), [...allowed].sort());
   const sorted = [{ id: "b" }, { id: "a", kinds: ["video"] }, { id: "c", kinds: ["textbook"] }, { id: "a" }].sort(routeOrder);
   assert.deepEqual(sorted.map((one) => `${one.id}:${one.kinds?.[0] ?? "-"}`), ["c:textbook", "a:video", "a:-", "b:-"]);
 });

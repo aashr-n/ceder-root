@@ -75,10 +75,12 @@ export function nextPacks(plan, bank, count = 1) {
  * It ends with one line naming the bank's subjects that have no plan yet.
  */
 export function overview(plans, bank) {
+  // A fixed locale, so the page is the same on every machine and overview --check doesn't depend on who runs it.
+  const byName = (a, b) => a.localeCompare(b, "en");
   const written = new Set(bank.packs.map((pack) => pack.data.id));
   const names = new Map(bank.subjects.map((subject) => [subject.data.id, subject.data.name]));
   const lines = ["# What the bank plans to cover", "", "Made by `node tools/plan.mjs overview` from the plans in this folder. Don't edit it: change a plan and run that again.", "", "Each subject's packs are in the order a student meets them, with the concepts each one teaches. ✓ marks a pack that is written.", ""];
-  for (const plan of [...plans].sort((a, b) => a.subject.localeCompare(b.subject))) {
+  for (const plan of [...plans].sort((a, b) => byName(a.subject, b.subject))) {
     const done = plan.packs.filter((entry) => written.has(`${plan.subject}.${entry.pack}`)).length;
     const concepts = plan.packs.reduce((sum, entry) => sum + entry.concepts.length, 0);
     lines.push(`## ${names.get(plan.subject) ?? plan.subject}`, "", `${plan.covers} ${plan.packs.length} packs, ${concepts} concepts, ${done} written.`, "");
@@ -86,7 +88,7 @@ export function overview(plans, bank) {
     lines.push("");
   }
   const planned = new Set(plans.map((plan) => plan.subject));
-  const unplanned = bank.subjects.map((subject) => subject.data).filter((subject) => !planned.has(subject.id)).map((subject) => subject.name ?? subject.id).sort((a, b) => a.localeCompare(b));
+  const unplanned = bank.subjects.map((subject) => subject.data).filter((subject) => !planned.has(subject.id)).map((subject) => subject.name ?? subject.id).sort(byName);
   // Names can hold commas ("Waves, thermal and modern physics"), so semicolons part them.
   lines.push(unplanned.length ? `No plan yet (${unplanned.length} subject${unplanned.length === 1 ? "" : "s"}): ${unplanned.join("; ")}.` : "Every subject has a plan.", "");
   return lines.join("\n");

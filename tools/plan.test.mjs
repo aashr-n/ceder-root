@@ -126,3 +126,15 @@ test("overview --check passes only when plan/OVERVIEW.md is what overview writes
   assert.equal(run("overview", "--check").status, 1);
   assert.equal(readFileSync(join(root, "plan", "OVERVIEW.md"), "utf8"), "edited by hand\n");
 });
+
+test("overview sorts the same whatever the machine's locale", () => {
+  const root = fixtureRoot();
+  const { bank, plan } = fixturePlan(root);
+  // Czech sorts “Ch” after “H”, and Danish “Aa” after “Z”; the page must not.
+  bank.subjects.push({ data: { id: "history", name: "History" } }, { data: { id: "chemistry", name: "Chemistry" } }, { data: { id: "aalto", name: "Aalto studies" } });
+  const script = `import { overview } from ${JSON.stringify(join(toolsDir, "plan.mjs"))}; process.stdout.write(overview(${JSON.stringify([plan])}, ${JSON.stringify(bank)}));`;
+  const page = (locale) => spawnSync(process.execPath, ["--input-type=module", "-e", script], { encoding: "utf8", env: { ...process.env, LANG: locale, LC_ALL: locale } }).stdout;
+  const english = page("en_US.UTF-8");
+  assert.equal(english.trimEnd().split("\n").at(-1), "No plan yet (3 subjects): Aalto studies; Chemistry; History.");
+  for (const locale of ["cs_CZ.UTF-8", "da_DK.UTF-8"]) assert.equal(page(locale), english, locale);
+});

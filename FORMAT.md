@@ -32,7 +32,7 @@ ceder-root/
 
 - `name` is what a concept's subject reads as on a student's knowledge map. It never changes once students have it.
 - `domain` is one of `natural`, `formal`, `social`, `humanities`, `applied`, the map's five branches of knowledge.
-- `aliases` is optional: up to 16 other names people use for the subject or its usual courses, such as "Calc" or "Principles of marketing". Compared lower-cased with white space evened out, an alias can't be its own subject's name, another subject's name, or another subject's alias, so each leads to one subject. It has no digits: an alias is a common name, never a school's course code.
+- `aliases` is optional: up to 16 other names people use for the subject or its usual courses, such as "Calc" or "Principles of marketing". Compared lower-cased with white space evened out, an alias can't be its own subject's name, another subject's name or ID (read with spaces for hyphens), or another subject's alias, so each leads to one subject. It has no digits: an alias is a common name, never a school's course code.
 
 A subject can be registered with only its `subject.json`, before it has a plan or any pack. It is then part of the vocabulary a tutor classifies a student's question into, and it is in an app's `routes-index.json`, but not in `bank-index.json`, which lists only subjects with a built pack.
 

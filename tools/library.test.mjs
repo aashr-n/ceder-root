@@ -462,6 +462,7 @@ test("every concept the repository's built library names is in its built bank", 
     for (const concept of pack.concepts) built.add(`${pack.subject}/${concept.id}`);
   }
   const library = JSON.parse(copy.files.get("library-index.json"));
+  assert.ok(library.items.length > 0 && built.size > 0);
   for (const ref of Object.keys(library.concepts)) assert.ok(built.has(ref), ref);
   for (const item of library.items) for (const ref of item.concepts) assert.ok(built.has(ref), `${item.id}: ${ref}`);
 });
