@@ -1,0 +1,48 @@
+{
+  "id": "ung-world-literature-ii",
+  "name": "Compact Anthology of World Literature II: Volumes 4, 5, and 6 (University of North Georgia Press)",
+  "url": "https://oer.galileo.usg.edu/english-textbooks/18/",
+  "goodFor": "An anthology of world literature from the seventeenth century to the present, with unit introductions, for a world literature survey course.",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://oer.galileo.usg.edu/english-textbooks/18/",
+  "apps": "link",
+  "bank": "none",
+  "subjects": [
+    "world-literature",
+    "literature"
+  ],
+  "kinds": [
+    "texts",
+    "textbook"
+  ],
+  "checked": {
+    "date": "2026-11-18",
+    "evidence": [
+      {
+        "url": "https://oer.galileo.usg.edu/english-textbooks/18/",
+        "quote": "This work is licensed under a Creative Commons Attribution-Share Alike 4.0 International License"
+      },
+      {
+        "url": "https://oer.galileo.usg.edu/english-textbooks/18/",
+        "quote": "Texts in the public domain--those published or translated before 1923--are replicated here."
+      },
+      {
+        "url": "https://oer.galileo.usg.edu/english-textbooks/18/",
+        "quote": "Thus, in Part 6, most of the texts are accessible in the form of links to outside sites."
+      },
+      {
+        "url": "https://oer.galileo.usg.edu/english-textbooks/18/",
+        "quote": "The UNG Press and the editors of this anthology are looking into issues with links in Volumes 5 and 6."
+      },
+      {
+        "url": "https://oer.galileo.usg.edu/faq.html",
+        "quote": "Each document in ALG Commons is classified by its Creative Commons license."
+      },
+      {
+        "url": "https://ung.edu/university-press/books/compact-anthology-world-literature-ii-part-4-5-6.php",
+        "quote": "The Compact Anthology of World Literature, Parts 4, 5, and 6 is designed as an e-book to be accessible on a variety of devices"
+      }
+    ]
+  },
+  "notes": "Link only (moved from the catalogue on 2026-11-18, to match dorrell-intro-human-geography). The only licence statement is the book's record in the GALILEO Open Learning Materials repository (ALG Commons), which says CC BY-SA 4.0 for the whole work, and that is the same evidence that keeps Dorrell's Introduction to Human Geography, from the same repository and the same press partnership, set aside. The University of North Georgia Press's own page for the book states no licence and says nothing about reuse (unlike its pages for British Literature I and Principles of Financial Accounting, which say the book \"can be reused, remixed, and reedited freely without seeking permission\"), and the book itself (a PDF) wasn't read, so its copyright page, any \"except where otherwise noted\" clause and the sources of its translations weren't seen. The record also says the anthology reprints only texts published or translated before 1923 and links to outside sites for later ones, so most of Part 6 is links, not the book; the editors noted on 2022-06-03 that they were looking into broken links in volumes 5 and 6. The repository's footer Copyright link goes to Elsevier's platform terms (not reachable), which weren't read. To move it back, read the licence on the book's own copyright page, or find the press stating it on its own page. Its companion for World Literature I is CC BY-NC-SA (ung-world-literature-i). The bank's agents don't read it and nothing from it goes into the bank."
+}

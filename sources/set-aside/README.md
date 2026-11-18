@@ -2,9 +2,9 @@
 
 Sources that were read on their own pages and aren't in the catalogue, kept here for possible later use. The catalogue (`../entries/`) holds only sources Ceder may store and show in full. A source is here when only part of it qualifies, or when an app could do no more than link to it.
 
-Nothing here is used. The library's validator reads `../entries/` only, so no piece can be pinned from a source in this folder. Each record keeps its evidence as it was found, in the catalogue's own format: the first 13 records on 2026-11-11, the other 49 on 2026-11-18. Terms change, so read the source's pages again before moving one back. `node sources/validate.mjs sources/set-aside` checks the records are well formed.
+Nothing here is used. The library's validator reads `../entries/` only, so no piece can be pinned from a source in this folder. Each record keeps its evidence as it was found, in the catalogue's own format: the first 13 records on 2026-11-11, the other 50 on 2026-11-18. Terms change, so read the source's pages again before moving one back. `node sources/validate.mjs sources/set-aside` checks the records are well formed.
 
-62 records: 15 usable only in part, 47 link only.
+63 records: 15 usable only in part, 48 link only.
 
 ## Usable only in part
 
@@ -37,7 +37,7 @@ The part that qualifies can't yet be told apart from the rest without checking i
 | `mit-opencourseware` | CC BY-NC-SA 4.0. |
 | `webwork-opl` | CC BY-NC-SA 3.0 by default. |
 | `missing-semester`, `moderndive`, `odin-project`, `think-java`, `econometrics-with-r` | CC BY-NC-SA 4.0. |
-| `ung-world-literature-i` | CC BY-NC-SA 4.0 (its companion, World Literature II, is in the catalogue). |
+| `ung-world-literature-i` | CC BY-NC-SA 4.0. |
 | `pro-git` | CC BY-NC-SA 3.0. |
 | `javascript-info`, `excelsior-owl` | CC BY-NC 4.0 (only the Excelsior OWL badge's alt text says otherwise). |
 | `data8-textbook` | CC BY-NC-ND 4.0. |
@@ -66,7 +66,8 @@ The part that qualifies can't yet be told apart from the rest without checking i
 | `grinstead-snell-probability` | GFDL, with no version stated. |
 | `applied-calculus-calaway-hoffman-lippman` | The licence's version is only in the PDF, and chapter 1 is remixed from a book that holds NonCommercial material used by permission. |
 | `python-for-everybody` | Only a footer states CC BY; the book's copyright page wasn't read, and chapters 2 to 10 are adapted from Think Python. |
-| `dorrell-intro-human-geography` | Only a repository record states CC BY 4.0; the book itself couldn't be read. |
+| `dorrell-intro-human-geography` | Only a repository record states CC BY 4.0; the book itself couldn't be read, and the press's own page states no licence and may describe a later edition. |
+| `ung-world-literature-ii` | Only a repository record states CC BY-SA 4.0; the press's own page says nothing about reuse, and the book itself wasn't read. |
 | `web-dev-learn` | The only licence read is the archived repository's, which may not cover the live site. |
 | `pandas-docs` | The BSD licence covers the software, and doesn't say it covers the documentation. |
 | `freecodecamp` | The lessons are copyright freeCodeCamp.org with no licence granted. |
@@ -74,7 +75,7 @@ The part that qualifies can't yet be told apart from the rest without checking i
 | `falstad-circuit-sim` | The code is GPL 2 or later; the site's own pages and example circuits weren't read. |
 | **Site terms** | |
 | `mdn-web-docs` | CC BY-SA 2.5, but the Mozilla terms of use it links to couldn't be read. |
-| `github-docs` | CC BY 4.0 in the repository, but docs.github.com and its site policy couldn't be read. |
+| `github-docs` | CC BY 4.0 in the repository, but GitHub's own site policy forbids exploiting any portion of the service without permission; the owner decides whether that narrows the grant. |
 | `exercism` | The Python track is MIT, but each track differs and the site's terms couldn't be read. |
 | `nasa-images-media` | NASA's imagery isn't public domain by its own guidelines, and its rules for AI forbid attributing output to NASA. |
 | `standard-ebooks` | Its own work is CC0, but its robots.txt asks AI assistants not to fetch the books, and Ceder keeps to that. |

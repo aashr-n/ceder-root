@@ -28,8 +28,24 @@
       {
         "url": "https://raw.githubusercontent.com/github/docs/main/LICENSE",
         "quote": "Patent and trademark rights are not licensed under this"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/github/docs/main/content/site-policy/github-terms/github-terms-of-service.md",
+        "quote": "We reserve all rights that are not expressly granted to you under this Agreement or by law."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/github/docs/main/content/site-policy/acceptable-use-policies/github-acceptable-use-policies.md",
+        "quote": "You will not reproduce, duplicate, copy, sell, resell or exploit any portion of the Service, use of the Service, or access to the Service without our express written permission."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/github/docs/main/content/site-policy/acceptable-use-policies/github-acceptable-use-policies.md",
+        "quote": "You may use information from our Service for the following reasons, regardless of whether the information was scraped, collected through our API, or obtained otherwise:"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/github/docs/main/content/site-policy/acceptable-use-policies/github-acceptable-use-policies.md",
+        "quote": "Archivists may use public information from the Service for archival purposes."
       }
     ]
   },
-  "notes": "The github/docs repository README says its documentation and content folders are CC BY 4.0 and its code MIT, and its LICENSE file holds the CC BY 4.0 text, which doesn't license trademark rights (GitHub's name and logos). That is the licence of the repository's content files. The published site docs.github.com and its site policy (the terms the candidate list pointed to) are on a host that couldn't be reached, so whether the site's terms add conditions was not read, and the record stays link-only until they are. Only content files in the repository are CC BY; the repository's site-building code is separate. Product documentation: the Get Started section is general Git, the rest is specific to GitHub."
+  "notes": "The github/docs repository README says its documentation and content folders are CC BY 4.0 and its code MIT, and its LICENSE file holds the CC BY 4.0 text, which doesn't license trademark rights (GitHub's name and logos). That is the licence of the repository's content files. docs.github.com itself couldn't be reached, but the same repository holds the site policy it publishes, and on 2026-11-18 its Terms of Service and Acceptable Use Policies were read there. They don't mention the documentation's licence, and they cut both ways: the Terms reserve only rights \"not expressly granted to you under this Agreement or by law\", while the Acceptable Use Policies forbid reproducing or exploiting \"any portion of the Service\" without written permission and list research and archiving as the uses of information from the Service, however it was obtained. GitHub is both the licensor of the docs and the author of those terms, so whether they narrow the README's CC BY grant for a paid app is for the owner to decide; until then it stays link only. (The other catalogue sources read from GitHub repositories are licensed by their own authors, not by GitHub, so these terms aren't their licensor's.) Only content files in the repository are CC BY; the repository's site-building code is separate. Product documentation: the Get Started section is general Git, the rest is specific to GitHub."
 }

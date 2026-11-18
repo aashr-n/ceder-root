@@ -27,7 +27,7 @@ The catalogue records; it doesn't permit. What an agent may read while it works 
 
 Only sources Ceder may store and show in full, and a student's own files. A source that qualifies only in part, or that an app could only link to, isn't here: it's kept in `set-aside/`, with why (the owner, 2026-11-11). Sources someone found but nobody has yet read on their own pages are listed in `plan/source-leads.jsonl`; a licence there is a claim, not evidence.
 
-49 entries. Where only part of a source may be shown, the `apps` column names the part that is only `link`.
+48 entries. Where only part of a source may be shown, the `apps` column names the part that is only `link`.
 
 | Entry | Licence | `apps` |
 |---|---|---|
@@ -74,7 +74,7 @@ Only sources Ceder may store and show in full, and a student's own files. A sour
 | `jonick-financial-accounting` | CC BY-SA 4.0 | `show` |
 | `natural-earth` | Public domain | `show` |
 | **Humanities and languages** | | |
-| `ung-british-literature-i`, `ung-world-literature-ii` | CC BY-SA 4.0 | `show` |
+| `ung-british-literature-i` | CC BY-SA 4.0 | `show` |
 | `open-scriptures-hebrew-bible` | CC BY 4.0 tags; the Westminster Leningrad Codex text public domain | `show`; MAPM text (CC BY-SA 4.0) `link` |
 | `cc-cedict` | CC BY-SA 4.0 | `show` |
 | `glottolog` | CC BY 4.0 | `show`; endangerment statuses and bibliography `link` |

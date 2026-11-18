@@ -27,6 +27,10 @@
         "quote": "This textbook is an Open Access Resource. It can be reused, remixed, and reedited freely without seeking permission."
       },
       {
+        "url": "https://ung.edu/university-press/books/brit-lit-anthology.php",
+        "quote": "It can be reused, remixed, and reedited freely without seeking permission."
+      },
+      {
         "url": "https://oer.galileo.usg.edu/english-textbooks/17/",
         "quote": "Featuring over 50 authors and full texts of their works"
       },
@@ -40,5 +44,5 @@
       }
     ]
   },
-  "notes": "Checked against the book's own page in the GALILEO Open Learning Materials repository (ALG Commons, run by Affordable Learning Georgia, the book's co-publisher with the University of North Georgia Press), which states CC BY-SA 4.0 for the whole work; the repository's FAQ says each document carries its own Creative Commons licence, so the licence is set per book and only this book was read. CC BY-SA allows commercial use; what Ceder changes stays under CC BY-SA 4.0. The anthology reprints works by over 50 authors and has over 100 historical images; the page does not say where each text, translation or picture comes from, so a picture or a translation of an older-language work (for example Old or Middle English) should have its source checked before it is shown. The repository's FAQ and About pages were read and add no other terms; its footer Copyright link goes to Elsevier's website terms for the Digital Commons platform (www.elsevier.com, not reachable), which were not read. The book is a 49 MB PDF; the page lists no HTML version."
+  "notes": "Checked against the book's own page in the GALILEO Open Learning Materials repository (ALG Commons, run by Affordable Learning Georgia, the book's co-publisher with the University of North Georgia Press), which states CC BY-SA 4.0 for the whole work; the repository's FAQ says each document carries its own Creative Commons licence, so the licence is set per book and only this book was read. The University of North Georgia Press's own page for the book agrees that it \"can be reused, remixed, and reedited freely without seeking permission\" (re-read 2026-11-18); that agreement is what separates this record from ung-world-literature-ii and dorrell-intro-human-geography, whose press pages state nothing about reuse and which are set aside. CC BY-SA allows commercial use; what Ceder changes stays under CC BY-SA 4.0. The anthology reprints works by over 50 authors and has over 100 historical images; the page does not say where each text, translation or picture comes from, so a picture or a translation of an older-language work (for example Old or Middle English) should have its source checked before it is shown. The repository's FAQ and About pages were read and add no other terms; its footer Copyright link goes to Elsevier's website terms for the Digital Commons platform (www.elsevier.com, not reachable), which were not read. The book is a 49 MB PDF; the page lists no HTML version."
 }
