@@ -31,7 +31,7 @@ import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { politeFetch, slug as slugOf } from "./ref.mjs";
 import { renderSvg } from "./render.mjs";
-import { bankRoot, loadBank } from "./validate.mjs";
+import { bankRoot, loadBank, ships } from "./validate.mjs";
 
 export const FORMAT_VERSION = 1;
 /** The longest a text piece may be, in characters. */
@@ -324,10 +324,16 @@ export function appAccess(item, catalogue) {
   return item.evidence ? "show" : null;
 }
 
-/** Every concept in the bank, by ref. */
+/**
+ * Every concept the build ships, by ref: those in packs with at least one verified item. A piece may name only these,
+ * so an app's library-index.json never points at a concept its copy of the bank doesn't have.
+ */
 export function conceptRefs(root = bankRoot) {
   const refs = new Set();
-  for (const pack of loadBank(root).packs) for (const concept of pack.data?.concepts ?? []) refs.add(`${pack.subjectFolder}/${concept.id}`);
+  for (const pack of loadBank(root).packs) {
+    if (!ships(pack.data)) continue;
+    for (const concept of pack.data?.concepts ?? []) refs.add(`${pack.subjectFolder}/${concept.id}`);
+  }
   return refs;
 }
 
@@ -424,7 +430,7 @@ export function checkItem(item, { root = bankRoot, catalogue, concepts, bytes } 
       else if (size.width > IMAGE_WIDTH) errors.push(`library/${item.file} is ${size.width} pixels wide; store it at most ${IMAGE_WIDTH}`);
     }
   }
-  for (const ref of item.concepts) if (!concepts.has(ref)) errors.push(`concept “${ref}” isn't in the bank`);
+  for (const ref of item.concepts) if (!concepts.has(ref)) errors.push(`concept “${ref}” isn't in the bank, or only in a pack with no verified items, which the build leaves out`);
   return errors;
 }
 
@@ -519,7 +525,8 @@ export function buildLibrary({ root = bankRoot } = {}) {
 /**
  * The source catalogue as an app reads it, `sources-index.json`: `{ files, sources, errors, revision }`. Only sources an
  * app may show or link to (`apps` show or link) are listed, by id, each with what the app needs to credit it and to
- * offer it for a subject. `subjects` is the bank's subject ids the source is tagged for, empty for a general source.
+ * offer it for a subject. `subjects` is the bank's subject ids the source is tagged for, empty for a general source;
+ * `kinds`, where the entry has it, is what sort of resource the source is, in the entry's order.
  */
 export function buildSourcesIndex({ root = bankRoot } = {}) {
   const catalogue = loadCatalogue(root);
@@ -531,6 +538,8 @@ export function buildSourcesIndex({ root = bankRoot } = {}) {
     for (const subject of entry.subjects ?? []) if (!subjects.has(subject)) result.errors.push(`${entry.id}: subjects names “${subject}”, which isn't a subject in the bank`);
     const built = pick(entry, ["id", "name", "url", "license", "licenseUrl", "attribution", "apps"]);
     built.subjects = [...(entry.subjects ?? [])].sort();
+    // What sort of resource it is, first kind first, only where the entry says.
+    if (entry.kinds) built.kinds = [...entry.kinds];
     if (entry.linking) built.linking = pick(entry.linking, ["external", "freeOnly"]);
     sources.push(built);
   }

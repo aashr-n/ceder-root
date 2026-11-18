@@ -1,8 +1,8 @@
 import assert from "node:assert/strict";
-import { rmSync, writeFileSync } from "node:fs";
+import { mkdirSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import test from "node:test";
-import { editPack, fixtureRoot } from "./fixtures/fixture.mjs";
+import { editPack, fixtureRoot, realRoot } from "./fixtures/fixture.mjs";
 import { checkBank, loadBank } from "./validate.mjs";
 
 const check = (root, options = {}) => checkBank(loadBank(root), { root, ...options });
@@ -146,4 +146,57 @@ test("a verified item claiming more agreements than solvers is an error", () => 
   const root = fixtureRoot();
   editPack(root, (data) => { data.items[0].verification.agreed = 3; });
   hasError(check(root), "says more solvers agreed than answered");
+});
+
+/** Writes a subject.json into the fixture bank: `testing`'s own with `change`, or a new subject's. */
+function writeSubject(root, data) {
+  mkdirSync(join(root, "subjects", data.id), { recursive: true });
+  writeFileSync(join(root, "subjects", data.id, "subject.json"), JSON.stringify({ formatVersion: 1, domain: "natural", summary: "A subject for a test.", ...data }, null, 2));
+}
+
+test("a subject with only a subject.json, no plan or pack, is valid, and so are its aliases", () => {
+  const root = fixtureRoot();
+  writeSubject(root, { id: "other", name: "Other", aliases: ["Intro to other things", "Other studies"] });
+  writeSubject(root, { id: "testing", name: "Testing", summary: "A small subject the bank's tools are tested on.", aliases: ["Test science"] });
+  assert.deepEqual(check(root).errors, []);
+});
+
+test("an alias may lead to one subject only, and is never a course code", () => {
+  const own = fixtureRoot();
+  writeSubject(own, { id: "testing", name: "Testing", aliases: ["  TESTING "] });
+  hasError(check(own), "alias “  TESTING ” is the subject's own name");
+
+  const named = fixtureRoot();
+  writeSubject(named, { id: "other", name: "Other", aliases: ["testing"] });
+  hasError(check(named), "alias “testing” is the name of the subject testing; other can't have it too");
+
+  const shared = fixtureRoot();
+  writeSubject(shared, { id: "other", name: "Other", aliases: ["Lab   work"] });
+  writeSubject(shared, { id: "testing", name: "Testing", aliases: ["lab work"] });
+  const result = check(shared);
+  hasError(result, "subjects/other/subject.json: alias “Lab   work” is also an alias of testing");
+  hasError(result, "subjects/testing/subject.json: alias “lab work” is also an alias of other");
+
+  const twice = fixtureRoot();
+  writeSubject(twice, { id: "testing", name: "Testing", aliases: ["Lab work", "lab Work"] });
+  hasError(check(twice), "alias “lab Work” appears twice");
+
+  const code = fixtureRoot();
+  writeSubject(code, { id: "testing", name: "Testing", aliases: ["TEST 101"] });
+  hasError(check(code), "alias “TEST 101” has a digit");
+});
+
+test("checking one subject still compares its aliases with every other subject's", () => {
+  const root = fixtureRoot();
+  writeSubject(root, { id: "other", name: "Other", aliases: ["Lab work"] });
+  writeSubject(root, { id: "testing", name: "Testing", aliases: ["Lab work"] });
+  const all = loadBank(root);
+  const result = checkBank(loadBank(root, join(root, "subjects", "testing")), { root, all });
+  hasError(result, "subjects/testing/subject.json: alias “Lab work” is also an alias of other");
+  assert.ok(!result.errors.some((error) => error.startsWith("subjects/other/")));
+});
+
+test("the repository's subjects pass the alias rules", () => {
+  const result = checkBank(loadBank(realRoot), { root: realRoot });
+  assert.deepEqual(result.errors.filter((error) => error.includes("alias")), []);
 });

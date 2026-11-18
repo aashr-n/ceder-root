@@ -21,7 +21,7 @@ subject        Biology                      subjects/biology/subject.json
    └─ artifacts  diagrams, 3D models and sequences, with their files in assets/
 ```
 
-A pack covers one topic: 4 to 12 concepts, with at least 4 verified questions for each. `FORMAT.md` is the format. Read it before writing or changing anything here. `CONTRIBUTING.md` is the short way in to adding questions.
+A pack covers one topic: 4 to 12 concepts, with at least 4 verified questions for each. A subject can be registered with only its `subject.json`, its names and aliases, before it has a plan or a pack: it is then part of the vocabulary a tutor classifies questions into, and an app can already offer the outside sources tagged for it. `FORMAT.md` is the format. Read it before writing or changing anything here. `CONTRIBUTING.md` is the short way in to adding questions.
 
 ```
 subjects/   the packs, by subject
@@ -53,12 +53,19 @@ node tools/build.mjs                     writes dist/
 
 `node sources/validate.mjs` checks the source catalogue (`sources/README.md`), and `node tools/library.mjs validate` the library (`library/README.md`). The library has its own build, `node tools/library.mjs build`, which doesn't touch the bank's.
 
-CI runs these on every pull request and on `main`.
+```
+node tools/plan.mjs check plan/<subject>.json   checks one plan (plan/README.md)
+node tools/plan.mjs overview --check            fails if plan/OVERVIEW.md isn't what the plans make
+node tools/routes.mjs build                     writes routes-index.json, the subject-level routing table, to dist/routes/
+node tools/routes.mjs coverage                  per subject: tagged sources, planned and written concepts, and those with a library piece
+```
 
-An app that ships a copy of the built bank can keep it in step with the source. The copy also gets the human-made material the catalogue lets an app use: `library-index.json`, its `libraryasset-*` files and `sources-index.json` (`FORMAT.md`, An app's copy).
+CI runs these on every pull request and on `main`, `validate.mjs` with `--require-verified` and `plan.mjs check` on every plan. It doesn't run `coverage`, which is a report for people.
+
+An app that ships a copy of the built bank can keep it in step with the source. The copy also gets the human-made material the catalogue lets an app use: `library-index.json`, its `libraryasset-*` files and `sources-index.json`, and `routes-index.json`, every subject with the sources to offer for it (`FORMAT.md`, An app's copy).
 
 ```
-node tools/build.mjs --app --app-dir <folder>         rebuilds dist/ and replaces the bank, library and source index files in <folder>
+node tools/build.mjs --app --app-dir <folder>         rebuilds dist/ and replaces the bank, library, source and routing files in <folder>
 node tools/build.mjs --check-app --app-dir <folder>   changes nothing; fails if <folder> isn't what --app would write
 ```
 

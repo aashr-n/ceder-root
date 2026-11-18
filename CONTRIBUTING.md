@@ -8,7 +8,7 @@ The bank is questions and the ideas they check, in plain JSON files. `FORMAT.md`
 |---|---|
 | Questions on a topic that already has a pack | `items` in `subjects/<subject>/<pack>/pack.json` |
 | A topic its subject doesn't have yet | A new folder `subjects/<subject>/<pack>/` with a `pack.json` |
-| A subject | A new folder `subjects/<subject>/` with a `subject.json`, then its first pack |
+| A subject | A new folder `subjects/<subject>/` with a `subject.json`, which is enough to register it; a plan and packs can follow |
 | What a subject should cover | `plan/<subject>.json`, the list of packs to write (`plan/README.md`) |
 
 Every question checks one concept in its own pack. If the idea isn't a concept there yet, add the concept first.
@@ -31,11 +31,11 @@ Anyone can ask for a subject the bank doesn't have with the issue form "Request 
 To turn a request into a subject, a maintainer:
 
 1. Reads the issue. If it holds anything from a private course (a course name or code, a teacher or school, an assignment, a quote), edits it out or closes the issue and asks for a new one without it.
-2. Checks the bank doesn't cover the subject already: `subjects/`, and `plan/OVERVIEW.md` for a plan that lists it.
-3. Writes `plan/<subject>.json`, the list of packs to write (`plan/README.md`), with `pipeline/prompts/planner.md` or by hand. The subject's name becomes its ID: lowercase words joined by hyphens. Links in the issue are only a hint of what such a course usually covers. The planner's outside reading is still only `tools/ref.mjs` (`pipeline/prompts/sources.md`), and no wording from a syllabus is copied.
-4. Adds `subjects/<subject>/subject.json` (`FORMAT.md`), because a plan for a subject the bank doesn't have is an error.
+2. Checks the bank doesn't cover the subject already: `subjects/`, its subjects' `aliases`, and `plan/OVERVIEW.md` for a plan that lists it.
+3. Adds `subjects/<subject>/subject.json` (`FORMAT.md`), with common other names for it in `aliases` and never a course code. The subject's name becomes its ID: lowercase words joined by hyphens. That registers the subject: it's in `routes-index.json` and a tutor can classify into it, while `bank-index.json` lists it once it has a pack. Run `node tools/validate.mjs` and `node tools/plan.mjs overview`. A subject can stop here until someone plans it.
+4. Writes `plan/<subject>.json`, the list of packs to write (`plan/README.md`), with `pipeline/prompts/planner.md` or by hand. Links in the issue are only a hint of what such a course usually covers. The planner's outside reading is still only `tools/ref.mjs` (`pipeline/prompts/sources.md`), and no wording from a syllabus is copied.
 5. Runs `node tools/plan.mjs check plan/<subject>.json` and `node tools/plan.mjs overview`, then writes the first packs from the plan, checked by blind solvers, with the pipeline in `pipeline/README.md` (`node tools/plan.mjs next <subject> 3` lists them, and `pipeline/grow.workflow.js` runs the whole loop).
-6. Runs the checks above and opens a pull request that says `Closes #<issue number>`.
+6. Runs the checks above, with `node tools/plan.mjs overview --check`, and opens a pull request that says `Closes #<issue number>`.
 
 ## With an agent
 

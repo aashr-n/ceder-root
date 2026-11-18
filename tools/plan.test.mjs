@@ -1,6 +1,9 @@
 import assert from "node:assert/strict";
+import { spawnSync } from "node:child_process";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { join } from "node:path";
 import test from "node:test";
-import { fixtureRoot } from "./fixtures/fixture.mjs";
+import { fixtureRoot, toolsDir } from "./fixtures/fixture.mjs";
 import { checkPlan, nextPacks, overview } from "./plan.mjs";
 import { loadBank } from "./validate.mjs";
 
@@ -96,4 +99,30 @@ test("overview lists each subject's packs in order and marks the written ones", 
   assert.match(page, /^## Testing$/m);
   assert.match(page, /^\d+\. \*\*Tissues\*\*: epithelium, connective tissue, muscle tissue, nervous tissue$/m);
   assert.equal(page.split("\n").filter((line) => line.includes(" ✓: ")).length, plan.packs.length - 1);
+});
+
+test("overview ends with one line naming the subjects that have no plan yet", () => {
+  const root = fixtureRoot();
+  const { bank, plan } = fixturePlan(root);
+  bank.subjects.push({ data: { id: "waves", name: "Waves, light and sound" } }, { data: { id: "acoustics", name: "Acoustics" } });
+  const lines = overview([plan], bank).trimEnd().split("\n");
+  assert.equal(lines.at(-1), "No plan yet (2 subjects): Acoustics; Waves, light and sound.");
+  assert.equal(overview([plan], fixturePlan(root).bank).trimEnd().split("\n").at(-1), "Every subject has a plan.");
+});
+
+test("overview --check passes only when plan/OVERVIEW.md is what overview writes, and writes nothing", () => {
+  const root = fixtureRoot();
+  const { plan } = fixturePlan(root);
+  mkdirSync(join(root, "plan"), { recursive: true });
+  writeFileSync(join(root, "plan", "testing.json"), JSON.stringify(plan));
+  const run = (...args) => spawnSync(process.execPath, [join(toolsDir, "plan.mjs"), ...args, "--root", root], { encoding: "utf8" });
+  const missing = run("overview", "--check");
+  assert.equal(missing.status, 1);
+  assert.match(missing.stdout, /isn't what the plans make/);
+  assert.ok(!existsSync(join(root, "plan", "OVERVIEW.md")));
+  assert.equal(run("overview").status, 0);
+  assert.equal(run("overview", "--check").status, 0);
+  writeFileSync(join(root, "plan", "OVERVIEW.md"), "edited by hand\n");
+  assert.equal(run("overview", "--check").status, 1);
+  assert.equal(readFileSync(join(root, "plan", "OVERVIEW.md"), "utf8"), "edited by hand\n");
 });

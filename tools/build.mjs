@@ -5,7 +5,8 @@
 //   node tools/build.mjs                  writes dist/
 //   --out <dir>                           writes there instead
 //   --app --app-dir <dir>                 also writes an app's copy into <dir>: the built bank, plus library-index.json and
-//                                         its libraryasset-* files, and sources-index.json (FORMAT.md, "An app's copy")
+//                                         its libraryasset-* files, sources-index.json and routes-index.json (FORMAT.md,
+//                                         "An app's copy")
 //   --check-app --app-dir <dir>           writes nothing; exits 1 if <dir> isn't exactly what --app would write
 //   --root <dir>                          the bank's folder (this tool's parent folder when not given)
 //
@@ -19,15 +20,17 @@ import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { renderSvg } from "./render.mjs";
 import { buildLibrary, buildSourcesIndex } from "./library.mjs";
-import { bankRoot, checkBank, loadBank } from "./validate.mjs";
+import { buildRoutes } from "./routes.mjs";
+import { bankRoot, checkBank, loadBank, ships } from "./validate.mjs";
 
 export const FORMAT_VERSION = 1;
 export const INDEX_FILE = "bank-index.json";
 /**
  * The files a built bank and an app's copy of it are made of, and so the only files the build removes from a folder it
- * writes into: the bank's, the library's (library-index.json, libraryasset-*) and the source catalogue's.
+ * writes into: the bank's, the library's (library-index.json, libraryasset-*), the source catalogue's and the routing
+ * table's (routes-index.json).
  */
-export const BUILT_FILE = /^(bank-index\.json|bankpack-.+\.json|bankasset-[0-9a-f]{16}\.[a-z0-9]+|library-index\.json|libraryasset-[0-9a-f]{16}\.[a-z0-9]+|sources-index\.json)$/;
+export const BUILT_FILE = /^(bank-index\.json|bankpack-.+\.json|bankasset-[0-9a-f]{16}\.[a-z0-9]+|library-index\.json|libraryasset-[0-9a-f]{16}\.[a-z0-9]+|sources-index\.json|routes-index\.json)$/;
 
 const sha256 = (bytes) => createHash("sha256").update(bytes).digest("hex");
 const json = (value) => Buffer.from(JSON.stringify(value, null, 2) + "\n");
@@ -98,7 +101,7 @@ export function buildBank({ root = bankRoot } = {}) {
     const data = pack.data;
     const status = (name) => data.items.filter((entry) => entry.verification.status === name).length;
     const verified = data.items.filter((entry) => entry.verification.status === "verified");
-    if (!verified.length) {
+    if (!ships(data)) {
       result.leftOut.push({ pack: data.id, reason: `no verified items (${status("draft")} draft, ${status("rejected")} rejected)` });
       continue;
     }
@@ -169,20 +172,21 @@ export function buildBank({ root = bankRoot } = {}) {
 }
 
 /**
- * An app's copy in memory: the built bank's files plus the library's and the source catalogue's, as `buildBank` does,
- * with `bankFiles` holding the bank's alone. A problem in the library or the catalogue is an error, and then `files`
- * is empty, so nothing is half-exported.
+ * An app's copy in memory: the built bank's files plus the library's, the source catalogue's and the routing table's,
+ * as `buildBank` does, with `bankFiles` holding the bank's alone. A problem in the library, the catalogue or the
+ * routing table is an error, and then `files` is empty, so nothing is half-exported.
  */
 export function buildAppCopy({ root = bankRoot } = {}) {
   const result = buildBank({ root });
   if (result.errors.length) return { ...result, bankFiles: result.files };
   const library = buildLibrary({ root });
   const sources = buildSourcesIndex({ root });
-  const errors = [...library.errors, ...sources.errors];
+  const routes = buildRoutes({ root });
+  const errors = [...library.errors, ...sources.errors, ...routes.errors];
   const bankFiles = result.files;
   if (errors.length) return { ...result, files: new Map(), bankFiles, errors };
-  const files = new Map([...bankFiles, ...library.files, ...sources.files]);
-  return { ...result, files, bankFiles, libraryItems: library.items, libraryRevision: library.revision, sources: sources.sources };
+  const files = new Map([...bankFiles, ...library.files, ...sources.files, ...routes.files]);
+  return { ...result, files, bankFiles, libraryItems: library.items, libraryRevision: library.revision, sources: sources.sources, routedSubjects: routes.subjects };
 }
 
 /** The built bank's files already in a folder, by name. */
@@ -252,7 +256,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   }
   for (const entry of result.leftOut) console.log(`left out ${entry.pack ?? `subject ${entry.subject}`}: ${entry.reason}`);
   const assetCount = [...result.files.keys()].filter((name) => name.startsWith("bankasset-")).length;
-  const libraryNote = result.libraryItems === undefined ? "" : `, ${result.libraryItems} library item${result.libraryItems === 1 ? "" : "s"}, ${result.sources} source${result.sources === 1 ? "" : "s"}`;
+  const libraryNote = result.libraryItems === undefined ? "" : `, ${result.libraryItems} library item${result.libraryItems === 1 ? "" : "s"}, ${result.sources} source${result.sources === 1 ? "" : "s"}, ${result.routedSubjects} routed subject${result.routedSubjects === 1 ? "" : "s"}`;
   const summary = `${result.built.length} pack${result.built.length === 1 ? "" : "s"}, ${assetCount} asset${assetCount === 1 ? "" : "s"}${libraryNote}, revision ${result.revision}`;
 
   if (checkApp) {

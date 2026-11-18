@@ -133,8 +133,8 @@ test("the command line writes --out, --app writes the seed bank, and --check-app
   assert.equal(built.status, 0, built.stdout + built.stderr);
   assert.match(built.stdout, /built bankpack-testing\.cells\.json: 2 concepts, 4 items \(left out 4 draft, 1 rejected\), 4 assets/);
   assert.match(built.stdout, /left out testing\.drafts: no verified items/);
-  // The fixture has no library or catalogue, so the app's copy adds empty indexes.
-  assert.deepEqual(readdirSync(app).sort(), [...readdirSync(out), "library-index.json", "sources-index.json"].sort());
+  // The fixture has no library or catalogue, so the app's copy adds empty indexes, and the routing table.
+  assert.deepEqual(readdirSync(app).sort(), [...readdirSync(out), "library-index.json", "routes-index.json", "sources-index.json"].sort());
 
   const same = run(["--root", root, "--check-app", "--app-dir", app]);
   assert.equal(same.status, 0, same.stdout);

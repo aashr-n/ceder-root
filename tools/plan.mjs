@@ -4,6 +4,7 @@
 //   node tools/plan.mjs next physics [count]       the next packs the plan has and the bank doesn't, as JSON (1 if no count)
 //   node tools/plan.mjs written physics            the packs the bank has in a subject, with their concepts, as JSON
 //   node tools/plan.mjs overview                   writes plan/OVERVIEW.md, every plan as one page a person can read
+//   node tools/plan.mjs overview --check           writes nothing; exits 1 if plan/OVERVIEW.md isn't what overview writes
 //   --root <dir>                                   the bank's folder (this tool's parent folder when not given)
 
 import Ajv2020 from "ajv/dist/2020.js";
@@ -69,7 +70,10 @@ export function nextPacks(plan, bank, count = 1) {
   return plan.packs.filter((entry) => !written.has(`${plan.subject}.${entry.pack}`)).slice(0, count);
 }
 
-/** Every plan as one page a person can read: each subject's packs in order, with their concepts, and which are written. */
+/**
+ * Every plan as one page a person can read: each subject's packs in order, with their concepts, and which are written.
+ * It ends with one line naming the bank's subjects that have no plan yet.
+ */
 export function overview(plans, bank) {
   const written = new Set(bank.packs.map((pack) => pack.data.id));
   const names = new Map(bank.subjects.map((subject) => [subject.data.id, subject.data.name]));
@@ -81,6 +85,10 @@ export function overview(plans, bank) {
     plan.packs.forEach((entry, index) => lines.push(`${index + 1}. **${entry.title}**${written.has(`${plan.subject}.${entry.pack}`) ? " ✓" : ""}: ${entry.concepts.map((concept) => concept.name).join(", ")}`));
     lines.push("");
   }
+  const planned = new Set(plans.map((plan) => plan.subject));
+  const unplanned = bank.subjects.map((subject) => subject.data).filter((subject) => !planned.has(subject.id)).map((subject) => subject.name ?? subject.id).sort((a, b) => a.localeCompare(b));
+  // Names can hold commas ("Waves, thermal and modern physics"), so semicolons part them.
+  lines.push(unplanned.length ? `No plan yet (${unplanned.length} subject${unplanned.length === 1 ? "" : "s"}): ${unplanned.join("; ")}.` : "Every subject has a plan.", "");
   return lines.join("\n");
 }
 
@@ -118,12 +126,19 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
     } else if (command === "written" && target) {
       const packs = loadBank(root).packs.filter((pack) => pack.data.subject === target);
       console.log(JSON.stringify(packs.map((pack) => ({ pack: pack.data.id.slice(target.length + 1), title: pack.data.title, summary: pack.data.summary, concepts: pack.data.concepts.map((concept) => ({ id: concept.id, name: concept.name })) })), null, 2));
-    } else if (command === "overview") {
+    } else if (command === "overview" && (!target || (target === "--check" && !count))) {
       const bank = loadBank(root);
       const plans = bank.subjects.map((subject) => join(root, "plan", `${subject.data.id}.json`)).filter((file) => existsSync(file)).map(readJson);
-      writeFileSync(join(root, "plan", "OVERVIEW.md"), overview(plans, bank));
+      const page = overview(plans, bank);
+      const file = join(root, "plan", "OVERVIEW.md");
+      if (target === "--check") {
+        const current = existsSync(file) && readFileSync(file, "utf8") === page;
+        console.log(current ? "plan/OVERVIEW.md is current" : "plan/OVERVIEW.md isn't what the plans make; run node tools/plan.mjs overview");
+        process.exit(current ? 0 : 1);
+      }
+      writeFileSync(file, page);
       console.log(`wrote plan/OVERVIEW.md: ${plans.length} subjects, ${plans.reduce((sum, plan) => sum + plan.packs.length, 0)} packs`);
-    } else throw new Error("usage: node tools/plan.mjs check plan/<subject>.json | next <subject> [count] | written <subject> | overview");
+    } else throw new Error("usage: node tools/plan.mjs check plan/<subject>.json | next <subject> [count] | written <subject> | overview [--check]");
   } catch (error) {
     console.error(error.message);
     process.exit(1);

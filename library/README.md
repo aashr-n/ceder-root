@@ -47,7 +47,7 @@ Nothing is allowed by default. `node tools/library.mjs validate` refuses an item
   - its credit line names the licence and says what was changed (unless nothing was), which CC BY and CC BY-SA ask for; a credit is needed unless it's CC0 or public domain;
   - from a wiki, it has a revision and a permalink to that revision;
 - its text is plain and within the limit, and its picture's file matches its `sha256`, size and type;
-- every concept it names is in the bank.
+- every concept it names is in the bank, in a pack with at least one verified item, so the build ships it. An app's `library-index.json` then never names a concept its copy of the bank doesn't have.
 
 Any source the apps may use may have a `link`. A file in `files/` that no item names is an error.
 
