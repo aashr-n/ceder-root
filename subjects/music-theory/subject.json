@@ -3,9 +3,13 @@
   "id": "music-theory",
   "name": "Music theory",
   "domain": "humanities",
-  "summary": "Notation, scales, harmony, voice-leading and aural skills.",
+  "summary": "How music is built and heard: notation, scales and keys, intervals and chords, harmony and voice-leading, with ear training and sight-singing.",
   "aliases": [
-    "Ear Training",
-    "Harmony"
+    "Music fundamentals",
+    "Fundamentals of music",
+    "Tonal harmony",
+    "Ear training",
+    "Aural skills",
+    "Musicianship"
   ]
 }

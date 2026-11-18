@@ -3,9 +3,9 @@
   "id": "statics",
   "name": "Statics",
   "domain": "applied",
-  "summary": "Equilibrium of particles and rigid bodies, forces, moments, trusses, friction and centroids.",
+  "summary": "The first engineering mechanics course: forces and moments, equilibrium of particles and rigid bodies, trusses and frames, friction, centroids and moments of inertia.",
   "aliases": [
-    "Engineering Mechanics Statics",
-    "Engineering Statics"
+    "Engineering statics",
+    "Engineering mechanics: statics"
   ]
 }

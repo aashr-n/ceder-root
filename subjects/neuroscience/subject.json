@@ -3,11 +3,14 @@
   "id": "neuroscience",
   "name": "Neuroscience",
   "domain": "natural",
-  "summary": "Neurons, circuits, sensory and motor systems, learning, and the biology of behaviour.",
+  "summary": "The nervous system from molecules to behaviour: neurons and synapses, and the brain systems for sensation, movement, emotion, learning and memory.",
   "aliases": [
-    "Intro Neuro",
+    "Intro neuro",
     "Neurobiology",
-    "Brain and Behavior",
-    "Biological Psychology"
+    "Brain and behavior",
+    "Behavioral neuroscience",
+    "Biological psychology",
+    "Biopsychology",
+    "Physiological psychology"
   ]
 }

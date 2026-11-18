@@ -3,10 +3,12 @@
   "id": "digital-logic",
   "name": "Digital logic design",
   "domain": "applied",
-  "summary": "Boolean algebra, combinational and sequential circuits, finite state machines and hardware description.",
+  "summary": "How bits become hardware: Boolean algebra and logic gates, combinational and sequential circuits, finite-state machines and a hardware description language.",
   "aliases": [
-    "Logic Design",
-    "Digital Design",
-    "Digital Systems"
+    "Digital logic",
+    "Logic design",
+    "Digital design",
+    "Digital systems",
+    "Digital circuits"
   ]
 }

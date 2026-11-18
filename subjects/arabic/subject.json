@@ -3,8 +3,11 @@
   "id": "arabic",
   "name": "Arabic",
   "domain": "humanities",
-  "summary": "Elementary and intermediate Modern Standard Arabic.",
+  "summary": "Elementary and intermediate Modern Standard Arabic: script and sounds, grammar, speaking and reading, often with some colloquial Arabic.",
   "aliases": [
-    "Modern Standard Arabic"
+    "Modern Standard Arabic",
+    "Elementary Arabic",
+    "Intermediate Arabic",
+    "Beginning Arabic"
   ]
 }

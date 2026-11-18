@@ -3,8 +3,10 @@
   "id": "korean",
   "name": "Korean",
   "domain": "humanities",
-  "summary": "Elementary and intermediate Korean.",
+  "summary": "Elementary and intermediate Korean: Hangul, speech levels, grammar, conversation and reading.",
   "aliases": [
-    "Elementary Korean"
+    "Elementary Korean",
+    "Intermediate Korean",
+    "Beginning Korean"
   ]
 }

@@ -3,9 +3,13 @@
   "id": "gender-studies",
   "name": "Gender and sexuality studies",
   "domain": "social",
-  "summary": "Gender, sexuality, feminist theory and intersectionality across disciplines.",
+  "summary": "How gender and sexuality shape lives and power: feminist and queer theory, intersectionality, and the history of women's and LGBTQ movements.",
   "aliases": [
-    "Women's Studies",
-    "Intro to Gender Studies"
+    "Gender studies",
+    "Women's studies",
+    "Women's and gender studies",
+    "Feminist studies",
+    "Sexuality studies",
+    "Queer studies"
   ]
 }

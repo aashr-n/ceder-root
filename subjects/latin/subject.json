@@ -3,8 +3,11 @@
   "id": "latin",
   "name": "Latin",
   "domain": "humanities",
-  "summary": "Elementary and intermediate Latin: grammar and reading Roman authors.",
+  "summary": "Elementary and intermediate Latin: grammar and vocabulary, then reading authors such as Caesar, Cicero and Virgil.",
   "aliases": [
-    "Elementary Latin"
+    "Elementary Latin",
+    "Intermediate Latin",
+    "Beginning Latin",
+    "Classical Latin"
   ]
 }

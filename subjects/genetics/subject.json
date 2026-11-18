@@ -3,9 +3,11 @@
   "id": "genetics",
   "name": "Genetics",
   "domain": "natural",
-  "summary": "Mendelian and molecular genetics, populations, and genomes beyond the introductory biology course.",
+  "summary": "Genetics beyond introductory biology: Mendelian inheritance, linkage and mapping, gene regulation, mutation, population genetics and genomics.",
   "aliases": [
-    "Intro Genetics",
-    "Principles of Genetics"
+    "Principles of genetics",
+    "General genetics",
+    "Introduction to genetics",
+    "Human genetics"
   ]
 }

@@ -3,11 +3,14 @@
   "id": "ecology-and-evolution",
   "name": "Ecology and evolution",
   "domain": "natural",
-  "summary": "Natural selection, speciation, populations, communities and ecosystems.",
+  "summary": "Ecology and evolution beyond introductory biology: natural selection, population genetics, speciation and phylogeny, then populations, communities and ecosystems.",
   "aliases": [
     "Evolution",
+    "Evolutionary biology",
     "Ecology",
-    "Evolutionary Biology",
-    "Population Biology"
+    "General ecology",
+    "Principles of ecology",
+    "Population biology",
+    "Ecology and evolutionary biology"
   ]
 }

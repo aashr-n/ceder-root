@@ -3,10 +3,13 @@
   "id": "electric-circuits",
   "name": "Electric circuits",
   "domain": "applied",
-  "summary": "Resistive circuits, op-amps, capacitors and inductors, transients and AC steady state.",
+  "summary": "Circuit analysis for engineers: resistive networks and Kirchhoff's laws, op-amps, capacitors and inductors, transients and AC steady state.",
   "aliases": [
     "Circuits",
-    "Circuit Analysis",
-    "Linear Circuits"
+    "Circuit analysis",
+    "Electric circuit analysis",
+    "Electrical circuits",
+    "Linear circuits",
+    "Circuit theory"
   ]
 }

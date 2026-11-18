@@ -3,8 +3,11 @@
   "id": "latin-american-history",
   "name": "Latin American history",
   "domain": "humanities",
-  "summary": "Colonial era, independence and modern Latin America.",
+  "summary": "Latin America from Indigenous societies and Iberian conquest through colonial rule and independence to modern states and revolutions.",
   "aliases": [
-    "History of Latin America"
+    "History of Latin America",
+    "Colonial Latin America",
+    "Modern Latin America",
+    "Latin American civilization"
   ]
 }

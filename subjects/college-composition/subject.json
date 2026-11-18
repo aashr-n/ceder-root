@@ -3,10 +3,15 @@
   "id": "college-composition",
   "name": "College composition",
   "domain": "humanities",
-  "summary": "Academic writing: argument, evidence, drafting, revision and research writing.",
+  "summary": "The first-year writing course: reading critically, arguing from evidence, drafting and revising, and the researched academic essay.",
   "aliases": [
-    "English Composition",
-    "Freshman Composition",
-    "First-Year Writing"
+    "English composition",
+    "Freshman composition",
+    "Freshman English",
+    "First-year writing",
+    "Expository writing",
+    "Academic writing",
+    "Rhetoric and composition",
+    "College writing"
   ]
 }

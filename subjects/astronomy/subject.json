@@ -3,9 +3,13 @@
   "id": "astronomy",
   "name": "Astronomy",
   "domain": "natural",
-  "summary": "The solar system, stars, galaxies and cosmology for general education.",
+  "summary": "The night sky, the solar system, stars, galaxies and cosmology, with the physics needed to read starlight, usually without calculus.",
   "aliases": [
-    "Intro Astronomy",
-    "Stars and Galaxies"
+    "Intro astronomy",
+    "Astro",
+    "General astronomy",
+    "Descriptive astronomy",
+    "Stars and galaxies",
+    "The solar system"
   ]
 }

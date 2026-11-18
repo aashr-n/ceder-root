@@ -3,8 +3,10 @@
   "id": "russian",
   "name": "Russian",
   "domain": "humanities",
-  "summary": "Elementary and intermediate Russian.",
+  "summary": "Elementary and intermediate Russian: Cyrillic, cases and verbs of motion, conversation and reading.",
   "aliases": [
-    "Elementary Russian"
+    "Elementary Russian",
+    "Intermediate Russian",
+    "Beginning Russian"
   ]
 }

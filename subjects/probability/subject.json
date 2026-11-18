@@ -3,10 +3,11 @@
   "id": "probability",
   "name": "Probability",
   "domain": "formal",
-  "summary": "Random variables, distributions, expectation and limit theorems, taught with calculus.",
+  "summary": "Probability with calculus, beyond the chance unit of intro statistics: counting, random variables, distributions, expectation, joint distributions and limit theorems.",
   "aliases": [
-    "Intro Probability",
-    "Probability Theory",
-    "Probability for Engineers"
+    "Introduction to probability",
+    "Intro probability",
+    "Probability theory",
+    "Probability for engineers"
   ]
 }

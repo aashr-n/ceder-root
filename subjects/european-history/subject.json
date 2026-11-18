@@ -3,9 +3,11 @@
   "id": "european-history",
   "name": "European history",
   "domain": "humanities",
-  "summary": "Europe from the Renaissance and Reformation to the present.",
+  "summary": "Europe from the Renaissance and Reformation to the present: states, revolutions, empires, the world wars and integration; narrower and later than Western civilization.",
   "aliases": [
-    "Modern European History",
-    "Early Modern Europe"
+    "Modern European history",
+    "Modern Europe",
+    "History of modern Europe",
+    "Early modern Europe"
   ]
 }

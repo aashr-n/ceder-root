@@ -3,9 +3,10 @@
   "id": "world-history",
   "name": "World history",
   "domain": "humanities",
-  "summary": "Global patterns of states, trade, religion and technology from earliest times to now.",
+  "summary": "Societies across the globe and how they connected: states, empires, trade, religion, technology and migration, from early civilisations to now.",
   "aliases": [
-    "World Civilizations",
-    "Global History"
+    "World civilizations",
+    "History of world civilizations",
+    "Global history"
   ]
 }

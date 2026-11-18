@@ -3,14 +3,14 @@
   "id": "waves-and-modern-physics",
   "name": "Waves, thermal and modern physics",
   "domain": "natural",
-  "summary": "Oscillations and waves, optics, thermodynamics, special relativity and early quantum physics: the courses after mechanics and electromagnetism.",
+  "summary": "The physics course after mechanics and electricity and magnetism: oscillations and waves, optics, thermal physics, special relativity and early quantum physics.",
   "aliases": [
     "Modern physics",
+    "Waves and modern physics",
+    "Waves, optics and modern physics",
     "Waves and optics",
     "Vibrations and waves",
-    "Thermal physics",
-    "Introduction to modern physics",
-    "Intro to Quantum Physics",
-    "Waves and Modern Physics"
+    "Optics",
+    "Thermal physics"
   ]
 }

@@ -3,9 +3,14 @@
   "id": "ethics",
   "name": "Ethics",
   "domain": "humanities",
-  "summary": "Normative theories, applied ethics and metaethics: consequentialism, duties, virtue.",
+  "summary": "Moral philosophy in more depth than intro philosophy: consequentialism, duty and virtue theories, metaethics, and applied questions such as bioethics.",
   "aliases": [
-    "Moral Philosophy",
-    "Intro to Ethics"
+    "Moral philosophy",
+    "Intro to ethics",
+    "Applied ethics",
+    "Contemporary moral problems",
+    "Moral problems",
+    "Bioethics",
+    "Business ethics"
   ]
 }

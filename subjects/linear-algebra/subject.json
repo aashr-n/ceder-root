@@ -5,7 +5,11 @@
   "domain": "formal",
   "summary": "Vectors, matrices, and the linear maps between spaces.",
   "aliases": [
-    "Matrix Algebra",
-    "Linear Algebra and Matrix Theory"
+    "Lin alg",
+    "Matrix algebra",
+    "Matrix theory",
+    "Linear algebra and matrix theory",
+    "Applied linear algebra",
+    "Elementary linear algebra"
   ]
 }

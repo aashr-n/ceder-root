@@ -3,11 +3,12 @@
   "id": "latino-studies",
   "name": "Chicano and Latino studies",
   "domain": "social",
-  "summary": "Histories, cultures and politics of Chicano and Latino communities in the United States.",
+  "summary": "Chicano and Latino communities in the United States: migration, labour, civil rights, culture and identity.",
   "aliases": [
     "Chicano studies",
+    "Chicana and Chicano studies",
+    "Mexican American studies",
     "Latino studies",
-    "Latinx studies",
-    "Introduction to Chicano studies"
+    "Latinx studies"
   ]
 }

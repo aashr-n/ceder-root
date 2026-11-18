@@ -3,10 +3,11 @@
   "id": "data-science",
   "name": "Data science",
   "domain": "formal",
-  "summary": "Cleaning, exploring, visualising and modelling data with code; inference and prediction.",
+  "summary": "Working with real data in code: cleaning, exploring and visualising data, then inference and prediction with simple models; more computing than statistics.",
   "aliases": [
-    "Intro Data Science",
-    "Foundations of Data Science",
-    "Data Analysis with Python or R"
+    "Intro to data science",
+    "Foundations of data science",
+    "Data science fundamentals",
+    "Data analytics"
   ]
 }

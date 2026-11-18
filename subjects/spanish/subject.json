@@ -3,9 +3,11 @@
   "id": "spanish",
   "name": "Spanish",
   "domain": "humanities",
-  "summary": "Elementary and intermediate Spanish: speaking, listening, reading and writing.",
+  "summary": "Elementary and intermediate Spanish: speaking, listening, reading and writing, with the cultures of the Spanish-speaking world.",
   "aliases": [
     "Elementary Spanish",
-    "Intermediate Spanish"
+    "Intermediate Spanish",
+    "Beginning Spanish",
+    "Spanish for heritage speakers"
   ]
 }

@@ -3,8 +3,10 @@
   "id": "german",
   "name": "German",
   "domain": "humanities",
-  "summary": "Elementary and intermediate German.",
+  "summary": "Elementary and intermediate German: speaking, listening, reading and writing, with the cultures of German-speaking countries.",
   "aliases": [
-    "Elementary German"
+    "Elementary German",
+    "Intermediate German",
+    "Beginning German"
   ]
 }

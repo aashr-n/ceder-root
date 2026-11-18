@@ -3,11 +3,12 @@
   "id": "biblical-studies",
   "name": "Biblical studies",
   "domain": "humanities",
-  "summary": "Hebrew Bible and New Testament in historical context, text and interpretation.",
+  "summary": "The Hebrew Bible and New Testament read in their historical settings: how the texts were written, collected and interpreted.",
   "aliases": [
     "Introduction to the Bible",
+    "Bible as literature",
     "Hebrew Bible",
-    "New Testament",
-    "Old Testament"
+    "Old Testament",
+    "New Testament"
   ]
 }

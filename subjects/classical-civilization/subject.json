@@ -1,17 +1,17 @@
 {
   "formatVersion": 1,
   "id": "classical-civilization",
-  "name": "Greek and Roman civilization",
+  "name": "Classical civilization",
   "domain": "humanities",
-  "summary": "History and civilisation of the Greek and Roman worlds, including politics, society and literature in translation.",
+  "summary": "Greek and Roman history and society, from Bronze Age Greece to the late Roman Empire, with their literature and art read in translation.",
   "aliases": [
+    "Greek and Roman civilization",
+    "Classical civilisation",
+    "Classics",
     "Ancient Greece and Rome",
     "Ancient history",
-    "Classical civilisation",
-    "Roman civilization",
-    "Greek civilization",
-    "Greek History",
-    "Roman History",
-    "Classical Civilization"
+    "Greek history",
+    "Roman history",
+    "Ancient Mediterranean"
   ]
 }

@@ -3,9 +3,11 @@
   "id": "microbiology",
   "name": "Microbiology",
   "domain": "natural",
-  "summary": "Bacteria, archaea, viruses, microbial growth, metabolism, immunity and disease; widely required for health majors.",
+  "summary": "Bacteria, archaea, fungi, protists and viruses: their structure, growth, metabolism and genetics, the immune response, and infectious disease.",
   "aliases": [
-    "General Microbiology",
-    "Microbiology for Health Sciences"
+    "General microbiology",
+    "Introductory microbiology",
+    "Microbiology for health sciences",
+    "Microbiology for nursing"
   ]
 }

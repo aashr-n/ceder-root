@@ -3,9 +3,11 @@
   "id": "archaeology",
   "name": "Archaeology",
   "domain": "social",
-  "summary": "How the human past is reconstructed from material remains; methods and world prehistory.",
+  "summary": "How the human past is reconstructed from material remains: survey, excavation and dating, and a tour of world prehistory to the first civilisations.",
   "aliases": [
-    "Intro Archaeology",
-    "World Prehistory"
+    "Introduction to archaeology",
+    "World prehistory",
+    "Archaeological methods",
+    "Archaeology and prehistory"
   ]
 }

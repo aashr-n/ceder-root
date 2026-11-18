@@ -3,9 +3,11 @@
   "id": "african-american-studies",
   "name": "African American studies",
   "domain": "social",
-  "summary": "Black history, culture, politics and thought in the United States.",
+  "summary": "Black life in the United States from slavery to the present: history, culture, politics and thought, studied across disciplines.",
   "aliases": [
-    "Black Studies",
-    "Africana Studies"
+    "Black studies",
+    "Africana studies",
+    "African American history",
+    "Introduction to African American studies"
   ]
 }

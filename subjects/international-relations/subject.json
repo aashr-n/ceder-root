@@ -3,10 +3,12 @@
   "id": "international-relations",
   "name": "International relations",
   "domain": "social",
-  "summary": "War, cooperation, institutions, security and the global economy as political problems.",
+  "summary": "Why states fight and cooperate: power, war and security, institutions, international law, trade and global issues.",
   "aliases": [
+    "IR",
     "Intro to IR",
-    "World Politics",
-    "Global Politics"
+    "International politics",
+    "World politics",
+    "Global politics"
   ]
 }

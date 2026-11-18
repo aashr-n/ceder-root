@@ -3,9 +3,10 @@
   "id": "geographic-information-systems",
   "name": "Geographic information systems",
   "domain": "applied",
-  "summary": "Maps, spatial data, projections and spatial analysis with GIS software.",
+  "summary": "Making and analysing maps with GIS software: spatial data, coordinate systems and projections, cartography and spatial analysis.",
   "aliases": [
-    "Intro GIS",
-    "GIS"
+    "GIS",
+    "Intro to GIS",
+    "Geospatial analysis"
   ]
 }

@@ -3,10 +3,11 @@
   "id": "algorithms",
   "name": "Algorithms",
   "domain": "formal",
-  "summary": "Designing and analysing algorithms: sorting, searching, graphs, dynamic programming and running time.",
+  "summary": "Designing and analysing algorithms beyond CS2: running time, divide and conquer, greedy methods, dynamic programming, graph algorithms and intractability.",
   "aliases": [
-    "Introduction to algorithms",
     "Design and analysis of algorithms",
-    "Algorithm design"
+    "Analysis of algorithms",
+    "Algorithm design",
+    "Introduction to algorithms"
   ]
 }

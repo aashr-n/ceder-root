@@ -3,8 +3,12 @@
   "id": "us-history",
   "name": "United States history",
   "domain": "humanities",
-  "summary": "American history from colonial era to the present, usually split at 1865 into two courses.",
+  "summary": "The United States from colonial settlement to the present, usually as two surveys split at the Civil War or Reconstruction.",
   "aliases": [
-    "American History"
+    "American history",
+    "US history",
+    "History of the United States",
+    "American history survey",
+    "Early American history"
   ]
 }

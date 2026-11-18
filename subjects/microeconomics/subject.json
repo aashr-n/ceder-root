@@ -3,9 +3,12 @@
   "id": "microeconomics",
   "name": "Microeconomics",
   "domain": "social",
-  "summary": "Supply and demand, consumer and firm choice, market structures, welfare and market failure.",
+  "summary": "How households and firms choose: supply and demand, elasticity, consumer and producer choice, market structures, welfare and market failure.",
   "aliases": [
-    "Principles of Microeconomics",
-    "Intro Micro"
+    "Principles of microeconomics",
+    "Intro to microeconomics",
+    "Intro micro",
+    "Principles of economics",
+    "Introductory economics"
   ]
 }

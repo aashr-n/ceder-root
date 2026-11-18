@@ -3,8 +3,11 @@
   "id": "portuguese",
   "name": "Portuguese",
   "domain": "humanities",
-  "summary": "Elementary and intermediate Portuguese.",
+  "summary": "Elementary and intermediate Portuguese, often Brazilian: speaking, listening, reading and writing, with Lusophone culture.",
   "aliases": [
+    "Elementary Portuguese",
+    "Intermediate Portuguese",
+    "Beginning Portuguese",
     "Brazilian Portuguese"
   ]
 }

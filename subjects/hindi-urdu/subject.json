@@ -3,5 +3,13 @@
   "id": "hindi-urdu",
   "name": "Hindi and Urdu",
   "domain": "humanities",
-  "summary": "Elementary and intermediate Hindi or Urdu."
+  "summary": "Elementary and intermediate Hindi or Urdu, one spoken language in two scripts: Devanagari for Hindi and Nastaliq for Urdu.",
+  "aliases": [
+    "Hindi",
+    "Urdu",
+    "Hindi-Urdu",
+    "Hindustani",
+    "Elementary Hindi",
+    "Elementary Urdu"
+  ]
 }

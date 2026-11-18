@@ -3,9 +3,11 @@
   "id": "music-appreciation",
   "name": "Music appreciation",
   "domain": "humanities",
-  "summary": "Listening and history from Western classical tradition, jazz and popular music, and world music.",
+  "summary": "Listening to music with understanding, for non-musicians: elements of music and Western classical styles, often with jazz, popular and world music.",
   "aliases": [
-    "Intro to Music",
-    "Jazz History"
+    "Introduction to music",
+    "Understanding music",
+    "Music listening",
+    "Music history"
   ]
 }

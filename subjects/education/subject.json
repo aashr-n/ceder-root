@@ -3,11 +3,12 @@
   "id": "education",
   "name": "Education",
   "domain": "applied",
-  "summary": "Schools, teaching, learning theory, equity, and policy at a survey level.",
+  "summary": "Schools and teaching: the purposes of education, how people learn, equity and policy, often with classroom observation.",
   "aliases": [
     "Introduction to education",
     "Foundations of education",
-    "Intro to Teaching",
-    "Educational Psychology"
+    "Intro to teaching",
+    "Schools and society",
+    "Educational psychology"
   ]
 }

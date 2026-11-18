@@ -3,9 +3,11 @@
   "id": "human-geography",
   "name": "Human geography",
   "domain": "social",
-  "summary": "Population, culture, cities, economy and environment from a spatial viewpoint.",
+  "summary": "How people use and shape places: population and migration, culture, cities, economic development and the environment, seen spatially.",
   "aliases": [
-    "Cultural Geography",
-    "World Regional Geography"
+    "Introduction to human geography",
+    "Cultural geography",
+    "World regional geography",
+    "World geography"
   ]
 }

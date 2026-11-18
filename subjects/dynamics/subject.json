@@ -3,9 +3,10 @@
   "id": "dynamics",
   "name": "Dynamics",
   "domain": "applied",
-  "summary": "Kinematics and kinetics of particles and rigid bodies with Newton laws, energy and momentum methods.",
+  "summary": "Engineering mechanics after statics: kinematics and kinetics of particles and rigid bodies with Newton's laws, work and energy, and impulse and momentum.",
   "aliases": [
-    "Engineering Dynamics",
-    "Engineering Mechanics Dynamics"
+    "Engineering dynamics",
+    "Engineering mechanics: dynamics",
+    "Rigid body dynamics"
   ]
 }

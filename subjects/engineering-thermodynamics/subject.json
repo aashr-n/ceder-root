@@ -3,9 +3,12 @@
   "id": "engineering-thermodynamics",
   "name": "Engineering thermodynamics",
   "domain": "applied",
-  "summary": "First and second laws, cycles, properties of pure substances, applied to engines and refrigeration.",
+  "summary": "The first and second laws applied to engineering systems: properties of pure substances, energy and entropy balances, and power and refrigeration cycles.",
   "aliases": [
     "Thermo",
-    "Thermodynamics"
+    "Thermodynamics",
+    "Engineering thermo",
+    "Applied thermodynamics",
+    "Thermodynamics for engineers"
   ]
 }

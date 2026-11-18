@@ -3,10 +3,11 @@
   "id": "computer-science-principles",
   "name": "Computer science principles",
   "domain": "formal",
-  "summary": "Big ideas of computing for everyone: how the internet, data and algorithms work, with light programming.",
+  "summary": "Computing for non-majors: how data, the internet and algorithms work and what they mean for society, with a little programming; lighter than CS1.",
   "aliases": [
-    "CS Principles",
-    "Computer Literacy",
-    "Intro to Computing"
+    "CS principles",
+    "Computing for non-majors",
+    "Computer science for non-majors",
+    "Computer literacy"
   ]
 }

@@ -3,10 +3,11 @@
   "id": "public-speaking",
   "name": "Public speaking",
   "domain": "humanities",
-  "summary": "Preparing and delivering informative and persuasive speeches.",
+  "summary": "Preparing and delivering informative and persuasive speeches: audience analysis, organisation, evidence, delivery and managing nerves.",
   "aliases": [
     "Speech",
-    "Oral Communication",
-    "Fundamentals of Speech"
+    "Speech communication",
+    "Oral communication",
+    "Fundamentals of speech"
   ]
 }

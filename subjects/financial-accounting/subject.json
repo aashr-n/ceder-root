@@ -3,9 +3,13 @@
   "id": "financial-accounting",
   "name": "Financial accounting",
   "domain": "applied",
-  "summary": "Recording transactions and reading the balance sheet, income statement and cash flow statement.",
+  "summary": "Recording business transactions, and preparing and reading the balance sheet, income statement and statement of cash flows.",
   "aliases": [
-    "Principles of Accounting",
-    "Intro Financial Accounting"
+    "Principles of accounting",
+    "Accounting principles",
+    "Fundamentals of accounting",
+    "Intro to accounting",
+    "Introduction to financial accounting",
+    "Accounting"
   ]
 }

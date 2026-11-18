@@ -3,10 +3,13 @@
   "id": "american-government",
   "name": "American government",
   "domain": "social",
-  "summary": "Constitution, federalism, Congress, presidency, courts, parties, elections and civil liberties.",
+  "summary": "How the United States is governed: the Constitution, federalism, Congress, the presidency, the courts, parties, elections and civil liberties.",
   "aliases": [
-    "American Politics",
-    "US Government",
-    "Intro to American Politics"
+    "American politics",
+    "US government",
+    "US politics",
+    "American national government",
+    "Intro to American politics",
+    "American government and politics"
   ]
 }

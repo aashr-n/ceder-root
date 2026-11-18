@@ -3,8 +3,10 @@
   "id": "japanese",
   "name": "Japanese",
   "domain": "humanities",
-  "summary": "Elementary and intermediate Japanese: kana, kanji, speaking and reading.",
+  "summary": "Elementary and intermediate Japanese: hiragana, katakana and kanji, polite and plain speech, conversation and reading.",
   "aliases": [
-    "Elementary Japanese"
+    "Elementary Japanese",
+    "Intermediate Japanese",
+    "Beginning Japanese"
   ]
 }

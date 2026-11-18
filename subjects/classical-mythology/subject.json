@@ -3,9 +3,11 @@
   "id": "classical-mythology",
   "name": "Classical mythology",
   "domain": "humanities",
-  "summary": "Greek and Roman myths, their sources and later reception.",
+  "summary": "Greek and Roman myths: the ancient texts and art that tell them, what they meant to their audiences, and how later cultures retold them.",
   "aliases": [
-    "Greek Mythology",
-    "Myth"
+    "Greek mythology",
+    "Greek and Roman mythology",
+    "Mythology",
+    "Classical myth"
   ]
 }

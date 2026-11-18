@@ -3,11 +3,12 @@
   "id": "geology",
   "name": "Geology",
   "domain": "natural",
-  "summary": "Minerals, rocks, plate tectonics, surface processes and Earth history.",
+  "summary": "How the solid Earth works and its history: minerals and rocks, plate tectonics, earthquakes and volcanoes, surface processes and geologic time.",
   "aliases": [
-    "Physical Geology",
-    "Earth Science",
-    "Historical Geology",
-    "Intro Geology"
+    "Physical geology",
+    "Historical geology",
+    "Intro to geology",
+    "Earth science",
+    "Geoscience"
   ]
 }

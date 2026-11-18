@@ -3,9 +3,12 @@
   "id": "materials-science",
   "name": "Materials science",
   "domain": "applied",
-  "summary": "Atomic structure, bonding, crystals, defects, phase diagrams and properties of metals, ceramics and polymers.",
+  "summary": "How structure sets properties: bonding, crystals, defects, diffusion, phase diagrams, and the mechanical and electrical behaviour of metals, ceramics and polymers.",
   "aliases": [
-    "Intro Materials Science",
-    "Engineering Materials"
+    "Materials science and engineering",
+    "Intro to materials science",
+    "Engineering materials",
+    "Materials engineering",
+    "Structure and properties of materials"
   ]
 }

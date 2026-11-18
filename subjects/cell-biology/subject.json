@@ -3,9 +3,11 @@
   "id": "cell-biology",
   "name": "Cell biology",
   "domain": "natural",
-  "summary": "Organelles, membranes, signalling and the cell cycle in more depth than introductory biology.",
+  "summary": "The cell in more depth than introductory biology: membranes and transport, organelles, the cytoskeleton, signalling, gene expression and the cell cycle.",
   "aliases": [
-    "Cellular Biology",
-    "Cell and Molecular Biology"
+    "Cellular biology",
+    "Cell and molecular biology",
+    "Molecular and cell biology",
+    "Molecular biology"
   ]
 }

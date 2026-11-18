@@ -3,10 +3,13 @@
   "id": "film-studies",
   "name": "Film studies",
   "domain": "humanities",
-  "summary": "Film form, history and criticism; the language of cinema.",
+  "summary": "How films work and how to analyse them: film form, genres, authors and the history of cinema.",
   "aliases": [
-    "Intro to Film",
-    "Film Appreciation",
-    "Film History"
+    "Intro to film",
+    "Introduction to film studies",
+    "Cinema studies",
+    "Film analysis",
+    "Film appreciation",
+    "Film history"
   ]
 }

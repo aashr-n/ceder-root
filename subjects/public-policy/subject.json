@@ -3,9 +3,10 @@
   "id": "public-policy",
   "name": "Public policy",
   "domain": "social",
-  "summary": "How public problems are defined, and how policies are made, analysed and judged.",
+  "summary": "How public problems reach the agenda and how policies are designed, adopted, carried out and evaluated, with the tools of policy analysis.",
   "aliases": [
     "Introduction to public policy",
-    "Policy analysis"
+    "Policy analysis",
+    "Public policy analysis"
   ]
 }

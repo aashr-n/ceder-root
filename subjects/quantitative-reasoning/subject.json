@@ -3,11 +3,14 @@
   "id": "quantitative-reasoning",
   "name": "Quantitative reasoning",
   "domain": "formal",
-  "summary": "Math for general education: number sense, logic, models, finance and statistics in everyday contexts.",
+  "summary": "Mathematics for general education: numbers and estimation, logic, simple models, personal finance, and probability and statistics in everyday settings.",
   "aliases": [
-    "Liberal Arts Math",
-    "College Mathematics",
-    "Finite Mathematics",
-    "Math for Liberal Arts"
+    "Liberal arts math",
+    "Math for liberal arts",
+    "Contemporary mathematics",
+    "Mathematics in society",
+    "Quantitative literacy",
+    "Finite mathematics",
+    "College mathematics"
   ]
 }

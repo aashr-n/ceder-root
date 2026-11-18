@@ -1,11 +1,15 @@
 {
   "formatVersion": 1,
   "id": "mandarin-chinese",
-  "name": "Chinese (Mandarin)",
+  "name": "Chinese",
   "domain": "humanities",
-  "summary": "Elementary and intermediate Mandarin: tones, characters, speaking and reading.",
+  "summary": "Elementary and intermediate Mandarin Chinese: pinyin and tones, characters, grammar, conversation and reading.",
   "aliases": [
     "Mandarin",
-    "Elementary Chinese"
+    "Mandarin Chinese",
+    "Elementary Chinese",
+    "Intermediate Chinese",
+    "Beginning Chinese",
+    "Elementary Mandarin"
   ]
 }

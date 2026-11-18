@@ -3,10 +3,15 @@
   "id": "theatre",
   "name": "Theatre",
   "domain": "humanities",
-  "summary": "Plays, performance and production; acting as a survey.",
+  "summary": "How plays are made and performed: dramatic literature, acting, directing, design and production, and theatre history.",
   "aliases": [
-    "Theater Appreciation",
-    "Intro to Acting",
-    "Drama"
+    "Theater",
+    "Introduction to theatre",
+    "Theatre appreciation",
+    "Theater appreciation",
+    "Acting",
+    "Introduction to acting",
+    "Drama",
+    "Stagecraft"
   ]
 }

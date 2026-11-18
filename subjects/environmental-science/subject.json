@@ -3,11 +3,12 @@
   "id": "environmental-science",
   "name": "Environmental science",
   "domain": "natural",
-  "summary": "Ecosystems, climate, energy, water, pollution and the human impact on them.",
+  "summary": "Environmental systems and human impact: ecosystems, population, energy, climate, water, pollution and sustainability, mixing science with policy.",
   "aliases": [
-    "Intro Environmental Science",
-    "Environmental Studies",
-    "Sustainability",
-    "ENVSCI"
+    "Intro to environmental science",
+    "Environmental studies",
+    "Environmental biology",
+    "Environmental issues",
+    "Sustainability"
   ]
 }

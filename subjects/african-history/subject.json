@@ -3,9 +3,10 @@
   "id": "african-history",
   "name": "African history",
   "domain": "humanities",
-  "summary": "Africa from early states to the present: trade, empires, colonial rule and independence.",
+  "summary": "Africa from early states and empires through the slave trades and colonial rule to independence and the present.",
   "aliases": [
     "History of Africa",
-    "African civilizations"
+    "African civilizations",
+    "Modern Africa"
   ]
 }

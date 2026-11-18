@@ -3,9 +3,10 @@
   "id": "biological-anthropology",
   "name": "Biological anthropology",
   "domain": "social",
-  "summary": "Human evolution, primates, the fossil record and human variation.",
+  "summary": "Humans as evolved primates: evolutionary theory, primate behaviour, the hominin fossil record and the biology of living human variation.",
   "aliases": [
-    "Physical Anthropology",
-    "Human Evolution"
+    "Physical anthropology",
+    "Bio anthro",
+    "Human evolution"
   ]
 }

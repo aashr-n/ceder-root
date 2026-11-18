@@ -3,13 +3,16 @@
   "id": "literature",
   "name": "Literature",
   "domain": "humanities",
-  "summary": "Reading and interpreting fiction, poetry and drama; British and American surveys in many places.",
+  "summary": "Reading and writing about fiction, poetry and drama in English: close reading, genre, and the British and American surveys.",
   "aliases": [
     "Introduction to literature",
+    "Intro to lit",
     "English literature",
     "British literature",
     "American literature",
     "Literary analysis",
-    "Lit Analysis"
+    "Introduction to fiction",
+    "Introduction to poetry",
+    "Shakespeare"
   ]
 }
