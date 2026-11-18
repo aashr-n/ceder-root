@@ -39,7 +39,7 @@ To turn a request into a subject, a maintainer:
 
 ## With an agent
 
-The files in `pipeline/prompts/` are instructions for agents: `author.md` writes a pack, `solver.md` answers blind, `grader.md` grades, and `repair.md` fixes what failed. A solver must be a separate agent that has never seen the pack, so never the one that wrote it. With Claude Code, `pipeline/synthesize.workflow.js` runs the whole loop.
+The files in `pipeline/prompts/` are instructions for agents: `author.md` writes a pack, `solver.md` answers blind, `grader.md` grades, and `repair.md` fixes what failed. `planner.md`, `diagnoser.md` and `illustrator.md` plan a subject, check what wrong choices give away, and add pictures; `fidelity.md` and `diagrams.md` are parts of the author's and illustrator's instructions. A solver must be a separate agent that has never seen the pack, so never the one that wrote it. With Claude Code, `pipeline/synthesize.workflow.js` runs the write-and-verify loop for packs you brief, and `pipeline/grow.workflow.js` also plans subjects, checks mistakes and adds pictures. `.claude/agents/bank-agent.md` is an agent type without web tools, which either script takes as `agentType`.
 
 ## Rules
 
