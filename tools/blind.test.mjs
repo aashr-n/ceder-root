@@ -93,3 +93,11 @@ test("the command line needs --out and a folder", () => {
   const missing = spawnSync(process.execPath, [join(toolsDir, "blind.mjs"), "--root", root, "subjects/nothing", "--out", out], { encoding: "utf8" });
   assert.equal(missing.status, 1);
 });
+
+test("the question file is one item a line, so solvers read it in fewer tokens", () => {
+  const root = fixtureRoot();
+  const { out, data } = exported(root, [join(root, "subjects", "testing")]);
+  const lines = readFileSync(out, "utf8").trim().split("\n");
+  assert.equal(lines.length, data.items.length + 2);
+  assert.deepEqual(lines.slice(1, -1).map((line) => JSON.parse(line.replace(/,$/, ""))), data.items);
+});

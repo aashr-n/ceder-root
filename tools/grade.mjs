@@ -24,7 +24,13 @@ import { blindId, blindKey, spotOrder, stepOrder } from "./blind.mjs";
 import { bankRoot, loadBank } from "./validate.mjs";
 
 const NOTE_LENGTH = 500;
-const readJson = (path) => JSON.parse(readFileSync(path, "utf8"));
+const readJson = (path) => {
+  try {
+    return JSON.parse(readFileSync(path, "utf8"));
+  } catch (error) {
+    throw new Error(error instanceof SyntaxError ? `${path}: not valid JSON (${error.message}); write the file again as the prompt's form shows` : error.message);
+  }
+};
 const clip = (text, length) => text.length <= length ? text : `${text.slice(0, length - 1)}…`;
 const quote = (text) => `“${clip(String(text).replace(/\s+/g, " ").trim(), 80)}”`;
 
@@ -155,7 +161,7 @@ export function grade(answers, { root = bankRoot, date, verdicts = {}, minSolver
     if (row.answered) rows.push(row);
     if (dirty && write) {
       // Read the file again just before writing, so only verification is taken from this run.
-      const fresh = readJson(file);
+      const fresh = JSON.parse(readFileSync(file, "utf8"));
       const graded = new Map(data.items.map((item) => [item.id, item.verification]));
       for (const item of fresh.items ?? []) if (graded.has(item.id)) item.verification = graded.get(item.id);
       writeFileSync(file, JSON.stringify(fresh, null, 2) + "\n");
@@ -219,7 +225,10 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   const format = (cells) => cells.map((cell, column) => column ? cell.padStart(widths[column]) : cell.padEnd(widths[column])).join("  ");
   console.log(format(header));
   for (const line of lines) console.log(format(line));
-  for (const id of result.unknown) console.log(`warning: no pack has item “${id}”`);
+  // A solver who answered a different pack's file, or used real IDs from memory, would otherwise fill the screen.
+  for (const id of result.unknown.slice(0, 5)) console.log(`warning: no pack has item “${id}”`);
+  if (result.unknown.length > 5) console.log(`warning: ${result.unknown.length - 5} more answers match no item; check the answers file is for this pack and uses the blind IDs (q-…) from its question file`);
+  if (!result.rows.length) console.log("nothing graded: no answer matches an item in the bank");
   for (const file of result.changed) console.log(`updated ${file}`);
 
   const target = resolve(reviewPath ?? `${answerFiles[0].replace(/\.json$/, "")}.recall-review.json`);

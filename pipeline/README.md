@@ -19,11 +19,11 @@ node tools/diagnose.mjs export subjects/biology/membrane-transport --out .work/d
 node tools/diagnose.mjs grade --answers .work/diagnose/biology.membrane-transport.answers.json
 ```
 
-`prompts/diagnoser.md` is that model's instructions. Pictures are added after that, by `prompts/illustrator.md`, and their label items go through steps 2 to 5 like any other draft.
+`prompts/diagnoser.md` is that model's instructions. Pictures are added after that, by `prompts/illustrator.md` (drawing rules in `prompts/diagrams.md`), and their label items go through steps 2 to 5 like any other draft.
 
 ## 1. Author
 
-An agent writes the pack, following `prompts/author.md`. Every item starts as `"verification": { "status": "draft" }`. Diagrams are drawn as SVG and looked at as PNG:
+An agent writes the pack, following `prompts/author.md` (and `prompts/fidelity.md` when it names misconceptions, `prompts/diagrams.md` when it draws, which keeps those out of what a text-only author reads). Every item starts as `"verification": { "status": "draft" }`. Diagrams are drawn as SVG and looked at as PNG:
 
 ```
 node tools/render.mjs subjects/biology/dna-replication/assets/replication-fork.svg /tmp/replication-fork.png
@@ -75,7 +75,7 @@ The tool prints a table of counts for each pack.
 
 ## 5. Fix or reject
 
-A repairer follows `prompts/repair.md` for each item still draft: it fixes the key, rewords an ambiguous question, or sets the item to `rejected` with a note. A changed item stays `draft` and goes back to step 2 in the next round (`-r1-a`, `-r1-b`, and so on). The workflow runs two repair rounds by default; whatever is still draft after that is left out of the build.
+A repairer follows `prompts/repair.md` for each item still draft: it fixes the key, rewords an ambiguous question, or sets the item to `rejected` with a note. A changed item stays `draft` and goes back to step 2 in the next round (`-r1-a`, `-r1-b`, and so on). `synthesize.workflow.js` runs two repair rounds by default and `grow.workflow.js` one (`rounds` changes either); whatever is still draft after that is left out of the build.
 
 ## 6. Build
 

@@ -1,6 +1,6 @@
 # Adding pictures to a pack
 
-You are adding pictures to a pack whose text is written and checked. A picture earns its place when it shows something words can't: where parts are, what a structure looks like, how a process moves. `FORMAT.md` (Artifacts) is the format, and the Diagrams section of `author.md` has the drawing rules and the palette. Read both first.
+You are adding pictures to a pack whose text is written and checked. A picture earns its place when it shows something words can't: where parts are, what a structure looks like, how a process moves. `FORMAT.md` (Artifacts) is the format, and `diagrams.md` has the drawing rules and the palette. Read both first.
 
 ## What to add
 

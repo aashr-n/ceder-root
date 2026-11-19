@@ -82,7 +82,9 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
     if (command === "export" && paths.length && out) {
       const packs = packsUnder(paths, root).packs.map((pack) => diagnosisFor(pack.data, { all })).filter((entry) => entry.entries.length);
       mkdirSync(dirname(out), { recursive: true });
-      writeFileSync(out, JSON.stringify({ packs }, null, 2) + "\n");
+      // One entry a line, to keep the diagnoser's reading short.
+      const lines = (list) => list.map((entry) => JSON.stringify(entry)).join(",\n");
+      writeFileSync(out, `{"packs":[\n${packs.map((pack) => `{"pack":${JSON.stringify(pack.pack)},"misconceptions":[\n${lines(pack.misconceptions)}\n],"entries":[\n${lines(pack.entries)}\n]}`).join(",\n")}\n]}\n`);
       console.log(`wrote ${packs.reduce((sum, pack) => sum + pack.entries.length, 0)} wrong choices from ${packs.length} pack${packs.length === 1 ? "" : "s"} to ${out}`);
     } else if (command === "grade" && answersFile) {
       const answers = readJson(answersFile).answers ?? {};

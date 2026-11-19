@@ -174,3 +174,16 @@ test("the command line prints a table, writes the review file, and settles recal
   const usage = spawnSync(process.execPath, [tool, "--date", "today"], { encoding: "utf8" });
   assert.equal(usage.status, 2);
 });
+
+test("a file that isn't JSON is named in the error, and answers that match nothing are said so", () => {
+  const files = answerFiles({ a: {} });
+  writeFileSync(files[0], "{ not json");
+  assert.throws(() => readAnswers(files), (error) => error.message.includes(files[0]) && /not valid JSON/.test(error.message));
+  const root = fixtureRoot();
+  const stray = Object.fromEntries(Array.from({ length: 8 }, (_, index) => [`q-${index}`, { answer: 0 }]));
+  const run = spawnSync(process.execPath, [join(toolsDir, "grade.mjs"), "--root", root, "--answers", ...answerFiles({ a: stray, b: stray }), "--date", DATE], { encoding: "utf8" });
+  assert.equal(run.status, 0, run.stderr);
+  assert.equal(run.stdout.split("\n").filter((line) => line.startsWith("warning: no pack has item")).length, 5);
+  assert.match(run.stdout, /warning: 3 more answers match no item/);
+  assert.match(run.stdout, /nothing graded/);
+});
